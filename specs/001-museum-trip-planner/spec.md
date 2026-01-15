@@ -1,351 +1,197 @@
-# Feature Specification: Museum Trip Planning Platform
+# Feature Specification: MuseumSpark Phase 1 — Static Dataset Browser (GitHub Pages)
 
-**Feature Branch**: `001-museum-trip-planner`
+**Feature Branch**: `001-museum-trip-planner` (Phase 1 scope update)
 **Created**: 2026-01-15
-**Status**: Approved
-**Input**: User description: "use ALL files in /Documentation to build a spec for the MuseumSpark solution"
-**Clarifications Resolved**: 2026-01-15 (OpenAI integration: P1 MVP, Recommendations: Basic filtering)
+**Last updated**: 2026-01-15
+**Status**: Approved (Phase 1)
+**Input**: Update scope to a first release that is a read-only static web application on GitHub Pages.
+
+## 0. Phase Definition (Non-negotiable)
+
+### Phase 1 (this spec / Priority One)
+
+1) **Data gathering and validation** in the repo (`data/` + `scripts/`).
+2) A **lightweight, read-only static web app** hosted on **GitHub Pages** that:
+   - browses/searches/filters the master index `data/index/all-museums.json`
+   - drills down to a museum detail view using `data/states/{STATE}.json` records
+   - shows progress/completeness status (FULL vs placeholder) across the dataset.
+
+### Phase 2+ (explicitly out of scope for this spec)
+
+- FastAPI backend, SQLite, authentication, personalization, trips/itineraries, admin CRUD, AI/OpenAI integration.
+- These will be specified in subsequent specs.
+
+---
 
 ## User Scenarios & Testing *(mandatory)*
 
-### User Story 1 - Discover and Browse Museums (Priority: P1)
+### User Story 1 — Browse/Search/Filter Museums (Priority: P1)
 
-A Walker Art Reciprocal Program member wants to explore **all museums in the reciprocal program** to find institutions matching their interests in specific art periods, particularly Impressionist and Modern/Contemporary collections.
+A Walker Art Reciprocal Program member wants to browse and search the entire reciprocal museum roster and quickly narrow results with multi-criteria filters.
 
-**Why this priority**: This is the core value proposition - helping users discover relevant museums they might not know about. Without discovery and filtering, the platform provides no value.
-
-**Independent Test**: Can be fully tested by querying the museum database built from the Walker reciprocal roster with various filters (location, art period, reputation) and verifying that results are returned with accurate priority rankings.
+**Independent Test**: Fully testable in a browser against the repo’s static JSON artifacts.
 
 **Acceptance Scenarios**:
 
-1. **Given** a user interested in Impressionist art, **When** they search for museums with strong Impressionist collections, **Then** they see a ranked list of reciprocal museums sorted by priority score
-2. **Given** a user planning a trip to California, **When** they filter reciprocal museums by state and select "California", **Then** they see only California reciprocal museums ranked by relevance and collection strength
-3. **Given** a user browsing museums, **When** they view a museum detail page, **Then** they see comprehensive information including collection strengths, estimated visit time, nearby museums, and travel tips
-4. **Given** a user comparing museums, **When** they view multiple museum cards, **Then** each card displays priority score, reputation tier, collection tier, and primary art focus for quick comparison
+1. **Given** the site is loaded, **When** the user searches for a partial museum name, **Then** results update with case-insensitive matching.
+2. **Given** the user selects filters (e.g., state + reputation + time_needed), **When** they apply multiple filters, **Then** the result set matches AND logic across all selected filters.
+3. **Given** the user sorts by `priority_score`, **When** there are ties or null scores, **Then** sorting is stable and deterministic (e.g., `priority_score asc`, nulls last, then `museum_name asc`).
+4. **Given** a large dataset, **When** the user pages through results, **Then** paging is responsive and does not reload the entire application.
 
 ---
 
-### User Story 2 - Plan Multi-Museum Itineraries (Priority: P2)
+### User Story 2 — View Data Collection Progress (Priority: P1)
 
-A user wants to efficiently plan a trip visiting multiple museums in the same city or region, understanding which museums are near each other and how much time to allocate for each visit.
+A curator/maintainer wants a dashboard view that summarizes how much of the dataset is fully enriched vs still placeholder/minimal.
 
-**Why this priority**: After discovering museums (P1), users need to organize them into practical itineraries. This addresses the travel planning aspect that distinguishes MuseumSpark from simple museum directories.
-
-**Independent Test**: Can be tested by selecting a city with multiple museums (e.g., Los Angeles with 5+ museums) and verifying that the system shows nearby museum counts, estimated visit times, and geographic clustering information. Delivers value by helping users maximize their museum visits.
+**Independent Test**: Compare displayed counts to counts computed from the JSON dataset.
 
 **Acceptance Scenarios**:
 
-1. **Given** a user viewing museums in Los Angeles, **When** they see the museum list, **Then** each museum displays its nearby museum count and the system highlights museum clusters (e.g., "5 other museums within this city")
-2. **Given** a user planning a day trip, **When** they view a museum marked "Full day", **Then** the system indicates this museum requires 4+ hours and suggests it as a standalone visit
-3. **Given** a user exploring a new city, **When** they filter by city and sort by priority score, **Then** they see top-priority museums first, allowing efficient selection for limited time
-4. **Given** a user interested in Balboa Park, **When** they view the San Diego Museum of Art, **Then** they see notes about parking, location within Balboa Park, and other nearby museums
+1. **Given** the dataset is loaded, **When** the user opens the Progress view, **Then** they see counts for total museums, FULL records, and placeholder records.
+2. **Given** the user selects a state, **When** they view state progress, **Then** they see per-state totals and FULL/placeholder breakdown.
+3. **Given** the dataset changes (commit updates), **When** GitHub Pages deploys, **Then** the Progress view reflects the updated counts with no manual edits.
 
 ---
 
-### User Story 3 - Understand Museum Collection Strengths (Priority: P3)
+### User Story 3 — Drill Down to Museum Detail via State Files (Priority: P1)
 
-A user wants detailed information about what makes each museum unique, including specific collection strengths, curatorial quality, and what to expect from their visit.
+A user wants to click a museum in the master list and view a detail page that reflects the canonical state-curated record.
 
-**Why this priority**: While discovery (P1) and planning (P2) are essential, understanding collection nuances helps users make informed decisions. This educational aspect adds depth to the platform.
-
-**Independent Test**: Can be tested by viewing museum detail pages and verifying that collection strength scores (Impressionist 0-5, Modern 0-5), historical context scores (1-5), and descriptive notes are displayed accurately. Delivers value by setting proper expectations for visits.
+**Independent Test**: Click-through from index results to a detail page that fetches `data/states/{STATE}.json` and renders the matching `museum_id`.
 
 **Acceptance Scenarios**:
 
-1. **Given** a user viewing the Birmingham Museum of Art, **When** they read the museum profile, **Then** they see it has Impressionist strength: 2 (Moderate), Modern strength: 3 (Strong), and historical context score: 4
-2. **Given** a user researching the Getty Center, **When** they view its profile, **Then** they see it specializes in Impressionism (Flagship level) with notes about stunning architecture and gardens
-3. **Given** a user comparing two museums, **When** they see reputation tiers, **Then** "International" museums are clearly distinguished from "Regional" or "Local" institutions
-4. **Given** a user reading museum notes, **When** they view the Anchorage Museum, **Then** they see contextual information about Alaska Native art collection and strong interpretive programs
-
----
-
-### User Story 4 - Access Museums via Search and Filter (Priority: P2)
-
-A user wants to quickly find specific museums by name, filter by multiple criteria simultaneously, and refine their search to match their exact preferences.
-
-**Why this priority**: Essential for usability — users need flexible ways to query the Walker reciprocal museum database. This is core functionality that enables all other user stories.
-
-**Independent Test**: Can be tested by performing various search queries (text search, multi-filter combinations) and verifying result accuracy, performance, and proper sorting. Delivers value by making the large dataset navigable.
-
-**Acceptance Scenarios**:
-
-1. **Given** a user knows they want to visit MoMA, **When** they search for "Museum of Modern Art", **Then** the system returns matching museums with New York's MoMA as the top result
-2. **Given** a user planning a road trip, **When** they apply filters for "National" reputation AND "Strong" collection tier AND "Art" type, **Then** they see only museums meeting all three criteria
-3. **Given** a user with limited time, **When** they filter by "Quick stop" time needed, **Then** they see only museums requiring less than 1 hour
-4. **Given** a user interested in specific art movements, **When** they filter by primary art focus "Modern", **Then** they see museums specializing in modern art ranked by priority score
-
----
-
-### User Story 5 - Manage Personal Museum Lists (Priority: P3)
-
-A user wants to save museums to a personal list, mark museums as visited, and track their museum exploration progress over time.
-
-**Why this priority**: This is a nice-to-have feature that increases engagement but isn't essential for the core value proposition of discovery and planning. Can be added after P1-P2 are solid.
-
-**Independent Test**: Can be tested by creating a user account, adding museums to favorites, marking some as visited, and verifying that personal lists persist across sessions. Delivers value by enabling personalized curation.
-
-**Acceptance Scenarios**:
-
-1. **Given** a registered user browsing museums, **When** they click "Add to My List" on a museum, **Then** the museum is saved to their personal collection
-2. **Given** a user with a saved list, **When** they mark a museum as "Visited", **Then** the system updates their profile and the museum displays a "Visited" badge
-3. **Given** a user viewing their profile, **When** they review their museum list, **Then** they see statistics like "Visited 12 of 45 saved museums" and "Top focus: Impressionism"
-4. **Given** a user planning a trip, **When** they filter their saved list by city, **Then** they see only their saved museums in that location
+1. **Given** a museum result row, **When** the user opens its detail page, **Then** the app loads the museum record from `data/states/{STATE}.json` (by `museum_id`) and renders all fields.
+2. **Given** the state file is missing or does not contain the museum, **When** the user opens the detail page, **Then** the app shows a clear error state and MAY fall back to the `all-museums.json` record.
+3. **Given** a museum has partial data, **When** the user opens detail, **Then** missing fields render as “Not available” (no blank UI gaps).
 
 ---
 
 ### Edge Cases
 
-- What happens when a user searches for a museum that doesn't exist in the database?
-  - System returns "No results found" with suggestions to browse by location or art period
+- Museums with `priority_score: null` (unscored) should remain discoverable and sort after scored museums.
+- GitHub Pages base path must be handled correctly (relative fetch paths must work on repo pages URLs).
+- Large JSON files: first load should show a loading state and remain usable.
 
-- How does the system handle museums with incomplete data (missing collection strength scores)?
-  - Museums without scoring data are included in results but ranked lower in priority, displayed with "Data pending" indicators
-
-- What if a user filters with criteria that match zero museums (e.g., "Local reputation" + "Flagship collection tier")?
-  - System returns empty results with helpful message suggesting to adjust filters, shows count of museums for each filter value
-
-- How does the system handle museums that are temporarily closed or seasonal?
-  - Museums marked as "closed" or "seasonal" display status prominently with notes about reopening dates if known
-
-- What happens when priority scores are recalculated and museum rankings change?
-  - System version stamps all priority scores with calculation date, archives previous rankings for transparency
-
-- How does the system handle tie scores (multiple museums with identical priority scores)?
-  - Secondary sorting by reputation tier, then collection tier, then alphabetically by name
-
-- What if a museum's collection focus changes over time (acquisitions, new wings)?
-  - System maintains data provenance timestamps, allows historical comparison, flags recent updates
+---
 
 ## Requirements *(mandatory)*
 
-### Functional Requirements
+### Functional Requirements (Phase 1)
 
-- **FR-001**: System MUST store and manage a dataset of all museums in the Walker Art Reciprocal Program with comprehensive metadata including location, collection strengths, reputation tier, and travel logistics
-- **FR-002**: System MUST calculate priority scores using the defined weighted algorithm: (10 - Impressionism × 3) × (10 - Modern × 3) × (5 - Context × 2) × (5 - Reputation) × (5 - Collection) - Bonuses
-- **FR-003**: System MUST allow users to search museums by name (partial match, case-insensitive)
-- **FR-004**: System MUST allow users to filter museums by location (country, state/province, city)
-- **FR-005**: System MUST allow users to filter museums by type (Art, History, Science, Mixed, Specialty)
-- **FR-006**: System MUST allow users to filter museums by reputation tier (Local, Regional, National, International)
-- **FR-007**: System MUST allow users to filter museums by collection tier (Small, Moderate, Strong, Flagship)
-- **FR-008**: System MUST allow users to filter museums by Impressionist collection strength using numeric scores (0–5)
-- **FR-009**: System MUST allow users to filter museums by Modern/Contemporary collection strength using numeric scores (0–5)
-- **FR-010**: System MUST allow users to filter museums by estimated time needed (Quick stop <1hr, Half day 2-4hr, Full day 4+hr)
-- **FR-011**: System MUST allow users to filter museums by priority score range (min/max bounds)
-- **FR-012**: System MUST support multi-criteria filtering (combine multiple filters simultaneously with AND logic)
-- **FR-013**: System MUST display museum results in sortable lists with configurable sort order (priority score, name, reputation, collection tier)
-- **FR-014**: System MUST provide paginated results for large result sets (configurable page size, default 20-50 results per page)
-- **FR-015**: System MUST display museum detail pages with all available metadata fields
-- **FR-016**: System MUST show nearby museum count for each museum (count of other museums in same city)
-- **FR-017**: System MUST display collection strength as numeric scores (0–5) and MAY also show derived labels (None/Minor/Moderate/Strong/Flagship) for readability
-- **FR-018**: System MUST display historical context score (1-5 rating) indicating curatorial quality and interpretive depth
-- **FR-019**: System MUST show reputation tier with clear definitions (Local/Regional/National/International)
-- **FR-020**: System MUST display estimated visit time with clear time ranges
-- **FR-021**: System MUST provide museum website URLs as clickable hyperlinks for quick access
-- **FR-022**: System MUST display freeform notes field containing travel tips, highlights, parking information, and practical advice
-- **FR-023**: System MUST show museum addresses and location information
-- **FR-024**: System MUST indicate museum operating status (active, closed, seasonal, unknown)
-- **FR-025**: System MUST track data provenance including data sources, confidence scores (1-5), and last verification dates
-- **FR-026**: System MUST support geographic clustering by displaying museums grouped by city or region
-- **FR-027**: System MUST apply priority score bonuses correctly: -2 for dual collection strength (Impressionism ≥3 AND Modern ≥3), -1 for museum clusters (3+ museums in city)
-- **FR-028**: System MUST enforce data validation against defined JSON schema before accepting new/updated museum records
-- **FR-029**: System MUST recalculate priority scores when algorithm version changes or museum data is updated
-- **FR-030**: System MUST provide read access to museum data with appropriate query performance (target: <1 second for filtered queries)
-- **FR-031**: System MUST support user account creation and authentication for saving personal lists (authentication method: JWT bearer tokens; OAuth2-style)
-- **FR-032**: Users MUST be able to save museums to personal lists (favorites/wish lists)
-- **FR-033**: Users MUST be able to mark museums as visited and track visit history
-- **FR-034**: System MUST persist user preferences and saved lists across sessions
-- **FR-035**: System MUST provide administrative interface for data management (CRUD operations on museum records with role-based access: admin, editor, viewer)
-- **FR-036**: System MUST log all data modification events for audit trail purposes
-- **FR-037**: System MUST support data export formats (filterable and sortable spreadsheet views)
-- **FR-038**: System MUST handle missing or null data gracefully (display "Not available" or equivalent, don't hide museums with incomplete data unless explicitly filtered)
-- **FR-039**: System MUST support batch operations for data import and validation (with 10% spot-check requirement for quality)
-- **FR-040**: System MUST maintain backward compatibility for deprecated field names during transition periods (minimum 6 months notice)
-- **FR-041**: System MUST provide conversational AI interface using OpenAI (ChatGPT-class models) for natural language museum discovery
-- **FR-042**: Conversational AI MUST accept queries like "Find museums with strong Impressionist collections in California" and return relevant filtered results
-- **FR-043**: Conversational AI MUST understand location-based queries (city names, state names, regions)
-- **FR-044**: Conversational AI MUST understand art period terminology (Impressionism, Modern, Contemporary, etc.)
-- **FR-045**: Conversational AI MUST provide context-aware responses explaining why specific museums match user criteria
-- **FR-046**: Conversational AI MUST integrate with the priority scoring system to rank suggested museums
-- **FR-047**: Conversational AI interface MUST maintain conversation history within a session for follow-up questions
-- **FR-048**: Conversational AI MUST handle ambiguous queries by asking clarifying questions (e.g., "Which California city are you interested in?")
+- **FR-001**: The Phase 1 release MUST be a **static web application** hosted on **GitHub Pages**.
+- **FR-002**: The Phase 1 web app MUST be **read-only** (no user accounts, no writes, no server-side API).
+- **FR-003**: The app MUST load and browse museums from `data/index/all-museums.json`.
+- **FR-004**: The app MUST support robust search and filtering against the master list, including at minimum:
+  - text search over `museum_name` (and `alternate_names` when present)
+  - location filters: `country`, `state_province`, `city`
+  - classification filters: `primary_domain`, `museum_type`, `status`
+  - quality filters: `reputation`, `collection_tier`
+  - travel filters: `time_needed`
+  - art/scoring filters: `min_impressionist_strength`, `min_modern_contemporary_strength`, `primary_art`, and `priority_score` range
+- **FR-005**: The app MUST support sorting by at least: `priority_score`, `museum_name`, `reputation`, `collection_tier`.
+- **FR-006**: The app MUST support pagination/virtualization to keep the UI responsive for large result sets.
+- **FR-007**: Museum detail pages MUST be addressable by a stable route using `museum_id`.
+- **FR-008**: Museum detail pages MUST fetch canonical detail from the relevant state file `data/states/{STATE}.json`.
+  - The state code MUST be derived from the `museum_id` prefix convention (e.g., `usa-ak-*` → `AK.json`) or an equivalent deterministic mapping.
+- **FR-009**: The app MUST display dataset progress metrics:
+  - total museum count
+  - FULL record count
+  - placeholder record count
+  - per-state breakdown (at minimum totals and FULL/placeholder)
+- **FR-010**: The definition of **FULL vs placeholder** MUST be deterministic and implemented consistently across:
+  - the progress dashboard counts
+  - the museum list UI (badge/indicator)
+  - any exported progress summary artifacts (if produced)
+- **FR-011**: The dataset pipeline MUST continue to enforce schema validation using `data/schema/museum.schema.json` (pre-commit and/or CI).
 
-### Key Entities
+### Definition: FULL record (Phase 1)
 
-- **Museum**: Represents a cultural institution with comprehensive metadata
-  - Identity: Unique identifier (slug-based museum_id), official name, alternate names, website URL
-  - Location: Country, state/province, city, street address, postal code, geographic coordinates (lat/long), timezone
-  - Classification: Museum type, primary domain, topics/subject areas, audience focus
-  - Collection: Impressionism strength (0-5), Modern/Contemporary strength (0-5), primary art focus, collection tier
-  - Quality: Reputation tier, historical context score (1-5), confidence score (1-5)
-  - Travel: Time needed estimate, best season, parking notes, public transit info, neighborhood, city region
-  - Relationships: Nearby museum count (calculated from other museums in same city)
-  - Computed: Priority score (derived from weighted algorithm), scoring version, scored by (assistant/manual/hybrid)
-  - Provenance: Data sources (array of URLs), address source, created date, updated date, last verified date
+A museum record is considered **FULL** when:
 
-#### Museum field reference (authoritative)
+1) It satisfies the schema required fields (already required by validation):
+   - `museum_id`, `country`, `state_province`, `city`, `museum_name`, `website`, `museum_type`, `street_address`, `postal_code`
 
-This is the full set of museum fields MuseumSpark supports, aligned to the dataset schema in `data/schema/museum.schema.json`.
+2) And it has the Phase 1 enrichment “core” fields populated (non-null / non-empty):
+   - `primary_domain`, `status`
+   - `reputation`, `collection_tier`
+   - `time_needed` OR `estimated_visit_minutes`
+   - `notes`
+   - `data_sources` (at least 1)
+   - `confidence` (1–5)
 
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| museum_id | string | Yes | Stable identifier (slug-based). |
-| country | string | Yes | Country name (e.g., `USA`). |
-| state_province | string | Yes | Full state or province name. |
-| city | string | Yes | City name. |
-| museum_name | string | Yes | Official museum name. |
-| website | string (URL) | Yes | Museum website URL. |
-| museum_type | string | Yes | Human-friendly classification string. |
-| street_address | string | Yes | Primary street address. |
-| postal_code | string | Yes | ZIP/postal code. |
-| alternate_names | string[] \| null | No | Common abbreviations or prior names. |
-| status | enum \| null | No | `active`, `closed`, `seasonal`, `unknown`. |
-| last_updated | date \| null | No | Record last update date (YYYY-MM-DD). |
-| address_line2 | string \| null | No | Secondary address line (suite/building/etc). |
-| latitude | number \| null | No | Latitude coordinate. |
-| longitude | number \| null | No | Longitude coordinate. |
-| place_id | string \| null | No | Google Places ID or equivalent. |
-| address_source | enum \| null | No | `official_website`, `google_places`, `wikipedia`, `manual`, `unknown`. |
-| address_last_verified | date \| null | No | Last address verification date. |
-| primary_domain | enum \| null | No | `Art`, `History`, `Science`, `Culture`, `Specialty`, `Mixed`. |
-| topics | string[] \| null | No | Topic tags for discovery (themes/periods/communities). |
-| audience_focus | enum \| null | No | `General`, `Family`, `Academic`, `Children`, `Specialist`. |
-| open_hours_url | string (URL) \| null | No | Official hours/admission URL. |
-| tickets_url | string (URL) \| null | No | Tickets/booking URL. |
-| reservation_required | boolean \| null | No | Reservation requirement flag. |
-| accessibility_url | string (URL) \| null | No | Accessibility information URL. |
-| reputation | enum \| null | No | `Local`, `Regional`, `National`, `International`. |
-| collection_tier | enum \| null | No | `Small`, `Moderate`, `Strong`, `Flagship`. |
-| time_needed | enum \| null | No | `Quick stop`, `Half day`, `Full day`. |
-| estimated_visit_minutes | integer \| null | No | Estimated visit duration in minutes. |
-| nearby_museum_count | integer \| null | No | Other museums in the same city (computed). |
-| best_season | enum \| null | No | `Year-round`, `Spring`, `Summer`, `Fall`, `Winter`. |
-| neighborhood | string \| null | No | Neighborhood/district within the city. |
-| city_region | string \| null | No | Multi-city region grouping label. |
-| timezone | string \| null | No | IANA timezone (e.g., `America/Anchorage`). |
-| visit_priority_notes | string \| null | No | Travel-specific notes separate from collection notes. |
-| parking_notes | string \| null | No | Parking information. |
-| public_transit_notes | string \| null | No | Public transit information. |
-| data_sources | string[] \| null | No | Source tags or URLs supporting this record. |
-| confidence | integer (1–5) \| null | No | Confidence in record accuracy. |
-| row_notes_internal | string \| null | No | Internal maintenance notes (not user-facing). |
-| created_at | date \| null | No | Record creation date. |
-| updated_at | date \| null | No | Record last update date. |
-| impressionist_strength | integer (0–5) \| null | No | Impressionist strength score (art museums only). |
-| modern_contemporary_strength | integer (0–5) \| null | No | Modern/contemporary strength score (art museums only). |
-| primary_art | enum \| null | No | `Impressionist`, `Modern/Contemporary`, `Tie`, `None`. |
-| historical_context_score | integer (1–5) \| null | No | Interpretive/curatorial strength score. |
-| priority_score | number \| null | No | Computed priority ranking (lower = better). |
-| scoring_version | string \| null | No | Scoring algorithm version label. |
-| scored_by | enum \| null | No | `assistant`, `manual`, `hybrid`. |
-| score_notes | string \| null | No | Notes about scoring decisions. |
-| score_last_verified | date \| null | No | Last score verification date. |
-| notes | string \| null | No | Public-facing notes and highlights. |
+3) And for museums with `primary_domain == "Art"` (or art-scored records), it SHOULD also include scoring inputs (non-null):
+   - `impressionist_strength`, `modern_contemporary_strength`, `historical_context_score`
+   - and computed fields when present: `priority_score`, `scoring_version`
 
-- **User** (for personalization features): Represents a registered platform user
-  - Identity: User ID, email, display name
-  - Preferences: Favorite art periods, preferred travel styles, saved filter presets
-  - Lists: Saved museums collection, visited museums history, custom notes per museum
-  - Activity: Visit tracking, list creation date, last activity timestamp
+If a museum is schema-valid but does not meet the enrichment core fields, it is considered **placeholder** for progress reporting.
 
-- **Priority Score**: Computed ranking metric for art museums
-  - Algorithm: Weighted formula combining collection strengths, curatorial quality, and reputation
-  - Components: Impressionism weight, Modern weight, Historical context, Reputation, Collection tier
-  - Bonuses: Dual collection bonus (-2), Nearby cluster bonus (-1)
-  - Metadata: Calculation version, calculation date, can be recalculated
-
-- **Filter Criteria**: User-specified search and filtering parameters
-  - Location filters: Country, state, city
-  - Type filters: Museum type, primary domain
-  - Quality filters: Reputation tier, collection tier
-  - Collection filters: Impressionism strength range, Modern strength range, primary art focus
-  - Practical filters: Time needed, best season
-  - Score filters: Priority score range (min/max)
-  - Text search: Museum name (partial match)
+---
 
 ## Success Criteria *(mandatory)*
 
-### Measurable Outcomes
+- **SC-001**: The GitHub Pages site loads and renders a museum list without any backend services.
+- **SC-002**: Searching and applying filters remains responsive for the full dataset (target: interactive filter update < 200ms after initial load on a typical laptop).
+- **SC-003**: The Progress view displays FULL vs placeholder counts that match the dataset-derived computation.
+- **SC-004**: A museum detail page loads from `data/states/{STATE}.json` and displays a complete field set with graceful handling of missing optional fields.
 
-- **SC-001**: Users can discover relevant museums matching their interests within 30 seconds of initial search (measured by time to first result set display)
-- **SC-002**: System returns filtered museum results in under 1 second for typical queries against the Walker reciprocal museum dataset
-- **SC-003**: 90% of users successfully find at least 3 relevant museums for their trip planning on first search attempt (measured by session analytics)
-- **SC-004**: Priority scoring algorithm ranks flagship institutions (Art Institute of Chicago, MoMA, Getty Center) in top 10 results when filtered for their specializations
-- **SC-005**: System supports 1,000 concurrent users performing searches and browsing without performance degradation
-- **SC-006**: Museum detail pages load with complete information (all available metadata fields) within 2 seconds
-- **SC-007**: Users can apply multiple filter combinations (3+ simultaneous filters) and receive accurate results
-- **SC-008**: Data validation prevents invalid museum records from entering the dataset (100% schema compliance)
-- **SC-009**: Priority score calculations are deterministic and reproducible (same input data produces identical scores across multiple calculations)
-- **SC-010**: System maintains 99.9% uptime for read operations (museum browsing and search)
-- **SC-011**: 80% of users report that priority rankings align with their expectations based on museum reputation and collection quality (user satisfaction survey)
-- **SC-012**: Users can plan a multi-museum itinerary for a city in under 5 minutes (measured from search to finalized list of 3-5 museums)
-- **SC-013**: System correctly identifies and displays nearby museum clusters (3+ museums in same city) with accurate counts
-- **SC-014**: Data provenance information (sources, confidence, verification dates) is visible for all museum records, enabling trust and transparency
-- **SC-015**: Administrative data updates (new museums, updated collection scores) are reflected in search results within 1 minute of commit
+---
 
 ## Scope and Boundaries *(mandatory)*
 
-### In Scope
+### In Scope (Phase 1)
 
-- Museum database management (Walker Art Reciprocal Program roster; includes US + international)
-- Search and filtering interface with multi-criteria support
-- AI-powered conversational interface using OpenAI (ChatGPT-class models) for natural language museum discovery
-- Priority scoring algorithm implementation and automated calculation
-- Museum detail pages with comprehensive metadata display
-- Geographic clustering and nearby museum identification
-- User account management and personal list features (with basic preference-based filtering)
-- Data validation and schema enforcement
-- Administrative interface for data CRUD operations
-- Export functionality for itinerary planning
-- Responsive design for desktop and mobile browsers
+- Data gathering workflow (validate roster, curate state files, rebuild master index)
+- Static GitHub Pages site for browsing/search/filter + museum detail drill-down
+- Progress/completeness reporting (FULL vs placeholder)
 
-### Out of Scope
+### Out of Scope (Phase 1)
 
-- Real-time museum hours and admission pricing (link to official websites instead)
-- Ticket purchasing or reservation systems (third-party integration only)
-- Turn-by-turn directions or mapping features (leverage external mapping services)
-- Social features like reviews, ratings, or community forums (focus on curated data quality)
-- Multi-language support in initial release (English only, expandable later)
-- Offline mobile app functionality (web-based platform)
-- Museum exhibit calendars or special events (too dynamic, link to official sources)
-- ML-based personalized recommendations (future enhancement - MVP will use basic preference-based filtering as defined in FR-031 through FR-034)
+- FastAPI/SQLite backend and any `/api/v1/*` implementation
+- Authentication, favorites/visited, trips/itinerary planning
+- Admin CRUD UI
+- Any OpenAI/LLM integration
+
+---
 
 ## Dependencies *(mandatory)*
 
-### External Dependencies
+### External Dependencies (Phase 1)
 
-- OpenAI API (ChatGPT-class models) for conversational AI interface
-- Museum official websites (for data verification and hyperlinks)
-- Geographic data sources (for coordinates, timezone, address validation)
-- Authentication service for user accounts (JWT bearer tokens; OAuth2-style)
-
-### Internal Dependencies
-
-- JSON Schema validation library (for data integrity enforcement)
-- Database or data storage layer (for museum dataset and user data)
-- Priority score calculation engine (implements weighted formula)
+- GitHub Pages (static hosting)
 
 ### Data Dependencies
 
-- Existing museum dataset in Documentation/DataSetDesign.md format
-- Validated JSON files in data/states/ directory (AL.json, AK.json, CA.json as examples)
-- JSON schema definition in data/schema/museum.schema.json
+- `data/index/all-museums.json` (master list for browsing/search)
+- `data/states/{STATE}.json` (canonical per-state curated museum records)
+- `data/schema/museum.schema.json` (validation rules)
+
+---
 
 ## Assumptions *(mandatory)*
 
-- Museum data is primarily sourced from official websites, academic references, and institutional publications with manual verification
-- Priority scoring algorithm is fixed and versioned (changes require documentation update and recalculation)
-- Users have modern web browsers with JavaScript enabled (Chrome, Firefox, Safari, Edge - last 2 versions)
-- Museum collection strengths remain relatively stable (changes tracked with data provenance timestamps)
-- U.S. museums are the primary focus with international expansion as a future phase
-- Visual art museums (fine art, modern/contemporary, encyclopedic) are the primary target for priority scoring
-- History and Science museums are included in the database but not scored with the art-focused algorithm
-- Users primarily access the platform from desktop or tablet devices during trip planning (responsive mobile support included but not primary use case)
-- Data validation scripts (validate-json.py, validate-json.ps1) are run before committing dataset changes
-- Priority scores are recalculated periodically or when museum data changes materially
-- User authentication is required only for personal list features, not for browse/search functionality
-- Average session duration is 10-20 minutes (sufficient for planning 1-3 museum visits)
-- Dataset growth rate is gradual (50-100 new museums per quarter)
-- Data quality is maintained through manual curation and spot-check validation
+- Users have modern browsers with JavaScript enabled.
+- Large JSON fetch + in-browser filtering is acceptable at hobby scale.
+- The `museum_id` naming convention can be used to determine the state file for drill-down (or a deterministic mapping is introduced).
+
+---
+
+## Non-Functional Requirements *(include if applicable)*
+
+### Performance
+
+- The app MUST show a loading state during initial JSON fetch.
+- Filter interactions SHOULD be responsive after initial load; avoid re-fetching large JSON assets on every interaction.
+
+### Reliability
+
+- Missing fields MUST render as “Not available”.
+- Missing state file or missing museum in state file MUST not crash the app.
+
+### Maintainability
+
+- Phase 1 UI MUST treat JSON files as source-of-truth artifacts; no hidden/manual progress numbers.
 
 ## Non-Functional Requirements *(include if applicable)*
 

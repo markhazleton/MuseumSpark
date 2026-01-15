@@ -1,100 +1,50 @@
-# Requirements Validation Checklist
+# Requirements Validation Checklist (Phase 1)
+
+This checklist validates the Phase 1 scope defined in [specs/001-museum-trip-planner/spec.md](specs/001-museum-trip-planner/spec.md).
 
 ## Specification Quality Assessment
 
 ### Completeness
 - [x] User stories defined with clear acceptance criteria
-- [x] Functional requirements enumerated (FR-001 to FR-040)
-- [x] Non-functional requirements specified
-- [x] Success criteria defined with measurable metrics
-- [x] Key entities identified
+- [x] Phase 1 functional requirements enumerated (static browsing + progress)
+- [x] Non-functional requirements included where relevant (performance/reliability)
+- [x] Success criteria defined and measurable
 - [x] Dependencies documented
 - [x] Assumptions listed
-- [x] Scope boundaries defined (in scope and out of scope)
+- [x] Scope boundaries defined (explicit Phase 1 vs Phase 2+)
 
 ### Clarity
-- [x] Requirements written in clear, unambiguous language
-- [x] Technical terms defined or referenced in data model
-- [x] User stories follow standard format (As a... I want... So that...)
-- [x] Acceptance criteria are testable
-- [x] All clarification items resolved with user input
+- [x] Requirements are written in Phase 1 terms (static site, no backend)
+- [x] Acceptance scenarios are testable in a browser
+- [x] FULL vs placeholder definition is explicit and deterministic
 
 ### Consistency
-- [x] Requirements align with constitution principles (data-first, schema validation)
-- [x] Field names match data model (museum_name, state_province, etc.)
-- [x] Priority scoring algorithm referenced correctly
-- [x] API design references match Documentation/MuseumAPI.md
-- [x] No conflicting requirements identified
+- [x] Requirements align with data-first workflow and schema validation
+- [x] File paths referenced match the repo structure (`data/index/all-museums.json`, `data/states/*.json`)
+- [x] No Phase 2+ features accidentally included as Phase 1 MUSTs
 
 ### Traceability
-- [x] Each functional requirement has unique ID (FR-001, FR-002, etc.)
-- [x] Requirements map to user stories
-- [x] Success criteria link to functional requirements
-- [x] Data model entities traced to requirements
+- [x] Each Phase 1 functional requirement has a unique ID (FR-001..)
+- [x] User stories map to requirements (browse/search, progress, drill-down)
+- [x] Success criteria map to Phase 1 outcomes
 
 ### Feasibility
-- [x] Requirements achievable with current data structure
-- [x] API design supports all functional requirements
-- [x] Performance targets realistic (SC-004: 95% < 500ms response time)
-- [x] Scalability requirements aligned with data volume (Walker Art Reciprocal Program museum roster)
+- [x] Phase 1 is feasible with repo-hosted JSON + static hosting (GitHub Pages)
+- [x] Drill-down approach is deterministic (state file derivation via `museum_id` or mapping)
 
 ### Testability
-- [x] Success criteria include measurable metrics
-- [x] Acceptance scenarios provide test cases
-- [x] Validation rules specified (schema validation, scoring algorithm)
-- [x] Error handling requirements defined (FR-019, FR-020)
+- [x] Search/filter behavior is directly verifiable
+- [x] Progress counts are verifiable by recomputing from JSON
+- [x] Error states exist for missing data/state files
 
 ## Clarification Items
 
-### Item 1: OpenAI Integration Priority
-**Location**: In Scope section
-**Question**: "OpenAI integration mentioned in PDFs - is this P1, P2, or future phase?"
-**Impact**: Affects MVP scope, API design, and implementation timeline
+### Item 1: API / Interactive Features in Phase 1
+**Question**: “Should Phase 1 include API, auth, personalization, trips, or AI?”
 **Status**: ✅ RESOLVED
-**User Decision**: P1 - MVP Launch (Include OpenAI conversational interface as a core feature)
-**Implementation**: Added FR-041 through FR-048 for conversational AI requirements, added OpenAI API dependency
-
-### Item 2: Personalized Recommendations Scope
-**Location**: Out of Scope section
-**Question**: "Is personalized recommendations referring to basic filtering/search or ML-based recommendations?"
-**Impact**: Affects feature complexity, data requirements, and architecture
-**Status**: ✅ RESOLVED
-**User Decision**: Basic Filtering (User selects preferences, system filters/sorts accordingly - no ML required)
-**Implementation**: ML-based recommendations moved to Out of Scope as future enhancement, basic preference filtering already covered in FR-031 through FR-034
+**Decision**: No. Phase 1 is constrained to (1) data gathering and (2) a read-only static browsing site.
 
 ## Overall Assessment
 
 **Status**: ✅ COMPLETE - READY FOR PLANNING
-**Quality Score**: 10/10 (all clarifications resolved)
-**Recommendation**: Proceed to /speckit.plan workflow
-
-### Strengths
-- Comprehensive requirements coverage (48 functional requirements including OpenAI integration)
-- Clear traceability with unique IDs (FR-001 through FR-048)
-- Aligned with project constitution and data model
-- Realistic success criteria with measurable metrics (SC-001 through SC-015)
-- Well-defined scope boundaries with OpenAI as core P1 feature
-- All ambiguities resolved through user clarification
-
-### OpenAI Integration Details
-- Added 8 functional requirements (FR-041 through FR-048) covering:
-  - Natural language query understanding
-  - Location and art period terminology recognition
-  - Context-aware explanations
-  - Priority score integration
-  - Conversation history management
-  - Ambiguity handling with clarifying questions
-- OpenAI API added to external dependencies
-- Conversational interface listed as in-scope P1 feature
-
-### Personalization Approach
-- Basic preference-based filtering (FR-031 through FR-034)
-- ML-based recommendations explicitly out of scope for MVP
-- User can save preferences, museums, and track visits
-- System filters/sorts based on user selections
-
-## Next Steps
-1. ✅ Clarification questions presented and answered
-2. ✅ Specification updated with user decisions
-3. ✅ Validation checklist updated
-4. ➡️ Ready to proceed with /speckit.plan workflow
+**Recommendation**: Produce an implementation plan for the static GitHub Pages app and the progress/completeness computation.

@@ -2,6 +2,44 @@
 
 This directory contains scripts for validating and managing the MuseumSpark museum dataset.
 
+## Open-data-first enrichment (Phase 1)
+
+These scripts help you fill missing fields using free/open sources first, then generate a deterministic gap report.
+
+```bash
+# 1) Enrich placeholder records in a state file (conservative fill-only)
+python scripts/enrich-open-data.py --state CA --only-placeholders --limit 25
+
+# (Optional) Also scrape the museum website to extract structured links/fields
+python scripts/enrich-open-data.py --state CA --only-placeholders --limit 25 --scrape-website
+
+# (Optional) Rebuild derived artifacts after enrichment
+python scripts/enrich-open-data.py --state CA --only-placeholders --limit 25 --rebuild-index --rebuild-reports
+
+# 2) Generate a missing-field report from the combined index
+python scripts/build-missing-report.py
+
+# 3) Generate a small progress dashboard artifact for the static site UI
+python scripts/build-progress.py
+```
+
+### One-command Phase 1 pipeline
+
+If you want the correct Phase 1 sequence (optional enrich → validate → rebuild index → rebuild reports) in a single command:
+
+```bash
+# Enrich a state then rebuild derived artifacts
+python scripts/run-phase1-pipeline.py --state CA --only-placeholders --limit 25
+
+# Rebuild derived artifacts only (no enrichment)
+python scripts/run-phase1-pipeline.py --skip-enrich
+```
+
+Notes:
+- `enrich-open-data.py` writes cached HTTP responses under `data/cache/` (ignored by git).
+- Run `python build-index.py` after enrichment if you want `data/index/all-museums.json` refreshed.
+- Use `--dry-run` first if you want to preview changes without writing.
+
 MuseumSpark’s primary museum universe is the **Walker Art Reciprocal Program** roster, extracted into `data/index/walker-reciprocal.csv`.
 
 ## Scripts Overview

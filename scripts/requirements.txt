@@ -8,3 +8,6 @@ pdfplumber>=0.11.0
 
 # HTML parsing (used by build-walker-reciprocal-csv.py)
 beautifulsoup4>=4.12.3
+
+# HTML parsing for conservative official-site scraping (used by enrich-open-data.py)
+# (BeautifulSoup uses Python's built-in html.parser by default; no extra parser required.)
