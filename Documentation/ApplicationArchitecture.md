@@ -3,6 +3,26 @@
 **Last updated:** 2026-01-15  
 **Status:** Living document (derived from the two architecture PDFs; adapted into a single, implementable reference).
 
+## Phase 1 Implementation Status
+
+**Current Phase**: Phase 1 — Static Dataset Browser (GitHub Pages)  
+**Implementation Status**: ~80% complete  
+**See**: [specs/001-museum-trip-planner/implementation-status.md](../specs/001-museum-trip-planner/implementation-status.md)
+
+**What's Implemented**:
+- ✅ React + Vite static site for browsing museums
+- ✅ Browse/search/filter functionality
+- ✅ Museum detail pages with state file drill-down
+- ✅ Progress dashboard (FULL vs placeholder tracking)
+- ✅ Data validation pipeline (JSON Schema)
+- ✅ Data enrichment scripts (open data sources)
+- ⚠️ GitHub Pages deployment (not yet configured)
+
+**What's Next**:
+- GitHub Pages deployment workflow
+- Dataset enrichment (currently 0.6% FULL)
+- Phase 2 planning (FastAPI backend, authentication, trips)
+
 ## Sources
 
 This document consolidates and de-duplicates content from:
@@ -38,14 +58,16 @@ Out-of-scope (for the initial architecture):
 
 ## 2. High-Level Architecture
 
-At a high level:
-
+**Phase 1 (Current)**: Static site only
 - **Frontend:** React SPA (Vite) + Tailwind CSS
+- **Data:** Walker Art Reciprocal museum dataset stored as JSON
+- **Hosting:** GitHub Pages (static hosting)
+
+**Phase 2+ (Future)**: Full-stack application
 - **Backend:** FastAPI (Python) served via Uvicorn
 - **AI integration:** PydanticAI agents calling the OpenAI API
-- **Data:** Walker Art Reciprocal museum dataset stored as JSON (authoritative) with a derived search/index
-- **Database:** SQLite (single-file DB) for user accounts + personalization (+ optional trips)
-- **Hosting:** Single Azure Windows Server VM (self-hosted)
+- **Database:** SQLite (single-file DB) for user accounts + personalization
+- **Hosting:** Single Azure Windows Server VM (self-hosted) or similar
 
 ### 2.1 System Context
 
@@ -89,6 +111,13 @@ Notes:
 
 ### 3.1 Responsibilities
 
+**Phase 1 (Implemented)**:
+- Browse/search/filter museums from static JSON
+- Museum detail pages with state file drill-down
+- Progress dashboard (FULL vs placeholder tracking)
+- Fully static, client-side filtering and pagination
+
+**Phase 2+ (Future)**:
 - Authentication UI (login/register)
 - Trip management flows (create trip, edit trip, view itinerary)
 - Calls backend endpoints for:
@@ -219,7 +248,31 @@ This architecture document does not attempt to lock the API contract, but it ass
 
 ---
 
-## 7. Deployment Architecture (Azure Windows Server VM)
+## 7. Deployment Architecture
+
+### 7.0 Phase 1 Deployment (GitHub Pages)
+
+**Current Status**: Not yet configured
+
+**Target**:
+- Host static site on GitHub Pages
+- Serve from repository or custom domain
+- Automatic deployment via GitHub Actions on push to main
+
+**Configuration**:
+1. Build site: `npm run build` (outputs to `site/dist/`)
+2. Deploy `dist/` folder to GitHub Pages via Actions
+3. Set `base` in `vite.config.ts` for repo URL path
+4. Data synced from `data/` to `site/public/data/` before build
+
+**Workflow** (`.github/workflows/deploy.yml`):
+- Trigger: Push to `main` branch
+- Steps: Install deps → Sync data → Build → Deploy to `gh-pages`
+- Serve: `https://<username>.github.io/<repo>/`
+
+---
+
+### 7.1 Phase 2+ Deployment (Azure Windows Server VM)
 
 ### 7.1 Deployment Goals
 
