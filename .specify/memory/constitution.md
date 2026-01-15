@@ -49,7 +49,7 @@ experience. Schema enforcement is the primary quality gate.
 All features MUST follow the Speckit workflow: Specify → Clarify → Plan →
 Tasks → Implement → Analyze. No code implementation begins without an approved
 specification in `.specify/specs/`. Specifications MUST reference the data model
-in `Documentation/DataSetDesign.md` and API design in `Documentation/MusuemAPI.md`.
+in `Documentation/DataSetDesign.md` and API design in `Documentation/MuseumAPI.md`.
 
 **Rationale**: MuseumSpark is a complex domain requiring careful design.
 Specification-first ensures stakeholder alignment and reduces rework.

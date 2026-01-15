@@ -225,5 +225,5 @@ chmod +x scripts/build-index.py
 ## Additional Resources
 
 - **Data Model**: See `Documentation/DataSetDesign.md` for complete data model specification
-- **API Specification**: See `Documentation/MusuemAPI.md` for REST API design
+- **API Specification**: See `Documentation/MuseumAPI.md` for REST API design
 - **Data README**: See `data/README.md` for field definitions and data entry guidelines

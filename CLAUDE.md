@@ -64,12 +64,12 @@ This ensures high-value institutions rank highest while revealing hidden gems wi
 
 ### API Design
 
-RESTful API specification is defined in `Documentation/MusuemAPI.md` with:
+RESTful API specification is defined in `Documentation/MuseumAPI.md` with:
 
 - Base resource: `/museums`
 - Full CRUD operations (GET, POST, PUT, PATCH, DELETE)
 - Query filtering by location, type, reputation, collection tier, and priority score
-- OAuth 2.0 authentication with role-based access (admin/editor/viewer)
+- JWT bearer token authentication (OAuth2-style) with role-based access (admin/editor/viewer)
 - JSON format with pagination support
 
 ## Key Design Decisions
@@ -83,8 +83,9 @@ RESTful API specification is defined in `Documentation/MusuemAPI.md` with:
 ## Documentation
 
 - `Documentation/DataSetDesign.md` - Complete dataset structure, scoring methodology, and field definitions
-- `Documentation/MusuemAPI.md` - Full RESTful API specification with endpoints and data models
-- `Documentation/MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf` - Original project concept
+- `Documentation/MuseumAPI.md` - Canonical REST API specification (dataset + personalization + admin)
+- `Documentation/MusuemAPI.md` - Deprecated stub kept for backwards compatibility
+- `Documentation/MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf` - Original project concept (historical source; older naming)
 - `Documentation/MuseumSpark_ Deployment and Architecture Plan.pdf` - Deployment architecture
 
 ## Technology Stack
@@ -93,9 +94,9 @@ The technology stack has not yet been implemented. When implementing, consider:
 
 - Frontend: React-based trip planner interface
 - Backend: RESTful API service
-- AI Integration: ChatGPT-powered recommendations
+- AI Integration: OpenAI API integration (ChatGPT-class models) for conversational discovery
 - Deployment: Azure cloud infrastructure
-- Authentication: OAuth 2.0
+- Authentication: JWT bearer tokens (OAuth2-style)
 
 ## Getting Started with Development
 
@@ -103,6 +104,6 @@ Since this is a greenfield project:
 
 1. Use Speckit workflow to create detailed specifications before coding
 2. Reference the data model in `Documentation/DataSetDesign.md` for entity design
-3. Follow the API schema in `Documentation/MusuemAPI.md` for endpoint implementation
+3. Follow the API schema in `Documentation/MuseumAPI.md` for endpoint implementation
 4. Ensure the priority scoring algorithm is implemented exactly as specified
 5. Plan for both U.S. and international museum data from the start
