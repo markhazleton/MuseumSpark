@@ -1,25 +1,41 @@
-# Feature Specification: MuseumSpark Phase 1 — Static Dataset Browser (GitHub Pages)
+# Feature Specification: Museum Travel Prioritization System — Phase 1
 
 **Feature Branch**: `001-museum-trip-planner` (Phase 1 scope update)
 **Created**: 2026-01-15
 **Last updated**: 2026-01-15
 **Status**: Approved (Phase 1)
-**Input**: Update scope to a first release that is a read-only static web application on GitHub Pages.
+**Owner**: Mark Hazleton
+**Master Requirements Document (MRD)**: Aligned with MRD v1.0 (2026-01-15)
+**Input**: Build dataset and static validation site per MRD requirements.
 
 ## 0. Phase Definition (Non-negotiable)
 
-### Phase 1 (this spec / Priority One)
+### Objective (from MRD)
 
-1) **Data gathering and validation** in the repo (`data/` + `scripts/`).
-2) A **lightweight, read-only static web app** hosted on **GitHub Pages** that:
-   - browses/searches/filters the master index `data/index/all-museums.json`
-   - drills down to a museum detail view using `data/states/{STATE}.json` records
-   - shows progress/completeness status (FULL vs placeholder) across the dataset.
+Build a structured, sortable, and scalable dataset of museums across North America that enables informed travel planning based on personal interests, particularly in Impressionist and Modern/Contemporary art, with strong historical framing. The system must support ranking, filtering, and itinerary planning via a Priority Score.
 
-### Phase 2+ (explicitly out of scope for this spec)
+### Phase 1 Scope (This Spec)
 
-- FastAPI backend, SQLite, authentication, personalization, trips/itineraries, admin CRUD, AI/OpenAI integration.
-- These will be specified in subsequent specs.
+**Track 1: Data Curation (MRD Phases 1-3)**
+1. **MRD Phase 1 — Master Dataset Backbone**: Normalize and populate all structural fields for all museums (Country, State, City, Museum Name, Museum Type, City Tier, Reputation, Collection, Time Needed, Nearby Count)
+2. **MRD Phase 2 — Scoring (Art Museums Only)**: Apply expert scoring to fine art, encyclopedic, and university art museums
+3. **MRD Phase 3 — Regional Rollout**: Illinois/Midwest → Northeast → California → Remaining U.S. → Canada/Mexico/Bermuda
+
+**Track 2: Static Validation Website**
+A **lightweight, read-only static web app** hosted on **GitHub Pages** that:
+- Browses/searches/filters the master index `data/index/all-museums.json`
+- Drills down to museum detail view using `data/states/{STATE}.json` records
+- Shows progress/completeness status (FULL vs placeholder) across the dataset
+- **PURPOSE**: Validation and review mechanism for stakeholder to verify MRD compliance
+
+### Out of Scope (Phase 1)
+
+- Full MuseumSpark application (trips, itineraries, personalization)
+- FastAPI backend, SQLite, authentication
+- Admin CRUD UI
+- AI/OpenAI integration beyond data enrichment
+
+**Note**: The full MuseumSpark application is NOT part of this initial specification. The static site serves as a data validation tool only.
 
 ---
 
@@ -85,11 +101,12 @@ A user wants to click a museum in the master list and view a detail page that re
 - **FR-003**: The app MUST load and browse museums from `data/index/all-museums.json`.
 - **FR-004**: The app MUST support robust search and filtering against the master list, including at minimum:
   - text search over `museum_name` (and `alternate_names` when present)
-  - location filters: `country`, `state_province`, `city`
+  - location filters: `country`, `state_province`, `city`, `city_tier` (1-3)
   - classification filters: `primary_domain`, `museum_type`, `status`
-  - quality filters: `reputation`, `collection_tier`
-  - travel filters: `time_needed`
-  - art/scoring filters: `min_impressionist_strength`, `min_modern_contemporary_strength`, `primary_art`, and `priority_score` range
+  - quality filters: `reputation` (numeric 0-3), `collection_tier` (numeric 0-3)
+  - travel filters: `time_needed`, `nearby_museum_count` (range)
+  - art/scoring filters: `min_impressionist_strength`, `min_modern_contemporary_strength`, `primary_art`, `priority_score` range, `is_scored` (boolean)
+  - historical context filter: `min_historical_context_score`
 - **FR-005**: The app MUST support sorting by at least: `priority_score`, `museum_name`, `reputation`, `collection_tier`.
 - **FR-006**: The app MUST support pagination/virtualization to keep the UI responsive for large result sets.
 - **FR-007**: Museum detail pages MUST be addressable by a stable route using `museum_id`.
@@ -105,27 +122,55 @@ A user wants to click a museum in the master list and view a detail page that re
   - the museum list UI (badge/indicator)
   - any exported progress summary artifacts (if produced)
 - **FR-011**: The dataset pipeline MUST continue to enforce schema validation using `data/schema/museum.schema.json` (pre-commit and/or CI).
+- **FR-012**: The Priority Score MUST be computed during data build (NOT on-the-fly) using the MRD formula:
+  ```
+  Primary Art Strength = max(impressionist_strength, modern_contemporary_strength)
+  
+  Dual-Strength Bonus = (impressionist_strength ≥ 4 AND modern_contemporary_strength ≥ 4) ? 2 : 0
+  
+  Priority Score = 
+    (6 – Primary Art Strength) × 3
+    + (6 – Historical Context Score) × 2
+    + Reputation Penalty (0-3 numeric)
+    + Collection Penalty (0-3 numeric)
+    – Dual Strength Bonus
+  ```
+- **FR-013**: All new MRD fields (`city_tier`, `nearby_museum_count`, `primary_art`) MUST be populated during data enrichment, prioritizing free/open data sources first, then LLM-assisted enrichment.
+- **FR-014**: `reputation` and `collection_tier` MUST be stored as numeric values (0-3) with enum validation for UI display mapping.
 
-### Definition: FULL record (Phase 1)
+### Definition: FULL record (MRD-aligned)
 
-A museum record is considered **FULL** when:
+A museum record is considered **FULL** when it meets **ALL** MRD-required fields:
 
-1) It satisfies the schema required fields (already required by validation):
-   - `museum_id`, `country`, `state_province`, `city`, `museum_name`, `website`, `museum_type`, `street_address`, `postal_code`
+**1) Schema Required Fields** (structural identity):
+- `museum_id`, `country`, `state_province`, `city`, `museum_name`, `website`, `museum_type`, `street_address`, `postal_code`
 
-2) And it has the Phase 1 enrichment “core” fields populated (non-null / non-empty):
-   - `primary_domain`, `status`
-   - `reputation`, `collection_tier`
-   - `time_needed` OR `estimated_visit_minutes`
-   - `notes`
-   - `data_sources` (at least 1)
-   - `confidence` (1–5)
+**2) MRD Core Fields** (from MRD Section 3):
+- `city_tier` (1-3: Major hub/Medium/Small town)
+- `museum_type` (MRD classification)
+- `reputation` (0-3: International/National/Regional/Local as numeric)
+- `collection_tier` (0-3: Flagship/Strong/Moderate/Small as numeric)
+- `time_needed` (Quick stop/Half day/Full day)
+- `nearby_museum_count` (integer, computed)
+- `status`, `notes`, `data_sources` (at least 1), `confidence` (1–5)
 
-3) And for museums with `primary_domain == "Art"` (or art-scored records), it SHOULD also include scoring inputs (non-null):
-   - `impressionist_strength`, `modern_contemporary_strength`, `historical_context_score`
-   - and computed fields when present: `priority_score`, `scoring_version`
+**3) Art Museum Scoring Fields** (when `primary_domain == "Art"` OR manually flagged as scored):
+- `impressionist_strength` (1-5)
+- `modern_contemporary_strength` (1-5)
+- `primary_art` (derived: "Impressionist" or "Modern/Contemporary")
+- `historical_context_score` (1-5)
+- `priority_score` (computed via MRD formula)
+- `is_scored: true` in master index
 
-If a museum is schema-valid but does not meet the enrichment core fields, it is considered **placeholder** for progress reporting.
+**4) Placeholder Definition**:
+A museum is **placeholder** if it meets schema validation but lacks any of the MRD core fields OR (for art museums) lacks scoring inputs.
+
+**5) Unscored Museums**:
+Non-art museums (history, science, specialty) remain in the dataset with:
+- `priority_score: null`
+- All scoring fields: `null`
+- `is_scored: false` in master index
+- These museums are included for city-level planning but not ranked by Priority Score
 
 ---
 

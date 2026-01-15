@@ -64,6 +64,12 @@
           "description": "City name",
           "minLength": 1
         },
+        "city_tier": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 3,
+          "description": "City classification (MRD: 1=Major hub, 2=Medium city, 3=Small town)"
+        },
         "museum_name": {
           "type": "string",
           "description": "Official museum name",
@@ -174,14 +180,16 @@
           "description": "URL to accessibility information"
         },
         "reputation": {
-          "type": ["string", "null"],
-          "enum": ["Local", "Regional", "National", "International", null],
-          "description": "Cultural significance tier"
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 3,
+          "description": "Cultural significance tier (MRD: 0=International, 1=National, 2=Regional, 3=Local)"
         },
         "collection_tier": {
-          "type": ["string", "null"],
-          "enum": ["Small", "Moderate", "Strong", "Flagship", null],
-          "description": "Collection size and depth"
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 3,
+          "description": "Collection size and depth (MRD: 0=Flagship, 1=Strong, 2=Moderate, 3=Small)"
         },
         "time_needed": {
           "type": ["string", "null"],
@@ -256,20 +264,20 @@
         },
         "impressionist_strength": {
           "type": ["integer", "null"],
-          "minimum": 0,
+          "minimum": 1,
           "maximum": 5,
-          "description": "Impressionist collection strength (0-5, art museums only)"
+          "description": "Impressionist collection strength (MRD: 1=None, 2=Minor, 3=Moderate, 4=Strong, 5=Flagship)"
         },
         "modern_contemporary_strength": {
           "type": ["integer", "null"],
-          "minimum": 0,
+          "minimum": 1,
           "maximum": 5,
-          "description": "Modern/contemporary collection strength (0-5, art museums only)"
+          "description": "Modern/contemporary collection strength (MRD: 1=None, 2=Minor, 3=Moderate, 4=Strong, 5=Flagship)"
         },
         "primary_art": {
           "type": ["string", "null"],
-          "enum": ["Impressionist", "Modern/Contemporary", "Tie", "None", null],
-          "description": "Primary art period focus"
+          "enum": ["Impressionist", "Modern/Contemporary", null],
+          "description": "Primary art period focus (MRD: derived as max of strength scores, stored not computed)"
         },
         "historical_context_score": {
           "type": ["integer", "null"],
@@ -280,6 +288,10 @@
         "priority_score": {
           "type": ["number", "null"],
           "description": "Computed priority ranking (lower = higher priority)"
+        },
+        "is_scored": {
+          "type": ["boolean", "null"],
+          "description": "Whether this museum has been scored (for filtering art vs non-art museums)"
         },
         "scoring_version": {
           "type": ["string", "null"],

@@ -1,13 +1,17 @@
 📘 MuseumSpark Dataset Design
 Walker Art Reciprocal Program — Product Brief & Methodology Specification
 
-Purpose
-This dataset is built to **rank and document every museum in the Walker Art Reciprocal Program**, so members can:
+## Purpose
 
-- discover reciprocal museums while traveling
-- plan efficient multi-museum itineraries
-- compare visit value (time required, reputation/scope, collection strengths)
-- review opportunities unlocked by reciprocal membership (admission access, reciprocal coverage while on trips)
+This dataset is built to **prioritize museum visits based on art collection relevance, historical context, and travel efficiency** per the Master Requirements Document (MRD) v1.0.
+
+The system enables users to:
+
+- Discover reciprocal museums while traveling (Walker Art Reciprocal Program)
+- Plan efficient multi-museum itineraries based on Priority Score ranking
+- Compare visit value (time required, reputation/scope, collection strengths)
+- Filter art museums by Impressionist and Modern/Contemporary strengths
+- Review opportunities unlocked by reciprocal membership (admission access)
 
 Seed source
 The authoritative “seed list” of museums comes from Walker’s reciprocal membership page (https://walkerart.org/support/membership/reciprocal-membership/), extracted into:
@@ -22,12 +26,24 @@ MuseumSpark then enriches each seed row into a complete museum record using:
 - official museum websites and other public sources
 - computed fields (e.g., nearby museum count, derived ranking signals)
 
-Scope
+## Scope (MRD-Aligned)
 
-- Include **all** museums listed in the Walker Art Reciprocal Program (including non‑US entries where present)
-- Normalize and de-duplicate institutions (stable IDs, canonical names, consistent location fields)
-- Populate the full field set defined by `data/schema/museum.schema.json`
-- Compute ranking fields when inputs are available; allow partial data and progressively improve records over time
+### Dataset Scope
+
+- **Geography**: United States (Phase 1), Canada/Bermuda/Mexico (Phase 2)
+- **Source**: User-curated list from Walker Art Reciprocal Program
+- **Inclusion Policy** (MRD Section 2B):
+  - **All museums** are included in the dataset backbone
+  - **Only relevant art museums** (fine art, encyclopedic, university) are scored for prioritization
+  - **Non-art museums** remain in the dataset unscored to support city-level planning
+
+### Data Enrichment Strategy
+
+MuseumSpark enriches each seed row into a complete museum record using:
+
+- **Open data sources** (prioritized, free): Official museum websites, Wikipedia, Google Places, etc.
+- **LLM-assisted normalization**: Structured extraction, classification, and enrichment
+- **Computed fields**: `nearby_museum_count`, `primary_art`, `priority_score`, `city_tier` (derived)
 
 —
 
@@ -57,6 +73,7 @@ Canonical reference: `data/schema/museum.schema.json` defines the authoritative 
 | `country` | string | Country name (dataset values like `USA`). | `USA` |
 | `state_province` | string | Full state/province name. | `Alaska` |
 | `city` | string | City. | `Anchorage` |
+| `city_tier` | integer (1-3) \| null | City classification (MRD: 1=Major hub, 2=Medium city, 3=Small town). | `1` |
 | `street_address` | string | Primary street address. | `625 C Street` |
 | `address_line2` | string \| null | Suite/building/etc. | `null` |
 | `postal_code` | string | Postal/ZIP code. | `99501` |
@@ -108,25 +125,26 @@ Canonical reference: `data/schema/museum.schema.json` defines the authoritative 
 
 | Field Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `reputation` | `Local` \| `Regional` \| `National` \| `International` \| null | Cultural significance tier. | `Regional` |
-| `collection_tier` | `Small` \| `Moderate` \| `Strong` \| `Flagship` \| null | Relative size/depth of collections (where applicable). | `Moderate` |
+| `reputation` | integer (0-3) \| null | Cultural significance tier (MRD: 0=International, 1=National, 2=Regional, 3=Local). | `2` |
+| `collection_tier` | integer (0-3) \| null | Relative size/depth of collections (MRD: 0=Flagship, 1=Strong, 2=Moderate, 3=Small). | `2` |
 
 ### 🔹 Art scoring inputs (art museums only)
 
-These fields are primarily used for visual art museums; non-art museums may have these set to `null`.
+These fields are primarily used for visual art museums; non-art museums have these set to `null`.
 
 | Field Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `impressionist_strength` | integer (0–5) \| null | Impressionist collection strength. | `4` |
-| `modern_contemporary_strength` | integer (0–5) \| null | Modern/contemporary collection strength. | `3` |
-| `primary_art` | `Impressionist` \| `Modern/Contemporary` \| `Tie` \| `None` \| null | Dominant art strength category derived from strengths. | `Modern/Contemporary` |
-| `historical_context_score` | integer (1–5) \| null | Interpretive/curatorial strength. | `5` |
+| `impressionist_strength` | integer (1–5) \| null | Impressionist collection strength (MRD: 1=None, 2=Minor, 3=Moderate, 4=Strong, 5=Flagship). | `4` |
+| `modern_contemporary_strength` | integer (1–5) \| null | Modern/contemporary collection strength (MRD: same scale). | `3` |
+| `primary_art` | `Impressionist` \| `Modern/Contemporary` \| null | Dominant art strength category (MRD: derived as max of strength scores, stored). | `Impressionist` |
+| `historical_context_score` | integer (1–5) \| null | Interpretive/curatorial strength (MRD: 1=Minimal, 3=Inconsistent, 5=Strong narrative). | `5` |
 
 ### 🔹 Computed scoring
 
 | Field Name | Type | Description | Notes |
 | --- | --- | --- | --- |
-| `priority_score` | number \| null | Weighted score used for ranking. | Lower = higher priority |
+| `priority_score` | number \| null | Weighted score used for ranking (MRD formula, computed during data build). | Lower = higher priority |
+| `is_scored` | boolean \| null | Whether this museum has been scored (true for art museums, false/null otherwise). | For filtering |
 | `scoring_version` | string \| null | Version label of the scoring algorithm used. | e.g. `v1.0` |
 | `scored_by` | `assistant` \| `manual` \| `hybrid` \| null | How the score was produced. | `hybrid` |
 | `score_notes` | string \| null | Notes about scoring decisions. |  |
