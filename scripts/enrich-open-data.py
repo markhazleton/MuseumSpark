@@ -615,7 +615,12 @@ def patch_from_nominatim(museum: dict[str, Any], *, min_delay_seconds: float = 1
     if not cache_path.exists():
         time.sleep(min_delay_seconds)
 
-    data = cached_get_json(url, params=params)
+    try:
+        data = cached_get_json(url, params=params)
+    except Exception as e:
+        error_msg = f"Nominatim: network error - {str(e)[:100]}"
+        return PatchResult(patch={}, sources_used=[], notes=[error_msg])
+    
     if not isinstance(data, list) or not data:
         return PatchResult(patch={}, sources_used=[], notes=["Nominatim: no results"]) 
 
@@ -807,31 +812,63 @@ def patch_from_official_website(
                     except Exception:
                         pass
     
-    # Fallback: Try to extract city from visible text if still Unknown
-    if should_fill(museum.get("city")) and should_fill(patch.get("city")):
-        # Look for common address patterns in footer/contact sections
-        page_text = soup.get_text(" ", strip=True)
-        import re
+    # Fallback: Try to extract address and city from visible text
+    page_text = soup.get_text(" ", strip=True)
+    import re
+    
+    # Extract state abbreviation from museum_id (e.g., "usa-ks-..." -> "KS")
+    state_code = None
+    museum_id = museum.get("museum_id", "")
+    if isinstance(museum_id, str):
+        parts = museum_id.split("-")
+        if len(parts) >= 2 and parts[0] == "usa":
+            state_code = parts[1].upper()
+    
+    # Try to extract full address first (e.g., "701 Beach Lane, Manhattan, KS 66506" or "242 S Santa Fe Ave<br>Salina, KS 67401")
+    if should_fill(museum.get("street_address")) and state_code:
+        # Pattern variations for different address formats
+        # Capture full street names including type suffixes (Ave, St, Lane, etc.)
+        # Allow for <br> tags or commas between street and city
+        address_patterns = [
+            # With street type suffix: "Number Street Type<br>City, ST ZIP" or "Number Street Type, City, ST ZIP"
+            rf"(\d+\s+[NSEWnse]?\.?\s*[\w\s\.\-]+?(?:Avenue|Ave|Street|St|Road|Rd|Lane|Ln|Drive|Dr|Boulevard|Blvd|Way|Court|Ct|Circle|Cir)\.?)\s*(?:,|<br>|<br/>)?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_code}\s+(\d{{5}})",
+        ]
         
-        # Pattern: "City, ST ZIP" or "City, State ZIP"
-        state_abbrev = museum.get("state_province") or ""
-        if state_abbrev:
-            # Try to find patterns like "Bentonville, AR 72712" or "Fort Smith, Arkansas"
-            patterns = [
-                rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_abbrev}\s+\d{{5}}",  # "City, AR 12345"
-                rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_abbrev}",  # "City, AR"
-                rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{re.escape(state_abbrev)}",  # Escaped version
-            ]
-            
-            for pattern in patterns:
-                match = re.search(pattern, page_text)
-                if match:
-                    city_candidate = match.group(1).strip()
-                    # Basic validation: city name should be 2+ chars and not common false positives
-                    if len(city_candidate) >= 2 and city_candidate.lower() not in ["the", "and", "for"]:
-                        patch["city"] = city_candidate
-                        notes.append(f"Official site: extracted city '{city_candidate}' from page text")
-                        break
+        for pattern in address_patterns:
+            match = re.search(pattern, page_text, re.IGNORECASE)
+            if match:
+                street = match.group(1).strip().rstrip(',')
+                city = match.group(2).strip()
+                zipcode = match.group(3).strip()
+                
+                # Validate street address (should have number and reasonable length)
+                if len(street) > 3 and len(street) < 100 and any(c.isdigit() for c in street):
+                    patch["street_address"] = street
+                    patch["city"] = city
+                    patch["postal_code"] = zipcode
+                    patch.setdefault("address_source", "official_website")
+                    patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+                    notes.append(f"Official site: extracted full address from page text")
+                    break
+    
+    # If no full address found, try to extract just city
+    if should_fill(museum.get("city")) and should_fill(patch.get("city")) and state_code:
+        # Try to find patterns like "Bentonville, AR 72712" or "Fort Smith, Arkansas"
+        patterns = [
+            rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_code}\s+\d{{5}}",  # "City, AR 12345"
+            rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_code}",  # "City, AR"
+            rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{re.escape(state_code)}",  # Escaped version
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, page_text)
+            if match:
+                city_candidate = match.group(1).strip()
+                # Basic validation: city name should be 2+ chars and not common false positives
+                if len(city_candidate) >= 2 and city_candidate.lower() not in ["the", "and", "for"]:
+                    patch["city"] = city_candidate
+                    notes.append(f"Official site: extracted city '{city_candidate}' from page text")
+                    break
 
     if filled_address:
         patch.setdefault("address_source", "official_website")
@@ -984,6 +1021,72 @@ def enrich_one(
     return museum3, notes
 
 
+def validate_consistency_with_index(state_code: str, museums: list[dict[str, Any]]) -> list[str]:
+    """
+    Validate consistency between state file museums and the all-museums.json index.
+    Returns a list of validation error messages.
+    """
+    errors = []
+    
+    # Load all-museums index if it exists
+    index_path = PROJECT_ROOT / "data" / "index" / "all-museums.json"
+    if not index_path.exists():
+        errors.append(f"all-museums.json not found at {index_path} - run with --rebuild-index to create")
+        return errors
+    
+    try:
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_data = json.load(f)
+    except Exception as e:
+        errors.append(f"Failed to load all-museums.json: {e}")
+        return errors
+    
+    # Build a lookup of museums by museum_id from the index
+    index_museums = {m.get("museum_id"): m for m in index_data.get("museums", [])}
+    
+    # Check for museums in state file
+    state_museum_ids = {m.get("museum_id") for m in museums if m.get("museum_id")}
+    
+    # Validate each museum
+    for museum in museums:
+        museum_id = museum.get("museum_id")
+        if not museum_id:
+            errors.append(f"Museum missing museum_id: {museum.get('museum_name', 'Unknown')}")
+            continue
+        
+        # Check if museum exists in index
+        index_museum = index_museums.get(museum_id)
+        if not index_museum:
+            errors.append(f"Museum {museum_id} in state file but missing from all-museums.json")
+            continue
+        
+        # Validate critical fields match
+        critical_fields = ["museum_name", "state_province", "city", "country"]
+        for field in critical_fields:
+            state_value = museum.get(field)
+            index_value = index_museum.get(field)
+            if state_value != index_value:
+                errors.append(
+                    f"Mismatch in {museum_id}.{field}: "
+                    f"state='{state_value}' vs index='{index_value}'"
+                )
+    
+    # Check for museums in index that should be in this state file
+    for museum_id, index_museum in index_museums.items():
+        if index_museum.get("country") == "USA":
+            # Extract state code from museum_id (e.g., "usa-ks-..." -> "KS")
+            id_parts = museum_id.split("-")
+            if len(id_parts) >= 2 and id_parts[0] == "usa":
+                museum_state_code = id_parts[1].upper()
+                if museum_state_code == state_code.upper() and museum_id not in state_museum_ids:
+                    errors.append(
+                        f"Museum {museum_id} ({index_museum.get('museum_name')}) "
+                        f"in all-museums.json but missing from {state_code}.json"
+                    )
+    
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Enrich museums using open data sources (Pre-MRD Phase)")
     parser.add_argument("--state", help="Two-letter state code (e.g., CA)")
@@ -1103,6 +1206,20 @@ def main() -> int:
     print(f"[OK] Changed: {changed}")
 
     if not args.dry_run:
+        # Validate consistency before writing
+        if changed > 0:
+            print("[INFO] Validating consistency with all-museums index...")
+            validation_errors = validate_consistency_with_index(state_code, out_museums)
+            if validation_errors:
+                print(f"[WARN] Found {len(validation_errors)} consistency issue(s) with all-museums.json:")
+                for error in validation_errors[:5]:  # Show first 5 warnings
+                    print(f"  - {error}")
+                if len(validation_errors) > 5:
+                    print(f"  ... and {len(validation_errors) - 5} more warnings")
+                print("[INFO] Proceeding with write. Run with --rebuild-index to synchronize.")
+            else:
+                print("[OK] Consistency validated - state file matches all-museums.json")
+        
         state_data["museums"] = out_museums
         if changed > 0:
             state_data["last_updated"] = now_utc_iso_z()
