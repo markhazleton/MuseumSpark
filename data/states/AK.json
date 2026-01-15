@@ -1,7 +1,7 @@
 {
   "state": "Alaska",
   "state_code": "AK",
-  "last_updated": "2026-01-15T13:46:00Z",
+  "last_updated": "2026-01-15T20:10:54Z",
   "museums": [
     {
       "museum_id": "usa-ak-anchorage-anchorage-museum",
@@ -18,8 +18,8 @@
       "street_address": "625 C Street",
       "address_line2": null,
       "postal_code": "99501",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 61.2159911,
+      "longitude": -149.8846851,
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
@@ -32,10 +32,10 @@
         "Arctic"
       ],
       "audience_focus": "General",
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.anchoragemuseum.org/visit/",
+      "tickets_url": "https://www.anchoragemuseum.org/visit/hours-tickets/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.anchoragemuseum.org/visit/access/",
       "reputation": 2,
       "collection_tier": 2,
       "time_needed": "Half day",
@@ -49,10 +49,12 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "data_sources": [
-        "official_website"
+        "official_website",
+        "openstreetmap",
+        "https://www.anchoragemuseum.org"
       ],
       "confidence": 4,
-      "row_notes_internal": null,
+      "row_notes_internal": "Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Anchorage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
       "impressionist_strength": 1,
@@ -64,7 +66,8 @@
       "scored_by": null,
       "score_notes": null,
       "score_last_verified": null,
-      "notes": "Excellent Alaska Native art collection, contemporary art, and natural history. Strong interpretive programs."
+      "notes": "Excellent Alaska Native art collection, contemporary art, and natural history. Strong interpretive programs.",
+      "city_tier": 2
     },
     {
       "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
@@ -94,7 +97,7 @@
       "accessibility_url": "http://www.anchoragemuseum.org/visit/access/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -119,7 +122,8 @@
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ak-unknown-palmer-museum-of-history-and-art",
@@ -149,7 +153,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -174,7 +178,8 @@
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ak-unknown-sheldon-museum-and-cultural-center",
@@ -204,7 +209,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -229,7 +234,8 @@
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ak-unknown-the-kodiak-history-museum",
@@ -259,7 +265,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -284,7 +290,8 @@
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ak-unknown-valdez-museum-historical-archive",
@@ -299,8 +306,8 @@
       "street_address": "217 Eagan Dr.",
       "address_line2": null,
       "postal_code": "99686",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 61.1293773,
+      "longitude": -146.3547623,
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
@@ -314,7 +321,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -333,13 +340,15 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.valdezmuseum.org"
+        "http://www.valdezmuseum.org",
+        "openstreetmap"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     }
   ]
 }

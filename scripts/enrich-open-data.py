@@ -481,6 +481,98 @@ def patch_from_wikidata(museum: dict[str, Any], *, compute_mrd_fields: bool = Fa
     return PatchResult(patch={}, sources_used=["wikidata"], notes=notes + ["Wikidata: no applicable fields to fill"]) 
 
 
+def extract_city_from_open_data(museum: dict[str, Any], *, min_delay_seconds: float = 1.0) -> str | None:
+    """Try to extract city from multiple open data sources when city is Unknown.
+    
+    Attempts:
+    1. Wikidata P131 claim (located in administrative territorial entity)
+    2. Nominatim reverse geocoding (if lat/lon available)
+    3. Nominatim forward geocoding from address
+    4. Parse from museum_id slug
+    """
+    current_city = (museum.get("city") or "").strip()
+    if current_city and current_city.lower() != "unknown":
+        return None  # City already known
+    
+    # Strategy 1: Try Wikidata P131 (located in administrative entity)
+    name = museum.get("museum_name") or ""
+    state = museum.get("state_province") or ""
+    if name:
+        try:
+            results = wikidata_search(name=name, city=None)
+            if results:
+                qid = results[0].get("id")
+                if qid:
+                    entity = wikidata_entity(qid)
+                    # P131: located in the administrative territorial entity
+                    location_claim = _first_claim_value(entity, "P131")
+                    if isinstance(location_claim, dict):
+                        city_qid = location_claim.get("id")
+                        if city_qid:
+                            # Get the city name from the entity
+                            city_entity = wikidata_entity(city_qid)
+                            city_label = city_entity.get("labels", {}).get("en", {}).get("value")
+                            if city_label:
+                                return city_label
+        except Exception:
+            pass
+    
+    # Strategy 2: Reverse geocoding if we have coordinates
+    lat = museum.get("latitude")
+    lon = museum.get("longitude")
+    if lat is not None and lon is not None:
+        try:
+            url = "https://nominatim.openstreetmap.org/reverse"
+            params = {"format": "jsonv2", "lat": lat, "lon": lon, "addressdetails": 1}
+            
+            key = cache_key(url, params)
+            cache_path = CACHE_DIR / f"{key}.json"
+            if not cache_path.exists():
+                time.sleep(min_delay_seconds)
+            
+            data = cached_get_json(url, params=params)
+            addr = data.get("address", {})
+            city = addr.get("city") or addr.get("town") or addr.get("village")
+            if city:
+                return city
+        except Exception:
+            pass
+    
+    # Strategy 3: Forward geocoding with just address + state
+    street = museum.get("street_address") or ""
+    if street and street.lower() != "tbd":
+        try:
+            q = ", ".join([p for p in [street, state] if p])
+            url = "https://nominatim.openstreetmap.org/search"
+            params = {"format": "jsonv2", "q": q, "limit": 1, "addressdetails": 1}
+            
+            key = cache_key(url, params)
+            cache_path = CACHE_DIR / f"{key}.json"
+            if not cache_path.exists():
+                time.sleep(min_delay_seconds)
+            
+            data = cached_get_json(url, params=params)
+            if isinstance(data, list) and data:
+                addr = data[0].get("address", {})
+                city = addr.get("city") or addr.get("town") or addr.get("village")
+                if city:
+                    return city
+        except Exception:
+            pass
+    
+    # Strategy 4: Parse from museum_id slug (e.g., usa-ar-bentonville-crystal-bridges)
+    museum_id = museum.get("museum_id") or ""
+    parts = museum_id.split("-")
+    if len(parts) >= 3:
+        # Format: country-state-city-museum-name
+        potential_city = parts[2]
+        # Capitalize and return if it looks reasonable
+        if potential_city and potential_city != "unknown" and len(potential_city) > 2:
+            return potential_city.replace("-", " ").title()
+    
+    return None
+
+
 def patch_from_nominatim(museum: dict[str, Any], *, min_delay_seconds: float = 1.0) -> PatchResult:
     # Nominatim usage policies require a clear User-Agent and reasonable rate.
     # We keep this conservative and cache responses.
@@ -520,6 +612,13 @@ def patch_from_nominatim(museum: dict[str, Any], *, min_delay_seconds: float = 1
     addr = hit.get("address") or {}
     if should_fill(museum.get("postal_code")) and isinstance(addr.get("postcode"), str):
         patch["postal_code"] = addr["postcode"].strip()
+    
+    # Try to extract city from Nominatim response
+    if should_fill(museum.get("city")):
+        city_name = addr.get("city") or addr.get("town") or addr.get("village")
+        if city_name:
+            patch["city"] = city_name.strip()
+            notes.append(f"Nominatim: extracted city '{city_name}'")
 
     if patch:
         return PatchResult(patch=patch, sources_used=["openstreetmap"], notes=notes)
@@ -652,6 +751,7 @@ def patch_from_official_website(
                     filled_address = True
                 if isinstance(locality, str) and should_fill(museum.get("city")):
                     patch["city"] = locality.strip()
+                    notes.append(f"Official site: extracted city '{locality}' from JSON-LD")
                 if isinstance(region, str) and should_fill(museum.get("state_province")):
                     patch["state_province"] = region.strip()
 
@@ -669,6 +769,32 @@ def patch_from_official_website(
                         patch["longitude"] = float(lon)
                     except Exception:
                         pass
+    
+    # Fallback: Try to extract city from visible text if still Unknown
+    if should_fill(museum.get("city")) and should_fill(patch.get("city")):
+        # Look for common address patterns in footer/contact sections
+        page_text = soup.get_text(" ", strip=True)
+        import re
+        
+        # Pattern: "City, ST ZIP" or "City, State ZIP"
+        state_abbrev = museum.get("state_province") or ""
+        if state_abbrev:
+            # Try to find patterns like "Bentonville, AR 72712" or "Fort Smith, Arkansas"
+            patterns = [
+                rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_abbrev}\s+\d{{5}}",  # "City, AR 12345"
+                rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_abbrev}",  # "City, AR"
+                rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{re.escape(state_abbrev)}",  # Escaped version
+            ]
+            
+            for pattern in patterns:
+                match = re.search(pattern, page_text)
+                if match:
+                    city_candidate = match.group(1).strip()
+                    # Basic validation: city name should be 2+ chars and not common false positives
+                    if len(city_candidate) >= 2 and city_candidate.lower() not in ["the", "and", "for"]:
+                        patch["city"] = city_candidate
+                        notes.append(f"Official site: extracted city '{city_candidate}' from page text")
+                        break
 
     if filled_address:
         patch.setdefault("address_source", "official_website")
@@ -769,6 +895,13 @@ def enrich_one(
         museum3 = ensure_data_sources(museum3, osm.sources_used)
     notes.extend(osm.notes)
 
+    # Try to extract city if Unknown (before MRD field computation)
+    if should_fill(museum3.get("city")):
+        extracted_city = extract_city_from_open_data(museum3)
+        if extracted_city:
+            museum3["city"] = extracted_city
+            notes.append(f"City extraction: found '{extracted_city}' from open data")
+    
     # MRD-specific computed fields
     if compute_mrd_fields:
         # city_tier (1-3)
