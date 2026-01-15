@@ -27,104 +27,114 @@ if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
-# Strength to numeric mapping
-STRENGTH_MAP = {
-    "None": 0,
-    "Minor": 1,
-    "Moderate": 2,
-    "Strong": 3,
-    "Flagship": 5
-}
+# MRD Tier 1 cities (Major hubs)
+TIER_1_CITIES = [
+    "New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia",
+    "San Antonio", "San Diego", "Dallas", "San Jose", "Austin", "Jacksonville",
+    "Fort Worth", "Columbus", "Charlotte", "San Francisco", "Indianapolis",
+    "Seattle", "Denver", "Washington", "Boston", "Detroit", "Nashville",
+    "Portland", "Las Vegas", "Memphis", "Louisville", "Baltimore", "Milwaukee",
+    "Albuquerque", "Tucson", "Fresno", "Sacramento", "Kansas City", "Atlanta",
+    "Miami", "Minneapolis", "Cleveland", "New Orleans", "Oakland", "Tampa",
+    "Honolulu", "Omaha", "Wichita", "Arlington"
+]
 
-# Reputation to numeric mapping
-REPUTATION_MAP = {
-    "Local": 1,
-    "Regional": 2,
-    "National": 3,
-    "International": 4
-}
-
-# Collection tier to numeric mapping
-COLLECTION_TIER_MAP = {
-    "Small": 1,
-    "Moderate": 2,
-    "Strong": 3,
-    "Flagship": 4
-}
+# MRD Tier 2 cities (Medium cities - special cultural significance)
+TIER_2_SPECIAL = [
+    "Santa Fe", "Williamsburg", "Annapolis", "Cambridge", "Berkeley",
+    "Ann Arbor", "Asheville", "Savannah", "Charleston"
+]
 
 def calculate_priority_score(museum):
     """
-    Calculate priority score based on the MuseumSpark formula.
+    Calculate priority score using the MRD v1.0 formula (Section 5).
 
-    Formula:
-    Priority Score =
-      (10 - Impressionism Weight × 3)
-      × (10 - Modern/Contemporary Weight × 3)
-      × (5 - Historical Context Score × 2)
-      × (5 - Reputation Score)
-      × (5 - Collection Tier Score)
-      - Dual Collection Bonus (-2 if both Impressionist and Modern scores ≥3)
-      - Nearby Cluster Bonus (-1 if 3+ museums in city)
+    MRD Formula:
+    Primary Art Strength = max(impressionist_strength, modern_contemporary_strength)
+    Dual-Strength Bonus = (impressionist_strength ≥ 4 AND modern_contemporary_strength ≥ 4) ? 2 : 0
+    
+    Priority Score = 
+      (6 – Primary Art Strength) × 3
+      + (6 – Historical Context Score) × 2
+      + Reputation Penalty (0-3)
+      + Collection Penalty (0-3)
+      – Dual Strength Bonus
 
     Lower scores = higher priority
     """
-
-    # Get strength values (supports both integer 0-5 and string enum values)
-    # New field names: impressionist_strength, modern_contemporary_strength (integers)
-    # Legacy field names: impressionism_strength, modern_strength (strings)
-
-    impressionism = museum.get('impressionist_strength')
-    if impressionism is None:
-        # Try legacy field name
-        impressionism = STRENGTH_MAP.get(museum.get('impressionism_strength'), 0)
-    elif isinstance(impressionism, str):
-        # Handle string enum values
-        impressionism = STRENGTH_MAP.get(impressionism, 0)
-    else:
-        # Already an integer
-        impressionism = impressionism or 0
-
+    # Get strength values (MRD 1-5 scale)
+    impressionist = museum.get('impressionist_strength')
     modern = museum.get('modern_contemporary_strength')
-    if modern is None:
-        # Try legacy field name
-        modern = STRENGTH_MAP.get(museum.get('modern_strength'), 0)
-    elif isinstance(modern, str):
-        # Handle string enum values
-        modern = STRENGTH_MAP.get(modern, 0)
-    else:
-        # Already an integer
-        modern = modern or 0
+    historical = museum.get('historical_context_score')
+    reputation = museum.get('reputation')  # Already numeric 0-3
+    collection = museum.get('collection_tier')  # Already numeric 0-3
 
-    # Get historical context score (default to 1 if missing)
-    historical_context = museum.get('historical_context_score', 1)
+    # Require all inputs for scoring
+    if None in [impressionist, modern, historical, reputation, collection]:
+        return None
 
-    # Get reputation score (default to 1 if missing)
-    reputation = REPUTATION_MAP.get(museum.get('reputation'), 1)
-
-    # Get collection tier score (default to 1 if missing)
-    collection_tier = COLLECTION_TIER_MAP.get(museum.get('collection_tier'), 1)
-
-    # Calculate base score
+    # MRD Formula
+    primary_art_strength = max(impressionist, modern)
+    
+    dual_bonus = 2 if (impressionist >= 4 and modern >= 4) else 0
+    
     score = (
-        (10 - impressionism * 3)
-        * (10 - modern * 3)
-        * (5 - historical_context * 2)
-        * (5 - reputation)
-        * (5 - collection_tier)
+        (6 - primary_art_strength) * 3
+        + (6 - historical) * 2
+        + reputation  # 0-3 numeric penalty
+        + collection  # 0-3 numeric penalty
+        - dual_bonus
     )
 
-    # Apply bonuses (subtract from score, making it lower/better)
-
-    # Dual collection bonus: -2 if both Impressionist and Modern scores ≥3
-    if impressionism >= 3 and modern >= 3:
-        score -= 2
-
-    # Nearby cluster bonus: -1 if 3+ museums in city
-    nearby_count = museum.get('nearby_museum_count', 0)
-    if nearby_count >= 3:
-        score -= 1
-
     return round(score, 2)
+
+
+def derive_primary_art(museum):
+    """
+    Derive primary_art from strength scores per MRD Section 4.9.
+    Returns "Impressionist", "Modern/Contemporary", or None.
+    """
+    imp = museum.get('impressionist_strength')
+    mod = museum.get('modern_contemporary_strength')
+    
+    if imp is None and mod is None:
+        return None
+    
+    if imp is None:
+        return "Modern/Contemporary"
+    if mod is None:
+        return "Impressionist"
+    
+    if imp > mod:
+        return "Impressionist"
+    elif mod > imp:
+        return "Modern/Contemporary"
+    else:
+        # Tie: default to Modern/Contemporary
+        return "Modern/Contemporary"
+
+
+def compute_city_tier(city, state):
+    """
+    Compute city_tier per MRD Section 3.6.
+    Returns 1 (Major hub), 2 (Medium city), or 3 (Small town).
+    """
+    if not city or city.strip().upper() in ['UNKNOWN', 'TBD', '']:
+        return None
+    
+    city_normalized = city.strip()
+    
+    # Tier 1: Major hubs
+    if city_normalized in TIER_1_CITIES:
+        return 1
+    
+    # Tier 2: Special cultural significance
+    if city_normalized in TIER_2_SPECIAL:
+        return 2
+    
+    # TODO: Add US Census population lookup for dynamic tier 2/3 classification
+    # For now, default to Tier 3 (Small town)
+    return 3
 
 def calculate_nearby_counts(museums):
     """
@@ -215,31 +225,48 @@ def main():
 
         print(f"[OK] Updated nearby_museum_count for {len(museums)} museums")
 
+    # Compute MRD fields for all museums
+    print("\nComputing MRD fields...")
+    
+    # Compute city_tier and primary_art for all museums
+    for museum in museums:
+        city = museum.get('city', '')
+        state = museum.get('state_province', '')
+        
+        # Compute city_tier
+        if museum.get('city_tier') is None:
+            museum['city_tier'] = compute_city_tier(city, state)
+        
+        # Derive primary_art from strength scores
+        if museum.get('primary_art') is None:
+            museum['primary_art'] = derive_primary_art(museum)
+    
+    print(f"[OK] Computed city_tier and primary_art for all museums")
+
     # Calculate priority scores if requested
     if args.calculate_scores:
         print("\nCalculating priority scores...")
 
-        # Only calculate for museums with required fields
         calculated = 0
         skipped = 0
 
         for museum in museums:
-            # Only calculate for art museums with scoring fields
-            # Check both museum_type (legacy) and primary_domain (new)
-            museum_type = museum.get('museum_type', '')
+            # Determine if this is an art museum eligible for scoring
             primary_domain = museum.get('primary_domain', '')
-
-            # Determine if this is an art museum
-            is_art_museum = (
-                primary_domain == 'Art' or
-                'Art' in museum_type or
-                museum_type in ['Fine Art', 'Art']
-            )
+            
+            is_art_museum = primary_domain == 'Art'
 
             if is_art_museum:
-                museum['priority_score'] = calculate_priority_score(museum)
-                calculated += 1
+                score = calculate_priority_score(museum)
+                museum['priority_score'] = score
+                museum['is_scored'] = (score is not None)
+                
+                if score is not None:
+                    calculated += 1
+                    if museum.get('scoring_version') is None:
+                        museum['scoring_version'] = 'v1.0'
             else:
+                museum['is_scored'] = False
                 skipped += 1
 
         print(f"[OK] Calculated priority scores for {calculated} museums")

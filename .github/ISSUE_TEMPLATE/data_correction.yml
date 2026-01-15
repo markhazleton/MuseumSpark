@@ -1,0 +1,41 @@
+name: 🏛️ Data Correction
+description: Report incorrect or missing museum data
+title: "[Data]: Correction for <Museum Name>"
+labels: ["data-quality", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us maintain the most accurate museum dataset!
+  - type: input
+    id: museum_id
+    attributes:
+      label: Museum Name or ID
+      description: Which museum record has the error?
+      placeholder: The Art Institute of Chicago (IL-CHIC-001)
+    validations:
+      required: true
+  - type: textarea
+    id: incorrect_data
+    attributes:
+      label: Incorrect Data
+      description: What is the current (wrong) value?
+      placeholder: "Opening Hours: 9am - 5pm"
+    validations:
+      required: true
+  - type: textarea
+    id: correct_data
+    attributes:
+      label: Correct Data
+      description: What should the value be?
+      placeholder: "Opening Hours: 10am - 6pm"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source / Verification
+      description: Please provide a URL (official website) verifying this change.
+      placeholder: https://www.artic.edu/visit
+    validations:
+      required: true

@@ -1,0 +1,56 @@
+name: 🐛 Bug Report
+description: Create a report to help us improve MuseumSpark
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Pre-submission Checks
+      options:
+        - label: I have searched existing issues to see if this bug has already been reported.
+          required: true
+        - label: I am running the latest version of the code.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is.
+      placeholder: When I click on the priority score filter...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment Info
+      description: OS version, Browser version, or Python version if applicable.
+      placeholder: Windows 11, Chrome 120 / Python 3.11
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Logs
+      description: If applicable, add screenshots or error logs to help explain your problem.
