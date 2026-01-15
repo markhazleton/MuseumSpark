@@ -1,7 +1,7 @@
 {
   "state": "International",
   "state_code": "ZZ",
-  "last_updated": "2026-01-15T17:22:19Z",
+  "last_updated": "2026-01-15T23:24:32Z",
   "museums": [
     {
       "museum_id": "bermuda-zz-hamilton-bermuda-national-gallery",
@@ -26,12 +26,12 @@
       "topics": null,
       "audience_focus": null,
       "open_hours_url": null,
-      "tickets_url": null,
+      "tickets_url": "https://bng.bm/book-a-tour/",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -48,13 +48,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.bermudanationalgallery.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Hamilton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "bermuda-zz-paget-the-masterworks-museum-of-bermuda-art",
@@ -84,7 +87,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -101,13 +104,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://bermudamasterworks.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Paget; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "brazil-zz-rio-de-janeiro-museu-de-arte-moderna",
@@ -137,7 +143,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -154,43 +160,46 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.museusdorio.com.br/joomla/index.php"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Rio de Janeiro; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.museusdorio.com.br/joomla/index.php",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-unknown-art-gallery-of-alberta",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Alberta",
       "museum_name": "Art Gallery of Alberta",
       "alternate_names": null,
       "website": "https://www.youraga.ca/",
       "status": "unknown",
       "last_updated": "2026-01-15",
-      "street_address": "TBD",
+      "street_address": "2 Sir Winston Churchill Square",
       "address_line2": null,
-      "postal_code": "TBD",
+      "postal_code": "T5J 2C1",
       "latitude": null,
       "longitude": null,
       "place_id": null,
-      "address_source": "unknown",
-      "address_last_verified": null,
+      "address_source": "official_website",
+      "address_last_verified": "2026-01-15",
       "museum_type": "Unknown",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.youraga.ca/visit/aga-event-spaces",
+      "tickets_url": "https://shop.youraga.ca/events",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.youraga.ca/visit/accessibility",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -207,19 +216,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.youraga.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Alberta' from open data; MRD: computed city_tier=3 for Alberta; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-unknown-art-gallery-of-southwestern-manitoba",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Manitoba",
       "museum_name": "Art Gallery of Southwestern Manitoba",
       "alternate_names": null,
       "website": "https://agsm.ca/",
@@ -237,13 +249,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://agsm.ca/contact-visit/",
+      "tickets_url": "https://www.facebook.com/TheAGSM/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://maps.app.goo.gl/vprJLVqA2nJRiALL8",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -260,19 +272,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://agsm.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Manitoba' from open data; MRD: computed city_tier=3 for Manitoba; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-unknown-beaverbrook-art-gallery",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Fredericton",
       "museum_name": "Beaverbrook Art Gallery",
       "alternate_names": null,
       "website": "http://beaverbrookartgallery.org/en",
@@ -290,13 +305,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://beaverbrookartgallery.org/visit/visitor-information/",
+      "tickets_url": "https://beaverbrookartgallery.ticketing.veevartapp.com/tickets/view/calendar",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -313,19 +328,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://beaverbrookartgallery.org/en"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Fredericton' from open data; MRD: computed city_tier=2 for Fredericton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-unknown-confederation-centre-of-the-arts",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Charlottetown",
       "museum_name": "Confederation Centre of the Arts",
       "alternate_names": null,
       "website": "http://www.confederationcentre.com/",
@@ -343,13 +361,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.confederationcentre.com/art-gallery#hoursofoperation",
+      "tickets_url": "https://www.facebook.com/confedcentre",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "http://www.confederationcentre.com/on-stage",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -366,19 +384,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.confederationcentre.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Charlottetown' from open data; MRD: computed city_tier=3 for Charlottetown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-unknown-judith-norman-alix-art-gallery",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Sarnia",
       "museum_name": "Judith & Norman Alix Art Gallery",
       "alternate_names": null,
       "website": "http://jnaag.ca/",
@@ -396,13 +417,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://jnaag.ca/en/visit/hours-and-location.aspx?_mid_=40087",
+      "tickets_url": "https://www.facebook.com/thejnaag",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "http://jnaag.ca/en/accessibility.aspx",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -419,19 +440,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://jnaag.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Sarnia' from open data; MRD: computed city_tier=2 for Sarnia; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-unknown-kamloops-art-gallery",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Kamloops",
       "museum_name": "Kamloops Art Gallery",
       "alternate_names": null,
       "website": "http://www.kag.bc.ca/",
@@ -449,13 +473,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.kag.bc.ca/visit",
+      "tickets_url": "https://www.facebook.com/KamloopsArtGallery",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.canadahelps.org/en/charities/kamloops-art-gallery/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -472,19 +496,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.kag.bc.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kamloops' from open data; MRD: computed city_tier=2 for Kamloops; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-unknown-mackenzie-art-gallery",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Saskatchewan",
       "museum_name": "MacKenzie Art Gallery",
       "alternate_names": null,
       "website": "http://www.mackenzieartgallery.ca/",
@@ -502,13 +529,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://mackenzie.art/visit/plan-your-visit/",
+      "tickets_url": "https://mackenzie.art/visit/tickets/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://canadacouncil.ca/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -525,19 +552,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.mackenzieartgallery.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Saskatchewan' from open data; MRD: computed city_tier=3 for Saskatchewan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-unknown-museum-of-contemporary-art-toronto-canada",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Ontario",
       "museum_name": "Museum of Contemporary Art Toronto Canada",
       "alternate_names": null,
       "website": "http://www.mocca.ca/",
@@ -561,7 +591,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -581,16 +611,17 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Ontario' from open data; MRD: computed city_tier=2 for Ontario; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-unknown-new-brunswick-museum",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Saint John",
       "museum_name": "New Brunswick Museum",
       "alternate_names": null,
       "website": "https://www.nbm-mnb.ca/",
@@ -609,12 +640,12 @@
       "topics": null,
       "audience_focus": null,
       "open_hours_url": null,
-      "tickets_url": null,
+      "tickets_url": "https://www.nbm-mnb.ca/en/2025/07/15/meet-sanfordiacaulis-the-fossil-tree-that-looks-straight-out-of-a-dr-seuss-book/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.nbm-mnb.ca/en/2025/09/24/history-of-photography-canada/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -631,19 +662,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.nbm-mnb.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Saint John' from open data; MRD: computed city_tier=3 for Saint John; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-unknown-textile-museum-of-canada",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Ontario",
       "museum_name": "Textile Museum of Canada",
       "alternate_names": null,
       "website": "http://www.textilemuseum.ca/home",
@@ -661,13 +695,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://textilemuseum.ca/visit/",
+      "tickets_url": "https://www.facebook.com/textilemuseumofcanada",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://textilemuseumcanada.donation.veevartapp.com/donation/view/home/individual-donations-core-impact",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -684,13 +718,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.textilemuseum.ca/home"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Ontario' from open data; MRD: computed city_tier=2 for Ontario; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-unknown-vernon-public-art-gallery",
@@ -714,13 +751,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://vernonpublicartgallery.com/visit",
+      "tickets_url": "https://www.facebook.com/vernonpublicartgallery",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://canadacouncil.ca/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -737,19 +774,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.vernonpublicartgallery.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-unknown-winnipeg-art-gallery",
       "country": "Canada",
       "state_province": "Canada",
-      "city": "Unknown",
+      "city": "Winnipeg",
       "museum_name": "Winnipeg Art Gallery",
       "alternate_names": null,
       "website": "http://wag.ca/",
@@ -767,13 +807,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.wag.ca/visit/",
+      "tickets_url": "https://www.wag.ca/visit/hours-admission/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.wag.ca/visit/accessibility/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -790,13 +830,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://wag.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Winnipeg' from open data; MRD: computed city_tier=2 for Winnipeg; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-a-centre-for-contemporary-art-mercer-union",
@@ -820,13 +863,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.mercerunion.org/visit",
+      "tickets_url": "https://www.facebook.com/people/Mercer-Union-a-centre-for-contemporary-art/100063739292220/",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -843,13 +886,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.mercerunion.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for A Centre for Contemporary Art; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-ab-esker-foundation-calgary",
@@ -873,13 +919,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://eskerfoundation.com/visit/",
+      "tickets_url": "https://eskerfoundation.com/shop/",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -896,13 +942,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://eskerfoundation.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for AB; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-ab-glenbow-museum-calgary",
@@ -932,7 +981,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -952,10 +1001,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for AB; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-ab-hangar-flight-museum-calgary",
@@ -979,13 +1029,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.thehangarmuseum.ca/location-map-and-admission-rates",
+      "tickets_url": "https://www.thehangarmuseum.ca/location-map-and-admission-rates",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://cahf.ca/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1002,13 +1052,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.thehangarmuseum.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for AB; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-bc-art-gallery-of-greater-victoria",
@@ -1032,13 +1085,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
-      "reservation_required": null,
-      "accessibility_url": null,
+      "open_hours_url": "http://aggv.ca/about/visit/",
+      "tickets_url": "http://aggv.ca/about/visit/",
+      "reservation_required": true,
+      "accessibility_url": "http://aggv.ca/accessibility",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1055,13 +1108,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://aggv.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for BC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: reservation_required inferred from visit/ticket page",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-bc-kelowna-art-gallery",
@@ -1091,7 +1147,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1111,10 +1167,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for BC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-bc-robert-bateman-centre-victoria",
@@ -1144,7 +1201,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1161,13 +1218,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://batemancentre.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for BC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-bc-vancouver-art-gallery",
@@ -1182,8 +1242,8 @@
       "street_address": "TBD",
       "address_line2": null,
       "postal_code": "TBD",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 49.2829261,
+      "longitude": -123.1203896,
       "place_id": null,
       "address_source": "unknown",
       "address_last_verified": null,
@@ -1191,13 +1251,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.vanartgallery.bc.ca/visit",
+      "tickets_url": "https://tickets.vanartgallery.bc.ca/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.vanartgallery.bc.ca/access-pass/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1214,13 +1274,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.vanartgallery.bc.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for BC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-halifax-art-gallery-of-nova-scotia",
@@ -1244,13 +1307,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://agns.ca/visit/",
+      "tickets_url": "https://shopagns.ca/products/admissions",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1267,13 +1330,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.artgalleryofnovascotia.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Halifax; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-mb-canadian-museum-for-human-rights-winnipeg",
@@ -1303,7 +1369,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1323,10 +1389,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for MB; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-mb-plug-in-institute-of-contemporary-art-winnipeg",
@@ -1350,13 +1417,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://plugin.org/location/",
+      "tickets_url": "https://plugin.org/category/video/prairie-art-book-fair-2020/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://plugin.org/location/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1373,13 +1440,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://plugin.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for MB; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-nova-scotia-shelburne-s-historic-waterfront-museums-by-the-sea",
@@ -1403,13 +1473,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.shelburnemuseums.com/hours-and-tickets",
+      "tickets_url": "https://www.shelburnemuseums.com/hours-and-tickets",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.shelburnemuseums.com/post/this-small-east-coast-community-is-the-whirligig-capital-of-canada",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1426,13 +1496,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.shelburnemuseums.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Nova Scotia; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-on-aga-kahn-toronto",
@@ -1462,7 +1535,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1479,13 +1552,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.akdn.org/museum"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.akdn.org/museum",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-art-gallery-of-guelph",
@@ -1509,13 +1585,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://artgalleryofguelph.ca/visit/",
+      "tickets_url": "https://www.facebook.com/AGGuelph/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "javascript:void(0);",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1532,13 +1608,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://artgalleryofguelph.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-art-gallery-of-hamilton",
@@ -1562,13 +1641,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
-      "reservation_required": null,
-      "accessibility_url": null,
+      "open_hours_url": "https://www.artgalleryofhamilton.com/plan-your-visit/",
+      "tickets_url": "https://www.facebook.com/artgalleryofhamilton",
+      "reservation_required": true,
+      "accessibility_url": "https://www.artgalleryofhamilton.com/exhibition/kim-adams-bruegel-bosch-bus/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1585,13 +1664,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.artgalleryofhamilton.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: reservation_required inferred from visit/ticket page",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-art-gallery-of-mississauga",
@@ -1621,7 +1703,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1641,10 +1723,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-art-gallery-of-ontario-toronto",
@@ -1674,7 +1757,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1691,13 +1774,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.ago.net"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.ago.net",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-art-gallery-of-sudbury",
@@ -1727,7 +1813,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1744,13 +1830,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://artgalleryofsudbury.myshopify.com"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://artgalleryofsudbury.myshopify.com",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-bata-shoe-museum-toronto",
@@ -1774,13 +1863,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://batashoemuseum.ca/visit-us/",
+      "tickets_url": "https://www.showpass.com/o/the-bata-shoe-museum/",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1797,13 +1886,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.batashoemuseum.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-canadian-clay-glass-gallery-waterloo",
@@ -1827,13 +1919,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.theclayandglass.ca/about/location/",
+      "tickets_url": "https://www.facebook.com/theclayandglass/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.tiktok.com/@clayglassgallerycanada?is_from_webapp=1&sender_device=pc",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1850,13 +1942,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.theclayandglass.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-gardiner-museum-of-ceramic-art-toronto",
@@ -1880,13 +1975,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.gardinermuseum.on.ca/visit/",
+      "tickets_url": "https://www.gardinermuseum.on.ca/visit/hours-admission/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.gardinermuseum.on.ca/visit/accessibility/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1903,13 +1998,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.gardinermuseum.on.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-grimsby-museum",
@@ -1934,12 +2032,12 @@
       "topics": null,
       "audience_focus": null,
       "open_hours_url": null,
-      "tickets_url": null,
+      "tickets_url": "https://www.facebook.com/TownofGrimsby/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.grimsby.ca/town-hall/access-to-information-foi/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -1956,13 +2054,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.grimsby.ca/en/parks-recreation-culture/museum.aspx"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-mcmichael-canadian-art-collection-kleinburg",
@@ -1992,7 +2093,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2012,10 +2113,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-mississippi-valley-textile-museum",
@@ -2045,7 +2147,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2065,10 +2167,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-national-gallery-of-canada",
@@ -2092,13 +2195,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.gallery.ca/visit/hours",
+      "tickets_url": "https://www.gallery.ca/visit/admission",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.gallery.ca/visit/accessibility",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2115,13 +2218,17 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "wikidata",
+        "official_website",
+        "https://www.gallery.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q131694575; Wikidata: no applicable fields to fill; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-royal-ontario-museum-toronto",
@@ -2145,13 +2252,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.rom.on.ca/operating-hours",
+      "tickets_url": "https://tickets.rom.on.ca/en/shop",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "http://www.rom.on.ca/whats-on/special-programs/community-access-romcan",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2168,13 +2275,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.rom.on.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-on-station-gallery",
@@ -2204,7 +2314,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2224,10 +2334,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for ON; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "canada-zz-qc-canadian-centre-for-architecture-montreal",
@@ -2251,13 +2362,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.cca.qc.ca/en/visit-us",
+      "tickets_url": "https://cca-bookstore.com/?l=en",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "http://www.cca.qc.ca/en/route?url=%2Fapi%2Fpages%2F38252",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2274,13 +2385,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.cca.qc.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for QC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-qc-mccord-museum-of-canadian-history-montreal",
@@ -2310,7 +2424,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2327,13 +2441,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.mccord-museum.qc.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for QC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.mccord-museum.qc.ca",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-qc-montreal-museum-of-fine-arts",
@@ -2345,25 +2462,25 @@
       "website": "http://www.mbam.qc.ca/en/",
       "status": "unknown",
       "last_updated": "2026-01-15",
-      "street_address": "TBD",
+      "street_address": "1380, rue Sherbrooke Ouest",
       "address_line2": null,
-      "postal_code": "TBD",
+      "postal_code": "H3G 1J5",
       "latitude": null,
       "longitude": null,
       "place_id": null,
-      "address_source": "unknown",
-      "address_last_verified": null,
+      "address_source": "official_website",
+      "address_last_verified": "2026-01-15",
       "museum_type": "Unknown",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.mbam.qc.ca/en/information/plan-your-visit/",
+      "tickets_url": "http://www.mbam.qc.ca/en/tickets/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "http://www.mbam.qc.ca/en/accessibility/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2380,13 +2497,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.mbam.qc.ca/en"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for QC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-qc-musee-d-art-contemporain-des-laurentides",
@@ -2411,12 +2531,12 @@
       "topics": null,
       "audience_focus": null,
       "open_hours_url": null,
-      "tickets_url": null,
+      "tickets_url": "https://www.facebook.com/MACLaurentides",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2433,13 +2553,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.maclau.ca"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for QC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-qc-mus-e-de-la-civilisation",
@@ -2463,13 +2586,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.mcq.org/en/visit/schedule-and-rates/",
+      "tickets_url": "https://boutique.mcq.org/en_US/tickets",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://www.mcq.org/en/visit/location-and-access/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2486,13 +2609,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.mcq.org/en"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for QC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: Page not found (404) at https://www.mcq.org/en/visit/schedule-and-rates/",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "canada-zz-sk-remai-modern-saskatoon",
@@ -2516,13 +2642,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://remaimodern.org/visit-us/",
+      "tickets_url": "https://remaimodern.org/visit-us/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "javascript:void(0);",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2539,13 +2665,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://remaimodern.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for SK; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "el-salvador-zz-san-salvador-museo-de-arte-de-el-salvador",
@@ -2559,9 +2688,9 @@
       "last_updated": "2026-01-15",
       "street_address": "TBD",
       "address_line2": null,
-      "postal_code": "TBD",
-      "latitude": null,
-      "longitude": null,
+      "postal_code": "47480",
+      "latitude": 21.3562316,
+      "longitude": -101.9310041,
       "place_id": null,
       "address_source": "unknown",
       "address_last_verified": null,
@@ -2575,7 +2704,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2592,13 +2721,17 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "openstreetmap",
+        "official_website",
+        "http://www.marte.org.sv"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for San Salvador; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.marte.org.sv",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 2
     },
     {
       "museum_id": "mexico-zz-ac-museo-de-arte-contempor-neo-de-monterrey-nuevo-leon",
@@ -2622,13 +2755,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.marco.org.mx/planea-tu-visita/",
+      "tickets_url": "https://www.facebook.com/museomarcomty/",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2645,19 +2778,22 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.marco.org.mx"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for AC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "panama-zz-unknown-mac-panam",
       "country": "Panama",
       "state_province": "Panama",
-      "city": "Unknown",
+      "city": "Panama City",
       "museum_name": "MAC Panamá",
       "alternate_names": null,
       "website": "https://macpanama.org/",
@@ -2675,13 +2811,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://macpanama.org/planifica-tu-visita/",
+      "tickets_url": "https://www.facebook.com/MACPMA/",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "https://macpanama.org/exposiciones-pasadas/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -2698,13 +2834,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://macpanama.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Panama City' from open data; MRD: computed city_tier=3 for Panama City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     }
   ]
 }

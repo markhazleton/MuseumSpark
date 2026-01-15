@@ -1,178 +1,145 @@
-# MuseumSpark
+# MuseumSpark 🏛️
 
-A web application for ranking, documenting, and planning visits to all museums in the [Walker Art Reciprocal Program](https://walkerart.org/support/membership/reciprocal-membership/).
+> **The strategic travel planner for art lovers.**  
+> Curate, prioritize, and optimize your museum visits across North America.
 
-**Current Phase**: Phase 1 — Static Dataset Browser (GitHub Pages)  
-**Status**: ~80% complete (see [Implementation Status](specs/001-museum-trip-planner/implementation-status.md))
-
----
-
-## What is MuseumSpark?
-
-MuseumSpark is a personal project to:
-- **Discover** all 1,269+ museums in the Walker Art Reciprocal Program
-- **Browse and search** museums by location, domain, reputation, and collection strength
-- **Track progress** on dataset enrichment (FULL vs placeholder records)
-- **Plan visits** with priority scoring for art museum enthusiasts
-
-### Walker Art Reciprocal Program
-
-The [Walker Art Reciprocal Program](https://walkerart.org/support/membership/reciprocal-membership/) provides Walker Art Center members with free or discounted admission to participating museums across North America. MuseumSpark helps members discover and plan visits to these institutions.
+![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)
+![Phase](https://img.shields.io/badge/Phase-1_Open_Data-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Data](https://img.shields.io/badge/Dataset-1.2k+_Museums-purple)
 
 ---
 
-## Features (Phase 1)
+## 🎨 About MuseumSpark
 
-### ✅ Implemented
-- **Browse Museums**: Paginated list with 1,269+ museums
-- **Search & Filter**: By name, state, city, domain, reputation, collection tier, time needed
-- **Sort**: By priority score, name, reputation, or collection tier
-- **Museum Details**: Drill down to full museum records with all metadata
-- **Progress Dashboard**: Track dataset enrichment status (FULL vs placeholder)
-- **Data Validation**: JSON Schema validation for all museum records
+**MuseumSpark** transforms a simple list of museums into an intelligent travel planning engine. 
 
-### 🚧 In Progress
-- GitHub Pages deployment
-- Dataset enrichment (currently 0.6% FULL)
+Built on the foundation of the **[Walker Art Reciprocal Program](https://walkerart.org/support/membership/reciprocal-membership/)**, MuseumSpark enriches standard museum data with a unique **Priority Scoring System**. We rank institutions based on:
 
-### 📋 Planned (Phase 2+)
-- User accounts and authentication
-- Save favorites and visited museums
-- Trip planning and itineraries
-- AI-powered trip recommendations
-- Admin CRUD for museum records
+1.  **Artistic Strength**: Depth of Impressionist and Modern/Contemporary collections.
+2.  **Historical Context**: Quality of curatorial narrative and framing.
+3.  **Travel Logistics**: "City Tier" classification (Major Hub vs. Small Town) and time-to-visit estimates.
+
+Whether you have a 2-hour layover or a full weekend in a new city, MuseumSpark helps you decide where to go first.
 
 ---
 
-## Quick Start
+## ✨ Key Features
+
+### 🏆 Priority Scoring 
+Don't just see a list; see what matters. Our custom algorithm weighs collection strength against reputation to highlight "Hidden Gems" over "Tourist Traps."
+
+### 📍 Smart City Tiers
+We classify cities into **Tier 1 (Major Hubs)**, **Tier 2 (Medium Cities)**, and **Tier 3 (Small Towns)**, helping you understand the scale of museum density in your destination.
+
+### 📊 Enrichment Pipeline
+A robust Python-based data pipeline aggregates info from **Wikidata**, **IMLS**, and **OpenStreetMap** to fill gaps in official records, ensuring you have accurate addresses, hours, and descriptions.
+
+---
+
+## 🗺️ Roadmap
+
+We are building MuseumSpark in four strategic phases.
+
+### 🏁 Phase 1: Open Data Public Records (Current)
+*   **Goal:** Establish a verified baseline dataset.
+*   **Focus:** Migrating the Walker Art Reciprocal list to a structured JSON schema.
+*   **Tech:** Static React Site, Python ETL scripts, Wikidata integration.
+*   **Status:** ~80% Complete.
+
+### 🧠 Phase 2: AI & LLM Enrichment (Planned)
+*   **Goal:** Deep qualitative analysis.
+*   **Details:** Using **Claude** and **OpenAI** agents to read museum websites and score them against our "Master Requirements" (Impressionist Strength, Historical Context).
+*   **Outcome:** A rich, nuanced dataset that goes beyond simple facts.
+
+### ✅ Phase 3: Validation & Review (Planned)
+*   **Goal:** Expert verification.
+*   **Details:** Auditing the AI-generated scores with art historians and heavy users to ensure the "Priority Score" feels right.
+
+### 🚀 Phase 4: Full Interactive Platform (Planned)
+*   **Goal:** The ultimate travel companion.
+*   **Tech:** Python **FastAPI** Backend, User Accounts.
+*   **Features:** Save favorites, track "Visited" museums, and generate custom itineraries with an AI travel agent.
+
+---
+
+## 🛠️ Technology Stack
+
+*   **Frontend**: [React](https://react.dev/), [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/)
+*   **Data Pipeline**: Python 3.11+, Pydantic, Pandas
+*   **Validation**: JSON Schema
+*   **Deployment**: GitHub Pages
+*   **Future Backend**: FastAPI, SQLite, Azure
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js 18+** (for site development)
-- **Python 3.7+** (for data scripts)
+*   Node.js 18+ (for the website)
+*   Python 3.7+ (for data scripts)
 
-### Running the Site Locally
+### Installation
 
-```bash
-# Navigate to site directory
-cd site
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/markhazleton/MuseumSpark.git
+    cd MuseumSpark
+    ```
 
-# Install dependencies
-npm install
+2.  **Run the Website**
+    ```bash
+    cd site
+    npm install
+    npm run dev
+    ```
+    Open `http://localhost:5173` to see the app.
 
-# Run development server
-npm run dev
+3.  **Run Data Scripts (Optional)**
+    ```bash
+    # From root directory
+    python -m venv .venv
+    source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+    pip install -r scripts/requirements.txt
+    
+    # Validate the dataset
+    python scripts/validate-json.py
+    ```
+
+---
+
+## 📂 Project Structure
+
+```text
+├── data/               # The JSON Dataset (Single Source of Truth)
+│   ├── index/          # Generated indices 
+│   ├── schema/         # JSON Schemas
+│   └── states/         # Individual State JSON files
+├── Documentation/      # Architecture & Requirements
+├── scripts/            # Python ETL & Enrichment Tools
+├── site/               # React Application Source
+└── specs/              # Feature Specifications
 ```
 
-Site will be available at http://localhost:5173
+---
 
-### Data Pipeline
+## 🤝 Contributing
 
-```bash
-# Install Python dependencies
-pip install -r scripts/requirements.txt
+We welcome contributions! Whether you're a developer fixing bugs or an art lover connecting data, your help is appreciated.
 
-# Validate dataset
-python scripts/validate-json.py
-
-# Rebuild master index
-python scripts/build-index.py
-
-# Generate progress report
-python scripts/build-progress.py
-
-# Run full Phase 1 pipeline
-python scripts/run-phase1-pipeline.py --state CA --only-placeholders --limit 25
-```
+*   **[Contributing Guide](.github/CONTRIBUTING.md)**: How to get started.
+*   **[Code of Conduct](.github/CODE_OF_CONDUCT.md)**: Our community standards.
+*   **[Report a Bug](https://github.com/markhazleton/MuseumSpark/issues/new?template=bug_report.yml)**
+*   **[Suggest a Feature](https://github.com/markhazleton/MuseumSpark/issues/new?template=feature_request.yml)**
+*   **[Correct Museum Data](https://github.com/markhazleton/MuseumSpark/issues/new?template=data_correction.yml)**
 
 ---
 
-## Dataset Status (2026-01-15)
-- **Total museums**: 1,269
-- **FULL records**: 7 (0.6%)
-- **Placeholder records**: 1,262 (99.4%)
-- **States/provinces**: 52
+## 📄 License & Support
 
-See [DataSetDesign.md](Documentation/DataSetDesign.md) for complete data model.
+*   **License**: Distributed under the MIT License. See `LICENSE` for more information.
+*   **Support**: Need help? Check our [Support Guide](.github/SUPPORT.md) or open a [Discussion](https://github.com/markhazleton/MuseumSpark/discussions).
 
 ---
 
-## Documentation
-
-- **[Application Architecture](Documentation/ApplicationArchitecture.md)** - System design and components
-- **[Data Set Design](Documentation/DataSetDesign.md)** - Museum data model and scoring methodology
-- **[Museum API](Documentation/MuseumAPI.md)** - API specification (Phase 2+)
-- **[Phase 1 Spec](specs/001-museum-trip-planner/spec.md)** - Feature specification
-- **[Phase 1 Plan](specs/001-museum-trip-planner/plan.md)** - Implementation plan
-- **[Implementation Status](specs/001-museum-trip-planner/implementation-status.md)** - Current progress
-- **[Scripts README](scripts/README.md)** - Data management scripts
-
----
-
-## Technology Stack
-
-**Phase 1 (Current)**:
-- **Frontend**: React 18, Vite 5, Tailwind CSS 4, TypeScript 5
-- **Data**: Static JSON files
-- **Scripts**: Python 3.7+ with jsonschema, beautifulsoup4, pdfplumber
-- **Hosting**: GitHub Pages (pending)
-
-**Phase 2+ (Planned)**: FastAPI backend, SQLite, PydanticAI, Azure hosting
-
----
-
-## Project Structure
-
-```
-MuseumSpark/
-├── site/                   # React static site (Phase 1)
-│   ├── src/pages/         # Browse, Progress, Museum Detail
-│   ├── src/lib/           # API, types, FULL logic
-│   └── public/data/       # Synced from ../data/
-├── data/                   # Museum dataset (JSON)
-│   ├── index/             # all-museums.json, progress.json
-│   ├── states/            # Per-state museum records
-│   └── schema/            # museum.schema.json
-├── scripts/               # Data management (Python)
-├── Documentation/         # Architecture and design docs
-└── specs/                 # Feature specifications
-```
-
-See full structure in [Implementation Status](specs/001-museum-trip-planner/implementation-status.md).
-
----
-
-## Roadmap
-
-### Phase 1 (Current) - Static Browser
-- [x] React site with browse/search/filter
-- [x] Museum detail pages
-- [x] Progress dashboard
-- [x] Data validation pipeline
-- [ ] GitHub Pages deployment
-- [ ] Dataset enrichment (goal: 10-20% FULL)
-
-### Phase 2 (Future) - Backend & Authentication
-- [ ] FastAPI backend
-- [ ] User accounts
-- [ ] Save favorites and visited museums
-
-### Phase 3 (Future) - Trip Planning
-- [ ] Trip creation and management
-- [ ] AI-powered recommendations
-
----
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- **Walker Art Center** for the [Reciprocal Membership Program](https://walkerart.org/support/membership/reciprocal-membership/)
-- Museum data from official websites, Wikidata, OpenStreetMap, and public sources
-
----
-
-**Note**: MuseumSpark is an independent project and is not affiliated with or endorsed by Walker Art Center.
+*Built with ❤️ for art lovers everywhere.*

@@ -1,7 +1,7 @@
 {
   "state": "Rhode Island",
   "state_code": "RI",
-  "last_updated": "2026-01-15T17:22:19Z",
+  "last_updated": "2026-01-15T21:07:59Z",
   "museums": [
     {
       "museum_id": "usa-ri-unknown-newport-art-museum-art-association",
@@ -31,7 +31,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -51,40 +51,41 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ri-unknown-providence-athenaeum",
       "country": "USA",
       "state_province": "Rhode Island",
-      "city": "Unknown",
+      "city": "Providence",
       "museum_name": "Providence Athenaeum",
       "alternate_names": null,
       "website": "https://providenceathenaeum.org/",
       "status": "unknown",
       "last_updated": "2026-01-15",
-      "street_address": "TBD",
+      "street_address": "6970 251 Benefit Street",
       "address_line2": null,
-      "postal_code": "TBD",
+      "postal_code": "02903",
       "latitude": null,
       "longitude": null,
       "place_id": null,
-      "address_source": "unknown",
-      "address_last_verified": null,
+      "address_source": "official_website",
+      "address_last_verified": "2026-01-15",
       "museum_type": "Unknown",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://providenceathenaeum.org/visit/plan-your-visit/",
+      "tickets_url": "https://providenceathenaeum.org/about/building-rental/",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -101,13 +102,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://providenceathenaeum.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Providence' from open data; MRD: computed city_tier=3 for Providence; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ri-unknown-rhode-island-historical-society-john-brown-house-museum",
@@ -137,7 +141,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -157,10 +161,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ri-unknown-the-preservation-society-of-newport-county",
@@ -190,7 +195,7 @@
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -210,10 +215,11 @@
         "walker_reciprocal"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ri-gardens-arboretum-blithewold-mansion",
@@ -237,13 +243,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "https://www.blithewold.org/general-admission-tickets/",
+      "tickets_url": "https://www.blithewold.org/general-admission-tickets/",
       "reservation_required": null,
       "accessibility_url": null,
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -260,13 +266,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "https://www.blithewold.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Gardens & Arboretum; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     },
     {
       "museum_id": "usa-ri-providence-risd-museum-of-art",
@@ -290,13 +299,13 @@
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
-      "open_hours_url": null,
-      "tickets_url": null,
+      "open_hours_url": "http://www.risdmuseum.org/hours-admission",
+      "tickets_url": "http://www.risdmuseum.org/hours-admission",
       "reservation_required": null,
-      "accessibility_url": null,
+      "accessibility_url": "http://www.risdmuseum.org/accessibility-amenities",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": null,
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -313,13 +322,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "official_website",
+        "http://www.risdmuseum.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Providence; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-15",
-      "notes": null
+      "notes": null,
+      "city_tier": 3
     }
   ]
 }

@@ -9,8 +9,6 @@ export default function ProgressPage() {
 
   useEffect(() => {
     let cancelled = false
-    setLoading(true)
-    setError(null)
     loadProgress()
       .then((p) => {
         if (cancelled) return

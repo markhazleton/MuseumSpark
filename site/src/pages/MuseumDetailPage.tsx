@@ -13,11 +13,91 @@ function deriveStateCodeFromId(museumId: string): string | null {
   return candidate
 }
 
-function fieldValue(v: unknown): string {
-  if (v === null || v === undefined) return 'Not available'
-  if (Array.isArray(v)) return v.length ? v.join(', ') : 'Not available'
-  if (typeof v === 'boolean') return v ? 'Yes' : 'No'
-  return String(v)
+const REPUTATION_MAP: Record<number, string> = {
+  0: 'International',
+  1: 'National',
+  2: 'Regional',
+  3: 'Local',
+}
+
+const COLLECTION_TIER_MAP: Record<number, string> = {
+  0: 'Flagship',
+  1: 'Strong',
+  2: 'Moderate',
+  3: 'Small',
+}
+
+const STRENGTH_MAP: Record<number, string> = {
+  5: 'Flagship Collection',
+  4: 'Strong Collection',
+  3: 'Moderate Representation',
+  2: 'Minor Works',
+  1: 'None',
+}
+
+function Section({ title, children, className = '' }: { title: string; children: React.ReactNode; className?: string }) {
+  return (
+    <div className={`overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm ${className}`}>
+      <div className="border-b border-slate-100 bg-slate-50 px-4 py-3">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-900">{title}</h2>
+      </div>
+      <div className="p-4">{children}</div>
+    </div>
+  )
+}
+
+function Field({ label, value, href }: { label: string; value: React.ReactNode; href?: string }) {
+  let content = value
+  if (content === null || content === undefined) return null
+  if (href && typeof content === 'string') {
+    content = (
+      <a href={href} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
+        {content}
+      </a>
+    )
+  }
+  return (
+    <div className="mb-3 last:mb-0">
+      <div className="text-xs font-medium text-slate-500 uppercase">{label}</div>
+      <div className="text-sm text-slate-900">{content}</div>
+    </div>
+  )
+}
+
+function RatingBar({ label, value }: { label: string; value: number | null | undefined }) {
+  if (!value) return null
+  const pct = (value / 5) * 100
+  const colorClass = value >= 4 ? 'bg-emerald-500' : value >= 3 ? 'bg-blue-500' : 'bg-slate-300'
+  
+  return (
+    <div className="mb-4">
+      <div className="mb-1 flex justify-between text-sm">
+        <span className="font-medium text-slate-700">{label}</span>
+        <span className="text-slate-500">{STRENGTH_MAP[value] || value}</span>
+      </div>
+      <div className="h-2 w-full overflow-hidden rounded-full bg-slate-100">
+        <div className={`h-full ${colorClass}`} style={{ width: `${pct}%` }} />
+      </div>
+    </div>
+  )
+}
+
+function ExternalStepLink({ label, url, primary = false }: { label: string; url?: string | null; primary?: boolean }) {
+  if (!url) return null
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      className={`inline-block w-full rounded-md px-4 py-2 text-center text-sm font-medium transition-colors ${
+        primary
+          ? 'bg-blue-600 text-white hover:bg-blue-700'
+          : 'border border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
+      }`}
+    >
+      {label}
+    </a>
+  )
 }
 
 export default function MuseumDetailPage() {
@@ -30,12 +110,19 @@ export default function MuseumDetailPage() {
 
   const stateCode = useMemo(() => (id ? deriveStateCodeFromId(id) : null), [id])
 
-  useEffect(() => {
-    let cancelled = false
+  // Reset state when ID changes
+  const [prevId, setPrevId] = useState(id)
+  if (id !== prevId) {
+    setPrevId(id)
     setLoading(true)
     setError(null)
     setMuseum(null)
     setSource(null)
+  }
+
+  // Load data
+  useEffect(() => {
+    let cancelled = false
 
     async function run() {
       if (!id) throw new Error('Missing museum id')
@@ -79,19 +166,19 @@ export default function MuseumDetailPage() {
 
   if (loading) {
     return (
-      <div className="rounded-lg border border-slate-200 bg-white p-6">
-        <div className="text-slate-700">Loading museum…</div>
+      <div className="flex h-64 items-center justify-center rounded-lg border border-slate-200 bg-white p-6">
+        <div className="text-lg text-slate-500 animate-pulse">Loading museum details...</div>
       </div>
     )
   }
 
-  if (error) {
+  if (error || !museum) {
     return (
-      <div className="rounded-lg border border-red-200 bg-white p-6">
-        <div className="font-semibold text-red-700">Unable to load museum</div>
-        <div className="mt-2 text-sm text-slate-700">{error}</div>
-        <div className="mt-4">
-          <Link className="text-sm text-slate-900 underline" to="/">
+      <div className="mx-auto max-w-2xl rounded-lg border border-red-200 bg-red-50 p-6 text-center">
+        <div className="mb-2 text-xl font-semibold text-red-700">Unable to load museum</div>
+        <div className="text-sm text-red-600">{error || 'Museum not found'}</div>
+        <div className="mt-6">
+          <Link className="rounded-md bg-white px-4 py-2 text-sm font-medium text-slate-900 shadow-sm ring-1 ring-slate-300 hover:bg-slate-50" to="/">
             Back to Browse
           </Link>
         </div>
@@ -99,97 +186,190 @@ export default function MuseumDetailPage() {
     )
   }
 
-  if (!museum) return null
-
-  const full = isFullRecord(museum)
-  const website = museum.website
-
-  const fields: Array<[string, unknown]> = [
-    ['museum_id', museum.museum_id],
-    ['museum_name', museum.museum_name],
-    ['alternate_names', museum.alternate_names],
-    ['country', museum.country],
-    ['state_province', museum.state_province],
-    ['city', museum.city],
-    ['street_address', museum.street_address],
-    ['address_line2', museum.address_line2],
-    ['postal_code', museum.postal_code],
-    ['primary_domain', museum.primary_domain],
-    ['museum_type', museum.museum_type],
-    ['status', museum.status],
-    ['reputation', museum.reputation],
-    ['collection_tier', museum.collection_tier],
-    ['time_needed', museum.time_needed],
-    ['estimated_visit_minutes', museum.estimated_visit_minutes],
-    ['priority_score', museum.priority_score],
-    ['open_hours_url', museum.open_hours_url],
-    ['tickets_url', museum.tickets_url],
-    ['accessibility_url', museum.accessibility_url],
-    ['reservation_required', museum.reservation_required],
-    ['notes', museum.notes],
-    ['confidence', museum.confidence],
-    ['data_sources', museum.data_sources],
-  ]
+  const isFull = isFullRecord(museum)
+  const isArt = museum.primary_domain === 'Art' || museum.museum_type?.toLowerCase().includes('art')
+  const hasScores = museum.is_scored || (museum.priority_score !== null && museum.priority_score !== undefined)
 
   return (
-    <div className="space-y-4">
-      <div className="rounded-lg border border-slate-200 bg-white p-4">
-        <div className="flex flex-wrap items-start justify-between gap-2">
-          <div>
-            <h1 className="text-2xl font-semibold">{museum.museum_name}</h1>
-            <div className="mt-1 text-sm text-slate-600">
-              {museum.city}, {museum.state_province} • Source: {source ?? '—'}
+    <div className="space-y-6 pb-20">
+      {/* Header */}
+      <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+        <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
+              <span>{museum.city}, {museum.state_province}</span>
+              {museum.country && <span>• {museum.country}</span>}
+            </div>
+            <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">{museum.museum_name}</h1>
+            {museum.alternate_names && museum.alternate_names.length > 0 && (
+              <p className="text-sm text-slate-500">Also known as: {museum.alternate_names.join(', ')}</p>
+            )}
+            
+            <div className="mt-2 flex flex-wrap gap-2">
+              <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${isFull ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}`}>
+                {isFull ? 'Complete Record' : 'Draft Record'}
+              </span>
+              {museum.museum_type && (
+                <span className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-800">
+                  {museum.museum_type}
+                </span>
+              )}
+              {typeof museum.reputation === 'number' && (
+                <span className="inline-flex items-center rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-medium text-indigo-800">
+                  {REPUTATION_MAP[museum.reputation]} Reputation
+                </span>
+              )}
+              {typeof museum.collection_tier === 'number' && (
+                <span className="inline-flex items-center rounded-full bg-violet-100 px-2.5 py-0.5 text-xs font-medium text-violet-800">
+                  {COLLECTION_TIER_MAP[museum.collection_tier]}
+                </span>
+              )}
             </div>
           </div>
-          <div className="flex items-center gap-2">
-            <span
-              className={[
-                'rounded-full px-2 py-1 text-xs font-semibold',
-                full ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800',
-              ].join(' ')}
-            >
-              {full ? 'FULL' : 'Placeholder'}
-            </span>
-            {website ? (
-              <a
-                href={website}
-                className="rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm hover:bg-slate-50"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Website
-              </a>
-            ) : null}
+
+          <div className="flex flex-shrink-0 flex-col items-end gap-3">
+             {museum.priority_score !== undefined && museum.priority_score !== null && (
+               <div className="flex flex-col items-center rounded-lg border border-slate-100 bg-slate-50 p-3 text-center">
+                 <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">Priority Score</span>
+                 <span className="text-3xl font-bold text-slate-900">{museum.priority_score.toFixed(1)}</span>
+               </div>
+             )}
           </div>
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-lg border border-slate-200 bg-white">
-        <div className="border-b border-slate-200 px-4 py-3">
-          <h2 className="text-sm font-semibold text-slate-900">Record fields</h2>
-        </div>
-        <div className="divide-y divide-slate-200">
-          {fields.map(([k, v]) => (
-            <div key={k} className="grid gap-2 px-4 py-3 md:grid-cols-3">
-              <div className="text-sm font-medium text-slate-700">{k}</div>
-              <div className="md:col-span-2 text-sm text-slate-900 whitespace-pre-wrap">
-                {k.endsWith('_url') && typeof v === 'string' && v ? (
-                  <a className="underline" href={v} target="_blank" rel="noreferrer">
-                    {v}
-                  </a>
-                ) : (
-                  fieldValue(v)
-                )}
+      <div className="grid gap-6 lg:grid-cols-3">
+        {/* Left Column: 2/3 width */}
+        <div className="space-y-6 lg:col-span-2">
+          
+          <Section title="Overview">
+            {museum.notes ? (
+              <p className="whitespace-pre-wrap text-slate-700 leading-relaxed">{museum.notes}</p>
+            ) : (
+              <p className="italic text-slate-400">No description available.</p>
+            )}
+            
+            {museum.visit_priority_notes && (
+               <div className="mt-4 rounded-md bg-sky-50 p-4">
+                 <h3 className="mb-1 text-sm font-semibold text-sky-900">Why Visit?</h3>
+                 <p className="text-sm text-sky-800">{museum.visit_priority_notes}</p>
+               </div>
+            )}
+          </Section>
+
+          {hasScores && isArt && (
+            <Section title="Artistic Profile">
+              <div className="grid gap-8 md:grid-cols-2">
+                <div>
+                   <h3 className="mb-3 text-sm font-semibold text-slate-900">Collection Strengths</h3>
+                   <RatingBar label="Impressionist" value={museum.impressionist_strength} />
+                   <RatingBar label="Modern & Contemporary" value={museum.modern_contemporary_strength} />
+                </div>
+                <div>
+                  <h3 className="mb-3 text-sm font-semibold text-slate-900">Context & Focus</h3>
+                  <RatingBar label="Historical Context" value={museum.historical_context_score} />
+                  
+                  {museum.primary_art && (
+                    <div className="mt-4">
+                      <div className="text-xs font-medium text-slate-500 uppercase">Primary Focus</div>
+                      <div className="text-lg font-medium text-slate-900">{museum.primary_art}</div>
+                    </div>
+                  )}
+                  
+                  {museum.score_notes && (
+                    <div className="mt-4 text-sm text-slate-600 bg-slate-50 p-3 rounded border border-slate-100">
+                      {museum.score_notes}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
+            </Section>
+          )}
 
-      <div>
-        <Link className="text-sm text-slate-900 underline" to="/">
-          Back to Browse
-        </Link>
+          <Section title="Details & Amenities">
+            <div className="grid gap-4 sm:grid-cols-2">
+               <Field label="Audience Focus" value={museum.audience_focus} />
+               <Field label="Topics" value={museum.topics?.join(', ')} />
+               <Field label="Best Season to Visit" value={museum.best_season} />
+               <Field label="Time Needed" value={museum.time_needed} />
+               {museum.estimated_visit_minutes && (
+                 <Field label="Est. Minutes" value={`${museum.estimated_visit_minutes} min`} />
+               )}
+            </div>
+            
+            {(museum.parking_notes || museum.public_transit_notes) && (
+              <div className="mt-4 border-t border-slate-100 pt-4">
+                 <div className="grid gap-4 sm:grid-cols-2">
+                    <Field label="Parking" value={museum.parking_notes} />
+                    <Field label="Public Transit" value={museum.public_transit_notes} />
+                 </div>
+              </div>
+            )}
+          </Section>
+
+        </div>
+
+        {/* Right Column: 1/3 width - Sidebar */}
+        <div className="space-y-6">
+          <Section title="Action & Info">
+            <div className="flex flex-col gap-2">
+               <ExternalStepLink label="Official Website" url={museum.website} primary />
+               <ExternalStepLink label="Tickets / Booking" url={museum.tickets_url} />
+               <ExternalStepLink label="Google Maps" url={museum.place_id ? `https://www.google.com/maps/place/?q=place_id:${museum.place_id}` : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${museum.museum_name}, ${museum.city}, ${museum.state_province}`)}`} />
+            </div>
+
+            <div className="mt-6 space-y-4 border-t border-slate-100 pt-4">
+              <Field label="Hours" value="View Opening Hours" href={museum.open_hours_url} />
+              <Field label="Accessibility" value="View Accessibility Info" href={museum.accessibility_url} />
+              <Field 
+                label="Reservations" 
+                value={museum.reservation_required === true ? 'Required' : museum.reservation_required === false ? 'Not Required' : null} 
+              />
+            </div>
+          </Section>
+
+          <Section title="Location">
+             <Field label="Address" value={
+               <div className="whitespace-pre-line">
+                 {[museum.street_address, museum.address_line2, `${museum.city}, ${museum.state_province} ${museum.postal_code || ''}`].filter(Boolean).join('\n')}
+               </div>
+             } />
+             <Field label="Neighborhood" value={museum.neighborhood} />
+             <Field label="Region" value={museum.city_region} />
+             {museum.nearby_museum_count !== null && museum.nearby_museum_count !== undefined && (
+               <div className="mt-2 rounded bg-slate-50 p-2 text-center text-xs text-slate-500">
+                 {museum.nearby_museum_count} other museums nearby
+               </div>
+             )}
+          </Section>
+
+          <Section title="Metadata">
+             <Field label="Museum ID" value={museum.museum_id} />
+             <Field label="Source" value={source === 'state' ? `State File (${stateCode})` : 'Master Index'} />
+             <Field label="Confidence Score" value={
+               museum.confidence ? (
+                  <div className="flex items-center gap-1">
+                    {[1, 2, 3, 4, 5].map((s) => (
+                      <div key={s} className={`h-1.5 w-1.5 rounded-full ${s <= (museum.confidence || 0) ? 'bg-slate-600' : 'bg-slate-200'}`} />
+                    ))}
+                    <span className="ml-1 text-xs text-slate-500">({museum.confidence}/5)</span>
+                  </div>
+               ) : null
+             } />
+             <Field label="Data Sources" value={
+               museum.data_sources?.map((s, i) => (
+                 <div key={i} className="truncate text-xs">{s}</div>
+               ))
+             } />
+             {museum.updated_at && <Field label="Last Updated" value={museum.updated_at} />}
+          </Section>
+
+          <div className="text-center">
+            <Link className="text-sm font-medium text-slate-600 hover:text-slate-900 hover:underline" to="/">
+              &larr; Return to Master List
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

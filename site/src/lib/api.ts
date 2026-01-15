@@ -8,11 +8,17 @@ function assetUrl(pathname: string): string {
 
 async function fetchJson<T>(pathname: string): Promise<T> {
   const url = assetUrl(pathname)
-  const resp = await fetch(url)
-  if (!resp.ok) {
-    throw new Error(`Fetch failed (${resp.status}) for ${pathname}`)
+  // console.log(`Fetching: ${url}`)
+  try {
+    const resp = await fetch(url)
+    if (!resp.ok) {
+      throw new Error(`Fetch failed (${resp.status}) for ${pathname} (url: ${url})`)
+    }
+    return (await resp.json()) as T
+  } catch (e) {
+    console.error(`Fetch error for ${url}`, e)
+    throw e
   }
-  return (await resp.json()) as T
 }
 
 export function loadAllMuseums(): Promise<AllMuseumsIndex> {

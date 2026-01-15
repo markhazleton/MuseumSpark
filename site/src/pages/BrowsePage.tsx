@@ -20,8 +20,8 @@ const collectionTierOrder: Record<string, number> = {
 
 type SortKey = 'priority_score' | 'museum_name' | 'reputation' | 'collection_tier'
 
-function normalize(s: string): string {
-  return s.trim().toLowerCase()
+function normalize(s: unknown): string {
+  return String(s || '').trim().toLowerCase()
 }
 
 export default function BrowsePage() {
@@ -43,8 +43,6 @@ export default function BrowsePage() {
 
   useEffect(() => {
     let cancelled = false
-    setLoading(true)
-    setError(null)
     loadAllMuseums()
       .then((data) => {
         if (cancelled) return
@@ -68,13 +66,13 @@ export default function BrowsePage() {
     const tiers = new Set<string>()
     const times = new Set<string>()
     for (const m of museums) {
-      if (m.state_province) states.add(m.state_province)
-      if (m.primary_domain) domains.add(m.primary_domain)
-      if (m.reputation) reputations.add(m.reputation)
-      if (m.collection_tier) tiers.add(m.collection_tier)
-      if (m.time_needed) times.add(m.time_needed)
+      if (m.state_province) states.add(String(m.state_province))
+      if (m.primary_domain) domains.add(String(m.primary_domain))
+      if (m.reputation) reputations.add(String(m.reputation))
+      if (m.collection_tier) tiers.add(String(m.collection_tier))
+      if (m.time_needed) times.add(String(m.time_needed))
     }
-    const sortAlpha = (a: string, b: string) => a.localeCompare(b)
+    const sortAlpha = (a: string, b: string) => String(a).localeCompare(String(b))
     return {
       states: Array.from(states).sort(sortAlpha),
       domains: Array.from(domains).sort(sortAlpha),
@@ -113,7 +111,7 @@ export default function BrowsePage() {
     const arr = [...filtered]
     arr.sort((a, b) => {
       if (sortKey === 'museum_name') {
-        return a.museum_name.localeCompare(b.museum_name)
+        return String(a.museum_name || '').localeCompare(String(b.museum_name || ''))
       }
 
       if (sortKey === 'priority_score') {
@@ -153,9 +151,45 @@ export default function BrowsePage() {
     return sorted.slice(start, start + pageSize)
   }, [sorted, page])
 
-  useEffect(() => {
+  // Reset page when filters change
+  const [prevFilters, setPrevFilters] = useState({
+    q,
+    stateFilter,
+    cityFilter,
+    domainFilter,
+    reputationFilter,
+    tierFilter,
+    timeFilter,
+    onlyFull,
+    sortKey,
+  })
+
+  // Check if filters changed
+  const filtersChanged =
+    q !== prevFilters.q ||
+    stateFilter !== prevFilters.stateFilter ||
+    cityFilter !== prevFilters.cityFilter ||
+    domainFilter !== prevFilters.domainFilter ||
+    reputationFilter !== prevFilters.reputationFilter ||
+    tierFilter !== prevFilters.tierFilter ||
+    timeFilter !== prevFilters.timeFilter ||
+    onlyFull !== prevFilters.onlyFull ||
+    sortKey !== prevFilters.sortKey
+
+  if (filtersChanged) {
+    setPrevFilters({
+      q,
+      stateFilter,
+      cityFilter,
+      domainFilter,
+      reputationFilter,
+      tierFilter,
+      timeFilter,
+      onlyFull,
+      sortKey,
+    })
     setPage(1)
-  }, [q, stateFilter, cityFilter, domainFilter, reputationFilter, tierFilter, timeFilter, onlyFull, sortKey])
+  }
 
   if (loading) {
     return (
