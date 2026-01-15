@@ -37,9 +37,11 @@ jobs:
         working-directory: site
         run: npm run sync-data
 
-      - name: Build
+      - name: Build site for production
         working-directory: site
-        run: npm run build -- --base=/${{ github.event.repository.name }}/
+        run: npm run build
+        env:
+          NODE_ENV: production
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
