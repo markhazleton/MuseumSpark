@@ -4,6 +4,33 @@ This directory contains scripts for validating and managing the MuseumSpark muse
 
 ## Scripts Overview
 
+### build-museum-list-csv-from-narm.py
+Builds a structured CSV of every museum listed in `Documentation/_source/NARM-Winter-2025.pdf`.
+
+**Features:**
+- Extracts museums from the NARM roster PDF
+- Writes `data/index/museum-list.csv`
+- Adds a `source` column set to `NARM-2025`
+- Merges in metadata from `data/index/all-museums.json` when a match is found
+
+**Usage:**
+```bash
+python scripts/build-museum-list-csv-from-narm.py
+```
+
+### build-walker-reciprocal-csv.py
+Builds a structured CSV of every museum listed in `data/index/walker-reciprocal.html`.
+
+**Features:**
+- Extracts one row per museum link
+- Writes `data/index/walker-reciprocal.csv`
+- Columns: `STATE`, `NAME`, `CITY`, `URL`
+
+**Usage:**
+```bash
+python scripts/build-walker-reciprocal-csv.py
+```
+
 ### validate-json.py
 Python script to validate state JSON files against the museum schema.
 
@@ -196,6 +223,13 @@ Lower scores indicate higher priority for visit planning.
 ### Python: ModuleNotFoundError: No module named 'jsonschema'
 
 **Solution:** Install dependencies:
+```bash
+pip install -r scripts/requirements.txt
+```
+
+### Python: ModuleNotFoundError: No module named 'pdfplumber'
+
+**Solution:** Install dependencies (includes `pdfplumber` used by `build-museum-list-csv-from-narm.py`):
 ```bash
 pip install -r scripts/requirements.txt
 ```

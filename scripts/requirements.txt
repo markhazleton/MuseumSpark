@@ -2,3 +2,9 @@
 
 # JSON Schema validation
 jsonschema>=4.20.0
+
+# PDF text extraction (used by build-museum-list-csv-from-narm.py)
+pdfplumber>=0.11.0
+
+# HTML parsing (used by build-walker-reciprocal-csv.py)
+beautifulsoup4>=4.12.3
