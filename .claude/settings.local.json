@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python scripts/validate-json.py:*)",
+      "Bash(python scripts/build-index.py:*)"
+    ]
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://museumspark.com/schemas/state-museums.json",
+  "title": "State Museums File",
+  "description": "A state-level museum data file for the MuseumSpark dataset",
+  "type": "object",
+  "required": ["state", "state_code", "museums"],
+  "properties": {
+    "state": {
+      "type": "string",
+      "description": "Full state or province name",
+      "minLength": 1
+    },
+    "state_code": {
+      "type": "string",
+      "description": "Two-letter state/province code",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last update"
+    },
+    "museums": {
+      "type": "array",
+      "description": "Array of museum objects",
+      "items": {
+        "$ref": "#/$defs/museum"
+      }
+    }
+  },
+  "$defs": {
+    "museum": {
+      "type": "object",
+      "required": [
+        "museum_id",
+        "country",
+        "state_province",
+        "city",
+        "museum_name",
+        "website",
+        "museum_type",
+        "street_address",
+        "postal_code"
+      ],
+      "properties": {
+        "museum_id": {
+          "type": "string",
+          "description": "Stable identifier (slug or UUID). Recommended: slug-based for readability.",
+          "minLength": 1
+        },
+        "country": {
+          "type": "string",
+          "description": "Country name (e.g., 'USA', 'Canada')",
+          "minLength": 1
+        },
+        "state_province": {
+          "type": "string",
+          "description": "Full state or province name",
+          "minLength": 1
+        },
+        "city": {
+          "type": "string",
+          "description": "City name",
+          "minLength": 1
+        },
+        "museum_name": {
+          "type": "string",
+          "description": "Official museum name",
+          "minLength": 1
+        },
+        "alternate_names": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          },
+          "description": "Common abbreviations or prior names"
+        },
+        "website": {
+          "type": "string",
+          "description": "Museum website URL",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "status": {
+          "type": ["string", "null"],
+          "enum": ["active", "closed", "seasonal", "unknown", null],
+          "description": "Operating status of the museum"
+        },
+        "last_updated": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "ISO date string (YYYY-MM-DD) of last record update"
+        },
+        "street_address": {
+          "type": "string",
+          "description": "Primary street address",
+          "minLength": 1
+        },
+        "address_line2": {
+          "type": ["string", "null"],
+          "description": "Secondary address line (suite, building, etc.)"
+        },
+        "postal_code": {
+          "type": "string",
+          "description": "ZIP or postal code",
+          "minLength": 1
+        },
+        "latitude": {
+          "type": ["number", "null"],
+          "minimum": -90,
+          "maximum": 90,
+          "description": "Latitude coordinate"
+        },
+        "longitude": {
+          "type": ["number", "null"],
+          "minimum": -180,
+          "maximum": 180,
+          "description": "Longitude coordinate"
+        },
+        "place_id": {
+          "type": ["string", "null"],
+          "description": "Google Places ID or equivalent"
+        },
+        "address_source": {
+          "type": ["string", "null"],
+          "enum": ["official_website", "google_places", "wikipedia", "manual", "unknown", null],
+          "description": "Source of address information"
+        },
+        "address_last_verified": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "ISO date string (YYYY-MM-DD) of last address verification"
+        },
+        "museum_type": {
+          "type": "string",
+          "description": "Primary museum classification",
+          "minLength": 1
+        },
+        "primary_domain": {
+          "type": ["string", "null"],
+          "enum": ["Art", "History", "Science", "Culture", "Specialty", "Mixed", null],
+          "description": "Primary domain of museum"
+        },
+        "topics": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          },
+          "description": "Topics or subject areas (e.g., Impressionism, Native American, Modern)"
+        },
+        "audience_focus": {
+          "type": ["string", "null"],
+          "enum": ["General", "Family", "Academic", "Children", "Specialist", null],
+          "description": "Primary audience focus"
+        },
+        "open_hours_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL to hours/admission page"
+        },
+        "tickets_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL to tickets/booking page"
+        },
+        "reservation_required": {
+          "type": ["boolean", "null"],
+          "description": "Whether reservations are required"
+        },
+        "accessibility_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL to accessibility information"
+        },
+        "reputation": {
+          "type": ["string", "null"],
+          "enum": ["Local", "Regional", "National", "International", null],
+          "description": "Cultural significance tier"
+        },
+        "collection_tier": {
+          "type": ["string", "null"],
+          "enum": ["Small", "Moderate", "Strong", "Flagship", null],
+          "description": "Collection size and depth"
+        },
+        "time_needed": {
+          "type": ["string", "null"],
+          "enum": ["Quick stop", "Half day", "Full day", null],
+          "description": "Estimated visit duration"
+        },
+        "estimated_visit_minutes": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "More precise visit time in minutes"
+        },
+        "nearby_museum_count": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Number of other museums in the same city"
+        },
+        "best_season": {
+          "type": ["string", "null"],
+          "enum": ["Year-round", "Spring", "Summer", "Fall", "Winter", null],
+          "description": "Best season to visit"
+        },
+        "neighborhood": {
+          "type": ["string", "null"],
+          "description": "Neighborhood or district within city"
+        },
+        "city_region": {
+          "type": ["string", "null"],
+          "description": "Multi-city region (e.g., Bay Area, DFW, New England)"
+        },
+        "timezone": {
+          "type": ["string", "null"],
+          "description": "IANA timezone (e.g., America/Chicago)"
+        },
+        "visit_priority_notes": {
+          "type": ["string", "null"],
+          "description": "Travel-specific notes separate from collection notes"
+        },
+        "parking_notes": {
+          "type": ["string", "null"],
+          "description": "Parking information"
+        },
+        "public_transit_notes": {
+          "type": ["string", "null"],
+          "description": "Public transit access information"
+        },
+        "data_sources": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          },
+          "description": "URLs or source tags for data provenance"
+        },
+        "confidence": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Overall confidence in this record's accuracy (1-5)"
+        },
+        "row_notes_internal": {
+          "type": ["string", "null"],
+          "description": "Internal maintenance notes"
+        },
+        "created_at": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "ISO date string (YYYY-MM-DD) of record creation"
+        },
+        "updated_at": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "ISO date string (YYYY-MM-DD) of last record update"
+        },
+        "impressionist_strength": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Impressionist collection strength (0-5, art museums only)"
+        },
+        "modern_contemporary_strength": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Modern/contemporary collection strength (0-5, art museums only)"
+        },
+        "primary_art": {
+          "type": ["string", "null"],
+          "enum": ["Impressionist", "Modern/Contemporary", "Tie", "None", null],
+          "description": "Primary art period focus"
+        },
+        "historical_context_score": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Interpretive/curatorial strength (1-5)"
+        },
+        "priority_score": {
+          "type": ["number", "null"],
+          "description": "Computed priority ranking (lower = higher priority)"
+        },
+        "scoring_version": {
+          "type": ["string", "null"],
+          "description": "Version of scoring algorithm used (e.g., v1.0)"
+        },
+        "scored_by": {
+          "type": ["string", "null"],
+          "enum": ["assistant", "manual", "hybrid", null],
+          "description": "Who/what scored this museum"
+        },
+        "score_notes": {
+          "type": ["string", "null"],
+          "description": "Notes about scoring decisions"
+        },
+        "score_last_verified": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "ISO date string (YYYY-MM-DD) of last score verification"
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "General notes, highlights, or additional context"
+        }
+      }
+    }
+  }
+}
