@@ -1,6 +1,6 @@
 # Museum Data Directory
 
-This directory contains the museum dataset organized by state, JSON schema for validation, and generated index files.
+This directory contains the MuseumSpark dataset (seeded from the Walker Art Reciprocal Program roster), JSON schema for validation, and generated index files.
 
 ## Directory Structure
 
@@ -14,8 +14,15 @@ data/
 ├── schema/             # JSON Schema definitions
 │   └── museum.schema.json
 ├── index/              # Generated index files
-│   └── all-museums.json
+│   ├── all-museums.json
+│   └── walker-reciprocal.csv  # Seed roster extracted from Walker reciprocal membership list
 └── README.md           # This file
+
+## Dataset Workflow (Walker Reciprocal → Master List → State Files)
+
+1. Validate `data/index/walker-reciprocal.csv`
+2. Add all museums to `data/index/all-museums.json` (master list used by the app)
+3. Add museums by state to `data/states/{state}.json` and enrich each record until complete
 ```
 
 ## File Naming Convention
@@ -24,7 +31,7 @@ Files are named using standard two-letter state/territory abbreviations:
 
 - **U.S. States**: `AL.json` (Alabama), `AK.json` (Alaska), `CA.json` (California), etc.
 - **U.S. Territories**: `PR.json` (Puerto Rico), `VI.json` (Virgin Islands), etc.
-- **International**: Use country codes: `CA.json` conflicts with California, so use full name for Canada or alternative coding
+Walker’s reciprocal membership includes international entries. The canonical record fields support non-US locations; file partitioning conventions for international records should avoid conflicts with US state codes.
 
 ## State JSON File Format
 

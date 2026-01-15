@@ -10,16 +10,16 @@
 
 ### User Story 1 - Discover and Browse Museums (Priority: P1)
 
-A user wants to explore museums across the United States to find institutions matching their interests in specific art periods, particularly Impressionist and Modern/Contemporary collections.
+A Walker Art Reciprocal Program member wants to explore **all museums in the reciprocal program** to find institutions matching their interests in specific art periods, particularly Impressionist and Modern/Contemporary collections.
 
 **Why this priority**: This is the core value proposition - helping users discover relevant museums they might not know about. Without discovery and filtering, the platform provides no value.
 
-**Independent Test**: Can be fully tested by querying the museum database with various filters (location, art period, reputation) and verifying that results are returned with accurate priority rankings. Delivers immediate value by showing users a curated list of museums matching their criteria.
+**Independent Test**: Can be fully tested by querying the museum database built from the Walker reciprocal roster with various filters (location, art period, reputation) and verifying that results are returned with accurate priority rankings.
 
 **Acceptance Scenarios**:
 
-1. **Given** a user interested in Impressionist art, **When** they search for museums with strong Impressionist collections, **Then** they see a ranked list of museums sorted by priority score with the Art Institute of Chicago and The Getty Center appearing in top results
-2. **Given** a user planning a trip to California, **When** they filter museums by state and select "California", **Then** they see only California museums ranked by relevance and collection strength
+1. **Given** a user interested in Impressionist art, **When** they search for museums with strong Impressionist collections, **Then** they see a ranked list of reciprocal museums sorted by priority score
+2. **Given** a user planning a trip to California, **When** they filter reciprocal museums by state and select "California", **Then** they see only California reciprocal museums ranked by relevance and collection strength
 3. **Given** a user browsing museums, **When** they view a museum detail page, **Then** they see comprehensive information including collection strengths, estimated visit time, nearby museums, and travel tips
 4. **Given** a user comparing museums, **When** they view multiple museum cards, **Then** each card displays priority score, reputation tier, collection tier, and primary art focus for quick comparison
 
@@ -63,7 +63,7 @@ A user wants detailed information about what makes each museum unique, including
 
 A user wants to quickly find specific museums by name, filter by multiple criteria simultaneously, and refine their search to match their exact preferences.
 
-**Why this priority**: Essential for usability - users need flexible ways to query the 2,000+ museum database. This is core functionality that enables all other user stories.
+**Why this priority**: Essential for usability — users need flexible ways to query the Walker reciprocal museum database. This is core functionality that enables all other user stories.
 
 **Independent Test**: Can be tested by performing various search queries (text search, multi-filter combinations) and verifying result accuracy, performance, and proper sorting. Delivers value by making the large dataset navigable.
 
@@ -120,7 +120,7 @@ A user wants to save museums to a personal list, mark museums as visited, and tr
 
 ### Functional Requirements
 
-- **FR-001**: System MUST store and manage a dataset of 2,000+ museum records with comprehensive metadata including location, collection strengths, reputation tier, and travel logistics
+- **FR-001**: System MUST store and manage a dataset of all museums in the Walker Art Reciprocal Program with comprehensive metadata including location, collection strengths, reputation tier, and travel logistics
 - **FR-002**: System MUST calculate priority scores using the defined weighted algorithm: (10 - Impressionism × 3) × (10 - Modern × 3) × (5 - Context × 2) × (5 - Reputation) × (5 - Collection) - Bonuses
 - **FR-003**: System MUST allow users to search museums by name (partial match, case-insensitive)
 - **FR-004**: System MUST allow users to filter museums by location (country, state/province, city)
@@ -267,7 +267,7 @@ This is the full set of museum fields MuseumSpark supports, aligned to the datas
 ### Measurable Outcomes
 
 - **SC-001**: Users can discover relevant museums matching their interests within 30 seconds of initial search (measured by time to first result set display)
-- **SC-002**: System returns filtered museum results in under 1 second for queries against the 2,000+ museum dataset
+- **SC-002**: System returns filtered museum results in under 1 second for typical queries against the Walker reciprocal museum dataset
 - **SC-003**: 90% of users successfully find at least 3 relevant museums for their trip planning on first search attempt (measured by session analytics)
 - **SC-004**: Priority scoring algorithm ranks flagship institutions (Art Institute of Chicago, MoMA, Getty Center) in top 10 results when filtered for their specializations
 - **SC-005**: System supports 1,000 concurrent users performing searches and browsing without performance degradation
@@ -286,7 +286,7 @@ This is the full set of museum fields MuseumSpark supports, aligned to the datas
 
 ### In Scope
 
-- Museum database management (2,000+ U.S. museums, expandable to Canada and international)
+- Museum database management (Walker Art Reciprocal Program roster; includes US + international)
 - Search and filtering interface with multi-criteria support
 - AI-powered conversational interface using OpenAI (ChatGPT-class models) for natural language museum discovery
 - Priority scoring algorithm implementation and automated calculation
@@ -351,7 +351,7 @@ This is the full set of museum fields MuseumSpark supports, aligned to the datas
 
 ### Performance
 
-- Search and filter operations complete in under 1 second for 2,000+ museum dataset
+- Search and filter operations complete in under 1 second for typical dataset size
 - Museum detail page loads in under 2 seconds with all metadata
 - System supports 1,000 concurrent users without degradation
 - Priority score calculation for full dataset completes in under 5 seconds

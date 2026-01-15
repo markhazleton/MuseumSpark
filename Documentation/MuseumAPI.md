@@ -5,13 +5,14 @@
 
 This document defines the HTTP API surface for:
 
-- **Museum dataset access** (browse/search/filter)
+- **Walker Art Reciprocal museum dataset access** (browse/search/filter)
 - **User personalization** (accounts, favorites, visited)
 - **Trip planning** (optional; can start as “lists” and evolve into “trips”)
 - **Administrative data curation** (museum CRUD; role-gated)
 
 It is designed to align with:
 
+- `data/index/walker-reciprocal.csv` (seed roster of reciprocal museums)
 - `data/schema/museum.schema.json` (authoritative museum record model)
 - `Documentation/DataSetDesign.md` (dataset methodology + scoring)
 - `Documentation/ApplicationArchitecture.md` (deployment + components)

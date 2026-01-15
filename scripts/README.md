@@ -2,7 +2,21 @@
 
 This directory contains scripts for validating and managing the MuseumSpark museum dataset.
 
+MuseumSpark’s primary museum universe is the **Walker Art Reciprocal Program** roster, extracted into `data/index/walker-reciprocal.csv`.
+
 ## Scripts Overview
+
+## Dataset Workflow (Walker Reciprocal → Master List → State Files)
+
+1. **Validate the Walker reciprocal roster** (`data/index/walker-reciprocal.csv`)
+2. **Add all museums to** `data/index/all-museums.json` (master list used by the app)
+3. **Add museums by state to** `data/states/{state}.json` and progressively enrich records until complete
+
+Recommended command sequence:
+```bash
+python scripts/validate-walker-reciprocal-csv.py
+python scripts/ingest-walker-reciprocal.py --rebuild-index
+```
 
 ### build-museum-list-csv-from-narm.py
 Builds a structured CSV of every museum listed in `Documentation/_source/NARM-Winter-2025.pdf`.
@@ -19,7 +33,7 @@ python scripts/build-museum-list-csv-from-narm.py
 ```
 
 ### build-walker-reciprocal-csv.py
-Builds a structured CSV of every museum listed in `data/index/walker-reciprocal.html`.
+Builds a structured CSV of every museum listed in Walker’s reciprocal membership list (HTML snapshot stored at `Documentation/_source/walker-reciprocal.html`).
 
 **Features:**
 - Extracts one row per museum link
@@ -29,6 +43,22 @@ Builds a structured CSV of every museum listed in `data/index/walker-reciprocal.
 **Usage:**
 ```bash
 python scripts/build-walker-reciprocal-csv.py
+```
+
+### validate-walker-reciprocal-csv.py
+Validates `data/index/walker-reciprocal.csv` for required columns, required fields, URL shape, and common scrape artifacts.
+
+**Usage:**
+```bash
+python scripts/validate-walker-reciprocal-csv.py
+```
+
+### ingest-walker-reciprocal.py
+Ingests the validated roster into per-state working files under `data/states/` (adds stub records for missing museums), then optionally rebuilds `data/index/all-museums.json`.
+
+**Usage:**
+```bash
+python scripts/ingest-walker-reciprocal.py --rebuild-index
 ```
 
 ### validate-json.py

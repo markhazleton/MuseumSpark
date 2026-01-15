@@ -16,14 +16,17 @@ If these sources diverge, this doc favors the “keep it simple” / hobby-scale
 
 ## 1. Purpose and Scope
 
-MuseumSpark is a personal (non-commercial) museum discovery and trip-planning web application.
+MuseumSpark is a personal (non-commercial) web application for **ranking, documenting, and planning visits to all museums in the Walker Art Reciprocal Program**.
+
+The Walker Art Reciprocal museum list is extracted from Walker’s published reciprocal membership page (https://walkerart.org/support/membership/reciprocal-membership/) and stored in `data/index/walker-reciprocal.csv`. MuseumSpark uses that list as the authoritative “seed set,” then enriches each museum into a complete record matching the dataset schema and API specification (LLM-assisted + other sources). Walker’s main site is https://walkerart.org/.
 
 In-scope:
-- A responsive web UI for browsing/searching the museum dataset
+- A responsive web UI for browsing/searching the Walker Art Reciprocal museum dataset
 - A responsive web UI for saving favorites/visited museums (authenticated)
 - Optional trip/itinerary planning features (authenticated)
 - A Python API for trip orchestration and persistence
 - Server-side AI augmentation (OpenAI API; ChatGPT-class models) for generating/refining trip content
+- Member-focused workflows: evaluating trip opportunities and benefits enabled by reciprocal membership
 - Hobby-friendly deployment on a single Azure Windows Server VM
 
 Out-of-scope (for the initial architecture):
@@ -40,7 +43,7 @@ At a high level:
 - **Frontend:** React SPA (Vite) + Tailwind CSS
 - **Backend:** FastAPI (Python) served via Uvicorn
 - **AI integration:** PydanticAI agents calling the OpenAI API
-- **Data:** Museum dataset stored as JSON (authoritative) with a derived search index
+- **Data:** Walker Art Reciprocal museum dataset stored as JSON (authoritative) with a derived search/index
 - **Database:** SQLite (single-file DB) for user accounts + personalization (+ optional trips)
 - **Hosting:** Single Azure Windows Server VM (self-hosted)
 
@@ -139,6 +142,29 @@ Recommended patterns:
 
 ## 5. Data Architecture
 
+## 5.0 Dataset Workflow (Authoritative)
+
+The MuseumSpark dataset is built from the Walker Art Reciprocal roster and progresses through these stages:
+
+1) **Validate the Walker reciprocal roster**
+  - Input: `data/index/walker-reciprocal.csv`
+  - Goal: ensure the seed list is structurally sound (headers, URLs, duplicates/artifacts)
+  - Script: `python scripts/validate-walker-reciprocal-csv.py`
+
+2) **Add all museums to `data/index/all-museums.json` (master list for the app)**
+  - Goal: every reciprocal museum appears in the master list, even if only partially populated initially
+  - This file is what the app uses for browsing/search.
+  - In practice, this is achieved by ingesting the roster into `data/states/*.json` and rebuilding the index via `scripts/build-index.py`.
+
+3) **Add museums by state to `data/states/{state}.json`**
+  - Goal: create a per-state working file for curation/enrichment
+  - Over time, each state file is updated until records meet the dataset schema and quality standards.
+
+Automated ingest helper:
+- `python scripts/ingest-walker-reciprocal.py --rebuild-index`
+
+After state files are enriched, the index/master list can be rebuilt to keep `all-museums.json` in sync with the curated per-state records.
+
 ### 5.1 Museum Dataset (Authoritative)
 
 The museum dataset is the system’s “single source of truth”:
@@ -146,6 +172,11 @@ The museum dataset is the system’s “single source of truth”:
 - `data/states/*.json` (canonical records)
 - `data/schema/museum.schema.json` (validation rules)
 - `scripts/validate-json.py` / `scripts/validate-json.ps1` (quality gates)
+
+The initial museum roster comes from Walker’s reciprocal membership list:
+
+- Seed input: `data/index/walker-reciprocal.csv`
+- Build/enrichment pipeline: derive canonical museum records matching the schema, then generate derived indices for search and browsing.
 
 For serving/search performance, the backend can read from a pre-built index (e.g., `data/index/all-museums.json`) or load a denormalized copy into SQLite.
 

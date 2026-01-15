@@ -1,19 +1,33 @@
-Here is a product brief that outlines the full scope, field definitions, methodology, and design principles used to construct the Museum Prioritization Dataset.
-
-—
-
-📘 Museum Prioritization Dataset
-Product Brief & Methodology Specification
+📘 MuseumSpark Dataset Design
+Walker Art Reciprocal Program — Product Brief & Methodology Specification
 
 Purpose
-This dataset was developed to support intelligent travel planning, prioritization, and analysis of museums across the United States (and selected international sites), with an emphasis on visual art museums. It allows users to filter, sort, and evaluate institutions based on collection relevance, cultural significance, and visit practicality.
+This dataset is built to **rank and document every museum in the Walker Art Reciprocal Program**, so members can:
+
+- discover reciprocal museums while traveling
+- plan efficient multi-museum itineraries
+- compare visit value (time required, reputation/scope, collection strengths)
+- review opportunities unlocked by reciprocal membership (admission access, reciprocal coverage while on trips)
+
+Seed source
+The authoritative “seed list” of museums comes from Walker’s reciprocal membership page (https://walkerart.org/support/membership/reciprocal-membership/), extracted into:
+
+- `data/index/walker-reciprocal.csv`
+
+Walker’s main site is https://walkerart.org/.
+
+MuseumSpark then enriches each seed row into a complete museum record using:
+
+- LLM-assisted normalization and structured extraction
+- official museum websites and other public sources
+- computed fields (e.g., nearby museum count, derived ranking signals)
 
 Scope
 
-* Full normalization of every museum on a user-supplied list (~2,000+ museums)
-* Prioritization scoring applied to relevant visual art museums only (e.g., fine art, modern/contemporary, encyclopedic, university museums)
-* Geographic focus: U.S. primary, Canada and international secondary
-* Modular structure designed to accommodate future phases (e.g., deeper international scoring, education/travel integrations)
+- Include **all** museums listed in the Walker Art Reciprocal Program (including non‑US entries where present)
+- Normalize and de-duplicate institutions (stable IDs, canonical names, consistent location fields)
+- Populate the full field set defined by `data/schema/museum.schema.json`
+- Compute ranking fields when inputs are available; allow partial data and progressively improve records over time
 
 —
 
@@ -133,7 +147,10 @@ These fields are primarily used for visual art museums; non-art museums may have
 
 📐 Scoring Methodology
 
-Scoring applies only to qualifying art museums. Local history or niche-interest museums are excluded from scoring but retained in the dataset for planning purposes.
+MuseumSpark includes all Walker Reciprocal museums in the dataset. Some ranking inputs are art-centric; museums without sufficient scoring inputs can:
+
+- have `priority_score` left as `null` (and sort after scored records), or
+- be ranked by alternate/default heuristics (e.g., reputation + visit practicality) if/when introduced
 
 🧮 Priority Score Formula (Lower = Higher Priority)
 
@@ -169,14 +186,12 @@ This design ensures high-value institutions (e.g., AIC, MoMA, MFA Boston) float 
 
 🛠️ Methodology & Workflow
 
-1. Museum list was parsed into geographic segments by state and city for accuracy
-2. Core fields (country, state, city, name, type) were normalized to eliminate duplicates or formatting inconsistencies
-3. Reputational tiers were assigned based on national prominence, institutional affiliations, and curatorial leadership
-4. Collection tier and art period strength were evaluated based on public collection data, academic references, and institutional publications
-5. Historical context scores were assigned based on the degree of interpretive material, exhibition design, and curatorial framing
-6. Travel logistics (e.g., time needed, cluster size) were assessed from official websites, Google Maps proximity, and third-party travel sites
-7. All data was manually verified and cross-validated for consistency
-8. Hyperlinks were added to official museum websites for instant lookup
+1. Validate the Walker reciprocal roster (`data/index/walker-reciprocal.csv`) for structural integrity and scrape artifacts
+2. Add every reciprocal museum to `data/index/all-museums.json` (the master list used for browsing/search)
+3. Add museums by state to `data/states/{state}.json` as the primary per-state “work queue” for enrichment
+4. For each state file, enrich each museum record to fully populate the schema fields (LLM-assisted + official sites + other public sources)
+5. Run JSON validation for the updated state file(s) against `data/schema/museum.schema.json`
+6. Rebuild/update `data/index/all-museums.json` to reflect the newly enriched per-state records
 
 —
 

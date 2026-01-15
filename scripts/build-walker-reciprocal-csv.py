@@ -25,6 +25,7 @@ from bs4 import BeautifulSoup
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 IN_PATH = PROJECT_ROOT / "data" / "index" / "walker-reciprocal.html"
+FALLBACK_IN_PATH = PROJECT_ROOT / "Documentation" / "_source" / "walker-reciprocal.html"
 OUT_PATH = PROJECT_ROOT / "data" / "index" / "walker-reciprocal.csv"
 
 
@@ -63,10 +64,11 @@ def split_name_city(text: str) -> tuple[str, str]:
 
 
 def main() -> None:
-    if not IN_PATH.exists():
-        raise SystemExit(f"Input not found: {IN_PATH}")
+    input_path = IN_PATH if IN_PATH.exists() else FALLBACK_IN_PATH
+    if not input_path.exists():
+        raise SystemExit(f"Input not found: {IN_PATH} (or {FALLBACK_IN_PATH})")
 
-    html = IN_PATH.read_text(encoding="utf-8")
+    html = input_path.read_text(encoding="utf-8")
     soup = BeautifulSoup(html, "html.parser")
 
     rows: list[dict[str, str]] = []
@@ -83,6 +85,11 @@ def main() -> None:
 
         for a in ul.find_all("a"):
             url = (a.get("href") or "").strip()
+            # Clean common scrape artifacts (whitespace/newlines, stray trailing brackets).
+            url = re.sub(r"\s+", "", url)
+            url = url.replace("://%20", "://")
+            while url.endswith(")") or url.endswith("]"):
+                url = url[:-1]
             text = normalize_space(a.get_text(" ", strip=True))
             if not text:
                 continue

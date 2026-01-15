@@ -4,7 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-MuseumSpark is a Museum Trip Planning Application designed to help users intelligently plan museum visits across the United States and selected international sites, with an emphasis on visual art museums. The application enables filtering, sorting, and evaluating museums based on collection relevance, cultural significance, and visit practicality.
+MuseumSpark is a Museum Trip Planning Application designed to help **Walker Art Reciprocal Program members** rank, document, and plan visits to **every museum in the reciprocal program**. The application enables filtering, sorting, and evaluating reciprocal museums based on collection relevance, cultural significance, and visit practicality.
+
+The authoritative seed roster is stored in `data/index/walker-reciprocal.csv` (extracted from Walker’s reciprocal membership page). MuseumSpark enriches these rows into complete museum records matching the schema and API.
+
+## Dataset Workflow
+
+1. Validate `data/index/walker-reciprocal.csv`
+2. Add all museums to `data/index/all-museums.json` (master list)
+3. Add museums by state to `data/states/{state}.json` and enrich each record until complete
 
 ## Current Project Status
 
@@ -74,9 +82,9 @@ RESTful API specification is defined in `Documentation/MuseumAPI.md` with:
 
 ## Key Design Decisions
 
-1. **Dataset Scope**: ~2,000+ museums with prioritization scoring applied only to visual art museums
-2. **Geographic Focus**: U.S. primary, Canada and international secondary
-3. **Modular Structure**: Designed to accommodate future phases (deeper international scoring, education/travel integrations)
+1. **Dataset Scope**: All museums in the Walker Art Reciprocal Program (seeded from `data/index/walker-reciprocal.csv`)
+2. **Geographic Focus**: Wherever the reciprocal program includes members (US + international)
+3. **Modular Structure**: Enrich records progressively; keep source roster and derived data rebuildable
 4. **Data Validation**: Manual verification and cross-validation for consistency
 5. **Travel Integration**: Time estimates, cluster analysis, and practical visit planning metadata
 

@@ -36,7 +36,7 @@
 - [x] Requirements achievable with current data structure
 - [x] API design supports all functional requirements
 - [x] Performance targets realistic (SC-004: 95% < 500ms response time)
-- [x] Scalability requirements aligned with data volume (2,000+ museums)
+- [x] Scalability requirements aligned with data volume (Walker Art Reciprocal Program museum roster)
 
 ### Testability
 - [x] Success criteria include measurable metrics

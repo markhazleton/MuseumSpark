@@ -2,6 +2,14 @@
 
 This folder is the canonical documentation set for MuseumSpark.
 
+MuseumSpark’s purpose is to **rank and document every museum in the Walker Art Reciprocal Program**, using the extracted seed roster in `data/index/walker-reciprocal.csv` and enriching it into complete museum records.
+
+## Dataset workflow
+
+1. Validate `data/index/walker-reciprocal.csv`
+2. Add all museums to `data/index/all-museums.json` (master list)
+3. Add museums by state to `data/states/{state}.json` and enrich records over time
+
 ## Start here
 
 - **Application Architecture**: `ApplicationArchitecture.md`
@@ -11,7 +19,7 @@ This folder is the canonical documentation set for MuseumSpark.
   - HTTP endpoints for museum browsing/search, user personalization, optional trips, and admin curation.
 
 - **Dataset Design (Canonical)**: `DataSetDesign.md`
-  - Museum dataset field definitions, scoring methodology, and data quality/provenance requirements.
+  - Walker reciprocal dataset field definitions, scoring methodology, and data quality/provenance requirements.
 
 ## Historical source documents
 
