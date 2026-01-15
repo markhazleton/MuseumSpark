@@ -152,8 +152,13 @@ def http_get_bytes(url: str, *, timeout_seconds: int = 30) -> tuple[bytes, dict[
         raise RuntimeError(f"Network error for {url}: {e}") from e
 
 
-def cached_get_html(url: str, *, ttl_seconds: int = 60 * 60 * 24 * 14, min_delay_seconds: float = 1.0) -> str:
-    """Fetch HTML with cache + polite delay (delay only on cache misses)."""
+def cached_get_html(url: str, *, ttl_seconds: int = 60 * 60 * 24 * 14, min_delay_seconds: float = 1.0) -> tuple[str, str | None]:
+    """Fetch HTML with cache + polite delay (delay only on cache misses).
+    
+    Returns:
+        tuple[str, str | None]: (html_content, error_message)
+        If successful, error_message is None. If failed, html_content is empty string.
+    """
     HTTP_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     key = hashlib.sha256(url.encode("utf-8")).hexdigest()
     cache_path = HTTP_CACHE_DIR / f"{key}.html"
@@ -161,18 +166,33 @@ def cached_get_html(url: str, *, ttl_seconds: int = 60 * 60 * 24 * 14, min_delay
     if cache_path.exists():
         age = time.time() - cache_path.stat().st_mtime
         if age <= ttl_seconds:
-            return cache_path.read_text(encoding="utf-8", errors="ignore")
+            return cache_path.read_text(encoding="utf-8", errors="ignore"), None
 
     time.sleep(max(0.0, float(min_delay_seconds)))
-    raw, headers = http_get_bytes(url)
-    content_type = (headers.get("content-type") or "").casefold()
-    if "text/html" not in content_type and "application/xhtml" not in content_type:
-        # Still cache it (for debugging), but skip parsing as HTML.
-        cache_path.write_bytes(raw)
-        return ""
+    
+    try:
+        raw, headers = http_get_bytes(url)
+        content_type = (headers.get("content-type") or "").casefold()
+        if "text/html" not in content_type and "application/xhtml" not in content_type:
+            # Still cache it (for debugging), but skip parsing as HTML.
+            cache_path.write_bytes(raw)
+            return "", None
 
-    cache_path.write_bytes(raw)
-    return raw.decode("utf-8", errors="ignore")
+        cache_path.write_bytes(raw)
+        return raw.decode("utf-8", errors="ignore"), None
+    except Exception as e:
+        # Return error message for caller to log
+        error_msg = str(e)
+        if "getaddrinfo failed" in error_msg or "11001" in error_msg:
+            return "", f"DNS lookup failed for {url}"
+        elif "timed out" in error_msg.lower():
+            return "", f"Timeout accessing {url}"
+        elif "403" in error_msg or "Forbidden" in error_msg:
+            return "", f"Access forbidden (403) for {url}"
+        elif "404" in error_msg:
+            return "", f"Page not found (404) at {url}"
+        else:
+            return "", f"Network error accessing {url}: {error_msg[:100]}"
 
 
 def can_fetch_url(url: str) -> bool:
@@ -688,8 +708,10 @@ _RESERVATION_REQUIRED_PHRASES = [
 
 
 def _text_mentions_reservation_required(text: str) -> bool:
-    t = (text or "").casefold()
-    return any(p in t for p in _RESERVATION_REQUIRED_PHRASES)
+    return any(
+        phrase in text.lower()
+        for phrase in ["reservation required", "tickets required", "advance booking", "must book", "pre-book"]
+    )
 
 
 def patch_from_official_website(
@@ -708,13 +730,28 @@ def patch_from_official_website(
     patch: dict[str, Any] = {}
     notes: list[str] = []
     sources_used: list[str] = ["official_website", website]
+    errors: list[str] = []
 
-    html = cached_get_html(website, min_delay_seconds=min_delay_seconds)
+    html, error = cached_get_html(website, min_delay_seconds=min_delay_seconds)
+    if error:
+        notes.append(f"Official site: {error}")
+        errors.append(error)
+        # Add error to row_notes_internal
+        patch["row_notes_internal"] = f"Website scraping errors: {error}"
+        return PatchResult(patch=patch, sources_used=sources_used, notes=notes)
+    
     if not html:
         return PatchResult(patch={}, sources_used=sources_used, notes=["Official site: non-HTML or empty response"]) 
 
-    soup = BeautifulSoup(html, "html.parser")
-    notes.append("Official site: fetched homepage")
+    try:
+        soup = BeautifulSoup(html, "html.parser")
+        notes.append("Official site: fetched homepage")
+    except Exception as e:
+        error_msg = f"Failed to parse HTML: {str(e)[:100]}"
+        notes.append(f"Official site: {error_msg}")
+        errors.append(error_msg)
+        patch["row_notes_internal"] = f"Website scraping errors: {error_msg}"
+        return PatchResult(patch=patch, sources_used=sources_used, notes=notes)
 
     # Discover key subpages (hours/tickets/accessibility) from nav/footer links.
     if is_missing(museum.get("open_hours_url")):
@@ -812,14 +849,26 @@ def patch_from_official_website(
         for page_url in candidate_pages[: max(0, max_pages - 1)]:
             if not can_fetch_url(page_url):
                 continue
-            page_html = cached_get_html(page_url, min_delay_seconds=min_delay_seconds)
+            page_html, page_error = cached_get_html(page_url, min_delay_seconds=min_delay_seconds)
+            if page_error:
+                notes.append(f"Official site: {page_error}")
+                errors.append(page_error)
+                continue
             if not page_html:
                 continue
+                continue
+            page_text = BeautifulSoup(page_html, "html.parser").get_text(" ", strip=True)
             page_text = BeautifulSoup(page_html, "html.parser").get_text(" ", strip=True)
             if _text_mentions_reservation_required(page_text):
                 patch["reservation_required"] = True
                 notes.append("Official site: reservation_required inferred from visit/ticket page")
                 break
+    
+    # Add error summary to patch if any errors occurred
+    if errors:
+        error_summary = "; ".join(errors[:3])  # Limit to first 3 errors
+        if not patch.get("row_notes_internal"):
+            patch["row_notes_internal"] = f"Website scraping errors: {error_summary}"
 
     if patch:
         return PatchResult(patch=patch, sources_used=sources_used, notes=notes)
@@ -1032,6 +1081,18 @@ def main() -> int:
 
             # Record-level last_updated is a date (YYYY-MM-DD) in this dataset.
             enriched["last_updated"] = today
+            
+            # Preserve existing row_notes_internal and append new notes
+            existing_notes = enriched.get("row_notes_internal") or ""
+            new_notes = "; ".join(notes[:6])
+            
+            if existing_notes and "enrichment" in existing_notes.lower():
+                # Already has enrichment notes, append new ones
+                enriched["row_notes_internal"] = f"{existing_notes}; {new_notes}"
+            elif not existing_notes:
+                # No existing notes
+                enriched["row_notes_internal"] = new_notes
+            # else: keep existing notes (like "Seeded from walker-reciprocal")
             if enriched.get("row_notes_internal") is None:
                 enriched["row_notes_internal"] = "; ".join(notes[:6])
 
