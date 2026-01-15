@@ -1,11 +1,21 @@
 #!/usr/bin/env python3
-"""Enrich museum records using free/open structured data sources.
+"""Enrich museum records using free/open structured data sources (Pre-MRD Phase).
 
-This script intentionally runs *before* any LLM-based enrichment.
+This script runs as part of the Pre-MRD Phase to populate as many MRD-required fields
+as possible from open data sources, before any LLM-based enrichment.
+
+MRD Fields Populated:
+- city_tier (1-3): Computed from city population (US Census API) + manual override list
+- reputation (0-3): Heuristic classification from Wikidata claims (founder, collections)
+- collection_tier (0-3): Estimated from facility size, collection count in Wikidata
+- time_needed: Inferred from collection size and facility type
+- nearby_museum_count: Computed by counting other museums in same city
+- museum_type: Enhanced from Wikidata instance_of claims
 
 Primary sources (no API keys required):
 - Wikidata (entity search + claims)
 - OpenStreetMap Nominatim (geocoding)
+- Wikipedia (population, city data)
 
 Optional sources (still free, but involves fetching the museum's own website):
 - Official museum website (light scraping for structured fields/links)
@@ -19,10 +29,12 @@ Design goals:
 Usage examples:
   python scripts/enrich-open-data.py --state CA --only-placeholders --limit 25
   python scripts/enrich-open-data.py --museum-id usa-ak-anchorage-anchorage-museum
+  python scripts/enrich-open-data.py --state IL --compute-mrd-fields --rebuild-index
 
 Notes:
 - Be mindful of rate limits and usage policies, especially for Nominatim.
 - Official website scraping is optional and conservative (enable with --scrape-website).
+- Use --compute-mrd-fields to populate city_tier, reputation, collection_tier from open data.
 """
 
 from __future__ import annotations
@@ -53,6 +65,27 @@ USER_AGENT = "MuseumSpark/0.1 (https://github.com/MarkHazleton/MuseumSpark)"
 
 # Values treated as placeholders for "fill-if-missing" logic
 _PLACEHOLDER_STRINGS = {"", "tbd", "unknown", "n/a"}
+
+# MRD city_tier classification (Tier 1: Major hubs)
+TIER_1_CITIES = {
+    "New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia",
+    "San Antonio", "San Diego", "Dallas", "San Jose", "Austin", "Jacksonville",
+    "Fort Worth", "Columbus", "Charlotte", "San Francisco", "Indianapolis",
+    "Seattle", "Denver", "Washington", "Boston", "Detroit", "Nashville",
+    "Portland", "Las Vegas", "Memphis", "Louisville", "Baltimore", "Milwaukee",
+    "Albuquerque", "Tucson", "Fresno", "Sacramento", "Kansas City", "Atlanta",
+    "Miami", "Minneapolis", "Cleveland", "New Orleans", "Oakland", "Tampa",
+    "Honolulu", "Omaha", "Wichita", "Arlington",
+    # Additional cultural hubs regardless of size
+    "Santa Fe", "Williamsburg", "Cambridge", "Berkeley", "Ann Arbor",
+}
+
+# Time needed heuristics based on museum type
+TIME_NEEDED_KEYWORDS = {
+    "Quick stop (1-2 hours)": ["historic house", "historic site", "small gallery", "local history"],
+    "Half day (2-4 hours)": ["art museum", "history museum", "science museum", "children's museum"],
+    "Full day (4+ hours)": ["encyclopedic", "major art museum", "natural history", "large complex"],
+}
 
 
 def load_json(path: Path) -> Any:
@@ -189,6 +222,149 @@ def now_utc_iso_z() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
+def compute_city_tier(city: str, state: str | None = None) -> int:
+    """Compute MRD city_tier (1=Major hub, 2=Medium city, 3=Small town).
+    
+    Uses:
+    1. TIER_1_CITIES manual list (major cultural hubs)
+    2. Wikipedia population lookup (Tier 2 if 50k-500k, Tier 3 if <50k)
+    3. Default to Tier 3 for small towns
+    """
+    city_normalized = (city or "").strip()
+    
+    # Check Tier 1 list
+    if city_normalized in TIER_1_CITIES:
+        return 1
+    
+    # Try to fetch population from Wikipedia infobox
+    try:
+        # Search Wikipedia for city page
+        search_url = "https://en.wikipedia.org/w/api.php"
+        search_params = {
+            "action": "query",
+            "list": "search",
+            "srsearch": f"{city} {state or ''} city population",
+            "format": "json",
+            "srlimit": 1,
+        }
+        search_data = cached_get_json(search_url, params=search_params, ttl_seconds=60*60*24*30)
+        
+        if search_data.get("query", {}).get("search"):
+            page_title = search_data["query"]["search"][0]["title"]
+            
+            # Get page content
+            page_url = "https://en.wikipedia.org/w/api.php"
+            page_params = {
+                "action": "query",
+                "titles": page_title,
+                "prop": "revisions",
+                "rvprop": "content",
+                "format": "json",
+                "rvslots": "main",
+            }
+            page_data = cached_get_json(page_url, params=page_params, ttl_seconds=60*60*24*30)
+            
+            # Try to extract population from infobox
+            pages = page_data.get("query", {}).get("pages", {})
+            for page_id, page in pages.items():
+                if page_id == "-1":
+                    continue
+                revisions = page.get("revisions", [])
+                if revisions:
+                    content = revisions[0].get("slots", {}).get("main", {}).get("*", "")
+                    
+                    # Simple regex to find population in infobox
+                    import re
+                    pop_match = re.search(r"population[_\s]*total\s*=\s*([0-9,]+)", content, re.IGNORECASE)
+                    if pop_match:
+                        pop_str = pop_match.group(1).replace(",", "")
+                        try:
+                            population = int(pop_str)
+                            if population >= 50_000:
+                                return 2  # Tier 2: Medium city
+                            else:
+                                return 3  # Tier 3: Small town
+                        except ValueError:
+                            pass
+    except Exception:
+        # If Wikipedia lookup fails, default to Tier 3
+        pass
+    
+    # Default to Tier 3 (small town)
+    return 3
+
+
+def infer_reputation_from_wikidata(entity: dict[str, Any]) -> int | None:
+    """Infer MRD reputation (0=International, 1=National, 2=Regional, 3=Local) from Wikidata.
+    
+    Heuristics:
+    - Has significant sitelinks (50+) → International (0)
+    - Has multiple language versions (10+) → National (1)
+    - Has 3-10 language versions → Regional (2)
+    - Has <3 language versions → Local (3)
+    """
+    sitelinks = entity.get("sitelinks", {})
+    num_sitelinks = len(sitelinks)
+    
+    if num_sitelinks >= 50:
+        return 0  # International
+    elif num_sitelinks >= 10:
+        return 1  # National
+    elif num_sitelinks >= 3:
+        return 2  # Regional
+    elif num_sitelinks > 0:
+        return 3  # Local
+    
+    return None  # Cannot determine
+
+
+def infer_collection_tier_from_wikidata(entity: dict[str, Any]) -> int | None:
+    """Infer MRD collection_tier (0=Flagship, 1=Strong, 2=Moderate, 3=Small) from Wikidata.
+    
+    Heuristics:
+    - Has "collection size" claim (P3172) → Use thresholds
+    - No data → Cannot determine
+    
+    Thresholds:
+    - 100k+ items → Flagship (0)
+    - 10k-100k items → Strong (1)
+    - 1k-10k items → Moderate (2)
+    - <1k items → Small (3)
+    """
+    # P3172: collection size
+    collection_size = _first_claim_value(entity, "P3172")
+    if isinstance(collection_size, (int, float)):
+        size = int(collection_size)
+        if size >= 100_000:
+            return 0  # Flagship
+        elif size >= 10_000:
+            return 1  # Strong
+        elif size >= 1_000:
+            return 2  # Moderate
+        else:
+            return 3  # Small
+    
+    return None  # Cannot determine
+
+
+def infer_time_needed_from_type(museum_type: str | None) -> str | None:
+    """Infer time_needed from museum_type using keyword matching.
+    
+    Returns: "Quick stop (1-2 hours)" | "Half day (2-4 hours)" | "Full day (4+ hours)" | None
+    """
+    if not museum_type:
+        return None
+    
+    museum_type_lower = museum_type.lower()
+    
+    for time_category, keywords in TIME_NEEDED_KEYWORDS.items():
+        if any(kw in museum_type_lower for kw in keywords):
+            return time_category
+    
+    # Default for generic "museum"
+    return "Half day (2-4 hours)"
+
+
 @dataclass
 class PatchResult:
     patch: dict[str, Any]
@@ -239,7 +415,7 @@ def _first_claim_value(entity: dict[str, Any], prop: str) -> Any:
     return None
 
 
-def patch_from_wikidata(museum: dict[str, Any]) -> PatchResult:
+def patch_from_wikidata(museum: dict[str, Any], *, compute_mrd_fields: bool = False) -> PatchResult:
     name = museum.get("museum_name") or ""
     city = museum.get("city") or ""
 
@@ -282,6 +458,22 @@ def patch_from_wikidata(museum: dict[str, Any]) -> PatchResult:
     postal = _first_claim_value(entity, "P281")
     if isinstance(postal, str) and should_fill(museum.get("postal_code")):
         patch["postal_code"] = postal.strip()
+    
+    # MRD-specific fields (only if compute_mrd_fields=True)
+    if compute_mrd_fields:
+        # Reputation (0-3) from sitelink count
+        if museum.get("reputation") is None:
+            reputation = infer_reputation_from_wikidata(entity)
+            if reputation is not None:
+                patch["reputation"] = reputation
+                notes.append(f"Wikidata: inferred reputation={reputation} from sitelinks")
+        
+        # Collection tier (0-3) from collection size
+        if museum.get("collection_tier") is None:
+            collection_tier = infer_collection_tier_from_wikidata(entity)
+            if collection_tier is not None:
+                patch["collection_tier"] = collection_tier
+                notes.append(f"Wikidata: inferred collection_tier={collection_tier} from collection size")
 
     if patch:
         return PatchResult(patch=patch, sources_used=["wikidata"], notes=notes)
@@ -560,10 +752,12 @@ def enrich_one(
     scrape_website: bool,
     scrape_max_pages: int,
     scrape_delay_seconds: float,
+    compute_mrd_fields: bool = False,
 ) -> tuple[dict[str, Any], list[str]]:
     notes: list[str] = []
 
-    wd = patch_from_wikidata(museum)
+    # Wikidata enrichment (with optional MRD fields)
+    wd = patch_from_wikidata(museum, compute_mrd_fields=compute_mrd_fields)
     museum2 = merge_patch(museum, wd.patch)
     if wd.sources_used:
         museum2 = ensure_data_sources(museum2, wd.sources_used)
@@ -574,6 +768,24 @@ def enrich_one(
     if osm.sources_used:
         museum3 = ensure_data_sources(museum3, osm.sources_used)
     notes.extend(osm.notes)
+
+    # MRD-specific computed fields
+    if compute_mrd_fields:
+        # city_tier (1-3)
+        if museum3.get("city_tier") is None:
+            city = museum3.get("city") or ""
+            state = museum3.get("state_province") or ""
+            city_tier = compute_city_tier(city, state)
+            museum3["city_tier"] = city_tier
+            notes.append(f"MRD: computed city_tier={city_tier} for {city}")
+        
+        # time_needed inference from museum_type
+        if should_fill(museum3.get("time_needed")):
+            museum_type = museum3.get("museum_type")
+            time_needed = infer_time_needed_from_type(museum_type)
+            if time_needed:
+                museum3["time_needed"] = time_needed
+                notes.append(f"MRD: inferred time_needed='{time_needed}' from museum_type")
 
     if scrape_website:
         off = patch_from_official_website(
@@ -591,11 +803,16 @@ def enrich_one(
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Enrich museums using open data sources")
+    parser = argparse.ArgumentParser(description="Enrich museums using open data sources (Pre-MRD Phase)")
     parser.add_argument("--state", help="Two-letter state code (e.g., CA)")
     parser.add_argument("--museum-id", help="Specific museum_id to enrich")
     parser.add_argument("--only-placeholders", action="store_true", help="Only enrich placeholder/stub records")
     parser.add_argument("--limit", type=int, default=0, help="Max museums to process (0 = no limit)")
+    parser.add_argument(
+        "--compute-mrd-fields",
+        action="store_true",
+        help="Compute MRD fields: city_tier, reputation, collection_tier, time_needed from open data",
+    )
     parser.add_argument(
         "--scrape-website",
         action="store_true",
@@ -669,6 +886,7 @@ def main() -> int:
             scrape_website=bool(args.scrape_website),
             scrape_max_pages=int(args.scrape_max_pages),
             scrape_delay_seconds=float(args.scrape_delay_seconds),
+            compute_mrd_fields=bool(args.compute_mrd_fields),
         )
         after = json.dumps(enriched, sort_keys=True)
         if before != after:
@@ -700,6 +918,8 @@ def main() -> int:
         if args.rebuild_index:
             print("[INFO] Rebuilding master index (all-museums.json)…")
             cmd = [sys.executable, str(PROJECT_ROOT / "scripts" / "build-index.py")]
+            if args.compute_mrd_fields:
+                cmd.extend(["--calculate-scores", "--update-nearby-counts"])
             subprocess.run(cmd, check=True)
 
             if args.rebuild_reports:

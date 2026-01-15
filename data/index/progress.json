@@ -1,6 +1,6 @@
 {
   "generated_from": "C:/GitHub/MarkHazleton/MuseumSpark/data/index/all-museums.json",
-  "generated_at": "2026-01-15T18:53:26+00:00",
+  "generated_at": "2026-01-15T19:53:59+00:00",
   "total_museums": 1269,
   "full": 7,
   "placeholder": 1262,
@@ -293,8 +293,8 @@
     }
   },
   "definition": {
-    "notes": "Matches Phase 1 FULL vs placeholder definition in specs/001-museum-trip-planner/spec.md.",
-    "phase1_schema_required_fields": [
+    "notes": "MRD-compliant FULL definition: All museums require MRD core fields. Art museums MUST be scored with priority_score to be FULL.",
+    "schema_required_fields": [
       "museum_id",
       "country",
       "state_province",
@@ -305,18 +305,26 @@
       "street_address",
       "postal_code"
     ],
-    "phase1_enrichment_core_fields": [
-      "primary_domain",
+    "mrd_core_fields": [
+      "city_tier",
+      "museum_type",
       "status",
       "reputation",
       "collection_tier",
+      "time_needed",
+      "nearby_museum_count",
       "notes",
       "data_sources",
       "confidence"
     ],
-    "phase1_time_estimate_fields": [
-      "time_needed",
-      "estimated_visit_minutes"
-    ]
+    "art_museum_scoring_fields": [
+      "impressionist_strength",
+      "modern_contemporary_strength",
+      "primary_art",
+      "historical_context_score",
+      "priority_score",
+      "is_scored"
+    ],
+    "art_museum_rule": "Art museums (primary_domain='Art') require ALL scoring fields + priority_score to be FULL"
   }
 }

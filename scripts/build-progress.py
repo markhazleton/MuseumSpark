@@ -43,14 +43,26 @@ PHASE1_SCHEMA_REQUIRED_FIELDS = [
     "postal_code",
 ]
 
-PHASE1_ENRICHMENT_CORE_FIELDS = [
-    "primary_domain",
+MRD_CORE_FIELDS = [
+    "city_tier",
+    "museum_type",
     "status",
     "reputation",
     "collection_tier",
+    "time_needed",
+    "nearby_museum_count",
     "notes",
     "data_sources",
     "confidence",
+]
+
+ART_MUSEUM_SCORING_FIELDS = [
+    "impressionist_strength",
+    "modern_contemporary_strength",
+    "primary_art",
+    "historical_context_score",
+    "priority_score",
+    "is_scored",
 ]
 
 
@@ -73,6 +85,12 @@ def is_missing(value: Any) -> bool:
     return False
 
 
+def is_art_museum(m: dict[str, Any]) -> bool:
+    """Check if museum is an art museum requiring scoring."""
+    primary_domain = m.get("primary_domain", "")
+    return primary_domain == "Art"
+
+
 def has_time_estimate(m: dict[str, Any]) -> bool:
     return not is_missing(m.get("time_needed")) or not is_missing(m.get("estimated_visit_minutes"))
 
@@ -92,11 +110,21 @@ def has_confidence(m: dict[str, Any]) -> bool:
 
 
 def is_full_record(m: dict[str, Any]) -> bool:
+    """
+    MRD-compliant FULL record definition.
+    
+    A museum is FULL when:
+    1. All schema required fields are present
+    2. All MRD core fields are present
+    3. For art museums: ALL scoring fields must be present and scored
+    """
+    # Check schema required fields
     for f in PHASE1_SCHEMA_REQUIRED_FIELDS:
         if is_missing(m.get(f)):
             return False
 
-    for f in PHASE1_ENRICHMENT_CORE_FIELDS:
+    # Check MRD core fields
+    for f in MRD_CORE_FIELDS:
         if f == "data_sources":
             if not has_data_sources(m):
                 return False
@@ -108,8 +136,24 @@ def is_full_record(m: dict[str, Any]) -> bool:
         if is_missing(m.get(f)):
             return False
 
-    if not has_time_estimate(m):
-        return False
+    # For art museums: require ALL scoring fields to be present
+    if is_art_museum(m):
+        for f in ART_MUSEUM_SCORING_FIELDS:
+            value = m.get(f)
+            
+            # Special handling for is_scored: must be True
+            if f == "is_scored":
+                if value is not True:
+                    return False
+                continue
+            
+            # All other scoring fields must be non-null
+            if is_missing(value):
+                return False
+        
+        # Art museums must have a computed priority_score
+        if m.get("priority_score") is None:
+            return False
 
     return True
 
@@ -154,10 +198,11 @@ def main() -> int:
         "full_pct": round(full_pct, 2),
         "by_state": {k: per_state[k] for k in sorted(per_state.keys())},
         "definition": {
-            "notes": "Matches Phase 1 FULL vs placeholder definition in specs/001-museum-trip-planner/spec.md.",
-            "phase1_schema_required_fields": PHASE1_SCHEMA_REQUIRED_FIELDS,
-            "phase1_enrichment_core_fields": PHASE1_ENRICHMENT_CORE_FIELDS,
-            "phase1_time_estimate_fields": ["time_needed", "estimated_visit_minutes"],
+            "notes": "MRD-compliant FULL definition: All museums require MRD core fields. Art museums MUST be scored with priority_score to be FULL.",
+            "schema_required_fields": PHASE1_SCHEMA_REQUIRED_FIELDS,
+            "mrd_core_fields": MRD_CORE_FIELDS,
+            "art_museum_scoring_fields": ART_MUSEUM_SCORING_FIELDS,
+            "art_museum_rule": "Art museums (primary_domain='Art') require ALL scoring fields + priority_score to be FULL",
         },
     }
 

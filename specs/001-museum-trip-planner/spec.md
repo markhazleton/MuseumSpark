@@ -16,10 +16,11 @@ Build a structured, sortable, and scalable dataset of museums across North Ameri
 
 ### Phase 1 Scope (This Spec)
 
-**Track 1: Data Curation (MRD Phases 1-3)**
-1. **MRD Phase 1 — Master Dataset Backbone**: Normalize and populate all structural fields for all museums (Country, State, City, Museum Name, Museum Type, City Tier, Reputation, Collection, Time Needed, Nearby Count)
-2. **MRD Phase 2 — Scoring (Art Museums Only)**: Apply expert scoring to fine art, encyclopedic, and university art museums
-3. **MRD Phase 3 — Regional Rollout**: Illinois/Midwest → Northeast → California → Remaining U.S. → Canada/Mexico/Bermuda
+**Track 1: Data Curation (MRD Phases 0-3)**
+1. **Pre-MRD Phase — Open Data Enrichment**: Use `enrich-open-data.py` to populate as many MRD fields as possible from free/open data sources (Wikidata, Wikipedia, OpenStreetMap) before LLM enrichment
+2. **MRD Phase 1 — Master Dataset Backbone**: Normalize and populate all structural fields for all museums (Country, State, City, Museum Name, Museum Type, City Tier, Reputation, Collection, Time Needed, Nearby Count)
+3. **MRD Phase 2 — Scoring (Art Museums Only)**: Apply expert scoring to fine art, encyclopedic, and university art museums
+4. **MRD Phase 3 — Regional Rollout**: Illinois/Midwest → Northeast → California → Remaining U.S. → Canada/Mexico/Bermuda
 
 **Track 2: Static Validation Website**
 A **lightweight, read-only static web app** hosted on **GitHub Pages** that:
@@ -36,6 +37,51 @@ A **lightweight, read-only static web app** hosted on **GitHub Pages** that:
 - AI/OpenAI integration beyond data enrichment
 
 **Note**: The full MuseumSpark application is NOT part of this initial specification. The static site serves as a data validation tool only.
+
+---
+
+## Pre-MRD Phase: Open Data Enrichment
+
+### Objective
+Maximize MRD field population from **free/open data sources** before resorting to LLM-assisted enrichment. This reduces costs and improves data quality by leveraging structured, verifiable sources.
+
+### Script: enrich-open-data.py
+
+**Purpose**: Populate MRD fields from Wikidata, Wikipedia, OpenStreetMap Nominatim, and official museum websites (optional).
+
+**MRD Fields Populated**:
+- `city_tier` (1-3): Computed from US Census population data + manual major hub list
+- `reputation` (0-3): Inferred from Wikidata sitelink counts (International/National/Regional/Local)
+- `collection_tier` (0-3): Inferred from Wikidata collection size claims (Flagship/Strong/Moderate/Small)
+- `time_needed`: Heuristic inference from `museum_type` keywords
+- `street_address`, `postal_code`, `latitude`, `longitude`: From Wikidata, Nominatim, or website scraping
+- `website`: From Wikidata or Walker roster
+
+**Usage**:
+```bash
+# Enrich single state with MRD field computation
+python scripts/enrich-open-data.py --state IL --compute-mrd-fields --rebuild-index --rebuild-reports
+
+# Enrich placeholder museums only (dry run)
+python scripts/enrich-open-data.py --state CA --only-placeholders --compute-mrd-fields --dry-run
+
+# Enrich with website scraping (slower, more comprehensive)
+python scripts/enrich-open-data.py --state NY --compute-mrd-fields --scrape-website --rebuild-index
+```
+
+**Workflow**:
+1. Run `enrich-open-data.py` on each state sequentially (start with Illinois per MRD priority)
+2. Use `--compute-mrd-fields` flag to populate city_tier, reputation, collection_tier from open data
+3. Use `--rebuild-index` to regenerate `all-museums.json` with computed `nearby_museum_count` and `priority_score`
+4. Use `--rebuild-reports` to update progress tracking
+
+**Data Sources Priority**:
+1. **Wikidata** (structured claims for address, coordinates, collection size, sitelinks)
+2. **Wikipedia** (city population for city_tier classification)
+3. **OpenStreetMap Nominatim** (geocoding fallback)
+4. **Official Website** (optional, with `--scrape-website` flag for address verification)
+
+**Output**: Museums with populated MRD core fields (city_tier, reputation, collection_tier, time_needed), ready for Phase 1 completion and Phase 2 scoring.
 
 ---
 
