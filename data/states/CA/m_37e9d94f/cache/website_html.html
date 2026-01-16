@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="">
+    <meta name="description" content="Visit">
+    <title>Visit | Coronado Historical Association </title>
+    <link rel="shortcut icon" href="/static/img/favicon.png">
+
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/feeds/rss/">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="/blog/feeds/atom/">
+    
+
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/clearsans/stylesheet.css" rel="stylesheet">
+    <link href="/static/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="/static/assets/UItoTop/css/ui.totop.css" rel="stylesheet">
+    <link href="/static/assets/prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="/static/assets/rs-plugin/css/settings.css" media="screen" />
+    <!-- Custom Stylesheet For This Template -->
+    <link href="/static/assets/css/stylesheet.css" rel="stylesheet">
+    <link href="/static/assets/css/skins.css" rel="stylesheet">
+    <link href="/static/css/mezzatheme.css" rel="stylesheet">
+    <link href="/static/css/cha.css" rel="stylesheet">
+    <!-- Font Awesome  -->
+    <link href="/static/assets/font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+    
+
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <script>
+        var item_template = '<li><a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
+    </script>
+
+    
+
+    
+    <script src="/static/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/static/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="/static/assets/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js"></script>
+    <script src="/static/assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <script src="/static/assets/jflickrfeed/jflickrfeed.min.js"></script>
+    <script src="/static/assets/UItoTop/js/easing.js"></script>
+    <script src="/static/assets/UItoTop/js/jquery.ui.totop.min.js"></script>
+    <script src="/static/assets/FitVids.js/jquery.fitvids.js"></script>
+    <script src="/static/js/js.cookie.js"></script>
+    <script src="/static/js/announcements.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function($){
+            var $dropdowns = $('li.dropdown'); // Specifying the element is faster for older browsers
+            /**
+             * Mouse events
+             *
+             * @description Mimic hoverIntent plugin by waiting for the mouse to 'settle' within the target before triggering
+             */
+            $dropdowns
+                .on('mouseover', function() // Mouseenter (used with .hover()) does not trigger when user enters from outside document window
+                {
+                    var $this = $(this);
+                    if ($this.prop('hoverTimeout'))
+                    {
+                        $this.prop('hoverTimeout', clearTimeout($this.prop('hoverTimeout')));
+                    }
+                    $this.prop('hoverIntent', setTimeout(function()
+                    {
+                        $this.addClass('open');
+                    }, 250));
+                })
+                .on('mouseleave', function()
+                {
+                    var $this = $(this);
+                    if ($this.prop('hoverIntent'))
+                    {
+                        $this.prop('hoverIntent', clearTimeout($this.prop('hoverIntent')));
+                    }
+                    $this.prop('hoverTimeout', setTimeout(function()
+                    {
+                        $this.removeClass('open');
+                    }, 250));
+                });
+            /**
+             * Touch events
+             *
+             * @description Support click to open if we're dealing with a touchscreen
+             */
+            if ('ontouchstart' in document.documentElement)
+            {
+                $dropdowns.each(function()
+                {
+                    var $this = $(this);
+                    this.addEventListener('touchstart', function(e)
+                    {
+                        if (e.touches.length === 1)
+                        {
+                            // Prevent touch events within dropdown bubbling down to document
+                            e.stopPropagation();
+                            // Toggle hover
+                            if (!$this.hasClass('open'))
+                            {
+                                // Prevent link on first touch
+                                if (e.target === this || e.target.parentNode === this)
+                                {
+                                    e.preventDefault();
+                                }
+                                // Hide other open dropdowns
+                                $dropdowns.removeClass('open');
+                                $this.addClass('open');
+
+                                // Hide dropdown on touch outside
+                                document.addEventListener('touchstart', closeDropdown = function(e)
+                                {
+                                    e.stopPropagation();
+
+                                    $this.removeClass('open');
+                                    document.removeEventListener('touchstart', closeDropdown);
+                                });
+                            }
+                        }
+                    }, false);
+                });
+            }
+        });
+        $(document).ready(function () {
+            // PrettyPhoto
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                theme: 'light_square',
+                social_tools: false
+            });
+            // FitVids
+            $(".responsive-video-wrapper").fitVids();
+            
+            // jflickrfeed
+            $('.flickr-photos-list').jflickrfeed({
+                limit: 9,
+                qstrings: {
+                    id: '87434565@N06'
+                },
+                itemTemplate: item_template
+            });
+            
+            // jQuery UItoTop
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            // Skin Chooser
+            $(".color-skin").click(function () {
+                var cls = this.id;
+                $(".color-skin").removeClass("active");
+                $(this).addClass("active");
+                $("#main-wrapper").removeClass();
+                $("#main-wrapper").addClass(cls);
+            });
+        });
+        // jQuery CarouFredSel
+        var caroufredsel = function () {
+            $('#caroufredsel-portfolio-container').carouFredSel({
+                responsive: true,
+                scroll: 1,
+                circular: false,
+                infinite: false,
+                items: {
+                    visible: {
+                        min: 1,
+                        max: 3
+                    }
+                },
+                prev: '#portfolio-prev',
+                next: '#portfolio-next',
+                auto: {
+                    play: false
+                }
+            });
+            $('#caroufredsel-blog-posts-container').carouFredSel({
+                responsive: true,
+                scroll: 1,
+                circular: false,
+                infinite: false,
+                items: {
+                    visible: {
+                        min: 1,
+                        max: 3
+                    }
+                },
+                prev: '#blog-posts-prev',
+                next: '#blog-posts-next',
+                auto: {
+                    play: false
+                }
+            });
+            $('#caroufredsel-clients-container').carouFredSel({
+                responsive: true,
+                scroll: 1,
+                circular: false,
+                infinite: false,
+                items: {
+                    visible: {
+                        min: 1,
+                        max: 4
+                    }
+                },
+                prev: '#client-prev',
+                next: '#client-next',
+                auto: {
+                    play: false
+                }
+            });
+        };
+        $(window).load(function () {
+            caroufredsel();
+        });
+        $(window).resize(function () {
+            caroufredsel();
+        });
+        $(document).ready(function() {
+            if (!window.location.pathname.match("^/shop/")){
+                $('.user-panel').hide();
+            }
+        });
+    </script>
+    
+<script src="/static/js/jquery.ellipsis.js"></script>
+<script>
+$(document).ready(function() {
+	$('#carousel-example-generic').on('slid.bs.carousel', function () {
+		$('.carousel-inner > .item p').ellipsis({
+			row: 4,
+			char: ' ...'
+		});
+		$('.carousel-inner > .item h2').ellipsis({
+			row: 2,
+			char: ' ...'
+		});
+	});
+	$('.carousel-inner > .item p').ellipsis({
+		row: 4,
+		char: ' ...'
+	});
+	$('.carousel-inner > .item h2').ellipsis({
+		row: 2,
+		char: ' ...'
+	});
+	$('.carousel').carousel({
+		interval: 7000
+	})
+});
+</script>
+
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/static/assets/js/html5shiv.js"></script>
+    <script src="/static/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    
+
+</head>
+<body id="home">
+
+
+
+    
+    
+
+
+
+    
+
+
+
+<div id="main-wrapper" class="color-skin-7">
+    <header id="header-1" class="header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 header-info-wrapper">
+                    <ul class="list-inline">
+                        
+                        <li><i class="fa fa-phone fa-lg"></i> 619.435.7242</li>
+                        
+                        
+                        <li><i class="fa fa-location-arrow"></i> 1100 Orange Avenue, Coronado CA 92118</li>
+                        
+                        <li><span class="theme-help" data-toggle="tooltip" data-placement="right" data-trigger="manual" title="Edit these in Site -> Settings in the admin"></span></li>
+
+                    </ul>
+                    <!-- /.list-inline -->
+                </div>
+                <!-- /.header-info-wrapper -->
+                <div class="col-xs-12 col-sm-6 social-link-wrapper">
+                    <ul class="social-links pull-right">
+                        <li><span class="theme-help" data-toggle="tooltip" data-placement="left" data-trigger="manual" title="Edit these in Site -> Settings in the admin"></span></li>
+
+                        
+                        <li><a target="_blank" href="https://www.facebook.com/CoronadoHistory/"><i class="fa fa-facebook"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    <form id="search-form" role="search" class="pull-right" action="/search/">
+                        <input type="text" value="" name="q" placeholder="What are you looking for?" class="search-input">
+                        <button class="pull-left" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <!-- /.social-links -->
+                </div>
+                <!-- /.social-link-wrapper -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header-1 -->
+    <header id="header-2" class="header">
+        <nav class="navbar navbar-default navbar-justified" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <a href="/"><img class="img-responsive" style="max-height: 60px;" src="/static/img/cha-logo.png" alt="Coronado Historical Association  logo"></a>
+                    </div>
+                    <div class="col-md-3 color-skin-6 hidden-xs">
+                        <a class="pull-right btn btn-flat flat-color btn-lg donate" href="https://coronadohistory.org/shop/donate-to-cha/">Donate to CHA</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                            </button>
+                            <span class="theme-help" data-toggle="tooltip" data-placement="right" data-trigger="manual" title="The Site Title from Site -> Settings in the admin shows here."></span>
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            
+<ul class="nav navbar-nav"><li class="dropdown active"
+        id="dropdown-menu--"><a href="/">
+            Visit
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-visit-us"><a href="/visit-us/">Hours &amp; Location</a></li></ul></li><li class="dropdown"
+        id="dropdown-menu-historic-coronado"><a href="/historic-coronado/">
+            Coronado History
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-https:--coronadohistory.org-historic-coronado-"><a href="https://coronadohistory.org/historic-coronado/">Coronado History </a></li><li
+        id="dropdown-menu-http:--coronadohistory.pastperfectonline.com"><a href="http://coronadohistory.pastperfectonline.com">Historic Photos</a></li><li
+        id="dropdown-menu-https:--coronadohistoryexhibit.org-"><a href="https://coronadohistoryexhibit.org/">Island Icons</a></li><li
+        id="dropdown-menu-historic-coronado-a-timeline-of-coronado-history"><a href="/historic-coronado/a-timeline-of-coronado-history/">A Timeline of Coronado History</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-static-media-uploads-time_capsule_for_grab_n_go.pdf"><a href="https://coronadohistory.org/static/media/uploads/time_capsule_for_grab_n_go.pdf">Coronado COVID-19 Time Capsule</a></li><li
+        id="dropdown-menu-historic-coronado-field-guides-to-coronado-history"><a href="/historic-coronado/field-guides-to-coronado-history/">Coronado History Stories</a></li><li
+        id="dropdown-menu-historic-coronado-coronado-and-the-navy"><a href="/historic-coronado/coronado-and-the-navy/">Coronado and the Navy</a></li><li
+        id="dropdown-menu-historic-coronado-avenue-of-heroes"><a href="/historic-coronado/avenue-of-heroes/">Avenue of Heroes</a></li><li
+        id="dropdown-menu-historic-coronado-operation-home-front"><a href="/historic-coronado/operation-home-front/">Naval Aviator Homes</a></li><li
+        id="dropdown-menu-historic-coronado-gem-awards"><a href="/historic-coronado/gem-awards/">GEM Awards</a></li><li
+        id="dropdown-menu-historic-coronado-la-avenida-history"><a href="/historic-coronado/la-avenida-history/">La Avenida History</a></li></ul></li><li class="dropdown"
+        id="dropdown-menu-https:--coronadohistory.org-calendar-list"><a href="https://coronadohistory.org/calendar/list">
+            Events
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-calendar-list-"><a href="/calendar/list/">Calendar</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-calendar-list-?sort=&amp;categories=5"><a href="https://coronadohistory.org/calendar/list/?sort=&amp;categories=5">Lecture Series</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-tickets-historic-walking-tour-"><a href="https://coronadohistory.org/tickets/historic-walking-tour/">Historic Walking Tour</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-tickets-wine-lecture-series-ticket-"><a href="https://coronadohistory.org/tickets/wine-lecture-series-ticket/">Lecture Series Ticket</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-static-media-uploads-historic_districts_101_flyer.pdf"><a href="https://coronadohistory.org/static/media/uploads/historic_districts_101_flyer.pdf">Historic Districts 101</a></li><li
+        id="dropdown-menu-private-group-tours"><a href="/private-group-tours/">Private Group Tours</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-calendar-list--education"><a href="/https://coronadohistory.org/calendar/list//education/">School Programs</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-calendar-list-laundry-truck-100th-birthday-memories"><a href="/https://coronadohistory.org/calendar/list/laundry-truck-100th-birthday-memories/">Laundry Truck 100th Birthday Memories</a></li></ul></li><li class="dropdown"
+        id="dropdown-menu-collections"><a href="/collections/">
+            Research
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu--collections-"><a href="/collections/">About The Collection</a></li><li
+        id="dropdown-menu-https:--coronadohistory.pastperfectonline.com-"><a href="https://coronadohistory.pastperfectonline.com/">Photo Collection</a></li><li
+        id="dropdown-menu-collections-research"><a href="/collections/research/">Research Center</a></li><li
+        id="dropdown-menu-https:--docs.google.com-forms-d-e-1FAIpQLScFuCiWdZJ4kPqMlPfYIZx3C9aWM6XEOlX_-6yL99vO45u_Tg-viewform"><a href="https://docs.google.com/forms/d/e/1FAIpQLScFuCiWdZJ4kPqMlPfYIZx3C9aWM6XEOlX_-6yL99vO45u_Tg/viewform">Research Appointment Request</a></li><li
+        id="dropdown-menu-collections-photo-reproduction-orders"><a href="/collections/photo-reproduction-orders/">Photo Reproduction Orders</a></li><li
+        id="dropdown-menu-collections-photography-filming-policy"><a href="/collections/photography-filming-policy/">Photography &amp; Filming Policy </a></li><li
+        id="dropdown-menu-collections-write-for-cha"><a href="/collections/write-for-cha/">Write for CHA</a></li></ul></li><li class="dropdown"
+        id="dropdown-menu-exhibits"><a href="/exhibits/">
+            Museum
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-exhibits-current-exhibits"><a href="/exhibits/current-exhibits/">Current Exhibit</a></li><li
+        id="dropdown-menu-exhibits-past-exhibits"><a href="/exhibits/past-exhibits/">Past Exhibits</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-blog-category-field-notes-"><a href="https://coronadohistory.org/blog/category/field-notes/">Virtual Museum</a></li></ul></li><li class="dropdown"
+        id="dropdown-menu-membership"><a href="/membership/">
+            Get Involved
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-https:--coronadohistory.org-shop-membership-"><a href="https://coronadohistory.org/shop/membership/">Membership</a></li><li
+        id="dropdown-menu-membership-committees"><a href="/membership/committees/">Committees</a></li><li
+        id="dropdown-menu-donations"><a href="/donations/">Donate Now</a></li><li
+        id="dropdown-menu-membership-in-memoriam-donations"><a href="/membership/in-memoriam-donations/">In Memoriam Donations</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-calendar-event-save-the-date-2025-annual-historic-home-tour--sponsor"><a href="/https://coronadohistory.org/calendar/event/save-the-date-2025-annual-historic-home-tour//sponsor/">Historic Home Tour Sponsor</a></li><li
+        id="dropdown-menu-membership-volunteer"><a href="/membership/volunteer/">Volunteer</a></li></ul></li><li class=""
+        id="dropdown-menu-membership"><a href="/membership/">
+            Membership
+            
+        </a></li><li class="dropdown"
+        id="dropdown-menu-shop"><a href="/shop/">
+            Shop
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-https:--coronadohistory.org-shop-"><a href="https://coronadohistory.org/shop/">Museum Store</a></li><li
+        id="dropdown-menu-shop-dads-grads"><a href="/shop/dads-grads/">Military</a></li><li
+        id="dropdown-menu-shop-local-artists"><a href="/shop/local-artists/">Local Artists</a></li><li
+        id="dropdown-menu-shop-hostess-gifts"><a href="/shop/hostess-gifts/">Hostess Gifts</a></li><li
+        id="dropdown-menu-shop-coronado-books"><a href="/shop/coronado-books/">Coronado Books</a></li><li
+        id="dropdown-menu-shop-donate-to-cha"><a href="/shop/donate-to-cha/">Donate to CHA</a></li><li
+        id="dropdown-menu-shop-membership"><a href="/shop/membership/">Membership (New or Renewal)</a></li></ul></li><li class="dropdown"
+        id="dropdown-menu-about"><a href="/about/">
+            About
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu--about"><a href="/about">Our Mission</a></li><li
+        id="dropdown-menu-about-history-of-cha"><a href="/about/history-of-cha/">Association History</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-static-media-uploads-cha_-_strategic_plan_v5.pdf"><a href="https://coronadohistory.org/static/media/uploads/cha_-_strategic_plan_v5.pdf">CHA Strategic Plan</a></li><li
+        id="dropdown-menu-about-board-of-directors-staff"><a href="/about/board-of-directors-staff/">Board of Directors and Staff</a></li><li
+        id="dropdown-menu-about-contact-us-1"><a href="/about/contact-us-1/">Contact Us</a></li><li
+        id="dropdown-menu-about-advocacy-policy-requests-1"><a href="/about/advocacy-policy-requests-1/">Advocacy Policy / Requests</a></li><li
+        id="dropdown-menu-about-facility-rentals"><a href="/about/facility-rentals/">Facility Rentals</a></li><li
+        id="dropdown-menu-https:--coronadohistory.org-membership-volunteer-"><a href="https://coronadohistory.org/membership/volunteer/">Volunteer</a></li><li
+        id="dropdown-menu-about-employment-opportunitiies"><a href="/about/employment-opportunitiies/">Employment Opportunities</a></li><li
+        id="dropdown-menu-about-privacynotice"><a href="/about/privacynotice/">Privacy Notice</a></li><li
+        id="dropdown-menu-https:--www.guidestar.org-profile-95-3872442"><a href="https://www.guidestar.org/profile/95-3872442">Form 990s</a></li><li
+        id="dropdown-menu-about-audited-financials"><a href="/about/audited-financials/">Audited Financials</a></li><li
+        id="dropdown-menu-http:--eepurl.com-c7Yjg9"><a href="http://eepurl.com/c7Yjg9">Join Our Mailing List</a></li></ul></li><li class=""
+        id="dropdown-menu-https:--coronadohistory.org-tickets-gem-"><a href="https://coronadohistory.org/tickets/gem/">
+            GEM Awards
+            
+        </a></li></ul>
+
+                            <!-- /.nav -->
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- /.navbar -->
+    </header>
+    <!-- /#header-2 -->
+
+    
+	
+	<section id="fullwidthbanner-container" class="">
+		<div class="container">
+			<div class="row">
+				<div class="carousel-container col-md-9">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							
+						 </ol>
+						<div class="carousel-inner">
+							
+							<div class="item active">
+								<div class="media">
+									<div class="media-body">
+										<img class="img-responsive" src="/static/media/uploads/slider/.thumbnails/historic_walking_tours_%281%29.png/historic_walking_tours_%281%29-1180x812.png"
+										 alt=" image">
+									</div>
+									<div class="pull-left">
+										<h2></h2>
+										<p></p>
+										<a class="btn btn-flat flat-color" href="https://coronadohistory.org/tickets/historic-walking-tour/">Click Here to Learn More</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="media">
+									<div class="media-body">
+										<img class="img-responsive" src="/static/media/uploads/slider/.thumbnails/d-day250_closefeb22.png/d-day250_closefeb22-1180x812.png"
+										 alt=" image">
+									</div>
+									<div class="pull-left">
+										<h2></h2>
+										<p></p>
+										<a class="btn btn-flat flat-color" href="https://coronadohistory.org/exhibits/current-exhibits/">Now Open!</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="media">
+									<div class="media-body">
+										<img class="img-responsive" src="/static/media/uploads/slider/.thumbnails/spring_26_st_updated.jpg/spring_26_st_updated-1180x812.jpg"
+										 alt=" image">
+									</div>
+									<div class="pull-left">
+										<h2></h2>
+										<p></p>
+										<a class="btn btn-flat flat-color" href="https://coronadohistory.org/calendar/list/">Click Here to Learn More</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="media">
+									<div class="media-body">
+										<img class="img-responsive" src="/static/media/uploads/slider/.thumbnails/blue_star.png/blue_star-1180x812.png"
+										 alt=" image">
+									</div>
+									<div class="pull-left">
+										<h2></h2>
+										<p></p>
+										<a class="btn btn-flat flat-color" href="https://www.arts.gov/initiatives/blue-star-museums">Click Here to Learn More</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+				
+					<div class="col-md-3 content-blocks">
+						<div class="row">
+							
+								<div class="col-md-12 col-sm-4 col-xs-6 content-block">
+									<a href="https://coronadohistory.org/about/facility-rentals/">
+										
+											<img class="img-responsive" src="/static/media/uploads/headers/.thumbnails/donations-homepage.png/donations-homepage-289x205.png" alt="Facility Rentals">
+										
+										<h4>Facility Rentals ›</h4>
+									</a>
+								</div>
+							
+								<div class="col-md-12 col-sm-4 col-xs-6 content-block">
+									<a href="https://coronadohistory.org/calendar/list/">
+										
+											<img class="img-responsive" src="/static/media/uploads/headers/.thumbnails/education.jpg/education-289x205.jpg" alt="Upcoming Events">
+										
+										<h4>Upcoming Events ›</h4>
+									</a>
+								</div>
+							
+								<div class="col-md-12 col-sm-4 col-xs-6 content-block">
+									<a href="https://coronadohistory.org/historic-coronado/a-timeline-of-coronado-history/">
+										
+											<img class="img-responsive" src="/static/media/uploads/headers/.thumbnails/timeline.jpg/timeline-289x205.jpg" alt="Coronado Timeline">
+										
+										<h4>Coronado Timeline ›</h4>
+									</a>
+								</div>
+							
+						</div>
+					</div>
+				
+			</div>
+		</div>
+		<!-- /.fullwidthbanner -->
+	</section>
+	<!-- /.fullwidthbanner-container -->
+	
+	
+
+	
+	<section id="our-services" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						
+						<div class="col-xs-6 picture-box">
+							
+							<a href="https://coronadohistory.pastperfectonline.com/">
+								<h3 style="background-color: rbg(3e4b66); background-color: rgba(3e4b66, 1.0);">Historic Coronado ›</h3>
+								<img class="img-responsive" src="/static/media/uploads/homepage/picture boxes/.thumbnails/collections-homepage2.png/collections-homepage2-345x284.png">
+							</a>
+							
+						</div>
+						
+						<div class="col-xs-6 picture-box">
+							
+							<a href="https://coronadohistory.org/donations/">
+								<h3 style="background-color: rbg(ffffff); background-color: rgba(ffffff, 1.0);">Donate ›</h3>
+								<img class="img-responsive" src="/static/media/uploads/homepage/picture boxes/.thumbnails/walking-tours.jpg/walking-tours-345x284.jpg">
+							</a>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-4 cha-info">
+					
+					<h3>Information</h3>
+					
+					
+					<div class="panel">
+						
+						<h4><i class="fa Hours"></i> Hours</h4>
+						Museum & Store:
+Tues - Sun 10 am - 4 pm
+						
+					</div>
+					
+					<div class="panel">
+						
+						<h4><i class="fa Address"></i> Address</h4>
+						1100 Orange Avenue, Coronado, CA 92118
+						
+					</div>
+					
+					<div class="panel">
+						
+						<h4><i class="fa Contact"></i> Contact</h4>
+						(619) 435-7242
+info@coronadohistory.org
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	
+	
+	
+	<section id="blog-posts" class="section colored-wrapper">
+		<div class="container">
+			<div class="wrapper-2">
+				
+				<h5 class="subpage-title">
+					<span>Get to know us:</span>
+					<!-- Controls -->
+					<span id="blog-posts-next" class="next black"><i class="fa fa-angle-right"></i></span>
+					<span id="blog-posts-prev" class="prev black"><i class="fa fa-angle-left"></i></span>
+				</h5>
+				
+				<div class="row">
+					<div id="caroufredsel-blog-posts-container">
+						
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<article class="post post-2">
+								
+								<div class="post-thumb">
+									<a href="/blog/irving-j-gill-coronado-walking-tour-052920/"><img src="/static/media/uploads/.thumbnails/2016_gill_700x490.png/2016_gill_700x490-290x163.png" class="img-responsive" alt="Responsive image"></a>
+								</div>
+								
+								<!-- /.post-thumb -->
+								<div class="post-content text-center">
+									<h5 class="post-title"><a href="/blog/irving-j-gill-coronado-walking-tour-052920/">Irving J. Gill Coronado Walking Tour</a></h5>
+									<a class="btn btn-flat flat-color" href="/blog/irving-j-gill-coronado-walking-tour-052920/">Learn more</a>
+								</div>
+
+							</article>
+							<!-- /.post -->
+						</div>
+						<!-- /.col-md-4 -->
+						
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<article class="post post-2">
+								
+								<div class="post-thumb">
+									<a href="/blog/annual-report/"><img src="/static/media/uploads/.thumbnails/1100orangepostcard-cha-696x446.jpg/1100orangepostcard-cha-696x446-290x163.jpg" class="img-responsive" alt="Responsive image"></a>
+								</div>
+								
+								<!-- /.post-thumb -->
+								<div class="post-content text-center">
+									<h5 class="post-title"><a href="/blog/annual-report/">Annual Report</a></h5>
+									<a class="btn btn-flat flat-color" href="/blog/annual-report/">Learn more</a>
+								</div>
+
+							</article>
+							<!-- /.post -->
+						</div>
+						<!-- /.col-md-4 -->
+						
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<article class="post post-2">
+								
+								<div class="post-thumb">
+									<a href="/blog/field-guides-to-coronado/"><img src="/static/media/uploads/historical coronado/Field Guide/.thumbnails/iconteagarden3.jpg/iconteagarden3-290x163.jpg" class="img-responsive" alt="Responsive image"></a>
+								</div>
+								
+								<!-- /.post-thumb -->
+								<div class="post-content text-center">
+									<h5 class="post-title"><a href="/blog/field-guides-to-coronado/">Field Guides to Coronado</a></h5>
+									<a class="btn btn-flat flat-color" href="/blog/field-guides-to-coronado/">Learn more</a>
+								</div>
+
+							</article>
+							<!-- /.post -->
+						</div>
+						<!-- /.col-md-4 -->
+						
+					</div>
+					<!-- /#caroufredsel-blog-posts-container -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.wrapper-2 -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /#blog-posts -->
+	
+
+
+    
+	
+
+    <section id="awesome-callout" class="section">
+        <div class="container">
+            
+            <div class="awesome-callout">
+                <div class="media">
+<p class="pull-left"><img alt="" height="206" src="/static/media/uploads/.thumbnails/new_cha_logo.jpg/new_cha_logo-265x206.jpg" width="265"/></p>
+<div class="media-body">
+<h2 class="media-heading">Become a member</h2>
+<p>Join us and help preserve and share Coronado's unique and wonderful history with intriguing exhibits and innovative programs for all ages.</p>
+<p><strong>MEMBERSHIP BENEFITS INCLUDE:</strong></p>
+<ul>
+<li>Two complimentary tickets to our Historic Walking Tour of Coronado</li>
+<li>Invites to members-only events</li>
+<li>...and much more!</li>
+</ul>
+</div>
+</div>
+                <a href="/membership/" class="btn btn-flat flat-color btn-lg">Membership information</a>
+            </div>
+            
+            <!-- /.awesome-callout -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <footer id="footer-2" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 footer-info-wrapper">
+                    <span>Coronado Historical Association  &copy; 2026. Made with <a target="_blank" href="http://mezzathe.me">MEZZaTHEME</a><br>Developed by <a target="_blank" href="http://raindropads.com">Raindrop Marketing</a></span>
+                </div>
+                <!-- /.footer-info-wrapper -->
+                <div class="col-xs-12 col-sm-6 social-link-wrapper">
+                    <ul class="social-links">
+                        <li><span class="theme-help" data-toggle="tooltip" data-placement="left" data-trigger="manual" title="Edit these in Site -> Settings in the admin"></span></li>
+                        
+                        <li><a target="_blank" href="https://www.facebook.com/CoronadoHistory/"><i class="fa fa-facebook"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                </div>
+                <!-- /.social-link-wrapper -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /#footer-2 -->
+
+    
+    
+    <div id="skin-chooser-container" class="skin-chooser-container">
+        <a data-toggle="modal" href="#myModal" class="skin-chooser hidden-xs">
+            <i class="fa fa-cogs"></i>
+            <span class="theme-help" data-toggle="tooltip" data-placement="right" data-trigger="manual" title="View and set available color schemes"></span>
+        </a>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">CHOOSE COLOR SKIN, CURRENTLY: 7</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="skins-wrapper">
+                            
+                            <ul class="list-inline">
+                                <li>
+                                    <div id="color-skin-1" class="color-skin"></div> 1
+                                </li>
+                                <li>
+                                    <div id="color-skin-2" class="color-skin"></div> 2
+                                </li>
+                                <li>
+                                    <div id="color-skin-3" class="color-skin active"></div> 3
+                                </li>
+                                <li>
+                                    <div id="color-skin-4" class="color-skin"></div> 4
+                                </li>
+                                <li>
+                                    <div id="color-skin-5" class="color-skin"></div> 5
+                                </li>
+                                <li>
+                                    <div id="color-skin-6" class="color-skin"></div> 6
+                                </li>
+                                <li>
+                                    <div id="color-skin-7" class="color-skin"></div> 7
+                                </li>
+                                <li>
+                                    <div id="color-skin-8" class="color-skin"></div> 8
+                                </li>
+                                <li>
+                                    <div id="color-skin-9" class="color-skin"></div> 9
+                                </li>
+                                <li>
+                                    <div id="color-skin-10" class="color-skin"></div> 10
+                                </li>
+                                <li>
+                                    <div id="color-skin-11" class="color-skin"></div> 11
+                                </li>
+                                <li>
+                                    <div id="color-skin-12" class="color-skin"></div> 12
+                                </li>
+                                <li>
+                                    <div id="color-skin-13" class="color-skin"></div> 13
+                                </li>
+                                <li>
+                                    <div id="color-skin-14" class="color-skin"></div> 14
+                                </li>
+                                <li>
+                                    <div id="color-skin-15" class="color-skin"></div> 15
+                                </li>
+                                <li>
+                                    <div id="color-skin-16" class="color-skin"></div> 16
+                                </li>
+                            </ul>
+                            
+                            <p>Use this widget to try out the available color schemes.
+                               To permanently set one take note of it's number, click edit above and fill it in or go to the <a href="/admin/theme/siteconfiguration/">admin</a> and edit the color scheme setting.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    
+
+</div>
+<!-- /#main-wrapper -->
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/static/mezzanine/css/editable.css">
+    <form id="editable-toolbar" method="POST" action="/admin/logout/?=/" style="display:block;">
+        <a id="theme-help-toggle" style="display:inline;">Theme help</a>
+    </form>
+    <span style="position: fixed;" class="editable-link theme-help" data-toggle="tooltip" data-placement="bottom" data-trigger="manual" title="Only visible/functional if logged in as an admin or DEBUG is True"></span>
+
+    <script>
+    $(document).ready(function($) {
+        $('.theme-help').tooltip();
+        $('#theme-help-toggle').click(function(){
+            $('.theme-help').tooltip('toggle');
+        });
+    });
+    </script>
+    
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'G-48V3VV4BZN', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+</body>
+</html>

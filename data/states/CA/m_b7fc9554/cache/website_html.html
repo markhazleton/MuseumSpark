@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+
+<html lang="en-US" class="no-js">
+<head> <script type="text/javascript">
+/* <![CDATA[ */
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+/* ]]> */
+</script>
+
+	
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" /><link rel="shortcut icon" href="https://www.losaltoshistory.org/wp-content/uploads/2016/06/favicon-16x16.png" /><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Los Altos History Museum | Los Altos, California</title><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/><link rel="preconnect" href="https://fonts.googleapis.com"/><style type="text/css">@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmaiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmaiA8.ttf) format('truetype');
+}
+</style><link rel="stylesheet" id="siteground-optimizer-combined-css-44aaf738556ea954e5ce5a3382a88e7c" href="https://www.losaltoshistory.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-44aaf738556ea954e5ce5a3382a88e7c.css" media="all" /> <link rel="preload" href="https://www.losaltoshistory.org/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-44aaf738556ea954e5ce5a3382a88e7c.css" as="style">
+	<meta name="description" content="The Los Altos History Museum mission is collecting, preserving, and interpreting the history of the Los Altos area." />
+	<link rel="canonical" href="https://www.losaltoshistory.org/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Los Altos History Museum | Los Altos, California" />
+	<meta property="og:description" content="The Los Altos History Museum mission is collecting, preserving, and interpreting the history of the Los Altos area." />
+	<meta property="og:url" content="https://www.losaltoshistory.org/" />
+	<meta property="og:site_name" content="Los Altos History Museum" />
+	<meta property="article:publisher" content="http://www.facebook.com/pages/Los-Altos-History-Museum/110110105714570" />
+	<meta property="article:modified_time" content="2025-11-19T19:20:17+00:00" />
+	<meta property="og:image" content="https://www.losaltoshistory.org/wp-content/uploads/2015/11/lahm-webLogoSmTx.png" />
+	<meta property="og:image:width" content="500" />
+	<meta property="og:image:height" content="100" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@losaltoshistory" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.losaltoshistory.org/","url":"https://www.losaltoshistory.org/","name":"Los Altos History Museum | Los Altos, California","isPartOf":{"@id":"https://www.losaltoshistory.org/#website"},"about":{"@id":"https://www.losaltoshistory.org/#organization"},"datePublished":"2014-08-22T19:48:21+00:00","dateModified":"2025-11-19T19:20:17+00:00","description":"The Los Altos History Museum mission is collecting, preserving, and interpreting the history of the Los Altos area.","breadcrumb":{"@id":"https://www.losaltoshistory.org/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.losaltoshistory.org/"]}]},{"@type":"BreadcrumbList","@id":"https://www.losaltoshistory.org/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.losaltoshistory.org/#website","url":"https://www.losaltoshistory.org/","name":"Los Altos History Museum","description":"Where the Past shapes the Future","publisher":{"@id":"https://www.losaltoshistory.org/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.losaltoshistory.org/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.losaltoshistory.org/#organization","name":"Los Altos History Museum","url":"https://www.losaltoshistory.org/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.losaltoshistory.org/#/schema/logo/image/","url":"https://www.losaltoshistory.org/wp-content/uploads/2016/06/lahm-webbanner-retina.png","contentUrl":"https://www.losaltoshistory.org/wp-content/uploads/2016/06/lahm-webbanner-retina.png","width":1000,"height":200,"caption":"Los Altos History Museum"},"image":{"@id":"https://www.losaltoshistory.org/#/schema/logo/image/"},"sameAs":["http://www.facebook.com/pages/Los-Altos-History-Museum/110110105714570","https://x.com/losaltoshistory","http://www.youtube.com/user/LosAltosHistory","https://www.instagram.com/losaltoshistorymuseum"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Los Altos History Museum &raquo; Feed" href="https://www.losaltoshistory.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Los Altos History Museum &raquo; Comments Feed" href="https://www.losaltoshistory.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Los Altos History Museum &raquo; Home Comments Feed" href="https://www.losaltoshistory.org/home/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.losaltoshistory.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.losaltoshistory.org%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.losaltoshistory.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.losaltoshistory.org%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+
+
+
+<style id='font-awesome-svg-styles-default-inline-css' type='text/css'>
+.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+/*# sourceURL=font-awesome-svg-styles-default-inline-css */
+</style>
+
+<style id='font-awesome-svg-styles-inline-css' type='text/css'>
+   .wp-block-font-awesome-icon svg::before,
+   .wp-rich-text-font-awesome-icon svg::before {content: unset;}
+/*# sourceURL=font-awesome-svg-styles-inline-css */
+</style>
+
+
+
+
+<link rel='stylesheet' id='wpdm-font-awesome-css' href='https://use.fontawesome.com/releases/v6.7.2/css/all.css' type='text/css' media='all' />
+
+
+
+
+
+
+
+<style id='ui-fontsize.css-inline-css' type='text/css'>
+html { --wpa-font-size: clamp( 24px, 1.5rem, 36px ); --wpa-h1-size : clamp( 48px, 3rem, 72px ); --wpa-h2-size : clamp( 40px, 2.5rem, 60px ); --wpa-h3-size : clamp( 32px, 2rem, 48px ); --wpa-h4-size : clamp( 28px, 1.75rem, 42px ); --wpa-sub-list-size: 1.1em; --wpa-sub-sub-list-size: 1em; } 
+/*# sourceURL=ui-fontsize.css-inline-css */
+</style>
+
+<style id='wpa-style-inline-css' type='text/css'>
+.wpa-hide-ltr#skiplinks a, .wpa-hide-ltr#skiplinks a:hover, .wpa-hide-ltr#skiplinks a:visited {
+	
+}
+.wpa-hide-ltr#skiplinks a:active,  .wpa-hide-ltr#skiplinks a:focus {
+	
+}
+	:root { --admin-bar-top : 7px; }
+/*# sourceURL=wpa-style-inline-css */
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id='main-styles-inline-css' type='text/css'>
+html body[data-header-resize="1"] .container-wrap, html body[data-header-resize="0"] .container-wrap, body[data-header-format="left-header"][data-header-resize="0"] .container-wrap { padding-top: 0; }
+/*# sourceURL=main-styles-inline-css */
+</style>
+
+
+
+
+
+
+
+<link rel='stylesheet' id='font-awesome-official-css' href='https://use.fontawesome.com/releases/v6.5.1/css/all.css' type='text/css' media='all' integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous" />
+
+
+
+
+
+
+
+
+
+
+<style id='dynamic-css-inline-css' type='text/css'>
+@media only screen and (min-width:1000px){body #ajax-content-wrap.no-scroll{min-height:calc(100vh - 178px);height:calc(100vh - 178px)!important;}}@media only screen and (min-width:1000px){#page-header-wrap.fullscreen-header,#page-header-wrap.fullscreen-header #page-header-bg,html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header,.nectar_fullscreen_zoom_recent_projects,#nectar_fullscreen_rows:not(.afterLoaded) > div{height:calc(100vh - 177px);}.wpb_row.vc_row-o-full-height.top-level,.wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 177px);}html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header{top:178px;}.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh - 176px)!important;}.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh - 176px - 32px)!important;}}#nectar_fullscreen_rows{background-color:;}
+#search { display: none; }
+/*# sourceURL=dynamic-css-inline-css */
+</style>
+
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 20%;
+                }
+                
+                         @media (min-width:0px) and (max-width: 767px) {
+                            .epyt-gallery-rowbreak {
+                                display: none;
+                            }
+                            .epyt-gallery-allthumbs[class*="epyt-cols"] .epyt-gallery-thumb {
+                                width: 100% !important;
+                            }
+                          }
+/*# sourceURL=__EPYT__style-inline-css */
+</style>
+
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://use.fontawesome.com/releases/v6.5.1/css/v4-shims.css' type='text/css' media='all' integrity="sha384-5Jfdy0XO8+vjCRofsSnGmxGSYjLfsjjTOABKxVr8BkfvlaAm14bIJc7Jcjfq/xQI" crossorigin="anonymous" />
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/accordion-subpage-menu/js/appcode.js" id="subpage-menu-js-js"></script>
+<script type="text/javascript" id="addtoany-core-js-before">
+/* <![CDATA[ */
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+a2a_config.icon_color="transparent,#76b143";
+
+//# sourceURL=addtoany-core-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://static.addtoany.com/menu/page.js" id="addtoany-core-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" defer src="https://www.losaltoshistory.org/wp-content/plugins/add-to-any/addtoany.min.js" id="addtoany-jquery-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/download-manager/assets/js/wpdm.min.js" id="wpdmjs-js"></script>
+<script type="text/javascript" id="wpdm-frontjs-js-extra">
+/* <![CDATA[ */
+var wpdm_url = {"home":"https://www.losaltoshistory.org/","site":"https://www.losaltoshistory.org/","ajax":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","page_code":"6666cd76f96956469e7be39d750cc7d9"};
+var wpdm_js = {"spinner":"\u003Ci class=\"fas fa-sun fa-spin\"\u003E\u003C/i\u003E","client_id":"251ac56c95d6713011a2310e58f13cb5"};
+var wpdm_strings = {"pass_var":"Password Verified!","pass_var_q":"Please click following button to start download.","start_dl":"Start Download"};
+//# sourceURL=wpdm-frontjs-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/download-manager/assets/js/front.min.js" id="wpdm-frontjs-js"></script>
+<script type="text/javascript" id="image-watermark-no-right-click-js-before">
+/* <![CDATA[ */
+var iwArgsNoRightClick = {"rightclick":"N","draganddrop":"Y","devtools":"Y","enableToast":"Y","toastMessage":"This content is protected"};
+
+//# sourceURL=image-watermark-no-right-click-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/image-watermark/js/no-right-click.js" id="image-watermark-no-right-click-js"></script>
+<script type="text/javascript" id="3d-flip-book-client-locale-loader-js-extra">
+/* <![CDATA[ */
+var FB3D_CLIENT_LOCALE = {"ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","dictionary":{"Table of contents":"Table of contents","Close":"Close","Bookmarks":"Bookmarks","Thumbnails":"Thumbnails","Search":"Search","Share":"Share","Facebook":"Facebook","Twitter":"Twitter","Email":"Email","Play":"Play","Previous page":"Previous page","Next page":"Next page","Zoom in":"Zoom in","Zoom out":"Zoom out","Fit view":"Fit view","Auto play":"Auto play","Full screen":"Full screen","More":"More","Smart pan":"Smart pan","Single page":"Single page","Sounds":"Sounds","Stats":"Stats","Print":"Print","Download":"Download","Goto first page":"Goto first page","Goto last page":"Goto last page"},"images":"https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/assets/images/","jsData":{"urls":[],"posts":{"ids_mis":[],"ids":[]},"pages":[],"firstPages":[],"bookCtrlProps":[],"bookTemplates":[]},"key":"3d-flip-book","pdfJS":{"pdfJsLib":"https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/assets/js/pdf.min.js?ver=4.3.136","pdfJsWorker":"https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/assets/js/pdf.worker.js?ver=4.3.136","stablePdfJsLib":"https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/assets/js/stable/pdf.min.js?ver=2.5.207","stablePdfJsWorker":"https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/assets/js/stable/pdf.worker.js?ver=2.5.207","pdfJsCMapUrl":"https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/assets/cmaps/"},"cacheurl":"https://www.losaltoshistory.org/wp-content/uploads/3d-flip-book/cache/","pluginsurl":"https://www.losaltoshistory.org/wp-content/plugins/","pluginurl":"https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/","thumbnailSize":{"width":"150","height":"150"},"version":"1.16.17"};
+//# sourceURL=3d-flip-book-client-locale-loader-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/interactive-3d-flipbook-powered-physics-engine/assets/js/client-locale-loader.js" id="3d-flip-book-client-locale-loader-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="//www.losaltoshistory.org/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js" id="tp-tools-js"></script>
+<script type="text/javascript" src="//www.losaltoshistory.org/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js" id="revmin-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/ui/menu.min.js" id="jquery-ui-menu-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/ui/selectmenu.min.js" id="jquery-ui-selectmenu-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/ui/tooltip.min.js" id="jquery-ui-tooltip-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/dist/vendor/moment.min.js" id="moment-js"></script>
+<script type="text/javascript" id="moment-js-after">
+/* <![CDATA[ */
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":0},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+//# sourceURL=moment-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="wp-fullcalendar-js-extra">
+/* <![CDATA[ */
+var WPFC = {"ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php?action=WP_FullCalendar","firstDay":"0","wpfc_theme":"jquery-ui","wpfc_limit":"5","wpfc_limit_txt":"more ...","timeFormat":"h(:mm)t","defaultView":"month","weekends":"true","header":{"left":"prev,next today","center":"title","right":"month,agendaWeek,agendaDay"},"wpfc_qtips":"1","tippy_theme":"light-border","tippy_placement":"auto","tippy_loading":"Loading..."};
+//# sourceURL=wp-fullcalendar-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/wp-fullcalendar/includes/js/main.js" id="wp-fullcalendar-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/js/jquery.json.min.js" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"a6f1ea3963a2732fc9e5aad643cab76e","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"a6f1ea3963a2732fc9e5aad643cab76e","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_legacy = {"is_legacy":""};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"a6f1ea3963a2732fc9e5aad643cab76e","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":0,"iconText":"Select date"}};
+var gf_legacy_multi = {"43":"","39":""};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images"}};
+//# sourceURL=gform_gravityforms-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/js/gravityforms.min.js" id="gform_gravityforms-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js" id="gform_gravityforms_utils-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/plupload/moxie.min.js" id="moxiejs-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/plupload/plupload.min.js" id="plupload-js"></script>
+<script type="text/javascript" id="foobox-free-min-js-before">
+/* <![CDATA[ */
+/* Run FooBox FREE (v2.7.35) */
+var FOOBOX = window.FOOBOX = {
+	ready: true,
+	disableOthers: false,
+	o: {wordpress: { enabled: true }, countMessage:'image %index of %total', captions: { dataTitle: ["captionTitle","title"], dataDesc: ["captionDesc","description"] }, rel: '', excludes:'.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]', affiliate : { enabled: false }},
+	selectors: [
+		".foogallery-container.foogallery-lightbox-foobox", ".foogallery-container.foogallery-lightbox-foobox-free", ".gallery", ".wp-block-gallery", ".wp-caption", ".wp-block-image", "a:has(img[class*=wp-image-])", ".foobox"
+	],
+	pre: function( $ ){
+		// Custom JavaScript (Pre)
+		
+	},
+	post: function( $ ){
+		// Custom JavaScript (Post)
+		
+		// Custom Captions Code
+		
+	},
+	custom: function( $ ){
+		// Custom Extra JS
+		
+	}
+};
+//# sourceURL=foobox-free-min-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/foobox-image-lightbox/free/js/foobox.free.min.js" id="foobox-free-min-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-5D4TF4G" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.losaltoshistory.org"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-5D4TF4G", {"googlesitekit_post_type":"page"});
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="__ytprefs__-js-extra">
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","security":"551a2f837b","gallery_scrolloffset":"20","eppathtoscripts":"https://www.losaltoshistory.org/wp-content/plugins/youtube-embed-plus/scripts/","eppath":"https://www.losaltoshistory.org/wp-content/plugins/youtube-embed-plus/","epresponsiveselector":"[\"iframe.__youtube_prefs__\"]","epdovol":"1","version":"14.2.4","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com/embed/\"], iframe[src*=\"youtube-nocookie.com/embed/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":""};
+//# sourceURL=__ytprefs__-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://www.losaltoshistory.org/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js" id="__ytprefs__-js"></script>
+<link rel="https://api.w.org/" href="https://www.losaltoshistory.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.losaltoshistory.org/wp-json/wp/v2/pages/8" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.losaltoshistory.org/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<link rel='shortlink' href='https://www.losaltoshistory.org/' />
+<meta name="generator" content="Site Kit by Google 1.170.0" /><script type="text/javascript"> var root = document.getElementsByTagName( "html" )[0]; root.setAttribute( "class", "js" ); </script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79146827-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-79146827-1');
+</script>
+
+<!-- Meta Pixel Code -->
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+n.queue=[];t=b.createElement(e);t.async=!0;
+
+t.src=v;s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1834406430224337');
+
+fbq('track', 'PageView');
+
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+
+src="https://www.facebook.com/tr?id=1834406430224337&ev=PageView&noscript=1"
+
+/></noscript>
+
+<!-- End Meta Pixel Code --><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.7.40 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://www.losaltoshistory.org/wp-content/uploads/2015/12/cropped-LAHM-Site-Icon-1-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.losaltoshistory.org/wp-content/uploads/2015/12/cropped-LAHM-Site-Icon-1-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.losaltoshistory.org/wp-content/uploads/2015/12/cropped-LAHM-Site-Icon-1-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.losaltoshistory.org/wp-content/uploads/2015/12/cropped-LAHM-Site-Icon-1-1-270x270.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+		<style type="text/css" id="wp-custom-css">
+			.home #sidebar .widget .nectar_widget[class*="nectar_blog_posts_"] > li .post-date {
+    font-size:12px;
+}
+
+.home #sidebar .widget .nectar_widget[class*="nectar_blog_posts_"] > li .post-date::before {
+    content: 'Posted '
+}
+.em-item-info {
+	font-size:16px;
+	line-height:1.2;
+}
+.em-item-name > a,
+.em-item-name .eventLink,
+.em.pixelbones a { 
+	color: #76b143 !important; 
+}
+
+.wpdm-pagination li {
+    list-style: none !important;
+}
+.newsletter-archive-item i.icon-default-style {
+    height: 32px;
+    width: 32px;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+body.material #header-secondary-outer nav >ul >li >a { font-size: 16px; }		</style>
+		<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1762523866282{border-right-width: 20px !important;padding-top: 15px !important;padding-bottom: 15px !important;padding-left: 20px !important;background-color: #c4d118 !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><meta name="generator" content="WordPress Download Manager 7.0.4" />
+		            
+            <style>
+                .w3eden .fetfont,
+                .w3eden .btn,
+                .w3eden .btn.wpdm-front h3.title,
+                .w3eden .wpdm-social-lock-box .IN-widget a span:last-child,
+                .w3eden .card-header,
+                .w3eden .card-footer,
+                .w3eden .badge,
+                .w3eden .label,
+                .w3eden .table,
+                .w3eden .card-body,
+                .w3eden .wpdm-frontend-tabs a,
+                .w3eden .alert:before,
+                .w3eden .discount-msg,
+                .w3eden .panel.dashboard-panel h3,
+                .w3eden #wdmds .list-group-item,
+                .w3eden #package-description .wp-switch-editor,
+                .w3eden .w3eden.author-dashbboard .nav.nav-tabs li a,
+                .w3eden .wpdm_cart thead th,
+                .w3eden #csp .list-group-item,
+                .w3eden .modal-title {
+                    font-family: Robotowght100100italic300300italic500500italic700700italic900900italicitalicregular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                }
+
+                .w3eden .btn {
+                    font-weight: 800 !important;
+                }
+
+                .w3eden .btn {
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+
+                .w3eden #csp .list-group-item {
+                    text-transform: unset;
+                }
+
+
+            </style>
+		        <style>
+            /* WPDM Link Template Styles */
+
+
+        </style>
+		        <style>
+
+            :root {
+                --color-primary: #76b143;
+                --color-primary-rgb: 118, 177, 67;
+                --color-primary-hover: #61af13;
+                --color-primary-active: #76b143;
+                --clr-sec: #61cae0;
+                --clr-sec-rgb: 97, 202, 224;
+                --clr-sec-hover: #0fbde0;
+                --clr-sec-active: #61cae0;
+                --color-success: #76b143;
+                --color-success-rgb: 118, 177, 67;
+                --color-success-hover: #57af0a;
+                --color-success-active: #76b143;
+                --color-info: #6c8cc7;
+                --color-info-rgb: 108, 140, 199;
+                --color-info-hover: #1b57c6;
+                --color-info-active: #6c8cc7;
+                --color-warning: #FFB236;
+                --color-warning-rgb: 255, 178, 54;
+                --color-warning-hover: #FFB236;
+                --color-warning-active: #FFB236;
+                --color-danger: #f37021;
+                --color-danger-rgb: 243, 112, 33;
+                --color-danger-hover: #f25c00;
+                --color-danger-active: #f37021;
+                --color-green: #30b570;
+                --color-blue: #0073ff;
+                --color-purple: #8557D3;
+                --color-red: #ff5062;
+                --color-muted: rgba(69, 89, 122, 0.6);
+                --wpdm-font: "Robotowght100100italic300300italic500500italic700700italic900900italicitalicregular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+
+            .wpdm-download-link.btn.btn-primary {
+                border-radius: 0px;
+            }
+
+
+        </style>
+		        <script>
+            function wpdm_rest_url(request) {
+                return "https://www.losaltoshistory.org/wp-json/wpdm/" + request;
+            }
+        </script>
+			
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+		#rev_slider_15_1_wrapper .hermes.tparrows{cursor:pointer;background:rgba(0,0,0,0.5);width:30px;height:110px;position:absolute;display:block;z-index:1000}#rev_slider_15_1_wrapper .hermes.tparrows:before{font-family:'revicons';font-size:15px;color:#ffffff;display:block;line-height:110px;text-align:center;  transform:translatex(0px);  -webkit-transform:translatex(0px);  transition:all 0.3s;  -webkit-transition:all 0.3s}#rev_slider_15_1_wrapper .hermes.tparrows.tp-leftarrow:before{content:'\e824'}#rev_slider_15_1_wrapper .hermes.tparrows.tp-rightarrow:before{content:'\e825'}#rev_slider_15_1_wrapper .hermes.tparrows.tp-leftarrow.rs-touchhover:before{transform:translatex(-20px);  -webkit-transform:translatex(-20px);   opacity:0}#rev_slider_15_1_wrapper .hermes.tparrows.tp-rightarrow.rs-touchhover:before{transform:translatex(20px);  -webkit-transform:translatex(20px);   opacity:0}#rev_slider_15_1_wrapper .hermes .tp-arr-allwrapper{overflow:hidden;  position:absolute;width:180px;  height:140px;  top:0px;  left:0px;  visibility:hidden;   -webkit-transition:-webkit-transform 0.3s 0.3s; transition:transform 0.3s 0.3s; -webkit-perspective:1000px; perspective:1000px}#rev_slider_15_1_wrapper .hermes.tp-rightarrow .tp-arr-allwrapper{right:0px;left:auto}#rev_slider_15_1_wrapper .hermes.tparrows.rs-touchhover .tp-arr-allwrapper{visibility:visible}#rev_slider_15_1_wrapper .hermes .tp-arr-imgholder{width:180px;position:absolute; left:0px;top:0px;height:110px; transform:translatex(-180px); -webkit-transform:translatex(-180px); transition:all 0.3s; transition-delay:0.3s}#rev_slider_15_1_wrapper .hermes.tp-rightarrow .tp-arr-imgholder{transform:translatex(180px); -webkit-transform:translatex(180px)}#rev_slider_15_1_wrapper .hermes.tparrows.rs-touchhover .tp-arr-imgholder{transform:translatex(0px);  -webkit-transform:translatex(0px)}#rev_slider_15_1_wrapper .hermes .tp-arr-titleholder{top:110px; width:180px; text-align:left;  display:block; padding:0px 10px; line-height:30px; background:#000; background:rgba(0,0,0,0.75); color:#ffffff; font-weight:600; position:absolute; font-size:12px; white-space:nowrap; letter-spacing:1px; -webkit-transition:all 0.3s; transition:all 0.3s; -webkit-transform:rotatex(-90deg); transform:rotatex(-90deg); -webkit-transform-origin:50% 0; transform-origin:50% 0; box-sizing:border-box}#rev_slider_15_1_wrapper .hermes.tparrows.rs-touchhover .tp-arr-titleholder{-webkit-transition-delay:0.6s; transition-delay:0.6s; -webkit-transform:rotatex(0deg); transform:rotatex(0deg)}
+		#rev_slider_15_1_wrapper rs-loader.spinner2{background-color:#FFFFFF !important}
+/*# sourceURL=rs-plugin-settings-inline-css */
+</style>
+</head>
+
+
+<body class="home wp-singular page-template-default page page-id-8 wp-theme-salient wp-child-theme-salient-child wpa-excerpt nectar-auto-lightbox material wpb-js-composer js-comp-ver-6.13.1 vc_responsive" data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="default" data-body-border="off" data-boxed-style="" data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="linear" data-cad="650" data-megamenu-width="full-width" data-aie="none" data-ls="fancybox" data-apte="standard" data-hhun="0" data-fancy-form-rcs="1" data-form-style="default" data-form-submit="default" data-is="minimal" data-button-style="default" data-user-account-button="false" data-flex-cols="true" data-col-gap="default" data-header-inherit-rc="false" data-header-search="true" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="true" data-slide-out-widget-area="true" data-slide-out-widget-area-style="slide-out-from-right" data-user-set-ocm="off" data-loading-animation="none" data-bg-header="false" data-responsive="1" data-ext-responsive="true" data-header-resize="1" data-header-color="light" data-transparent-header="false" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="" data-m-animate="0" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="false" >
+	
+	<script type="text/javascript"> if(navigator.userAgent.match(/(Android|iPod|iPhone|iPad|BlackBerry|IEMobile|Opera Mini)/)) { document.body.className += " using-mobile-browser "; } </script><div class="ocm-effect-wrap"><div class="ocm-effect-wrap-inner">	
+	<div id="header-space"  data-header-mobile-fixed='1'></div> 
+	
+		
+	<div id="header-outer" data-has-menu="true" data-has-buttons="yes" data-header-button_style="shadow_hover_scale" data-using-pr-menu="false" data-mobile-fixed="1" data-ptnm="false" data-lhe="default" data-user-set-bg="#ffffff" data-format="default" data-permanent-transparent="false" data-megamenu-rt="0" data-remove-fixed="0" data-header-resize="1" data-cart="false" data-transparency-option="0" data-box-shadow="small" data-shrink-num="10" data-using-secondary="1" data-using-logo="1" data-logo-height="80" data-m-logo-height="50" data-padding="28" data-full-width="true" data-condense="false" >
+		
+			
+	<div id="header-secondary-outer" class="default" data-mobile="default" data-remove-fixed="0" data-lhe="default" data-secondary-text="false" data-full-width="true" data-mobile-fixed="1" data-permanent-transparent="false" >
+		<div class="container">
+			<nav>
+				<ul id="social"><li><a target="_blank" href="https://bsky.app/profile/losaltoshistory.org"><i class="fa fa-twitter"></i> </a></li><li><a target="_blank" href="http://www.facebook.com/pages/Los-Altos-History-Museum/110110105714570"><i class="fa fa-facebook"></i> </a></li><li><a target="_blank" href="http://www.youtube.com/user/LosAltosHistory?feature=mhee#p/a"><i class="fa fa-youtube-play"></i> </a></li><li><a target="_blank" href="https://www.instagram.com/losaltoshistorymuseum/"><i class="fa fa-instagram"></i> </a></li></ul>					<ul class="sf-menu">
+						<li id="menu-item-2956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2956"><a href="https://www.losaltoshistory.org/rent/">Rent</a></li>
+<li id="menu-item-9019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9019"><a href="https://www.losaltoshistory.org/support/shop/">Shop</a></li>
+<li id="menu-item-2947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2947"><a href="https://www.losaltoshistory.org/blog/">Blog</a></li>
+<li id="menu-item-9517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9517"><a href="https://www.losaltoshistory.org/contact/">Contact</a></li>
+					</ul>
+									
+			</nav>
+		</div>
+	</div>
+	
+
+<div id="search-outer" class="nectar">
+	<div id="search">
+		<div class="container">
+			 <div id="search-box">
+				 <div class="inner-wrap">
+					 <div class="col span_12">
+						  <form role="search" action="https://www.losaltoshistory.org/" method="GET">
+														 <input type="text" name="s" id="s" value="" placeholder="Search" /> 
+							 								
+						<span>Hit enter to search or ESC to close</span>						</form>
+					</div><!--/span_12-->
+				</div><!--/inner-wrap-->
+			 </div><!--/search-box-->
+			 <div id="close"><a href="#">
+				<span class="close-wrap"> <span class="close-line close-line1"></span> <span class="close-line close-line2"></span> </span>				 </a></div>
+		 </div><!--/container-->
+	</div><!--/search-->
+</div><!--/search-outer-->
+
+<header id="top">
+	<div class="container">
+		<div class="row">
+			<div class="col span_3">
+				<a id="logo" href="https://www.losaltoshistory.org" data-supplied-ml-starting-dark="false" data-supplied-ml-starting="false" data-supplied-ml="false" >
+					<img class="stnd default-logo dark-version" alt="Los Altos History Museum" src="https://www.losaltoshistory.org/wp-content/uploads/2015/11/lahm-webLogoSmTx.png" srcset="https://www.losaltoshistory.org/wp-content/uploads/2015/11/lahm-webLogoSmTx.png 1x, https://www.losaltoshistory.org/wp-content/uploads/2016/06/lahm-webbanner-retina.png 2x" /> 
+				</a>
+				
+							</div><!--/span_3-->
+			
+			<div class="col span_9 col_last">
+									<a class="mobile-search" href="#searchbox"><span class="nectar-icon icon-salient-search" aria-hidden="true"></span></a>
+										<div class="slide-out-widget-area-toggle mobile-icon slide-out-from-right" data-custom-color="false" data-icon-animation="simple-transform">
+						<div> <a href="#sidewidgetarea" aria-label="Navigation Menu" aria-expanded="false" class="closed">
+							<span aria-hidden="true"> <i class="lines-button x2"> <i class="lines"></i> </i> </span>
+						</a></div> 
+					</div>
+								
+									
+					<nav>
+						
+						<ul class="sf-menu">	
+							<li id="menu-item-16821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sf-with-ul menu-item-16821"><a href="#">Visit<span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="https://www.losaltoshistory.org/visit/">Plan Your Visit</a></li>
+	<li id="menu-item-16822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16822"><a href="https://www.losaltoshistory.org/rent/">Event Rentals</a></li>
+	<li id="menu-item-16823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16823"><a href="https://www.losaltoshistory.org/support/shop/">Shop</a></li>
+</ul>
+</li>
+<li id="menu-item-5453" class="megamenu columns-3 parentLink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sf-with-ul menu-item-5453"><a href="#">Exhibits<span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-9515" class="exhibit-menu-current menu-item menu-item-type-taxonomy menu-item-object-exhibit_archive menu-item-has-children menu-item-9515"><a href="https://www.losaltoshistory.org/exhibit-archive/current/">On Exhibit<span class="sf-sub-indicator"><i class="fa fa-angle-right icon-in-menu"></i></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-15406" class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-15406"><a href="https://www.losaltoshistory.org/exhibit/meet-the-smiths/">Meet the Smiths</a></li>
+		<li id="menu-item-12022" class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-12022"><a href="https://www.losaltoshistory.org/exhibit/making-connections/">Making Connections</a></li>
+		<li id="menu-item-405" class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-405"><a href="https://www.losaltoshistory.org/exhibit/j-gilbert-smith-house/">J. Gilbert Smith House</a></li>
+		<li id="menu-item-2897" class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-2897"><a href="https://www.losaltoshistory.org/exhibit/outdoor-agricultural-exhibit/">Agricultural Exhibit &#038; Gardens</a></li>
+	</ul>
+</li>
+	<li id="menu-item-6975" class="exhibit-menu-upcoming menu-item menu-item-type-taxonomy menu-item-object-exhibit_archive menu-item-has-children menu-item-6975"><a href="https://www.losaltoshistory.org/exhibit-archive/upcoming/">Upcoming Exhibits<span class="sf-sub-indicator"><i class="fa fa-angle-right icon-in-menu"></i></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-19247" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-19247"><a href="https://www.losaltoshistory.org/exhibit/stories-of-partition/">10,000 Memories</a></li>
+		<li id="menu-item-19246" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-19246"><a href="https://www.losaltoshistory.org/exhibit/commemorating-americas-250th/">America&#8217;s 250th</a></li>
+		<li id="menu-item-19245" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-19245"><a href="https://www.losaltoshistory.org/exhibit/the-road/">The Road I Call Home</a></li>
+	</ul>
+</li>
+	<li id="menu-item-6974" class="exhibit-menu-past menu-item menu-item-type-taxonomy menu-item-object-exhibit_archive menu-item-has-children menu-item-6974"><a href="https://www.losaltoshistory.org/exhibit-archive/past/">Past Exhibits<span class="sf-sub-indicator"><i class="fa fa-angle-right icon-in-menu"></i></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-17242" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-17242"><a href="https://www.losaltoshistory.org/exhibit/elsueno/">Building El Sueño</a></li>
+		<li id="menu-item-15677" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-15677"><a href="https://www.losaltoshistory.org/exhibit/she-sang-me-a-good-luck-song/">She Sang Me a Good Luck Song</a></li>
+		<li id="menu-item-15628" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-15628"><a href="https://www.losaltoshistory.org/exhibit/rooted-in-time/">Rooted in Time</a></li>
+		<li id="menu-item-14951" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-14951"><a href="https://www.losaltoshistory.org/exhibit/expressions/">Expressions</a></li>
+		<li id="menu-item-14649" class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-14649"><a href="https://www.losaltoshistory.org/exhibit/rotary-club-of-los-altos/">Rotary Club of Los Altos</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-4111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4111"><a href="https://www.losaltoshistory.org/events/">Events</a></li>
+<li id="menu-item-4921" class="mobileMenuOnly menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-with-ul menu-item-4921"><a href="https://www.losaltoshistory.org/education/">Education<span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11188"><a href="https://www.losaltoshistory.org/education/historical-essay-contest/">Historical Essay Contest</a></li>
+	<li id="menu-item-11189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11189"><a href="https://www.losaltoshistory.org/education/student-tours/">Student Tours</a></li>
+	<li id="menu-item-11190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11190"><a href="https://www.losaltoshistory.org/education/teen-docent-program/">Teen Docent Program</a></li>
+	<li id="menu-item-11191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11191"><a href="https://www.losaltoshistory.org/education/youth-programs/">Youth Programs</a></li>
+</ul>
+</li>
+<li id="menu-item-4918" class="mobileMenuOnly menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-with-ul menu-item-4918"><a href="https://www.losaltoshistory.org/collections/">Collections<span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-10430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10430"><a href="https://www.losaltoshistory.org/collections/explore/">Explore Our Collections</a></li>
+	<li id="menu-item-10431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10431"><a href="https://www.losaltoshistory.org/collections/donate/">Donate to the Collection</a></li>
+	<li id="menu-item-11153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11153"><a href="https://www.losaltoshistory.org/collections/research/">Research &#038; Access</a></li>
+	<li id="menu-item-10432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10432"><a href="https://www.losaltoshistory.org/collections/oral-history/">Oral History</a></li>
+</ul>
+</li>
+<li id="menu-item-230" class="megamenu columns-4 parentLink menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-with-ul menu-item-230"><a href="https://www.losaltoshistory.org/about/">About<span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2860" class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2860"><a href="#">ABOUT US<span class="sf-sub-indicator"><i class="fa fa-angle-right icon-in-menu"></i></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-2852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2852"><a href="https://www.losaltoshistory.org/about/mission/history/">Mission &#038; History</a></li>
+		<li id="menu-item-2889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2889"><a href="https://www.losaltoshistory.org/about/mission/fun-facts/">Fun Facts</a></li>
+		<li id="menu-item-2858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2858"><a href="https://www.losaltoshistory.org/about/mission/newsletters/">Newsletters</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2888" class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2888"><a href="#">TEAM<span class="sf-sub-indicator"><i class="fa fa-angle-right icon-in-menu"></i></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-2854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2854"><a href="https://www.losaltoshistory.org/about/team/staff/">Staff</a></li>
+		<li id="menu-item-2855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2855"><a href="https://www.losaltoshistory.org/about/team/board/">Board</a></li>
+		<li id="menu-item-2857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2857"><a href="https://www.losaltoshistory.org/about/team/committees/">Committees</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3475" class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3475"><a href="#">GOVERNANCE<span class="sf-sub-indicator"><i class="fa fa-angle-right icon-in-menu"></i></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-2993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2993"><a href="https://www.losaltoshistory.org/about/governance/annual-reports/">Annual Reports</a></li>
+		<li id="menu-item-2992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2992"><a href="https://www.losaltoshistory.org/about/governance/tax-returns/">Tax Forms</a></li>
+		<li id="menu-item-2991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2991"><a href="https://www.losaltoshistory.org/about/governance/legal/">Legal</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2861" class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2861"><a href="#">PRESS ROOM<span class="sf-sub-indicator"><i class="fa fa-angle-right icon-in-menu"></i></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-3007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3007"><a href="https://www.losaltoshistory.org/about/press-room/press-releases/">Press Releases</a></li>
+		<li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006"><a href="https://www.losaltoshistory.org/about/press-room/in-the-news/">In The News</a></li>
+		<li id="menu-item-2998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2998"><a href="https://www.losaltoshistory.org/about/press-room/press-inquiries/">Press Inquiries</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-240" class="parentLink menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-with-ul menu-item-240"><a href="https://www.losaltoshistory.org/support/">Support<span class="sf-sub-indicator"><i class="fa fa-angle-down icon-in-menu"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2910"><a href="https://www.losaltoshistory.org/support/join/">Join or Renew</a></li>
+	<li id="menu-item-2911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2911"><a href="https://www.losaltoshistory.org/support/donate/">Donate</a></li>
+	<li id="menu-item-2963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2963"><a href="https://www.losaltoshistory.org/support/volunteer/">Volunteer</a></li>
+	<li id="menu-item-2913" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2913"><a href="https://www.losaltoshistory.org/support/shop/">Shop</a></li>
+</ul>
+</li>
+						</ul>
+						
+
+													<ul class="buttons sf-menu" data-user-set-ocm="off">
+								
+								<li id="search-btn"><div><a href="#searchbox"><span class="icon-salient-search" aria-hidden="true"></span></a></div> </li>								
+							</ul>
+												
+					</nav>
+					
+										
+				</div><!--/span_9-->
+				
+								
+			</div><!--/row-->
+					</div><!--/container-->
+	</header>
+		
+	</div>
+	
+		
+	<div id="ajax-content-wrap">
+		
+		
+<div class="container-wrap">
+	<div class="container main-content">
+		<div class="row">
+			
+			
+		<div id="fws_6969585673e37"  data-column-margin="none" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-section standard_section "  style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false"><div class="inner-wrap"><div class="row-bg"  style=""></div></div><div class="row-bg-overlay" ></div></div><div class="row_col_wrap_12 col span_12 dark left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "  data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+			<div class="wpb_wrapper">
+				
+			<!-- START Home Slider update REVOLUTION SLIDER 6.7.40 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_15_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_15_1" style="" data-version="6.7.40">
+					<rs-slides style="overflow: hidden; position: absolute;">
+						<rs-slide style="position: absolute;" data-key="rs-225" data-title="Making Connections" data-thumb="//www.losaltoshistory.org/wp-content/uploads/2023/02/MakingConnectionsSlider-2048x1152-100x50.jpg" data-link="//www.losaltoshistory.org/exhibit/making-connections/" data-tag="l" data-target="_self" data-seoz="front" data-anim="adpr:false;ms:900ms;" data-in="o:0;" data-out="a:false;">
+							<img fetchpriority="high" decoding="async" src="//www.losaltoshistory.org/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt="" title="MakingConnectionsSlider" width="2048" height="1152" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//www.losaltoshistory.org/wp-content/uploads/2023/02/MakingConnectionsSlider-2048x1152.jpg" data-bg="p:center top;" data-no-retina>
+<!--
+							--><h1
+								id="slider-15-slide-225-layer-23" 
+								class="rs-layer Sports-DisplayFat"
+								data-type="text"
+								data-color="rgba(255, 255, 255, 1)"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:0,0,0,-4px;y:m,m,m,t;yo:100px,100px,100px,242px;"
+								data-text="w:normal;s:80,80,80,58;l:90,90,90,75;fw:900;a:left,left,left,inherit;"
+								data-dim="w:auto,auto,auto,450px;"
+								data-frame_1="sp:320;sR:10;"
+								data-frame_999="o:0;st:w;sp:320;sR:8670;"
+								style="z-index:7;font-family:'Arial', 'Helvetica', 'sans-serif';text-shadow:1px 1px 2px rgba(0, 0, 0, 1)
+0:;"
+							>Permanent Exhibition 
+							</h1><!--
+
+							--><rs-layer
+								id="slider-15-slide-225-layer-24" 
+								class="Sports-DisplayFat"
+								data-type="text"
+								data-color="rgba(255, 255, 255, 1)"
+								data-rsp_ch="on"
+								data-xy="xo:267px,267px,267px,11px;y:m;yo:254px,254px,254px,196px;"
+								data-text="w:normal;s:40,40,40,36;l:55,55,55,40;fw:500;a:left,left,left,inherit;"
+								data-dim="w:auto,auto,auto,450px;h:auto,auto,auto,89px;"
+								data-frame_1="sp:320;sR:10;"
+								data-frame_999="o:0;st:w;sp:320;sR:8670;"
+								style="z-index:10;font-family:'Arial', 'Helvetica', 'sans-serif';text-shadow:1px 1px 2px rgba(0, 0, 0, 1)
+0:;"
+							> 
+							</rs-layer><!--
+
+							--><a
+								id="slider-15-slide-225-layer-25" 
+								class="rs-layer rev-btn"
+								href="https://www.losaltoshistory.org/exhibit/making-connections/" target="_self"
+								data-type="button"
+								data-color="rgba(255, 255, 255, 1)"
+								data-xy="x:c,c,c,l;xo:0,0,0,16px;y:m,m,m,b;yo:248px,248px,248px,110px;"
+								data-text="s:17;l:17;fw:900;a:left,left,left,inherit;"
+								data-rsp_bd="off"
+								data-padding="t:12;r:35;b:12;l:35;"
+								data-frame_1="sp:320;"
+								data-frame_999="o:0;st:w;sp:320;sR:8680;"
+								data-frame_hover="c:#000;bgc:#fff;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;sp:0;"
+								style="z-index:11;background-color:rgba(99,202,225,1);font-family:'Arial', 'Helvetica', 'sans-serif';text-transform:uppercase;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"
+							>Exhibit Details 
+							</a><!--
+
+							--><rs-layer
+								id="slider-15-slide-225-layer-26" 
+								class="Sports-DisplayFat"
+								data-type="text"
+								data-color="rgba(255, 255, 255, 1)"
+								data-rsp_ch="on"
+								data-xy="xo:267px,267px,267px,13px;y:m;yo:195px,195px,195px,156px;"
+								data-text="w:normal;s:55,55,55,36;l:65,65,65,40;fw:500;a:left,left,left,inherit;"
+								data-dim="w:auto,auto,auto,450px;h:auto,auto,auto,89px;"
+								data-frame_1="sp:320;sR:10;"
+								data-frame_999="o:0;st:w;sp:320;sR:8670;"
+								style="z-index:9;font-family:'Arial', 'Helvetica', 'sans-serif';text-shadow:1px 1px 2px rgba(0, 0, 0, 1)
+0:;"
+							> 
+							</rs-layer><!--
+-->					</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-200" data-title="Smith House" data-thumb="//www.losaltoshistory.org/wp-content/uploads/2016/03/Los-Altos-History-Museum-26947-100x50.jpg" data-link="//www.losaltoshistory.org/exhibits/j-gilbert-smith-house/" data-tag="l" data-target="_self" data-seoz="front" data-anim="adpr:false;ms:600;" data-in="o:0;" data-out="a:false;">
+							<img decoding="async" src="//www.losaltoshistory.org/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt="" title="J. Gilbert Smith House" width="936" height="526" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//www.losaltoshistory.org/wp-content/uploads/2016/03/Los-Altos-History-Museum-26947.jpg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-15-slide-200-layer-3" 
+								class="Restaurant-Button rev-btn"
+								data-type="button"
+								data-color="rgba(255,255,255,1)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,11px;y:m;yo:160px,160px,160px,131px;"
+								data-text="s:17,17,17,12;l:17;ls:3px;fw:800,800,800,600;"
+								data-actions='o:click;a:simplelink;target:_self;url:https://www.losaltoshistory.org/exhibits/j-gilbert-smith-house/;'
+								data-padding="t:12;r:35;b:12;l:35;"
+								data-border="bos:solid;boc:rgba(99,202,225,0.50);bow:2,2,2,2;"
+								data-frame_1="e:power2.inOut;st:500;sR:500;"
+								data-frame_999="o:0;e:nothing;st:w;sR:8200.0006103516;"
+								data-frame_hover="bgc:transparent;boc:#ffe081;bor:0px,0px,0px,0px;bos:solid;bow:2,2,2,2;oX:50;oY:50;"
+								style="z-index:5;background-color:rgba(99,202,225,1);font-family:'Arial', 'Helvetica', 'sans-serif';text-transform:uppercase;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"
+							>Exhibit Details 
+							</rs-layer><!--
+
+							--><h1
+								id="slider-15-slide-200-layer-5" 
+								class="rs-layer Sports-DisplayFat"
+								data-type="text"
+								data-color="rgba(255,255,255,1)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,10px;y:m,m,m,b;yo:0,0,0,329px;"
+								data-text="w:normal;s:80,80,80,55;l:95,95,95,50;fw:900,900,900,800;"
+								data-dim="w:800px,800px,800px,395px;h:auto,auto,auto,107px;"
+								data-frame_1="e:power2.inOut;st:500;sR:500;"
+								data-frame_999="o:0;e:nothing;st:w;sR:8200.0006103516;"
+								style="z-index:6;font-family:'Arial', 'Helvetica', 'sans-serif';text-shadow:1px 1px 2px rgba(0, 0, 0, 1)
+0:;"
+							>J. Gilbert Smith House 
+							</h1><!--
+
+							--><h2
+								id="slider-15-slide-200-layer-6" 
+								class="rs-layer Sports-Subline"
+								data-type="text"
+								data-color="rgba(255,255,255,1)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,8px;y:m,m,m,t;yo:110px,110px,110px,406px;"
+								data-text="s:32,32,32,25;l:32;ls:4px;fw:600;"
+								data-frame_1="e:power2.inOut;st:500;sR:500;"
+								data-frame_999="o:0;e:nothing;st:w;sR:8200.0006103516;"
+								style="z-index:7;font-family:'Arial', 'Helvetica', 'sans-serif';text-shadow:1px 1px 2px rgba(0, 0, 0, 1);"
+							>Step Back Into the Past 
+							</h2><!--
+
+							--><rs-layer
+								id="slider-15-slide-200-layer-7" 
+								data-type="text"
+								data-color="rgba(255,255,255,1)"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:10px;y:b;yo:10px;"
+								data-text="s:12;l:22;"
+								data-frame_1="e:power2.inOut;st:500;sR:500;"
+								data-frame_999="o:0;e:nothing;st:w;sR:8200.0006103516;"
+								style="z-index:8;font-family:'Open Sans', 'Arial', 'sans-serif';"
+							>Image provided by <a style="color:#FFF" href="https://www.expedia.com/Los-Altos-History-Museum-Los-Altos.d6063327.Vacation-Attraction" target="_blank">Expedia</a> 
+							</rs-layer><!--
+-->					</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-199" data-title="Events" data-thumb="//www.losaltoshistory.org/wp-content/uploads/2013/09/main-museum-100x50.jpg" data-anim="adpr:false;ms:900ms;" data-in="o:0;" data-out="a:false;">
+							<img decoding="async" src="//www.losaltoshistory.org/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt="" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//www.losaltoshistory.org/wp-content/uploads/2013/09/main-museum.jpg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-15-slide-199-layer-3" 
+								class="Restaurant-Button rev-btn"
+								data-type="button"
+								data-color="rgba(255,255,255,1)"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:0,0,0,-104px;y:m;yo:248px,248px,248px,30px;"
+								data-text="s:17,17,17,12;l:17;ls:3px;fw:900,900,900,600;"
+								data-actions='o:click;a:simplelink;target:_self;url:https://losaltoshistory.org/events/;'
+								data-padding="t:12;r:35;b:12;l:35;"
+								data-border="bos:solid;boc:rgba(118,176,67,0.50);bow:2,2,2,2;"
+								data-frame_1="e:power2.inOut;st:500;sR:500;"
+								data-frame_999="o:0;e:nothing;st:w;sR:8200;"
+								data-frame_hover="bgc:transparent;boc:#ffe081;bor:0px,0px,0px,0px;bos:solid;bow:2,2,2,2;oX:50;oY:50;"
+								style="z-index:5;background-color:rgba(118,176,67,1);font-family:'Arial', 'Helvetica', 'sans-serif';text-transform:uppercase;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"
+							>Upcoming Events 
+							</rs-layer><!--
+
+							--><h1
+								id="slider-15-slide-199-layer-5" 
+								class="rs-layer Sports-DisplayFat"
+								data-type="text"
+								data-color="rgba(255,255,255,1)"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:0,0,0,-52px;y:m;yo:100px,100px,100px,-49px;"
+								data-text="w:normal;s:80,80,80,50;l:85,85,85,45;fw:900,900,900,600;a:center;"
+								data-dim="w:903px,903px,903px,342px;h:auto,auto,auto,136px;"
+								data-frame_1="e:power2.inOut;st:500;sR:500;"
+								data-frame_999="o:0;e:nothing;st:w;sR:8200;"
+								style="z-index:6;font-family:'Arial', 'Helvetica', 'sans-serif';text-shadow:1px 1px 2px rgba(0, 0, 0, 1)
+0:;"
+							>    Something<br />For Everyone 
+							</h1><!--
+
+							--><rs-layer
+								id="slider-15-slide-199-layer-7" 
+								data-type="text"
+								data-color="rgba(255,255,255,1)"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:10px;y:b;yo:10px;"
+								data-text="s:12;l:22;"
+								data-frame_1="e:power2.inOut;st:500;sR:500;"
+								data-frame_999="o:0;e:nothing;st:w;sR:8200;"
+								style="z-index:7;font-family:'Open Sans', 'Arial', 'sans-serif';"
+							>Image provided by <a style="color:#FFF" href="https://www.expedia.com/Los-Altos-History-Museum-Los-Altos.d6063327.Vacation-Attraction" target="_blank">Expedia</a> 
+							</rs-layer><!--
+-->					</rs-slide>
+					</rs-slides>
+					<rs-static-layers class="rs-stl-visible"><!--
+
+							--><a
+								id="slider-15-slide-14-layer-18" 
+								class="rs-layer rev-btn rs-layer-static"
+								href="https://www.losaltoshistory.org/support/donate/" target="_self"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:r;"
+								data-text="w:normal;s:20,16,16,7;l:55,45,45,20;fw:500;"
+								data-dim="minh:0px,none,0px,none;"
+								data-basealign="slide"
+								data-onslides="s:1;"
+								data-padding="r:50,41,41,19;l:50,41,41,19;"
+								data-frame_999="o:0;st:w;"
+								data-frame_hover="bgc:#7cb043;bor:0px,0px,0px,0px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:6;background-color:#61cae3;font-family:'Roboto';"
+							>Donate 
+							</a><!--
+					--></rs-static-layers>
+				</rs-module>
+				<script>
+					setREVStartSize({c: 'rev_slider_15_1',rl:[1240,1024,1024,480],el:[725,768,768,720],gw:[1240,1024,1024,480],gh:[725,768,768,720],type:'standard',justify:'',layout:'fullwidth',mh:"0"});if (window.RS_MODULES!==undefined && window.RS_MODULES.modules!==undefined && window.RS_MODULES.modules["revslider151"]!==undefined) {window.RS_MODULES.modules["revslider151"].once = false;window.revapi15 = undefined;if (window.RS_MODULES.checkMinimal!==undefined) window.RS_MODULES.checkMinimal()}
+				</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+			</div> 
+		</div>
+	</div> 
+</div></div><div id="fws_696958567b079" class="wpb_row vc_row-fluid full-width-content  vc_row vc_row-o-equal-height vc_row-flex vc_row-o-content-middle standard_section   "  style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap"> <div class="row-bg  using-bg-color " style="background-color: #171920; "></div> </div><div class="col span_12 light ">
+	<div style="" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-2-percent inherit_tablet inherit_phone " data-using-bg="true" data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#63cae1" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="flip-in" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay" style="opacity: 1; background-color: #63cae1;"></div></div>
+			<div class="wpb_wrapper">
+				<div id="fws_696958567b7f3" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row standard_section   "  style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column has-animation no-extra-padding inherit_tablet inherit_phone "   data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="fade-in-from-left" data-delay="500">
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+		<div class="wpb_wrapper">
+			
+		</div> 
+	</div>
+	</div> 
+</div></div>
+<div class="wpb_text_column wpb_content_element " >
+	<div class="wpb_wrapper">
+		<h3>On Exhibit</h3>
+<p><strong>Award Winning Exhibits<br />
+</strong>Explore local history through dynamic exhibits that inform, engage and inspire.</p>
+<a class="nectar-button n-sc-button medium see-through has-icon"  href="/exhibit-archive/current" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>See What's On Exhibit</span><i class="fa fa-camera"></i></a>
+	</div>
+</div>
+
+
+
+
+			</div> 
+		</div>
+	</div> 
+
+	<div style=" color: #333333;" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-1-percent inherit_tablet inherit_phone " data-using-bg="true" data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#76b043" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="flip-in" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay" style="opacity: 1; background-color: #76b043;"></div></div>
+			<div class="wpb_wrapper">
+				<div id="fws_696958567bcd5" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row standard_section   "  style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column has-animation no-extra-padding inherit_tablet inherit_phone "   data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="fade-in-from-left" data-delay="500">
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+		<div class="wpb_wrapper">
+			
+<div class="wpb_text_column wpb_content_element " >
+	<div class="wpb_wrapper">
+		<h3>Don&#8217;t Miss</h3>
+<p><strong>Fun for Everyone</strong><br />
+Enjoy exciting exhibit programs and history-inspired and themed events year &#8217;round.</p>
+<a class="nectar-button n-sc-button medium see-through has-icon"  href="/events/" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>View Upcoming Events</span><i class="fa fa-calendar"></i></a>
+	</div>
+</div>
+
+
+
+
+		</div> 
+	</div>
+	</div> 
+</div></div>
+			</div> 
+		</div>
+	</div> 
+
+	<div style=" color: #ffffff;" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-2-percent inherit_tablet inherit_phone " data-using-bg="true" data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#f47226" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="flip-in" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay" style="opacity: 1; background-color: #f47226;"></div></div>
+			<div class="wpb_wrapper">
+				<div id="fws_696958567c03a" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row standard_section   "  style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap"> <div class="row-bg" ></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column has-animation no-extra-padding inherit_tablet inherit_phone "   data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="fade-in-from-left" data-delay="500">
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+		<div class="wpb_wrapper">
+			
+<div class="wpb_text_column wpb_content_element " >
+	<div class="wpb_wrapper">
+		<h3>Join Now</h3>
+<p><strong>Take History Forward<br />
+</strong>Help bring our history alive by joining and becoming part of the Museum family.</p>
+<a class="nectar-button n-sc-button medium see-through has-icon"  href="/support/join/" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Join Now</span><i class="fa fa-heart"></i></a>
+	</div>
+</div>
+
+
+
+
+		</div> 
+	</div>
+	</div> 
+</div></div>
+			</div> 
+		</div>
+	</div> 
+</div></div>
+		<div id="fws_696958567c2e0"  data-column-margin="default" data-midnight="dark"  class="wpb_row vc_row-fluid vc_row full-width-content  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section "  style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false"><div class="inner-wrap"><div class="row-bg"  style=""></div></div><div class="row-bg-overlay" ></div></div><div class="row_col_wrap_12 col span_12 dark left">
+	<div  class="vc_col-sm-3 wpb_column column_container vc_column_container col padding-2-percent inherit_tablet inherit_phone "  data-t-w-inherits="default" data-bg-cover="" data-padding-pos="left-right" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+			<div class="wpb_wrapper">
+				
+	<div class="wpb_widgetised_column wpb_content_element">
+		<div id="sidebar" data-nectar-ss="" class="wpb_wrapper">
+			<div id="recent-posts-extra-3" class="widget recent_posts_extra_widget">			<h4>Recent News</h4>				
+			<ul class="nectar_blog_posts_recent_extra nectar_widget" data-style="featured-image-left">
+				
+			<li class="has-img"><a href="https://www.losaltoshistory.org/2026/01/history-museum-hosts-oral-history-workshop/"> <span class="popular-featured-img"><img decoding="async" width="100" height="100" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-100x100.jpeg" class="attachment-portfolio-widget size-portfolio-widget wp-post-image lazyload" alt="" title="" data-srcset="https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-100x100.jpeg 100w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-150x150.jpeg 150w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-140x140.jpeg 140w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-500x500.jpeg 500w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-350x350.jpeg 350w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-800x800.jpeg 800w" /><img decoding="async" width="100" height="100" src="https://www.losaltoshistory.org/wp-content/uploads/2025/12/Reshma_Devi_03-14-2022_Aprajita_Dagar-100x100.jpeg" class="attachment-portfolio-widget size-portfolio-widget wp-post-image lazyload" alt="" title="" /></span><span class="meta-wrap"><span class="post-title">History Museum Hosts Oral History Workshop</span> <span class="post-date">January 6, 2026</span></span></a></li><li class="has-img"><a href="https://www.losaltoshistory.org/2025/12/portraits-of-early-los-altos-residents-featured-in-museums-new-display/"> <span class="popular-featured-img"><img decoding="async" width="100" height="100" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-100x100.jpeg" class="attachment-portfolio-widget size-portfolio-widget wp-post-image lazyload" alt="" title="" data-srcset="https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-100x100.jpeg 100w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-150x150.jpeg 150w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-140x140.jpeg 140w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-500x500.jpeg 500w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-350x350.jpeg 350w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-1000x1000.jpeg 1000w, https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-800x800.jpeg 800w" /><img decoding="async" width="100" height="100" src="https://www.losaltoshistory.org/wp-content/uploads/2025/12/Studio-Portrait-of-young-Margaret-Hill-future-wife-of-J.-Gilbert-Smith-100x100.jpeg" class="attachment-portfolio-widget size-portfolio-widget wp-post-image lazyload" alt="" title="" /></span><span class="meta-wrap"><span class="post-title">Portraits of Early Los Altos Residents Featured in Museum’s New Display</span> <span class="post-date">December 2, 2025</span></span></a></li><li class="has-img"><a href="https://www.losaltoshistory.org/2025/10/history-museum-invites-the-community-to-catch-the-spirit/"> <span class="popular-featured-img"><img decoding="async" width="100" height="100" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-100x100.jpg" class="attachment-portfolio-widget size-portfolio-widget wp-post-image lazyload" alt="" title="" data-srcset="https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-100x100.jpg 100w, https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-150x150.jpg 150w, https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-140x140.jpg 140w, https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-500x500.jpg 500w, https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-350x350.jpg 350w, https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-1000x1000.jpg 1000w, https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-800x800.jpg 800w" /><img decoding="async" width="100" height="100" src="https://www.losaltoshistory.org/wp-content/uploads/2025/09/Catch-The-Spirit-Postcard2025-100x100.jpg" class="attachment-portfolio-widget size-portfolio-widget wp-post-image lazyload" alt="" title="" /></span><span class="meta-wrap"><span class="post-title">History Museum Invites the Community to “Catch the Spirit”</span> <span class="post-date">October 28, 2025</span></span></a></li>			</ul>
+			</div>
+		</div> 
+	</div> 
+			</div> 
+		</div>
+	</div> 
+
+	<div style="" class="vc_col-sm-3 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone " data-using-bg="true" data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="0.1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-image-bg-wrap" data-bg-pos="center center" data-bg-animation="none" data-bg-overlay="false"><div class="inner-wrap"><div class="column-image-bg" style=" background-image: url('https://www.losaltoshistory.org/wp-content/uploads/2014/08/volunteer_v2.jpg'); "></div></div></div><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay" style="opacity: 0.1; background-color: #ffffff;"></div></div>
+			<div class="wpb_wrapper">
+				
+<div class="wpb_text_column wpb_content_element " >
+	<div class="wpb_wrapper">
+		<h2 style="text-align: center;"><i class="icon-normal fa fa-users extra-color-1"></i>Volunteer</h2>
+	</div>
+</div>
+
+
+
+<a class="nectar-button large regular accent-color  regular-button"  style=""  href="/support/volunteer/" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Become A Part of History</span></a>
+			</div> 
+		</div>
+	</div> 
+
+	<div style="" class="vc_col-sm-3 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone " data-using-bg="true" data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-image-bg-wrap" data-bg-pos="center center" data-bg-animation="none" data-bg-overlay="false"><div class="inner-wrap"><div class="column-image-bg" style=" background-image: url('https://www.losaltoshistory.org/wp-content/uploads/2014/08/donate-1.jpg'); "></div></div></div><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+			<div class="wpb_wrapper">
+				
+<div class="wpb_text_column wpb_content_element " >
+	<div class="wpb_wrapper">
+		<h2 style="text-align: center;"><i class="icon-normal fa fa-heart extra-color-1"></i>Support</h2>
+	</div>
+</div>
+
+
+
+<a class="nectar-button large regular extra-color-1  regular-button"  style=""  href="/support/donate/" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Donate Now</span></a>
+			</div> 
+		</div>
+	</div> 
+
+	<div style="" class="vc_col-sm-3 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone " data-using-bg="true" data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="" data-delay="0" >
+		<div class="vc_column-inner" ><div class="column-image-bg-wrap" data-bg-pos="center center" data-bg-animation="none" data-bg-overlay="false"><div class="inner-wrap"><div class="column-image-bg" style=" background-image: url('https://www.losaltoshistory.org/wp-content/uploads/2014/08/sign-up-fade-bigger.jpg'); "></div></div></div><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+			<div class="wpb_wrapper">
+				
+<div class="wpb_text_column wpb_content_element " >
+	<div class="wpb_wrapper">
+		<h2 style="text-align: center;"><i class="icon-normal fa fa-pencil-square-o extra-color-3"></i>Get Updates</h2>
+	</div>
+</div>
+
+
+
+<a class="nectar-button large regular extra-color-3  regular-button getUpdatesBtn" id="GetUpdatesBtn" style=""  href="/support/donate/" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff"><span>Sign Up</span></a>
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+		<div class="wpb_wrapper">
+			<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "469b53d6423c2342be5da659d173d8d8"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
+		</div>
+	</div>
+
+			</div> 
+		</div>
+	</div> 
+</div></div>
+			
+		</div><!--/row-->
+	</div><!--/container-->
+</div><!--/container-wrap-->
+
+
+<div id="footer-outer" data-midnight="light" data-cols="2" data-custom-color="false" data-disable-copyright="false" data-matching-section-color="true" data-copyright-line="false" data-using-bg-img="false" data-bg-img-overlay="0.8" data-full-width="1" data-using-widget-area="true" data-link-hover="default">
+	
+	
+<div id="call-to-action">
+	<div class="container">
+		  <div class="triangle"></div>
+		  <span> Where the Past shapes the Future </span>
+		  <a class="nectar-button 
+		  see-through" data-color-override="false" href="/visit">
+		  Plan Your Visit		</a>
+	</div>
+</div>
+
+		
+	<div id="footer-widgets" data-has-widgets="true" data-cols="2">
+		
+		<div class="container">
+			
+						
+			<div class="row">
+				
+								
+				<div class="col span_6">
+					<!-- Footer widget area 1 -->
+					<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><p style="font-size:1.25em; padding-bottom:18px;"><strong>The History Museum complex is admission FREE.</strong><br />Open Thursday-Sunday, noon-4pm.</p>
+          <small>Closed New Year's, Easter, Fourth of July, Thanksgiving, Christmas Eve and Christmas days.</small></div></div>					</div><!--/span_3-->
+					
+											
+						<div class="col span_6">
+							<!-- Footer widget area 2 -->
+							<div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="footerMap" style="text-align:right">
+          <p><strong><span style="font-size:1.2em;">Los Altos History Museum</span></strong><br />
+          <a href="/visit/">51 S. San Antonio Road<br /><small><em>(between the library and community center)</em></small><br />Los Altos, CA 94022</a><br /><a href="tel:1-650-948-9427" class="a-tel">650.948.9427</a><br /><a href="/contact">Contact</a> | <a href="/about/governance/legal/">Legal</a> | <a href="/about/team/career-opportunities/">Careers</a></p>
+      </div></div></div>								
+							</div><!--/span_3-->
+							
+												
+						
+													
+															
+							</div><!--/row-->
+							
+														
+						</div><!--/container-->
+						
+					</div><!--/footer-widgets-->
+					
+					
+  <div class="row" id="copyright" data-layout="default">
+	
+	<div class="container">
+	   
+				<div class="col span_5">
+		   
+					   
+						<p>&copy; 2026 Los Altos History Museum. 
+					   All Rights Reserved, Los Altos History Museum.<br />The Los Altos History Museum is a registered 501(c)(3).			 </p>
+					   
+		</div><!--/span_5-->
+			   
+	  <div class="col span_7 col_last">
+		<ul class="social">
+						   <li><a target="_blank" href="https://bsky.app/profile/losaltoshistory.org"><i class="fa fa-x-twitter"></i> </a></li> 		  			 <li><a target="_blank" href="http://www.facebook.com/pages/Los-Altos-History-Museum/110110105714570"><i class="fa fa-facebook"></i> </a></li> 		  		  		  		  			 <li><a target="_blank" href="http://www.youtube.com/user/LosAltosHistory?feature=mhee#p/a"><i class="fa fa-youtube-play"></i> </a></li> 		  		  		  		  		  		  		  			 <li><a target="_blank" href="https://www.instagram.com/losaltoshistorymuseum/"><i class="fa fa-instagram"></i></a></li> 		  		  		  		  		  		  		  		  		  		  		  		  		  		  		                                 		</ul>
+	  </div><!--/span_7-->
+
+	  	
+	</div><!--/container-->
+	
+  </div><!--/row-->
+  
+		
+</div><!--/footer-outer-->
+
+	
+	<div id="slide-out-widget-area-bg" class="slide-out-from-right medium">
+				</div>
+		
+		<div id="slide-out-widget-area" class="slide-out-from-right" data-dropdown-func="separate-dropdown-parent-link" data-back-txt="Back">
+			
+			<div class="inner-wrap">			
+			<div class="inner" data-prepend-menu-mobile="false">
+				
+				<a class="slide_out_area_close" href="#">
+					<span class="close-wrap"> <span class="close-line close-line1"></span> <span class="close-line close-line2"></span> </span>				</a>
+				
+				
+									<div class="off-canvas-menu-container mobile-only">
+						
+												
+						<ul class="menu">
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16821"><a href="#">Visit</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="https://www.losaltoshistory.org/visit/">Plan Your Visit</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16822"><a href="https://www.losaltoshistory.org/rent/">Event Rentals</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16823"><a href="https://www.losaltoshistory.org/support/shop/">Shop</a></li>
+</ul>
+</li>
+<li class="megamenu columns-3 parentLink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5453"><a href="#">Exhibits</a>
+<ul class="sub-menu">
+	<li class="exhibit-menu-current menu-item menu-item-type-taxonomy menu-item-object-exhibit_archive menu-item-has-children menu-item-9515"><a href="https://www.losaltoshistory.org/exhibit-archive/current/">On Exhibit</a>
+	<ul class="sub-menu">
+		<li class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-15406"><a href="https://www.losaltoshistory.org/exhibit/meet-the-smiths/">Meet the Smiths</a></li>
+		<li class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-12022"><a href="https://www.losaltoshistory.org/exhibit/making-connections/">Making Connections</a></li>
+		<li class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-405"><a href="https://www.losaltoshistory.org/exhibit/j-gilbert-smith-house/">J. Gilbert Smith House</a></li>
+		<li class="permanent Permanent menu-item menu-item-type-custom menu-item-object-custom menu-item-2897"><a href="https://www.losaltoshistory.org/exhibit/outdoor-agricultural-exhibit/">Agricultural Exhibit &#038; Gardens</a></li>
+	</ul>
+</li>
+	<li class="exhibit-menu-upcoming menu-item menu-item-type-taxonomy menu-item-object-exhibit_archive menu-item-has-children menu-item-6975"><a href="https://www.losaltoshistory.org/exhibit-archive/upcoming/">Upcoming Exhibits</a>
+	<ul class="sub-menu">
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-19247"><a href="https://www.losaltoshistory.org/exhibit/stories-of-partition/">10,000 Memories</a></li>
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-19246"><a href="https://www.losaltoshistory.org/exhibit/commemorating-americas-250th/">America&#8217;s 250th</a></li>
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-19245"><a href="https://www.losaltoshistory.org/exhibit/the-road/">The Road I Call Home</a></li>
+	</ul>
+</li>
+	<li class="exhibit-menu-past menu-item menu-item-type-taxonomy menu-item-object-exhibit_archive menu-item-has-children menu-item-6974"><a href="https://www.losaltoshistory.org/exhibit-archive/past/">Past Exhibits</a>
+	<ul class="sub-menu">
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-17242"><a href="https://www.losaltoshistory.org/exhibit/elsueno/">Building El Sueño</a></li>
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-15677"><a href="https://www.losaltoshistory.org/exhibit/she-sang-me-a-good-luck-song/">She Sang Me a Good Luck Song</a></li>
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-15628"><a href="https://www.losaltoshistory.org/exhibit/rooted-in-time/">Rooted in Time</a></li>
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-14951"><a href="https://www.losaltoshistory.org/exhibit/expressions/">Expressions</a></li>
+		<li class="in-person In person menu-item menu-item-type-custom menu-item-object-custom menu-item-14649"><a href="https://www.losaltoshistory.org/exhibit/rotary-club-of-los-altos/">Rotary Club of Los Altos</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4111"><a href="https://www.losaltoshistory.org/events/">Events</a></li>
+<li class="mobileMenuOnly menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4921"><a href="https://www.losaltoshistory.org/education/">Education</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11188"><a href="https://www.losaltoshistory.org/education/historical-essay-contest/">Historical Essay Contest</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11189"><a href="https://www.losaltoshistory.org/education/student-tours/">Student Tours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11190"><a href="https://www.losaltoshistory.org/education/teen-docent-program/">Teen Docent Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11191"><a href="https://www.losaltoshistory.org/education/youth-programs/">Youth Programs</a></li>
+</ul>
+</li>
+<li class="mobileMenuOnly menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4918"><a href="https://www.losaltoshistory.org/collections/">Collections</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10430"><a href="https://www.losaltoshistory.org/collections/explore/">Explore Our Collections</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10431"><a href="https://www.losaltoshistory.org/collections/donate/">Donate to the Collection</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11153"><a href="https://www.losaltoshistory.org/collections/research/">Research &#038; Access</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10432"><a href="https://www.losaltoshistory.org/collections/oral-history/">Oral History</a></li>
+</ul>
+</li>
+<li class="megamenu columns-4 parentLink menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-230"><a href="https://www.losaltoshistory.org/about/">About</a>
+<ul class="sub-menu">
+	<li class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2860"><a href="#">ABOUT US</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2852"><a href="https://www.losaltoshistory.org/about/mission/history/">Mission &#038; History</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2889"><a href="https://www.losaltoshistory.org/about/mission/fun-facts/">Fun Facts</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2858"><a href="https://www.losaltoshistory.org/about/mission/newsletters/">Newsletters</a></li>
+	</ul>
+</li>
+	<li class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2888"><a href="#">TEAM</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2854"><a href="https://www.losaltoshistory.org/about/team/staff/">Staff</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2855"><a href="https://www.losaltoshistory.org/about/team/board/">Board</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2857"><a href="https://www.losaltoshistory.org/about/team/committees/">Committees</a></li>
+	</ul>
+</li>
+	<li class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3475"><a href="#">GOVERNANCE</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2993"><a href="https://www.losaltoshistory.org/about/governance/annual-reports/">Annual Reports</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2992"><a href="https://www.losaltoshistory.org/about/governance/tax-returns/">Tax Forms</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2991"><a href="https://www.losaltoshistory.org/about/governance/legal/">Legal</a></li>
+	</ul>
+</li>
+	<li class="navSubHeader menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2861"><a href="#">PRESS ROOM</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3007"><a href="https://www.losaltoshistory.org/about/press-room/press-releases/">Press Releases</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3006"><a href="https://www.losaltoshistory.org/about/press-room/in-the-news/">In The News</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2998"><a href="https://www.losaltoshistory.org/about/press-room/press-inquiries/">Press Inquiries</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="parentLink menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-240"><a href="https://www.losaltoshistory.org/support/">Support</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2910"><a href="https://www.losaltoshistory.org/support/join/">Join or Renew</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2911"><a href="https://www.losaltoshistory.org/support/donate/">Donate</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2963"><a href="https://www.losaltoshistory.org/support/volunteer/">Volunteer</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2913"><a href="https://www.losaltoshistory.org/support/shop/">Shop</a></li>
+</ul>
+</li>
+							
+						</ul>
+						
+						<ul class="menu secondary-header-items">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2956"><a href="https://www.losaltoshistory.org/rent/">Rent</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9019"><a href="https://www.losaltoshistory.org/support/shop/">Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2947"><a href="https://www.losaltoshistory.org/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9517"><a href="https://www.losaltoshistory.org/contact/">Contact</a></li>
+						</ul>
+					</div>
+										
+				</div>
+				
+				<div class="bottom-meta-wrap"><ul class="off-canvas-social-links mobile-only"><li><a target="_blank" href="https://bsky.app/profile/losaltoshistory.org"><i class="fa fa-twitter"></i> </a></li><li><a target="_blank" href="http://www.facebook.com/pages/Los-Altos-History-Museum/110110105714570"><i class="fa fa-facebook"></i> </a></li><li><a target="_blank" href="http://www.youtube.com/user/LosAltosHistory?feature=mhee#p/a"><i class="fa fa-youtube-play"></i> </a></li><li><a target="_blank" href="https://www.instagram.com/losaltoshistorymuseum/"><i class="fa fa-instagram"></i> </a></li></ul></div><!--/bottom-meta-wrap--></div> <!--/inner-wrap-->					
+				</div>
+		
+</div> <!--/ajax-content-wrap-->
+
+	<a id="to-top" class="
+	mobile-enabled	"><i class="fa fa-angle-up"></i></a>
+	</div></div><!--/ocm-effect-wrap-->
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/salient-child/*","/wp-content/themes/salient/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+            <script>
+
+                const abmsg = "We noticed an ad blocker. Consider whitelisting us to support the site ❤️";
+                const abmsgd = "download";
+                const iswpdmpropage = 0;
+
+                jQuery(function($){
+
+                    
+                                    });
+            </script>
+            <div id="fb-root"></div>
+                    <div class="w3eden">
+            <div id="wpdm-popup-link" class="modal fade">
+                <div class="modal-dialog" style="width: 750px">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                              <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body" id='wpdm-modal-body'>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+        </div>
+        <script language="JavaScript">
+            <!--
+            jQuery(function () {
+                jQuery('.wpdm-popup-link').click(function (e) {
+                    e.preventDefault();
+                    jQuery('#wpdm-popup-link .modal-title').html(jQuery(this).data('title'));
+                    jQuery('#wpdm-modal-body').html('<i class="icon"><img align="left" style="margin-top: -1px" src="https://www.losaltoshistory.org/wp-content/plugins/download-manager/assets/images/loading-new.gif" /></i>&nbsp;Please Wait...');
+                    jQuery('#wpdm-popup-link').modal('show');
+                    jQuery.post(this.href,{mode:'popup'}, function (res) {
+                        jQuery('#wpdm-modal-body').html(res);
+                    });
+                    return false;
+                });
+            });
+            //-->
+        </script>
+        <style type="text/css">
+            #wpdm-modal-body img {
+                max-width: 100% !important;
+            }
+            .wpdm-placeholder{
+                display: none;
+            }
+        </style>
+    <div 
+	id="pum-16780" 
+	role="dialog" 
+	aria-modal="false"
+	aria-labelledby="pum_popup_title_16780"
+	class="pum pum-overlay pum-theme-16785 pum-theme-form-popup popmake-overlay click_open" 
+	data-popmake="{&quot;id&quot;:16780,&quot;slug&quot;:&quot;rental-request-info-form&quot;,&quot;theme_id&quot;:16785,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;extra_selectors&quot;:&quot;.rental-form&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;auto&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-16780" class="pum-container popmake theme-16785">
+
+				
+							<div id="pum_popup_title_16780" class="pum-title popmake-title">
+				Request More Information			</div>
+		
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			
+                <div class='gf_browser_chrome gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_43' ><style>#gform_wrapper_43[data-form-index="0"].gform-theme,[data-parent-form="43_0"]{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-file-btn-bg-color-hover: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style><div id='gf_43' class='gform_anchor' tabindex='-1'></div>
+                        <div class='gform_heading'>
+                            <p class='gform_description'></p>
+							<p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_43' id='gform_43'  action='/#gf_43' data-formid='43' novalidate> 
+ <input type='hidden' class='gforms-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' />
+                        <div class='gform-body gform_body'><div id='gform_fields_43' class='gform_fields top_label form_sublabel_below description_above validation_below'><div id="field_43_13" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_above field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_43_13'>Facebook</label><div class='gfield_description' id='gfield_description_43_13'>This field is for validation purposes and should be left unchanged.</div><div class='ginput_container'><input name='input_13' id='input_43_13' type='text' value='' autocomplete='new-password'/></div></div><fieldset id="field_43_1" class="gfield gfield--type-name gfield--input-type-name gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><legend class='gfield_label gform-field-label gfield_label_before_complex' >Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></legend><div class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row' id='input_43_1'>
+                            
+                            <span id='input_43_1_3_container' class='name_first gform-grid-col gform-grid-col--size-auto' >
+                                                    <input type='text' name='input_1.3' id='input_43_1_3' value=''   aria-required='true'    autocomplete="given-name" />
+                                                    <label for='input_43_1_3' class='gform-field-label gform-field-label--type-sub '>First</label>
+                                                </span>
+                            
+                            <span id='input_43_1_6_container' class='name_last gform-grid-col gform-grid-col--size-auto' >
+                                                    <input type='text' name='input_1.6' id='input_43_1_6' value=''   aria-required='true'    autocomplete="family-name" />
+                                                    <label for='input_43_1_6' class='gform-field-label gform-field-label--type-sub '>Last</label>
+                                                </span>
+                            
+                        </div></fieldset><div id="field_43_2" class="gfield gfield--type-email gfield--input-type-email gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_43_2'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_43_2' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  autocomplete="email"/>
+                        </div></div><div id="field_43_3" class="gfield gfield--type-phone gfield--input-type-phone gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_43_3'>Phone<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_phone'><input name='input_3' id='input_43_3' type='tel' value='' class='large'   aria-required="true" aria-invalid="false"   /></div></div><fieldset id="field_43_11" class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio gfield--width-quarter gfield_contains_required field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"  ><legend class='gfield_label gform-field-label' >How did you hear about the Museum as a rental venue?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></legend><div class='ginput_container ginput_container_radio'><div class='gfield_radio' id='input_43_11'>
+			<div class='gchoice gchoice_43_11_0'>
+					<input class='gfield-choice-input' name='input_11' type='radio' value='Social Media'  id='choice_43_11_0' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_11_0' id='label_43_11_0' class='gform-field-label gform-field-label--type-inline'>Social Media</label>
+			</div>
+			<div class='gchoice gchoice_43_11_1'>
+					<input class='gfield-choice-input' name='input_11' type='radio' value='Print Ad or Listing'  id='choice_43_11_1' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_11_1' id='label_43_11_1' class='gform-field-label gform-field-label--type-inline'>Print Ad or Listing</label>
+			</div>
+			<div class='gchoice gchoice_43_11_2'>
+					<input class='gfield-choice-input' name='input_11' type='radio' value='Online Ad or Listing'  id='choice_43_11_2' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_11_2' id='label_43_11_2' class='gform-field-label gform-field-label--type-inline'>Online Ad or Listing</label>
+			</div>
+			<div class='gchoice gchoice_43_11_3'>
+					<input class='gfield-choice-input' name='input_11' type='radio' value='Personal Referral'  id='choice_43_11_3' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_11_3' id='label_43_11_3' class='gform-field-label gform-field-label--type-inline'>Personal Referral</label>
+			</div>
+			<div class='gchoice gchoice_43_11_4'>
+					<input class='gfield-choice-input' name='input_11' type='radio' value='gf_other_choice'  id='choice_43_11_4' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_11_4' id='label_43_11_4' class='gform-field-label gform-field-label--type-inline'>Other</label><br /><input id='input_43_11_other' class='gchoice_other_control' name='input_11_other' type='text' value='Other' aria-label='Other Choice, please specify'  disabled='disabled' />
+			</div></div></div></fieldset><fieldset id="field_43_12" class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio gfield--width-quarter gfield_contains_required field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"  ><legend class='gfield_label gform-field-label' >What type of special event are you planning?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></legend><div class='ginput_container ginput_container_radio'><div class='gfield_radio' id='input_43_12'>
+			<div class='gchoice gchoice_43_12_0'>
+					<input class='gfield-choice-input' name='input_12' type='radio' value='Wedding'  id='choice_43_12_0' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_12_0' id='label_43_12_0' class='gform-field-label gform-field-label--type-inline'>Wedding</label>
+			</div>
+			<div class='gchoice gchoice_43_12_1'>
+					<input class='gfield-choice-input' name='input_12' type='radio' value='Special Occasion'  id='choice_43_12_1' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_12_1' id='label_43_12_1' class='gform-field-label gform-field-label--type-inline'>Special Occasion</label>
+			</div>
+			<div class='gchoice gchoice_43_12_2'>
+					<input class='gfield-choice-input' name='input_12' type='radio' value='Corporate'  id='choice_43_12_2' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_12_2' id='label_43_12_2' class='gform-field-label gform-field-label--type-inline'>Corporate</label>
+			</div>
+			<div class='gchoice gchoice_43_12_3'>
+					<input class='gfield-choice-input' name='input_12' type='radio' value='Non-Profit'  id='choice_43_12_3' onchange='gformToggleRadioOther( this )'    />
+					<label for='choice_43_12_3' id='label_43_12_3' class='gform-field-label gform-field-label--type-inline'>Non-Profit</label>
+			</div></div></div></fieldset><div id="field_43_4" class="gfield gfield--type-date gfield--input-type-date gfield--input-type-datepicker gfield--datepicker-default-icon gfield--width-quarter field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_43_4'>Preferred Date</label><div class='ginput_container ginput_container_date'>
+                            <input name='input_4' id='input_43_4' type='text' value='' class='datepicker gform-datepicker mdy datepicker_with_icon gdatepicker_with_icon'   placeholder='mm/dd/yyyy' aria-describedby="input_43_4_date_format" aria-invalid="false" />
+                            <span id='input_43_4_date_format' class='screen-reader-text'>MM slash DD slash YYYY</span>
+                        </div>
+                        <input type='hidden' id='gforms_calendar_icon_input_43_4' class='gform_hidden' value='https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images/datepicker/datepicker.svg'/></div><div id="field_43_6" class="gfield gfield--type-date gfield--input-type-date gfield--input-type-datepicker gfield--datepicker-default-icon gfield--width-quarter field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_43_6'>Backup Date</label><div class='ginput_container ginput_container_date'>
+                            <input name='input_6' id='input_43_6' type='text' value='' class='datepicker gform-datepicker mdy datepicker_with_icon gdatepicker_with_icon'   placeholder='mm/dd/yyyy' aria-describedby="input_43_6_date_format" aria-invalid="false" />
+                            <span id='input_43_6_date_format' class='screen-reader-text'>MM slash DD slash YYYY</span>
+                        </div>
+                        <input type='hidden' id='gforms_calendar_icon_input_43_6' class='gform_hidden' value='https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images/datepicker/datepicker.svg'/></div><div id="field_43_5" class="gfield gfield--type-textarea gfield--input-type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_43_5'>Message<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_5' id='input_43_5' class='textarea small'     aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <input type='submit' id='gform_submit_button_43' class='gform_button button gform-button--width-full' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' value='Submit'  /> <input type='hidden' name='gform_ajax' value='form_id=43&amp;title=&amp;description=1&amp;tabindex=0&amp;theme=orbital&amp;styles=[]&amp;hash=8e05e4ee06d56ab5d88736e2ca509375' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_43' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_43' id='gform_theme_43' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_43' id='gform_style_settings_43' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_43' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='43' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_43' value='WyJ7XCIxMVwiOltcImYxODJjZTUzOWM3ZjdlZDU0OTQzMmIwMmNhMGI2MTNlXCIsXCI3ODlkN2QzMmMxNmJhODY1Njg3YTMxNTMwNzQzNTdiNFwiLFwiNTRiODIwMTQyM2M3MDdmYTJiNjNlNDRjYTg3NDY0NWVcIixcIjE3YTk1YzAxMTExNGI0ODhhYTBhNjc0NWFmMTRlODRmXCJdLFwiMTJcIjpbXCIwY2FkY2JjOGU2Nzg0NWQwYTUxNmM1N2MyNjNlMWFhM1wiLFwiNzU4MDQ1ZjczYjRkMjI4ZWRjNDRiMjUzOTZhNDc1NDRcIixcIjQ0ZmQyZDhlODYwODgzZTM3Nzk3YjRhYjkxYTNkN2QzXCIsXCI3MjBlZjk3MzI0YmJjMGQwNWExOTNhYjM2MTJmZjA1OVwiXX0iLCJlYzI0YWY0NWUyMTUwY2ExYTdhNDhhYjViNjNkYWU0YiJd' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_43' id='gform_target_page_number_43' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_43' id='gform_source_page_number_43' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_43' id='gform_ajax_frame_43' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 43, 'https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery('#gform_ajax_frame_43').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_43');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_43').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_43').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_43').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_43').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_43').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_43').val();gformInitSpinner( 43, 'https://www.losaltoshistory.org/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery(document).trigger('gform_page_loaded', [43, current_page]);window['gf_submitting_43'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_43').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_43').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [43]);window['gf_submitting_43'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_43').text());}else{jQuery('#gform_43').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "43", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_43" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_43";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_43" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 43, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} ); 
+/* ]]> */
+</script>
+
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			X			</button>
+		
+	</div>
+
+</div>
+<div 
+	id="pum-14992" 
+	role="dialog" 
+	aria-modal="false"
+	aria-labelledby="pum_popup_title_14992"
+	class="pum pum-overlay pum-theme-8876 pum-theme-lightbox popmake-overlay pum-click-to-close click_open" 
+	data-popmake="{&quot;id&quot;:14992,&quot;slug&quot;:&quot;executive-director-search&quot;,&quot;theme_id&quot;:8876,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-14992" class="pum-container popmake theme-8876 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+							<div id="pum_popup_title_14992" class="pum-title popmake-title">
+				Apply Here			</div>
+		
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			×			</button>
+		
+	</div>
+
+</div>
+<div 
+	id="pum-10768" 
+	role="dialog" 
+	aria-modal="false"
+	class="pum pum-overlay pum-theme-8876 pum-theme-lightbox popmake-overlay pum-click-to-close click_open" 
+	data-popmake="{&quot;id&quot;:10768,&quot;slug&quot;:&quot;get-updates&quot;,&quot;theme_id&quot;:8876,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;extra_selectors&quot;:&quot;.getUpdatesBtn&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;small&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-10768" class="pum-container popmake theme-8876 pum-responsive pum-responsive-small responsive size-small">
+
+				
+				
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			<p><!-- Begin Constant Contact Inline Form Code --></p>
+<div class="ctct-inline-form" data-form-id="70d6ae6d-f26d-4d0b-8294-dfae53f2c4c4"></div>
+<p><!-- End Constant Contact Inline Form Code --></p>
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			×			</button>
+		
+	</div>
+
+</div>
+<div 
+	id="pum-8927" 
+	role="dialog" 
+	aria-modal="false"
+	aria-labelledby="pum_popup_title_8927"
+	class="pum pum-overlay pum-theme-8875 pum-theme-default-theme popmake-overlay click_open" 
+	data-popmake="{&quot;id&quot;:8927,&quot;slug&quot;:&quot;in-the-fields-of-the-north-exhibit&quot;,&quot;theme_id&quot;:8875,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;extra_selectors&quot;:&quot;&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;xlarge&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-8927" class="pum-container popmake theme-8875 pum-responsive pum-responsive-xlarge responsive size-xlarge">
+
+				
+							<div id="pum_popup_title_8927" class="pum-title popmake-title">
+				In the Fields of the North / En los Campos del Norte			</div>
+		
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			<p><iframe src="https://losaltoshistory.org/wp-content/exhibits/inthefields/index.html" width="100%" height="800" allow="fullscreen"></iframe></p>
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			<i class="fas fa-times"></i>			</button>
+		
+	</div>
+
+</div>
+<script type="text/html" id="wpb-modifications"></script>
+
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			<link rel="preload" as="font" id="rs-icon-set-revicon-woff" href="//www.losaltoshistory.org/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff?5510888" type="font/woff" crossorigin="anonymous" media="all" />
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/counter-number-showcase/assets/js/bootstrap.js" id="wpsm_count_bootstrap-js-front-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/counter-number-showcase/assets/js/counter_nscript.js" id="wpsm-new_count_script3-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/counter-number-showcase/assets/js/waypoints.min.js" id="wpsm-new_count_waypoints-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/counter-number-showcase/assets/js/jquery.counterup.min.js" id="wpsm-new_count_script2-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/jquery.form.min.js" id="jquery-form-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/photo-gallery/js/jquery.lazy.min.js" id="bwg_lazyload-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js" id="siteground-optimizer-lazy-sizes-js-js"></script>
+<script type="text/javascript" id="wpa-toolbar-js-extra">
+/* <![CDATA[ */
+var wpatb = {"location":"body","is_rtl":"ltr","is_right":"default","responsive":"a11y-non-responsive","contrast":"Toggle High Contrast","grayscale":"Toggle Grayscale","fontsize":"Toggle Font size","custom_location":"standard-location","enable_grayscale":"false","enable_fontsize":"true","enable_contrast":"true"};
+var wpa11y = {"path":"https://www.losaltoshistory.org/wp-content/plugins/wp-accessibility/toolbar/css/a11y-contrast.css?version=2.2.6"};
+//# sourceURL=wpa-toolbar-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/wp-accessibility/js/wpa-toolbar.min.js" id="wpa-toolbar-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient-child/js/appcode.js" id="lahm-appcode-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/jquery.easing.js" id="jquery-easing-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/jquery.mousewheel.js" id="jquery-mousewheel-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/priority.js" id="nectar_priority-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/transit.js" id="nectar-transit-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/waypoints.js" id="nectar-waypoints-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/imagesLoaded.min.js" id="imagesLoaded-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/hoverintent.js" id="hoverintent-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/jquery.fancybox.min.js" id="fancyBox-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/superfish.js" id="superfish-js"></script>
+<script type="text/javascript" id="nectar-frontend-js-extra">
+/* <![CDATA[ */
+var nectarLove = {"ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","postID":"8","rooturl":"https://www.losaltoshistory.org","disqusComments":"false","loveNonce":"5943ebd30c","mapApiKey":""};
+//# sourceURL=nectar-frontend-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/init.js" id="nectar-frontend-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/stickkit.js" id="stickykit-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/salient-core/js/third-party/touchswipe.min.js" id="touchswipe-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/themes/salient/js/third-party/select2.min.js" id="select2-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/dist/dom-ready.min.js" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/dist/a11y.min.js" id="wp-a11y-js"></script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-includes/js/jquery/ui/datepicker.min.js" id="jquery-ui-datepicker-js"></script>
+<script type="text/javascript" id="jquery-ui-datepicker-js-after">
+/* <![CDATA[ */
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":0,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/js/datepicker-legacy.min.js" id="gform_datepicker_legacy-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/js/datepicker.min.js" id="gform_datepicker_init-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js" id="gform_masked_input-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"a6f1ea3963a2732fc9e5aad643cab76e"},"ajax":{"ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","ajax_submission_nonce":"04534a67ba","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https://www.losaltoshistory.org/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"5840f1e4ef"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://www.losaltoshistory.org/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js" id="gform_gravityforms_theme-js"></script>
+<script type="text/javascript" id="popup-maker-site-js-extra">
+/* <![CDATA[ */
+var pum_vars = {"version":"1.21.5","pm_dir_url":"https://www.losaltoshistory.org/wp-content/plugins/popup-maker/","ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","restapi":"https://www.losaltoshistory.org/wp-json/pum/v1","rest_nonce":null,"default_theme":"8875","debug_mode":"","disable_tracking":"","home_url":"/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","analytics_enabled":"1","analytics_route":"analytics","analytics_api":"https://www.losaltoshistory.org/wp-json/pum/v1"};
+var pum_sub_vars = {"ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-16780":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".rental-form"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"16785","size":"auto","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":true,"close_on_form_submission_delay":"500","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"form-popup","id":16780,"slug":"rental-request-info-form"},"pum-14992":{"triggers":[],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"8876","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"lightbox","id":14992,"slug":"executive-director-search"},"pum-10768":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".getUpdatesBtn"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"8876","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"lightbox","id":10768,"slug":"get-updates"},"pum-8927":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":""}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"8875","size":"xlarge","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":8927,"slug":"in-the-fields-of-the-north-exhibit"}};
+//# sourceURL=popup-maker-site-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.losaltoshistory.org/wp-content/uploads/pum/pum-site-scripts.js?defer&amp;generated=1756822737" id="popup-maker-site-js"></script>
+<script type="text/javascript" id="wp-accessibility-js-extra">
+/* <![CDATA[ */
+var wpa = {"skiplinks":{"enabled":true,"output":""},"target":"","tabindex":"1","underline":{"enabled":true,"target":"a"},"videos":"","dir":"ltr","lang":"en-US","titles":"1","labels":"1","wpalabels":{"s":"Search","author":"Name","email":"Email","url":"Website","comment":"Comment"},"alt":"","altSelector":".hentry img[alt]:not([alt=\"\"]), .comment-content img[alt]:not([alt=\"\"]), #content img[alt]:not([alt=\"\"]),.entry-content img[alt]:not([alt=\"\"])","current":"","errors":"","tracking":"1","ajaxurl":"https://www.losaltoshistory.org/wp-admin/admin-ajax.php","security":"24d4d3c521","action":"wpa_stats_action","url":"https://www.losaltoshistory.org/","post_id":"8","continue":"","pause":"Pause video","play":"Play video","restUrl":"https://www.losaltoshistory.org/wp-json/wp/v2/media","ldType":"button","ldHome":"https://www.losaltoshistory.org","ldText":"\u003Cspan class=\"dashicons dashicons-media-text\" aria-hidden=\"true\"\u003E\u003C/span\u003E\u003Cspan class=\"screen-reader\"\u003ELong Description\u003C/span\u003E"};
+//# sourceURL=wp-accessibility-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/wp-accessibility/js/wp-accessibility.min.js" id="wp-accessibility-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer src="https://www.losaltoshistory.org/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js" id="__ytprefsfitvids__-js"></script>
+<script type="text/javascript" id="wpb_composer_front_js-js-extra">
+/* <![CDATA[ */
+var vcData = {"currentTheme":{"slug":"salient"}};
+//# sourceURL=wpb_composer_front_js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.losaltoshistory.org/wp-content/plugins/js_composer_salient/assets/js/dist/js_composer_front.min.js" id="wpb_composer_front_js-js"></script>
+<script id="rs-initialisation-scripts">
+		var	tpj = jQuery;
+
+		var	revapi15;
+
+		if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider151"] = {once: RS_MODULES.modules["revslider151"]!==undefined ? RS_MODULES.modules["revslider151"].once : undefined, init:function() {
+			window.revapi15 = window.revapi15===undefined || window.revapi15===null || window.revapi15.length===0  ? document.getElementById("rev_slider_15_1") : window.revapi15;
+			if(window.revapi15 === null || window.revapi15 === undefined || window.revapi15.length==0) { window.revapi15initTry = window.revapi15initTry ===undefined ? 0 : window.revapi15initTry+1; if (window.revapi15initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider151"].init()}); return;}
+			window.revapi15 = jQuery(window.revapi15);
+			if(window.revapi15.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_15_1"); return;}
+			revapi15.revolutionInit({
+					revapi:"revapi15",
+					DPR:"dpr",
+					sliderLayout:"fullwidth",
+					duration:"3750ms",
+					visibilityLevels:"1240,1024,1024,480",
+					gridwidth:"1240,1024,1024,480",
+					gridheight:"725,768,768,720",
+					lazyType:"smart",
+					spinner:"spinner2",
+					perspective:600,
+					perspectiveType:"local",
+					editorheight:"725,768,960,720",
+					responsiveLevels:"1240,1024,1024,480",
+					progressBar: {
+						color:"rgba(0,0,0,0.15)",
+						size:5,
+						x:0,
+						y:0
+						},
+					navigation: {
+						mouseScrollNavigation:false,
+						wheelCallDelay:1000,
+						touch: {
+							touchenabled:true
+						},
+						arrows: {
+							enable:true,
+							tmp:"<div class=\"tp-arr-allwrapper\">	<div class=\"tp-arr-imgholder\"></div>	<div class=\"tp-arr-titleholder\">{{title}}</div>	</div>",
+							style:"hermes",
+							hide_onleave:true,
+							animSpeed:"600ms",
+							animDelay:"600ms",
+							left: {
+
+							},
+							right: {
+
+							}
+						}
+					},
+					viewPort: {
+						global:true,
+						globalDist:"-200px",
+						enable:false,
+						visible_area:"20%"
+					},
+			});
+			
+		}} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+	</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 43) {jQuery('#input_43_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "43", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_43" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_43";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_43" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 43, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } ); 
+/* ]]> */
+</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
   "state": "North Dakota",
   "state_code": "ND",
-  "last_updated": "2026-01-16T04:06:17Z",
+  "last_updated": "2026-01-16T20:07:00.679160+00:00Z",
   "museums": [
     {
       "museum_id": "usa-nd-fargo-plains-art-museum",
@@ -11,17 +11,17 @@
       "museum_name": "Plains Art Museum",
       "alternate_names": null,
       "website": "http://www.plainsart.org/",
-      "status": "unknown",
+      "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "TBD",
+      "street_address": "PO BOX 2338",
       "address_line2": null,
       "postal_code": "58102",
       "latitude": 46.8769526,
       "longitude": -96.7918307,
       "place_id": null,
-      "address_source": "unknown",
-      "address_last_verified": null,
-      "museum_type": "Unknown",
+      "address_source": "museums_csv",
+      "address_last_verified": "2026-01-16",
+      "museum_type": "ART MUSEUM",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -31,7 +31,7 @@
       "accessibility_url": "https://plainsart.org/wellness-and-access-programs/",
       "reputation": null,
       "collection_tier": null,
-      "time_needed": "Half day",
+      "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
       "nearby_museum_count": null,
@@ -51,14 +51,16 @@
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
-        "http://www.plainsart.org"
+        "http://www.plainsart.org",
+        "museums_csv"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Fargo; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Official site: fetched homepage; Official site: no applicable fields to fill",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Fargo; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
-      "notes": null,
-      "city_tier": 2
+      "updated_at": "2026-01-15",
+      "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
+      "city_tier": 2,
+      "phone": "7012323821"
     }
   ]
 }

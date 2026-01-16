@@ -1,0 +1,2419 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <script type="application/vnd.locksmith+json" data-locksmith>{"version":"v253","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"cee6e363d12f75a044728ec57d8374ee1caf77c70b4174018706f43dab0ae69f","state":{"template":"index","theme":143411347739,"product":null,"collection":null,"page":null,"blog":null,"article":null,"app":null},"now":1768517667,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/sdautomuseum.org\/","customer_id":null,"customer_id_signature":"cee6e363d12f75a044728ec57d8374ee1caf77c70b4174018706f43dab0ae69f","cart":null}</script><script data-locksmith>!function(){undefined;!function(){var s=window.Locksmith={},e=document.querySelector('script[type="application/vnd.locksmith+json"]'),n=e&&e.innerHTML;if(s.state={},s.util={},s.loading=!1,n)try{s.state=JSON.parse(n)}catch(d){}if(document.addEventListener&&document.querySelector){var o,a,i,t=[76,79,67,75,83,77,73,84,72,49,49],c=function(){a=t.slice(0)},l="style",r=function(e){e&&27!==e.keyCode&&"click"!==e.type||(document.removeEventListener("keydown",r),document.removeEventListener("click",r),o&&document.body.removeChild(o),o=null)};c(),document.addEventListener("keyup",function(e){if(e.keyCode===a[0]){if(clearTimeout(i),a.shift(),0<a.length)return void(i=setTimeout(c,1e3));c(),r(),(o=document.createElement("div"))[l].width="50%",o[l].maxWidth="1000px",o[l].height="85%",o[l].border="1px rgba(0, 0, 0, 0.2) solid",o[l].background="rgba(255, 255, 255, 0.99)",o[l].borderRadius="4px",o[l].position="fixed",o[l].top="50%",o[l].left="50%",o[l].transform="translateY(-50%) translateX(-50%)",o[l].boxShadow="0 2px 5px rgba(0, 0, 0, 0.3), 0 0 100vh 100vw rgba(0, 0, 0, 0.5)",o[l].zIndex="2147483645";var t=document.createElement("textarea");t.value=JSON.stringify(JSON.parse(n),null,2),t[l].border="none",t[l].display="block",t[l].boxSizing="border-box",t[l].width="100%",t[l].height="100%",t[l].background="transparent",t[l].padding="22px",t[l].fontFamily="monospace",t[l].fontSize="14px",t[l].color="#333",t[l].resize="none",t[l].outline="none",t.readOnly=!0,o.appendChild(t),document.body.appendChild(o),t.addEventListener("click",function(e){e.stopImmediatePropagation()}),t.select(),document.addEventListener("keydown",r),document.addEventListener("click",r)}})}s.isEmbedded=-1!==window.location.search.indexOf("_ab=0&_fd=0&_sc=1"),s.path=s.state.path||window.location.pathname,s.basePath=s.state.locale_root_url.concat("/apps/locksmith").replace(/^\/\//,"/"),s.reloading=!1,s.util.console=window.console||{log:function(){},error:function(){}},s.util.makeUrl=function(e,t){var n,o=s.basePath+e,a=[],i=s.cache();for(n in i)a.push(n+"="+encodeURIComponent(i[n]));for(n in t)a.push(n+"="+encodeURIComponent(t[n]));return s.state.customer_id&&(a.push("customer_id="+encodeURIComponent(s.state.customer_id)),a.push("customer_id_signature="+encodeURIComponent(s.state.customer_id_signature))),o+=(-1===o.indexOf("?")?"?":"&")+a.join("&")},s._initializeCallbacks=[],s.on=function(e,t){if("initialize"!==e)throw'Locksmith.on() currently only supports the "initialize" event';s._initializeCallbacks.push(t)},s.initializeSession=function(e){if(!s.isEmbedded){var t=!1,n=!0,o=!0;(e=e||{}).silent&&(o=n=!(t=!0)),s.ping({silent:t,spinner:n,reload:o,callback:function(){s._initializeCallbacks.forEach(function(e){e()})}})}},s.cache=function(e){var t={};try{var n=function a(e){return(document.cookie.match("(^|; )"+e+"=([^;]*)")||0)[2]};t=JSON.parse(decodeURIComponent(n("locksmith-params")||"{}"))}catch(d){}if(e){for(var o in e)t[o]=e[o];document.cookie="locksmith-params=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/",document.cookie="locksmith-params="+encodeURIComponent(JSON.stringify(t))+"; path=/"}return t},s.cache.cart=s.state.cart,s.cache.cartLastSaved=null,s.params=s.cache(),s.util.reload=function(){s.reloading=!0;try{window.location.href=window.location.href.replace(/#.*/,"")}catch(d){s.util.console.error("Preferred reload method failed",d),window.location.reload()}},s.cache.saveCart=function(e){if(!s.cache.cart||s.cache.cart===s.cache.cartLastSaved)return e?e():null;var t=s.cache.cartLastSaved;s.cache.cartLastSaved=s.cache.cart,fetch("/cart/update.js",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({attributes:{locksmith:s.cache.cart}})}).then(function(e){if(!e.ok)throw new Error("Cart update failed: "+e.status);return e.json()}).then(function(){e&&e()})["catch"](function(e){if(s.cache.cartLastSaved=t,!s.reloading)throw e})},s.util.spinnerHTML='<style>body{background:#FFF}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}#loading{display:flex;width:100%;height:50vh;color:#777;align-items:center;justify-content:center}#loading .spinner{display:block;animation:spin 600ms linear infinite;position:relative;width:50px;height:50px}#loading .spinner-ring{stroke:currentColor;stroke-dasharray:100%;stroke-width:2px;stroke-linecap:round;fill:none}</style><div id="loading"><div class="spinner"><svg width="100%" height="100%"><svg preserveAspectRatio="xMinYMin"><circle class="spinner-ring" cx="50%" cy="50%" r="45%"></circle></svg></svg></div></div>',s.util.clobberBody=function(e){document.body.innerHTML=e},s.util.clobberDocument=function(e){e.responseText&&(e=e.responseText),document.documentElement&&document.removeChild(document.documentElement);var t=document.open("text/html","replace");t.writeln(e),t.close(),setTimeout(function(){var e=t.querySelector("[autofocus]");e&&e.focus()},100)},s.util.serializeForm=function(e){if(e&&"FORM"===e.nodeName){var t,n,o={};for(t=e.elements.length-1;0<=t;t-=1)if(""!==e.elements[t].name)switch(e.elements[t].nodeName){case"INPUT":switch(e.elements[t].type){default:case"text":case"hidden":case"password":case"button":case"reset":case"submit":o[e.elements[t].name]=e.elements[t].value;break;case"checkbox":case"radio":e.elements[t].checked&&(o[e.elements[t].name]=e.elements[t].value);break;case"file":}break;case"TEXTAREA":o[e.elements[t].name]=e.elements[t].value;break;case"SELECT":switch(e.elements[t].type){case"select-one":o[e.elements[t].name]=e.elements[t].value;break;case"select-multiple":for(n=e.elements[t].options.length-1;0<=n;n-=1)e.elements[t].options[n].selected&&(o[e.elements[t].name]=e.elements[t].options[n].value)}break;case"BUTTON":switch(e.elements[t].type){case"reset":case"submit":case"button":o[e.elements[t].name]=e.elements[t].value}}return o}},s.util.on=function(e,i,s,t){t=t||document;var c="locksmith-"+e+i,n=function(e){var t=e.target,n=e.target.parentElement,o=t&&t.className&&(t.className.baseVal||t.className)||"",a=n&&n.className&&(n.className.baseVal||n.className)||"";("string"==typeof o&&-1!==o.split(/\s+/).indexOf(i)||"string"==typeof a&&-1!==a.split(/\s+/).indexOf(i))&&!e[c]&&(e[c]=!0,s(e))};t.attachEvent?t.attachEvent(e,n):t.addEventListener(e,n,!1)},s.util.enableActions=function(e){s.util.on("click","locksmith-action",function(e){e.preventDefault();var t=e.target;t.dataset.confirmWith&&!confirm(t.dataset.confirmWith)||(t.disabled=!0,t.innerText=t.dataset.disableWith,s.post("/action",t.dataset.locksmithParams,{spinner:!1,type:"text",success:function(e){(e=JSON.parse(e.responseText)).message&&alert(e.message),s.util.reload()}}))},e)},s.util.inject=function(e,t){var n=["data","locksmith","append"];if(-1!==t.indexOf(n.join("-"))){var o=document.createElement("div");o.innerHTML=t,e.appendChild(o)}else e.innerHTML=t;var a,i,s=e.querySelectorAll("script");for(i=0;i<s.length;++i){a=s[i];var c=document.createElement("script");if(a.type&&(c.type=a.type),a.src)c.src=a.src;else{var l=document.createTextNode(a.innerHTML);c.appendChild(l)}e.appendChild(c)}var r=e.querySelector("[autofocus]");r&&r.focus()},s.post=function(e,t,n){!1!==(n=n||{}).spinner&&s.util.clobberBody(s.util.spinnerHTML);var o={};n.container===document?(o.layout=1,n.success=function(e){s.util.clobberDocument(e)}):n.container&&(o.layout=0,n.success=function(e){var t=document.getElementById(n.container);s.util.inject(t,e),t.id===t.firstChild.id&&t.parentElement.replaceChild(t.firstChild,t)}),n.form_type&&(t.form_type=n.form_type),n.include_layout_classes!==undefined&&(t.include_layout_classes=n.include_layout_classes),n.lock_id!==undefined&&(t.lock_id=n.lock_id),s.loading=!0;var a=s.util.makeUrl(e,o),i="json"===n.type||"text"===n.type;fetch(a,{method:"POST",headers:{"Content-Type":"application/json",Accept:i?"application/json":"text/html"},body:JSON.stringify(t)}).then(function(e){if(!e.ok)throw new Error("Request failed: "+e.status);return e.text()}).then(function(e){var t=n.success||s.util.clobberDocument;t(i?{responseText:e}:e)})["catch"](function(e){if(!s.reloading)if("dashboard.weglot.com"!==window.location.host){if(!n.silent)throw alert("Something went wrong! Please refresh and try again."),e;console.error(e)}else console.error(e)})["finally"](function(){s.loading=!1})},s.postResource=function(e,t){e.path=s.path,e.search=window.location.search,e.state=s.state,e.passcode&&(e.passcode=e.passcode.trim()),e.email&&(e.email=e.email.trim()),e.state.cart=s.cache.cart,e.locksmith_json=s.jsonTag,e.locksmith_json_signature=s.jsonTagSignature,s.post("/resource",e,t)},s.ping=function(e){if(!s.isEmbedded){e=e||{};var t=function(){e.reload?s.util.reload():"function"==typeof e.callback&&e.callback()};s.post("/ping",{path:s.path,search:window.location.search,state:s.state},{spinner:!!e.spinner,silent:"undefined"==typeof e.silent||e.silent,type:"text",success:function(e){e&&e.responseText?((e=JSON.parse(e.responseText)).messages&&0<e.messages.length&&s.showMessages(e.messages),e.cart&&s.cache.cart!==e.cart?(s.cache.cart=e.cart,s.cache.saveCart(function(){t(),e.cart&&e.cart.match(/^.+:/)&&s.util.reload()})):t()):console.error("[Locksmith] Invalid result in ping callback:",e)}})}},s.timeoutMonitor=function(){var e=s.cache.cart;s.ping({callback:function(){e!==s.cache.cart||setTimeout(function(){s.timeoutMonitor()},6e4)}})},s.showMessages=function(e){var t=document.createElement("div");t.style.position="fixed",t.style.left=0,t.style.right=0,t.style.bottom="-50px",t.style.opacity=0,t.style.background="#191919",t.style.color="#ddd",t.style.transition="bottom 0.2s, opacity 0.2s",t.style.zIndex=999999,t.innerHTML="        <style>          .locksmith-ab .locksmith-b { display: none; }          .locksmith-ab.toggled .locksmith-b { display: flex; }          .locksmith-ab.toggled .locksmith-a { display: none; }          .locksmith-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 10px 20px; }          .locksmith-message + .locksmith-message { border-top: 1px #555 solid; }          .locksmith-message a { color: inherit; font-weight: bold; }          .locksmith-message a:hover { color: inherit; opacity: 0.8; }          a.locksmith-ab-toggle { font-weight: inherit; text-decoration: underline; }          .locksmith-text { flex-grow: 1; }          .locksmith-cta { flex-grow: 0; text-align: right; }          .locksmith-cta button { transform: scale(0.8); transform-origin: left; }          .locksmith-cta > * { display: block; }          .locksmith-cta > * + * { margin-top: 10px; }          .locksmith-message a.locksmith-close { flex-grow: 0; text-decoration: none; margin-left: 15px; font-size: 30px; font-family: monospace; display: block; padding: 2px 10px; }                    @media screen and (max-width: 600px) {            .locksmith-wide-only { display: none !important; }            .locksmith-flex { padding: 0 15px; }            .locksmith-flex > * { margin-top: 5px; margin-bottom: 5px; }            .locksmith-cta { text-align: left; }          }                    @media screen and (min-width: 601px) {            .locksmith-narrow-only { display: none !important; }          }        </style>      "+e.map(function(e){return'<div class="locksmith-message">'+e+"</div>"}).join(""),document.body.appendChild(t),document.body.style.position="relative",document.body.parentElement.style.paddingBottom=t.offsetHeight+"px",setTimeout(function(){t.style.bottom=0,t.style.opacity=1},50),s.util.on("click","locksmith-ab-toggle",function(e){e.preventDefault();for(var t=e.target.parentElement;-1===t.className.split(" ").indexOf("locksmith-ab");)t=t.parentElement;-1!==t.className.split(" ").indexOf("toggled")?t.className=t.className.replace("toggled",""):t.className=t.className+" toggled"}),s.util.enableActions(t)}}()}();</script>
+      <script data-locksmith>Locksmith.cache.cart=null</script>
+
+  <script data-locksmith>Locksmith.jsonTag="{\"version\":\"v253\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"cee6e363d12f75a044728ec57d8374ee1caf77c70b4174018706f43dab0ae69f\",\"state\":{\"template\":\"index\",\"theme\":143411347739,\"product\":null,\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1768517667,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/sdautomuseum.org\\\/\",\"customer_id\":null,\"customer_id_signature\":\"cee6e363d12f75a044728ec57d8374ee1caf77c70b4174018706f43dab0ae69f\",\"cart\":null}";Locksmith.jsonTagSignature="c95c44e831f843285dcff1db07ad6f725af0f419c7d80c91e8987509d44becdd"</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e71328">
+  <link rel="canonical" href="https://sdautomuseum.org/">
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+  <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.gstatic.com"><link rel="shortcut icon" href="//sdautomuseum.org/cdn/shop/files/Favicon_32x32.jpg?v=1683830966" type="image/png" /><title>San Diego&#39;s Premier Transportation Museum
+&ndash; San Diego Automotive Museum
+</title>
+<meta name="description" content="Visit the San Diego Automotive Museum, San Diego&#39;s premier transportation museum. Located in Balboa Park, our mission is to tell the story of the social and technological past, present, and future of motorized vehicles throughout its collections, exhibitions, and educational programs.">
+<meta property="og:site_name" content="San Diego Automotive Museum">
+  <meta property="og:url" content="https://sdautomuseum.org/"><meta property="og:title" content="San Diego&#39;s Premier Transportation Museum">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Visit the San Diego Automotive Museum, San Diego&#39;s premier transportation museum. Located in Balboa Park, our mission is to tell the story of the social and technological past, present, and future of motorized vehicles throughout its collections, exhibitions, and educational programs.">
+<meta property="og:image" content="http://sdautomuseum.org/cdn/shop/files/Shopify-social-sharing-image.webp?v=1733763830">
+<meta property="og:image:secure_url" content="https://sdautomuseum.org/cdn/shop/files/Shopify-social-sharing-image.webp?v=1733763830">
+<meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628"><meta name="twitter:site" content="@sdautomuseum">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="San Diego&#39;s Premier Transportation Museum">
+<meta name="twitter:description" content="Visit the San Diego Automotive Museum, San Diego&#39;s premier transportation museum. Located in Balboa Park, our mission is to tell the story of the social and technological past, present, and future of motorized vehicles throughout its collections, exhibitions, and educational programs.">
+<style data-shopify>@font-face {
+  font-family: "Fjalla One";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//sdautomuseum.org/cdn/fonts/fjalla_one/fjallaone_n4.262edaf1abaf5ed669f7ecd26fc3e24707a0ad85.woff2") format("woff2"),
+       url("//sdautomuseum.org/cdn/fonts/fjalla_one/fjallaone_n4.f67f40342efd2b34cae019d50b4b5c4da6fc5da7.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Archivo Narrow";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_n4.5c3bab850a22055c235cf940f895d873a8689d70.woff2") format("woff2"),
+       url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_n4.ea12dd22d3319d164475c1d047ae8f973041a9ff.woff") format("woff");
+}
+
+
+  @font-face {
+  font-family: "Archivo Narrow";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_n6.39db873f9e4e9c8ab7083354b267ce7500b7ee9e.woff2") format("woff2"),
+       url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_n6.997d285d710a777a602467368cc2fbd11a20033e.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Archivo Narrow";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_i4.59445c13f0e607542640c8a56f31dcd8ed680cfa.woff2") format("woff2"),
+       url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_i4.bbf26c99347034f8df1f87b08c4a929cfc5255c8.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Archivo Narrow";
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_i6.21c69730cb55f9ff454529f520897ee241e78c97.woff2") format("woff2"),
+       url("//sdautomuseum.org/cdn/fonts/archivo_narrow/archivonarrow_i6.6c25ccdf80ef4616ffdc61ea3e51d7ed480f0d13.woff") format("woff");
+}
+
+</style><link href="//sdautomuseum.org/cdn/shop/t/10/assets/theme.css?v=106512094859343834551738256504" rel="stylesheet" type="text/css" media="all" />
+<style data-shopify>:root {
+    --typeHeaderPrimary: "Fjalla One";
+    --typeHeaderFallback: sans-serif;
+    --typeHeaderSize: 45px;
+    --typeHeaderWeight: 400;
+    --typeHeaderLineHeight: 1.2;
+    --typeHeaderSpacing: 0.0em;
+
+    --typeBasePrimary:"Archivo Narrow";
+    --typeBaseFallback:sans-serif;
+    --typeBaseSize: 19px;
+    --typeBaseWeight: 400;
+    --typeBaseSpacing: 0.025em;
+    --typeBaseLineHeight: 1.4;
+
+    --typeCollectionTitle: 23px;
+
+    --iconWeight: 7px;
+    --iconLinecaps: miter;
+
+    
+      --buttonRadius: 0px;
+    
+
+    --colorGridOverlayOpacity: 0.0;
+  }
+
+  .placeholder-content {
+    background-image: linear-gradient(100deg, rgba(0,0,0,0) 40%, rgba(0, 0, 0, 0.0) 63%, rgba(0,0,0,0) 79%);
+  }</style><script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    window.theme = window.theme || {};
+    theme.routes = {
+      home: "/",
+      cart: "/cart.js",
+      cartPage: "/cart",
+      cartAdd: "/cart/add.js",
+      cartChange: "/cart/change.js",
+      search: "/search",
+      predictive_url: "/search/suggest"
+    };
+    theme.strings = {
+      soldOut: "Sold Out",
+      unavailable: "Unavailable",
+      inStockLabel: "In stock, ready to ship",
+      oneStockLabel: "Low stock - [count] item left",
+      otherStockLabel: "Low stock - [count] items left",
+      willNotShipUntil: "Ready to ship [date]",
+      willBeInStockAfter: "Back in stock [date]",
+      waitingForStock: "Inventory on the way",
+      savePrice: "Save [saved_amount]",
+      cartEmpty: "Your cart is currently empty.",
+      cartTermsConfirmation: "You must agree with the terms and conditions of sales to check out",
+      searchCollections: "Collections:",
+      searchPages: "Pages:",
+      searchArticles: "Articles:",
+      productFrom: "from ",
+      maxQuantity: "You can only have [quantity] of [title] in your cart."
+    };
+    theme.settings = {
+      cartType: "page",
+      isCustomerTemplate: false,
+      moneyFormat: "${{amount}}",
+      saveType: "percent",
+      productImageSize: "portrait",
+      productImageCover: true,
+      predictiveSearch: true,
+      predictiveSearchType: "product,article,page,collection",
+      predictiveSearchVendor: false,
+      predictiveSearchPrice: false,
+      quickView: true,
+      themeName: 'Impulse',
+      themeVersion: "7.2.0"
+    };
+  </script>
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="A5jPtFNYWQgFjoVuASoTsi_0DMtxmFAOQrEmRBggZUk">
+<meta name="facebook-domain-verification" content="90y8qwe5emse2tjstfpgdeegvk2efv">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/68834361627/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="85a736d754e014b5216061f8a09f56b6">
+<link rel="alternate" hreflang="x-default" href="https://sdautomuseum.org/">
+<link rel="alternate" hreflang="en" href="https://sdautomuseum.org/">
+<link rel="alternate" hreflang="es" href="https://sdautomuseum.org/es">
+<script async="async" src="/checkouts/internal/preloads.js?locale=en-US"></script>
+<link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
+<script async="async" src="https://shop.app/checkouts/internal/preloads.js?locale=en-US&shop_id=68834361627" crossorigin="anonymous"></script>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":68834361627,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/68834361627","merchantName":"San Diego Automotive Museum","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover","elo","jcb"],"total":{"type":"pending","label":"San Diego Automotive Museum","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"85a736d754e014b5216061f8a09f56b6","betas":["rich-media-storefront-analytics"],"domain":"sdautomuseum.org","predictiveSearch":true,"shopId":68834361627,"locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "sdam-8116.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"Impulse","id":143411347739,"schema_name":"Impulse","schema_version":"7.2.0","theme_store_id":857,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "sdautomuseum.org/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.ShopifyPay = window.ShopifyPay || {};
+  window.ShopifyPay.apiHost = "shop.app\/pay";
+  window.ShopifyPay.redirectState = null;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
+<script defer="defer" async type="module" src="//sdautomuseum.org/cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_IZsNAliE.en.esm.js"></script>
+<script defer="defer" async type="module" src="//sdautomuseum.org/cdn/shopifycloud/shop-js/modules/v2/chunk.common_0OUaOowp.esm.js"></script>
+<script type="module">
+  await import("//sdautomuseum.org/cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_IZsNAliE.en.esm.js");
+await import("//sdautomuseum.org/cdn/shopifycloud/shop-js/modules/v2/chunk.common_0OUaOowp.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"shop-cart-sync":["modules/v2/client.shop-cart-sync_DLOhI_0X.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-fed-cm":["modules/v2/client.init-fed-cm_C6YtU0w6.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-button":["modules/v2/client.shop-button_BCMx7GTG.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-cash-offers":["modules/v2/client.shop-cash-offers_BT26qb5j.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"init-windoid":["modules/v2/client.init-windoid_B9PkRMql.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/client.init-shop-email-lookup-coordinator_DZkqjsbU.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-toast-manager":["modules/v2/client.shop-toast-manager_Di2EnuM7.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-login-button":["modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"avatar":["modules/v2/client.avatar_BTnouDA3.en.esm.js"],"pay-button":["modules/v2/client.pay-button_CWa-C9R1.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-shop-cart-sync":["modules/v2/client.init-shop-cart-sync_IZsNAliE.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-customer-accounts":["modules/v2/client.init-customer-accounts_DenGwJTU.en.esm.js","modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/client.init-shop-for-new-customer-accounts_JdHXxpS9.en.esm.js","modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"init-customer-accounts-sign-up":["modules/v2/client.init-customer-accounts-sign-up_D6__K_p8.en.esm.js","modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"checkout-modal":["modules/v2/client.checkout-modal_C_ZQDY6s.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"shop-follow-button":["modules/v2/client.shop-follow-button_XetIsj8l.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"lead-capture":["modules/v2/client.lead-capture_DvA72MRN.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"shop-login":["modules/v2/client.shop-login_ClXNxyh6.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"payment-terms":["modules/v2/client.payment-terms_CNlwjfZz.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/cdnig.addons.business\/embed\/cloud\/sdam-8116\/cziframeagent.js?v=212104101107\u0026token=9fF8230402rh2SYJ\u0026shop=sdam-8116.myshopify.com","https:\/\/cdn.shopify.com\/s\/files\/1\/2136\/6367\/t\/1\/assets\/gdpr-bar-68834361627.js?v=1737566544\u0026shop=sdam-8116.myshopify.com","https:\/\/cdn.productcustomizer.com\/storefront\/production-product-customizer-v2.js?shop=sdam-8116.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":68834361627,"offset":-28800,"reqid":"ff268669-e6ba-406c-b4b4-2c3f5a4371b4-1768517666","pageurl":"sdautomuseum.org\/","u":"3306cc14de33","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-4kQ18oKyAcykRKYeNunJcIwy7WH5gtpwJnB7kiuLZ1E=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//sdautomuseum.org/cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer="defer" src="//sdautomuseum.org/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-65b4c6d7.js?v=20250812"></script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://sdautomuseum.org/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<script id='scb4127' type='text/javascript' async='' src='https://sdautomuseum.org/cdn/shopifycloud/privacy-banner/storefront-banner.js'></script><link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="https://sdautomuseum.org/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
+<style id="shopify-accelerated-checkout-cart">
+        #shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+  <script src="//sdautomuseum.org/cdn/shop/t/10/assets/vendor-scripts-v11.js" defer="defer"></script><script src="//sdautomuseum.org/cdn/shop/t/10/assets/theme.js?v=95933296080004794351676352248" defer="defer"></script>
+  
+  <style>
+    .main-content a:not(.btn) {
+      color: #E71328;
+      font-weight: bold;
+    }
+    .rte a:not(.btn):hover:after {
+      width: 0;
+    }
+    .site-footer .footer__collapsible >p {
+  text-align: center;
+}
+    #Footer-footer2 > div > div > p {
+  text-align: initial;
+}
+  </style>
+  <script src="https://embed.tapkat.org/integrations/autoApplyPromoCode" type="text/javascript"></script>
+  <script src="https://embed.tapkat.org/integrations/fb" type="text/javascript"></script>
+  <script src="https://embed.tapkat.org/integrations/gtag" type="text/javascript"></script>
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 68834361627,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=n?n:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach((function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)})),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 68834361627,storefrontBaseUrl: "https://sdautomuseum.org",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["2dca8a86"],webPixelsConfigList: [{"id":"820052251","configuration":"{\"config\":\"{\\\"pixel_id\\\":\\\"G-FJCBR3HNKH\\\",\\\"target_country\\\":\\\"US\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":\\\"G-FJCBR3HNKH\\\"},{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":\\\"G-FJCBR3HNKH\\\"},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-FJCBR3HNKH\\\",\\\"MC-XQXDYGRSFQ\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-FJCBR3HNKH\\\",\\\"MC-XQXDYGRSFQ\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-FJCBR3HNKH\\\",\\\"MC-XQXDYGRSFQ\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":\\\"G-FJCBR3HNKH\\\"},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":\\\"G-FJCBR3HNKH\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"b2a88bafab3e21179ed38636efcd8a93","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"]}},{"id":"270500123","configuration":"{\"pixel_id\":\"6093788414046423\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"ca16bc87fe92b6042fbaa3acc2fbdaa6","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"]}},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"San Diego Automotive Museum","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"sdam-8116.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/sdautomuseum.org"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"https://sdautomuseum.org/cdn","fcfee988w5aeb613cpc8e4bc33m6693e112",{"modern":"","legacy":""},{"shopId":"68834361627","storefrontBaseUrl":"https:\/\/sdautomuseum.org","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"2dca8a86\"]","isMerchantRequest":"false","hashVersion":"fcfee988w5aeb613cpc8e4bc33m6693e112","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'USD';
+  var meta = {"page":{"pageType":"home","requestId":"ff268669-e6ba-406c-b4b4-2c3f5a4371b4-1768517666"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) {
+        var scriptFallback = document.createElement('script');
+        scriptFallback.type = 'text/javascript';
+        scriptFallback.onerror = function(error) {
+                var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 68834361627,
+      theme_id: 143411347739,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//sdautomuseum.org/cdn/s/trekkie.storefront.cd680fe47e6c39ca5d5df5f0a32d569bc48c0f27.min.js"});
+
+        };
+        scriptFallback.async = true;
+        scriptFallback.src = '//sdautomuseum.org/cdn/s/trekkie.storefront.cd680fe47e6c39ca5d5df5f0a32d569bc48c0f27.min.js';
+        first.parentNode.insertBefore(scriptFallback, first);
+      };
+      script.async = true;
+      script.src = '//sdautomuseum.org/cdn/s/trekkie.storefront.cd680fe47e6c39ca5d5df5f0a32d569bc48c0f27.min.js';
+      first.parentNode.insertBefore(script, first);
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":68834361627,"isMerchantRequest":null,"themeId":143411347739,"themeCityHash":"12371261491766322566","contentLanguage":"en","currency":"USD","eventMetadataId":"00194196-8d47-4f62-b501-fda115abc61f"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["65f19447"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"ff268669-e6ba-406c-b4b4-2c3f5a4371b4-1768517666","shopifyEmitted":true});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//sdautomuseum.org/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script>
+<script
+  defer
+  src="https://sdautomuseum.org/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.0.3.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="68834361627"
+  data-render-region="gcp-us-central1"
+  data-page-type="index"
+  data-theme-instance-id="143411347739"
+  data-theme-name="Impulse"
+  data-theme-version="7.2.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://sdautomuseum.org/api/collect"
+></script>
+</head>
+
+<body class="template-index" data-center-text="false" data-button_style="square" data-type_header_capitalize="false" data-type_headers_align_text="true" data-type_product_capitalize="false" data-swatch_style="round" >
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">Skip to content</a>
+
+  <div id="PageContainer" class="page-container">
+    <div class="transition-body"><!-- BEGIN sections: header-group -->
+<div id="shopify-section-sections--17873283973403__announcement" class="shopify-section shopify-section-group-header-group"><style></style>
+  <div class="announcement-bar">
+    <div class="page-width">
+      <div class="slideshow-wrapper">
+        <button type="button" class="visually-hidden slideshow__pause" data-id="sections--17873283973403__announcement" aria-live="polite">
+          <span class="slideshow__pause-stop">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pause" viewBox="0 0 10 13"><g fill="#000" fill-rule="evenodd"><path d="M0 0h3v13H0zM7 0h3v13H7z"/></g></svg>
+            <span class="icon__fallback-text">Pause slideshow</span>
+          </span>
+          <span class="slideshow__pause-play">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
+            <span class="icon__fallback-text">Play slideshow</span>
+          </span>
+        </button>
+
+        <div
+          id="AnnouncementSlider"
+          class="announcement-slider"
+          data-compact="true"
+          data-block-count="1"><div
+                id="AnnouncementSlide-announcement-0"
+                class="announcement-slider__slide"
+                data-index="0"
+                ><a class="announcement-link" href="https://sdautomuseum.org/pages/events"><span class="announcement-text">Paid parking is now in effect. Bring your same day, printed parking receipt and receive $2.50 off your total admission price.  1 discount per printed receipt. </span></a></div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div><div id="shopify-section-sections--17873283973403__header" class="shopify-section shopify-section-group-header-group">
+
+<div id="NavDrawer" class="drawer drawer--left">
+  <div class="drawer__contents">
+    <div class="drawer__fixed-header">
+      <div class="drawer__header appear-animation appear-delay-1">
+        <div class="h2 drawer__title"></div>
+        <div class="drawer__close">
+          <button type="button" class="drawer__close-button js-drawer-close">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+            <span class="icon__fallback-text">Close menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__scrollable">
+      <ul class="mobile-nav mobile-nav--heading-style" role="navigation" aria-label="Primary"><li class="mobile-nav__item appear-animation appear-delay-2"><div class="mobile-nav__has-sublist"><a href="/pages/visit-us"
+                    class="mobile-nav__link mobile-nav__link--top-level"
+                    id="Label-pages-visit-us1"
+                    >
+                    Visit Us
+                  </a>
+                  <div class="mobile-nav__toggle">
+                    <button type="button"
+                      aria-controls="Linklist-pages-visit-us1"
+                      aria-labelledby="Label-pages-visit-us1"
+                      class="collapsible-trigger collapsible--auto-height"><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button>
+                  </div></div><div id="Linklist-pages-visit-us1"
+                class="mobile-nav__sublist collapsible-content collapsible-content--all"
+                >
+                <div class="collapsible-content__inner">
+                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/products/admission"
+                              class="mobile-nav__link"
+                              id="Sublabel-products-admission1"
+                              >
+                              Buy Tickets Online
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/group-reservations"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-group-reservations2"
+                              >
+                              Group Reservations
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/hours-directions-address"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-hours-directions-address3"
+                              >
+                              Hours, Directions &amp; Address
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/experiences"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-experiences4"
+                              >
+                              Experiences
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/know-before-you-go"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-know-before-you-go5"
+                              >
+                              Know Before You Go
+                            </a></div></li></ul>
+                </div>
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-3"><div class="mobile-nav__has-sublist"><a href="/pages/about-us"
+                    class="mobile-nav__link mobile-nav__link--top-level"
+                    id="Label-pages-about-us2"
+                    >
+                    About Us
+                  </a>
+                  <div class="mobile-nav__toggle">
+                    <button type="button"
+                      aria-controls="Linklist-pages-about-us2"
+                      aria-labelledby="Label-pages-about-us2"
+                      class="collapsible-trigger collapsible--auto-height"><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button>
+                  </div></div><div id="Linklist-pages-about-us2"
+                class="mobile-nav__sublist collapsible-content collapsible-content--all"
+                >
+                <div class="collapsible-content__inner">
+                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/our-staff"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-our-staff1"
+                              >
+                              Our Staff
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/board-of-directors"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-board-of-directors2"
+                              >
+                              Board of Directors
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/supporters"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-supporters3"
+                              >
+                              Supporters
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/blogs/news"
+                              class="mobile-nav__link"
+                              id="Sublabel-blogs-news4"
+                              >
+                              In The News
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/financials"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-financials5"
+                              >
+                              Financials
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/wheels-100"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-wheels-1006"
+                              >
+                              Wheels 100
+                            </a></div></li></ul>
+                </div>
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-4"><div class="mobile-nav__has-sublist"><a href="/pages/explore"
+                    class="mobile-nav__link mobile-nav__link--top-level"
+                    id="Label-pages-explore3"
+                    >
+                    Explore
+                  </a>
+                  <div class="mobile-nav__toggle">
+                    <button type="button"
+                      aria-controls="Linklist-pages-explore3"
+                      aria-labelledby="Label-pages-explore3"
+                      class="collapsible-trigger collapsible--auto-height"><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button>
+                  </div></div><div id="Linklist-pages-explore3"
+                class="mobile-nav__sublist collapsible-content collapsible-content--all"
+                >
+                <div class="collapsible-content__inner">
+                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/exhibitions"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-exhibitions1"
+                              >
+                              Current Exhibitions
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/past-exhibitions"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-past-exhibitions2"
+                              >
+                              Past Exhibitions
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/upcoming-exhibitions"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-upcoming-exhibitions3"
+                              >
+                              Upcoming Exhibitions
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/collections"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-collections4"
+                              >
+                              Collections
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/library"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-library5"
+                              >
+                              Library
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/videos"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-videos6"
+                              >
+                              Videos
+                            </a></div></li></ul>
+                </div>
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-5"><div class="mobile-nav__has-sublist"><a href="/pages/donate"
+                    class="mobile-nav__link mobile-nav__link--top-level"
+                    id="Label-pages-donate4"
+                    >
+                    Donate
+                  </a>
+                  <div class="mobile-nav__toggle">
+                    <button type="button"
+                      aria-controls="Linklist-pages-donate4"
+                      aria-labelledby="Label-pages-donate4"
+                      class="collapsible-trigger collapsible--auto-height"><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button>
+                  </div></div><div id="Linklist-pages-donate4"
+                class="mobile-nav__sublist collapsible-content collapsible-content--all"
+                >
+                <div class="collapsible-content__inner">
+                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/artifact-donation"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-artifact-donation1"
+                              >
+                              Artifacts
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="https://engage.sdautomuseum.org/donate"
+                              class="mobile-nav__link"
+                              id="Sublabel-https-engage-sdautomuseum-org-donate2"
+                              >
+                              Cash Donations
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/fuel-bright-futures"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-fuel-bright-futures3"
+                              >
+                              Fuel Bright Futures
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/donate-your-vehicle"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-donate-your-vehicle4"
+                              >
+                              Vehicles
+                            </a></div></li></ul>
+                </div>
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-6"><div class="mobile-nav__has-sublist"><a href="/pages/join-us"
+                    class="mobile-nav__link mobile-nav__link--top-level"
+                    id="Label-pages-join-us5"
+                    >
+                    Join Us
+                  </a>
+                  <div class="mobile-nav__toggle">
+                    <button type="button"
+                      aria-controls="Linklist-pages-join-us5"
+                      aria-labelledby="Label-pages-join-us5"
+                      class="collapsible-trigger collapsible--auto-height"><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button>
+                  </div></div><div id="Linklist-pages-join-us5"
+                class="mobile-nav__sublist collapsible-content collapsible-content--all"
+                >
+                <div class="collapsible-content__inner">
+                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/memberships"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-memberships1"
+                              >
+                              Memberships
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/volunteers"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-volunteers2"
+                              >
+                              Volunteer
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/internships"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-internships3"
+                              >
+                              Internships
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/available-positions"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-available-positions4"
+                              >
+                              Employment
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/join-mailing-list"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-join-mailing-list5"
+                              >
+                              Join Mailing List
+                            </a></div></li></ul>
+                </div>
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-7"><div class="mobile-nav__has-sublist"><a href="/pages/education"
+                    class="mobile-nav__link mobile-nav__link--top-level"
+                    id="Label-pages-education6"
+                    >
+                    Education
+                  </a>
+                  <div class="mobile-nav__toggle">
+                    <button type="button"
+                      aria-controls="Linklist-pages-education6"
+                      aria-labelledby="Label-pages-education6"
+                      class="collapsible-trigger collapsible--auto-height"><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button>
+                  </div></div><div id="Linklist-pages-education6"
+                class="mobile-nav__sublist collapsible-content collapsible-content--all"
+                >
+                <div class="collapsible-content__inner">
+                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/school-field-trips"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-school-field-trips1"
+                              >
+                              School Programs 
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/ignite"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-ignite2"
+                              >
+                              IGNITE:  San Diego Automotive Museum Academy
+                            </a></div></li></ul>
+                </div>
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-8"><div class="mobile-nav__has-sublist"><a href="/pages/events"
+                    class="mobile-nav__link mobile-nav__link--top-level"
+                    id="Label-pages-events7"
+                    >
+                    Events
+                  </a>
+                  <div class="mobile-nav__toggle">
+                    <button type="button"
+                      aria-controls="Linklist-pages-events7"
+                      aria-labelledby="Label-pages-events7"
+                      class="collapsible-trigger collapsible--auto-height"><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button>
+                  </div></div><div id="Linklist-pages-events7"
+                class="mobile-nav__sublist collapsible-content collapsible-content--all"
+                >
+                <div class="collapsible-content__inner">
+                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/calendar"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-calendar1"
+                              >
+                              Events Calendar
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/private-events"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-private-events2"
+                              >
+                              Venue Rental
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/shifting-gears-rally-2025"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-shifting-gears-rally-20253"
+                              >
+                              Shifting Gears Rally
+                            </a></div></li><li class="mobile-nav__item">
+                        <div class="mobile-nav__child-item"><a href="/pages/cruising-for-drivers-golf-tournament"
+                              class="mobile-nav__link"
+                              id="Sublabel-pages-cruising-for-drivers-golf-tournament4"
+                              >
+                              Cruis&#39;n Fore Drivers Golf Tournament
+                            </a></div></li></ul>
+                </div>
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-9"><a href="https://sdautomuseum.org/pages/the-party-in-the-park-supercharged" class="mobile-nav__link mobile-nav__link--top-level">THE Party in the Park</a></li><li class="mobile-nav__item appear-animation appear-delay-10"><a href="https://sdautomuseum.org/pages/sweepstakes?_pos=1&_sid=02c8ecb50&_ss=r" class="mobile-nav__link mobile-nav__link--top-level">Sweepstakes</a></li><li class="mobile-nav__item mobile-nav__item--secondary">
+            <div class="grid"><div class="grid__item one-half appear-animation appear-delay-11 medium-up--hide">
+                    <a href="/pages/hours-directions-address" class="mobile-nav__link">Museum Hours/Tickets </a>
+                  </div><div class="grid__item one-half appear-animation appear-delay-12 medium-up--hide">
+                    <a href="/pages/memberships" class="mobile-nav__link">Memberships</a>
+                  </div><div class="grid__item one-half appear-animation appear-delay-13 medium-up--hide">
+                    <a href="https://sdautomuseum.org/pages/half-day-winter-camp?_pos=9&_sid=8a7b12fc2&_ss=r" class="mobile-nav__link">Spring Camp</a>
+                  </div><div class="grid__item one-half appear-animation appear-delay-14 medium-up--hide">
+                    <a href="/pages/donate" class="mobile-nav__link">Donate</a>
+                  </div><div class="grid__item one-half appear-animation appear-delay-15 medium-up--hide">
+                    <a href="/collections" class="mobile-nav__link">Gift Shop</a>
+                  </div><div class="grid__item one-half appear-animation appear-delay-16 medium-up--hide">
+                    <a href="https://sdautomuseum.org/pages/garage-night-at-ignite?_pos=1&_sid=e8ee84d8b&_ss=r" class="mobile-nav__link">Garage Night at IGNITE 21+</a>
+                  </div><div class="grid__item one-half appear-animation appear-delay-17">
+                  <a href="/account" class="mobile-nav__link">Log in
+</a>
+                </div></div>
+          </li></ul><ul class="mobile-nav__social appear-animation appear-delay-18"><li class="mobile-nav__social-item">
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/sandiegoautomuseum" title="San Diego Automotive Museum on Instagram">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32"><path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"/><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"/></svg>
+              <span class="icon__fallback-text">Instagram</span>
+            </a>
+          </li><li class="mobile-nav__social-item">
+            <a target="_blank" rel="noopener" href="https://www.facebook.com/SanDiegoAutomotiveMuseum" title="San Diego Automotive Museum on Facebook">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 14222 14222"><path d="M14222 7112c0 3549.352-2600.418 6491.344-6000 7024.72V9168h1657l315-2056H8222V5778c0-562 275-1111 1159-1111h897V2917s-814-139-1592-139c-1624 0-2686 984-2686 2767v1567H4194v2056h1806v4968.72C2600.418 13603.344 0 10661.352 0 7112 0 3184.703 3183.703 1 7111 1s7111 3183.703 7111 7111zm-8222 7025c362 57 733 86 1111 86-377.945 0-749.003-29.485-1111-86.28zm2222 0v-.28a7107.458 7107.458 0 0 1-167.717 24.267A7407.158 7407.158 0 0 0 8222 14137zm-167.717 23.987C7745.664 14201.89 7430.797 14223 7111 14223c319.843 0 634.675-21.479 943.283-62.013z"/></svg>
+              <span class="icon__fallback-text">Facebook</span>
+            </a>
+          </li><li class="mobile-nav__social-item">
+            <a target="_blank" rel="noopener" href="https://www.youtube.com/user/sdautomuseum" title="San Diego Automotive Museum on YouTube">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"/></svg>
+              <span class="icon__fallback-text">YouTube</span>
+            </a>
+          </li><li class="mobile-nav__social-item">
+            <a target="_blank" rel="noopener" href="https://twitter.com/sdautomuseum" title="San Diego Automotive Museum on Twitter">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 32 32"><path fill="#444" d="M31.281 6.733q-1.304 1.924-3.13 3.26 0 .13.033.408t.033.408q0 2.543-.75 5.086t-2.282 4.858-3.635 4.108-5.053 2.869-6.341 1.076q-5.282 0-9.65-2.836.913.065 1.5.065 4.401 0 7.857-2.673-2.054-.033-3.668-1.255t-2.266-3.146q.554.13 1.206.13.88 0 1.663-.261-2.184-.456-3.619-2.184t-1.435-3.977v-.065q1.239.652 2.836.717-1.271-.848-2.021-2.233t-.75-2.983q0-1.63.815-3.195 2.38 2.967 5.754 4.678t7.319 1.907q-.228-.815-.228-1.434 0-2.608 1.858-4.45t4.532-1.842q1.304 0 2.51.522t2.054 1.467q2.152-.424 4.01-1.532-.685 2.217-2.771 3.488 1.989-.261 3.619-.978z"/></svg>
+              <span class="icon__fallback-text">Twitter</span>
+            </a>
+          </li></ul>
+    </div>
+  </div>
+</div>
+<style>
+  .site-nav__link,
+  .site-nav__dropdown-link:not(.site-nav__dropdown-link--top-level) {
+    font-size: 18px;
+  }
+  
+    .site-nav__link, .mobile-nav__link--top-level {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+    .mobile-nav__link--top-level {
+      font-size: 1.1em;
+    }
+  
+
+  
+
+  
+    .megamenu__collection-image {
+      display: none;
+    }
+  
+</style>
+
+<div data-section-id="sections--17873283973403__header" data-section-type="header"><div class="toolbar small--hide">
+  <div class="page-width">
+    <div class="toolbar__content"><div class="toolbar__item toolbar__item--menu">
+          <ul class="inline-list toolbar__menu"><li>
+              <a href="/pages/hours-directions-address">Museum Hours/Tickets </a>
+            </li><li>
+              <a href="/pages/memberships">Memberships</a>
+            </li><li>
+              <a href="https://sdautomuseum.org/pages/half-day-winter-camp?_pos=9&_sid=8a7b12fc2&_ss=r">Spring Camp</a>
+            </li><li>
+              <a href="/pages/donate">Donate</a>
+            </li><li>
+              <a href="/collections">Gift Shop</a>
+            </li><li>
+              <a href="https://sdautomuseum.org/pages/garage-night-at-ignite?_pos=1&_sid=e8ee84d8b&_ss=r">Garage Night at IGNITE 21+</a>
+            </li></ul>
+        </div><div class="toolbar__item">
+          <ul class="no-bullets social-icons inline-list toolbar__social"><li>
+      <a target="_blank" rel="noopener" href="https://www.instagram.com/sandiegoautomuseum" title="San Diego Automotive Museum on Instagram">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32"><path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"/><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"/></svg>
+        <span class="icon__fallback-text">Instagram</span>
+      </a>
+    </li><li>
+      <a target="_blank" rel="noopener" href="https://www.facebook.com/SanDiegoAutomotiveMuseum" title="San Diego Automotive Museum on Facebook">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 14222 14222"><path d="M14222 7112c0 3549.352-2600.418 6491.344-6000 7024.72V9168h1657l315-2056H8222V5778c0-562 275-1111 1159-1111h897V2917s-814-139-1592-139c-1624 0-2686 984-2686 2767v1567H4194v2056h1806v4968.72C2600.418 13603.344 0 10661.352 0 7112 0 3184.703 3183.703 1 7111 1s7111 3183.703 7111 7111zm-8222 7025c362 57 733 86 1111 86-377.945 0-749.003-29.485-1111-86.28zm2222 0v-.28a7107.458 7107.458 0 0 1-167.717 24.267A7407.158 7407.158 0 0 0 8222 14137zm-167.717 23.987C7745.664 14201.89 7430.797 14223 7111 14223c319.843 0 634.675-21.479 943.283-62.013z"/></svg>
+        <span class="icon__fallback-text">Facebook</span>
+      </a>
+    </li><li>
+      <a target="_blank" rel="noopener" href="https://www.youtube.com/user/sdautomuseum" title="San Diego Automotive Museum on YouTube">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"/></svg>
+        <span class="icon__fallback-text">YouTube</span>
+      </a>
+    </li><li>
+      <a target="_blank" rel="noopener" href="https://twitter.com/sdautomuseum" title="San Diego Automotive Museum on Twitter">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 32 32"><path fill="#444" d="M31.281 6.733q-1.304 1.924-3.13 3.26 0 .13.033.408t.033.408q0 2.543-.75 5.086t-2.282 4.858-3.635 4.108-5.053 2.869-6.341 1.076q-5.282 0-9.65-2.836.913.065 1.5.065 4.401 0 7.857-2.673-2.054-.033-3.668-1.255t-2.266-3.146q.554.13 1.206.13.88 0 1.663-.261-2.184-.456-3.619-2.184t-1.435-3.977v-.065q1.239.652 2.836.717-1.271-.848-2.021-2.233t-.75-2.983q0-1.63.815-3.195 2.38 2.967 5.754 4.678t7.319 1.907q-.228-.815-.228-1.434 0-2.608 1.858-4.45t4.532-1.842q1.304 0 2.51.522t2.054 1.467q2.152-.424 4.01-1.532-.685 2.217-2.771 3.488 1.989-.261 3.619-.978z"/></svg>
+        <span class="icon__fallback-text">Twitter</span>
+      </a>
+    </li></ul>
+
+        </div></div>
+
+  </div>
+</div>
+<div class="header-sticky-wrapper">
+    <div id="HeaderWrapper" class="header-wrapper"><header
+        id="SiteHeader"
+        class="site-header site-header--heading-style"
+        data-sticky="true"
+        data-overlay="false">
+        <div class="page-width">
+          <div
+            class="header-layout header-layout--center-drawer"
+            data-logo-align="center"><div class="header-item header-item--left header-item--navigation"><div class="site-nav">
+                  <button
+                    type="button"
+                    class="site-nav__link site-nav__link--icon js-drawer-open-nav"
+                    aria-controls="NavDrawer">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"/></svg>
+                    <span class="icon__fallback-text">Site navigation</span>
+                  </button>
+                </div>
+              </div><div class="header-item header-item--logo"><style data-shopify>.header-item--logo,
+    .header-layout--left-center .header-item--logo,
+    .header-layout--left-center .header-item--icons {
+      -webkit-box-flex: 0 1 180px;
+      -ms-flex: 0 1 180px;
+      flex: 0 1 180px;
+    }
+
+    @media only screen and (min-width: 769px) {
+      .header-item--logo,
+      .header-layout--left-center .header-item--logo,
+      .header-layout--left-center .header-item--icons {
+        -webkit-box-flex: 0 0 400px;
+        -ms-flex: 0 0 400px;
+        flex: 0 0 400px;
+      }
+    }
+
+    .site-header__logo a {
+      width: 180px;
+    }
+    .is-light .site-header__logo .logo--inverted {
+      width: 180px;
+    }
+    @media only screen and (min-width: 769px) {
+      .site-header__logo a {
+        width: 400px;
+      }
+
+      .is-light .site-header__logo .logo--inverted {
+        width: 400px;
+      }
+    }</style><h1 class="site-header__logo" itemscope itemtype="http://schema.org/Organization" >
+        <span class="visually-hidden">San Diego Automotive Museum</span>
+      <a
+        href="/"
+        itemprop="url"
+        class="site-header__logo-link logo--has-inverted"
+        style="padding-top: 31.25%">
+
+        
+
+
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-rv2.png?v=1734625435&amp;width=400" alt="" srcset="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-rv2.png?v=1734625435&amp;width=400 400w, //sdautomuseum.org/cdn/shop/files/Shopify-website-logo-rv2.png?v=1734625435&amp;width=400 400w" width="400" height="125" loading="eager" class="small--hide" sizes="400px" itemprop="logo" style="max-height: 125.0px;max-width: 400px;">
+  
+
+
+
+
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-rv2.png?v=1734625435&amp;width=400" alt="" srcset="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-rv2.png?v=1734625435&amp;width=180 180w, //sdautomuseum.org/cdn/shop/files/Shopify-website-logo-rv2.png?v=1734625435&amp;width=360 360w" width="400" height="125" loading="eager" class="medium-up--hide" sizes="180px" style="max-height: 56.25px;max-width: 180px;">
+  
+
+
+
+</a><a
+          href="/"
+          itemprop="url"
+          class="site-header__logo-link logo--inverted"
+          style="padding-top: 31.25%">
+
+          
+
+
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-white-rv2.png?v=1734625452&amp;width=400" alt="" srcset="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-white-rv2.png?v=1734625452&amp;width=400 400w, //sdautomuseum.org/cdn/shop/files/Shopify-website-logo-white-rv2.png?v=1734625452&amp;width=400 400w" width="400" height="125" loading="eager" class="small--hide" sizes="400px" itemprop="logo" style="max-height: 125.0px;max-width: 400px;">
+  
+
+
+
+
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-white-rv2.png?v=1734625452&amp;width=400" alt="" srcset="//sdautomuseum.org/cdn/shop/files/Shopify-website-logo-white-rv2.png?v=1734625452&amp;width=180 180w, //sdautomuseum.org/cdn/shop/files/Shopify-website-logo-white-rv2.png?v=1734625452&amp;width=360 360w" width="400" height="125" loading="eager" class="medium-up--hide" sizes="180px" style="max-height: 56.25px;max-width: 180px;">
+  
+
+
+
+</a></h1></div><div class="header-item header-item--icons"><div class="site-nav">
+  <div class="site-nav__icons"><a class="site-nav__link site-nav__link--icon small--hide" href="/account">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64"><path d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"/></svg>
+        <span class="icon__fallback-text">Log in
+</span>
+      </a><a href="/search" class="site-nav__link site-nav__link--icon js-search-header">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
+        <span class="icon__fallback-text">Search</span>
+      </a><a href="/cart" class="site-nav__link site-nav__link--icon js-drawer-open-cart" data-icon="cart">
+      <span class="cart-link"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64"><path fill="none" d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"/><circle cx="27" cy="53" r="2"/><circle cx="47" cy="53" r="2"/></svg><span class="icon__fallback-text">Cart</span>
+        <span class="cart-link__bubble"></span>
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+          </div></div>
+        <div class="site-header__search-container">
+          <div class="site-header__search">
+            <div class="page-width">
+              <form action="/search" method="get" role="search"
+                id="HeaderSearchForm"
+                class="site-header__search-form">
+                <input type="hidden" name="type" value="product,article,page,collection">
+                <input type="hidden" name="options[prefix]" value="last">
+                <label for="search-icon" class="hidden-label">Search</label>
+                <label for="SearchClose" class="hidden-label">"Close (esc)"</label>
+                <button type="submit" id="search-icon" class="text-link site-header__search-btn site-header__search-btn--submit">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
+                  <span class="icon__fallback-text">Search</span>
+                </button>
+                <input type="search" name="q" value="" placeholder="Search our store" class="site-header__search-input" aria-label="Search our store">
+              </form>
+              <button type="button" id="SearchClose" class="js-search-header-close text-link site-header__search-btn">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+                <span class="icon__fallback-text">"Close (esc)"</span>
+              </button>
+            </div>
+          </div><div id="PredictiveWrapper" class="predictive-results hide" data-image-size="square">
+              <div class="page-width">
+                <div id="PredictiveResults" class="predictive-result__layout"></div>
+                <div class="text-center predictive-results__footer">
+                  <button type="button" class="btn btn--small" data-predictive-search-button>
+                    <small>
+                      View more
+                    </small>
+                  </button>
+                </div>
+              </div>
+            </div></div>
+      </header>
+    </div>
+  </div>
+</div>
+
+
+</div><div id="shopify-section-sections--17873283973403__35f7a64c-1d8a-4b33-9f7c-200c275badbf" class="shopify-section shopify-section-group-header-group index-section--flush"><style data-shopify>
+  .scrolling-text--sections--17873283973403__35f7a64c-1d8a-4b33-9f7c-200c275badbf {
+    --move-speed: 300s;
+  }
+
+  .scrolling-text--sections--17873283973403__35f7a64c-1d8a-4b33-9f7c-200c275badbf span {
+    font-size: 20px;
+  }
+
+  
+</style>
+
+
+  <a href="https://sdautomuseum.org/pages/events">
+
+<div class="scrolling-text scrolling-text--sections--17873283973403__35f7a64c-1d8a-4b33-9f7c-200c275badbf">
+  <div class="scrolling-text__inner scrolling-text__inner--left" aria-hidden="true" tabindex="0" style="gap: 40px;">
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+      <span>Join us for Cars & Coffee: 1/18/26, New time 6:30am-8am.</span>
+    
+  </div>
+</div>
+
+  </a>
+
+
+
+
+
+</div>
+<!-- END sections: header-group --><!-- BEGIN sections: popup-group -->
+
+<!-- END sections: popup-group --><main class="main-content" id="MainContent">
+        <div id="shopify-section-template--17873283449115__slideshow" class="shopify-section index-section--hero"><div
+  data-section-id="template--17873283449115__slideshow"
+  data-section-type="slideshow-section"
+  ><div class="slideshow-wrapper"><div class="">
+        <div id="Slideshow-template--17873283449115__slideshow"
+          class="hero hero--550px hero--template--17873283449115__slideshow hero--mobile--500px loading loading--delayed"
+          
+          data-mobile-natural="false"
+          data-autoplay="true"
+          data-speed="7000"
+          
+          
+            data-dots="true"
+          
+          
+          data-slide-count="2"><div
+              
+              class="slideshow__slide slideshow__slide--image_aPPExH"
+              data-index="0"
+              data-id="image_aPPExH"><style data-shopify>.slideshow__slide--image_aPPExH .hero__title {
+                  font-size: 32.0px;
+                }
+                @media only screen and (min-width: 769px) {
+                  .slideshow__slide--image_aPPExH .hero__title {
+                    font-size: 64px;
+                  }
+                }
+                  .slideshow__slide--image_aPPExH .btn {
+                    background: #e71328 !important;
+                    border: none;
+                      color: #000 !important;
+                    
+                  }
+
+                  
+                
+
+                
+                  .slideshow__slide--image_aPPExH .hero__image-wrapper:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 3;
+                    background-color: #000;
+                    opacity: 0.06;
+                  }
+                
+</style><div class="hero__image-wrapper">
+
+
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/Screenshot_171.png?v=1764800910&amp;width=2400" alt="" srcset="//sdautomuseum.org/cdn/shop/files/Screenshot_171.png?v=1764800910&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?v=1764800910&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?v=1764800910&amp;width=1200 1200w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?v=1764800910&amp;width=1920 1920w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?v=1764800910&amp;width=2400 2400w" width="2400" height="1180" loading="eager" class="small--hide hero__image hero__image--image_aPPExH" sizes="100vw">
+  
+
+
+
+
+
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/Screenshot_171.png?height=1200&amp;v=1764800910" alt="" srcset="//sdautomuseum.org/cdn/shop/files/Screenshot_171.png?height=173&amp;v=1764800910 352w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?height=409&amp;v=1764800910 832w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?height=590&amp;v=1764800910 1200w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?height=944&amp;v=1764800910 1920w, //sdautomuseum.org/cdn/shop/files/Screenshot_171.png?height=1200&amp;v=1764800910 2440w" width="2440" height="1200" loading="eager" class="medium-up--hide hero__image hero__image--image_aPPExH" sizes="100vw">
+  
+
+
+
+</div><a href="https://sdautomuseum.org/pages/exhibitions" class="hero__slide-link" aria-hidden="true"></a><div class="hero__text-wrap">
+                  <div class="page-width">
+                    <div class="hero__text-content vertical-center horizontal-center">
+                      <div class="hero__text-shadow"><div class="hero__top-subtitle">
+                            <div class="animation-cropper"><div class="animation-contents">
+                              NOW ON EXHIBIT
+                            </div></div>
+                          </div><h2 class="h1 hero__title">
+                            <div class="animation-cropper"><div class="animation-contents">
+                            NASCAR: Design and Innovation
+                            </div></div>
+                          </h2></div>
+                    </div>
+                  </div>
+                </div></div><div
+              
+              class="slideshow__slide slideshow__slide--8cd9b794-dc05-4661-85c8-0c380a2e08c2"
+              data-index="1"
+              data-id="8cd9b794-dc05-4661-85c8-0c380a2e08c2"><style data-shopify>.slideshow__slide--8cd9b794-dc05-4661-85c8-0c380a2e08c2 .hero__title {
+                  font-size: 20.0px;
+                }
+                @media only screen and (min-width: 769px) {
+                  .slideshow__slide--8cd9b794-dc05-4661-85c8-0c380a2e08c2 .hero__title {
+                    font-size: 40px;
+                  }
+                }
+                  .slideshow__slide--8cd9b794-dc05-4661-85c8-0c380a2e08c2 .btn {
+                    background: #e71328 !important;
+                    border: none;
+                      color: #000 !important;
+                    
+                  }
+
+                  
+                
+
+                
+                  .slideshow__slide--8cd9b794-dc05-4661-85c8-0c380a2e08c2 .hero__image-wrapper:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 3;
+                    background-color: #000;
+                    opacity: 0.06;
+                  }
+                
+</style><div class="hero__image-wrapper">
+
+
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/ignite-website-slider.webp?v=1730326307&amp;width=2400" alt="" srcset="//sdautomuseum.org/cdn/shop/files/ignite-website-slider.webp?v=1730326307&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/ignite-website-slider.webp?v=1730326307&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/ignite-website-slider.webp?v=1730326307&amp;width=1200 1200w, //sdautomuseum.org/cdn/shop/files/ignite-website-slider.webp?v=1730326307&amp;width=1920 1920w, //sdautomuseum.org/cdn/shop/files/ignite-website-slider.webp?v=1730326307&amp;width=2400 2400w" width="2400" height="694" loading="lazy" class="hero__image hero__image--8cd9b794-dc05-4661-85c8-0c380a2e08c2" sizes="100vw">
+  
+
+
+
+</div><a href="/pages/ignite" class="hero__slide-link" aria-hidden="true"></a><div class="hero__text-wrap">
+                  <div class="page-width">
+                    <div class="hero__text-content vertical-center horizontal-center">
+                      <div class="hero__text-shadow"><div class="hero__top-subtitle">
+                            <div class="animation-cropper"><div class="animation-contents">
+                              CAREER PREPARATION
+                            </div></div>
+                          </div><h2 class="h1 hero__title">
+                            <div class="animation-cropper"><div class="animation-contents">
+                            IGNITE: San Diego Automotive Museum Academy
+                            </div></div>
+                          </h2><div class="hero__subtitle">
+                              <div class="animation-cropper"><div class="animation-contents">
+                                Providing career exploration and hands-on learning opportunities.
+                              </div></div>
+                            </div><div class="hero__link"><a href="/pages/ignite" class="btn">
+                                  ENROLL TODAY
+                                </a></div></div>
+                    </div>
+                  </div>
+                </div></div></div>
+      </div>
+    </div></div>
+
+
+<style> #shopify-section-template--17873283449115__slideshow .hero__link .btn {color: #fff !important;} #shopify-section-template--17873283449115__slideshow .slideshow__slide--image_aPPExH .btn {color: #fff !important;} </style></div><div id="shopify-section-template--17873283449115__7fbd39b3-5f98-46d0-b430-90a50cc5ca9b" class="shopify-section index-section"><div class="page-width"><div class="section-header text-center">
+      <h2>San Diego's Premier Transportation Museum</h2>
+    </div><div class="grid grid--uniform grid--flush-bottom"><div class="grid__item medium-up--one-third text-center"  data-aos="row-of-3"><h3>Single Day Pass</h3><div class="rte-setting text-spacing"><p>Plan ahead and purchase your tickets online. Tickets are valid for seven days.</p></div><a href="https://sdautomuseum.org/pages/hours-directions-address" class="btn btn--secondary btn--small">
+            Hours/TICKETS
+          </a></div><div class="grid__item medium-up--one-third text-center"  data-aos="row-of-3"><h3>Annual Pass</h3><div class="rte-setting text-spacing"><p>Pay one price and visit all year! Single, family, and premium membership options are available.</p></div><a href="/pages/memberships" class="btn btn--secondary btn--small">
+            Buy Membership
+          </a></div><div class="grid__item medium-up--one-third text-center"  data-aos="row-of-3"><h3>Groups & Organizations</h3><div class="rte-setting text-spacing"><p>Groups and organizations must schedule their visit a minimum of <strong>two weeks</strong> in advance. <em>See details.</em></p></div><a href="/pages/group-reservations" class="btn btn--secondary btn--small">
+            Make Reservations
+          </a></div></div>
+</div>
+</div><div id="shopify-section-template--17873283449115__promo-grid" class="shopify-section"><div
+  data-section-id="template--17873283449115__promo-grid"
+  data-section-type="promo-grid"><div class="page-width"><style data-shopify>.flex-grid--template--17873283449115__promo-grid {
+    margin-top: -20px;
+    margin-left: -20px;
+    
+  }
+
+  .flex-grid--template--17873283449115__promo-grid .flex-grid--gutters {
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .flex-grid--template--17873283449115__promo-grid .flex-grid__item {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  @media only screen and (max-width: 589px) {
+    .flex-grid--template--17873283449115__promo-grid {
+      margin-top: -10px;
+      margin-left: -10px;
+      
+    }
+
+    .flex-grid--template--17873283449115__promo-grid .flex-grid--gutters {
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+
+    .flex-grid--template--17873283449115__promo-grid .flex-grid__item {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }</style><div class="promo-grid">
+  <div class="flex-grid flex-grid--gutters flex-grid--template--17873283449115__promo-grid"><style data-shopify>
+          
+            .flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5 {
+              min-height: 252.0px;
+            }
+          
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5 {
+              min-height: 336.0px;
+            }
+          }
+
+          @media only screen and (min-width: 1140px) {
+            .flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5 {
+              min-height: 420px;
+            }
+          }
+        
+
+.flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5 .btn {
+            background: #e71328 !important;
+            border: none !important;
+          }
+
+          
+        
+
+
+        
+
+        
+          .flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5 .promo-grid__text {
+            font-size: 0.85em;
+          }
+          .flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5.flex-grid__item--50 .promo-grid__text {
+            font-size: 1.0em;
+          }
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5 .promo-grid__text {
+              font-size: 1.0em;
+            }
+          }
+        
+</style><div class="flex-grid__item flex-grid__item--100 flex-grid__item--14fc12a5-4bea-4e77-8653-55d1344332b5 type-advanced" ><div
+              class="promo-grid__container vertical-center horizontal-center"><a href="/pages/exhibitions" class="promo-grid__slide-link" aria-hidden="true" aria-label="EXPLORE"></a><div class="promo-grid__bg">
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/12.jpg?v=1677454463" alt="San Diego Automotive Museum Exhibitions" srcset="//sdautomuseum.org/cdn/shop/files/12.jpg?v=1677454463&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/12.jpg?v=1677454463&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/12.jpg?v=1677454463&amp;width=1200 1200w, //sdautomuseum.org/cdn/shop/files/12.jpg?v=1677454463&amp;width=1920 1920w, //sdautomuseum.org/cdn/shop/files/12.jpg?v=1677454463&amp;width=2880 2880w" width="2880" height="1620" loading="lazy" class="image-fit promo-grid__bg-image promo-grid__bg-image--14fc12a5-4bea-4e77-8653-55d1344332b5
+" sizes="(min-width: 769px) 100vw, 100vw">
+  
+
+
+
+</div><div class="promo-grid__content">
+                  <div class="promo-grid__text"><div class="rte--block rte--strong">
+                        CURRENT EXHIBITIONS
+                      </div><div class="rte--block">
+                        Louie Mattar, San Diego Lowriders, International Motorcycles, Indian Motorcycles, Star Rides and so much more.
+                      </div><a href="/pages/exhibitions" class="btn">
+                        EXPLORE
+                      </a></div>
+                </div></div></div><style data-shopify>
+          
+            .flex-grid__item--promo-0 {
+              min-height: 240.0px;
+            }
+          
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--promo-0 {
+              min-height: 320.0px;
+            }
+          }
+
+          @media only screen and (min-width: 1140px) {
+            .flex-grid__item--promo-0 {
+              min-height: 400px;
+            }
+          }
+        
+
+.flex-grid__item--promo-0 .btn {
+            background: #e71328 !important;
+            border: none !important;
+          }
+
+          
+        
+
+
+        
+
+        
+          .flex-grid__item--promo-0 .promo-grid__text {
+            font-size: 0.85em;
+          }
+          .flex-grid__item--promo-0.flex-grid__item--50 .promo-grid__text {
+            font-size: 1.0em;
+          }
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--promo-0 .promo-grid__text {
+              font-size: 1.0em;
+            }
+          }
+        
+</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--promo-0 type-advanced" ><div
+              class="promo-grid__container vertical-center horizontal-center"><a href="/pages/calendar" class="promo-grid__slide-link" aria-hidden="true" aria-label="View Calendar"></a><div class="promo-grid__bg">
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/SDAM-Cars-And-Coffee.jpg?v=1681348674" alt="SDAM Cars &amp; Coffee" srcset="//sdautomuseum.org/cdn/shop/files/SDAM-Cars-And-Coffee.jpg?v=1681348674&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/SDAM-Cars-And-Coffee.jpg?v=1681348674&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/SDAM-Cars-And-Coffee.jpg?v=1681348674&amp;width=1200 1200w, //sdautomuseum.org/cdn/shop/files/SDAM-Cars-And-Coffee.jpg?v=1681348674&amp;width=1920 1920w, //sdautomuseum.org/cdn/shop/files/SDAM-Cars-And-Coffee.jpg?v=1681348674&amp;width=2880 2880w" width="2880" height="1620" loading="lazy" class="image-fit promo-grid__bg-image promo-grid__bg-image--promo-0
+" sizes="(min-width: 769px) 50vw, 100vw">
+  
+
+
+
+</div><div class="promo-grid__content">
+                  <div class="promo-grid__text"><div class="rte--block rte--strong">
+                        EVENTS
+                      </div><div class="rte--block">
+                        San Diego Automotive Museum events, car meets, and other happenings.
+                      </div><a href="/pages/calendar" class="btn">
+                        View Calendar
+                      </a></div>
+                </div></div></div><style data-shopify>
+          
+            .flex-grid__item--promo-1 {
+              min-height: 240.0px;
+            }
+          
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--promo-1 {
+              min-height: 320.0px;
+            }
+          }
+
+          @media only screen and (min-width: 1140px) {
+            .flex-grid__item--promo-1 {
+              min-height: 400px;
+            }
+          }
+        
+
+.flex-grid__item--promo-1 .btn {
+            background: #e71328 !important;
+            border: none !important;
+          }
+
+          
+        
+
+
+        
+
+        
+          .flex-grid__item--promo-1 .promo-grid__text {
+            font-size: 0.85em;
+          }
+          .flex-grid__item--promo-1.flex-grid__item--50 .promo-grid__text {
+            font-size: 1.0em;
+          }
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--promo-1 .promo-grid__text {
+              font-size: 1.0em;
+            }
+          }
+        
+</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--promo-1 type-advanced" ><div
+              class="promo-grid__container vertical-center horizontal-center"><a href="/pages/education" class="promo-grid__slide-link" aria-hidden="true" aria-label="Learn More"></a><div class="promo-grid__bg">
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/Education.jpg?v=1683847559" alt="Education" srcset="//sdautomuseum.org/cdn/shop/files/Education.jpg?v=1683847559&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/Education.jpg?v=1683847559&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/Education.jpg?v=1683847559&amp;width=1200 1200w, //sdautomuseum.org/cdn/shop/files/Education.jpg?v=1683847559&amp;width=1920 1920w, //sdautomuseum.org/cdn/shop/files/Education.jpg?v=1683847559&amp;width=2880 2880w" width="2880" height="1620" loading="lazy" class="image-fit promo-grid__bg-image promo-grid__bg-image--promo-1
+" sizes="(min-width: 769px) 50vw, 100vw">
+  
+
+
+
+</div><div class="promo-grid__content">
+                  <div class="promo-grid__text"><div class="rte--block rte--strong">
+                        EDUCATION
+                      </div><div class="rte--block">
+                        Book a field trip to the Museum or explore IGNITE: The San Diego Automotive Museum Academy.
+                      </div><a href="/pages/education" class="btn">
+                        Learn More
+                      </a></div>
+                </div></div></div></div>
+</div>
+</div></div>
+
+
+</div><div id="shopify-section-template--17873283449115__7a89716a-16db-4037-b154-1657e69416fe" class="shopify-section index-section"><div class="text-center page-width page-width--narrow"><div class="theme-block" ><h2>Plan Your Visit</h2></div><div class="theme-block" ><div class="rte"><p>Whether you are someone just curious about cars, an automobile enthusiast, or a serious car collector, we invite you to the San Diego Automotive Museum. We welcome our local residents as well as tourists visiting beautiful Balboa Park.</p>
+</div></div></div>
+</div><div id="shopify-section-template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763" class="shopify-section"><div
+  data-section-id="template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763"
+  data-section-type="promo-grid"><div class="page-width"><style data-shopify>.flex-grid--template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763 {
+    margin-top: -20px;
+    margin-left: -20px;
+    
+  }
+
+  .flex-grid--template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763 .flex-grid--gutters {
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .flex-grid--template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763 .flex-grid__item {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  @media only screen and (max-width: 589px) {
+    .flex-grid--template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763 {
+      margin-top: -10px;
+      margin-left: -10px;
+      
+    }
+
+    .flex-grid--template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763 .flex-grid--gutters {
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+
+    .flex-grid--template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763 .flex-grid__item {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }</style><div class="promo-grid promo-grid--space-bottom">
+  <div class="flex-grid flex-grid--gutters flex-grid--template--17873283449115__f374b6ca-e3da-4289-b406-f1ccaa688763"><style data-shopify>
+          
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0 {
+              min-height: 240.0px;
+            }
+          
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0 {
+              min-height: 320.0px;
+            }
+          }
+
+          @media only screen and (min-width: 1140px) {
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0 {
+              min-height: 400px;
+            }
+          }
+        
+
+.flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0 .btn {
+            background: #e71328 !important;
+            border: none !important;
+          }
+
+          
+        
+
+
+        
+
+        
+          .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0 .promo-grid__text {
+            font-size: 0.85em;
+          }
+          .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0.flex-grid__item--50 .promo-grid__text {
+            font-size: 1.0em;
+          }
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0 .promo-grid__text {
+              font-size: 1.0em;
+            }
+          }
+        
+</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0 type-advanced" ><div
+              class="promo-grid__container vertical-center horizontal-center"><a href="/pages/hours-directions-address" class="promo-grid__slide-link" aria-hidden="true" aria-label="MORE INFO"></a><div class="promo-grid__bg">
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/SDAM-Louie-Mattar-Cadillac.jpg?v=1681348052" alt="Louie Mattar Fabulous Car" srcset="//sdautomuseum.org/cdn/shop/files/SDAM-Louie-Mattar-Cadillac.jpg?v=1681348052&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/SDAM-Louie-Mattar-Cadillac.jpg?v=1681348052&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/SDAM-Louie-Mattar-Cadillac.jpg?v=1681348052&amp;width=1200 1200w, //sdautomuseum.org/cdn/shop/files/SDAM-Louie-Mattar-Cadillac.jpg?v=1681348052&amp;width=1920 1920w, //sdautomuseum.org/cdn/shop/files/SDAM-Louie-Mattar-Cadillac.jpg?v=1681348052&amp;width=2880 2880w" width="2880" height="1620" loading="lazy" class="image-fit promo-grid__bg-image promo-grid__bg-image--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-0
+" sizes="(min-width: 769px) 50vw, 100vw" style="object-position:42.4842% 38.3675%;">
+  
+
+
+
+</div><div class="promo-grid__content">
+                  <div class="promo-grid__text"><div class="rte--block rte--strong">
+                        VISIT US
+                      </div><div class="rte--block">
+                        Hours and directions to the San Diego Automotive Museum.
+                      </div><a href="/pages/hours-directions-address" class="btn">
+                        MORE INFO
+                      </a></div>
+                </div></div></div><style data-shopify>
+          
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1 {
+              min-height: 240.0px;
+            }
+          
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1 {
+              min-height: 320.0px;
+            }
+          }
+
+          @media only screen and (min-width: 1140px) {
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1 {
+              min-height: 400px;
+            }
+          }
+        
+
+.flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1 .btn {
+            background: #e71328 !important;
+            border: none !important;
+          }
+
+          
+        
+
+
+        
+
+        
+          .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1 .promo-grid__text {
+            font-size: 0.85em;
+          }
+          .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1.flex-grid__item--50 .promo-grid__text {
+            font-size: 1.0em;
+          }
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1 .promo-grid__text {
+              font-size: 1.0em;
+            }
+          }
+        
+</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1 type-advanced" ><div
+              class="promo-grid__container vertical-center horizontal-center"><a href="/pages/about-us" class="promo-grid__slide-link" aria-hidden="true" aria-label="OUR MISSION"></a><div class="promo-grid__bg">
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/SDAM-Mercedes-Benz-540K-Exhibit.jpg?v=1681349744" alt="Mercedes Benz 540K" srcset="//sdautomuseum.org/cdn/shop/files/SDAM-Mercedes-Benz-540K-Exhibit.jpg?v=1681349744&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/SDAM-Mercedes-Benz-540K-Exhibit.jpg?v=1681349744&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/SDAM-Mercedes-Benz-540K-Exhibit.jpg?v=1681349744&amp;width=1200 1200w, //sdautomuseum.org/cdn/shop/files/SDAM-Mercedes-Benz-540K-Exhibit.jpg?v=1681349744&amp;width=1920 1920w, //sdautomuseum.org/cdn/shop/files/SDAM-Mercedes-Benz-540K-Exhibit.jpg?v=1681349744&amp;width=2880 2880w" width="2880" height="1620" loading="lazy" class="image-fit promo-grid__bg-image promo-grid__bg-image--template--17239815160091__f374b6ca-e3da-4289-b406-f1ccaa688763-1675487715bb7faf39-1
+" sizes="(min-width: 769px) 50vw, 100vw">
+  
+
+
+
+</div><div class="promo-grid__content">
+                  <div class="promo-grid__text"><div class="rte--block rte--strong">
+                        ABOUT US
+                      </div><div class="rte--block">
+                        The story of the San Diego Automotive Museum.
+                      </div><a href="/pages/about-us" class="btn">
+                        OUR MISSION
+                      </a></div>
+                </div></div></div></div>
+</div>
+</div></div>
+
+
+</div><div id="shopify-section-template--17873283449115__map" class="shopify-section index-section--flush"><script>
+  theme.strings.addressError = "Error looking up that address";
+  theme.strings.addressNoResults = "No results for that address";
+  theme.strings.addressQueryLimit = "You have exceeded the Google API usage limit. Consider upgrading to a \u003ca href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"\u003ePremium Plan\u003c\/a\u003e.";
+  theme.strings.authError = "There was a problem authenticating your Google Maps account. Create and enable the \u003ca href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\"\u003eJavaScript API\u003c\/a\u003e and \u003ca href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\"\u003eGeocoding API\u003c\/a\u003e permissions of your app.";
+</script><div class="map-section display-map--true bg-image--true"
+  data-section-id="template--17873283449115__map"
+  data-section-type="map"
+  data-aos="map-section__animation"
+><div class="map-section__overlay-wrapper">
+      <div class="animation-cropper">
+        <div class="animation-contents">
+          <div class="map-section__overlay"><h3 class="text-spacing">Our Museum</h3><div class="rte-setting text-spacing"><p>2080 Pan American Plaza<br/>San Diego, CA 92101</p><p><strong>In beautiful Balboa Park</strong>                    </p><p>Please check our calendar for special operating hours. <br/></p></div><a href="https://maps.google.com?daddr=2080 Pan American Plaza, San Diego, CA 92101" class="btn btn--small" target="_blank" rel="noopener" aria-label="Our Museum">Get directions</a></div>
+        </div>
+      </div>
+    </div><a class="map-section__link" href="https://www.google.com/maps/place/2080 Pan American Plaza, San Diego, CA 92101" target="_blank" rel="noopener" aria-label="2080 Pan American Plaza, San Diego, CA 92101"></a><div
+    id="Map-template--17873283449115__map"
+    data-map
+    class="map-section__container map-template--17873283449115__map"
+    data-address-setting="2080 Pan American Plaza, San Diego, CA 92101"
+    data-api-key="AIzaSyAlR3g5oNRkfZPg1IfPFDbBtYB99nsKmoA">
+    
+
+  </div>
+</div>
+
+
+</div><div id="shopify-section-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791" class="shopify-section"><style data-shopify>.newsletter-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791 {
+    background-color: #f9f9f9;
+    color: #1c1d1d;
+  }
+
+  .newsletter-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791 .newsletter__input::-webkit-input-placeholder { color: #1c1d1d; }
+  .newsletter-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791 .newsletter__input::-moz-placeholder { color: #1c1d1d; }
+  .newsletter-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791 .newsletter__input::-ms-input-placeholder { color: #1c1d1d; }</style><style data-shopify>
+  
+  
+</style>
+
+<div class="index-section newsletter-container newsletter-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791 color-scheme-"><div class="page-width text-center">
+    <div class="newsletter-section newsletter-section--image-right newsletter-section--no-image">
+      <div class="newsletter-section__content"><div class="theme-block" ><p class="h2">Get the Latest News &amp; Special Offers!</p></div><div class="theme-block" ><div class="rte">
+                    <div class="enlarge-text">
+                      <p>Subscribe to our newsletter, special offers and promotions emails.</p>
+                    </div>
+                  </div></div><div class="theme-block" ><form method="post" action="/contact#newsletter-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791" id="newsletter-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+<label for="Email-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791" class="hidden-label">Enter your email</label>
+    <label for="newsletter-form-submit-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791" class="hidden-label">Subscribe</label>
+    <input type="hidden" name="contact[tags]" value="prospect,newsletter">
+    <input type="hidden" name="contact[context]" value="section">
+    <div class="input-group newsletter__input-group">
+      <input type="email" value="" placeholder="Enter your email" name="contact[email]" id="Email-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791" class="input-group-field newsletter__input" autocorrect="off" autocapitalize="off">
+      <div class="input-group-btn">
+        <button type="submit" id="newsletter-form-submit-template--17873283449115__7b616113-fea8-4378-966a-7c7c9cc51791" class="btn" name="commit">
+          <span class="form__submit--large">Subscribe</span>
+          <span class="form__submit--small">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 50 15"><path d="M0 9.63V5.38h35V0l15 7.5L35 15V9.63z"/></svg>
+          </span>
+        </button>
+      </div>
+    </div></form>
+</div></div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div><div id="shopify-section-template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0" class="shopify-section"><div
+  data-section-id="template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0"
+  data-section-type="promo-grid"><style data-shopify>.flex-grid--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0 {
+    margin-top: -0px;
+    margin-left: -0px;
+    
+      padding-left: 0px;
+      padding-right: 0px;
+    
+  }
+
+  .flex-grid--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0 .flex-grid--gutters {
+    margin-top: -0px;
+    margin-left: -0px;
+  }
+
+  .flex-grid--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0 .flex-grid__item {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+  @media only screen and (max-width: 589px) {
+    .flex-grid--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0 {
+      margin-top: -0px;
+      margin-left: -0px;
+      
+        padding-left: 0px;
+        padding-right: 0px;
+      
+    }
+
+    .flex-grid--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0 .flex-grid--gutters {
+      margin-top: -0px;
+      margin-left: -0px;
+    }
+
+    .flex-grid--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0 .flex-grid__item {
+      padding-top: 0px;
+      padding-left: 0px;
+    }
+  }</style><div class="promo-grid">
+  <div class="flex-grid flex-grid--gutters flex-grid--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0"><style data-shopify>
+          
+            .flex-grid__item--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0 {
+              min-height: 168.0px;
+            }
+          
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0 {
+              min-height: 224.0px;
+            }
+          }
+
+          @media only screen and (min-width: 1140px) {
+            .flex-grid__item--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0 {
+              min-height: 280px;
+            }
+          }
+        
+
+
+
+        
+
+        
+          .flex-grid__item--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0 .promo-grid__text {
+            font-size: 0.85em;
+          }
+          .flex-grid__item--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0.flex-grid__item--50 .promo-grid__text {
+            font-size: 1.0em;
+          }
+
+          @media only screen and (min-width: 769px) {
+            .flex-grid__item--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0 .promo-grid__text {
+              font-size: 1.0em;
+            }
+          }
+        
+</style><div class="flex-grid__item flex-grid__item--100 flex-grid__item--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0 type-advanced" ><div
+              class="promo-grid__container vertical-center horizontal-center"><a href="/pages/about-us" class="promo-grid__slide-link" aria-hidden="true" aria-label="Our Museum"></a><div class="promo-grid__bg">
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/solid-E71328-for-website.png?v=1720466140" alt="" srcset="//sdautomuseum.org/cdn/shop/files/solid-E71328-for-website.png?v=1720466140&amp;width=352 352w, //sdautomuseum.org/cdn/shop/files/solid-E71328-for-website.png?v=1720466140&amp;width=832 832w, //sdautomuseum.org/cdn/shop/files/solid-E71328-for-website.png?v=1720466140&amp;width=1000 1000w" width="1000" height="1000" loading="lazy" class="image-fit promo-grid__bg-image promo-grid__bg-image--template--17873283449115__9047db30-a4f6-469c-9afb-2dc95dd4d9d0-1677455114a90e06fa-0
+" sizes="(min-width: 769px) 100vw, 100vw">
+  
+
+
+
+</div><div class="promo-grid__content">
+                  <div class="promo-grid__text"><div class="rte--block rte--strong">
+                        Every Car Tells A Story ...
+                      </div><div class="rte--block">
+                        The Mission of the San Diego Automotive Museum™ is to tell the story of the social and technological past, present, and future of motorized vehicles throughout its collections, exhibitions, and educational programs.
+                      </div><a href="/pages/about-us" class="btn btn--inverse">
+                        Our Museum
+                      </a></div>
+                </div></div></div></div>
+</div>
+</div>
+
+
+</div><script data-locksmith>
+    var load = function () {
+
+          Locksmith.ping();
+
+
+      Locksmith.util.on('submit', 'locksmith-resource-form', function (event) {
+        event.preventDefault();
+        var data = Locksmith.util.serializeForm(event.target);
+        Locksmith.postResource(data, { spinner: false, container: 'locksmith-content' });
+      });
+
+      Locksmith.util.on('click', 'locksmith-manual-trigger', function (event) {
+        event.preventDefault();
+        Locksmith.postResource({}, { spinner: true, container: document });
+      });
+
+      Locksmith.submitPasscode = function (passcode) {
+        Locksmith.postResource(
+          { passcode: passcode },
+          { spinner: false, container: 'locksmith-content' }
+        );
+      };
+    };
+
+    if (typeof Locksmith !== 'undefined') {
+      load();
+    } else {
+      window.addEventListener('load', load);
+    }
+  </script>
+      </main><!-- BEGIN sections: footer-group -->
+<div id="shopify-section-sections--17873283940635__footer" class="shopify-section shopify-section-group-footer-group"><footer class="site-footer" data-section-id="sections--17873283940635__footer" data-section-type="footer-section">
+  <div class="page-width">
+
+    <div class="grid"><div  class="grid__item footer__item--footer-1" data-type="menu"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--footer-1 {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--footer-1:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--footer-1 {
+                width: 17%;
+              }
+
+            }</style><p class="h4 footer__title small--hide">
+      VISIT US
+    </p>
+    <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-footer-1">
+      VISIT US
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button><div
+    
+      id="Footer-footer-1" class="collapsible-content collapsible-content--small"
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible">
+        <ul class="no-bullets site-footer__linklist"><li><a href="/pages/know-before-you-go">Know Before Your Go</a></li><li><a href="/pages/group-reservations">Group Reservations</a></li><li><a href="/pages/hours-directions-address">Tickets, Hours, Address & Directions</a></li><li><a href="/pages/experiences">Experiences</a></li></ul>
+      </div>
+    </div>
+  </div></div><div  class="grid__item footer__item--2cf5f91b-6855-41b8-942a-241ef2f3fb74" data-type="menu"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--2cf5f91b-6855-41b8-942a-241ef2f3fb74 {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--2cf5f91b-6855-41b8-942a-241ef2f3fb74:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--2cf5f91b-6855-41b8-942a-241ef2f3fb74 {
+                width: 17%;
+              }
+
+            }</style><p class="h4 footer__title small--hide">
+      EXPLORE
+    </p>
+    <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-2cf5f91b-6855-41b8-942a-241ef2f3fb74">
+      EXPLORE
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button><div
+    
+      id="Footer-2cf5f91b-6855-41b8-942a-241ef2f3fb74" class="collapsible-content collapsible-content--small"
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible">
+        <ul class="no-bullets site-footer__linklist"><li><a href="/pages/exhibitions">Current Exhibits</a></li><li><a href="/pages/past-exhibitions">Past Exhibits</a></li><li><a href="/pages/collections">Collection</a></li><li><a href="/pages/the-san-diego-highwayman">The San Diego Highwayman</a></li><li><a href="/pages/education">Education</a></li></ul>
+      </div>
+    </div>
+  </div></div><div  class="grid__item footer__item--bc77d376-10ac-4500-af86-ea44d90f57fa" data-type="menu"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--bc77d376-10ac-4500-af86-ea44d90f57fa {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--bc77d376-10ac-4500-af86-ea44d90f57fa:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--bc77d376-10ac-4500-af86-ea44d90f57fa {
+                width: 17%;
+              }
+
+            }</style><p class="h4 footer__title small--hide">
+      JOIN US
+    </p>
+    <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-bc77d376-10ac-4500-af86-ea44d90f57fa">
+      JOIN US
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button><div
+    
+      id="Footer-bc77d376-10ac-4500-af86-ea44d90f57fa" class="collapsible-content collapsible-content--small"
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible">
+        <ul class="no-bullets site-footer__linklist"><li><a href="/pages/memberships">Memberships</a></li><li><a href="https://sdautomuseum.org/pages/the-podium-club?_pos=1&_psq=podium-club&_ss=e&_v=1.0%20target=">Podium Club</a></li><li><a href="/pages/volunteers">Volunteer</a></li><li><a href="/pages/internships">Internships</a></li><li><a href="/pages/available-positions">Employment</a></li><li><a href="/pages/join-mailing-list">Join Mailing List</a></li></ul>
+      </div>
+    </div>
+  </div></div><div  class="grid__item footer__item--37818197-8596-470f-ba9c-b6b5017b4676" data-type="menu"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--37818197-8596-470f-ba9c-b6b5017b4676 {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--37818197-8596-470f-ba9c-b6b5017b4676:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--37818197-8596-470f-ba9c-b6b5017b4676 {
+                width: 17%;
+              }
+
+            }</style><p class="h4 footer__title small--hide">
+      DONATE
+    </p>
+    <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-37818197-8596-470f-ba9c-b6b5017b4676">
+      DONATE
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button><div
+    
+      id="Footer-37818197-8596-470f-ba9c-b6b5017b4676" class="collapsible-content collapsible-content--small"
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible">
+        <ul class="no-bullets site-footer__linklist"><li><a href="/pages/artifact-donation">Artifacts</a></li><li><a href="https://sdautomuseum.org/pages/donate">Cash Donations</a></li><li><a href="/pages/fuel-bright-futures">Fuel Bright Futures</a></li><li><a href="/pages/donate-your-vehicle">Vehicles</a></li><li><a href="https://engage.sdautomuseum.org/hgscholarship">Heinz Gietz Automotive Scholarship</a></li></ul>
+      </div>
+    </div>
+  </div></div><div  class="grid__item footer__item--8cff98a4-7963-4759-b0c1-8db70e2913f1" data-type="menu"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--8cff98a4-7963-4759-b0c1-8db70e2913f1 {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--8cff98a4-7963-4759-b0c1-8db70e2913f1:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--8cff98a4-7963-4759-b0c1-8db70e2913f1 {
+                width: 17%;
+              }
+
+            }</style><p class="h4 footer__title small--hide">
+      EVENTS
+    </p>
+    <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-8cff98a4-7963-4759-b0c1-8db70e2913f1">
+      EVENTS
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button><div
+    
+      id="Footer-8cff98a4-7963-4759-b0c1-8db70e2913f1" class="collapsible-content collapsible-content--small"
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible">
+        <ul class="no-bullets site-footer__linklist"><li><a href="/pages/calendar">Events Calendar</a></li><li><a href="/pages/private-events">Venue Rental</a></li><li><a href="https://sdautomuseum.org/pages/the-party-in-the-park-supercharged">THE Party in the Park</a></li><li><a href="/pages/cruising-for-drivers-golf-tournament">Cruis'n Fore Drivers Golf Tournament</a></li><li><a href="https://sdautomuseum.org/pages/shifting-gears-rally">Shifting Gears Rally </a></li></ul>
+      </div>
+    </div>
+  </div></div><div  class="grid__item footer__item--bb4e9376-0ba8-42fa-98af-b6b43700e060" data-type="menu"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--bb4e9376-0ba8-42fa-98af-b6b43700e060 {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--bb4e9376-0ba8-42fa-98af-b6b43700e060:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--bb4e9376-0ba8-42fa-98af-b6b43700e060 {
+                width: 15%;
+              }
+
+            }</style><p class="h4 footer__title small--hide">
+      ABOUT US
+    </p>
+    <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-bb4e9376-0ba8-42fa-98af-b6b43700e060">
+      ABOUT US
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button><div
+    
+      id="Footer-bb4e9376-0ba8-42fa-98af-b6b43700e060" class="collapsible-content collapsible-content--small"
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible">
+        <ul class="no-bullets site-footer__linklist"><li><a href="/pages/about-us">Our Mission</a></li><li><a href="/blogs/news">In The News</a></li><li><a href="/pages/our-staff">Our Staff</a></li><li><a href="/pages/supporters">Supporters</a></li><li><a href="/pages/financials">Financials</a></li></ul>
+      </div>
+    </div>
+  </div></div><div class="footer__clear small--hide"></div><div  class="grid__item footer__item--footer2" data-type="newsletter"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--footer2 {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--footer2:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--footer2 {
+                width: 50%;
+              }
+
+            }</style><div class="footer__item-padding"><p class="h4 footer__title small--hide">GET THE LATEST NEWS AND SPECIAL OFFERS!</p>
+    <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-footer2">
+      GET THE LATEST NEWS AND SPECIAL OFFERS!
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+</span>
+</button><div
+    
+      id="Footer-footer2" class="collapsible-content collapsible-content--small"
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible"><p>Subscribe to our newsletter, special offers and promotions emails.</p>
+<form method="post" action="/contact#newsletter-footer" id="newsletter-footer" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" /><label for="Email-footer2" class="hidden-label">Enter your email</label>
+          <label for="newsletter-submit-footer2" class="hidden-label">Subscribe</label>
+          <input type="hidden" name="contact[tags]" value="prospect,newsletter">
+          <input type="hidden" name="contact[context]" value="footer">
+          <div class="footer__newsletter">
+            <input type="email" value="" placeholder="Enter your email" name="contact[email]" id="Email-footer2" class="footer__newsletter-input" autocorrect="off" autocapitalize="off">
+            <button type="submit" id="newsletter-submit-footer2" aria-label="Submit Newsletter Email" class="footer__newsletter-btn" name="commit">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email" viewBox="0 0 64 64"><path d="M63 52H1V12h62zM1 12l25.68 24h9.72L63 12M21.82 31.68L1.56 51.16m60.78.78L41.27 31.68"/></svg>
+              <span class="footer__newsletter-btn-label">
+                Subscribe
+              </span>
+            </button>
+          </div></form><ul class="no-bullets social-icons footer__social"><li>
+      <a target="_blank" rel="noopener" href="https://www.instagram.com/sandiegoautomuseum" title="San Diego Automotive Museum on Instagram">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32"><path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"/><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"/></svg>
+        <span class="icon__fallback-text">Instagram</span>
+      </a>
+    </li><li>
+      <a target="_blank" rel="noopener" href="https://www.facebook.com/SanDiegoAutomotiveMuseum" title="San Diego Automotive Museum on Facebook">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 14222 14222"><path d="M14222 7112c0 3549.352-2600.418 6491.344-6000 7024.72V9168h1657l315-2056H8222V5778c0-562 275-1111 1159-1111h897V2917s-814-139-1592-139c-1624 0-2686 984-2686 2767v1567H4194v2056h1806v4968.72C2600.418 13603.344 0 10661.352 0 7112 0 3184.703 3183.703 1 7111 1s7111 3183.703 7111 7111zm-8222 7025c362 57 733 86 1111 86-377.945 0-749.003-29.485-1111-86.28zm2222 0v-.28a7107.458 7107.458 0 0 1-167.717 24.267A7407.158 7407.158 0 0 0 8222 14137zm-167.717 23.987C7745.664 14201.89 7430.797 14223 7111 14223c319.843 0 634.675-21.479 943.283-62.013z"/></svg>
+        <span class="icon__fallback-text">Facebook</span>
+      </a>
+    </li><li>
+      <a target="_blank" rel="noopener" href="https://www.youtube.com/user/sdautomuseum" title="San Diego Automotive Museum on YouTube">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"/></svg>
+        <span class="icon__fallback-text">YouTube</span>
+      </a>
+    </li><li>
+      <a target="_blank" rel="noopener" href="https://twitter.com/sdautomuseum" title="San Diego Automotive Museum on Twitter">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 32 32"><path fill="#444" d="M31.281 6.733q-1.304 1.924-3.13 3.26 0 .13.033.408t.033.408q0 2.543-.75 5.086t-2.282 4.858-3.635 4.108-5.053 2.869-6.341 1.076q-5.282 0-9.65-2.836.913.065 1.5.065 4.401 0 7.857-2.673-2.054-.033-3.668-1.255t-2.266-3.146q.554.13 1.206.13.88 0 1.663-.261-2.184-.456-3.619-2.184t-1.435-3.977v-.065q1.239.652 2.836.717-1.271-.848-2.021-2.233t-.75-2.983q0-1.63.815-3.195 2.38 2.967 5.754 4.678t7.319 1.907q-.228-.815-.228-1.434 0-2.608 1.858-4.45t4.532-1.842q1.304 0 2.51.522t2.054 1.467q2.152-.424 4.01-1.532-.685 2.217-2.771 3.488 1.989-.261 3.619-.978z"/></svg>
+        <span class="icon__fallback-text">Twitter</span>
+      </a>
+    </li></ul>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</div><div  class="grid__item footer__item--41ff897d-86cf-4b86-b374-3e908b40c708" data-type="custom"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--41ff897d-86cf-4b86-b374-3e908b40c708 {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--41ff897d-86cf-4b86-b374-3e908b40c708:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--41ff897d-86cf-4b86-b374-3e908b40c708 {
+                width: 25%;
+              }
+
+            }</style><div class="footer__item-padding"><div
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible footer_collapsible--disabled">
+      </div>
+    </div>
+  </div>
+</div>
+</div><div  class="grid__item footer__item--a3917233-686d-41ae-830a-91496409a35f" data-type="custom"><style data-shopify>@media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--a3917233-686d-41ae-830a-91496409a35f {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--a3917233-686d-41ae-830a-91496409a35f:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--a3917233-686d-41ae-830a-91496409a35f {
+                width: 25%;
+              }
+
+            }</style><div class="footer__item-padding"><div
+    >
+    <div class="collapsible-content__inner">
+      <div class="footer__collapsible footer_collapsible--disabled"><div class="image-wrap text-spacing" style="height: 0; padding-bottom: 32.9059829059829%;">
+
+
+
+
+  
+    <img src="//sdautomuseum.org/cdn/shop/files/BalboaParkLogo.png?v=1671915147" alt="" width="234" height="77" loading="lazy" sizes="(min-width: 769px) 25vw, 100vw" role="presentation">
+  
+
+
+
+</div><p><a href="https://balboapark.org/" target="_blank" title="Balboa Park"><em><strong>Balboa Park</strong></em></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div><p class="footer__small-text">
+        &copy; 2026 San Diego Automotive Museum
+| All Rights Reserved | <a href="/pages/contact">Contact Us</a> <br><a href="/pages/privacy-policy">Privacy Policy</a> | <a href="/pages/terms-of-service">Terms of Service</a> | <a href="/pages/ccpa-opt-out">Do not sell my personal information</a>
+</p></div>
+</footer>
+
+</div>
+<!-- END sections: footer-group --></div>
+  </div><div id="VideoModal" class="modal modal--solid">
+  <div class="modal__inner">
+    <div class="modal__centered page-width text-center">
+      <div class="modal__centered-content">
+        <div class="video-wrapper video-wrapper--modal">
+          <div id="VideoHolder"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="modal__close js-modal-close text-link">
+    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+    <span class="icon__fallback-text">"Close (esc)"</span>
+  </button>
+</div>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    <div class="pswp__ui pswp__ui--hidden">
+      <button class="btn btn--body btn--circle pswp__button pswp__button--arrow--left" title="Previous">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+      </button>
+
+      <button class="btn btn--body btn--circle btn--large pswp__button pswp__button--close" title="Close (esc)">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+      </button>
+
+      <button class="btn btn--body btn--circle pswp__button pswp__button--arrow--right" title="Next">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+<tool-tip data-tool-tip="">
+  <div class="tool-tip__inner" data-tool-tip-inner>
+    <button class="tool-tip__close" data-tool-tip-close=""><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg></button>
+    <div data-tool-tip-title>San Diego&#39;s Premier Transportation Museum</div>
+    <div class="tool-tip__content" data-tool-tip-content>
+    </div>
+  </div>
+</tool-tip>
+
+  <template id="naturalImageMarkup">
+    <div class="image-wrap" style="height: 0;">
+      <img class="grid-product__image" width height src srcset loading="lazy" alt>
+    </div>
+  </template>
+  <template id="fixedRatioImageMarkup">
+    <div class="grid__image-ratio">
+      <img width height src srcset loading="lazy" alt>
+    </div>
+  </template>
+  <template id="articleImageMarkup">
+    <img width height src loading="lazy">
+  </template>
+
+  <script src="https://cdn.userway.org/widget.js" data-account="5gLWtpHadq"></script>
+
+<!-- Elfsight Platform Script --> 
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<style> .rte h1,.rte h2,.rte h3,.rte h4,.rte h5,.rte h6 {margin-top: 25px; margin-bottom: 25px;} h4 {text-transform: none; letter-spacing: initial; font-size: calc(var(--typeHeaderSize) * 0.5);} .label,label:not(.variant__button-label):not(.text-label) {text-transform: none; letter-spacing: initial; font-size: 17px;} .footer__small-text {font-size: max(calc(var(--typeBaseSize) * 0.8), 12px);} hr {margin-top: 25px; margin-bottom: 25px;} .grid-product__title--heading {line-height: 1.3;} .grid-product__price {font-size: var(--typeBaseSize);} .TextControlBase__TextControlBasePlaceholder-sc-1s66zih-8 {color: rgba(17, 17, 17, 0.75) !important;} .fBNTPz {color: rgba(17, 17, 17, 0.75);} </style>
+</body>
+</html>
+
+<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "744f324c9f5f9bb8f86abc2e5c028e17"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
