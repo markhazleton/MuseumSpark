@@ -88,6 +88,12 @@ try:
 except ImportError:
     HAS_GEOPY = False
 
+try:
+    from yelpapi import YelpAPI
+    HAS_YELP = True
+except ImportError:
+    HAS_YELP = False
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STATES_DIR = PROJECT_ROOT / "data" / "states"
 CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "open-data"
@@ -821,8 +827,17 @@ def _text_mentions_reservation_required(text: str) -> bool:
     )
 
 
-def _try_google_places_lookup(museum_name: str, city: str) -> Optional[dict[str, Any]]:
-    """Try to get address from Google Places API. Returns None if not available."""
+def _try_google_places_lookup(museum_name: str, city: str, *, detailed: bool = False) -> Optional[dict[str, Any]]:
+    """Try to get data from Google Places API.
+    
+    Args:
+        museum_name: Name of museum
+        city: City name
+        detailed: If True, fetch additional details (hours, phone, photos) via Place Details API
+    
+    Returns:
+        Dict with address, coordinates, place_id, and optionally hours/phone/photos
+    """
     if not HAS_GOOGLE_MAPS:
         return None
     
@@ -831,18 +846,280 @@ def _try_google_places_lookup(museum_name: str, city: str) -> Optional[dict[str,
         return None
     
     try:
+        # Check cache first (14-day TTL)
+        cache_key = f"google_places_{museum_name}_{city}_{detailed}"
+        cache_hash = hashlib.sha256(cache_key.encode("utf-8")).hexdigest()
+        cache_path = CACHE_DIR / f"google_places_{cache_hash[:16]}.json"
+        
+        if cache_path.exists():
+            age = time.time() - cache_path.stat().st_mtime
+            if age <= (60 * 60 * 24 * 14):  # 14 days
+                try:
+                    cached_data = json.loads(cache_path.read_text(encoding="utf-8"))
+                    return cached_data
+                except Exception:
+                    pass
+        
         gmaps = googlemaps.Client(key=api_key)
         query = f"{museum_name} {city}" if city and city != "Unknown" else museum_name
         places_result = gmaps.places(query=query)
         
         if places_result.get("results"):
             result = places_result["results"][0]
-            return {
+            data = {
                 "street_address": result.get("formatted_address"),
                 "latitude": result.get("geometry", {}).get("location", {}).get("lat"),
                 "longitude": result.get("geometry", {}).get("location", {}).get("lng"),
                 "place_id": result.get("place_id"),
             }
+            
+            # If detailed=True, get comprehensive Place Details in ONE call
+            place_id = result.get("place_id")
+            if place_id and detailed:
+                try:
+                    # Request ALL useful fields in ONE API call
+                    details = gmaps.place(
+                        place_id=place_id,
+                        fields=[
+                            "address_component",           # For postal code (note: singular in API)
+                            "opening_hours",               # Business hours
+                            "formatted_phone_number",      # Phone
+                            "website",                     # Website URL
+                            "url",                         # Google Maps URL
+                            "photo",                       # Photos
+                            "rating",                      # Star rating
+                            "user_ratings_total",          # Review count
+                            "review",                      # Reviews (singular)
+                            "business_status",             # OPERATIONAL, CLOSED_TEMPORARILY, etc.
+                            "type",                        # Categories (singular)
+                            "price_level",                 # 0-4 scale
+                            "wheelchair_accessible_entrance",  # Accessibility
+                            "editorial_summary",           # Google's AI summary
+                        ]
+                    )
+                    
+                    if details.get("result"):
+                        detail_result = details["result"]
+                        
+                        # Extract postal code from address_components
+                        address_components = detail_result.get("address_components", [])
+                        for component in address_components:
+                            if "postal_code" in component.get("types", []):
+                                data["postal_code"] = component.get("long_name")
+                                break
+                        
+                        # Extract hours
+                        hours_data = detail_result.get("opening_hours", {})
+                        if hours_data.get("weekday_text"):
+                            data["hours"] = "\n".join(hours_data["weekday_text"])
+                        
+                        # Extract phone
+                        if detail_result.get("formatted_phone_number"):
+                            data["phone"] = detail_result["formatted_phone_number"]
+                        
+                        # Extract website
+                        if detail_result.get("website"):
+                            data["website"] = detail_result["website"]
+                        
+                        # Extract Google Maps URL
+                        if detail_result.get("url"):
+                            data["google_maps_url"] = detail_result["url"]
+                        
+                        # Extract photo count
+                        if detail_result.get("photo"):
+                            data["photo_count"] = len(detail_result["photo"])
+                        
+                        # Extract rating
+                        if detail_result.get("rating"):
+                            data["rating"] = detail_result["rating"]
+                            data["review_count"] = detail_result.get("user_ratings_total", 0)
+                        
+                        # Extract business status (OPERATIONAL, CLOSED_TEMPORARILY, CLOSED_PERMANENTLY)
+                        if detail_result.get("business_status"):
+                            data["business_status"] = detail_result["business_status"]
+                        
+                        # Extract types/categories
+                        if detail_result.get("types"):
+                            data["types"] = detail_result["types"]
+                        
+                        # Extract price level (0=Free, 1=$, 2=$$, 3=$$$, 4=$$$$)
+                        if detail_result.get("price_level") is not None:
+                            data["price_level"] = detail_result["price_level"]
+                        
+                        # Extract accessibility
+                        if detail_result.get("wheelchair_accessible_entrance") is not None:
+                            data["wheelchair_accessible"] = detail_result["wheelchair_accessible_entrance"]
+                        
+                        # Extract editorial summary (Google's AI-generated description)
+                        editorial = detail_result.get("editorial_summary", {})
+                        if editorial.get("overview"):
+                            data["editorial_summary"] = editorial["overview"]
+                        
+                        # Extract reviews (first 5)
+                        reviews = detail_result.get("reviews", [])
+                        if reviews:
+                            data["reviews"] = reviews[:5]  # Store up to 5 reviews
+                        
+                except Exception:
+                    # If details fetch fails, at least try to get postal code
+                    try:
+                        postal_details = gmaps.place(place_id=place_id, fields=["address_component"])
+                        if postal_details.get("result"):
+                            address_components = postal_details["result"].get("address_components", [])
+                            for component in address_components:
+                                if "postal_code" in component.get("types", []):
+                                    data["postal_code"] = component.get("long_name")
+                                    break
+                    except Exception:
+                        pass
+            elif place_id:
+                # Even if not detailed, still get postal code
+                try:
+                    postal_details = gmaps.place(place_id=place_id, fields=["address_component"])
+                    if postal_details.get("result"):
+                        address_components = postal_details["result"].get("address_components", [])
+                        for component in address_components:
+                            if "postal_code" in component.get("types", []):
+                                data["postal_code"] = component.get("long_name")
+                                break
+                except Exception:
+                    pass
+            
+            # Cache the result
+            try:
+                CACHE_DIR.mkdir(parents=True, exist_ok=True)
+                cache_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            except Exception:
+                pass
+            
+            return data
+    except Exception:
+        pass
+    
+    return None
+
+
+def _try_yelp_lookup(museum_name: str, city: str, state_code: str) -> Optional[dict[str, Any]]:
+    """Try to get data from Yelp Fusion API.
+    
+    Returns:
+        Dict with address, hours, phone, photos, rating, etc. from Yelp
+    """
+    if not HAS_YELP:
+        return None
+    
+    api_key = os.getenv("YELP_API_KEY")
+    if not api_key:
+        return None
+    
+    try:
+        yelp = YelpAPI(api_key)
+        
+        # Search for business
+        response = yelp.search_query(
+            term=museum_name,
+            location=f"{city}, {state_code}",
+            categories="museums",
+            limit=1
+        )
+        
+        if not response.get("businesses"):
+            return None
+        
+        business = response["businesses"][0]
+        
+        data = {
+            "yelp_id": business.get("id"),
+            "street_address": None,
+            "city": None,
+            "postal_code": None,
+            "latitude": None,
+            "longitude": None,
+            "phone": None,
+            "rating": None,
+            "review_count": None,
+            "photo_count": None,
+            "hours": None,
+        }
+        
+        # Extract location data
+        location = business.get("location", {})
+        if location.get("address1"):
+            data["street_address"] = location["address1"]
+        if location.get("city"):
+            data["city"] = location["city"]
+        if location.get("zip_code"):
+            data["postal_code"] = location["zip_code"]
+        
+        # Extract coordinates
+        coords = business.get("coordinates", {})
+        if coords.get("latitude"):
+            data["latitude"] = coords["latitude"]
+        if coords.get("longitude"):
+            data["longitude"] = coords["longitude"]
+        
+        # Extract phone (strip +1 if present)
+        phone = business.get("phone", "")
+        if phone.startswith("+1"):
+            phone = phone[2:]
+        if phone:
+            data["phone"] = phone
+        
+        # Extract rating and reviews
+        if business.get("rating"):
+            data["rating"] = business["rating"]
+        if business.get("review_count"):
+            data["review_count"] = business["review_count"]
+        
+        # Extract photo count
+        if business.get("photos"):
+            data["photo_count"] = len(business["photos"])
+        
+        # Try to get hours via Business Details API
+        try:
+            yelp_id = business.get("id")
+            if yelp_id:
+                details = yelp.business_query(id=yelp_id)
+                
+                hours_data = details.get("hours", [])
+                if hours_data:
+                    # Format hours nicely
+                    hours_lines = []
+                    for hour_block in hours_data:
+                        if hour_block.get("open"):
+                            for day_info in hour_block["open"]:
+                                day = day_info.get("day", 0)
+                                start = day_info.get("start", "")
+                                end = day_info.get("end", "")
+                                
+                                day_names = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+                                if 0 <= day < 7 and start and end:
+                                    # Format time from 24hr to 12hr
+                                    start_hr = int(start[:2])
+                                    start_min = start[2:]
+                                    end_hr = int(end[:2])
+                                    end_min = end[2:]
+                                    
+                                    start_ampm = "AM" if start_hr < 12 else "PM"
+                                    end_ampm = "AM" if end_hr < 12 else "PM"
+                                    
+                                    start_hr = start_hr if start_hr <= 12 else start_hr - 12
+                                    start_hr = 12 if start_hr == 0 else start_hr
+                                    end_hr = end_hr if end_hr <= 12 else end_hr - 12
+                                    end_hr = 12 if end_hr == 0 else end_hr
+                                    
+                                    hours_lines.append(
+                                        f"{day_names[day]}: {start_hr}:{start_min} {start_ampm} - {end_hr}:{end_min} {end_ampm}"
+                                    )
+                    
+                    if hours_lines:
+                        data["hours"] = "\n".join(hours_lines)
+        except Exception:
+            # If hours fetch fails, continue with other data
+            pass
+        
+        return data
+    
     except Exception:
         pass
     
@@ -1299,13 +1576,180 @@ def patch_from_official_website(
     if not website or not is_http_url(website):
         return PatchResult(patch={}, sources_used=[], notes=["Official site: missing/invalid website URL"]) 
 
-    if not can_fetch_url(website):
-        return PatchResult(patch={}, sources_used=[], notes=["Official site: blocked by robots.txt"]) 
-
     patch: dict[str, Any] = {}
     notes: list[str] = []
-    sources_used: list[str] = ["official_website", website]
+    sources_used: list[str] = []
     errors: list[str] = []
+
+    # ===================================================================
+    # PRIORITY 0: Business Location APIs (Yelp, Google Places)
+    # Try these FIRST before web scraping - they're more reliable and 
+    # don't burn LLM tokens on basic data like addresses and hours
+    # ===================================================================
+    
+    museum_name = museum.get("museum_name")
+    city = museum.get("city")
+    
+    # Extract state code from museum_id
+    state_code = None
+    museum_id = museum.get("museum_id", "")
+    if isinstance(museum_id, str) and museum_id.startswith("usa-"):
+        parts = museum_id.split("-")
+        if len(parts) >= 2:
+            state_code = parts[1].upper()
+    
+    # Try Yelp Fusion API (5K free calls/day, excellent for museum data)
+    if HAS_YELP and state_code:
+        yelp_data = _try_yelp_lookup(museum_name, city, state_code)
+        if yelp_data:
+            sources_used.append("yelp_fusion_api")
+            
+            # Address data
+            if yelp_data.get("street_address") and should_fill(museum.get("street_address")):
+                patch["street_address"] = yelp_data["street_address"]
+                patch.setdefault("address_source", "yelp")
+                patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+                notes.append("Yelp: extracted street address")
+            
+            if yelp_data.get("city") and should_fill(museum.get("city")):
+                patch["city"] = yelp_data["city"]
+            
+            if yelp_data.get("postal_code") and should_fill(museum.get("postal_code")):
+                patch["postal_code"] = yelp_data["postal_code"]
+            
+            # Coordinates
+            if yelp_data.get("latitude") and museum.get("latitude") is None:
+                patch["latitude"] = yelp_data["latitude"]
+            
+            if yelp_data.get("longitude") and museum.get("longitude") is None:
+                patch["longitude"] = yelp_data["longitude"]
+            
+            # Hours
+            if yelp_data.get("hours") and should_fill(museum.get("open_hour_notes")):
+                patch["open_hour_notes"] = yelp_data["hours"]
+                notes.append("Yelp: extracted operating hours")
+            
+            # Phone
+            if yelp_data.get("phone"):
+                # Add to notes field
+                phone_note = f"\nPhone: {yelp_data['phone']}"
+                if patch.get("notes"):
+                    patch["notes"] += phone_note
+                else:
+                    patch["notes"] = phone_note.strip()
+            
+            # Rating & reviews (for reputation assessment)
+            if yelp_data.get("rating") and yelp_data.get("review_count"):
+                rating_note = f"\nYelp Rating: {yelp_data['rating']}/5 ({yelp_data['review_count']} reviews)"
+                if patch.get("notes"):
+                    patch["notes"] += rating_note
+                else:
+                    patch["notes"] = rating_note.strip()
+                notes.append(f"Yelp: {yelp_data['rating']}/5 rating with {yelp_data['review_count']} reviews")
+    
+    # Try Google Places API with detailed=True to get hours, phone, photos
+    if HAS_GOOGLE_MAPS:
+        google_data = _try_google_places_lookup(museum_name, city, detailed=True)
+        if google_data:
+            sources_used.append("google_places_api")
+            
+            # Address data (if Yelp didn't fill it)
+            if google_data.get("street_address") and should_fill(patch.get("street_address", museum.get("street_address"))):
+                patch["street_address"] = google_data["street_address"]
+                patch.setdefault("address_source", "google_places")
+                patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+                notes.append("Google Places: extracted street address")
+            
+            # Postal code (if available from Google)
+            if google_data.get("postal_code") and should_fill(patch.get("postal_code", museum.get("postal_code"))):
+                patch["postal_code"] = google_data["postal_code"]
+                notes.append("Google Places: extracted postal code")
+            
+            # Coordinates (if Yelp didn't fill it)
+            if google_data.get("latitude") and patch.get("latitude") is None and museum.get("latitude") is None:
+                patch["latitude"] = google_data["latitude"]
+            
+            if google_data.get("longitude") and patch.get("longitude") is None and museum.get("longitude") is None:
+                patch["longitude"] = google_data["longitude"]
+            
+            if google_data.get("place_id") and museum.get("place_id") is None:
+                patch["place_id"] = google_data["place_id"]
+            
+            # Hours (if Yelp didn't fill it)
+            if google_data.get("hours") and should_fill(patch.get("open_hour_notes", museum.get("open_hour_notes"))):
+                patch["open_hour_notes"] = google_data["hours"]
+                notes.append("Google Places: extracted operating hours")
+            
+            # Phone (if Yelp didn't provide it)
+            if google_data.get("phone") and "Phone:" not in (patch.get("notes") or ""):
+                phone_note = f"\nPhone: {google_data['phone']}"
+                if patch.get("notes"):
+                    patch["notes"] += phone_note
+                else:
+                    patch["notes"] = phone_note.strip()
+            
+            # Rating & photo count
+            if google_data.get("rating") and google_data.get("review_count"):
+                rating_note = f"\nGoogle Rating: {google_data['rating']}/5 ({google_data['review_count']} reviews)"
+                if patch.get("notes"):
+                    patch["notes"] += rating_note
+                else:
+                    patch["notes"] = rating_note.strip()
+                notes.append(f"Google Places: {google_data['rating']}/5 rating with {google_data['review_count']} reviews")
+            
+            if google_data.get("photo_count"):
+                notes.append(f"Google Places: {google_data['photo_count']} photos available")
+            
+            # Business status (operational, closed temporarily, closed permanently)
+            if google_data.get("business_status"):
+                status_map = {
+                    "OPERATIONAL": "Active",
+                    "CLOSED_TEMPORARILY": "Temporarily Closed",
+                    "CLOSED_PERMANENTLY": "Permanently Closed"
+                }
+                status = status_map.get(google_data["business_status"], google_data["business_status"])
+                if should_fill(museum.get("status")):
+                    patch["status"] = status
+                    notes.append(f"Google Places: business status is {status}")
+            
+            # Editorial summary (Google's AI-generated description)
+            if google_data.get("editorial_summary") and should_fill(patch.get("notes", museum.get("notes"))):
+                summary = google_data["editorial_summary"]
+                if patch.get("notes"):
+                    patch["notes"] = summary + "\n\n" + patch["notes"]
+                else:
+                    patch["notes"] = summary
+                notes.append("Google Places: extracted editorial summary")
+            
+            # Wheelchair accessibility
+            if google_data.get("wheelchair_accessible") is not None:
+                accessible = google_data["wheelchair_accessible"]
+                if accessible and "accessibility" not in (patch.get("notes") or "").lower():
+                    access_note = "\n♿ Wheelchair accessible entrance available" if accessible else "\n⚠️ No wheelchair accessible entrance"
+                    if patch.get("notes"):
+                        patch["notes"] += access_note
+                    else:
+                        patch["notes"] = access_note.strip()
+                    notes.append(f"Google Places: wheelchair accessibility = {accessible}")
+    
+    # If business APIs filled all critical fields, we might skip web scraping
+    # But we still want to check for specific URLs (hours page, tickets page, etc.)
+    # So continue to web scraping section...
+    
+    # ===================================================================
+    # WEB SCRAPING (fallback if APIs didn't provide everything)
+    # ===================================================================
+    
+    if not can_fetch_url(website):
+        # robots.txt blocks us, but we may have gotten data from APIs
+        if sources_used:
+            notes.append("Official site: blocked by robots.txt (but got data from business APIs)")
+            return PatchResult(patch=patch, sources_used=sources_used, notes=notes)
+        else:
+            return PatchResult(patch={}, sources_used=[], notes=["Official site: blocked by robots.txt"]) 
+    
+    sources_used.append("official_website")
+    sources_used.append(website)
 
     html, error = cached_get_html(website, min_delay_seconds=min_delay_seconds)
     if error:
@@ -1424,27 +1868,6 @@ def patch_from_official_website(
         errors.append(error_msg)
         patch["row_notes_internal"] = f"Website scraping errors: {error_msg}"
         return PatchResult(patch=patch, sources_used=sources_used, notes=notes)
-
-    # Priority 1: Try Google Places API if available and address is missing
-    if should_fill(museum.get("street_address")):
-        museum_name = museum.get("museum_name")
-        city = museum.get("city")
-        google_data = _try_google_places_lookup(museum_name, city)
-        
-        if google_data:
-            if google_data.get("street_address"):
-                patch["street_address"] = google_data["street_address"]
-                patch.setdefault("address_source", "google_places")
-                patch.setdefault("address_last_verified", today_yyyy_mm_dd())
-                sources_used.append("google_places")
-                notes.append("Google Places: extracted full address")
-            
-            if google_data.get("latitude") and museum.get("latitude") is None:
-                patch["latitude"] = google_data["latitude"]
-            if google_data.get("longitude") and museum.get("longitude") is None:
-                patch["longitude"] = google_data["longitude"]
-            if google_data.get("place_id") and museum.get("place_id") is None:
-                patch["place_id"] = google_data["place_id"]
 
     # Priority 2: Try extruct for better structured data extraction
     if should_fill(museum.get("street_address")) or should_fill(patch.get("street_address")):

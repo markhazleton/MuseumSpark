@@ -24,6 +24,9 @@ extruct>=0.13.0  # Structured data extraction (JSON-LD, microdata, RDFa)
 googlemaps>=4.10.0  # Google Places API for address lookup
 geopy>=2.3.0  # OpenStreetMap Nominatim geocoding
 
+# Business location APIs (optional - for enriched museum data)
+yelpapi>=2.5.0  # Yelp Fusion API for business hours, photos, reviews
+
 # LLM providers (optional for AI enrichment)
 openai>=1.0.0
 anthropic>=0.20.0
