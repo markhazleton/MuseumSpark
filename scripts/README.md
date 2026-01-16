@@ -87,7 +87,35 @@ Notes:
 - Run `python build-index.py --calculate-scores --update-nearby-counts` after enrichment to recompute MRD fields.
 - Use `--dry-run` first if you want to preview changes without writing.
 
-MuseumSpark’s primary museum universe is the **Walker Art Reciprocal Program** roster, extracted into `data/index/walker-reciprocal.csv`.
+MuseumSpark's primary museum universe is the **Walker Art Reciprocal Program** roster, extracted into `data/index/walker-reciprocal.csv`.
+
+## LLM Enrichment Pipeline (Phase 2+)
+
+The `enrich-llm.py` orchestrator runs the validation and deep dive agents described in
+`Documentation/AI-LLM-Enrichment-Plan.md`.
+
+**Features:**
+- Field-level provenance and trust enforcement
+- Recommend-vs-write guardrails for high-churn ranking fields
+- Evidence packet shaping and token-budget governance
+- QA gates (validation failure rate, gold-set drift)
+
+**Usage:**
+
+```bash
+# Run validation agent for a single state (OpenAI)
+python scripts/enrich-llm.py --state IL --provider openai --validation-model gpt-4o-mini
+
+# Run validation + deep dive for top 100 art museums
+python scripts/enrich-llm.py --state IL --top-n 100 --provider openai --deep-dive-model gpt-4o
+
+# Process a single museum
+python scripts/enrich-llm.py --museum-id usa-il-chicago-art-institute-of-chicago
+```
+
+**Notes:**
+- Requires `OPENAI_API_KEY` or `ANTHROPIC_API_KEY`.
+- Run artifacts are stored under `data/runs/{run_id}/`.
 
 ## Scripts Overview
 

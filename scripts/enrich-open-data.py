@@ -42,6 +42,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 import sys
 import time
@@ -56,6 +57,37 @@ from urllib.parse import urljoin, urlencode, urlparse
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 
+# Optional imports with graceful degradation
+try:
+    import pyap
+    HAS_PYAP = True
+except ImportError:
+    HAS_PYAP = False
+
+try:
+    import extruct
+    HAS_EXTRUCT = True
+except ImportError:
+    HAS_EXTRUCT = False
+
+try:
+    import usaddress
+    HAS_USADDRESS = True
+except ImportError:
+    HAS_USADDRESS = False
+
+try:
+    import googlemaps
+    HAS_GOOGLE_MAPS = True
+except ImportError:
+    HAS_GOOGLE_MAPS = False
+
+try:
+    from geopy.geocoders import Nominatim
+    HAS_GEOPY = True
+except ImportError:
+    HAS_GEOPY = False
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STATES_DIR = PROJECT_ROOT / "data" / "states"
 CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "open-data"
@@ -64,6 +96,7 @@ HTTP_CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "http"
 USER_AGENT = "MuseumSpark/0.1 (https://github.com/MarkHazleton/MuseumSpark)"
 
 # Values treated as placeholders for "fill-if-missing" logic
+# NOTE: These will be normalized to null in output - we either KNOW a value or it's null
 _PLACEHOLDER_STRINGS = {"", "tbd", "unknown", "n/a"}
 
 # MRD city_tier classification (Tier 1: Major hubs)
@@ -106,8 +139,30 @@ def load_json(path: Path) -> Any:
 
 
 def save_json(path: Path, data: Any) -> None:
+    """Save JSON data, normalizing all placeholder values to null."""
+    # Normalize placeholders before saving
+    normalized_data = normalize_placeholders(data)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(normalized_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def normalize_placeholders(data: Any) -> Any:
+    """
+    Recursively normalize all placeholder strings to null.
+    
+    We either KNOW a value or it's null - no more "TBD", "Unknown", etc.
+    """
+    if isinstance(data, dict):
+        return {k: normalize_placeholders(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [normalize_placeholders(item) for item in data]
+    elif isinstance(data, str):
+        # Convert placeholder strings to None (will become null in JSON)
+        if data.strip().casefold() in _PLACEHOLDER_STRINGS:
+            return None
+        return data
+    else:
+        return data
 
 
 def is_missing(value: Any) -> bool:
@@ -766,6 +821,474 @@ def _text_mentions_reservation_required(text: str) -> bool:
     )
 
 
+def _try_google_places_lookup(museum_name: str, city: str) -> Optional[dict[str, Any]]:
+    """Try to get address from Google Places API. Returns None if not available."""
+    if not HAS_GOOGLE_MAPS:
+        return None
+    
+    api_key = os.getenv("GOOGLE_MAPS_API_KEY")
+    if not api_key:
+        return None
+    
+    try:
+        gmaps = googlemaps.Client(key=api_key)
+        query = f"{museum_name} {city}" if city and city != "Unknown" else museum_name
+        places_result = gmaps.places(query=query)
+        
+        if places_result.get("results"):
+            result = places_result["results"][0]
+            return {
+                "street_address": result.get("formatted_address"),
+                "latitude": result.get("geometry", {}).get("location", {}).get("lat"),
+                "longitude": result.get("geometry", {}).get("location", {}).get("lng"),
+                "place_id": result.get("place_id"),
+            }
+    except Exception:
+        pass
+    
+    return None
+
+
+def _extract_with_extruct(html: str, base_url: str) -> list[dict[str, Any]]:
+    """Extract structured data using extruct. Returns empty list if not available."""
+    if not HAS_EXTRUCT:
+        return []
+    
+    try:
+        data = extruct.extract(html, base_url=base_url)
+        results = []
+        
+        # Collect all JSON-LD objects
+        for item in data.get("json-ld", []):
+            if isinstance(item, dict):
+                results.append(item)
+        
+        # Also check microdata
+        for item in data.get("microdata", []):
+            if isinstance(item, dict):
+                results.append(item)
+        
+        return results
+    except Exception:
+        return []
+
+
+def _extract_addresses_with_pyap(html: str, state_code: str) -> list[dict[str, str]]:
+    """
+    Extract addresses using pyap (Python Address Parser).
+    
+    This is purpose-built for finding addresses in unstructured text.
+    Returns list of dicts with 'street_address', 'city', 'postal_code'.
+    """
+    if not HAS_PYAP:
+        return []
+    
+    try:
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        # Get text, focusing on main content areas
+        # Try footer first (addresses often there)
+        text_sources = []
+        footer = soup.find('footer')
+        if footer:
+            text_sources.append(footer.get_text(separator=' '))
+        
+        # Also check address/contact sections
+        for elem in soup.find_all(['address', 'div'], class_=re.compile(r'address|contact|location', re.I)):
+            text_sources.append(elem.get_text(separator=' '))
+        
+        # Fallback: full page text
+        if not text_sources:
+            text_sources.append(soup.get_text(separator=' '))
+        
+        # Parse addresses from each text source
+        found_addresses = []
+        for text in text_sources:
+            if not text or len(text) > 10000:  # Skip if too large
+                continue
+                
+            addresses = pyap.parse(text, country='US')
+            
+            for addr in addresses:
+                addr_str = str(addr).strip()
+                
+                # Only accept if it mentions our state
+                if state_code.upper() in addr_str.upper() or any(
+                    state_name in addr_str 
+                    for state_name in [_state_code_to_name(state_code)]
+                ):
+                    # Try to parse components
+                    parsed = _parse_pyap_address(addr_str, state_code)
+                    if parsed:
+                        found_addresses.append(parsed)
+        
+        return found_addresses
+    
+    except Exception:
+        return []
+
+
+def _parse_pyap_address(address_str: str, state_code: str) -> Optional[dict[str, str]]:
+    """Parse pyap address object into components."""
+    import re
+    
+    # Extract ZIP code
+    zip_match = re.search(r'\b(\d{5})(?:-\d{4})?\b', address_str)
+    if not zip_match:
+        return None
+    
+    postal_code = zip_match.group(1)
+    
+    # Extract street address (everything before city/state)
+    # Look for pattern: "Number Street Type"
+    street_pattern = r'(\d+\s+(?:[NSEW]\.?\s+)?[\w\s\.]+?(?:Street|St|Avenue|Ave|Road|Rd|Lane|Ln|Drive|Dr|Boulevard|Blvd|Way|Court|Ct|Circle|Cir|Parkway|Pkwy|Plaza|Pl|Place)\.?)'
+    street_match = re.search(street_pattern, address_str, re.IGNORECASE)
+    if not street_match:
+        return None
+    
+    street_address = street_match.group(1).strip()
+    
+    # Extract city (word(s) before state abbreviation)
+    state_name = _state_code_to_name(state_code)
+    city_pattern = rf'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s*,?\s*(?:{state_code}|{state_name})'
+    city_match = re.search(city_pattern, address_str, re.IGNORECASE)
+    
+    city = city_match.group(1).strip() if city_match else None
+    
+    if not city or len(city) < 2:
+        return None
+    
+    return {
+        "street_address": street_address,
+        "city": city,
+        "postal_code": postal_code
+    }
+
+
+def _state_code_to_name(state_code: str) -> str:
+    """Convert state code to full name."""
+    states = {
+        "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+        "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+        "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho",
+        "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+        "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+        "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
+        "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+        "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+        "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+        "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+        "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
+        "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+        "WI": "Wisconsin", "WY": "Wyoming", "DC": "District of Columbia"
+    }
+    return states.get(state_code.upper(), state_code)
+
+
+def _extract_meta_description(html: str) -> Optional[str]:
+    """
+    Extract meta description from HTML head.
+    
+    This is often the best museum summary available.
+    """
+    try:
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        # Try og:description first (often richer)
+        og_desc = soup.find('meta', property='og:description')
+        if og_desc and og_desc.get('content'):
+            return og_desc['content'].strip()
+        
+        # Try standard meta description
+        meta_desc = soup.find('meta', attrs={'name': 'description'})
+        if meta_desc and meta_desc.get('content'):
+            return meta_desc['content'].strip()
+        
+        # Try Twitter description
+        twitter_desc = soup.find('meta', attrs={'name': 'twitter:description'})
+        if twitter_desc and twitter_desc.get('content'):
+            return twitter_desc['content'].strip()
+        
+    except Exception:
+        pass
+    
+    return None
+
+
+def _extract_contact_info(html: str) -> Dict[str, Optional[str]]:
+    """
+    Extract phone and email from HTML.
+    
+    Returns dict with 'phone' and 'email' keys.
+    """
+    result = {'phone': None, 'email': None}
+    
+    try:
+        soup = BeautifulSoup(html, 'html.parser')
+        text = soup.get_text(separator=' ')
+        
+        # Extract phone (US format)
+        phone_pattern = r'(?:\+1[-.]?)?\(?\d{3}\)?[-.]?\d{3}[-.]?\d{4}'
+        phone_match = re.search(phone_pattern, text)
+        if phone_match:
+            result['phone'] = phone_match.group(0)
+        
+        # Extract email
+        email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+        email_match = re.search(email_pattern, text)
+        if email_match:
+            result['email'] = email_match.group(0)
+        
+    except Exception:
+        pass
+    
+    return result
+
+
+def _extract_hours_info(html: str) -> Optional[str]:
+    """
+    Extract hours of operation from HTML.
+    
+    Looks for common patterns like "Tuesday-Saturday 10am-5pm".
+    """
+    try:
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        # Look for elements with hours-related text
+        for elem in soup.find_all(['div', 'p', 'span'], class_=re.compile(r'hours?|open|schedule', re.I)):
+            text = elem.get_text(separator=' ', strip=True)
+            if text and len(text) < 300:  # Reasonable length
+                # Check if it contains day names and time patterns
+                has_days = any(day in text for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
+                has_time = re.search(r'\d{1,2}(?::\d{2})?\s*(?:am|pm|AM|PM)', text)
+                if has_days or has_time:
+                    return text
+        
+        # Fallback: search full text for hours patterns near keywords
+        text = soup.get_text(separator='\n')
+        lines = text.split('\n')
+        for i, line in enumerate(lines):
+            line_lower = line.lower()
+            if any(keyword in line_lower for keyword in ['hours', 'open', 'visit', 'schedule']):
+                # Get context (this line + next few lines)
+                context_lines = lines[i:i+5]
+                context = ' '.join(l.strip() for l in context_lines if l.strip())
+                if len(context) < 300:
+                    has_days = any(day in context for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
+                    has_time = re.search(r'\d{1,2}(?::\d{2})?\s*(?:am|pm|AM|PM)', context)
+                    if has_days or has_time:
+                        return context[:300]  # Truncate if too long
+        
+    except Exception:
+        pass
+    
+    return None
+
+
+def _extract_visitor_urls(html: str, base_url: str) -> Dict[str, Optional[str]]:
+    """
+    Extract visitor info URLs (hours, tickets, accessibility).
+    
+    Returns dict with 'hours_url', 'tickets_url', 'accessibility_url'.
+    """
+    from urllib.parse import urljoin
+    
+    result = {'hours_url': None, 'tickets_url': None, 'accessibility_url': None}
+    
+    try:
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        # Find all links
+        for link in soup.find_all('a', href=True):
+            href = link.get('href', '')
+            text = link.get_text(strip=True).lower()
+            href_lower = href.lower()
+            
+            # Hours/visit links
+            if not result['hours_url']:
+                if any(keyword in text for keyword in ['hours', 'visit', 'plan your visit', 'visiting']):
+                    result['hours_url'] = urljoin(base_url, href)
+                elif any(keyword in href_lower for keyword in ['/visit', '/hours', '/plan-your-visit']):
+                    result['hours_url'] = urljoin(base_url, href)
+            
+            # Tickets/admission links
+            if not result['tickets_url']:
+                if any(keyword in text for keyword in ['tickets', 'admission', 'buy tickets', 'book']):
+                    result['tickets_url'] = urljoin(base_url, href)
+                elif any(keyword in href_lower for keyword in ['/tickets', '/admission', '/book']):
+                    result['tickets_url'] = urljoin(base_url, href)
+            
+            # Accessibility links
+            if not result['accessibility_url']:
+                if any(keyword in text for keyword in ['accessibility', 'accessible', 'ada']):
+                    result['accessibility_url'] = urljoin(base_url, href)
+                elif any(keyword in href_lower for keyword in ['/accessibility', '/accessible', '/ada']):
+                    result['accessibility_url'] = urljoin(base_url, href)
+            
+            # Stop if we found all
+            if all(result.values()):
+                break
+        
+    except Exception:
+        pass
+    
+    return result
+
+
+def _fetch_and_extract_from_dedicated_page(url: str, extraction_type: str, min_delay_seconds: float = 1.0) -> Optional[str]:
+    """
+    Fetch a dedicated page (hours, accessibility, etc.) and extract relevant information.
+    
+    Args:
+        url: The URL to fetch
+        extraction_type: 'hours', 'accessibility', or 'parking'
+        min_delay_seconds: Minimum delay between requests
+        
+    Returns:
+        Extracted text or None if not found
+    """
+    try:
+        # Respect rate limiting
+        html, error = cached_get_html(url, min_delay_seconds=min_delay_seconds)
+        if error or not html:
+            return None
+        
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        if extraction_type == 'hours':
+            # Try to find hours section - check heading tags first
+            for elem in soup.find_all(['h1', 'h2', 'h3', 'h4']):
+                if re.search(r'(museum\s+)?hours(\s+of\s+operation)?', elem.get_text(), re.I):
+                    # Found hours heading, get the next sibling or parent's text
+                    parent = elem.find_parent(['section', 'div', 'article'])
+                    if parent:
+                        text = parent.get_text(separator='\n', strip=True)
+                        lines = [l.strip() for l in text.split('\n') if l.strip() and len(l) < 100]
+                        relevant_lines = []
+                        for line in lines:
+                            if any(day in line for day in ['Monday', 'Tuesday', 'Wednesday', 
+                                                          'Thursday', 'Friday', 'Saturday', 'Sunday', 'closed']):
+                                relevant_lines.append(line)
+                            elif re.search(r'\d{1,2}(?::\d{2})?\s*(?:a\.m\.|p\.m\.|am|pm)', line, re.I):
+                                relevant_lines.append(line)
+                        if relevant_lines:
+                            return ' '.join(relevant_lines[:6])[:300]
+            
+            # Try to find hours section by class
+            for elem in soup.find_all(['div', 'section', 'p', 'span'], 
+                                      class_=re.compile(r'hours?|schedule|timing', re.I)):
+                text = elem.get_text(separator='\n', strip=True)
+                lines = [l.strip() for l in text.split('\n') if l.strip()]
+                relevant_lines = []
+                for line in lines:
+                    if len(line) > 5 and len(line) < 100:
+                        has_day = any(day in line for day in ['Monday', 'Tuesday', 'Wednesday', 
+                                                              'Thursday', 'Friday', 'Saturday', 'Sunday', 'closed'])
+                        has_time = re.search(r'\d{1,2}(?::\d{2})?\s*(?:a\.m\.|p\.m\.|am|pm)', line, re.I)
+                        if has_day or has_time:
+                            relevant_lines.append(line)
+                if relevant_lines:
+                    return ' '.join(relevant_lines[:6])[:300]
+            
+            # Fallback: search for hours patterns in full text
+            text = soup.get_text(separator='\n')
+            lines = [l.strip() for l in text.split('\n') if l.strip()]
+            for i, line in enumerate(lines):
+                if re.match(r'(museum\s+)?hours(\s+of\s+operation)?', line, re.I):
+                    # Grab next lines that might contain hours
+                    context_lines = []
+                    for j in range(i+1, min(i+10, len(lines))):
+                        next_line = lines[j]
+                        if len(next_line) > 5 and len(next_line) < 100:
+                            has_day = any(day in next_line for day in ['Monday', 'Tuesday', 'Wednesday', 
+                                                                       'Thursday', 'Friday', 'Saturday', 'Sunday', 'closed'])
+                            has_time = re.search(r'\d{1,2}(?::\d{2})?\s*(?:a\.m\.|p\.m\.|am|pm)', next_line, re.I)
+                            if has_day or has_time:
+                                context_lines.append(next_line)
+                        if len(context_lines) >= 5:
+                            break
+                    if context_lines:
+                        return ' '.join(context_lines)[:300]
+        
+        elif extraction_type == 'accessibility':
+            # Look for accessibility information
+            for elem in soup.find_all(['div', 'section', 'p'], 
+                                      class_=re.compile(r'access|ada|disability', re.I)):
+                text = elem.get_text(separator=' ', strip=True)
+                if text and 20 < len(text) < 500:
+                    # Clean and return
+                    text = re.sub(r'\s+', ' ', text)
+                    return text[:300]
+            
+            # Look for specific accessibility keywords
+            text = soup.get_text(separator='\n')
+            lines = text.split('\n')
+            for i, line in enumerate(lines):
+                if any(keyword in line.lower() for keyword in ['wheelchair', 'accessible', 'ada compliant', 'accommodation']):
+                    context_lines = [l.strip() for l in lines[i:i+6] if l.strip()]
+                    context = ' '.join(context_lines[:4])
+                    if 20 < len(context) < 400:
+                        return context[:300]
+        
+        elif extraction_type == 'parking':
+            # Look for parking information
+            for elem in soup.find_all(['div', 'section', 'p'], 
+                                      class_=re.compile(r'parking|garage', re.I)):
+                text = elem.get_text(separator=' ', strip=True)
+                if text and 15 < len(text) < 300:
+                    if any(keyword in text.lower() for keyword in ['parking', 'garage', 'lot', 'street parking']):
+                        text = re.sub(r'\s+', ' ', text)
+                        return text[:200]
+            
+            # Search in full text
+            text = soup.get_text(separator='\n')
+            lines = text.split('\n')
+            for i, line in enumerate(lines):
+                if 'parking' in line.lower():
+                    context_lines = [l.strip() for l in lines[i:i+4] if l.strip()]
+                    context = ' '.join(context_lines[:3])
+                    if 15 < len(context) < 300:
+                        return context[:200]
+        
+    except Exception:
+        pass
+    
+    return None
+
+
+def _parse_address_with_usaddress(text: str) -> Optional[dict[str, str]]:
+    """Try to parse address from text using usaddress. Returns None if not available."""
+    if not HAS_USADDRESS:
+        return None
+    
+    try:
+        parsed, addr_type = usaddress.tag(text)
+        
+        # Only return if it looks like a complete address
+        if "AddressNumber" in parsed and "StreetName" in parsed:
+            street_parts = []
+            if parsed.get("AddressNumber"):
+                street_parts.append(parsed["AddressNumber"])
+            if parsed.get("StreetNamePreDirectional"):
+                street_parts.append(parsed["StreetNamePreDirectional"])
+            if parsed.get("StreetName"):
+                street_parts.append(parsed["StreetName"])
+            if parsed.get("StreetNamePostType"):
+                street_parts.append(parsed["StreetNamePostType"])
+            
+            return {
+                "street_address": " ".join(street_parts),
+                "city": parsed.get("PlaceName"),
+                "state": parsed.get("StateName"),
+                "postal_code": parsed.get("ZipCode"),
+            }
+    except Exception:
+        pass
+    
+    return None
+
+
 def patch_from_official_website(
     museum: dict[str, Any],
     *,
@@ -798,12 +1321,157 @@ def patch_from_official_website(
     try:
         soup = BeautifulSoup(html, "html.parser")
         notes.append("Official site: fetched homepage")
+        
+        # Cache the HTML for LLM enrichment use
+        museum_id = museum.get("museum_id")
+        state_code = None
+        if isinstance(museum_id, str) and museum_id.startswith("usa-"):
+            parts = museum_id.split("-")
+            if len(parts) >= 2:
+                state_code = parts[1].upper()
+                
+        if state_code and museum_id:
+            import hashlib
+            hash_bytes = hashlib.sha256(museum_id.encode("utf-8")).hexdigest()
+            folder_hash = f"m_{hash_bytes[:8]}"
+            cache_dir = PROJECT_ROOT / "data" / "states" / state_code / folder_hash / "cache"
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Save the HTML for LLM use
+            html_path = cache_dir / "website_html.html"
+            html_path.write_text(html, encoding="utf-8")
+            notes.append(f"Official site: cached HTML for LLM enrichment")
+        
+        # Extract rich metadata from website
+        # 1. Meta description for notes field
+        if should_fill(museum.get("notes")):
+            meta_desc = _extract_meta_description(html)
+            if meta_desc and len(meta_desc) > 20:  # Meaningful description
+                patch["notes"] = meta_desc
+                notes.append("Official site: extracted meta description")
+        
+        # 2. Contact information
+        contact = _extract_contact_info(html)
+        contact_parts = []
+        if contact['phone']:
+            contact_parts.append(f"Phone: {contact['phone']}")
+        if contact['email']:
+            contact_parts.append(f"Email: {contact['email']}")
+        
+        # 3. Hours information
+        hours_text = _extract_hours_info(html)
+        if hours_text and should_fill(museum.get("open_hour_notes")):
+            patch["open_hour_notes"] = hours_text
+            notes.append("Official site: extracted hours information")
+        
+        # Append contact info to notes if we have description
+        if contact_parts and patch.get("notes"):
+            patch["notes"] = patch["notes"] + "\n\n" + "\n".join(contact_parts)
+            notes.append(f"Official site: extracted {len(contact_parts)} contact detail(s)")
+        
+        # 4. Visitor information URLs
+        visitor_urls = _extract_visitor_urls(html, url)
+        if visitor_urls['hours_url'] and should_fill(museum.get("open_hours_url")):
+            patch["open_hours_url"] = visitor_urls['hours_url']
+            notes.append("Official site: found hours/visit URL")
+        
+        # Fetch the hours page to extract actual hours text (always try if URL found)
+        if visitor_urls['hours_url'] and should_fill(museum.get("open_hour_notes")):
+            hours_from_page = _fetch_and_extract_from_dedicated_page(
+                visitor_urls['hours_url'], 
+                'hours', 
+                min_delay_seconds=min_delay_seconds
+            )
+            if hours_from_page:
+                patch["open_hour_notes"] = hours_from_page
+                notes.append("Official site: extracted hours from dedicated page")
+        
+        if visitor_urls['tickets_url'] and should_fill(museum.get("tickets_url")):
+            patch["tickets_url"] = visitor_urls['tickets_url']
+            notes.append("Official site: found tickets URL")
+            
+        if visitor_urls['accessibility_url'] and should_fill(museum.get("accessibility_url")):
+            patch["accessibility_url"] = visitor_urls['accessibility_url']
+            notes.append("Official site: found accessibility URL")
+            
+        # Fetch accessibility page for detailed info (always try if URL found)
+        if visitor_urls['accessibility_url']:
+            accessibility_text = _fetch_and_extract_from_dedicated_page(
+                visitor_urls['accessibility_url'],
+                'accessibility',
+                min_delay_seconds=min_delay_seconds
+            )
+            if accessibility_text:
+                # Append to notes or create separate field
+                if patch.get("notes"):
+                    patch["notes"] = patch["notes"] + f"\n\nAccessibility: {accessibility_text}"
+                notes.append("Official site: extracted accessibility info")
+        
+        # Try to extract parking info from hours/visit page (always try if URL found)
+        if visitor_urls['hours_url'] and should_fill(museum.get("parking_notes")):
+            parking_info = _fetch_and_extract_from_dedicated_page(
+                visitor_urls['hours_url'],
+                'parking',
+                min_delay_seconds=min_delay_seconds
+            )
+            if parking_info:
+                patch["parking_notes"] = parking_info
+                notes.append("Official site: extracted parking information")
+            
     except Exception as e:
         error_msg = f"Failed to parse HTML: {str(e)[:100]}"
         notes.append(f"Official site: {error_msg}")
         errors.append(error_msg)
         patch["row_notes_internal"] = f"Website scraping errors: {error_msg}"
         return PatchResult(patch=patch, sources_used=sources_used, notes=notes)
+
+    # Priority 1: Try Google Places API if available and address is missing
+    if should_fill(museum.get("street_address")):
+        museum_name = museum.get("museum_name")
+        city = museum.get("city")
+        google_data = _try_google_places_lookup(museum_name, city)
+        
+        if google_data:
+            if google_data.get("street_address"):
+                patch["street_address"] = google_data["street_address"]
+                patch.setdefault("address_source", "google_places")
+                patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+                sources_used.append("google_places")
+                notes.append("Google Places: extracted full address")
+            
+            if google_data.get("latitude") and museum.get("latitude") is None:
+                patch["latitude"] = google_data["latitude"]
+            if google_data.get("longitude") and museum.get("longitude") is None:
+                patch["longitude"] = google_data["longitude"]
+            if google_data.get("place_id") and museum.get("place_id") is None:
+                patch["place_id"] = google_data["place_id"]
+
+    # Priority 2: Try extruct for better structured data extraction
+    if should_fill(museum.get("street_address")) or should_fill(patch.get("street_address")):
+        structured_data = _extract_with_extruct(html, website)
+        
+        for item in structured_data:
+            # Look for schema.org address objects
+            address = item.get("address")
+            if isinstance(address, dict):
+                street = address.get("streetAddress")
+                postal = address.get("postalCode")
+                locality = address.get("addressLocality")
+                
+                if street and should_fill(patch.get("street_address")):
+                    patch["street_address"] = street.strip()
+                    patch.setdefault("address_source", "structured_data")
+                    patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+                    notes.append("Extruct: extracted street address from structured data")
+                
+                if postal and should_fill(patch.get("postal_code")):
+                    patch["postal_code"] = postal.strip()
+                
+                if locality and should_fill(patch.get("city")):
+                    patch["city"] = locality.strip()
+                    notes.append(f"Extruct: extracted city '{locality}' from structured data")
+                
+                break  # Use first valid address found
 
     # Discover key subpages (hours/tickets/accessibility) from nav/footer links.
     if is_missing(museum.get("open_hours_url")):
@@ -863,6 +1531,48 @@ def patch_from_official_website(
     page_text = soup.get_text(" ", strip=True)
     import re
     
+    # Priority 2.5: Try pyap (Python Address Parser) - purpose-built for finding addresses
+    if should_fill(museum.get("street_address")) or should_fill(patch.get("street_address")):
+        state_code = None
+        museum_id = museum.get("museum_id", "")
+        if isinstance(museum_id, str):
+            parts = museum_id.split("-")
+            if len(parts) >= 2 and parts[0] == "usa":
+                state_code = parts[1].upper()
+        
+        if state_code:
+            pyap_addresses = _extract_addresses_with_pyap(html, state_code)
+            if pyap_addresses:
+                # Use the first address found
+                addr = pyap_addresses[0]
+                if addr.get("street_address") and should_fill(patch.get("street_address")):
+                    patch["street_address"] = addr["street_address"]
+                    patch.setdefault("address_source", "pyap_parser")
+                    patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+                    notes.append("Pyap: extracted street address from page text")
+                
+                if addr.get("city") and should_fill(patch.get("city")):
+                    patch["city"] = addr["city"]
+                
+                if addr.get("postal_code") and should_fill(patch.get("postal_code")):
+                    patch["postal_code"] = addr["postal_code"]
+    
+    # Priority 3: Try usaddress parser on the page text
+    if should_fill(museum.get("street_address")) and should_fill(patch.get("street_address")):
+        parsed_addr = _parse_address_with_usaddress(page_text)
+        if parsed_addr and parsed_addr.get("street_address"):
+            if should_fill(patch.get("street_address")):
+                patch["street_address"] = parsed_addr["street_address"]
+                patch.setdefault("address_source", "usaddress_parser")
+                patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+                notes.append("usaddress: parsed street address from page text")
+            
+            if parsed_addr.get("city") and should_fill(patch.get("city")):
+                patch["city"] = parsed_addr["city"]
+            
+            if parsed_addr.get("postal_code") and should_fill(patch.get("postal_code")):
+                patch["postal_code"] = parsed_addr["postal_code"]
+    
     # Extract state abbreviation from museum_id (e.g., "usa-ks-..." -> "KS")
     state_code = None
     museum_id = museum.get("museum_id", "")
@@ -871,32 +1581,58 @@ def patch_from_official_website(
         if len(parts) >= 2 and parts[0] == "usa":
             state_code = parts[1].upper()
     
+    # Priority 4: Regex-based extraction as final fallback
     # Try to extract full address first (e.g., "701 Beach Lane, Manhattan, KS 66506" or "242 S Santa Fe Ave<br>Salina, KS 67401")
-    if should_fill(museum.get("street_address")) and state_code:
+    if should_fill(museum.get("street_address")) and should_fill(patch.get("street_address")) and state_code:
+        # Get state name for pattern matching (e.g., "Oklahoma")
+        state_names = {
+            "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+            "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "FL": "Florida", "GA": "Georgia",
+            "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa",
+            "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+            "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri",
+            "MT": "Montana", "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
+            "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio",
+            "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+            "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
+            "VA": "Virginia", "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+            "DC": "District of Columbia"
+        }
+        state_name = state_names.get(state_code, state_code)
+        
         # Pattern variations for different address formats
         # Capture full street names including type suffixes (Ave, St, Lane, etc.)
-        # Allow for <br> tags or commas between street and city
+        # Use word boundaries and better constraints to avoid capturing too much text
         address_patterns = [
-            # With street type suffix: "Number Street Type<br>City, ST ZIP" or "Number Street Type, City, ST ZIP"
-            rf"(\d+\s+[NSEWnse]?\.?\s*[\w\s\.\-]+?(?:Avenue|Ave|Street|St|Road|Rd|Lane|Ln|Drive|Dr|Boulevard|Blvd|Way|Court|Ct|Circle|Cir)\.?)\s*(?:,|<br>|<br/>)?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_code}\s+(\d{{5}})",
+            # With full state name: "Number Street Type City, StateName ZIP"
+            rf"\b(\d+\s+[NSEWnse]?\.?\s*[\w\s\.\-]+?(?:Avenue|Ave|Street|St|Road|Rd|Lane|Ln|Drive|Dr|Boulevard|Blvd|Way|Court|Ct|Circle|Cir)\.?)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_name}\s+(\d{{5}})\b",
+            # With state abbreviation: "Number Street Type City, ST ZIP"
+            rf"\b(\d+\s+[NSEWnse]?\.?\s*[\w\s\.\-]+?(?:Avenue|Ave|Street|St|Road|Rd|Lane|Ln|Drive|Dr|Boulevard|Blvd|Way|Court|Ct|Circle|Cir)\.?)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*),\s*{state_code}\s+(\d{{5}})\b",
         ]
         
+        # Find all matches and pick the shortest/cleanest one
+        best_match = None
+        best_length = float('inf')
+        
         for pattern in address_patterns:
-            match = re.search(pattern, page_text, re.IGNORECASE)
-            if match:
+            for match in re.finditer(pattern, page_text, re.IGNORECASE):
                 street = match.group(1).strip().rstrip(',')
                 city = match.group(2).strip()
                 zipcode = match.group(3).strip()
                 
                 # Validate street address (should have number and reasonable length)
-                if len(street) > 3 and len(street) < 100 and any(c.isdigit() for c in street):
-                    patch["street_address"] = street
-                    patch["city"] = city
-                    patch["postal_code"] = zipcode
-                    patch.setdefault("address_source", "official_website")
-                    patch.setdefault("address_last_verified", today_yyyy_mm_dd())
-                    notes.append(f"Official site: extracted full address from page text")
-                    break
+                # Prefer shorter matches (less likely to have captured extra text)
+                if (len(street) > 3 and len(street) < 100 and any(c.isdigit() for c in street) and len(street) < best_length):
+                    best_match = (street, city, zipcode)
+                    best_length = len(street)
+        
+        if best_match:
+            patch["street_address"] = best_match[0]
+            patch["city"] = best_match[1]
+            patch["postal_code"] = best_match[2]
+            patch.setdefault("address_source", "official_website")
+            patch.setdefault("address_last_verified", today_yyyy_mm_dd())
+            notes.append(f"Official site: extracted full address from page text")
     
     # If no full address found, try to extract just city
     if should_fill(museum.get("city")) and should_fill(patch.get("city")) and state_code:

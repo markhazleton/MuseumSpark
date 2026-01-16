@@ -1,0 +1,77 @@
+{
+  "museum_id": "usa-ok-unknown-the-museum-of-the-red-river",
+  "folder_hash": "m_b590d318",
+  "slug_alias": "unknown-the-museum-of-the-red-river--river",
+  "state_file_updates": {
+    "museum_id": "usa-ok-unknown-the-museum-of-the-red-river",
+    "museum_name": {
+      "value": "The Museum of the Red River",
+      "source": "identity",
+      "trust_level": 6,
+      "confidence": 5,
+      "retrieved_at": "2026-01-16T14:44:00.285187Z"
+    },
+    "city": {
+      "value": "Unknown",
+      "source": "identity",
+      "trust_level": 6,
+      "confidence": 5,
+      "retrieved_at": "2026-01-16T14:44:00.285192Z"
+    },
+    "website": {
+      "value": "https://www.museumoftheredriver.org/",
+      "source": "identity",
+      "trust_level": 6,
+      "confidence": 5,
+      "retrieved_at": "2026-01-16T14:44:00.285195Z"
+    },
+    "primary_domain": {
+      "value": "Mixed",
+      "source": "state_record_subset",
+      "trust_level": 4,
+      "confidence": 3,
+      "retrieved_at": "2026-01-16T14:44:00.285210Z"
+    },
+    "museum_type": {
+      "value": "Unknown",
+      "source": "state_record_subset",
+      "trust_level": 4,
+      "confidence": 3,
+      "retrieved_at": "2026-01-16T14:44:00.285214Z"
+    },
+    "city_tier": {
+      "value": 3,
+      "source": "state_record_subset",
+      "trust_level": 4,
+      "confidence": 3,
+      "retrieved_at": "2026-01-16T14:44:00.285219Z"
+    },
+    "time_needed": {
+      "value": "Half day",
+      "source": "state_record_subset",
+      "trust_level": 4,
+      "confidence": 3,
+      "retrieved_at": "2026-01-16T14:44:00.285222Z"
+    },
+    "notes": {
+      "value": "The Museum of the Red River is located in Oklahoma. It has a mixed focus and is considered a Tier 3 city museum. The website indicates the museum can be visited in about half a day.",
+      "source": "evidence_summary",
+      "trust_level": 5,
+      "confidence": 4,
+      "retrieved_at": "2026-01-16T14:44:00.285224Z"
+    },
+    "confidence": 4,
+    "data_sources": [
+      "identity",
+      "state_record_subset"
+    ]
+  },
+  "applied_fields": [
+    "website",
+    "primary_domain",
+    "notes"
+  ],
+  "processed_at": "2023-04-11T12:34:56.789000+00:00",
+  "agent_version": "validation_v1",
+  "model_used": "validation_v1"
+}

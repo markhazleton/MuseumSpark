@@ -268,6 +268,7 @@ def add_stub_museum(state_name: str, state_code: str, row: RosterRow) -> dict[st
         "topics": None,
         "audience_focus": None,
         "open_hours_url": None,
+        "open_hour_notes": None,
         "tickets_url": None,
         "reservation_required": None,
         "accessibility_url": None,

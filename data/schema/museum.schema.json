@@ -130,7 +130,14 @@
         },
         "address_source": {
           "type": ["string", "null"],
-          "enum": ["official_website", "google_places", "wikipedia", "manual", "unknown", null],
+          "enum": [
+            "official_website",
+            "google_places",
+            "wikipedia",
+            "manual",
+            "unknown",
+            null
+          ],
           "description": "Source of address information"
         },
         "address_last_verified": {
@@ -145,7 +152,15 @@
         },
         "primary_domain": {
           "type": ["string", "null"],
-          "enum": ["Art", "History", "Science", "Culture", "Specialty", "Mixed", null],
+          "enum": [
+            "Art",
+            "History",
+            "Science",
+            "Culture",
+            "Specialty",
+            "Mixed",
+            null
+          ],
           "description": "Primary domain of museum"
         },
         "topics": {
@@ -157,13 +172,24 @@
         },
         "audience_focus": {
           "type": ["string", "null"],
-          "enum": ["General", "Family", "Academic", "Children", "Specialist", null],
+          "enum": [
+            "General",
+            "Family",
+            "Academic",
+            "Children",
+            "Specialist",
+            null
+          ],
           "description": "Primary audience focus"
         },
         "open_hours_url": {
           "type": ["string", "null"],
           "format": "uri",
           "description": "URL to hours/admission page"
+        },
+        "open_hour_notes": {
+          "type": ["string", "null"],
+          "description": "Operating hours and days (extracted text)"
         },
         "tickets_url": {
           "type": ["string", "null"],
