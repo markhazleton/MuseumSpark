@@ -6,63 +6,52 @@
     "museum_id": "usa-ok-unknown-oklahoma-contemporary-arts-center",
     "museum_name": {
       "value": "Oklahoma Contemporary Arts Center",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
       "value": "Oklahoma City",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "website": {
       "value": "https://oklahomacontemporary.org/",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "primary_domain": {
       "value": "Art",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-12T12:00:00Z"
-    },
-    "museum_type": {
-      "value": "Unknown",
-      "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city_tier": {
       "value": 3,
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
       "value": "Half day",
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
-    "confidence": 4,
     "data_sources": [
-      "identity",
-      "state_record_subset"
+      "official_website/visit"
     ]
   },
-  "applied_fields": [
-    "website"
-  ],
-  "processed_at": "2023-04-12T12:00:00+00:00",
-  "agent_version": "validation_v1",
-  "model_used": "validation_v1"
+  "applied_fields": [],
+  "processed_at": "2023-10-01T00:00:00",
+  "agent_version": "1.0",
+  "model_used": "ValidationModelV1"
 }

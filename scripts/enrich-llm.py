@@ -149,13 +149,17 @@ def main() -> int:
 
     for state_code in state_codes:
         museums = _load_state_museums(state_code)
-        for museum in museums:
+        total_museums = len(museums)
+        print(f"\n[STATE: {state_code}] Processing {total_museums} museums")
+        
+        for idx, museum in enumerate(museums, 1):
             museum_id = museum.get("museum_id")
             if not museum_id:
                 continue
             if args.museum_id and museum_id != args.museum_id:
                 continue
 
+            print(f"[{idx}/{total_museums}] Processing {museum_id}...", end=" ", flush=True)
             context = load_museum_context(museum_id, state_code)
             folder_hash = museum_id_to_folder(museum_id)
             cache_dir = STATES_DIR / state_code / folder_hash / "cache"
@@ -179,7 +183,9 @@ def main() -> int:
                     cache_dir=cache_dir,
                     use_cache=args.use_cache,
                 )
+                print("validation ✓", end=" ", flush=True)
             except Exception as exc:
+                print(f"validation ✗ ({exc})")
                 total_failed += 1
                 review_queue.append(
                     {"museum_id": museum_id, "stage": "validation", "reason": str(exc)}
@@ -200,6 +206,10 @@ def main() -> int:
                 confidence_threshold=int(args.confidence_threshold),
                 provenance_path=provenance_path,
             )
+            
+            applied_count = len(apply_result.applied_fields)
+            rejected_count = len(apply_result.rejected_fields)
+            print(f"applied:{applied_count} rejected:{rejected_count}", end=" ", flush=True)
 
             write_museum_subfolder(
                 state_code=state_code,
@@ -234,6 +244,7 @@ def main() -> int:
             )
 
             if museum_id in deep_dive_targets:
+                print("deep-dive...", end=" ", flush=True)
                 deep_evidence = build_evidence_packet(context, max_chars=12000)
                 deep_prompt_tokens = estimate_tokens(json.dumps(deep_evidence, ensure_ascii=False))
                 deep_cost = _estimate_cost(
@@ -252,7 +263,9 @@ def main() -> int:
                         cache_dir=cache_dir,
                         use_cache=args.use_cache,
                     )
+                    print("✓", end=" ", flush=True)
                 except Exception as exc:
+                    print(f"✗ ({exc})", end=" ", flush=True)
                     total_failed += 1
                     review_queue.append(
                         {"museum_id": museum_id, "stage": "deep_dive", "reason": str(exc)}
@@ -287,6 +300,8 @@ def main() -> int:
                         "rejected_fields": deep_apply.rejected_fields,
                     }
                 )
+            
+            print(f"[Budget: ${budget.spent_budget:.2f}/${budget.total_budget:.2f}]")
 
             failure_rate = total_failed / max(1, total_processed)
             if failure_rate > float(args.failure_threshold):
@@ -328,7 +343,15 @@ def main() -> int:
 
         save_json(run_dir / "gold_drift.json", {"run_id": run_id, "reports": drift_reports})
 
-    print(f"[OK] Run complete: {run_id}")
+    print(f"\n{'='*60}")
+    print(f"[RUN COMPLETE: {run_id}]")
+    print(f"  Total Processed: {total_processed}")
+    print(f"  Total Failed: {total_failed}")
+    print(f"  Failure Rate: {total_failed / max(1, total_processed):.1%}")
+    print(f"  Budget Spent: ${budget.spent_budget:.2f} / ${budget.total_budget:.2f}")
+    print(f"  Budget Remaining: ${budget.remaining():.2f}")
+    print(f"  Results saved to: {run_dir}")
+    print(f"{'='*60}\n")
     return 0
 
 

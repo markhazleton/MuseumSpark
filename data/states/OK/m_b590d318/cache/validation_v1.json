@@ -3,84 +3,63 @@
     "museum_id": "usa-ok-unknown-the-museum-of-the-red-river",
     "museum_name": {
       "value": "The Museum of the Red River",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:44:00.285187Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
       "value": "Unknown",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:44:00.285192Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "street_address": null,
     "postal_code": null,
     "website": {
       "value": "https://www.museumoftheredriver.org/",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:44:00.285195Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "latitude": null,
     "longitude": null,
-    "primary_domain": {
-      "value": "Mixed",
-      "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 3,
-      "retrieved_at": "2026-01-16T14:44:00.285210Z"
-    },
-    "museum_type": {
-      "value": "Unknown",
-      "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 3,
-      "retrieved_at": "2026-01-16T14:44:00.285214Z"
-    },
+    "primary_domain": null,
+    "museum_type": null,
     "audience_focus": null,
     "city_tier": {
       "value": 3,
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 3,
-      "retrieved_at": "2026-01-16T14:44:00.285219Z"
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "reputation": null,
     "collection_tier": null,
     "time_needed": {
-      "value": "Half day",
+      "value": "Half day (2-4 hours)",
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 3,
-      "retrieved_at": "2026-01-16T14:44:00.285222Z"
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "impressionist_strength": null,
     "modern_contemporary_strength": null,
     "historical_context_score": null,
-    "notes": {
-      "value": "The Museum of the Red River is located in Oklahoma. It has a mixed focus and is considered a Tier 3 city museum. The website indicates the museum can be visited in about half a day.",
-      "source": "evidence_summary",
-      "trust_level": 5,
-      "confidence": 4,
-      "retrieved_at": "2026-01-16T14:44:00.285224Z"
-    },
-    "confidence": 4,
-    "data_sources": [
-      "identity",
-      "state_record_subset"
-    ]
+    "notes": null,
+    "confidence": null,
+    "data_sources": null
   },
   "recommendations": [],
   "needs_deep_dive": false,
   "confidence": 4,
-  "model_used": "validation_v1",
-  "agent_version": "validation_v1",
-  "processed_at": "2023-04-11T12:34:56.789000Z",
+  "model_used": "museum_record_enrichment_model_v1",
+  "agent_version": "1.0.0",
+  "processed_at": "2023-10-01T00:00:00",
   "data_sources": [
-    "identity",
+    "official_website/visit",
     "state_record_subset"
   ]
 }

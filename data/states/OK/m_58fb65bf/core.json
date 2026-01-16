@@ -1,76 +1,68 @@
 {
   "museum_id": "usa-ok-unknown-tulsa-air-and-space-museum-planetarium",
   "folder_hash": "m_58fb65bf",
-  "slug_alias": "tulsa-tulsa-air-and-space-museum-planetarium--tarium",
+  "slug_alias": "oklahoma-tulsa-air-and-space-museum-planetarium--tarium",
   "state_file_updates": {
     "museum_id": "usa-ok-unknown-tulsa-air-and-space-museum-planetarium",
     "museum_name": {
       "value": "Tulsa Air and Space Museum & Planetarium",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:48:58.151090Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
-      "value": "Tulsa",
-      "source": "identity",
-      "trust_level": 6,
+      "value": "Oklahoma",
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:48:58.151093Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "website": {
-      "value": "https://www.tulsamuseum.org",
-      "source": "identity",
-      "trust_level": 6,
+      "value": "https://www.tulsamuseum.org/",
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:48:58.151096Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "primary_domain": {
       "value": "Science",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:48:58.151100Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "museum_type": {
-      "value": "Unknown",
+      "value": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM",
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2026-01-16T14:48:58.151102Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city_tier": {
       "value": 2,
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2026-01-16T14:48:58.151106Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
-      "value": "Half day",
+      "value": "Half day (2-4 hours)",
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2026-01-16T14:48:58.151108Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "notes": {
-      "value": "The Tulsa Air and Space Museum & Planetarium is a science museum located in Tulsa, Oklahoma. It focuses on aviation and space exploration, and features exhibits and a planetarium.",
-      "source": "generated",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2026-01-16T14:48:58.151110Z"
-    },
-    "confidence": 4,
-    "data_sources": [
-      "identity",
-      "state_record_subset"
-    ]
+      "value": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    }
   },
-  "applied_fields": [
-    "city",
-    "notes"
-  ],
-  "processed_at": "2023-04-12T12:34:56.789000+00:00",
-  "agent_version": "validation_v1",
-  "model_used": "validation_v1"
+  "applied_fields": [],
+  "processed_at": "2023-10-01T00:00:00",
+  "agent_version": "1.0",
+  "model_used": "ValidationAgent"
 }

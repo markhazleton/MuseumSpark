@@ -57,6 +57,17 @@ def merge_field(
     new_field: EnrichedField[Any],
     manual_lock: bool,
 ) -> Tuple[Any, Optional[dict[str, Any]], str]:
+    # CRITICAL DATA QUALITY RULE: Never replace a known value with null
+    # This prevents data loss when LLM returns null for fields it couldn't extract
+    if new_field.value is None and current_value is not None:
+        # Check if current_value is actually meaningful (not empty string, not placeholder)
+        if isinstance(current_value, str):
+            if current_value.strip():  # Non-empty string
+                return current_value, current_prov, "cannot_replace_known_with_null"
+        else:
+            # Non-string, non-None value (e.g., number, boolean, dict, list)
+            return current_value, current_prov, "cannot_replace_known_with_null"
+    
     allowed, reason = should_overwrite(old_prov=current_prov, new_field=new_field, manual_lock=manual_lock)
     if not allowed:
         return current_value, current_prov, reason

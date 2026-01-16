@@ -2324,11 +2324,22 @@ def patch_from_official_website(
 
 
 def merge_patch(museum: dict[str, Any], patch: dict[str, Any]) -> dict[str, Any]:
+    """Merge patch into museum, with critical rule: NEVER replace known value with null."""
     out = dict(museum)
     for k, v in patch.items():
         existing = out.get(k)
-        if should_fill(existing) or existing is None:
-            out[k] = v
+        
+        # CRITICAL DATA QUALITY RULE: Never replace a known value with null/None
+        # This prevents data loss when re-running enrichment pipelines
+        if v is None:
+            # Only set to None if the field was already None or a placeholder
+            if should_fill(existing) or existing is None:
+                out[k] = v
+            # else: skip - don't overwrite known value with null
+        else:
+            # New value is not None, apply if existing is empty/placeholder
+            if should_fill(existing) or existing is None:
+                out[k] = v
     return out
 
 

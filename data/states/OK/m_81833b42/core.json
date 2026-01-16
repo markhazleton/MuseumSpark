@@ -6,61 +6,56 @@
     "museum_id": "usa-ok-unknown-national-cowboy-western-heritage-museum",
     "museum_name": {
       "value": "National Cowboy & Western Heritage Museum",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-18T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
       "value": "Oklahoma City",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-18T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "website": {
       "value": "https://nationalcowboymuseum.org",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-18T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "primary_domain": {
       "value": "History",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-18T12:00:00Z"
-    },
-    "museum_type": {
-      "value": "Unknown",
-      "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2023-04-18T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city_tier": {
       "value": 2,
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2023-04-18T12:00:00Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
       "value": "Half day",
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2023-04-18T12:00:00Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
-    "confidence": 4,
-    "data_sources": [
-      "identity",
-      "state_record_subset"
-    ]
+    "notes": {
+      "value": "The National Cowboy & Western Heritage Museum is dedicated to preserving and showcasing the history and culture of the American West. It features a diverse collection of artifacts, art, and exhibits that highlight the cowboy lifestyle and Western heritage.",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    }
   },
   "applied_fields": [],
-  "processed_at": "2023-04-18T12:00:00+00:00",
-  "agent_version": "validation_v1",
-  "model_used": "validation_v1"
+  "processed_at": "2023-10-01T12:00:00+00:00",
+  "agent_version": "1.0",
+  "model_used": "museum_record_enrichment"
 }

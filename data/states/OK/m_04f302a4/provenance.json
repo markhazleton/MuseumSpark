@@ -5,12 +5,24 @@
       "trust_level": 6,
       "retrieved_at": "2023-04-12T12:00:00+00:00",
       "confidence": 5
+    },
+    "city": {
+      "source": "identity",
+      "trust_level": 6,
+      "retrieved_at": "2023-04-11T12:00:00+00:00",
+      "confidence": 5
+    },
+    "time_needed": {
+      "source": "state_record_subset",
+      "trust_level": 4,
+      "retrieved_at": "2023-04-11T12:00:00+00:00",
+      "confidence": 4
     }
   },
   "run_metadata": {
-    "agent_version": "validation_v1",
-    "model_used": "validation_v1",
-    "processed_at": "2023-04-11T12:00:00+00:00",
-    "confidence": 4
+    "agent_version": "1.0",
+    "model_used": "museum_record_enrichment",
+    "processed_at": "2023-10-01T00:00:00+00:00",
+    "confidence": 5
   }
 }

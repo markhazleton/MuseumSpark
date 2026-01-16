@@ -6,63 +6,66 @@
     "museum_id": "usa-ok-tulsa-philbrook-museum-of-art",
     "museum_name": {
       "value": "Philbrook Museum of Art",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-11T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
       "value": "Tulsa",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-11T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "website": {
       "value": "http://www.philbrook.org/",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-11T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "primary_domain": {
       "value": "Art",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-11T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "museum_type": {
-      "value": "Unknown",
-      "source": "state_record_subset",
-      "trust_level": 2,
-      "confidence": 3,
-      "retrieved_at": "2023-04-11T12:00:00Z"
+      "value": "ART MUSEUM",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city_tier": {
       "value": 2,
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 4,
-      "retrieved_at": "2023-04-11T12:00:00Z"
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
-      "value": "Half day",
+      "value": "Half day (2-4 hours)",
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 4,
-      "retrieved_at": "2023-04-11T12:00:00Z"
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
-    "confidence": 4,
+    "notes": {
+      "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
     "data_sources": [
-      "identity",
-      "state_record_subset"
+      "official_website/visit"
     ]
   },
-  "applied_fields": [
-    "website"
-  ],
-  "processed_at": "2023-04-11T12:00:00+00:00",
-  "agent_version": "validation_v1",
-  "model_used": "validation_v1"
+  "applied_fields": [],
+  "processed_at": "2023-10-01T00:00:00",
+  "agent_version": "1.0",
+  "model_used": "Validation Model v1.0"
 }

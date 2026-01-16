@@ -6,64 +6,52 @@
     "museum_id": "usa-ok-grove-har-ber-village-museum",
     "museum_name": {
       "value": "Har-Ber Village Museum",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
       "value": "Grove",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2023-04-12T12:00:00Z"
-    },
-    "website": {
-      "value": "http://www.har-bervillage.com/",
-      "source": "identity",
-      "trust_level": 6,
-      "confidence": 5,
-      "retrieved_at": "2023-04-12T12:00:00Z"
-    },
-    "primary_domain": {
-      "value": "Mixed",
-      "source": "state_record_subset",
-      "trust_level": 2,
-      "confidence": 3,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "museum_type": {
-      "value": "Unknown",
-      "source": "state_record_subset",
-      "trust_level": 2,
-      "confidence": 3,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "value": "GENERAL MUSEUM",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city_tier": {
       "value": 3,
-      "source": "state_record_subset",
-      "trust_level": 2,
-      "confidence": 3,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "source": "wikidata",
+      "trust_level": 3,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
-      "value": "Half day",
-      "source": "state_record_subset",
-      "trust_level": 2,
-      "confidence": 3,
-      "retrieved_at": "2023-04-12T12:00:00Z"
+      "value": "Half day (2-4 hours)",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
-    "confidence": 3,
-    "data_sources": [
-      "identity",
-      "state_record_subset"
-    ]
+    "notes": {
+      "value": "Har-Ber Village Museum is a general museum featuring a history museum, nature trail, and art exhibits. It offers a diverse collection that reflects the local culture and history.",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    }
   },
   "applied_fields": [
-    "website",
-    "primary_domain"
+    "time_needed",
+    "notes"
   ],
-  "processed_at": "2023-04-12T12:00:00+00:00",
-  "agent_version": "validation_v1",
-  "model_used": "validation_v1"
+  "processed_at": "2023-10-01T12:00:00+00:00",
+  "agent_version": "1.0",
+  "model_used": "MuseumRecordEnrichmentModel"
 }

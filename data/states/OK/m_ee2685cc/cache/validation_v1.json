@@ -3,78 +3,82 @@
     "museum_id": "usa-ok-unknown-muskogee-war-memorial-park-home-of-the-uss-batfish",
     "museum_name": {
       "value": "Muskogee War Memorial Park: Home of the USS Batfish",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:30:31.349919Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
-      "value": "Unknown",
-      "source": "identity",
-      "trust_level": 6,
+      "value": "Muskogee",
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:30:31.349924Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "street_address": null,
     "postal_code": null,
     "website": {
       "value": "http://warmemorialpark.org/",
-      "source": "identity",
-      "trust_level": 6,
+      "source": "official_website/visit",
+      "trust_level": 5,
       "confidence": 5,
-      "retrieved_at": "2026-01-16T14:30:31.349926Z"
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "latitude": null,
     "longitude": null,
-    "primary_domain": {
-      "value": "Mixed",
-      "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 3,
-      "retrieved_at": "2026-01-16T14:30:31.349929Z"
-    },
+    "primary_domain": null,
     "museum_type": {
-      "value": "Unknown",
+      "value": "War Memorial",
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 3,
-      "retrieved_at": "2026-01-16T14:30:31.349931Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
-    "audience_focus": null,
+    "audience_focus": {
+      "value": "General",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
     "city_tier": {
       "value": 3,
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2026-01-16T14:30:31.349935Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "reputation": null,
     "collection_tier": null,
     "time_needed": {
       "value": "Half day",
       "source": "state_record_subset",
-      "trust_level": 4,
-      "confidence": 4,
-      "retrieved_at": "2026-01-16T14:30:31.349938Z"
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
     },
     "impressionist_strength": null,
     "modern_contemporary_strength": null,
     "historical_context_score": null,
-    "notes": null,
-    "confidence": 4,
+    "notes": {
+      "value": "Muskogee War Memorial Park is dedicated to honoring veterans and features the USS Batfish submarine. It serves as a historical site with educational opportunities for visitors.",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "confidence": null,
     "data_sources": [
-      "identity",
-      "state_record_subset"
+      "official_website/visit"
     ]
   },
   "recommendations": [],
   "needs_deep_dive": false,
-  "confidence": 4,
-  "model_used": "validation_v1",
-  "agent_version": "validation_v1",
-  "processed_at": "2023-04-12T12:34:56.789000Z",
+  "confidence": 5,
+  "model_used": "Validation Model v1.0",
+  "agent_version": "1.0",
+  "processed_at": "2023-10-01T00:00:00",
   "data_sources": [
-    "identity",
-    "state_record_subset"
+    "official_website/visit"
   ]
 }
