@@ -1,0 +1,60 @@
+{
+  "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
+  "folder_hash": "m_da190cff",
+  "slug_alias": "anchorage-anchorage-museum-at-rasmuson-center--center",
+  "state_file_updates": {
+    "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
+    "museum_name": {
+      "value": "Anchorage Museum at Rasmuson Center",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "city": {
+      "value": "Anchorage",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "website": {
+      "value": "http://www.anchoragemuseum.org/",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "city_tier": {
+      "value": 3,
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "time_needed": {
+      "value": "Half day",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "notes": {
+      "value": "The Anchorage Museum shares the art, history, culture, and stories of Alaska and the North through exhibitions and public programs focused on people, place, planet and potential.",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "data_sources": [
+      "official_website/visit"
+    ]
+  },
+  "applied_fields": [
+    "website",
+    "notes"
+  ],
+  "processed_at": "2023-10-01T00:00:00",
+  "agent_version": "1.0",
+  "model_used": "museum_record_enrichment"
+}

@@ -1,0 +1,115 @@
+================================================================================
+ALASKA BASELINE ANALYSIS
+================================================================================
+State: Alaska
+State Code: AK
+Last Updated: 2026-01-16T22:19:30Z
+Total Museums: 6
+
+================================================================================
+FIELD COVERAGE (non-null, non-empty values)
+================================================================================
+street_address             6/ 6 (100.0%)
+postal_code                6/ 6 (100.0%)
+city                       6/ 6 (100.0%)
+latitude                   6/ 6 (100.0%)
+longitude                  6/ 6 (100.0%)
+phone                      5/ 6 ( 83.3%)
+museum_type                5/ 6 ( 83.3%)
+status                     6/ 6 (100.0%)
+primary_domain             5/ 6 ( 83.3%)
+open_hours_url             6/ 6 (100.0%)
+tickets_url                6/ 6 (100.0%)
+notes                      6/ 6 (100.0%)
+
+================================================================================
+DATA SOURCES
+================================================================================
+official_website                     6 museums
+google_places_api                    6 museums
+museums_csv                          5 museums
+walker_reciprocal                    5 museums
+official_website/visit               4 museums
+openstreetmap                        3 museums
+https://www.anchoragemuseum.org      1 museums
+http://www.anchoragemuseum.org       1 museums
+https://www.palmermuseum.org         1 museums
+http://www.sheldonmuseum.org         1 museums
+state_record_subset                  1 museums
+https://kodiakhistorymuseum.org      1 museums
+http://www.valdezmuseum.org          1 museums
+
+================================================================================
+CRITICAL DATA COMPLETENESS
+================================================================================
+Complete (address + postal + coords):  6/ 6 (100.0%)
+Partial (some data):                    0/ 6 (  0.0%)
+Minimal (no critical data):             0/ 6 (  0.0%)
+
+================================================================================
+MUSEUM-BY-MUSEUM SUMMARY
+================================================================================
+
+ 1. Anchorage Museum
+    ID: usa-ak-anchorage-anchorage-museum
+    City: Anchorage
+    Address: 625 C Street
+    Postal: 99501
+    Coords: YES (61.2159911, -149.8846851)
+    Phone: 9079299200
+    Type: Mixed (Art & History)
+    Sources: official_website, openstreetmap, https://www.anchoragemuseum.org
+
+ 2. Anchorage Museum at Rasmuson Center
+    ID: usa-ak-unknown-anchorage-museum-at-rasmuson-center
+    City: Anchorage
+    Address: 625 C Street
+    Postal: 99501
+    Coords: YES (61.2159911, -149.8846851)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal, official_website, http://www.anchoragemuseum.org
+
+ 3. Palmer Museum of History and Art
+    ID: usa-ak-unknown-palmer-museum-of-history-and-art
+    City: Palmer
+    Address: 723 S Valley Way, Palmer, AK 99645, United States
+    Postal: 99645
+    Coords: YES (61.59857, -149.11359)
+    Phone: 9077467668
+    Type: GENERAL MUSEUM
+    Sources: walker_reciprocal, official_website, https://www.palmermuseum.org
+
+ 4. Sheldon Museum and Cultural Center
+    ID: usa-ak-unknown-sheldon-museum-and-cultural-center
+    City: Haines
+    Address: 11 MAIN STREET
+    Postal: 99827
+    Coords: YES (59.24675, -135.47365)
+    Phone: 9077662366
+    Type: HISTORY MUSEUM
+    Sources: walker_reciprocal, official_website, http://www.sheldonmuseum.org
+
+ 5. The Kodiak History Museum
+    ID: usa-ak-unknown-the-kodiak-history-museum
+    City: Kodiak
+    Address: 101 E Marine Way
+    Postal: 99615
+    Coords: YES (57.7885, -152.39915)
+    Phone: 9074865920
+    Type: HISTORIC PRESERVATION
+    Sources: walker_reciprocal, official_website, https://kodiakhistorymuseum.org
+
+ 6. Valdez Museum & Historical Archive
+    ID: usa-ak-unknown-valdez-museum-historical-archive
+    City: Valdez
+    Address: 217 Eagan Dr.
+    Postal: 99686
+    Coords: YES (61.1293773, -146.3547623)
+    Phone: 9078352764
+    Type: HISTORY MUSEUM
+    Sources: walker_reciprocal, official_website, http://www.valdezmuseum.org
+
+================================================================================
+END OF BASELINE ANALYSIS
+================================================================================

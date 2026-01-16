@@ -1,23 +1,29 @@
 """
-Analyze Oklahoma museums data to establish baseline for validation testing.
-Creates a detailed snapshot of the current state of OK.json.
+Analyze state museums data to establish baseline for validation testing.
+Creates a detailed snapshot of the current state file.
 """
 
 import json
+import sys
+import argparse
 from pathlib import Path
 from collections import Counter
 
 PROJECT_ROOT = Path(__file__).parent.parent
-OK_JSON = PROJECT_ROOT / "data" / "states" / "OK.json"
 
-def analyze_ok_state():
-    with open(OK_JSON, "r", encoding="utf-8") as f:
+def analyze_state(state_code):
+    state_json = PROJECT_ROOT / "data" / "states" / f"{state_code}.json"
+    if not state_json.exists():
+        print(f"ERROR: State file not found: {state_json}")
+        sys.exit(1)
+    
+    with open(state_json, "r", encoding="utf-8") as f:
         data = json.load(f)
     
     museums = data.get("museums", [])
     
     print("=" * 80)
-    print("OKLAHOMA BASELINE ANALYSIS")
+    print(f"{data.get('state', state_code).upper()} BASELINE ANALYSIS")
     print("=" * 80)
     print(f"State: {data.get('state')}")
     print(f"State Code: {data.get('state_code')}")
@@ -137,4 +143,8 @@ def analyze_ok_state():
     return field_stats
 
 if __name__ == "__main__":
-    analyze_ok_state()
+    parser = argparse.ArgumentParser(description="Analyze state museums baseline")
+    parser.add_argument("--state", required=True, help="State code (e.g., AK, OK)")
+    args = parser.parse_args()
+    
+    analyze_state(args.state.upper())

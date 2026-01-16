@@ -1,0 +1,71 @@
+{
+  "museum_id": "usa-ak-unknown-the-kodiak-history-museum",
+  "folder_hash": "m_34006c45",
+  "slug_alias": "kodiak-the-kodiak-history-museum--museum",
+  "state_file_updates": {
+    "museum_id": "usa-ak-unknown-the-kodiak-history-museum",
+    "museum_name": {
+      "value": "The Kodiak History Museum",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "city": {
+      "value": "Kodiak",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "website": {
+      "value": "https://kodiakhistorymuseum.org/",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "primary_domain": {
+      "value": "History",
+      "source": "official_website/visit",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "museum_type": {
+      "value": "HISTORIC PRESERVATION",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "city_tier": {
+      "value": 3,
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "time_needed": {
+      "value": "Half day",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
+    },
+    "notes": {
+      "value": "The Kodiak History Museum focuses on the preservation of local history and culture. It features exhibits that highlight the unique heritage of Kodiak and its surroundings.",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
+    }
+  },
+  "applied_fields": [
+    "website",
+    "notes"
+  ],
+  "processed_at": "2023-10-01T00:00:00",
+  "agent_version": "1.0",
+  "model_used": "MuseumRecordEnrichmentModel"
+}
