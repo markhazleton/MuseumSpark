@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-al-decatur-carnegie-visual-arts-center",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nCRITICAL: Extract ALL available fields from the evidence. Do not leave fields empty if evidence exists.\n\nREQUIRED FIELDS TO EXTRACT (if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name (verify from address, website, or nominatim)\n   - street_address: Full street address from 'Contact', 'Visit', 'Location', 'Hours', 'About' pages\n   - postal_code: ZIP/postal code from address\n   - website: Validated URL (ensure it's active)\n   - latitude, longitude: Coordinates from nominatim or website\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed (analyze collection focus)\n   - museum_type: Specific category (e.g., 'Art Museum', 'History Museum', 'Children\\'s Museum')\n   - audience_focus: Target audience (e.g., 'General', 'Families', 'Scholars')\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town) based on city population/prominence\n   - reputation: 1-5 (1=world-renowned, 5=local) based on Wikipedia presence, awards, size\n   - collection_tier: 1-5 (1=world-class, 5=modest) based on collection description\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days' (estimate from collection size)\n\n4. ART SCORING (ONLY if primary_domain is Art):\n   - impressionist_strength: 1-5 (strength of impressionist collection)\n   - modern_contemporary_strength: 1-5 (strength of modern/contemporary collection)\n   - historical_context_score: 1-5 (historical significance of the institution)\n\n5. SUMMARY:\n   - notes: 2-3 sentence summary covering: type of museum, notable collections, unique features\n\nEXTRACTION RULES:\n- Confidence scale: 1-5 ONLY (1=very uncertain, 5=highly certain from official source)\n- Trust levels: Use OFFICIAL_EXTRACT (5) for website data, WIKIPEDIA (3) for Wikipedia, LLM_EXTRACTED (2) for inference\n- Sources: Be specific ('official_website/visit', 'wikipedia', 'nominatim', 'wikidata')\n- Do not guess - only extract what you can verify from evidence\n- CRITICAL: If a field has no evidence, OMIT it entirely from state_file_updates (set to null, not an object with null values)\n- Check ALL evidence sources: website_text, website_json_ld, wikipedia, wikidata, nominatim\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-al-decatur-carnegie-visual-arts-center\",\n    \"museum_name\": \"Carnegie Visual Arts Center\",\n    \"city\": \"Decatur\",\n    \"state_province\": \"Alabama\",\n    \"country\": \"USA\",\n    \"website\": \"http://www.carnegiearts.org\",\n    \"primary_domain\": \"Art\"\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"ART MUSEUM\",\n    \"audience_focus\": null,\n    \"city_tier\": 2,\n    \"reputation\": null,\n    \"collection_tier\": null,\n    \"time_needed\": \"Half day\",\n    \"notes\": \"Carnegie Visual Arts Center is an art museum located in Decatur, Alabama. It features a variety of art exhibitions and community programs, making it a cultural hub for the region.\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": \"* [Home](https://www.carnegiearts.org/)\\n * [Exhibits](https://www.carnegiearts.org/exhibits/)\\n * [Events](/events)\\n * [Visit](https://www.carnegiearts.org/visit/)\\n * [Rental Information](https://www.carnegiearts.org/visit/rental-information/)\\n * [Get Involved](https://www.carnegiearts.org/get-involved/)\\n * [Education](https://www.carnegiearts.org/get-involved/education/)\\n * [Carnegie Carnival](https://www.carnegiearts.org/carnegie-carnival/)\\n * [Programs](https://www.carnegiearts.org/get-involved/programs/)\\n * [Partnerships](https://www.carnegiearts.org/get-involved/partnerships/)\\n * [Outreach](https://www.carnegiearts.org/get-involved/outreach/)\\n * [Volunteer](https://www.carnegiearts.org/get-involved/volunteer/)\\n * [About](https://www.carnegiearts.org/about/)\\n * [History](https://www.carnegiearts.org/about/history/)\\n * [Staff](https://www.carnegiearts.org/about/staff/)\\n * [Board of Directors](https://www.carnegiearts.org/about/board-of-directors/)\\n * [Contact](https://www.carnegiearts.org/contact/)\\n * [Support](https://www.carnegiearts.org/support/)\\n * [Membership](https://www.carnegiearts.org/support/membership/)\\n * [Giving](https://www.carnegiearts.org/support/giving/)\\n * []...\",\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 509,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON matching the ValidationAgentOutput schema with as many fields populated as evidence supports.",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-al-decatur-carnegie-visual-arts-center",
+      "museum_name": "Carnegie Visual Arts Center",
+      "city": "Decatur",
+      "state_province": "Alabama",
+      "country": "USA",
+      "website": "http://www.carnegiearts.org",
+      "primary_domain": "Art"
+    },
+    "state_record_subset": {
+      "museum_type": "ART MUSEUM",
+      "audience_focus": null,
+      "city_tier": 2,
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": "Half day",
+      "notes": "Carnegie Visual Arts Center is an art museum located in Decatur, Alabama. It features a variety of art exhibitions and community programs, making it a cultural hub for the region."
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": "* [Home](https://www.carnegiearts.org/)\n * [Exhibits](https://www.carnegiearts.org/exhibits/)\n * [Events](/events)\n * [Visit](https://www.carnegiearts.org/visit/)\n * [Rental Information](https://www.carnegiearts.org/visit/rental-information/)\n * [Get Involved](https://www.carnegiearts.org/get-involved/)\n * [Education](https://www.carnegiearts.org/get-involved/education/)\n * [Carnegie Carnival](https://www.carnegiearts.org/carnegie-carnival/)\n * [Programs](https://www.carnegiearts.org/get-involved/programs/)\n * [Partnerships](https://www.carnegiearts.org/get-involved/partnerships/)\n * [Outreach](https://www.carnegiearts.org/get-involved/outreach/)\n * [Volunteer](https://www.carnegiearts.org/get-involved/volunteer/)\n * [About](https://www.carnegiearts.org/about/)\n * [History](https://www.carnegiearts.org/about/history/)\n * [Staff](https://www.carnegiearts.org/about/staff/)\n * [Board of Directors](https://www.carnegiearts.org/about/board-of-directors/)\n * [Contact](https://www.carnegiearts.org/contact/)\n * [Support](https://www.carnegiearts.org/support/)\n * [Membership](https://www.carnegiearts.org/support/membership/)\n * [Giving](https://www.carnegiearts.org/support/giving/)\n * []...",
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 509,
+      "max_chars": 8000
+    }
+  }
+}

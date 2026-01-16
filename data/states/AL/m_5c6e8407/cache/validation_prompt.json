@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-al-unknown-mobile-museum-of-art",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nCRITICAL: Extract ALL available fields from the evidence. Do not leave fields empty if evidence exists.\n\nREQUIRED FIELDS TO EXTRACT (if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name (verify from address, website, or nominatim)\n   - street_address: Full street address from 'Contact', 'Visit', 'Location', 'Hours', 'About' pages\n   - postal_code: ZIP/postal code from address\n   - website: Validated URL (ensure it's active)\n   - latitude, longitude: Coordinates from nominatim or website\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed (analyze collection focus)\n   - museum_type: Specific category (e.g., 'Art Museum', 'History Museum', 'Children\\'s Museum')\n   - audience_focus: Target audience (e.g., 'General', 'Families', 'Scholars')\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town) based on city population/prominence\n   - reputation: 1-5 (1=world-renowned, 5=local) based on Wikipedia presence, awards, size\n   - collection_tier: 1-5 (1=world-class, 5=modest) based on collection description\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days' (estimate from collection size)\n\n4. ART SCORING (ONLY if primary_domain is Art):\n   - impressionist_strength: 1-5 (strength of impressionist collection)\n   - modern_contemporary_strength: 1-5 (strength of modern/contemporary collection)\n   - historical_context_score: 1-5 (historical significance of the institution)\n\n5. SUMMARY:\n   - notes: 2-3 sentence summary covering: type of museum, notable collections, unique features\n\nEXTRACTION RULES:\n- Confidence scale: 1-5 ONLY (1=very uncertain, 5=highly certain from official source)\n- Trust levels: Use OFFICIAL_EXTRACT (5) for website data, WIKIPEDIA (3) for Wikipedia, LLM_EXTRACTED (2) for inference\n- Sources: Be specific ('official_website/visit', 'wikipedia', 'nominatim', 'wikidata')\n- Do not guess - only extract what you can verify from evidence\n- CRITICAL: If a field has no evidence, OMIT it entirely from state_file_updates (set to null, not an object with null values)\n- Check ALL evidence sources: website_text, website_json_ld, wikipedia, wikidata, nominatim\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-al-unknown-mobile-museum-of-art\",\n    \"museum_name\": \"Mobile Museum of Art\",\n    \"city\": \"Alabama\",\n    \"state_province\": \"Alabama\",\n    \"country\": \"USA\",\n    \"website\": \"http://www.mobilemuseumofart.com\",\n    \"primary_domain\": \"Art\"\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"ART MUSEUM\",\n    \"audience_focus\": null,\n    \"city_tier\": 3,\n    \"reputation\": null,\n    \"collection_tier\": null,\n    \"time_needed\": \"Half day\",\n    \"notes\": \"ART MUSEUM located in Alabama, known for its diverse art collections and community engagement. The museum offers a half-day experience for visitors.\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": \"[Membership](https://www.mobilemuseumofart.com/support/membership/)\\n# Creativity \\nThere's art for everyone at Mobile Museum of Art.\\n[Visit Us ](https://www.mobilemuseumofart.com/visit/ \\\"Visit Us\\\")\\n## Juan Logan: Without Stopping\\nExperience a powerful new exhibition that sparks conversation and challenges perspectives. Without Stopping showcases works from Juan Logan\\u2019s acclaimed Elegies series\\u2014exploring identity, memory, and social change through striking visual narratives.\\nMay 9, 2025 \\u2014 Feb. 14, 2026\\n[Special Exhibition ](https://www.mobilemuseumofart.com/exhibitions/juan-logan-without-stopping/ \\\"Special Exhibition\\\")\\n## Vuzumazulu: The Black Solarium\\nThis exhibition is a mystical journey through Africa\\u2019s past, weaving heritage, tradition, and spirituality to bridge continents, reclaim identity, and awaken a shared legacy.\\nJun. 6, 2025 \\u2014 Mar. 1, 2026\\n[Special Exhibition ](https://www.mobilemuseumofart.com/exhibitions/vuzumazulu-the-black-solarium/ \\\"Special Exhibition\\\")\\n## Discover, Learn, Create\\nAt The Museum School, learning never stops. From engaging school tours to hands-on art classes and workshops, we offer educational programs for learners of all ages. Whether you're a stud...\",\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 499,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON matching the ValidationAgentOutput schema with as many fields populated as evidence supports.",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-al-unknown-mobile-museum-of-art",
+      "museum_name": "Mobile Museum of Art",
+      "city": "Alabama",
+      "state_province": "Alabama",
+      "country": "USA",
+      "website": "http://www.mobilemuseumofart.com",
+      "primary_domain": "Art"
+    },
+    "state_record_subset": {
+      "museum_type": "ART MUSEUM",
+      "audience_focus": null,
+      "city_tier": 3,
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": "Half day",
+      "notes": "ART MUSEUM located in Alabama, known for its diverse art collections and community engagement. The museum offers a half-day experience for visitors."
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": "[Membership](https://www.mobilemuseumofart.com/support/membership/)\n# Creativity \nThere's art for everyone at Mobile Museum of Art.\n[Visit Us ](https://www.mobilemuseumofart.com/visit/ \"Visit Us\")\n## Juan Logan: Without Stopping\nExperience a powerful new exhibition that sparks conversation and challenges perspectives. Without Stopping showcases works from Juan Logan’s acclaimed Elegies series—exploring identity, memory, and social change through striking visual narratives.\nMay 9, 2025 — Feb. 14, 2026\n[Special Exhibition ](https://www.mobilemuseumofart.com/exhibitions/juan-logan-without-stopping/ \"Special Exhibition\")\n## Vuzumazulu: The Black Solarium\nThis exhibition is a mystical journey through Africa’s past, weaving heritage, tradition, and spirituality to bridge continents, reclaim identity, and awaken a shared legacy.\nJun. 6, 2025 — Mar. 1, 2026\n[Special Exhibition ](https://www.mobilemuseumofart.com/exhibitions/vuzumazulu-the-black-solarium/ \"Special Exhibition\")\n## Discover, Learn, Create\nAt The Museum School, learning never stops. From engaging school tours to hands-on art classes and workshops, we offer educational programs for learners of all ages. Whether you're a stud...",
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 499,
+      "max_chars": 8000
+    }
+  }
+}

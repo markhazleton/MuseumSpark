@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-al-birmingham-birmingham-museum-of-art",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nCRITICAL: Extract ALL available fields from the evidence. Do not leave fields empty if evidence exists.\n\nREQUIRED FIELDS TO EXTRACT (if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name (verify from address, website, or nominatim)\n   - street_address: Full street address from 'Contact', 'Visit', 'Location', 'Hours', 'About' pages\n   - postal_code: ZIP/postal code from address\n   - website: Validated URL (ensure it's active)\n   - latitude, longitude: Coordinates from nominatim or website\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed (analyze collection focus)\n   - museum_type: Specific category (e.g., 'Art Museum', 'History Museum', 'Children\\'s Museum')\n   - audience_focus: Target audience (e.g., 'General', 'Families', 'Scholars')\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town) based on city population/prominence\n   - reputation: 1-5 (1=world-renowned, 5=local) based on Wikipedia presence, awards, size\n   - collection_tier: 1-5 (1=world-class, 5=modest) based on collection description\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days' (estimate from collection size)\n\n4. ART SCORING (ONLY if primary_domain is Art):\n   - impressionist_strength: 1-5 (strength of impressionist collection)\n   - modern_contemporary_strength: 1-5 (strength of modern/contemporary collection)\n   - historical_context_score: 1-5 (historical significance of the institution)\n\n5. SUMMARY:\n   - notes: 2-3 sentence summary covering: type of museum, notable collections, unique features\n\nEXTRACTION RULES:\n- Confidence scale: 1-5 ONLY (1=very uncertain, 5=highly certain from official source)\n- Trust levels: Use OFFICIAL_EXTRACT (5) for website data, WIKIPEDIA (3) for Wikipedia, LLM_EXTRACTED (2) for inference\n- Sources: Be specific ('official_website/visit', 'wikipedia', 'nominatim', 'wikidata')\n- Do not guess - only extract what you can verify from evidence\n- CRITICAL: If a field has no evidence, OMIT it entirely from state_file_updates (set to null, not an object with null values)\n- Check ALL evidence sources: website_text, website_json_ld, wikipedia, wikidata, nominatim\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-al-birmingham-birmingham-museum-of-art\",\n    \"museum_name\": \"Birmingham Museum of Art\",\n    \"city\": \"Birmingham\",\n    \"state_province\": \"Alabama\",\n    \"country\": \"USA\",\n    \"website\": \"https://www.artsbma.org\",\n    \"primary_domain\": \"Art\"\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"Art (Encyclopedic)\",\n    \"audience_focus\": \"General\",\n    \"city_tier\": 2,\n    \"reputation\": 1,\n    \"collection_tier\": 1,\n    \"time_needed\": \"Full day\",\n    \"notes\": \"Large collection including European, American, Asian art. Strong collection of decorative arts and Wedgwood pottery.\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": \"## Now on View\\n### [ Ancient American Gallery Now Open ](https://www.artsbma.org/exhibition/ancient-american-gallery/)\\n### [ Wall to Wall: Antoine Williams and Josiah Golson August 16, 2025\\u2013July 4, 2026 ](https://www.artsbma.org/exhibition/wall-to-wall-antoine-williams-and-josiah-golson/)\\n### [ Interwoven: Stories in Fiber and Form August 9, 2025\\u2013February 15, 2026 ](https://www.artsbma.org/exhibition/interwoven-stories-in-fiber-and-form/)\\n### [ Marks of Intention April 19, 2025\\u2013April 16, 2027 ](https://www.artsbma.org/exhibition/marks-of-intention/)\\n## Tickets on Sale Now\\n[](https://www.artsbma.org/exhibition/monet-to-matisse/ \\\"Monet to Matisse: French Moderns, 1850\\u20131950\\\")\\n### Monet to Matisse: French Moderns, 1850\\u20131950 \\n#### Presented by PNC Bank\\n##### January 30, 2026\\u2013May 24, 2026\\n## Events\\n[](https://www.artsbma.org/event/hidden-gems-unsung-masterpieces-of-the-bma/ \\\"Hidden Gems: Unsung Masterpieces of the BMA\\\")\\n### Hidden Gems: Unsung Masterpieces of the BMA \\n##### January 15, 6 \\\\- 8pm\\n[](https://www.artsbma.org/event/lunch-learn-eadweard-muybridge-and-american-art/ \\\"Lunch & Learn: Eadweard Muybridge and American Art\\\")\\n### Lunch & Learn: Eadweard Muybridge and American Art \\n#...\",\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 495,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON matching the ValidationAgentOutput schema with as many fields populated as evidence supports.",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-al-birmingham-birmingham-museum-of-art",
+      "museum_name": "Birmingham Museum of Art",
+      "city": "Birmingham",
+      "state_province": "Alabama",
+      "country": "USA",
+      "website": "https://www.artsbma.org",
+      "primary_domain": "Art"
+    },
+    "state_record_subset": {
+      "museum_type": "Art (Encyclopedic)",
+      "audience_focus": "General",
+      "city_tier": 2,
+      "reputation": 1,
+      "collection_tier": 1,
+      "time_needed": "Full day",
+      "notes": "Large collection including European, American, Asian art. Strong collection of decorative arts and Wedgwood pottery."
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": "## Now on View\n### [ Ancient American Gallery Now Open ](https://www.artsbma.org/exhibition/ancient-american-gallery/)\n### [ Wall to Wall: Antoine Williams and Josiah Golson August 16, 2025–July 4, 2026 ](https://www.artsbma.org/exhibition/wall-to-wall-antoine-williams-and-josiah-golson/)\n### [ Interwoven: Stories in Fiber and Form August 9, 2025–February 15, 2026 ](https://www.artsbma.org/exhibition/interwoven-stories-in-fiber-and-form/)\n### [ Marks of Intention April 19, 2025–April 16, 2027 ](https://www.artsbma.org/exhibition/marks-of-intention/)\n## Tickets on Sale Now\n[](https://www.artsbma.org/exhibition/monet-to-matisse/ \"Monet to Matisse: French Moderns, 1850–1950\")\n### Monet to Matisse: French Moderns, 1850–1950 \n#### Presented by PNC Bank\n##### January 30, 2026–May 24, 2026\n## Events\n[](https://www.artsbma.org/event/hidden-gems-unsung-masterpieces-of-the-bma/ \"Hidden Gems: Unsung Masterpieces of the BMA\")\n### Hidden Gems: Unsung Masterpieces of the BMA \n##### January 15, 6 \\- 8pm\n[](https://www.artsbma.org/event/lunch-learn-eadweard-muybridge-and-american-art/ \"Lunch & Learn: Eadweard Muybridge and American Art\")\n### Lunch & Learn: Eadweard Muybridge and American Art \n#...",
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 495,
+      "max_chars": 8000
+    }
+  }
+}

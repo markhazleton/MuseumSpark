@@ -259,10 +259,10 @@ def write_museum_subfolder(
         }
         save_json(museum_folder / "summaries.json", summaries_data)
 
-        if output.art_scoring:
+        if output.tour_planning_scores:
             analysis_data = {
                 "museum_id": museum_id,
-                "art_scoring": output.art_scoring.model_dump(),
+                "tour_planning_scores": output.tour_planning_scores.model_dump(),
                 "curatorial_approach": output.curatorial_approach,
                 "generated_at": output.processed_at.isoformat(),
             }

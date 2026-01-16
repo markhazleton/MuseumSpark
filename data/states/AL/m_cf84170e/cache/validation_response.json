@@ -1,0 +1,83 @@
+{
+  "museum_id": "usa-al-birmingham-abroms-engel-institute-for-visual-arts",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "raw_response": {
+    "state_file_updates": {
+      "museum_id": "usa-al-birmingham-abroms-engel-institute-for-visual-arts",
+      "museum_name": {
+        "value": "Abroms-Engel Institute for Visual Arts",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "city": {
+        "value": "Birmingham",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "street_address": null,
+      "postal_code": null,
+      "website": {
+        "value": "http://www.uab.edu/cas/aeiva",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "latitude": null,
+      "longitude": null,
+      "primary_domain": {
+        "value": "Art",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "museum_type": null,
+      "audience_focus": null,
+      "city_tier": {
+        "value": 2,
+        "source": "state_record_subset",
+        "trust_level": 2,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": {
+        "value": "Half day",
+        "source": "state_record_subset",
+        "trust_level": 2,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "impressionist_strength": null,
+      "modern_contemporary_strength": null,
+      "historical_context_score": null,
+      "notes": {
+        "value": "Designed by the world-renowned architect, the late Randall Stout, AEIVA is a center for UAB and the Birmingham community to engage with contemporary art and art.",
+        "source": "state_record_subset",
+        "trust_level": 2,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "confidence": null,
+      "data_sources": [
+        "official_website/visit"
+      ]
+    },
+    "recommendations": [],
+    "needs_deep_dive": false,
+    "confidence": 5,
+    "model_used": "Museum Record Enrichment Model",
+    "agent_version": "1.0",
+    "processed_at": "2023-10-01",
+    "data_sources": [
+      "official_website/visit"
+    ]
+  }
+}

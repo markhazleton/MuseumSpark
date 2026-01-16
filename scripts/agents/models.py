@@ -114,10 +114,40 @@ class CollectionHighlight(BaseModel):
     source: Optional[str] = None
 
 
-class ArtScoring(BaseModel):
-    impressionist_strength: int = Field(..., ge=1, le=5)
-    modern_contemporary_strength: int = Field(..., ge=1, le=5)
-    historical_context_score: int = Field(..., ge=1, le=5)
+class TourPlanningScores(BaseModel):
+    """Scoring dimensions for tour planning and filtering (1-10 scale)."""
+    
+    # Art Movement Specializations (1-10, art museums only)
+    contemporary_score: Optional[int] = Field(None, ge=1, le=10, description="Contemporary art (1950-present)")
+    modern_score: Optional[int] = Field(None, ge=1, le=10, description="Modern art (1860s-1950)")
+    impressionist_score: Optional[int] = Field(None, ge=1, le=10, description="Impressionist & Post-Impressionist")
+    expressionist_score: Optional[int] = Field(None, ge=1, le=10, description="Expressionist movements")
+    classical_score: Optional[int] = Field(None, ge=1, le=10, description="Classical & Renaissance art")
+    
+    # Geographic/Cultural Focus (1-10)
+    american_art_score: Optional[int] = Field(None, ge=1, le=10, description="American art focus")
+    european_art_score: Optional[int] = Field(None, ge=1, le=10, description="European art focus")
+    asian_art_score: Optional[int] = Field(None, ge=1, le=10, description="Asian art focus")
+    african_art_score: Optional[int] = Field(None, ge=1, le=10, description="African & Indigenous art")
+    
+    # Medium Specializations (1-10)
+    painting_score: Optional[int] = Field(None, ge=1, le=10, description="Painting collection strength")
+    sculpture_score: Optional[int] = Field(None, ge=1, le=10, description="Sculpture collection strength")
+    decorative_arts_score: Optional[int] = Field(None, ge=1, le=10, description="Decorative arts, ceramics, textiles")
+    photography_score: Optional[int] = Field(None, ge=1, le=10, description="Photography collection")
+    
+    # Collection Characteristics (1-10, all museums)
+    collection_depth: int = Field(..., ge=1, le=10, description="1=narrow specialist, 10=encyclopedic")
+    collection_quality: int = Field(..., ge=1, le=10, description="1=local, 5=regional, 8=national, 10=world-class")
+    exhibition_frequency: Optional[int] = Field(None, ge=1, le=10, description="New shows/exhibitions per year")
+    
+    # Visitor Experience (1-10, all museums)
+    family_friendly_score: int = Field(..., ge=1, le=10, description="Suitability for families with children")
+    educational_value_score: int = Field(..., ge=1, le=10, description="Educational programs & resources")
+    architecture_score: Optional[int] = Field(None, ge=1, le=10, description="Building itself worth seeing")
+    
+    # Justification (required)
+    scoring_rationale: str = Field(..., description="Brief explanation of key scores (2-3 sentences)")
 
 
 class DeepDiveAgentOutput(BaseModel):
@@ -134,7 +164,7 @@ class DeepDiveAgentOutput(BaseModel):
     historical_significance: Optional[str] = None
     architectural_notes: Optional[str] = None
     curatorial_approach: Optional[str] = None
-    art_scoring: Optional[ArtScoring] = None
+    tour_planning_scores: Optional[TourPlanningScores] = None
     sources_consulted: list[str] = Field(default_factory=list)
     thinking_budget_used: Optional[int] = None
     confidence: int = Field(..., ge=1, le=5)

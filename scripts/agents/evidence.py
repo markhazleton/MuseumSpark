@@ -6,11 +6,73 @@ import json
 import re
 from typing import Any
 
+try:
+    import html2text
+    HAS_HTML2TEXT = True
+except ImportError:
+    HAS_HTML2TEXT = False
+
 from .context import MuseumContext
 from .utils import compact_dict, estimate_tokens, truncate_text
 
 
+def _html_to_markdown(value: str) -> str:
+    """Convert HTML to clean markdown text."""
+    if not value:
+        return ""
+    
+    # Remove noise sections first
+    text = re.sub(r"<(script|style|svg|noscript)[^>]*>.*?</\1>", " ", value, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<(nav|header|footer|aside)[^>]*>.*?</\1>", " ", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<!--.*?-->", " ", text, flags=re.DOTALL)
+    
+    if HAS_HTML2TEXT:
+        # Use html2text library for clean conversion
+        h = html2text.HTML2Text()
+        h.ignore_links = False  # Keep links for context
+        h.ignore_images = True
+        h.ignore_emphasis = False
+        h.body_width = 0  # Don't wrap text
+        h.unicode_snob = True
+        h.skip_internal_links = True
+        markdown = h.handle(text)
+    else:
+        # Fallback: basic tag stripping
+        markdown = re.sub(r"<[^>]+>", " ", text)
+    
+    # Remove common boilerplate phrases
+    noise_patterns = [
+        r"accept.*?cookies?",
+        r"privacy policy",
+        r"terms of service",
+        r"newsletter signup",
+        r"follow us on",
+        r"share this page",
+        r"click here",
+        r"read more",
+        r"skip to content",
+        r"accessibility",
+    ]
+    for pattern in noise_patterns:
+        markdown = re.sub(pattern, " ", markdown, flags=re.IGNORECASE)
+    
+    # Clean up excessive whitespace and blank lines
+    markdown = re.sub(r"\n\s*\n\s*\n+", "\n\n", markdown)
+    markdown = re.sub(r"[ \t]+", " ", markdown)
+    
+    # Remove lines that are too short (likely navigation)
+    lines = []
+    for line in markdown.split("\n"):
+        stripped = line.strip()
+        # Keep markdown headers, list items, or lines with substantial content
+        if stripped.startswith("#") or stripped.startswith("*") or stripped.startswith("-") or len(stripped) > 20:
+            lines.append(line)
+    
+    return "\n".join(lines).strip()
+
+
 def _strip_html(value: str) -> str:
+    """Legacy fallback - strips HTML tags without markdown conversion."""
     text = re.sub(r"<[^>]+>", " ", value)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
@@ -29,14 +91,14 @@ def build_evidence_packet(
     record = context.state_record or {}
     cached = context.cached_data
 
-    wikidata_entity = compact_dict(cached.wikidata_entity or {}, max_json_fields)
+    # Skip wikidata entity overhead, keep only claims for collection info
     wikidata_claims = compact_dict((cached.wikidata_claims or {}).get("claims", {}), max_json_fields)
 
     wikipedia_summary = truncate_text(cached.wikipedia_summary, 1200)
     website_json_ld = compact_dict(cached.website_json_ld or {}, max_json_fields)
     website_text = None
     if cached.website_html:
-        website_text = truncate_text(_strip_html(cached.website_html), 1200)
+        website_text = truncate_text(_html_to_markdown(cached.website_html), 1200)
 
     packet = {
         "identity": {
@@ -57,12 +119,8 @@ def build_evidence_packet(
             "time_needed": record.get("time_needed"),
             "notes": record.get("notes"),
         },
-        "wikidata": {
-            "entity": wikidata_entity,
-            "claims": wikidata_claims,
-        },
+        "wikidata_claims": wikidata_claims,
         "wikipedia_summary": wikipedia_summary,
-        "nominatim": compact_dict(cached.nominatim_result or {}, 20),
         "website_json_ld": website_json_ld,
         "website_text_snippet": website_text,
         "subpages_scraped": (cached.subpages_scraped or [])[:3],
@@ -77,7 +135,7 @@ def build_evidence_packet(
             packet["website_text_snippet"] = truncate_text(packet["website_text_snippet"], 600)
         serialized = _safe_json(packet)
         if len(serialized) > max_chars:
-            packet["wikidata"]["claims"] = compact_dict(packet["wikidata"]["claims"], 15) or {}
+            packet["wikidata_claims"] = compact_dict(packet["wikidata_claims"], 15) or {}
 
     packet["packet_metadata"] = {
         "approx_tokens": estimate_tokens(serialized),

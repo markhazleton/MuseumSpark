@@ -1,0 +1,89 @@
+{
+  "museum_id": "usa-al-unknown-mobile-museum-of-art",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "raw_response": {
+    "state_file_updates": {
+      "museum_id": "usa-al-unknown-mobile-museum-of-art",
+      "museum_name": {
+        "value": "Mobile Museum of Art",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "city": {
+        "value": "Alabama",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "street_address": null,
+      "postal_code": null,
+      "website": {
+        "value": "http://www.mobilemuseumofart.com",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "latitude": null,
+      "longitude": null,
+      "primary_domain": {
+        "value": "Art",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "museum_type": {
+        "value": "ART MUSEUM",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "audience_focus": null,
+      "city_tier": {
+        "value": 3,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": {
+        "value": "Half day",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "impressionist_strength": null,
+      "modern_contemporary_strength": null,
+      "historical_context_score": null,
+      "notes": {
+        "value": "ART MUSEUM located in Alabama, known for its diverse art collections and community engagement. The museum offers a half-day experience for visitors.",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "confidence": 5,
+      "data_sources": [
+        "official_website/visit"
+      ]
+    },
+    "recommendations": [],
+    "needs_deep_dive": false,
+    "confidence": 5,
+    "model_used": "ValidationModelV1",
+    "agent_version": "1.0",
+    "processed_at": "2023-10-01",
+    "data_sources": [
+      "official_website/visit"
+    ]
+  }
+}

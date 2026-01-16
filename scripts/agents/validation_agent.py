@@ -83,6 +83,22 @@ def run_validation_agent(
         {"role": "system", "content": _system_prompt()},
         {"role": "user", "content": _user_prompt(evidence_packet)},
     ]
+    
+    # Save the full prompt for debugging/inspection
+    prompt_debug = {
+        "museum_id": context.museum_id,
+        "provider": provider,
+        "model": model,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "system_prompt": _system_prompt(),
+        "user_prompt": _user_prompt(evidence_packet),
+        "evidence_packet": evidence_packet,
+    }
+    (cache_dir / "validation_prompt.json").write_text(
+        json.dumps(prompt_debug, indent=2, ensure_ascii=False),
+        encoding="utf-8"
+    )
 
     if provider == "openai":
         api_key = load_env_key("OPENAI_API_KEY")
@@ -114,6 +130,18 @@ def run_validation_agent(
         )
     else:
         raise ValueError(f"Unsupported provider: {provider}")
+
+    # Save the raw response for debugging/inspection
+    response_debug = {
+        "museum_id": context.museum_id,
+        "provider": provider,
+        "model": model,
+        "raw_response": payload,
+    }
+    (cache_dir / "validation_response.json").write_text(
+        json.dumps(response_debug, indent=2, ensure_ascii=False),
+        encoding="utf-8"
+    )
 
     output = ValidationAgentOutput.model_validate(payload)
 

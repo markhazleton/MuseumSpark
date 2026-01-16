@@ -1,0 +1,109 @@
+{
+  "museum_id": "usa-al-montgomery-montgomery-museum-of-fine-arts",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "raw_response": {
+    "state_file_updates": {
+      "museum_id": "usa-al-montgomery-montgomery-museum-of-fine-arts",
+      "museum_name": {
+        "value": "Montgomery Museum of Fine Arts",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "city": {
+        "value": "Montgomery",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "street_address": null,
+      "postal_code": null,
+      "website": {
+        "value": "https://www.mmfa.org",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "latitude": null,
+      "longitude": null,
+      "primary_domain": {
+        "value": "Art",
+        "source": "official_website/visit",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "museum_type": {
+        "value": "Art (Regional)",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "audience_focus": {
+        "value": "General",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "city_tier": {
+        "value": 2,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "reputation": {
+        "value": 2,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "collection_tier": {
+        "value": 2,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "time_needed": {
+        "value": "Half day",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "impressionist_strength": null,
+      "modern_contemporary_strength": null,
+      "historical_context_score": null,
+      "notes": {
+        "value": "Focus on American art and regional artists. Beautiful sculpture garden.",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "confidence": null,
+      "data_sources": [
+        "official_website/visit",
+        "state_record_subset"
+      ]
+    },
+    "recommendations": [],
+    "needs_deep_dive": false,
+    "confidence": 5,
+    "model_used": "ValidationModelV1",
+    "agent_version": "1.0",
+    "processed_at": "2023-10-01",
+    "data_sources": [
+      "official_website/visit",
+      "state_record_subset"
+    ]
+  }
+}

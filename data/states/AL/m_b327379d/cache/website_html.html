@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+    <title>Welcome to the Birmingham Museum of Art</title>
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+<link rel="canonical" href="https://www.artsbma.org/" />
+<meta name="description" content="The Birmingham Museum of Art in Alabama houses a diverse collection of over 27,000 artworks. Admission is free, and the museum is open Tuesday through Sunday." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Birmingham Museum of Art" />
+<meta property="og:title" content="Welcome to the Birmingham Museum of Art" />
+<meta property="og:description" content="The Birmingham Museum of Art in Alabama houses a diverse collection of over 27,000 artworks. Admission is free, and the museum is open Tuesday through Sunday." />
+<meta property="og:url" content="https://www.artsbma.org/" />
+<meta property="og:image" content="https://media.artsbma.org/wp-content/uploads/2025/01/28105503/Sculpture-Garden-scaled-1.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Welcome to the Birmingham Museum of Art" />
+<meta name="twitter:description" content="The Birmingham Museum of Art in Alabama houses a diverse collection of over 27,000 artworks. Admission is free, and the museum is open Tuesday through Sunday." />
+<meta name="twitter:image" content="https://media.artsbma.org/wp-content/uploads/2025/01/28105503/Sculpture-Garden-scaled-1.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.artsbma.org/#/schema/WebSite","url":"https://www.artsbma.org/","name":"Birmingham Museum of Art","inLanguage":"en-US","publisher":{"@id":"https://www.artsbma.org/#/schema/Organization"}},{"@type":"WebPage","@id":"https://www.artsbma.org/","url":"https://www.artsbma.org/","name":"Welcome to the Birmingham Museum of Art","description":"The Birmingham Museum of Art in Alabama houses a diverse collection of over 27,000 artworks. Admission is free, and the museum is open Tuesday through Sunday.","inLanguage":"en-US","isPartOf":{"@id":"https://www.artsbma.org/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://www.artsbma.org/#/schema/BreadcrumbList","itemListElement":{"@type":"ListItem","position":1,"name":"Birmingham Museum of Art"}},"potentialAction":{"@type":"ReadAction","target":"https://www.artsbma.org/"},"about":{"@id":"https://www.artsbma.org/#/schema/Organization"}},{"@type":"Organization","@id":"https://www.artsbma.org/#/schema/Organization","name":"Birmingham Museum of Art","url":"https://www.artsbma.org/","sameAs":["https://www.facebook.com/artsbma/","https://www.instagram.com/explore/locations/230244754/birmingham-museum-of-art/"],"logo":{"@type":"ImageObject","url":"https://media.artsbma.org/wp-content/uploads/2026/01/07153135/BMA_75_web.png","contentUrl":"https://media.artsbma.org/wp-content/uploads/2026/01/07153135/BMA_75_web.png","width":195,"height":134,"contentSize":"5249"}}]}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 10.56ms meta | 1.02ms boot -->
+
+<link rel='dns-prefetch' href='//widgetlogic.org' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//rum-static.pingdom.net' />
+<link rel='dns-prefetch' href='//fonts.bunny.net' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.artsbma.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.artsbma.org%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.artsbma.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.artsbma.org%2F&#038;format=xml" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.10.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-RSWPMQ9372"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '9.10.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.artsbma.org\/?_gl=1%2Aj7m4hp%2A_ga%2AMTAyMjY0MDA1Ni4xNzY4NDk1ODM5%2A_ga_RSWPMQ9372%2AczE3Njg0OTU4MzgkbzEkZzEkdDE3Njg0OTU5NDckajExJGwwJGgw"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-RSWPMQ9372',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-RSWPMQ9372', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='tribe-events-pro-mini-calendar-block-styles-css' href='https://www.artsbma.org/app/plugins/events-calendar-pro/build/css/tribe-events-pro-mini-calendar-block.css?ver=7.7.11' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.artsbma.org/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.9' media='all' />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--brand-cyan-default: #00aef0;--wp--preset--color--brand-cyan-dark: #0a77a0;--wp--preset--color--brand-red-default: #da625a;--wp--preset--color--brand-red-dark: #d4483e;--wp--preset--color--brand-green-default: #6fd999;--wp--preset--color--brand-green-dark: #00a651;--wp--preset--color--brand-purple-default: #ba7df4;--wp--preset--color--brand-purple-dark: #8343bf;--wp--preset--color--brand-pink-default: #e26b97;--wp--preset--color--brand-pink-dark: #7f1e3c;--wp--preset--color--brand-gray-default: #ddd;--wp--preset--color--brand-gray-light: #f0f0f0;--wp--preset--color--brand-gray-dark: #575757;--wp--preset--color--brand-gray-border: #979797;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--xs: 0.6875rem;--wp--preset--font-size--sm: 0.875rem;--wp--preset--font-size--base: 1rem;--wp--preset--font-size--lg: 1.125rem;--wp--preset--font-size--xl: 1.25rem;--wp--preset--font-size--2-xl: 1.5rem;--wp--preset--font-size--3-xl: 2rem;--wp--preset--font-size--4-xl: 2.25rem;--wp--preset--font-size--5-xl: 3rem;--wp--preset--font-size--6-xl: 4rem;--wp--preset--font-size--7-xl: 4.5rem;--wp--preset--font-size--8-xl: 6rem;--wp--preset--font-size--9-xl: 8rem;--wp--preset--font-family--sans: Public Sans,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--wp--preset--font-family--oswald: Oswald,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 782px;--wp--style--global--wide-size: 992px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-brand-cyan-default-color{color: var(--wp--preset--color--brand-cyan-default) !important;}.has-brand-cyan-dark-color{color: var(--wp--preset--color--brand-cyan-dark) !important;}.has-brand-red-default-color{color: var(--wp--preset--color--brand-red-default) !important;}.has-brand-red-dark-color{color: var(--wp--preset--color--brand-red-dark) !important;}.has-brand-green-default-color{color: var(--wp--preset--color--brand-green-default) !important;}.has-brand-green-dark-color{color: var(--wp--preset--color--brand-green-dark) !important;}.has-brand-purple-default-color{color: var(--wp--preset--color--brand-purple-default) !important;}.has-brand-purple-dark-color{color: var(--wp--preset--color--brand-purple-dark) !important;}.has-brand-pink-default-color{color: var(--wp--preset--color--brand-pink-default) !important;}.has-brand-pink-dark-color{color: var(--wp--preset--color--brand-pink-dark) !important;}.has-brand-gray-default-color{color: var(--wp--preset--color--brand-gray-default) !important;}.has-brand-gray-light-color{color: var(--wp--preset--color--brand-gray-light) !important;}.has-brand-gray-dark-color{color: var(--wp--preset--color--brand-gray-dark) !important;}.has-brand-gray-border-color{color: var(--wp--preset--color--brand-gray-border) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-brand-cyan-default-background-color{background-color: var(--wp--preset--color--brand-cyan-default) !important;}.has-brand-cyan-dark-background-color{background-color: var(--wp--preset--color--brand-cyan-dark) !important;}.has-brand-red-default-background-color{background-color: var(--wp--preset--color--brand-red-default) !important;}.has-brand-red-dark-background-color{background-color: var(--wp--preset--color--brand-red-dark) !important;}.has-brand-green-default-background-color{background-color: var(--wp--preset--color--brand-green-default) !important;}.has-brand-green-dark-background-color{background-color: var(--wp--preset--color--brand-green-dark) !important;}.has-brand-purple-default-background-color{background-color: var(--wp--preset--color--brand-purple-default) !important;}.has-brand-purple-dark-background-color{background-color: var(--wp--preset--color--brand-purple-dark) !important;}.has-brand-pink-default-background-color{background-color: var(--wp--preset--color--brand-pink-default) !important;}.has-brand-pink-dark-background-color{background-color: var(--wp--preset--color--brand-pink-dark) !important;}.has-brand-gray-default-background-color{background-color: var(--wp--preset--color--brand-gray-default) !important;}.has-brand-gray-light-background-color{background-color: var(--wp--preset--color--brand-gray-light) !important;}.has-brand-gray-dark-background-color{background-color: var(--wp--preset--color--brand-gray-dark) !important;}.has-brand-gray-border-background-color{background-color: var(--wp--preset--color--brand-gray-border) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-brand-cyan-default-border-color{border-color: var(--wp--preset--color--brand-cyan-default) !important;}.has-brand-cyan-dark-border-color{border-color: var(--wp--preset--color--brand-cyan-dark) !important;}.has-brand-red-default-border-color{border-color: var(--wp--preset--color--brand-red-default) !important;}.has-brand-red-dark-border-color{border-color: var(--wp--preset--color--brand-red-dark) !important;}.has-brand-green-default-border-color{border-color: var(--wp--preset--color--brand-green-default) !important;}.has-brand-green-dark-border-color{border-color: var(--wp--preset--color--brand-green-dark) !important;}.has-brand-purple-default-border-color{border-color: var(--wp--preset--color--brand-purple-default) !important;}.has-brand-purple-dark-border-color{border-color: var(--wp--preset--color--brand-purple-dark) !important;}.has-brand-pink-default-border-color{border-color: var(--wp--preset--color--brand-pink-default) !important;}.has-brand-pink-dark-border-color{border-color: var(--wp--preset--color--brand-pink-dark) !important;}.has-brand-gray-default-border-color{border-color: var(--wp--preset--color--brand-gray-default) !important;}.has-brand-gray-light-border-color{border-color: var(--wp--preset--color--brand-gray-light) !important;}.has-brand-gray-dark-border-color{border-color: var(--wp--preset--color--brand-gray-dark) !important;}.has-brand-gray-border-border-color{border-color: var(--wp--preset--color--brand-gray-border) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xs-font-size{font-size: var(--wp--preset--font-size--xs) !important;}.has-sm-font-size{font-size: var(--wp--preset--font-size--sm) !important;}.has-base-font-size{font-size: var(--wp--preset--font-size--base) !important;}.has-lg-font-size{font-size: var(--wp--preset--font-size--lg) !important;}.has-xl-font-size{font-size: var(--wp--preset--font-size--xl) !important;}.has-2-xl-font-size{font-size: var(--wp--preset--font-size--2-xl) !important;}.has-3-xl-font-size{font-size: var(--wp--preset--font-size--3-xl) !important;}.has-4-xl-font-size{font-size: var(--wp--preset--font-size--4-xl) !important;}.has-5-xl-font-size{font-size: var(--wp--preset--font-size--5-xl) !important;}.has-6-xl-font-size{font-size: var(--wp--preset--font-size--6-xl) !important;}.has-7-xl-font-size{font-size: var(--wp--preset--font-size--7-xl) !important;}.has-8-xl-font-size{font-size: var(--wp--preset--font-size--8-xl) !important;}.has-9-xl-font-size{font-size: var(--wp--preset--font-size--9-xl) !important;}.has-sans-font-family{font-family: var(--wp--preset--font-family--sans) !important;}.has-oswald-font-family{font-family: var(--wp--preset--font-family--oswald) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='block-widget-css' href='https://www.artsbma.org/app/plugins/widget-logic/block_widget/css/widget.css?ver=1722949712' media='all' />
+<link rel='stylesheet' id='taxonomy-image-plugin-public-css' href='https://www.artsbma.org/app/plugins/taxonomy-images/css/style.css?ver=0.9.6' media='screen' />
+<link rel='stylesheet' id='ssa-upcoming-appointments-card-style-css' href='https://www.artsbma.org/app/plugins/simply-schedule-appointments/assets/css/upcoming-appointments.css?ver=2.6.8.43' media='all' />
+<link rel='stylesheet' id='ssa-styles-css' href='https://www.artsbma.org/app/plugins/simply-schedule-appointments/assets/css/ssa-styles.css?ver=2.6.8.43' media='all' />
+<link rel='stylesheet' id='app/fonts-css' href='https://fonts.bunny.net/css2?family=Public+Sans:ital,wght@0,300;0,700;1,300;1,700&#038;display=swap' media='all' />
+<link rel='stylesheet' id='app/fonts-oswald-css' href='https://fonts.bunny.net/css2?family=Oswald:700&#038;display=swap' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://use.fontawesome.com/releases/v5.10.0/css/all.css?ver=5.10.0' media='all' />
+<link rel='stylesheet' id='slick-css' href='https://www.artsbma.org/app/themes/bma2018/resources/scripts/vendor/slick/slick.css?ver=1767823877' media='all' />
+<link rel='stylesheet' id='app/0-css' href='https://www.artsbma.org/app/themes/bma2018/public/css/app.dc3e8f.css' media='all' />
+<link rel='stylesheet' id='calendar/0-css' href='https://www.artsbma.org/app/themes/bma2018/public/css/calendar.ec2d11.css' media='all' />
+<script src="https://www.artsbma.org/app/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=9.10.0" id="monsterinsights-frontend-script-js" async data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.artsbma.org","hash_tracking":"false","v4_id":"G-RSWPMQ9372"};</script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="//rum-static.pingdom.net/pa-62d850349034fb0011000fcd.js?ver=1767823877" id="pingdom-rum-js" async data-wp-strategy="async"></script>
+<link rel="https://api.w.org/" href="https://www.artsbma.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.artsbma.org/wp-json/wp/v2/pages/574038" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.artsbma.org/wp/xmlrpc.php?rsd" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://www.artsbma.org"><link rel="alternate" href="https://www.artsbma.org/wp-json/tribe/events/v1/" /><link rel="icon" href="https://media.artsbma.org/wp-content/uploads/2015/12/08164248/cropped-BMA_logo-86x86.jpg" sizes="32x32" />
+<link rel="icon" href="https://media.artsbma.org/wp-content/uploads/2015/12/08164248/cropped-BMA_logo-210x210.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://media.artsbma.org/wp-content/uploads/2015/12/08164248/cropped-BMA_logo-182x182.jpg" />
+<meta name="msapplication-TileImage" content="https://media.artsbma.org/wp-content/uploads/2015/12/08164248/cropped-BMA_logo-300x300.jpg" />
+
+<link rel='stylesheet' id='gp-live-preview-admin-css' href='https://www.artsbma.org/app/plugins/gp-live-preview/css/gp-live-preview-admin.min.css?ver=1.6.13' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://www.artsbma.org/app/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=2.9.23' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://www.artsbma.org/app/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=2.9.23' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://www.artsbma.org/app/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=2.9.23' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://www.artsbma.org/app/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=2.9.23' media='all' />
+</head>
+
+<body class="home wp-singular page-template-default page page-id-574038 page-parent wp-custom-logo wp-embed-responsive wp-theme-bma2018 tribe-no-js group-blog">
+  
+  <div
+    class="site"
+    id="page"
+  >
+    <a
+      class="sr-only focus:not-sr-only"
+      href="#content"
+    >
+      Skip to content
+    </a>
+
+    <header
+  class="site-header"
+  id="masthead"
+  role="banner"
+>
+
+  <div class="wrap header-content">
+
+    <div class="site-branding">
+
+      
+      <a href="https://www.artsbma.org/" class="site-logo-link"><img src="https://media.artsbma.org/wp-content/uploads/2026/01/07153135/BMA_75_web.png" class="custom-logo" width="97.5 " height="67" /></a>
+      <a class="site-title" href="https://www.artsbma.org">Birmingham Museum of Art</a>
+
+      
+     
+
+    </div><!-- .site-branding -->
+
+    <div class="menus-holder">
+      <nav class="secondary-navigation"><ul id="menu-top-menu" class="menu"><li id="menu-item-576240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-576240"><a href="https://shop.artsbma.org">Shop</a></li>
+<li id="menu-item-577299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577299"><a href="https://artsbma.ticketapp.org/portal/product/9">Donate</a></li>
+<li id="menu-item-532347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-532347"><a href="https://www.artsbma.org/plan-an-event/">Venue Rental</a></li>
+<li id="menu-item-524131" class="menu-item-icon-search no-hover-line menu-item menu-item-type-custom menu-item-object-custom menu-item-524131"><a href="#">Search</a></li>
+</ul></nav>
+      <nav
+        class="main-navigation"
+        id="site-navigation"
+        role="navigation"
+      >
+
+        <button
+          class="menu-toggle"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+        ><i class="fas fa-bars"></i> Open Menu</button>
+
+        <div class="menu-primary-container"><ul id="primary-menu" class="menu"><li id="menu-item-524388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-524388"><a href="https://www.artsbma.org/art/">Art</a>
+<ul class="sub-menu">
+	<li id="menu-item-524387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524387"><a href="https://www.artsbma.org/art/exhibitions/">Exhibitions</a></li>
+	<li id="menu-item-649089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649089"><a href="https://www.artsbma.org/art/new-to-galleries/">New to the Galleries</a></li>
+	<li id="menu-item-687406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-687406"><a href="https://www.artsbma.org/art/student-exhibitions/">Student Exhibitions</a></li>
+	<li id="menu-item-524107" class="menu-item menu-item-type-post_type_archive menu-item-object-piece menu-item-524107"><a href="https://www.artsbma.org/collection/">Collection</a></li>
+	<li id="menu-item-529506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-529506"><a href="https://www.artsbma.org/art/smartguide/">smartguide</a></li>
+</ul>
+</li>
+<li id="menu-item-692720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-692720"><a href="https://www.artsbma.org/things-to-do/">Things To Do</a>
+<ul class="sub-menu">
+	<li id="menu-item-692823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-692823"><a href="https://artsbma.org/events">Calendar</a></li>
+	<li id="menu-item-691703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-691703"><a href="https://www.artsbma.org/art-on-the-rocks/">Art on The Rocks</a></li>
+	<li id="menu-item-647367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-647367"><a href="https://www.artsbma.org/things-to-do/summer-art-camp/">Summer Art Camp</a></li>
+</ul>
+</li>
+<li id="menu-item-524415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-524415"><a href="https://www.artsbma.org/plan-your-visit/">Plan Your Visit</a>
+<ul class="sub-menu">
+	<li id="menu-item-524510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524510"><a href="https://www.artsbma.org/plan-your-visit/hours-directions-parking/">Hours, Directions, and Parking</a></li>
+	<li id="menu-item-524475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524475"><a href="https://www.artsbma.org/plan-your-visit/visiting-tips/">Tips for Visiting</a></li>
+	<li id="menu-item-687335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-687335"><a href="https://www.artsbma.org/plan-your-visit/visiting-with-a-group/">Visiting with a Group</a></li>
+	<li id="menu-item-529535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-529535"><a href="https://www.artsbma.org/plan-your-visit/the-museum-shop/">The Museum Shop</a></li>
+	<li id="menu-item-684449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684449"><a href="https://www.artsbma.org/plan-your-visit/museum-cafe/">Museum Cafe</a></li>
+	<li id="menu-item-529549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-529549"><a href="https://www.artsbma.org/plan-your-visit/access/">Accessibility</a></li>
+	<li id="menu-item-532206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-532206"><a href="https://www.artsbma.org/plan-your-visit/clarence-b-hanson-jr-library/">Research Library</a></li>
+</ul>
+</li>
+<li id="menu-item-524452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-524452"><a href="https://www.artsbma.org/get-involved/">Get Involved</a>
+<ul class="sub-menu">
+	<li id="menu-item-524533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524533"><a href="https://www.artsbma.org/get-involved/membership/">Membership</a></li>
+	<li id="menu-item-688423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-688423"><a href="https://www.artsbma.org/get-involved/support-groups/">Support Groups</a></li>
+	<li id="menu-item-524502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524502"><a href="https://www.artsbma.org/get-involved/sponsorship/">Sponsorship</a></li>
+	<li id="menu-item-524483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524483"><a href="https://www.artsbma.org/get-involved/ways-to-give/">Ways to Give</a></li>
+	<li id="menu-item-612657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-612657"><a href="https://www.artsbma.org/get-involved/the-museum-ball/">The Museum Ball</a></li>
+	<li id="menu-item-669670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669670"><a href="https://www.artsbma.org/get-involved/volunteer/">Volunteer</a></li>
+</ul>
+</li>
+<li id="menu-item-524901" class="show-on-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-524901"><a href="https://artsbma.ticketapp.org/portal/product/9">Donate</a></li>
+<li id="menu-item-524902" class="show-on-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-524902"><a href="#">Venue Rental</a></li>
+</ul></div>
+      </nav><!-- #site-navigation -->
+
+    </div> <!-- /.menus-holder -->
+
+  </div> <!-- /.wrap -->
+
+</header>
+
+
+    <div
+      class="site-content"
+      id="content"
+    >
+      <div
+        class="content-area"
+        id="primary"
+      >
+        <main
+          class="site-main mb-7"
+          id="main"
+          role="main"
+        >
+                 <article
+  id="post-574038"
+  class="block-wrapper  post-574038 page type-page status-publish hentry">
+  
+  <div class="entry-content alignfull block-wrapper typography has-mb mb-0">
+    
+    
+  </div>
+
+  
+  <div class="alignfull wrap has-mb mb-0">
+                <section class="bma-page-section bma-page-section-posts_feed bma-page-section-bg-white"><h2 class="section-title">Now on View</h2><div class="posts-feed-holder">
+            <div class="posts-feed posts-feed-2-per-column">    <div class="post-block post-block-with-bg">
+        <a href="https://www.artsbma.org/exhibition/ancient-american-gallery/">
+            <div class="post-block-with-bg-inner" style="background-image: url('https://media.artsbma.org/wp-content/uploads/2025/04/15133149/1971.41_01_p01_o3-570x396.jpg');">
+
+                <div class="post-info">
+
+                    
+                    <h3 class="post-title">
+                        Ancient American Gallery                    </h3>
+
+                    <h5 class="tertiary-title">Now Open</h5>
+                </div> <!-- /.post-info -->
+
+            </div> <!-- /.post-block-with-bg-inner -->
+        </a>
+    </div> <!-- /.post-block -->
+    <div class="post-block post-block-with-bg">
+        <a href="https://www.artsbma.org/exhibition/wall-to-wall-antoine-williams-and-josiah-golson/">
+            <div class="post-block-with-bg-inner" style="background-image: url('https://media.artsbma.org/wp-content/uploads/2025/06/23092952/IMG_2557-570x396.jpeg');">
+
+                <div class="post-info">
+
+                    
+                    <h3 class="post-title">
+                        Wall to Wall: Antoine Williams and Josiah Golson                    </h3>
+
+                    <h5 class="tertiary-title">August 16, 2025–July 4, 2026</h5>
+                </div> <!-- /.post-info -->
+
+            </div> <!-- /.post-block-with-bg-inner -->
+        </a>
+    </div> <!-- /.post-block -->
+    <div class="post-block post-block-with-bg">
+        <a href="https://www.artsbma.org/exhibition/interwoven-stories-in-fiber-and-form/">
+            <div class="post-block-with-bg-inner" style="background-image: url('https://media.artsbma.org/wp-content/uploads/2025/06/02104818/1991.710_01_p01_o2-570x396.jpg');">
+
+                <div class="post-info">
+
+                    
+                    <h3 class="post-title">
+                        Interwoven: Stories in Fiber and Form                    </h3>
+
+                    <h5 class="tertiary-title">August 9, 2025–February 15, 2026</h5>
+                </div> <!-- /.post-info -->
+
+            </div> <!-- /.post-block-with-bg-inner -->
+        </a>
+    </div> <!-- /.post-block -->
+    <div class="post-block post-block-with-bg">
+        <a href="https://www.artsbma.org/exhibition/marks-of-intention/">
+            <div class="post-block-with-bg-inner" style="background-image: url('https://media.artsbma.org/wp-content/uploads/2025/03/01153950/IMG_9152-570x396.jpeg');">
+
+                <div class="post-info">
+
+                    
+                    <h3 class="post-title">
+                        Marks of Intention                    </h3>
+
+                    <h5 class="tertiary-title">April 19, 2025–April 16, 2027</h5>
+                </div> <!-- /.post-info -->
+
+            </div> <!-- /.post-block-with-bg-inner -->
+        </a>
+    </div> <!-- /.post-block -->
+</div> <!-- /.posts-feed --></div> <!-- /.posts-feed-holder --></section><section class="bma-page-section bma-page-section-posts_feed bma-page-section-bg-white"><h2 class="section-title">Tickets on Sale Now</h2><div class="posts-feed-holder">
+                <div class="posts-feed posts-feed-1-per-column">    <div class="post-block">
+        <a href="https://www.artsbma.org/exhibition/monet-to-matisse/" title="Monet to Matisse: French Moderns, 1850–1950"></a>
+        
+            <div class="featured-image-holder">
+
+                <img width="1170" height="565" src="https://media.artsbma.org/wp-content/uploads/2025/05/21112542/51.219_PS11-header-1170x565.jpg" class="attachment-thumbnail-large size-thumbnail-large wp-post-image" alt="" decoding="async" loading="lazy" />
+            </div> <!-- /.featured-image-holder -->
+
+        
+        <div class="post-info">
+
+            
+            <h3 class="post-title">
+                Monet to Matisse: French Moderns, 1850–1950            </h3>
+
+            <h4 class="subtitle">Presented by PNC Bank</h4><h5 class="tertiary-title">January 30, 2026–May 24, 2026</h5>
+        </div> <!-- /.post-info -->
+    </div> <!-- /.post-block -->
+    </div> <!-- /.posts-feed --></div> <!-- /.posts-feed-holder --></section><section class="bma-page-section bma-page-section-posts_feed bma-page-section-bg-white"><h2 class="section-title">Events</h2><div class="posts-feed-holder">
+            <div class="posts-feed posts-feed-3-per-column">    <div class="post-block">
+        <a href="https://www.artsbma.org/event/hidden-gems-unsung-masterpieces-of-the-bma/" title="Hidden Gems: Unsung Masterpieces of the BMA"></a>
+        
+            <div class="featured-image-holder">
+
+                <img width="370" height="370" src="https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham.jpg" class="attachment-thumbnail-small size-thumbnail-small wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham.jpg 370w, https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham-300x300.jpg 300w, https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham-150x150.jpg 150w, https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham.jpg 182w, https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham.jpg 86w, https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham.jpg 400w, https://media.artsbma.org/wp-content/uploads/2017/09/08155325/Graham.jpg 210w" sizes="auto, (max-width: 370px) 100vw, 370px" />
+            </div> <!-- /.featured-image-holder -->
+
+        
+        <div class="post-info">
+
+            
+            <h3 class="post-title">
+                Hidden Gems: Unsung Masterpieces of the BMA            </h3>
+
+            <h5 class="tertiary-title"><span class="tribe-event-date-start">January 15, 6</span> - <span class="tribe-event-time">8pm</span></h5>
+        </div> <!-- /.post-info -->
+    </div> <!-- /.post-block -->
+        <div class="post-block">
+        <a href="https://www.artsbma.org/event/lunch-learn-eadweard-muybridge-and-american-art/" title="Lunch &amp; Learn: Eadweard Muybridge and American Art"></a>
+        
+            <div class="featured-image-holder">
+
+                <img width="370" height="370" src="https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-370x370.jpg" class="attachment-thumbnail-small size-thumbnail-small wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-370x370.jpg 370w, https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-300x300.jpg 300w, https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-150x150.jpg 150w, https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-182x182.jpg 182w, https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-86x86.jpg 86w, https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-400x400.jpg 400w, https://media.artsbma.org/wp-content/uploads/2025/09/19135336/Animal-Locamotion-AFI.143.2022jpg-210x210.jpg 210w" sizes="auto, (max-width: 370px) 100vw, 370px" />
+            </div> <!-- /.featured-image-holder -->
+
+        
+        <div class="post-info">
+
+            
+            <h3 class="post-title">
+                Lunch &amp; Learn: Eadweard Muybridge and American Art            </h3>
+
+            <h5 class="tertiary-title"><span class="tribe-event-date-start">January 22, 12</span> - <span class="tribe-event-time">1pm</span> - Friends of American Art - Support Group Event</h5>
+        </div> <!-- /.post-info -->
+    </div> <!-- /.post-block -->
+        <div class="post-block">
+        <a href="https://www.artsbma.org/event/interwoven-stories-in-fiber-and-form-2/" title="Interwoven: Stories in Fiber and Form"></a>
+        
+            <div class="featured-image-holder">
+
+                <img width="370" height="370" src="https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-370x370.jpg" class="attachment-thumbnail-small size-thumbnail-small wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-370x370.jpg 370w, https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-300x300.jpg 300w, https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-150x150.jpg 150w, https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-182x182.jpg 182w, https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-86x86.jpg 86w, https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-400x400.jpg 400w, https://media.artsbma.org/wp-content/uploads/2025/10/14161103/2018.8_01_p_o3-210x210.jpg 210w" sizes="auto, (max-width: 370px) 100vw, 370px" />
+            </div> <!-- /.featured-image-holder -->
+
+        
+        <div class="post-info">
+
+            
+            <h3 class="post-title">
+                Interwoven: Stories in Fiber and Form            </h3>
+
+            <h5 class="tertiary-title"><span class="tribe-event-date-start">January 28, 12</span> - <span class="tribe-event-time">12:30pm</span> - ArtBreak</h5>
+        </div> <!-- /.post-info -->
+    </div> <!-- /.post-block -->
+        <div class="post-block">
+        <a href="https://www.artsbma.org/event/monet-to-matisse-members-day/" title="Monet to Matisse Members Day"></a>
+        
+            <div class="featured-image-holder">
+
+                <img width="370" height="370" src="https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-370x370.png" class="attachment-thumbnail-small size-thumbnail-small wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-370x370.png 370w, https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-300x300.png 300w, https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-150x150.png 150w, https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-182x182.png 182w, https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-86x86.png 86w, https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-400x400.png 400w, https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-210x210.png 210w, https://media.artsbma.org/wp-content/uploads/2025/11/21082112/MTM_webimages-600x600.png 600w" sizes="auto, (max-width: 370px) 100vw, 370px" />
+            </div> <!-- /.featured-image-holder -->
+
+        
+        <div class="post-info">
+
+            
+            <h3 class="post-title">
+                Monet to Matisse Members Day            </h3>
+
+            <h5 class="tertiary-title"><span class="tribe-event-date-start">January 30, 10am</span> - <span class="tribe-event-time">5pm</span></h5>
+        </div> <!-- /.post-info -->
+    </div> <!-- /.post-block -->
+        <div class="post-block">
+        <a href="https://www.artsbma.org/event/monet-to-matisse-featured-lecture-and-reception/" title="Monet to Matisse Opening Night, Featured Lecture and Reception | SOLD OUT"></a>
+        
+            <div class="featured-image-holder">
+
+                <img width="370" height="370" src="https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-370x370.jpg" class="attachment-thumbnail-small size-thumbnail-small wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-370x370.jpg 370w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-300x300.jpg 300w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-1024x1024.jpg 1024w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-150x150.jpg 150w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-768x768.jpg 768w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-400x400.jpg 400w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-800x800.jpg 800w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-1200x1200.jpg 1200w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-1600x1600.jpg 1600w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-1170x1170.jpg 1170w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-570x570.jpg 570w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-182x182.jpg 182w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-86x86.jpg 86w, https://media.artsbma.org/wp-content/uploads/2025/11/20150510/Gloria_Groom-210x210.jpg 210w" sizes="auto, (max-width: 370px) 100vw, 370px" />
+            </div> <!-- /.featured-image-holder -->
+
+        
+        <div class="post-info">
+
+            
+            <h3 class="post-title">
+                Monet to Matisse Opening Night, Featured Lecture and Reception | SOLD OUT            </h3>
+
+            <h5 class="tertiary-title"><span class="tribe-event-date-start">January 30, 5</span> - <span class="tribe-event-time">9pm</span> - Lecture</h5>
+        </div> <!-- /.post-info -->
+    </div> <!-- /.post-block -->
+        <div class="post-block">
+        <a href="https://www.artsbma.org/event/educator-night-2/" title="Educator Night"></a>
+        
+            <div class="featured-image-holder">
+
+                <img width="370" height="370" src="https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-370x370.jpg" class="attachment-thumbnail-small size-thumbnail-small wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-370x370.jpg 370w, https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-300x300.jpg 300w, https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-150x150.jpg 150w, https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-182x182.jpg 182w, https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-86x86.jpg 86w, https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-400x400.jpg 400w, https://media.artsbma.org/wp-content/uploads/2026/01/06092854/ed.night1_-210x210.jpg 210w" sizes="auto, (max-width: 370px) 100vw, 370px" />
+            </div> <!-- /.featured-image-holder -->
+
+        
+        <div class="post-info">
+
+            
+            <h3 class="post-title">
+                Educator Night            </h3>
+
+            <h5 class="tertiary-title"><span class="tribe-event-date-start">February 6, 6</span> - <span class="tribe-event-time">8pm</span> - Teacher Events</h5>
+        </div> <!-- /.post-info -->
+    </div> <!-- /.post-block -->
+    </div> <!-- /.posts-feed --></div> <!-- /.posts-feed-holder --></section>
+          
+      </div>
+</article>
+  
+          </main>
+      </div>
+    </div>
+    <footer
+  class="site-footer"
+  id="colophon"
+  role="contentinfo"
+>
+
+  <div class="footer-menus">
+    <div class="wrap footer-menus-wrap">
+
+      <nav class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-524841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-524841"><a href="https://www.artsbma.org/the-museum/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-524838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524838"><a href="https://www.artsbma.org/the-museum/">About the Museum</a></li>
+	<li id="menu-item-566287" class="menu-item menu-item-type-taxonomy menu-item-object-employment_groups menu-item-566287"><a href="https://www.artsbma.org/opportunity-type/fellowships/">Fellowships</a></li>
+	<li id="menu-item-524840" class="menu-item menu-item-type-taxonomy menu-item-object-employment_groups menu-item-524840"><a href="https://www.artsbma.org/opportunity-type/employment/">Employment</a></li>
+</ul>
+</li>
+<li id="menu-item-524140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-524140"><a>For Teachers</a>
+<ul class="sub-menu">
+	<li id="menu-item-573983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-573983"><a href="http://learn.artsbma.org">Culture Bridge</a></li>
+	<li id="menu-item-533112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-533112"><a href="https://www.artsbma.org/teacher-resources/">Learning Resources</a></li>
+	<li id="menu-item-647196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-647196"><a href="https://www.artsbma.org/plan-your-visit/visiting-with-a-group/">Book a School Tour</a></li>
+</ul>
+</li>
+<li id="menu-item-524144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-524144"><a href="#">Quick Links</a>
+<ul class="sub-menu">
+	<li id="menu-item-529526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-529526"><a href="https://www.artsbma.org/plan-your-visit/hours-directions-parking/">Hours, Directions, and Parking</a></li>
+	<li id="menu-item-529507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="https://www.artsbma.org/art/smartguide/">smartguide</a></li>
+	<li id="menu-item-532098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-532098"><a href="https://www.artsbma.org/collection-resources/">Collection Resources</a></li>
+	<li id="menu-item-692327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-692327"><a href="https://signup.e2ma.net/signup/1812225/1770788/">Email Newsletter Signup</a></li>
+	<li id="menu-item-524147" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-524147"><a href="https://www.artsbma.org/blog">Blog</a></li>
+</ul>
+</li>
+</ul></nav>
+      <div class="menu-content">
+
+        
+        
+        <h3 class="section-title">
+          Contact        </h3>
+
+        
+        
+        <p>2000 Rev. Abraham Woods, Jr. Blvd<br />
+Birmingham, AL 35203</p>
+<p>T: 205.254.2565<br />
+F: 205.731.9425</p>
+<p><a href="https://artsbma.org/contact-us/">Contact Us</a></p>
+
+        
+      </div> <!-- /.menu-content -->
+
+    </div> <!-- /.wrap -->
+  </div> <!-- /.footer-menus -->
+
+  <div class="bma-museum-open-status">
+  <div class="footer-wrap">
+
+    <div class="footer-row">
+      <div class="col-12 col-lg-6">
+        <div class="hours-display">
+          <div class="hours-display-content">
+            <h3 class="status-title d-lg-inline-block my-0">
+              Our Hours            </h3>
+            <span class="status-opens-when"></span>
+            <p>General Admission is FREE<br />
+Tuesdays: 1–5pm<br />
+Wednesdays: 10am–5pm<br />
+Thursdays: 10am–8pm<br />
+Fridays:  10am–5pm<br />
+Saturdays: 10am–5pm<br />
+Sundays: 12–5pm<br />
+<br />
+<strong>Closed:</strong><br />
+Mondays<br />
+Major Holidays</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 offset-lg-2 d-flex align-items-center pt-lg-0 pt-5">
+        <div class="hours-actions">
+          <a href="/plan-your-visit/">Plan Your Visit <i class="fas fa-arrow-right"></i></a>
+          <a
+            class="ml-lg-3 ml-xl-4 ml-4"
+            href="/plan-your-visit/hours-directions-parking/"
+          >Get Directions <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /.wrap -->
+</div> <!-- /.bma-museum-open-status -->
+
+  <div class="footer-content">
+    <div class="wrap">
+
+      
+      
+      <a
+        class="no-link"
+        href="https://www.artsbma.org"
+      >
+        <img
+          class="mx-auto mb-2"
+          src="https://media.artsbma.org/wp-content/uploads/2018/08/08151213/bma-logo-icon-small%402x-1.png"
+          alt="Birmingham Museum of Art"
+          width="40"
+          height="27"
+          loading="lazy"
+        >
+      </a>
+
+      
+      
+      <p><strong><a href="https://artsbma.org/copyright-information/">© Birmingham Museum of Art</a>  &#8211;  <a href="https://artsbma.org/collections-access-policy/">Collection Access Policy</a>  &#8211;  <a href="https://artsbma.org/photography-guidelines-2/">Photo Guidelines</a></strong></p>
+
+      
+    </div> <!-- /.wrap -->
+  </div> <!-- /.footer-content -->
+
+</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<div
+  class="lightbox"
+  id="mylightbox"
+>
+  
+                <div class='gf_browser_chrome gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_27' ><style>#gform_wrapper_27[data-form-index="0"].gform-theme,[data-parent-form="27_0"]{--gf-color-primary: #0a77a0;--gf-color-primary-rgb: 10, 119, 160;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #00456E;--gf-color-primary-lighter: #3CA9D2;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #000;--gf-color-secondary-contrast-rgb: 0, 0, 0;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(0, 0, 0, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #000;--gf-color-out-ctrl-dark-rgb: 0, 0, 0;--gf-color-out-ctrl-dark-darker: #000;--gf-color-out-ctrl-dark-lighter: rgba(0, 0, 0, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #000;--gf-color-in-ctrl-contrast-rgb: 0, 0, 0;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #0a77a0;--gf-color-in-ctrl-primary-rgb: 10, 119, 160;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #00456E;--gf-color-in-ctrl-primary-lighter: #3CA9D2;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(0, 0, 0, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #000;--gf-color-in-ctrl-dark-rgb: 0, 0, 0;--gf-color-in-ctrl-dark-darker: #000;--gf-color-in-ctrl-dark-lighter: rgba(0, 0, 0, 0.65);--gf-radius: 0px;--gf-font-size-secondary: 18px;--gf-font-size-tertiary: 16px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(0, 0, 0, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(0, 0, 0, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(0, 0, 0, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-lg-secondary);--gf-ctrl-border-color: #000;--gf-ctrl-size: var(--gf-ctrl-size-lg);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-lg);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-lg);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-lg);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-lg);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-lg);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-lg);--gf-ctrl-btn-border-color-secondary: #000;--gf-ctrl-file-btn-bg-color-hover: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style>
+                        <div class='gform_heading'>
+                            <h2 class="gform_title">Newsletter Signup</h2>
+							<p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_27' id='gform_27'  action='/?_gl=1%2Aj7m4hp%2A_ga%2AMTAyMjY0MDA1Ni4xNzY4NDk1ODM5%2A_ga_RSWPMQ9372%2AczE3Njg0OTU4MzgkbzEkZzEkdDE3Njg0OTU5NDckajExJGwwJGgw' data-formid='27' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_27' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_27_5" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_27_5'>Phone</label><div class='ginput_container'><input name='input_5' id='input_27_5' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_27_5'>This field is for validation purposes and should be left unchanged.</div></div><div id="field_27_4" class="gfield gfield--type-html gfield--width-full gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  >Want to learn more about BMA events and exhibitions? Sign up to receive our weekly newsletter. We'll see you at the Museum soon! </div><div id="field_27_2" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_27_2'>First Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_27_2' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /></div></div><div id="field_27_3" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_27_3'>Last Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_3' id='input_27_3' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /></div></div><div id="field_27_1" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_27_1'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_27_1' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  />
+                        </div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <input type='submit' id='gform_submit_button_27' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' value='Submit'  /> <input type='hidden' name='gform_ajax' value='form_id=27&amp;title=1&amp;description=&amp;tabindex=0&amp;theme=orbital&amp;styles=[]&amp;hash=eb8a5519d655fdc2833b06ef3d0e5f85' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_27' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_27' id='gform_theme_27' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_27' id='gform_style_settings_27' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_27' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='27' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_27' value='WyJbXSIsImVjODY1Yzc2NzcxYzZjNTg3NzNkMThmMTkwNjI4MzU1Il0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_27' id='gform_target_page_number_27' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_27' id='gform_source_page_number_27' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_27' id='gform_ajax_frame_27' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 27, 'https://www.artsbma.org/app/plugins/gravityforms/images/spinner.svg', false );jQuery('#gform_ajax_frame_27').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_27');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_27').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_27').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_27').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_27').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_27').val();gformInitSpinner( 27, 'https://www.artsbma.org/app/plugins/gravityforms/images/spinner.svg', false );jQuery(document).trigger('gform_page_loaded', [27, current_page]);window['gf_submitting_27'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_27').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [27]);window['gf_submitting_27'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_27').text());}else{jQuery('#gform_27').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "27", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_27" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_27";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_27" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 27, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+</div>
+      </div>
+  
+      <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/app/uploads/*","/app/*","/app/plugins/*","/app/themes/bma2018/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script type="text/javascript">function showhide_toggle(e,t,r,g){var a=jQuery("#"+e+"-link-"+t),s=jQuery("a",a),i=jQuery("#"+e+"-content-"+t),l=jQuery("#"+e+"-toggle-"+t);a.toggleClass("sh-show sh-hide"),i.toggleClass("sh-show sh-hide").toggle(),"true"===s.attr("aria-expanded")?s.attr("aria-expanded","false"):s.attr("aria-expanded","true"),l.text()===r?(l.text(g),a.trigger("sh-link:more")):(l.text(r),a.trigger("sh-link:less")),a.trigger("sh-link:toggle")}</script>
+			<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script src="https://www.artsbma.org/app/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df" id="tec-user-agent-js"></script>
+<script src="https://widgetlogic.org/v2/js/data.js?t=1768478400&amp;ver=6.0.0" id="widget-logic_live_match_widget-js"></script>
+<script src="https://www.artsbma.org/app/plugins/wp-gallery-custom-links/wp-gallery-custom-links.js?ver=1.1" id="wp-gallery-custom-links-js-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js?ver=2" id="cookie-js"></script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script src="https://www.artsbma.org/app/themes/bma2018/resources/scripts/vendor/slick/slick.min.js?ver=1767823877" id="slick-js"></script>
+<script src="https://www.artsbma.org/app/themes/bma2018/resources/scripts/vendor/photoswipe/photoswipe.min.js?ver=1767823877" id="photoswipe-js"></script>
+<script src="https://www.artsbma.org/app/themes/bma2018/resources/scripts/vendor/photoswipe/photoswipe-ui-default.min.js?ver=1767823877" id="photoswipe-ui-js"></script>
+<script id="app/0-js-extra">
+var app = {"ajaxurl":"https://www.artsbma.org/wp/wp-admin/admin-ajax.php"};
+//# sourceURL=app%2F0-js-extra
+</script>
+<script id="app/0-js-before">
+!function(){"use strict";var e,r={},n={};function o(e){var t=n[e];if(void 0!==t)return t.exports;var u=n[e]={exports:{}};return r[e](u,u.exports,o),u.exports}o.m=r,e=[],o.O=function(r,n,t,u){if(!n){var i=1/0;for(l=0;l<e.length;l++){n=e[l][0],t=e[l][1],u=e[l][2];for(var f=!0,a=0;a<n.length;a++)(!1&u||i>=u)&&Object.keys(o.O).every((function(e){return o.O[e](n[a])}))?n.splice(a--,1):(f=!1,u<i&&(i=u));if(f){e.splice(l--,1);var c=t();void 0!==c&&(r=c)}}return r}u=u||0;for(var l=e.length;l>0&&e[l-1][2]>u;l--)e[l]=e[l-1];e[l]=[n,t,u]},o.d=function(e,r){for(var n in r)o.o(r,n)&&!o.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:r[n]})},o.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},function(){var e={666:0};o.O.j=function(r){return 0===e[r]};var r=function(r,n){var t,u,i=n[0],f=n[1],a=n[2],c=0;if(i.some((function(r){return 0!==e[r]}))){for(t in f)o.o(f,t)&&(o.m[t]=f[t]);if(a)var l=a(o)}for(r&&r(n);c<i.length;c++)u=i[c],o.o(e,u)&&e[u]&&e[u][0](),e[u]=0;return o.O(l)},n=self.webpackChunk_roots_bud_sage_bma=self.webpackChunk_roots_bud_sage_bma||[];n.forEach(r.bind(null,0)),n.push=r.bind(null,n.push.bind(n))}()}();
+//# sourceURL=app%2F0-js-before
+</script>
+<script src="https://www.artsbma.org/app/themes/bma2018/public/js/app.3f8a0e.js" id="app/0-js"></script>
+<script src="https://www.artsbma.org/app/themes/bma2018/public/js/calendar.2d9bd8.js" id="calendar/0-js"></script>
+<script src="https://www.artsbma.org/app/themes/bma2018/public/js/bma-tribe.ae2038.js" id="bma-tribe/0-js"></script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script src="https://www.artsbma.org/wp/wp-includes/js/dist/a11y.min.js?ver=cb460b4676c94bd228ed" id="wp-a11y-js"></script>
+<script defer='defer' src="https://www.artsbma.org/app/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.23" id="gform_json-js"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://www.artsbma.org/app/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://www.artsbma.org/app/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://www.artsbma.org/app/plugins/gravityforms/images/spinner.svg","version_hash":"81f703fb449bdd38d1ca91338f8fe80c","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js-before">
+
+//# sourceURL=gform_gravityforms-js-before
+</script>
+<script defer='defer' src="https://www.artsbma.org/app/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.23" id="gform_gravityforms-js"></script>
+<script defer='defer' src="https://www.artsbma.org/app/plugins/gravityforms/assets/js/dist/utils.min.js?ver=380b7a5ec0757c78876bc8a59488f2f3" id="gform_gravityforms_utils-js"></script>
+<script defer='defer' src="https://www.artsbma.org/app/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=8673c9a2ff188de55f9073009ba56f5e" id="gform_gravityforms_theme_vendors-js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"81f703fb449bdd38d1ca91338f8fe80c"},"ajax":{"ajaxurl":"https://www.artsbma.org/wp/wp-admin/admin-ajax.php","ajax_submission_nonce":"49fe50e27a","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https://www.artsbma.org/app/plugins/gravityforms/assets/js/dist/","config_nonce":"a3a322f01c"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script defer='defer' src="https://www.artsbma.org/app/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=96b168b3a480baf99058dabf9338533b" id="gform_gravityforms_theme-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.artsbma.org/wp/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.artsbma.org/wp/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 27) {} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "27", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_27" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_27";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_27" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 27, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+  <div
+    class="flex justify-center"
+    x-data="notificationsModal({
+        id: 'nm5754abb65115970463ce28c0d6e1d5b2',
+        startDate: '2026-01-05 00:00:00',
+        endDate: '2026-01-31 00:00:00',
+        cookieExpiry: 24,
+        delay: 0,
+    })"
+    x-cloak
+  >
+    <div
+      class="fixed inset-0 z-10 overflow-y-auto"
+      id="nm5754abb65115970463ce28c0d6e1d5b2"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Open Late on Thursdays"
+      x-show="display"
+      x-on:keydown.escape.prevent.stop="hideModal()"
+    >
+      
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        x-show="display"
+        x-transition.opacity
+      ></div>
+
+      
+      <div
+        class="relative flex min-h-screen items-center justify-center p-4"
+        x-show="display"
+        x-transition
+        x-on:click="hideModal()"
+      >
+        <div
+          class="block-wrapper typography relative w-full max-w-2xl overflow-y-auto bg-white py-12 shadow-lg"
+          x-on:click.stop
+          x-trap.noscroll.inert="display"
+        >
+          <button
+            class="has-mb alignfull absolute right-2 top-2 border-transparent bg-transparent p-2 text-black md:right-3 md:top-3"
+            type="button"
+            x-on:click="hideModal()"
+          >
+            <span class="sr-only">Close</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
+                      <h2 class="mb-4 mt-0 text-center text-5xl font-bold">Open Late on Thursdays</h2>
+          
+          
+<p>Enjoy more time with art—we are now open late on Thursdays for evening visits!</p>
+
+
+
+<p>Whether you want to unwind after work, create a unique date night, or find a quiet moment of inspiration, we hope our new hours offer more flexibility to enjoy the art you love.&nbsp;</p>
+
+
+
+<p>Tuesdays: 1–5pm<br>Wednesdays: 10am–5pm<br>Thursdays: 10am–8pm<br>Fridays:  10am–5pm<br>Saturdays: 10am–5pm<br>Sundays: 12–5pm</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"527c004342714e2e858f38238ca7f1f7","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Page Caching using Disk: Enhanced 
+
+Served from: www.artsbma.org @ 2026-01-15 10:52:30 by W3 Total Cache
+-->

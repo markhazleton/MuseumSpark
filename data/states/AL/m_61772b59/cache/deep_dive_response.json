@@ -1,0 +1,138 @@
+{
+  "museum_id": "usa-al-unknown-jemison-carnegie-heritage-hall-museum-and-arts-center",
+  "provider": "openai",
+  "model": "gpt-4o",
+  "raw_response": {
+    "state_file_updates": {
+      "museum_id": "usa-al-unknown-jemison-carnegie-heritage-hall-museum-and-arts-center",
+      "museum_name": {
+        "value": "Jemison Carnegie Heritage Hall Museum and Arts Center",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "city": {
+        "value": "Talladega",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "street_address": null,
+      "postal_code": null,
+      "website": {
+        "value": "https://www.heritagehallmuseum.org",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "latitude": null,
+      "longitude": null,
+      "primary_domain": {
+        "value": "Art",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "museum_type": {
+        "value": "GENERAL MUSEUM",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "audience_focus": null,
+      "city_tier": {
+        "value": 3,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": {
+        "value": "Half day",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "impressionist_strength": null,
+      "modern_contemporary_strength": null,
+      "historical_context_score": null,
+      "notes": {
+        "value": "The Jemison Carnegie Heritage Hall Museum and Arts Center is a general museum that explores Talladega's rich history through photographs, artifacts, and oral history interviews. It aims to preserve the cultural heritage of the community and connect future generations with its unique sense of place.",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "confidence": 5,
+      "data_sources": [
+        "identity",
+        "state_record_subset"
+      ]
+    },
+    "recommendations": [],
+    "summary_short": "Explore Talladega's rich history through photographs, artifacts, and oral history at the Jemison Carnegie Heritage Hall Museum.",
+    "summary_long": "The Jemison Carnegie Heritage Hall Museum and Arts Center is a general museum located in Talladega, Alabama. It offers a deep dive into the local history, showcasing photographs, artifacts, and oral history interviews that capture the spirit of Talladega from its earliest days through periods of change and growth. The museum is dedicated to preserving the cultural heritage of the community and ensuring that future generations connect with the unique sense of place that defines Talladega. Through its exhibits, the museum provides insight into the events, people, and places that have shaped the community, making it a valuable resource for both locals and visitors interested in the region's history.",
+    "collection_highlights": [
+      {
+        "title": "Gee’s Bend Quilting Workshop",
+        "description": "Stitch History with the Ma...",
+        "source": "website_text_snippet"
+      },
+      {
+        "title": "Sense of Place Exhibit",
+        "description": "Explores Talladega’s rich history through photographs and artifacts.",
+        "source": "website_text_snippet"
+      }
+    ],
+    "signature_artists": [],
+    "visitor_tips": [
+      "Check the schedule of events on the museum's website for special exhibitions.",
+      "Plan to spend a half day to fully explore the exhibits and participate in any workshops.",
+      "Consider making a special appointment for a more personalized visit."
+    ],
+    "best_for": "History enthusiasts and those interested in local cultural heritage.",
+    "historical_significance": "The museum captures Talladega's spirit from its earliest days through periods of change and growth, preserving the cultural heritage of the community.",
+    "architectural_notes": null,
+    "curatorial_approach": "Focuses on preserving and showcasing the cultural heritage of Talladega through photographs, artifacts, and oral history interviews.",
+    "tour_planning_scores": {
+      "contemporary_score": null,
+      "modern_score": null,
+      "impressionist_score": null,
+      "expressionist_score": null,
+      "classical_score": null,
+      "american_art_score": 5,
+      "european_art_score": null,
+      "asian_art_score": null,
+      "african_art_score": null,
+      "painting_score": null,
+      "sculpture_score": null,
+      "decorative_arts_score": null,
+      "photography_score": 5,
+      "collection_depth": 4,
+      "collection_quality": 4,
+      "exhibition_frequency": 5,
+      "family_friendly_score": 6,
+      "educational_value_score": 7,
+      "architecture_score": 5,
+      "scoring_rationale": "The museum offers a moderate representation of American art and photography, with a strong focus on educational value through its historical exhibits and oral history interviews. The collection depth and quality are regional, providing insight into Talladega's cultural heritage."
+    },
+    "sources_consulted": [
+      "identity",
+      "state_record_subset",
+      "website_text_snippet"
+    ],
+    "thinking_budget_used": null,
+    "confidence": 5,
+    "model_used": "GPT-4",
+    "agent_version": "1.0",
+    "processed_at": "2023-10-01"
+  }
+}
