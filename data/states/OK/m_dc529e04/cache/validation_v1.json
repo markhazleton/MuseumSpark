@@ -35,7 +35,7 @@
     },
     "museum_type": {
       "value": "ART MUSEUM",
-      "source": "official_website/visit",
+      "source": "state_record_subset",
       "trust_level": 5,
       "confidence": 5,
       "retrieved_at": "2023-10-01T00:00:00"
@@ -44,16 +44,16 @@
     "city_tier": {
       "value": 2,
       "source": "state_record_subset",
-      "trust_level": 2,
+      "trust_level": 5,
       "confidence": 5,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "reputation": null,
     "collection_tier": null,
     "time_needed": {
-      "value": "Half day (2-4 hours)",
+      "value": "Half day",
       "source": "state_record_subset",
-      "trust_level": 2,
+      "trust_level": 5,
       "confidence": 5,
       "retrieved_at": "2023-10-01T00:00:00"
     },
@@ -63,11 +63,11 @@
     "notes": {
       "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "source": "state_record_subset",
-      "trust_level": 2,
+      "trust_level": 5,
       "confidence": 5,
       "retrieved_at": "2023-10-01T00:00:00"
     },
-    "confidence": null,
+    "confidence": 5,
     "data_sources": [
       "official_website/visit"
     ]
@@ -75,7 +75,7 @@
   "recommendations": [],
   "needs_deep_dive": false,
   "confidence": 5,
-  "model_used": "Validation Model v1.0",
+  "model_used": "ValidationAgent",
   "agent_version": "1.0",
   "processed_at": "2023-10-01T00:00:00",
   "data_sources": [

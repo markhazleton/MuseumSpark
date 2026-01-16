@@ -19,7 +19,7 @@
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "website": {
-      "value": "https://www.sheerarmuseum.org",
+      "value": "https://www.sheerarmuseum.org/",
       "source": "official_website/visit",
       "trust_level": 5,
       "confidence": 5,
@@ -36,32 +36,26 @@
       "value": 3,
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
-      "value": "Half day (2-4 hours)",
+      "value": "Half day",
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "notes": {
-      "value": "The Stillwater History Museum at the Sheerar is a history museum located in Stillwater, Oklahoma. It features exhibits that highlight the local history and culture, making it a valuable resource for both residents and visitors.",
+      "value": "The Stillwater History Museum at the Sheerar focuses on the history of Stillwater, Oklahoma, featuring various exhibits and artifacts that highlight the local heritage. It is a community-oriented museum that provides educational resources and programs for visitors.",
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
-    },
-    "confidence": 5,
-    "data_sources": [
-      "official_website/visit"
-    ]
+    }
   },
-  "applied_fields": [
-    "city"
-  ],
-  "processed_at": "2023-10-01T00:00:00",
+  "applied_fields": [],
+  "processed_at": "2023-10-01T12:00:00+00:00",
   "agent_version": "1.0",
-  "model_used": "museum_record_enrichment"
+  "model_used": "MuseumRecordEnrichmentModel"
 }

@@ -835,12 +835,13 @@ def _text_mentions_reservation_required(text: str) -> bool:
     )
 
 
-def _try_google_places_lookup(museum_name: str, city: str, *, detailed: bool = False) -> Optional[dict[str, Any]]:
+def _try_google_places_lookup(museum_name: str, city: str, state: str = None, *, detailed: bool = False) -> Optional[dict[str, Any]]:
     """Try to get data from Google Places API.
     
     Args:
         museum_name: Name of museum
         city: City name
+        state: State abbreviation (used when city is NULL)
         detailed: If True, fetch additional details (hours, phone, photos) via Place Details API
     
     Returns:
@@ -855,7 +856,7 @@ def _try_google_places_lookup(museum_name: str, city: str, *, detailed: bool = F
     
     try:
         # Check cache first (14-day TTL)
-        cache_key = f"google_places_{museum_name}_{city}_{detailed}"
+        cache_key = f"google_places_{museum_name}_{city}_{state}_{detailed}"
         cache_hash = hashlib.sha256(cache_key.encode("utf-8")).hexdigest()
         cache_path = CACHE_DIR / f"google_places_{cache_hash[:16]}.json"
         
@@ -869,7 +870,13 @@ def _try_google_places_lookup(museum_name: str, city: str, *, detailed: bool = F
                     pass
         
         gmaps = googlemaps.Client(key=api_key)
-        query = f"{museum_name} {city}" if city and city != "Unknown" else museum_name
+        # If city is NULL, use museum name + state instead
+        if city and city != "Unknown":
+            query = f"{museum_name} {city}"
+        elif state:
+            query = f"{museum_name} {state}"
+        else:
+            query = museum_name
         places_result = gmaps.places(query=query)
         
         if places_result.get("results"):
@@ -1679,7 +1686,8 @@ def _try_csv_lookup(museum: dict[str, Any]) -> Optional[dict[str, Any]]:
             if csv_m.get('Museum Name') == museum_name:
                 return csv_m
         
-        # Try fuzzy match (state + name only, 70% threshold)
+        # Try fuzzy match (state + name ONLY, 70% threshold)
+        # Do NOT consider city, address, or any other fields
         best_match = None
         best_ratio = 0.0
         for csv_m in csv_state_museums:
@@ -1852,8 +1860,8 @@ def patch_from_official_website(
     
     # Try Google Places API with detailed=True to get hours, phone, photos
     # Priority 0D: After CSV and Yelp, comprehensive field extraction
-    if HAS_GOOGLE_MAPS:
-        google_data = _try_google_places_lookup(museum_name, city, detailed=True)
+    if HAS_GOOGLE_MAPS and state_code:
+        google_data = _try_google_places_lookup(museum_name, city, state_code, detailed=True)
         if google_data:
             sources_used.append("google_places_api")
             

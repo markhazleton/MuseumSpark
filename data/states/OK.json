@@ -1,7 +1,7 @@
 {
   "state": "Oklahoma",
   "state_code": "OK",
-  "last_updated": "2026-01-16T21:27:23Z",
+  "last_updated": "2026-01-16T22:16:25Z",
   "museums": [
     {
       "museum_id": "usa-ok-unknown-108-contemporary",
@@ -11,16 +11,16 @@
       "museum_name": "108|Contemporary",
       "alternate_names": null,
       "website": "https://108contemporary.org/",
-      "status": null,
+      "status": "Active",
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "108 Reconciliation Way, Tulsa, OK 74103, United States",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "74103",
+      "latitude": 36.158743,
+      "longitude": -95.99199259999999,
+      "place_id": "ChIJgTdO74LrtocRvKMO7e47rQE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-16",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -48,14 +48,16 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "google_places_api"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Google Places: extracted street address; Google Places: extracted postal code; Google Places: extracted operating hours; Google Places: 4.4/5 rating with 39 reviews",
       "created_at": "2026-01-15",
       "updated_at": "2026-01-16",
-      "notes": null,
-      "city_tier": 3
+      "notes": "Phone: (918) 895-6302\nGoogle Rating: 4.4/5 (39 reviews)\n♿ Wheelchair accessible entrance available",
+      "city_tier": 3,
+      "open_hour_notes": "Monday: Closed\nTuesday: 12:00 – 5:00 PM\nWednesday: 12:00 – 5:00 PM\nThursday: 12:00 – 5:00 PM\nFriday: 12:00 – 5:00 PM\nSaturday: 12:00 – 5:00 PM\nSunday: Closed"
     },
     {
       "museum_id": "usa-ok-unknown-muskogee-war-memorial-park-home-of-the-uss-batfish",
@@ -107,10 +109,10 @@
         "http://warmemorialpark.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted meta description; Official site: Failed to parse HTML: name 'url' is not defined",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
-      "notes": null,
+      "updated_at": "2026-01-16T21:52:03.171029Z",
+      "notes": "Muskogee War Memorial Park - Home of the USS Batfish, Muskogee. 22,076 likes · 13 talking about this · 6,167 were here. The Champion \"Submarine-Killing\" Submarine of World War II",
       "city_tier": 3
     },
     {
@@ -159,12 +161,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "openstreetmap"
+        "openstreetmap",
+        "official_website/visit"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oklahoma City' from open data; MRD: computed city_tier=2 for Oklahoma City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:52:10.114423Z",
       "notes": null,
       "city_tier": 2
     },
@@ -215,12 +218,13 @@
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
-        "openstreetmap"
+        "openstreetmap",
+        "official_website/visit"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oklahoma' from open data; MRD: computed city_tier=2 for Oklahoma; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:52:18.468914Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "4052363100"
@@ -276,11 +280,12 @@
         "openstreetmap"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Oklahoma City' from JSON-LD; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Oklahoma City' from JSON-LD; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted meta description",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
-      "notes": null,
-      "city_tier": 3
+      "updated_at": "2026-01-16T21:52:26.316680Z",
+      "notes": "Through exhibitions, performances, art education and programs at our new, $30 million downtown campus, Oklahoma Contemporary creates opportunities to come together in celebration of contemporary culture and artistic expression. Exhibitions are always free. You are always welcome here.",
+      "city_tier": 3,
+      "open_hour_notes": "Open 11 a.m.-6 p.m. Wednesday-Monday. Closed Tuesdays and holidays."
     },
     {
       "museum_id": "usa-ok-unknown-stillwater-history-museum-at-the-sheerar",
@@ -333,10 +338,10 @@
         "openstreetmap"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: extracted city 'Stillwater'; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: extracted city 'Stillwater'; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted meta description",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
-      "notes": null,
+      "updated_at": "2026-01-16T21:52:35.031271Z",
+      "notes": "MAWAR500 adalah link situs toto slot gacor terbaru 2025 yang dikenal sebagai bandar toto togel resmi gampang menang dengan koleksi toto togel terlengkap di indonesia.\n\nPhone: 6281231231",
       "city_tier": 3
     },
     {
@@ -389,11 +394,12 @@
         "https://www.brokenarrowmuseum.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted hours information; Official site: Failed to parse HTML: name 'url' is not defined",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:52:40.155381Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "open_hour_notes": "MUSEUM HOURS Tuesday, Wednesday, Friday: 10 a.m. - 4 p.m. Thursday: 4 p.m. - 8 p.m."
     },
     {
       "museum_id": "usa-ok-unknown-the-museum-of-the-red-river",
@@ -445,11 +451,12 @@
         "https://www.museumoftheredriver.org"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted hours information; Official site: Failed to parse HTML: name 'url' is not defined",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:52:45.302058Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "open_hour_notes": "Open Regularly Scheduled Hours Tues-Sat 10am-5pm Sun 10am-3pm Map (click here)"
     },
     {
       "museum_id": "usa-ok-unknown-tulsa-air-and-space-museum-planetarium",
@@ -502,7 +509,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oklahoma' from open data; MRD: computed city_tier=2 for Oklahoma; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Science from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:52:53.202266Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2
     },
@@ -554,12 +561,14 @@
         "walker_reciprocal",
         "official_website",
         "http://www.walkerart.org/www.willrogers.com",
-        "museums_csv"
+        "museums_csv",
+        "official_website/visit",
+        "state_record_subset"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Wikidata: no search results; Nominatim: no results; City extraction: found 'Claremore' from open data; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:01.798300Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9183410719"
@@ -612,15 +621,17 @@
         "walker_reciprocal",
         "official_website",
         "http://www.woolaroc.org",
-        "museums_csv"
+        "museums_csv",
+        "official_website/visit"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Bartlesville' from JSON-LD; Inferred primary_domain=Science from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Bartlesville' from JSON-LD; Inferred primary_domain=Science from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8404000005; Official site: fetched homepage; Official site: cached HTML for LLM enrichment",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:10.152214Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ZOO, AQUARIUM, OR WILDLIFE CONSERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9183360307"
+      "phone": "9183360307",
+      "open_hour_notes": "Summer Hours: Tue-Sun, 10am-5pm"
     },
     {
       "museum_id": "usa-ok-bartlesville-price-tower-arts-center",
@@ -673,7 +684,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Bartlesville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:17.953545Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "9183364949"
@@ -726,12 +737,14 @@
         "walker_reciprocal",
         "official_website",
         "http://www.onthechisholmtrail.com",
-        "museums_csv"
+        "museums_csv",
+        "official_website/visit",
+        "state_record_subset"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Duncan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:26.214953Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5802526692"
@@ -787,12 +800,13 @@
         "museums_csv"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Grove; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Grove; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8404000071; Official site: fetched homepage; Official site: cached HTML for LLM enrichment",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:32.552185Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9187866446"
+      "phone": "9187866446",
+      "open_hour_notes": "Nature Trails OPEN Year Round Har-Ber Village Museum is closed for 2025! Nature Trails OPEN Year Round Village Re-opens for tours Saturday March 7, 2026"
     },
     {
       "museum_id": "usa-ok-norman-fred-jones-jr-museum-of-art",
@@ -846,12 +860,13 @@
         "museums_csv"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Norman; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Norman; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8409503228; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:41.351251Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "4053253272"
+      "phone": "4053253272",
+      "open_hour_notes": "Hours: Tuesday through Saturday: 10 a.m. to 5 p.m."
     },
     {
       "museum_id": "usa-ok-shawnee-mabee-gerrer-museum-of-art",
@@ -900,12 +915,13 @@
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
-        "museums_csv"
+        "museums_csv",
+        "official_website/visit"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Shawnee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:49.876188Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4058785300"
@@ -957,12 +973,13 @@
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
-        "museums_csv"
+        "museums_csv",
+        "official_website/visit"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tulsa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:53:58.053004Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2
     },
@@ -1015,15 +1032,17 @@
         "openstreetmap",
         "official_website",
         "http://www.philbrook.org",
-        "museums_csv"
+        "museums_csv",
+        "official_website/visit"
       ],
       "confidence": null,
-      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tulsa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
+      "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tulsa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8404000562; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-16",
+      "updated_at": "2026-01-16T21:54:06.589891Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9187485318"
+      "phone": "9187485318",
+      "open_hour_notes": "Today we are Closed Museum & Gardens Monday Closed Tuesday Closed Wednesday Closed Thursday Closed Friday Closed Saturday Closed Sunday Closed Closed for Winter Break until January 21, 2026."
     }
   ]
 }

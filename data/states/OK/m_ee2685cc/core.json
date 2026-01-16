@@ -1,7 +1,7 @@
 {
   "museum_id": "usa-ok-unknown-muskogee-war-memorial-park-home-of-the-uss-batfish",
   "folder_hash": "m_ee2685cc",
-  "slug_alias": "muskogee-muskogee-war-memorial-park-home-of-the-uss-batfish--atfish",
+  "slug_alias": "unknown-muskogee-war-memorial-park-home-of-the-uss-batfish--atfish",
   "state_file_updates": {
     "museum_id": "usa-ok-unknown-muskogee-war-memorial-park-home-of-the-uss-batfish",
     "museum_name": {
@@ -12,7 +12,7 @@
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "city": {
-      "value": "Muskogee",
+      "value": "Unknown",
       "source": "official_website/visit",
       "trust_level": 5,
       "confidence": 5,
@@ -25,47 +25,30 @@
       "confidence": 5,
       "retrieved_at": "2023-10-01T00:00:00"
     },
-    "museum_type": {
-      "value": "War Memorial",
-      "source": "state_record_subset",
-      "trust_level": 2,
-      "confidence": 5,
-      "retrieved_at": "2023-10-01T00:00:00"
-    },
-    "audience_focus": {
-      "value": "General",
-      "source": "state_record_subset",
-      "trust_level": 2,
-      "confidence": 5,
-      "retrieved_at": "2023-10-01T00:00:00"
-    },
     "city_tier": {
       "value": 3,
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
       "value": "Half day",
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "notes": {
-      "value": "Muskogee War Memorial Park is dedicated to honoring veterans and features the USS Batfish submarine. It serves as a historical site with educational opportunities for visitors.",
+      "value": "Muskogee War Memorial Park - Home of the USS Batfish, Muskogee. 22,076 likes · 13 talking about this · 6,167 were here. The Champion \"Submarine-Killing\" Submarine of World War II",
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
-    },
-    "data_sources": [
-      "official_website/visit"
-    ]
+    }
   },
   "applied_fields": [],
   "processed_at": "2023-10-01T00:00:00",
   "agent_version": "1.0",
-  "model_used": "Validation Model v1.0"
+  "model_used": "museum_record_enrichment"
 }

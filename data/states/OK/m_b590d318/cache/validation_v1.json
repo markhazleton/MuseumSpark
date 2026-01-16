@@ -33,16 +33,16 @@
       "value": 3,
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 4,
+      "confidence": 5,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "reputation": null,
     "collection_tier": null,
     "time_needed": {
-      "value": "Half day (2-4 hours)",
+      "value": "Half day",
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 4,
+      "confidence": 5,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "impressionist_strength": null,
@@ -54,12 +54,11 @@
   },
   "recommendations": [],
   "needs_deep_dive": false,
-  "confidence": 4,
-  "model_used": "museum_record_enrichment_model_v1",
-  "agent_version": "1.0.0",
+  "confidence": 5,
+  "model_used": "Validation Model v1.0",
+  "agent_version": "1.0",
   "processed_at": "2023-10-01T00:00:00",
   "data_sources": [
-    "official_website/visit",
-    "state_record_subset"
+    "official_website/visit"
   ]
 }

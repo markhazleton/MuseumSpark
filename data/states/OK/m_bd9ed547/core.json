@@ -36,22 +36,28 @@
       "value": 3,
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
     },
     "time_needed": {
       "value": "Half day",
       "source": "state_record_subset",
       "trust_level": 2,
-      "confidence": 5,
+      "confidence": 4,
       "retrieved_at": "2023-10-01T00:00:00"
     },
-    "data_sources": [
-      "official_website/visit"
-    ]
+    "notes": {
+      "value": "Through exhibitions, performances, art education and programs at our new, $30 million downtown campus, Oklahoma Contemporary creates opportunities to come together in celebration of contemporary culture and artistic expression. Exhibitions are always free. You are always welcome here.",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2023-10-01T00:00:00"
+    }
   },
-  "applied_fields": [],
+  "applied_fields": [
+    "notes"
+  ],
   "processed_at": "2023-10-01T00:00:00",
   "agent_version": "1.0",
-  "model_used": "ValidationModelV1"
+  "model_used": "Museum Record Enrichment Model"
 }

@@ -1,0 +1,237 @@
+================================================================================
+OKLAHOMA BASELINE ANALYSIS
+================================================================================
+State: Oklahoma
+State Code: OK
+Last Updated: 2026-01-16T21:47:39Z
+Total Museums: 18
+
+================================================================================
+FIELD COVERAGE (non-null, non-empty values)
+================================================================================
+street_address             7/18 ( 38.9%)
+postal_code               12/18 ( 66.7%)
+city                      14/18 ( 77.8%)
+latitude                  14/18 ( 77.8%)
+longitude                 14/18 ( 77.8%)
+phone                      9/18 ( 50.0%)
+museum_type               11/18 ( 61.1%)
+status                     0/18 (  0.0%)
+primary_domain            12/18 ( 66.7%)
+open_hours_url             8/18 ( 44.4%)
+tickets_url                6/18 ( 33.3%)
+notes                     14/18 ( 77.8%)
+
+================================================================================
+DATA SOURCES
+================================================================================
+walker_reciprocal                   18 museums
+official_website                    11 museums
+museums_csv                         11 museums
+openstreetmap                        8 museums
+http://warmemorialpark.org           1 museums
+https://oklahomacontemporary.org     1 museums
+https://www.sheerarmuseum.org        1 museums
+https://www.brokenarrowmuseum.org    1 museums
+https://www.museumoftheredriver.org  1 museums
+http://www.walkerart.org/www.willrogers.com  1 museums
+http://www.woolaroc.org              1 museums
+http://www.onthechisholmtrail.com    1 museums
+http://www.har-bervillage.com        1 museums
+http://www.ou.edu/fjjma              1 museums
+http://www.philbrook.org             1 museums
+
+================================================================================
+CRITICAL DATA COMPLETENESS
+================================================================================
+Complete (address + postal + coords):  7/18 ( 38.9%)
+Partial (some data):                    7/18 ( 38.9%)
+Minimal (no critical data):             4/18 ( 22.2%)
+
+================================================================================
+MUSEUM-BY-MUSEUM SUMMARY
+================================================================================
+
+ 1. 108|Contemporary
+    ID: usa-ok-unknown-108-contemporary
+    City: NULL
+    Address: NULL
+    Postal: NULL
+    Coords: NULL (None, None)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal
+
+ 2. Muskogee War Memorial Park: Home of the USS Batfish
+    ID: usa-ok-unknown-muskogee-war-memorial-park-home-of-the-uss-batfish
+    City: NULL
+    Address: NULL
+    Postal: NULL
+    Coords: NULL (None, None)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal, official_website, http://warmemorialpark.org
+
+ 3. National Cowboy & Western Heritage Museum
+    ID: usa-ok-unknown-national-cowboy-western-heritage-museum
+    City: Oklahoma City
+    Address: NULL
+    Postal: 73111
+    Coords: YES (35.5354136, -97.4838046)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal, openstreetmap
+
+ 4. Oklahoma City Museum of Art
+    ID: usa-ok-unknown-oklahoma-city-museum-of-art
+    City: Oklahoma
+    Address: NULL
+    Postal: 73102
+    Coords: YES (35.46952, -97.52049)
+    Phone: 4052363100
+    Type: ART MUSEUM
+    Sources: walker_reciprocal, museums_csv, openstreetmap
+
+ 5. Oklahoma Contemporary Arts Center
+    ID: usa-ok-unknown-oklahoma-contemporary-arts-center
+    City: Oklahoma City
+    Address: 3000 General Pershing Blvd.
+    Postal: 73107
+    Coords: YES (35.4805265, -97.513172)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal, official_website, https://oklahomacontemporary.org
+
+ 6. Stillwater History Museum at the Sheerar
+    ID: usa-ok-unknown-stillwater-history-museum-at-the-sheerar
+    City: Stillwater
+    Address: NULL
+    Postal: 74074
+    Coords: YES (36.1143653, -97.0617162)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal, official_website, https://www.sheerarmuseum.org
+
+ 7. The Museum Broken Arrow
+    ID: usa-ok-unknown-the-museum-broken-arrow
+    City: NULL
+    Address: NULL
+    Postal: NULL
+    Coords: NULL (None, None)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal, official_website, https://www.brokenarrowmuseum.org
+
+ 8. The Museum of the Red River
+    ID: usa-ok-unknown-the-museum-of-the-red-river
+    City: NULL
+    Address: NULL
+    Postal: NULL
+    Coords: NULL (None, None)
+    Phone: NULL
+    Type: NULL
+    Sources: walker_reciprocal, official_website, https://www.museumoftheredriver.org
+
+ 9. Tulsa Air and Space Museum & Planetarium
+    ID: usa-ok-unknown-tulsa-air-and-space-museum-planetarium
+    City: Oklahoma
+    Address: 3624 NORTH 74TH EAST AVENUE
+    Postal: 74115
+    Coords: YES (36.18636, -95.9044)
+    Phone: NULL
+    Type: SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM
+    Sources: walker_reciprocal, museums_csv
+
+10. Will Rogers Memorial Museums
+    ID: usa-ok-unknown-will-rogers-memorial-museums
+    City: Claremore
+    Address: NULL
+    Postal: NULL
+    Coords: YES (36.31725, -95.61025)
+    Phone: 9183410719
+    Type: GENERAL MUSEUM
+    Sources: walker_reciprocal, official_website, http://www.walkerart.org/www.willrogers.com
+
+11. Woolaroc Museum and Wildlife Preserve
+    ID: usa-ok-unknown-woolaroc-museum-and-wildlife-preserve
+    City: Bartlesville
+    Address: 1925 Woolaroc Ranch Rd
+    Postal: 74003
+    Coords: YES (36.7517, -96.03306)
+    Phone: 9183360307
+    Type: ZOO, AQUARIUM, OR WILDLIFE CONSERVATION
+    Sources: walker_reciprocal, official_website, http://www.woolaroc.org
+
+12. Price Tower Arts Center
+    ID: usa-ok-bartlesville-price-tower-arts-center
+    City: Bartlesville
+    Address: 510 S DEWEY AVE
+    Postal: 74005
+    Coords: YES (36.74764, -95.97667)
+    Phone: 9183364949
+    Type: ART MUSEUM
+    Sources: walker_reciprocal, museums_csv
+
+13. Chisholm Trail Heritage Center
+    ID: usa-ok-duncan-chisholm-trail-heritage-center
+    City: Duncan
+    Address: NULL
+    Postal: NULL
+    Coords: YES (34.51712, -97.97984)
+    Phone: 5802526692
+    Type: HISTORIC PRESERVATION
+    Sources: walker_reciprocal, official_website, http://www.onthechisholmtrail.com
+
+14. Har-Ber Village Museum
+    ID: usa-ok-grove-har-ber-village-museum
+    City: Grove
+    Address: 4404 West 20th Street
+    Postal: 74344
+    Coords: YES (36.577667, -94.8267053)
+    Phone: 9187866446
+    Type: GENERAL MUSEUM
+    Sources: walker_reciprocal, official_website, http://www.har-bervillage.com
+
+15. Fred Jones Jr. Museum of Art
+    ID: usa-ok-norman-fred-jones-jr-museum-of-art
+    City: Norman
+    Address: 20 and look forward to welcoming everyone back in 2026. Fred Jones Jr Museum of Art 555 Elm Avenue
+    Postal: 73019
+    Coords: YES (35.2107272, -97.447323)
+    Phone: 4053253272
+    Type: ART MUSEUM
+    Sources: walker_reciprocal, openstreetmap, official_website
+
+16. Mabee-Gerrer Museum of Art
+    ID: usa-ok-shawnee-mabee-gerrer-museum-of-art
+    City: Shawnee
+    Address: NULL
+    Postal: 74804
+    Coords: YES (35.3661108, -96.9550809)
+    Phone: 4058785300
+    Type: ART MUSEUM
+    Sources: walker_reciprocal, openstreetmap, museums_csv
+
+17. Gilcrease Museum
+    ID: usa-ok-tulsa-gilcrease-museum
+    City: Tulsa
+    Address: NULL
+    Postal: 74127
+    Coords: YES (36.1746946, -96.0212756)
+    Phone: NULL
+    Type: GENERAL MUSEUM
+    Sources: walker_reciprocal, openstreetmap, museums_csv
+
+18. Philbrook Museum of Art
+    ID: usa-ok-tulsa-philbrook-museum-of-art
+    City: Tulsa
+    Address: 2727 S Rockford
+    Postal: 74114
+    Coords: YES (36.123781, -95.9701736)
+    Phone: 9187485318
+    Type: ART MUSEUM
+    Sources: walker_reciprocal, openstreetmap, official_website
+
+================================================================================
+END OF BASELINE ANALYSIS
+================================================================================
