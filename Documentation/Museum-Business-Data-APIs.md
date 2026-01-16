@@ -1,7 +1,9 @@
 # Python Libraries & APIs for Museum/Business Location Data
 
 ## The Problem
+
 Looking at 108|Contemporary in OK.json, we have **28 null fields** out of ~60 total fields. Why?
+
 ```
 "row_notes_internal": "Official site: blocked by robots.txt"
 ```
@@ -15,15 +17,19 @@ Looking at 108|Contemporary in OK.json, we have **28 null fields** out of ~60 to
 ### 🌟 Tier 1: Free/Open APIs (No API Key Needed)
 
 #### 1. **Wikidata** (We're using but could enhance)
+
 ```bash
 # Already available via HTTP API
 ```
+
 **What it provides**:
+
 - Coordinates, founding date, notable collections
 - Wikipedia link (for more extraction)
 - VERY sparse for small museums
 
 **Python Library**: `requests` + SPARQL queries
+
 ```python
 import requests
 endpoint = "https://query.wikidata.org/sparql"
@@ -41,15 +47,19 @@ WHERE {
 ```
 
 #### 2. **OpenStreetMap Overpass API**
+
 ```bash
 pip install overpy  # Overpass API wrapper
 ```
+
 **What it provides**:
+
 - Coordinates, address, hours, phone
 - User-contributed data (quality varies)
 - **FREE** and no API key
 
 **Example**:
+
 ```python
 import overpy
 api = overpy.Overpass()
@@ -65,17 +75,21 @@ for node in result.nodes:
 ```
 
 #### 3. **IMLS (Institute of Museum and Library Services)**
+
 ```bash
 # US Government museum database
 pip install requests
 ```
+
 **What it provides**:
+
 - Official museum registry data
 - Income, attendance figures
 - Educational programs
 - **FREE** government data
 
-**API**: https://data.imls.gov/
+**API**: <https://data.imls.gov/>
+
 ```python
 import requests
 response = requests.get(
@@ -89,10 +103,13 @@ response = requests.get(
 ### 💰 Tier 2: Commercial APIs (Require API Key, Often Have Free Tier)
 
 #### 4. **Yelp Fusion API** ⭐ HIGHLY RECOMMENDED
+
 ```bash
 pip install yelpapi
 ```
+
 **What it provides**:
+
 - ⭐ Hours of operation
 - ⭐ Phone number, address
 - ⭐ Photos (50+)
@@ -101,6 +118,7 @@ pip install yelpapi
 - **FREE**: 5,000 API calls/day
 
 **Example**:
+
 ```python
 from yelpapi import YelpAPI
 yelp = YelpAPI(api_key='YOUR_KEY')
@@ -118,16 +136,20 @@ print(f"Phone: {business['phone']}")
 **Pricing**: FREE tier (5K calls/day), then $0.30 per 1000 calls
 
 #### 5. **Foursquare Places API**
+
 ```bash
 pip install foursquare
 ```
+
 **What it provides**:
+
 - Location details, hours
 - Photos, tips from visitors
 - Categories/tags
 - **FREE**: 100K calls/month
 
 **Example**:
+
 ```python
 import foursquare
 client = foursquare.Foursquare(client_id='YOUR_ID', client_secret='YOUR_SECRET')
@@ -141,10 +163,13 @@ venues = client.venues.search(params={
 **Pricing**: FREE (100K calls/month), Premium $100/month
 
 #### 6. **Google Places API** (We're already using!)
+
 ```bash
 pip install googlemaps  # ✅ Already installed
 ```
+
 **What it provides**:
+
 - ⭐ Most reliable address data
 - ⭐ Hours of operation
 - ⭐ Phone, website
@@ -153,6 +178,7 @@ pip install googlemaps  # ✅ Already installed
 - **FREE**: $200 credit/month (~28K requests)
 
 **We should expand our usage**:
+
 ```python
 import googlemaps
 gmaps = googlemaps.Client(key='YOUR_KEY')
@@ -169,20 +195,26 @@ details = gmaps.place(place_id, fields=[
 **Pricing**: $200 free/month, then ~$17 per 1000 requests
 
 #### 7. **TripAdvisor Content API**
+
 ```bash
 pip install requests
 ```
+
 **What it provides**:
+
 - Reviews, ratings
 - Photos
 - Hours, contact info
 - **Cost**: Requires partnership/paid plan
 
 #### 8. **Facebook Graph API**
+
 ```bash
 pip install facebook-sdk
 ```
+
 **What it provides**:
+
 - Business hours
 - Events
 - Photos
@@ -196,10 +228,13 @@ pip install facebook-sdk
 ### 📊 Tier 3: Web Scraping Alternatives (When robots.txt blocks us)
 
 #### 9. **SerpApi** (Google Search Results API)
+
 ```bash
 pip install google-search-results
 ```
+
 **What it provides**:
+
 - Extracts data from Google Search Knowledge Panel
 - Bypasses individual site robots.txt
 - Gets hours, ratings, photos from Google's aggregation
@@ -218,10 +253,13 @@ knowledge_graph = results.get('knowledge_graph', {})
 ```
 
 #### 10. **ScrapingBee / Bright Data**
+
 ```bash
 pip install scrapingbee
 ```
+
 **What it provides**:
+
 - Bypasses robots.txt and anti-bot protection
 - JavaScript rendering
 - Rotating IP addresses
@@ -232,27 +270,32 @@ pip install scrapingbee
 ## 🎯 Recommended Implementation Strategy
 
 ### Phase 1: Add Free APIs (No Cost)
+
 1. **OpenStreetMap Overpass** - Install `overpy`
    - Check OSM for each museum
    - Fallback after Google Places fails
-   
+
 2. **IMLS Database** - Simple HTTP requests
    - One-time bulk download
    - Match by name/location
-   
+
 3. **Enhanced Wikidata** - Already have infrastructure
    - More comprehensive SPARQL queries
    - Extract hours from Wikipedia pages
 
 ### Phase 2: Add One Commercial API (Budget-Friendly)
+
 **Choose YELP Fusion API** (Best value)
+
 - ✅ 5,000 FREE calls/day (enough for all museums)
 - ✅ Excellent coverage for museums/attractions
 - ✅ Hours, phone, photos, ratings included
 - ✅ Simple Python library (`yelpapi`)
 
 ### Phase 3: Expand Google Places Usage
+
 We already have the key - let's use it more:
+
 - Get **opening_hours** data
 - Get **formatted_phone_number**
 - Get **photos** array
@@ -265,6 +308,7 @@ We already have the key - let's use it more:
 **The Problem**: `"Official site: blocked by robots.txt"`
 
 **Multi-Source Approach**:
+
 ```python
 # Try in order:
 1. Google Places API → Get hours, phone, address ✅
@@ -283,6 +327,7 @@ We already have the key - let's use it more:
 **After adding Yelp + expanding Google Places**: ~10 null fields (17% empty)
 
 **Fields we could fill**:
+
 - ✅ street_address (from Google/Yelp)
 - ✅ postal_code (from Google/Yelp)
 - ✅ latitude/longitude (from Google/Yelp/OSM)
@@ -298,14 +343,16 @@ We already have the key - let's use it more:
 ## 🚀 Quick Win: Immediate Next Steps
 
 1. **Sign up for Yelp Fusion API** (5 min, FREE)
-   - https://www.yelp.com/developers/v3/manage_app
-   
+   - <https://www.yelp.com/developers/v3/manage_app>
+
 2. **Install yelpapi**:
+
    ```bash
    pip install yelpapi
    ```
 
 3. **Add to enrich-open-data.py**:
+
    ```python
    # Priority 0: Yelp Fusion API (best for business data)
    if HAS_YELP:
@@ -315,11 +362,13 @@ We already have the key - let's use it more:
    ```
 
 4. **Expand Google Places to get hours**:
+
    ```python
    details = gmaps.place(place_id, fields=['opening_hours'])
    ```
 
 Would you like me to:
+
 1. **Implement Yelp API integration** (free, high value)?
 2. **Add OpenStreetMap Overpass queries** (free, good fallback)?
 3. **Expand Google Places to extract hours/photos**?

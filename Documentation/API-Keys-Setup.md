@@ -28,15 +28,16 @@ YELP_API_KEY=...
 **Best for**: Business hours, phone numbers, addresses, photos, reviews, ratings
 
 ### Why Yelp?
+
 - Most museums are listed on Yelp with complete information
 - Excellent for filling address/hours/phone when robots.txt blocks web scraping
 - Free tier is generous (5,000 calls/day = ~150K museums/month)
 - No credit card required for signup
 
-### How to Get API Key:
+### How to Get API Key
 
-1. **Create Yelp Account**: Go to https://www.yelp.com/signup
-2. **Register App**: Visit https://www.yelp.com/developers/v3/manage_app
+1. **Create Yelp Account**: Go to <https://www.yelp.com/signup>
+2. **Register App**: Visit <https://www.yelp.com/developers/v3/manage_app>
 3. **Create New App**:
    - App Name: `MuseumSpark`
    - Industry: `Education/Museums`
@@ -44,6 +45,7 @@ YELP_API_KEY=...
    - Website: Your GitHub repo URL
 4. **Get API Key**: Copy the API key from the app details page
 5. **Set Environment Variable**:
+
    ```powershell
    # Windows PowerShell
    $env:YELP_API_KEY = "YOUR_KEY_HERE"
@@ -53,6 +55,7 @@ YELP_API_KEY=...
    ```
 
 ### What Data Does Yelp Provide?
+
 - ✅ Street address, city, ZIP code
 - ✅ Latitude/longitude coordinates  
 - ✅ Phone number (formatted)
@@ -61,7 +64,8 @@ YELP_API_KEY=...
 - ✅ Ratings & review count
 - ✅ Price level (if applicable)
 
-### Example Response:
+### Example Response
+
 ```json
 {
   "street_address": "108 E Reconciliation Way",
@@ -83,9 +87,9 @@ YELP_API_KEY=...
 **Cost**: **$200 FREE credit/month** (~28K requests)  
 **Best for**: Address validation, coordinates, place IDs, photos
 
-### How to Get API Key:
+### How to Get API Key
 
-1. **Create Google Cloud Account**: https://console.cloud.google.com
+1. **Create Google Cloud Account**: <https://console.cloud.google.com>
 2. **Enable APIs**:
    - Go to APIs & Services > Library
    - Enable "Places API"
@@ -95,11 +99,13 @@ YELP_API_KEY=...
    - Create API Key
    - Restrict key to Places API + Geocoding API
 4. **Set Environment Variable**:
+
    ```powershell
    $env:GOOGLE_MAPS_API_KEY = "YOUR_KEY_HERE"
    ```
 
 ### What Data Does Google Provide?
+
 - ✅ Formatted address
 - ✅ Precise latitude/longitude
 - ✅ Place ID (unique identifier)
@@ -116,12 +122,13 @@ YELP_API_KEY=...
 **Cost**: Pay-per-use ($0.15 per 1M input tokens for GPT-4o-mini)  
 **Best for**: Museum summaries, extracting complex data from text
 
-### How to Get API Key:
+### How to Get API Key
 
-1. **Create OpenAI Account**: https://platform.openai.com/signup
+1. **Create OpenAI Account**: <https://platform.openai.com/signup>
 2. **Add Payment Method**: Required even for small usage
-3. **Create API Key**: https://platform.openai.com/api-keys
+3. **Create API Key**: <https://platform.openai.com/api-keys>
 4. **Set Environment Variable**:
+
    ```powershell
    $env:OPENAI_API_KEY = "sk-..."
    ```
@@ -133,12 +140,13 @@ YELP_API_KEY=...
 **Cost**: Pay-per-use ($0.25 per 1M input tokens for Claude Haiku)  
 **Best for**: Structured data extraction, museum descriptions
 
-### How to Get API Key:
+### How to Get API Key
 
-1. **Create Anthropic Account**: https://console.anthropic.com
+1. **Create Anthropic Account**: <https://console.anthropic.com>
 2. **Add Credits**: $5 minimum
-3. **Create API Key**: https://console.anthropic.com/settings/keys
+3. **Create API Key**: <https://console.anthropic.com/settings/keys>
 4. **Set Environment Variable**:
+
    ```powershell
    $env:ANTHROPIC_API_KEY = "sk-ant-..."
    ```
@@ -148,6 +156,7 @@ YELP_API_KEY=...
 ## 🎯 Recommended Setup for Cost-Efficiency
 
 ### Phase 1: Free APIs Only
+
 ```
 ✅ YELP_API_KEY (free 5K/day)
 ✅ GOOGLE_MAPS_API_KEY (free $200/month)
@@ -158,6 +167,7 @@ YELP_API_KEY=...
 **Result**: ~90% of museums will get complete data from Yelp + Google alone!
 
 ### Phase 2: Add LLM for Remaining Museums
+
 After running Yelp+Google enrichment, check how many museums still have null fields.  
 Only then add OpenAI/Anthropic for the remaining edge cases.
 
@@ -187,7 +197,8 @@ python scripts/enrich-open-data.py --state OK --limit 1 --verbose
 | **OpenAI** | None | 3,500 RPM | $0.15 per 1M tokens |
 | **Anthropic** | None | 50 req/min | $0.25 per 1M tokens |
 
-### Tips:
+### Tips
+
 - ✅ Always use **Yelp FIRST** (most complete, 100% free)
 - ✅ Use **Google Places** as backup (also mostly free)
 - ⚠️ Only use **LLMs** for museums that Yelp+Google couldn't find
@@ -199,19 +210,23 @@ python scripts/enrich-open-data.py --state OK --limit 1 --verbose
 ## Troubleshooting
 
 ### "HTTP 401 Unauthorized"
+
 - Check API key is set correctly: `echo $env:YELP_API_KEY`
 - Verify key hasn't expired in your developer console
 
 ### "Quota exceeded"
+
 - Yelp: Wait until next day (resets at midnight PST)
 - Google: Check usage in Cloud Console, may need to increase quota
 
 ### "Module not found: yelpapi"
+
 ```powershell
 .venv\Scripts\pip install yelpapi
 ```
 
 ### "No businesses found"
+
 - Museum may not be on Yelp (try Google Places as fallback)
 - Try searching with different name variations
 - Check if museum is actually open (Yelp removes closed businesses)
