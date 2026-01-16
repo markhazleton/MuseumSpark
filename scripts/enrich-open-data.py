@@ -40,14 +40,17 @@ Notes:
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any, Optional
 
@@ -98,11 +101,16 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STATES_DIR = PROJECT_ROOT / "data" / "states"
 CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "open-data"
 HTTP_CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "http"
+MUSEUMS_CSV_PATH = PROJECT_ROOT / "data" / "museums.csv"
 
 USER_AGENT = "MuseumSpark/0.1 (https://github.com/MarkHazleton/MuseumSpark)"
 
 # Values treated as placeholders for "fill-if-missing" logic
-# NOTE: These will be normalized to null in output - we either KNOW a value or it's null
+# NOTE: These will be no
+    "", "tbd", "unknown", "n/a", "na", "not known", "not available", 
+    "not provided", "not applicable", "none", "null", "pending", 
+    "coming soon", "--", "---", "tba", "to be announced", "to be determined"
+- we either KNOW a value or it's null
 _PLACEHOLDER_STRINGS = {"", "tbd", "unknown", "n/a"}
 
 # MRD city_tier classification (Tier 1: Major hubs)
