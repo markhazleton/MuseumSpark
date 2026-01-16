@@ -5,6 +5,7 @@
 ## Problem Discovered
 
 During LLM enrichment testing on Oklahoma (18 museums), we discovered a **critical data loss bug**:
+
 - Running `enrich-llm.py` **cleared enriched data** from `enrich-open-data.py`
 - Example: 108|Contemporary lost `street_address`, `postal_code`, `latitude`, `longitude`
 - Root cause: LLM couldn't extract these fields (robots.txt blocking) and returned `null`, which overwrote existing values
@@ -12,6 +13,7 @@ During LLM enrichment testing on Oklahoma (18 museums), we discovered a **critic
 ## Solution Implemented
 
 ### Core Rule
+
 **NEVER replace a known value (non-null, non-placeholder) with null**
 
 ### Modified Files
@@ -33,6 +35,7 @@ During LLM enrichment testing on Oklahoma (18 museums), we discovered a **critic
 **File:** `scripts/test_data_quality_rule.py`
 
 **Tests:**
+
 1. ✅ Known values preserved when patch has null
 2. ✅ Null values replaced with known values
 3. ✅ Placeholder values replaceable with null  
@@ -45,6 +48,7 @@ During LLM enrichment testing on Oklahoma (18 museums), we discovered a **critic
 ### Documentation Created
 
 **File:** `Documentation/DataQualityRule-NeverReplaceKnownWithNull.md`
+
 - Detailed problem statement
 - Implementation details with code examples
 - Before/after comparison
@@ -54,37 +58,46 @@ During LLM enrichment testing on Oklahoma (18 museums), we discovered a **critic
 ## Validation
 
 ### Dry-Run Test (Oklahoma)
+
 ```bash
 python scripts\enrich-open-data.py --state OK --dry-run
 ```
+
 Result: `[OK] Changed: 0` (as expected, data already correct)
 
 ### Unit Test Suite
+
 ```bash
 cd scripts
 ..\.venv\Scripts\python test_data_quality_rule.py
 ```
+
 Result: All 6 tests passed ✅
 
 ## Impact
 
 ### Prevents Data Loss
+
 - Oklahoma recovery cost $0.00 (thanks to 14-day Google Places cache)
 - Without cache, would have cost $0.31 per state ($0.017 × 18 museums)
 - Nationwide: $15.70 potential waste (51 states × avg museums per state)
 
 ### Enables Safe Multi-Pass Enrichment
+
 Before fix:
+
 ```
 CSV → Google Places → LLM → ❌ Data loss!
 ```
 
 After fix:
+
 ```
 CSV → Google Places → Yelp → Web Scraping → LLM → ✅ Cumulative improvement
 ```
 
 ### Workflow Confidence
+
 - Can rerun enrichment pipelines without fear
 - Each pass **adds** or **upgrades** data
 - Never **removes** or **downgrades** data
@@ -92,18 +105,21 @@ CSV → Google Places → Yelp → Web Scraping → LLM → ✅ Cumulative impro
 ## Next Steps
 
 ### Immediate (Completed)
+
 - ✅ Implement never-replace-known-with-null rule
 - ✅ Create comprehensive test suite
 - ✅ Document implementation
 - ✅ Validate with dry-run
 
 ### Recommended (Future)
+
 1. **Test LLM enrichment on Oklahoma** with fixed code
 2. **Verify rejection logging** shows `"cannot_replace_known_with_null"` for protected fields
 3. **Run full pipeline on California** (179 museums) to see cumulative effect
 4. **Monitor rejection reasons** to understand what LLM can't extract
 
 ### Optional Enhancements
+
 - **Trust level protection**: Don't replace OFFICIAL_EXTRACT with LLM_GUESS
 - **Confidence protection**: Don't replace confidence=5 with confidence=1
 - **Manual approval workflow**: Flag high-impact downgrades for review
@@ -113,12 +129,14 @@ CSV → Google Places → Yelp → Web Scraping → LLM → ✅ Cumulative impro
 ### What Counts as "Known Value"?
 
 **Known (protected from null):**
+
 - Non-empty strings: `"123 Main St"`, `"Tulsa"`, `"Art"`
 - Numbers: `36.1234`, `123`, `5.0`
 - Booleans: `true`, `false`
 - Objects/Arrays: `{"rating": 4.5}`, `["tag1", "tag2"]`
 
 **Not Known (can be set to null):**
+
 - `null` itself
 - Empty string: `""`
 - Placeholders: `"TBD"`, `"unknown"`, `"N/A"`, etc. (17 patterns total)
@@ -151,6 +169,7 @@ CSV → Google Places → Yelp → Web Scraping → LLM → ✅ Cumulative impro
 ✅ **IMPLEMENTED AND VALIDATED**
 
 Ready for:
+
 - LLM enrichment testing on Oklahoma
 - Full pipeline testing on California
 - Nationwide enrichment rollout

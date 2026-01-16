@@ -19,6 +19,7 @@ We implemented a **critical data quality safeguard** in both enrichment pipeline
 ### Rule: **NEVER replace a known value with null**
 
 This rule applies to **every field update** in both:
+
 - `enrich-open-data.py` (open data sources, business APIs, web scraping)
 - `enrich-llm.py` (LLM-based enrichment)
 
@@ -47,6 +48,7 @@ def merge_patch(museum: dict[str, Any], patch: dict[str, Any]) -> dict[str, Any]
 ```
 
 **Behavior:**
+
 - ✅ `null` → `"123 Main St"`: Updates (fills missing data)
 - ✅ `"TBD"` → `null`: Updates (normalizes placeholder)
 - ✅ `"123 Main St"` → `"456 Elm St"`: Updates (better data)
@@ -75,6 +77,7 @@ def merge_field(
 ```
 
 **Behavior:**
+
 - LLM returns `null` for `street_address` → **Rejected with reason: `cannot_replace_known_with_null`**
 - Preserves existing value and provenance
 - Logged in rejected_fields for transparency
@@ -84,6 +87,7 @@ def merge_field(
 We created comprehensive tests in `scripts/test_data_quality_rule.py`:
 
 ### Test Results
+
 ```
 ✅ Test 1: Known values preserved when patch has null
 ✅ Test 2: Null values replaced with known values
@@ -98,6 +102,7 @@ We created comprehensive tests in `scripts/test_data_quality_rule.py`:
 ## Impact
 
 ### Before Fix
+
 ```json
 {
   "museum_id": "usa-ok-unknown-108-contemporary",
@@ -109,6 +114,7 @@ We created comprehensive tests in `scripts/test_data_quality_rule.py`:
 ```
 
 After LLM enrichment:
+
 ```json
 {
   "museum_id": "usa-ok-unknown-108-contemporary",
@@ -120,6 +126,7 @@ After LLM enrichment:
 ```
 
 ### After Fix
+
 ```json
 {
   "museum_id": "usa-ok-unknown-108-contemporary",
@@ -131,6 +138,7 @@ After LLM enrichment:
 ```
 
 LLM enrichment logs:
+
 ```
 rejected_fields: [
   {"field": "street_address", "reason": "cannot_replace_known_with_null", "proposed": null},
@@ -143,17 +151,20 @@ rejected_fields: [
 ## Why This Matters
 
 ### Cost Savings
+
 - Without this rule, we'd need to re-run `enrich-open-data.py` after every `enrich-llm.py` run
 - Google Places API: $0.017/museum × 18 museums = $0.31 per recovery
 - Thanks to 14-day caching, recovery was $0.00 (this time)
 - **But caching expires** → would have cost real money without fix
 
 ### Data Quality
+
 - Enrichment pipelines should be **additive**, not destructive
 - Running multiple enrichment passes should **improve** data, never degrade it
 - "Unknown" explicitly means we don't know; `null` from LLM means "I couldn't find it on this source"
 
 ### Workflow Safety
+
 - Can safely run: CSV → Google Places → Yelp → Web Scraping → LLM
 - Each step only **adds** or **upgrades** data
 - Never loses information from previous steps
@@ -161,6 +172,7 @@ rejected_fields: [
 ## Future Enhancements
 
 Consider extending this rule to:
+
 1. **Never downgrade trust level**: Don't replace `OFFICIAL_EXTRACT` with `LLM_GUESS`
 2. **Never reduce confidence**: Don't replace confidence=5 with confidence=1
 3. **Require manual approval** for replacing high-confidence data with low-confidence data
@@ -168,12 +180,14 @@ Consider extending this rule to:
 ## Testing
 
 Run the validation suite:
+
 ```bash
 cd scripts
 ..\.venv\Scripts\python test_data_quality_rule.py
 ```
 
 Expected output:
+
 ```
 ✅ ALL TESTS PASSED!
 ```
