@@ -80,11 +80,24 @@ TIER_1_CITIES = {
     "Santa Fe", "Williamsburg", "Cambridge", "Berkeley", "Ann Arbor",
 }
 
-# Time needed heuristics based on museum type
+# Time needed heuristics based on museum type (mapped to MRD enum)
 TIME_NEEDED_KEYWORDS = {
-    "Quick stop (1-2 hours)": ["historic house", "historic site", "small gallery", "local history"],
-    "Half day (2-4 hours)": ["art museum", "history museum", "science museum", "children's museum"],
-    "Full day (4+ hours)": ["encyclopedic", "major art museum", "natural history", "large complex"],
+    "Quick stop (<1 hr)": ["historic house", "historic site", "small gallery", "local history", "house museum"],
+    "Half day": ["art museum", "history museum", "science museum", "children's museum", "university museum"],
+    "Full day": ["encyclopedic", "major art museum", "natural history", "large complex", "campus"],
+}
+
+TIME_NEEDED_ALLOWED = {"Quick stop (<1 hr)", "Half day", "Full day"}
+TIME_NEEDED_SYNONYMS = {
+    "quick stop": "Quick stop (<1 hr)",
+    "quick stop (1-2 hours)": "Quick stop (<1 hr)",
+    "1-2 hours": "Quick stop (<1 hr)",
+    "<1 hr": "Quick stop (<1 hr)",
+    "half day (2-4 hours)": "Half day",
+    "2-4 hours": "Half day",
+    "half-day": "Half day",
+    "full day (4+ hours)": "Full day",
+    "4+ hours": "Full day",
 }
 
 
@@ -166,7 +179,14 @@ def cached_get_html(url: str, *, ttl_seconds: int = 60 * 60 * 24 * 14, min_delay
     if cache_path.exists():
         age = time.time() - cache_path.stat().st_mtime
         if age <= ttl_seconds:
-            return cache_path.read_text(encoding="utf-8", errors="ignore"), None
+            try:
+                return cache_path.read_text(encoding="utf-8", errors="ignore"), None
+            except OSError:
+                # Corrupt or unreadable cache file; remove and fall through to refetch
+                try:
+                    cache_path.unlink(missing_ok=True)
+                except Exception:
+                    pass
 
     time.sleep(max(0.0, float(min_delay_seconds)))
     
@@ -178,7 +198,12 @@ def cached_get_html(url: str, *, ttl_seconds: int = 60 * 60 * 24 * 14, min_delay
             cache_path.write_bytes(raw)
             return "", None
 
-        cache_path.write_bytes(raw)
+        try:
+            cache_path.write_bytes(raw)
+        except OSError:
+            # If path/write fails, still return content to caller without caching
+            return raw.decode("utf-8", errors="ignore"), None
+
         return raw.decode("utf-8", errors="ignore"), None
     except Exception as e:
         # Return error message for caller to log
@@ -231,6 +256,29 @@ def normalize_website(url: str) -> str:
     while url.endswith("/"):
         url = url[:-1]
     return url
+
+
+def normalize_time_needed(value: str | None) -> str | None:
+    """Normalize time_needed to MRD enum values.
+
+    Accepts common variants (e.g., "1-2 hours", "half day (2-4 hours)") and
+    returns one of: "Quick stop (<1 hr)", "Half day", "Full day". Returns
+    None if the value cannot be mapped.
+    """
+    if not value:
+        return None
+
+    v = value.strip().lower()
+    if v in (x.lower() for x in TIME_NEEDED_ALLOWED):
+        # Already an allowed value (case-insensitive)
+        for allowed in TIME_NEEDED_ALLOWED:
+            if v == allowed.lower():
+                return allowed
+
+    if v in TIME_NEEDED_SYNONYMS:
+        return TIME_NEEDED_SYNONYMS[v]
+
+    return None
 
 
 def today_yyyy_mm_dd() -> str:
@@ -332,10 +380,9 @@ def infer_reputation_from_wikidata(entity: dict[str, Any]) -> int | None:
         return 1  # National
     elif num_sitelinks >= 3:
         return 2  # Regional
-    elif num_sitelinks > 0:
-        return 3  # Local
-    
-    return None  # Cannot determine
+
+    # Insufficient evidence for reputation
+    return None
 
 
 def infer_collection_tier_from_wikidata(entity: dict[str, Any]) -> int | None:
@@ -370,7 +417,7 @@ def infer_collection_tier_from_wikidata(entity: dict[str, Any]) -> int | None:
 def infer_time_needed_from_type(museum_type: str | None) -> str | None:
     """Infer time_needed from museum_type using keyword matching.
     
-    Returns: "Quick stop (1-2 hours)" | "Half day (2-4 hours)" | "Full day (4+ hours)" | None
+    Returns one of the MRD enums: "Quick stop (<1 hr)" | "Half day" | "Full day" | None
     """
     if not museum_type:
         return None
@@ -382,7 +429,7 @@ def infer_time_needed_from_type(museum_type: str | None) -> str | None:
             return time_category
     
     # Default for generic "museum"
-    return "Half day (2-4 hours)"
+    return "Half day"
 
 
 @dataclass
@@ -1005,6 +1052,20 @@ def enrich_one(
             if time_needed:
                 museum3["time_needed"] = time_needed
                 notes.append(f"MRD: inferred time_needed='{time_needed}' from museum_type")
+
+    # Normalize time_needed to MRD enum; clear invalid values
+    current_time_needed = museum3.get("time_needed")
+    if isinstance(current_time_needed, str):
+        normalized_time_needed = normalize_time_needed(current_time_needed)
+        if normalized_time_needed:
+            if normalized_time_needed != current_time_needed:
+                museum3["time_needed"] = normalized_time_needed
+                notes.append(
+                    f"MRD: normalized time_needed '{current_time_needed}' -> '{normalized_time_needed}'"
+                )
+        else:
+            museum3["time_needed"] = None
+            notes.append(f"MRD: cleared invalid time_needed '{current_time_needed}' (not in enum)")
 
     if scrape_website:
         off = patch_from_official_website(

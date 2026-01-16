@@ -5,12 +5,13 @@ Build consolidated museum index from state JSON files.
 This script:
 1. Reads all state JSON files from data/states/
 2. Combines them into a single array
-3. Optionally calculates priority scores using the MuseumSpark algorithm
-4. Calculates nearby_museum_count for each museum
-5. Writes the result to data/index/all-museums.json
+3. Validates MRD-aligned fields (time_needed enum, art-only scoring)
+4. Calculates nearby_museum_count for each museum (always recomputed)
+5. Optionally calculates priority scores using the MuseumSpark algorithm
+6. Writes the result to data/index/all-museums.json
 
 Usage:
-    python build-index.py                    # Build index without score calculation
+    python build-index.py                    # Build index (recomputes nearby_museum_count)
     python build-index.py --calculate-scores # Build index and calculate priority scores
 """
 
@@ -20,6 +21,9 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
+from typing import Optional
+
+from pydantic import BaseModel, ConfigDict, ValidationError, field_validator, model_validator
 
 # Set UTF-8 encoding for Windows console
 if sys.platform == 'win32':
@@ -44,6 +48,20 @@ TIER_2_SPECIAL = [
     "Santa Fe", "Williamsburg", "Annapolis", "Cambridge", "Berkeley",
     "Ann Arbor", "Asheville", "Savannah", "Charleston"
 ]
+
+PRIMARY_DOMAIN_ALLOWED = {"Art", "History", "Science", "Culture", "Specialty", "Mixed"}
+TIME_NEEDED_ALLOWED = {"Quick stop (<1 hr)", "Half day", "Full day"}
+TIME_NEEDED_SYNONYMS = {
+    "quick stop": "Quick stop (<1 hr)",
+    "quick stop (1-2 hours)": "Quick stop (<1 hr)",
+    "1-2 hours": "Quick stop (<1 hr)",
+    "<1 hr": "Quick stop (<1 hr)",
+    "half day (2-4 hours)": "Half day",
+    "2-4 hours": "Half day",
+    "half-day": "Half day",
+    "full day (4+ hours)": "Full day",
+    "4+ hours": "Full day",
+}
 
 def calculate_priority_score(museum):
     """
@@ -114,6 +132,75 @@ def derive_primary_art(museum):
         return "Modern/Contemporary"
 
 
+class MuseumRecord(BaseModel):
+    model_config = ConfigDict(extra="allow")
+
+    primary_domain: Optional[str] = None
+    time_needed: Optional[str] = None
+    impressionist_strength: Optional[int] = None
+    modern_contemporary_strength: Optional[int] = None
+    historical_context_score: Optional[int] = None
+
+    @field_validator("primary_domain")
+    @classmethod
+    def validate_primary_domain(cls, v):
+        if v is None:
+            return v
+        if v not in PRIMARY_DOMAIN_ALLOWED:
+            raise ValueError(f"primary_domain must be one of {sorted(PRIMARY_DOMAIN_ALLOWED)}")
+        return v
+
+    @field_validator("time_needed")
+    @classmethod
+    def validate_time_needed(cls, v):
+        if v is None:
+            return v
+        normalized = normalize_time_needed(v)
+        if normalized is None:
+            raise ValueError("time_needed must be one of the MRD enums: Quick stop (<1 hr), Half day, Full day")
+        return normalized
+
+    @model_validator(mode="after")
+    def check_art_scoring(self):
+        if self.primary_domain != "Art":
+            for field in (
+                "impressionist_strength",
+                "modern_contemporary_strength",
+                "historical_context_score",
+            ):
+                if getattr(self, field) is not None:
+                    raise ValueError(
+                        "Art scoring fields (impressionist_strength/modern_contemporary_strength/"
+                        "historical_context_score) must be empty when primary_domain is not 'Art'"
+                    )
+        return self
+
+
+def validate_and_normalize_museums(museums):
+    """Validate museums against MRD guardrails and normalize time_needed.
+
+    Raises on the first validation error to prevent writing non-compliant data.
+    """
+    validated = []
+    for museum in museums:
+        try:
+            model = MuseumRecord.model_validate(museum)
+        except ValidationError as exc:
+            museum_id = museum.get("museum_id") or museum.get("museum_name") or "<unknown>"
+            print(f"[ERROR] Validation failed for {museum_id}:")
+            for err in exc.errors():
+                loc = "->".join(str(p) for p in err.get("loc", []))
+                print(f"  - {loc}: {err.get('msg')}")
+            sys.exit(1)
+
+        # Preserve extras while keeping normalized/validated fields
+        extras = getattr(model, "__pydantic_extra__", {}) or {}
+        merged = {**extras, **model.model_dump(exclude_none=False)}
+        validated.append(merged)
+
+    return validated
+
+
 def compute_city_tier(city, state):
     """
     Compute city_tier per MRD Section 3.6.
@@ -135,6 +222,26 @@ def compute_city_tier(city, state):
     # TODO: Add US Census population lookup for dynamic tier 2/3 classification
     # For now, default to Tier 3 (Small town)
     return 3
+
+
+def normalize_time_needed(value: Optional[str]) -> Optional[str]:
+    """Normalize time_needed to MRD enum values or return None.
+
+    Accepts common variants (e.g., "1-2 hours", "half day (2-4 hours)") and
+    returns one of: "Quick stop (<1 hr)", "Half day", "Full day".
+    """
+    if not value:
+        return None
+
+    v = value.strip().lower()
+    for allowed in TIME_NEEDED_ALLOWED:
+        if v == allowed.lower():
+            return allowed
+
+    if v in TIME_NEEDED_SYNONYMS:
+        return TIME_NEEDED_SYNONYMS[v]
+
+    return None
 
 def calculate_nearby_counts(museums):
     """
@@ -189,8 +296,6 @@ def main():
     parser = argparse.ArgumentParser(description='Build MuseumSpark consolidated index')
     parser.add_argument('--calculate-scores', action='store_true',
                         help='Calculate priority scores for all museums')
-    parser.add_argument('--update-nearby-counts', action='store_true',
-                        help='Recalculate nearby_museum_count for all museums')
     args = parser.parse_args()
 
     # Determine script location and project root
@@ -212,18 +317,20 @@ def main():
     # Load all state files
     museums = load_state_files(states_dir)
 
-    # Update nearby museum counts if requested
-    if args.update_nearby_counts:
-        print("\nCalculating nearby museum counts...")
-        nearby_counts = calculate_nearby_counts(museums)
+    # Validate and normalize MRD-sensitive fields
+    museums = validate_and_normalize_museums(museums)
 
-        for museum in museums:
-            city = museum.get('city', '')
-            state = museum.get('state_province', '')
-            key = (city, state)
-            museum['nearby_museum_count'] = nearby_counts.get(key, 0)
+    # Always recompute nearby museum counts (ignore any pre-filled values)
+    print("\nCalculating nearby museum counts...")
+    nearby_counts = calculate_nearby_counts(museums)
 
-        print(f"[OK] Updated nearby_museum_count for {len(museums)} museums")
+    for museum in museums:
+        city = museum.get('city', '')
+        state = museum.get('state_province', '')
+        key = (city, state)
+        museum['nearby_museum_count'] = nearby_counts.get(key, 0)
+
+    print(f"[OK] Updated nearby_museum_count for {len(museums)} museums")
 
     # Compute MRD fields for all museums
     print("\nComputing MRD fields...")
@@ -237,9 +344,12 @@ def main():
         if museum.get('city_tier') is None:
             museum['city_tier'] = compute_city_tier(city, state)
         
-        # Derive primary_art from strength scores
-        if museum.get('primary_art') is None:
-            museum['primary_art'] = derive_primary_art(museum)
+        # Derive primary_art from strength scores (art museums only)
+        if museum.get('primary_domain') == 'Art':
+            if museum.get('primary_art') is None:
+                museum['primary_art'] = derive_primary_art(museum)
+        else:
+            museum['primary_art'] = None
     
     print(f"[OK] Computed city_tier and primary_art for all museums")
 

@@ -11,7 +11,12 @@
 param(
     [int]$MaxPages = 10,
     [switch]$SkipIndexRebuild,
-    [string[]]$StatesOnly
+    [string[]]$StatesOnly,
+    [switch]$SkipWebsiteScrape,
+    [switch]$OnlyPlaceholders,
+    [int]$LimitPerState = 0,
+    [switch]$DryRun,
+    [switch]$CalculateScores
 )
 
 $ErrorActionPreference = "Stop"
@@ -51,6 +56,11 @@ Write-Host "Configuration:" -ForegroundColor Yellow
 Write-Host "  Max pages per museum: $MaxPages"
 Write-Host "  Total phases: $($phases.Count)"
 Write-Host "  Total states: $($phases.Values | ForEach-Object { $_.Count } | Measure-Object -Sum | Select-Object -ExpandProperty Sum)"
+Write-Host "  Skip website scrape: $SkipWebsiteScrape"
+Write-Host "  Only placeholders: $OnlyPlaceholders"
+Write-Host "  Limit per state: $LimitPerState"
+Write-Host "  Dry run: $DryRun"
+Write-Host "  Calculate scores on rebuild: $CalculateScores"
 Write-Host ""
 
 $totalStates = 0
@@ -79,10 +89,24 @@ foreach ($phaseName in $phases.Keys | Sort-Object) {
             $args = @(
                 $script,
                 "--state", $state,
-                "--scrape-website",
-                "--scrape-max-pages", $MaxPages,
                 "--compute-mrd-fields"
             )
+
+            if ($SkipWebsiteScrape -eq $false) {
+                $args += @("--scrape-website", "--scrape-max-pages", $MaxPages)
+            }
+
+            if ($OnlyPlaceholders) {
+                $args += "--only-placeholders"
+            }
+
+            if ($LimitPerState -gt 0) {
+                $args += @("--limit", $LimitPerState)
+            }
+
+            if ($DryRun) {
+                $args += "--dry-run"
+            }
             
             & $python $args
             
@@ -103,7 +127,12 @@ foreach ($phaseName in $phases.Keys | Sort-Object) {
         Write-Host ""
         Write-Host "Rebuilding master index after $phaseName..." -ForegroundColor Yellow
         try {
-            & $python "scripts\build-index.py" "--update-nearby-counts"
+            $indexArgs = @("scripts\build-index.py")
+            if ($CalculateScores) {
+                $indexArgs += "--calculate-scores"
+            }
+
+            & $python $indexArgs
             Write-Host "[OK] Index rebuilt" -ForegroundColor Green
         } catch {
             Write-Host "[WARN] Index rebuild failed: $_" -ForegroundColor Yellow
