@@ -95,6 +95,16 @@ class IdentityResult:
     longitude: Optional[float] = None
     place_id: Optional[str] = None
     state_from_google: Optional[str] = None  # For validation
+    
+    # Enhanced Google Places fields (Phase 0 Tier 1+2)
+    phone: Optional[str] = None  # formatted_phone_number
+    website_google: Optional[str] = None  # For validation against existing
+    business_status: Optional[str] = None  # OPERATIONAL, CLOSED_TEMPORARILY, CLOSED_PERMANENTLY
+    opening_hours: Optional[dict] = None  # Structured hours + open_now
+    rating: Optional[float] = None  # Google rating (1.0-5.0)
+    user_ratings_total: Optional[int] = None  # Number of reviews
+    reviews: Optional[list[dict]] = None  # Up to 5 most helpful reviews
+    
     error: Optional[str] = None
     source: str = "google_places"
     resolved_at: Optional[str] = None
@@ -118,6 +128,25 @@ class IdentityResult:
             patch["longitude"] = self.longitude
         if self.place_id:
             patch["place_id"] = self.place_id
+        
+        # Enhanced Google Places fields
+        if self.phone:
+            patch["phone"] = self.phone
+        if self.website_google:
+            patch["website_google"] = self.website_google
+        if self.business_status:
+            patch["business_status"] = self.business_status
+        if self.opening_hours:
+            patch["opening_hours_structured"] = self.opening_hours
+            # Also extract open_now as top-level boolean for convenience
+            if "open_now" in self.opening_hours:
+                patch["open_now"] = self.opening_hours["open_now"]
+        if self.rating is not None:
+            patch["google_rating"] = self.rating
+        if self.user_ratings_total is not None:
+            patch["google_reviews_count"] = self.user_ratings_total
+        if self.reviews:
+            patch["google_reviews"] = self.reviews
 
         return patch
 
@@ -237,6 +266,13 @@ def resolve_identity_google_places(
                 longitude=cached.get("longitude"),
                 place_id=cached.get("place_id"),
                 state_from_google=cached.get("state_from_google"),
+                phone=cached.get("phone"),
+                website_google=cached.get("website_google"),
+                business_status=cached.get("business_status"),
+                opening_hours=cached.get("opening_hours"),
+                rating=cached.get("rating"),
+                user_ratings_total=cached.get("user_ratings_total"),
+                reviews=cached.get("reviews"),
                 error=cached.get("error"),
                 source=cached.get("source", "google_places"),
                 resolved_at=cached.get("resolved_at"),
@@ -284,11 +320,24 @@ def resolve_identity_google_places(
         result.longitude = geometry.get("lng")
         result.street_address = place.get("formatted_address")
 
-        # Step 2: Place Details to get address_components
+        # Step 2: Place Details to get address_components + enhanced fields
         # This is the KEY step that the old code was missing!
         details = gmaps.place(
             place_id=place_id,
-            fields=["address_component", "formatted_address", "geometry"]
+            fields=[
+                # Core identity fields (original)
+                "address_component",
+                "formatted_address",
+                "geometry",
+                # Enhanced fields (Tier 1 + Tier 2)
+                "formatted_phone_number",  # Phone in local format
+                "website",                  # Official website
+                "business_status",          # OPERATIONAL/CLOSED_TEMPORARILY/CLOSED_PERMANENTLY
+                "opening_hours",            # Structured hours + open_now
+                "rating",                   # Google rating (1-5)
+                "user_ratings_total",       # Number of reviews
+                "reviews",                  # Up to 5 most helpful reviews
+            ]
         )
 
         if not details.get("result"):
@@ -335,6 +384,39 @@ def resolve_identity_google_places(
         # Update street_address from details if available
         if detail_result.get("formatted_address"):
             result.street_address = detail_result["formatted_address"]
+        
+        # Extract enhanced Google Places fields
+        if detail_result.get("formatted_phone_number"):
+            result.phone = detail_result["formatted_phone_number"]
+            result.notes.append(f"Phone: {result.phone}")
+        
+        if detail_result.get("website"):
+            result.website_google = detail_result["website"]
+            result.notes.append(f"Website: {result.website_google}")
+        
+        if detail_result.get("business_status"):
+            result.business_status = detail_result["business_status"]
+            result.notes.append(f"Business status: {result.business_status}")
+            if result.business_status == "CLOSED_PERMANENTLY":
+                result.notes.append("⚠️ WARNING: Museum marked as PERMANENTLY CLOSED")
+        
+        if detail_result.get("opening_hours"):
+            result.opening_hours = detail_result["opening_hours"]
+            open_now = result.opening_hours.get("open_now")
+            if open_now is not None:
+                result.notes.append(f"Open now: {open_now}")
+        
+        if detail_result.get("rating"):
+            result.rating = detail_result["rating"]
+            result.notes.append(f"Google rating: {result.rating}")
+        
+        if detail_result.get("user_ratings_total"):
+            result.user_ratings_total = detail_result["user_ratings_total"]
+            result.notes.append(f"Total reviews: {result.user_ratings_total}")
+        
+        if detail_result.get("reviews"):
+            result.reviews = detail_result["reviews"]
+            result.notes.append(f"Fetched {len(result.reviews)} top reviews")
 
         # Success!
         result.success = True

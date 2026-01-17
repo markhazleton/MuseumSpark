@@ -2,14 +2,51 @@
 
 This directory contains scripts for validating and managing the MuseumSpark museum dataset.
 
+## Quick Start: Complete Pipeline
+
+Run the entire enrichment pipeline end-to-end with a single command:
+
+```bash
+# Run complete pipeline for a single state
+python scripts/pipeline/run-complete-pipeline.py --state CO
+
+# Run for multiple states
+python scripts/pipeline/run-complete-pipeline.py --states CO,UT,WY
+
+# Run all states
+python scripts/pipeline/run-complete-pipeline.py --all-states
+
+# Skip expensive API phases (Google Places, LLM scoring)
+python scripts/pipeline/run-complete-pipeline.py --state CO --skip-google-places --skip-llm
+
+# Dry run to preview execution
+python scripts/pipeline/run-complete-pipeline.py --state CO --dry-run
+
+# Force re-processing
+python scripts/pipeline/run-complete-pipeline.py --state CO --force
+```
+
+**Pipeline Phases:**
+1. **Phase 0**: Google Places (identity, coordinates, address)
+2. **Phase 0.5**: Wikidata (website, postal_code, street_address)
+3. **Phase 0.7**: Website Content (hours, admission, accessibility)
+4. **Phase 1**: Backbone (city_tier, time_needed, nearby_museum_count)
+5. **Phase 1.5**: Wikipedia (art museum enrichment)
+6. **Phase 1.8**: CSV Database (IRS 990 phone, museum_type)
+7. **Phase 2**: LLM Scoring (reputation, collection_tier)
+8. **Phase 3**: Priority Scoring (trip planning)
+
 ## Directory Structure
 
 ```
 scripts/
 ├── phases/              # Phase-based enrichment pipeline
 │   ├── phase0_identity.py
+│   ├── phase0_5_wikidata.py
+│   ├── phase0_7_website.py
 │   ├── phase1_backbone.py
 │   ├── phase1_5_wikipedia.py
+│   ├── phase1_8_csv_lookup.py
 │   ├── phase2_scoring.py
 │   └── phase3_priority.py
 ├── builders/            # Index and report builders
@@ -18,6 +55,7 @@ scripts/
 │   ├── build-progress.py
 │   └── build-missing-report.py
 ├── pipeline/            # Pipeline orchestration
+│   ├── run-complete-pipeline.py  ⭐ NEW: Unified end-to-end runner
 │   ├── run-phase1-pipeline.py
 │   ├── enrich-open-data.py
 │   └── ingest-walker-reciprocal.py
