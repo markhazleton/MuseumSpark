@@ -1,0 +1,92 @@
+{
+  "run_id": "20260117-175718",
+  "states": [
+    "RI"
+  ],
+  "force": false,
+  "dry_run": false,
+  "skip_flags": [
+    "skip-llm",
+    "skip-google-places"
+  ],
+  "total_phases": 9,
+  "successful_phases": 7,
+  "failed_phases": 0,
+  "skipped_phases": 2,
+  "total_duration_seconds": 0.9567406177520752,
+  "phase_results": [
+    {
+      "phase_name": "Phase 0: Identity (Google Places)",
+      "success": true,
+      "duration_seconds": 0.0,
+      "error": null,
+      "skipped": true,
+      "skip_reason": "Skipped by --skip-google-places flag"
+    },
+    {
+      "phase_name": "Phase 0.5: Wikidata Enrichment",
+      "success": true,
+      "duration_seconds": 0.13094782829284668,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 0.7: Website Content",
+      "success": true,
+      "duration_seconds": 0.19606995582580566,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1: Backbone Fields",
+      "success": true,
+      "duration_seconds": 0.11476659774780273,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1.5: Wikipedia (Art Museums)",
+      "success": true,
+      "duration_seconds": 0.11211037635803223,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1.8: CSV Database (IRS 990)",
+      "success": true,
+      "duration_seconds": 0.24308395385742188,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 2: LLM Scoring",
+      "success": true,
+      "duration_seconds": 0.0,
+      "error": null,
+      "skipped": true,
+      "skip_reason": "Skipped by --skip-llm flag"
+    },
+    {
+      "phase_name": "Phase 1.75: Heuristic Fallback",
+      "success": true,
+      "duration_seconds": 0.08334064483642578,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 3: Priority Scoring",
+      "success": true,
+      "duration_seconds": 0.07276129722595215,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    }
+  ],
+  "completed_at": "2026-01-17T17:57:19Z"
+}

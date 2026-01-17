@@ -27,14 +27,15 @@ python scripts/pipeline/run-complete-pipeline.py --state CO --force
 ```
 
 **Pipeline Phases:**
-1. **Phase 0**: Google Places (identity, coordinates, address)
+1. **Phase 0**: Google Places (identity, coordinates, address, phone, hours, ratings)
 2. **Phase 0.5**: Wikidata (website, postal_code, street_address)
 3. **Phase 0.7**: Website Content (hours, admission, accessibility)
 4. **Phase 1**: Backbone (city_tier, time_needed, nearby_museum_count)
 5. **Phase 1.5**: Wikipedia (art museum enrichment)
 6. **Phase 1.8**: CSV Database (IRS 990 phone, museum_type)
-7. **Phase 2**: LLM Scoring (reputation, collection_tier)
-8. **Phase 3**: Priority Scoring (trip planning)
+7. **Phase 2**: LLM Scoring (reputation, collection_tier for art museums)
+8. **Phase 1.75**: Heuristic Fallback (reputation, collection_tier for non-art museums)
+9. **Phase 3**: Priority Scoring (trip planning)
 
 ## Directory Structure
 
@@ -46,6 +47,7 @@ scripts/
 │   ├── phase0_7_website.py
 │   ├── phase1_backbone.py
 │   ├── phase1_5_wikipedia.py
+│   ├── phase1_75_heuristic_fallback.py  ✨ NEW: Wikidata heuristic scoring
 │   ├── phase1_8_csv_lookup.py
 │   ├── phase2_scoring.py
 │   └── phase3_priority.py

@@ -125,6 +125,12 @@ PIPELINE_PHASES = [
         skip_flag="skip-llm",
     ),
     PhaseConfig(
+        name="Phase 1.75: Heuristic Fallback",
+        script="phase1_75_heuristic_fallback.py",
+        description="Heuristic scoring for museums without LLM scores",
+        required=True,
+    ),
+    PhaseConfig(
         name="Phase 3: Priority Scoring",
         script="phase3_priority.py",
         description="Trip planning priority scores",
