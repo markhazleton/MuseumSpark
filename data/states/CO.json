@@ -44,8 +44,8 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Aspen Art Museum primarily serves the local community, indicated by its local reputation score. The evidence does not provide information on its impressionist or modern/contemporary collections, nor does it detail the historical context or collection tier beyond being small and local.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence includes no museum-specific description of the Aspen Art Museum’s permanent collection, so collection-area strengths and historical context cannot be reliably scored. Given Aspen’s small city size and the existing assessments indicating a local profile and small collection scope, reputation is scored as local and collection tier as small.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -60,12 +60,24 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado' from open data; MRD: computed city_tier=3 for Colorado; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800624; CSV: financial data available (income: 1348510, revenue: 1303455)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:14:03Z",
+      "updated_at": "2026-01-17T18:46:20Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9709258050",
       "open_hour_notes": "Open Today, 8 AM–6 PM",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "Aspen Art Museum is a must for contemporary art lovers looking to pair high-altitude scenery with sharp, idea-driven exhibitions. Housed in a striking Shigeru Ban–designed building, the museum emphasizes fresh, rotating shows rather than a permanent collection—so each visit feels new. Expect ambitious installations, cutting-edge photography, painting, and performance-oriented projects, plus panoramic views and a lively downtown location that makes it easy to build a full day around art, architecture, and Aspen’s walkable cultural scene.",
+      "content_description": "**Aspen Art Museum** offers a concentrated, high-impact contemporary art experience in the heart of Aspen—perfect for travelers who want museum time that feels current, experimental, and visually memorable. Rather than relying on a large permanent collection, the museum’s strength is its **rotating exhibition program**, which often spotlights emerging and internationally recognized artists through immersive installations, concept-driven projects, and cross-disciplinary work. For visitors, that means the galleries reward repeat visits: you’re likely to encounter new perspectives on *contemporary practice* each season, from large-scale sculptural environments to photography, painting, and time-based media.\n\nEqually compelling is the museum’s architectural presence. The building—designed by **Shigeru Ban**—is a destination in itself, known for its **woven wood façade** that filters light and gives the exterior a tactile, craft-like rhythm. Inside, the circulation and open feel encourage wandering between galleries, with moments where art, space, and Aspen’s bright mountain atmosphere intersect. Architecture-minded travelers will appreciate how the structure balances a bold contemporary identity with an inviting scale suited to the town.\n\nFor the art-focused visitor, the experience is intimate and efficient: you can absorb the exhibitions without fatigue, then linger for views and conversation. Plan time to explore the surrounding downtown galleries and cultural stops—Aspen’s compact center makes it easy to turn a museum visit into a full afternoon of art looking.",
+      "content_highlights": [
+        "Shigeru Ban–designed building with a distinctive woven wood façade—an architectural landmark in downtown Aspen",
+        "Rotating contemporary art exhibitions that prioritize new work, immersive installations, and ideas-driven shows",
+        "Intimate museum scale that lets you see everything thoroughly without rushing or burning out",
+        "Light-filled interiors where architecture and exhibition design enhance the viewing experience",
+        "Easy to pair with Aspen’s walkable gallery scene for a full day of art-focused exploring"
+      ],
+      "content_generated_at": "2026-01-17T18:46:20Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-boulder-history-museum",
@@ -124,12 +136,24 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado' from open data; MRD: computed city_tier=3 for Colorado; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800407; CSV: financial data available (income: 559651, revenue: 504077)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:13:41Z",
+      "updated_at": "2026-01-17T18:46:31Z",
       "notes": "Historic Preservation museum focusing on local history. Notable for its community engagement and preservation efforts.",
       "city_tier": 3,
       "phone": "3034493464",
       "open_hour_notes": "Monday: 9:00 AM – 5:00 PM\nTuesday: Closed\nWednesday: 9:00 AM – 5:00 PM\nThursday: 9:00 AM – 5:00 PM\nFriday: 9:00 AM – 5:00 PM\nSaturday: 9:00 AM – 5:00 PM\nSunday: 9:00 AM – 5:00 PM",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Step into Boulder’s Gilded Age—and meet one of the era’s most captivating women—at the Molly Brown House Museum. Housed in Margaret “Molly” Brown’s former home, this intimate historic site pairs richly preserved interiors with storytelling tours that bring turn-of-the-century design, social history, and local legacy to life. Expect a close-up look at period rooms, original details, and the lived textures of Victorian domestic culture—plus a museum shop spotlighting local makers.",
+      "content_description": "**The Molly Brown House Museum** offers art-and-architecture-minded travelers a rare kind of encounter: not a gallery of objects behind glass, but a preserved domestic world where design, craft, and biography are inseparable. Dedicated to the legacy of **Margaret “Molly” Brown**, the house invites you to read the *material culture* of the late 19th and early 20th centuries—how tastes were expressed through interiors, furnishings, decorative finishes, and the rituals of home life. Guided tours and themed programs help translate the rooms into stories of ambition, philanthropy, and public identity, grounding Boulder’s history in a figure with national resonance.\n\nArchitecturally, the experience is anchored by the home itself—an immersive study in historic preservation where **period architectural details** and room-by-room composition create a cinematic sense of time travel. For visitors who love design, it’s an opportunity to examine craftsmanship up close: ornament, texture, spatial planning, and the subtle hierarchy of formal vs. private spaces that defined the era’s domestic architecture.\n\nPlan to slow down: this is a museum best enjoyed through **tours and special events**, where curatorial interpretation adds nuance and human drama. After your visit, the **museum store** is worth browsing for locally made goods—an appealing extension of the museum’s mission to connect place, community, and craft. Book ahead to match your preferred tour time and deepen the experience.",
+      "content_highlights": [
+        "Guided tours focused on Margaret “Molly” Brown’s life and Boulder’s turn-of-the-century social history",
+        "Immersive historic house interiors that showcase late-19th/early-20th-century decorative taste and domestic design",
+        "Preserved architectural details offering a close look at period craftsmanship and spatial planning",
+        "Seasonal programs and events that expand the narrative beyond the rooms into community culture",
+        "Museum store featuring locally made goods—ideal for design-forward souvenirs tied to place"
+      ],
+      "content_generated_at": "2026-01-17T18:46:31Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
@@ -190,12 +214,24 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boulder' from open data; MRD: computed city_tier=2 for Boulder; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800445; CSV: financial data available (income: 889895, revenue: 773192)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:21:25Z",
+      "updated_at": "2026-01-17T18:46:43Z",
       "notes": "Boulder Museum of Contemporary Art is known for presenting innovative works of contemporary art in Boulder and the Denver Metro Area for over 50 years. The museum offers dynamic artistic expression programs for young artists and curatorial services beyond its galleries.",
       "city_tier": 2,
       "phone": "3034432122",
       "open_hour_notes": "Museum & Store Hours Tuesday – Sunday: 11am - 5pm",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "Boulder Museum of Contemporary Art (BMoCA) is Boulder’s hub for what’s happening now in art—fresh exhibitions, experimental media, and thought-provoking ideas in a compact, easy-to-visit setting downtown. With rotating shows that spotlight contemporary artists connected to the region and beyond, BMoCA rewards repeat visits and invites close looking. Come for installations, photography, and concept-driven projects, then stay for talks, openings, and the energized sense of being plugged into Boulder’s creative scene.",
+      "content_description": "**Boulder Museum of Contemporary Art (BMoCA)** is a must for art lovers who want a pulse-check on the present. Rather than a traditional “permanent collection” museum, BMoCA excels through **curated, rotating exhibitions**—the kind that make contemporary art feel immediate and local, yet in conversation with broader currents in today’s art world. Expect work across painting, photography, video, and installation, often shaped by *conceptual* approaches and material experimentation. Because the program changes frequently, the museum is best experienced as a place you can return to again and again, catching new artists and new ideas each season.\n\nThe museum’s appeal is also architectural and experiential: BMoCA’s **intimate gallery spaces** encourage close looking—ideal for visitors who enjoy reading artworks carefully, tracking curatorial themes, and noticing how scale, light, and layout affect perception. Downtown Boulder’s walkable setting makes it easy to combine a visit with coffee, bookstores, or an evening out, and BMoCA’s events calendar often adds extra value with **artist talks, openings, and community programs**.\n\nFor travelers building an art-focused itinerary, BMoCA works beautifully as a concentrated contemporary art stop: plan time to slow down, engage with wall texts, and let the exhibition design guide your viewing. If you’re seeking the energy of a regional contemporary scene—where the emphasis is on discovery and dialogue—this is one of Boulder’s most rewarding cultural addresses.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions designed for repeat visits and fresh discoveries",
+        "Strong regional focus—an entry point into Boulder and Colorado’s contemporary art ecosystem",
+        "Multi-media programming often spanning painting, photography, video, and installation",
+        "Intimate galleries that reward close viewing and careful engagement with curatorial themes",
+        "Events for art enthusiasts, including openings, talks, and public programs (check schedule before you go)"
+      ],
+      "content_generated_at": "2026-01-17T18:46:43Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
@@ -255,12 +291,24 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Vail' from open data; MRD: computed city_tier=3 for Vail; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800673; CSV: financial data available (income: 959317, revenue: 745702)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:13:41Z",
+      "updated_at": "2026-01-17T18:46:56Z",
       "notes": "Colorado Snowsports Museum and Hall of Fame is a general museum celebrating Colorado snow sports. It features exhibits that educate and inspire visitors about the history and culture of snow sports in Colorado. The museum is open daily and offers free admission.",
       "city_tier": 3,
       "phone": "7202583888",
       "open_hour_notes": "10 AM-6 PM daily",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "In the heart of Vail, the Colorado Snowsports Museum and Hall of Fame turns the region’s legendary powder days into a vividly told cultural story. Part sports history, part design-and-technology showcase, it celebrates the athletes, innovators, and mountain communities that shaped skiing and snowboarding in Colorado. Expect an engaging, object-rich visit—vintage gear, historic photography, and Hall of Fame tributes—ideal for art and design lovers curious about how performance, materials, and alpine aesthetics evolved alongside the state’s winter identity.",
+      "content_description": "**Colorado Snowsports Museum and Hall of Fame** in Vail is a smart stop for art-minded travelers who love how objects carry cultural meaning. Rather than presenting snowsports as pure competition, the museum frames Colorado’s ski and snowboard story through **material culture**—the evolving design of equipment, the visual language of trail maps and posters, and the mythmaking power of alpine imagery. The experience reads like a compact history of winter modernity: how changing shapes, bindings, and fabrics transformed both performance and the look of life in the mountains. You’ll also encounter Hall of Fame storytelling that humanizes the sport through influential athletes, coaches, and industry pioneers who defined Colorado’s reputation on snow.\n\nArchitecturally, the museum’s appeal lies in its **mountain-town setting**: a contemporary, walk-in-friendly space that suits Vail’s resort rhythm and makes it easy to pair culture with time outdoors. Inside, interpretive displays and historic photographs create a strong sense of place—think *vernacular* alpine culture and the aesthetics of speed, weather, and terrain.\n\nFor visitors, the pleasure is in close-looking: study the **patina and engineering** of early skis, compare silhouettes across decades, and trace how snowsports branding shaped a distinct Rocky Mountain visual identity. It’s especially satisfying on a stormy afternoon or as a pre-ski primer—an hour that deepens everything you’ll notice on the mountain afterward.",
+      "content_highlights": [
+        "Hall of Fame profiles celebrating the people who shaped Colorado skiing and snowboarding",
+        "Historic snowsports equipment on display—an evolution of form, materials, and performance design",
+        "Archival photography and visuals that capture Vail and Colorado’s winter culture and alpine identity",
+        "Object-based storytelling that connects sport, innovation, and mountain community history",
+        "Easy-to-visit, resort-core location ideal for pairing with a day on the slopes or an après stroll"
+      ],
+      "content_generated_at": "2026-01-17T18:46:56Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
@@ -303,8 +351,8 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum is known regionally within Colorado, which supports a reputation score of 2. The collection tier is moderate, indicating a respectable but limited scope, but there is no specific evidence provided for Impressionist or Modern/Contemporary strengths or historical context.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence describes the Colorado Springs Fine Arts Center as an arts center with historic designation but gives no details on permanent collection scope or specific strengths (e.g., Impressionism or Modern/Contemporary). Given the existing assessments and its role as a regional institution in Colorado Springs, a regional reputation and moderate collection tier are the most supportable scores.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -317,15 +365,27 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado Springs' from open data; MRD: computed city_tier=2 for Colorado Springs; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800396",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:14:03Z",
+      "updated_at": "2026-01-17T18:47:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "7196345583",
       "open_hour_notes": "Monday: Closed\nTuesday: Closed\nWednesday: 10:00 AM – 5:00 PM\nThursday: 10:00 AM – 5:00 PM\nFriday: 10:00 AM – 8:00 PM\nSaturday: 10:00 AM – 5:00 PM\nSunday: Closed",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "The Colorado Springs Fine Arts Center is a rewarding stop for art lovers seeking a concentrated, regionally rooted museum experience. Expect a thoughtfully curated mix of American and Southwest-focused works alongside strong exhibitions that spotlight Colorado artists and wider modern currents. The building itself is part of the appeal—an art destination where architecture, gallery pacing, and changing shows make it easy to spend a rich hour or an unhurried afternoon. It’s an ideal anchor museum for exploring the city’s creative scene.",
+      "content_description": "**Colorado Springs Fine Arts Center** offers a distinctly regional lens on American art, making it a smart visit for travelers who want more than a generic “greatest hits” museum. The galleries typically emphasize the cultural currents of the American West and the Southwest—places where *landscape*, *identity*, and *craft traditions* have shaped visual culture as powerfully as any coastal art capital. With a moderate-sized collection, the experience tends to be intimate: you can look closely, revisit favorite works, and actually feel the curatorial storytelling rather than rushing through endless rooms.\n\nA major pleasure here is the museum’s attention to how art is made and seen. Rotating exhibitions and focused presentations often sharpen the museum’s strengths, pairing regional narratives with broader threads of *modernism* and contemporary practice. For visitors, that means there’s usually something new to discover—whether it’s a spotlight on Colorado creators, thematic shows that connect local and national movements, or a deep dive into medium-specific work.\n\nBeyond the galleries, the visit is enhanced by the site’s architectural presence and campus-like feel: a cultural hub designed for lingering. Plan time to slow down—this is a museum that rewards careful looking, with comfortable viewing rhythms, opportunities to compare styles and materials across rooms, and a sense of place that ties the art back to the Front Range landscape just outside the doors.",
+      "content_highlights": [
+        "Regionally focused American art with strong Colorado and Western/Southwestern connections",
+        "Rotating exhibitions that keep the visit fresh for repeat travelers and locals",
+        "An intimate, manageable gallery experience ideal for close looking rather than marathon museuming",
+        "Architecturally notable cultural campus atmosphere that encourages lingering",
+        "A solid “anchor museum” for understanding Colorado Springs’ wider art scene and creative identity"
+      ],
+      "content_generated_at": "2026-01-17T18:47:07Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-denver-art-museum",
@@ -384,12 +444,24 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Denver' from open data; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800365; CSV: financial data available (income: 40083926, revenue: 5907991)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:21:25Z",
+      "updated_at": "2026-01-17T18:47:20Z",
       "notes": "The Denver Art Museum is an art museum known for its diverse exhibitions, including Impressionist works. It offers a variety of programs and events to engage visitors with art.",
       "city_tier": 1,
       "phone": "7208655000",
       "open_hour_notes": "Today is January 15. We are open 10 am – 5 pm. Plan Your Visit",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "One of the most architecturally striking museums in the U.S., the Denver Art Museum pairs bold modern design with deep, nationally respected collections. Art lovers come for its standout strengths in Indigenous arts of the Americas, Western American art, and dynamic global holdings—from African to Asian traditions—alongside rotating contemporary exhibitions. The galleries are spacious and thoughtfully organized, making it easy to spend a half day (or more) moving between iconic regional works, masterful textiles, and major traveling shows in the heart of Denver’s cultural district.",
+      "content_description": "**Denver Art Museum (DAM)** is a must for travelers who want both **serious collections** and a museum experience shaped by **memorable architecture**. The campus is anchored by two distinct buildings: the fortress-like 1971 **North Building by Gio Ponti**, a landmark of modern museum design, and the angular, titanium-clad **Hamilton Building by Daniel Libeskind** (2006), whose dramatic, faceted forms feel like sculpture you can walk through. Together they create an energizing sense of movement—perfectly suited to a museum that balances historical depth with a contemporary edge.\n\nInside, DAM’s reputation is built on collection strengths that are especially rewarding in Denver. Seek out the museum’s exceptional holdings in **Indigenous arts of North America**, where you’ll find powerful works across media—particularly **textiles, beadwork, and pottery**—presented with attention to cultural context and craft. The museum is also renowned for **Western American art**, offering a nuanced look at the myths and realities of the American West through painting, sculpture, and material culture. Beyond the region, galleries spanning **African**, **Asian**, and **European** art broaden the itinerary, while rotating exhibitions and installations keep repeat visits fresh.\n\nFor visitors, the experience is generous and gallery-forward: clear sightlines, strong interpretive labels, and a layout that invites lingering. Plan time to move between buildings, then recharge at the café and museum store—ideal for art books and design-minded gifts—before stepping back into Denver’s walkable **Golden Triangle** arts district.",
+      "content_highlights": [
+        "Architectural one-two punch: Gio Ponti’s modernist North Building and Daniel Libeskind’s dramatic Hamilton Building",
+        "Nationally significant Indigenous arts of North America, with standout textile and craft traditions",
+        "Deep Western American art holdings—essential viewing for understanding the region’s visual culture",
+        "Wide-ranging global collections (African and Asian galleries are particular strengths for a regional museum)",
+        "Rotating special exhibitions and contemporary installations that make repeat visits worthwhile"
+      ],
+      "content_generated_at": "2026-01-17T18:47:20Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-denver-firefighters-museum",
@@ -446,12 +518,24 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado' from open data; MRD: computed city_tier=3 for Colorado; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800451",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:13:41Z",
+      "updated_at": "2026-01-17T18:47:33Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "3038921436",
       "open_hour_notes": "Hours Open today 10:00 am – 04:00 pm Contact us Contact us",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Housed in a historic 1909 firehouse in the heart of Denver, the Denver Firefighters Museum turns the city’s firefighting heritage into a vivid, object-rich visit. Step into restored apparatus bays, see gleaming antique fire engines up close, and explore how technology, teamwork, and civic pride shaped Denver’s growth. It’s a rewarding stop for design-minded travelers who love industrial craftsmanship, historic architecture, and hands-on exhibits that bring a working city’s past to life.",
+      "content_description": "Set inside a 1909 fire station, the **Denver Firefighters Museum** offers a tightly focused, visually satisfying immersion into the tools, design, and day-to-day realities of urban firefighting. Even for visitors who typically plan their trips around paintings and sculpture, the museum’s appeal is unmistakably object-driven: polished metalwork, bold graphics, and the *industrial design* elegance of early apparatus reward close looking. Expect to encounter historic fire engines and equipment that chart the evolution from horse-drawn and early motorized response to modern fire service—an absorbing lesson in how engineering, materials, and city infrastructure changed together.\n\nThe building itself is a major part of the experience. A former working firehouse brings authentic atmosphere—think **original bay doors**, station-house proportions, and the satisfying spatial drama of large-scale vehicles displayed where they would have once been kept ready to roll. The architecture reads as civic and purposeful rather than ornate, but its craftsmanship and functionality feel like a kind of vernacular monument to public service.\n\nFor art- and design-minded travelers, the joy is in proximity and detail: photographing the curvature of hoses and ladders, the typography and insignia that communicate authority and identity, and the patina of well-used gear. Plan for a compact visit that pairs well with other downtown stops—an engaging, tactile counterpoint to Denver’s fine-arts institutions, and a reminder that cities are also shaped by the aesthetics of work.",
+      "content_highlights": [
+        "Historic 1909 firehouse setting with authentic apparatus-bay atmosphere",
+        "Close-up views of antique fire engines and the evolution of firefighting technology",
+        "Displays of helmets, uniforms, hoses, and tools highlighting material culture and industrial craftsmanship",
+        "Interpretive exhibits on Denver’s firefighting history and the city’s growth through public service",
+        "Photo-friendly spaces where design lovers can study insignia, typography, and functional engineering details"
+      ],
+      "content_generated_at": "2026-01-17T18:47:33Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-durango-arts-center",
@@ -494,8 +578,8 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Durango Arts Center is known regionally within Colorado but lacks sufficient evidence for specific strengths in Impressionist or Modern/Contemporary collections. Its collection appears to be respectable but limited in scope.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about an individual (Shan Wells) rather than the Durango Arts Center, offering no evidence about the museum's permanent collection or interpretive approach. Given only the existing assessments and the institution's regional setting, reputation and collection tier are kept at a regional/moderate level while other categories cannot be determined.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -506,15 +590,27 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: extracted city 'Durango'; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800211",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:14:03Z",
+      "updated_at": "2026-01-17T18:47:45Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "9702592606",
       "open_hour_notes": "Monday: Closed\nTuesday: 12:00 – 6:00 PM\nWednesday: 12:00 – 6:00 PM\nThursday: 12:00 – 6:00 PM\nFriday: 12:00 – 6:00 PM\nSaturday: 12:00 – 6:00 PM\nSunday: Closed",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "The Durango Arts Center is Durango’s go-to stop for contemporary art in the Four Corners region—an intimate, ever-changing space where you can see what local and regional artists are making right now. Expect rotating exhibitions across painting, photography, printmaking, and sculpture, often with strong ties to the landscape and cultures of the Southwest. It’s a rewarding visit for art lovers who enjoy discovery: fresh shows, approachable scale, and the chance to pair gallery time with downtown Durango exploring.",
+      "content_description": "**Durango Arts Center** offers a focused, art-forward experience that feels both distinctly local and surprisingly current—perfect for travelers who like to see a region through the work of its artists. Rather than a static “greatest hits” collection, the center shines through **rotating exhibitions** that can range from contemporary painting and photography to ceramics, mixed media, and small-scale sculpture. You’ll often encounter art shaped by the Southwest’s visual vocabulary—dramatic light, high-desert palettes, and themes of place—alongside experimental approaches that nod to *abstraction*, *conceptual practice*, and craft-informed contemporary work.\n\nArchitecturally and atmospherically, the appeal is in the **accessible gallery setting**: you can give the exhibitions real attention without the fatigue of a mega-museum. The pacing invites close looking—time to read wall texts, track curatorial through-lines, and notice technique, from surface handling in paint to the material choices in assemblage and clay. For visitors, it’s also a great “what’s happening now” stop: programming and events are often part of the draw, making the museum feel like a living cultural hub rather than a quiet repository.\n\nPlan your visit like an art lover: check what’s currently on view before you arrive, then leave space to linger. The Durango Arts Center pairs naturally with a walkable day in town—an easy, enriching interlude between mountain views and Main Avenue exploring.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions featuring regional and local artists from the Four Corners area",
+        "Strong emphasis on current practice—painting, photography, printmaking, ceramics, and mixed media depending on the season",
+        "Intimate gallery scale that rewards close looking and makes a visit feel unrushed",
+        "Programming-oriented experience (openings, talks, workshops/events when scheduled) that connects visitors to the community",
+        "An art stop that pairs well with downtown Durango strolling—ideal for building a full day around culture and place"
+      ],
+      "content_generated_at": "2026-01-17T18:47:45Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
@@ -542,8 +638,8 @@
       "tickets_url": "http://www.ftcma.org/social-tracking?network=facebook",
       "reservation_required": null,
       "accessibility_url": "https://f1worldwide.com/unlocking-the-secrets-behind-max-verstappen-height-and-weight-advantage/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day",
       "estimated_visit_minutes": null,
       "best_season": null,
@@ -551,14 +647,14 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "primary_art": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 3,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": null,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The evidence provided does not include any specific information about the museum's collections, strengths in Impressionism or Modern/Contemporary art, historical context, or its reputation. Therefore, all scores are returned as null due to insufficient evidence.",
+      "priority_score": 21,
+      "scoring_version": "mrd_v2",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Based on the museum name, it is focused on contemporary art, implying at least moderate Modern/Contemporary representation, while Impressionism is likely negligible. The provided Wikipedia evidence is not about the museum’s permanent collection (it covers photographer Mark Sink), so collection tier and reputation are estimated as local/small with low confidence and historical context cannot be determined.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -568,15 +664,27 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 1,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boulder' from open data; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800445",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:14:03Z",
+      "updated_at": "2026-01-17T18:50:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3034432122",
       "open_hour_notes": "Monday: Closed\nTuesday: 11:00 AM – 5:00 PM\nWednesday: 11:00 AM – 5:00 PM\nThursday: 11:00 AM – 5:00 PM\nFriday: 11:00 AM – 5:00 PM\nSaturday: 11:00 AM – 5:00 PM\nSunday: 11:00 AM – 5:00 PM",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "Fort Collins Museum of Contemporary Art (MoCA) is a small but high-impact stop for art lovers who want to see what contemporary artists are making right now. Expect rotating exhibitions that reward repeat visits, with a focus on fresh ideas, experimentation, and regional creative energy. Because the museum is compact, you can take your time with each work—ideal for travelers who prefer close looking over marathon gallery-hopping. Pair your visit with nearby cafés and galleries for an easy, art-centered afternoon.",
+      "content_description": "**Fort Collins Museum of Contemporary Art (MoCA)** offers a focused, contemporary-art experience built around **rotating exhibitions** rather than a large permanent collection—perfect for visitors who enjoy seeing what’s new, timely, and intellectually curious. As a locally grounded institution, MoCA’s strength is its ability to spotlight emerging and mid-career artists, often with work that engages today’s big questions through *installation*, *conceptual art*, *new media*, and experimental approaches to painting and sculpture. The scale is a virtue: you’re close to the art, able to read the wall texts, watch details shift with light, and follow an exhibition’s ideas from room to room without fatigue.\n\nArchitecturally, museums like this often function as **contemporary “white box” galleries**—clean lines, flexible spaces, and lighting designed to let bold materials and unconventional forms take center stage. For art travelers, that means a visit can feel like stepping into a curated conversation: one season might emphasize immersive environments, another might pivot to photography, socially engaged practice, or process-driven abstraction.\n\nPlan to linger. With a small footprint, MoCA is best experienced slowly—revisiting standout works, catching subtle curatorial connections, and checking for public programs that deepen context. If you love contemporary art’s immediacy—art that feels made for this moment—this museum’s changing exhibitions make it a rewarding, repeatable destination.",
+      "content_highlights": [
+        "Rotating contemporary art exhibitions that change regularly—ideal for repeat visits",
+        "Intimate gallery scale that encourages close looking and unrushed viewing",
+        "Curatorial emphasis on current practices such as installation, conceptual work, and new media",
+        "Clean, flexible contemporary gallery spaces designed to foreground experimental work",
+        "Potential talks and public programs that add context for art enthusiasts (check schedule before you go)"
+      ],
+      "content_generated_at": "2026-01-17T18:47:57Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-golden-history-museums",
@@ -633,12 +741,24 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800608",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:15:00Z",
+      "updated_at": "2026-01-17T18:48:09Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3032783557",
       "open_hour_notes": "Visit Tuesday - Saturday",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Golden History Museums invites art- and design-minded travelers to step into Colorado’s storied past through beautifully preserved spaces and richly detailed interpretation. The standout experience is a visit to the Molly Brown House Museum, where guided tours bring Margaret “Molly” Brown’s remarkable life into focus amid period interiors and decorative arts. Expect an intimate, narrative-driven museum visit—part architectural time capsule, part social history—enhanced by rotating programs, special events, and a shop spotlighting local makers.",
+      "content_description": "**Golden History Museums** offers a rewarding visit for travelers who love place-based storytelling, preserved architecture, and the material culture that makes history tangible. A key anchor is the **Molly Brown House Museum**, dedicated to the legacy of Margaret “Molly” Brown—philanthropist, activist, and one of Colorado’s most enduring public figures. Rather than a gallery of paintings, this is a museum where **decorative arts, furnishings, and domestic details** do the heavy lifting, revealing how taste, technology, and social ambition shaped turn-of-the-century life in Colorado.\n\nFor art enthusiasts, the real pleasure is reading the house as a work of design: proportion, ornament, and craftsmanship come alive on a guided tour, with docents connecting rooms and objects to the era’s aesthetics—think *Gilded Age* refinement and late-19th-century domestic display. Period interiors and interpretive vignettes highlight how textiles, tableware, woodwork, and everyday luxuries communicate status and identity as vividly as any portrait.\n\nVisitor experience is best for those who enjoy **guided tours, themed events, and close-looking** rather than sprawling halls. Plan to book ahead, then linger afterward in the **museum store**, which supports local goods—an ideal way to take home a small piece of Colorado craftsmanship. Check current hours and programming for special tours that deepen the architectural and cultural context.",
+      "content_highlights": [
+        "Molly Brown House Museum guided tours focused on Margaret “Molly” Brown’s legacy",
+        "Period rooms and decorative arts that illuminate Gilded Age domestic design",
+        "Architecture-forward experience: explore craftsmanship, ornament, and historic interiors up close",
+        "Events and programs that add fresh angles to the house’s social and cultural history",
+        "Museum store featuring local goods—great for artful, locally made souvenirs"
+      ],
+      "content_generated_at": "2026-01-17T18:48:09Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-unknown-longmont-museum",
@@ -697,12 +817,24 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Longmont' from open data; MRD: computed city_tier=2 for Longmont; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800483",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:13:41Z",
+      "updated_at": "2026-01-17T18:48:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3036518374",
       "open_hour_notes": "Monday: 9:00 AM – 5:00 PM\nTuesday: 9:00 AM – 5:00 PM\nWednesday: 9:00 AM – 5:00 PM\nThursday: 9:00 AM – 5:00 PM\nFriday: 9:00 AM – 5:00 PM\nSaturday: Closed\nSunday: Closed",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The Longmont Museum is a smart stop for art lovers who enjoy seeing how a region tells its story through exhibitions, design, and lived culture. Expect a rotating schedule of gallery shows—often spotlighting Colorado artists—alongside local-history displays that ground the art in place. Its modern, welcoming campus makes it easy to pair a focused museum visit with a relaxed afternoon, and the changing programs mean even repeat visitors can find something new on the walls.",
+      "content_description": "**Longmont Museum** blends the pleasures of a contemporary gallery visit with the curiosity-sparking breadth of a community museum—ideal for travelers who like their art in conversation with the place that produced it. Inside, you’ll typically encounter **rotating art exhibitions** (often featuring Colorado and Front Range artists), where you can move from painting and photography to craft and design-focused shows. Because displays change through the year, the experience rewards checking the current calendar and returning: the galleries function less like a single permanent collection and more like an evolving snapshot of regional creativity and visual culture.\n\nArchitecturally, the museum’s **clean-lined, modern building** supports close looking: bright, open interiors and gallery-ready spaces keep the emphasis on the work, while public areas invite you to pause, discuss, and linger between rooms. The visitor experience is designed for art-minded exploration—come for a dedicated hour of looking, or build in extra time to read interpretive materials that connect objects to local narratives.\n\nAs a **general museum**, Longmont’s strength is range: you can pivot from art to community history in one visit, gaining context that enriches what you’ve just seen on the walls. For art enthusiasts planning a Northern Colorado itinerary, it’s a satisfying anchor—accessible, thoughtfully presented, and rooted in the cultural life of the region.",
+      "content_highlights": [
+        "Rotating gallery exhibitions that often spotlight Colorado and Front Range artists across painting, photography, and craft",
+        "Modern, gallery-forward architecture with bright, open spaces that encourage slow looking",
+        "A general-museum mix that lets you connect visual culture to local and regional history in the same visit",
+        "Seasonal programming and events that make repeat visits worthwhile for returning art travelers",
+        "Visitor-friendly layout for a focused museum hour or a longer, more contemplative afternoon"
+      ],
+      "content_generated_at": "2026-01-17T18:48:21Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-denver-clyfford-still-museum",
@@ -760,12 +892,24 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800689",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:21:25Z",
+      "updated_at": "2026-01-17T18:48:36Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "7203544880",
       "open_hour_notes": "Monday: Closed\nTuesday: 10:00 AM – 5:00 PM\nWednesday: 10:00 AM – 5:00 PM\nThursday: 10:00 AM – 5:00 PM\nFriday: 10:00 AM – 5:00 PM\nSaturday: 10:00 AM – 5:00 PM\nSunday: 10:00 AM – 5:00 PM",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "A pilgrimage site for modern art lovers, the Clyfford Still Museum offers an unmatched, immersive encounter with one of Abstract Expressionism’s most singular voices. Purpose-built beside Denver’s Civic Center, the museum houses the vast majority of Still’s life work—towering, jagged fields of color that feel less like “paintings” than charged environments. Expect quiet galleries, close looking, and a rare chance to trace an artist’s vision across decades in one focused, beautifully designed place.",
+      "content_description": "**Clyfford Still Museum** is one of the rare museums devoted to a single artist—and it’s essential for anyone fascinated by the stakes of postwar American painting. Holding roughly **95% of Clyfford Still’s output** (from the 1920s through the 1980s), it offers a deep, chronological immersion into a painter often positioned alongside the *Abstract Expressionists* yet fiercely independent of the art-world spotlight. You’ll move from earlier figurative and transitional works into the monumental canvases Still is known for: **fractured “zips” of paint, torn-edged forms, and vast, atmospheric color** that reward slow looking. Seeing so many works together makes his evolution unmistakable—how scale, palette, and surface become a language of urgency and solitude.\n\nArchitecturally, the museum is a calm, deliberate counterpoint to the drama on the walls. Designed by **Brad Cloepfil/Allied Works**, the building’s **board-formed concrete** and carefully controlled natural light create a meditative setting where the paintings’ textures—thick impasto, scraped passages, and layered pigment—read with unusual clarity. The galleries are spacious and quiet, encouraging you to step back for the full impact and then move in close to study the rugged surfaces.\n\nFor visitors, the experience is focused rather than encyclopedic: expect **intimate interpretive materials**, rotating presentations from a deep holdings-based collection, and an atmosphere that feels more like a studio encounter than a blockbuster crowd scene. Plan time to linger—Still’s works unfold slowly, and the museum’s serene pacing makes it one of Denver’s most rewarding stops for serious art viewing.",
+      "content_highlights": [
+        "One of the only museums dedicated entirely to a single major modern painter: Clyfford Still",
+        "Collection strength: roughly 95% of Still’s lifetime output, enabling a rare full-arc view of his career",
+        "Monumental Abstract Expressionist-era canvases with jagged color fields, dramatic scale, and heavily worked surfaces",
+        "Purpose-built architecture by Brad Cloepfil/Allied Works with board-formed concrete and contemplative, light-controlled galleries",
+        "Quiet, focused visitor experience—ideal for close looking, studying technique, and comparing works across decades"
+      ],
+      "content_generated_at": "2026-01-17T18:48:36Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-denver-molly-brown-house-museum",
@@ -821,11 +965,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Google Places: extracted operating hours; Google Places: 4.7/5 rating with 2804 reviews",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:15:00Z",
+      "updated_at": "2026-01-17T18:48:49Z",
       "notes": "Visit the Molly Brown House Museum! Discover the legacy of Margaret Brown with tours, events, and a museum store supporting local goods. Check hours & book now!",
       "city_tier": 1,
       "open_hour_notes": "We will reopen at 10am on Saturday, January 17th!",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Part historic house museum, part character-driven time capsule, the Molly Brown House Museum lets you step into Denver’s Gilded Age through the story of Margaret “Molly” Brown—philanthropist, activist, and Titanic survivor. Touring her Capitol Hill home pairs ornate Victorian interiors with a vividly human narrative: wealth made from Colorado mining, civic ambition, and a woman who challenged the limits of her era. Come for the architecture and period rooms; stay for the sharp, surprising details of Brown’s life and Denver’s social history.",
+      "content_description": "In Denver’s Capitol Hill neighborhood, the **Molly Brown House Museum** offers an intimate, art-and-design-rich window into the city’s late-19th-century ascent—told through the outsized legacy of Margaret “Molly” Brown. Rather than a conventional gallery, this is a *historic house museum* where decorative arts, furnishings, and domestic spaces become the “collection,” framing Brown’s journey from mining-boom prosperity to national notoriety. Tours anchor the experience in her roles as philanthropist and reformer, revealing how taste, technology, and social ideals shaped the American home.\n\nArchitecturally, the house is a standout example of *Victorian-era* domestic design, prized by visitors for its layered textures: carved woodwork, stained and leaded glass, patterned surfaces, and richly scaled rooms that feel theatrical without losing their lived-in intimacy. For art lovers, the appeal lies in the way interiors operate like immersive design installations—where color, ornament, and craftsmanship create a cohesive period atmosphere and highlight how style signaled status in the *Gilded Age*.\n\nA guided visit is the best way to experience it: you’ll move room by room, reading objects and finishes as historical evidence while hearing stories that bring the spaces to life. Plan time for the museum store, which emphasizes locally made goods—an easy way to extend your visit with Denver-based craft. Check hours ahead and book tickets, especially during special events and themed tours.",
+      "content_highlights": [
+        "Guided room-by-room tours through an immersive Gilded Age historic home",
+        "Ornate Victorian decorative arts and interiors: carved woodwork, stained/leaded glass, and period finishes",
+        "Story-driven interpretation of Margaret “Molly” Brown—philanthropist, activist, and Titanic survivor",
+        "Capitol Hill setting, ideal for pairing with Denver’s nearby historic architecture walks",
+        "Museum store featuring local goods and crafts, perfect for design-minded souvenirs"
+      ],
+      "content_generated_at": "2026-01-17T18:48:49Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-denver-museum-of-contemporary-art",
@@ -854,7 +1010,7 @@
       "reservation_required": null,
       "accessibility_url": "https://mcadenver.org/support",
       "reputation": 2,
-      "collection_tier": null,
+      "collection_tier": 1,
       "time_needed": "Half day",
       "estimated_visit_minutes": null,
       "best_season": null,
@@ -862,14 +1018,14 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "primary_art": null,
-      "historical_context_score": null,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a regional reputation, indicated by the prior reputation score of 2. However, there is insufficient evidence to assess its strengths in Impressionist or Modern/Contemporary collections, as well as historical context and collection tier.",
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 3,
+      "primary_art": "Modern/Contemporary",
+      "historical_context_score": 4,
+      "priority_score": 15,
+      "scoring_version": "mrd_v2",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary describes the Denver Art Museum as an encyclopedic institution with 70,000+ works across centuries, supporting a strong overall collection tier and generally good historical framing. It highlights strengths in American Indian and Western American art rather than Impressionism, so Impressionist holdings are inferred as minor. Modern/contemporary strength is not explicitly evidenced beyond the museum being large and diverse, so it is scored as moderate.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -883,15 +1039,27 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q16895577; Wikidata: inferred reputation=2 from sitelinks; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Inferred primary_domain=Art from name/type; Wikidata: matched Q16895577; Wikidata: no applicable fields to fill; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:14:03Z",
+      "updated_at": "2026-01-17T18:50:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "7192553567",
       "open_hour_notes": "Monday: Closed\nTuesday: 12:00 – 7:00 PM\nWednesday: 12:00 – 7:00 PM\nThursday: 12:00 – 7:00 PM\nFriday: 12:00 – 7:00 PM\nSaturday: 10:00 AM – 5:00 PM\nSunday: 10:00 AM – 5:00 PM",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "Set in a richly restored Victorian mansion, the Molly Brown House Museum offers a highly immersive way to experience Denver history through decorative arts, period interiors, and the outsized life of Margaret “Molly” Brown. Instead of gallery walls, you move room to room through stained glass, carved woodwork, and Gilded Age craftsmanship—guided by stories of social activism, women’s rights, and the Titanic survivor who became a local legend. Tours, special events, and a shop featuring local makers make it an engaging stop for culture-minded travelers.",
+      "content_description": "**Molly Brown House Museum** is one of Denver’s most atmospheric museum visits—less a conventional white-cube gallery and more a lived-in artwork of the late 19th century. Housed in Margaret “Molly” Brown’s former home, the museum excels at turning biography into place: guided tours bring you through meticulously interpreted interiors where you’ll read the city’s boom-era ambition alongside Brown’s philanthropy and activism. For art lovers, the appeal is the *material culture*—furnishings, textiles, objects, and domestic details that reveal how taste, class, and modernity were staged in the American West.\n\nArchitecturally, the building’s Victorian character is the star. Expect **ornamental woodwork, period rooms, and richly layered décor** that reward slow looking—like a three-dimensional study in design history. Rather than chasing blockbuster names, the museum’s strength lies in contextual storytelling: how art and design functioned in everyday life, and how a home can serve as a lens on social change.\n\nVisitor-wise, the experience is intimate and timed around tours, so it feels curated and conversational. Allow time to linger after your tour—events often expand the narrative with themed programming—and don’t skip the museum store, which spotlights **local goods** that echo the museum’s craft-forward spirit. Check hours and book ahead to secure your preferred time, especially on weekends.",
+      "content_highlights": [
+        "Immersive Victorian house-museum experience with guided room-by-room tours",
+        "Decorative arts focus: period furnishings, textiles, and domestic design details",
+        "Architectural character: ornate woodwork and richly preserved late-19th-century interiors",
+        "Story-driven interpretation of Margaret “Molly” Brown’s life, activism, and cultural legacy",
+        "Museum store featuring local makers and Colorado-made goods"
+      ],
+      "content_generated_at": "2026-01-17T18:49:00Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-golden-foothills-art-center",
@@ -945,10 +1113,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Golden; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Google Places: extracted street address; Google Places: 4.6/5 rating with 129 reviews",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:15:00Z",
+      "updated_at": "2026-01-17T18:49:12Z",
       "notes": "Phone: (303) 279-3922\nGoogle Rating: 4.6/5 (129 reviews)\n♿ Wheelchair accessible entrance available",
       "city_tier": 3,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Step into Denver’s Gilded Age at the Molly Brown House Museum, the storied home of Margaret “Molly” Brown—social reformer, activist, and Titanic survivor. Guided tours bring the house to life through period rooms, vivid storytelling, and original details that evoke turn-of-the-century ambition and style. Beyond the history, it’s a richly atmospheric visit for design lovers, with ornate interiors and architectural character. Plan ahead, book a tour, and linger in the museum store featuring locally made goods.",
+      "content_description": "**Molly Brown House Museum** offers art and design lovers an immersive encounter with Denver’s *Gilded Age*—not in a gallery, but in a lived-in environment where architecture, interiors, and personal legacy intertwine. As the former home of Margaret “Molly” Brown, the museum frames her story through curated rooms and interpretive objects that reflect the tastes, social aspirations, and material culture of the early 1900s. Expect a narrative-driven visit: docents guide you through period settings where decorative arts, furnishings, and domestic details act as primary “artworks,” revealing how style and status were expressed in everyday life.\n\nThe house itself is a major draw. Its **historic architecture and preserved craftsmanship**—think ornamental woodwork, textured surfaces, and a carefully staged sequence of rooms—creates a cinematic sense of time travel. Rather than isolated masterpieces, the experience centers on *interior design* as an art form: spatial flow, layered ornament, and the intimate scale of a private residence make the visit especially rewarding for travelers who love historic houses, architectural heritage, and the artistry of domestic environments.\n\nVisitor-wise, plan for a **timed tour** (booking ahead is wise), and arrive with curiosity—this is a museum best experienced through storytelling and close looking. Afterward, the **museum store** extends the local connection with goods by regional makers, making it easy to take home a thoughtfully chosen memento that supports the community.",
+      "content_highlights": [
+        "Guided tours focused on Margaret “Molly” Brown’s life and the cultural world of turn-of-the-century Denver",
+        "Historic house setting where decorative arts and period interiors are the core “collection”",
+        "Architectural character and preserved craftsmanship that reward slow looking and design-minded visitors",
+        "Narrative interpretation that connects social history, activism, and domestic material culture",
+        "Museum store featuring locally made goods—an easy way to support regional artisans"
+      ],
+      "content_generated_at": "2026-01-17T18:49:12Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
@@ -991,8 +1171,8 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum is known regionally within Colorado, which supports a reputation score of 2. The collection appears to be respectable but limited in scope, justifying a collection tier score of 2. However, there is insufficient evidence to assess the other scoring categories.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the Western Colorado Center for the Arts' permanent collection or interpretive/chronological presentation, so strengths in Impressionism, Modern/Contemporary, and historical context cannot be reliably scored. Given the regional setting (Grand Junction, western Colorado) and the prior assessments provided, a regional reputation (2) and moderate collection tier (2) are the most supportable estimates.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -1005,15 +1185,27 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Grand Junction; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800409",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:14:03Z",
+      "updated_at": "2026-01-17T18:49:24Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "9702437337",
       "open_hour_notes": "Monday: Closed\nTuesday: 9:00 AM – 4:00 PM\nWednesday: 9:00 AM – 4:00 PM\nThursday: 9:00 AM – 4:00 PM\nFriday: 9:00 AM – 4:00 PM\nSaturday: 9:00 AM – 4:00 PM\nSunday: Closed",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "In downtown Grand Junction, the Western Colorado Center for the Arts offers a welcoming, regionally focused museum experience where art feels close to home—made by neighbors, shaped by the landscape, and presented with real care. Expect rotating exhibitions that spotlight Western Colorado artists alongside broader contemporary voices, plus a lively calendar of openings and community events. It’s an ideal stop for art lovers who enjoy discovery, conversation with local culture, and the chance to see what’s creatively emerging on the Western Slope.",
+      "content_description": "Set in Grand Junction, **Western Colorado Center for the Arts** is a smart addition to any art-focused itinerary on the Western Slope—less about blockbuster crowds and more about *close looking*, fresh ideas, and the pleasure of encountering work in a setting that feels connected to its community. As a **regional art museum**, its strength lies in **changing exhibitions** that keep repeat visits rewarding, often foregrounding artists with ties to Western Colorado while also inviting contemporary perspectives that resonate beyond the region.\n\nWhile the specific works on view will depend on the season, visitors can generally expect a mix of **painting, photography, and mixed media**, with shows that highlight the visual language of the high desert, river corridors, and mountain edges that define this part of the state. The experience is often intimate—ideal for travelers who enjoy reading wall texts, comparing techniques, and tracing how local subject matter can be reinterpreted through *contemporary* approaches.\n\nArchitecturally, the appeal is in the **gallery setting itself**: approachable, human-scaled spaces designed for lingering rather than rushing. Plan your visit around an exhibition opening if possible—these events are typically where the Center’s role as a cultural hub becomes most vivid, with artists and art lovers in the same room. If you collect or simply like to bring something home, keep time for the shop element when available; regional museums like this are often among the best places to find **locally made** pieces and support the artists shaping the area today.",
+      "content_highlights": [
+        "Rotating exhibitions showcasing Western Colorado artists and regional perspectives",
+        "Intimate gallery experience designed for slow looking and repeat visits",
+        "Contemporary works across mediums (often painting, photography, and mixed media)",
+        "Exhibition openings and events that make the Center feel like a community arts hub",
+        "Opportunities to support local makers through on-site retail and programs (when available)"
+      ],
+      "content_generated_at": "2026-01-17T18:49:24Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
@@ -1067,10 +1259,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Inc. Hamill House Museum; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800500; Google Places: extracted street address",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:13:41Z",
+      "updated_at": "2026-01-17T18:49:35Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Step into Denver’s past at the Molly Brown House Museum, a lovingly preserved Victorian home in the Capitol Hill neighborhood. Once the residence of famed “Unsinkable” Margaret Brown, the house pairs Gilded Age style with a compelling story of women’s activism, philanthropy, and social change. Guided tours bring the period rooms to life with original details, decorative arts, and intimate narratives you won’t get from a textbook. It’s a richly atmospheric stop for history and design lovers.",
+      "content_description": "**The Molly Brown House Museum** (often associated with Margaret “Molly” Brown, the celebrated Titanic survivor and prominent Denver activist) is historic preservation at its most immersive: a walk-through biography told via architecture, interiors, and material culture. Rather than a gallery of isolated objects, you experience a cohesive domestic world—**period rooms**, furnishings, and decorative details that evoke Denver’s Gilded Age ambitions and the city’s evolving social landscape.\n\nArchitecturally, the house rewards close looking. Expect the visual pleasures that make late-19th-century domestic design so captivating for art lovers: **ornamental woodwork, patterned surfaces, and spatial drama** typical of high-style Victorian-era homes, where craftsmanship and display were part of everyday life. Even without “masterpiece” paintings on the wall, the artistry is embedded in the built environment—an education in how taste, status, and *decorative arts* shaped lived experience.\n\nFor visitors, the strength here is storytelling. **Guided tours** connect the rooms to Margaret Brown’s legacy and the wider currents of American history—women’s public leadership, philanthropy, and civic identity—while keeping the experience intimate and human-scaled. Check the museum’s schedule in advance and book a time slot; the house format works best in smaller groups. Before you leave, the **museum store** offers locally made goods, a fitting extension of a site devoted to community heritage.",
+      "content_highlights": [
+        "Historic Victorian house museum centered on Margaret “Molly” Brown’s Denver legacy",
+        "Guided, room-by-room tours emphasizing material culture and lived-in history",
+        "Architectural details and craftsmanship typical of late-19th-century domestic design",
+        "Interpretation focused on women’s activism, philanthropy, and civic life in Denver",
+        "Museum store featuring local goods, supporting community makers"
+      ],
+      "content_generated_at": "2026-01-17T18:49:35Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
@@ -1125,11 +1329,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Leadville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800444",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:13:41Z",
+      "updated_at": "2026-01-17T18:49:49Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "open_hour_notes": "Monday: Closed\nTuesday: 10:00 AM – 4:00 PM\nWednesday: 10:00 AM – 4:00 PM\nThursday: 10:00 AM – 4:00 PM\nFriday: 10:00 AM – 4:00 PM\nSaturday: 10:00 AM – 4:00 PM\nSunday: 10:00 AM – 3:00 PM",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "In the historic mining town of Leadville, the National Mining Hall of Fame and Museum turns Colorado’s hard-rock past into a vivid, hands-on journey through geology, technology, and human grit. Expect glittering mineral displays, immersive exhibits on extraction and safety, and stories of the engineers, prospectors, and innovators who shaped the modern world. It’s an essential stop for curious travelers who love material culture—where the beauty of ore meets the drama of industry in a mountain setting.",
+      "content_description": "**National Mining Hall of Fame and Museum** in Leadville offers a compelling, visually rich look at how mining shaped the American West—and how it continues to influence modern life. Set in one of Colorado’s most storied boom-and-bust communities, the museum reads like an industrial biography of the Rockies: ore bodies, machines, and labor histories stitched together into a narrative that’s equal parts science and cultural heritage. For visitors who enjoy the aesthetics of materials, it’s a feast of color and texture—sparkling minerals, polished specimens, and the graphic clarity of maps and engineering diagrams.\n\nInside, you’ll encounter **mineral and ore displays** that highlight the natural artistry of geology—crystalline forms, metallic lusters, and the dramatic palette of oxidized rock. Exhibits explore the evolution of **mining technology**, from early prospecting tools to more complex methods of extraction and processing, while interpretive panels ground everything in Leadville’s local context. The museum’s Hall of Fame component adds a human layer: innovators and industry figures are presented with an emphasis on ingenuity, risk, and the changing ethics of resource use.\n\nArchitecturally, the experience is rooted in Leadville’s **high-altitude, historic-town atmosphere**, where the surrounding landscape becomes part of the visit—mountains that feel like a living cross-section of geologic time. Plan time for close looking: labels reward slow reading, and families or detail-oriented travelers will appreciate the tactile, demonstrative approach typical of a strong science museum. It’s an absorbing stop for art-minded explorers who find beauty in *material culture* and the engineered sublime.",
+      "content_highlights": [
+        "Mineral, ore, and geology displays emphasizing crystalline forms, metallic luster, and color",
+        "Technology-focused exhibits tracing the evolution of mining tools, extraction, and processing",
+        "Hall of Fame galleries spotlighting mining innovators and industry history",
+        "Leadville context: boomtown heritage and the human stories behind Colorado mining",
+        "High-altitude setting where the surrounding Rocky Mountain landscape enhances the geologic narrative"
+      ],
+      "content_generated_at": "2026-01-17T18:49:49Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-co-msu-denver-center-for-visual-art",
@@ -1172,8 +1388,8 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum serves primarily the local community, indicated by its local reputation score. However, there is insufficient evidence regarding its collections, particularly in Impressionist and Modern/Contemporary art, leading to null scores in those areas.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about the contemporary artist Alexandra Grant rather than the Center for Visual Art, so there is no reliable evidence about the museum’s permanent collection strengths or interpretive/historical framing. Given the existing assessments and the institution being a university-affiliated center, reputation is scored as local and collection tier as small.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -1186,12 +1402,24 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for MSU Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8409502942; Google Places: extracted street address",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T18:14:03Z",
+      "updated_at": "2026-01-17T18:50:03Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "open_hour_notes": "Monday: Closed\nTuesday: 11:00 AM – 6:00 PM\nWednesday: 11:00 AM – 6:00 PM\nThursday: 11:00 AM – 6:00 PM\nFriday: 11:00 AM – 6:00 PM\nSaturday: 12:00 – 5:00 PM\nSunday: Closed",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "Tucked into MSU Denver’s creative ecosystem, the Center for Visual Art is a rewarding stop for art lovers who enjoy seeing what’s happening now. With a small but thoughtfully curated slate of exhibitions, it spotlights contemporary practices—often with a strong local and regional pulse—making each visit feel timely and of-the-moment. Expect an intimate, easy-to-navigate gallery experience that pairs well with exploring campus, catching an opening or talk, and discovering emerging artists before they hit bigger stages.",
+      "content_description": "At MSU Denver, the **Center for Visual Art** offers an intimate, exhibition-driven museum experience that’s ideal for travelers who like their art encounters current, conversational, and closely connected to place. Rather than a vast encyclopedic collection, this is a space where **rotating shows** do the heavy lifting—bringing contemporary work into sharp focus and often amplifying Colorado and regional voices alongside broader artistic dialogues. For art enthusiasts, the appeal is the sense of discovery: you’re not just “seeing the hits,” you’re stepping into what artists and curators are actively testing right now.\n\nArchitecturally, the museum’s campus setting prioritizes **clean gallery sightlines, flexible display spaces, and a focused viewing rhythm**—a layout that encourages close looking and repeat visits. Depending on the exhibition, you may encounter works spanning *installation*, *conceptual* approaches, photography, and mixed-media practices, with interpretive texts that help situate the art without overwhelming it.\n\nThe visitor experience is refreshingly approachable: plan a stop around an opening reception or campus event, then return for a quieter midday visit when the galleries feel like a calm studio extension. Because the program is small by design, it’s easy to see everything in one go—and still leave with plenty to discuss. Think of it as a smart, local lens on contemporary art, best enjoyed with curiosity and a willingness to be surprised.",
+      "content_highlights": [
+        "Rotating contemporary art exhibitions with a strong local and regional connection",
+        "Intimate scale—easy to see the full program in a single, unrushed visit",
+        "Campus-based energy: openings, talks, and events that bring artists and audiences together",
+        "Flexible gallery spaces suited to installation, photography, and mixed-media presentations",
+        "A discovery-oriented stop for spotting emerging artists and timely curatorial themes"
+      ],
+      "content_generated_at": "2026-01-17T18:50:03Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-17T18:14:03Z"
+  "updated_at": "2026-01-17T18:50:03Z"
 }

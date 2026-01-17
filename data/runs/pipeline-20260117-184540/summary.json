@@ -1,0 +1,97 @@
+{
+  "run_id": "20260117-184540",
+  "states": [
+    "CO"
+  ],
+  "force": false,
+  "dry_run": false,
+  "skip_flags": [],
+  "total_phases": 10,
+  "successful_phases": 10,
+  "failed_phases": 0,
+  "skipped_phases": 0,
+  "total_duration_seconds": 263.70225286483765,
+  "phase_results": [
+    {
+      "phase_name": "Phase 0: Identity (Google Places)",
+      "success": true,
+      "duration_seconds": 0.1676044464111328,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 0.5: Wikidata Enrichment",
+      "success": true,
+      "duration_seconds": 0.10590863227844238,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 0.7: Website Content",
+      "success": true,
+      "duration_seconds": 0.1912386417388916,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1: Backbone Fields",
+      "success": true,
+      "duration_seconds": 0.10755610466003418,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1.5: Wikipedia (Art Museums)",
+      "success": true,
+      "duration_seconds": 0.10650229454040527,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1.8: CSV Database (IRS 990)",
+      "success": true,
+      "duration_seconds": 0.27292919158935547,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 2: LLM Scoring",
+      "success": true,
+      "duration_seconds": 24.06079387664795,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 2.5: Content Generation",
+      "success": true,
+      "duration_seconds": 238.52805137634277,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1.75: Heuristic Fallback",
+      "success": true,
+      "duration_seconds": 0.07786226272583008,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 3: Priority Scoring",
+      "success": true,
+      "duration_seconds": 0.0782477855682373,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    }
+  ],
+  "completed_at": "2026-01-17T18:50:03Z"
+}
