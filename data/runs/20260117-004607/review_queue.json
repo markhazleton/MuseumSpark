@@ -1,0 +1,970 @@
+{
+  "run_id": "20260117-004607",
+  "items": [
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Aspen Art Museum"
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Colorado"
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.aspenartmuseum.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-unknown-aspen-art-museum",
+      "stage": "deep_dive",
+      "reason": "9 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=55, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nrecommendations.0.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=72, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Boulder History Museum"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Colorado"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://boulderhistory.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "History"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "HISTORIC PRESERVATION"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "field": "notes",
+      "reason": "higher_trust",
+      "proposed": "Historic Preservation museum focusing on local history. Notable for its community engagement and preservation efforts."
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "stage": "deep_dive",
+      "reason": "9 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=55, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=75, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nrecommendations.0.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=62, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Boulder Museum of Contemporary Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Boulder"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.bmoca.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "field": "notes",
+      "reason": "higher_trust",
+      "proposed": "Boulder Museum of Contemporary Art is known for presenting innovative works of contemporary art in Boulder and the Denver Metro Area for over 50 years. The museum offers dynamic artistic expression programs for young artists and curatorial services beyond its galleries."
+    },
+    {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "stage": "deep_dive",
+      "reason": "11 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.audience_focus.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=75, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.notes.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=75, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=82, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Colorado Snowsports Museum and Hall of Fame"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Vail"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "https://www.snowsportsmuseum.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "GENERAL MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "field": "city_tier",
+      "reason": "low_confidence",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "field": "time_needed",
+      "reason": "low_confidence",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "field": "notes",
+      "reason": "equal_trust_newer",
+      "proposed": "Colorado Snowsports Museum and Hall of Fame is a general museum celebrating Colorado snow sports. It features exhibits that educate and inspire visitors about the history and culture of snow sports in Colorado. The museum is open daily and offers free admission."
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "stage": "deep_dive",
+      "reason": "8 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=75, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=75, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.notes.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Colorado Springs Fine Arts Center"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Colorado Springs"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.csfineartscenter.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990"
+    },
+    {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "stage": "deep_dive",
+      "reason": "10 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\ntour_planning_scores.collection_depth\n  Field required [type=missing, input_value={'family_friendly_score':...ndard gallery viewing.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\ntour_planning_scores.collection_quality\n  Field required [type=missing, input_value={'family_friendly_score':...ndard gallery viewing.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=72, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Denver Art Museum"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Denver"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "https://denverartmuseum.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 1
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "field": "notes",
+      "reason": "higher_trust",
+      "proposed": "The Denver Art Museum is an art museum known for its diverse exhibitions, including Impressionist works. It offers a variety of programs and events to engage visitors with art."
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "stage": "deep_dive",
+      "reason": "8 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Denver Firefighters Museum"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Colorado"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "https://denverfirefightersmuseum.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "GENERAL MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "field": "city_tier",
+      "reason": "low_confidence",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "field": "time_needed",
+      "reason": "low_confidence",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-unknown-denver-firefighters-museum",
+      "stage": "deep_dive",
+      "reason": "8 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=55, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nrecommendations.0.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=60, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=72, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Durango Arts Center"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Durango"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://durangoarts.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-unknown-durango-arts-center",
+      "stage": "deep_dive",
+      "reason": "9 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Fort Collins Museum of Contemporary Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Boulder"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.ftcma.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
+      "stage": "deep_dive",
+      "reason": "12 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=55, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=75, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.notes.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=62, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nrecommendations.0.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nrecommendations.1.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=75, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=60, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Golden History Museums"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Golden"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.goldenhistory.org"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "History"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "HISTORY MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-unknown-golden-history-museums",
+      "stage": "deep_dive",
+      "reason": "8 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Longmont Museum"
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Longmont"
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "field": "website",
+      "reason": "no_existing_provenance",
+      "proposed": "https://www.longmontcolorado.gov/departments/departments-e-m/museum"
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "GENERAL MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "field": "city_tier",
+      "reason": "low_confidence",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "field": "time_needed",
+      "reason": "low_confidence",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-unknown-longmont-museum",
+      "stage": "deep_dive",
+      "reason": "9 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.notes.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=86, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Clyfford Still Museum"
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Denver"
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://clyffordstillmuseum.org"
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 1
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "stage": "deep_dive",
+      "reason": "7 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-denver-molly-brown-house-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Molly Brown House Museum"
+    },
+    {
+      "museum_id": "usa-co-denver-molly-brown-house-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Denver"
+    },
+    {
+      "museum_id": "usa-co-denver-molly-brown-house-museum",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.mollybrown.org"
+    },
+    {
+      "museum_id": "usa-co-denver-molly-brown-house-museum",
+      "field": "city_tier",
+      "reason": "low_confidence",
+      "proposed": 1
+    },
+    {
+      "museum_id": "usa-co-denver-molly-brown-house-museum",
+      "field": "time_needed",
+      "reason": "low_confidence",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-denver-molly-brown-house-museum",
+      "field": "notes",
+      "reason": "equal_trust_newer",
+      "proposed": "Visit the Molly Brown House Museum! Discover the legacy of Margaret Brown with tours, events, and a museum store supporting local goods. Check hours & book now!"
+    },
+    {
+      "museum_id": "usa-co-denver-molly-brown-house-museum",
+      "stage": "deep_dive",
+      "reason": "6 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Museum of Contemporary Art"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Denver"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.mcadenver.org"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 1
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "reputation",
+      "reason": "no_existing_provenance",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "stage": "deep_dive",
+      "reason": "9 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.reputation.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Foothills Art Center"
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Golden"
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "field": "website",
+      "reason": "no_existing_provenance",
+      "proposed": "http://www.foothillsartcenter.org/#feature1"
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "field": "city_tier",
+      "reason": "low_confidence",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "field": "time_needed",
+      "reason": "low_confidence",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "Phone: (303) 279-3922\nGoogle Rating: 4.6/5 (129 reviews)\n♿ Wheelchair accessible entrance available"
+    },
+    {
+      "museum_id": "usa-co-golden-foothills-art-center",
+      "stage": "deep_dive",
+      "reason": "7 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=62, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Western Colorado Center for the Arts"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Grand Junction"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.gjartcenter.org"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 2
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
+      "stage": "deep_dive",
+      "reason": "8 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Historic Georgetown"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Inc. Hamill House Museum"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "https://www.historicgeorgetown.org"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "History"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "HISTORIC PRESERVATION"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "city_tier",
+      "reason": "low_confidence",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "time_needed",
+      "reason": "low_confidence",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "stage": "deep_dive",
+      "reason": "9 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=55, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nrecommendations.0.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=60, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=62, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "National Mining Hall of Fame and Museum"
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "Leadville"
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "http://www.mininghalloffame.org"
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM"
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "field": "city_tier",
+      "reason": "low_confidence",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "field": "time_needed",
+      "reason": "low_confidence",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990"
+    },
+    {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "stage": "deep_dive",
+      "reason": "8 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=95, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=84, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=78, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "museum_name",
+      "reason": "no_existing_provenance",
+      "proposed": "Center for Visual Art"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "city",
+      "reason": "no_existing_provenance",
+      "proposed": "MSU Denver"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "website",
+      "reason": "equal_trust_newer",
+      "proposed": "https://www.msudenver.edu/cva"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "primary_domain",
+      "reason": "no_existing_provenance",
+      "proposed": "Art"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "museum_type",
+      "reason": "no_existing_provenance",
+      "proposed": "ART MUSEUM"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "city_tier",
+      "reason": "no_existing_provenance",
+      "proposed": 3
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "time_needed",
+      "reason": "no_existing_provenance",
+      "proposed": "Half day"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "field": "notes",
+      "reason": "no_existing_provenance",
+      "proposed": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    {
+      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "stage": "deep_dive",
+      "reason": "9 validation errors for DeepDiveAgentOutput\nstate_file_updates.museum_name.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.website.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=90, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.primary_domain.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=85, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.museum_type.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.city_tier.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.time_needed.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=80, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nstate_file_updates.confidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=84, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\nconfidence\n  Input should be less than or equal to 5 [type=less_than_equal, input_value=70, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+    }
+  ]
+}

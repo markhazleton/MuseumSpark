@@ -1,143 +1,83 @@
 {
   "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "museum_id": "colorado_springs_fine_arts_center",
       "museum_name": {
         "value": "Colorado Springs Fine Arts Center",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_identity",
+        "trust_level": 6,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
       "city": {
         "value": "Colorado Springs",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_identity",
+        "trust_level": 6,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
-      "street_address": null,
-      "postal_code": null,
       "website": {
         "value": "http://www.csfineartscenter.org",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_identity",
+        "trust_level": 6,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
-      "latitude": null,
-      "longitude": null,
       "primary_domain": {
         "value": "Art",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_identity",
+        "trust_level": 6,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
       "museum_type": {
         "value": "ART MUSEUM",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_state_record",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "audience_focus": null,
       "city_tier": {
         "value": 2,
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_state_record",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "reputation": null,
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": {
-        "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "confidence": 5,
-      "data_sources": [
-        "identity",
-        "state_record_subset"
-      ]
+        "source": "user_provided_state_record",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
+      }
     },
     "recommendations": [],
-    "summary_short": "The Colorado Springs Fine Arts Center offers a diverse range of art experiences, from contemporary installations to engaging classes for all skill levels.",
-    "summary_long": "The Colorado Springs Fine Arts Center is a vibrant hub for art enthusiasts, offering a wide array of exhibitions and programs. Located in Colorado Springs, this art museum is known for its dynamic contemporary art installations and educational classes that cater to artists of all levels. The museum frequently hosts events such as Spark! A Night of Creativity, providing a playful and interactive experience for adults. Additionally, the center features live performances and film series, making it a cultural cornerstone in the region. Visitors can expect a half-day of exploration, with opportunities to engage with both visual and performing arts.",
-    "collection_highlights": [
-      {
-        "title": "Contemporary Film Series",
-        "description": "A journey through Puerto Rico’s interior, affirming the presence and traditions of the island’s Indigenous people.",
-        "source": "website_text_snippet"
-      },
-      {
-        "title": "Spark! A Night of Creativity",
-        "description": "An after-hours adventure where adults can engage in playful and creative activities.",
-        "source": "website_text_snippet"
-      },
-      {
-        "title": "The Roommate",
-        "description": "A live stage performance examining identity and reinvention, recently seen on Broadway.",
-        "source": "website_text_snippet"
-      }
-    ],
-    "signature_artists": [],
+    "summary_short": "Art museum in Colorado Springs with ticketed admission, events, and an active art school offering classes for all levels; also presents live theater programming.",
+    "summary_long": "Colorado Springs Fine Arts Center is an art museum in Colorado Springs (USA) with ticketed entry, a calendar of events, and a robust education component via its art school. The site highlights after-hours creativity events (e.g., “Spark! A Night of Creativity”), classes designed to welcome artists of all levels, and live stage productions, suggesting a multidisciplinary visitor experience that blends exhibitions with hands-on learning and performing arts.",
     "visitor_tips": [
-      "Check the schedule for special events like Spark! for a unique experience.",
-      "Plan to spend a half-day to fully enjoy the exhibitions and performances.",
-      "Consider attending a class to enhance your visit with a hands-on art experience."
+      "Check the events calendar for after-hours programs like “Spark! A Night of Creativity.”",
+      "If you want a hands-on component, browse the art school classes (beginner-friendly through advanced).",
+      "Consider pairing museum viewing with a live stage performance when scheduled.",
+      "Plan roughly a half day to combine galleries with any class/event add-ons."
     ],
-    "best_for": "Art enthusiasts and families looking for interactive and educational experiences.",
-    "historical_significance": null,
-    "architectural_notes": null,
-    "curatorial_approach": null,
+    "best_for": "Visitors who want an art museum visit plus creative classes, special events, and occasional live theater in one venue.",
     "tour_planning_scores": {
-      "contemporary_score": 7,
-      "modern_score": null,
-      "impressionist_score": null,
-      "expressionist_score": null,
-      "classical_score": null,
-      "american_art_score": null,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": null,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 6,
-      "collection_quality": 5,
-      "exhibition_frequency": 7,
-      "family_friendly_score": 8,
+      "family_friendly_score": 7,
       "educational_value_score": 8,
-      "architecture_score": null,
-      "scoring_rationale": "The museum offers a strong focus on contemporary art with frequent exhibitions and educational programs, making it family-friendly and educationally valuable."
+      "scoring_rationale": "Evidence indicates frequent public programming (events) and a dedicated art school with classes for all levels, supporting strong educational value. After-hours creativity events and stage productions suggest broad appeal beyond standard gallery viewing."
     },
     "sources_consulted": [
-      "identity",
-      "state_record_subset",
-      "website_text_snippet"
+      "user_provided_identity",
+      "user_provided_state_record",
+      "user_provided_website_text_snippet"
     ],
-    "thinking_budget_used": null,
-    "confidence": 5,
-    "model_used": "GPT-4",
+    "confidence": 72,
+    "model_used": "gpt-4.1",
     "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "processed_at": "2026-01-17"
   }
 }

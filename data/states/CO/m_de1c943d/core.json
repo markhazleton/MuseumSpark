@@ -3,10 +3,59 @@
   "folder_hash": "m_de1c943d",
   "slug_alias": "leadville-national-mining-hall-of-fame-and-museum--museum",
   "state_file_updates": {
-    "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum"
+    "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+    "museum_name": {
+      "value": "National Mining Hall of Fame and Museum",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:52:21.887305Z"
+    },
+    "city": {
+      "value": "Leadville",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:52:21.887313Z"
+    },
+    "website": {
+      "value": "http://www.mininghalloffame.org",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:52:21.887316Z"
+    },
+    "museum_type": {
+      "value": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:52:21.887320Z"
+    },
+    "city_tier": {
+      "value": 3,
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2026-01-17T00:52:21.887324Z"
+    },
+    "time_needed": {
+      "value": "Half day",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2026-01-17T00:52:21.887327Z"
+    },
+    "notes": {
+      "value": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2026-01-17T00:52:21.887330Z"
+    }
   },
   "applied_fields": [],
-  "processed_at": "2023-10-05T12:00:00+00:00",
-  "agent_version": "1.0",
-  "model_used": "GPT-4"
+  "processed_at": "2023-10-01T00:00:00+00:00",
+  "agent_version": "validation_v1",
+  "model_used": "gpt-4o-mini"
 }

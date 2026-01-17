@@ -1,109 +1,67 @@
 {
   "museum_id": "usa-co-denver-molly-brown-house-museum",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-denver-molly-brown-house-museum",
-      "museum_name": null,
-      "city": null,
-      "street_address": null,
-      "postal_code": null,
-      "website": null,
-      "latitude": null,
-      "longitude": null,
-      "primary_domain": null,
-      "museum_type": null,
-      "audience_focus": null,
+      "museum_id": "molly-brown-house-museum-denver",
+      "museum_name": {
+        "value": "Molly Brown House Museum",
+        "source": "user_provided_identity",
+        "trust_level": 4,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
+      },
+      "city": {
+        "value": "Denver",
+        "source": "user_provided_identity",
+        "trust_level": 4,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
+      },
+      "website": {
+        "value": "http://www.mollybrown.org",
+        "source": "user_provided_identity",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
+      },
       "city_tier": {
         "value": 1,
-        "source": "state_record_subset",
-        "trust_level": 3,
-        "confidence": 4,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_state_record",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "reputation": null,
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
-        "trust_level": 3,
-        "confidence": 4,
-        "retrieved_at": "2023-10-01"
-      },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": {
-        "value": "Visit the Molly Brown House Museum! Discover the legacy of Margaret Brown with tours, events, and a museum store supporting local goods. Check hours & book now!",
-        "source": "state_record_subset",
-        "trust_level": 3,
-        "confidence": 4,
-        "retrieved_at": "2023-10-01"
-      },
-      "confidence": null,
-      "data_sources": null
+        "source": "user_provided_state_record",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
+      }
     },
     "recommendations": [],
-    "summary_short": "Explore the legacy of Titanic survivor Margaret 'Molly' Brown at her historic Denver home, now a museum offering tours and events.",
-    "summary_long": "The Molly Brown House Museum in Denver, Colorado, celebrates the life and legacy of Margaret 'Molly' Brown, best known as a Titanic survivor but also a prominent activist and philanthropist. The museum offers guided tours of her beautifully restored Victorian home, providing insights into her remarkable life and the era she lived in. Visitors can explore exhibits detailing her activism, philanthropy, and passion for social causes. The museum also hosts various events and educational programs, making it a vibrant part of Denver's cultural landscape.",
+    "summary_short": "Historic Denver house museum focused on Margaret “Molly” Brown—best known as a Titanic survivor—with ticketed admission, events, and group experiences.",
+    "summary_long": "Historic Denver’s Molly Brown House Museum interprets the life and legacy of Margaret “Molly” Brown, widely known as a survivor of the Titanic. The museum offers ticketed admission, visitor planning information, public events, and bookable private group experiences, positioning the site as a focused biographical and local-history museum experience in Denver.",
     "collection_highlights": [
       {
-        "title": "Victorian Architecture",
-        "description": "The museum is housed in a beautifully restored Victorian mansion, showcasing period architecture and design.",
-        "source": "website_text_snippet"
-      },
-      {
-        "title": "Molly Brown's Personal Artifacts",
-        "description": "Explore personal belongings and artifacts of Margaret Brown, offering a glimpse into her life and times.",
-        "source": "website_text_snippet"
-      },
-      {
-        "title": "Historical Exhibits",
-        "description": "Exhibits detailing Molly Brown's activism, philanthropy, and her role in the Titanic disaster.",
+        "title": "Margaret “Molly” Brown interpretation (Titanic survivor and broader life story)",
+        "description": "The museum centers on Molly Brown, emphasizing that she was “so much more” than her Titanic survival story.",
         "source": "website_text_snippet"
       }
     ],
-    "signature_artists": [],
     "visitor_tips": [
-      "Book tickets in advance to secure your spot on a guided tour.",
-      "Check the museum's event calendar for special programs and exhibitions.",
-      "Visit the museum store for unique local goods and souvenirs."
+      "Check the museum calendar for closure dates before visiting (closures are posted on the site).",
+      "Purchase tickets in advance via the museum’s online admission/ticketing links.",
+      "Use the “Plan Your Visit” guest information page to prepare logistics.",
+      "Consider booking a private group experience if visiting with an organized group.",
+      "Look at the events listing to align your visit with programs or special activities."
     ],
-    "best_for": "History enthusiasts and families interested in the life of Margaret 'Molly' Brown.",
-    "historical_significance": "The museum highlights the life of Margaret 'Molly' Brown, a Titanic survivor and prominent social activist.",
-    "architectural_notes": "The museum is a prime example of Victorian architecture, featuring intricate woodwork and period furnishings.",
-    "curatorial_approach": "The museum focuses on storytelling through the life and legacy of Margaret Brown, using her home as a historical backdrop.",
-    "tour_planning_scores": {
-      "contemporary_score": null,
-      "modern_score": null,
-      "impressionist_score": null,
-      "expressionist_score": null,
-      "classical_score": null,
-      "american_art_score": null,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": null,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 5,
-      "collection_quality": 6,
-      "exhibition_frequency": 5,
-      "family_friendly_score": 7,
-      "educational_value_score": 8,
-      "architecture_score": 7,
-      "scoring_rationale": "The museum offers a moderate depth of collection focused on the life of Molly Brown, with strong educational programs and a notable Victorian architecture."
-    },
-    "sources_consulted": [
-      "state_record_subset",
-      "website_text_snippet"
-    ],
-    "thinking_budget_used": null,
-    "confidence": 4,
-    "model_used": "GPT-4",
+    "best_for": "Visitors interested in Titanic history, Denver history, and a focused biographical house-museum experience.",
+    "confidence": 78,
+    "model_used": "gpt-4.1",
     "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "processed_at": "2026-01-17"
   }
 }

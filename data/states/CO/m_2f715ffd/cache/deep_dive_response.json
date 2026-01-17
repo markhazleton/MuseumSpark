@@ -1,138 +1,60 @@
 {
   "museum_id": "usa-co-denver-clyfford-still-museum",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-denver-clyfford-still-museum",
+      "museum_id": "clyfford-still-museum-denver",
       "museum_name": {
         "value": "Clyfford Still Museum",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 4,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
       "city": {
         "value": "Denver",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 4,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
-      "street_address": null,
-      "postal_code": null,
       "website": {
         "value": "http://clyffordstillmuseum.org",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
-      "latitude": null,
-      "longitude": null,
-      "primary_domain": null,
       "museum_type": {
         "value": "ART MUSEUM",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "audience_focus": null,
       "city_tier": {
         "value": 1,
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "reputation": null,
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": {
-        "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "confidence": 5,
-      "data_sources": [
-        "identity",
-        "state_record_subset"
-      ]
+        "source": "user_provided",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
+      }
     },
     "recommendations": [],
-    "summary_short": "Discover the profound works of Clyfford Still at the Clyfford Still Museum in Denver, a unique art museum dedicated to one of the most influential abstract expressionists.",
-    "summary_long": "The Clyfford Still Museum in Denver, Colorado, offers an unparalleled glimpse into the life and work of Clyfford Still, a leading figure in the abstract expressionist movement. The museum houses approximately 95% of Still's total output, making it a treasure trove for art enthusiasts and scholars alike. Visitors can explore a comprehensive collection of paintings, drawings, and archival materials that provide insight into Still's artistic journey and his significant contributions to modern art. The museum's architecture, designed by Brad Cloepfil, complements the artwork with its minimalist design, creating a serene environment for contemplation and appreciation.",
-    "collection_highlights": [
-      {
-        "title": "PH-401",
-        "description": "A monumental abstract painting by Clyfford Still, showcasing his signature style of bold colors and jagged forms.",
-        "source": null
-      },
-      {
-        "title": "PH-960",
-        "description": "An iconic piece from Still's later period, reflecting his evolution in abstract expressionism.",
-        "source": null
-      },
-      {
-        "title": "Archival Materials",
-        "description": "A collection of personal letters, photographs, and documents offering insight into Still's life and artistic philosophy.",
-        "source": null
-      }
-    ],
-    "signature_artists": [
-      "Clyfford Still"
-    ],
-    "visitor_tips": [
-      "Visit during weekdays to avoid crowds and have a more intimate experience with the artworks.",
-      "Take advantage of the museum's guided tours to gain deeper insights into Clyfford Still's life and work.",
-      "Allocate at least two hours to fully appreciate the extensive collection and the museum's architecture."
-    ],
-    "best_for": "Art enthusiasts and scholars interested in abstract expressionism.",
-    "historical_significance": null,
-    "architectural_notes": "Designed by Brad Cloepfil, the museum's architecture is a masterpiece of minimalist design, enhancing the viewing experience of Still's artworks.",
-    "curatorial_approach": "The museum focuses exclusively on the works of Clyfford Still, offering a deep dive into his artistic legacy through a chronological and thematic presentation.",
-    "tour_planning_scores": {
-      "contemporary_score": 9,
-      "modern_score": null,
-      "impressionist_score": null,
-      "expressionist_score": 8,
-      "classical_score": null,
-      "american_art_score": 8,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": 9,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 9,
-      "collection_quality": 9,
-      "exhibition_frequency": 5,
-      "family_friendly_score": 5,
-      "educational_value_score": 8,
-      "architecture_score": 8,
-      "scoring_rationale": "The Clyfford Still Museum scores highly in contemporary and expressionist art due to its comprehensive collection of Still's works. The museum's architecture and educational programs further enhance its appeal, making it a must-visit for art enthusiasts."
-    },
     "sources_consulted": [
-      "identity",
-      "state_record_subset"
+      "user_provided"
     ],
-    "thinking_budget_used": null,
-    "confidence": 5,
-    "model_used": "GPT-4",
+    "confidence": 86,
+    "model_used": "gpt-4.1",
     "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "processed_at": "2026-01-17"
   }
 }

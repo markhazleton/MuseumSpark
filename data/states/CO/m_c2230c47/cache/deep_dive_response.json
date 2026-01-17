@@ -1,121 +1,77 @@
 {
   "museum_id": "usa-co-unknown-longmont-museum",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-unknown-longmont-museum",
+      "museum_id": "longmont-museum",
       "museum_name": {
         "value": "Longmont Museum",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_identity",
+        "trust_level": 4,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
       "city": {
         "value": "Longmont",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_identity",
+        "trust_level": 4,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
-      "street_address": null,
-      "postal_code": null,
       "website": {
         "value": "https://www.longmontcolorado.gov/departments/departments-e-m/museum",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_identity",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
-      "latitude": null,
-      "longitude": null,
-      "primary_domain": null,
       "museum_type": {
         "value": "GENERAL MUSEUM",
-        "source": "state_record_subset",
+        "source": "user_provided_state_record",
         "trust_level": 3,
-        "confidence": 3,
-        "retrieved_at": "2023-10-01"
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "audience_focus": null,
       "city_tier": {
         "value": 2,
-        "source": "state_record_subset",
+        "source": "user_provided_state_record",
         "trust_level": 3,
-        "confidence": 3,
-        "retrieved_at": "2023-10-01"
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "reputation": null,
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
+        "source": "user_provided_state_record",
         "trust_level": 3,
-        "confidence": 3,
-        "retrieved_at": "2023-10-01"
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
       "notes": {
-        "value": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
-        "source": "state_record_subset",
-        "trust_level": 3,
-        "confidence": 3,
-        "retrieved_at": "2023-10-01"
+        "value": "Galleries closed for construction/expansion until Fall 2026; building open only during education and auditorium/courtyard program hours; no general open hours until expansion complete.",
+        "source": "website_text_snippet",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
-      "confidence": 3,
+      "confidence": 86,
       "data_sources": [
-        "identity",
-        "state_record_subset"
+        "user_provided_identity",
+        "user_provided_state_record",
+        "website_text_snippet"
       ]
     },
     "recommendations": [],
-    "summary_short": "The Longmont Museum offers engaging educational programs and events, even during its gallery expansion closure until Fall 2026.",
-    "summary_long": "The Longmont Museum, located in Longmont, Colorado, is currently undergoing an exciting expansion of its galleries, which are closed until Fall 2026. Despite the closure, the museum continues to offer a variety of educational programs and events in its auditorium and courtyard. The museum is known for its commitment to community engagement and education, providing a range of activities and programs that cater to diverse audiences. Visitors can explore the museum's offerings through its event calendar and program catalog, ensuring a rich cultural experience even during the construction period.",
-    "collection_highlights": [],
-    "signature_artists": [],
+    "summary_short": "City museum in Longmont; galleries closed for expansion until Fall 2026, but education and auditorium/courtyard programs continue.",
+    "summary_long": "Longmont Museum (Longmont, Colorado) is undergoing a gallery expansion: exhibits are closed for construction until Fall 2026. The building remains accessible only during scheduled education programs and auditorium/courtyard program hours, with no general open hours until the expansion is complete. Plan a visit around programs rather than exhibitions during this period.",
     "visitor_tips": [
-      "Check the event calendar for ongoing programs during the gallery closure.",
-      "Plan your visit around educational programs and auditorium events.",
-      "Note that general open hours will resume after the gallery expansion in Fall 2026."
+      "Do not plan on gallery viewing: exhibits are closed until Fall 2026 due to construction/expansion.",
+      "Visit only during scheduled education programs or auditorium/courtyard program hours (no general open hours).",
+      "Check the current program catalog for events and classes before traveling."
     ],
-    "best_for": "Families and educational groups looking for engaging programs.",
-    "historical_significance": null,
-    "architectural_notes": null,
-    "curatorial_approach": null,
-    "tour_planning_scores": {
-      "contemporary_score": null,
-      "modern_score": null,
-      "impressionist_score": null,
-      "expressionist_score": null,
-      "classical_score": null,
-      "american_art_score": null,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": null,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 5,
-      "collection_quality": 5,
-      "exhibition_frequency": 5,
-      "family_friendly_score": 7,
-      "educational_value_score": 8,
-      "architecture_score": null,
-      "scoring_rationale": "The Longmont Museum is currently focused on educational programs and events, with moderate collection depth and quality. It is family-friendly and offers high educational value through its ongoing programs."
-    },
-    "sources_consulted": [
-      "identity",
-      "state_record_subset",
-      "website_text_snippet"
-    ],
-    "thinking_budget_used": null,
-    "confidence": 4,
-    "model_used": "GPT-4",
+    "confidence": 78,
+    "model_used": "gpt-4.1",
     "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "processed_at": "2026-01-17"
   }
 }

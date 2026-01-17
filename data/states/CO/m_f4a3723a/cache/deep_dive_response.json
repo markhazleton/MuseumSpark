@@ -1,101 +1,90 @@
 {
   "museum_id": "usa-co-denver-museum-of-contemporary-art",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "museum_id": "museum-of-contemporary-art-denver",
       "museum_name": {
         "value": "Museum of Contemporary Art",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
       "city": {
         "value": "Denver",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
-      "street_address": null,
-      "postal_code": null,
       "website": {
         "value": "http://www.mcadenver.org",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
-      "latitude": null,
-      "longitude": null,
       "primary_domain": {
         "value": "Art",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 95,
+        "retrieved_at": "2026-01-17"
       },
       "museum_type": {
         "value": "ART MUSEUM",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "audience_focus": null,
       "city_tier": {
         "value": 1,
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
       "reputation": {
         "value": 2,
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 70,
+        "retrieved_at": "2026-01-17"
       },
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": {
-        "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "confidence": 5,
-      "data_sources": [
-        "identity",
-        "state_record_subset"
-      ]
+        "source": "user_provided_evidence",
+        "trust_level": 6,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
+      }
     },
     "recommendations": [],
-    "summary_short": "The Museum of Contemporary Art in Denver offers a dynamic exploration of modern and contemporary art, featuring rotating exhibitions and engaging programs.",
-    "summary_long": "The Museum of Contemporary Art (MCA) in Denver is a vibrant hub for contemporary art enthusiasts. It showcases a diverse array of modern and contemporary artworks through its rotating exhibitions, which often include thought-provoking installations and multimedia pieces. The museum is known for its commitment to presenting innovative art that challenges and inspires visitors. With a focus on both established and emerging artists, MCA Denver provides a platform for artistic expression and cultural dialogue. The museum also hosts a variety of educational programs and events, making it a lively and engaging destination for art lovers.",
+    "summary_short": "MCA Denver presents contemporary art exhibitions and related public programs; upcoming shows include Roni Horn and Deborah Jack (Sep 2025–Feb 2026).",
+    "summary_long": "Museum of Contemporary Art Denver (MCA Denver) is a contemporary art museum in Denver focused on rotating exhibitions and public programs. The museum’s listings highlight major exhibition presentations such as “Roni Horn: Water, Water on the Wall, You’re the Fairest of Them All” and “Deborah Jack: the haunting of estuaries…an (after)math of confluence,” both scheduled Sep 12, 2025–Feb 15, 2026, alongside artist talks and conversations tied to current shows.",
     "collection_highlights": [
       {
-        "title": "Roni Horn: Water, Water on the Wall",
-        "description": "An exhibition exploring the themes of water and reflection through contemporary installations.",
-        "source": "website_text_snippet"
+        "title": "Rotating contemporary art exhibitions",
+        "description": "Programming emphasizes temporary exhibitions rather than a documented permanent-collection focus in the provided evidence.",
+        "source": "user_provided_evidence"
       },
       {
-        "title": "Deborah Jack: the haunting of estuaries",
-        "description": "A multimedia exhibition that delves into themes of memory and geography.",
-        "source": "website_text_snippet"
+        "title": "Roni Horn exhibition (Sep 12, 2025–Feb 15, 2026)",
+        "description": "“Roni Horn: Water, Water on the Wall, You’re the Fairest of Them All.”",
+        "source": "user_provided_evidence"
+      },
+      {
+        "title": "Deborah Jack exhibition (Sep 12, 2025–Feb 15, 2026)",
+        "description": "“Deborah Jack: the haunting of estuaries…an (after)math of confluence.”",
+        "source": "user_provided_evidence"
+      },
+      {
+        "title": "Artist talk / conversation programming",
+        "description": "Example: “Deborah Jack: On Water, Memory, & Resistant Geographies” (Jan 29) tied to the exhibition.",
+        "source": "user_provided_evidence"
       }
     ],
     "signature_artists": [
@@ -103,45 +92,25 @@
       "Deborah Jack"
     ],
     "visitor_tips": [
-      "Check the museum's website for current exhibitions before visiting.",
-      "Consider becoming a member for free access and discounts.",
-      "Visit during weekdays to avoid crowds."
+      "Plan around the exhibition calendar; major shows listed run Sep 12, 2025–Feb 15, 2026.",
+      "Check the events schedule for artist conversations tied to exhibitions (e.g., Deborah Jack talk on Jan 29).",
+      "If visiting more than once, consider membership for repeat access and shop/café discounts (as advertised)."
     ],
-    "best_for": "Contemporary art enthusiasts and those interested in modern installations.",
-    "historical_significance": null,
-    "architectural_notes": null,
-    "curatorial_approach": null,
+    "best_for": "Travelers seeking rotating contemporary art exhibitions plus artist talks and public programs.",
     "tour_planning_scores": {
-      "contemporary_score": 8,
-      "modern_score": null,
-      "impressionist_score": null,
-      "expressionist_score": null,
-      "classical_score": null,
-      "american_art_score": null,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": null,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 5,
+      "contemporary_score": 9,
+      "collection_depth": 4,
       "collection_quality": 6,
-      "exhibition_frequency": 8,
       "family_friendly_score": 6,
       "educational_value_score": 7,
-      "architecture_score": null,
-      "scoring_rationale": "The museum excels in contemporary art with frequent exhibitions and educational programs. It is moderately family-friendly with interactive elements."
+      "scoring_rationale": "Evidence emphasizes contemporary exhibitions and related public programs, supporting a high contemporary score. No permanent-collection depth is documented in the snippet, so collection depth is kept modest while educational value is supported by scheduled artist conversations."
     },
     "sources_consulted": [
-      "identity",
-      "state_record_subset",
-      "website_text_snippet"
+      "user_provided_evidence: mcadenver.org website text snippet (exhibitions and events listings)"
     ],
-    "thinking_budget_used": null,
-    "confidence": 5,
-    "model_used": "GPT-4",
-    "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "confidence": 78,
+    "model_used": "gpt-4.1",
+    "agent_version": "DeepDiveAgentOutput_v1",
+    "processed_at": "2026-01-17"
   }
 }

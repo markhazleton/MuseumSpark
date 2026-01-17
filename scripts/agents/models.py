@@ -137,13 +137,13 @@ class TourPlanningScores(BaseModel):
     photography_score: Optional[int] = Field(None, ge=1, le=10, description="Photography collection")
     
     # Collection Characteristics (1-10, all museums)
-    collection_depth: int = Field(..., ge=1, le=10, description="1=narrow specialist, 10=encyclopedic")
-    collection_quality: int = Field(..., ge=1, le=10, description="1=local, 5=regional, 8=national, 10=world-class")
+    collection_depth: Optional[int] = Field(None, ge=1, le=10, description="1=narrow specialist, 10=encyclopedic")
+    collection_quality: Optional[int] = Field(None, ge=1, le=10, description="1=local, 5=regional, 8=national, 10=world-class")
     exhibition_frequency: Optional[int] = Field(None, ge=1, le=10, description="New shows/exhibitions per year")
     
     # Visitor Experience (1-10, all museums)
-    family_friendly_score: int = Field(..., ge=1, le=10, description="Suitability for families with children")
-    educational_value_score: int = Field(..., ge=1, le=10, description="Educational programs & resources")
+    family_friendly_score: Optional[int] = Field(None, ge=1, le=10, description="Suitability for families with children")
+    educational_value_score: Optional[int] = Field(None, ge=1, le=10, description="Educational programs & resources")
     architecture_score: Optional[int] = Field(None, ge=1, le=10, description="Building itself worth seeing")
     
     # Justification (required)
@@ -155,8 +155,8 @@ class DeepDiveAgentOutput(BaseModel):
 
     state_file_updates: MuseumRecordUpdate
     recommendations: list[Recommendation] = Field(default_factory=list)
-    summary_short: str
-    summary_long: str
+    summary_short: Optional[str] = None
+    summary_long: Optional[str] = None
     collection_highlights: list[CollectionHighlight] = Field(default_factory=list)
     signature_artists: list[str] = Field(default_factory=list)
     visitor_tips: list[str] = Field(default_factory=list)

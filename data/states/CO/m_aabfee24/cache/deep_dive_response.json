@@ -1,132 +1,76 @@
 {
   "museum_id": "usa-co-msu-denver-center-for-visual-art",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-msu-denver-center-for-visual-art",
+      "museum_id": "center-for-visual-art-msu-denver",
       "museum_name": {
         "value": "Center for Visual Art",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
       "city": {
         "value": "MSU Denver",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "street_address": null,
-      "postal_code": null,
       "website": {
         "value": "https://www.msudenver.edu/cva",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
-      "latitude": null,
-      "longitude": null,
       "primary_domain": {
         "value": "Art",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
       "museum_type": {
         "value": "ART MUSEUM",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "audience_focus": null,
       "city_tier": {
         "value": 3,
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "reputation": null,
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": {
-        "value": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "confidence": 5,
+      "confidence": 84,
       "data_sources": [
-        "identity",
-        "state_record_subset"
+        "user_provided_evidence"
       ]
     },
     "recommendations": [],
-    "summary_short": "The Center for Visual Art at MSU Denver offers a dynamic platform for contemporary art exhibitions and educational programs.",
-    "summary_long": "The Center for Visual Art (CVA) at MSU Denver is a vibrant art museum that serves as a cultural hub for contemporary art exhibitions and educational initiatives. Located in Denver, Colorado, the CVA showcases a diverse range of artworks from emerging and established artists, providing a space for dialogue and engagement with the community. The museum is dedicated to fostering an appreciation for contemporary art through its innovative exhibitions and public programs, making it a vital part of the cultural landscape in the region.",
-    "collection_highlights": [
-      {
-        "title": "Contemporary Art Exhibitions",
-        "description": "Rotating exhibitions featuring contemporary artists from various backgrounds.",
-        "source": "identity"
-      }
-    ],
+    "summary_short": "Art museum at MSU Denver focused on visual art; plan about a half-day visit.",
+    "summary_long": "Center for Visual Art (CVA) is an art museum at MSU Denver in Colorado. Allocate roughly a half day to visit; check current exhibitions and campus access details before you go.",
+    "collection_highlights": [],
     "signature_artists": [],
     "visitor_tips": [
-      "Check the museum's website for current exhibitions before visiting.",
-      "Plan to spend a half day to fully explore the exhibitions.",
-      "Consider attending one of the museum's educational programs or workshops."
+      "Plan for a half-day visit.",
+      "Confirm current exhibitions and any campus entry/parking logistics before arrival."
     ],
-    "best_for": "Art enthusiasts and students interested in contemporary art.",
-    "historical_significance": null,
-    "architectural_notes": null,
-    "curatorial_approach": null,
-    "tour_planning_scores": {
-      "contemporary_score": 7,
-      "modern_score": null,
-      "impressionist_score": null,
-      "expressionist_score": null,
-      "classical_score": null,
-      "american_art_score": null,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": null,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 5,
-      "collection_quality": 5,
-      "exhibition_frequency": 7,
-      "family_friendly_score": 6,
-      "educational_value_score": 7,
-      "architecture_score": 5,
-      "scoring_rationale": "The Center for Visual Art is strong in contemporary art exhibitions, with a moderate collection depth and quality. It offers frequent exhibitions and educational programs, making it suitable for art enthusiasts and students."
-    },
-    "sources_consulted": [
-      "identity",
-      "state_record_subset"
-    ],
-    "thinking_budget_used": null,
-    "confidence": 5,
-    "model_used": "GPT-4",
-    "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "confidence": 70,
+    "model_used": "api",
+    "agent_version": "deepdive-json-1.0",
+    "processed_at": "2026-01-17"
   }
 }

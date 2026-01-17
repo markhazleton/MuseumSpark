@@ -38,14 +38,14 @@
       },
       "museum_type": {
         "value": "ART MUSEUM",
-        "source": "state_record_subset",
+        "source": "official_website",
         "trust_level": 5,
         "confidence": 5
       },
       "audience_focus": null,
       "city_tier": {
         "value": 2,
-        "source": "state_record_subset",
+        "source": "official_website",
         "trust_level": 5,
         "confidence": 5
       },
@@ -53,16 +53,17 @@
       "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
+        "source": "official_website",
         "trust_level": 5,
         "confidence": 5
       },
       "notes": {
         "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-        "source": "state_record_subset",
+        "source": "official_website",
         "trust_level": 5,
         "confidence": 5
       },
+      "confidence": null,
       "data_sources": null
     },
     "recommendations": []

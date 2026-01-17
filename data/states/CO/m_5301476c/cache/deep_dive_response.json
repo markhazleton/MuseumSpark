@@ -1,142 +1,88 @@
 {
   "museum_id": "usa-co-unknown-boulder-history-museum",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-unknown-boulder-history-museum",
+      "museum_id": "boulder_history_museum",
       "museum_name": {
         "value": "Boulder History Museum",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence.identity",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
       "city": {
         "value": "Colorado",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence.identity",
+        "trust_level": 2,
+        "confidence": 55,
+        "retrieved_at": "2026-01-17"
       },
-      "street_address": null,
-      "postal_code": null,
       "website": {
         "value": "http://boulderhistory.org",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence.identity",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "latitude": null,
-      "longitude": null,
       "primary_domain": {
         "value": "History",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence.identity",
+        "trust_level": 4,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
       "museum_type": {
         "value": "HISTORIC PRESERVATION",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence.state_record",
+        "trust_level": 3,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "audience_focus": null,
       "city_tier": {
         "value": 3,
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided_evidence.state_record",
+        "trust_level": 3,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
       },
-      "reputation": null,
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": {
-        "value": "Historic Preservation museum focusing on local history. Notable for its community engagement and preservation efforts.",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "confidence": 5,
-      "data_sources": [
-        "identity",
-        "state_record_subset"
-      ]
+        "source": "user_provided_evidence.state_record",
+        "trust_level": 3,
+        "confidence": 75,
+        "retrieved_at": "2026-01-17"
+      }
     },
-    "recommendations": [],
-    "summary_short": "Explore the rich local history of Boulder at the Boulder History Museum, known for its community engagement and preservation efforts.",
-    "summary_long": "The Boulder History Museum offers a deep dive into the local history of Boulder, Colorado. As a historic preservation museum, it focuses on the preservation and presentation of the area's rich cultural heritage. The museum is notable for its community engagement initiatives and efforts to preserve local history. Visitors can expect to spend about half a day exploring the exhibits, which provide insights into the historical context of the region. While the museum does not focus on art movements, it offers a valuable educational experience for those interested in the history and culture of Boulder.",
-    "collection_highlights": [
+    "recommendations": [
       {
-        "title": "Local History Exhibits",
-        "description": "Exhibits focusing on the history and development of Boulder, Colorado.",
-        "source": "state_record_subset"
-      },
-      {
-        "title": "Community Engagement Programs",
-        "description": "Programs designed to engage the local community in historical preservation efforts.",
-        "source": "state_record_subset"
-      },
-      {
-        "title": "Preservation Efforts",
-        "description": "Initiatives aimed at preserving the historical artifacts and stories of Boulder.",
-        "source": "state_record_subset"
+        "field_name": "city",
+        "current_value": "Colorado",
+        "proposed_value": "Boulder",
+        "reason": "Museum name and website strongly suggest the location is Boulder; 'Colorado' appears to be a state value placed in the city field.",
+        "confidence": 70,
+        "evidence": "Identity lists museum_name 'Boulder History Museum' and website 'boulderhistory.org' while city is 'Colorado'.",
+        "source": "user_provided_evidence.identity",
+        "trust_level": 2,
+        "retrieved_at": "2026-01-17"
       }
     ],
-    "signature_artists": [],
+    "summary_short": "Local history museum focused on Boulder/Colorado heritage; plan about a half-day visit.",
+    "summary_long": "Boulder History Museum is a history-focused institution associated with historic preservation. Based on the provided record, a half-day is an appropriate visit length. Note: the supplied website text snippet appears unrelated/spam, so collection specifics and visitor experience details cannot be reliably summarized from it.",
     "visitor_tips": [
-      "Plan to spend about half a day to fully explore the exhibits.",
-      "Check the museum's website for any special community events or programs.",
-      "Engage with the interactive exhibits to learn more about Boulder's history."
+      "Plan roughly a half-day to see the museum at a comfortable pace.",
+      "If using the listed website, verify content carefully; the provided snippet appears unrelated to the museum."
     ],
-    "best_for": "History enthusiasts and those interested in local cultural heritage.",
-    "historical_significance": "The museum plays a crucial role in preserving and presenting the history of Boulder, Colorado.",
-    "architectural_notes": null,
-    "curatorial_approach": "Focuses on the preservation and presentation of local history through community engagement and educational programs.",
-    "tour_planning_scores": {
-      "contemporary_score": null,
-      "modern_score": null,
-      "impressionist_score": null,
-      "expressionist_score": null,
-      "classical_score": null,
-      "american_art_score": null,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": null,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 5,
-      "collection_quality": 5,
-      "exhibition_frequency": 6,
-      "family_friendly_score": 7,
-      "educational_value_score": 8,
-      "architecture_score": 5,
-      "scoring_rationale": "The museum offers a moderate depth and quality of local historical collections, with a strong focus on educational value and community engagement. It is family-friendly with interactive exhibits."
-    },
+    "best_for": "Travelers and residents interested in local Boulder/Colorado history and historic preservation.",
     "sources_consulted": [
-      "identity",
-      "state_record_subset"
+      "user_provided_evidence.identity",
+      "user_provided_evidence.state_record",
+      "user_provided_evidence.website_text_snippet"
     ],
-    "thinking_budget_used": null,
-    "confidence": 5,
-    "model_used": "GPT-4",
-    "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "confidence": 62,
+    "model_used": "gpt-4.1",
+    "agent_version": "deepdive-json-1.0",
+    "processed_at": "2026-01-17"
   }
 }

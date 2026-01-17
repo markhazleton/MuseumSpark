@@ -14,67 +14,72 @@ from .utils import load_env_key
 
 def _system_prompt() -> str:
     return (
-        "You are a precise research analyst. "
-        "Respond with strictly valid JSON matching the provided schema. "
-        "Do not include explanations or markdown."
+        "You are a museum subject-matter expert and precise research analyst. Your task is to produce trip-planning, prioritization-ready JSON for art lovers. "
+        "Respond with strictly valid JSON matching DeepDiveAgentOutput; do not include explanations or markdown. Produce JSON only. "
+        "Emphasize collection strength, art movements, visitor experience, and educational value. Keep text concise: summary_short <= 220 chars, summary_long <= 900 chars, visitor_tips 3-5 items, collection_highlights 3-6 items, signature_artists 5-10. "
+        "If evidence text is missing, use your own knowledge conservatively to fill summaries, tips, highlights, and tour_planning_scores; keep scores realistic (no 9-10 without clear rationale) and set confidence to 2-3 for such fields. "
+        "Fill tour_planning_scores (1-10) when you have evidence or prior knowledge; include scoring_rationale (2-3 sentences). Skip addresses, phone, hours, URLs, CSV/internal notes, sources_consulted unless obvious, and do not invent fields unrelated to museums."
     )
+
+
+def _compact_evidence(evidence_packet: dict, *, max_text: int = 900) -> dict:
+    """Strip noisy fields and shorten text for lighter prompts."""
+
+    def _trim_text(value: str | None) -> str | None:
+        if not value:
+            return None
+        return value[:max_text].strip()
+
+    # Drop verbose or low-value fields like CSV provenance notes.
+    state = {
+        k: v
+        for k, v in (evidence_packet.get("state_record_subset") or {}).items()
+        if k != "notes" and v
+    }
+
+    # Remove museum_id to avoid leaking internal IDs; drop nulls later.
+    identity = evidence_packet.get("identity") or {}
+    identity.pop("museum_id", None)
+
+    slim = {
+        "identity": identity,
+        "state_record": state,
+        "wikipedia_summary": _trim_text(evidence_packet.get("wikipedia_summary")),
+        "website_text_snippet": _trim_text(evidence_packet.get("website_text_snippet")),
+    }
+
+    def _prune(obj):
+        if isinstance(obj, dict):
+            return {k: _prune(v) for k, v in obj.items() if v not in (None, "", [], {})}
+        if isinstance(obj, list):
+            items = [_prune(v) for v in obj if v not in (None, "", [], {})]
+            return items
+        return obj
+
+    return _prune(slim)
 
 
 def _user_prompt(evidence_packet: dict) -> str:
+    evidence = _compact_evidence(evidence_packet)
     return (
-        "Analyze this museum for tour planning and visitor guidance.\n\n"
-        "YOUR MISSION: Score this museum across multiple dimensions to enable queries like:\n"
-        "  'Show me best Impressionist museums in Southeast (impressionist_score >= 7)'\n"
-        "  'Plan Contemporary Art road trip from DC to Miami (contemporary_score >= 8)'\n"
-        "  'Family-friendly art museums with high educational value'\n\n"
-        "SCORING FOCUS (1-10 scale, required for tour_planning_scores):\n\n"
-        "1. ART MOVEMENT SPECIALIZATIONS (art museums only, omit if not applicable):\n"
-        "   - contemporary_score (1950-present): Rothko, Warhol, Pollock, contemporary installations\n"
-        "   - modern_score (1860s-1950): Cubism, Surrealism, early abstraction, Picasso era\n"
-        "   - impressionist_score: Monet, Renoir, Degas, Post-Impressionists like Van Gogh\n"
-        "   - expressionist_score: German Expressionism, Munch, Kandinsky, Die Brücke\n"
-        "   - classical_score: Renaissance, Baroque, Neoclassical works\n\n"
-        "2. GEOGRAPHIC/CULTURAL FOCUS (1-10, all relevant museums):\n"
-        "   - american_art_score: American artists, Hudson River School, regionalism\n"
-        "   - european_art_score: European masters and movements\n"
-        "   - asian_art_score: Asian traditions, ceramics, scrolls\n"
-        "   - african_art_score: African & Indigenous art traditions\n\n"
-        "3. MEDIUM SPECIALIZATIONS (1-10):\n"
-        "   - painting_score, sculpture_score, decorative_arts_score, photography_score\n\n"
-        "4. COLLECTION CHARACTERISTICS (1-10, REQUIRED for all museums):\n"
-        "   - collection_depth: 1=narrow specialist (single artist/period), 10=encyclopedic (all periods/regions)\n"
-        "   - collection_quality: 1=local importance, 5=strong regional, 8=nationally significant, 10=world-class\n"
-        "   - exhibition_frequency: How often new temporary exhibitions (1=rarely, 10=constantly rotating)\n\n"
-        "5. VISITOR EXPERIENCE (1-10, REQUIRED):\n"
-        "   - family_friendly_score: Interactive exhibits, kids programs, accessibility\n"
-        "   - educational_value_score: Docent tours, labels, educational programs\n"
-        "   - architecture_score: Is the building itself notable? Frank Lloyd Wright = 10, generic = 3\n\n"
-        "SCORING GUIDELINES:\n"
-        "  • 1-3: Minimal/No focus    • 4-6: Moderate representation    • 7-8: Strong focus    • 9-10: World-class\n"
-        "  • Trust your training: You KNOW what makes Impressionism vs Expressionism\n"
-        "  • Use evidence: 'world-class Wedgwood collection' → decorative_arts_score: 9\n"
-        "  • Be discriminating: Not every museum deserves 8+\n"
-        "  • OMIT scores when insufficient evidence (better null than guess)\n\n"
-        "RICH CONTENT (still required):\n"
-        "  - summary_short: 1-sentence compelling hook (100-500 chars)\n"
-        "  - summary_long: Comprehensive overview (500-2000 chars)\n"
-        "  - collection_highlights: 3-10 must-see pieces/collections\n"
-        "  - signature_artists: 5-20 key artists (for art museums)\n"
-        "  - visitor_tips: 3-7 practical tips (timing, must-sees, skip-the-line)\n"
-        "  - best_for: Target audience (e.g., 'Serious art historians', 'Families with young kids')\n"
-        "  - scoring_rationale: 2-3 sentences explaining KEY scores\n\n"
-        "DO NOT try to extract:\n"
-        "  ❌ Addresses, phone numbers, hours (APIs handle this)\n"
-        "  ❌ City names, museum names (already in database)\n"
-        "  ❌ Website URLs (already have them)\n\n"
-        "EXTRACTION RULES:\n"
-        "  - Confidence scale: 1-5 (1=guess, 3=inferred, 5=explicit in source)\n"
-        "  - OMIT fields with no evidence (return null, not empty object)\n"
-        "  - sources_consulted: List what you actually used\n\n"
-        "Evidence Packet:\n"
-        f"{json.dumps(evidence_packet, indent=2)}\n\n"
-        "Return JSON with tour_planning_scores fully populated for filtering and routing!"
+        "Use the trimmed evidence below to populate the JSON. If evidence is sparse, you may rely on your own knowledge; when doing so, keep claims high-level, avoid specifics you cannot support, and lower confidence to 2-3. Do not include null attributes."
+        f"{json.dumps(evidence, ensure_ascii=False)}"
     )
+
+
+def _clamp_confidence(obj: any) -> any:
+    """Clamp any 'confidence' fields to the 1-5 range recursively."""
+    if isinstance(obj, dict):
+        out = {}
+        for k, v in obj.items():
+            if k == "confidence" and isinstance(v, (int, float)):
+                out[k] = max(1, min(5, int(v)))
+            else:
+                out[k] = _clamp_confidence(v)
+        return out
+    if isinstance(obj, list):
+        return [_clamp_confidence(v) for v in obj]
+    return obj
 
 
 def run_deep_dive_agent(
@@ -156,6 +161,12 @@ def run_deep_dive_agent(
         encoding="utf-8"
     )
 
+    if isinstance(payload, dict):
+        payload.setdefault("model_used", model)
+        if isinstance(payload.get("state_file_updates"), dict):
+            payload.setdefault("agent_version", "deep_dive_v1")
+
+    payload = _clamp_confidence(payload)
     output = DeepDiveAgentOutput.model_validate(payload)
     cache_path.write_text(output.model_dump_json(indent=2), encoding="utf-8")
     return output

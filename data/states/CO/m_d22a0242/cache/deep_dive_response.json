@@ -1,97 +1,111 @@
 {
   "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
-      "museum_name": null,
-      "city": null,
-      "street_address": null,
-      "postal_code": null,
-      "website": null,
-      "latitude": null,
-      "longitude": null,
-      "primary_domain": null,
-      "museum_type": null,
-      "audience_focus": null,
-      "city_tier": null,
-      "reputation": null,
-      "collection_tier": null,
-      "time_needed": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": null,
-      "confidence": null,
-      "data_sources": null
+      "museum_id": "fort_collins_museum_of_contemporary_art",
+      "museum_name": {
+        "value": "Fort Collins Museum of Contemporary Art",
+        "source": "user_provided_evidence.identity",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
+      },
+      "city": {
+        "value": "Boulder",
+        "source": "user_provided_evidence.identity",
+        "trust_level": 2,
+        "confidence": 55,
+        "retrieved_at": "2026-01-17"
+      },
+      "website": {
+        "value": "http://www.ftcma.org",
+        "source": "user_provided_evidence.identity",
+        "trust_level": 4,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
+      },
+      "primary_domain": {
+        "value": "Art",
+        "source": "user_provided_evidence.identity",
+        "trust_level": 4,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
+      },
+      "museum_type": {
+        "value": "ART MUSEUM",
+        "source": "user_provided_evidence.state_record",
+        "trust_level": 3,
+        "confidence": 75,
+        "retrieved_at": "2026-01-17"
+      },
+      "city_tier": {
+        "value": 2,
+        "source": "user_provided_evidence.state_record",
+        "trust_level": 3,
+        "confidence": 70,
+        "retrieved_at": "2026-01-17"
+      },
+      "time_needed": {
+        "value": "Half day",
+        "source": "user_provided_evidence.state_record",
+        "trust_level": 3,
+        "confidence": 70,
+        "retrieved_at": "2026-01-17"
+      },
+      "notes": {
+        "value": "Provided website text snippet appears unrelated/spam (login/links to 'Pecah138', 'GGSOFT') and does not describe the museum; treat on-site content as compromised/unreliable.",
+        "source": "user_provided_evidence.website_text_snippet",
+        "trust_level": 1,
+        "confidence": 80,
+        "retrieved_at": "2026-01-17"
+      },
+      "confidence": 62,
+      "data_sources": [
+        "user_provided_evidence.identity",
+        "user_provided_evidence.state_record",
+        "user_provided_evidence.website_text_snippet"
+      ]
     },
-    "recommendations": [],
-    "summary_short": "Discover contemporary art at the Fort Collins Museum of Contemporary Art, a vibrant hub for modern creativity in Colorado.",
-    "summary_long": "The Fort Collins Museum of Contemporary Art is a dynamic space dedicated to showcasing contemporary art from both established and emerging artists. Located in Boulder, Colorado, this museum offers a diverse range of exhibitions that highlight the innovative and thought-provoking nature of contemporary art. Visitors can explore a variety of mediums and styles, from abstract paintings to interactive installations, providing a comprehensive view of the current art scene. The museum is committed to engaging the community through educational programs and events, making it a cultural cornerstone in the region.",
-    "collection_highlights": [
+    "recommendations": [
       {
-        "title": "Abstract Expressionism Collection",
-        "description": "A collection featuring works by prominent abstract expressionists.",
-        "source": null
+        "field_name": "city",
+        "current_value": "Boulder",
+        "proposed_value": "Fort Collins",
+        "reason": "Museum name strongly indicates Fort Collins; current city conflicts with identity label and may be an entry error.",
+        "confidence": 70,
+        "evidence": "Museum name: 'Fort Collins Museum of Contemporary Art' vs city listed as 'Boulder'.",
+        "source": "user_provided_evidence.identity",
+        "trust_level": 2,
+        "retrieved_at": "2026-01-17"
       },
       {
-        "title": "Interactive Installations",
-        "description": "Engaging installations that invite visitor interaction and participation.",
-        "source": null
-      },
-      {
-        "title": "Local Artists Showcase",
-        "description": "A rotating exhibition highlighting the work of local contemporary artists.",
-        "source": null
+        "field_name": "website",
+        "current_value": "http://www.ftcma.org",
+        "proposed_value": "Verify/refresh official site content",
+        "reason": "The captured website snippet is unrelated gambling/spam content, suggesting the page scrape is compromised or not the museum site.",
+        "confidence": 75,
+        "evidence": "Snippet contains 'LOGIN', 'ALTERNATIF', 'Pecah138', 'GGSOFT' and no museum-related text.",
+        "source": "user_provided_evidence.website_text_snippet",
+        "trust_level": 1,
+        "retrieved_at": "2026-01-17"
       }
     ],
-    "signature_artists": [
-      "Mark Rothko",
-      "Andy Warhol",
-      "Jackson Pollock",
-      "Pablo Picasso",
-      "Vincent van Gogh"
-    ],
+    "summary_short": "Contemporary art museum (per record) with an expected half-day visit. Current web snippet appears compromised/unrelated, so collection details can’t be verified from provided evidence.",
+    "summary_long": "Fort Collins Museum of Contemporary Art is identified as an art museum focused on contemporary art, with a typical visit time of about half a day. The provided website text snippet appears to be unrelated spam/gambling content and does not offer reliable information about exhibitions, artists, or collection strengths; additional verification is needed before making collection-based recommendations.",
     "visitor_tips": [
-      "Visit during weekdays to avoid crowds.",
-      "Check the schedule for guided tours and workshops.",
-      "Explore the interactive installations for a hands-on experience."
+      "Plan for a half-day visit based on the state record.",
+      "Do not rely on the provided website snippet for planning; verify official information through a trusted source before visiting."
     ],
-    "best_for": "Art enthusiasts and families interested in contemporary art.",
-    "historical_significance": null,
-    "architectural_notes": null,
-    "curatorial_approach": null,
-    "tour_planning_scores": {
-      "contemporary_score": 8,
-      "modern_score": 7,
-      "impressionist_score": 6,
-      "expressionist_score": 5,
-      "classical_score": null,
-      "american_art_score": 6,
-      "european_art_score": 7,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": 7,
-      "sculpture_score": 6,
-      "decorative_arts_score": null,
-      "photography_score": 5,
-      "collection_depth": 7,
-      "collection_quality": 6,
-      "exhibition_frequency": 8,
-      "family_friendly_score": 7,
-      "educational_value_score": 8,
-      "architecture_score": 5,
-      "scoring_rationale": "The museum excels in contemporary art with strong exhibitions and community engagement. Its educational programs and interactive installations enhance the visitor experience, making it suitable for families and art enthusiasts alike."
-    },
     "sources_consulted": [
-      "museum_website",
-      "local_art_reviews"
+      "user_provided_evidence.identity",
+      "user_provided_evidence.state_record",
+      "user_provided_evidence.website_text_snippet"
     ],
-    "thinking_budget_used": null,
-    "confidence": 4,
-    "model_used": "GPT-4",
-    "agent_version": "1.0",
-    "processed_at": "2023-10-05T12:00:00Z"
+    "confidence": 60,
+    "model_used": "gpt-4.1",
+    "agent_version": "deepdive-json-1.0",
+    "processed_at": "2026-01-17"
   }
 }

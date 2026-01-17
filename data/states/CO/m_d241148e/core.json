@@ -3,10 +3,59 @@
   "folder_hash": "m_d241148e",
   "slug_alias": "colorado-denver-firefighters-museum--museum",
   "state_file_updates": {
-    "museum_id": "usa-co-unknown-denver-firefighters-museum"
+    "museum_id": "usa-co-unknown-denver-firefighters-museum",
+    "museum_name": {
+      "value": "Denver Firefighters Museum",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:48:39.184805Z"
+    },
+    "city": {
+      "value": "Colorado",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:48:39.184810Z"
+    },
+    "website": {
+      "value": "https://denverfirefightersmuseum.org",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:48:39.184812Z"
+    },
+    "museum_type": {
+      "value": "GENERAL MUSEUM",
+      "source": "official_website",
+      "trust_level": 5,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:48:39.184814Z"
+    },
+    "city_tier": {
+      "value": 3,
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2026-01-17T00:48:39.184818Z"
+    },
+    "time_needed": {
+      "value": "Half day",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2026-01-17T00:48:39.184821Z"
+    },
+    "notes": {
+      "value": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
+      "source": "state_record_subset",
+      "trust_level": 2,
+      "confidence": 4,
+      "retrieved_at": "2026-01-17T00:48:39.184823Z"
+    }
   },
   "applied_fields": [],
-  "processed_at": "2023-10-05T12:00:00+00:00",
-  "agent_version": "1.0",
-  "model_used": "GPT-4"
+  "processed_at": "2026-01-17T00:48:39.184827+00:00",
+  "agent_version": "validation_v1",
+  "model_used": "gpt-4o-mini"
 }

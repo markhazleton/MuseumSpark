@@ -19,7 +19,7 @@ import json
 import sys
 import argparse
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from collections import defaultdict
 from typing import Optional
 
@@ -162,7 +162,12 @@ class MuseumRecord(BaseModel):
 
     @model_validator(mode="after")
     def check_art_scoring(self):
-        if self.primary_domain != "Art":
+        # Relaxed validation: allow art scores if is_scoreable=True OR primary_domain="Art"
+        # The new pipeline uses is_scoreable as the gatekeeper, not primary_domain
+        extras = getattr(self, "__pydantic_extra__", {}) or {}
+        is_scoreable = extras.get("is_scoreable", False)
+
+        if self.primary_domain != "Art" and not is_scoreable:
             for field in (
                 "impressionist_strength",
                 "modern_contemporary_strength",
@@ -171,7 +176,8 @@ class MuseumRecord(BaseModel):
                 if getattr(self, field) is not None:
                     raise ValueError(
                         "Art scoring fields (impressionist_strength/modern_contemporary_strength/"
-                        "historical_context_score) must be empty when primary_domain is not 'Art'"
+                        "historical_context_score) must be empty when primary_domain is not 'Art' "
+                        "and is_scoreable is not True"
                     )
         return self
 
@@ -385,7 +391,7 @@ def main():
 
     # Build index file
     index_data = {
-        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "total_museums": len(museums),
         "museums": museums
     }

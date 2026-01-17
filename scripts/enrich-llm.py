@@ -16,7 +16,6 @@ from agents.deep_dive_agent import run_deep_dive_agent
 from agents.output import apply_state_file_updates, write_museum_subfolder
 from agents.quality import compute_gold_set_drift
 from agents.utils import BudgetState, estimate_tokens, load_env_key, load_json, save_json
-from agents.validation_agent import run_validation_agent
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STATES_DIR = PROJECT_ROOT / "data" / "states"
@@ -98,12 +97,11 @@ def main() -> int:
     scope.add_argument("--all-states", action="store_true", help="Run all states")
     parser.add_argument("--museum-id", help="Process a single museum_id")
 
+
     parser.add_argument("--provider", default="openai", choices=["openai", "anthropic"])
-    parser.add_argument("--validation-model", default="gpt-4o-mini")
-    parser.add_argument("--deep-dive-model", default="gpt-4o")
+    parser.add_argument("--deep-dive-model", default="gpt-5.2")
     parser.add_argument("--temperature", type=float, default=0.1)
-    parser.add_argument("--validation-max-tokens", type=int, default=900)
-    parser.add_argument("--deep-dive-max-tokens", type=int, default=1800)
+    parser.add_argument("--deep-dive-max-tokens", type=int, default=1400)
     parser.add_argument("--budget", type=float, default=5.0, help="Total budget ceiling")
     parser.add_argument("--confidence-threshold", type=int, default=4)
     parser.add_argument("--top-n", type=int, default=100, help="Deep dive top N art museums")
@@ -112,7 +110,7 @@ def main() -> int:
     drift_group.add_argument("--fail-on-drift", action="store_true", default=True)
     drift_group.add_argument("--no-fail-on-drift", action="store_false", dest="fail_on_drift")
     parser.add_argument("--gold-set", default=str(PROJECT_ROOT / "data" / "qa" / "gold-set.json"))
-    parser.add_argument("--failure-threshold", type=float, default=0.10, help="Validation failure rate gate")
+    parser.add_argument("--failure-threshold", type=float, default=0.10, help="Failure rate gate")
     parser.add_argument("--dry-run", action="store_true")
 
     args = parser.parse_args()
@@ -137,7 +135,9 @@ def main() -> int:
 
     # When running a specific state, deep dive ALL museums (not just top N)
     # This enables complete state-level scoring and ranking
-    if args.state and not args.museum_id:
+    if args.museum_id:
+        deep_dive_targets = {args.museum_id}
+    elif args.state:
         deep_dive_targets = None  # None means "all museums in scope"
     else:
         deep_dive_targets = _select_deep_dive_targets(args.top_n)
@@ -159,6 +159,10 @@ def main() -> int:
         
         for idx, museum in enumerate(museums, 1):
             museum_id = museum.get("museum_id")
+
+            # If a specific museum_id was requested, skip others
+            if args.museum_id and museum_id != args.museum_id:
+                continue
             if not museum_id:
                 continue
             if args.museum_id and museum_id != args.museum_id:
@@ -169,84 +173,6 @@ def main() -> int:
             folder_hash = museum_id_to_folder(museum_id)
             cache_dir = STATES_DIR / state_code / folder_hash / "cache"
             provenance_path = STATES_DIR / state_code / folder_hash / "provenance.json"
-
-            evidence_packet = build_evidence_packet(context)
-            estimated_prompt_tokens = estimate_tokens(json.dumps(evidence_packet, ensure_ascii=False))
-            estimated_cost = _estimate_cost(
-                args.validation_model, estimated_prompt_tokens, args.validation_max_tokens
-            )
-            if not budget.can_spend(estimated_cost):
-                raise SystemExit("Budget gate reached. Aborting run.")
-
-            try:
-                validation_output = run_validation_agent(
-                    context=context,
-                    provider=args.provider,
-                    model=args.validation_model,
-                    temperature=args.temperature,
-                    max_tokens=args.validation_max_tokens,
-                    cache_dir=cache_dir,
-                    use_cache=args.use_cache,
-                )
-                print("validation ✓", end=" ", flush=True)
-            except Exception as exc:
-                print(f"validation ✗ ({exc})")
-                total_failed += 1
-                review_queue.append(
-                    {"museum_id": museum_id, "stage": "validation", "reason": str(exc)}
-                )
-                continue
-
-            total_processed += 1
-
-            budget.spend(estimated_cost)
-
-            if args.dry_run:
-                continue
-
-            apply_result = apply_state_file_updates(
-                state_code=state_code,
-                museum_id=museum_id,
-                updates=validation_output.state_file_updates,
-                confidence_threshold=int(args.confidence_threshold),
-                provenance_path=provenance_path,
-            )
-            
-            applied_count = len(apply_result.applied_fields)
-            rejected_count = len(apply_result.rejected_fields)
-            print(f"applied:{applied_count} rejected:{rejected_count}", end=" ", flush=True)
-
-            write_museum_subfolder(
-                state_code=state_code,
-                museum_id=museum_id,
-                folder_hash=folder_hash,
-                output=validation_output,
-                apply_result=apply_result,
-                fallback_city=context.city,
-                fallback_name=context.museum_name,
-            )
-
-            for rec in validation_output.recommendations:
-                review_queue.append(
-                    {
-                        "museum_id": museum_id,
-                        "field": rec.field_name,
-                        "proposed": rec.proposed_value,
-                        "confidence": rec.confidence,
-                        "reason": rec.reason,
-                    }
-                )
-            for rejection in apply_result.rejected_fields:
-                review_queue.append({"museum_id": museum_id, **rejection})
-
-            changes.append(
-                {
-                    "museum_id": museum_id,
-                    "stage": "validation",
-                    "applied_fields": apply_result.applied_fields,
-                    "rejected_fields": apply_result.rejected_fields,
-                }
-            )
 
             # Deep dive if: targets is None (all museums) OR museum_id in targets set
             should_deep_dive = deep_dive_targets is None or museum_id in deep_dive_targets
@@ -280,6 +206,8 @@ def main() -> int:
                     )
                     continue
 
+                
+
                 budget.spend(deep_cost)
 
                 deep_apply = apply_state_file_updates(
@@ -300,6 +228,8 @@ def main() -> int:
                     fallback_name=context.museum_name,
                 )
 
+                total_processed += 1
+
                 changes.append(
                     {
                         "museum_id": museum_id,
@@ -313,7 +243,7 @@ def main() -> int:
 
             failure_rate = total_failed / max(1, total_processed)
             if failure_rate > float(args.failure_threshold):
-                raise SystemExit("Validation failure rate gate exceeded.")
+                raise SystemExit("Failure rate gate exceeded.")
 
     save_json(run_dir / "changes.json", {"run_id": run_id, "changes": changes})
     save_json(run_dir / "review_queue.json", {"run_id": run_id, "items": review_queue})

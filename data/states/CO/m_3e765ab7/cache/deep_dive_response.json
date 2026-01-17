@@ -1,144 +1,78 @@
 {
   "museum_id": "usa-co-unknown-durango-arts-center",
   "provider": "openai",
-  "model": "gpt-4o",
+  "model": "gpt-5.2",
   "raw_response": {
     "state_file_updates": {
-      "museum_id": "usa-co-unknown-durango-arts-center",
+      "museum_id": "durango_arts_center",
       "museum_name": {
         "value": "Durango Arts Center",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 6,
+        "confidence": 90,
+        "retrieved_at": "2026-01-17"
       },
       "city": {
-        "value": "Durango",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "value": "Durango, Colorado",
+        "source": "user_provided",
+        "trust_level": 6,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "street_address": null,
-      "postal_code": null,
       "website": {
         "value": "http://durangoarts.org",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 6,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
-      "latitude": null,
-      "longitude": null,
       "primary_domain": {
         "value": "Art",
-        "source": "identity",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 6,
+        "confidence": 85,
+        "retrieved_at": "2026-01-17"
       },
       "museum_type": {
         "value": "ART MUSEUM",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 6,
+        "confidence": 70,
+        "retrieved_at": "2026-01-17"
       },
-      "audience_focus": null,
       "city_tier": {
         "value": 2,
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 6,
+        "confidence": 70,
+        "retrieved_at": "2026-01-17"
       },
-      "reputation": null,
-      "collection_tier": null,
       "time_needed": {
         "value": "Half day",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
+        "source": "user_provided",
+        "trust_level": 6,
+        "confidence": 70,
+        "retrieved_at": "2026-01-17"
       },
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
-      "historical_context_score": null,
-      "notes": {
-        "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-        "source": "state_record_subset",
-        "trust_level": 5,
-        "confidence": 5,
-        "retrieved_at": "2023-10-01"
-      },
-      "confidence": 3,
+      "confidence": 78,
       "data_sources": [
-        "identity",
-        "state_record_subset"
+        "user_provided"
       ]
     },
     "recommendations": [],
-    "summary_short": "The Durango Arts Center is a vibrant hub for contemporary and modern art in Colorado, offering diverse exhibitions and community programs.",
-    "summary_long": "Located in the heart of Durango, Colorado, the Durango Arts Center serves as a dynamic cultural institution dedicated to the promotion and appreciation of contemporary and modern art. The center hosts a variety of exhibitions featuring local and regional artists, providing a platform for creative expression and community engagement. With a focus on educational programs and workshops, the center aims to inspire and educate visitors of all ages. The Durango Arts Center is a must-visit for art enthusiasts looking to explore the rich artistic landscape of the region.",
-    "collection_highlights": [
-      {
-        "title": "Contemporary Art Exhibitions",
-        "description": "Rotating exhibitions featuring contemporary artists from the region.",
-        "source": "identity"
-      },
-      {
-        "title": "Modern Art Collection",
-        "description": "A selection of modern art pieces from the early 20th century.",
-        "source": "identity"
-      },
-      {
-        "title": "Community Art Programs",
-        "description": "Engaging programs and workshops for all ages.",
-        "source": "identity"
-      }
-    ],
-    "signature_artists": [
-      "Local and Regional Artists"
-    ],
+    "summary_short": "Durango Arts Center is an art museum in Durango, Colorado; plan about a half day.",
+    "summary_long": "Durango Arts Center is an art museum in Durango, Colorado (USA). For trip planning, allocate roughly a half day. Further collection and program details were not provided in the evidence.",
+    "collection_highlights": [],
+    "signature_artists": [],
     "visitor_tips": [
-      "Check the schedule for rotating exhibitions to catch new art.",
-      "Participate in workshops for a hands-on experience.",
-      "Visit during weekdays to avoid crowds."
+      "Plan for a half-day visit based on the provided time estimate."
     ],
-    "best_for": "Art enthusiasts and families interested in contemporary and modern art.",
-    "historical_significance": null,
-    "architectural_notes": null,
-    "curatorial_approach": null,
-    "tour_planning_scores": {
-      "contemporary_score": 6,
-      "modern_score": 5,
-      "impressionist_score": null,
-      "expressionist_score": null,
-      "classical_score": null,
-      "american_art_score": 5,
-      "european_art_score": null,
-      "asian_art_score": null,
-      "african_art_score": null,
-      "painting_score": 5,
-      "sculpture_score": null,
-      "decorative_arts_score": null,
-      "photography_score": null,
-      "collection_depth": 5,
-      "collection_quality": 5,
-      "exhibition_frequency": 6,
-      "family_friendly_score": 7,
-      "educational_value_score": 7,
-      "architecture_score": 4,
-      "scoring_rationale": "The Durango Arts Center offers a moderate focus on contemporary and modern art, with a strong emphasis on community engagement and educational programs. The collection is regionally significant, providing a platform for local artists."
-    },
     "sources_consulted": [
-      "identity",
-      "state_record_subset"
+      "user_provided"
     ],
-    "thinking_budget_used": null,
-    "confidence": 4,
-    "model_used": "GPT-4",
+    "confidence": 70,
+    "model_used": "gpt-4.1",
     "agent_version": "1.0",
-    "processed_at": "2023-10-01"
+    "processed_at": "2026-01-17"
   }
 }

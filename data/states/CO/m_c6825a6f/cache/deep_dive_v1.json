@@ -1,20 +1,62 @@
 {
   "state_file_updates": {
-    "museum_id": "usa-co-unknown-aspen-art-museum",
-    "museum_name": null,
-    "city": null,
+    "museum_id": "aspen-art-museum",
+    "museum_name": {
+      "value": "Aspen Art Museum",
+      "source": "user_provided_evidence",
+      "trust_level": 4,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:00:00"
+    },
+    "city": {
+      "value": "Colorado",
+      "source": "user_provided_evidence",
+      "trust_level": 2,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:00:00"
+    },
     "street_address": null,
     "postal_code": null,
-    "website": null,
+    "website": {
+      "value": "http://www.aspenartmuseum.org",
+      "source": "user_provided_evidence",
+      "trust_level": 4,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:00:00"
+    },
     "latitude": null,
     "longitude": null,
-    "primary_domain": null,
-    "museum_type": null,
+    "primary_domain": {
+      "value": "Art",
+      "source": "user_provided_evidence",
+      "trust_level": 4,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:00:00"
+    },
+    "museum_type": {
+      "value": "ART MUSEUM",
+      "source": "user_provided_evidence",
+      "trust_level": 3,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:00:00"
+    },
     "audience_focus": null,
-    "city_tier": null,
+    "city_tier": {
+      "value": 3,
+      "source": "user_provided_evidence",
+      "trust_level": 3,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:00:00"
+    },
     "reputation": null,
     "collection_tier": null,
-    "time_needed": null,
+    "time_needed": {
+      "value": "Half day",
+      "source": "user_provided_evidence",
+      "trust_level": 3,
+      "confidence": 5,
+      "retrieved_at": "2026-01-17T00:00:00"
+    },
     "impressionist_strength": null,
     "modern_contemporary_strength": null,
     "historical_context_score": null,
@@ -23,41 +65,50 @@
     "data_sources": null
   },
   "recommendations": [],
-  "summary_short": "Aspen Art Museum offers a dynamic contemporary art experience in the heart of Colorado.",
-  "summary_long": "The Aspen Art Museum is a contemporary art museum located in Aspen, Colorado. Known for its innovative exhibitions and community engagement, the museum features a rotating selection of contemporary art from both established and emerging artists. The museum's architecture, designed by Shigeru Ban, is itself a work of art, providing a unique backdrop for the diverse exhibitions it hosts. Visitors can expect to see a variety of media, including installations, paintings, and sculptures, with a strong emphasis on contemporary themes and artists. The museum also offers educational programs and workshops, making it a valuable resource for art enthusiasts and the local community alike.",
+  "summary_short": "Contemporary art museum in Aspen with rotating exhibitions; current listings include Glenn Ligon, Shahryar Nashat, Jacqueline Humphries, and Victoria Colmegna.",
+  "summary_long": "Aspen Art Museum is an art museum focused on contemporary programming, highlighted by a schedule of rotating exhibitions. Upcoming/ongoing listings include solo presentations by Glenn Ligon (Nov 21, 2025–Mar 15, 2026), Shahryar Nashat (Nov 21, 2025–Apr 26, 2026), Jacqueline Humphries (Dec 12, 2025–Apr 5, 2026), and Victoria Colmegna (Dec 12, 2025–Mar 29, 2026). Plan roughly a half-day visit to see exhibitions at a comfortable pace.",
   "collection_highlights": [
     {
-      "title": "Glenn Ligon: Break It Down",
-      "description": "An exhibition featuring the works of Glenn Ligon, focusing on themes of identity and language.",
-      "source": "Aspen Art Museum website"
+      "title": "Rotating contemporary exhibitions program",
+      "description": "Exhibition listings indicate an active schedule of contemporary solo shows across late 2025–spring 2026.",
+      "source": "website_text_snippet"
     },
     {
-      "title": "Shahryar Nashat: Raw Is the Red",
-      "description": "A contemporary exhibition exploring the intersection of technology and human experience.",
-      "source": "Aspen Art Museum website"
+      "title": "Glenn Ligon: Break It Down (Nov 21, 2025–Mar 15, 2026)",
+      "description": "Exhibition listing for Glenn Ligon.",
+      "source": "website_text_snippet"
     },
     {
-      "title": "Jacqueline Humphries",
-      "description": "A showcase of Humphries' abstract paintings, emphasizing her innovative use of materials and techniques.",
-      "source": "Aspen Art Museum website"
+      "title": "Shahryar Nashat: Raw Is the Red (Nov 21, 2025–Apr 26, 2026)",
+      "description": "Exhibition listing for Shahryar Nashat.",
+      "source": "website_text_snippet"
+    },
+    {
+      "title": "Jacqueline Humphries (Dec 12, 2025–Apr 5, 2026)",
+      "description": "Exhibition listing for Jacqueline Humphries.",
+      "source": "website_text_snippet"
+    },
+    {
+      "title": "Victoria Colmegna: Play Technique (Dec 12, 2025–Mar 29, 2026)",
+      "description": "Exhibition listing for Victoria Colmegna.",
+      "source": "website_text_snippet"
     }
   ],
   "signature_artists": [
     "Glenn Ligon",
     "Shahryar Nashat",
     "Jacqueline Humphries",
-    "Victoria Colmegna",
-    "Anthea Hamilton"
+    "Victoria Colmegna"
   ],
   "visitor_tips": [
-    "Visit during weekdays to avoid crowds.",
-    "Check the museum's website for current exhibitions.",
-    "Take advantage of the educational programs offered."
+    "Allocate about a half day to see the exhibitions without rushing.",
+    "Check the museum’s exhibition schedule in advance; multiple shows can overlap with different end dates.",
+    "If you have limited time, prioritize the exhibitions with earlier closing dates."
   ],
-  "best_for": "Contemporary art enthusiasts and families interested in modern art experiences.",
+  "best_for": null,
   "historical_significance": null,
-  "architectural_notes": "Designed by Shigeru Ban, the museum's architecture is a notable example of contemporary design, featuring innovative use of materials and space.",
-  "curatorial_approach": "Focuses on contemporary art with a rotating selection of exhibitions that highlight both established and emerging artists.",
+  "architectural_notes": null,
+  "curatorial_approach": null,
   "tour_planning_scores": {
     "contemporary_score": 8,
     "modern_score": null,
@@ -68,24 +119,25 @@
     "european_art_score": null,
     "asian_art_score": null,
     "african_art_score": null,
-    "painting_score": 7,
-    "sculpture_score": 6,
+    "painting_score": null,
+    "sculpture_score": null,
     "decorative_arts_score": null,
     "photography_score": null,
-    "collection_depth": 6,
-    "collection_quality": 7,
-    "exhibition_frequency": 8,
-    "family_friendly_score": 7,
-    "educational_value_score": 8,
-    "architecture_score": 9,
-    "scoring_rationale": "The Aspen Art Museum excels in contemporary art with frequent exhibitions and a strong educational program. Its architecture is a highlight, enhancing the visitor experience."
+    "collection_depth": 4,
+    "collection_quality": 5,
+    "exhibition_frequency": 7,
+    "family_friendly_score": null,
+    "educational_value_score": 5,
+    "architecture_score": null,
+    "scoring_rationale": "Evidence points to a contemporary-focused institution with several overlapping solo exhibitions scheduled across late 2025–spring 2026, supporting strong contemporary and exhibition-frequency scores. No specific evidence was provided about collection breadth or education programs, so those are kept moderate."
   },
   "sources_consulted": [
-    "Aspen Art Museum website"
+    "user_provided_evidence",
+    "website_text_snippet"
   ],
   "thinking_budget_used": null,
   "confidence": 5,
-  "model_used": "GPT-4",
+  "model_used": "gpt-4.1",
   "agent_version": "1.0",
-  "processed_at": "2023-10-05T12:00:00Z"
+  "processed_at": "2026-01-17T00:00:00"
 }
