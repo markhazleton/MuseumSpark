@@ -1,0 +1,69 @@
+{
+  "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "raw_response": {
+    "state_file_updates": {
+      "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
+      "museum_name": {
+        "value": "Historic Georgetown",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "city": {
+        "value": "Inc. Hamill House Museum",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "website": {
+        "value": "https://www.historicgeorgetown.org",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "primary_domain": {
+        "value": "History",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "museum_type": {
+        "value": "HISTORIC PRESERVATION",
+        "source": "state_record_subset",
+        "trust_level": 2,
+        "confidence": 4
+      },
+      "city_tier": {
+        "value": 3,
+        "source": "state_record_subset",
+        "trust_level": 2,
+        "confidence": 4
+      },
+      "time_needed": {
+        "value": "Half day",
+        "source": "state_record_subset",
+        "trust_level": 2,
+        "confidence": 4
+      },
+      "notes": {
+        "value": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
+        "source": "state_record_subset",
+        "trust_level": 2,
+        "confidence": 4
+      },
+      "audience_focus": null,
+      "postal_code": null,
+      "street_address": null,
+      "latitude": null,
+      "longitude": null,
+      "reputation": null,
+      "collection_tier": null
+    },
+    "confidence": 4,
+    "model_used": "gpt-4o-mini",
+    "needs_deep_dive": false,
+    "data_sources": []
+  }
+}

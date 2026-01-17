@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-co-denver-museum-of-contemporary-art",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nYOUR FOCUS: Extract ONLY fields where you have clear evidence. Skip fields with no evidence.\n\nFIELDS TO EXTRACT (only if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name\n   - street_address: Full street address\n   - postal_code: ZIP/postal code\n   - website: Validated URL\n   - latitude, longitude: Coordinates\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed\n   - museum_type: Specific category\n   - audience_focus: Target audience\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town)\n   - reputation: 1-5 (1=world-renowned, 5=local)\n   - collection_tier: 1-5 (1=world-class, 5=modest)\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days'\n\n4. SUMMARY:\n   - notes: 2-3 sentence summary if you have collection/context info\n\nCRITICAL FORMATTING RULES:\n✓ CORRECT - Field with evidence:\n  \"museum_name\": {\n    \"value\": \"Denver Art Museum\",\n    \"source\": \"official_website\",\n    \"trust_level\": 5,\n    \"confidence\": 5\n  }\n\n✓ CORRECT - Field with no evidence:\n  \"museum_name\": null\n\n✗ WRONG - Never do this:\n  \"museum_name\": {\"value\": null}  ❌ INVALID\n  \"museum_name\": {\"value\": \"Not provided\"}  ❌ INVALID\n\nIf you don't have evidence for a field, set it to null (not an object).\nOnly create EnrichedField objects when you have actual data.\n\nTrust levels: OFFICIAL_EXTRACT (5), WIKIPEDIA (3), LLM_EXTRACTED (2)\nConfidence: 1-5 (how certain are you about this value)\n\nREQUIRED TOP-LEVEL FIELDS:\n  \"confidence\": 1-5 (overall confidence in this analysis)\n  \"model_used\": \"gpt-4o-mini\"\n  \"needs_deep_dive\": true|false (if scoring/deeper analysis needed)\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-co-denver-museum-of-contemporary-art\",\n    \"museum_name\": \"Museum of Contemporary Art\",\n    \"city\": \"Denver\",\n    \"state_province\": \"Colorado\",\n    \"country\": \"USA\",\n    \"website\": \"http://www.mcadenver.org\",\n    \"primary_domain\": \"Art\"\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"ART MUSEUM\",\n    \"audience_focus\": null,\n    \"city_tier\": 1,\n    \"reputation\": 2,\n    \"collection_tier\": null,\n    \"time_needed\": \"Half day\",\n    \"notes\": \"CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": \"[ ](https://mcadenver.org/exhibitions/roni-horn)\\n[ ](https://mcadenver.org/support)\\n[ ](https://mcadenver.org/exhibitions/deborah-jack)\\n### [Roni Horn: Water, Water on the Wall, You\\u2019re the Fairest of Them All September 12, 2025 \\u2014 February 15, 2026 ](https://mcadenver.org/exhibitions/roni-horn)\\n### [Become an MCA Denver member TODAY: Best decision ever? Free museum access, 10% off in caf\\u00e9 & bar and shop, and more. ](https://mcadenver.org/support)\\n### [Deborah Jack: the haunting of estuaries\\u2026an (after)math of confluence September 12, 2025 \\u2014 February 15, 2026 ](https://mcadenver.org/exhibitions/deborah-jack)\\n## What's On\\n[ Performing & Visual Arts 29 Jan Holiday Theater Deborah Jack: On Water, Memory, & Resistant Geographies Thursday, January 29, 7:00pm A conversation with MCA Denver exhibiting artist, Deborah Jack. ](https://mcadenver.org/events/deborah-jack-on-water-memory-resistant-geographies)\\n[ Performing & Visual Arts 14 Feb MCA Fries Building Love is Optional: A Valentine's Party Saturday, February 14, 7:00pm Spend the evening at MCA Denver to celebrate the closing weekend of the current exhibitions (or to celebrate love). ](https://mcadenver.org/events/love-is-optional-a-va...\",\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 484,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON with properly formatted EnrichedField objects (or null if no evidence).",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "museum_name": "Museum of Contemporary Art",
+      "city": "Denver",
+      "state_province": "Colorado",
+      "country": "USA",
+      "website": "http://www.mcadenver.org",
+      "primary_domain": "Art"
+    },
+    "state_record_subset": {
+      "museum_type": "ART MUSEUM",
+      "audience_focus": null,
+      "city_tier": 1,
+      "reputation": 2,
+      "collection_tier": null,
+      "time_needed": "Half day",
+      "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database"
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": "[ ](https://mcadenver.org/exhibitions/roni-horn)\n[ ](https://mcadenver.org/support)\n[ ](https://mcadenver.org/exhibitions/deborah-jack)\n### [Roni Horn: Water, Water on the Wall, You’re the Fairest of Them All September 12, 2025 — February 15, 2026 ](https://mcadenver.org/exhibitions/roni-horn)\n### [Become an MCA Denver member TODAY: Best decision ever? Free museum access, 10% off in café & bar and shop, and more. ](https://mcadenver.org/support)\n### [Deborah Jack: the haunting of estuaries…an (after)math of confluence September 12, 2025 — February 15, 2026 ](https://mcadenver.org/exhibitions/deborah-jack)\n## What's On\n[ Performing & Visual Arts 29 Jan Holiday Theater Deborah Jack: On Water, Memory, & Resistant Geographies Thursday, January 29, 7:00pm A conversation with MCA Denver exhibiting artist, Deborah Jack. ](https://mcadenver.org/events/deborah-jack-on-water-memory-resistant-geographies)\n[ Performing & Visual Arts 14 Feb MCA Fries Building Love is Optional: A Valentine's Party Saturday, February 14, 7:00pm Spend the evening at MCA Denver to celebrate the closing weekend of the current exhibitions (or to celebrate love). ](https://mcadenver.org/events/love-is-optional-a-va...",
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 484,
+      "max_chars": 8000
+    }
+  }
+}

@@ -135,7 +135,12 @@ def main() -> int:
     elif args.state:
         state_codes = _parse_states(args.state)
 
-    deep_dive_targets = _select_deep_dive_targets(args.top_n)
+    # When running a specific state, deep dive ALL museums (not just top N)
+    # This enables complete state-level scoring and ranking
+    if args.state and not args.museum_id:
+        deep_dive_targets = None  # None means "all museums in scope"
+    else:
+        deep_dive_targets = _select_deep_dive_targets(args.top_n)
 
     run_id = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
     run_dir = RUNS_DIR / run_id
@@ -243,7 +248,10 @@ def main() -> int:
                 }
             )
 
-            if museum_id in deep_dive_targets:
+            # Deep dive if: targets is None (all museums) OR museum_id in targets set
+            should_deep_dive = deep_dive_targets is None or museum_id in deep_dive_targets
+            
+            if should_deep_dive:
                 print("deep-dive...", end=" ", flush=True)
                 deep_evidence = build_evidence_packet(context, max_chars=12000)
                 deep_prompt_tokens = estimate_tokens(json.dumps(deep_evidence, ensure_ascii=False))

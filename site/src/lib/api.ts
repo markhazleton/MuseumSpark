@@ -22,7 +22,9 @@ async function fetchJson<T>(pathname: string): Promise<T> {
 }
 
 export function loadAllMuseums(): Promise<AllMuseumsIndex> {
-  return fetchJson<AllMuseumsIndex>('data/index/all-museums.json')
+  // Try enriched index first, fallback to base index
+  return fetchJson<AllMuseumsIndex>('data/index/all-museums-enriched.json')
+    .catch(() => fetchJson<AllMuseumsIndex>('data/index/all-museums.json'))
 }
 
 export function loadProgress(): Promise<ProgressIndex> {

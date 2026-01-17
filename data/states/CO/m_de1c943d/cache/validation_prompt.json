@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nYOUR FOCUS: Extract ONLY fields where you have clear evidence. Skip fields with no evidence.\n\nFIELDS TO EXTRACT (only if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name\n   - street_address: Full street address\n   - postal_code: ZIP/postal code\n   - website: Validated URL\n   - latitude, longitude: Coordinates\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed\n   - museum_type: Specific category\n   - audience_focus: Target audience\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town)\n   - reputation: 1-5 (1=world-renowned, 5=local)\n   - collection_tier: 1-5 (1=world-class, 5=modest)\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days'\n\n4. SUMMARY:\n   - notes: 2-3 sentence summary if you have collection/context info\n\nCRITICAL FORMATTING RULES:\n✓ CORRECT - Field with evidence:\n  \"museum_name\": {\n    \"value\": \"Denver Art Museum\",\n    \"source\": \"official_website\",\n    \"trust_level\": 5,\n    \"confidence\": 5\n  }\n\n✓ CORRECT - Field with no evidence:\n  \"museum_name\": null\n\n✗ WRONG - Never do this:\n  \"museum_name\": {\"value\": null}  ❌ INVALID\n  \"museum_name\": {\"value\": \"Not provided\"}  ❌ INVALID\n\nIf you don't have evidence for a field, set it to null (not an object).\nOnly create EnrichedField objects when you have actual data.\n\nTrust levels: OFFICIAL_EXTRACT (5), WIKIPEDIA (3), LLM_EXTRACTED (2)\nConfidence: 1-5 (how certain are you about this value)\n\nREQUIRED TOP-LEVEL FIELDS:\n  \"confidence\": 1-5 (overall confidence in this analysis)\n  \"model_used\": \"gpt-4o-mini\"\n  \"needs_deep_dive\": true|false (if scoring/deeper analysis needed)\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-co-leadville-national-mining-hall-of-fame-and-museum\",\n    \"museum_name\": \"National Mining Hall of Fame and Museum\",\n    \"city\": \"Leadville\",\n    \"state_province\": \"Colorado\",\n    \"country\": \"USA\",\n    \"website\": \"http://www.mininghalloffame.org\",\n    \"primary_domain\": null\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM\",\n    \"audience_focus\": null,\n    \"city_tier\": 3,\n    \"reputation\": null,\n    \"collection_tier\": null,\n    \"time_needed\": \"Half day\",\n    \"notes\": \"CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": null,\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 210,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON with properly formatted EnrichedField objects (or null if no evidence).",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
+      "museum_name": "National Mining Hall of Fame and Museum",
+      "city": "Leadville",
+      "state_province": "Colorado",
+      "country": "USA",
+      "website": "http://www.mininghalloffame.org",
+      "primary_domain": null
+    },
+    "state_record_subset": {
+      "museum_type": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM",
+      "audience_focus": null,
+      "city_tier": 3,
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": "Half day",
+      "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990"
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": null,
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 210,
+      "max_chars": 8000
+    }
+  }
+}

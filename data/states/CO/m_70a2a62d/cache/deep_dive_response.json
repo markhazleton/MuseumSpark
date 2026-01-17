@@ -1,0 +1,143 @@
+{
+  "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+  "provider": "openai",
+  "model": "gpt-4o",
+  "raw_response": {
+    "state_file_updates": {
+      "museum_id": "usa-co-unknown-boulder-museum-of-contemporary-art",
+      "museum_name": {
+        "value": "Boulder Museum of Contemporary Art",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "city": {
+        "value": "Boulder",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "street_address": null,
+      "postal_code": null,
+      "website": {
+        "value": "http://www.bmoca.org",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "latitude": null,
+      "longitude": null,
+      "primary_domain": {
+        "value": "Art",
+        "source": "identity",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "museum_type": {
+        "value": "ART MUSEUM",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "audience_focus": null,
+      "city_tier": {
+        "value": 2,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": {
+        "value": "Half day",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "impressionist_strength": null,
+      "modern_contemporary_strength": null,
+      "historical_context_score": null,
+      "notes": {
+        "value": "Boulder Museum of Contemporary Art is known for presenting innovative works of contemporary art in Boulder and the Denver Metro Area for over 50 years. The museum offers dynamic artistic expression programs for young artists and curatorial services beyond its galleries.",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5,
+        "retrieved_at": "2023-10-01"
+      },
+      "confidence": 5,
+      "data_sources": [
+        "identity",
+        "state_record_subset"
+      ]
+    },
+    "recommendations": [],
+    "summary_short": "Boulder Museum of Contemporary Art showcases innovative contemporary art and offers dynamic programs for young artists.",
+    "summary_long": "The Boulder Museum of Contemporary Art (BMoCA) has been a cornerstone of the Boulder and Denver Metro Area's art scene for over 50 years. Known for its innovative exhibitions, BMoCA presents a wide range of contemporary art, engaging the community with dynamic programs for young artists. The museum also extends its curatorial expertise beyond its galleries, curating spaces in libraries and community areas. With a focus on contemporary artistic expression, BMoCA is a vibrant hub for art enthusiasts and families alike.",
+    "collection_highlights": [
+      {
+        "title": "Spring Exhibition",
+        "description": "An innovative showcase of contemporary art opening in January 2026.",
+        "source": "website_text_snippet"
+      },
+      {
+        "title": "Young Artists at Work (YAW) Camps",
+        "description": "Dynamic day camps offering artistic expression for young artists.",
+        "source": "website_text_snippet"
+      },
+      {
+        "title": "Curatorial Services",
+        "description": "Expert curation of spaces beyond the museum's galleries.",
+        "source": "website_text_snippet"
+      }
+    ],
+    "signature_artists": [],
+    "visitor_tips": [
+      "Check the museum's schedule for upcoming exhibitions and events.",
+      "Participate in the Young Artists at Work camps for a hands-on experience.",
+      "Explore the museum's curated spaces in community areas."
+    ],
+    "best_for": "Families with young kids and contemporary art enthusiasts.",
+    "historical_significance": null,
+    "architectural_notes": null,
+    "curatorial_approach": "Focuses on contemporary art with dynamic programs for community engagement.",
+    "tour_planning_scores": {
+      "contemporary_score": 8,
+      "modern_score": null,
+      "impressionist_score": null,
+      "expressionist_score": null,
+      "classical_score": null,
+      "american_art_score": null,
+      "european_art_score": null,
+      "asian_art_score": null,
+      "african_art_score": null,
+      "painting_score": null,
+      "sculpture_score": null,
+      "decorative_arts_score": null,
+      "photography_score": null,
+      "collection_depth": 6,
+      "collection_quality": 5,
+      "exhibition_frequency": 7,
+      "family_friendly_score": 8,
+      "educational_value_score": 7,
+      "architecture_score": null,
+      "scoring_rationale": "BMoCA excels in contemporary art with strong community programs, making it family-friendly and educational. Its frequent exhibitions enhance its appeal."
+    },
+    "sources_consulted": [
+      "identity",
+      "state_record_subset",
+      "website_text_snippet"
+    ],
+    "thinking_budget_used": null,
+    "confidence": 5,
+    "model_used": "DeepDiveModel_v1.0",
+    "agent_version": "1.0",
+    "processed_at": "2023-10-01"
+  }
+}

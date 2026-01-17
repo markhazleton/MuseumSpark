@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Colorado Snowsports Museum</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Colorado Snowsports Museum &raquo; Feed" href="https://snowsportsmuseum.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Colorado Snowsports Museum &raquo; Comments Feed" href="https://snowsportsmuseum.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Colorado Snowsports Museum &raquo; Home Comments Feed" href="https://snowsportsmuseum.org/home/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/snowsportsmuseum.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='safe-svg-svg-icon-style-inline-css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{fill:currentColor;height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<link rel='stylesheet' id='jquery-ui-css' href='https://snowsportsmuseum.org/wp-content/plugins/wp-easycart/design/theme/base-responsive-v3/smoothness-jquery-ui.min.css?ver=6.8.3' media='all' />
+<link rel='stylesheet' id='wpeasycart_css-css' href='https://snowsportsmuseum.org/wp-content/plugins/wp-easycart/design/theme/base-responsive-v3/ec-store.css?ver=5_8_12' media='all' />
+<link rel='stylesheet' id='wpeasycart_gfont-css' href='https://fonts.googleapis.com/css?family=Lato%7CMonda%7COpen+Sans%7CDroid+Serif&#038;ver=6.8.3' media='all' />
+<link rel='stylesheet' id='wpeasycart_owl_carousel_css-css' href='https://snowsportsmuseum.org/wp-content/plugins/wp-easycart/design/theme/base-responsive-v3/owl.carousel.css?ver=6.8.3' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://snowsportsmuseum.org/wp-includes/css/dashicons.min.css?ver=6.8.3' media='all' />
+<link rel='stylesheet' id='colorado-snowsports-museum-style-css' href='https://snowsportsmuseum.org/wp-content/themes/colorado-snowsports-museum/style.css?ver=1.0.2' media='all' />
+<link rel='stylesheet' id='animate-css' href='https://snowsportsmuseum.org/wp-content/themes/colorado-snowsports-museum/assets/css/animate.min.css?ver=1.0.2' media='all' />
+<link rel='stylesheet' id='colorado-snowsports-base-style-css' href='https://snowsportsmuseum.org/wp-content/themes/colorado-snowsports-museum/assets/css/colorado-snowsports.min.css?ver=1.0.2' media='all' />
+<script src="https://snowsportsmuseum.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/jquery/ui/accordion.min.js?ver=1.13.3" id="jquery-ui-accordion-js"></script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script id="wpeasycart_js-js-extra">
+var wpeasycart_ajax_object = {"ga4_id":"","ga4_conv_id":"","ajax_url":"https:\/\/snowsportsmuseum.org\/wp-admin\/admin-ajax.php","current_language":"EN","location_id":"0"};
+</script>
+<script src="https://snowsportsmuseum.org/wp-content/plugins/wp-easycart/design/theme/base-responsive-v3/ec-store.js?ver=5_8_12" id="wpeasycart_js-js"></script>
+<script src="https://snowsportsmuseum.org/wp-content/plugins/wp-easycart/design/theme/base-responsive-v3/owl.carousel.min.js?ver=5_8_12" id="wpeasycart_owl_carousel_js-js"></script>
+<link rel="https://api.w.org/" href="https://snowsportsmuseum.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://snowsportsmuseum.org/wp-json/wp/v2/pages/2" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://snowsportsmuseum.org/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.3" />
+<link rel="canonical" href="https://snowsportsmuseum.org/" />
+<link rel='shortlink' href='https://snowsportsmuseum.org/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://snowsportsmuseum.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsnowsportsmuseum.org%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://snowsportsmuseum.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsnowsportsmuseum.org%2F&#038;format=xml" />
+
+<style>
+.ec_product_type1, .ec_product_type2, .ec_product_type3, .ec_product_type4, .ec_product_type5, .ec_product_type6, 
+.ec_product_type1 > .ec_image_container_none, .ec_product_type1 > .ec_image_container_border, .ec_product_type1 > .ec_image_container_shadow, 
+.ec_product_type1 .ec_product_addtocart a, .ec_product_type1 .ec_product_addtocart a:hover, .ec_product_type1 .ec_product_addtocart a:focus,
+.ec_product_type1 .ec_product_addtocart, .ec_product_type4 .ec_product_addtocart, .ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart, .ec_product_meta_type6 .ec_product_addtocart a.ec_added_to_cart_button,
+.ec_price_container_type5, .ec_product_type6 .ec_product_meta_type6 .ec_price_container,
+
+.ec_single_fade_container .ec_product_image_container, #ec_store_product_list img, 
+
+.ec_details_main_image, .ec_details_magbox, .ec_details_thumbnail, .ec_details_swatches > li > img, .ec_details_swatches > li > a > img, 
+.ec_details_add_to_cart_area > .ec_details_add_to_cart > input, .ec_details_add_to_cart_area > .ec_details_add_to_cart > a, .ec_details_quantity, 
+.ec_details_add_to_cart, .ec_details_add_to_cart_area > .ec_details_quantity > .ec_minus, .ec_details_add_to_cart_area > .ec_details_quantity > .ec_plus, 
+.ec_cartitem_quantity_table > tbody > tr > td > .ec_cartitem_update_button, .ec_cart_button_row > .ec_cart_button, 
+.ec_cartitem_quantity_table > tbody > tr > td > .ec_minus, .ec_cartitem_quantity_table > tbody > tr > td > .ec_plus, 
+.ec_cartitem_quantity_table > tbody > tr > td > .ec_minus:focus, .ec_cartitem_quantity_table > tbody > tr > td > .ec_plus:focus, 
+.ec_cartitem_quantity_table > tbody > tr > td > .ec_minus:hover, .ec_cartitem_quantity_table > tbody > tr > td > .ec_plus:hover, 
+.ec_cartitem_quantity_table > tbody > tr > td > .ec_quantity, .ec_cart_button_row > .ec_cart_button_working,
+
+.ec_account_order_header_row, .ec_account_order_item_buy_button, .ec_account_order_item_download_button, .ec_account_dashboard_row_divider a, 
+.ec_account_billing_information_button, .ec_account_shipping_information_button, .ec_account_personal_information_button, .ec_account_password_button,
+.ec_cart_button_row > .ec_account_button, .ec_account_order_line_column5 a, .ec_out_of_stock_notify, .ec_out_of_stock_notify_title, .ec_account_login_create_account_button{ 
+	border-top-right-radius:0px !important; border-top-left-radius:0px !important; border-bottom-left-radius:0px !important; border-bottom-right-radius:0px !important; border-radius:0px !important;
+}
+.ec_out_of_stock_notify{ border-color:#222222; }
+.ec_out_of_stock_notify_title, .ec_out_of_stock_notify_button > input, #ec_user_login_link a{ background-color:#222222; }
+.ec_product_type1 .ec_product_addtocart{ background-color:#222222; border-bottom-color:#666666; }
+.ec_product_type3 .ec_product_addtocart{ background-color:#222222 !important; }
+.ec_price_container_type5{ background-color:#222222; }
+.ec_price_container_type5:after{ border-color: #666666 transparent transparent #666666; }
+.ec_product_type6 .ec_product_meta_type6 .ec_price_container{ background-color:#222222; }
+.ec_product_type6 .ec_product_meta_type6 .ec_price_container:after{ border-color:#666666 transparent transparent #666666; }
+.ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart{ background-color:#222222 !important; }
+.ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart, .ec_product_meta_type6 .ec_product_addtocart a.ec_added_to_cart_button{ background-color:#222222 !important; }
+@media(hover: hover) {
+	.ec_out_of_stock_notify_button > input:hover, #ec_user_login_link a:hover{ background-color:#666666; }
+	.ec_product_type1 .ec_product_quickview > input:hover{ background:#222222; background-color:#222222; }
+	.ec_product_type1 .ec_product_addtocart:hover{ background-color:#666666; border-bottom-color:#222222; }
+	.ec_product_type3 .ec_product_addtocart:hover{ background-color:#666666 !important; }
+	.ec_product_type3 .ec_product_addtocart:hover{ background-color:#222222; }
+	.ec_product_type3 .ec_product_quickview > input:hover{ background:#222222; background-color:#222222; }
+	.ec_product_type5 .ec_product_addtocart:hover{ background-color:#222222; }
+	.ec_product_type5 .ec_product_quickview > input:hover{ background:#222222; background-color:#222222; }
+	.ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart:hover{ background-color:#666666 !important; }
+	.ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart:hover, .ec_product_meta_type6 .ec_product_addtocart a.ec_added_to_cart_button:hover{ background-color:#666666 !important; }
+	.ec_product_type6 .ec_product_meta_type6 .ec_product_quickview > input:hover{ background-color:#222222; }
+}
+.ec_product_quickview_content_title, .ec_product_quickview_content_title > a{ color:#222222 !important; }
+.ec_product_quickview_content_title:hover, .ec_product_quickview_content_title > a:hover{ color:#666666 !important; }
+.ec_product_quickview_content_quantity input[type="submit"], .ec_product_quickview_content_quantity input[type="button"], .ec_product_quickview_content_add_to_cart a{ background-color:#222222 !important; }
+.ec_product_quickview_content_quantity input[type="submit"]:hover, .ec_product_quickview_content_quantity input[type="button"]:hover, .ec_product_quickview_content_add_to_cart a:hover{ background-color:#666666 !important; }
+.ec_product_quickview_content_quantity .ec_minus, .ec_product_quickview_content_quantity .ec_plus{ background-color:#222222; }
+.ec_product_quickview_content_quantity .ec_minus:hover, .ec_product_quickview_content_quantity .ec_plus:hover{ background-color:#666666; }
+.ec_quickview_view_details a{ color:#222222 !important; }
+.ec_quickview_view_details a:hover{ color:#666666 !important; }
+.ec_product_page_sort > .ec_product_page_showing{ color:#222222; }
+.ec_product_star_on{ border-bottom-color:#222222 !important; color:#222222; border-bottom-color:#222222; }
+.ec_product_star_on:before{ border-bottom-color:#222222; }
+.ec_product_star_on:after{ color:#222222; border-bottom-color:#222222; }
+.ec_product_star_off{ border-bottom-color:#CCCCCC !important; color:#CCCCCC; }
+.ec_product_star_off:before{ border-bottom-color:#CCCCCC; }
+.ec_product_star_off:after{ color:#CCCCCC; border-bottom-color:#CCCCCC; }
+.ec_product_added_to_cart a, .ec_cart_checkout_link{ color:#222222 !important; }
+.ec_product_added_to_cart a:hover, .ec_cart_checkout_link:hover{ color:#666666 !important; }
+.ec_product_details_page a{ color:#222222; }
+.ec_product_details_page a:hover{ color:#666666; }
+.ec_details_title{ color:#222222 !important; }
+.ec_details_price > .ec_product_price{ color:#000000; }
+.ec_details_price > .ec_product_sale_price{ color:#000000; }
+.ec_details_magbox{ display:none; }
+.ec_details_right{  }
+.ec_details_model_number{ color:#666666 !important; }
+.ec_details_description{ color:#222222 !important; }
+.ec_details_stock_total{ color:#666666 !important; }
+.ec_details_add_to_cart_area > .ec_details_quantity > .ec_minus, .ec_details_add_to_cart_area > .ec_details_quantity > .ec_plus, .ec_details_add_to_cart_area > .ec_details_add_to_cart > input, .ec_details_add_to_cart_area > .ec_details_add_to_cart > a, .ec_details_customer_reviews_row > input[type="button"], .ec_details_inquiry_popup_main > form > .ec_details_add_to_cart input, .ec_details_inquiry_popup_main > form > .ec_details_add_to_cart > a, .wpeasycart-html-swatch{ background-color:#222222 !important; }
+.ec_details_add_to_cart_area > .ec_details_quantity > .ec_minus:hover, .ec_details_add_to_cart_area > .ec_details_quantity > .ec_plus:hover, .ec_details_add_to_cart_area > .ec_details_add_to_cart > input:hover, .ec_details_add_to_cart_area > .ec_details_add_to_cart > a:hover, .ec_details_customer_reviews_row > input[type="button"]:hover, .ec_details_inquiry_popup_main > form > .ec_details_add_to_cart > input:hover, .ec_details_inquiry_popup_main > form > .ec_details_add_to_cart > a:hover, .wpeasycart-html-swatch.ec_selected, .wpeasycart-html-swatch:hover{ background-color:#666666 !important; }
+.ec_details_categories{ color:#666666 !important; }
+.ec_details_manufacturer{ color:#666666 !important; }
+.ec_details_tabs{ color:#222222; }
+.ec_details_tab.ec_active{ border-top-color:#222222; }
+.ec_details_customer_reviews_left > h3{ color:#222222 !important; }
+.ec_details_customer_review_date{ color:#666666; }
+.ec_details_customer_review_date > strong{ color:#222222; }
+.ec_details_customer_review_data{ color:#222222; }
+.ec_details_customer_reviews_form > .ec_details_customer_reviews_form_holder > h3{ color:#222222 !important; }
+.ec_details_customer_reviews_row{ color:#222222; }
+.ec_details_customer_reviews_row > input[type="button"]{ background-color:#333; color:#FFFFFF; }
+.ec_details_customer_reviews_row > input[type="button"]:hover{ background-color:#333333; }
+.ec_details_related_products_area > h3{ color:#222222 !important; }
+.ec_product_details_star_on{ border-bottom-color:#222222 !important; color:#222222; border-bottom-color:#222222; }
+.ec_product_details_star_on:before{ border-bottom-color:#222222; }
+.ec_product_details_star_on:after{ color:#222222; border-bottom-color:#222222; }
+.ec_product_details_star_off{ border-bottom-color:#CCCCCC !important; color:#CCCCCC; }
+.ec_product_details_star_off:before{ border-bottom-color:#CCCCCC; }
+.ec_product_details_star_off:after{ color:#CCCCCC; border-bottom-color:#CCCCCC; }
+.ec_details_swatches > li.ec_selected > img{ border:2px solid #222222; }
+.ec_special_heading{ color:#222222; }
+.ec_special_icon, .ec_special_icon_list{ background-color:#222222; }
+.ec_cart_page a, .ec_restricted a{ color:#222222; }
+.ec_cart_page a:hover, .ec_restricted a:hover{ color:#666666; }
+a.ec_cart_empty_button{ background-color:#222222 }
+a.ec_cart_empty_button:hover{ background-color:#666666 }
+.ec_cart_breadcrumb{ color:#222222; }
+.ec_cart_table_continue_shopping{ color:#222222; }
+.ec_cart_table_continue_shopping:hover{ color:#666666; }
+.ec_cart_button_column > .ec_cart_button, .ec_cart_table_checkout_button{ background-color:#222222 !important; }
+.ec_cart_button_column > .ec_cart_button:hover, .ec_cart_table_checkout_button:hover{ background-color:#666666 !important; }
+.ec_cart_breadcrumb_item_v2, .ec_cart_bottom_nav_back, .ec_cart_create_account_row_v2 > a, .ec_account_login_cancel_link{ color:#222222 !important; }
+.ec_cart_breadcrumb_item_v2:hover, .ec_cart_bottom_nav_back:hover, .ec_cart_create_account_row_v2 > a:hover, .ec_account_login_cancel_link:hover{ color:#666666 !important; }
+.ec_cart > thead > tr{ border-bottom-color:#222222; }
+.ec_cartitem_title{ color:#222222 !important; }
+.ec_cartitem_quantity_table > tbody > tr > td > .ec_minus, .ec_cartitem_quantity_table > tbody > tr > td > .ec_plus, .ec_cartitem_quantity_table > tbody > tr > td > .ec_cartitem_update_button{ background-color:#222222 !important; }
+.ec_cartitem_quantity_table > tbody > tr > td > .ec_minus:hover, .ec_cartitem_quantity_table > tbody > tr > td > .ec_plus:hover, .ec_cartitem_quantity_table > tbody > tr > td > .ec_cartitem_update_button:hover{ background-color:#666666 !important; }
+.ec_cart_button_row > .ec_account_button{ background-color:#222222 !important; }
+.ec_cart_button_row > .ec_account_button:hover{ background-color:#666666 !important; }
+.ec_cart_button_row > .ec_cart_button, .ec_cart_button_row input[type="button"], .ec_cart_button_row a.ec_cart_button{ background-color:#222222 !important; }
+.ec_cart_button_row > .ec_cart_button:hover, .ec_cart_button_row input[type="button"]:hover, .ec_cart_button_row a.ec_cart_button:hover{ background-color:#666666 !important; }
+.ec_cart_button_row a.ec_account_login_link{ background:none !important; background-color:transparent !important; color:#222222; }
+.ec_cart_button_row a.ec_account_login_link:hover{ background:none !important; background-color:transparent !important; color:#666666; }
+.ec_cart_input_row > a, .ec_cart_input_row > b, .ec_cart_input_row > strong, .ec_account_order_details_item_display_title > a{ color:#222222; }
+.ec_cart_input_row > a:hover, .ec_account_order_details_item_display_title > a:hover{ color:#666666; }
+ul.ec_menu_vertical li a:hover{ background-color:#222222; }
+ul.ec_menu_vertical ul li a:hover, ul.ec_menu_vertical ul ul li a:hover, .ec_categorywidget a:hover, .ec_manufacturerwidget a:hover, .ec_pricepointwidget a:hover, .ec_groupwidget a:hover, .ec_product_widget_title a:hover{ color:#222222 !important; }
+
+.ec_search_widget input[type="submit"], .ec_newsletter_widget input[type="submit"], input[type="submit"].ec_login_widget_button{ background-color:#222222; border-bottom:4px solid #666666; }
+.ec_search_widget input[type="submit"]:hover, .ec_newsletter_widget input[type="submit"]:hover, input[type="submit"].ec_login_widget_button:hover{ background-color:#666666; border-bottom:4px solid #222222; }
+
+.ec_cart_widget_minicart_wrap{ background:#222222; }
+
+.ec_categorywidget a, .ec_manufacturer_widget a, .ec_pricepoint_widget a, .ec_group_widget a, .ec_cartwidget a{ color:#222222; }
+.ec_categorywidget a:hover, .ec_manufacturer_widget a:hover, .ec_pricepoint_widget a:hover, .ec_group_widget a:hover, .ec_cartwidget a:hover{ color:#666666 !important; }
+
+.ec_newsletter_content h1, .ec_newsletter_close{ color:#222222; }
+.ec_newsletter_content input[type='submit']{ background-color:#222222;}
+.ec_newsletter_content input[type='submit']:hover{ background-color:#666666; }
+
+.ec_account_order_item_buy_button, .ec_account_order_item_download_button{ background-color:#222222; }
+.ec_account_order_item_buy_button:hover, .ec_account_order_item_download_button:hover{ background-color:#666666; }
+.ec_account_dashboard_row_divider a, .ec_account_order_line_column5 a, .ec_account_complete_payment_button{ background-color:#222222 !important; }
+.ec_account_dashboard_row_divider a:hover, .ec_account_order_line_column5 a:hover, .ec_account_complete_payment_button:hover{ background:#666666 !important; background-color:#666666 !important; }
+
+.ec_store_table a{ color:#222222 !important; }
+.ec_store_table a:hover{ color:#666666 !important; }
+
+.ec_cart_success_title{ color:#222222 !important; }
+.ec_cart_success_continue_shopping_button > a{ background:#222222 !important; }
+.ec_cart_success_continue_shopping_button > a:hover{ background:#666666 !important; }
+
+@media only screen and ( min-width:1140px ){
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:33.333333333333%; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:310px; height:310px; }
+	#ec_current_media_size{ max-width:1300px; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ) .ec_product_editor{ left:227px; }
+	
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:33.333333333333%; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:310px; height:310px; }
+	#ec_current_media_size{ max-width:1300px; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ) .ec_product_editor{ left:227px; }
+		
+	.ec_category_li{ width:33.333333333333%; }
+	.ec_category_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_category_li{ width:33.333333333333%; }
+	.ec_category_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_category_li:nth-child( 3n+1 ) .ec_product_editor{ left:227px; }
+	
+	}
+
+@media only screen and ( min-width:990px ) and ( max-width:1139px ){
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:33.333333333333%; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:310px; height:310px; }
+	#ec_current_media_size{ max-width:1139px; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ) .ec_product_editor{ left:227px; }
+	
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:33.333333333333%; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:310px; height:310px; }
+	#ec_current_media_size{ max-width:1139px; }
+	.ec_product_page .ec_product_li:nth-child( 3n+1 ) .ec_product_editor{ left:227px; }
+		
+	.ec_category_li{ width:33.333333333333%; }
+	.ec_category_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_category_li{ width:33.333333333333%; }
+	.ec_category_li:nth-child( 3n+1 ){ clear:both; }
+	.ec_category_li:nth-child( 3n+1 ) .ec_product_editor{ left:227px; }
+	
+	}
+
+@media only screen and ( min-width:768px ) and ( max-width:989px ) {
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:50%; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:310px; height:310px; }
+	#ec_current_media_size{ max-width:989px; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ) .ec_product_editor{ left:227px; }
+	
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:50%; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:310px; height:310px; }
+	#ec_current_media_size{ max-width:989px; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ) .ec_product_editor{ left:227px; }
+		.ec_details_magbox{ display:none !important }
+	.ec_details_mobile_title_area{ display:block; }
+	.ec_details_images, .ec_details_right, .ec_details_customer_reviews_left, .ec_details_customer_reviews_form, .ec_details_customer_review_date{ float:left; margin-left:0px; width:100%; }
+	.ec_details_right{ padding-left:0px; }
+	.ec_details_right > form > .ec_details_breadcrumbs.ec_small, .ec_details_right > form > .ec_details_title, .ec_details_right > form > .ec_title_divider, .ec_details_right > form > .ec_details_price, .ec_details_right > form > .ec_details_rating{ display:none; }
+	.ec_details_customer_review_list{ width:100%; }
+		
+	.ec_category_li{ width:50%; }
+	.ec_category_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_category_li{ width:50%; }
+	.ec_category_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_category_li:nth-child( 2n+1 ) .ec_product_editor{ left:227px; }
+	
+		.ec_cart_breadcrumb.ec_inactive, .ec_cart_breadcrumb_divider{ display:none; }
+	.ec_cart_breadcrumb{ width:100%; text-align:center; font-size:22px; }
+	.ec_cart_left{ width:100%; padding-right:0px; border-right:0px; }
+	.ec_cart_right{ width:100%; padding-left:0px; }
+	.ec_cart_right > .ec_cart_header.ec_top{ margin-top:15px; }
+	.ec_show_two_column_only{ display:none !important; }
+	#ec_cart_payment_one_column{ display:block; }
+	#ec_cart_payment_hide_column{ display:none; }
+	}
+
+@media only screen and ( min-width:481px ) and ( max-width:767px ){
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:50%; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:380px; height:380px; }
+	#ec_current_media_size{ max-width:767px; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ) .ec_product_editor{ left:227px; }
+	
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:50%; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:380px; height:380px; }
+	#ec_current_media_size{ max-width:767px; }
+	.ec_product_page .ec_product_li:nth-child( 2n+1 ) .ec_product_editor{ left:227px; }
+		.ec_details_magbox{ display:none !important }
+	.ec_details_mobile_title_area{ display:block; }
+	.ec_details_images, .ec_details_right, .ec_details_customer_reviews_left, .ec_details_customer_reviews_form, .ec_details_customer_review_date{ float:left; margin-left:0px; width:100%; }
+	.ec_details_right{ padding-left:0px; }
+	.ec_details_right > form > .ec_details_breadcrumbs.ec_small, .ec_details_right > form > .ec_details_title, .ec_details_right > form > .ec_title_divider, .ec_details_right > form > .ec_details_price, .ec_details_right > form > .ec_details_rating{ display:none; }
+	.ec_details_customer_review_list{ width:100%; }
+		
+	.ec_category_li{ width:50%; }
+	.ec_category_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_category_li{ width:50%; }
+	.ec_category_li:nth-child( 2n+1 ){ clear:both; }
+	.ec_category_li:nth-child( 2n+1 ) .ec_product_editor{ left:227px; }
+	
+		.ec_cart_left{ width:100%; padding-right:0px; border-right:0px; }
+	.ec_cart_right{ width:100%; padding-left:0px; }
+	.ec_cart_right > .ec_cart_header.ec_top{ margin-top:15px; }
+	.ec_show_two_column_only{ display:none !important; }
+	#ec_cart_payment_one_column{ display:block; }
+	#ec_cart_payment_hide_column{ display:none; }
+	}
+
+@media only screen and ( max-width:480px ){
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:100%; }
+	.ec_product_page .ec_product_li:nth-child( 1n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:270px; height:270px; }
+	#ec_current_media_size{ max-width:480px; }
+	.ec_product_page .ec_product_li:nth-child( 1n+1 ) .ec_product_editor{ left:227px; }
+	
+	.ec_product_page .ec_product_li, .ec_product_page li.ec_product_li{ width:100%; }
+	.ec_product_page .ec_product_li:nth-child( 1n+1 ){ clear:both; }
+	.ec_image_container_none, .ec_image_container_none > div, .ec_image_container_border, .ec_image_container_border > div, .ec_image_container_shadow, .ec_image_container_shadow > div{ min-height:270px; height:270px; }
+	#ec_current_media_size{ max-width:480px; }
+	.ec_product_page .ec_product_li:nth-child( 1n+1 ) .ec_product_editor{ left:227px; }
+	.ec_product_quickview_content_data{ padding:15px; }
+	.ec_product_page_sort > .ec_product_page_showing{ margin:0; }
+	.ec_product_page_sort > select{ float:left; }
+	.ec_product_type6 .ec_image_container_none, .ec_product_type6 .ec_image_container_border, .ec_product_type6 .ec_image_container_shadow{ width:100%; max-width:100%; }
+	.ec_product_type6 .ec_product_meta_type6{ position:relative; width:100%; max-width:100%; margin-left:0; float:none; padding:15px; }
+	.ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart_container{ float:none; }
+	
+	.ec_details_swatches{ float:left; width:100%; }
+	.ec_details_option_label{ border-right:none; }
+	
+	.ec_category_li{ width:100%; }
+	.ec_category_li:nth-child( 1n+1 ){ clear:both; }
+	.ec_category_li{ width:100%; }
+	.ec_category_li:nth-child( 1n+1 ){ clear:both; }
+	.ec_category_li:nth-child( 1n+1 ) .ec_product_editor{ left:227px; }
+	
+		.ec_details_magbox{ display:none !important }
+	.ec_details_mobile_title_area{ display:block; }
+	.ec_details_images, .ec_details_right, .ec_details_customer_reviews_left, .ec_details_customer_reviews_form, .ec_details_customer_review_date{ float:left; margin-left:0px; width:100%; }
+	.ec_details_right{ padding-left:0px; }
+	.ec_details_right > form > .ec_details_breadcrumbs.ec_small, .ec_details_right > form > .ec_details_title, .ec_details_right > form > .ec_title_divider, .ec_details_right > form > .ec_details_price, .ec_details_right > form > .ec_details_rating{ display:none; }
+	.ec_details_customer_review_list{ width:100%; }
+		
+		.ec_cart_left{ width:100%; padding-right:0px; border-right:0px; }
+	.ec_cart_right{ width:100%; padding-left:0px; }
+	.ec_cart_right > .ec_cart_header.ec_top{ margin-top:15px; }
+	.ec_show_two_column_only{ display:none !important; }
+	#ec_cart_payment_one_column{ display:block; }
+	#ec_cart_payment_hide_column{ display:none; }
+	}
+
+
+</style><link rel="pingback" href="https://snowsportsmuseum.org/xmlrpc.php">	
+	<!-- chatbot script -->
+	<script type="text/javascript" src="https://app.insertchat.com/widgets/chatbot.js" async></script>
+	<script>
+		ICG_BOT_ID = 'ebddde43-3430-4f67-9f57-fdcd3d73d46c';
+		ICG_BOT_TYPE = 'bubble';
+		ICG_BOT_HEIGHT = 750;
+		ICG_BOT_BG_COLOR = '#fff';
+		ICG_BOT_AUTOFOCUS = false;
+		ICG_BOT_OVERRIDE_OPENER = '';
+		
+		ICG_BOT_AUTO_POPUP = false;        // Prevents automatic opening
+    	// Optional: you can also control the delay if you ever want it back
+    	// ICG_BOT_AUTO_POPUP_DELAY = 0;  // 0 means never
+  
+		ICG_USER_ID = '';
+		ICG_USER_EMAIL = '';
+		ICG_USER_FIRSTNAME = '';
+		ICG_USER_LASTNAME = '';
+		ICG_USER_TAGS = [];
+		ICG_USER_METADATA = {};
+	</script>
+	<!-- END: chatbot script -->
+	
+	<!-- Hotjar Tracking Code for Colorado Snowsports Museum --> 
+	<script> 
+		(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:3439404,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); 
+	</script>
+
+</head>
+
+<body class="home wp-singular page-template-default page page-id-2 wp-theme-colorado-snowsports-museum">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+	<header id="masthead" class="site-header">
+		<div class="site-branding">
+							<a href="https://snowsportsmuseum.org/" rel="home"><img src="https://snowsportsmuseum.org/wp-content/uploads/2024/03/colorado-snowsports-museum.png" alt="Colorado Snowsports Museum" /></a>
+					</div><!-- .site-branding -->
+
+		<nav id="site-navigation" class="main-navigation">
+			<div class="menu-primary-top-container"><ul id="primary-menu-top" class="hide-md"><li id="menu-item-357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-357"><a href="https://snowsportsmuseum.org/become-a-member/">Become a member</a></li>
+<li id="menu-item-358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-358"><a href="https://snowsportsmuseum.org/donate/">Donate</a></li>
+<li id="menu-item-359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-359"><a href="/store/">Store</a></li>
+<li class="ec_menu_mini_cart" data-nonce="9c9334b32c"></li></ul></div>
+			<div class="menu-primary-container"><ul id="primary-menu" class="hide-md"><li id="menu-item-360" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-360"><a href="/visit/">Visit</a></li>
+<li id="menu-item-361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-361"><a href="/exhibits/">Exhibits</a></li>
+<li id="menu-item-362" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-362"><a href="/hall-of-fame/">Hall of Fame</a></li>
+<li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932"><a href="https://snowsportsmuseum.org/about/">About</a></li>
+<li id="menu-item-363" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-363"><a href="/events/">Events</a></li>
+<li id="menu-item-364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-364"><a href="/digital-collection/">Digital Collection</a></li>
+<li id="menu-item-4402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4402"><a href="https://snowsportsmuseum.org/blog/">Blog</a></li>
+</ul></div>
+			<a class="off-canvas-toggle show-mobile show-md" href="#mobile-nav">
+				<span class="dashicons dashicons-menu-alt"></span>
+			</a>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div class="off-canvas">
+		<!-- off-screen toggle button -->
+		
+
+		<div id="mobile-nav" class="off-canvas-sidebar">
+			<a href="#" class="close"><span class="dashicons dashicons-no-alt"></span></a>
+			<div class="menu-primary-container"><ul id="mobile-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-360"><a href="/visit/">Visit</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-361"><a href="/exhibits/">Exhibits</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-362"><a href="/hall-of-fame/">Hall of Fame</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932"><a href="https://snowsportsmuseum.org/about/">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-363"><a href="/events/">Events</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-364"><a href="/digital-collection/">Digital Collection</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4402"><a href="https://snowsportsmuseum.org/blog/">Blog</a></li>
+</ul></div>
+			<div class="menu-primary-top-container"><ul id="mobile-menu-top" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-357"><a href="https://snowsportsmuseum.org/become-a-member/">Become a member</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-358"><a href="https://snowsportsmuseum.org/donate/">Donate</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-359"><a href="/store/">Store</a></li>
+<li class="ec_menu_mini_cart" data-nonce="9c9334b32c"></li></ul></div>		</div>
+
+		<a class="off-canvas-overlay close" href="#close"></a>
+	</div>	
+	<main id="primary" class="site-main" style="background-color: ;">
+													
+     <section id="" class="home_hero ">
+          <!-- HEADLINE -->
+          <div class="container grid-xl">
+               <div class="columns">
+                                            <div id="show-arrow"><!-- intentionally blank --></div>
+                                        <div class="column hero col-11 col-sm-12">
+                        
+                        <div class="media-holder">
+                                                                <div class="image-holder">
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/06/Untitled-design-12-e1751412825474.png" alt="" class="img-responsive" />
+                                    </div>
+                                                                                    </div>
+                        
+
+                    
+
+
+                    </div>
+
+
+                    <div class="content-holder" style=" background-color: rgb(210, 19, 63);">
+                        
+                                                    <div class="content light">
+                                Open daily - 10 am to 6 pm. FREE ADMISSION<br />
+<br />
+Celebrate Colorado snow sports by telling the stories that educate and inspire others to seek adventure.                            </div>
+                                            </div>
+
+                    <div class="content-overlay">
+                        
+                                                    <div class="content light">
+                                Open daily - 10 am to 6 pm. FREE ADMISSION<br />
+<br />
+Celebrate Colorado snow sports by telling the stories that educate and inspire others to seek adventure.                            </div>
+                                            </div>
+               </div>
+          </div>
+          
+     </section>
+											     <section id="" class="slider " style=" background-color: transparent;">
+
+          <div class="container grid-xl">
+               <div class="columns">
+                    <div class="column col-12">
+                         <h2>Events at the CSM</h2>
+
+                                                       <div class="slider-container">
+                                   
+                                        <div class="single-slide">
+                                                                                               <div class="image-holder">
+                                                       <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/06/IMG-5922-1.jpg" alt="Vail History <br />
+Walking Tours" />
+                                                  </div>
+                                             
+                                             <div class="slide-content light" style="background-color: rgb(255, 210, 0); mix-blend-mode: multiply;">
+                                                                                                         <h5>Events</h5>
+                                                  
+                                                                                                         <h3>Vail History <br />
+Walking Tours</h3>
+                                                  
+                                                                                                         <div class="cta-holder">
+                                                            <a href="https://snowsportsmuseum.org/event/vail-history_tours/" target="" class="btn btn-alt">Learn more</a>
+                                                       </div>
+                                                                                               </div>
+                                        </div>
+
+                                   
+                                        <div class="single-slide">
+                                                                                               <div class="image-holder">
+                                                       <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/11/Copy-of-Blue-Illustration-Winter-Ski-Flyer-2-e1762974824470.png" alt="Yoga At <br />
+The Museum" />
+                                                  </div>
+                                             
+                                             <div class="slide-content light" style="background-color: rgb(0, 62, 126); mix-blend-mode: multiply;">
+                                                                                                         <h5>Events</h5>
+                                                  
+                                                                                                         <h3>Yoga At <br />
+The Museum</h3>
+                                                  
+                                                                                                         <div class="cta-holder">
+                                                            <a href="https://snowsportsmuseum.org/event/yoga-at-the-museum/" target="" class="btn btn-alt">learn more</a>
+                                                       </div>
+                                                                                               </div>
+                                        </div>
+
+                                   
+                                        <div class="single-slide">
+                                                                                               <div class="image-holder">
+                                                       <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/12/TTL-2026-Header-Image-2.png" alt="Through The Lens<br />
+Speaker Series" />
+                                                  </div>
+                                             
+                                             <div class="slide-content light" style="background-color: rgb(210, 19, 63); mix-blend-mode: multiply;">
+                                                                                                         <h5>Events</h5>
+                                                  
+                                                                                                         <h3>Through The Lens<br />
+Speaker Series</h3>
+                                                  
+                                                                                                         <div class="cta-holder">
+                                                            <a href="https://snowsportsmuseum.org/events/" target="" class="btn btn-alt"> Check out the details here!</a>
+                                                       </div>
+                                                                                               </div>
+                                        </div>
+
+                                   
+                                        <div class="single-slide">
+                                                                                               <div class="image-holder">
+                                                       <img src="https://snowsportsmuseum.org/wp-content/uploads/2024/11/REX-3.jpg" alt="Host Your Event<br />
+at the Museum" />
+                                                  </div>
+                                             
+                                             <div class="slide-content light" style="background-color: rgb(0, 62, 126); mix-blend-mode: multiply;">
+                                                                                                         <h5>Events</h5>
+                                                  
+                                                                                                         <h3>Host Your Event<br />
+at the Museum</h3>
+                                                  
+                                                                                                         <div class="cta-holder">
+                                                            <a href="https://snowsportsmuseum.org/event/rent-the-museum-for-your-event/" target="" class="btn btn-alt">Rental Info </a>
+                                                       </div>
+                                                                                               </div>
+                                        </div>
+
+                                                                 </div>
+                                             </div>
+               </div>
+          </div>
+          
+     </section>
+
+               <script type="text/javascript">
+               jQuery( document ).ready( function( $ ) {
+                    $('.slider-container').slick({
+                         slidesToShow: 1,
+                         slidesToScroll: 1,
+                         autoplay: true,
+                         autoplaySpeed: 2000,
+                    });
+               } );
+          </script>
+     											     <section id="" class="tiles " style=" background-color: transparent;">
+
+          <div class="container grid-xl">
+               <div class="columns">
+                                             <h4>2025 Colorado Snowsports Hall of Fame Celebration</h4>
+                                        
+
+                                                                      <div class="background-holder">
+                              
+                                                                           <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/07/CLASS-OF-2025-2-e1752266699103.png" id="background-1" class="active" />
+                                   
+                                                                 
+                                                                           <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/09/IMG_1282-scaled.jpeg" id="background-2" class="" />
+                                   
+                                                                 
+                                                                           <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/09/Untitled-design.png" id="background-3" class="" />
+                                   
+                                                                                          </div>
+                                       
+                   
+
+                                                                      <div class="tile-holder">
+                              
+                                   <div class="card active" data-background="background-1">
+                                                                                     <h5>Hall of Fame</h5>
+                                        
+                                                                                     <h3>Paddle Raise Payments // In Lieu of Attending the HOF</h3>
+                                        
+                                                                                     <div class="content">
+                                                  <p>Make paddle raise payments directly on our website. Can’t attend the Hall of Fame this year, but want to support our mission? Make a donation in lieu of attending.</p>
+                                             </div>
+                                        
+                                                                                     <div class="cta-holder">
+                                                  <a href="https://snowsportsmuseum.org/paddle-raise/" target="_blank" class="light">Paddle Raise/In Lieu - Click HERE</a>
+                                             </div>
+                                                                           </div>
+                    
+                                                                 
+                                   <div class="card " data-background="background-2">
+                                                                                     <h5>2025 Colorado Snowsports Hall of Fame Exhibit</h5>
+                                        
+                                                                                     <h3>New 2025<br />
+HOF Exhibit</h3>
+                                        
+                                                                                     <div class="content">
+                                                  <p>The 2025 Colorado Snowsports Hall of Fame exhibit is open to the public. Come celebrate the incoming class! </p>
+                                             </div>
+                                        
+                                                                           </div>
+                    
+                                                                 
+                                   <div class="card " data-background="background-3">
+                                                                                     <h5>Hall of Fame Tribute Vidoes</h5>
+                                        
+                                                                                     <h3>Watch Inductee<br />
+Tribute Videos</h3>
+                                        
+                                                                                     <div class="content">
+                                                  <p>The Colorado Snowsports Museum and Hall of Fame is proud to share each inductees tribute video for the Class of 2025.</p>
+                                             </div>
+                                        
+                                                                                     <div class="cta-holder">
+                                                  <a href="https://youtube.com/playlist?list=PLNTf2wscXX3p2JB1nlIMS1hzxXj019tN_&si=rGXLc-QUe9UHEBTF" target="" class="light">Watch Videos HERE</a>
+                                             </div>
+                                                                           </div>
+                    
+                                                                                          </div>
+                    
+               </div>
+          </div>
+          
+     </section>
+
+     <script type="text/javascript">
+          jQuery( document ).ready( function( $ ) {
+               $('.card').mouseenter(function(){
+                    $('.card').removeClass( 'active' );
+                    $(this).addClass('active');
+
+                    var whichImage = $(this).data("background")
+                    $('.background-holder img').removeClass( 'active' );
+                    $('.background-holder img#'+whichImage).addClass('active');
+               });
+
+               // The cursor leaves the menu area
+               $('.card').mouseleave(function(){
+                    $('.card').removeClass( 'active' );
+               });
+          } );
+     </script>
+											     <section id="" class="header_content " style=" background-color: transparent;">
+
+          <div class="container full">
+               <div class="columns">
+                                             <div class="column col-4 col-md-12">
+                              <h3>Class of 2025 Tribute Videos</h3>
+                         </div>
+                                        
+                                   </div>
+          </div>
+          
+     </section>
+											                <section id="" class="related_content " style=" background-color: transparent;">
+            <!-- HEADLINE -->
+            <div class="container full">
+                <div class="columns">
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Alice Mckennis Duran                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/09/bio-e1759158722912.jpeg" alt="" />
+                                    </div>
+                                
+                                
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://www.youtube.com/watch?v=uIBut5TsO8o" target="">Watch Video Here</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Wendy Fisher                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/07/WendyFisher.jpg" alt="" />
+                                    </div>
+                                
+                                
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://www.youtube.com/watch?v=GT9UVRkSCe8" target="">Watch Video Here</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Bob Meserve                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/07/BobMeserve-scaled.jpeg" alt="" />
+                                    </div>
+                                
+                                
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://www.youtube.com/watch?v=_M6eyc5e660" target="">Watch Video Here</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+    
+											                <section id="" class="related_content " style=" background-color: transparent;">
+            <!-- HEADLINE -->
+            <div class="container full">
+                <div class="columns">
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Jon Kreamelmeyer                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/07/JonKreamelmeyer.jpeg" alt="" />
+                                    </div>
+                                
+                                
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://www.youtube.com/watch?v=2e-7d6rg7ms" target="">Watch Video Here</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Trace Worthington                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/07/TraceWorthington.jpg" alt="" />
+                                    </div>
+                                
+                                
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://www.youtube.com/watch?v=TCfxekZURlg" target="">Watch Video Here</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+    
+											     <section id="" class="slider " style=" background-color: transparent;">
+
+          <div class="container grid-xl">
+               <div class="columns">
+                    <div class="column col-12">
+                         <h2>Featured Museum Collections</h2>
+
+                                                       <div class="slider-container">
+                                   
+                                        <div class="single-slide">
+                                                                                               <div class="image-holder">
+                                                       <img src="https://snowsportsmuseum.org/wp-content/uploads/2024/10/ot_1.jpg" alt="Out There. <br />
+The Evolution <br />
+of Snowboarding" />
+                                                  </div>
+                                             
+                                             <div class="slide-content light" style="background-color: rgb(255, 210, 0); mix-blend-mode: multiply;">
+                                                                                                         <h5>Permanent Collection</h5>
+                                                  
+                                                                                                         <h3>Out There. <br />
+The Evolution <br />
+of Snowboarding</h3>
+                                                  
+                                                                                                         <div class="cta-holder">
+                                                            <a href="https://snowsportsmuseum.org/exhibits/" target="" class="btn btn-alt">Learn more</a>
+                                                       </div>
+                                                                                               </div>
+                                        </div>
+
+                                   
+                                        <div class="single-slide">
+                                                                                               <div class="image-holder">
+                                                       <img src="https://snowsportsmuseum.org/wp-content/uploads/2024/10/ctg_1.jpg" alt="Climb to Glory.<br />
+Legacy of the<br />
+10th Mountain<br />
+Division" />
+                                                  </div>
+                                             
+                                             <div class="slide-content light" style="background-color: rgb(0, 62, 126); mix-blend-mode: multiply;">
+                                                                                                         <h5>Permanent Collection</h5>
+                                                  
+                                                                                                         <h3>Climb to Glory.<br />
+Legacy of the<br />
+10th Mountain<br />
+Division</h3>
+                                                  
+                                                                                                         <div class="cta-holder">
+                                                            <a href="https://snowsportsmuseum.org/exhibits/" target="" class="btn btn-alt">Learn more</a>
+                                                       </div>
+                                                                                               </div>
+                                        </div>
+
+                                   
+                                        <div class="single-slide">
+                                                                                               <div class="image-holder">
+                                                       <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/06/2016141-e1749675394517.jpg" alt="Letters Home.<br />
+Digital Deep Dive<br />
+on the 10th" />
+                                                  </div>
+                                             
+                                             <div class="slide-content light" style="background-color: rgb(210, 19, 63); mix-blend-mode: multiply;">
+                                                                                                         <h5>New Exhibition</h5>
+                                                  
+                                                                                                         <h3>Letters Home.<br />
+Digital Deep Dive<br />
+on the 10th</h3>
+                                                  
+                                                                                               </div>
+                                        </div>
+
+                                                                 </div>
+                                             </div>
+               </div>
+          </div>
+          
+     </section>
+
+               <script type="text/javascript">
+               jQuery( document ).ready( function( $ ) {
+                    $('.slider-container').slick({
+                         slidesToShow: 1,
+                         slidesToScroll: 1,
+                         autoplay: true,
+                         autoplaySpeed: 2000,
+                    });
+               } );
+          </script>
+     																						                <section id="" class="related_content " style=" background-color: transparent;">
+            <!-- HEADLINE -->
+            <div class="container grid-xl">
+                <div class="columns">
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Visit                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/06/Web-3.jpg" alt="" />
+                                    </div>
+                                
+                                                                    <h4>The next time  <br />
+you’re in Vail</h4>
+                                
+                                                                    <div class="content">
+                                        Come enjoy our interactive exhibits and free admission, Vail's Colorado Snowsports Museum tells the rich story of skiing and snowboarding in Colorado.                                    </div>
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://snowsportsmuseum.org/visit/" target="">Visit us</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Support                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/06/Lee-photo-e1750192376243.jpg" alt="" />
+                                    </div>
+                                
+                                                                    <h4>Get that pow day <br />
+feeling by giving.</h4>
+                                
+                                                                    <div class="content">
+                                        Explore the various ways you can help us continue our mission—from donations and memberships to volunteering and sponsorships, every bit of support helps.                                    </div>
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://snowsportsmuseum.org/donate/" target="">Support us</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div class="column col-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                                                    <div class="image-holder">
+                                                                                    <div class="eyebrow">
+                                                Hall of Fame                                            </div>
+                                        
+                                        <img src="https://snowsportsmuseum.org/wp-content/uploads/2025/06/Aspen-Shepard-Molter-Pfeiffer-scaled.jpg" alt="" />
+                                    </div>
+                                
+                                                                    <h4>Celebrate Colorado’s  <br />
+heroes of snow sports</h4>
+                                
+                                                                    <div class="content">
+                                        The Hall of Fame has inducted more than 250 athletes, sport builders, pioneers. and inspirational icons of snow sports in Colorado since its first class in 1977.                                    </div>
+                                
+                                                                    <div class="cta-holder">
+                                        <a href="https://snowsportsmuseum.org/hall-of-fame/" target="">Learn more</a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+    
+						
+	</main><!-- #main -->
+
+	
+
+
+
+
+
+			<section id="footer-map">
+							<h3 class="sticker">We’re right here!</h3>
+						
+							<a href="https://maps.app.goo.gl/w82ona2vR877cmCa9" target="_blank">
+						<picture>
+				<source media="(max-width: 799px)" srcset="https://snowsportsmuseum.org/wp-content/uploads/2024/04/map-mobile.jpg" />
+				<source media="(min-width: 800px)" srcset="https://snowsportsmuseum.org/wp-content/uploads/2024/04/map-screen-scaled.jpg" />
+				<img src="https://snowsportsmuseum.org/wp-content/uploads/2024/04/map-screen-scaled.jpg" alt="Contact Colorado Snowsports Museum" />
+			</picture>
+							</a>
+					</section>
+	
+
+	<footer id="colophon" class="site-footer">
+		<div id="footer-top">
+			<div class="container grid-xl">
+				<div class="columns">
+					<div class="column col-3 col-md-12">
+													<h4>Support</h4>
+							<div class="content support">
+								Your support allows us to celebrate Colorado snow sports by telling stories and hosting events that educate and inspire others to seek adventure.							</div>
+						
+													<a href="/donate/" target="" class="donate">Donate today</a>
+											</div>
+					<div class="column col-3 col-md-12">
+													<h4>How to find us</h4>
+							<div class="content address">
+								<div class='sim_address_field'><div class='sim_address_row'><span class='street1'>231 South Frontage Road East</span> </div><div class='sim_address_row'><span class='street2'></span> </div><div class='sim_address_row'><span class='city'>Vail,</span> <span class='state'>Colorado</span> <span class='zip'>81657</span> <span class='country'></span> </div></div>							</div>
+												
+													<h4>Contact</h4>
+															<a href="tel:+19704761876">970 476-1876</a>							
+															<a href="mailto:museum@snowsportsmuseum.org">museum@snowsportsmuseum.org</a>
+																		</div>
+					<div class="column col-3 col-md-12">
+													<h4>Hours</h4>
+							<div class="content hours">
+								10 AM-6 PM daily							</div>
+											</div>
+					<div class="column col-3 col-md-12">
+						
+                <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_1' ><style>#gform_wrapper_1[data-form-index="0"].gform-theme,[data-parent-form="1_0"]{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-file-btn-bg-color-hover: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style><div id='gf_1' class='gform_anchor' tabindex='-1'></div>
+                        <div class='gform_heading'>
+                            <h2 class="gform_title">Sign up</h2>
+                            <p class='gform_description'>Stay up to date on all the museum news and going on’s</p>
+                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'  action='/#gf_1' data-formid='1' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_1_1" class="gfield gfield--type-email gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_1'>Email<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_1_1' type='email' value='' class='large' tabindex='99'  placeholder='email address *' aria-required="true" aria-invalid="false"  />
+                        </div></div><div id="field_submit" class="gfield gfield--type-submit gfield--width-half field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-field-class="gform_editor_submit_container" data-field-position="inline" ><input type='submit' id='gform_submit_button_1' class='gform-button gform-button--white  button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' value='GO' tabindex='100' /></div></div></div>
+        <div class='gform-footer gform_footer top_label'>  <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=1&amp;description=1&amp;tabindex=99&amp;theme=orbital&amp;hash=ad9c5e1d8035a2d6e2fbce93e08087ee' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_1' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_1' id='gform_theme_1' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_1' id='gform_style_settings_1' value='' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjVjM2VjNWUxMGU4MjE0M2U5MTM1ZjAyMDU5ZmMzOTk2Il0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://snowsportsmuseum.org/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://snowsportsmuseum.org/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+
+
+													<div class="column col-md-12">
+								<ul class="social">
+																			<li><a href="https://www.facebook.com/ColoradoSnowsportsMuseum" target="_blank" class="facebook">facebook</a></li>
+									
+																			<li><a href="https://www.instagram.com/coloradosnowsportsmuseum/" target="_blank" class="instagram">instagram</a></li>
+									
+																			<li><a href="https://www.linkedin.com/company/colorado-ski-and-snowboard-museum-hall-of-fame/?viewAsMember=true" target="_blank" class="linkedin">linkedin</a></li>
+									
+																			<li><a href="https://twitter.com/Cosnowsportsmus" target="_blank" class="twitter_x">twitter_x</a></li>
+									
+																			<li><a href="https://www.youtube.com/channel/UCqGBnZOa2xAc7QWeFLK8nog" target="_blank" class="youtube">youtube</a></li>
+																	</ul>
+							</div>
+						
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer-bottom">
+			<div class="container grid-xl">
+				<div class="columns">
+					<div class="column col-3 col-md-12">
+													<div class="copyright">
+								©2025 Colorado Snowsports Museum.							</div>
+											</div>
+					<div class="column col-3 col-md-12 hide-md">
+						<!-- intentionally empty -->
+					</div>
+					<div class="column col-3 col-md-12 hide-md">
+						<!-- intentionally empty -->
+					</div>
+					<div class="column col-3 col-md-12">
+						<div class="menu-legal-container"><ul id="legal" class="menu"><li id="menu-item-4276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4276"><a href="https://snowsportsmuseum.org/shipping-policy/">Shipping Policy</a></li>
+<li id="menu-item-347" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-347"><a href="#">Privacy policy.</a></li>
+<li id="menu-item-348" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-348"><a href="#">Terms and conditions.</a></li>
+</ul></div>
+													<div class="logo">
+								<img src="https://snowsportsmuseum.org/wp-content/uploads/2024/03/colorado-snowsports-museum-logo-white.png" alt="Colorado Snowsports Museum" />
+							</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/colorado-snowsports-museum\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://snowsportsmuseum.org/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=2.9.24' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://snowsportsmuseum.org/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=2.9.24' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://snowsportsmuseum.org/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=2.9.24' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://snowsportsmuseum.org/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=2.9.24' media='all' />
+<script src="https://snowsportsmuseum.org/wp-content/themes/colorado-snowsports-museum/assets/js/wow.min.js?ver=1.0.2" id="wow-js"></script>
+<script src="https://snowsportsmuseum.org/wp-content/themes/colorado-snowsports-museum/assets/js/slick.min.js?ver=1.0.2" id="slick-js-js"></script>
+<script src="https://snowsportsmuseum.org/wp-content/themes/colorado-snowsports-museum/assets/js/colorado-snowsports.js?ver=1.0.2" id="colorado-snowsports-js-js"></script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="https://snowsportsmuseum.org/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
+<script defer='defer' src="https://snowsportsmuseum.org/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.24" id="gform_json-js"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https:\/\/snowsportsmuseum.org\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/snowsportsmuseum.org\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/snowsportsmuseum.org\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"b6544819cdd558a37f77dc6ad9336480","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+</script>
+<script defer='defer' src="https://snowsportsmuseum.org/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.24" id="gform_gravityforms-js"></script>
+<script defer='defer' src="https://snowsportsmuseum.org/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.9.24" id="gform_placeholder-js"></script>
+<script defer='defer' src="https://snowsportsmuseum.org/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=48a3755090e76a154853db28fc254681" id="gform_gravityforms_utils-js"></script>
+<script defer='defer' src="https://snowsportsmuseum.org/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=8673c9a2ff188de55f9073009ba56f5e" id="gform_gravityforms_theme_vendors-js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"b6544819cdd558a37f77dc6ad9336480"},"ajax":{"ajaxurl":"https:\/\/snowsportsmuseum.org\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"4d69e936f7","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https:\/\/snowsportsmuseum.org\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"e790b7efaa"};
+</script>
+<script defer='defer' src="https://snowsportsmuseum.org/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=1546762cd067873f438f559b1e819128" id="gform_gravityforms_theme-js"></script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }				gform.utils.addAsyncFilter('gform/submission/pre_submission', async (data) => {
+				    const input = document.createElement('input');
+				    input.type = 'hidden';
+				    input.name = 'gf_zero_spam_key';
+				    input.value = 'cuzK2j6RqFCmSLB0iWIPQrmuGldJzPYQ02ynOayE3Akv8lkZHPt9sOzfkFc05JK8';
+				    input.setAttribute('autocomplete', 'new-password');
+				    data.form.appendChild(input);
+				
+				    return data;
+				});} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+
+</body>
+</html>

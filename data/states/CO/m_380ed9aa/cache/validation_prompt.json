@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nYOUR FOCUS: Extract ONLY fields where you have clear evidence. Skip fields with no evidence.\n\nFIELDS TO EXTRACT (only if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name\n   - street_address: Full street address\n   - postal_code: ZIP/postal code\n   - website: Validated URL\n   - latitude, longitude: Coordinates\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed\n   - museum_type: Specific category\n   - audience_focus: Target audience\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town)\n   - reputation: 1-5 (1=world-renowned, 5=local)\n   - collection_tier: 1-5 (1=world-class, 5=modest)\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days'\n\n4. SUMMARY:\n   - notes: 2-3 sentence summary if you have collection/context info\n\nCRITICAL FORMATTING RULES:\n✓ CORRECT - Field with evidence:\n  \"museum_name\": {\n    \"value\": \"Denver Art Museum\",\n    \"source\": \"official_website\",\n    \"trust_level\": 5,\n    \"confidence\": 5\n  }\n\n✓ CORRECT - Field with no evidence:\n  \"museum_name\": null\n\n✗ WRONG - Never do this:\n  \"museum_name\": {\"value\": null}  ❌ INVALID\n  \"museum_name\": {\"value\": \"Not provided\"}  ❌ INVALID\n\nIf you don't have evidence for a field, set it to null (not an object).\nOnly create EnrichedField objects when you have actual data.\n\nTrust levels: OFFICIAL_EXTRACT (5), WIKIPEDIA (3), LLM_EXTRACTED (2)\nConfidence: 1-5 (how certain are you about this value)\n\nREQUIRED TOP-LEVEL FIELDS:\n  \"confidence\": 1-5 (overall confidence in this analysis)\n  \"model_used\": \"gpt-4o-mini\"\n  \"needs_deep_dive\": true|false (if scoring/deeper analysis needed)\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-co-unknown-colorado-springs-fine-arts-center\",\n    \"museum_name\": \"Colorado Springs Fine Arts Center\",\n    \"city\": \"Colorado Springs\",\n    \"state_province\": \"Colorado\",\n    \"country\": \"USA\",\n    \"website\": \"http://www.csfineartscenter.org\",\n    \"primary_domain\": \"Art\"\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"ART MUSEUM\",\n    \"audience_focus\": null,\n    \"city_tier\": 2,\n    \"reputation\": null,\n    \"collection_tier\": null,\n    \"time_needed\": \"Half day\",\n    \"notes\": \"CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": \"[__Tickets](/tickets/) [__Contact](/contact/) [__Events](/visit/events/) [__Colorado College](https://www.coloradocollege.edu)\\n## Join us for Spark! A Night of Creativity on Jan. 31, 6\\u20139 p.m.\\nGet ready to relive your childhood at Spark\\u2014an after-hours adventure where grown-ups get to play! [Get Tickets](https://fac.coloradocollege.edu/events/spark/)\\n## A New Year Means New Ways to Get Creative!\\nWhether you\\u2019re picking up a brush for the first time or rediscovering a favorite hobby, our classes are designed to inspire and welcome artists of all levels. [Browse Classes](https://artschool.csfineartscenter.org/classes/)\\n## The Roommate live on stage Feb. 12\\u2013March 1\\nThis funny and deeply moving play\\u2014recently seen on Broadway\\u2014examines the complexities that arise between two very different women and how they navigate changing senses of identity, relevance, and the possibility of reinvention. [Get Tickets](https://fac.coloradocollege.edu/theatre-events/the-roommate/)\\n## In the Museum: Laura Sof\\u00eda P\\u00e9rez\\nPart of the Contemporary Film Series, this film is a journey through Puerto Rico\\u2019s interior to affirm the enduring presence, knowledge, and traditions of the island\\u2019s Indigenous people. [Le...\",\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 502,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON with properly formatted EnrichedField objects (or null if no evidence).",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
+      "museum_name": "Colorado Springs Fine Arts Center",
+      "city": "Colorado Springs",
+      "state_province": "Colorado",
+      "country": "USA",
+      "website": "http://www.csfineartscenter.org",
+      "primary_domain": "Art"
+    },
+    "state_record_subset": {
+      "museum_type": "ART MUSEUM",
+      "audience_focus": null,
+      "city_tier": 2,
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": "Half day",
+      "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990"
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": "[__Tickets](/tickets/) [__Contact](/contact/) [__Events](/visit/events/) [__Colorado College](https://www.coloradocollege.edu)\n## Join us for Spark! A Night of Creativity on Jan. 31, 6–9 p.m.\nGet ready to relive your childhood at Spark—an after-hours adventure where grown-ups get to play! [Get Tickets](https://fac.coloradocollege.edu/events/spark/)\n## A New Year Means New Ways to Get Creative!\nWhether you’re picking up a brush for the first time or rediscovering a favorite hobby, our classes are designed to inspire and welcome artists of all levels. [Browse Classes](https://artschool.csfineartscenter.org/classes/)\n## The Roommate live on stage Feb. 12–March 1\nThis funny and deeply moving play—recently seen on Broadway—examines the complexities that arise between two very different women and how they navigate changing senses of identity, relevance, and the possibility of reinvention. [Get Tickets](https://fac.coloradocollege.edu/theatre-events/the-roommate/)\n## In the Museum: Laura Sofía Pérez\nPart of the Contemporary Film Series, this film is a journey through Puerto Rico’s interior to affirm the enduring presence, knowledge, and traditions of the island’s Indigenous people. [Le...",
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 502,
+      "max_chars": 8000
+    }
+  }
+}

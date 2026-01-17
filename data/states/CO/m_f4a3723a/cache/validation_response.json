@@ -1,0 +1,73 @@
+{
+  "museum_id": "usa-co-denver-museum-of-contemporary-art",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "raw_response": {
+    "confidence": 5,
+    "model_used": "gpt-4o-mini",
+    "needs_deep_dive": false,
+    "state_file_updates": {
+      "museum_id": "usa-co-denver-museum-of-contemporary-art",
+      "museum_name": {
+        "value": "Museum of Contemporary Art",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "city": {
+        "value": "Denver",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "website": {
+        "value": "http://www.mcadenver.org",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "primary_domain": {
+        "value": "Art",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "museum_type": {
+        "value": "ART MUSEUM",
+        "source": "official_website",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "city_tier": {
+        "value": 1,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "reputation": {
+        "value": 2,
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "time_needed": {
+        "value": "Half day",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "notes": {
+        "value": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
+        "source": "state_record_subset",
+        "trust_level": 5,
+        "confidence": 5
+      },
+      "street_address": null,
+      "postal_code": null,
+      "latitude": null,
+      "longitude": null,
+      "audience_focus": null,
+      "collection_tier": null
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nYOUR FOCUS: Extract ONLY fields where you have clear evidence. Skip fields with no evidence.\n\nFIELDS TO EXTRACT (only if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name\n   - street_address: Full street address\n   - postal_code: ZIP/postal code\n   - website: Validated URL\n   - latitude, longitude: Coordinates\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed\n   - museum_type: Specific category\n   - audience_focus: Target audience\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town)\n   - reputation: 1-5 (1=world-renowned, 5=local)\n   - collection_tier: 1-5 (1=world-class, 5=modest)\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days'\n\n4. SUMMARY:\n   - notes: 2-3 sentence summary if you have collection/context info\n\nCRITICAL FORMATTING RULES:\n✓ CORRECT - Field with evidence:\n  \"museum_name\": {\n    \"value\": \"Denver Art Museum\",\n    \"source\": \"official_website\",\n    \"trust_level\": 5,\n    \"confidence\": 5\n  }\n\n✓ CORRECT - Field with no evidence:\n  \"museum_name\": null\n\n✗ WRONG - Never do this:\n  \"museum_name\": {\"value\": null}  ❌ INVALID\n  \"museum_name\": {\"value\": \"Not provided\"}  ❌ INVALID\n\nIf you don't have evidence for a field, set it to null (not an object).\nOnly create EnrichedField objects when you have actual data.\n\nTrust levels: OFFICIAL_EXTRACT (5), WIKIPEDIA (3), LLM_EXTRACTED (2)\nConfidence: 1-5 (how certain are you about this value)\n\nREQUIRED TOP-LEVEL FIELDS:\n  \"confidence\": 1-5 (overall confidence in this analysis)\n  \"model_used\": \"gpt-4o-mini\"\n  \"needs_deep_dive\": true|false (if scoring/deeper analysis needed)\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame\",\n    \"museum_name\": \"Colorado Snowsports Museum and Hall of Fame\",\n    \"city\": \"Vail\",\n    \"state_province\": \"Colorado\",\n    \"country\": \"USA\",\n    \"website\": \"https://www.snowsportsmuseum.org\",\n    \"primary_domain\": null\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"GENERAL MUSEUM\",\n    \"audience_focus\": null,\n    \"city_tier\": 3,\n    \"reputation\": null,\n    \"collection_tier\": null,\n    \"time_needed\": \"Half day\",\n    \"notes\": \"Colorado Snowsports Museum and Hall of Fame is a general museum celebrating Colorado snow sports. It features exhibits that educate and inspire visitors about the history and culture of snow sports in Colorado. The museum is open daily and offers free admission.\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": \"* [Visit](/visit/)\\n * [Exhibits](/exhibits/)\\n * [Hall of Fame](/hall-of-fame/)\\n * [About](https://snowsportsmuseum.org/about/)\\n * [Events](/events/)\\n * [Digital Collection](/digital-collection/)\\n * [Blog](https://snowsportsmuseum.org/blog/)\\n * [Become a member](https://snowsportsmuseum.org/become-a-member/)\\n * [Donate](https://snowsportsmuseum.org/donate/)\\n * [Store](/store/)\\n * \\nOpen daily - 10 am to 6 pm. FREE ADMISSION \\nCelebrate Colorado snow sports by telling the stories that educate and inspire others to seek adventure. \\nOpen daily - 10 am to 6 pm. FREE ADMISSION \\nCelebrate Colorado snow sports by telling the stories that educate and inspire others to seek adventure. \\n## Events at the CSM\\n##### Events\\n### Vail History \\n[Learn more](https://snowsportsmuseum.org/event/vail-history_tours/)\\n##### Events\\n### Yoga At \\n[learn more](https://snowsportsmuseum.org/event/yoga-at-the-museum/)\\n##### Events\\n### Through The Lens \\n[ Check out the details here!](https://snowsportsmuseum.org/events/)\\n##### Events\\n### Host Your Event \\n[Rental Info ](https://snowsportsmuseum.org/event/rent-the-museum-for-your-event/)\\n#### 2025 Colorado Snowsports Hall of Fame Celebration\\n##### Hall of Fame\\n###...\",\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 542,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON with properly formatted EnrichedField objects (or null if no evidence).",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
+      "museum_name": "Colorado Snowsports Museum and Hall of Fame",
+      "city": "Vail",
+      "state_province": "Colorado",
+      "country": "USA",
+      "website": "https://www.snowsportsmuseum.org",
+      "primary_domain": null
+    },
+    "state_record_subset": {
+      "museum_type": "GENERAL MUSEUM",
+      "audience_focus": null,
+      "city_tier": 3,
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": "Half day",
+      "notes": "Colorado Snowsports Museum and Hall of Fame is a general museum celebrating Colorado snow sports. It features exhibits that educate and inspire visitors about the history and culture of snow sports in Colorado. The museum is open daily and offers free admission."
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": "* [Visit](/visit/)\n * [Exhibits](/exhibits/)\n * [Hall of Fame](/hall-of-fame/)\n * [About](https://snowsportsmuseum.org/about/)\n * [Events](/events/)\n * [Digital Collection](/digital-collection/)\n * [Blog](https://snowsportsmuseum.org/blog/)\n * [Become a member](https://snowsportsmuseum.org/become-a-member/)\n * [Donate](https://snowsportsmuseum.org/donate/)\n * [Store](/store/)\n * \nOpen daily - 10 am to 6 pm. FREE ADMISSION \nCelebrate Colorado snow sports by telling the stories that educate and inspire others to seek adventure. \nOpen daily - 10 am to 6 pm. FREE ADMISSION \nCelebrate Colorado snow sports by telling the stories that educate and inspire others to seek adventure. \n## Events at the CSM\n##### Events\n### Vail History \n[Learn more](https://snowsportsmuseum.org/event/vail-history_tours/)\n##### Events\n### Yoga At \n[learn more](https://snowsportsmuseum.org/event/yoga-at-the-museum/)\n##### Events\n### Through The Lens \n[ Check out the details here!](https://snowsportsmuseum.org/events/)\n##### Events\n### Host Your Event \n[Rental Info ](https://snowsportsmuseum.org/event/rent-the-museum-for-your-event/)\n#### 2025 Colorado Snowsports Hall of Fame Celebration\n##### Hall of Fame\n###...",
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 542,
+      "max_chars": 8000
+    }
+  }
+}

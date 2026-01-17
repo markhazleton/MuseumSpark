@@ -1,0 +1,38 @@
+{
+  "museum_id": "usa-co-unknown-denver-art-museum",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "temperature": 0.1,
+  "max_tokens": 900,
+  "system_prompt": "You are a precise research analyst. Respond with strictly valid JSON matching the provided schema. Do not include explanations or markdown.",
+  "user_prompt": "Validate and enrich the museum record using only the evidence provided.\n\nYOUR FOCUS: Extract ONLY fields where you have clear evidence. Skip fields with no evidence.\n\nFIELDS TO EXTRACT (only if evidence exists):\n1. IDENTITY & LOCATION:\n   - museum_name: Official name from website/Wikipedia\n   - city: City name\n   - street_address: Full street address\n   - postal_code: ZIP/postal code\n   - website: Validated URL\n   - latitude, longitude: Coordinates\n\n2. CLASSIFICATION:\n   - primary_domain: Art|History|Science|Culture|Specialty|Mixed\n   - museum_type: Specific category\n   - audience_focus: Target audience\n\n3. QUALITY INDICATORS:\n   - city_tier: 1-5 (1=major metro, 5=small town)\n   - reputation: 1-5 (1=world-renowned, 5=local)\n   - collection_tier: 1-5 (1=world-class, 5=modest)\n   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days'\n\n4. SUMMARY:\n   - notes: 2-3 sentence summary if you have collection/context info\n\nCRITICAL FORMATTING RULES:\n✓ CORRECT - Field with evidence:\n  \"museum_name\": {\n    \"value\": \"Denver Art Museum\",\n    \"source\": \"official_website\",\n    \"trust_level\": 5,\n    \"confidence\": 5\n  }\n\n✓ CORRECT - Field with no evidence:\n  \"museum_name\": null\n\n✗ WRONG - Never do this:\n  \"museum_name\": {\"value\": null}  ❌ INVALID\n  \"museum_name\": {\"value\": \"Not provided\"}  ❌ INVALID\n\nIf you don't have evidence for a field, set it to null (not an object).\nOnly create EnrichedField objects when you have actual data.\n\nTrust levels: OFFICIAL_EXTRACT (5), WIKIPEDIA (3), LLM_EXTRACTED (2)\nConfidence: 1-5 (how certain are you about this value)\n\nREQUIRED TOP-LEVEL FIELDS:\n  \"confidence\": 1-5 (overall confidence in this analysis)\n  \"model_used\": \"gpt-4o-mini\"\n  \"needs_deep_dive\": true|false (if scoring/deeper analysis needed)\n\nEvidence Packet:\n{\n  \"identity\": {\n    \"museum_id\": \"usa-co-unknown-denver-art-museum\",\n    \"museum_name\": \"Denver Art Museum\",\n    \"city\": \"Denver\",\n    \"state_province\": \"Colorado\",\n    \"country\": \"USA\",\n    \"website\": \"https://denverartmuseum.org\",\n    \"primary_domain\": \"Art\"\n  },\n  \"state_record_subset\": {\n    \"museum_type\": \"ART MUSEUM\",\n    \"audience_focus\": null,\n    \"city_tier\": 1,\n    \"reputation\": null,\n    \"collection_tier\": null,\n    \"time_needed\": \"Half day\",\n    \"notes\": \"The Denver Art Museum is an art museum known for its diverse exhibitions, including Impressionist works. It offers a variety of programs and events to engage visitors with art.\"\n  },\n  \"wikidata_claims\": {},\n  \"wikipedia_summary\": null,\n  \"website_json_ld\": {},\n  \"website_text_snippet\": \"## What's on View\\n[ Through Feb 8, 2026 The Honest Eye: Camille Pissarro\\u2019s Impressionism ](/en/exhibitions/honest-eye-camille-pissarro)\\n[ Now On View Andrea Carlson: A Constant Sky ](/en/exhibitions/andrea-carlson) [ Jun 8, 2025 \\u2013 Jan 4, 2026 What We\\u2019ve Been Up To: Landscape ](/en/exhibitions/what-weve-been-landscape) [ Now On ViewFuse Box: Sarah Sze ](/en/exhibitions/fuse-box-sarah-sze) [ Now On View A Century of Art in Latin America ](/en/exhibitions/century-art-latin-america)\\n## Upcoming Events\\nDive deeper into art and join us for one of these upcoming events or programs.\\n[View Calendar](/en/calendar)\\n[ Jan 15, 2026 After Hours with _Pissarro_ Join curator Angelica Daneo for an exclusive after hours tour of _Pissarro's Impressionism._ ](/en/calendar/after-hours-pissarro) [ Jan 16, 2026 Southwest Impressions: A Broader Perspective Consider an array of American printmakers\\u2019 stories and techniques from the late 1800s into the mid-1900s at this year's annual PIWAA Symposium. ](/en/calendar/2026-petrie-institute-symposium) [ Sundays, Tuesdays, Thursdays, and Saturdays; times vary Public Tours Join specially trained docents for exhibitons, architecture, and 3 in 30 guided tours. ](...\",\n  \"subpages_scraped\": [],\n  \"packet_metadata\": {\n    \"approx_tokens\": 500,\n    \"max_chars\": 8000\n  }\n}\n\nReturn JSON with properly formatted EnrichedField objects (or null if no evidence).",
+  "evidence_packet": {
+    "identity": {
+      "museum_id": "usa-co-unknown-denver-art-museum",
+      "museum_name": "Denver Art Museum",
+      "city": "Denver",
+      "state_province": "Colorado",
+      "country": "USA",
+      "website": "https://denverartmuseum.org",
+      "primary_domain": "Art"
+    },
+    "state_record_subset": {
+      "museum_type": "ART MUSEUM",
+      "audience_focus": null,
+      "city_tier": 1,
+      "reputation": null,
+      "collection_tier": null,
+      "time_needed": "Half day",
+      "notes": "The Denver Art Museum is an art museum known for its diverse exhibitions, including Impressionist works. It offers a variety of programs and events to engage visitors with art."
+    },
+    "wikidata_claims": {},
+    "wikipedia_summary": null,
+    "website_json_ld": {},
+    "website_text_snippet": "## What's on View\n[ Through Feb 8, 2026 The Honest Eye: Camille Pissarro’s Impressionism ](/en/exhibitions/honest-eye-camille-pissarro)\n[ Now On View Andrea Carlson: A Constant Sky ](/en/exhibitions/andrea-carlson) [ Jun 8, 2025 – Jan 4, 2026 What We’ve Been Up To: Landscape ](/en/exhibitions/what-weve-been-landscape) [ Now On ViewFuse Box: Sarah Sze ](/en/exhibitions/fuse-box-sarah-sze) [ Now On View A Century of Art in Latin America ](/en/exhibitions/century-art-latin-america)\n## Upcoming Events\nDive deeper into art and join us for one of these upcoming events or programs.\n[View Calendar](/en/calendar)\n[ Jan 15, 2026 After Hours with _Pissarro_ Join curator Angelica Daneo for an exclusive after hours tour of _Pissarro's Impressionism._ ](/en/calendar/after-hours-pissarro) [ Jan 16, 2026 Southwest Impressions: A Broader Perspective Consider an array of American printmakers’ stories and techniques from the late 1800s into the mid-1900s at this year's annual PIWAA Symposium. ](/en/calendar/2026-petrie-institute-symposium) [ Sundays, Tuesdays, Thursdays, and Saturdays; times vary Public Tours Join specially trained docents for exhibitons, architecture, and 3 in 30 guided tours. ](...",
+    "subpages_scraped": [],
+    "packet_metadata": {
+      "approx_tokens": 500,
+      "max_chars": 8000
+    }
+  }
+}

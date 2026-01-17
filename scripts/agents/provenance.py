@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Optional, Tuple
 
 from .models import EnrichedField, TrustLevel
@@ -35,16 +35,28 @@ def should_overwrite(
         if isinstance(old_time, str):
             try:
                 old_dt = datetime.fromisoformat(old_time)
+                # Make timezone-aware if naive
+                if old_dt.tzinfo is None:
+                    old_dt = old_dt.replace(tzinfo=timezone.utc)
             except Exception:
                 old_dt = None
         elif isinstance(old_time, datetime):
             old_dt = old_time
+            # Make timezone-aware if naive
+            if old_dt.tzinfo is None:
+                old_dt = old_dt.replace(tzinfo=timezone.utc)
         else:
             old_dt = None
 
         if old_dt is None:
             return True, "equal_trust_no_timestamp"
-        if new_field.retrieved_at > old_dt:
+        
+        # Ensure new_field.retrieved_at is also timezone-aware
+        new_dt = new_field.retrieved_at
+        if new_dt.tzinfo is None:
+            new_dt = new_dt.replace(tzinfo=timezone.utc)
+            
+        if new_dt > old_dt:
             return True, "equal_trust_newer"
 
     return False, "lower_trust_or_older"

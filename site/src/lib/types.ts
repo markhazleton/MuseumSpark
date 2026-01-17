@@ -79,12 +79,59 @@ export type Museum = {
   score_notes?: string | null;
   score_last_verified?: string | null;
 
+  // NEW: Tour Planning Scores (LLM-generated, 1-10 scale)
+  tour_planning_scores?: TourPlanningScores | null;
+  summary_short?: string | null;
+  summary_long?: string | null;
+  collection_highlights?: CollectionHighlight[] | null;
+  signature_artists?: string[] | null;
+  visitor_tips?: string[] | null;
+  best_for?: string | null;
+
   // Metadata
   data_sources?: string[] | null;
   confidence?: 1 | 2 | 3 | 4 | 5 | null;
   row_notes_internal?: string | null;
   created_at?: string | null;
   updated_at?: string | null;
+};
+
+export type TourPlanningScores = {
+  // Art Movement Scores (1-10)
+  contemporary_score?: number | null;
+  modern_score?: number | null;
+  impressionist_score?: number | null;
+  expressionist_score?: number | null;
+  classical_score?: number | null;
+  
+  // Geographic/Cultural Focus (1-10)
+  american_art_score?: number | null;
+  european_art_score?: number | null;
+  asian_art_score?: number | null;
+  african_art_score?: number | null;
+  
+  // Medium Scores (1-10)
+  painting_score?: number | null;
+  sculpture_score?: number | null;
+  decorative_arts_score?: number | null;
+  photography_score?: number | null;
+  
+  // Collection & Experience (1-10)
+  collection_depth?: number | null;
+  collection_quality?: number | null;
+  exhibition_frequency?: number | null;
+  family_friendly_score?: number | null;
+  educational_value_score?: number | null;
+  architecture_score?: number | null;
+  
+  // Rationale
+  scoring_rationale?: string | null;
+};
+
+export type CollectionHighlight = {
+  title: string;
+  description?: string | null;
+  source?: string | null;
 };
 
 export type AllMuseumsIndex = {

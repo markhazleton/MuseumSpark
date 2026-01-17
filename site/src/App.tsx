@@ -1,5 +1,5 @@
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
-import BrowsePage from './pages/BrowsePage'
+import BrowsePage from './pages/BrowsePageNew'
 import MuseumDetailPage from './pages/MuseumDetailPage'
 import ProgressPage from './pages/ProgressPage'
 import HomePage from './pages/HomePage'

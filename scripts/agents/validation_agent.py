@@ -20,43 +20,53 @@ def _system_prompt() -> str:
     )
 
 
-def _user_prompt(evidence_packet: dict) -> str:
+def _user_prompt(evidence_packet: dict, model: str) -> str:
     return (
         "Validate and enrich the museum record using only the evidence provided.\n\n"
-        "CRITICAL: Extract ALL available fields from the evidence. Do not leave fields empty if evidence exists.\n\n"
-        "REQUIRED FIELDS TO EXTRACT (if evidence exists):\n"
+        "YOUR FOCUS: Extract ONLY fields where you have clear evidence. Skip fields with no evidence.\n\n"
+        "FIELDS TO EXTRACT (only if evidence exists):\n"
         "1. IDENTITY & LOCATION:\n"
         "   - museum_name: Official name from website/Wikipedia\n"
-        "   - city: City name (verify from address, website, or nominatim)\n"
-        "   - street_address: Full street address from 'Contact', 'Visit', 'Location', 'Hours', 'About' pages\n"
-        "   - postal_code: ZIP/postal code from address\n"
-        "   - website: Validated URL (ensure it's active)\n"
-        "   - latitude, longitude: Coordinates from nominatim or website\n\n"
+        "   - city: City name\n"
+        "   - street_address: Full street address\n"
+        "   - postal_code: ZIP/postal code\n"
+        "   - website: Validated URL\n"
+        "   - latitude, longitude: Coordinates\n\n"
         "2. CLASSIFICATION:\n"
-        "   - primary_domain: Art|History|Science|Culture|Specialty|Mixed (analyze collection focus)\n"
-        "   - museum_type: Specific category (e.g., 'Art Museum', 'History Museum', 'Children\\'s Museum')\n"
-        "   - audience_focus: Target audience (e.g., 'General', 'Families', 'Scholars')\n\n"
+        "   - primary_domain: Art|History|Science|Culture|Specialty|Mixed\n"
+        "   - museum_type: Specific category\n"
+        "   - audience_focus: Target audience\n\n"
         "3. QUALITY INDICATORS:\n"
-        "   - city_tier: 1-5 (1=major metro, 5=small town) based on city population/prominence\n"
-        "   - reputation: 1-5 (1=world-renowned, 5=local) based on Wikipedia presence, awards, size\n"
-        "   - collection_tier: 1-5 (1=world-class, 5=modest) based on collection description\n"
-        "   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days' (estimate from collection size)\n\n"
-        "4. ART SCORING (ONLY if primary_domain is Art):\n"
-        "   - impressionist_strength: 1-5 (strength of impressionist collection)\n"
-        "   - modern_contemporary_strength: 1-5 (strength of modern/contemporary collection)\n"
-        "   - historical_context_score: 1-5 (historical significance of the institution)\n\n"
-        "5. SUMMARY:\n"
-        "   - notes: 2-3 sentence summary covering: type of museum, notable collections, unique features\n\n"
-        "EXTRACTION RULES:\n"
-        "- Confidence scale: 1-5 ONLY (1=very uncertain, 5=highly certain from official source)\n"
-        "- Trust levels: Use OFFICIAL_EXTRACT (5) for website data, WIKIPEDIA (3) for Wikipedia, LLM_EXTRACTED (2) for inference\n"
-        "- Sources: Be specific ('official_website/visit', 'wikipedia', 'nominatim', 'wikidata')\n"
-        "- Do not guess - only extract what you can verify from evidence\n"
-        "- CRITICAL: If a field has no evidence, OMIT it entirely from state_file_updates (set to null, not an object with null values)\n"
-        "- Check ALL evidence sources: website_text, website_json_ld, wikipedia, wikidata, nominatim\n\n"
+        "   - city_tier: 1-5 (1=major metro, 5=small town)\n"
+        "   - reputation: 1-5 (1=world-renowned, 5=local)\n"
+        "   - collection_tier: 1-5 (1=world-class, 5=modest)\n"
+        "   - time_needed: '1-2 hours'|'Half day'|'Full day'|'Multiple days'\n\n"
+        "4. SUMMARY:\n"
+        "   - notes: 2-3 sentence summary if you have collection/context info\n\n"
+        "CRITICAL FORMATTING RULES:\n"
+        "✓ CORRECT - Field with evidence:\n"
+        "  \"museum_name\": {\n"
+        "    \"value\": \"Denver Art Museum\",\n"
+        "    \"source\": \"official_website\",\n"
+        "    \"trust_level\": 5,\n"
+        "    \"confidence\": 5\n"
+        "  }\n\n"
+        "✓ CORRECT - Field with no evidence:\n"
+        "  \"museum_name\": null\n\n"
+        "✗ WRONG - Never do this:\n"
+        "  \"museum_name\": {\"value\": null}  ❌ INVALID\n"
+        "  \"museum_name\": {\"value\": \"Not provided\"}  ❌ INVALID\n\n"
+        "If you don't have evidence for a field, set it to null (not an object).\n"
+        "Only create EnrichedField objects when you have actual data.\n\n"
+        "Trust levels: OFFICIAL_EXTRACT (5), WIKIPEDIA (3), LLM_EXTRACTED (2)\n"
+        "Confidence: 1-5 (how certain are you about this value)\n\n"
+        "REQUIRED TOP-LEVEL FIELDS:\n"
+        f"  \"confidence\": 1-5 (overall confidence in this analysis)\n"
+        f"  \"model_used\": \"{model}\"\n"
+        "  \"needs_deep_dive\": true|false (if scoring/deeper analysis needed)\n\n"
         "Evidence Packet:\n"
         f"{json.dumps(evidence_packet, indent=2)}\n\n"
-        "Return JSON matching the ValidationAgentOutput schema with as many fields populated as evidence supports."
+        "Return JSON with properly formatted EnrichedField objects (or null if no evidence)."
     )
 
 
@@ -81,7 +91,7 @@ def run_validation_agent(
 
     messages = [
         {"role": "system", "content": _system_prompt()},
-        {"role": "user", "content": _user_prompt(evidence_packet)},
+        {"role": "user", "content": _user_prompt(evidence_packet, model)},
     ]
     
     # Save the full prompt for debugging/inspection
@@ -92,7 +102,7 @@ def run_validation_agent(
         "temperature": temperature,
         "max_tokens": max_tokens,
         "system_prompt": _system_prompt(),
-        "user_prompt": _user_prompt(evidence_packet),
+        "user_prompt": _user_prompt(evidence_packet, model),
         "evidence_packet": evidence_packet,
     }
     (cache_dir / "validation_prompt.json").write_text(
@@ -124,7 +134,7 @@ def run_validation_agent(
             api_key=api_key,
             model=model,
             system=system_with_schema,
-            messages=[{"role": "user", "content": _user_prompt(evidence_packet)}],
+            messages=[{"role": "user", "content": _user_prompt(evidence_packet, model)}],
             temperature=temperature,
             max_tokens=max_tokens,
         )
