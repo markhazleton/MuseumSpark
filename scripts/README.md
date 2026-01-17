@@ -2,6 +2,32 @@
 
 This directory contains scripts for validating and managing the MuseumSpark museum dataset.
 
+## Directory Structure
+
+```
+scripts/
+├── phases/              # Phase-based enrichment pipeline
+│   ├── phase0_identity.py
+│   ├── phase1_backbone.py
+│   ├── phase1_5_wikipedia.py
+│   ├── phase2_scoring.py
+│   └── phase3_priority.py
+├── builders/            # Index and report builders
+│   ├── build-index.py
+│   ├── build-enriched-index.py
+│   ├── build-progress.py
+│   └── build-missing-report.py
+├── pipeline/            # Pipeline orchestration
+│   ├── run-phase1-pipeline.py
+│   ├── enrich-open-data.py
+│   └── ingest-walker-reciprocal.py
+├── validation/          # Validation scripts
+│   ├── validate-json.py
+│   ├── validate-json.ps1
+│   └── validate-walker-reciprocal-csv.py
+└── _archive_legacy/     # Deprecated scripts
+```
+
 ## Open-data-first enrichment (Pre-MRD Phase + Phase 1)
 
 ### Pre-MRD Phase: Open Data Enrichment
@@ -22,17 +48,17 @@ The `enrich-open-data.py` script uses Wikidata, Wikipedia, OpenStreetMap Nominat
 
 ```bash
 # Pre-MRD Phase: Enrich single state with MRD field computation
-python scripts/enrich-open-data.py --state IL --compute-mrd-fields --rebuild-index --rebuild-reports
+python scripts/pipeline/enrich-open-data.py --state IL --compute-mrd-fields --rebuild-index --rebuild-reports
 
 # Enrich placeholder museums only (conservative, dry run first)
-python scripts/enrich-open-data.py --state CA --only-placeholders --compute-mrd-fields --dry-run
-python scripts/enrich-open-data.py --state CA --only-placeholders --compute-mrd-fields --rebuild-index
+python scripts/pipeline/enrich-open-data.py --state CA --only-placeholders --compute-mrd-fields --dry-run
+python scripts/pipeline/enrich-open-data.py --state CA --only-placeholders --compute-mrd-fields --rebuild-index
 
 # Enrich with website scraping (slower, more comprehensive)
-python scripts/enrich-open-data.py --state NY --compute-mrd-fields --scrape-website --rebuild-index
+python scripts/pipeline/enrich-open-data.py --state NY --compute-mrd-fields --scrape-website --rebuild-index
 
 # Enrich specific museum by ID
-python scripts/enrich-open-data.py --museum-id usa-il-chicago-art-institute --compute-mrd-fields --rebuild-index
+python scripts/pipeline/enrich-open-data.py --museum-id usa-il-chicago-art-institute --compute-mrd-fields --rebuild-index
 ```
 
 **Workflow (Pre-MRD Phase → Phase 1):**
@@ -55,19 +81,19 @@ These scripts help you fill missing fields using free/open sources first, then g
 
 ```bash
 # 1) Enrich placeholder records in a state file (conservative fill-only)
-python scripts/enrich-open-data.py --state CA --only-placeholders --limit 25
+python scripts/pipeline/enrich-open-data.py --state CA --only-placeholders --limit 25
 
 # (Optional) Also scrape the museum website to extract structured links/fields
-python scripts/enrich-open-data.py --state CA --only-placeholders --limit 25 --scrape-website
+python scripts/pipeline/enrich-open-data.py --state CA --only-placeholders --limit 25 --scrape-website
 
 # (Optional) Rebuild derived artifacts after enrichment
-python scripts/enrich-open-data.py --state CA --only-placeholders --limit 25 --rebuild-index --rebuild-reports
+python scripts/pipeline/enrich-open-data.py --state CA --only-placeholders --limit 25 --rebuild-index --rebuild-reports
 
 # 2) Generate a missing-field report from the combined index
-python scripts/build-missing-report.py
+python scripts/builders/build-missing-report.py
 
 # 3) Generate a small progress dashboard artifact for the static site UI
-python scripts/build-progress.py
+python scripts/builders/build-progress.py
 ```
 
 ### One-command Phase 1 pipeline
@@ -76,10 +102,10 @@ If you want the correct Phase 1 sequence (optional enrich → validate → rebui
 
 ```bash
 # Enrich a state then rebuild derived artifacts
-python scripts/run-phase1-pipeline.py --state CA --only-placeholders --limit 25
+python scripts/pipeline/run-phase1-pipeline.py --state CA --only-placeholders --limit 25
 
 # Rebuild derived artifacts only (no enrichment)
-python scripts/run-phase1-pipeline.py --skip-enrich
+python scripts/pipeline/run-phase1-pipeline.py --skip-enrich
 ```
 
 Notes:
@@ -127,8 +153,8 @@ python scripts/enrich-llm.py --museum-id usa-il-chicago-art-institute-of-chicago
 
 Recommended command sequence:
 ```bash
-python scripts/validate-walker-reciprocal-csv.py
-python scripts/ingest-walker-reciprocal.py --rebuild-index
+python scripts/validation/validate-walker-reciprocal-csv.py
+python scripts/pipeline/ingest-walker-reciprocal.py --rebuild-index
 ```
 
 ### build-museum-list-csv-from-narm.py
@@ -163,7 +189,7 @@ Validates `data/index/walker-reciprocal.csv` for required columns, required fiel
 
 **Usage:**
 ```bash
-python scripts/validate-walker-reciprocal-csv.py
+python scripts/validation/validate-walker-reciprocal-csv.py
 ```
 
 ### ingest-walker-reciprocal.py
@@ -171,7 +197,7 @@ Ingests the validated roster into per-state working files under `data/states/` (
 
 **Usage:**
 ```bash
-python scripts/ingest-walker-reciprocal.py --rebuild-index
+python scripts/pipeline/ingest-walker-reciprocal.py --rebuild-index
 ```
 
 ### validate-json.py
@@ -186,11 +212,11 @@ Python script to validate state JSON files against the museum schema.
 **Usage:**
 ```bash
 # Validate all state files
-python validate-json.py
+python scripts/validation/validate-json.py
 
 # Validate specific state
-python validate-json.py --state AL
-python validate-json.py --state CA
+python scripts/validation/validate-json.py --state AL
+python scripts/validation/validate-json.py --state CA
 ```
 
 **Requirements:**
@@ -209,11 +235,11 @@ PowerShell script to validate state JSON files.
 **Usage:**
 ```powershell
 # Validate all state files
-.\validate-json.ps1
+.\scripts\validation\validate-json.ps1
 
 # Validate specific state
-.\validate-json.ps1 -State AL
-.\validate-json.ps1 -State CA
+.\scripts\validation\validate-json.ps1 -State AL
+.\scripts\validation\validate-json.ps1 -State CA
 ```
 
 **Requirements:**
@@ -231,16 +257,16 @@ Python script to generate consolidated museum index file.
 **Usage:**
 ```bash
 # Basic index generation (preserves existing scores)
-python build-index.py
+python scripts/builders/build-index.py
 
 # Calculate/recalculate priority scores
-python build-index.py --calculate-scores
+python scripts/builders/build-index.py --calculate-scores
 
 # Update nearby museum counts
-python build-index.py --update-nearby-counts
+python scripts/builders/build-index.py --update-nearby-counts
 
 # Both operations
-python build-index.py --calculate-scores --update-nearby-counts
+python scripts/builders/build-index.py --calculate-scores --update-nearby-counts
 ```
 
 **Output:**
@@ -301,11 +327,11 @@ sudo apt-get install -y powershell
 3. Leave `priority_score` as `null`
 4. Validate your changes:
    ```bash
-   python scripts/validate-json.py --state XX
+   python scripts/validation/validate-json.py --state XX
    ```
 5. Rebuild the index:
    ```bash
-   python scripts/build-index.py --calculate-scores --update-nearby-counts
+   python scripts/builders/build-index.py --calculate-scores --update-nearby-counts
    ```
 6. Commit your changes
 
@@ -316,11 +342,11 @@ sudo apt-get install -y powershell
 3. Replace the museums array with your data
 4. Validate:
    ```bash
-   python scripts/validate-json.py --state XX
+   python scripts/validation/validate-json.py --state XX
    ```
 5. Rebuild the index:
    ```bash
-   python scripts/build-index.py --calculate-scores --update-nearby-counts
+   python scripts/builders/build-index.py --calculate-scores --update-nearby-counts
    ```
 
 ### Bulk Validation
@@ -329,10 +355,10 @@ Before committing changes, always validate all files:
 
 ```bash
 # Python
-python scripts/validate-json.py
+python scripts/validation/validate-json.py
 
 # PowerShell
-.\scripts\validate-json.ps1
+.\scripts\validation\validate-json.ps1
 ```
 
 ## Priority Score Calculation (MRD v1.0)
@@ -402,7 +428,7 @@ pip install -r scripts/requirements.txt
 
 ### Python: ModuleNotFoundError: No module named 'pdfplumber'
 
-**Solution:** Install dependencies (includes `pdfplumber` used by `build-museum-list-csv-from-narm.py`):
+**Solution:** Install dependencies:
 ```bash
 pip install -r scripts/requirements.txt
 ```

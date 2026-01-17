@@ -14,6 +14,8 @@ This folder contains deprecated scripts from the original MuseumSpark pipeline t
 
 ### Migration Scripts (one-time use)
 - **migrate-to-mrd-schema.py** - MRD v1.0 schema migration (completed)
+- **build-museum-list-csv-from-narm.py** - NARM roster extraction (completed, CSV generated)
+- **build-walker-reciprocal-csv.py** - Walker roster extraction (completed, CSV generated)
 
 ### Analysis & Testing Scripts
 - **analyze_ok_baseline.py** - Oklahoma baseline analysis

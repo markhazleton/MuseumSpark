@@ -48,7 +48,7 @@ Updated to support **Pre-MRD Phase** with `--compute-mrd-fields` flag.
 
 #### 1. Basic Pre-MRD Enrichment (Single State)
 ```bash
-python scripts/enrich-open-data.py \
+python scripts/pipeline/enrich-open-data.py \
   --state IL \
   --compute-mrd-fields \
   --rebuild-index \
@@ -66,7 +66,7 @@ python scripts/enrich-open-data.py \
 
 #### 2. Dry Run (Preview Changes)
 ```bash
-python scripts/enrich-open-data.py \
+python scripts/pipeline/enrich-open-data.py \
   --state CA \
   --only-placeholders \
   --compute-mrd-fields \
@@ -79,7 +79,7 @@ python scripts/enrich-open-data.py \
 
 #### 3. Enrich with Website Scraping (Slower, More Comprehensive)
 ```bash
-python scripts/enrich-open-data.py \
+python scripts/pipeline/enrich-open-data.py \
   --state NY \
   --compute-mrd-fields \
   --scrape-website \

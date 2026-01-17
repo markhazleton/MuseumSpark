@@ -4,7 +4,7 @@
 
 ### Basic Usage (Single State)
 ```bash
-python scripts/enrich-open-data.py \
+python scripts/pipeline/enrich-open-data.py \
   --state IL \
   --compute-mrd-fields \
   --rebuild-index \
@@ -13,7 +13,7 @@ python scripts/enrich-open-data.py \
 
 ### Dry Run First (Recommended)
 ```bash
-python scripts/enrich-open-data.py \
+python scripts/pipeline/enrich-open-data.py \
   --state IL \
   --compute-mrd-fields \
   --dry-run
