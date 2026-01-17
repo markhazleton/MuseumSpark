@@ -125,6 +125,12 @@ PIPELINE_PHASES = [
         skip_flag="skip-llm",
     ),
     PhaseConfig(
+        name="Phase 2.5: Content Generation",
+        script="phase2_5_content.py",
+        description="Generate summaries and descriptions (premium for art museums)",
+        skip_flag="skip-content",
+    ),
+    PhaseConfig(
         name="Phase 1.75: Heuristic Fallback",
         script="phase1_75_heuristic_fallback.py",
         description="Heuristic scoring for museums without LLM scores",

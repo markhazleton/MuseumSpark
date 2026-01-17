@@ -1,0 +1,73 @@
+{
+  "run_id": "20260117-183646",
+  "states": [
+    "RI"
+  ],
+  "force": false,
+  "dry_run": false,
+  "skip_flags": [],
+  "total_phases": 10,
+  "successful_phases": 6,
+  "failed_phases": 1,
+  "skipped_phases": 0,
+  "total_duration_seconds": 1.0827534198760986,
+  "phase_results": [
+    {
+      "phase_name": "Phase 0: Identity (Google Places)",
+      "success": true,
+      "duration_seconds": 0.17386245727539062,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 0.5: Wikidata Enrichment",
+      "success": true,
+      "duration_seconds": 0.12497591972351074,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 0.7: Website Content",
+      "success": true,
+      "duration_seconds": 0.20336198806762695,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1: Backbone Fields",
+      "success": true,
+      "duration_seconds": 0.11064720153808594,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1.5: Wikipedia (Art Museums)",
+      "success": true,
+      "duration_seconds": 0.10792040824890137,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 1.8: CSV Database (IRS 990)",
+      "success": true,
+      "duration_seconds": 0.2509799003601074,
+      "error": null,
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "phase_name": "Phase 2: LLM Scoring",
+      "success": false,
+      "duration_seconds": 0.10731339454650879,
+      "error": "Exit code 1",
+      "skipped": false,
+      "skip_reason": null
+    }
+  ],
+  "completed_at": "2026-01-17T18:36:47Z"
+}

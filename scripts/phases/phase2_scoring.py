@@ -68,10 +68,11 @@ SCORING_SYSTEM_PROMPT = """You are a museum expert and art historian. Your task 
 
 IMPORTANT RULES:
 1. You are a JUDGE, not a researcher. Only use the evidence provided.
-2. If evidence is insufficient for a field, return null - do NOT guess.
-3. All scores must be within their defined ranges.
-4. Be conservative: only give high scores (4-5) with clear evidence.
-5. Focus on PERMANENT COLLECTIONS, not temporary exhibitions.
+2. Use your expert knowledge combined with the evidence to make informed assessments.
+3. For art museums, infer collection strength from museum name, type, and Wikipedia descriptions.
+4. All scores must be within their defined ranges.
+5. Be reasonable: only give high scores (4-5) with clear evidence, but use available clues to estimate mid-range scores.
+6. Focus on PERMANENT COLLECTIONS, not temporary exhibitions.
 
 SCORING DEFINITIONS (from Museum Requirements Document):
 
@@ -219,7 +220,7 @@ def call_openai_scoring(
     evidence: dict,
     *,
     api_key: str,
-    model: str = "gpt-4o-mini",
+    model: str = "gpt-5.2",
     temperature: float = 0.1,
     max_tokens: int = 500,
 ) -> dict:
@@ -243,8 +244,7 @@ EVIDENCE:
             {"role": "system", "content": SCORING_SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},
         ],
-        temperature=temperature,
-        max_tokens=max_tokens,
+        max_completion_tokens=max_tokens,
         response_format={"type": "json_object"},
     )
 
@@ -649,7 +649,7 @@ def main() -> int:
     # Get API key
     if args.provider == "openai":
         api_key = os.getenv("OPENAI_API_KEY")
-        default_model = "gpt-4o-mini"
+        default_model = "gpt-5.2"
         if not api_key:
             print("ERROR: OPENAI_API_KEY environment variable not set")
             return 1
