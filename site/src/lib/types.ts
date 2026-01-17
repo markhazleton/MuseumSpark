@@ -103,19 +103,19 @@ export type TourPlanningScores = {
   impressionist_score?: number | null;
   expressionist_score?: number | null;
   classical_score?: number | null;
-  
+
   // Geographic/Cultural Focus (1-10)
   american_art_score?: number | null;
   european_art_score?: number | null;
   asian_art_score?: number | null;
   african_art_score?: number | null;
-  
+
   // Medium Scores (1-10)
   painting_score?: number | null;
   sculpture_score?: number | null;
   decorative_arts_score?: number | null;
   photography_score?: number | null;
-  
+
   // Collection & Experience (1-10)
   collection_depth?: number | null;
   collection_quality?: number | null;
@@ -123,7 +123,7 @@ export type TourPlanningScores = {
   family_friendly_score?: number | null;
   educational_value_score?: number | null;
   architecture_score?: number | null;
-  
+
   // Rationale
   scoring_rationale?: string | null;
 };
