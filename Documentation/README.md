@@ -1,33 +1,55 @@
 # MuseumSpark Documentation
 
-This folder is the canonical documentation set for MuseumSpark.
+This folder contains the canonical documentation for MuseumSpark.
 
-MuseumSpark’s purpose is to **rank and document every museum in the Walker Art Reciprocal Program**, using the extracted seed roster in `data/index/walker-reciprocal.csv` and enriching it into complete museum records.
+MuseumSpark's purpose is to **rank and document every museum in the Walker Art Reciprocal Program**, using the extracted seed roster in `data/index/walker-reciprocal.csv` and enriching it into complete museum records.
 
-## Dataset workflow
+## Data Pipeline
 
-1. Validate `data/index/walker-reciprocal.csv`
-2. Add all museums to `data/index/all-museums.json` (master list)
-3. Add museums by state to `data/states/{state}.json` and enrich records over time
+The system uses a modular phase-based pipeline to enrich museum data:
 
-## Start here
+1. **Phase 0**: Google Places API (identity, coordinates, phone, hours, ratings)
+2. **Phase 0.5**: Wikidata enrichment (website, postal code, address)
+3. **Phase 0.7**: Website scraping (hours, admission, accessibility)
+4. **Phase 1**: Backbone fields (city_tier, time_needed, nearby_count)
+5. **Phase 1.5**: Wikipedia enrichment (art museums)
+6. **Phase 1.8**: CSV database lookup (IRS 990 data)
+7. **Phase 2**: LLM scoring (reputation, collection_tier)
+8. **Phase 1.75**: Heuristic fallback scoring
+9. **Phase 3**: Priority scoring for trip planning
 
-- **Application Architecture**: `ApplicationArchitecture.md`
-  - Overall system design (React SPA + FastAPI + OpenAI API), single-origin hosting, Azure Windows VM deployment.
+See `../scripts/README.md` for detailed pipeline documentation.
 
-- **API Specification (Canonical)**: `MuseumAPI.md`
-  - HTTP endpoints for museum browsing/search, user personalization, optional trips, and admin curation.
+## Core Documentation
 
-- **Dataset Design (Canonical)**: `DataSetDesign.md`
-  - Walker reciprocal dataset field definitions, scoring methodology, and data quality/provenance requirements.
+### Architecture & Design
+- **[ApplicationArchitecture.md](ApplicationArchitecture.md)** - System design: React SPA + FastAPI + OpenAI API, deployment architecture
+- **[MuseumAPI.md](MuseumAPI.md)** - API specification for museum browsing, search, and personalization
+- **[DataSetDesign.md](DataSetDesign.md)** - Dataset schema, field definitions, scoring methodology
 
-## Historical source documents
+### Data Strategy
+- **[DataEnrichmentStrategy.md](DataEnrichmentStrategy.md)** - Field-by-field enrichment approach and data sources
+- **[AI-LLM-Enrichment-Plan.md](AI-LLM-Enrichment-Plan.md)** - LLM integration strategy for scoring and content generation
+- **[MasterRequirements.md](MasterRequirements.md)** - Core requirements and specifications
 
-These PDFs are retained as original concept/architecture sources:
+### Data Quality
+- **[DataQualityRule-NeverReplaceKnownWithNull.md](DataQualityRule-NeverReplaceKnownWithNull.md)** - Core data protection rule
+- **[DataQualityRule-QuickReference.md](DataQualityRule-QuickReference.md)** - Quick reference for data quality rules
 
-- `MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf` (historical source; older naming)
-- `MuseumSpark_ Deployment and Architecture Plan.pdf`
+### Setup & Deployment
+- **[API-Keys-Setup.md](API-Keys-Setup.md)** - Configuration guide for API keys
+- **[GitHub-Pages-Setup.md](GitHub-Pages-Setup.md)** - GitHub Pages hosting setup
+- **[GitHubPagesDeployment.md](GitHubPagesDeployment.md)** - Deployment process and workflow
 
-## Deprecated
+### Reference
+- **[Google-Places-Free-Tier-Impact.md](Google-Places-Free-Tier-Impact.md)** - Cost analysis for Google Places API
+- **[Location-Extraction-Libraries.md](Location-Extraction-Libraries.md)** - Technical reference for geocoding
+- **[Museum-Business-Data-APIs.md](Museum-Business-Data-APIs.md)** - Available data APIs and resources
+- **[Home.md](Home.md)** - Documentation home page
 
-- `MusuemAPI.md` is kept as a backwards-compatible stub (typo in filename). Use `MuseumAPI.md` instead.
+## Quick Start
+
+1. **Review Architecture**: Start with [ApplicationArchitecture.md](ApplicationArchitecture.md) to understand the system design
+2. **Understand Data**: Read [DataSetDesign.md](DataSetDesign.md) for the dataset schema
+3. **Configure APIs**: Follow [API-Keys-Setup.md](API-Keys-Setup.md) to set up required API keys
+4. **Run Pipeline**: See `../scripts/README.md` for data enrichment pipeline usage
