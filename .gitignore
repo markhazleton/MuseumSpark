@@ -160,3 +160,11 @@ pip-delete-this-directory.txt
 
 # Local enrichment caches (do not commit)
 data/cache/
+
+# Test runs and temporary files
+data/runs/
+data/archive/old_runs_*/
+temp_*.txt
+temp_*.json
+**/temp/
+**/*_temp_*/
