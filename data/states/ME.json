@@ -253,10 +253,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 24,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "CMCA is described as a contemporary arts institution focused on a year-round program of changing exhibitions, with no evidence of a permanent Impressionist collection (so Impressionist is negligible). Its focus suggests some modern/contemporary strength, but the evidence emphasizes temporary programming rather than permanent holdings, keeping the score modest. Educational programs and talks imply some interpretive context, and its Rockland location points to a primarily local reputation and smal",
       "score_last_verified": "2026-01-17",
@@ -271,7 +271,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Maine' from open data; MRD: computed city_tier=3 for Maine; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:34:19Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(207) 701-5005",
@@ -418,7 +418,8 @@
       ],
       "content_generated_at": "2026-01-18T01:34:19Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 6
     },
     {
       "museum_id": "usa-me-unknown-maine-mineral-gem-museum",
@@ -861,10 +862,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 19,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence only establishes PMA as Maine’s largest/oldest public art institution, which supports a moderate overall collection tier and regional reputation, but provides no specific permanent-collection details for Impressionism or Modern/Contemporary. With limited collection evidence, Impressionism is scored as minor and Modern/Contemporary as moderate based on typical scope of a long-established state-leading art museum; historical context is set to mid-range absent documentation of interpretive",
       "score_last_verified": "2026-01-17",
@@ -878,7 +879,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Portland' from open data; MRD: computed city_tier=1 for Portland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:35:12Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "2077756148",
@@ -894,7 +895,8 @@
       ],
       "content_generated_at": "2026-01-18T01:35:12Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 11
     },
     {
       "museum_id": "usa-me-unknown-seal-cove-auto-museum",
@@ -1145,10 +1147,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 22,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence indicates the museum is historically strong in classical art, with no specific mention of Impressionist or Modern/Contemporary strengths, so those areas are scored as minor. As a long-established college museum (since 1894) it likely provides some educational framing, but the evidence does not confirm robust chronological galleries or interpretive depth. Its profile and location suggest a regional reputation and a moderate, not flagship, collection scale.",
       "score_last_verified": "2026-01-17",
@@ -1163,7 +1165,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Brunswick; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:36:00Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2077253275",
@@ -1179,7 +1181,8 @@
       ],
       "content_generated_at": "2026-01-18T01:36:00Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 8
     },
     {
       "museum_id": "usa-me-portland-african-center-for-the-sacred-arts-museum-of-african-art-culture",
@@ -1390,5 +1393,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T03:56:42Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

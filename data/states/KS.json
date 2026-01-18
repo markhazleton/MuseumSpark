@@ -111,10 +111,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 22,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence indicates a university art museum whose permanent collection emphasizes Kansas and regional artists (e.g., Curry, Sandzén, Gordon Parks), with no stated Impressionist holdings, so Impressionism is negligible. The presence of 20th-century figures (notably Gordon Parks) supports minor-to-moderate Modern/Contemporary representation, while extensive educational programming and published collection overview suggest good interpretive context. As a regional campus museum with a focused collect",
       "score_last_verified": "2026-01-17",
@@ -129,7 +129,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kansas' from open data; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Kansas; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:09:07Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(785) 532-7718",
@@ -276,7 +276,8 @@
       ],
       "content_generated_at": "2026-01-18T01:09:07Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 6
     },
     {
       "museum_id": "usa-ks-unknown-salina-art-center",
@@ -315,10 +316,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 12,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The provided Wikipedia summary describes the Studio Museum in Harlem (not Salina Art Center) as focused on art by African Americans, the African diaspora, and artists from Africa, implying strong Modern/Contemporary emphasis and little to no Impressionist holdings. Extensive interpretive, educational programming and scholarly publications suggest good historical/contextual framing. Its long-standing prominence and NYC location support national-level reputation and a strong but not encyclopedic c",
       "score_last_verified": "2026-01-17",
@@ -332,7 +333,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Manhattan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:09:18Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "7854529868",
@@ -348,7 +349,8 @@
       ],
       "content_generated_at": "2026-01-18T01:09:18Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 16
     },
     {
       "museum_id": "usa-ks-unknown-wichita-art-museum",
@@ -665,10 +667,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 17,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Wikipedia describes the Ulrich Museum of Art as a modern and contemporary art museum, supporting a strong modern/contemporary score and implying little to no focus on Impressionism. As a university-campus museum in Wichita, it is best characterized as primarily local in reputation with a moderate-sized collection; historical context is likely present but not evidenced as a major strength.",
       "score_last_verified": "2026-01-17",
@@ -683,7 +685,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: DNS lookup failed for http://www.ulrich.wichita.edu; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: computed city_tier=1 for Wichita; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.ulrich.wichita.edu; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:09:54Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3169783664",
@@ -699,8 +701,9 @@
       ],
       "content_generated_at": "2026-01-18T01:09:54Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 13
     }
   ],
-  "updated_at": "2026-01-18T03:40:52Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

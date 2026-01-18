@@ -111,10 +111,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 16,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The Corcoran held an important collection largely concentrated in American art; the evidence does not indicate major Impressionist holdings, suggesting at most minor representation. As a long-running major U.S. art museum (founded 1869) with a substantial collection (19,456 works) and an associated art school, it likely had moderate modern/contemporary coverage and decent but not clearly documented historical framing. Its prominence in Washington, D.C. supports national-level reputation, though ",
       "score_last_verified": "2026-01-17",
@@ -128,7 +128,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.corcoran.org: HTTP 500 for http://www.corcoran.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T00:24:12Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "2026391700",
@@ -144,7 +144,8 @@
       ],
       "content_generated_at": "2026-01-18T00:24:12Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 13
     },
     {
       "museum_id": "usa-dc-unknown-dumbarton-house",
@@ -667,10 +668,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 14,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The evidence describes the London National Portrait Gallery as a major national institution focused on portraits of historically important British people, not an Impressionism-focused collection, so Impressionist strength is scored negligible. Portrait collections typically span from historical to modern figures, supporting a moderate modern/contemporary score, and the mission implies strong historical framing and interpretive context. As a long-established national gallery in London near Trafal",
       "score_last_verified": "2026-01-17",
@@ -684,7 +685,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'City of Westminster' from open data; MRD: computed city_tier=3 for City of Westminster; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T00:25:46Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2026338300",
@@ -700,7 +701,8 @@
       ],
       "content_generated_at": "2026-01-18T00:25:46Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-dc-unknown-phillips-collection",
@@ -739,10 +741,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 4,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 9,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The collection explicitly includes key Impressionist/Post-Impressionist figures (Monet, Renoir, van Gogh, Bonnard), indicating a strong but not necessarily flagship Impressionist presence. Its roster of major modern artists (Picasso, Braque, Klee, Mir\u0018, Rothko, O\u0007Keeffe, Lawrence) supports strong modern/contemporary holdings, consistent with a nationally known, high-quality but non-encyclopedic museum.",
       "score_last_verified": "2026-01-17",
@@ -756,7 +758,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T00:26:02Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "2023872151",
@@ -772,7 +774,8 @@
       ],
       "content_generated_at": "2026-01-18T00:26:02Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 18
     },
     {
       "museum_id": "usa-dc-unknown-smithsonian-american-art-museum-and-renwick-gallery",
@@ -811,10 +814,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 14,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence points to a strong Smithsonian-level American art institution, with the Renwick Gallery specifically focused on American craft and decorative arts spanning the 19th–21st centuries, supporting moderate modern/contemporary strength and good interpretive context. Impressionism is not indicated as a focus and, given the craft/decorative emphasis, is likely minor. As part of the Smithsonian in Washington, D.C., the museum has international reputation and a strong permanent-collection tier.",
       "score_last_verified": "2026-01-17",
@@ -828,7 +831,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Washington' from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T00:26:16Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2023571445",
@@ -844,7 +847,8 @@
       ],
       "content_generated_at": "2026-01-18T00:26:16Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-dc-unknown-the-george-washington-university-museum-and-the-textile-museum",
@@ -1128,5 +1132,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T03:24:52Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

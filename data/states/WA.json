@@ -3332,10 +3332,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 21,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "MoNA is focused on the Northwest School movement, peaking in the mid-20th century, suggesting a moderate strength in modern 20th-century regional art rather than Impressionism. The evidence points to a specialized, local museum in La Conner with a focused scope, implying a small collection tier and primarily local reputation; interpretive depth is not described, so historical context is scored as moderate.",
       "score_last_verified": "2026-01-17",
@@ -3350,7 +3350,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for La Conner; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:11:54Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "3604664446",
@@ -3366,7 +3366,8 @@
       ],
       "content_generated_at": "2026-01-18T05:11:54Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 9
     },
     {
       "museum_id": "usa-wa-port-orchard-sidney-museum-and-art-gallery-and-log-cabin-museum",
@@ -3616,10 +3617,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 15,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Wikipedia describes the Frye as a modern and contemporary art museum, supporting a strong (but not clearly flagship) modern/contemporary score. No evidence is provided of Impressionist holdings, so that category is scored negligible. As a Seattle institution with a founder collection and evolving programming, it likely offers some interpretive context but not necessarily comprehensive chronological coverage.",
       "score_last_verified": "2026-01-17",
@@ -3634,7 +3635,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Seattle; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:12:35Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5093592494",
@@ -3650,7 +3651,8 @@
       ],
       "content_generated_at": "2026-01-18T05:12:35Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-wa-seattle-henry-art-gallery",
@@ -3972,10 +3974,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 22,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The evidence identifies it as a regional arts-and-culture museum in Spokane with Smithsonian affiliation and AAM accreditation, but provides no specific indications of notable Impressionist or Modern/Contemporary permanent holdings, so strengths are scored as minor. Accreditation and institutional affiliation suggest competent interpretive practice, supporting a mid-level historical context score, and overall reputation/collection tier are assessed as regional/moderate based on location and limi",
       "score_last_verified": "2026-01-17",
@@ -3990,7 +3992,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Spokane; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:13:35Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "5094563931",
@@ -4006,7 +4008,8 @@
       ],
       "content_generated_at": "2026-01-18T05:13:35Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 8
     },
     {
       "museum_id": "usa-wa-stevenson-columbia-george-interpretive-center",
@@ -4186,10 +4189,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 15,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum is explicitly a contemporary art museum dedicated to the medium of glass and the studio glass movement, indicating strong modern/contemporary holdings within that specialized domain. No evidence suggests Impressionist works. As a focused, medium-specific institution founded in 2002, it likely provides some movement-based context but is not presented as an encyclopedic or world-flagship collection.",
       "score_last_verified": "2026-01-17",
@@ -4204,7 +4207,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tacoma; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:14:07Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "2532844750",
@@ -4220,7 +4223,8 @@
       ],
       "content_generated_at": "2026-01-18T05:14:07Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-wa-vancouver-clark-county-historical-museum",
@@ -4365,5 +4369,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T05:14:25Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

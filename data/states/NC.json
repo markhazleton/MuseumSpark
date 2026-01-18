@@ -1592,10 +1592,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 16,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum is explicitly dedicated to mid-20th-century modern art and holds a sizable family collection (1,400+ works) by major figures of 20th-century modernism, supporting a strong Modern/Contemporary score. No evidence indicates Impressionist holdings, so that is scored as negligible. As a focused modern-art institution opened in 2010, it likely provides some interpretive framing but is not described as encyclopedic; reputation and collection tier appear regional/moderate.",
       "score_last_verified": "2026-01-17",
@@ -1610,7 +1610,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Charlotte; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:57:49Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "7043539200",
@@ -1626,7 +1626,8 @@
       ],
       "content_generated_at": "2026-01-18T01:57:49Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-nc-charlotte-mint-museum",
@@ -2018,10 +2019,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 15,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum’s holdings are described as spanning 5,000+ years “from antiquity to the present,” supporting moderate coverage of both Impressionist-era and Modern/Contemporary art but without specific evidence of standout depth. With over 40 galleries and a broad chronological scope, it likely provides good historical framing across periods. As a major state museum with a large campus and long-established collection, it rates as a strong regional institution with a substantial (but not clearly flag",
       "score_last_verified": "2026-01-17",
@@ -2034,7 +2035,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Raleigh; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:59:04Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "9196646754",
@@ -2050,7 +2051,8 @@
       ],
       "content_generated_at": "2026-01-18T01:59:04Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 12
     },
     {
       "museum_id": "usa-nc-salisbury-waterworks-visual-arts-center",
@@ -2373,10 +2375,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 17,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum is described as presenting American art from the colonial period through the modern era, implying some modern holdings but not signaling a major modern/contemporary focus. No evidence indicates dedicated or significant Impressionist holdings, so Impressionism is likely minor. As a historic house museum turned art museum with an education mission and chronological range, it likely provides good historical framing; overall scope suggests a moderate, regional-tier collection.",
       "score_last_verified": "2026-01-17",
@@ -2390,7 +2392,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Winston-Salem; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:00:07Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3367585150",
@@ -2406,8 +2408,9 @@
       ],
       "content_generated_at": "2026-01-18T02:00:07Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 11
     }
   ],
-  "updated_at": "2026-01-18T04:04:53Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

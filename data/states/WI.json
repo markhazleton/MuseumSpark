@@ -284,10 +284,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 19,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence indicates a sizable university art museum with over 24,000 objects, suggesting a broadly representative collection but without specific mention of Impressionist strengths, so Impressionism is scored as minor. Its scale and typical university-museum scope support moderate modern/contemporary representation and mid-level historical context, while being the second-largest art museum in Wisconsin suggests primarily regional reputation and a moderate overall collection tier.",
       "score_last_verified": "2026-01-17",
@@ -301,7 +301,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Madison' from open data; MRD: computed city_tier=2 for Madison; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:14:56Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "6082632246",
@@ -317,7 +317,8 @@
       ],
       "content_generated_at": "2026-01-18T05:14:56Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 11
     },
     {
       "museum_id": "usa-wi-unknown-chippewa-valley-museum",
@@ -1266,10 +1267,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 12,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The evidence highlights strengths in early-20th-century German Expressionism and a major Georgia O’Keeffe holding, supporting a strong Modern/Contemporary score, but it does not indicate notable Impressionist depth beyond general 19th-century European art. Its large scale (nearly 35,000 works) and being among the largest U.S. art museums suggest a strong collection tier, and its long institutional history and established departments imply generally good historical framing. Despite national press",
       "score_last_verified": "2026-01-17",
@@ -1283,7 +1284,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:16:26Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "4142243200",
@@ -1299,7 +1300,8 @@
       ],
       "content_generated_at": "2026-01-18T05:16:26Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 15
     },
     {
       "museum_id": "usa-wi-unknown-milwaukee-public-museum",
@@ -1692,10 +1694,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 24,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The evidence provides no specifics about permanent collection highlights, so Impressionist and Modern/Contemporary strengths are estimated as minor rather than absent. The museum’s setting in a National Register Queen Anne house suggests some historical framing and interpretive potential, but collection scope and broader reputation appear primarily local, implying a small institution.",
       "score_last_verified": "2026-01-17",
@@ -1709,7 +1711,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Manitowoc; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:17:15Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9206863090",
@@ -1725,7 +1727,8 @@
       ],
       "content_generated_at": "2026-01-18T05:17:15Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 6
     },
     {
       "museum_id": "usa-wi-marquette-university-haggerty-museum-of-art",
@@ -1764,10 +1767,10 @@
       "public_transit_notes": null,
       "impressionist_strength": null,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 20,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence indicates a university art museum with a sizable permanent collection (~10,000 works) but limited on-view space, suggesting a moderate overall collection tier. A prominent Keith Haring mural points to at least moderate modern/contemporary representation, but the evidence does not specify Impressionist holdings. As a campus museum in Milwaukee, it appears primarily local in reputation, and no clear evidence is provided about the depth of chronological/historical interpretive framing.",
       "score_last_verified": "2026-01-17",
@@ -1781,7 +1784,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Marquette University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:17:27Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4142881669",
@@ -1797,7 +1800,8 @@
       ],
       "content_generated_at": "2026-01-18T05:17:27Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 10
     },
     {
       "museum_id": "usa-wi-neenah-bergstrom-mahler-museum",
@@ -1872,5 +1876,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T05:17:38Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

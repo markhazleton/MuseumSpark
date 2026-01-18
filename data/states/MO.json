@@ -302,10 +302,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 12,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence provided describes the Saint Louis Art Museum as an encyclopedic institution with global holdings and explicit contemporary programming (Currents series, new media), supporting a strong modern/contemporary score and solid historical-context potential. Impressionist strength is not specified, so it is estimated as moderate given the broad painting collection. Overall reputation and tier are judged as strong regional based on visitor scale and scope, but confidence is limited due to misma",
       "score_last_verified": "2026-01-17",
@@ -320,7 +320,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Missouri' from open data; MRD: computed city_tier=2 for Missouri; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:47:57Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(314) 535-4660",
@@ -467,7 +467,8 @@
       ],
       "content_generated_at": "2026-01-18T01:47:57Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 15
     },
     {
       "museum_id": "usa-mo-unknown-laumeier-sculpture-park",
@@ -980,10 +981,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 14,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Wikipedia characterizes SLAM as holding paintings, sculpture, cultural objects, and ancient masterpieces from around the world, implying a broad, substantial permanent collection with generally strong historical framing. Contemporary activity (Currents series, new media, works on paper) suggests meaningful but not clearly flagship modern/contemporary holdings. Impressionism is not explicitly cited, so it is scored as moderate representation rather than a clear strength.",
       "score_last_verified": "2026-01-17",
@@ -995,7 +996,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'St. Louis' from open data; MRD: computed city_tier=2 for St. Louis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:49:07Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "3147210072",
@@ -1011,7 +1012,8 @@
       ],
       "content_generated_at": "2026-01-18T01:49:07Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 13
     },
     {
       "museum_id": "usa-mo-unknown-springfield-art-museum",
@@ -1263,10 +1265,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 16,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "As Missouri's first and largest contemporary museum (opened 1994), Kemper is strongly oriented toward Modern and Contemporary art, suggesting significant 20th–21st century holdings. No evidence indicates Impressionist works or a historical/chronological focus, so Impressionism is scored negligible and historical context is estimated as moderate. Its scale (75,000 visitors; $5M budget) supports a solid regional reputation and a moderate overall collection tier rather than a flagship encyclopedic ",
       "score_last_verified": "2026-01-17",
@@ -1281,7 +1283,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Kansas City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:50:06Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "6605305888",
@@ -1297,7 +1299,8 @@
       ],
       "content_generated_at": "2026-01-18T01:50:06Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-mo-kansas-city-nelson-atkins-museum-of-art",
@@ -1476,10 +1479,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 18,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Wikipedia indicates a broad 19th–21st century European and American collection across media, implying moderate modern/contemporary representation but no specific emphasis on Impressionism (scored as minor). As a long-established university museum with antiquities and Old Master prints but no evidence of encyclopedic depth, it fits a moderate-tier, regionally known institution with likely decent but not standout historical framing.",
       "score_last_verified": "2026-01-17",
@@ -1492,7 +1495,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for St. Louis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:50:48Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3149354523",
@@ -1508,7 +1511,8 @@
       ],
       "content_generated_at": "2026-01-18T01:50:48Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 11
     },
     {
       "museum_id": "usa-mo-st-louis-world-chess-hall-of-fame",
@@ -1579,5 +1583,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T04:02:06Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

@@ -520,10 +520,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 14,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The Speed is described as housing Western art from antiquity to the present with significant French painting holdings, suggesting at least moderate Impressionist representation but not clearly a flagship focus. It explicitly cites \"important contemporary art\" and modern/contemporary collections, supporting a strong modern/contemporary score. Its broad chronological scope (ancient through contemporary) implies solid historical framing, and as Kentucky's oldest/largest art museum it has regional s",
       "score_last_verified": "2026-01-17",
@@ -535,7 +535,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Louisville' from open data; MRD: computed city_tier=1 for Louisville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:10:58Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "is_scoreable": true,
@@ -550,7 +550,8 @@
       ],
       "content_generated_at": "2026-01-18T01:10:58Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-ky-bowling-green-national-corvette-museum",
@@ -658,10 +659,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 19,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The summary describes a broad collection from Old Masters to contemporary and lists several modern/contemporary figures (e.g., Calder, Dubuffet, Gilliam, Nevelson), supporting moderate modern/contemporary strength. No clear evidence of significant Impressionist holdings is provided, so Impressionism is scored as minor. As a university art museum with a mixed European/American and some non-Western material, it likely offers some historical framing but not on the scale of a major encyclopedic inst",
       "score_last_verified": "2026-01-17",
@@ -675,7 +676,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Lexington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.uky.edu/ArtMuseum: [WinError 10054] An existing connection was forcibly closed by the remote host; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:11:21Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "8592575716",
@@ -691,7 +692,8 @@
       ],
       "content_generated_at": "2026-01-18T01:11:21Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 11
     },
     {
       "museum_id": "usa-ky-louisville-frazier-international-history-museum",
@@ -906,5 +908,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T03:41:40Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

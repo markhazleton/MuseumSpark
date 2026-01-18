@@ -1956,10 +1956,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 23,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence indicates a university museum focused on Oregon-related art and historical artifacts rather than canonical European movements, so Impressionism is likely negligible and modern/contemporary representation is likely minor. As a museum combining art and historical artifacts, it likely provides some interpretive framing, but the evidence does not confirm strong chronological or comprehensive context. Being a regional university museum in Salem (third-largest in Oregon) suggests local-to-reg",
       "score_last_verified": "2026-01-17",
@@ -1973,7 +1973,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Willamette University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: Page not found (404) at http://www.willamette.edu/arts/hfma/index.html/visit/index.html#admission; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T04:29:58Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5033706300",
@@ -1989,8 +1989,9 @@
       ],
       "content_generated_at": "2026-01-18T04:29:58Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 7
     }
   ],
-  "updated_at": "2026-01-18T04:29:58Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

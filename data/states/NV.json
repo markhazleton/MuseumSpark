@@ -250,10 +250,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 17,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum’s stated collection emphasis is thematic (human interaction with the land / nature), with no evidence of dedicated Impressionist holdings, so Impressionism is scored negligible. A land-and-environment focus commonly aligns with 20th–21st century art practices, supporting a moderate Modern/Contemporary score. The explicitly thematic curatorial approach suggests coherent interpretive framing, and its AAM accreditation and statewide uniqueness point to a regional reputation with a modera",
       "score_last_verified": "2026-01-17",
@@ -268,7 +268,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Reno; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:16:24Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "7753293333",
@@ -284,7 +284,8 @@
       ],
       "content_generated_at": "2026-01-18T02:16:24Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 11
     },
     {
       "museum_id": "usa-nv-reno-sierra-arts-gallery",
@@ -356,5 +357,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T04:13:20Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

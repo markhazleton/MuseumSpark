@@ -244,10 +244,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 19,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum is dedicated to the art of the American Southwest and local/regional history; the evidence gives no indication of Impressionist holdings, so Impressionism is scored negligible. Modern/contemporary is likely present within Southwest-focused art but not described as a major strength. Its 400 years of Albuquerque history with permanent installations suggests solid historical interpretation, while overall scope appears regional/moderate rather than encyclopedic.",
       "score_last_verified": "2026-01-17",
@@ -262,7 +262,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Mexico' from open data; MRD: computed city_tier=3 for New Mexico; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:09:21Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(505) 243-7255",
@@ -419,7 +419,8 @@
       ],
       "content_generated_at": "2026-01-18T02:09:21Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 8
     },
     {
       "museum_id": "usa-nm-unknown-bosque-redondo-memorial-at-fort-sumner",
@@ -1701,10 +1702,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 15,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "SITE Santa Fe is identifiable as a contemporary art institution by name and type, supporting a strong modern/contemporary score, while no evidence suggests any Impressionist holdings. The provided Wikipedia summary appears mismatched (Santa Fe Indian School), so collection depth and interpretive/historical framing are inferred only broadly for a contemporary center in a regional art destination.",
       "score_last_verified": "2026-01-17",
@@ -1719,7 +1720,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Mexico' from open data; MRD: computed city_tier=3 for New Mexico; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:12:20Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(505) 989-1199",
@@ -1886,7 +1887,8 @@
       ],
       "content_generated_at": "2026-01-18T02:12:20Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-nm-unknown-taos-art-museum-at-fechin-house",
@@ -1925,10 +1927,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 24,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The evidence centers on the Taos art colony and regional Southwestern art history rather than Impressionism, so Impressionist holdings are likely negligible. Mentions of early-20th-century modern artists and 1950s abstract artists suggest at most minor modern/abstract representation in the museum’s scope, but no specific permanent-collection details are provided. As a small, local Taos museum (Fechin House), it likely offers some historical context tied to the Taos art colony, with primarily loc",
       "score_last_verified": "2026-01-17",
@@ -1942,7 +1944,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Taos' from open data; MRD: computed city_tier=3 for Taos; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:12:32Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "5757582690",
@@ -1958,7 +1960,8 @@
       ],
       "content_generated_at": "2026-01-18T02:12:32Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 6
     },
     {
       "museum_id": "usa-nm-albuquerque-university-of-new-mexico-art-museum",
@@ -2485,10 +2488,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 13,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Dedicated to Georgia O’Keeffe and American modernism, the museum’s permanent holdings are best understood as strong for Modern/Modernist art rather than Impressionism. The multiple sites plus a library/archive and interpretive programming suggest solid historical framing, while its single-artist focus implies a moderate (not encyclopedic) collection with primarily regional-to-national draw.",
       "score_last_verified": "2026-01-17",
@@ -2503,7 +2506,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:14:25Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5059461001",
@@ -2519,7 +2522,8 @@
       ],
       "content_generated_at": "2026-01-18T02:14:25Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 14
     },
     {
       "museum_id": "usa-nm-santa-fe-museum-of-indian-arts-culture",
@@ -2770,10 +2774,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 18,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The evidence identifies a state-run fine arts museum in Santa Fe but gives no specifics on permanent-collection strengths; as such, Impressionism is likely minor rather than a focus. As a general art museum in a major arts destination, it plausibly maintains some modern/contemporary holdings and interpretive context, but not at a flagship level, suggesting a moderate regional institution overall.",
       "score_last_verified": "2026-01-17",
@@ -2788,7 +2792,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:15:22Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5054765072",
@@ -2804,7 +2808,8 @@
       ],
       "content_generated_at": "2026-01-18T02:15:22Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 11
     },
     {
       "museum_id": "usa-nm-taos-harwood-museum-of-art-of-the-university-of-new-mexico",
@@ -2876,5 +2881,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T04:12:55Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

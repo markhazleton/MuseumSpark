@@ -268,7 +268,6 @@ export default function BrowsePage() {
               <SortableHeader label="Quality ↑" sortKey="overall_quality_score" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
               <SortableHeader label="Priority ↓" sortKey="priority_score" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
               <SortableHeader label="Nearby" sortKey="nearby_museum_count" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
-              <th className="px-4 py-3 text-left font-semibold text-slate-700">Notes</th>
             </tr>
           </thead>
           <tbody>
@@ -300,17 +299,6 @@ export default function BrowsePage() {
                 </td>
                 <td className="px-4 py-3 text-center text-slate-600">
                   {museum.nearby_museum_count || '—'}
-                </td>
-                <td className="px-4 py-3 text-slate-600 max-w-xs truncate">
-                  {museum.content_summary ? (
-                    <span className="text-xs" title={museum.content_summary}>
-                      {museum.content_summary.slice(0, 80)}...
-                    </span>
-                  ) : museum.notes ? (
-                    <span className="text-xs" title={museum.notes}>
-                      {museum.notes.slice(0, 80)}...
-                    </span>
-                  ) : '—'}
                 </td>
               </tr>
             ))}
@@ -379,5 +367,4 @@ function SortableHeader({
       </div>
     </th>
   )
-}
 }

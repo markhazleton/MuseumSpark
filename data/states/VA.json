@@ -2411,10 +2411,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 15,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Wikipedia describes VMFA as having a comprehensive art collection across many areas (ancient, African, American, Himalayan, and notable decorative arts like Faberg\u0000e9), supporting a strong overall collection tier. The evidence does not specifically cite Impressionist or Modern/Contemporary strengths, so those are scored as moderate by inference for a major general fine arts museum. As a large state museum with broad chronological scope, it likely provides solid historical framing, and its reputa",
       "score_last_verified": "2026-01-17",
@@ -2429,7 +2429,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Richmond; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.vmfa.state.va.us: Network error for http://www.vmfa.state.va.us: <urlopen error [WinError 10060] A connection attempt ; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:00:45Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "8043401580",
@@ -2445,7 +2445,8 @@
       ],
       "content_generated_at": "2026-01-18T05:00:45Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 12
     },
     {
       "museum_id": "usa-va-richmond-wilton-house-museum",
@@ -2556,10 +2557,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 20,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum is described as specializing in American art, with no explicit evidence of significant Impressionist holdings, suggesting at most minor representation. The purpose-built contemporary building and broad American-art focus imply a moderate modern/contemporary presence, but not a flagship collection. As a city museum in Roanoke without signals of broader reach, it reads as primarily local with a moderate-sized collection.",
       "score_last_verified": "2026-01-17",
@@ -2574,7 +2575,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Roanoke; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:01:12Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "5403425760",
@@ -2590,7 +2591,8 @@
       ],
       "content_generated_at": "2026-01-18T05:01:12Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 10
     },
     {
       "museum_id": "usa-va-virginia-beach-virginia-museum-of-contemporary-art-moca",
@@ -2629,10 +2631,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": null,
-      "primary_art": null,
+      "primary_art": "Impressionist",
       "historical_context_score": null,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 27,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Wikipedia describes Virginia MOCA as a non-collecting contemporary art museum/community art center, so permanent-collection-based strengths (including Modern/Contemporary depth and historical contextualization through collection galleries) cannot be reliably scored. As a local institution best known for an annual art show and rooted in local art associations, its reputation is primarily local and its permanent collection tier is effectively small/nonexistent.",
       "score_last_verified": "2026-01-17",
@@ -2646,7 +2648,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Virginia Beach; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:01:29Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": true,
@@ -2661,7 +2663,8 @@
       ],
       "content_generated_at": "2026-01-18T05:01:29Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 3
     },
     {
       "museum_id": "usa-va-williamsburg-muscarelle-museum-of-art-lamberson-hall-the-college-of-william-and-mary",
@@ -2733,5 +2736,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T05:01:39Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

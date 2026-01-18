@@ -382,10 +382,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 24,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum is dedicated to the ceramics of George E. Ohr (1857–1918), indicating a focused, specialized permanent collection rather than painting-heavy areas like Impressionism (scored negligible). Ohr’s work falls closer to craft/early modern American art, suggesting some limited modern relevance but not broad 20th–21st century depth. As a local Biloxi institution centered on a single artist, overall reputation and collection tier are scored as local/small; historical context is assumed moderat",
       "score_last_verified": "2026-01-17",
@@ -400,7 +400,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Biloxi; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:52:05Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2283745547",
@@ -416,7 +416,8 @@
       ],
       "content_generated_at": "2026-01-18T01:52:05Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 6
     },
     {
       "museum_id": "usa-ms-jackson-mississippi-museum-of-art",
@@ -455,10 +456,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 22,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence only establishes that it is a public art museum and the largest in Mississippi, without specifics on Impressionist or Modern/Contemporary permanent holdings, so strengths are estimated as minor. As a state-leading museum it likely offers some interpretive framing but not enough evidence for a high context score. Reputation is best inferred as regional, and collection tier as moderate for a statewide flagship without proof of encyclopedic depth.",
       "score_last_verified": "2026-01-17",
@@ -473,7 +474,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Jackson; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:52:17Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "6019601515",
@@ -489,7 +490,8 @@
       ],
       "content_generated_at": "2026-01-18T01:52:17Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 8
     },
     {
       "museum_id": "usa-ms-laurel-lauren-rogers-museum-of-art",
@@ -528,10 +530,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 1,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 26,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The evidence highlights Native American baskets and a selection of American art (e.g., Winslow Homer, Bierstadt, Sargent) but provides no indication of dedicated Impressionist or Modern/Contemporary holdings, so those scores are minimal. As Mississippi's first art museum with identifiable collection areas, it likely provides some interpretive framing, but nothing suggests especially deep historical narrative. Visitor numbers and location point to primarily local recognition, with a respectable b",
       "score_last_verified": "2026-01-17",
@@ -546,7 +548,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Laurel; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:52:30Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6016496374",
@@ -562,7 +564,8 @@
       ],
       "content_generated_at": "2026-01-18T01:52:30Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 4
     },
     {
       "museum_id": "usa-ms-ocean-springs-walter-anderson-museum-of-art",
@@ -601,10 +604,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 24,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "WAMA is a single-artist-focused museum dedicated primarily to Walter Inglis Anderson and his family, with no evidence of Impressionist holdings, so Impressionism is scored negligible. Anderson is a 20th-century artist and the museum preserves major mural projects and an immersive “Little Room” installation, supporting a minor-to-moderate modern strength and some historical framing, but overall scope appears small and locally oriented.",
       "score_last_verified": "2026-01-17",
@@ -619,7 +622,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Ocean Springs; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T01:52:44Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6018723164",
@@ -635,7 +638,8 @@
       ],
       "content_generated_at": "2026-01-18T01:52:44Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 6
     },
     {
       "museum_id": "usa-ms-oxford-university-of-mississippi-museum",
@@ -781,5 +785,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T04:02:46Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }

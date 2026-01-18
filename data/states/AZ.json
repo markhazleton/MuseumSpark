@@ -181,10 +181,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 24,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "Evidence indicates a small local museum centered on George Phippen and Western/Cowboy art (Cowboy Artists of America), with no indication of Impressionist holdings, so Impressionism is scored negligible. Western art implies some 20th-century material, but without clear modern/contemporary collecting depth it remains minor. As a single-artist/namesake-focused institution it likely provides decent interpretive context for that niche, but broader art-historical framing is uncertain.",
       "score_last_verified": "2026-01-17",
@@ -198,7 +198,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T23:28:59Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "9287781385",
@@ -214,7 +214,8 @@
       ],
       "content_generated_at": "2026-01-17T23:28:59Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 6
     },
     {
       "museum_id": "usa-az-unknown-phoenix-art-museum",
@@ -327,10 +328,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 17,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum name identifies it as a contemporary art museum, supporting strong Modern/Contemporary strength and negligible Impressionist holdings. No evidence is provided about permanent-collection depth or interpretive/chronological presentation, so historical context is estimated as moderate. Existing assessments indicate local reputation and a moderate collection tier.",
       "score_last_verified": "2026-01-17",
@@ -344,7 +345,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T23:29:21Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5206245019",
@@ -360,7 +361,8 @@
       ],
       "content_generated_at": "2026-01-17T23:29:21Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 13
     },
     {
       "museum_id": "usa-az-unknown-scottsdale-museum-of-the-west",
@@ -904,10 +906,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": null,
-      "scoring_version": "phase2_v1",
+      "priority_score": 17,
+      "scoring_version": "mrd_v2",
       "scored_by": "gpt-5.2",
       "score_notes": "The museum is explicitly dedicated to contemporary art, design, and architecture, with a growing permanent collection and a permanently installed James Turrell Skyspace, supporting strong modern/contemporary strength. No evidence suggests Impressionist holdings. As a contemporary museum with five galleries and rotating exhibitions, it likely provides some interpretive context but not a broad chronological narrative; reputation and overall collection scale appear primarily local/regional and mode",
       "score_last_verified": "2026-01-17",
@@ -922,7 +924,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T23:31:17Z",
+      "updated_at": "2026-01-18T06:13:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5206245019",
@@ -938,8 +940,9 @@
       ],
       "content_generated_at": "2026-01-17T23:31:17Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "overall_quality_score": 13
     }
   ],
-  "updated_at": "2026-01-18T02:59:30Z"
+  "updated_at": "2026-01-18T06:13:48Z"
 }
