@@ -7,21 +7,21 @@
       "museum_id": "usa-mt-unknown-hockaday-museum-of-art",
       "country": "USA",
       "state_province": "Montana",
-      "city": null,
+      "city": "Kalispell",
       "museum_name": "Hockaday Museum of Art",
       "alternate_names": null,
       "website": "http://www.hockadaymuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "302 2nd Ave E, Kalispell, MT 59901, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 48.19535,
-      "longitude": -114.30947,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "59901",
+      "latitude": 48.1960766,
+      "longitude": -114.3101756,
+      "place_id": "ChIJaTpvXOpQZlMR0Oa54AUbEvM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -29,37 +29,183 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": "https://www.mydomaincontact.com/?domain_name=hockadaymuseum.org",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is described as focusing on preservation of art and history related to Glacier National Park and Montana, suggesting a regional, place-based collection rather than strengths in French Impressionism (scored negligible). Modern/contemporary art may appear through Montana and park-related artists but is not indicated as a major focus. Its small-city location and specialized mission imply a primarily local reputation and a small, focused permanent collection, with moderate historical fram",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.hockadaymuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:53:23Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4067555268"
+      "phone": "(406) 755-5268",
+      "website_google": "http://glacierartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 120,
+      "google_reviews": [
+        {
+          "author_name": "David Metzger",
+          "author_url": "https://www.google.com/maps/contrib/112499698798039357841/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJEFwAe0gz6wBC0vztN3k8wBbTIAaczfj06l7Fo2_qIolikDuR=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "This museum is a true gem, and the community should be proud of it. The exhibits always have a variety of styles and can be enjoyed in about an hour. We visit three to five times a year and often find ourselves lingering longer. We especially appreciate the exhibits featuring local artists and students. The docents are excellent—knowledgeable, welcoming and share their appreciation of artistic styles.",
+          "time": 1746024519,
+          "translated": false
+        },
+        {
+          "author_name": "Eddie R",
+          "author_url": "https://www.google.com/maps/contrib/102244613387776243316/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUrv0i2Sh4K98SaeQSXZs59KSDqC8SbbNrPPPdBE3jEfpROThnjlA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Nice little art museum. They had some interesting art. I enjoyed it. Nice way to spend an hour or so.",
+          "time": 1716075304,
+          "translated": false
+        },
+        {
+          "author_name": "J S",
+          "author_url": "https://www.google.com/maps/contrib/105682305647333823881/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLdX1MW0JfyB68CnY-sIRwGqaoXDh_DHcXKgEVPYm6ejlGHEg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Loved the art work.\nNice to have regional art.\nDo able in 90 minutes.\nGood value!",
+          "time": 1718757220,
+          "translated": false
+        },
+        {
+          "author_name": "The Simple Environmentalist",
+          "author_url": "https://www.google.com/maps/contrib/107751940547876062789/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUoVu4x5IVrhnnfrbvt4wnLp0abqdWhGCwh4Hs5nk0ER-kuAXJE=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "A lovely spot any day of the week but particularly on a rainy day. I loved the women in the west exhibit, you have to see it before they change it! Everything was lovely and the staff was friendly and helpful",
+          "time": 1696166564,
+          "translated": false
+        },
+        {
+          "author_name": "Alyssa Larscheid",
+          "author_url": "https://www.google.com/maps/contrib/108359795532120003547/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLs6NtrUapAHDLfzrlP6xLFrB39q5t3ytiuD-9z11h_klADIQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "3 years ago",
+          "text": "I would not recommend bringing your children here. They have demonic art up that they accepted from Highschoolers around town. They also have a transgender anatomy Artwork up. Very disappointing for the first time attending. Will not be going back. Definitely check it out before you bring your kids. These are just a few of what we're up.",
+          "time": 1653518187,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "In the heart of Kalispell, the Hockaday Museum of Art offers an intimate, art-lover’s gateway to Montana’s creative spirit. With a small but thoughtfully curated collection and rotating exhibitions, it’s the kind of local museum where you can slow down and really look—at Western landscapes, regional voices, and contemporary takes on place and identity. Pair it with a day exploring Glacier country, and you’ll leave with a richer sense of the Flathead Valley’s culture beyond the scenery.",
+      "content_description": "**Hockaday Museum of Art** is a rewarding stop for travelers who prefer museums where the experience feels personal—less about blockbuster crowds and more about close looking. Located in downtown Kalispell, it functions as a cultural anchor for the Flathead Valley, presenting a focused lens on the region’s visual storytelling. Expect a mix of **regional artists** and **rotating exhibitions** that often engage the Northern Rockies’ defining themes: land, light, working life, and evolving community identities. Even with a **small collection**, the curatorial approach makes visits feel fresh—perfect if you’re in town for a few days and want a museum you can return to.\n\nThe museum’s strengths lie in how it frames Montana’s artistic legacy through *landscape* and *Western* imagery while making room for contemporary perspectives. Art enthusiasts will appreciate the chance to trace how artists translate the same motifs—mountain horizons, weather, rivers, wildlife—into very different visual languages, from representational painting and photography to more interpretive, modern approaches.\n\nArchitecturally and experientially, **Hockaday** reads as a welcoming, walkable museum: approachable scale, human-paced galleries, and a downtown setting that encourages an easy pairing with cafés and local browsing. Plan to take your time with labels and exhibition texts; the museum’s local reputation comes from its community connection, and that often shows in thoughtful interpretive context. For art travelers, it’s an ideal counterpoint to Glacier National Park: come for the views, then see how artists have wrestled with the same terrain in pigment, paper, and lens.",
+      "content_highlights": [
+        "Intimate, small-scale galleries designed for close looking without crowds",
+        "Rotating exhibitions spotlighting Montana and regional artists of the Northern Rockies",
+        "Strong sense of place through landscape- and Western-themed works and visual storytelling",
+        "Downtown Kalispell location—easy to combine with local dining, shops, and a day trip toward Glacier",
+        "A rewarding “return visit” museum: changing shows keep the experience fresh across seasons"
+      ],
+      "content_generated_at": "2026-01-18T01:53:23Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-mt-unknown-lewistown-art-center",
@@ -79,7 +225,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -87,12 +233,12 @@
       "tickets_url": "http://www.lewistownartcenter.net/tickets-registration",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -101,43 +247,57 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no collection description for the Lewistown Art Center (the Wikipedia link is for Lewistown, Illinois rather than the museum), so strengths in Impressionism, Modern/Contemporary, and interpretive historical context cannot be determined. Given the small-city signals (city_tier 3, no nearby museums) and lack of indications of major holdings, it is most plausibly a local institution with a small collection.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.lewistownartcenter.net",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4065358278"
+      "phone": "4065358278",
+      "is_scoreable": true,
+      "content_summary": "On Main Street in Lewistown, the Lewistown Art Center rewards art lovers who enjoy intimate museums where you can slow down and look closely. With a small, locally rooted collection and rotating displays, it’s a place to meet the region through painting, photography, and craft traditions—often by artists connected to Central Montana landscapes and communities. Expect a welcoming, low-pressure visit: approachable gallery spaces, thoughtful labels, and the kind of conversation-friendly atmosphere that makes you linger.",
+      "content_description": "**Lewistown Art Center** is a compact, community-driven stop on Main Street that shines precisely because it’s small: you’re not racing through blockbuster crowds—you’re having a close, attentive encounter with art made *here*, or art that speaks directly to this part of Montana. In a local museum like this, the strength is often the **rotation**—a changing mix of regional exhibitions that can range from landscape painting and contemporary photography to studio ceramics and fiber work. For travelers, that means every visit has a sense of discovery, and the galleries can serve as a visual introduction to the area’s people, light, and terrain.\n\nArchitecturally, the experience typically centers on **human-scale rooms**—the kind of spaces that suit works on paper, small-format canvases, and intimate objects. Rather than grand atriums, expect a **Main Street gallery feel**: clean sightlines, close viewing distances, and an emphasis on detail—brushwork, surface, and technique. This scale encourages looking slowly, comparing approaches, and noticing how artists translate big skies and open land into composition, color, and texture.\n\nFor art enthusiasts planning a day in town, **Lewistown Art Center** pairs well with a downtown stroll: pop in for a focused hour, return if a new show opens, and treat it as a window into the region’s creative life. It’s especially rewarding for visitors who like *plein-air* sensibilities, contemporary regional voices, and the conversational intimacy of local art spaces.",
+      "content_highlights": [
+        "Intimate Main Street galleries designed for close looking and unrushed viewing",
+        "Rotating exhibitions that spotlight regional Montana artists and changing themes",
+        "Strong sense of place: landscapes, community narratives, and locally informed craft traditions",
+        "Visitor-friendly scale—easy to fit into a day of exploring downtown Lewistown",
+        "A welcoming, conversation-forward atmosphere that often feels like meeting the local art scene in real time"
+      ],
+      "content_generated_at": "2026-01-18T01:53:35Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-mt-unknown-missoula-art-museum",
       "country": "USA",
       "state_province": "Montana",
-      "city": "Montana",
+      "city": "Missoula",
       "museum_name": "Missoula Art Museum",
       "alternate_names": null,
       "website": "http://www.missoulaartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "335 N Pattee St, Missoula, MT 59802, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 46.87254,
-      "longitude": -113.99241,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "59802",
+      "latitude": 46.8724527,
+      "longitude": -113.9923717,
+      "place_id": "ChIJsWkYNSrMXVMRlz9ZXAj7U6E",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -145,12 +305,12 @@
       "tickets_url": "https://www.facebook.com/missoulaartmuseum/",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -159,23 +319,169 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no collection description for Missoula Art Museum (the Wikipedia summary is for the city, not the museum), so Impressionist, Modern/Contemporary, and historical-context scores cannot be determined. Based on it being a city art museum in Missoula, Montana with limited institutional signals (few nearby museums), it is most plausibly a locally oriented institution with a moderate-sized, non-flagship collection.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.missoulaartmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Montana' from open data; MRD: computed city_tier=2 for Montana; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "4067230447"
+      "phone": "(406) 728-0447",
+      "website_google": "http://www.missoulaartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 285,
+      "google_reviews": [
+        {
+          "author_name": "Todd Morgan",
+          "author_url": "https://www.google.com/maps/contrib/117232794959237068436/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU4h6Xu-p3lOReFkbkDd1kSBrkHnuOtk8s1NgUd2m8G_UuQL7Fu=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "Missoula has a nice local museum. Right downtown, convenient, and definitely worth checking out!",
+          "time": 1758150738,
+          "translated": false
+        },
+        {
+          "author_name": "Bernard Jeremy",
+          "author_url": "https://www.google.com/maps/contrib/105076172031719821458/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIrW9Rv6yhXlYP9idfjJ5g8L6u60fnu7mbl5_II5o-r92wRoAY=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Nice small museum with some good contemporary art. Free to enter. Wasn’t too crowded on a hot Saturday afternoon. Took probably 30-40 minutes to go through and explore. Easy to park outside.",
+          "time": 1722740167,
+          "translated": false
+        },
+        {
+          "author_name": "Chianti",
+          "author_url": "https://www.google.com/maps/contrib/117797378081426293436/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMAZVgE3CoAgwks3X6Rj2-umEMERC9UFxGYuZsDmODF0YQmkII1g=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The MAM creates an amazing space showcasing wonderful artwork from local artists.  I was in town for the day on business and so glad I stopped in. The employee at the front desk was so pleasant as she explained the museums layout. Make time to visit and enjoy.",
+          "time": 1711759889,
+          "translated": false
+        },
+        {
+          "author_name": "Wayne Bennett",
+          "author_url": "https://www.google.com/maps/contrib/109412693775770869762/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJSvUH15VxgtwykGMIKnSyl6n7r-87nEq-1EkM1rYngvXpGzJ6G=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "This museum is Missoula's little gem that should get more foot traffic than it does.  The museum tips its hat to the native Americans who inhabited this land called Montana before the white man did.  Both with its current exhibit and permanent collection, the museum captures the plight of the Indians, the injustices still being done to them, and the beauty of their culture. Btw.  The museum is also free",
+          "time": 1752028773,
+          "translated": false
+        },
+        {
+          "author_name": "Michele Schumann",
+          "author_url": "https://www.google.com/maps/contrib/118267575995788300519/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJVZqwRV9x5L25ZQAz5tkYt7jj3zjJrgwuBT8reIBz_quhtDw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Small museum but all of the displays were well done and thought provoking. Some difficult subject matter. We enjoyed it and spent about an hour. Parking downtown is paid street parking. Get there when they open and parking was available, but later is harder to find a spot.",
+          "time": 1716784085,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "In the heart of downtown Missoula, the Missoula Art Museum offers an art-lover’s pause with real local character: a thoughtfully curated mix of contemporary exhibitions and regional voices, anchored by Montana-connected artists. Housed in a beautifully adapted Carnegie library building, MAM rewards slow looking—whether you’re drawn to bold new work, craft-forward practices, or art that speaks to the landscape and cultural histories of the Northern Rockies. It’s a compact, approachable museum that feels both intimate and intellectually alive.",
+      "content_description": "**Missoula Art Museum (MAM)** is one of those rewarding regional museums where you can feel a city’s creative pulse in real time. Its programming emphasizes contemporary art and artists connected to Montana and the broader Rocky Mountain/Intermountain West, making it an ideal stop for travelers who want more than a greatest-hits survey. Expect rotating exhibitions—often concept-driven and socially engaged—that can include painting, photography, installation, and craft-informed practices. Rather than overwhelming scale, MAM offers **clarity and focus**: galleries that encourage close looking and a curatorial approach that highlights how place, material, and identity shape artistic production.\n\nJust as memorable is the setting. The museum occupies an **adaptively reused Carnegie library** building, giving your visit an architectural storyline: historic civic architecture reimagined for contemporary culture. That sense of transformation—old structure, new ideas—mirrors the museum’s strengths, where tradition and experimentation frequently meet.\n\nFor visitors, MAM is easy to enjoy in an hour, yet satisfying enough to linger. The experience is refreshingly human-scaled: you can take in a full exhibition cycle without fatigue, read labels without crowding, and often catch public programs that bring artists and communities into conversation. If you’re museum-hopping through Montana, MAM is a strong “local cornerstone” stop—less about blockbuster names, more about discovering what’s being made, debated, and dreamed in Missoula right now.",
+      "content_highlights": [
+        "Adaptively reused Carnegie library architecture—historic civic building turned contemporary gallery space",
+        "Rotating contemporary exhibitions with strong Montana and Northern Rockies connections",
+        "Curatorial emphasis on place-based art—work shaped by landscape, environment, and regional history",
+        "Intimate, visitor-friendly scale: manageable galleries that reward close looking and repeat visits",
+        "Programs and events that deepen the visit—talks, community-focused projects, and artist engagement"
+      ],
+      "content_generated_at": "2026-01-18T01:53:47Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-mt-unknown-the-historical-museum-at-fort-missoula",
@@ -195,7 +501,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORY MUSEUM",
+      "museum_type": "History Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -208,7 +514,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -230,10 +536,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:02:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4067283476"
+      "phone": "4067283476",
+      "is_scoreable": false,
+      "content_summary": "The Historical Museum at Fort Missoula is a captivating destination that transports visitors through time, showcasing the rich heritage of Western Montana. With its unique blend of outdoor exhibits and engaging indoor displays, this museum offers a profound insight into the region's military, social, and cultural history, making it a must-visit for history enthusiasts and families alike.",
+      "content_description": "**The Historical Museum at Fort Missoula** presents an unparalleled exploration of Western Montana's storied past. Nestled in a former U.S. Army fort, this unique museum captivates with its extensive collection, spanning from the area's indigenous heritage to its pivotal role during pivotal events in American history, such as World War II. Visitors can stroll through the historic grounds, where *restored buildings* and *artifacts* reflect the daily lives of soldiers and civilians alike. Each corner of the museum transports you back in time, revealing fascinating narratives that have shaped this vibrant community. \n\nWithin its walls, **The Historical Museum at Fort Missoula** houses impressive collections that include photographs, documents, and objects relating to the region's agricultural and mining history. The museum also proudly showcases a selection of military artifacts and memorabilia that tell the stories of those who served. Interactive exhibits ensure that both young visitors and adults will engage and learn about the complex tapestry of life in Missoula during different historical periods. The museum frequently hosts events, workshops, and educational programs, making each visit a fresh experience for new and returning guests. Whether you're a history buff or a curious traveler, a journey to this museum promises a deeper understanding of Missoula's heritage and an appreciation for the resilience of its community.",
+      "content_highlights": [
+        "Restored buildings from the original Fort Missoula site",
+        "Extensive collection of military artifacts from various eras",
+        "Exhibits highlighting the history of Native American tribes in the region",
+        "Interactive displays focusing on local agriculture and mining history",
+        "Seasonal events and workshops for engaging community experiences"
+      ],
+      "content_generated_at": "2026-01-18T04:02:56Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-mt-billings-yellowstone-art-museum",
@@ -253,7 +572,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -261,38 +580,52 @@
       "tickets_url": "http://www.facebook.com/pages/Yellowstone-Art-Museum/7978533002",
       "reservation_required": null,
       "accessibility_url": "https://www.artmuseum.org/wp-content/plugins/real-accessability/support.php",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia identifies YAM as the largest contemporary art museum in Montana, supporting a strong (but not flagship) modern/contemporary score. No evidence is provided for Impressionist holdings, so Impressionism is scored negligible. As a regional contemporary museum, it likely offers some interpretive context but not an encyclopedic, globally renowned collection.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.artmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Billings; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:54:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "4062566804"
+      "phone": "4062566804",
+      "is_scoreable": true,
+      "content_summary": "In Billings, the Yellowstone Art Museum is a rewarding stop for travelers who want a focused, regionally grounded art experience. Expect a thoughtful mix of changing exhibitions and collection highlights that spotlight the visual culture of Montana and the greater Rocky Mountain West. It’s a museum where landscape, identity, and contemporary voices often take center stage—ideal for art lovers who enjoy discovering place-based art in an intimate setting with gallery time that feels unhurried and personal.",
+      "content_description": "Set in Billings, **Yellowstone Art Museum** offers a satisfying deep-dive into the art of its region, pairing an accessible scale with the kind of curatorial focus that rewards close looking. As a regional art museum, its strength is context: you’re not racing through encyclopedic wings, but spending quality time with works that speak to the Yellowstone River corridor, Montana’s big-sky horizons, and the cultural layers of the Northern Plains. Exhibitions typically balance historical perspectives with living artists—an approach that lets visitors track how themes like land, industry, and community evolve across generations.\n\nInside the galleries, look for thoughtful presentations of *Western American* and *contemporary* work, often anchored by imagery of the high plains and mountain front—where composition, light, and scale become the real subject. Rotating shows frequently bring in new media and current conversations, so repeat visits can feel genuinely fresh. The museum experience leans toward the contemplative: clear sightlines, manageable gallery loops, and interpretive text that helps non-specialists engage without overwhelming seasoned viewers.\n\nArchitecturally, the visit is typically defined by a clean, gallery-forward environment—designed to keep the focus on art while still feeling welcoming. For art-focused travelers, it’s an easy museum to pair with a day in downtown Billings: arrive with time to linger, catch a temporary exhibition, and leave with a sharper sense of how place shapes artistic language in the American Northwest.",
+      "content_highlights": [
+        "Regionally focused collection with strong ties to Montana and the greater Rocky Mountain West",
+        "Rotating exhibitions that balance historical context with contemporary artists and new media",
+        "Landscape-driven works exploring light, scale, and place—ideal for fans of Western American art",
+        "Intimate, unrushed gallery experience with visitor-friendly interpretation",
+        "A convenient cultural anchor for a downtown Billings itinerary, especially for art-first travelers"
+      ],
+      "content_generated_at": "2026-01-18T01:54:19Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-mt-great-falls-c-m-russell-museum",
@@ -312,7 +645,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -325,7 +658,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -348,10 +681,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Great Falls; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.cmrussell.org",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:03:05Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "4067278787"
+      "phone": "4067278787",
+      "is_scoreable": false,
+      "content_summary": "The **C.M. Russell Museum** in Great Falls is a must-visit for art enthusiasts and history buffs alike. Celebrated for its extensive collection of Western American art, the museum captures the essence of the American frontier through the eyes of Charles M. Russell, known as the 'Cowboy Artist.' Explore a unique blend of history, culture, and stunning artistry that brings the spirit of the West to life.",
+      "content_description": "**C.M. Russell Museum** is more than just a museum; it's a vibrant journey into the heart of the American West. The museum is dedicated to the remarkable life and work of Charles M. Russell, whose vivid depictions of cowboy life, Native American culture, and the vast Montana landscape have left a lasting impact on American art. With over 2,000 works, including paintings, sculptures, and sketches, visitors will be mesmerized by Russell's ability to capture the drama and beauty of the frontier in his signature *Romantic Realism* style. The museum also showcases artifacts from early settler life, giving a comprehensive view of the region's history. As you explore, you'll encounter pieces that tell stories of both the natural world and the people who inhabited it, all imbued with Russell's unmistakable passion for the outdoors.  \n\nIn addition to its impressive collection, the museum itself is an architectural gem, featuring a blend of *Western* and *modern design elements*. The spacious galleries are thoughtfully arranged to provide an immersive experience, allowing visitors to engage deeply with each artwork. Interactive exhibits and guided tours enhance the visitor experience, making this museum a preferred destination for families, school groups, and art lovers. Don't miss the unique gift shop, offering Western-themed books, art reproductions, and handcrafted items to take a piece of the West home with you. A visit to the **C.M. Russell Museum** is truly a must for anyone wanting to connect with America's rich artistic heritage and frontier history.",
+      "content_highlights": [
+        "Over 2,000 works by Cowboy Artist Charles M. Russell",
+        "A blend of Western and modern architectural design",
+        "Artifacts from early settler life in Montana",
+        "Engaging interactive exhibits and guided tours",
+        "Unique gift shop with Western-themed items"
+      ],
+      "content_generated_at": "2026-01-18T04:03:05Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-mt-helena-holter-museum-of-art",
@@ -371,7 +717,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -379,12 +725,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -393,22 +739,37 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia evidence is not about the museum’s collection (it describes Norman Holter), so Impressionist, Modern/Contemporary, and historical-context strengths cannot be determined. Based on the small-city location (Helena) and lack of nearby-museum signals, the museum is scored as primarily local in reputation and likely a small/limited-scope collection tier.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Helena; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4064426400"
+      "phone": "4064426400",
+      "is_scoreable": true,
+      "content_summary": "In Montana’s compact capital, the Holter Museum of Art offers a refreshingly intimate way to engage with contemporary creativity. Housed in a distinctive modern building downtown, the Holter is known for rotating exhibitions that spotlight regional voices alongside broader currents in modern and contemporary art. It’s an easy, rewarding stop for art lovers who enjoy close looking, conversations with place, and a museum experience that feels personal rather than overwhelming.",
+      "content_description": "Set in the walkable heart of Helena, the **Holter Museum of Art** is a small museum with outsized appeal for travelers who like their art encounters focused and thoughtfully curated. Rather than a vast encyclopedic collection, the Holter’s strength lies in **regularly changing exhibitions**—a model that keeps the galleries lively and makes repeat visits genuinely different. You’ll often find work rooted in Montana and the broader American West, presented in dialogue with contemporary concerns: material experimentation, identity, landscape, and the shifting boundaries between craft and fine art—touchpoints that resonate with *modern* and *contemporary* practice.\n\nThe building itself is part of the experience: a **distinctive contemporary structure** that signals the museum’s forward-looking mission. Inside, the scale encourages slow looking—close enough to appreciate surface, process, and technique without the fatigue that can come with bigger institutions. Expect a visitor experience that feels local and engaged: approachable staff, a calm pace, and galleries that invite you to track ideas across mediums, from painting and photography to sculpture and installation.\n\nFor art enthusiasts touring Helena, the Holter makes an ideal cultural anchor—pair it with downtown architecture and a coffee stop, then return when the next exhibition cycle lands. If you love discovering artists in the places that shape them, this museum delivers a concise, memorable encounter with the region’s creative pulse.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions with a strong Montana and regional focus",
+        "Intimate gallery scale designed for slow looking and close engagement with materials and technique",
+        "Distinctive modern architecture that complements the museum’s contemporary mission",
+        "Curatorial variety across media—painting, photography, sculpture, and installation (exhibition-dependent)",
+        "A relaxed downtown Helena visit that pairs easily with nearby dining, cafés, and walkable streets"
+      ],
+      "content_generated_at": "2026-01-18T01:54:47Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T04:03:05Z"
 }

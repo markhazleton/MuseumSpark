@@ -1,27 +1,27 @@
 {
   "state": "New Mexico",
   "state_code": "NM",
-  "last_updated": "2026-01-16T20:07:00.713990+00:00Z",
+  "last_updated": "2026-01-17T23:05:40Z",
   "museums": [
     {
       "museum_id": "usa-nm-unknown-516-arts",
       "country": "USA",
       "state_province": "New Mexico",
-      "city": null,
+      "city": "Albuquerque",
       "museum_name": "516 ARTS",
       "alternate_names": null,
       "website": "https://www.516arts.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "516 Central Ave SW, Albuquerque, NM 87102, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 35.08473,
-      "longitude": -106.65366,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "87102",
+      "latitude": 35.0844976,
+      "longitude": -106.6535695,
+      "place_id": "ChIJ_58jRccMIocRhFMA7FKaZuI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -29,12 +29,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
+      "reputation": 3,
       "collection_tier": null,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 4,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -43,43 +43,189 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about the state of New Mexico rather than 516 ARTS, and gives no evidence about the museum’s permanent collection or interpretive approach. Based only on the name and location (a single-venue contemporary-sounding arts organization in Albuquerque), it is most plausibly a local institution in reputation, but collection-related scores cannot be determined from the evidence.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://www.516arts.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing https://www.516arts.org: Network error for https://www.516arts.org: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5052421445"
+      "phone": "(505) 242-1445",
+      "website_google": "https://www.516arts.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 5:00 PM",
+          "Wednesday: 12:00 – 5:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 75,
+      "google_reviews": [
+        {
+          "author_name": "Tommy Tranquil",
+          "author_url": "https://www.google.com/maps/contrib/111501771448680912966/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-Yg9tswcaW0HpPxT1K3CuxICCcKWNHn3HImW2RLngQDcvpQo4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Awesome space, 2 floors, you may have to wait a few minutes to enter after hitting the doorbell but it’s worth it! The show up now is so good!",
+          "time": 1639678477,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Ruenitz",
+          "author_url": "https://www.google.com/maps/contrib/114420825174548984539/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5fKuGQzkeMWAXuGC7iaWgZ_1MTVm49bc4jyGRtz6KcPPmZO9HYg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "Interesting exhibition of 12 new Aartists of New Mexico. Great variety in concepts.",
+          "time": 1690083747,
+          "translated": false
+        },
+        {
+          "author_name": "Lex Onorato",
+          "author_url": "https://www.google.com/maps/contrib/100542028724185683107/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-uaLlgi7ucYin-5TJ3qAJAf_n3Y5GAfp2hgCt-Cl83CmqUPcm=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "516 Arts is a cutting edge gallery, presenting artwork that resonates with so many different demographics. I have enjoyed their last two shows immensely and appreciate their attention to detail. I also appreciate the variety of artists they bring in, very diverse. 5/5 stars",
+          "time": 1713064728,
+          "translated": false
+        },
+        {
+          "author_name": "Entonio Villarreal",
+          "author_url": "https://www.google.com/maps/contrib/115513285486125037582/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWcBYox3mFTVMaq0-2TtWEL7j63f4ZjIeE7XcSwPqrUD918v3R=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "First time going to an art museum. I've wanted to go since I was 20 yrs old I'm 45.. There wasn't much art. But I loved a few of them..I'll  be going to other art  museums,. It was free. I would of gladly paid 10 to 15",
+          "time": 1720119610,
+          "translated": false
+        },
+        {
+          "author_name": "Candy Nartonis",
+          "author_url": "https://www.google.com/maps/contrib/106050757819964377309/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVpwzODS9sTIzicJr86VR3NFDArYFB839luJxpJdqUdsyl_ifck=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "Do not miss a chance to see every exhibition (and program) produced by this stellar organization. The space lends itself to outstanding shows with multiple materials, including video and sound installations. The program is savvy and contemporary and yet it is thoughtful and socially conscious.  This is a special place in Albuquerque.",
+          "time": 1511307858,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "516 ARTS is Albuquerque’s pulse point for contemporary art—small in scale but big on ideas. Set in the city’s walkable Downtown/Arts District, it specializes in thoughtfully curated exhibitions that connect New Mexico’s creative energy with national and international conversations. Expect rotating shows that are timely, experimental, and often socially engaged, plus an intimate gallery experience where you can slow down and really look. It’s an essential stop for art lovers who enjoy discovery and fresh perspectives rather than a fixed “greatest hits” collection.",
+      "content_description": "**516 ARTS** is a contemporary art space in the heart of Albuquerque that rewards visitors who love the immediacy of *current practice*. Rather than a permanent collection, the museum’s strength is its **rotating exhibition program**—often showcasing artists working across painting, photography, installation, video, and mixed media. For travelers, that means each visit feels like a snapshot of what’s happening now, with shows that can move from visually immersive to conceptually sharp, frequently engaging themes relevant to the Southwest and the wider world.\n\nArchitecturally, the experience is defined by an **adaptable, gallery-forward interior** designed to let contemporary work breathe: clean sightlines, flexible walls, and lighting that supports everything from intimate works on paper to room-scale installations. The setting in Albuquerque’s central arts corridor makes it easy to pair with nearby creative destinations—galleries, design shops, and coffee spots—turning your museum stop into a broader urban art walk.\n\nFor art enthusiasts, the pleasure here is the **curatorial focus**: wall texts and programming tend to provide thoughtful context without overwhelming the work, and the smaller footprint encourages close looking and repeat visits. If you’re seeking the “right now” of art—new voices, experimental materials, and exhibitions you won’t see exactly the same way elsewhere—**516 ARTS** offers a concentrated, intellectually engaging museum experience that complements Albuquerque’s larger cultural institutions.",
+      "content_highlights": [
+        "Contemporary, rotating exhibitions—ideal for repeat visits and seeing what’s new in the art world",
+        "Strong emphasis on timely, idea-driven work across installation, photography, video, and mixed media",
+        "Intimate gallery scale that encourages close looking and unhurried viewing",
+        "Downtown Albuquerque location that pairs well with an arts-district walk (galleries, shops, cafés nearby)",
+        "Programs and interpretive materials that add context for art lovers without diluting the visual experience"
+      ],
+      "content_generated_at": "2026-01-18T02:09:08Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-albuquerque-museum-of-art-and-history",
       "country": "USA",
       "state_province": "New Mexico",
-      "city": "New Mexico",
+      "city": "Albuquerque",
       "museum_name": "Albuquerque Museum of Art and History",
       "alternate_names": null,
       "website": "http://www.cabq.gov/museum/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "2000 Mountain Road",
+      "street_address": "2000 Mountain Rd NW, Albuquerque, NM 87104, USA",
       "address_line2": null,
       "postal_code": "87104",
-      "latitude": 35.09717,
-      "longitude": -106.66796,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "latitude": 35.097595,
+      "longitude": -106.668247,
+      "place_id": "ChIJIwKlJdMMIocRrlcFgFzDozU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -87,56 +233,212 @@
       "tickets_url": "https://www.cabq.gov/culturalservices/biopark/tickets",
       "reservation_required": null,
       "accessibility_url": "https://www.cabq.gov/about/legal#accessibility-statement",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 4,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is dedicated to the art of the American Southwest and local/regional history; the evidence gives no indication of Impressionist holdings, so Impressionism is scored negligible. Modern/contemporary is likely present within Southwest-focused art but not described as a major strength. Its 400 years of Albuquerque history with permanent installations suggests solid historical interpretation, while overall scope appears regional/moderate rather than encyclopedic.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.cabq.gov/museum",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Mexico' from open data; MRD: computed city_tier=3 for New Mexico; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:09:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5052664227"
+      "phone": "(505) 243-7255",
+      "website_google": "http://albuquerquemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2593,
+      "google_reviews": [
+        {
+          "author_name": "Toby Pacheco",
+          "author_url": "https://www.google.com/maps/contrib/102032046812756451683/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUEMccxzsDH8OIMxsPgcTOF48B_nwN-5giGfAI_EM-73QQRrLoL=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Awesome museum with art sculptures, multiple educational theatres, and plenty of historical info. My favorite part was the Free old town tour at 11am. Dave was super cool and had lots of info about the town! Highly recommend. Free admission Sundays 9am-1pm.",
+          "time": 1754314444,
+          "translated": false
+        },
+        {
+          "author_name": "Joy Amore",
+          "author_url": "https://www.google.com/maps/contrib/106176584310131093043/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUnfQ3szgw-vZlrW3n8_OwSuas2VrZguq2lpWpaLQch4V4do0et=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I was pleased to be there, I notably remember the penguins. They have a lot of different animals including snakes, manettes, and giraffes. I really enjoyed my time there and recommend going.",
+          "time": 1763510575,
+          "translated": false
+        },
+        {
+          "author_name": "K G",
+          "author_url": "https://www.google.com/maps/contrib/113035771433430468668/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXN4-NgbFx0_3YmD3L5Og_VvWsSReBl3IKOK4Q1hkyYEd1ScyIl=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I have been going here for years.  Love their gift shop and the rotating exhibits.  The special\nFrida Kahlo and Diego Rivera exhibit in 2021 was spectacular.",
+          "time": 1763509539,
+          "translated": false
+        },
+        {
+          "author_name": "Mario Cestari",
+          "author_url": "https://www.google.com/maps/contrib/107910165171206961232/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXY8tFGMC8YspRteU-RNd-2OgIo5HeQbFHASqiEaymWPgoM1-B2zA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "6 months ago",
+          "text": "I do not remember the names of the rooms, but only two really represented what I used to expect from a city museum, the one about Albuquerque and the other one about the Library. But I think it is my fault, because all the rest is about the local artists and it is completely correct right? I really think it is, but unfortunately I also believe I don't know how to appreciate art, I simply don't know. I really loved some paintings, like the one with two indigenous, and some other ones, but the piece of concrete in the ground, I think I will never understand that. The seesaw is also incredible, a mix of sadness and genius.",
+          "time": 1751305107,
+          "translated": false
+        },
+        {
+          "author_name": "Dmitry Zinger",
+          "author_url": "https://www.google.com/maps/contrib/107703749729110253281/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIgcM1wCJNNL4XmjW4v3XxMgi_O1wUN8PXy-QJWp1Ww-yPAyg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "We visited the Albuquerque Museum today and were absolutely impressed. This place is a treasure trove of art, culture, and history. The exhibitions are thoughtfully curated, covering everything from the region’s rich cultural past to striking contemporary pieces. I loved the mix of beautiful paintings, striking sculptures, and historical artifacts that bring New Mexico’s diverse stories to life.\n\nThe entire space is clean, bright, and beautifully maintained — truly a pleasure to walk through. Even the bathrooms were spotless, which is always a plus. The staff were incredibly friendly, welcoming, and happy to answer questions, making the whole experience even more enjoyable.\n\nOne thing I particularly appreciated was how accessible and well laid out the museum is. It’s easy to navigate, with plenty of benches and spots to pause and take everything in. The sculpture garden is a peaceful oasis, and the rotating exhibitions add something fresh for repeat visits.\n\nIf you're in Albuquerque, this museum is a must-see. Whether you're an art lover, history buff, or just looking for a relaxing, enriching afternoon, the Albuquerque Museum delivers. Can’t wait to return!",
+          "time": 1745101838,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "In the heart of Old Town, the Albuquerque Museum of Art and History offers one of New Mexico’s most rewarding deep-dives into the art, culture, and visual imagination of the Southwest. Expect a well-curated mix of regional fine art, photography, and material culture that connects Indigenous traditions, Spanish colonial legacies, and modern Albuquerque. It’s an ideal stop for art lovers who want context as much as beauty—plus serene outdoor spaces and an easy, walkable pairing with nearby historic sights.",
+      "content_description": "**Albuquerque Museum of Art and History** is a smart first stop for anyone trying to understand how the Southwest looks—and why. Set beside Albuquerque’s historic Old Town, the museum frames regional creativity within a larger story of place: Indigenous presence, the Spanish colonial era, and the city’s evolution into a modern cultural hub. The galleries reward close looking, with an emphasis on art made in and about New Mexico—think *Southwestern modernism*, landscape traditions shaped by high desert light, and photography that documents (and questions) the region’s myths.\n\nThe collection is strongest when it leans into Albuquerque and New Mexico narratives: regional painting and sculpture, works on paper, and rotating exhibitions that often spotlight local artists and timely themes. For art enthusiasts, the pleasure is in the contrasts—historic objects and visual culture alongside modern and contemporary approaches—offering a layered view of how identity and environment get translated into form.\n\nArchitecturally and experientially, the museum is designed for an unhurried visit. **Clean-lined gallery spaces**, **courtyard-style outdoor areas**, and a calm, museum-forward layout make it easy to focus on the work without distraction. Plan to spend time moving between galleries and open-air pauses, then step back into Old Town for adobe architecture, plazas, and a broader sense of the setting that so much Southwestern art tries to capture.",
+      "content_highlights": [
+        "A focused window into New Mexico and Southwest art, from landscape traditions to contemporary regional voices",
+        "Rotating exhibitions that frequently spotlight Albuquerque-based artists and culturally specific themes",
+        "Old Town location—easy to pair with historic adobe architecture, plazas, and nearby cultural sites",
+        "A balanced art-and-history approach that helps visitors read the region’s imagery with deeper context",
+        "Relaxed gallery flow with courtyard-style outdoor breaks, ideal for a reflective, art-centered visit"
+      ],
+      "content_generated_at": "2026-01-18T02:09:21Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-bosque-redondo-memorial-at-fort-sumner",
       "country": "USA",
       "state_province": "New Mexico",
-      "city": null,
+      "city": "Fort Sumner",
       "museum_name": "Bosque Redondo Memorial at Fort Sumner",
       "alternate_names": null,
       "website": "http://www.bosqueredondomemorial.com/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "3647 Billy the Kid Rd, Fort Sumner, NM 88119, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "88119",
+      "latitude": 34.402284,
+      "longitude": -104.196043,
+      "place_id": "ChIJs1aGLp7-HIcR6-Kb6BS2glQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -150,7 +452,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -166,14 +468,160 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.bosqueredondomemorial.com"
+        "http://www.bosqueredondomemorial.com",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:09:03Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "phone": "(575) 355-2573",
+      "website_google": "http://www.nmhistoricsites.org/bosque-redondo",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 220,
+      "google_reviews": [
+        {
+          "author_name": "Mike Gayette",
+          "author_url": "https://www.google.com/maps/contrib/103163301352463212298/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjULzr3ITLBeJZcg_o8Spchoo9I2WYcEqmv3kLJUP_oMqdZQl8X82Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I assume I am like a lot of people who didn't realize this monument existed until I drove out to see the Billy the Kid gravesite. It is definitely worth a visit. Many rooms of powerful artwork storytelling. These are parts of American History we all need to know.",
+          "time": 1763520784,
+          "translated": false
+        },
+        {
+          "author_name": "Mark Mulvaney",
+          "author_url": "https://www.google.com/maps/contrib/117013313652234376881/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKvw6vuWzc9dg6ZGl34R1XIiG3foQGq8B4_zEl3uhDXQaqSoA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "You need to come here to feel and see the story of how Native Americans were treated. The museum is amazing as is the outside long walk.  Most come here to see Billy the Kid's grave. if you miss this you will be disappointed.  Veterans get free admission",
+          "time": 1760056146,
+          "translated": false
+        },
+        {
+          "author_name": "AED",
+          "author_url": "https://www.google.com/maps/contrib/114156273970831808153/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWByWxuzWaTUY3NTTG5uIOs5xNSgUbpsgbX-aK5BITCB01HC2Uf=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "A devastating and beautiful memorial mainly about the long walk of diné and ndé peoples. So happy I had time to stop here and walk through the exhibit. Definitely worth the $7 with how powerful it is. I left pretty much speechless. Good selection of books at the gift shop, too.",
+          "time": 1756739620,
+          "translated": false
+        },
+        {
+          "author_name": "Dawne Kriho",
+          "author_url": "https://www.google.com/maps/contrib/104545728517225648484/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIcp2EVC1oI-94aBVoEKWiTJComoDtZx0gpbKm0r_dNeFJHrw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "2 months ago",
+          "text": "Museum and visitor center are closed until Wednesday morning, but we were able to see Billy the Kid's grave.",
+          "time": 1762806010,
+          "translated": false
+        },
+        {
+          "author_name": "Louis and Elaine",
+          "author_url": "https://www.google.com/maps/contrib/111341191635673349312/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXA1luT6PYSmhPeXj9_zIf_Iq0pcsEE7B1VXmRvHiQVWPsn0TdQPA=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "The Bosque Redondo Memorial at Fort Sumpter is a very sobering place. The museum and memorial tells the story of two indigenous American tribes that were relocated and held here from 1863-1868. Many died from the deplorable conditions and lack of food. A well done museum with interesting displays.",
+          "time": 1750043897,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Bosque Redondo Memorial at Fort Sumner offers a poignant insight into a pivotal moment in American history. This unique museum commemorates the forced relocation of the Navajo and Mescalero Apache peoples, providing visitors a deep understanding of their resilience and cultural heritage. Experience interactive exhibits and artifacts that shed light on this tragic chapter.",
+      "content_description": "**Bosque Redondo Memorial at Fort Sumner** stands as a solemn reminder of the challenges faced by the Navajo and Mescalero Apache during the Long Walk. This museum is not just a collection of artifacts; it is a place of reflection and learning. Visitors are immersed in the historical context of the forced relocation, gaining an unprecedented view into the lives of the individuals who endured this hardship. The thoughtful design of the museum encourages a personal connection, inviting guests to contemplate the consequences of these historical events through both art and narrative.  Each exhibit is carefully curated to highlight resilience and cultural significance, ensuring all who visit leave with a greater respect for Native American history and culture.  The museum also features interactive displays that engage visitors in a deeper exploration of the Native experience, complementing the narrative with voices from the past. Discover artifacts that tell stories of survival, resistance, and the enduring spirit of the Navajo and Apache people.  Fun educational programs and guided tours enhance the visitor experience, providing context and enriching your understanding of the events that transpired at Bosque Redondo.  A visit here is not only educational but also a chance to reflect on the ongoing journey of these communities, making it a meaningful stop on any New Mexico itinerary.",
+      "content_highlights": [
+        "Thought-provoking exhibits on the Long Walk",
+        "Interactive installations that engage visitors",
+        "Artifacts telling stories of Navajo and Apache resilience",
+        "Educational programs and guided tours available",
+        "Beautifully designed memorial grounds for reflection"
+      ],
+      "content_generated_at": "2026-01-18T04:09:03Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-corrales-arts-center",
@@ -206,7 +654,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -227,9 +675,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:09:13Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "Nestled in the charming village of Corrales, New Mexico, the **Corrales Arts Center** serves as a vibrant focal point for local culture and creativity. Highlighting a diverse range of artistic expressions, this unique center fosters community engagement and offers visitors an intimate glimpse into the artistic spirit of the region. It's a must-visit for art enthusiasts and those looking to connect with the local arts scene.",
+      "content_description": "**The Corrales Arts Center** is more than just a venue for artistic display; it is a thriving hub that embodies the rich artistic heritage of Northern New Mexico. Established in a picturesque setting, this center hosts a variety of art exhibitions, workshops, and cultural events that celebrate local talent and creativity. Visitors are immersed in an environment where contemporary art coexists with traditional forms, reflecting the diverse culture of Corrales itself. The center frequently showcases works by local artists, illustrating not only their unique styles but also the influence of the Southwestern landscape and heritage on their craft. Whether you're an art aficionado or a casual visitor, you're sure to find inspiration in the pieces displayed within these walls.  The **Corrales Arts Center** is characterized by its commitment to community and collaboration. The center plays host to various educational programs aimed at inspiring young artists and nurturing creativity in all ages. This engaging approach allows guests to participate in workshops and community events, making it an active part of the artistic life in Corrales. Beyond the artwork, the atmosphere at the center is inviting and warm, urging visitors to linger and connect with the exhibits and artists.*  The architectural design of the center harmonizes with its surroundings, featuring earthy tones and artistic embellishments that reflect the natural beauty of the region. This tranquil environment enhances the overall visitor experience, making it a perfect place to not only appreciate art but to engage with it on a personal level. Whether strolling through the gallery or attending a workshop, each visit to the **Corrales Arts Center** offers a unique opportunity to delve deeper into the world of art and creativity, all while fostering connections with the community that thrives there.",
+      "content_highlights": [
+        "Rotating exhibitions showcasing local artists' work",
+        "Interactive workshops for all ages to foster creative expression",
+        "A warm, community-focused atmosphere that encourages engagement",
+        "Architectural design reflecting the beauty of the surrounding landscape",
+        "Cultural events that celebrate the rich heritage of Corrales"
+      ],
+      "content_generated_at": "2026-01-18T04:09:13Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-e3-children-s-museum-science-center",
@@ -262,7 +723,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -283,9 +744,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:09:22Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "The E3 Children’s Museum & Science Center is a delightful space where curiosity thrives. Tailored for young explorers, this interactive museum empowers children to learn through play and discovery. With hands-on exhibits and creative workshops, it’s a must-visit destination for families seeking an engaging educational experience.",
+      "content_description": "**E3 Children’s Museum & Science Center** invites families to embark on a journey of exploration and discovery, making science accessible and fun for the youngest minds. This unique museum stands out for its dedication to fostering a love for learning through interactive exhibits that stimulate curiosity and creativity. Children can dive into a world where they can experiment, play, and truly engage with science and art, laying the groundwork for lifelong learning and inquisitiveness. The museum’s family-friendly atmosphere ensures that every visit is a new adventure, filled with laughter and learning side-by-side.  \n\nVisiting **E3** is not just about watching; it’s about participating! Every corner of the museum is designed with hands-on activities in mind. Whether it's through engaging science experiments, imaginative artistic creations, or collaborative projects, young visitors can dive into learning experiences that emphasize the importance of inquiry and problem-solving. The museum’s layout itself encourages exploration, creating an inviting space where families can question, discover, and connect with scientific concepts while also enjoying the arts. During special events and workshops, children can further ignite their creativity, making every trip memorable. With an emphasis on interactive learning and community involvement, **E3 Children’s Museum & Science Center** is a treasure trove of fun waiting to be discovered by curious minds of all ages.",
+      "content_highlights": [
+        "Hands-on science exhibits promoting exploration",
+        "Creative workshops that encourage artistic expression",
+        "Interactive learning experiences tailored for young children",
+        "Community events designed to foster collaboration",
+        "Family-friendly atmosphere perfect for learning through play"
+      ],
+      "content_generated_at": "2026-01-18T04:09:22Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-el-rancho-de-las-golondrinas",
@@ -305,7 +779,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -318,7 +792,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -340,10 +814,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Santa Fe County' from open data; MRD: computed city_tier=3 for Santa Fe County; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:09:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5054712261"
+      "phone": "5054712261",
+      "is_scoreable": false,
+      "content_summary": "El Rancho de las Golondrinas is a living history museum that immerses visitors in the rich tapestry of New Mexico's cultural heritage. Set against the stunning backdrop of Santa Fe County, this museum offers a unique opportunity to experience the traditions, crafts, and lifestyle of the region's early settlers. A true gem for history enthusiasts and families alike!",
+      "content_description": "**El Rancho de las Golondrinas** is not just a museum; it is a vibrant portal to the past, inviting visitors to explore the daily lives of 18th and 19th-century New Mexicans. Nestled in the picturesque landscapes of Santa Fe County, this living history museum is spread across several acres of beautifully restored adobe buildings, each meticulously designed to reflect the architectural style of the era. As you wander through this enchanting space, you will encounter traditional farming techniques, artisanal crafts, and engaging reenactments that breathe life into history. It's a place where every corner echoes the stories of its past, making it an educational and emotional journey for all ages.  \n\nAt **El Rancho de las Golondrinas**, visitors can participate in interactive demonstrations, such as *weaving*, *pottery*, and even historical cooking. These hands-on experiences allow guests to connect with the cultural heritage of the region in a profound way. During special events, you might witness lively folk music and dance performances that showcase the rich cultural mosaic of New Mexico. This vibrant programming is designed to educate and entertain, ensuring an unforgettable experience that resonates long after your visit. Whether you are a history buff or simply seeking a beautiful day outdoors, **El Rancho de las Golondrinas** promises a unique encounter with the past that is both inspiring and engaging.",
+      "content_highlights": [
+        "Authentic adobe buildings recreating early settler life",
+        "Interactive craft demonstrations, including weaving and pottery",
+        "Stunning landscapes and historical gardens",
+        "Cultural performances featuring traditional music and dance",
+        "Seasonal events that celebrate local traditions and history"
+      ],
+      "content_generated_at": "2026-01-18T04:09:32Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-farmington-museum",
@@ -363,7 +850,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -376,7 +863,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -398,10 +885,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:09:41Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5055991179"
+      "phone": "5055991179",
+      "is_scoreable": false,
+      "content_summary": "The **Farmington Museum** is a captivating blend of history, culture, and art that showcases the rich heritage of the Four Corners region. From engaging exhibits on local history to vibrant displays of contemporary art, this museum is a cultural cornerstone that invites exploration and inspires curiosity, making it an essential stop for any traveler in the area.",
+      "content_description": "**Farmington Museum** is not just a collection of artifacts; it is a vital part of the community that brings to life the stories and traditions of the Four Corners region. Nestled in the heart of Farmington, New Mexico, this museum offers visitors a chance to immerse themselves in the captivating history of the area from prehistoric times to the present day. The architecture itself reflects a modern sensibility while also paying homage to the region's historical roots, providing an inviting atmosphere for all who step through its doors. Visitors can stroll through various galleries that highlight the area's rich Native American heritage, complete with meaningful artifacts, textiles, and innovative art pieces that bridge the past with contemporary narratives.  As you explore, you’ll discover the artistic evolution through the lens of local artists, making every visit a unique experience.  Whether it’s a stunning piece of pottery or a thought-provoking contemporary display, each exhibit tells a story waiting to be uncovered.  In addition to its permanent collections, the **Farmington Museum** hosts rotating exhibitions, community events, and educational programs that engage the local populace and visitors alike.  There is always something new to see and learn, reinforcing the museum's role as a dynamic cultural hub.  Families will find hands-on activities and educational resources, ensuring that visitors of all ages have a memorable experience.  A visit to the **Farmington Museum** is more than just a trip to a museum; it’s an opportunity to connect with the heart and spirit of the region, making it an unforgettable part of your travel itinerary.",
+      "content_highlights": [
+        "Rich Native American heritage exhibits",
+        "Innovative displays of contemporary local art",
+        "Engaging hands-on activities for families",
+        "Rotating exhibitions showcasing regional culture",
+        "Architecturally inviting space that reflects local history"
+      ],
+      "content_generated_at": "2026-01-18T04:09:41Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-iaia-museum-of-contemporary-native-arts",
@@ -421,7 +921,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -434,7 +934,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -456,10 +956,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Santa Fe' from open data; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.iaia.edu/museum; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:09:49Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "8889224242"
+      "phone": "8889224242",
+      "is_scoreable": false,
+      "content_summary": "Nestled in the heart of Santa Fe, the **IAIA Museum of Contemporary Native Arts** is a groundbreaking institution dedicated to showcasing contemporary Indigenous art. With its innovative exhibitions and robust educational programs, this museum provides a unique lens into the vibrant lives and cultures of Native artists, making it a must-visit for anyone interested in contemporary art and cultural heritage.",
+      "content_description": "**IAIA Museum of Contemporary Native Arts** stands out as a vital hub for Indigenous creativity and cultural expression. Established by the Institute of American Indian Arts, this museum not only houses an impressive collection of contemporary Native artwork but also serves as a platform for dialogue around the significance and evolution of Indigenous art forms. Visitors will be captivated by the stunning diversity of media represented, from traditional pottery and beadwork to modern photography and large-scale installations. Each artwork tells a story, offering insights into the rich tapestry of Native American experiences today.  With its focus on contemporary artists, the museum provides a fresh perspective that challenges preconceptions and celebrates the dynamic nature of Native cultures.  The architecture of the museum itself is a work of art; its design reflects the surrounding landscape and Indigenous heritage—creating a seamless blend between nature and culture.  Many exhibitions rotate throughout the year, ensuring that every visit can reveal something new and thought-provoking.  The museum also offers engaging educational programs and workshops, inviting visitors to explore their own creativity while connecting with Native art techniques.  In addition to its permanent collection, the museum features guest artists and contemporary exhibits that push the boundaries of traditional and modern art.  A visit to the **IAIA Museum of Contemporary Native Arts** is more than just a museum experience—it's an opportunity to engage with the living traditions of Native peoples in a space that honors their past while celebrating their future.",
+      "content_highlights": [
+        "Innovative exhibitions of contemporary Indigenous art",
+        "Diverse collection showcasing various media, including pottery, photography, and installations",
+        "Educational programs and workshops on Native art techniques",
+        "Beautiful architecture that harmonizes with the landscape",
+        "Rotating guest artist showcases that highlight current art trends"
+      ],
+      "content_generated_at": "2026-01-18T04:09:49Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-lincoln-historic-site",
@@ -492,7 +1005,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -513,9 +1026,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Lincoln County' from open data; MRD: computed city_tier=3 for Lincoln County; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.nmmonuments.org/Lincoln; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:09:58Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The **Lincoln Historic Site** offers a captivating glimpse into the heart of 19th-century life in New Mexico. With its preserved historic adobe buildings and engaging living history programs, visitors can step back in time and experience the rich cultural tapestry of the region that once welcomed settlers, cattle ranchers, and artists alike.",
+      "content_description": "**Lincoln Historic Site** serves as a remarkable portal to the past, highlighting the significance of the town of Lincoln during the tumultuous days of the Old West. Nestled in the high desert of New Mexico, this quaint community is famous for its *Adobe architecture*, encapsulating the charm and hardships of frontier life. The site features specific *historic structures*, including the notorious Lincoln County Courthouse, where the infamous conflict surrounding Billy the Kid unfolded. As you explore the grounds, you’ll be transported to a time when lawmen and outlaws dictated the rhythm of daily life in this frontier town. Visitors can engage with knowledgeable guides dressed in period costumes, adding an immersive layer to the historical narrative. From reenactments of pivotal events to storytelling sessions filled with local folklore, each visit promises a unique insight into the *cultural heritage* of the area. Additionally, the site hosts various seasonal events that celebrate local traditions, arts, and crafts, fostering a deeper understanding of the community's history. With its meticulously preserved buildings and the surrounding rugged landscapes, **Lincoln Historic Site** not only educates but inspires a fascination with New Mexico’s storied past. Whether you are a history enthusiast or a curious traveler, this site uniquely combines education with adventure, making it an essential stop on any trip through the Southwest.",
+      "content_highlights": [
+        "Historic Adobe buildings from the 1800s",
+        "Site of the infamous Lincoln County War",
+        "Engaging living history programs with period-costumed interpreters",
+        "Seasonal events celebrating local traditions",
+        "Scenic views of the surrounding high desert landscape"
+      ],
+      "content_generated_at": "2026-01-18T04:09:58Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-los-alamos-history-museum",
@@ -535,7 +1061,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -548,7 +1074,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -570,10 +1096,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Bathtub Row Los Alamos' from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:10:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "5056626272"
+      "phone": "5056626272",
+      "is_scoreable": false,
+      "content_summary": "The **Los Alamos History Museum** offers a unique glimpse into a pivotal moment in history, showcasing the transformative era of the Manhattan Project and the development of nuclear science. Located on historic Bathtub Row, this museum provides engaging exhibits, fascinating stories, and artifacts that connect visitors to the rich heritage of Los Alamos. It’s an essential stop for history buffs and curious travelers alike.",
+      "content_description": "**Los Alamos History Museum** is more than just a collection of artifacts; it is a portal to an extraordinary chapter in American history. Nestled on the iconic Bathtub Row, this historic preservation site was once home to the scientists of the Manhattan Project, making it a significant location in the narrative of World War II and the Cold War. Visitors will dive deep into the complexities of scientific innovation and its implications, experiencing firsthand the delicate balance of progress and ethical responsibility. The museum's exhibitions bring these historical events to life through *interactive displays*, personal narratives, and carefully curated artifacts that reveal the human stories behind the technology.  \n\nArchitecturally, the **Los Alamos History Museum** itself is a charming blend of history and modernity, featuring original structures that hark back to the town's early years alongside contemporary spaces designed to enhance your visit. As visitors wander through the picturesque grounds, they're invited to contemplate the roles played by scientists and the local community in shaping not only Los Alamos but the world. The museum’s knowledgeable staff offer tours and insights, ensuring each guest leaves with a deeper understanding of the town's vital contribution to science and history. An array of event programs, lectures, and workshops further enrich the visitor experience, making every trip to the **Los Alamos History Museum** memorable and enlightening.",
+      "content_highlights": [
+        "In-depth exhibits on the Manhattan Project and its impact",
+        "Artifacts from early 20th-century Los Alamos",
+        "The original homes of Manhattan Project scientists on Bathtub Row",
+        "Interactive displays that engage visitors in scientific concepts",
+        "Educational programs and workshops for all ages"
+      ],
+      "content_generated_at": "2026-01-18T04:10:07Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-los-luceros-historic-property",
@@ -606,7 +1145,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -627,9 +1166,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Camino Lejo Santa Fe' from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:10:15Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "Nestled in the enchanting landscape of Santa Fe, the **Los Luceros Historic Property** offers a unique glimpse into New Mexico's rich cultural heritage. This museum is a serene sanctuary that blends natural beauty with historical significance, making it a must-visit destination for anyone seeking a tranquil exploration of the region's past.",
+      "content_description": "**Los Luceros Historic Property** is a hidden gem that invites visitors to immerse themselves in the captivating history and culture of New Mexico. Spanning over 400 acres along the picturesque Rio Grande, this historic site offers breathtaking views and a peaceful retreat that contrasts with the bustling energy of nearby Santa Fe. The property is home to a charming adobe-style ranch house that dates back to the Spanish Colonial period, showcasing stunning *Adobe architecture* that tells stories of the past through its walls. Guests can explore the well-preserved grounds, which include lush gardens and historical structures, revealing the region's rich agricultural and cultural legacy.  Visitors will find themselves captivated by the serene atmosphere, fostering a deeper connection to the historical significance of the land. As you stroll through the gardens, take in the vibrant local flora that reflects the traditional *Acequia* farming systems still in use today. The site’s restoration depicts a harmonious blend of history and environment, a testament to the enduring spirit of the New Mexico landscape. Attractions within the grounds are ideal for casual strolls, photography, or simply enjoying a moment of reflection away from everyday life. Guided tours are available, deftly narrated to illuminate the stories of early settlers and the customs that shaped their lives, bringing the local history to life in an engaging way. Whether you're a history buff, nature enthusiast, or simply looking for a peaceful getaway, the **Los Luceros Historic Property** has something unique to offer for everyone.  ",
+      "content_highlights": [
+        "Stunning adobe-style ranch house from the Spanish Colonial period",
+        "Breathtaking views of the Rio Grande landscape",
+        "Guided tours that bring local history to life",
+        "Lush gardens showcasing native flora and traditional agricultural practices",
+        "Tranquil atmosphere ideal for reflection and relaxation"
+      ],
+      "content_generated_at": "2026-01-18T04:10:15Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-maxwell-museum-of-anthropology",
@@ -649,7 +1201,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -662,7 +1214,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 4,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -684,10 +1236,11 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Albuquerque' from open data; MRD: computed city_tier=1 for Albuquerque; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-17T22:59:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
-      "phone": "5052774405"
+      "phone": "5052774405",
+      "is_scoreable": false
     },
     {
       "museum_id": "usa-nm-unknown-national-hispanic-cultural-center",
@@ -707,7 +1260,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -720,7 +1273,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 4,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -742,29 +1295,42 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Albuquerque' from open data; MRD: computed city_tier=1 for Albuquerque; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:11:06Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5052462261"
+      "phone": "5052462261",
+      "is_scoreable": false,
+      "content_summary": "The National Hispanic Cultural Center is a vibrant showcase of Hispanic art, culture, and heritage, offering an immersive experience through its innovative exhibits, educational programs, and stunning architecture. A must-visit in Albuquerque, this center connects visitors with the rich tapestry of Hispanic contributions to American culture.",
+      "content_description": "**The National Hispanic Cultural Center** (NHCC) in Albuquerque is a unique institution dedicated to the preservation and promotion of Hispanic culture, arts, and history. Established in 2000, this center creates a welcoming space where visitors can explore the diverse expressions of Hispanic identity through various mediums, including visual arts, performing arts, and literature. The center’s design is a harmonious blend of traditional and contemporary architectural elements, featuring colorful courtyards and breathtaking plazas that invite visitors to wander and reflect on the cultural landscape of New Mexico.  \n\nInside, the NHCC houses several galleries showcasing rotating and permanent exhibitions that highlight the contributions of Hispanic artists and communities. From the *vibrant mural paintings* that echo the rich histories of Latin American heritage to the cutting-edge *installations* that engage contemporary themes, each exhibit offers a unique opportunity to connect with the beliefs and traditions that shape the Hispanic experience. Additionally, the center hosts live performances, educational workshops, and cultural celebrations, further enriching the visitor experience and fostering community engagement.\n\nA visit to the **National Hispanic Cultural Center** is not just about viewing art; it is about immersion into a dynamic cultural dialogue. From the striking architectural details that pay homage to Hispanic traditions to the engaging programming that invites participation, every aspect of the NHCC is designed to inspire, educate, and entertain. Whether you're a history buff, an art enthusiast, or simply curious about Hispanic culture, the NHCC promises a thought-provoking and uplifting experience that you won't soon forget.",
+      "content_highlights": [
+        "Rotating exhibitions featuring contemporary and historical Hispanic art",
+        "Outdoor amphitheater hosting cultural performances and events",
+        "Vibrant courtyard spaces for community engagement and reflection",
+        "State-of-the-art film and media center focused on Hispanic filmmakers",
+        "Extensive library and archive dedicated to Hispanic heritage"
+      ],
+      "content_generated_at": "2026-01-18T04:11:06Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-riverside-nature-center",
       "country": "USA",
       "state_province": "New Mexico",
-      "city": "Texas",
+      "city": "Farmington",
       "museum_name": "Riverside Nature Center",
       "alternate_names": null,
       "website": "https://www.fmtn.org/252/Riverside-Nature-Center",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "800 Municipal Drive",
+      "street_address": "135 N Browning Pkwy, Farmington, NM 87402, USA",
       "address_line2": null,
-      "postal_code": "87401",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "87402",
+      "latitude": 36.7337559,
+      "longitude": -108.1715309,
+      "place_id": "ChIJQZF0k2ePO4cRkHDjfHDw-ZU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": null,
       "primary_domain": "Science",
       "topics": null,
@@ -778,7 +1344,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -794,34 +1360,190 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.fmtn.org/252/Riverside-Nature-Center"
+        "https://www.fmtn.org/252/Riverside-Nature-Center",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Texas' from open data; MRD: computed city_tier=3 for Texas; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:11:13Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "phone": "(505) 599-1422",
+      "website_google": "https://www.farmingtonnm.gov/naturecenter",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: 9:00 AM – 4:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 69,
+      "google_reviews": [
+        {
+          "author_name": "Laurie Estes",
+          "author_url": "https://www.google.com/maps/contrib/102962094864077639645/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-cCaBmorLF5AKqAvP--oI42ETZDlM_E7qtSTXKTTJ0rLb5xg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Oh my goodness! This place is wonderful! The classes that Ms Sherri does are amazing and all inclusive! Watching goslings grow into geese has been a delight! Thank you Farmington for fund the center AND the learning program!!!",
+          "time": 1753454939,
+          "translated": false
+        },
+        {
+          "author_name": "Rudy Aragon",
+          "author_url": "https://www.google.com/maps/contrib/116363168529146248110/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIrdqTYlwqCk5AxizH_ZSoKbXibxxJTkoHxOP7Iamd0FUfsCg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "It's very beautiful and a great place to keep in touch with nature",
+          "time": 1760468022,
+          "translated": false
+        },
+        {
+          "author_name": "Annie Moore",
+          "author_url": "https://www.google.com/maps/contrib/110567484738828092952/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJJm9bGzDt6ExzR7vleRPNYcC5wy4smmj4bK3vOVM3Z1tcN0YoZw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Sweet gem in the middle of a city. Pond view, nice little book shop for nature books and native jewelry.",
+          "time": 1739557594,
+          "translated": false
+        },
+        {
+          "author_name": "Jeepgirl173",
+          "author_url": "https://www.google.com/maps/contrib/105530394939697261194/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWR-Qu1dCBf2kVzm2BkhzKmdFQFKvtejnB4GTn60XB_T-1zNVsS-g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "8 months ago",
+          "text": "It was a decent place. Quiet with some deer, geese, and ducks. Someone walked their dog along the water and scared the deer though. Restrooms were okay besides the dead cockroach sitting by the employees only door. Observation area was kept sort of cool while the rest of the building was on the warm side. Lady at the desk was very nice and helpful. You can tell she loves her job and it's always nice to see that. Interacted very well with our two year old and indulged in the toddler enthusiasm.",
+          "time": 1745361258,
+          "translated": false
+        },
+        {
+          "author_name": "Margie Johnson",
+          "author_url": "https://www.google.com/maps/contrib/114453469808743822921/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVieKWZv5D0CXAkxuyaHDkuib2EREMzWDADhit05Nxrt8YrqNHi=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Beautiful, wildlife abouts in morning and evening. Great place to walk or ride bikes!",
+          "time": 1697902088,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Nestled in the heart of Farmington, the **Riverside Nature Center** offers a serene escape into the natural world, making it a must-visit destination for nature enthusiasts and curious travelers alike. This center beautifully merges education and exploration, allowing visitors to connect with local ecosystems and wildlife sustainably.",
+      "content_description": "**Riverside Nature Center** is not just a museum; it's an immersive experience that invites you to explore the wonders of nature. Located alongside the scenic waterways of Farmington, this center showcases the diverse ecosystems found in the region. Through various exhibits and immersive displays, visitors can gain a deeper understanding of the local flora and fauna while enjoying interactive educational programs that foster environmental stewardship. Whether you're an avid birdwatcher or simply someone looking to enjoy the tranquility of nature, this center caters to all interests and ages.  \n\nThe architecture of the **Riverside Nature Center** harmoniously integrates with its surrounding landscape, offering panoramic views that draw visitors outside for hands-on learning. Trails meander through the grounds, encouraging guests to engage directly with the area's natural beauty. Guided tours are available, providing insights into the rich biodiversity that thrives in the region. Seasonal events often showcase local wildlife, from delightful butterflies to captivating native plants, allowing for an ever-changing experience. Embrace the opportunity to reconnect with nature here—there's something wonderful around every bend!  ",
+      "content_highlights": [
+        "Interactive exhibits showcasing local ecosystems",
+        "Scenic trails for hands-on nature experiences",
+        "Educational programs focused on wildlife conservation",
+        "Stunning views of natural landscapes",
+        "Seasonal wildlife observation events"
+      ],
+      "content_generated_at": "2026-01-18T04:11:13Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-roswell-museum-and-art-center",
       "country": "USA",
       "state_province": "New Mexico",
-      "city": "New Mexico",
+      "city": "Roswell",
       "museum_name": "Roswell Museum and Art Center",
       "alternate_names": null,
       "website": "https://roswell-nm.gov/308/Roswell-Museum-Art-Center",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1011 N. Richardson Ave.",
+      "street_address": "1011 N Richardson Ave, Roswell, NM 88201, USA",
       "address_line2": null,
       "postal_code": "88201",
-      "latitude": 33.39705,
-      "longitude": -104.52677,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "latitude": 33.404179,
+      "longitude": -104.5236683,
+      "place_id": "ChIJyeYRmuBu4oYRGjDZJQEQG5M",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -829,12 +1551,12 @@
       "tickets_url": "https://www.facebook.com/rmacroswell/",
       "reservation_required": null,
       "accessibility_url": "https://roswell-nm.gov/accessibility",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -843,43 +1565,124 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the museum's permanent art holdings, so Impressionist, Modern/Contemporary, and historical-context scores cannot be reliably inferred. Based on the small-city setting and the museum being framed as a local attraction (including a Goddard-related exhibit), it is most plausibly a local institution with a small-to-limited collection scope.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://roswell-nm.gov/308/Roswell-Museum-Art-Center",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Mexico' from open data; MRD: computed city_tier=3 for New Mexico; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5756246744"
+      "phone": "(575) 624-6744",
+      "website_google": "https://roswell-nm.gov/1259/Roswell-Museum",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.5,
+      "google_reviews_count": 235,
+      "google_reviews": [
+        {
+          "author_name": "Justin Thomsen",
+          "author_url": "https://www.google.com/maps/contrib/100479239083017631744/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV0t7XC4zWiwJA5gXKI2A2LVEm6mlWAALfP-IGKf3RZ7oniAPUCeQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "If you are going to this museum for primarily extraterrestrial related exhibits than you should really save your time and money. Now that is not to say that this museum was a waste of time. The museum was very clean and had excellent exhibits. There were a number of exhibits regarding Native Americans, weapons and the first rockets ever launched by the United States. There is also a very exciting planetary laser show in the auditorium at the museums entrance. The show is held several times a day at set times that you will be informed of at the front desk. There is also a fair amount of interesting art that is on display there. Roswell sure had a lot of extraterrestrial paraphernalia in the town but things like this museum teach you little more about the town. I believe you and your family will have a fun time navigating the exhibits.",
+          "time": 1731399553,
+          "translated": false
+        },
+        {
+          "author_name": "Jesse Crowley",
+          "author_url": "https://www.google.com/maps/contrib/100038171551828368453/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX3Kgcx7b-tfBwr0CUKvvNzbH3mmkJj_benCJ_DmUKcnTTvDP9x=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Stunning museum, way more stuff on show then I ever thought. Probably one of the best small town museums I've ever been to, totally worth the entry fee and an hour to walk around in the air conditioning.\n\nHuge exhibits to art, science and history.\n\nRocketry room donated by the Goddard's was a fascinating look at the early days of rocket science in America. All sorts of interesting details of the tools and equipment used.\n\nHuge number of historical artifacts as well, from ancient New Mexico history, to early guns and weapons used in a range of conflicts, even a couple of suites of armor!\n\nStaff was helpful and kind, entire place was clean and cool.",
+          "time": 1655089113,
+          "translated": false
+        },
+        {
+          "author_name": "Megan R (Edacted)",
+          "author_url": "https://www.google.com/maps/contrib/114215461639708532100/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIG6ZeHy6EeSQGOuoC91UK3Ju3DDAbdixBzALCTZbZ_ntPlIFhBw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Wow. The honk if you don't exist exhibit really spoke to me .\n\nThe lay out of the bldg is ..... convoluted and the map is not to scale but it's a beautiful place and I honestly prefer to be a little lost in a museum.\n\nThe pricing is fair and the staff was friendly.  There's many different exhibits on display right  now, even though two of them are closed currently to be re installed .\n\nWriting this before I get to see the planetarium movie , but I'm excited for that as well.",
+          "time": 1700936850,
+          "translated": false
+        },
+        {
+          "author_name": "Tina Motway",
+          "author_url": "https://www.google.com/maps/contrib/116994417652552881867/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWZfpr7S1BpV9fmOiucaoaXQLkdZS_vgy0CExku-RgDOM6ER-0uPA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "This was not the UFO museum, but it was SO much better. So happy we stayed to look around because it was such a well-built museum. Roswell has such a rich and beautiful history and it was so nice to see it preserved here. Please visit this museum if you're in town!",
+          "time": 1694752302,
+          "translated": false
+        },
+        {
+          "author_name": "Gerry Tunstall",
+          "author_url": "https://www.google.com/maps/contrib/113947467744269476920/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVGL-q5H2Wj9iRq5yrSxfR5q4wdGgjWj-gOTfM6WJ3VbaIDJ0k=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "The Roswell Museum was founded in 1936 by the Works Progress Administration (WPA) and opened in late 1937 . This magnificent museum exhibits the art and cultural history of the American Southwest, and also houses a very realistic reproduction of the laboratory or Robert H. Goddard of Worcester, Massachusetts, an early rocketry pioneer. In addition, the museum includes an advanced planetarium and an artist-in-residence program.",
+          "time": 1676527631,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "Set in a handsome 1930s building in Roswell, the Roswell Museum and Art Center is a rewarding stop for art lovers who enjoy discovering a city’s cultural roots up close. Its intimate galleries spotlight American art and the region’s visual history, pairing paintings, works on paper, and rotating exhibitions with a calm, unhurried atmosphere. Come for a concentrated look at the Southwest’s artistic identity, stay for the architecture, thoughtful interpretation, and the pleasure of seeing a local museum do big ideas on a human scale.",
+      "content_description": "**Roswell Museum and Art Center** offers one of the most satisfying kinds of museum visits for travelers: a **small, carefully curated** art experience that feels rooted in place. In a town better known for its pop-cultural mythology, this museum invites you into a more nuanced story—how the Southwest has been pictured, painted, and collected. Expect an approachable mix of American art, regional viewpoints, and rotating shows that may move between contemporary practice and historically oriented presentations. For art enthusiasts, the pleasure is in the *close looking*: intimate galleries, digestible wall texts, and the sense that you can truly spend time with individual works rather than rushing past them.\n\nThe museum’s architectural appeal is part of the draw. Housed in a **historic 1930s-era building** (noted locally for its civic presence), it has the kind of dignified, period character that suits art viewing—solid proportions, natural pauses between rooms, and a calm atmosphere that makes even a short visit feel restorative. The experience is less “blockbuster” and more “smart discovery,” ideal if you’re building a Southwest itinerary and want museums that complement the big-name institutions.\n\nPlan to take your time: the best visits here feel like browsing a well-loved library, where each gallery offers a distinct chapter. With a **local reputation** and a **small collection**, the Roswell Museum and Art Center excels at what regional museums do best—connecting art to community, landscape, and memory, while giving travelers a quiet, concentrated encounter with the visual culture of New Mexico.",
+      "content_highlights": [
+        "Intimate galleries focused on American art with a strong sense of place in New Mexico",
+        "Rotating exhibitions that can range from contemporary work to historically oriented shows",
+        "Historic 1930s-era architecture that creates an elegant, calm setting for close looking",
+        "An unhurried visitor experience—easy to see thoroughly without museum fatigue",
+        "A rewarding “local lens” stop that complements larger Southwest art museums on a road trip"
+      ],
+      "content_generated_at": "2026-01-18T02:12:09Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-site-santa-fe",
       "country": "USA",
       "state_province": "New Mexico",
-      "city": "New Mexico",
+      "city": "Santa Fe",
       "museum_name": "SITE Santa Fe",
       "alternate_names": null,
       "website": "http://www.sitesantafe.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1606 Paseo De Peralta, Santa Fe, NM 87501, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 35.68166,
-      "longitude": -105.9499,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "87501",
+      "latitude": 35.6814624,
+      "longitude": -105.9496077,
+      "place_id": "ChIJRdN-dWlQGIcRNqZwqrxZJHM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -887,37 +1690,203 @@
       "tickets_url": "https://www.facebook.com/sitesantafe",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "SITE Santa Fe is identifiable as a contemporary art institution by name and type, supporting a strong modern/contemporary score, while no evidence suggests any Impressionist holdings. The provided Wikipedia summary appears mismatched (Santa Fe Indian School), so collection depth and interpretive/historical framing are inferred only broadly for a contemporary center in a regional art destination.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.sitesantafe.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Mexico' from open data; MRD: computed city_tier=3 for New Mexico; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:12:20Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5059891199"
+      "phone": "(505) 989-1199",
+      "website_google": "https://sitesantafe.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 4:00 PM",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 264,
+      "google_reviews": [
+        {
+          "author_name": "Philip Bayer",
+          "author_url": "https://www.google.com/maps/contrib/117521435989762896334/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVppwT2ZRUxZzHqQIWATwoqW1dFvhkYTBCh7KATw-2SI6bpzDGRmg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Gigantic, free contemporary art museum. A must-go in Santa Fe",
+          "time": 1764462015,
+          "translated": false
+        },
+        {
+          "author_name": "Daniel Will-Harris",
+          "author_url": "https://www.google.com/maps/contrib/108950768794183869338/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW7Qg-bkdjDXEsMN7LI291nbFr4vME4IZQyFXk9q2oKjdxQYe5_pg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The finest modern art museum/gallery in Santa Fe, and one of the best in the world.\n\nWith no permanent collection, SITE is all about cutting-edge exhibitions and retrospectives.\n\nThe curation here is spectacular, each show having something unique to say that you might never find in another museum.\n\nTheir thoughtful and dramatic large scale installations aren't something you can see in other galleries.\n\nEvery time I come in inspired (the \"muse\" in \"museum\") delighted and moved.\n\nIt's a MUST-SEE for art lovers and curious minds of all kinds.\n\nFree admission ($10 donation requested -- and always well worth it).\n\nGO. SEE.",
+          "time": 1736712805,
+          "translated": false
+        },
+        {
+          "author_name": "Debarati",
+          "author_url": "https://www.google.com/maps/contrib/115372101414124607576/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXywNA76FZ8gj_8sbo_yYcm31pJjJzFP_pGTuUR6PpSLVRfSKw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Santa Fe Site does such a fantastic job of featuring local artists and highlighting artwork made/performed in New Mexico. It was really fun to have traveled to DC where Cassils's \"Etched in Light\" was created and the  see the actual giant 60 foot cyanotype in Santa Fe. I love the care and thoughtfulness that goes into the large installations. AND I really appreciate that I get to go see new artwork with every new Site season with no entry fee.\nGrateful to have access to this space in Santa Fe!",
+          "time": 1736306840,
+          "translated": false
+        },
+        {
+          "author_name": "stephanie morris",
+          "author_url": "https://www.google.com/maps/contrib/115524866955770040824/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVaCXS3FQYcXzBfOZS0F41O-Eh4vHVG0xCz9pJvjtVFqzu4sy8H=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "a really fun selection of contemporary art! staff were super welcoming. go!",
+          "time": 1753065691,
+          "translated": false
+        },
+        {
+          "author_name": "Anita Shreve Lanier",
+          "author_url": "https://www.google.com/maps/contrib/113952648902622312478/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVYq7NAFA51QwV8vW_nbm2L2TOlSVXTJyS0C0UiELsKeds9e6D4=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "3 months ago",
+          "text": "Except for the exceptional paintings by Agnes Pelton of the Transcendental Painting Group I could have passed on this museum, except to reaffirm that I am not a fan of contemporary art. I mean, I am glad that the entry was free courtesy of the patrons who built it for all to enjoy. That is commendable. The exhibition labels for various pieces were written in such wordy academic art-speak it bordered on parody. Some of the pieces did not have a label anywhere I could find it, making it difficult to connect the didactic text with the actual works. I found the Fortran punch-card art from the late 1960s interesting, but honestly I had trouble putting my finger on the unifying theme of the exhibit.",
+          "time": 1760469675,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "SITE Santa Fe is the city’s essential stop for contemporary art—an intimate, idea-driven museum where cutting-edge exhibitions meet Santa Fe’s creative spirit. Known for ambitious, rotating shows rather than a massive permanent collection, it rewards repeat visits with new commissions, installations, and timely themes. The scale is approachable, the programming is lively, and the experience feels distinctly local yet internationally connected—perfect for art travelers who want to see what’s happening now, not just what’s already canonized.",
+      "content_description": "**SITE Santa Fe** is Santa Fe’s contemporary art anchor: a nimble museum and exhibition space built around the thrill of the new. While its permanent holdings are **moderate**, the institution’s real strength is its **rotating, curatorially rigorous exhibitions**—often featuring immersive installations, time-based media, and concept-driven projects that place New Mexico’s creative energy in conversation with broader international currents. For art lovers, it’s a place to encounter works that feel freshly made for the present moment, with a calendar that encourages repeat visits.\n\nArchitecturally, the museum’s identity is tied to its **reimagined industrial setting**, a former warehouse adapted into galleries that favor flexibility: clean sightlines, generous wall space, and rooms that can shift from intimate viewing to large-scale installation. That adaptable footprint suits *contemporary* practice—video, sculpture, sound, and participatory work—where the gallery itself often becomes part of the artwork.\n\nFor visitors, the experience is focused and rewarding: you can comfortably see the entire museum in a single outing, then linger with texts, talks, and public programs that deepen the ideas behind the art. SITE’s shop and events further extend the visit into Santa Fe’s broader arts ecosystem, making it an ideal pairing with the city’s historic districts—an afternoon of old-world adobe atmosphere followed by the sharp edge of the *avant-garde*.",
+      "content_highlights": [
+        "Ambitious rotating exhibitions emphasizing contemporary installation, video, and new commissions",
+        "Reimagined warehouse architecture with flexible galleries suited to large-scale, immersive work",
+        "Regional contemporary focus with an outward-looking, international curatorial perspective",
+        "Talks, lectures, and public programs that add context for art-savvy visitors",
+        "An easy, repeatable visit: compact scale, frequently changing shows, and strong museum-shop browsing"
+      ],
+      "content_generated_at": "2026-01-18T02:12:20Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-unknown-taos-art-museum-at-fechin-house",
@@ -937,7 +1906,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -945,37 +1914,51 @@
       "tickets_url": "https://www.facebook.com/taosartmuseum/",
       "reservation_required": null,
       "accessibility_url": "https://userway.org",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence centers on the Taos art colony and regional Southwestern art history rather than Impressionism, so Impressionist holdings are likely negligible. Mentions of early-20th-century modern artists and 1950s abstract artists suggest at most minor modern/abstract representation in the museum’s scope, but no specific permanent-collection details are provided. As a small, local Taos museum (Fechin House), it likely offers some historical context tied to the Taos art colony, with primarily loc",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://www.taosartmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Taos' from open data; MRD: computed city_tier=3 for Taos; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:12:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "5757582690"
+      "phone": "5757582690",
+      "is_scoreable": true,
+      "content_summary": "The Taos Art Museum at Fechin House is a must for art lovers who want Taos’s creative spirit in its most intimate form. Housed in the extraordinary hand-carved home and studio of Russian-American painter Nicolai Fechin, the museum pairs compelling Taos-area art with one of New Mexico’s most distinctive artist-built environments. Come for the luminous paintings and local modernism; stay for the unforgettable architecture, quiet garden spaces, and the feeling of stepping into an artist’s life.",
+      "content_description": "**Taos Art Museum at Fechin House** offers a concentrated, deeply atmospheric encounter with Taos as an art colony—less a grand survey museum than a place where **art, place, and biography** fuse. The centerpiece is the former home and studio of **Nicolai Fechin**, whose arrival in Taos in the 1920s left a lasting imprint. Inside, you’ll find a **small but resonant collection** that often spotlights Taos-area painters and regional modernists, with works that reward slow looking: portraits, landscapes, and scenes that translate the high desert’s sharp light and saturated earth tones into paint.\n\nThe true revelation is the building itself. Fechin’s house is an architectural artwork—an artist-crafted blend of Pueblo Revival massing and Fechin’s own virtuoso woodworking. Look closely at the **hand-carved doors, beams, and furniture**, where sculptural detail turns everyday surfaces into ornament. The studio spaces read like a preserved creative laboratory, making it easy to imagine canvases taking shape under north light.\n\nFor visitors, the experience is intimate and contemplative. Expect **room-by-room discovery** rather than vast galleries: close viewing distances, textured materials, and a strong sense of domestic scale. Pair your visit with a walk through Taos’s historic core—the museum is ideal for travelers who prefer **character-rich museums** that deliver both artistic significance and a memorable sense of place.",
+      "content_highlights": [
+        "Nicolai Fechin’s artist-built home and studio, featuring remarkable hand-carved woodwork",
+        "A focused selection of Taos and Northern New Mexico paintings emphasizing regional light and landscape",
+        "Immersive, small-gallery experience that feels like stepping into an artist’s private world",
+        "Architectural blend of Pueblo Revival forms with Fechin’s sculptural craftsmanship",
+        "A quiet, contemplative visit well-suited to pairing with Taos’s broader art scene and historic neighborhoods"
+      ],
+      "content_generated_at": "2026-01-18T02:12:32Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-albuquerque-university-of-new-mexico-art-museum",
@@ -995,7 +1978,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER",
+      "museum_type": "Botanical Garden",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1008,7 +1991,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 4,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1030,10 +2013,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Albuquerque; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:11:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5052770111"
+      "phone": "5052770111",
+      "is_scoreable": false,
+      "content_summary": "The University of New Mexico Art Museum stands out as a vibrant cultural hub in Albuquerque, offering visitors an impressive fusion of art and nature. With its distinctive collections and educational programs, it provides a uniquely enriching experience for art lovers and botanical enthusiasts alike.",
+      "content_description": "**The University of New Mexico Art Museum** is not just a gallery; it is a celebration of artistic exploration and botanical beauty. Located within the heart of Albuquerque, this museum seamlessly combines art with nature, creating a serene environment for visitors. Spanning an impressive array of artistic movements, including *modernism* and *Southwestern traditions*, the museum is home to a diverse collection that speaks to the rich cultural tapestry of New Mexico. From *contemporary installations* to *Native American art*, each piece invites reflection and wonder, facilitating a deeper understanding of the region's artistic heritage. The museum plays a crucial role in the community, hosting exhibitions that emphasize local and global artists alike. Visitors can immerse themselves in thought-provoking works that challenge perceptions and inspire creativity.  \n\nEnhancing this vibrant experience, the museum features stunning architectural details that invite exploration. Its thoughtful design fosters an engaging atmosphere, accentuated by natural light that streams through expansive windows, illuminating the curated artwork. The museum is dedicated to education, offering workshops and tours that delve into the stories behind each exhibit. Guests can connect profoundly with the art while also enjoying the beautifully landscaped surroundings. Whether you are an art aficionado or a casual visitor, the **University of New Mexico Art Museum** promises an unforgettable journey through the intersection of culture and nature, making it a must-visit destination in Albuquerque.",
+      "content_highlights": [
+        "Extensive collection of Southwestern art and culture",
+        "Showcases contemporary art alongside traditional Native American works",
+        "Offers dynamic educational programs and community engagement activities",
+        "Beautifully designed architecture with natural light enhancing the visitor experience",
+        "Surrounding botanical gardens provide a tranquil escape and a unique blend with art"
+      ],
+      "content_generated_at": "2026-01-18T04:11:21Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-bernalillo-coronado-historic-site",
@@ -1066,7 +2062,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1087,9 +2083,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Bernalillo; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: Page not found (404) at http://www.nmmonuments.org/index/visit; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:11:28Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "Discover the rich history of the Coronado Historic Site in Bernalillo, where the spirit of exploration and the legacy of early European settlements come to life. This unique museum transports visitors back to the 16th century, making it a fascinating destination for history buffs and curious travelers alike.",
+      "content_description": "**Coronado Historic Site** offers a captivating glimpse into the life and adventures of *Francisco Vázquez de Coronado*, the famed Spanish explorer known for his treks across the American Southwest. Nestled amidst the stunning landscapes of Bernalillo, New Mexico, this site is both historically significant and visually impressive, creating a unique experience for visitors. As you stroll through the grounds, you will find the remnants of a 16th-century *pueblo*, showcasing the architecture and living conditions of the time. The museum’s knowledgeable staff are on hand to provide insights into the life of early explorers and the indigenous cultures they encountered, making each visit both educational and enriching.  \n\nThe museum features informative exhibits that explore Coronado's expeditions, highlighting both his achievements and encounters with Native American tribes. You can expect to see compelling artifacts, including tools and pottery that shed light on the daily life of those who inhabited the region. Guided tours are available, providing guests with a deeper understanding of the historical context surrounding Coronado's journey and its impact on the Native peoples of the Southwest. The tranquil scenery and educational opportunities make for an unforgettable experience, inviting visitors to reflect on the complexities of colonial history while enjoying the natural beauty of New Mexico.\n\nFor those seeking a deeper connection with the past, **Coronado Historic Site** serves as an essential pitstop that combines exploration, history, and cultural appreciation in one memorable location.",
+      "content_highlights": [
+        "Remnants of a 16th-century pueblo",
+        "Interactive exhibits about Coronado's expeditions",
+        "Artifacts from indigenous cultures",
+        "Knowledgeable guided tours",
+        "Stunning natural scenery surrounding the site"
+      ],
+      "content_generated_at": "2026-01-18T04:11:28Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-bernalillo-jemez-historic-site",
@@ -1122,7 +2131,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1143,9 +2152,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Bernalillo; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:11:36Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "Discover the rich history and cultural heritage of the Jemez people at the **Jemez Historic Site**. This archaeological treasure offers visitors a glimpse into the remarkable Pueblo civilization and its enduring legacy, making it a must-visit destination for history enthusiasts and curious travelers alike.",
+      "content_description": "**Jemez Historic Site** stands as a testament to the fascinating history of the Jemez Pueblo community in New Mexico. Nestled within a picturesque landscape, the site features the ruins of an ancient church built in the 17th century, alongside remnants of a once-thriving Pueblo village. Visitors will find themselves immersed in the captivating stories of resilience and adaptation that define the Jemez people, offering a unique perspective into life long before modern times. The combination of history, architecture, and serene surroundings provides a tranquil escape that is both enlightening and inspiring. Familiarize yourself with *traditional Pueblo architecture*, marked by adobe structures and intricate kiva designs, as you journey through this historic enclave. **Jemez Historic Site** serves as not only a cultural landmark but as a connecting point to New Mexico's diverse Indigenous heritage.  Immerse yourself in the silence of the ruins, where each stone echoes the lives of those who once inhabited this land.  The interpretive trails and informative signage guide your exploration, allowing you to appreciate the nuanced relationship between the environment and culture. Visually stunning rock art and the surrounding landscape enhance the experience, inviting reflection and appreciation for the perseverance of the Jemez community throughout the ages.",
+      "content_highlights": [
+        "Ruins of a 17th-century church",
+        "Remnants of an ancient Pueblo village",
+        "Interpretive trails with informational signage",
+        "Beautifully preserved *Pueblo architecture*",
+        "Serene landscapes for reflection and exploration"
+      ],
+      "content_generated_at": "2026-01-18T04:11:36Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-bonito-river-fort-stanton",
@@ -1178,7 +2200,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1199,9 +2221,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Bonito River; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:11:45Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "Fort Stanton is not just a museum; it is a portal into the rich tapestry of New Mexico's history, blending military, medical, and cultural narratives. Visitors will be captivated by its historical significance and the serene natural beauty surrounding the site.",
+      "content_description": "**Fort Stanton** is a hidden gem situated along the picturesque Bonito River, offering an extraordinary glimpse into the multifaceted history of New Mexico. Established in the mid-19th century, this historic fort served as a military outpost during the tumultuous period of the American Civil War and later transformed into a tuberculosis hospital in the early 1900s. The stories embedded within its walls highlight the fort's importance not only as a defensive stronghold but also as a place of healing and recovery, showcasing the duality of its purpose through various historical interpretations. Visitors can walk through well-preserved structures that echo the echoes of history, allowing them to envision life during a time of conflict and transformation.   \n\nThe architecture of **Fort Stanton** is equally fascinating, featuring adobe structures that harmonize with the arid landscape. The aesthetic of the fort reflects *Southwestern adobe architecture*, characterized by its earthen hues and practical design meant to withstand the elements. Wander the grounds to see old barracks, the hospital building, and the stunning natural surroundings, which lend serenity to the site. In addition to its historical buildings, the fort plays host to engaging exhibits that delve into diverse topics such as military history, the plight of tuberculosis patients, and the cultural narratives of the local community. Visitors can participate in guided tours or explore the rich narratives at their own pace, making each visit a personal journey through time.",
+      "content_highlights": [
+        "Historic military outpost with a rich narrative",
+        "Former tuberculosis hospital with fascinating patient stories",
+        "Beautiful adobe architecture blending with the landscape",
+        "Engaging exhibits on local culture and military history",
+        "Serene natural surroundings perfect for exploration"
+      ],
+      "content_generated_at": "2026-01-18T04:11:45Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-radium-springs-fort-selden",
@@ -1234,7 +2269,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1255,9 +2290,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Radium Springs; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.nmmonuments.org/fort-selden",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:11:56Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "Discover the rich history of the American Southwest at **Fort Selden** in Radium Springs. This unique historical site invites you to step back in time and explore the stories of the military, Native American tribes, and the area's cultural heritage. A visit to **Fort Selden** will not only enlighten you on the fascinating past but also allow you to appreciate its scenic setting in New Mexico's captivating landscape.",
+      "content_description": "**Fort Selden** is a captivating historical site that stands as a testament to the American military's role in shaping the Southwest. Established in 1865, the fort played a critical role in protecting settlers and Native American tribes as they navigated the complexities of life in a rapidly changing environment. Visitors to **Fort Selden** are greeted with stunning views of the surrounding desert and mountains, enhancing the historic experience with the beauty of New Mexico's landscape. The remnants of the fort, including walls and foundations, create an inviting atmosphere for exploration and reflection. \n\nInside the **museum**, guests can delve into exhibits that detail the fort's history, showcasing artifacts from its operational years, including military uniforms, tools, and personal items from the soldiers stationed here. The museum also highlights the interactions between the military and local tribes, offering a unique perspective on this crucial aspect of American history. In addition to the historical significance, the site often hosts events and reenactments that bring the past to life, allowing visitors to engage actively with the history of the fort and experience the culture firsthand.\n\nWhether you're a history buff, a nature enthusiast, or simply seeking a unique excursion, **Fort Selden** promises an enriching experience that blends education, culture, and stunning scenery. Don’t miss out on this hidden gem that invites you to explore the stories of courage, exploration, and coexistence in the Southwestern frontier.",
+      "content_highlights": [
+        "Historical significance as a military fort from the 19th century",
+        "Artifacts and exhibits showcasing life at the fort",
+        "Interactive reenactments that engage visitors with history",
+        "Picturesque location offering scenic views of the surrounding desert",
+        "Cultural insights into the interactions between military and Native tribes"
+      ],
+      "content_generated_at": "2026-01-18T04:11:56Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-san-antonio-el-comino-real-historic-trail-site",
@@ -1290,7 +2338,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1311,9 +2359,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for San Antonio; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.nmmonuments.org/el-camino-real; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:12:12Z",
       "notes": null,
-      "city_tier": 1
+      "city_tier": 1,
+      "is_scoreable": false,
+      "content_summary": "Visit the El Comino Real Historic Trail Site to immerse yourself in the rich history and cultural significance of San Antonio's vibrant past. This unique site highlights the historic trail that facilitated trade, migration, and cultural exchange, making it a captivating stop for history enthusiasts and travelers alike.",
+      "content_description": "**El Comino Real Historic Trail Site** is more than just a museum; it’s a journey through history that invites visitors to explore the heritage of this iconic route. Stretching from Mexico to the heart of America, the Camino Real has long been a passageway for traders and settlers. Here, in San Antonio, you can delve into the stories and events that shaped the region and its diverse culture. The site beautifully showcases the blending of Spanish, Mexican, and Native American traditions that form the tapestry of Texas history. Visitors will find informative signage and immersive exhibits that detail the route’s significance and its impact on commerce and social relationships across borders.   *  * *  *  *  *  *  *  *  *  *  *  *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * * *  *  *  * > > > > > > > > > > > > > > > > > > > > > > > > > *  * *  *  *  > > > > > > > > > > > > > > > > *  *  *  *  *  * *  *  * *  *  *  *  *  *  * *  *  *  *  *  *  *  *  *  *  > > > > > > > > > > > > > >  * *  * *  *  *  *  > > > > > > > > > > > > > > > > > > > > > > * > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >, a rich tapestry of history unfolds. Visitors can learn about important historical figures who traversed these paths and witness the legacies they left behind. The combination of engaging presentations and beautiful landscapes offers a serene backdrop for reflection and discovery. Don't miss the chance to step back in time and stroll along the very paths that have shaped the lives of many for centuries. The El Comino Real Historic Trail Site is not just a visit; it’s an adventure through the heart of history.",
+      "content_highlights": [
+        "Interactive exhibits detailing the history of the Camino Real",
+        "Informative signage showcasing key figures and events of the trail",
+        "Scenic walking paths that replicate parts of the historic trail",
+        "Cultural events and demonstrations throughout the year",
+        "Photography opportunities in a picturesque setting"
+      ],
+      "content_generated_at": "2026-01-18T04:12:12Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-santa-fe-center-for-contemporary-arts",
@@ -1333,7 +2394,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1346,7 +2407,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1369,10 +2430,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.ccasantafe.org: Network error for http://www.ccasantafe.org: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifi; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:12:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "8889224242"
+      "phone": "8889224242",
+      "is_scoreable": false,
+      "content_summary": "The **Center for Contemporary Arts** in Santa Fe is a vibrant hub for modern art enthusiasts, featuring thought-provoking exhibitions that challenge perceptions and inspire creativity. With a range of programs, workshops, and screenings, this museum transcends traditional boundaries, making it a must-visit for anyone seeking a unique cultural experience.",
+      "content_description": "**The Center for Contemporary Arts** stands out in Santa Fe's rich tapestry of artistic offerings. Established to support emerging and established contemporary artists, this museum is more than just a space for viewing art; it is a dynamic environment for exploration and interaction. Visitors will find a diverse range of rotating exhibitions that include cutting-edge *installations*, provocative *photography*, and immersive *video art*. The museum emphasizes innovative practices, making it the perfect destination for those eager to engage with art that reflects today’s societal dialogues. Often, the gallery spaces themselves transform, encouraging a dialogue between the artist and the viewer in a way that traditional museums may not facilitate.  With its welcoming atmosphere, the center invites everyone to experience the pulse of contemporary creativity in an intimate setting.   The architectural design of **Center for Contemporary Arts** is also noteworthy, featuring clean lines and open spaces that allow artworks to shine without distraction. Its thoughtful layout provides a reflective experience, enabling visitors to immerse themselves in the narrative of each exhibition. Beyond the galleries, programming such as artist talks and community workshops foster a sense of belonging and deepen the connection between the art and its audience. Whether you're a seasoned art lover or a curious traveler, this museum is sure to leave an imprint on your creative journey in Santa Fe.",
+      "content_highlights": [
+        "Rotating exhibitions of contemporary art from diverse artists",
+        "Interactive programs, workshops, and artist talks",
+        "Engaging video art installations and innovative mediums",
+        "Architectural design that encourages reflection and immersion",
+        "Welcoming atmosphere promoting community involvement"
+      ],
+      "content_generated_at": "2026-01-18T04:12:22Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-santa-fe-georgia-o-keeffe-museum",
@@ -1392,7 +2466,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -1400,38 +2474,52 @@
       "tickets_url": "http://www.okeeffemuseum.org/tickets-tours/",
       "reservation_required": null,
       "accessibility_url": "https://www.okeeffemuseum.org/accessibility/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Dedicated to Georgia O’Keeffe and American modernism, the museum’s permanent holdings are best understood as strong for Modern/Modernist art rather than Impressionism. The multiple sites plus a library/archive and interpretive programming suggest solid historical framing, while its single-artist focus implies a moderate (not encyclopedic) collection with primarily regional-to-national draw.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.okeeffemuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:14:25Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5059461001"
+      "phone": "5059461001",
+      "is_scoreable": true,
+      "content_summary": "In the high-desert light that shaped her vision, the Georgia O’Keeffe Museum offers the most concentrated encounter with America’s great modernist. Expect an intimate, beautifully curated look at O’Keeffe’s paintings, drawings, and creative process—alongside photography and archival materials that root her art in New Mexico. For art lovers, it’s a rare chance to see how a singular eye translated landscape into icon, in a setting that feels made for slow looking and close attention.",
+      "content_description": "In Santa Fe—where the sky and terrain feel like a living palette—the **Georgia O’Keeffe Museum** brings you face-to-face with one of the defining artists of American *Modernism*. Rather than a greatest-hits spectacle, the museum excels at **close, sustained looking**: you’ll move through thoughtfully scaled galleries that foreground O’Keeffe’s command of line, color, and simplification, from crisp architectural forms to the sensuous curves and magnified details that made her imagery so unforgettable.\n\nThe collection typically draws from O’Keeffe’s paintings and works on paper, complemented by **photographs and archival materials** that illuminate her circle and the visual culture around her—especially her longstanding connection to New Mexico. Seeing these works in Santa Fe adds a powerful layer: the museum helps you trace how desert topography, bones, flowers, and adobe geometry become distilled into the artist’s signature visual language. Rotating presentations keep repeat visits rewarding, often spotlighting themes like series-making, studio practice, and the evolution of motifs across decades.\n\nArchitecturally, the experience suits O’Keeffe’s aesthetic—**clean, calm spaces** that let the work breathe, with a visitor flow that encourages unhurried viewing. Plan time to linger in the museum shop for high-quality art books and prints, and pair your visit with a walk through Santa Fe’s historic center to compare the city’s textures and colors with O’Keeffe’s heightened, clarifying gaze.",
+      "content_highlights": [
+        "Focused presentation of Georgia O’Keeffe’s paintings and works on paper, emphasizing her New Mexico years and core motifs",
+        "Photography and archival materials that deepen context for her life, studio practice, and artistic network",
+        "Thoughtfully scaled, light-filled galleries designed for slow looking and close visual comparison",
+        "Rotating exhibitions that revisit themes like series-making, abstraction, and the translation of landscape into form",
+        "Excellent museum shop for O’Keeffe monographs, exhibition catalogues, and well-produced reproductions"
+      ],
+      "content_generated_at": "2026-01-18T02:14:25Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-santa-fe-museum-of-indian-arts-culture",
@@ -1443,15 +2531,15 @@
       "website": "http://www.indianartsandculture.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "660 GARCIA ST",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
+      "postal_code": "87505",
+      "latitude": 35.67575,
+      "longitude": -105.93119,
       "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": null,
+      "address_source": "museums_csv",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1464,7 +2552,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1480,14 +2568,29 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.indianartsandculture.org"
+        "http://www.indianartsandculture.org",
+        "museums_csv"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
-      "notes": null,
-      "city_tier": 1
+      "updated_at": "2026-01-18T02:14:38Z",
+      "notes": "CSV: IRS Museum ID 8403500299 CSV: phone from IRS 990 database CSV: museum type 'Art Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
+      "city_tier": 1,
+      "is_scoreable": false,
+      "phone": "5059547205",
+      "content_summary": "In Santa Fe’s Museum Hill, the Museum of Indian Arts & Culture offers one of the most rewarding introductions to Native art and lifeways in the Southwest. Thoughtfully curated from ancient material culture to living traditions, its galleries connect artistry with place, ceremony, trade, and innovation. Expect luminous textiles, finely worked pottery and jewelry, and exhibitions that foreground Indigenous voices. It’s an essential stop for art lovers who want depth, context, and beauty beyond the typical “Southwestern” snapshot.",
+      "content_description": "Set on Santa Fe’s Museum Hill, the **Museum of Indian Arts & Culture (MIAC)** is a destination for travelers who want Native arts presented with **scholarly depth and living cultural context**. Rather than treating objects as isolated masterpieces, MIAC frames them within the networks of community, environment, and exchange that shaped them—making it especially satisfying for visitors who love to understand *how* and *why* art looks the way it does.\n\nThe museum’s strengths lie in its **Southwestern and broader Native arts collections**, spanning **archaeological materials, historic works, and contemporary expressions**. You’ll encounter an engaging range of media—**pottery, textiles, basketry, jewelry, carvings, and ceremonial arts**—often displayed with interpretive clarity that highlights technique, materials, and meaning. Rotating exhibitions keep repeat visits fresh and can spotlight everything from regional style lineages to artists working today, connecting *tradition* and *innovation* in ways that feel immediate rather than purely historical.\n\nArchitecturally, MIAC fits Santa Fe’s visual identity with a **clean-lined, museum-scale take on regional Pueblo Revival sensibilities**, and its Museum Hill setting makes for an easy, art-focused day paired with nearby institutions. Inside, galleries are calm and well-lit—ideal for close looking at surface, weave, and polish. Plan time to linger: this is a museum where the reward is in **slow viewing**, reading labels, and letting material mastery and cultural continuity come into focus.",
+      "content_highlights": [
+        "Museum Hill location—ideal for pairing with other top Santa Fe museums in one art-focused day",
+        "Deep presentation of Native arts of the Southwest, from ancient material culture to contemporary works",
+        "Strong emphasis on technique and materials—pottery surfaces, textile structures, and jewelry craftsmanship invite close looking",
+        "Rotating exhibitions that foreground Indigenous perspectives and living traditions alongside historical objects",
+        "Quiet, well-lit galleries designed for slow viewing and thoughtful engagement"
+      ],
+      "content_generated_at": "2026-01-18T02:14:38Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-santa-fe-museum-of-international-folk-art",
@@ -1507,7 +2610,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1520,7 +2623,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1543,10 +2646,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:12:30Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
-      "phone": "5054761206"
+      "phone": "5054761206",
+      "is_scoreable": false,
+      "content_summary": "The **Museum of International Folk Art** in Santa Fe is a captivating destination that celebrates the rich tapestry of global cultures through vibrant folk art. With a focus on community heritage and creativity, it showcases a diverse array of artistic expressions that will inspire and enchant visitors of all ages.",
+      "content_description": "**Museum of International Folk Art** is not just a museum; it's a journey through the world via the lens of folk art. Nestled in the enchanting city of Santa Fe, this museum boasts the *largest collection of international folk art* in the United States, showcasing over 130,000 objects from cultures across six continents. Each piece tells a captivating story, offering insights into the traditions, beliefs, and artistic expressions of communities worldwide. Visitors will find themselves immersed in a colorful display of textiles, ceramics, and intricate woodwork, reflecting the *vibrancy of everyday life* in various cultures. The museum's role in preserving and promoting folk art makes it a unique cultural hub that emphasizes community and creativity. \n\nThe architecture of the **Museum of International Folk Art** is equally enchanting, with *Spanish Pueblo Revival style* blending seamlessly into the surrounding landscape. Inside, the galleries are tastefully curated, making it easy for visitors to explore the diverse themes, from Latin American folk traditions to African textiles and Native American crafts. The museum also features rotating exhibitions that highlight contemporary issues and showcase living artists, providing a dynamic experience that keeps visitors returning. Engaging programs like workshops and lectures further enrich the experience, allowing guests to interact creatively with the art. Whether you’re a folk art enthusiast or a curious traveler, this museum offers an unparalleled glimpse into the powerful impact of culture through art.",
+      "content_highlights": [
+        "Largest collection of international folk art in the U.S.",
+        "Diverse exhibitions from over 100 countries",
+        "Unique Spanish Pueblo Revival architectural style",
+        "Rotating contemporary art shows",
+        "Engaging arts and crafts workshops for all ages"
+      ],
+      "content_generated_at": "2026-01-18T04:12:30Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-santa-fe-new-mexico-history-museum-palace-of-governors",
@@ -1579,7 +2695,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1600,9 +2716,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:12:42Z",
       "notes": null,
-      "city_tier": 1
+      "city_tier": 1,
+      "is_scoreable": false,
+      "content_summary": "The New Mexico History Museum/Palace of Governors offers a unique glimpse into the rich tapestry of New Mexico's past. As the oldest continuously occupied public building in the U.S., it combines incredible historical artifacts with stunning architecture, making it a must-visit for anyone interested in the diverse cultural heritage of the American Southwest.",
+      "content_description": "**New Mexico History Museum/Palace of Governors** is a treasure trove that intricately weaves the stories of its diverse inhabitants, showcasing the complex history of New Mexico from pre-Columbian times to the present. Situated in the heart of Santa Fe, the museum exudes charm with its adobe architecture and serves as a testament to the historical significance of this landmark, which has stood for more than 400 years. Guests are transported back in time as they explore both the building’s storied past and its vibrant present, engaging with artifacts that reflect the lives and traditions of Native Americans, Spanish settlers, and American pioneers alike.  The museum is not just about the past; it emphasizes New Mexico's living history with interactive exhibits and programs that resonate with travelers of all ages.  “As the oldest continuously occupied public building in the United States,” the **Palace of Governors** itself is an architectural marvel, showcasing classic *Spanish Pueblo* styles that invite exploration and admiration.  Visitors can marvel at the beautiful courtyard while strolling through the various galleries featuring textiles, pottery, and artwork that tell the tales of the land. As guests wander the halls, they can immerse themselves in compelling displays of historical artifacts—everything from historic maps to cutting-edge art that reflects the region's cultural evolution.  Adventurous souls can even speak with local artists who sell their handmade crafts under the building's portico, offering a chance to take a piece of New Mexico home.  This museum not only educates but inspires a profound appreciation for the cultures that have shaped the state over centuries.  With a welcoming atmosphere and engaging presentations, the **New Mexico History Museum** is an essential stop on any Santa Fe journey.",
+      "content_highlights": [
+        "The oldest continuously occupied public building in the U.S.",
+        "In-depth exhibits on Native American history and culture",
+        "Interactive displays emphasizing New Mexico's living history",
+        "Showcase of unique Southwestern art and artifacts",
+        "Local artisans selling crafts under the portico"
+      ],
+      "content_generated_at": "2026-01-18T04:12:42Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-santa-fe-new-mexico-museum-of-art",
@@ -1622,7 +2751,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1630,38 +2759,52 @@
       "tickets_url": "https://book.txusa.com/v4/Pages/search.aspx?exl_dn=nmtd&exl_lng=en-US&exl_cur=USD",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 7,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence identifies a state-run fine arts museum in Santa Fe but gives no specifics on permanent-collection strengths; as such, Impressionism is likely minor rather than a focus. As a general art museum in a major arts destination, it plausibly maintains some modern/contemporary holdings and interpretive context, but not at a flagship level, suggesting a moderate regional institution overall.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.newmexico.org/Museum-of-Art",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:15:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5054765072"
+      "phone": "5054765072",
+      "is_scoreable": true,
+      "content_summary": "In the heart of Santa Fe’s historic downtown, the New Mexico Museum of Art is a must for travelers who want to see how the American Southwest shaped—and was shaped by—modern art. Housed in an iconic Pueblo Revival landmark, the museum excels at connecting place, light, and landscape to artists who worked in New Mexico. Come for powerful regional masterworks, thoughtful rotating exhibitions, and the pleasure of experiencing art in one of the city’s most architecturally memorable cultural spaces.",
+      "content_description": "**New Mexico Museum of Art** anchors Santa Fe’s creative identity with a collection that makes the region feel essential to American art history, not peripheral. Expect deep strength in artists who lived and worked in New Mexico—think the Taos and Santa Fe circles and the evolution of regional modernism—alongside curated exhibitions that place local work in wider national conversations. For art lovers, the reward is in how the museum continually returns to New Mexico as an artistic catalyst: high desert light, vast horizons, and a layered cultural landscape that artists translated into everything from lyrical *landscape* painting to more experimental *modernism*.\n\nThe building itself is part of the experience. Set near the Plaza, the museum’s original home is a celebrated example of **Pueblo Revival architecture**, with sculptural massing, earthy surfaces, and details that echo historic adobe forms. Interiors feel intimate and contemplative—ideal for close looking—while galleries are scaled to encourage a slow, comparative walk through themes of place, identity, and artistic community.\n\nVisiting is best approached like a well-paced gallery conversation: start with the museum’s regional strengths, then let the rotating shows broaden your view of the Southwest’s role in 20th-century art. The compact, walkable location makes it easy to pair your visit with Santa Fe’s nearby architecture, bookstores, and galleries—an ideal half-day for travelers who like their museum time followed by a long, art-filled stroll.",
+      "content_highlights": [
+        "Landmark Pueblo Revival museum building near the Santa Fe Plaza—architecture lovers will want time to study the exterior and details",
+        "Collection strengths in New Mexico and Southwest-centered American art, including artists associated with Santa Fe and Taos circles",
+        "Rotating exhibitions that connect regional art to broader American modern and contemporary narratives",
+        "Intimate, human-scaled galleries designed for close looking and thoughtful pacing rather than marathon viewing",
+        "Easy to combine with Santa Fe’s walkable arts district—ideal for pairing museum time with nearby galleries and historic sites"
+      ],
+      "content_generated_at": "2026-01-18T02:15:22Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nm-taos-harwood-museum-of-art-of-the-university-of-new-mexico",
@@ -1694,7 +2837,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1715,9 +2858,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Taos; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:12:55Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The Harwood Museum of Art in Taos, New Mexico, is a cultural gem that showcases an impressive collection of Southwestern art and a unique connection to the region's vibrant artistic legacy. Visitors can explore thought-provoking exhibitions, beautiful architecture, and immersive programs that celebrate the local art community.",
+      "content_description": "**The Harwood Museum of Art** invites visitors into a world where art and culture converge, nestled in the heart of Taos, New Mexico. Established in 1916, this museum has long been a beacon for the *Taos artists* movement, showcasing pivotal works that reflect the area's rich heritage and natural beauty. The museum's collection includes works from renowned artists such as **Georgia O'Keeffe** and **Marsden Hartley**, as well as contemporary pieces that explore the evolving narrative of Southwestern art. Visitors can delight in the interplay of styles ranging from *Native American* influences to *modernist* interpretations, creating a tapestry of expression that speaks to each viewer's individual experience.  In addition to its permanent collection, the museum hosts rotating exhibitions that delve into significant themes of art and culture that resonate locally and globally.  Furthermore, the architecture itself—a blend of Pueblo Revival and modern design—offers a serene space for contemplation, with radiant natural light flooding in to enhance the viewing experience.  Visitors can stroll through the tranquil gardens and enjoy outdoor installations that provide a serene backdrop to their artistic journey.  The Harwood also hosts engaging educational programs, workshops, and community events, making it a dynamic hub for art lovers and novices alike. Whether you're an art aficionado or just eager to learn more, **the Harwood Museum of Art** promises a memorable exploration of the captivating art and culture that define the Southwest.",
+      "content_highlights": [
+        "Vibrant collection of Southwestern and Native American art",
+        "Notable works by artists like Georgia O'Keeffe",
+        "Unique Pueblo Revival architectural design",
+        "Stunning gardens featuring outdoor art installations",
+        "Engaging educational programs for all ages"
+      ],
+      "content_generated_at": "2026-01-18T04:12:55Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T04:12:55Z"
 }

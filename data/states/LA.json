@@ -7,21 +7,21 @@
       "museum_id": "usa-la-unknown-alexandria-museum-of-art",
       "country": "USA",
       "state_province": "Louisiana",
-      "city": "Louisiana",
+      "city": "Alexandria",
       "museum_name": "Alexandria Museum of Art",
       "alternate_names": null,
       "website": "http://www.themuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "933 Second Street",
+      "street_address": "933 Main St, Alexandria, LA 71301, USA",
       "address_line2": null,
       "postal_code": "71301",
-      "latitude": 31.31203,
-      "longitude": -92.44428,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "latitude": 31.3121953,
+      "longitude": -92.4441866,
+      "place_id": "ChIJFacGP0FLJYYRFQPoi_PKmhI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -29,12 +29,12 @@
       "tickets_url": "https://www.facebook.com/AlexandriaMuseumofArt/",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
+      "reputation": 3,
       "collection_tier": null,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -43,23 +43,169 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary appears unrelated (Alexandria University in Egypt) and gives no evidence about the Alexandria Museum of Art’s permanent collection, scope, or interpretive approach. Based only on the museum being in Alexandria, Louisiana with no other collection details, reputation is scored as primarily local.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.themuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Louisiana' from open data; MRD: computed city_tier=3 for Louisiana; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3184433458"
+      "phone": "(318) 443-3458",
+      "website_google": "https://themuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 208,
+      "google_reviews": [
+        {
+          "author_name": "J Tux",
+          "author_url": "https://www.google.com/maps/contrib/102624800241054599547/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXDZ2-fC2uM_LKm2gJs40AX0xuJlRYkGA56yB-8lfSa782qkQpH=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Really enjoyed our time here.  There were some great displays to see, also loved the kids area they have setup for the kids.  There was 2 floors to visit and see all the displayed art.  It doesn't take too long but is a fun experience.   The gift shop is very small and would have loved to see more in there.  Overall it was really great to visit and looking forward to the next art showing they have.",
+          "time": 1685339006,
+          "translated": false
+        },
+        {
+          "author_name": "Catsur na",
+          "author_url": "https://www.google.com/maps/contrib/105906813345021096946/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJKew-357JXOVBEc5NPbEKFG7D7vcAHyBlOlDv-1JobC_59Cw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "If you're in Alexandria, you might as well see it. It's not terribly big, but it is something to do. Exhibits are on the first and third floors. It's mostly modern art from local artists on the first floor, with a themed exhibit on the third floor that usually includes some non-local art. The gift shop is kind of small and uninteresting. Seeing the whole museum takes about 1hr.",
+          "time": 1765134204,
+          "translated": false
+        },
+        {
+          "author_name": "Melissa Sorrelle",
+          "author_url": "https://www.google.com/maps/contrib/112852588870679985714/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJxfINrd-6SYKHImT3C_dISW5KNYHkG63GCVBbAAAzn3_NgpQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "11 months ago",
+          "text": "It was a good place to spend an hour while my husband was in Alexandria on business.You could see the bridge from upstairs but they are working on that area. Not the best bathrooms but everything else was nice.",
+          "time": 1739293003,
+          "translated": false
+        },
+        {
+          "author_name": "Cynthia Alexander",
+          "author_url": "https://www.google.com/maps/contrib/111756511234079089842/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXnxaw5HmQ028t4izmiFfBopTAaA4go3DYlR9q9JVEJnGE5zPzsrw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Interesting art here, we were limited on viewing since there was an event on the third floor. The surrounding area is a little sketchy with homeless people and saw two men walking with guns in their hands. So many closed door fronts. Just be aware of your surroundings.",
+          "time": 1762045990,
+          "translated": false
+        },
+        {
+          "author_name": "Kyle Ahrens",
+          "author_url": "https://www.google.com/maps/contrib/103581552033113493829/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUTekpK6PLxAQ_bAKfMCpuKsu4OoBOzm9oE7E_O54TJ-Rtu8E-k=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Nice and small museum with local artist on the first floor and their own collection on the third. Receptionist was very kind and welcoming.",
+          "time": 1767898457,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "The Alexandria Museum of Art offers a rewarding stop for art lovers exploring Alexandria, blending a locally rooted perspective with the pleasures of close-looking. Expect a thoughtfully paced visit where regional creativity and wider currents in American art come into focus through rotating exhibitions and community-minded programming. It’s the kind of museum that invites repeat visits—small enough to feel approachable, yet ambitious in presenting fresh shows and spotlighting artists with ties to the area.",
+      "content_description": "**Alexandria Museum of Art** is a welcoming, locally respected art museum that rewards travelers who enjoy discovering how a place tells its story through art. Rather than trying to be encyclopedic, the museum typically leans into **changing exhibitions**—a format that keeps the experience lively and encourages repeat visits. For visitors, that means you’re likely to encounter a mix of contemporary work, regional voices, and curated projects that connect local culture to broader conversations in American art, from *abstraction* to *figurative* approaches.\n\nArchitecturally, museums of this scale often excel at one thing big institutions can’t always offer: **intimacy**. Galleries are designed for close viewing—ideal for appreciating surface, technique, and the artist’s hand without crowds. Expect an experience that feels more like a focused studio visit than a marathon survey: you can spend time with a single painting or photograph, circle back for a second look, and actually read the interpretive materials.\n\nFor art enthusiasts, the best strategy is to treat the museum as a **snapshot of what’s happening now**—check current exhibitions and programs before you go, and plan for a slow, attentive visit. If you enjoy discovering emerging artists, learning regional context, and seeing thoughtfully installed shows in a comfortable setting, **Alexandria Museum of Art** makes an engaging cultural anchor for your time in Alexandria.",
+      "content_highlights": [
+        "Rotating exhibitions that keep the visit fresh and encourage return trips",
+        "A strong sense of place, often spotlighting artists and themes connected to the region",
+        "Intimate gallery scale ideal for close-looking and unrushed viewing",
+        "Curatorial framing that links local creativity to broader American art conversations",
+        "A traveler-friendly stop: manageable size, approachable atmosphere, and easy pacing"
+      ],
+      "content_generated_at": "2026-01-18T01:12:05Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-beauregard-keyes-historic-house-garden",
@@ -79,7 +225,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -92,7 +238,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -112,10 +258,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:41:49Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "5045237257"
+      "phone": "5045237257",
+      "is_scoreable": false,
+      "content_summary": "Step into history at the **Beauregard-Keyes Historic House & Garden**, a beautifully preserved gem in New Orleans that showcases the rich cultural heritage of the city. With its stunning architectural details and lush gardens, this museum invites visitors to explore the lives of its notable past residents and the vibrant history of 19th-century Louisiana.",
+      "content_description": "**Beauregard-Keyes Historic House & Garden** stands as a testament to New Orleans' storied past, merging intricate architecture with lush, idyllic gardens. Built in 1826, the home is a prime example of *Creole* and *Italianate* styles, featuring tall doors, spacious rooms, and exquisite decorative details that charm every visitor. The house was owned by two remarkable individuals, Confederate General P.G.T. Beauregard and New Orleans’ beloved writer Frances Parkinson Keyes, allowing guests to explore both the military history and the literary legacy of the two prominent figures intertwined with the house's narrative. Its welcoming atmosphere encourages a sense of connection to the past. Visitors will find the beautifully maintained gardens a serene escape, offering a vivid display of flora that captures the essence of Southern charm and hospitality. Here, tranquility meets history in perfect harmony. Visitors can take guided tours that delve into the experiences and significance of the house's inhabitants, enriching their understanding of life during a transformative literary and social epoch in New Orleans. History enthusiasts and casual visitors alike will appreciate the authentic artifacts and documents that tell the multifaceted stories of the individuals who shaped this remarkable residence. Don’t miss the chance to relax in the lush gardens, where Southern beauty flourishes amidst the whispers of history.",
+      "content_highlights": [
+        "Stunning *Creole* and *Italianate* architectural features",
+        "Lush gardens showcasing Southern flora and tranquility",
+        "Authentic artifacts from the lives of P.G.T. Beauregard and Frances Parkinson Keyes",
+        "Guided tours that enhance the historical experience",
+        "Rich literary and military history of New Orleans"
+      ],
+      "content_generated_at": "2026-01-18T03:41:49Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-historic-new-orleans-collection",
@@ -135,7 +294,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -148,7 +307,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -168,30 +327,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Royal Street, New Orleans' from open data; MRD: computed city_tier=3 for Royal Street, New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:42:01Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5045234662"
+      "phone": "5045234662",
+      "is_scoreable": false,
+      "content_summary": "The Historic New Orleans Collection offers visitors a captivating glimpse into the rich cultural tapestry of New Orleans. From its stunning architecture to its unparalleled holdings in Louisiana history, art, and culture, this museum is a treasure trove for anyone intrigued by the city's vibrant past and present. Explore its rare artifacts, unique exhibitions, and beautifully preserved buildings for an enlightening experience.",
+      "content_description": "**The Historic New Orleans Collection** stands as a beacon of the city’s diverse history and artistic heritage, offering visitors an intimate look at what has shaped New Orleans into the vibrant culture we know today. Nestled along Royal Street, the collection spans multiple historic buildings, each an architectural masterpiece that adds drama to the storytelling of the city. The elegant approach invites you into a fascinating journey through time—from the colonial era to the jazz age, showcasing how different cultures have intertwined to create a unique tapestry of life in New Orleans.  \n\nWith an impressive array of over 50,000 items, the museum boasts remarkable collections that include *18th- and 19th-century maps*, *historical photographs*, and *manuscripts*. Visitors can marvel at works depicting the vibrant *Creole* and *Cajun* traditions, as well as artifacts from eras of both celebration and strife, revealing a profound narrative of resilience and creativity. Temporary and permanent exhibitions rotate throughout the year, ensuring there’s always something new to discover, whether it be *the impact of hurricanes* on the region or the interactive portrayal of *New Orleans' jazz music origins*. The engaging visitor experience is enhanced with guided tours, educational programs, and special events that delve deeper into the nuanced history of this iconic city.  \n\nFor those seeking a deeper understanding of New Orleans' enchanting past, **The Historic New Orleans Collection** is a must-visit destination that artfully preserves the essence of a city where history is not just seen but felt. Whether you’re a history buff, an art lover, or simply looking to explore the stories that define this unique locale, this museum is sure to enrich your understanding of New Orleans.",
+      "content_highlights": [
+        "Extensive collection of over 50,000 artifacts relating to Louisiana history",
+        "Historical buildings showcasing stunning colonial architecture",
+        "Temporary exhibitions that highlight contemporary issues and local arts",
+        "Educational programs and workshops for deeper engagement",
+        "Guided tours providing personal insights into the museum's collections"
+      ],
+      "content_generated_at": "2026-01-18T03:42:01Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-lake-pontchartrain-basin-maritime-museum",
       "country": "USA",
       "state_province": "Louisiana",
-      "city": null,
+      "city": "Madisonville",
       "museum_name": "Lake Pontchartrain Basin Maritime Museum",
       "alternate_names": null,
       "website": "https://lpbmm.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "133 Mabel Dr, Madisonville, LA 70447, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 30.39898,
-      "longitude": -90.15575,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "postal_code": "70447",
+      "latitude": 30.3979365,
+      "longitude": -90.1567615,
+      "place_id": "ChIJQx4J_tBEJ4YRzYa0xVvCgTE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -204,7 +376,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -219,35 +391,180 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:42:08Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9858459200"
+      "phone": "(985) 845-9200",
+      "website_google": "https://maritimemuseumlouisiana.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 1:00 – 4:00 PM",
+          "Wednesday: 1:00 – 4:00 PM",
+          "Thursday: 1:00 – 4:00 PM",
+          "Friday: 1:00 – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 220,
+      "google_reviews": [
+        {
+          "author_name": "Steven Sykes",
+          "author_url": "https://www.google.com/maps/contrib/100878225339755162125/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL8zFGgw-aPF1qdfu3fBW0Sh7ceLdZBqEqFqUfd8qXqqhWc3AM3=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "The Maritime Museum in Madisonville, LA is truly a hidden jewel on the Northshore. Tucked away in this charming riverside town, the museum offers a surprisingly rich and engaging experience for visitors of all ages. One of the highlights is the collection of old videos showcasing traditional boat and ship building—fascinating, educational, and a real treat for anyone interested in maritime history. The exhibits are thoughtfully curated, and the atmosphere is warm and welcoming. It's a perfect stop for a relaxing afternoon full of local history and craftsmanship. Don’t miss it!",
+          "time": 1758661603,
+          "translated": false
+        },
+        {
+          "author_name": "Wendy Dallapè",
+          "author_url": "https://www.google.com/maps/contrib/109042877772908855289/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWzYi0Lg5Sxf1ObfBlt-MYmfLnNL6ljQMM5rQ6pacjE-qYiPHW7=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Our group had a wonderful experience with our guide (Keegan), a skilled storyteller (Ms. Thurston),  and a boat builder (Mr. B.). They brought history to life with engaging stories and knowledge, making the tour both fascinating and memorable. A truly unique and enriching experience!",
+          "time": 1755896983,
+          "translated": false
+        },
+        {
+          "author_name": "Lori Hargrove",
+          "author_url": "https://www.google.com/maps/contrib/107559528600322920721/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-Ly0dzD6kovFjaVDHcQf7aIuKXH48ALzo8RCWK8p9UXanu80=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This was a great place. I recommend visiting this museum.",
+          "time": 1760310585,
+          "translated": false
+        },
+        {
+          "author_name": "Tiffany Kunkle",
+          "author_url": "https://www.google.com/maps/contrib/101654529627368959713/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUXHOI0GaZSKh7R_Yq8gdeD619uKopSvHAB6O-nKAJ8LyD-XgptEQ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "We came from Illinois on a week-long vacation/field trip with the kids from school. This was not only fun, but very informative and educational! We had a great history lesson from Mrs. Thurston, a water safety lesson and an amazing tour from Keegan. 10/10 recommend!",
+          "time": 1756237372,
+          "translated": false
+        },
+        {
+          "author_name": "Eddy Roger Parker",
+          "author_url": "https://www.google.com/maps/contrib/105956449935488145764/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhr4zJv7Xm-M2EwU50A6tCQoKjv6fq-PYkJWfN4Nzi3Uj9UKVf=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "An amazing museum with educational exhibits covering the watercraft of the Pontchartrain Basin. The stand out for me with the integration of video in the exhibits. Some of the movies they show for the price of admission are historic in themselves.",
+          "time": 1716496584,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Lake Pontchartrain Basin Maritime Museum offers a unique insight into the rich maritime culture of Louisiana. With engaging exhibits that spotlight the region's nautical history and the environmental significance of Lake Pontchartrain, visitors will discover a treasure trove of local heritage and maritime artifacts that bring the coast to life.",
+      "content_description": "**Lake Pontchartrain Basin Maritime Museum** stands as a vibrant homage to the maritime heritage of Louisiana, nestled in the charming town of Madisonville. This museum is not just an ordinary collection of artifacts—it captures the spirit of the Gulf Coast through its engaging narratives and interactive displays that invite visitors to explore the unique relationship between the community and the waters that surround them. The exhibits delve into significant maritime history, showcasing everything from early fishing boats to modern vessels, illustrating how the local economy and culture have been shaped by the rich resources of Lake Pontchartrain.  \n\nWithin the museum, guests will find **historical artifacts** and *interactive exhibits* that tell the stories of the area's shipbuilding traditions, fishing industries, and the environmental challenges faced by the surrounding estuary. Highlights include the museum's stunning model boats and historic maps that provide a deeper understanding of the lake's environmental significance and ecological diversity. With engaging programs and seasonal events, visitors have the opportunity to experience the culture and traditions of the area firsthand. Whether you're a history enthusiast, a nature lover, or seeking a family-friendly outing, **Lake Pontchartrain Basin Maritime Museum** makes for a delightful stop that promises to enhance your understanding of Louisiana's maritime legacy.",
+      "content_highlights": [
+        "Interactive exhibits on fishing and boat-building traditions",
+        "Stunning historical artifacts from local maritime history",
+        "Models of classic boats and detailed navigation maps",
+        "Educational programs focused on environmental awareness",
+        "Seasonal events that celebrate the maritime culture"
+      ],
+      "content_generated_at": "2026-01-18T03:42:08Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-longue-vue-house-and-gardens",
       "country": "USA",
       "state_province": "Louisiana",
-      "city": "Louisiana",
+      "city": "New Orleans",
       "museum_name": "Longue Vue House and Gardens",
       "alternate_names": null,
       "website": "https://longuevue.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "7 Bamboo Road",
+      "street_address": "7 Bamboo Rd, New Orleans, LA 70124, USA",
       "address_line2": null,
       "postal_code": "70124",
-      "latitude": 29.97627,
-      "longitude": -90.12413,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER",
+      "latitude": 29.977113,
+      "longitude": -90.1227756,
+      "place_id": "ChIJR9tn_4ivIIYRb66xF_fdRQs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Botanical Garden",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -260,7 +577,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -277,15 +594,168 @@
         "walker_reciprocal",
         "official_website",
         "https://longuevue.com",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Louisiana' from open data; MRD: computed city_tier=3 for Louisiana; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-17T22:59:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5044867740"
+      "phone": "(504) 488-5488",
+      "website_google": "http://www.longuevue.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:30 AM – 5:00 PM",
+          "Tuesday: 9:30 AM – 5:00 PM",
+          "Wednesday: 9:30 AM – 5:00 PM",
+          "Thursday: 9:30 AM – 5:00 PM",
+          "Friday: 9:30 AM – 5:00 PM",
+          "Saturday: 9:30 AM – 5:00 PM",
+          "Sunday: 9:30 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 783,
+      "google_reviews": [
+        {
+          "author_name": "Matt Davis",
+          "author_url": "https://www.google.com/maps/contrib/111760228523411779547/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIK49LMeuJHAgpJ9hbFjzi6D_8lvJinW0cGIf2m88JsiieinQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We had Joseph (I believe was his name) as our tour guide. He couldn’t have done a better job!! As for The house and gardens, it was beautiful and full of cool quirks. Highly recommend!",
+          "time": 1762786046,
+          "translated": false
+        },
+        {
+          "author_name": "David Fielding",
+          "author_url": "https://www.google.com/maps/contrib/111018677430500783118/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUiMU1NDOGDE_dJBx8LO3C_CLGs-1a6vGt8vQQiSa16lwQPp_u5=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Wonderful estate complex and gardens. I arrived too late for a house tour, but enjoyed exploring the gardens. There were several wedding photographers there taking photos of young couples. I'll have to return another day for the house tour.",
+          "time": 1742302540,
+          "translated": false
+        },
+        {
+          "author_name": "Andrea F",
+          "author_url": "https://www.google.com/maps/contrib/112474799574848675573/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVseHAf3ObT0cx3ovTrphPIURjjnWo8Q4G_bO7WeM3blL4Db21u=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Updated review: I saw on social media where they were offering the behind the scenes tour and had to jump on it. This was a very enjoyable tour. Amazing. I can not recommend this enough. I just love getting to peek behind the curtain to see the details. A whole room for lamp shades! Extravagant!\n\nWhat a lovely tour! Just took a tour of the house, but I will be back for the combination tour of the house and gardens. The history of this house was amazing. And to think that this was the second house erected here. I'm not sure where they moved the original house to, but I will Google. The tour guide was amazing and very informed. I am so glad to come and am considering the membership.",
+          "time": 1750681936,
+          "translated": false
+        },
+        {
+          "author_name": "Jean Anderson",
+          "author_url": "https://www.google.com/maps/contrib/116046221951829306854/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJkx56F_5vLr3fxsJOTXel6mQi5DXTJRRWCmvkYxHxbe3EGRU0=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "We visited on December 16, 2025 and had an excellent time. We decided to take the house tour and wander the gardens on our own. Candice was an excellent tour guide providing details of the Stem family and decor that drew us in. We appreciated her tidbits and willingness to answer our questions. Thank you for a great excursion to view a beautiful property of some forward thinking people!",
+          "time": 1766011507,
+          "translated": false
+        },
+        {
+          "author_name": "Michelle Gerdes",
+          "author_url": "https://www.google.com/maps/contrib/117939104624116517888/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXOxPWbD-Ngd1IXjJ3hDqWXOotdVE8BQESWSIuebaZrK7cyTLev2Q=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We really loved the tour and was happy it was open on January 2nd when so many places (museums and historic locations) were closed.\nLiz? wait maybe Erica? from California was the best tour guide & answered all our difficult questions.\nAbsolutely loved the house & the gardens",
+          "time": 1736279250,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false
     },
     {
       "museum_id": "usa-la-unknown-new-orleans-jazz-museum",
@@ -305,7 +775,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -318,7 +788,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -340,10 +810,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Orleans' from open data; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:43:00Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
-      "phone": "5048991945"
+      "phone": "5048991945",
+      "is_scoreable": false,
+      "content_summary": "Dive into the heart of New Orleans at the **New Orleans Jazz Museum**, where the soulful rhythm of jazz comes alive. This museum not only celebrates the rich heritage of jazz music but also offers a vibrant cultural experience that showcases artifacts, live performances, and interactive exhibits. A visit here is an essential pilgrimage for music lovers and anyone seeking to understand the spirit of this iconic city.",
+      "content_description": "**New Orleans Jazz Museum** is a dynamic homage to the birthplace of jazz, nestled in the historic **Old U.S. Mint**. This enchanting museum encapsulates the musical legacy that emerged from the streets of New Orleans, offering visitors a chance to immerse themselves in the **vibrant sounds** of this timeless genre. The museum houses *historical artifacts*, including instruments played by legendary musicians, sheet music, and personal memorabilia that bring the story of jazz to life. With each exhibit, the deep connection between the city and its music is explored, allowing visitors to witness the evolution of jazz from its humble beginnings to its status as a global phenomenon.  A journey through this museum is not just educational, but transformational, as you engage with the very essence of what makes jazz unique.   With interactive displays and listening stations, the museum offers a hands-on experience, inviting you not just to observe but to feel the music in your bones. The highlight of your visit may very well be the live performances held on-site, where talented musicians pay tribute to jazz greats and inspire new generations to embrace this art form.    The **New Orleans Jazz Museum**, with its architectural significance, stunning river views, and rich collections, stands as a testament to the enduring spirit of jazz. Whether you're a dedicated enthusiast or a curious traveler, this museum promises an unforgettable celebration of culture, music, and history in the heart of New Orleans.",
+      "content_highlights": [
+        "Exhibits featuring iconic memorabilia from jazz legends like Louis Armstrong and Jelly Roll Morton",
+        "Live jazz performances that immerse visitors in the soul of the music",
+        "Interactive listening stations where visitors can engage with historical recordings",
+        "Educational programs and workshops that dive into jazz history and its cultural impact",
+        "Beautiful architecture of the Old U.S. Mint, providing a stunning backdrop for the collections"
+      ],
+      "content_generated_at": "2026-01-18T03:43:00Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-new-orleans-museum-of-art",
@@ -363,7 +846,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -371,37 +854,51 @@
       "tickets_url": "https://my.noma.org/",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 3,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates NOMA is a long-established fine arts museum (founded 1911) in a major cultural city, suggesting a respectable, general permanent collection but without specific stated strengths in Impressionism or Modern/Contemporary art. With no collection details provided, scores reflect moderate, plausible representation and mid-level interpretive context typical of a regional art museum.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.noma.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Orleans' from open data; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:13:31Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5046584100"
+      "phone": "5046584100",
+      "is_scoreable": true,
+      "content_summary": "Set in the greenery of City Park, the New Orleans Museum of Art pairs a strong, wide-ranging collection with one of the city’s best art-going settings. Come for European painting and sculpture, notable photography, and compelling works by Southern and local artists—then linger outdoors among monumental contemporary sculptures. It’s an essential stop for art lovers who want both serious museum time and the easy pleasure of New Orleans: light-filled galleries, a park stroll, and art that connects global traditions to the Gulf South.",
+      "content_description": "In the heart of City Park, the **New Orleans Museum of Art (NOMA)** is New Orleans’ flagship fine-arts museum—an ideal anchor for travelers who want to balance the city’s music and food with a museum day that feels distinctly local. The museum’s **Beaux-Arts–inspired building** (classical lines, generous proportions, and calm, daylight-friendly galleries) sets an elegant tone, while its park setting makes the visit feel expansive rather than hurried.\n\nInside, NOMA’s strengths shine through breadth and thoughtful focus: galleries spanning European painting and sculpture, American art, decorative arts, and a particularly engaging presentation of photography and modern/contemporary work. You’ll encounter the visual languages of *Impressionism* and *Modernism* alongside works that speak to the region—artists shaped by the South’s light, history, and cultural hybridity—giving the museum a character you won’t confuse with a big coastal encyclopedic institution.\n\nDon’t miss the **Besthoff Sculpture Garden**, widely considered the crown jewel of the experience. Set among lagoons, live oaks, and winding paths, it turns contemporary sculpture into a slow, immersive walk—perfect for resetting your eyes between gallery sessions. Plan to alternate indoor viewing with outdoor wandering; for art lovers, NOMA excels at that rare combination of serious looking and sheer pleasure in place.",
+      "content_highlights": [
+        "Besthoff Sculpture Garden: a standout outdoor collection of modern and contemporary sculpture set in City Park’s landscape",
+        "European and American painting and sculpture: a satisfying cross-section from classical traditions through modern eras",
+        "Photography and modern/contemporary galleries: strong visual pacing and rewarding variety for repeat visits",
+        "Southern and New Orleans–connected artists: works that tie the collection to the Gulf South’s culture and history",
+        "A museum day that pairs galleries with nature: easy to combine with City Park strolling for a full art-focused outing"
+      ],
+      "content_generated_at": "2026-01-18T01:13:31Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-newcomb-art-museum-of-tulane-university",
@@ -434,7 +931,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -455,9 +952,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:43:07Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The **Newcomb Art Museum of Tulane University** is a hidden gem in New Orleans, offering a unique blend of contemporary art, Southern heritage, and innovative exhibitions. With its commitment to promoting art as a vehicle for social change, this museum is a must-visit for anyone interested in the dynamic intersection of culture and creativity.",
+      "content_description": "**Newcomb Art Museum of Tulane University** is a vibrant cultural institution nestled within the historic campus of Tulane University in New Orleans. Established in 1886, the museum holds a rich legacy of supporting women's art and education, initially stemming from the Newcomb College background. It’s not just a museum; it’s a testament to how art can reflect and shape societal values. The museum's focus on contemporary art, alongside its dedication to traditional crafts, creates a unique juxtaposition that draws visitors into the dialogues surrounding gender, culture, and community engagement. Expect to encounter a thoughtfully curated collection featuring Southern artists, contemporary craft, and multimedia works that challenge and inspire.   \n\nThe architecture of the museum itself commands attention, with a blend of historic and modern elements that invite exploration and contemplation. After wandering through its galleries, visitors often find themselves in the serene sculpture garden, which offers a peaceful respite amidst the urban hustle. Regular exhibitions, educational programs, and community events intertwine art with local narratives, making every visit an opportunity to participate in something bigger than just viewing art. Whether an art aficionado or a curious traveler, the **Newcomb Art Museum** provides a welcoming space to engage, learn, and connect with the rich tapestry of New Orleans culture. Prepare to be captivated by the museum’s spirit of creativity and the stories that each piece of art tells.  ",
+      "content_highlights": [
+        "Focus on contemporary Southern art and craft",
+        "Legacy of supporting women artists from Newcomb College",
+        "Engaging exhibitions that foster dialogue on social issues",
+        "Serene outdoor sculpture garden for reflection and relaxation",
+        "Educational programming and community involvement events"
+      ],
+      "content_generated_at": "2026-01-18T03:43:07Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-ogden-museum-of-southern-art",
@@ -477,7 +987,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -485,37 +995,51 @@
       "tickets_url": "http://19963.blackbaudhosting.com/19963/tickets?tab=3&txobjid=1b87ef14-b89d-4a5c-803f-79124cc2bcd8",
       "reservation_required": true,
       "accessibility_url": "https://ogdenmuseum.org/accessibility/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is dedicated to Southern U.S. artists; the evidence does not indicate any focus or notable holdings in French/European Impressionism, so Impressionist strength is scored as negligible. As a regional art museum founded in 1999, it likely includes a meaningful mix of 20th–21st century Southern work, supporting a moderate Modern/Contemporary score. Its mission implies some interpretive/historical framing around Southern art, but no explicit evidence of extensive chronological galleries o",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.ogdenmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Orleans' from open data; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:14:01Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5045399650"
+      "phone": "5045399650",
+      "is_scoreable": true,
+      "content_summary": "In the heart of New Orleans’ Warehouse District, the Ogden Museum of Southern Art is a must for anyone curious about the American South as seen through artists’ eyes. Expect a focused, visually rich journey from 19th-century roots to contemporary voices, with photography, painting, and sculpture that capture the region’s beauty, tensions, and cultural fusion. It’s a rewarding, human-scale museum—easy to navigate, strong in story, and perfectly placed for pairing with the city’s food, music, and galleries.",
+      "content_description": "**Ogden Museum of Southern Art** offers one of New Orleans’ most rewarding deep-dives into the art and identity of the American South. Rather than a “greatest hits” survey, the museum shines by treating the region as a complex, living subject—its landscapes, rituals, labor histories, and cultural crosscurrents—traced through painting, sculpture, and especially photography. You’ll encounter works that move between *regionalism*, *modernism*, and contemporary practices, often centering place-based storytelling: river towns and coastlines, vernacular architecture, and the visual language of festivals, faith, and everyday life.\n\nThe collection’s strength lies in how it connects the South’s past to its present. Expect a thoughtful mix of historical and contemporary works, with photography frequently taking center stage—an ideal medium for the South’s documentary traditions and its ongoing conversations about community and change. Rotating exhibitions and focused presentations keep repeat visits fresh, and the museum’s curatorial approach rewards close looking: wall texts and layouts tend to emphasize context, influence, and cultural nuance.\n\nArchitecturally, the museum fits its Warehouse District setting—clean-lined, gallery-forward spaces designed for an easy flow between rooms and mediums. For visitors, the experience is refreshingly manageable: you can see a lot without museum fatigue, then step right back into the neighborhood’s art scene. Plan time to linger—this is a museum that invites you to compare voices across generations, and to leave with a sharper sense of how Southern art continues to shape (and challenge) American visual culture.",
+      "content_highlights": [
+        "A dedicated focus on art of the American South, from 19th-century foundations to contemporary voices",
+        "Notable strength in photography, aligning with Southern documentary traditions and place-based storytelling",
+        "Rotating exhibitions that refresh the visit and spotlight specific themes, artists, and communities",
+        "Warehouse District setting with gallery-centric architecture and an easy, walkable layout for art lovers",
+        "A visitor-friendly scale—immersive enough for depth, concise enough to pair with nearby galleries, dining, and cultural stops"
+      ],
+      "content_generated_at": "2026-01-18T01:14:01Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-paul-and-lulu-hilliard-university-art-museum",
@@ -535,7 +1059,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -543,57 +1067,71 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence identifies this as a university art museum without any stated strengths or named holdings in Impressionism, so Impressionist representation is scored as negligible. University museums often emphasize rotating modern/contemporary and regional programming, but without collection details this is kept at minor. As a campus museum in Lafayette with limited external signals in the evidence, reputation and overall collection tier are scored as local and small.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://museum.louisiana.edu",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Lafayette' from open data; MRD: computed city_tier=2 for Lafayette; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://museum.louisiana.edu: Network error for http://museum.louisiana.edu: <urlopen error [WinError 10060] A connection attempt ; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:14:13Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3374820811"
+      "phone": "3374820811",
+      "is_scoreable": true,
+      "content_summary": "A rewarding stop for art lovers in Lafayette, the Paul and Lulu Hilliard University Art Museum offers an intimate, thoughtfully curated museum experience on a university campus—ideal for visitors who enjoy discovering emerging scholarship and fresh perspectives. While the collection is small, exhibitions are often tightly focused and intellectually engaging, pairing regional narratives with broader art-historical themes. Expect a calm gallery atmosphere, rotating shows, and the pleasure of seeing works up close without crowds—perfect for a reflective hour between meals and music in Cajun Country.",
+      "content_description": "Set within the cultural rhythm of Lafayette, the **Paul and Lulu Hilliard University Art Museum** is a compact university museum that rewards attentive looking. Rather than overwhelming visitors with scale, it excels at **carefully edited exhibitions**—the kind that invite you to slow down, compare details, and follow curatorial ideas from room to room. For travelers who like museums as places of discovery, this is a strong model: rotating presentations often connect local context to bigger conversations in art, from the legacies of *modernism* to contemporary practices and regional visual culture.\n\nAs a university museum, its strength lies in **teaching-driven curation** and the sense that you’re seeing art in an active intellectual environment. You may encounter works on paper, painting, photography, and small-object displays presented with clear interpretive labels—helpful for visitors who enjoy learning while they look. With a **small collection** and frequent exhibition turnover, repeat visits can feel surprisingly different.\n\nArchitecturally and experientially, expect a **quiet, gallery-forward setting** where the design prioritizes close viewing and good lighting over spectacle. The visitor experience is typically relaxed: easy navigation, an unhurried pace, and the chance to spend real time with individual pieces. For art enthusiasts touring southern Louisiana, it’s an appealing addition to a Lafayette itinerary—an art stop that complements the city’s food and music with focused visual culture.",
+      "content_highlights": [
+        "Intimate university museum setting with a calm, uncrowded viewing experience",
+        "Rotating exhibitions that emphasize tight themes and art-historical context",
+        "Teaching-museum approach: clear wall texts and accessible interpretation for deeper looking",
+        "Good stop for travelers interested in regional culture presented through contemporary and historical lenses",
+        "Easy-to-visit scale—ideal for a focused hour of gallery time between Lafayette’s culinary and music highlights"
+      ],
+      "content_generated_at": "2026-01-18T01:14:13Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-vermilionville-living-history-museum-and-folklife-park",
       "country": "USA",
       "state_province": "Louisiana",
-      "city": null,
+      "city": "Lafayette",
       "museum_name": "Vermilionville Living History Museum and Folklife Park",
       "alternate_names": null,
       "website": "http://www.vermilionville.org/vermilionville/index-old.html",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "300 Fisher Rd, Lafayette, LA 70508, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 30.21325,
-      "longitude": -91.99459,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "HISTORY MUSEUM",
+      "postal_code": "70508",
+      "latitude": 30.2143755,
+      "longitude": -91.9963731,
+      "place_id": "ChIJaT43x7ecJIYRkAfc6chBhOs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "History Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -606,7 +1144,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -623,35 +1161,190 @@
         "walker_reciprocal",
         "official_website",
         "http://www.vermilionville.org/vermilionville/index-old.html",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.vermilionville.org/vermilionville/index-old.html; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:43:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3372334077"
+      "phone": "(337) 233-4077",
+      "website_google": "https://bayouvermiliondistrict.org/vermilionville/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1464,
+      "google_reviews": [
+        {
+          "author_name": "Debi",
+          "author_url": "https://www.google.com/maps/contrib/112109285892836881522/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV2IIQZXRA5h7A-gamFctCCjUUlq9ZjXTCsy2v1cDxvQu0tEAISnw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 3,
+          "relative_time_description": "in the last week",
+          "text": "Interesting.  Wish there were more interpreters.  Only one actually told of history and it was a young man at the forge barn.  The music jam was really neat.  The food at the restaurant was good especially the gumbo and bread pudding.",
+          "time": 1768097748,
+          "translated": false
+        },
+        {
+          "author_name": "Louis Monnig",
+          "author_url": "https://www.google.com/maps/contrib/103840870120486708674/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLq-cMppENiBd2b4kuHC2ZV4njU4jzVctNxQnya2Vus2ZXs1A=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Great recreation of a plausible Cajun village from back in the day. Some reenactors were very knowledgeable in the history and challenges faced by the Acadian French Canadians kicked out of Nova Scotia (Acadia) as they sought refuge from bigotry and persecution as they migrated down the east coast searching for acceptance and freedom. They landed in fairly inhospitable surroundings but we're accepted by others also seeking free expression of their culture.  From freezing cold winters to near tropical heat and humidity the Acadians adapted and made the best of what they  could. Later the term Acadian morphed into Cajun.",
+          "time": 1764202146,
+          "translated": false
+        },
+        {
+          "author_name": "Bethany Baudoin",
+          "author_url": "https://www.google.com/maps/contrib/109216782110302201613/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUNNBiuTGH7x8jyzg0Oj70zJccrzx2DXlj1IYMy1lQSbPtbcC3t=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "It was probably the best time I’ve had in a long time! The boat tour was so much fun! We did see some alligators but they were so quick to sink down. We saw several beautiful flowers and birds! The fish were jumping, the bugs were swimming, it was teaming with so much life!\n\nNow let’s talk about the restaurant… the atmosphere was amazing. We were seated in the back window area where you can see the river and the next boat tour passing by. The food? DIVINE! I already made a review about it but my some who’s autistic and doesn’t rave about food, raved about this and said it could compete with me and kick me out the water lol. We toured leisurely and even though the heat was something else, it didn’t stop us from enjoying our learning of our history and the trials we had to endure. Will be back again next month with a friend and her son!",
+          "time": 1756387793,
+          "translated": false
+        },
+        {
+          "author_name": "Ricky Idlett",
+          "author_url": "https://www.google.com/maps/contrib/101371772344723201016/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU4tG6pcOdwBgBKdqtgcRpgg6EMGSuTNGCJa5zbZgs6lyt5dz-cCw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Wow, I underestimated the size of this place! We got here around 2 pm and only got to see part of the village before closing time. Jeremy was working in the gift shop and was wonderful and gracious. There are several REAL authentic homes to tour with period accurate characters that work and answer questions about the history. The restaurant was closing when we arrived but I heard good things about it. Plan to spend all day here.",
+          "time": 1756428139,
+          "translated": false
+        },
+        {
+          "author_name": "Deirdre Keese",
+          "author_url": "https://www.google.com/maps/contrib/101360233712375658304/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUdxSNVQ6JVFQGNudWSRk_fwRVVtMDT8AH9P8lLojTiek-jZgU=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Vermillionville was great! Very friendly staff, even the cats. There was a lot of information and things to see. There were so many houses, filled with history. We could have spent a lot more time there, if we had had it. My favorite part was meeting Mike.\n\nHe was extremely informative and told us a lot of incredible historical facts. He definitely has a passion for it. I really do wish we had more time to listen to him. So if you go, keep an eye for him if you want to learn more. He also takes care of the feral cat colony that helps with keeping venomous snakes and vermin away.\n\nI hope to go back someday. They have a lot of really cool things to see. They even have a quilter and loomer. The restaurant there is also very good! Definitely plenty to see and wonderful people there.\n\nThe only thing that really sucked was hearing about how awful and destructive some of their visitors are. If you go, be respectful. It's all a museum and they want it to be around for a very long time.",
+          "time": 1760730631,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Discover the rich cultural tapestry of Louisiana at **Vermilionville Living History Museum and Folklife Park**, where history comes to life through interactive exhibits, authentic architecture, and vibrant demonstrations of Acadian, Creole, and Native American traditions. This living history museum offers a unique glimpse into the region's past, making it a must-visit for anyone interested in Louisiana's diverse heritage.",
+      "content_description": "**Vermilionville Living History Museum and Folklife Park** transports visitors back in time to Louisiana's 18th and 19th centuries, celebrating the vibrant culture of the Acadian, Creole, and Native American communities. Set along the banks of the Vermilion River, this unique historical site features a collection of over 19 restored historic structures that represent traditional architecture, skillfully designed to reflect the area's diverse heritage. As you stroll through the park, you'll encounter costumed interpreters who share stories and demonstrate traditional crafts, *from weaving and pottery to boat-building and cooking*, allowing you to engage with history in a truly immersive way. This dynamic interaction is what makes the experience truly special.  Let the rhythmic sounds of a *Cajun band* and the aroma of local cuisine transport you even further into the heart of Louisiana's culture!     The museum also hosts seasonal festivals and educational programs, ensuring that visitors can experience the rich folklore and traditions of the region throughout the year. Children and adults alike are welcomed to participate in hands-on activities, turning history into a living, breathing entity. Whether it’s watching a skilled artisan craft a basket or learning to dance the *Cajun two-step*, every visit is enriched with new experiences and knowledge.  **Vermilionville** represents a vital link to Louisiana's past, making it a remarkable destination for those eager to explore the area’s multifaceted historical narratives.",
+      "content_highlights": [
+        "Authentic 18th and 19th-century restored structures",
+        "Interactive demonstrations of traditional crafts and skills",
+        "Live music and dance performances highlighting local culture",
+        "Seasonal festivals celebrating Cajun and Creole heritage",
+        "Children's programs offering hands-on historical activities"
+      ],
+      "content_generated_at": "2026-01-18T03:43:19Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-wedell-williams-aviation-and-cypress-sawmill-museum",
       "country": "USA",
       "state_province": "Louisiana",
-      "city": "Louisiana",
+      "city": "Patterson",
       "museum_name": "Wedell-Williams Aviation and Cypress Sawmill Museum",
       "alternate_names": null,
       "website": "https://louisianastatemuseum.org/museum/wedell-williams-aviation-and-cypress-sawmill-museum",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "118 COTTON ROAD",
+      "street_address": "118 Cotten Rd, Patterson, LA 70392, USA",
       "address_line2": null,
       "postal_code": "70392",
-      "latitude": 29.69484,
-      "longitude": -91.30928,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
-      "museum_type": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM",
+      "latitude": 29.6784013,
+      "longitude": -91.2937262,
+      "place_id": "ChIJn07s5uLbI4YRRywFpdHkKxA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Science Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -664,7 +1357,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -679,34 +1372,180 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Louisiana' from open data; MRD: computed city_tier=3 for Louisiana; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:43:27Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
-      "city_tier": 3
+      "city_tier": 3,
+      "phone": "(985) 399-1268",
+      "website_google": "https://louisianastatemuseum.org/museum/wedell-williams-aviation-and-cypress-sawmill-museum",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:30 AM – 4:00 PM",
+          "Wednesday: 9:30 AM – 4:00 PM",
+          "Thursday: 9:30 AM – 4:00 PM",
+          "Friday: 9:30 AM – 4:00 PM",
+          "Saturday: 9:30 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 147,
+      "google_reviews": [
+        {
+          "author_name": "Asia Maurer",
+          "author_url": "https://www.google.com/maps/contrib/100948907718168317654/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXzp_Fetmv60Wgz1kzq6Y4pJOBBIthi-FVnQIfI7p-8eeDw1-QEOQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I cant remember her name but this super nice black lady was the absolute best she told me her name but I can't remember. My family from Thailand came to see us and we had a day here they loved it! The woman even got a wheel chair for her! And the movie was so interesting too definitely do that if you go! Thanks so much lady!",
+          "time": 1759116956,
+          "translated": false
+        },
+        {
+          "author_name": "Ashley Erin",
+          "author_url": "https://www.google.com/maps/contrib/111626375696806805137/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUeZjOV1Voz2hBE1a2jytmvu7Nl7sM1ObkmBMmbMbUupgI0ta7t=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "What an unexpected charming stop on our meandering road trip! We love niche museums and this was a flawlessly cultivated one. Gorgeous airplanes and really interesting info on cypress trees. Beautiful facility that is pristine and FREE.",
+          "time": 1757602316,
+          "translated": false
+        },
+        {
+          "author_name": "Headlessgenie",
+          "author_url": "https://www.google.com/maps/contrib/106533837628823715471/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVcMHJtVBStpxB2SoAgTGwAZv2a5f2ru6vGVemnzVrNTICN2JKW=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Its a free museum about vintage civilian aviation really, like prop planes and what not. Its a cook thing. And the logging section is cool too. Very cool, and if you got time and like either subject i say visit. Also has a small gallery about local hunting.",
+          "time": 1763938605,
+          "translated": false
+        },
+        {
+          "author_name": "celeste beavers",
+          "author_url": "https://www.google.com/maps/contrib/106761328242181596626/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWm5H1wyt5xUQH2mXKzPPNr8-5zbBk7-M2Qs2bzmyYQMX1rRbQ9Bg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Wonderful staff - very courteous.\nThe aviation gallery had a very nice reenactment film. And fantastic to see all the planes.\nThe two other galleries were also interesting.\nWe were so glad we visited.\nFree admission, Free parking",
+          "time": 1762524912,
+          "translated": false
+        },
+        {
+          "author_name": "eva",
+          "author_url": "https://www.google.com/maps/contrib/100960108673515371865/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV2YqB8_dVF54ChFLcLA4rnlSkNBgP3XqQRllTr5kpJDif9Gw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "I had such a wonderful experience at this museum, they have so much to offer visually and it’s an incredible experience to just walk around but on top of that they have a very unique short film about the history of the place that was very cool to experience. Definitely recommend for anyone because it covers a lot of peoples interests.",
+          "time": 1745960607,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The **Wedell-Williams Aviation and Cypress Sawmill Museum** in Patterson, Louisiana, is a hidden gem that explores the unique intersection of aviation history and the local timber industry. With rare artifacts and engaging exhibits, it's a must-visit for anyone interested in the impressive legacy of aviation and the cultural heritage of the cypress sawmill industry.",
+      "content_description": "**Wedell-Williams Aviation and Cypress Sawmill Museum** offers visitors a fascinating glimpse into two pivotal elements of Louisiana's history: aviation and the cypress timber industry. The museum is named after two pioneer aviators, and its collections include an impressive array of artifacts that tell the story of early aviation, showcasing models, photographs, and personal memorabilia. This focus on aviation heritage not only honors the incredible advancements in flight technology but also celebrates local individuals who were instrumental in elevating the region's profile in the aviation field. Visitors can explore the contributions of the Wedell-Williams Company, a notable player in the golden age of flight that developed innovative aircraft designs that left a lasting impact on aviation development. Truly a part of aviation lore, this collection offers a unique insight into the era's ambitions and breakthroughs. \n\nAdditionally, the museum highlights the crucial role that the cypress sawmill industry played in economic development in southwest Louisiana. The exhibits detail the tools and techniques used in timber harvesting, focusing on the impact of cypress wood in construction and shipbuilding. Guests can expect an interactive experience, where they can learn about the woodworking processes and the environmental considerations related to timber production. With friendly staff on hand to guide visitors, the museum emphasizes an engaging learning environment that encourages curiosity about local history. Whether you're a history enthusiast, an aviation aficionado, or simply curious about Louisiana's unique cultural heritage, **Wedell-Williams Aviation and Cypress Sawmill Museum** promises a captivating excursion into the stories that shaped the region.",
+      "content_highlights": [
+        "Extensive collection of early aviation artifacts",
+        "Engaging exhibits on the cypress sawmill industry",
+        "Historical significance of the Wedell-Williams Company",
+        "Interactive learning experiences for visitors",
+        "Cultural insights into Louisiana's timber economy"
+      ],
+      "content_generated_at": "2026-01-18T03:43:27Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-unknown-zigler-art-museum",
       "country": "USA",
       "state_province": "Louisiana",
-      "city": "Louisiana",
+      "city": "Jennings",
       "museum_name": "Zigler Art Museum",
       "alternate_names": null,
       "website": "http://www.ziglerartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "154 N. Main St",
+      "street_address": "154 N Main St, Jennings, LA 70546, USA",
       "address_line2": null,
       "postal_code": "70546",
-      "latitude": 30.23708,
-      "longitude": -92.65913,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "latitude": 30.2213536,
+      "longitude": -92.658236,
+      "place_id": "ChIJbfFsMoBZO4YRYYMGZeQt35s",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -719,7 +1558,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -736,15 +1575,164 @@
         "walker_reciprocal",
         "official_website",
         "http://www.ziglerartmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Louisiana' from open data; MRD: computed city_tier=3 for Louisiana; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:43:33Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3378240114"
+      "phone": "(337) 824-0114",
+      "website_google": "http://ziglerartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:00 PM",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 41,
+      "google_reviews": [
+        {
+          "author_name": "Andrea F",
+          "author_url": "https://www.google.com/maps/contrib/112474799574848675573/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVseHAf3ObT0cx3ovTrphPIURjjnWo8Q4G_bO7WeM3blL4Db21u=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I was looking to round out my day of sightseeing on a Saturday and decided to stop in here. I am so glad I did. Very small, but many moving pieces that were thought provoking. Free admission. I would recommend to anyone in the area.",
+          "time": 1764236452,
+          "translated": false
+        },
+        {
+          "author_name": "Maverick Naquin",
+          "author_url": "https://www.google.com/maps/contrib/118255132972679526340/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVt09_Q5yCzcmK9H9iHHZCxsU2f1Olx84fVnBAyZBLDaNi-8kQd=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Me and my family were greeted when we walked in and we were offered free coffee in cute little white ceramic coffee cups. We got to meet a famous artist and shook hands. Great paintings and great people.",
+          "time": 1764964824,
+          "translated": false
+        },
+        {
+          "author_name": "Lori",
+          "author_url": "https://www.google.com/maps/contrib/106991762727784104885/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWNBx706py2XiDEUYUwDcYiTyGZ6s5PXGh1YzlZv4u7iXg4cQGIw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great art museum not too far from home. Very sweet lady gave us a tour. She was knowledgeable and also patient with all of my kids’ questions. Beautiful pieces and interesting history. No entry fee. Worth a visit.",
+          "time": 1722576836,
+          "translated": false
+        },
+        {
+          "author_name": "Marty McMann",
+          "author_url": "https://www.google.com/maps/contrib/100730550901446734904/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX49q3eWrblyBpQwpeLG2d5fqt8c9CRVXFVpUfWPAEEee6ZuEn2_Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "What a wonderful surprise I randomly came across driving from Lake Charles to Baton Rouge area. Some of the work is truly remarkable and will make you appreciate all the amazing arist that have connections to Lousiana.",
+          "time": 1567786268,
+          "translated": false
+        },
+        {
+          "author_name": "Shelly",
+          "author_url": "https://www.google.com/maps/contrib/110852123696469223433/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWNjxbRQOaIfwswfrssDUYT-uViuNGiQfLKbcMYMKuarRPTvRblPw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I learned about this Museum as I was promoting Local Artist Cody Broussard. The Directer Teesha is extremely knowledgeable and friendly. I love that they have so much beautiful artwork and are eager to support Louisiana artist. The layout is comfortable and the gift shop offers many little treasures, including books by local authors. I especially enjoyed their display of the Ziggler family. It truly captures the history of the museum. It is an exquisite place. If you are in Jennings  and don't stop here, then you are missing out on a beautiful experience.",
+          "time": 1703606099,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Nestled in Jennings, Louisiana, the **Zigler Art Museum** is a hidden gem that captivates visitors with its rich collection of fine art and local history. Its intimate atmosphere allows for a personal exploration of art that reflects the vibrant spirit of the region, making it a must-visit for art enthusiasts and curious travelers alike.",
+      "content_description": "**Zigler Art Museum** stands out not just as a repository of art but as a vibrant cultural hub in Jennings, Louisiana. Since its establishment, the museum has been devoted to showcasing both regional accomplishments in the arts and significant pieces from prominent American artists. Visitors can expect to encounter a diverse array of exhibits that reflect the beauty and nuances of various artistic movements, including *Impressionism* and *Contemporary Art*. This focus on both local and national artistry makes for a unique and enriching experience. The museum’s intimate setting allows guests to truly engage with the artwork on display, fostering a personal connection to the pieces and their creators.  Effective storytelling through art enhances the visitor's journey through the museum, celebrating not just what’s on the walls, but the culture that inspired it.  ",
+      "content_highlights": [],
+      "content_generated_at": "2026-01-18T03:43:33Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-baton-rouge-capitol-park",
@@ -777,7 +1765,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -799,9 +1787,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Baton Rouge; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:43:41Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "Capitol Park is a captivating destination in Baton Rouge that invites visitors to explore Louisiana's rich political history and culture. With beautifully landscaped grounds combining natural beauty and historical significance, it's the perfect setting for a thoughtful and inspiring experience.",
+      "content_description": "Capitol Park, nestled in the heart of Baton Rouge, is a remarkable fusion of natural beauty and significant cultural history. This expansive park is **home to the Louisiana State Capitol**, an architectural marvel designed by architect **George H. W. McWright** in the 1930s. Towering at 450 feet, it is the tallest capitol building in the United States, offering stunning views from its observation deck. The park's beautifully manicured gardens and lush landscapes serve as a tranquil backdrop, making it a perfect spot for visitors to unwind while soaking up the area's rich history.\n\nInside the Capitol, visitors can delve deep into Louisiana’s political heritage. The interior features **vibrant murals and art deco details**, celebrating the state’s storied past and diverse culture. As you wander through the various halls and exhibits, you can learn about significant legislative milestones and influential figures who have shaped Louisiana’s governance. *Interactive displays and guided tours* enhance your experience, providing immersive insights into the workings of state politics and the history of the region.\n\nWhether you're an avid history buff, an admirer of stunning architecture, or simply looking to enjoy a day outdoors in an inspiring environment, Capitol Park offers a unique blend of attractions that will leave a lasting impression on your visit to Baton Rouge.",
+      "content_highlights": [
+        "Louisiana State Capitol: Tallest capitol building in the U.S.",
+        "Beautifully landscaped gardens and park grounds",
+        "Stunning art deco interior and vibrant murals",
+        "Interactive displays on Louisiana's political history",
+        "Observation deck with panoramic views of Baton Rouge"
+      ],
+      "content_generated_at": "2026-01-18T03:43:41Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-baton-rouge-museum-of-art-shaw-center-for-the-arts-louisiana-state-university",
@@ -834,7 +1835,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -855,9 +1856,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Baton Rouge; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:43:50Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "Nestled in the vibrant Shaw Center for the Arts, the **Museum of Art, Louisiana State University** offers an intriguing glimpse into the world of fine arts. Featuring a rich collection that highlights regional and contemporary art, this museum is a hub for culture and creativity. Visitors will find engaging exhibits, a dynamic atmosphere, and the chance to explore the interrelationship between art and community.",
+      "content_description": "**The Museum of Art, Shaw Center for the Arts, Louisiana State University** is more than just a venue for viewing art; it is a vibrant cultural hub in the heart of Baton Rouge. Opened in 2005, the museum features a range of works that focus on both *regional significance* and *timely contemporary pieces*. With its mission to inspire and educate, the museum plays a crucial role in the local community, making it a must-see for art enthusiasts and casual visitors alike. Its modern architectural design, sleek lines, and expansive windows invite natural light, creating an intimate environment that enhances the viewing experience. The exterior beautifully complements the surrounding landscape, while the interior spaces are thoughtfully curated to encourage exploration and reflection. Focused on fostering creativity, the museum also hosts a variety of educational programs and workshops throughout the year. Visitors delve deeper into the artistic process through guided tours and hands-on experiences.  With a collection that showcases diverse artists and innovative works, the museum offers a unique perspective on the ongoing dialogue within the contemporary art scene. Comprised of various exhibitions, ranging from traditional *American art* to experimental installations, visitors can find something to pique their interest and ignite their creativity. Each visit offers a chance to see rotating exhibits, ensuring that no two trips are the same. The captivating blend of art, architecture, and community engagement makes the **Museum of Art** an essential stop during your Baton Rouge adventure.",
+      "content_highlights": [
+        "Vibrant contemporary art collections",
+        "Focus on regional artists and themes",
+        "Educational workshops and programs",
+        "Stylish modern architecture",
+        "Dynamic rotating exhibitions"
+      ],
+      "content_generated_at": "2026-01-18T03:43:50Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-louisiana-state-museum-madame-john-s-legacy",
@@ -890,7 +1904,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -911,9 +1925,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Louisiana State Museum; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:44:00Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "Nestled in the heart of the French Quarter, **Madame John’s Legacy** captures the essence of New Orleans' vibrant history and cultural heritage. This museum offers a unique glimpse into the life of early Creole society, while showcasing the architectural beauty of the historic building itself. A visit here is a journey through time, making it an unmissable stop for history enthusiasts and cultural explorers alike.",
+      "content_description": "**Madame John’s Legacy** stands as a cherished gem of the Louisiana State Museum, uniquely immersing visitors in the enchanting world of 18th-century New Orleans. Situated in a historic Creole cottage, this museum not only highlights the architectural charm typical of the era but also serves as a window into the lives of the early Creole citizens who shaped the cultural fabric of the region. The building itself, with its *spiral staircases*, **exquisite wrought iron balustrades**, and lush courtyard, tells a story of craftsmanship that has withstood the test of time. Visitors will be transported to an age of opulence and complexity, a true hallmark of Louisiana's rich tapestry of history.  In addition, the museum hosts a range of artifacts and artwork connected to the Creole experience, allowing a deeper understanding of their traditions, social structures, and the evolution of their community.  Whether you wish to revel in the historical context provided by informative displays or simply appreciate the *flair of Creole architecture*, **Madame John’s Legacy** offers a unique lens through which to view New Orleans' past. Here, every corner holds a story, every artifact whispers secrets rich with the complexities of family, race, and identity.  The immersive experience invites all types of visitors—from seasoned historians to curious travelers—to engage actively with the narratives presented, making for a memorable and enriching visit. With its profound historical significance and captivating ambiance, **Madame John’s Legacy** is not just a museum, but a vital piece of New Orleans’ ongoing dialogue with its storied past.",
+      "content_highlights": [
+        "Exquisite 18th-century Creole architecture",
+        "Authentic artifacts from early Creole society",
+        "Rich historical narratives of New Orleans' cultural heritage",
+        "Beautifully landscaped courtyard for relaxation",
+        "Informative displays that engage visitors in the history of Creole life"
+      ],
+      "content_generated_at": "2026-01-18T03:44:00Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-natchitoches-louisiana-sports-hall-of-fame-and-northwest-louisiana-history-museum",
@@ -946,7 +1973,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -967,9 +1994,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Natchitoches; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:44:08Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "Dive into the rich tapestry of Louisiana's sports culture and regional history at the **Louisiana Sports Hall of Fame and Northwest Louisiana History Museum**. This unique destination showcases the state’s athletic icons while providing an immersive look at the fascinating stories that shaped Northwest Louisiana.",
+      "content_description": "**Louisiana Sports Hall of Fame and Northwest Louisiana History Museum** is a dynamic fusion of sports and regional history, nestled in the charming town of Natchitoches. This museum is a treasure trove for visitors, offering an engaging exploration of Louisiana’s sports legends alongside captivating narratives that highlight the cultural heritage of Northwest Louisiana. The dual theme makes it an unparalleled experience, where sports enthusiasts and history buffs alike can revel in a wealth of exhibits. Visitors will encounter the *hall of fame*, which pays tribute to icons from various sports, showcasing their achievements and contributions to the athletic community. Each display serves as a reminder of the profound impact these athletes have had on both Louisiana and the world of sports.  \n\nThe architecture of the museum itself is noteworthy, characterized by its modern design that complements the historical significance of the artifacts housed within. Inside, guests will find interactive exhibits and multimedia presentations that bring to life the stories behind the memorabilia. The museum also offers a glimpse into the regional history of Northwest Louisiana, featuring displays that recount the diverse cultural influences that have shaped the area. As you wander through thoughtfully curated exhibits, expect to gain a deeper appreciation for the spirit and resilience that define Louisiana’s community. Whether you’re exploring the latest sports memorabilia or delving into the past, a visit to **Louisiana Sports Hall of Fame and Northwest Louisiana History Museum** promises an enlightening journey for all ages.",
+      "content_highlights": [
+        "Hall of fame honoring Louisiana's legendary athletes",
+        "Interactive exhibits illustrating regional history",
+        "Multimedia presentations showcasing significant sports moments",
+        "Rich cultural narratives reflecting Northwest Louisiana's heritage",
+        "Modern architectural design enhancing visitor experience"
+      ],
+      "content_generated_at": "2026-01-18T03:44:08Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-new-orleans-1850-house",
@@ -989,7 +2029,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -1002,7 +2042,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1025,10 +2065,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:44:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5045686968"
+      "phone": "5045686968",
+      "is_scoreable": false,
+      "content_summary": "Step back in time at the **1850 House**, a beautifully preserved landmark in the heart of New Orleans. This historic site offers a unique glimpse into the life of a wealthy Creole family during the mid-19th century, showcasing original furnishings and artifacts that tell the story of a bygone era. A visit here is more than just a tour; it's an immersive experience into the rich cultural tapestry of Louisiana's history.",
+      "content_description": "**1850 House** stands as a stunning testament to the lavish lifestyle of Creole families in New Orleans during the mid-19th century. Located in the French Quarter, this historic site has been meticulously preserved to provide visitors with an authentic look at life in 1850. Enter through its grand doors and be transported into a world of opulent decor, where original furnishings and intricate period details reflect the elegance of Creole heritage. The museum's architecture, characterized by its *classically inspired* façade and *ornate wrought-iron balconies*, is itself a stunning example of the era’s craftsmanship. This combination of beauty and history makes the **1850 House** a must-see for anyone interested in the unique cultural fabric of New Orleans.  When visiting, you’ll have the opportunity to explore various rooms, each filled with original artifacts that narrate the daily lives of the family who once inhabited this space. From lavish parlors to cozy bedrooms, the house is adorned with pieces ranging from *mahogany furniture* to *delicate china*, taking you on a sensory journey through time.  Furthermore, knowledgeable guides enhance the experience by sharing intriguing stories and contextual insights, making your visit as educational as it is enjoyable. Whether you’re a history buff or just looking to soak in some local culture, the **1850 House** invites you to engage with the rich heritage of Louisiana.",
+      "content_highlights": [
+        "Authentic 1850s Creole family home experience",
+        "Meticulously preserved original furnishings and artifacts",
+        "Insightful guided tours that share fascinating historical narratives",
+        "Stunning architecture featuring *wrought iron balconies*",
+        "Located in the vibrant French Quarter, a cultural hub"
+      ],
+      "content_generated_at": "2026-01-18T03:44:18Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-new-orleans-cabildo",
@@ -1048,7 +2101,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -1061,7 +2114,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1084,10 +2137,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:44:28Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5045233939"
+      "phone": "5045233939",
+      "is_scoreable": false,
+      "content_summary": "The Cabildo is a pivotal historical site in New Orleans, offering a unique glimpse into the city's rich cultural and political past. As the former City Hall and a centerpiece of the Louisiana Purchase, this museum showcases artifacts and exhibits that narrate the vibrant story of New Orleans and its diverse heritage. A visit here is a journey through history that you won't want to miss.",
+      "content_description": "**The Cabildo** stands as a monument to the history of New Orleans, capturing the essence of the city's unique blend of cultures. Once the seat of colonial government and a site of great political significance, this magnificent building is a testament to the city's French and Spanish influences, merging architectural styles that reflect its rich past. The building itself is an example of elegant *Spanish Colonial architecture*, with grand arches and a towering presence overlooking Jackson Square, making it an integral part of the city's landscape. Visitors can admire the intricate details in its design, which serves as a backdrop to the stories that unfold within its walls.   \n\nInside **The Cabildo**, guests are treated to a diverse collection of artifacts and exhibits that trace New Orleans' history from its founding in 1718 through the Louisiana Purchase and beyond. A highlight is the display of the original *Louisiana Purchase* documents, a pivotal moment in American history. The museum also offers a variety of engaging programs that invite visitors to experience the cultural richness of the city through guided tours, lectures, and exhibitions that showcase everything from *Creole* culture to *African American* history. There's something for everyone to discover, ensuring that every visit is not only educational but also an enriching dive into the vibrant legacy of New Orleans. \n\nWhether you're a history enthusiast or a curious traveler, **The Cabildo** provides a unique lens through which to explore New Orleans’ complex identity, making it a must-visit destination in this vibrant city.",
+      "content_highlights": [
+        "Home to the original documents of the Louisiana Purchase",
+        "Artifacts showcasing the cultural diversity of New Orleans",
+        "Exhibits on Creole and Cajun history",
+        "Guided tours led by knowledgeable staff",
+        "Stunning Spanish Colonial architectural features"
+      ],
+      "content_generated_at": "2026-01-18T03:44:28Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-new-orleans-contemporary-arts-center",
@@ -1107,7 +2173,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1116,38 +2182,52 @@
       "reservation_required": null,
       "accessibility_url": "https://cacno.org/accessibility",
       "reputation": 2,
-      "collection_tier": null,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 2,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The institution is described as a contemporary arts center and multi-arts complex focused on events, performances, and courses, with no evidence of an Impressionist or historical permanent collection. Modern/contemporary strength is inferred from the museum’s name and stated contemporary focus, but collection depth and interpretive/chronological framing are not indicated, suggesting a smaller, program-driven institution with limited permanent holdings and regional reputation.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "wikidata",
         "openstreetmap",
         "official_website",
         "https://cacno.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q5164964; Wikidata: inferred reputation=2 from sitelinks; Nominatim: matched 1 result; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:16:40Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "5133458400"
+      "phone": "5133458400",
+      "is_scoreable": true,
+      "content_summary": "New Orleans’ Contemporary Arts Center is a must for art lovers who want to feel the city’s creative pulse right now. Rather than a vast permanent collection, CAC shines through sharp, frequently changing exhibitions of contemporary art—often with strong ties to the Gulf South. Housed in a dramatic industrial-style building in the Warehouse District, it pairs ambitious installations and performance with an intimate scale that makes close looking easy. Go for the immediacy, the experimentation, and the sense of discovery.",
+      "content_description": "In the Warehouse District, **Contemporary Arts Center (CAC)** offers a focused, high-energy encounter with art being made *now*. This is not a “masterpiece” museum; it’s a place where contemporary artists test ideas in public—through rotating exhibitions that often spotlight New Orleans and the broader Gulf South alongside national and international voices. For visitors, that means the experience stays fresh: return trips can feel like entirely different museums, with shows that lean into *installation*, *new media*, photography, and concept-driven painting and sculpture.\n\nThe building’s industrial character—high ceilings, generous open galleries, and a sense of raw scale—suits the CAC’s strengths. **Large-format works and immersive installations** read well here, and the galleries’ flexibility allows curators to build environments rather than simply hang objects. The architecture also places you firmly in New Orleans’ creative corridor, where adaptive reuse and contemporary culture sit comfortably alongside historic texture.\n\nFor art-focused travelers, the pleasure is in proximity and immediacy: you can spend an hour or an afternoon moving through tightly curated shows, catching a talk or performance when scheduled, then stepping back out into one of the city’s most walkable arts neighborhoods. Pair your visit with nearby galleries and design shops for a full Warehouse District art circuit—and come ready to be surprised by what contemporary art can do in a city that thrives on reinvention.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions emphasizing installation, photography, and new media—ideal for repeat visits",
+        "Warehouse District setting that makes it easy to combine CAC with nearby galleries and art-centered wandering",
+        "Industrial-scale, flexible galleries well suited to immersive and large-format contemporary work",
+        "Programming that can include artist talks, performances, and time-based art experiences",
+        "An intimate, discovery-driven visit: small enough to absorb in one sitting, ambitious enough to challenge expectations"
+      ],
+      "content_generated_at": "2026-01-18T01:16:40Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-new-orleans-hermann-grima-and-gallier-historic-houses",
@@ -1180,7 +2260,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1201,9 +2281,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:44:37Z",
       "notes": null,
-      "city_tier": 1
+      "city_tier": 1,
+      "is_scoreable": false,
+      "content_summary": "Step into the rich tapestry of New Orleans history at the **Hermann-Grima and Gallier Historic Houses**. These two beautifully preserved antebellum mansions offer a unique glimpse into the lives of 19th-century Creole and Anglo-American families. Experience the charm and grandeur of Historic New Orleans with engaging tours that bring the past to life.",
+      "content_description": "**Hermann-Grima and Gallier Historic Houses** uniquely showcase the vibrant lifestyles of New Orleans' affluent families during the 19th century. Nestled in the heart of the French Quarter, these two historic homes stand as testaments to the city’s architectural heritage and social history. Visitors will be captivated by the elegance of both houses, which feature stunning examples of *Greek Revival* and *Italianate* design. The Gallier House, with its meticulously crafted woodwork and intricate ironwork, transports guests to a bygone era, while the Hermann-Grima House beckons with its lush courtyard gardens and historical significance as a rare surviving example of *Creole* architecture. The fascinating stories behind the families that once inhabited these homes bring an intimate understanding of New Orleans' cultural evolution.  Both houses offer guided tours that delve into the unique lifestyles, customs, and experiences of their inhabitants, providing a remarkable insider look at the past.  Visitors can marvel at beautiful period furnishings, paintings, and decorative arts that tell the story of New Orleans' wealthy society.  Additionally, the charming gardens of the Hermann-Grima House invite guests to pause and reflect amidst fragrant blooms, further enhancing the exploratory experience. The **Hermann-Grima and Gallier Historic Houses** not only illuminate the historical significance of this vibrant city but also provide an enriching and immersive experience for anyone seeking to appreciate the depth of New Orleans' history and culture.",
+      "content_highlights": [
+        "Exquisite antebellum architecture showcasing *Greek Revival* and *Italianate* styles",
+        "Guided tours that narrate the lives of 19th-century Creole and Anglo-American families",
+        "Lush gardens at the Hermann-Grima House for a tranquil escape",
+        "Authentic period furnishings and decorative arts that enhance the visitor experience",
+        "Unique insight into the blend of cultures that shaped New Orleans' social history"
+      ],
+      "content_generated_at": "2026-01-18T03:44:37Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-new-orleans-presbytere",
@@ -1236,7 +2329,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 10,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1258,9 +2351,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:44:45Z",
       "notes": null,
-      "city_tier": 1
+      "city_tier": 1,
+      "is_scoreable": false,
+      "content_summary": "The **Presbytere** in New Orleans offers a captivating glimpse into the city's rich history, showcasing an unparalleled collection of artifacts related to the vibrant culture and legacy of Louisiana. It’s a must-visit destination for anyone wanting to immerse themselves in the unique folklore, festivities, and the indelible spirit of this remarkable city.",
+      "content_description": "**Presbytere** stands majestically in Jackson Square, a striking example of Spanish Colonial architecture that speaks to New Orleans' storied past. Originally constructed as a residence for the priests of St. Louis Cathedral, this exquisite building now houses compelling exhibits that illuminate the diverse history of Louisiana. Visitors are treated to an in-depth look at the region's famed Carnival celebration—Mardi Gras—through stunning costumes, videos, and interactive displays that truly bring the festivities to life. The museum's collection also encompasses artifacts from the devastating impact of Hurricane Katrina, offering poignant reflections on resilience and recovery amidst the city’s vibrant tapestry.  \n\nStep inside and let the grandeur of the high ceilings and classic architectural details wash over you as you explore galleries filled with historic memorabilia, photographs, and artworks that celebrate the cultural melange that is New Orleans. The **Presbytere** not only serves as a repository of artifacts but also as a living testament to the city’s dynamic journey through triumph, tragedy, and celebration—each exhibit woven together with stories that reflect the heart and soul of its people. The interactive nature of the exhibits invites visitors of all ages to engage deeply with the content, making every visit both memorable and enlightening.",
+      "content_highlights": [
+        "Mardi Gras costume exhibition showcasing ornate traditional masks and outfits",
+        "Powerful Hurricane Katrina exhibit reflecting on resilience and recovery",
+        "Rich collection of artifacts that tell the story of Louisiana's cultural evolution",
+        "Breathtaking Spanish Colonial architecture that enhances the immersive experience",
+        "Interactive displays that engage visitors of all ages with the history of New Orleans"
+      ],
+      "content_generated_at": "2026-01-18T03:44:45Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-la-thibodaux-e-d-white-house",
@@ -1293,7 +2399,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1314,9 +2420,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Thibodaux; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:44:54Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The E.D. White House in Thibodaux is a hidden gem that offers visitors a glimpse into Louisiana's historic past. This charming home, once the residence of Louisiana's first Catholic governor, showcases unique architecture and rich cultural heritage, making it a must-visit for history enthusiasts and architecture lovers alike.",
+      "content_description": "**The E.D. White House** is a remarkable historical site that captures the essence of Louisiana's 19th-century charm. Nestled in Thibodaux, this beautifully preserved mansion was the home of Edward Douglas White, who served both as a prominent state governor and later as a U.S. Supreme Court Chief Justice. Visitors will be captivated not only by the house's *antebellum architecture* but also by the stories of White's significant political legacy and the historical context of the era in which he lived. The distinctive features of the home, such as its spacious verandas and elegant moldings, are a testament to the design aesthetics of the time, making this an architectural delight.   \n\nAs guests walk through the E.D. White House, they can explore period furnishings and exhibits that reflect the lifestyle of the era. The museum provides engaging educational opportunities, including tours that illuminate the intricate details of Louisiana's political history and the cultural backdrop of the 1800s. The lush grounds surrounding the house further enhance the visitor experience, offering a serene environment to reflect on history. With enthusiastic guides and thoughtfully curated displays, the E.D. White House invites you to step back in time and experience the weight of history in a setting that is both picturesque and informative.",
+      "content_highlights": [
+        "Historic home of Edward Douglas White, Louisiana's first Catholic governor",
+        "Exquisite antebellum architecture and beautiful grounds",
+        "Engaging tours that delve into Louisiana's political history",
+        "Period furnishings that bring the past to life",
+        "Educational opportunities highlighting the cultural context of the 1800s"
+      ],
+      "content_generated_at": "2026-01-18T03:44:54Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T03:44:54Z"
 }

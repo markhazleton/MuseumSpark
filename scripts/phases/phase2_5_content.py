@@ -53,7 +53,7 @@ LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")  # openai or anthropic
 
 # Model selection based on museum type
 PREMIUM_MODEL = "gpt-5.2"  # For art museums - higher quality, more expensive
-STANDARD_MODEL = "gpt-5.2"  # Temporarily using gpt-5.2 until gpt-5-mini is available
+STANDARD_MODEL = "gpt-4o-mini"  # For non-art museums - cost-efficient (gpt-5-nano not available yet)
 
 
 @dataclass

@@ -7,21 +7,21 @@
       "museum_id": "usa-ut-unknown-nora-eccles-harrison-museum-of-art-nehma",
       "country": "USA",
       "state_province": "Utah",
-      "city": null,
+      "city": "Logan",
       "museum_name": "Nora Eccles Harrison Museum of Art (NEHMA)",
       "alternate_names": null,
       "website": "https://artmuseum.usu.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "650 N 1100 E, Logan, UT 84341, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 41.75223,
-      "longitude": -111.80901,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "84341",
+      "latitude": 41.7432421,
+      "longitude": -111.8060852,
+      "place_id": "ChIJh1n689B9VIcRixSihuDF9uY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -29,35 +29,181 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "NEHMA is explicitly focused on modern and contemporary art of the Western United States, with a 5,500-object collection and emphasis on movements like Beat, post-surrealism, and Bay Area Abstract Expressionism, supporting a strong modern/contemporary score. No evidence indicates Impressionist holdings, so Impressionism is scored negligible. As an accredited academic museum with art-historical movement framing, it likely provides good interpretive context; its scope appears regionally focused rat",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:56:16Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4357970163"
+      "phone": "(435) 797-0165",
+      "website_google": "https://artmuseum.usu.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 160,
+      "google_reviews": [
+        {
+          "author_name": "Victoria Reyes",
+          "author_url": "https://www.google.com/maps/contrib/116737014535211970297/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWXKVpY4oR593v8B_mJEeSE5jSiybv8So6KZ-v45GqIA75W_RJNWw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "What a wonderful museum. It has standing and rotating exhibits. I was so moved by several of the pieces. I won’t spoil the experience for anyone but if you have limited time but can squeeze in this museum it will be very memorable.",
+          "time": 1756184979,
+          "translated": false
+        },
+        {
+          "author_name": "jeff lambson",
+          "author_url": "https://www.google.com/maps/contrib/101507590381268692204/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIG97H6UJ1sc98T6lmpD9NjZYDXLStAhfg9fpguIs2R1oNle-Y=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Incredible museum with a stunning collection. Great programs, free admission, and free parking.",
+          "time": 1757132063,
+          "translated": false
+        },
+        {
+          "author_name": "Aiden Maher",
+          "author_url": "https://www.google.com/maps/contrib/106040807095833762902/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXmkJYHtmMgcaxd-B5fgv2kmPcpie1m9RgdONLLAJQSmMmiHX_b=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "4 months ago",
+          "text": "The art was scribbled, messy, strange, overly simple and ugly. All of the paintings had “deep meaning” behind them but in the end not that deep because they only represented modern politically correct ideas and nothing else. There was nothing in there that made me truly reflective or change my perspective.\n\nIt was all art that was made poorly. It was appreciated because the “intentional” mistakes and inconsistencies in the art were supposed to represent something deeper. However art is naturally incosistent and imperfect. When that becomes the focus of the artwork we move away from art and more towards empty political statements. Art needs to be first and foremost beautiful and difficult to replicate or match. There needs to be at the very base a deep appreciation for the creative process. Art is not only about statements it’s about testing the limits of the human creative spirit and its capacity to create paradise.",
+          "time": 1755898246,
+          "translated": false
+        },
+        {
+          "author_name": "Brobuddle Duggledog",
+          "author_url": "https://www.google.com/maps/contrib/102370717463677473357/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKizhyYLfS6F2hkkFhGdAdkyoXisO50gazUxsD0BVg8C13i0w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "It was fascinating. There's all manners of different kinds of abstract art and each has a small descriptor about the artist and what their painting was intended to mean. It's very fascinating. There's also interactive exhibits and some that are mixed with electronics to create a unique experience. Plus it's free and the staff are very polite and knowledgeable. I learned a lot from this and would gladly come again.",
+          "time": 1561055595,
+          "translated": false
+        },
+        {
+          "author_name": "Van Nguyen",
+          "author_url": "https://www.google.com/maps/contrib/107623651259220860868/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXpxVvWoisalPHEfZzyJbO-muwPXc-_cm-SgkOZweqjbIe60Qkflw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "This is a wonderful place with modern and contemporary art. Trimpin is one of my favorite pieces. By inserting a coin, a rhythmic sound will be generated. It was amazing!",
+          "time": 1646117076,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "Set on the Utah State University campus in Logan, the Nora Eccles Harrison Museum of Art (NEHMA) is a smart stop for travelers who like their museum visits focused, visual, and quietly ambitious. The collection is best known for modern and contemporary American art—especially work connected to the American West—presented in intimate galleries that reward slow looking. Expect strong painting and printmaking, thoughtful rotating exhibitions, and a calm, campus-based visit that pairs easily with a day exploring Cache Valley.",
+      "content_description": "**Nora Eccles Harrison Museum of Art (NEHMA)** at Utah State University offers an art-lover’s antidote to blockbuster crowds: a **compact, carefully curated museum** where modern and contemporary works can be seen up close and revisited across changing exhibitions. Its reputation is local, but the experience is serious—ideal for travelers who enjoy seeing how a region tells its story through art. NEHMA’s strengths center on **American art of the 20th and 21st centuries**, with particular resonance for the American West and the cultural landscapes of Utah and the Intermountain region. Expect galleries that encourage comparison between *abstraction* and *representation*, and between studio-driven experimentation and place-based imagery.\n\nArchitecturally, NEHMA’s campus setting contributes to the visit: you’ll move through **quiet, light-conscious gallery spaces** designed for viewing rather than spectacle, with a rhythm that makes it easy to dip in for an hour or linger longer. Rotating exhibitions keep repeat visits worthwhile, often pairing collection works with contemporary perspectives—an engaging way to track living conversations in art.\n\nFor visitors, the pleasure is in the museum’s **approachability and clarity**: readable wall texts, manageable scale, and the sense that you’re seeing works chosen with intention. Pair your visit with a stroll through USU’s grounds and nearby Logan cafés; NEHMA fits beautifully into a day trip, offering a concentrated encounter with modern and contemporary art in a setting that feels both scholarly and welcoming.",
+      "content_highlights": [
+        "Focused strength in modern and contemporary American art, with strong regional resonance in the American West",
+        "Rotating exhibitions that refresh the galleries and recontextualize collection works",
+        "Intimate, light-conscious galleries that reward close looking and repeat viewing",
+        "Campus location at Utah State University—easy to combine with a walk through USU and a Logan day itinerary",
+        "A calm, uncrowded visitor experience with accessible interpretation and a scholarly, curated feel"
+      ],
+      "content_generated_at": "2026-01-18T04:56:16Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ut-unknown-southern-utah-museum-of-art",
@@ -77,7 +223,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -90,7 +236,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -112,9 +258,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Cedar City' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:56:25Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The Southern Utah Museum of Art offers a captivating blend of regional and contemporary art, making it a unique destination for both art lovers and curious travelers. Nestled in Cedar City, this museum embodies the rich cultural heritage and vibrant artistry of Southern Utah, inviting visitors to explore its diverse collections and engaging exhibitions.",
+      "content_description": "**Southern Utah Museum of Art** (SUMA) stands as a testament to the dynamic artistic landscape of the region. Opened in 2016, this relatively new museum is both a cultural hub and an architectural gem, designed by renowned architect *Michael B. Johnson*. With its stunning modern façade and beautifully landscaped grounds, SUMA not only showcases art but also serves as a picturesque spot for contemplation and engagement with the surrounding natural beauty of Southern Utah's red rock country. Visitors will find that the museum's innovative architecture complements the artworks displayed within, allowing for an immersive experience. In addition to its striking design, the museum is dedicated to celebrating local artists and showcasing the rich narratives of the region through a diverse range of exhibitions. Many of the featured artworks reflect the unique landscapes and cultural tales of Southern Utah, including paintings, sculptures, and multimedia installations. \n\nEngaging with the **Southern Utah Museum of Art** means participating in an artistic journey that connects the past with contemporary expressions. Visitors can experience rotating exhibitions that highlight both regional talent and national works, along with *programs* and *workshops* aimed at fostering creativity in the community. Whether you're wandering through the thoughtfully curated galleries or attending one of their educational events, the museum offers an interactive and enriching experience. Adding to the allure, SUMA’s conveniently located in Cedar City, making it an accessible stop for tourists keen to explore art that speaks to the heart of southern Utah's identity. Don't miss the opportunity to delve into this vibrant cultural landscape and take part in a vibrant artistic dialogue that celebrates both history and innovation.",
+      "content_highlights": [
+        "Stunning modern architectural design by Michael B. Johnson",
+        "Focus on regional artists and southern Utah's cultural narratives",
+        "Diverse range of exhibitions, including contemporary art and multimedia installations",
+        "Engaging educational programs and community outreach workshops",
+        "Beautifully landscaped grounds that provide a serene setting for art appreciation"
+      ],
+      "content_generated_at": "2026-01-18T04:56:25Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ut-unknown-utah-museum-of-contemporary-art",
@@ -147,7 +306,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -168,9 +327,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Salt Lake City' from open data; MRD: computed city_tier=3 for Salt Lake City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:56:32Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The Utah Museum of Contemporary Art is a vibrant hub of creativity that showcases innovative works from emerging and established artists. Its dynamic exhibitions and engaging community programs make it a must-visit destination in Salt Lake City for art enthusiasts and casual visitors alike, seeking to explore the forefront of contemporary art and culture.",
+      "content_description": "**Utah Museum of Contemporary Art** (UMOCA) stands as a beacon of creativity and innovation in the heart of Salt Lake City. Founded in 1931, the museum has evolved significantly, becoming a pivotal institution for contemporary art lovers. With a mission to support and showcase local, national, and international artists, UMOCA presents a diverse range of exhibitions that challenge and inspire audiences. Visitors can expect to experience art in various forms, from traditional mediums to cutting-edge installations that reflect the complexities of modern life. The museum's *commitment to accessibility* ensures that everyone can engage with the art on display, making it a welcoming space for all.  <br><br>  Consisting of multiple galleries and flexible exhibition spaces, **UMOCA** encourages exploration and provides a unique opportunity to discover the latest trends and movements in contemporary art. The architecture of the building itself is an artwork—its sleek, modern design contrasts beautifully with the natural beauty of the surrounding landscape. As you wander through the galleries, engaging with provocative artworks and installations, take part in the museum's lively workshops, artist talks, and community events designed to foster a deeper understanding of the contemporary art scene. Don't miss the chance to immerse yourself in this artistic sanctuary that invites curiosity and conversation.",
+      "content_highlights": [
+        "Dynamic exhibitions featuring both local and international artists",
+        "Innovative installations that reflect current social and cultural themes",
+        "The museum's commitment to accessibility and community engagement",
+        "Workshops and artist talks that enhance visitor understanding of contemporary art",
+        "A beautifully designed space that encourages exploration and creativity"
+      ],
+      "content_generated_at": "2026-01-18T04:56:32Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ut-salt-lake-city-utah-museum-of-fine-arts-university-of-utah",
@@ -203,7 +375,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -224,9 +396,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Salt Lake City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:56:38Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The Utah Museum of Fine Arts is a treasure trove of artistic diversity, showcasing a vast collection that spans centuries and cultures. Located on the University of Utah campus, this museum offers visitors a unique opportunity to explore exceptional works of art, engage with thought-provoking exhibitions, and enjoy a rich cultural experience that reflects the vibrancy of the West.",
+      "content_description": "**Utah Museum of Fine Arts** is a hidden gem in Salt Lake City, offering a remarkable journey through the world of art. Nestled on the scenic *University of Utah* campus, this museum boasts a diverse collection that includes over 20,000 works ranging from *ancient artifacts* to contemporary masterpieces. Visitors will be captivated by the museum's ability to connect various cultures through art, showcasing *European paintings*, *American photography*, and *Asian textiles*, among other highlights. Each visit presents an opportunity to experience not only art but also the history and stories behind each piece.  \n\nThe architecture of the **Utah Museum of Fine Arts** further enhances the visitor experience, with its striking modern design blending seamlessly with the natural surroundings. Spacious galleries allow for immersive exploration, while the outdoor sculpture garden invites guests to reflect amidst nature. Regularly changing exhibitions ensure that there's always something new to discover, including artist talks, workshops, and family-friendly activities that engage all ages. The museum also strives to foster community ties by featuring local artists and cultural events, making it a vital part of Salt Lake City’s vibrant art scene. Whether you’re an art aficionado or a casual visitor, the **Utah Museum of Fine Arts** promises a memorable experience that celebrates creativity in its many forms.",
+      "content_highlights": [
+        "Diverse collection of over 20,000 works of art",
+        "Focus on both historical and contemporary international pieces",
+        "Outdoor sculpture garden featuring unique installations",
+        "Engaging educational programs and family activities",
+        "Regularly changing exhibitions that highlight local artists"
+      ],
+      "content_generated_at": "2026-01-18T04:56:38Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T04:56:38Z"
 }

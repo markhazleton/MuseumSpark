@@ -34,7 +34,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -55,9 +55,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:21:13Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "America’s First Law School in Litchfield is a fascinating destination that highlights the evolution of legal education in the United States. A visit here offers a unique glimpse into the roots of American law and is a must for history and law enthusiasts alike.",
+      "content_description": "**America’s First Law School** is a remarkable institution steeped in history, located in the quaint town of Litchfield, Connecticut. Established in 1784, this school played a pivotal role in shaping the legal landscape of the United States. Visitors will find themselves immersed in the story of how law education began in America, featuring exhibits that detail the lives of notable alumni and the impact of their legal practices on modern law. With its charming historical setting, the school provides an intimate glimpse into the rigorous study and foundational principles that molded some of the nation’s finest legal minds.  At the heart of the museum, explore the *regal architecture* of the original Litchfield Law School and its surroundings which evoke a sense of scholarly pursuit and tradition, allowing guests to soak in the rich atmosphere of legal history.  As you wander through this educational treasure, don't miss the extensive collection of artifacts, documents, and photographs that showcase the evolution of law education throughout the centuries.  Throughout your visit, engaging programs and events will enrich your experience, offering interactive opportunities for all ages to learn about the crucial role of law in society.  Whether you are a local resident or a traveling history buff, **America’s First Law School** promises a thought-provoking experience that connects the past to the present.  Join us in celebrating the legacy of legal education—it's an enlightening journey that awaits!  ",
+      "content_highlights": [
+        "Exhibits on the evolution of American legal education",
+        "Historical documents and artifacts from notable alumni",
+        "Architectural heritage of the original law school building",
+        "Interactive programs for all ages",
+        "Educational resources on the impact of law in society"
+      ],
+      "content_generated_at": "2026-01-18T03:21:13Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-connecticut-river-museum",
@@ -77,7 +90,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM",
+      "museum_type": "Science Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -90,7 +103,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -112,30 +125,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Essex' from open data; MRD: computed city_tier=3 for Essex; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.ctrivermuseum.org: HTTP 307 for http://www.ctrivermuseum.org",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:21:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8607243623"
+      "phone": "8607243623",
+      "is_scoreable": false,
+      "content_summary": "Nestled in the charming town of Essex, the **Connecticut River Museum** captivates visitors with its immersive exploration of the river's historical and ecological significance. With engaging exhibits and stunning riverfront views, this science museum offers a unique opportunity to envision the vital role the Connecticut River has played in shaping the region.",
+      "content_description": "**Connecticut River Museum** showcases the rich tapestry of life along the historic Connecticut River. Located on the scenic waterfront, the museum invites visitors to delve into the environmental and cultural history of one of New England's most significant waterways. From educational programs to hands-on exhibits, every aspect of the museum is designed to engage and inspire both young and seasoned explorers of nature and history alike. The stunning *views of the river* provide a picturesque backdrop as visitors contemplate the natural beauty that has drawn people to this region for centuries. \n\nOne of the museum's standout collections features artifacts and interpretations related to the river's *maritime heritage*, highlighting its importance to trade, transportation, and local ecosystems. The **Connecticut River Museum** also emphasizes sustainability and conservation efforts through interactive displays that educate visitors on the river's ecology and the vital species that inhabit it. The blend of **modern exhibit design** and historical context creates an engaging experience that encourages visitors to appreciate and protect this vital resource for future generations. With year-round programming, including seasonal events and workshops, every visit to the **Connecticut River Museum** unfolds anew, making it a rewarding destination for families, nature enthusiasts, and history buffs alike.",
+      "content_highlights": [
+        "Interactive exhibits on the ecological history of the Connecticut River",
+        "Maritime artifacts showcasing the river's trade and transportation significance",
+        "Scenic riverfront views and opportunities for outdoor exploration",
+        "Educational programs for families and children focused on conservation",
+        "Seasonal events celebrating local culture and the river's heritage"
+      ],
+      "content_generated_at": "2026-01-18T03:21:22Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-harriet-beecher-stowe-center",
       "country": "USA",
       "state_province": "Connecticut",
-      "city": null,
+      "city": "Hartford",
       "museum_name": "Harriet Beecher Stowe Center",
       "alternate_names": null,
       "website": "https://www.harrietbeecherstowecenter.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "77 Forest St, Hartford, CT 06105, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 41.76436,
-      "longitude": -72.7005,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "postal_code": "06105",
+      "latitude": 41.7668083,
+      "longitude": -72.7003833,
+      "place_id": "ChIJw44nyE9T5okRbAtVUWrxdDw",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -148,7 +174,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -163,15 +189,140 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:21:37Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2035229258"
+      "phone": "(860) 522-9258",
+      "website_google": "http://harrietbeecherstowecenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 239,
+      "google_reviews": [
+        {
+          "author_name": "Heidi Moore",
+          "author_url": "https://www.google.com/maps/contrib/111424192957713153143/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKO0E6BPywjSop6GTDI7FQPPztJts72pV0Mt4SzUZ4-lMLWEtAQA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "Our family went on a 30 minute tour at Harriet Beecher Stowe's house. The tour was well done, informative, and thought-provoking. I love what they are striving to promote at the Stowe Center - equality, literacy, activism, education. I just wish there would have been more to explore.",
+          "time": 1763950936,
+          "translated": false
+        },
+        {
+          "author_name": "Glen Mc Call",
+          "author_url": "https://www.google.com/maps/contrib/111882812251426825707/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW04_f1QyvhwdzLyv3Mgm2SkV9YiS-wTFDxsS7_DDHF5KFQrApJ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "I have to be honest. The reason I  stopped here is because it is right next door to the Mark Twain Museum and House, which was my main purpose in being here.\n\nBut, after checking out the Twain Museum, decided to take a tour of the Stowe residence. Again, full disclosure...I haven't read \"Uncle Tom's Cabin\" or any other writings of Harriet. I knew who she was and what the book was about and it's implications on American history.\n\nHowever, after the guided tour, which is geared to answering the questions of those attending, I have a deeper and more profound respect for Harriet Beecher Stowe. I even purchased a copy of \"Uncle Tom's Cabin\". I especially liked how the guide connected Stowe's work to what is happening in our society today in the area of racial inequality.\n\nI highly recommend this tour for all but especially for families with children and teenagers. The guides really make history come to life and applicable to your own life!",
+          "time": 1659916853,
+          "translated": false
+        },
+        {
+          "author_name": "Bill Oas",
+          "author_url": "https://www.google.com/maps/contrib/107877847812723700520/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL7k9qf-7QTvLEHjwgGAXjBsBh0hwBJghtwdFt76P4OSWLKmw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "Very much enjoyed the tour of the home and the education received. A bit expensive but the upkeep likely requires that cost. This woman did so much more than just write amazing and times challenging books. Check out the Katherine Day home next door too. Not open to the public but beautiful from the outside.",
+          "time": 1666536845,
+          "translated": false
+        },
+        {
+          "author_name": "Natalie Reed",
+          "author_url": "https://www.google.com/maps/contrib/115350931651804451119/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVxMsh3FXth9FVPStBPrmER52OOd5hMGwdgQ2gEhFZlIndp7mM=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "I stopped by the Stowe Center after a tour next door at the Mark Twain house. I didn’t fully know what I was signing up for but decided to join the hour long tour. I appreciate how fascinating and thought provoking the guides made this tour. They did a great job of highlighting the complexities of American history and the work of Harriet Beecher Stowe. The conversation had amongst the tour group were great, and I was very glad I stopped in. I highly recommend a stop for anyone in the area!",
+          "time": 1751146181,
+          "translated": false
+        },
+        {
+          "author_name": "Srijit Bhattacharya",
+          "author_url": "https://www.google.com/maps/contrib/111011675037122820990/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVwYSYJp0uP_H7eHAJvJB4HZbzd5MpjCBLkx1oNfSKEB0OIcYRH=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Excellent historical landmark. The guides are very helpful. You will get a deep look into America's dark past of slavery. The ticket counter offers a discount of $3 if you show them your ticket from the more famous Mark Twain museum. This place also has a restroom, so it's helpful for travellers. There are also a number of food joints nearby, a little up the street like Domino's Pizza and some others.",
+          "time": 1518313634,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Harriet Beecher Stowe Center offers a unique glimpse into the legacy of one of America’s foremost abolitionists and authors, with immersive exhibits that resonate with the ongoing dialogues about race, identity, and social justice. Visiting this center not only enlightens but also inspires visitors to reflect on history's impact on present-day society.",
+      "content_description": "**Harriet Beecher Stowe Center** is not just a museum; it’s a journey into the heart of American social reform. Nestled in Hartford, Connecticut, this center is dedicated to the life and legacy of Harriet Beecher Stowe, the author of *Uncle Tom's Cabin*, a pivotal work that stirred the nation’s conscience and became instrumental in the abolition movement. As you step into the beautifully preserved 1871 Victorian house where Stowe lived, you'll be transported back to an era of passionate advocacy for human rights and equality. The home's architecture, with its impressive woodwork and period furnishings, provides a rich backdrop for understanding Stowe's life and her powerful influences on literature and society.       * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 00000000000000**Showcasing rich collections of artifacts, manuscripts, and personal letters, the center offers a multifaceted view of Stowe’s influence not only on literature but also on social justice movements. The interactive exhibits invite visitors to engage with historical themes, connecting Stowe’s work with contemporary issues of racial injustice and human rights advocacy. Each guided tour is thoughtfully designed to provoke discussion and reflection, making it an ideal destination for schools, families, and anyone interested in the power of literature to enact social change.       * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * * * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 0**Visiting the **Harriet Beecher Stowe Center** promises to be a thought-provoking experience. From contemplative gardens to engaging special events, this center encapsulates a pivotal moment in American history and encourages visitors to consider their role in the ongoing story of equality and justice. Don't miss the opportunity to reflect on the past and its relevance to today—it's a visit that will stay with you long after you've left its inspiring grounds.",
+      "content_highlights": [
+        "The historic Victorian house where Harriet Beecher Stowe lived",
+        "Exhibits detailing the impact of *Uncle Tom's Cabin* on American society",
+        "Engaging programs that connect Stowe's work to contemporary social issues",
+        "A beautiful garden designed for contemplation and reflection",
+        "Diverse collections of artifacts, letters, and personal items related to Stowe's life"
+      ],
+      "content_generated_at": "2026-01-18T03:21:37Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-hill-stead-museum",
@@ -191,7 +342,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORY MUSEUM",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -204,7 +355,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -226,10 +377,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Farmington' from open data; MRD: computed city_tier=3 for Farmington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:21:46Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8606772063"
+      "phone": "8606772063",
+      "is_scoreable": false,
+      "content_summary": "Nestled in the picturesque town of Farmington, the **Hill-Stead Museum** offers an enchanting journey through American history and art. With its stunning collection of Impressionist paintings and breathtaking architecture, this museum invites you to explore the rich legacy of the wealthy standish family while enjoying the tranquil beauty of its surroundings. Don't miss your chance to experience this hidden gem on your next adventure.",
+      "content_description": "**Hill-Stead Museum** is not just a repository of artifacts; it’s an immersive experience that blends art, history, and nature in an elegant estate setting. Built in 1901 by philanthropist and art collector, Alfred Cooney, this stunning Colonial Revival mansion is home to an exceptional collection of *Impressionist paintings*, featuring works by artists such as *Monet*, *Degas*, and *Cassatt*. As you stroll through the meticulously curated galleries, you'll encounter over 200 masterpieces in their original context, which adds to the authenticity of your visit. The museum's dedication to preserving the rich heritage of the Standish family offers a unique glimpse into the life of affluent Americans during the early 20th century. Marvel at the intricate woodwork and decor that reflect the era's aesthetics and values, making the house itself an essential part of the collection.  \n\n Beyond the art, **Hill-Stead Museum** boasts enchanting gardens and landscaped grounds that reflect the family’s reverence for nature. Lush meadows and winding paths invite you to wander and appreciate the serene environment as you take in the scenic vistas. Engage with the museum's various programs, including lectures, seasonal festivals, and features like *art in the garden* that enhance your experience. Every visit holds unique opportunities to delve into the rich tapestry of the Hill-Stead’s past while enjoying the present-day ambiance, making it a must-visit destination for history buffs and art lovers alike.",
+      "content_highlights": [
+        "Stunning collection of Impressionist paintings including works by Monet and Cassatt",
+        "Architecturally significant Colonial Revival mansion with original decor",
+        "Lushly landscaped grounds with walking paths and seasonal gardens",
+        "Engaging programs and events that connect visitors to art and history",
+        "Insight into the life and legacy of the Standish family, early 20th-century philanthropists"
+      ],
+      "content_generated_at": "2026-01-18T03:21:46Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-ireland-s-great-hunger-museum",
@@ -249,7 +413,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -262,7 +426,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -284,10 +448,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Hamden' from open data; MRD: computed city_tier=2 for Hamden; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:21:54Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "2035826500"
+      "phone": "2035826500",
+      "is_scoreable": false,
+      "content_summary": "Ireland's Great Hunger Museum in Hamden is a profound tribute to one of the most significant events in Irish history. This unique museum offers visitors an in-depth look at the Great Famine's impact through an extensive collection of art, artifacts, and educational programs, encouraging a deep understanding of resilience and remembrance.",
+      "content_description": "**Ireland’s Great Hunger Museum** is a captivating destination that dives deep into the somber yet essential history of the Irish Famine, known as An Gorta Mór. As the world’s largest collection of art and artifacts related to this tragic event, the museum provides a sacred space for reflection, understanding, and education. Here, visitors can immerse themselves in the various dimensions of the famine through compelling artworks that evoke the emotions of loss and survival, alongside personal narratives and artifacts that breathe life into the historical story. The museum aims not only to inform but also to touch the heart and mind of each visitor, fostering a connection to a pivotal moment in Irish history.   In addition to its excellent collection, **Ireland’s Great Hunger Museum** hosts various programs and events that bring the themes of resilience and cultural heritage to the forefront, making it a vibrant hub for community engagement.  The architectural design of the museum, with its modern and accessible layout, enhances the visitor experience, allowing for a seamless flow through the exhibits. As you explore, you will find interactive displays and insightful guides that will enrich your understanding of the Great Hunger. Whether you're an academic, a history enthusiast, or someone seeking to connect with Irish culture, this museum is a must-visit on your journey of discovery.  Furthermore, its tranquil setting encourages thoughtful contemplation about the past, making it a place of both learning and remembrance.  Visit **Ireland’s Great Hunger Museum** to not only witness this important chapter in history but also to honor the countless lives affected by the famine.",
+      "content_highlights": [
+        "World's largest collection of art and artifacts related to the Irish Famine",
+        "Interactive displays and educational programs that engage visitors",
+        "Thought-provoking artwork that captures the emotional depth of the Great Hunger",
+        "Regular community events that promote cultural awareness and engagement",
+        "Modern architecture that enhances the overall visitor experience"
+      ],
+      "content_generated_at": "2026-01-18T03:21:54Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-keeler-tavern-museum-history-center",
@@ -307,7 +484,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -320,7 +497,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -342,10 +519,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Ridgefield' from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:02Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2034385485"
+      "phone": "2034385485",
+      "is_scoreable": false,
+      "content_summary": "The **Keeler Tavern Museum & History Center** in Ridgefield is a captivating blend of history, architecture, and community spirit. Visitors can explore 18th-century buildings and immerse themselves in the rich narratives of local life, making it a unique destination for history enthusiasts and curious travelers alike.",
+      "content_description": "**Keeler Tavern Museum & History Center** is a remarkable historical treasure nestled in the heart of Ridgefield. Established in 1713, this meticulously preserved site offers guests a glimpse into colonial life through its charming architecture and compelling stories. The museum features an array of historic buildings, including a stagecoach inn that once welcomed travelers and notable figures such as General Lafayette. Visitors have the opportunity to step inside these time-honored structures, where each room resonates with whispers of the past and invites exploration of early American heritage.  \n\nIn addition to its scenic outdoor grounds, **Keeler Tavern Museum & History Center** hosts a variety of engaging programs and events year-round. From interactive workshops that encourage hands-on learning to guided tours that dive deep into Ridgefield’s transformation over the centuries, there’s something for everyone. Whether you're intrigued by antiques, architecture, or the unfolding tales of local history, each visit promises an enriching experience. Embrace the rich tapestry of Ridgefield's past and experience the welcoming spirit of a community that cherishes its history.  \n\nWith well-curated exhibitions and a friendly atmosphere, a visit to **Keeler Tavern Museum & History Center** is not just educational—it's a delightful journey back in time, perfect for families, history buffs, and anyone looking to connect with the charming stories of early New England life.",
+      "content_highlights": [
+        "The historic 18th-century stagecoach inn",
+        "Interactive educational programs for all ages",
+        "Beautifully maintained gardens and outdoor spaces",
+        "Insightful exhibitions on Ridgefield's local history",
+        "Guided tours led by knowledgeable volunteers"
+      ],
+      "content_generated_at": "2026-01-18T03:22:02Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-litchfield-history-museum",
@@ -365,7 +555,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -378,7 +568,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -400,10 +590,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:08Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "8605674501"
+      "phone": "8605674501",
+      "is_scoreable": false,
+      "content_summary": "The **Litchfield History Museum** is a hidden gem that offers an immersive glimpse into the rich tapestry of Litchfield's past. With engaging programs and a collection that celebrates local heritage, this museum invites visitors to explore history in a uniquely interactive way. Don't miss out on discovering the stories that shaped this charming community.",
+      "content_description": "**Litchfield History Museum** serves as a captivating portal to the past, uniquely illustrating the diverse narratives that comprise the town's rich history. Nestled in the picturesque Litchfield, Connecticut, this museum excels in *historic preservation*, expertly curating collections that highlight significant local events, influential figures, and the evolution of community life. Within its walls, you'll encounter artifacts that tell stories from early colonial times to the present day, providing a comprehensive picture of Litchfield's evolution over the centuries. Visitors can deeply engage with interactive exhibits designed to spark curiosity and conversation about the town's history and its role in broader American heritage. Furthermore, the museum hosts a variety of *educational programs* and *community events*, making history accessible and exciting for all ages. Whether you're joining a guided tour or participating in a hands-on workshop, there's always something new to discover. Perfect for families, history buffs, and curious travelers alike, the **Litchfield History Museum** promises a memorable visit filled with insights and inspiration. This charming venue invites you to experience the stories of yesteryear that continue to shape the vibrant community of today. Immerse yourself in local lore; you might just find a piece of history that resonates with you. ",
+      "content_highlights": [
+        "Interactive exhibits on local history",
+        "Educational programs for all ages",
+        "Artifacts from early colonial life",
+        "Community-driven events and workshops",
+        "Immersive experiences that engage visitors"
+      ],
+      "content_generated_at": "2026-01-18T03:22:08Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-lyman-allyn-art-museum",
@@ -423,7 +626,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -431,57 +634,71 @@
       "tickets_url": "https://www.lymanallyn.org/visit/",
       "reservation_required": null,
       "accessibility_url": "https://lymanallyn.pastperfectonline.com/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The Wikipedia summary emphasizes European works on paper, 19th-century American painting, and decorative arts, with no explicit Impressionist holdings, suggesting only minor Impressionist representation at most. Contemporary art is explicitly included, but without evidence of major depth, so Modern/Contemporary is rated moderate. As a long-established art museum with educational programs and an associated historic house on campus, it likely provides good historical framing despite being primaril",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://www.lymanallyn.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New London' from open data; MRD: computed city_tier=3 for New London; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T00:18:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8604432545"
+      "phone": "8604432545",
+      "is_scoreable": true,
+      "content_summary": "Set in a handsome historic building in New London, the Lyman Allyn Art Museum is a rewarding stop for art lovers exploring Connecticut’s shoreline. Its galleries balance American and European works with strong regional context, inviting you to slow down and look closely—whether you’re drawn to portraiture, landscape, or modern design. The museum’s human scale, thoughtful installations, and welcoming atmosphere make it ideal for an unhurried visit, with frequent programs and rotating displays that encourage return trips.",
+      "content_description": "**Lyman Allyn Art Museum** is New London’s anchor for fine art, offering a satisfying, close-looking museum experience in a city better known for its maritime history. For travelers, its appeal is twofold: a collection that typically spans American and European traditions—often including painting, works on paper, and decorative arts—and a setting that feels purpose-built for quiet discovery. Expect galleries that reward attention to brushwork, materials, and storytelling, rather than blockbuster crowds, with changing installations that keep the visit fresh.\n\nArchitecturally, the museum’s historic presence is part of the pleasure. Its **classical, early-20th-century museum character**—symmetry, dignified entrances, and calm interior proportions—creates an atmosphere where *portraiture*, *landscape*, and *modern* works can be experienced without distraction. The building itself sets a tone of civic pride, making the museum feel like a cultural landmark rather than a quick stop.\n\nFor art enthusiasts, the visitor experience is intentionally approachable: clear sightlines, manageable gallery loops, and programming that often deepens what you’ve just seen—think talks, family-friendly events, and community-centered exhibitions. Pair your visit with a stroll around nearby New London attractions to round out the day, but plan to give yourself time inside; this is the kind of museum where a single room can hold your attention longer than expected.",
+      "content_highlights": [
+        "A well-rounded fine-art experience with American and European works presented in an intimate, easy-to-navigate setting",
+        "Historic, classically styled museum architecture that enhances a contemplative, gallery-focused visit",
+        "Rotating exhibitions and reinstalled galleries that encourage repeat visits and seasonal returns",
+        "Programs and events designed to deepen looking—lectures, tours, and community-oriented activities",
+        "A rewarding cultural stop on the Connecticut shoreline, ideal to combine with a broader New London day trip"
+      ],
+      "content_generated_at": "2026-01-18T00:18:58Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-mattatuck-museum",
       "country": "USA",
       "state_province": "Connecticut",
-      "city": "Connecticut",
+      "city": "Waterbury",
       "museum_name": "Mattatuck Museum",
       "alternate_names": null,
       "website": "http://mattatuckmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "144 West",
+      "street_address": "144 W Main St, Waterbury, CT 06702, USA",
       "address_line2": null,
       "postal_code": "06702",
-      "latitude": 41.55709,
-      "longitude": -73.04309,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORIC PRESERVATION",
+      "latitude": 41.5574584,
+      "longitude": -73.0431565,
+      "place_id": "ChIJkXNm16rB54kR9fiQ_D2Rs8g",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -494,7 +711,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -511,15 +728,170 @@
         "walker_reciprocal",
         "official_website",
         "http://mattatuckmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Connecticut' from open data; MRD: computed city_tier=3 for Connecticut; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:16Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2037530381"
+      "phone": "(203) 753-0381",
+      "website_google": "https://www.mattmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 92,
+      "google_reviews": [
+        {
+          "author_name": "Peipei Rong",
+          "author_url": "https://www.google.com/maps/contrib/105711336749417909453/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUfQhoJGtLV40pfyMdB9NPPDIIvdAlz8S_FjwWn8I0Xxl5OSW4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "The Mattatuck Museum is a vibrant cultural hub offering an impressive range of programs and activities for all ages. From art exhibitions and historical displays to hands-on workshops, performances, and community events…\nBeautifully situated near a green open space, the museum’s architecture invites light and nature in through its large floor-to-ceiling windows.",
+          "time": 1753584617,
+          "translated": false
+        },
+        {
+          "author_name": "Clarisse Matisyn",
+          "author_url": "https://www.google.com/maps/contrib/101018220617058613578/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUD9a6GLTC52nU591eVRIa0oVokL5jO7v-fyPBk17TtQSNBDprp=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Nice museum to wander through. Staff were knowledgeable and friendly. Clean and bright. Many interesting exhibits and beautiful original art. We really enjoyed and appreciated this museum.",
+          "time": 1729180035,
+          "translated": false
+        },
+        {
+          "author_name": "Raymond Ellis",
+          "author_url": "https://www.google.com/maps/contrib/109430807411173314397/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU89p6dDtkn0J-7Rp2bKzFGtMfHZ9u4AVMXQG5ABHvMQxSDNZeh=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I really enjoyed the Mattatuck Museum.  The permanent collections on display, including the history exhibits and button museum, were great.  I also liked all of the special exhibits, especially the Unmasked, (Re) Work and Sea Change exhibits",
+          "time": 1712770815,
+          "translated": false
+        },
+        {
+          "author_name": "Monique Chevygirlss",
+          "author_url": "https://www.google.com/maps/contrib/116813601460178140968/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtMdL8CdLhW4gP8FyKYXpXLViNT8yX1K1TL23HtngSMxMryA7O2Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "History, good food and great friends! What else could I ask for? Murder mystery show yes please! Who done it? That's for you to figure out.  The museum features multiple levels art exhibits. They also feature early Americana, Connecticut and local Waterbury area history. Which is my favorite. They also feature local products from Connecticut and their gift shop. And a wider range of gifts very unique items as well.\nInside the museum they have The Art of Yum.\nThey featured\nPepper polo panini\nFig bacon and ricotta grilled cheese\nSpicy tuna rolls\nMini tacos- steak, chicken and Mediterranean (vegan)\nKorean noodle bowls- spicy kimichi (vegan) and shrimp\n\nThey also had a signature cocktails called Gin cold blood. Definitely fits the murder mystery theme, which features gin, pomegranate syrup, lemon juice and seltzer water. If they also had can cocktails beer and wine.\nAbout the show they do bend the rules of History as they use historic artist from the Connecticut area.\nArtists like Alexander Calder, Elsie Roland Chase, Francis Hines I heard that whose art was technically discovered in a dumpster due to the fact that he rented a barn in Watertown Connecticut. We also had George Marinko and Kay Sage. We also had the sassy detective officer Smith. This was a very unique and interesting experience I suggest it to anyone who wants to have a fun night along with great food.",
+          "time": 1654738190,
+          "translated": false
+        },
+        {
+          "author_name": "Hidden Talents Firefly and the Worm",
+          "author_url": "https://www.google.com/maps/contrib/111136421678965282472/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUzphF4nT2EX8q4lway-EHB6d9aPSfu31VNEOKFRLz72o3acg8=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "If you are looking for a lost button look no further becuase they all.ended up in this musuem. Wow 👀 all the buttons.  I really liked this musuem all floors accessable by elevator and although I saw some questionable art made with totirilla warming blankets the 1st floor was my favorite.  This history of waterbury and seeing all the soap box derby and using those 📞listening to hear all the stories of people very interesting.",
+          "time": 1680469949,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The **Mattatuck Museum** in Waterbury, Connecticut, offers a captivating journey through regional history, art, and culture. With unique collections that blend fine art and historical artifacts, this museum is a hidden gem perfect for those seeking a deeper understanding of the local heritage and artistic traditions.",
+      "content_description": "**Mattatuck Museum** is a treasure trove that celebrates the rich tapestry of Waterbury's history and the vibrant culture of Connecticut. Housed in a beautifully restored historic building, the museum features an impressive collection of artworks that date back to the 18th century, reflecting the area's artistic legacy. Visitors can explore *American art*, *historic artifacts*, and *contemporary exhibitions*, all while enjoying the museum's charming architecture, which combines both modern and historic elements seamlessly. This blend creates an inviting atmosphere that welcomes art lovers and history buffs alike.  \n\nThe museum is particularly renowned for its extensive collection of *Connecticut art*, featuring works from local artists that capture the essence of the region. **Mattatuck Museum** also hosts a variety of engaging programs and special events that bring the community together, making every visit a unique experience. Whether participating in a guided tour, attending a workshop, or enjoying a special exhibition, guests will find much to appreciate. The museum not only preserves history but also actively participates in its continuation, making it a dynamic space for learning and exploration. Don't miss the opportunity to connect with Waterbury’s heritage in a setting that inspires both reflection and creativity.",
+      "content_highlights": [
+        "Extensive collection of Connecticut regional art",
+        "Historic artifacts that tell Waterbury's story",
+        "Engaging community programs and events",
+        "Beautifully restored architecture blending modern and historic",
+        "Interactive exhibits catering to visitors of all ages"
+      ],
+      "content_generated_at": "2026-01-18T03:22:16Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-new-britain-youth-museum-and-nature-center",
@@ -539,7 +911,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Science",
       "topics": null,
       "audience_focus": null,
@@ -552,7 +924,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -574,10 +946,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'New Britain' from JSON-LD; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:23Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "8602253020"
+      "phone": "8602253020",
+      "is_scoreable": false,
+      "content_summary": "The New Britain Youth Museum and Nature Center offers a unique blend of engaging educational programs and immersive nature experiences, perfect for families and young explorers. It's a place where learning meets adventure, making it an essential stop for visitors in New Britain, CT.",
+      "content_description": "**New Britain Youth Museum and Nature Center** combines the joys of exploration with the power of education, creating an unforgettable experience for families and children alike. This museum stands out not only for its rich array of *interactive exhibits* but also for its stunning natural surroundings, encouraging children to connect with the world around them through hands-on learning and discovery. With a focus on *wildlife education* and *environmental stewardship*, visitors find a welcoming space that sparks curiosity and creativity. Moreover, the museum hosts a variety of community programs designed to foster engagement with nature, from nature trails to seasonal events, making each visit unique and memorable.  \n\nAs you enter the **New Britain Youth Museum and Nature Center**, you will be greeted by a *vibrant atmosphere* that promotes learning through play. The exhibits are thoughtfully curated to inspire a love for nature and science, featuring live animals, gardening, and art projects that encourage participants to build hands-on skills while learning about the local ecosystem. The architecture of the center creatively integrates outdoor spaces that serve as natural classrooms, enhancing the educational experience. Whether you’re wandering through the nature trails, participating in exciting workshops, or simply enjoying the scenic beauty of the grounds, every aspect of your visit is designed to ignite a sense of wonder in children and adults alike.",
+      "content_highlights": [
+        "Interactive exhibits that promote hands-on learning",
+        "Nature trails that offer direct engagement with wildlife",
+        "Seasonal community programs for all ages",
+        "Workshops that combine creativity and environmental education",
+        "Stunning outdoor spaces that serve as natural classrooms"
+      ],
+      "content_generated_at": "2026-01-18T03:22:23Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-new-britian-museum-of-american-art",
@@ -597,7 +982,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -605,12 +990,12 @@
       "tickets_url": "http://www.nbmaa.org/visit#hours-admission",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -619,43 +1004,57 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is unrelated to the New Britain Museum of American Art, so there is no usable evidence about the permanent collection or interpretive approach. Based only on the museum’s name and location (a city-level American art museum in New Britain, CT), it is most plausibly a locally oriented institution with a moderate, non-encyclopedic collection.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.nbmaa.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'New Britain' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "8602290257"
+      "phone": "8602290257",
+      "is_scoreable": true,
+      "content_summary": "In New Britain, Connecticut, the New Britain Museum of American Art is a rewarding stop for anyone who wants to see the story of American art unfold in focused, human scale galleries. Expect a well-chosen survey of painting, sculpture, prints, and photography—strong on 19th- and 20th-century work—paired with rotating exhibitions that keep repeat visits fresh. It’s an ideal museum for art lovers who enjoy looking closely, learning context, and leaving with a sharper sense of what “American art” can be.",
+      "content_description": "**New Britain Museum of American Art** offers an art-lover’s deep dive into the shifting ideas, styles, and ambitions that shaped art in the United States. As a dedicated American-art museum, it’s especially satisfying for travelers who want more than highlights: you’ll move through galleries that trace the arc from 19th-century realism and landscape traditions into modern and contemporary experimentation. Along the way, expect a mix of painting, sculpture, works on paper, and photography—often with the kind of intimate viewing conditions that make brushwork, printmaking techniques, and tonal nuance easy to appreciate.\n\nThe museum’s strengths are best experienced as a narrative: rooms that invite comparison between different regional perspectives and artistic intentions—*realism* versus *abstraction*, social observation versus formal innovation. Rotating exhibitions and public programs add momentum, encouraging you to revisit familiar names through new themes and pairings. For visitors who like to connect art to lived history, the museum’s interpretive approach can make movements feel less like textbook labels and more like evolving conversations.\n\nArchitecturally, the experience is about clarity and concentration: **well-proportioned gallery spaces**, controlled lighting, and a layout that supports unhurried looking. Plan time to read labels and linger—this is a museum that rewards close attention rather than a quick lap. For an art-focused day trip in central Connecticut, it’s a strong, thoughtfully curated encounter with American visual culture.",
+      "content_highlights": [
+        "Focused presentation of American art across painting, sculpture, works on paper, and photography",
+        "Gallery sequence that makes it easy to follow shifts from realism and landscape traditions to modern and contemporary approaches",
+        "Rotating special exhibitions that refresh the visit and spotlight different themes in American art",
+        "Intimate, well-lit viewing conditions ideal for close looking at technique and surface detail",
+        "Programs and events that add context for travelers who enjoy artist talks, tours, or themed evenings"
+      ],
+      "content_generated_at": "2026-01-18T00:19:50Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-new-england-air-museum",
       "country": "USA",
       "state_province": "Connecticut",
-      "city": "Connecticut",
+      "city": "Windsor Locks",
       "museum_name": "New England Air Museum",
       "alternate_names": null,
       "website": "https://www.neam.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "36 PERIMETER RD",
+      "street_address": "36 Perimeter Rd, Windsor Locks, CT 06096, USA",
       "address_line2": null,
-      "postal_code": "6096",
-      "latitude": 41.94628,
-      "longitude": -72.68835,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "postal_code": "06096",
+      "latitude": 41.9477179,
+      "longitude": -72.6915496,
+      "place_id": "ChIJFcXUb-v95okRDKgAuIDd-TQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -668,7 +1067,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -685,35 +1084,190 @@
         "walker_reciprocal",
         "official_website",
         "https://www.neam.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Connecticut' from open data; MRD: computed city_tier=3 for Connecticut; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "8606233305"
+      "phone": "(860) 623-3305",
+      "website_google": "http://www.neam.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: 9:00 AM – 4:00 PM",
+          "Sunday: 9:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 2243,
+      "google_reviews": [
+        {
+          "author_name": "Kailey MarcAurele",
+          "author_url": "https://www.google.com/maps/contrib/111116038327994573935/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVcR6GU3dEN8jV_PKV37Hf1AotibzWDEylzpKh0heihRoUyqg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Today we visited for the first time and we really enjoyed our time here. We took our time as we made our way through the various exhibits (spent 3 hours total here). There were three hangars to explore as well as aircraft on display outside. My partner and I are both interested in history and he was specifically interested in the aircraft (I like to look and learn the history, he likes to dive a bit deeper with them). The docents were extremely friendly and we learned a lot from them. Sometimes I get really overwhelmed by how much there is to take in at museums, but what I really liked about this museum was the fact that most of the informative signs had large text with maybe a paragraph or two so I didn’t feel like I was trying to rush to read tons of text - it made it really easy to digest the information. We also loved that we were able to go into many of the aircraft on display or peek inside them.",
+          "time": 1754179520,
+          "translated": false
+        },
+        {
+          "author_name": "Clarisse Matisyn",
+          "author_url": "https://www.google.com/maps/contrib/101018220617058613578/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUD9a6GLTC52nU591eVRIa0oVokL5jO7v-fyPBk17TtQSNBDprp=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I have visited the Air Museum several times, in the early 1990s and again in the 2000s. I enjoyed each visit. Since then, the museum has undergone significant expansion. Although many exhibits are roped off, certain planes and helicopters offer visitors the opportunity to climb the stairs and enter the cockpit if you ask a staff member. We took advantage of this opportunity, sitting in two planes. We saw families with young children and older couples who seemed to be enjoying themselves. We were there for about two hours. There's a gift shop, elevators, vending machines, and restrooms.",
+          "time": 1757615468,
+          "translated": false
+        },
+        {
+          "author_name": "Nicole Thomas",
+          "author_url": "https://www.google.com/maps/contrib/103871882058678574181/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI_c1NXpwDISJlP51wB9W9gTCoDKbX1fYyiGCVFOMbNDEglIw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Wanted something to do on a rainy day and found ourselves at the New England air museum. The planes and helicopters were amazing but what really made it a great experience was the volunteers. Lawrence is a fountain of knowledge, we leaned so much and enjoyed exploring the exhibits. I give this place a 10/10, definitely worth a visit and give yourself plenty of time, it’s bigger than you think.",
+          "time": 1758765079,
+          "translated": false
+        },
+        {
+          "author_name": "Justin Stepien",
+          "author_url": "https://www.google.com/maps/contrib/118274466839459877770/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUFw3eNeDOSpmHfp5vXnTxy2SOtU5kDPtAWek3h632W-7XksvqK=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Well.. this place is awesome. I visit aviation museums whenever I travel. This one wins, and my home museum is EAA Museum and I think its better then that. Way cool. Totally worth it if in the area!",
+          "time": 1763234847,
+          "translated": false
+        },
+        {
+          "author_name": "Rachelle Brown",
+          "author_url": "https://www.google.com/maps/contrib/114438341644087592281/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXVY1E3hqKCozl1gWFxBSST5lBXzfSxVaFA_5P6-aP_30s4RtTynA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Absolutely worth the visit — a gem for aviation lovers and curious minds alike!\n\nThe New England Air Museum is a must-see destination for anyone interested in aviation history, STEM, or simply a fun and educational day out. Tucked right next to Bradley International Airport, it’s far more than a local attraction — it’s a well-curated, thoughtfully expanded museum that tells the powerful story of American flight with a special focus on Connecticut’s deep roots in aerospace.\n\nThe museum spans several large hangars packed with everything from vintage biplanes to Cold War jets to experimental prototypes. Highlights for me included standing beneath the massive B‑29 Superfortress, climbing into open cockpits, and seeing the incredibly rare Goodyear Blimp control car. The Sikorsky VS‑44A flying boat was especially impressive — it’s the last of its kind in the world!\n\nWhat really sets this museum apart is the level of interactivity and education. There are flight simulators, hands-on exhibits, and a restoration hangar where you can watch aircraft being brought back to life by passionate volunteers. My kids loved the build-and-fly area, and we even met a docent who used to work as a military pilot — the stories they shared added so much depth to the visit.\n\nAnother highlight is the Tuskegee Airmen exhibit, which was incredibly well done — a powerful and moving tribute that blends history, resilience, and inspiration. It’s clear this museum is committed to preserving stories that matter.\n\nStaff and volunteers are knowledgeable and eager to answer questions. Everything is clean, well-organized, and family-friendly. You can tell there's real passion behind the scenes here.\n\n🕐 Plan to spend at least 2–3 hours if you want to see everything, and longer if you have young ones who want to explore the hands-on zones. Parking is free and easy. Admission was very reasonable, and we were glad to support such a meaningful institution.\n\nI also learned they’re expanding soon to include even more educational space, a planetarium, and a Challenger Learning Center, which sounds amazing for future visits.",
+          "time": 1753657747,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The **New England Air Museum** in Windsor Locks, Connecticut, offers visitors a fascinating journey through aviation history. Featuring an impressive array of aircraft and interactive exhibits, this museum celebrates the innovations and achievements of flight. It’s a must-visit destination for aviation enthusiasts and families alike, showcasing unique artifacts and hands-on experiences that inspire awe and curiosity.",
+      "content_description": "**New England Air Museum** is a gem located in the heart of Windsor Locks, Connecticut, celebrating the rich history of aviation in New England and beyond. Housed in a spacious facility, the museum showcases over 80 aircraft, which range from vintage biplanes to modern military jets. Visitors can explore *iconic planes*, such as the Lockheed F-104 Starfighter and the Douglas C-47 Skytrain, each telling its own story of innovation and adventure in the skies. The museum's collection not only highlights the technical evolution of flight but also pays homage to the heroes and visionaries who made these incredible machines possible.   \n\nThe museum's architecture enhances the experience, featuring large hangar spaces that allow for close-up views of the exhibits. Interactive displays and informative signage engage guests of all ages, inviting them to participate in enriching programs and events throughout the year. From flight simulators to guided tours, there's something for everyone, making it a perfect family outing or an inspiring day for aviation aficionados. As you wander the halls of the **New England Air Museum**, you'll find yourself captivated by the thrill of flight and the stories behind each aircraft, ensuring that your visit is both educational and enjoyable.  \n\nWhether you're a lifelong aviation lover or just curious about the wonders of flight, the **New England Air Museum** promises an enlightening experience that contributes to the rich tapestry of American aviation history—offering insights that are uniquely tethered to the new and the nostalgic alike.",
+      "content_highlights": [
+        "Over 80 aircraft, including vintage and modern models",
+        "Iconic military jets such as the Lockheed F-104 Starfighter",
+        "Interactive exhibits including flight simulators",
+        "Educational programs and seasonal events for families",
+        "Spacious hangar architecture allowing for immersive exploration"
+      ],
+      "content_generated_at": "2026-01-18T03:22:32Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-stanley-whitman-house",
       "country": "USA",
       "state_province": "Connecticut",
-      "city": "Connecticut",
+      "city": "Farmington",
       "museum_name": "Stanley-Whitman House",
       "alternate_names": null,
       "website": "http://www.noahwebsterhouse.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "37 High St, Farmington, CT 06032, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 41.7304,
-      "longitude": -72.79994,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "postal_code": "06032",
+      "latitude": 41.7216323,
+      "longitude": -72.8248545,
+      "place_id": "ChIJ77o4NRmu54kR9n0Z_fQqYO8",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -726,7 +1280,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -741,15 +1295,150 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Connecticut' from open data; MRD: computed city_tier=3 for Connecticut; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:41Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2036779222"
+      "phone": "(860) 677-9222",
+      "website_google": "http://www.s-wh.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 12:00 – 4:00 PM",
+          "Thursday: 12:00 – 4:00 PM",
+          "Friday: 12:00 – 4:00 PM",
+          "Saturday: 12:00 – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 39,
+      "google_reviews": [
+        {
+          "author_name": "Kyle Higgins",
+          "author_url": "https://www.google.com/maps/contrib/118389166576308201607/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUye4h2WeQ_AwV84SSMu10kxt00-RRCp0XlpKA5Dv5ghTEpKc6h=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "CT Historic Gardens Day at the Stanley-Whitman house was a great visit with tours and demonstrations by knowledgeable guides dressed in outfits from the history of the house. Dennis Picard was stringing marigolds to hang in the window to keep flies out. So wonderful to explore and hear about CT's great history!",
+          "time": 1750626132,
+          "translated": false
+        },
+        {
+          "author_name": "Holly Palmisano",
+          "author_url": "https://www.google.com/maps/contrib/108810059134129555215/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocInoNu3V3_v3oR3irjhVfP7qIYyY9XYB6kxcLvQXNpdkCepZA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Took a great class with Dennis on hearth cooking. Very educational & enjoyable! Planning to come back.",
+          "time": 1698010694,
+          "translated": false
+        },
+        {
+          "author_name": "Stacey Gordon",
+          "author_url": "https://www.google.com/maps/contrib/114059581946048192699/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLgFPjKQ94VVAYT7r08v08QQj_H8Zv9vFzDLNIZDjOkker--w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 2,
+          "relative_time_description": "a year ago",
+          "text": "I hate to say this but this was a 15 min tour of maybe 4 rooms..it wasn't a big  house therefore the tour was short. it wasn't worth $12 a person...The volunteers and employees were very knowledgeable and courteous...we were not allowed photography inside.",
+          "time": 1724126576,
+          "translated": false
+        },
+        {
+          "author_name": "alexandria archer",
+          "author_url": "https://www.google.com/maps/contrib/118283411407105582362/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX7ChBASCDFtF-11foESJo0ewQKBTHt3oc8CoVtFpkTI_kfzqo=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "I visited today with a supported individual and it was excellent! It is seemingly accessible to many with intellectual disabilities and keeps you intrigued throughout the tour. The garden is beautiful and the historical significance is more than I realized was in Farmington. The woman who gave the tour was highly educated on the house and was so delightful! I highly recommend!",
+          "time": 1632420996,
+          "translated": false
+        },
+        {
+          "author_name": "Bayley Usmar",
+          "author_url": "https://www.google.com/maps/contrib/111887170240685903665/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVB9sQNvVrKbYhC-0f6tQUqUUUanYfFUJ1wHt8ZEeC5aTxT6d0=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "My family and I are visiting from out of town and we enjoy historical tours that are able to show us a glimpse into the foundation of early America. Andy and Christy did a wonderful job showing us around the house and answering any questions we had about its past or way of life around the time. I would highly recommend stopping in for a tour if you are in the area and hope it’s as an enjoyable time as it was for us :)",
+          "time": 1672356983,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Step back in time at the **Stanley-Whitman House**, a remarkable representation of 18th-century life in Farmington, Connecticut. This historic home offers a unique glimpse into colonial life, showcasing authentic architecture, period furnishings, and engaging programs that breathe life into history. A visit here is not just a tour; it's an experience that connects you with the rich tapestry of America's past.",
+      "content_description": "**Experience the allure of history at the Stanley-Whitman House**, a picturesque landmark that has stood since 1720. This remarkable home serves as a vital piece of Farmington's heritage, offering visitors an immersive journey into the colonial past where they can discover the intricacies of early American life. The house itself is a stunning example of *colonial architecture*, featuring enchanting elements from its original construction period, including wide-plank floors and authentic fireplaces that once warmed the hearts of families who lived here. Visitors can almost hear echoes of laughter and conversation as they step through the carefully preserved rooms, which retain their historical charm and warmth. \n\nThroughout the year, the **Stanley-Whitman House** hosts a variety of educational programs and special events that engage and inspire. From hands-on workshops showcasing *historic crafts* to immersive storytelling sessions that transport guests back in time, there is something for everyone to appreciate. Families can delight in interactive exhibits that make history come alive for children and adults alike. Whether you're navigating the lush surrounding gardens or contemplating the centuries-old artifacts within, a visit to this historic preservation marvel is a unique opportunity to step into the shoes of our ancestors and appreciate the rich cultural landscape of early America.",
+      "content_highlights": [
+        "Authentic 18th-century colonial architecture",
+        "Unique period furnishings that reflect colonial life",
+        "Engaging educational programs and workshops for all ages",
+        "Beautiful gardens that enhance the historic atmosphere",
+        "Opportunities for immersive storytelling and hands-on experiences"
+      ],
+      "content_generated_at": "2026-01-18T03:22:41Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-yale-center-for-british-art",
@@ -769,7 +1458,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -777,36 +1466,50 @@
       "tickets_url": "https://britishart.yale.edu/museum-shop",
       "reservation_required": null,
       "accessibility_url": "https://britishart.yale.edu/accessibility",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 1,
+      "collection_tier": 1,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 5,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is described as the largest and most comprehensive collection of British art outside the UK, spanning from the Elizabethan period onward, supporting a strong collection tier and high historical-context score. As a British-art specialist, Impressionism is likely present only incidentally (minor), while 20th-century British modern/contemporary art is plausibly represented at a moderate level within its chronological scope. Its standing as a major Yale museum with a uniquely comprehensiv",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://britishart.yale.edu",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Haven' from open data; MRD: computed city_tier=2 for New Haven; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T00:20:45Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": true,
+      "content_summary": "The Yale Center for British Art is a must for anyone who loves painting, prints, and the full sweep of British visual culture. Set in Louis Kahn’s serene, light-filled building, it offers an unusually deep look at British art from the Tudor period through the modern era—often in intimate, uncrowded galleries. Come for Turner’s atmospheric visions and Reynolds’s society portraits, stay for the drawings, rare books, and the kind of close-looking that great museum spaces make possible.",
+      "content_description": "**The Yale Center for British Art** in New Haven is one of the finest places in North America to immerse yourself in British art—richly layered, historically expansive, and superbly installed. Its holdings trace British culture from the 16th century to the present, with particular strength in 18th- and 19th-century painting and works on paper. Expect to encounter major names such as **J. M. W. Turner** (luminous studies and visionary landscapes), **Thomas Gainsborough** and **Sir Joshua Reynolds** (the polish and psychology of grand portraiture), and the narrative bite of **William Hogarth**. The museum’s depth in prints and drawings rewards repeat visits, letting you follow shifts from *Rococo* elegance to *Romanticism* and the social transformations of the industrial age.\n\nJust as compelling is the setting: the museum is housed in a landmark building by **Louis I. Kahn**, celebrated for its calm geometry, finely proportioned galleries, and masterful use of **natural light**. Moving through the spaces feels like an aesthetic experience in itself—quiet, contemplative, and designed for sustained looking. \n\nFor art travelers, the visitor experience is unusually satisfying: readable installations, strong temporary exhibitions, and the sense that you’re seeing a collection built for serious study as well as pleasure. Pair your visit with nearby Yale museums and a stroll through campus architecture for a full day of art and design.",
+      "content_highlights": [
+        "Louis I. Kahn’s landmark museum architecture, prized for serene proportions and beautiful natural light",
+        "Exceptional depth in British painting from the 1700s–1800s, including Turner, Reynolds, and Gainsborough",
+        "Satirical and socially observant works associated with William Hogarth and the rise of modern British visual culture",
+        "Strong works-on-paper holdings—drawings and prints that reveal artists’ processes and shifting styles",
+        "Engaging special exhibitions and a scholarly, uncrowded atmosphere ideal for close looking"
+      ],
+      "content_generated_at": "2026-01-18T00:20:45Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-yale-peabody-museum-of-natural-history",
@@ -826,7 +1529,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "NATURAL HISTORY MUSEUM",
+      "museum_type": "Natural History Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -839,7 +1542,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -861,9 +1564,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:49Z",
       "notes": "CSV: museum type 'NATURAL HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "The **Yale Peabody Museum of Natural History** is a treasure trove of Earth's wonders, showcasing remarkable collections and immersive exhibits that bring the natural world to life. Its dedication to education and research, alongside its unique architectural charm, makes it a must-visit destination in New Haven.",
+      "content_description": "**Yale Peabody Museum of Natural History** is not just a museum; it's an experience that connects visitors with the profound stories of our planet. Established in 1866, it proudly houses one of the oldest and most distinguished collections of natural history artifacts in the United States. Visitors can marvel at the *diverse ecosystems*, *ancient fossils*, and *intricate geological specimens* that illustrate the history of life on Earth, all curated by the expertise of Yale's renowned faculty and researchers. With its captivating permanent exhibits, including the celebrated *Great Hall of Dinosaurs*, where full-scale replicas of fossils amaze young and old alike, the museum truly enchants its visitors. Being home to the world's largest collection of *dinosaur fossils* enriches the educational experience and sparks curiosity about the prehistoric era.  \n\nBeyond the breathtaking exhibits, the **Yale Peabody Museum** also boasts striking **Gothic Revival architecture**, enhancing the journey as you explore the intricacies of their collections. The museum's innovative programs and events engage the community, inviting visitors to delve deeper into various natural history topics while fostering a love for the sciences. Whether you're an *enthusiastic naturalist*, a parent seeking educational family activities, or just an inquisitive traveler, the **Yale Peabody Museum** promises an enlightening adventure that showcases the majesty of our world and the wonders it holds.",
+      "content_highlights": [
+        "Great Hall of Dinosaurs showcasing full-scale dinosaur replicas",
+        "Extensive collection of ancient fossils from various periods",
+        "Unique focus on the biodiversity of Connecticut's ecosystems",
+        "Home to the world's largest collection of dinosaur fossils",
+        "Stunning Gothic Revival architectural design"
+      ],
+      "content_generated_at": "2026-01-18T03:22:49Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-unknown-yale-university-art-gallery",
@@ -883,7 +1599,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -891,37 +1607,51 @@
       "tickets_url": "https://www.facebook.com/YaleArtGallery",
       "reservation_required": null,
       "accessibility_url": "https://usability.yale.edu/web-accessibility/accessibility-yale",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 1,
+      "collection_tier": 1,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 3,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia describes YUAG as a major encyclopedic collection emphasizing early Italian Renaissance, African sculpture, and modern art, supporting a strong modern/contemporary score and a strong overall collection tier. As an encyclopedic university museum spanning many periods and cultures, it likely provides solid historical framing. Impressionism is not singled out, so it is scored as moderate rather than a focus.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://artgallery.yale.edu",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Haven' from open data; MRD: computed city_tier=2 for New Haven; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T00:21:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2034325050"
+      "phone": "2034325050",
+      "is_scoreable": true,
+      "content_summary": "Yale University Art Gallery is one of the great rewards of visiting New Haven: a nationally respected, free art museum with a collection that ranges from ancient Mediterranean treasures to modern masterpieces. It’s a place where you can move from Roman sculpture to African masks to iconic American painting in a single, beautifully designed complex. For art lovers, the real thrill is the depth—this is not a “greatest hits” stop, but a museum built for close looking, discovery, and repeat visits.",
+      "content_description": "**Yale University Art Gallery** is a pilgrimage-worthy stop for art enthusiasts—an encyclopedic museum whose strengths feel unusually cohesive because of its setting: a university built around looking, thinking, and teaching. The collection spans ancient art through contemporary work, with standout depth in European painting and sculpture, American art, and arts of Africa and the ancient Americas. Expect to encounter artists such as **Vincent van Gogh**, **Pablo Picasso**, **Paul Gauguin**, and **Georgia O’Keeffe**, alongside compelling holdings in *Classical* antiquities and global decorative arts. The galleries reward slow travel: labels are thoughtful, installations are often idea-driven, and the overall experience feels more like entering a living studio seminar than a quick survey.\n\nArchitecture is part of the draw. The museum includes a landmark modernist building by **Louis I. Kahn**, admired for its controlled light, tactile materials, and dramatic stairwells—an environment that elevates the act of looking. Recent expansions and renovations knit the campus-facing façades into a welcoming, navigable whole, with a flow that encourages you to wander between periods and mediums.\n\nFor visitors, the experience is both rigorous and relaxing: generous gallery spaces, strong temporary exhibitions, and an atmosphere that invites repeat passes through favorite rooms. Plan time to revisit sections—especially the modern and American galleries—and treat the museum as a curated walk through art history, anchored by scholarship and the pleasure of discovery.",
+      "content_highlights": [
+        "Louis I. Kahn’s modernist Yale University Art Gallery building—an architectural destination for lovers of museum design and light",
+        "Wide-ranging encyclopedic collection spanning ancient Mediterranean art, European painting, American art, and global decorative arts",
+        "Notable modern and post-impressionist holdings, with works by artists such as Vincent van Gogh, Pablo Picasso, and Paul Gauguin",
+        "Strong American art galleries, including key works associated with artists like Georgia O’Keeffe",
+        "Frequent exhibitions and academic-style interpretation that makes close looking and learning part of the visitor experience"
+      ],
+      "content_generated_at": "2026-01-18T00:21:22Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-greenwich-bruce-museum",
@@ -941,7 +1671,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -954,7 +1684,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -977,10 +1707,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Greenwich; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:22:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2038690376"
+      "phone": "2038690376",
+      "is_scoreable": false,
+      "content_summary": "The **Bruce Museum** in Greenwich, Connecticut, offers a captivating blend of art and natural history, inviting visitors to explore its diverse collections and engaging programs. It's a cultural gem that reflects the area's rich heritage and showcases the beauty of both the natural world and artistic creativity.",
+      "content_description": "**Bruce Museum** is a must-visit for anyone interested in the harmonious marriage of art and science. Established in 1963, this charming museum is housed in a beautiful *colonial revival* building that complements its picturesque surroundings. The museum’s dynamic collections span art, science, and history, making it a unique stop for those eager to delve into a world of creativity and exploration. Whether you're admiring the *impressionist* paintings or studying the fascinating geological specimens, you'll find something that piques your curiosity at every turn.  \n\nThe museum’s highlights include its impressive collection of American fine art, which showcases some of the key works from renowned artists such as *Yale University School of Art* alumni and other notable figures. Additionally, the **Bruce Museum** prides itself on its extensive natural history exhibits that offer insight into Connecticut's rich biodiversity, including geological formations and marine life. The rotating exhibitions ensure that there's always something new and unexpected to experience, making each visit unique. Besides the exhibitions, the museum regularly hosts educational programs and events that invite visitors to engage with art and science, ensuring that everyone leaves inspired and enlightened.",
+      "content_highlights": [
+        "Impressive collection of American fine art",
+        "Diverse natural history exhibits showcasing local biodiversity",
+        "Engaging educational programs and workshops",
+        "Architecturally stunning colonial revival building",
+        "Rotating exhibitions featuring contemporary artists and innovators"
+      ],
+      "content_generated_at": "2026-01-18T03:22:56Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-hartford-connecticut-historical-society",
@@ -1000,7 +1743,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -1013,7 +1756,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1033,10 +1776,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Hartford; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:23:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8602365621"
+      "phone": "8602365621",
+      "is_scoreable": false,
+      "content_summary": "The Connecticut Historical Society in Hartford is an essential destination for those interested in the rich tapestry of Connecticut's past. With captivating exhibitions, diverse collections, and engaging programs, this museum invites visitors to delve into the state's history through a unique lens, making it a must-visit for history enthusiasts and casual travelers alike.",
+      "content_description": "**Connecticut Historical Society** serves as a dynamic gateway to the rich heritage of Connecticut. Located in Hartford, this museum is dedicated to preserving and interpreting the state's history through a variety of captivating collections and innovative exhibitions. Visitors will be immersed in the compelling stories that shaped Connecticut, from its colonial roots to modern times. With over 250,000 artifacts, documents, and artworks, the museum's collections provide a comprehensive overview of the state's diverse communities, industries, and cultural evolution. Each visit promises a new discovery, whether through exhibits featuring historic photographs, rare manuscripts, or beautifully crafted furniture.   The architecture of the museum itself is noteworthy, featuring a blend of historical and contemporary design that enhances the visitor experience. The grand historic building is home to both permanent and rotating exhibits that engage visitors of all ages. In addition to the displays, the museum offers a range of **programs and events**, including lectures, workshops, and family activities, ensuring that every visitor finds something of interest.   A visit to the **Connecticut Historical Society** is not just an exploration of artifacts; it's an invitation to connect with the stories that have shaped the state. The knowledgeable staff and volunteers enrich the experience, offering insights that might not be immediately apparent from the displays alone. Whether you're a local resident or a traveling history buff, this museum is a treasure trove of knowledge and inspiration, making it a valuable addition to your itinerary in Hartford.",
+      "content_highlights": [
+        "Extensive collection of over 250,000 artifacts and documents",
+        "Engaging exhibitions that reflect Connecticut's rich history",
+        "Innovative educational programs and workshops for all ages",
+        "Architectural beauty blending historic and modern design",
+        "Interactive storytelling that connects visitors with the past"
+      ],
+      "content_generated_at": "2026-01-18T03:23:03Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-hartford-mark-twain-house-museum",
@@ -1056,7 +1812,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORY MUSEUM",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -1069,7 +1825,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1092,10 +1848,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Hartford; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:23:11Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8602470998"
+      "phone": "8602470998",
+      "is_scoreable": false,
+      "content_summary": "The **Mark Twain House & Museum** is a must-visit for literature lovers and history buffs alike. This stunning Gothic Revival mansion, where Samuel Clemens penned his most famous works, offers a unique glimpse into the life of America's beloved author and the Victorian era that shaped his ideas.",
+      "content_description": "The **Mark Twain House & Museum** is a treasure trove of history and literary significance located in Hartford, Connecticut. This magnificent *Gothic Revival* mansion was the residence of Samuel Langhorne Clemens, better known as Mark Twain, from 1874 to 1891. Here, Twain wrote some of his greatest works, including *The Adventures of Tom Sawyer* and *The Adventures of Huckleberry Finn*. The house itself is a masterpiece of architecture, showcasing an array of *Victorian* influences and intricate woodwork, which leaves visitors in awe of both its grandeur and personal history.\n\nVisitors to the museum can stroll through the beautifully preserved rooms, gaining insight into Twain's family life as well as the social and cultural context of 19th-century America. The museum offers engaging exhibits and educational programs that delve deeper into Twain's literary legacy, his critique of society, and his bold views on race and morality. With guided tours leading you through the remarkable spaces where Twain lived and worked, you’ll feel connected to the past and inspired by his timeless storytelling.\n\nIn addition to exploring the house itself, the accompanying museum features a variety of artifacts, manuscripts, and interactive exhibits that paint a fuller picture of Twain’s life and impact. Don't miss the opportunity to participate in special events and literary programs that the museum frequently hosts, making each visit a unique experience that celebrates the enduring legacy of this iconic American writer.",
+      "content_highlights": [
+        "Guided tours of Twain's beautifully preserved Gothic Revival mansion",
+        "Engaging exhibits on Twain's literary works and societal impact",
+        "Interactive programs that highlight Twain's legacy for visitors",
+        "Unique artifacts and manuscripts related to Twain's life and writings",
+        "Scenic gardens surrounding the mansion, perfect for reflection and photography"
+      ],
+      "content_generated_at": "2026-01-18T03:23:11Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-hartford-wadsworth-atheneum-museum-of-art",
@@ -1115,7 +1884,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1123,37 +1892,51 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 1,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 4,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia notes notable holdings of French and American Impressionist paintings, supporting a strong (but not definitive flagship) Impressionist score. It also highlights modernist masterpieces and contemporary works, indicating strong modern/contemporary representation, alongside broad historical collections (Baroque, ancient, Hudson River School, decorative arts) that suggest good chronological and interpretive context. As Connecticut's largest art museum and the oldest continually operating p",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.wadsworthatheneum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Hartford; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.wadsworthatheneum.org: Network error for http://www.wadsworthatheneum.org: <urlopen error [WinError 10060] A connection att; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T00:22:29Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8602782670"
+      "phone": "8602782670",
+      "is_scoreable": true,
+      "content_summary": "America’s oldest public art museum, the Wadsworth Atheneum in Hartford rewards curious art lovers with an unexpectedly deep, eclectic collection in a dramatic historic setting. You can move from luminous European painting to pioneering modernism and contemporary experimentation within a few elegant galleries. The museum’s strengths feel curated for discovery rather than checklist touring—ideal for travelers who enjoy finding standout works, sharp exhibitions, and beautiful architectural moments without the crowds of larger coastal institutions.",
+      "content_description": "**The Wadsworth Atheneum Museum of Art** is a must for art travelers who love museums with personality: it’s the **oldest continuously operating public art museum in the United States** (founded 1842), and it still feels like a place where big ideas are tested at a human scale. Inside, the collection ranges widely—European painting and sculpture, American art, decorative arts, and a notably strong commitment to modern and contemporary work. The pleasure here is in the museum’s curatorial “mix”: you can trace shifting tastes from historic traditions to *modernism* and beyond, often through tightly focused gallery installations and thoughtfully staged special exhibitions.\n\nArchitecturally, the Atheneum is part of the experience. Its landmark, castle-like exterior and atmospheric interiors create a sense of arrival—more civic monument than white-box gallery. As you move through the building, you’ll feel the dialogue between **historic architecture** and the museum’s evolving presentation of art, from intimate rooms that encourage slow looking to brighter, more open galleries suited to contemporary work.\n\nFor visitors, the Atheneum excels as a half-day or full-day destination: manageable in size, rich in surprises, and strong on the museum-going essentials—clear sightlines, memorable gallery sequences, and opportunities to return to favorite works. If you enjoy comparing periods and mediums—painting to sculpture to decorative arts—this is a rewarding, regional museum that consistently feels larger than its footprint.",
+      "content_highlights": [
+        "America’s oldest continuously operating public art museum (founded 1842) with a distinctly eclectic, discovery-driven collection",
+        "Strong holdings spanning European and American art alongside modern and contemporary works—ideal for cross-period comparisons",
+        "Landmark, historic “castle-like” architecture that makes the building itself part of the aesthetic experience",
+        "Thoughtful, often focused exhibitions that let you spend time with fewer crowds than major coastal museums",
+        "A satisfying visitor scale: easy to cover in a day while still offering repeat-visit depth for serious art lovers"
+      ],
+      "content_generated_at": "2026-01-18T00:22:29Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-ridgefield-aldrich-contemporary-art-museum",
@@ -1173,7 +1956,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1181,38 +1964,52 @@
       "tickets_url": "https://fareharbor.com/embeds/book/thealdrich/?full-items=yes",
       "reservation_required": null,
       "accessibility_url": "https://thealdrich.org/learn/accessibility-programs",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia states the Aldrich has no permanent collection and is dedicated solely to exhibiting contemporary art, so Impressionism is negligible and collection tier is necessarily small/limited. Despite its contemporary focus, the lack of a permanent collection reduces confidence in scoring collection-based modern/contemporary strength; interpretive context is inferred as moderate given thematic exhibitions but not evidenced for permanent galleries.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.aldrichart.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Ridgefield; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T00:22:41Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2034384519"
+      "phone": "2034384519",
+      "is_scoreable": true,
+      "content_summary": "Tucked into leafy Ridgefield, Connecticut, the Aldrich Contemporary Art Museum is a rewarding stop for art lovers who want to see what’s happening now. Known for presenting bold, museum-caliber exhibitions by emerging and mid-career artists, the Aldrich offers an intimate alternative to big-city institutions—where you can linger with challenging new work without crowds. Expect fresh perspectives across contemporary painting, sculpture, video, and installation, plus a welcoming campus setting that makes the visit feel both focused and restorative.",
+      "content_description": "**The Aldrich Contemporary Art Museum** in Ridgefield is a contemporary-art destination prized for its nimble, exhibition-driven program rather than a vast encyclopedic collection. For visitors, that means the galleries feel like a live conversation: rotating shows spotlight artists working today across **installation, sculpture, painting, photography, and time-based media**, often emphasizing new commissions and ideas in progress. The museum’s strength is discovery—encountering artists you may not yet know, presented with curatorial rigor and the breathing room to look closely.\n\nArchitecturally, the Aldrich pairs a serene, small-town setting with a purpose-built museum experience. You’ll move through **clean-lined gallery spaces** designed for contemporary scale and experimentation—ideal for immersive installations and works that demand proximity, sound, or shifting viewpoints. The campus-like feel encourages unhurried viewing, and the museum’s manageable size makes it easy to see everything in one visit while still having time to return to a favorite room.\n\nFor art-focused travelers, the best strategy is to check what’s on before you go: because the Aldrich is exhibition-led, each season offers a different lens on contemporary practice—whether *conceptual* approaches, materially driven sculpture, or socially engaged projects. Pair your visit with the museum’s talks and programs when available, and enjoy the rare pleasure of experiencing ambitious contemporary art in a calm, close-looking environment.",
+      "content_highlights": [
+        "Exhibition-led focus on emerging and mid-career contemporary artists—always changing, always current",
+        "Rotating presentations across installation, sculpture, painting, photography, and time-based media",
+        "Clean, contemporary gallery architecture suited to immersive, large-scale installations",
+        "Intimate size: easy to see in one visit, with time for slow looking and repeat viewing",
+        "Programs and events (talks, tours, seasonal programming) that deepen the experience for art enthusiasts"
+      ],
+      "content_generated_at": "2026-01-18T00:22:41Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-storrs-william-benton-museum-of-art-university-of-connecticut",
@@ -1232,7 +2029,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1245,7 +2042,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1267,10 +2064,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Storrs; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:23:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8606792000"
+      "phone": "8606792000",
+      "is_scoreable": false,
+      "content_summary": "The **William Benton Museum of Art** offers a unique glimpse into American art and architecture, showcasing an impressive collection that spans several centuries. Located on the picturesque University of Connecticut campus, it combines a scholarly atmosphere with vibrant exhibitions, making it a must-visit for art lovers and casual visitors alike.",
+      "content_description": "**William Benton Museum of Art** is a hidden gem nestled within the University of Connecticut campus in Storrs. This museum is renowned for its significant collection of American artwork, featuring over 5,000 pieces that include masterpieces from the Colonial period to contemporary artists. Visitors will have the opportunity to immerse themselves in the richness of American history through art, exploring *pioneering movements* such as *Realism*, *Modernism*, and *Expressionism*. The museum offers rotating exhibitions that highlight both established and emerging artists, ensuring that every visit is a new discovery. With educated staff on hand to guide you, the experience is both enriching and engaging.  <br><br>  The architecture of the museum itself is worthy of admiration, designed in accordance with its surroundings and reflective of the academic ethos of the university. The museum's main gallery features soaring ceilings and natural light that creates an inviting atmosphere for appreciation and contemplation. Visitors can enjoy *interactive programs* and *events*, such as artist discussions, workshops, and guided tours that connect art with the local community. Whether you are a seasoned art aficionado or just beginning your journey into the world of artistic exploration, **William Benton Museum of Art** promises an unforgettable experience through its commitment to education and community engagement.",
+      "content_highlights": [
+        "Impressive collection of over 5,000 American artworks",
+        "Rotating exhibitions featuring both historical and contemporary artists",
+        "Engaging educational programs and community events",
+        "Architectural beauty that enhances the art viewing experience",
+        "Charming setting within the University of Connecticut campus"
+      ],
+      "content_generated_at": "2026-01-18T03:23:18Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-wesleyan-university-davison-art-center",
@@ -1290,7 +2100,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -1298,12 +2108,12 @@
       "tickets_url": "https://www.wesleyan.edu/admission/index.html",
       "reservation_required": null,
       "accessibility_url": "https://www.wesleyan.edu/accessibility/",
-      "reputation": null,
+      "reputation": 3,
       "collection_tier": null,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1312,23 +2122,37 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the Davison Art Center’s permanent collection, so strengths in Impressionist and Modern/Contemporary art and the level of historical interpretation cannot be determined. As a university-affiliated art center at Wesleyan in Middletown, it is most plausibly a primarily local institution in reputation based on the evidence.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://wesleyan.edu/dac",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Wesleyan University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8606852500"
+      "phone": "8606852500",
+      "is_scoreable": true,
+      "content_summary": "Tucked into Wesleyan University, the Davison Art Center is a rewarding stop for art lovers who enjoy close-looking and discovery. Best known for works on paper—prints, drawings, and photographs—this intimate museum shines through thoughtfully curated, study-driven exhibitions. Expect smart thematic shows, a calm academic atmosphere, and the pleasure of seeing original works up close without big-city crowds. It’s an ideal pairing with a Middletown day trip, especially if you like printmaking, draftsmanship, and rotating exhibitions.",
+      "content_description": "**The Davison Art Center** at Wesleyan University offers the kind of museum experience art enthusiasts crave: focused, quietly ambitious, and built around looking carefully. As a university art museum, its strengths often lie in works that reward intimate viewing—**prints, drawings, and photographs**, alongside select objects that support teaching and research. Rather than a single “greatest hits” gallery, you’ll encounter **rotating exhibitions** that bring forward fresh perspectives, pairing techniques and themes across time and place. For visitors, that means repeat visits feel genuinely different, with curators spotlighting process, material, and the visual language of line, tone, and composition.\n\nThe atmosphere is shaped by its academic setting: labels tend to be **thoughtful and contextual**, and programs can include gallery talks or student-driven research that makes the art feel alive and debated rather than fixed. If you’re interested in *printmaking*—how an image moves from matrix to paper—or in the subtle decisions artists make in *drawing* and photographic composition, this is a particularly satisfying stop.\n\nArchitecturally, expect a **campus museum** experience: approachable scale, study-friendly galleries, and a sense of calm that encourages lingering. Plan your visit like a connoisseur—slow down, compare variations, and return when new installations open. For travelers, it’s a high-quality, low-pressure museum moment where **close viewing** and curatorial intelligence take center stage.",
+      "content_highlights": [
+        "Rotating, curator-led exhibitions that refresh the experience across the year",
+        "Notable strength in works on paper: prints, drawings, and photographs suited to close viewing",
+        "A university museum atmosphere with research-driven labels and occasional talks or programs",
+        "Intimate galleries that encourage slow looking and technique-focused appreciation (line, tone, paper, and process)",
+        "A rewarding cultural stop on Wesleyan’s campus—ideal to pair with a Middletown walking day"
+      ],
+      "content_generated_at": "2026-01-18T00:23:18Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ct-west-hartford-noah-webster-house-west-hartford-historical-society",
@@ -1361,7 +2185,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1381,9 +2205,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for West Hartford; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:23:25Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "Nestled in the heart of West Hartford, the **Noah Webster House & West Hartford Historical Society** offers a fascinating glimpse into the life of America's dictionary maker, showcasing the rich history and cultural heritage of the region. With engaging exhibits and special events, this museum is a must-visit for history buffs and families alike.",
+      "content_description": "**Noah Webster House & West Hartford Historical Society** is not just the birthplace of America’s prominent lexicographer, Noah Webster; it is a portal into the vibrant historical tapestry of West Hartford itself. Visitors will be captivated by the beautifully restored 18th-century home where Webster was born, set amid lush gardens that reflect the era's charm. The museum’s mission goes beyond celebrating Webster's linguistic legacy—it's dedicated to preserving and sharing the rich narrative of West Hartford's past and its evolution through time. Throughout the year, the museum hosts a variety of engaging programs and events, making each visit unique and inspiring.  \n\nInside, you can explore an impressive collection of artifacts, manuscripts, and documents that highlight Webster’s life, his contributions to American English, and how his work shaped modern language. Families will enjoy interactive exhibits and lively educational programs designed to appeal to visitors of all ages, emphasizing community connection and historical understanding. Moreover, if you’re interested in architecture, the home’s Colonial style offers a glimpse into the craftsmanship of the period, with original features that tell their own stories. Come experience history in a fresh and engaging way at the **Noah Webster House & West Hartford Historical Society**—a perfect stop for anyone looking to immerse themselves in local culture and history.",
+      "content_highlights": [
+        "Birthplace of Noah Webster, America's lexicographer",
+        "Beautifully restored 18th-century home and gardens",
+        "Interactive exhibits and educational programs for families",
+        "Rich collection of historical artifacts and manuscripts",
+        "Engaging community events throughout the year"
+      ],
+      "content_generated_at": "2026-01-18T03:23:25Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T03:23:25Z"
 }

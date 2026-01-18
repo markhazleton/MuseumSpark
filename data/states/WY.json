@@ -1,7 +1,7 @@
 {
   "state": "Wyoming",
   "state_code": "WY",
-  "last_updated": "2026-01-16T20:07:00.859778+00:00Z",
+  "last_updated": "2026-01-17T23:05:43Z",
   "museums": [
     {
       "museum_id": "usa-wy-unknown-art-association-of-jackson-hole",
@@ -21,7 +21,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -34,7 +34,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -54,30 +54,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:18:12Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "3077332414"
+      "phone": "3077332414",
+      "is_scoreable": false,
+      "content_summary": "Nestled in the breathtaking landscape of Jackson, Wyoming, the **Art Association of Jackson Hole** offers a rich tapestry of artistic expression that celebrates local creativity and culture. With free admission, this engaging museum invites visitors to explore stunning exhibitions and dynamic programming that inspire and connect art lovers of all ages.",
+      "content_description": "**The Art Association of Jackson Hole** is a vibrant hub for artistic innovation and community engagement, set against the stunning backdrop of the majestic Teton Mountains. This unique museum not only showcases a diverse array of art from local and regional artists but also fosters an environment where creativity thrives through various educational programs and workshops. Visitors can expect to see rotating exhibitions that highlight everything from *traditional Western art* to contemporary *abstract works*, ensuring there is always something new to discover. With free admission, this museum is accessible to everyone, making it a must-visit for art enthusiasts and casual visitors alike. \n\nThe architecture of the museum itself is reflective of the area's rugged beauty, blending seamlessly with its natural surroundings. Inside, the galleries are thoughtfully curated, providing a welcoming space for contemplation and inspiration. One of the highlights of your visit will be the opportunity to participate in art classes and community events, allowing you to immerse yourself in the local art scene. Whether you're an established artist or just looking to explore your creative side, the **Art Association of Jackson Hole** aims to cultivate a love for art that resonates with all who enter its doors.",
+      "content_highlights": [
+        "Rotating exhibitions featuring local and regional artists",
+        "Free admission for all visitors",
+        "Community art classes and workshops",
+        "Stunning views of the Teton Mountains from the museum",
+        "Focus on both traditional Western art and contemporary pieces"
+      ],
+      "content_generated_at": "2026-01-18T05:18:12Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wy-unknown-buffalo-bill-center-of-the-west",
       "country": "USA",
       "state_province": "Wyoming",
-      "city": "Wyoming",
+      "city": "Cody",
       "museum_name": "Buffalo Bill Center of the West",
       "alternate_names": null,
       "website": "http://www.walkerart.org/membership/://centerofthewest.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "720 Sheridan Ave, Cody, WY 82414, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": null,
+      "postal_code": "82414",
+      "latitude": 44.5249986,
+      "longitude": -109.0731945,
+      "place_id": "ChIJVXyTAtgeTFMRVVTj_aD-T6E",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -90,7 +103,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -106,14 +119,151 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.walkerart.org/membership/://centerofthewest.org"
+        "http://www.walkerart.org/membership/://centerofthewest.org",
+        "google_places_api",
+        "museums_csv"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Wyoming' from open data; MRD: computed city_tier=3 for Wyoming; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
-      "notes": null,
-      "city_tier": 3
+      "updated_at": "2026-01-18T05:18:21Z",
+      "notes": "CSV: IRS Museum ID 8405600108 CSV: phone from IRS 990 database CSV: museum type 'History Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 18697668, revenue: 12361666)",
+      "city_tier": 3,
+      "phone": "(307) 587-4771",
+      "website_google": "https://centerofthewest.org/?utm_source=google&utm_medium=organic&utm_content=main_button&utm_campaign=gmb",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 5531,
+      "google_reviews": [
+        {
+          "author_name": "Linda Rybicki",
+          "author_url": "https://www.google.com/maps/contrib/114043677425313632605/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXZSi7bAR1eDlqov0ZUFfBKAHfenRUq7MC0AnZ7KpJN_pf3jz2TAA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This is a fantastic museum! Your ticket is good for 2 days. It's several museums in 1 spot. Make sure you look for the box with the embosser for a unique keepsake. It stamps a seal on your booklet at different stations. The men will even love this stop, it has a great firearms museum. Must see if you come thru Cody.",
+          "time": 1757678015,
+          "translated": false
+        },
+        {
+          "author_name": "Caiti Christensen",
+          "author_url": "https://www.google.com/maps/contrib/101814501728940755034/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUARXaSj23TtN_LyLozhsW4aTKHuZGEvNWV-ncA3v_JJFGsL7HDbA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This was one of the most informative museums I have been to in a long time! What a find! So much information on. Buffalo Bill and Wyoming history! You could spend a whole day here! The gun exhibit is absolutely incredible.  Hundreds if not thousands of vintage and modern weapons that were used. Fascinating to watch and learn the history of them. What an incredible collection. The art exhibits are fantastic with some oil paintings you mistake for a photo. The details are incredible. Its clean, organized and so quiet for a nice stroll to learn something new. They have a cafeteria and great options for your whole family even a salad bar with plenty of seating! Refillable drinks, coffee, snacks.... and even an outdoor playground when the kids get restless. An absolute gem!",
+          "time": 1755015182,
+          "translated": false
+        },
+        {
+          "author_name": "Alison Pack",
+          "author_url": "https://www.google.com/maps/contrib/101448342391557658347/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVzcMFyZs3CAcRg_y9wqiyLkw6uljVazw3e_EaNzch2obSPpAwC=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Loved this place!! It was so cool! Lots of history and enjoyed a lot of the exhibits.\nThey have a g*n exhibit that was huge if you’re into that sort of thing. Lots of indigenous art, paintings, period pieces and biology lessons. Would go back to spend more time if I could! We spent about 2 hours but could have stayed longer.",
+          "time": 1754716971,
+          "translated": false
+        },
+        {
+          "author_name": "Dr. Zapata",
+          "author_url": "https://www.google.com/maps/contrib/106989275366632502572/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU2y4u-KudoL-nX2w9Jxcvlt8JJeoC_1nu8FeftQkql9CSRIaEy=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Wow, this place is amazing. There are several exhibitions, the art, the buffalo bill and the firearm sections were my favorites. These were impressive. The native American section is nice but is limited, I have been to the Smithsonian one in the national Mall and it is much better.",
+          "time": 1756480492,
+          "translated": false
+        },
+        {
+          "author_name": "Brad Hanke",
+          "author_url": "https://www.google.com/maps/contrib/102265257368549408057/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW83Cwpq1bdb3zsPP1HNbMDU-Vh_egxcZ_Nk9jzur_iKf-3TN-nUg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Very nice museum(s). The different areas were well put together and everything was  so clean and well lit. They have done a great job! Take 2 days to see it all...",
+          "time": 1760489649,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Buffalo Bill Center of the West in Cody, Wyoming, is a must-visit for anyone interested in the American West. This unique museum not only celebrates the life of legendary showman Buffalo Bill Cody but also encompasses a comprehensive view of Western history through its diverse collections and dynamic exhibitions.",
+      "content_description": "**Buffalo Bill Center of the West** is a treasure trove for history enthusiasts and those curious about the rich tapestry of the American West. Located in the scenic town of Cody, this museum is a unique amalgamation of five distinct museums under one roof, each dedicated to different aspects of Western heritage, from *artistry* to *wildlife*. Visitors are welcomed to explore the life and legacy of the iconic Buffalo Bill Cody, whose influence transcends entertainment, reflecting the spirit of an era characterized by exploration and cultural convergence. The museum includes an impressive outdoor area where reenactments and events occasionally take place, further bringing the Wild West to life.  With free admission during certain hours, it invites families, students, and history buffs alike to delve into its offerings without hesitation.  Best known for its detailed displays, the **Cody Firearms Museum** houses one of the most extensive collections of firearms in the world, showcasing the evolution of these pivotal tools throughout American history.  Archery enthusiasts can marvel at collections featuring historical bows and arrows used by Native Americans.  The **Whitney Gallery of Western Art** presents a curated selection of works that capture the essence of the Western experience through various *artistic movements*, making it an essential stop for art lovers.  Similarly, the *Plains Indian Museum* offers insight into the lives of Native American tribes with artifacts that tell stories of resilience and creativity.  The museum's architectural design seamlessly blends into the rugged landscape, inviting guests to appreciate both the building's natural surroundings and its historical significance.  Experience guided tours led by knowledgeable staff, participate in engaging workshops, or simply roam the galleries at your leisure.  The vibrant atmosphere is enhanced by rotating exhibitions that keep the content fresh and relevant, ensuring visitors of all ages leave with a deeper understanding and appreciation of the Western United States.",
+      "content_highlights": [
+        "World's largest collection of firearms at the Cody Firearms Museum",
+        "Engaging exhibits showcasing the life of Buffalo Bill Cody",
+        "Dynamic Whitney Gallery of Western Art featuring renowned Western artists",
+        "Insightful displays at the Plains Indian Museum celebrating Native American culture",
+        "Outdoor events bringing the Wild West experience to life"
+      ],
+      "content_generated_at": "2026-01-18T05:18:21Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wy-unknown-heart-mountain-interpretive-center",
@@ -146,7 +296,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -167,9 +317,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Powell' from page text; Inferred primary_domain=Mixed from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:18:29Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "The Heart Mountain Interpretive Center, located in Powell, Wyoming, offers a profound glimpse into the experiences of Japanese American internees during World War II. From captivating exhibits to personal stories that echo resilience, this museum is a powerful reminder of history that engages visitors both emotionally and intellectually.",
+      "content_description": "**Heart Mountain Interpretive Center** stands as a significant tribute to the Japanese American experience during World War II, particularly focusing on the Heart Mountain Relocation Center, which housed internees from 1942 to 1945. The museum's architecture harmonizes with its poignant mission—built to reflect the starkness of the surrounding landscape and the hardships faced by its former residents. This thoughtful design fosters an atmosphere of reflection, allowing visitors to fully engage with the narratives presented. The center's exterior is reminiscent of the barracks that once stood on this historical site, bridging the past and present through an immersive landscape. As you enter, you will be greeted by a compelling collection of photographs, artifacts, and personal stories that unveil the injustices and daily lives of the internees, making history tangible and impactful. Through a combination of multimedia exhibits and historical documents, guests uncover the intricate layers of these experiences, which highlight themes of resilience, community, and cultural identity. **Heart Mountain** serves not just as a museum, but as a vital conversation starter about civil rights and the importance of memory in American history. Visitors are invited to partake in guided tours, educational programs, and special events that further enhance understanding and engagement with this crucial chapter of the American narrative. As you traverse through the exhibits, take a moment to reflect and honor the stories of those who endured tremendous challenges while maintaining their dignity and humanity. A visit to this center will surely leave a lasting impression, encouraging reflection on our past and contemplation on our future.",
+      "content_highlights": [
+        "In-depth exhibits on the Japanese American internment experience",
+        "Personal stories and artifacts from former internees",
+        "Engaging multimedia presentations that enhance learning",
+        "Thoughtful architecture that reflects the historical context",
+        "Programs and events that promote ongoing dialogue about civil rights"
+      ],
+      "content_generated_at": "2026-01-18T05:18:29Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wy-unknown-jackson-hole-historical-society-and-museum",
@@ -189,7 +352,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -202,7 +365,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -222,30 +385,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:18:35Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "3077332414"
+      "phone": "3077332414",
+      "is_scoreable": false,
+      "content_summary": "Discover the rich history and captivating stories of Jackson at the **Jackson Hole Historical Society and Museum**. This gem of a museum offers free admission, engaging exhibits, and stunning natural surroundings, making it a must-visit for travelers eager to delve into the region's past and cultural heritage.",
+      "content_description": "**Jackson Hole Historical Society and Museum** is a treasure trove of history nestled in the picturesque Jackson, Wyoming. This museum serves as a living archive of the area's storied past, celebrating everything from the indigenous cultures to the pioneers who shaped the frontiers of the West. Visitors can immerse themselves in a variety of exhibits that detail the evolution of Jackson and its surroundings, offering a unique perspective on how this small town grew into a bustling hub for nature lovers and adventurers alike. The museum’s commitment to **historic preservation** is evident in its carefully curated displays, which aim to educate and inspire future generations.  \n\nOne of the standout features of the **Jackson Hole Historical Society and Museum** is its collection of *artifacts*, photographs, and documents that chronicle the region’s journey, including items from the early settlers and original artifacts from Native American history. Guests will be entranced by stories that speak to the heart of the American frontier experience. The museum itself is an elegant blend of historical architecture, harmonizing with the stunning vistas of the nearby mountains, and the tranquil, inviting atmosphere makes it easy for visitors to lose themselves in the narratives. Whether you're wandering through exhibits or participating in guided walks, the museum offers a rich educational experience that brings history to life—an essential stop for anyone exploring the beautiful landscapes of Jackson Hole.",
+      "content_highlights": [
+        "Exhibits featuring early settler artifacts and Native American history",
+        "Vivid photographic collections that document Jackson's evolution",
+        "Interactive programs and events that deepen visitor engagement",
+        "Beautifully preserved historic architecture set against stunning mountain backdrops",
+        "Free admission, making it accessible for all travelers"
+      ],
+      "content_generated_at": "2026-01-18T05:18:35Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wy-unknown-museum-of-the-mountain-man",
       "country": "USA",
       "state_province": "Wyoming",
-      "city": "Wyoming",
+      "city": "Pinedale",
       "museum_name": "Museum of the Mountain Man",
       "alternate_names": null,
       "website": "https://museumofthemountainman.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "700 E HENNICK",
+      "street_address": "700 E Hennick St, Pinedale, WY 82941, USA",
       "address_line2": null,
       "postal_code": "82941",
-      "latitude": 42.92308,
-      "longitude": -109.9485,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "latitude": 42.868886,
+      "longitude": -109.85233,
+      "place_id": "ChIJsaCQ96mWV4cRUJM_8Sa0Lo4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -258,7 +434,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -275,15 +451,95 @@
         "walker_reciprocal",
         "official_website",
         "https://museumofthemountainman.com",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Wyoming' from open data; MRD: computed city_tier=3 for Wyoming; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:18:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "3073674101"
+      "phone": "(307) 367-4101",
+      "website_google": "http://www.museumofthemountainman.com/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.8,
+      "google_reviews_count": 443,
+      "google_reviews": [
+        {
+          "author_name": "Dakota Manley",
+          "author_url": "https://www.google.com/maps/contrib/113747532173780235709/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWINziVRxHVheKrLQv-QqGeU8wMES5S7d-F_o_N944gPiNRbjE=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Traveling through on our way to Colorado and saw the sign and thought it would make a nice break from the road and it turned out to be really cool! They even have Jim bridgers authentic rifle and being slight history nerd that was an unexpected surprise. They also had a gallery downstairs where they had some really skilled artists who painted some mountain man paintings with such detail. My only suggestion is to have more stories from mountain men the few that were there were really interesting and I’d like to see more. Otherwise it was worth the impromptu stop",
+          "time": 1755610854,
+          "translated": false
+        },
+        {
+          "author_name": "Wayne Hubbard",
+          "author_url": "https://www.google.com/maps/contrib/107193872330729414235/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU1pCKEVCUMrWowcK0MHPjnI5E6pSaYta2Bw2N2oY5u4Qho3oq1=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "A wonderful little museum that shows a great lineup of history with wonderful attention to detail!",
+          "time": 1762397138,
+          "translated": false
+        },
+        {
+          "author_name": "Nick Nugent",
+          "author_url": "https://www.google.com/maps/contrib/105763408062810377513/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXqXAigtq1MDEFe3aaK6rdy8f4Awq2OTbZ6E9QCtbQPKHsssz90=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Fabulous museum, that tells the fascinating story of the Mountain Men, and their brief - but essential - 25 years of exploration and trapping in the early 19th century. Highly recommended",
+          "time": 1757638416,
+          "translated": false
+        },
+        {
+          "author_name": "Rebecca “Becca” Page",
+          "author_url": "https://www.google.com/maps/contrib/102402219781595987810/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUHQSUfhOLxW8r2Qhw8b8_N8Q9H3Y1d-2kmCyvReT0Amt5HDrP_Zg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "This was a fun stop. A very interesting museum. Needs some updates but overall very enjoyable. The staff was also very kind and welcomed any questions.",
+          "time": 1748270873,
+          "translated": false
+        },
+        {
+          "author_name": "Irene Estlund",
+          "author_url": "https://www.google.com/maps/contrib/109311727001313992574/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVEcfaZgWroZ5QBCVvNAqNbGSvt_ZqgnzsnUnI6PLtAiUvd09pPOg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "My husband and I decided to check out the museum and I’m sure glad we did!  It has an informative 20 minute video and a great museum.  I love American history and how a few important ppl shaped parts of our fantastic country.  Well worth it!",
+          "time": 1727390308,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Museum of the Mountain Man in Pinedale is a captivating tribute to the rugged spirit of the American West. This unique museum offers insight into the lives and challenges faced by mountain men, fur trappers, and explorers of the 19th century, making it a must-visit for history enthusiasts and adventurers alike.",
+      "content_description": "**The Museum of the Mountain Man** encapsulates the adventurous spirit and rich history of the mountain men who shaped the American West. Nestled in the scenic town of Pinedale, Wyoming, this museum immerses visitors in the fascinating world of fur trappers and explorers from the early 1800s. With exhibits featuring authentic artifacts, historical documents, and life-size dioramas, guests can engage with the narrative of these pioneering individuals who braved the wilderness to explore and exploit its resources. The collections tell the story of survival, camaraderie, and resilience that defines the mountain man experience. Each artifact reverberates with tales of adventure, from intricately crafted beaver traps to meticulously preserved clothing that speaks to the ruggedness of the era.   * *  *  *  * * * *  * *  *  *  * * * * * * * * * * * * * *  * *  *  *  * * *  *  * *  * * *  * *  *  *  * *  * *  * * * * * *  * *  *  *  * * * * * *  * *  * *  * * * * *  * * * *  * * * * * * *  * * * * * * * * *  * * * * * * * * *  * *  * *   * *  * * * * * * * *  * * * _Additionally_, the museum spotlights the relationship between Native American cultures and the mountain men, providing a holistic view of the era. The immersive storytelling, complemented by its engaging layout, allows visitors to feel as if they are stepping back in time. Whether exploring solo or with family, the Museum of the Mountain Man promises a memorable experience that resonates with the spirit of adventure and discovery. ",
+      "content_highlights": [
+        "Authentic artifacts from the mountain man era",
+        "Engaging life-size dioramas that depict life in the wilderness",
+        "Insightful displays on the interactions between mountain men and Native American cultures",
+        "Informative exhibits on the fur trade industry",
+        "Interactive educational programs and events for all ages"
+      ],
+      "content_generated_at": "2026-01-18T05:18:48Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wy-unknown-the-nicolaysen-art-museum",
@@ -303,7 +559,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -311,12 +567,12 @@
       "tickets_url": "https://www.thenic.org/services-7",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -325,23 +581,37 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of The Nicolaysen Art Museum’s permanent collection, so Impressionist, Modern/Contemporary, and historical-context scores cannot be determined. Given its location in Casper, Wyoming and lack of broader collection evidence, it is most reasonably assessed as a local museum with a small-to-limited collection scope.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://thenic.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Casper' from open data; MRD: computed city_tier=2 for Casper; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:19:01Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3072355247"
+      "phone": "3072355247",
+      "is_scoreable": true,
+      "content_summary": "In the heart of Casper, the Nicolaysen Art Museum offers an intimate, art-forward stop that rewards close looking. Expect a well-curated mix of regional and contemporary work—especially strong in Wyoming and Rocky Mountain voices—presented in rotating exhibitions that keep the experience fresh. It’s the kind of museum where you can slow down, follow an idea across galleries, and leave with a sharper sense of place, landscape, and the artists responding to them.",
+      "content_description": "Casper’s **Nicolaysen Art Museum** (often called “The Nic”) is a small, locally rooted institution that punches above its weight by leaning into what it does best: **thoughtful, frequently changing exhibitions** with a clear sense of regional identity. For art lovers, it’s less about encyclopedic breadth and more about the pleasure of discovery—walking into galleries where you can actually spend time with individual works and track how artists translate Wyoming’s land, weather, and cultural history into form, color, and material. You’ll typically encounter a mix of **contemporary and regional art**, with shows that may range from painting and photography to sculpture and craft-forward practices—an appealing snapshot of what’s happening in the state and the broader Rocky Mountain orbit.\n\nArchitecturally and experientially, the museum’s strength is **accessibility and intimacy**: the scale encourages repeat visits, and the layout makes it easy to move between exhibitions without fatigue. Look for a visitor-friendly rhythm—clear sightlines, room to step back from large pieces, and closer viewing distances that highlight *surface*, *brushwork*, and *process*. Because the museum’s program is exhibition-driven, the best strategy is to check what’s on view before you go, then plan to linger: read the wall texts, compare approaches across media, and enjoy a museum experience that feels personal rather than overwhelming.\n\nFor travelers building an art-focused day in Casper, **The Nic** works beautifully as a concentrated dose of local culture—ideal for pairing with downtown walks, coffee stops, and a second visit if a new show opens during your stay.",
+      "content_highlights": [
+        "Rotating exhibitions that spotlight Wyoming and Rocky Mountain artists alongside contemporary work",
+        "An intimate, easy-to-navigate museum experience designed for close looking and repeat visits",
+        "Strong sense of place—landscape, environment, and regional identity often anchor the curatorial themes",
+        "A balanced mix of media (commonly painting, photography, sculpture, and craft-forward practices)",
+        "A convenient Casper location that fits neatly into a downtown art-and-culture itinerary"
+      ],
+      "content_generated_at": "2026-01-18T05:19:01Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wy-unknown-university-of-wyoming-art-museum",
@@ -361,7 +631,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -369,12 +639,12 @@
       "tickets_url": "http://www.uwyo.edu/admissions/index.html",
       "reservation_required": null,
       "accessibility_url": "http://www.uwyo.edu/hr/eeo-aa/accessibility-resources/index.html",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -383,23 +653,37 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence gives no description of the University of Wyoming Art Museum's permanent collection, so Impressionist, Modern/Contemporary, and historical-context scores cannot be determined. As a university art museum in Laramie with no indicated nearby museum ecosystem, it is most plausibly a locally oriented institution with a moderate-scale academic collection rather than a flagship destination.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.uwyo.edu/artmuseum",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Laramie' from open data; MRD: computed city_tier=3 for Laramie; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:19:13Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3077666622"
+      "phone": "3077666622",
+      "is_scoreable": true,
+      "content_summary": "In Laramie, the University of Wyoming Art Museum pairs serious curatorial ambition with an inviting, campus-centered visit. Expect a thoughtfully installed mix of contemporary art and works connected to the American West—often anchored by prints, photography, and rotating exhibitions that reward repeat stops. The building itself is part of the experience: clean modern lines, generous light, and a calm pace that lets you look closely. It’s an ideal museum break between hikes, bookstores, and coffee in Wyoming’s most walkable college town.",
+      "content_description": "**University of Wyoming Art Museum** is one of the Mountain West’s most satisfying “small-but-smart” museums—an institution where the pleasure is in *close looking*. Set on the University of Wyoming campus in Laramie, the museum emphasizes changing exhibitions and teaching-focused installations, so even locals find reasons to return. You’ll typically encounter a blend of contemporary art, works that resonate with regional history and landscape, and study-friendly mediums like prints and photography—formats that showcase process, technique, and experimentation as much as finished spectacle.\n\nArchitecturally, the museum rewards art lovers who notice how spaces shape attention. Its **modern, gallery-forward design** favors clear sightlines and flexible rooms that can shift from intimate drawing displays to more immersive contemporary installations. Expect **well-considered lighting**—crucial for works on paper—plus an unhurried atmosphere that makes it easy to spend real time with a single piece.\n\nFor visitors, this is a museum that feels both accessible and intellectually engaged. Plan your visit around what’s on view: rotating shows often spotlight *contemporary practices*, thematic group exhibitions, and regional perspectives that complicate the usual “West” iconography. Pair it with a stroll through campus and downtown Laramie, and you’ll have a compact, culture-forward afternoon—ideal for travelers who prefer depth, not crowds.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions that make repeat visits worthwhile",
+        "Strength in works on paper and photography (ideal for close viewing and technique-spotting)",
+        "Modern, flexible gallery architecture with thoughtful sightlines and lighting",
+        "Campus setting that pairs easily with a walk through UW and downtown Laramie",
+        "A calm, study-like viewing experience—great for art lovers who want time with the work"
+      ],
+      "content_generated_at": "2026-01-18T05:19:13Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wy-big-horn-brinton-museum",
@@ -432,7 +716,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -452,9 +736,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Big Horn; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:19:21Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "Nestled in the picturesque Big Horn mountains, **The Brinton Museum** offers a unique blend of Western art and Native American history. With stunning landscapes and a rich collection, this museum invites visitors to journey through the cultural tapestry of the American West. Discover the beauty of art and nature in an unforgettable setting.",
+      "content_description": "**The Brinton Museum** stands as a remarkable testament to the cultural heritage of the American West. Set against the backdrop of the majestic Bighorn Mountains, this museum is celebrated for its eclectic collection that masterfully combines Western and Native American art. As you enter, you're greeted by the museum's unique architecture, which harmonizes with the surrounding landscape, creating an inviting atmosphere for exploration and learning. The spacious galleries feature art that spans centuries, showcasing both contemporary and historic pieces, which provide insight into the rich narratives of the region. Visitors often remark on the serenity of the museum's environment, encouraging a thoughtful engagement with the artworks on display.  As part of its commitment to education and culture, **The Brinton Museum** also hosts various events and workshops, ensuring that each visit provides new experiences for both art enthusiasts and casual visitors alike.  From guided tours to interactive exhibits, there are endless opportunities to delve deeper into the artistic expressions that define the American West and its people.  Whether you're an avid collector or a curious traveler, **The Brinton Museum** promises an enriching experience that celebrates the beauty and stories of this unique region.",
+      "content_highlights": [
+        "Extensive collection of Western and Native American art",
+        "Stunning architectural design harmonizing with the natural landscape",
+        "Educational workshops and events for all ages",
+        "Guided tours that deepen understanding of the collections",
+        "Outdoor spaces to enjoy the breathtaking views of the Bighorn Mountains"
+      ],
+      "content_generated_at": "2026-01-18T05:19:21Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T05:19:21Z"
 }

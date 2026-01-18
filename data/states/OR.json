@@ -1,7 +1,7 @@
 {
   "state": "Oregon",
   "state_code": "OR",
-  "last_updated": "2026-01-16T20:07:00.759768+00:00Z",
+  "last_updated": "2026-01-17T23:05:41Z",
   "museums": [
     {
       "museum_id": "usa-or-unknown-albany-regional-museum",
@@ -21,7 +21,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORY MUSEUM",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -34,7 +34,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -56,30 +56,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:27:08Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5419677122"
+      "phone": "5419677122",
+      "is_scoreable": false,
+      "content_summary": "The **Albany Regional Museum** offers a captivating journey through Southwest Albany’s rich history, showcasing unique artifacts and exhibits that reveal the area's cultural heritage. With engaging programs and special events, it promises a memorable experience for history enthusiasts and casual visitors alike.",
+      "content_description": "**Albany Regional Museum** stands as a beacon of local history, inviting visitors to explore the intricate narratives that have shaped Southwest Albany. This history museum is noted for its commitment to preserving and displaying a diverse collection of artifacts that reflect the region's vibrant past. From *Native American* heritage to more recent historical events, the exhibits are thoughtfully curated to engage visitors of all ages. The museum frequently hosts special events, such as artist talks and receptions, enriching the visitor experience through interactive opportunities that deepen understanding of the region's art and culture.  \n\nThe architecture of the **Albany Regional Museum** itself is part of the allure, featuring both modern and traditional design elements that create a welcoming ambiance. As you wander through the galleries, you'll encounter a blend of permanent and rotating exhibits that highlight significant local stories and achievements. Be certain to check out their *Unexpected Harmony Main Gallery*, which often showcases contemporary artists whose work resonates with historical contexts. Whether you’re a history buff or just looking for an interesting way to spend a rainy afternoon, the **Albany Regional Museum** is a hidden gem worth discovering in your travels.  \n\nWith each visit, you’ll find something new and thought-provoking, making it a perfect destination for families, school groups, and anyone eager to connect with the collective memory of Albany's past.",
+      "content_highlights": [
+        "Comprehensive exhibits on local history and culture",
+        "Unique rotating gallery featuring contemporary artists",
+        "Special events like artist talks and community receptions",
+        "Educational programs for schools and history enthusiasts",
+        "Engaging artifacts that connect visitors to the past"
+      ],
+      "content_generated_at": "2026-01-18T04:27:08Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-benton-county-historical-society",
       "country": "USA",
       "state_province": "Oregon",
-      "city": "Minnesota",
+      "city": "Philomath",
       "museum_name": "Benton County Historical Society",
       "alternate_names": null,
       "website": "https://www.bentoncountymuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1101 MAIN STREET",
+      "street_address": "1101 Main St, Philomath, OR 97370, USA",
       "address_line2": null,
       "postal_code": "97370",
-      "latitude": 44.54007,
-      "longitude": -123.36977,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORIC PRESERVATION",
+      "latitude": 44.5411546,
+      "longitude": -123.3706115,
+      "place_id": "ChIJXw2tFo5HwFQRRaI27jbvwJQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -92,7 +105,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -109,15 +122,150 @@
         "walker_reciprocal",
         "official_website",
         "https://www.bentoncountymuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Minnesota' from open data; MRD: computed city_tier=3 for Minnesota; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for https://www.bentoncountymuseum.org; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:27:17Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "5419296230"
+      "phone": "(541) 929-6230",
+      "website_google": "http://www.bentoncountymuseums.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 4:30 PM",
+          "Thursday: 10:00 AM – 4:30 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 57,
+      "google_reviews": [
+        {
+          "author_name": "Justin Docken",
+          "author_url": "https://www.google.com/maps/contrib/116659225056310996518/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUB6cD1-_ZTbNGMlkNQUiO3mScWDGkr8iKIhRMg9CA0JJq59HCU=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 1,
+          "relative_time_description": "4 months ago",
+          "text": "The museum had 1 exhibit most Museum's have there normal exhibits and a rotating exhibit.  Feel like they are under using their space.",
+          "time": 1756210986,
+          "translated": false
+        },
+        {
+          "author_name": "Matthew Westra",
+          "author_url": "https://www.google.com/maps/contrib/117137657122678129466/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWoIYrYfZELFd6CSDKPMQkO2J3QDbjosiqcDvcFjVR7jnepPYt7=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "9 months ago",
+          "text": "Not much there, but still worth a stop. Free. Currently, there's a traveling exhibit about the history and significance of wine making in Oregon, and a display of local kids' art products.  Jim, the staff person, was interesting and informative.",
+          "time": 1744296984,
+          "translated": false
+        },
+        {
+          "author_name": "Thomas Strasburger",
+          "author_url": "https://www.google.com/maps/contrib/115321394028159503737/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX2JEjNyDxqYiZP54PYaWmY6P1j9mOO0yJ5DPbomAuGBdwcSDo=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "They have interesting rotating exhibits.\nThe beautiful building itself is worth a visit. Admission is free!",
+          "time": 1752369115,
+          "translated": false
+        },
+        {
+          "author_name": "Sam Black",
+          "author_url": "https://www.google.com/maps/contrib/112693451817992040977/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVgJna4BU3AaLunnUY9I2miyfjhzau4pYVkLSRjSdPCLR1_RdmeGw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Cute little museum with good local history. Art gallery upstairs with a stage was fun with the kid. Beautiful building.",
+          "time": 1685216949,
+          "translated": false
+        },
+        {
+          "author_name": "m h",
+          "author_url": "https://www.google.com/maps/contrib/109505594594408505252/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKK2ba5hsbrrPJSfUT28GypJJmN5VwPFxPIhS6Qvw6svmNzug=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Great place to do local research. The staff were very helpful finding historical documents I was looking for. The collection is well organized, so we found what we were looking for, and more, relating to my family's property in the early 1900s, in just a few hours. We found a photograph of the house my great great uncle built, and its location. Their Camperdown elms are still growing on the property, though the house was torn down years ago. Highly recommend.",
+          "time": 1627077627,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Nestled in Philomath, the **Benton County Historical Society** stands out as a vibrant tribute to regional history and culture. The museum captivates visitors with its diverse exhibitions, engaging programs, and a commitment to historical preservation, making it an essential stop for history enthusiasts and curious travelers alike.",
+      "content_description": "***Benton County Historical Society*** invites you to explore the rich tapestry of history that defines this beautiful corner of Oregon. The museum is dedicated to preserving local heritage, featuring engaging exhibits that delve into the lives of the people, events, and cultures that have shaped Benton County. Its commitment to education and community engagement shines through in its thoughtfully curated spaces and lively programs, making it a dynamic hub of discovery for visitors of all ages. Don't miss the upcoming exhibition, *In Unexpected Harmony*, showcasing contemporary artistry that resonates with the historical narratives of the area. Join the **Artist Talk and Reception** on November 20, 2025, to connect with creators and gain insights into their work, adding depth to your visit.  \n\nAs you wander through the museum, you'll encounter a range of exhibits, from historical artifacts to photographs and documents that tell stories of resilience, innovation, and community spirit. The architecture of the building itself is a reflection of the area's heritage, blending historical elements with modern design to create an inviting atmosphere. Whether you're attending a workshop, viewing a rotating exhibition, or simply exploring the permanent collection, the **Benton County Historical Society** offers a unique opportunity to engage with the past while appreciating its ongoing impact on the present and future.",
+      "content_highlights": [
+        "Innovative rotating exhibitions like *In Unexpected Harmony*",
+        "Engaging community programs and artist talks",
+        "A collection of local historical artifacts and documents",
+        "Architectural charm reflecting regional heritage",
+        "Interactive displays catering to all ages"
+      ],
+      "content_generated_at": "2026-01-18T04:27:17Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-coos-history-museum-maritime-collection",
@@ -137,7 +285,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -150,7 +298,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -170,10 +318,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:27:24Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "3607983399"
+      "phone": "3607983399",
+      "is_scoreable": false,
+      "content_summary": "The **Coos History Museum & Maritime Collection** is a captivating destination for those seeking to explore the rich maritime heritage and cultural stories of the Coos Bay region. Unique exhibits and immersive experiences await, highlighting local history and art in an inspiring coastal environment.",
+      "content_description": "**Coos History Museum & Maritime Collection** invites visitors to embark on a journey through time, shedding light on the vibrant history and culture of the Coos Bay area. Set against the stunning backdrop of the Oregon coast, this museum stands as a testament to the region's maritime past, showcasing a diverse array of artifacts that tell stories of early settlers, Native American tribes, and the fishing industry that has shaped the community. The museum’s architecture harmonizes with its surroundings, featuring natural materials and panoramic views that enhance the visitor experience, making it a feast for both the intellect and the senses. \n\nWith exhibits like the *Unexpected Harmony* main gallery, which features rotating art and cultural displays, attendees can engage with contemporary themes as well as historical narratives. The thoughtfully curated collections include ship models, fishing gear, and photographs that document the evolution of maritime life and provide context to the coastal culture of today. **The Coos History Museum** also offers exciting programs, such as artist talks and hands-on workshops, fostering a deeper connection between visitors and the vibrant arts community. Plan your visit to delve into the intricate tapestry of Coos Bay's heritage, where every corner captivates and every exhibit tells a tale of resilience and creativity.",
+      "content_highlights": [
+        "Engaging exhibits on local maritime history",
+        "Beautifully designed building with coastal views",
+        "Community-driven art programs and events",
+        "Hands-on workshops and educational opportunities",
+        "Rich collection of artifacts from Coos Bay's past"
+      ],
+      "content_generated_at": "2026-01-18T04:27:24Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-crossroads-carnegie-art-center",
@@ -206,7 +367,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -227,9 +388,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Auburn Avenue Baker City' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:27:32Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The **Crossroads Carnegie Art Center** in Baker City is a vibrant hub of creativity that combines historical charm with contemporary artistry. Visitors can immerse themselves in rotating exhibitions, community events, and unique programs that attract art lovers of all ages. Don't miss the chance to connect with local artists and discover the cultural heartbeat of this enchanting region.",
+      "content_description": "**Crossroads Carnegie Art Center** offers an artistic experience unlike any other in Baker City. Nestled in a beautifully restored Carnegie library, the center harmoniously blends historic architecture with modern artistic expression. The main gallery houses *contemporary* exhibits that showcase the work of local and regional artists, highlighting the diverse talents found within the community. Visitors are encouraged to engage with art through various programs, including artist talks and reception events, which foster a deeper connection to the artwork and its creators. The upcoming exhibition, *In Unexpected Harmony*, promises to be a captivating exploration of the intersection between art and community, making it an unmissable event for those planning a visit from November 20, 2025, to January 10, 2026. \n\nThe center not only serves as a gallery but also as a cultural meeting point for art enthusiasts and novices alike. With a range of activities such as *Pinot & Paint* evenings, visitors can explore their artistic side while enjoying fine wine in a relaxed atmosphere. The intimate setting of the **Crossroads Carnegie Art Center** invites guests to appreciate art up close, fostering an enriching visitor experience that extends beyond just viewing. Whether you’re wandering through the galleries or participating in a lively workshop, the center is dedicated to making art accessible and enjoyable. Experience the pulse of creativity in Baker City’s artistic community, and leave inspired by the power of art to bring people together.",
+      "content_highlights": [
+        "Stunning exhibitions featuring local and regional artists",
+        "Historic Carnegie library architecture",
+        "Engaging community events like artist talks and receptions",
+        "Interactive workshops, including *Pinot & Paint* sessions",
+        "Rotating exhibitions that keep the visitor experience fresh"
+      ],
+      "content_generated_at": "2026-01-18T04:27:32Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-deepwood-museum-gardens",
@@ -262,7 +436,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -283,29 +457,42 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:27:40Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "Nestled in the heart of SE Salem, **Deepwood Museum & Gardens** is a charming blend of history, nature, and artistry. This unique destination offers visitors an immersive experience within its beautifully preserved estate, featuring lush gardens and a gallery that showcases local talents. Don't miss the chance to explore this hidden gem that celebrates both the past and the present.",
+      "content_description": "**Deepwood Museum & Gardens** invites visitors into a serene realm where history and nature intertwine. Housed in a stunning Victorian-era mansion, the museum reflects the architectural splendor of the late 19th century, boasting intricate woodwork and elegant period furnishings. As you wander through the house, you'll find not only a glimpse into the lives of the families who once resided there but also the essence of the era captured in the museum's thoughtful exhibits and captivating stories. Every room tells a tale, allowing guests to step back in time and appreciate the lifestyle of this significant period in American history. \n\nAdjacent to the magnificent estate lies a tranquil garden, bursting with vibrant flora and serene walking paths. These outdoor spaces serve as a perfect backdrop for seasonal events and art showcases. The upcoming exhibition, *Unexpected Harmony*, promises to engage visitors with works that push traditional boundaries and encourage conversation about the fusion of nature and creativity. This gallery space is not merely a collection of art; it’s a platform for local artists to connect with the community. With artist talks and receptions, like the one on November 20, 2025, the *Pinot & Paint* event aims to cultivate a love for artistic expression among visitors of all ages. The combination of historical insight and contemporary artistic dialogue makes **Deepwood** not just a museum, but a vibrant community gathering place.",
+      "content_highlights": [
+        "Historic Victorian mansion showcasing intricate architecture",
+        "Stunning gardens with seasonal blooms and scenic walking paths",
+        "Engaging art exhibitions featuring local artists and contemporary themes",
+        "Interactive community events like artist talks and receptions",
+        "Unique blend of history and nature for a holistic visitor experience"
+      ],
+      "content_generated_at": "2026-01-18T04:27:40Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-four-rivers-cultural-center-museums",
       "country": "USA",
       "state_province": "Oregon",
-      "city": null,
+      "city": "Ontario",
       "museum_name": "Four Rivers Cultural Center & Museums",
       "alternate_names": null,
       "website": "https://4rcc.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "676 SW 5th Ave, Ontario, OR 97914, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 44.02345,
-      "longitude": -116.97215,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "postal_code": "97914",
+      "latitude": 44.02279420000001,
+      "longitude": -116.9729311,
+      "place_id": "ChIJb--c2rKPr1QRkGmQwEYd4OU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -318,7 +505,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -333,15 +520,158 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-17T22:59:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5418898191"
+      "phone": "(541) 889-8191",
+      "website_google": "http://4rcc.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1400"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 2:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 540,
+      "google_reviews": [
+        {
+          "author_name": "Gregg and Regina Bussey",
+          "author_url": "https://www.google.com/maps/contrib/105861601861888414794/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXEVb9vjjsxKlf-5CNNMlIwbUFsnD5jEpwy_zWYOJI3CFG_O-M4ow=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We visited this wonderful museum while we were in the area for a graduation. I'm glad that we did! The entry fee is well worth it. A great, informational video starts the tour. There is a lot of historical information. The exhibits are fantastic. The Japanese Gardens are worth the donation and the views. I will definitely return if we're back in the area.  -Regina",
+          "time": 1716749659,
+          "translated": false
+        },
+        {
+          "author_name": "Sharon D",
+          "author_url": "https://www.google.com/maps/contrib/115529530302823274087/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocInvcxdNV6KHGm3qSih3lDfR7gGvaxU36jfq9aVMS-bufjUYQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great place to reminisce, or learn area history. Information is provided on many different cultures. This was thought provoking and stirred many conversations in my group. The garden was a memorable experience. The horticulturalist should be proud of providing this area for our enjoyment.",
+          "time": 1724854958,
+          "translated": false
+        },
+        {
+          "author_name": "Nathan Forsythe",
+          "author_url": "https://www.google.com/maps/contrib/107132742696657780531/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUgZoYxzNkXzfACvGD7fAWgXZ2asfY0mwjT9ndBnjh20pHWiJ28=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This is my second time I've been here, since 2012 nothing has changed. The exhibits gives you a chronological story from the Native Americans, to the miners, and shepherd's; and farmers how they worked hard to transform the desert land into an agricultural land. It also shows you the sad side of how we misplaced the Japanese citizens during WWII. At the end of the exhibit you learn how the emigrants introduced diversity into America with their culture.\n🇦🇹🇨🇿🇧🇪🇬🇧🇩🇪🇲🇭.",
+          "time": 1720472352,
+          "translated": false
+        },
+        {
+          "author_name": "Chris McCammon",
+          "author_url": "https://www.google.com/maps/contrib/113574801266498585637/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUSlnctxNYyyaG97SVP22SCkXCoaRaGt_wFs_MvYWlQWm3gE1uS7A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Had a great time today at the museum and Japanese garden. Lots of neat things to look at and a variety of different cultures represented.",
+          "time": 1722544529,
+          "translated": false
+        },
+        {
+          "author_name": "Doug Kessler",
+          "author_url": "https://www.google.com/maps/contrib/104640159878799830210/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW3KRbTgZfikGd9wSKsS0KUWU1qu84MVb8WWj3YTok_R40W21XN=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "5 months ago",
+          "text": "The classrooms are confusing, even though it's a different building. You should have different numbers on different parts of the building. 105 should not be in the four rivers cultural center area, and in the other part of the building",
+          "time": 1754267613,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false
     },
     {
       "museum_id": "usa-or-unknown-museum-of-warm-springs",
@@ -361,7 +691,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORY MUSEUM",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -374,7 +704,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -394,10 +724,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:28:16Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "5415533331"
+      "phone": "5415533331",
+      "is_scoreable": false,
+      "content_summary": "The Museum of Warm Springs is a captivating history museum that offers visitors a unique glimpse into the rich cultural heritage and history of the Warm Springs community. With engaging exhibitions and programs, it's a destination that connects the past with the present, making it a must-visit for anyone interested in local history.",
+      "content_description": "**Museum of Warm Springs** invites you to explore the vibrant history and cultural significance of this remarkable community. Nestled in the heart of Warm Springs, this history museum stands as a testament to the enduring spirit and traditions of its people. Visitors are treated to immersive exhibits that highlight local stories, *artistic expressions*, and *historical milestones*, providing a captivating narrative that stretches across generations. The opportunity to participate in interactive programs enriches the experience, allowing guests to engage directly with the culture and history of the region.  \n\nThe museum's architecture is equally inviting, infused with elements that reflect the local heritage. Inside, **the Unexpected Harmony Main Gallery** features rotating exhibitions, such as the upcoming showcase from November 20, 2025, to January 10, 2026. This particular exhibition promises to inspire with a reception and artist talk on November 20, inviting visitors to engage with the region's artistic community. Whether you are an art aficionado or a history buff, the museum ensures an enriching visit, encouraging learning through exploration. Every corner of the **Museum of Warm Springs** is designed to resonate with visitors' emotions, offering a warm embrace of history intertwined with contemporary artistry. ",
+      "content_highlights": [
+        "Immersive exhibits celebrating local stories and heritage",
+        "Engaging interactive programs for all ages",
+        "Architectural design reflecting the area's cultural identity",
+        "Rotating exhibitions, including 'Unexpected Harmony' in late 2025",
+        "Artist receptions connecting visitors with local creators"
+      ],
+      "content_generated_at": "2026-01-18T04:28:16Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-oregon-coast-council-for-the-arts",
@@ -412,12 +755,12 @@
       "street_address": "777 W. Olive Street",
       "address_line2": null,
       "postal_code": "97365",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 45.55997,
+      "longitude": -123.91181,
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": null,
+      "museum_type": "Historic Preservation",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -430,7 +773,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -446,34 +789,49 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://coastarts.org"
+        "https://coastarts.org",
+        "museums_csv"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
-      "notes": null,
-      "city_tier": 3
+      "updated_at": "2026-01-18T04:28:23Z",
+      "notes": "CSV: IRS Museum ID 8404100134 CSV: phone from IRS 990 database CSV: museum type 'Historic Preservation' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 367469, revenue: 367469)",
+      "city_tier": 3,
+      "is_scoreable": false,
+      "phone": "5038427972",
+      "content_summary": "The Oregon Coast Council for the Arts in Newport offers a unique blend of historic preservation and contemporary art that showcases the vibrant cultural heritage of the Oregon Coast. This museum serves as a community hub for creativity and arts education, making it a must-visit destination for art lovers and history enthusiasts alike.",
+      "content_description": "**Oregon Coast Council for the Arts** is more than just a museum; it's a vital part of the Newport community that celebrates the rich tapestry of artistic expression and historic preservation along the stunning Oregon coastline. Visitors will be captivated by the Museum's dedication to supporting local artists, featuring rotating exhibitions that highlight the talents of both seasoned and emerging creatives. An upcoming exhibit, *In Unexpected Harmony*, exemplifies the Council's commitment to fostering dialogue through art, allowing visitors to engage deeply with the artists during special events like artist talks and receptions. These events provide a unique opportunity to understand the motivations and inspirations behind contemporary work, making your visit truly engaging.   As you walk through the galleries, you'll not only experience outstanding works of art but also connect with the cultural history that shapes this beautiful coastal region.  In addition to exhibitions, the Oregon Coast Council for the Arts invests in educational programs that inspire creativity and nurture the next generation of artists, emphasizing the importance of art in our daily lives.  With its mission rooted in preservation and innovation, a visit here is essential for anyone looking to understand the artistic landscape of the Oregon Coast.  Plan your visit during special programming or workshops to make the most out of your experience and leave feeling enriched and inspired.  The unique combination of historical significance and contemporary flair makes **Oregon Coast Council for the Arts** a must-see on your Newport itinerary.",
+      "content_highlights": [
+        "Rotating exhibits featuring local artists and their work",
+        "Upcoming exhibition *In Unexpected Harmony* showcasing artistic dialogue",
+        "Community-focused educational programs and workshops",
+        "Artist talks and receptions for intimate engagement with creatives",
+        "Historic preservation efforts that honor the cultural heritage of the Oregon Coast"
+      ],
+      "content_generated_at": "2026-01-18T04:28:23Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-portland-art-museum",
       "country": "USA",
       "state_province": "Oregon",
-      "city": "Oregon",
+      "city": "Portland",
       "museum_name": "Portland Art Museum",
       "alternate_names": null,
       "website": "https://portlandartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1219 SW Park Ave, Portland, OR 97205, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 45.52667,
-      "longitude": -122.67929,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "97205",
+      "latitude": 45.51615,
+      "longitude": -122.683357,
+      "place_id": "ChIJRWYlJxsKlVQRbcha0Cf-cO0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -486,7 +844,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -495,41 +853,197 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia evidence describes Portland Children's Museum (a now-closed children's museum) rather than the Portland Art Museum, so it does not support reliable inferences about the Portland Art Museum's permanent collection strengths or interpretive approach. Without correct collection-focused evidence for the named museum, all category scores are indeterminable.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oregon' from open data; MRD: computed city_tier=3 for Oregon; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:28:34Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5032262811"
+      "phone": "(503) 226-2811",
+      "website_google": "https://portlandartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 6137,
+      "google_reviews": [
+        {
+          "author_name": "Deedee Chiang",
+          "author_url": "https://www.google.com/maps/contrib/114805156570583669839/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU05pDiPpfld8Gn_ToK6ppwF8XOYYH9OO-yrjUUve61-LNP8lA6Eg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Came during the grand opening of their expansion and wow, this place is finally worth it to visit. They've really increased their footprint and the amount of art and exhibits they can hold, and the art is next level and thought provoking.\n\nI loved the immersive experience where you sleep on a bed and stare at the moving art on the ceiling, as well as several new pieces that's held in their expansion arm.\n\nIt's easy to spend 2+ hours here without realizing so keep track of time if you've got other booked activities in the city!",
+          "time": 1764258941,
+          "translated": false
+        },
+        {
+          "author_name": "John Lewis",
+          "author_url": "https://www.google.com/maps/contrib/116979331198100132839/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPV2h3NUinIyTohIi06GpHJAqjMO0xpwKsV8FIdT78zdujsiFm=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 4,
+          "relative_time_description": "4 weeks ago",
+          "text": "The new and expanded museum is wonderful! I love the flow and energy of the floor plan now. Very user-friendly and there’s little rooftop patios with views and sculptures.\nThe Rothko room is a worthy tribute to Portland’s own. I wish we had more of his works. Exciting to see his early stuff.\nThe best exhibit currently is Native American artist Rick Bartow, his big engaging sculptures, paintings and pastels. The documentary video of Bartow is worth watching while you’re in there.\nThe café disappoints, it reminded me of a mall restaurant, or something at an airport. I really wanted something grand and more exquisite than a red and white themed “Mel’s Diner” kitsch. The gift shop needs postcards!!\nOtherwise, a fine museum, bigger and deservedly better👍🏼",
+          "time": 1766246166,
+          "translated": false
+        },
+        {
+          "author_name": "Lucas Kerper",
+          "author_url": "https://www.google.com/maps/contrib/101371342031470560015/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUr-iH8dWUkqpSP-VPm5-VlgDWg0Cjfq5aSSEhgn90TpFj_Lrz3YQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "The art museum is a fantastic trip.  With a lot to see.  Bring clothes that you can both feel artsy in, and be confortable!  There is an imersive installation with music and large couch style beds to lay in while the art video plays on the ceiling.  I only rate that a C+ though, it was so-so.  Honestly some of the footage was seaweed or something but looked gross.  I guess it's art though.  The music wasnt bad.\n\nTo me the best part was all of the scultures and paintings.  They were amazing and sone of them were thousands of years old!  Lots of variety. Each room was different and unique.  There was actually one piece that you were allowed to sit down on.  It was a very interesting bench in the shape of the number eight.\n\nToo much typing about it, go and have an amazing time!",
+          "time": 1767463228,
+          "translated": false
+        },
+        {
+          "author_name": "Yasmeen Ramos",
+          "author_url": "https://www.google.com/maps/contrib/104413311021916166969/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJU3cAUH2fyaYRWsxNy9JrXnGw-ttR2Ztb_543QCv74YSrgPwc=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I visited the museum after the renovation! It was fantastic very open, many new interactive exhibits and I appreciated the space highlighting work from black artists. I feel like this was an even greater experience because the facility offered free tickets for opening weekend so it was packed. I would go back and purchase a ticket I think it is worth it. Give yourself plenty of time walk through each of the levels!",
+          "time": 1764035861,
+          "translated": false
+        },
+        {
+          "author_name": "michael wal",
+          "author_url": "https://www.google.com/maps/contrib/113802397558559496260/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLGdLRq-XDDE_PSZ3vVyEhJvk0HWgH8zGjHgMUU4LoPuZpwKQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "portland  art museum is a great place to see some great artistic work from various artis.\nThey feature different works. Went in Nov, and at the time they  had american Indian art.Its quite large and you can spend a good time exploring.\nand learning about various art work and artist.\nthey locate near portland college, which is around the corner nice area to take a stroll  and enjoy coffee shops around area.",
+          "time": 1765262502,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "Portland Art Museum is the Pacific Northwest’s essential stop for art lovers, pairing ambitious exhibitions with a deep, regionally rooted collection. Expect everything from European and American painting to standout Native American and contemporary works, presented in galleries that reward slow looking. Set in downtown Portland, it’s easy to combine with nearby cultural stops, and the museum’s strong schedule of talks and special exhibitions—like the upcoming “In Unexpected Harmony”—keeps repeat visits fresh.",
+      "content_description": "**Portland Art Museum** is a cornerstone of Portland’s cultural life and one of the Pacific Northwest’s most rewarding places to spend an afternoon with art. Its curatorial identity balances local perspective with global reach: you’ll encounter **Northwest and American art**, compelling holdings of **Native American works**, and a steady rotation of contemporary exhibitions that keep the museum feeling current. Special shows and programs—such as the exhibition **“In Unexpected Harmony”** (Nov 20, 2025–Jan 10, 2026) with an artist talk and reception—underscore how actively the museum connects artworks to living artists and audiences.\n\nArchitecturally, the experience is classic downtown museum-going: purposeful galleries designed for close viewing, with a layout that encourages wandering between eras and media—painting, photography, prints, and sculpture. The museum’s strengths shine when you move from room to room and see conversations form across *modern* and *contemporary* approaches, or between regional voices and broader art-historical narratives.\n\nFor visitors, the pleasure is in the pacing: arrive early for quieter galleries, then linger for interpretive texts that guide without overexplaining. If you’re building a Portland itinerary, this is a natural anchor—ideal before dinner downtown, or as a focused cultural stop between neighborhood explorations. Check the calendar before you go: the museum’s programming and rotating exhibitions are a key part of its appeal for returning art travelers.",
+      "content_highlights": [
+        "Pacific Northwest and American art presented alongside rotating contemporary exhibitions",
+        "Notable holdings of Native American art, offering essential regional context",
+        "“In Unexpected Harmony” special exhibition season (Nov 20, 2025–Jan 10, 2026) with artist talk and reception",
+        "Downtown Portland location ideal for pairing with nearby cultural and dining stops",
+        "Strong program of talks and events that deepen the visit beyond the galleries"
+      ],
+      "content_generated_at": "2026-01-18T04:28:34Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-schneider-museum-of-art",
       "country": "USA",
       "state_province": "Oregon",
-      "city": "Oregon",
+      "city": "Ashland",
       "museum_name": "Schneider Museum of Art",
       "alternate_names": null,
       "website": "https://sma.sou.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "555 Indiana St, Ashland, OR 97520, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 42.18696,
-      "longitude": -122.69503,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "97520",
+      "latitude": 42.185099,
+      "longitude": -122.6931,
+      "place_id": "ChIJnaZeYqMMz1QR6IA5qRNgNFg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -537,12 +1051,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -551,21 +1065,167 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is unrelated to the Schneider Museum of Art and gives no evidence about the museum’s permanent collections or interpretive approach, so collection-specific scores cannot be determined. Based on the small-city setting (Ashland) and lack of additional institutional signals, the museum is scored as primarily local in reputation and likely small in collection tier.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oregon' from open data; MRD: computed city_tier=3 for Oregon; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:28:49Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5415526245"
+      "phone": "(541) 552-6245",
+      "website_google": "https://sma.sou.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 91,
+      "google_reviews": [
+        {
+          "author_name": "C. Dylan Plummer",
+          "author_url": "https://www.google.com/maps/contrib/111847976386559696795/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5kHG2pGE887AehyYdO8p_TWtPJzomgb2Z6v-alW0JL3dWNeoyuA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Really friendly student volunteers at this small but excellent student gallery.\n\nIt was surprising that a small student gallery would also have famous works alongside student contributions. They had an original Keith Haring piece.\n\nHard to find if you aren't a Southern Oregon University student,  but it's definitely worth a gander.\n\nAlso, it's free, but I encourage donating.",
+          "time": 1752512262,
+          "translated": false
+        },
+        {
+          "author_name": "Sianna Orr",
+          "author_url": "https://www.google.com/maps/contrib/111116224893125533641/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLi9gwd4IfzwfI9HhQf9fPZICThp6Vz5b0CSXreQBh_fN1m9w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "7 months ago",
+          "text": "It's a decent free activity, especially as a refuge on a warm day. But it's a lot smaller/shorter than expected. It only has three rooms and we got through it in probably 15 minutes. The current exhibit wasn't all that fascinating; we enjoyed the pieces in the lobby much more.",
+          "time": 1749708879,
+          "translated": false
+        },
+        {
+          "author_name": "Newtoxton",
+          "author_url": "https://www.google.com/maps/contrib/103557901174312818058/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXfmZOEcGyE10i6hvQHhnCj0U9J__FLhmoylLsmd5S89QPAZc=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Great creatives here. Love the art there is here. Loads of creative minds here.",
+          "time": 1740882164,
+          "translated": false
+        },
+        {
+          "author_name": "Christian Ives",
+          "author_url": "https://www.google.com/maps/contrib/115891243545731577465/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVgU1vi-uUZYTIXzvHKp6P8cL5dED0J1aIu1l8MxU6ZcCpPzeHI6w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "This is such a beautiful Art Museum. The size maybe small, but the architecture definitely gives justice to the art pieces. Plus they have such an incredible selection of contemporary artists.",
+          "time": 1544900282,
+          "translated": false
+        },
+        {
+          "author_name": "John Garloff",
+          "author_url": "https://www.google.com/maps/contrib/101719477267457114413/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW3noyUzhRdYz9JZr-lpKmXNMEVPF6Xtrcbd1uJN9YppZfQwLNrdw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "What a beautiful art display and in such a perfect facility. We like to walk from our house to the museum and on this day there was a winter storm coming that made things even more exciting 😁",
+          "time": 1677202503,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "Tucked into Southern Oregon University’s campus in Ashland, the Schneider Museum of Art offers a smart, intimate museum experience for contemporary art lovers. With a rotating schedule of thoughtfully curated exhibitions—often paired with artist talks and community events—it’s an ideal stop between theater outings and downtown exploring. Expect close-looking, conversation-starting work, strong curatorial voice, and a calm gallery environment where you can actually spend time with the art rather than rush past it.",
+      "content_description": "**Schneider Museum of Art** in Ashland is a small but rewarding contemporary-focused museum where the pleasure is in *close looking*. Located on the Southern Oregon University campus, it functions as both a cultural anchor for the Rogue Valley and a lively teaching museum—meaning exhibitions tend to be carefully framed, idea-driven, and frequently refreshed. Rather than a single “permanent collection” experience, visitors encounter rotating shows that bring new perspectives to current artistic practice and regional conversations. If your travel style favors discovery over blockbusters, this museum’s scale is a strength: you can absorb an exhibition fully, read labels without crowd pressure, and leave feeling you’ve genuinely engaged with the work.\n\nThe museum’s programming often emphasizes dialogue—look for **artist talks**, receptions, and social events that make contemporary art feel accessible without diluting its complexity. The posted schedule for **“In Unexpected Harmony” (Main Gallery, Nov 20, 2025–Jan 10, 2026)** signals the museum’s commitment to timely, curated exhibitions and the chance to hear directly from artists during opening events. For art travelers, that’s a rare advantage: you may align your visit with a talk and experience the work alongside the local community.\n\nArchitecturally, expect a straightforward, gallery-first setting designed for viewing—clean sightlines, controlled light, and a pace that encourages lingering. Pair your visit with Ashland’s broader cultural offerings (notably the performing arts scene), and the Schneider becomes a concentrated, refreshing art stop: contemporary work, thoughtful curation, and an unhurried museum experience.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions that reward slow, close viewing in an intimate setting",
+        "Main Gallery shows with public programming—artist talks and receptions that deepen the visit",
+        "University art-museum energy: curatorial clarity, educational context, and fresh perspectives",
+        "A calm, manageable museum stop that fits well into an Ashland day of culture and walking",
+        "Seasonal exhibition timing (e.g., “In Unexpected Harmony,” Nov 20, 2025–Jan 10, 2026) ideal for planning around openings"
+      ],
+      "content_generated_at": "2026-01-18T04:28:49Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-shelton-mcmurphey-johnson-house",
@@ -585,7 +1245,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -598,7 +1258,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -620,30 +1280,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Eugene' from open data; MRD: computed city_tier=2 for Eugene; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:28:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5414840808"
+      "phone": "5414840808",
+      "is_scoreable": false,
+      "content_summary": "The Shelton McMurphey Johnson House in Eugene offers visitors a captivating glimpse into the region's rich history and architectural heritage. Nestled in a serene setting, this historic preservation site showcases stunning Victorian architecture and hosts unique exhibitions that connect past and present.",
+      "content_description": "**The Shelton McMurphey Johnson House** is a delightful journey through time, located in the heart of Eugene, Oregon. Built in 1888, this remarkable Victorian residence serves as a glowing example of *Queen Anne-style architecture*, featuring intricate woodwork and an elaborate stained glass window that is sure to capture the imagination of every visitor. The house is not just a preserved structure; it is a living testament to the area's social history, offering insights into the lives of its original inhabitants and the cultural fabric of Eugene throughout the years. Visitors will appreciate the curated exhibits that often showcase local artists and thematic narratives that draw connections between the past and contemporary life. In November 2025, don’t miss the “In Unexpected Harmony” exhibition in the main gallery, featuring local artists and an artist talk that invites dialogue between history and modern creativity. Events like these make the house a vibrant hub of community engagement, appealing to art lovers and history buffs alike. The artist reception promises an opportunity to mingle and immerse oneself in the artsy atmosphere of Eugene. As you stroll through the lush gardens and meticulously preserved interiors of this historic treasure, you will feel the whispers of the past blending harmoniously with the present. Every nook and cranny of **Shelton McMurphey Johnson House** offers a story waiting to be discovered, making it a must-visit destination for travelers looking for an enriching cultural experience. Dive into history, enjoy art, and connect with Eugene’s vibrant community at this iconic landmark.",
+      "content_highlights": [
+        "Stunning Victorian architecture showcasing Queen Anne-style",
+        "Rich history of the Shelton and McMurphey families",
+        "Unique exhibitions that feature local artists and narratives",
+        "Community events including artist talks and receptions",
+        "Beautifully landscaped gardens enhancing the historic ambiance"
+      ],
+      "content_generated_at": "2026-01-18T04:28:56Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-tam-stslikt-cultural-institute",
       "country": "USA",
       "state_province": "Oregon",
-      "city": "Oregon",
+      "city": "Pendleton",
       "museum_name": "Tamástslikt Cultural Institute",
       "alternate_names": null,
       "website": "http://www.tamastslikt.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "7700 47106 Wildhorse Blvd",
+      "street_address": "47106 Wildhorse Blvd, Pendleton, OR 97801, USA",
       "address_line2": null,
       "postal_code": "97801",
-      "latitude": 45.66687,
-      "longitude": -118.68378,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "latitude": 45.65417919999999,
+      "longitude": -118.6632505,
+      "place_id": "ChIJTXXVz5XiolQR7_vd9Ete7IY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": "Mixed",
       "topics": null,
       "audience_focus": null,
@@ -656,7 +1329,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -673,15 +1346,160 @@
         "walker_reciprocal",
         "official_website",
         "http://www.tamastslikt.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oregon' from open data; MRD: computed city_tier=3 for Oregon; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Mixed from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:29:04Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5419669748"
+      "phone": "(541) 429-7700",
+      "website_google": "http://www.tamastslikt.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 330,
+      "google_reviews": [
+        {
+          "author_name": "Paul Daniel",
+          "author_url": "https://www.google.com/maps/contrib/113572082845595092482/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIVMpnXQ6Hc90UtL9OEFXV6X9jVvasRcgr9asx5hI0qsVTRzw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "We were extremely satisfied with this Cultural Institute. Learned things I had only heard stories about. If you get the chance.make sure and stop by. Be advised the Cafe is only open four hours a day.",
+          "time": 1756000400,
+          "translated": false
+        },
+        {
+          "author_name": "Miranda Philippi",
+          "author_url": "https://www.google.com/maps/contrib/112164100029776591886/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6CQIMDQnP8pqAP2ZvGXPLUSj4ipjETM2-PYWkD-q6OSXo-xX8aQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "An incredibly eye opening experience! We left with a completely different view of the history we've been taught compared to reality, so sad, and wished we could apologize to everyone on behalf of all the awful things we did to all the native tribes. Very informative along with stunning displays and pictures. Incredibly clean, well laid out, and the staff is very friendly. We believe everyone should experience this museum to understand the truth of our nation's history.",
+          "time": 1688613964,
+          "translated": false
+        },
+        {
+          "author_name": "Kelsey Hatch",
+          "author_url": "https://www.google.com/maps/contrib/108452564496051104592/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWbTxpjduU0nekWTvvERZOWm_mQk7GrjsOBph7a7OZxrsGgKjNkNQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "It was nice, the building is really big for what you can actually see, the actual museum is quite small so it feels like you’re paying a lot because the museum is small but it was informational and a nice stop.",
+          "time": 1729130722,
+          "translated": false
+        },
+        {
+          "author_name": "Julie Thompson",
+          "author_url": "https://www.google.com/maps/contrib/100627198160538106828/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKRNNXdj037c_NAC_yaF-P_Zzutxv73dSgoH5Yy5-XJ1DJU0Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "A lot of history of the Indians and their involvement in our wars. Unfortunately also hiw terrible they were treated. History that is very important",
+          "time": 1762472906,
+          "translated": false
+        },
+        {
+          "author_name": "Gissel Loza",
+          "author_url": "https://www.google.com/maps/contrib/101781936394707785038/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWbbqN-O8bhbxybyWaj04CoXfexbqzQH8qP0OdsfmlXxuW8vw29VA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Loved it!! Our guide was amazing. He gave out alot of information. We definately learned new facts about Native Indians.",
+          "time": 1763069160,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Immerse yourself in the rich cultural tapestry of the Confederated Tribes of the Umatilla Indian Reservation at the **Tamástslikt Cultural Institute**. This unique museum offers an authentic window into the history, art, and traditions of Native American life, making it a must-visit destination for anyone interested in indigenous culture and heritage.",
+      "content_description": "**Tamástslikt Cultural Institute** serves as a vibrant testament to the enduring legacy and unique stories of the Umatilla, Cayuse, and Walla Walla tribes. The museum’s architecture is a stunning reflection of traditional designs, harmonizing beautifully with the surrounding landscape of Pendleton, Oregon. Visitors will find themselves enveloped in an atmosphere that resonates with the voices of history, told through compelling exhibits and artifacts that illuminate tribal life from the past to the present. Explore engaging displays of *contemporary art*, historical artifacts, and interactive installations that bridge ancestral wisdom with modernity. This institute is not just a museum but a living narrative that invites dialogue and understanding about Native American cultures.  With ongoing artist talks and events, such as the upcoming “In Unexpected Harmony” exhibition, it provides opportunities for visitors to deepen their insight into the artistic expressions of indigenous peoples.  The museum’s friendly staff and guided tours ensure that each guest leaves with a meaningful connection to the community and its heritage. Here, every visit is a chance to learn, reflect, and celebrate the resilience of Native American culture, making **Tamástslikt Cultural Institute** an unforgettable experience where tradition meets modern creativity.",
+      "content_highlights": [
+        "Interactive exhibits celebrating the history of the Umatilla, Cayuse, and Walla Walla tribes",
+        "Thought-provoking contemporary art installations from Native American artists",
+        "Beautifully designed architecture that reflects the cultural heritage of the tribes",
+        "Regular events and workshops, such as artist talks and receptions for immersive experiences",
+        "Extensive library and resources on Native American history and arts"
+      ],
+      "content_generated_at": "2026-01-18T04:29:04Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-washington-county-museum",
@@ -701,7 +1519,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -714,7 +1532,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -736,30 +1554,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington County' from open data; MRD: computed city_tier=2 for Washington County; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:29:10Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "5036455353"
+      "phone": "5036455353",
+      "is_scoreable": false,
+      "content_summary": "The Washington County Museum is a hidden gem that invites visitors to explore the rich tapestry of history and culture unique to the region. With engaging exhibits and a welcoming atmosphere, it offers a fascinating glimpse into local heritage, making it a must-visit destination for art and history enthusiasts alike.",
+      "content_description": "**Washington County Museum** stands out not only for its diverse exhibits but also for its commitment to celebrating the unique stories embedded in the community's history. Located in the heart of Washington County, this museum invites visitors to embark on a journey through time, showcasing artifacts that relate to the area's cultural and historical narrative. The exhibits, thoughtfully curated, reflect the community's rich past and vibrant present, allowing for a deep connection to the region's identity. From *artifacts* highlighting local industries to presentations on the indigenous peoples who first inhabited the area, the museum offers a broad spectrum of experiences that cater to all ages.    \n\nThe architecture of the **Washington County Museum** further enhances the visitor experience, blending modern design with historical elements that create a harmonious environment for exploration. Visitors can engage in regular events, including the upcoming *Unexpected Harmony Main Gallery* exhibition, where art takes center stage, showing the interplay between creativity and local heritage. The museum not only serves as a repository of history but also as an interactive space where visitors can attend artist talks, receptions, and workshops, such as the *Pinot & Paint* event, fostering a vibrant community connection. Whether you are an art aficionado or a history buff, the **Washington County Museum** promises an enriching experience that resonates long after your visit.",
+      "content_highlights": [
+        "Interactive exhibits that explore local heritage",
+        "Regular community events and workshops",
+        "Diverse collections reflecting the area's cultural history",
+        "Family-friendly programming and activities",
+        "Engaging artist talks and creative receptions"
+      ],
+      "content_generated_at": "2026-01-18T04:29:10Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-unknown-world-of-speed-motorsports-museum",
       "country": "USA",
       "state_province": "Oregon",
-      "city": null,
+      "city": "Wilsonville",
       "museum_name": "World of Speed Motorsports Museum",
       "alternate_names": null,
       "website": "https://www.worldofspeed.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "27490 SW 95th Ave, Wilsonville, OR 97070, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": null,
+      "postal_code": "97070",
+      "latitude": 45.321237,
+      "longitude": -122.7702248,
+      "place_id": "ChIJ87KqdX1ulVQRhWRkJ2tdr60",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -772,7 +1603,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -788,14 +1619,95 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.worldofspeed.org"
+        "https://www.worldofspeed.org",
+        "google_places_api",
+        "museums_csv"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing https://www.worldofspeed.org: Network error for https://www.worldofspeed.org: <urlopen error [WinError 10060] A connection attempt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
-      "notes": null,
-      "city_tier": 3
+      "updated_at": "2026-01-18T04:29:18Z",
+      "notes": "CSV: IRS Museum ID 8404100527 CSV: museum type 'General Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
+      "city_tier": 3,
+      "phone": "(503) 563-6444",
+      "business_status": "CLOSED_PERMANENTLY",
+      "google_rating": 4.7,
+      "google_reviews_count": 1039,
+      "google_reviews": [
+        {
+          "author_name": "Lincoln Glab",
+          "author_url": "https://www.google.com/maps/contrib/114274495767270534106/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWGUyu_pYLvduD245_krHCmzMzJeFyih4x2GkeoNDFIhhTB1acp=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Awesome!!! Great exhibits, wonderful open layout. So glad I found this while browsing Google maps. The exhibits and history are great. The staff is helpful and knowledgeable. We are already looking forward to visiting Oregon again amd seeing any new exhibit they may have.",
+          "time": 1559852372,
+          "translated": false
+        },
+        {
+          "author_name": "J* S*",
+          "author_url": "https://www.google.com/maps/contrib/112869780654835703018/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXrbxSPneJSaU1AEIvyxouFlwkOmLe9Vl1F2gqI12UGln7EcYkt=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "Great place to come and appreciate the concept of horse power!\n\nThe fee is minimal, they rotate part of the exhibit in and out for multiple things so, its never the same all year.\n\nThere is interactive exhibits, old to knew examples, pure power and even a huge hydroplane power boat!\n\nThere is a gift shop, a eatery and tons of things to learn.\n\nWe enjoyed our selves very much. Then again, we are Porch fans and love racing so, for us it was a double win!",
+          "time": 1535120193,
+          "translated": false
+        },
+        {
+          "author_name": "Ralph Vandyke",
+          "author_url": "https://www.google.com/maps/contrib/106107969810031768000/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVzrcg3pKnGWnRm67l5GSgRJT-2BnBPxnXKPQmGYNf-6sAFFaCa=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "HIGHLY RECOMMEND!!!!\nVery friendly staff and lots to see.\nBeen there twice, both times very interesting,  exhibits change often.\nThey have a great interactive kids place, and a well stocked gift shop.\nOnly $10.00 for a great experience.",
+          "time": 1579448993,
+          "translated": false
+        },
+        {
+          "author_name": "John Liles",
+          "author_url": "https://www.google.com/maps/contrib/118303920298189411462/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXuBaCChEqQ8eRakZRLYvoCYGYNesKadpfmFENbmMmOWYEH0ZTS=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "I'm not sure who enjoyed it more... the kiddos or me! Very cool cars.  Amazing collection of other era items.  The staff are rock stars.  I highly recommend you do the car racing simulators.   I only wish my but would've fit in the indy car.  NASCAR was equally fun.  I'm gonna drive the Lotus next time through!  Great family outting.  Worth the money.  They have food available too!",
+          "time": 1531431465,
+          "translated": false
+        },
+        {
+          "author_name": "Julie Alexander",
+          "author_url": "https://www.google.com/maps/contrib/113478807721583201914/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUErFAzxTCyItWXecnAngfuuWALHqtvNHHaMI2CWgiS_JmNvvo=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Brought husband here as a surprise for his birthday. He really enjoyed it—spent 2 hours looking at and reading about the cars. He had fun doing a 12-minute race simulator. Establishment is quiet, very clean, modern and full of educational materials.",
+          "time": 1521415066,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The **World of Speed Motorsports Museum** in Wilsonville offers an exhilarating experience that immerses visitors in the history and thrill of motorsports. With its dynamic exhibits featuring iconic vehicles and interactive displays, this museum is a must-visit for auto enthusiasts and families alike looking to fuel their passion for speed.",
+      "content_description": "**World of Speed Motorsports Museum** is more than just a collection of vehicles; it's a celebration of the rich tapestry that is motorsport history. Situated in Wilsonville, this vibrant museum showcases an impressive array of rare automobiles, motorcycles, and memorabilia that spans over a century of racing. Visitors will be captivated by everything from classic racecars that have graced the tracks to high-performance models revered by speed aficionados. The museum's design reflects the fast-paced world of racing, featuring sleek lines and dynamic layouts that create an engaging and immersive environment. A highlight of the experience is the opportunity to see live demos and participate in interactive exhibits, making it perfect for visitors of all ages.  In addition to its impressive collections, the **World of Speed** hosts rotating exhibitions that delve deep into the stories behind the vehicles and the people who drove them. The upcoming *Unexpected Harmony* exhibition offers a unique artistic interpretation of motorsports, demonstrating the intersection of art and speed. This special exhibit, along with artist talks and receptions, makes the museum a hub for cultural exchange and creativity. A visit to the **World of Speed** ensures not just a glimpse into the past of motorsports, but also an engaging and educational experience that celebrates the power and artistry of speed. Each moment spent here serves as a reminder of the passion, precision, and innovation that drives the racing world. ",
+      "content_highlights": [
+        "Dynamic exhibits featuring iconic vehicles from various racing eras",
+        "Interactive displays that engage visitors of all ages",
+        "Rotating exhibitions like *Unexpected Harmony* exploring artistic interpretations of motorsports",
+        "Comprehensive memorabilia collection showcasing the history of racing",
+        "Live demonstrations and special events enhancing the visitor experience"
+      ],
+      "content_generated_at": "2026-01-18T04:29:18Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-corvallis-arts-center",
@@ -815,7 +1727,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -823,12 +1735,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -837,21 +1749,35 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no description of the museum’s permanent collection or holdings, so collection-strength and interpretive-context scores cannot be determined. Given the generic name, small-city setting, and lack of signals indicating major collections, this is most likely a local arts center with a small or limited permanent collection and primarily local reputation.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Corvallis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:29:31Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": true,
+      "content_summary": "Corvallis’s Arts Center is a small, local art museum that rewards visitors who love seeing art made close to the ground—where contemporary practice meets community energy. Rather than a vast permanent collection, it shines through rotating exhibitions, artist talks, and hands-on events that let you experience art as a living conversation. Time your visit with a main-gallery show like “In Unexpected Harmony” and you’ll get a fresh snapshot of regional creativity, often paired with receptions that make it easy to meet artists and fellow art lovers.",
+      "content_description": "**The Arts Center (Corvallis)** is best approached as a place to *follow the present tense* of art. With an intimate scale and a local reputation, it foregrounds rotating exhibitions in its main gallery—ideal for travelers who enjoy returning to the museum model of discovery rather than checklist collecting. If your visit aligns with the seasonal program, you can catch a focused exhibition such as **“In Unexpected Harmony”** (Nov 20, 2025–Jan 10, 2026), a kind of curatorial snapshot that invites close looking and encourages you to trace themes across multiple artists rather than one blockbuster name. Programming like an **Artist Talk & Reception** creates a rare opportunity: hearing the work’s intentions directly from the maker, then re-entering the gallery with that context in mind.\n\nArchitecturally, the experience leans toward the strengths of smaller venues: **human-scale galleries**, shorter sightlines, and a pace that encourages you to linger with individual pieces—especially rewarding for fans of *contemporary* approaches, material experimentation, and regional voices. The visitor experience is notably social and participatory, with events such as **Pinot & Paint**-style evenings that blend art appreciation with making. For art enthusiasts traveling through the Willamette Valley, this is a satisfying stop to calibrate your eye: you’ll leave with a sharper sense of what artists in this part of Oregon are thinking about right now.\n\nPlan to check the calendar before you go—at a museum of this size, the **exhibition schedule is the collection**, and timing your visit to an opening or talk can transform a quick drop-in into a memorable encounter.",
+      "content_highlights": [
+        "Rotating main-gallery exhibitions that spotlight contemporary and regional artists (e.g., “In Unexpected Harmony,” Nov 20, 2025–Jan 10, 2026)",
+        "Artist talks and receptions that deepen the viewing experience through direct artist context",
+        "Intimate, human-scale galleries ideal for slow looking and close engagement with individual works",
+        "Participatory programs (such as Pinot & Paint-style events) for visitors who enjoy making as well as viewing",
+        "A dependable, local hub for keeping up with Corvallis-area creative culture—best experienced by checking the current exhibition calendar"
+      ],
+      "content_generated_at": "2026-01-18T04:29:31Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-eugene-jordan-schnitzer-museum-of-art-university-of-oregon",
@@ -884,7 +1810,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -905,9 +1831,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Eugene; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:29:37Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "The Jordan Schnitzer Museum of Art at the University of Oregon is a captivating hub for art lovers, offering a diverse collection that ranges from classic American pieces to contemporary international works. Its commitment to education and community engagement makes it a must-visit destination for anyone interested in the arts in Eugene.",
+      "content_description": "**The Jordan Schnitzer Museum of Art** stands out as a vibrant cultural landmark in Eugene, Oregon, particularly due to its exceptional commitment to education and community involvement. Housing an impressive array of over 5,000 works that encompass everything from *traditional American art* to *Asian treasures*, this museum invites visitors to delve into the evolving narratives of global artistic expression. With an ever-changing schedule of exhibitions, such as the upcoming 'In Unexpected Harmony,' the museum ensures that each visit offers fresh perspectives and stimulating dialogue around art and culture. This event, featuring an artist talk and reception, epitomizes the museum's dedication to interactive experience and community participation.  <br><br>  Nestled within the beautiful grounds of the University of Oregon, the museum's architecture is a blend of modern and traditional styles, creating an inviting atmosphere that perfectly complements its dynamic collections. Visitors can explore works that highlight pivotal moments in *art history*, alongside more contemporary pieces that resonate with current conversations. The unique ability to accommodate the artistic vibrancy of today, while celebrating the nuances of cultural history, makes this venue a treasure trove for art enthusiasts. From guided tours to educational programs, the museum caters to a variety of interests, ensuring that every visitor walks away enriched and inspired.",
+      "content_highlights": [
+        "Vast collection of over 5,000 works of art",
+        "Dynamic exhibitions featuring contemporary and historical artists",
+        "Regular artist talks and community receptions for hands-on engagement",
+        "Architecturally stunning building blending modern and traditional styles",
+        "Focus on cross-cultural dialogues through art"
+      ],
+      "content_generated_at": "2026-01-18T04:29:37Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-eugene-university-of-oregon-museum-of-natural-and-cultural-history",
@@ -927,7 +1866,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -940,7 +1879,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -962,10 +1901,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Eugene; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:29:44Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5413463024"
+      "phone": "5413463024",
+      "is_scoreable": false,
+      "content_summary": "The University of Oregon Museum of Natural and Cultural History is a captivating destination that blends the wonders of natural history with rich cultural narratives. Visitors will marvel at the extensive collections that reveal the region’s past, vibrant exhibits, and innovative programs that engage all ages in understanding our shared heritage.",
+      "content_description": "**The University of Oregon Museum of Natural and Cultural History** invites visitors on a journey through time, showcasing the intricate tapestry of both natural history and cultural heritage of the Pacific Northwest. Founded in the late 19th century, this museum not only features a comprehensive collection of fossils, artifacts, and ethnographic items, but it also serves as a hub for research and education, making it a vital resource for both scholars and curious minds alike. The museum's architecture reflects its commitment to sustainability and innovation, creating an inviting space for exploration. Visitors will find themselves immersed in the stories of ancient peoples and ecosystems that once thrived in the rich terrains of Oregon and beyond.  When you step into the **Unexpected Harmony Main Gallery**, which hosts special exhibitions like the upcoming *Artist Talk and Reception* in November 2025, prepare to engage with thought-provoking themes that intertwine art, culture, and science.  Multimedia presentations and interactive displays deepen understanding and invite questions, perfect for family outings or solo adventurers seeking enlightenment.  The museum’s commitment to accessibility ensures that every guest can enjoy its installations and programs, providing a welcoming atmosphere for all.",
+      "content_highlights": [
+        "Impressive collection of over 1.7 million specimens in natural history and anthropology",
+        "Unique focus on the cultural heritage of Native American tribes in the Pacific Northwest",
+        "Innovative temporary exhibits like 'Unexpected Harmony' that blend art and science",
+        "Engaging educational programming for children and adults, including artist talks and workshops",
+        "Sustainable architectural design that enhances visitor experience and environmental stewardship"
+      ],
+      "content_generated_at": "2026-01-18T04:29:44Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-or-willamette-university-hallie-ford-museum-of-art",
@@ -985,7 +1937,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -993,37 +1945,52 @@
       "tickets_url": "http://www.willamette.edu/arts/hfma/index.html/visit/index.html#admission",
       "reservation_required": null,
       "accessibility_url": "https://my.willamette.edu/site/digital-accessibility/accessibility-statement.html",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a university museum focused on Oregon-related art and historical artifacts rather than canonical European movements, so Impressionism is likely negligible and modern/contemporary representation is likely minor. As a museum combining art and historical artifacts, it likely provides some interpretive framing, but the evidence does not confirm strong chronological or comprehensive context. Being a regional university museum in Salem (third-largest in Oregon) suggests local-to-reg",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.willamette.edu/arts/hfma/index.html",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Willamette University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: Page not found (404) at http://www.willamette.edu/arts/hfma/index.html/visit/index.html#admission; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T04:29:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5033706300"
+      "phone": "5033706300",
+      "is_scoreable": true,
+      "content_summary": "On Willamette University’s leafy Salem campus, the Hallie Ford Museum of Art is a rewarding stop for travelers who like their museum-going intimate, thoughtful, and close to the creative pulse of the region. Its rotating exhibitions—often pairing contemporary voices with historical works—make repeat visits feel fresh. Expect a calm, gallery-focused experience with strong interpretive materials, engaging public programs, and the kind of close-looking opportunities that larger museums can’t always offer.",
+      "content_description": "**Hallie Ford Museum of Art** at Willamette University offers art lovers a campus-based museum experience that feels both **scholarly** and **welcoming**—a place where you can slow down and really look. While its reputation is local and its collection is moderate in scale, the museum’s strength is how it *curates*: exhibitions are typically built around clear ideas, crisp wall texts, and programming that invites deeper engagement rather than quick consumption. If you time your visit with a special exhibition, you’ll often find artist-focused narratives and smart thematic pairings that make the galleries feel freshly alive.\n\nArchitecturally, the museum reads as a contemporary academic art space—clean sightlines, controlled lighting, and a quiet atmosphere that prioritizes the artwork. The visitor experience is especially satisfying for those who enjoy intimate galleries: you’re close enough to study surface, technique, and *composition* without crowds pressing in. Expect a well-paced circuit that rewards careful viewing and makes it easy to drop in for an hour or linger longer.\n\nCheck the calendar for exhibition openings and talks; for example, the Main Gallery exhibition **In Unexpected Harmony** (November 20, 2025–January 10, 2026) is paired with an **Artist Talk and Reception** on November 20 (5:30–7:00 PM), the kind of event that turns a visit into a conversation with living practice. For art-minded travelers in Oregon’s capital region, it’s a meaningful, culture-rich detour.",
+      "content_highlights": [
+        "Campus museum setting on Willamette University—quiet, contemplative galleries ideal for close looking",
+        "Rotating, idea-driven exhibitions that often connect contemporary practice with art-historical context",
+        "Main Gallery special exhibitions, including “In Unexpected Harmony” (Nov 20, 2025–Jan 10, 2026)",
+        "Public programs that deepen the visit, such as artist talks and opening receptions (Nov 20, 2025, 5:30–7:00 PM)",
+        "Visitor-friendly scale: easy to fit into a Salem itinerary while still feeling substantial for art enthusiasts"
+      ],
+      "content_generated_at": "2026-01-18T04:29:58Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T04:29:58Z"
 }

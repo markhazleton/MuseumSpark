@@ -188,7 +188,8 @@ export default function MuseumDetailPage() {
 
   const isFull = isFullRecord(museum)
   const isArt = museum.primary_domain === 'Art' || museum.museum_type?.toLowerCase().includes('art')
-  const hasScores = museum.is_scored || (museum.priority_score !== null && museum.priority_score !== undefined)
+  const hasScores = museum.is_scored || museum.is_scoreable || (museum.priority_score !== null && museum.priority_score !== undefined)
+  const hasContent = museum.content_summary || museum.content_description || museum.content_highlights
 
   return (
     <div className="space-y-6 pb-20">
@@ -228,10 +229,18 @@ export default function MuseumDetailPage() {
           </div>
 
           <div className="flex flex-shrink-0 flex-col items-end gap-3">
+             {museum.overall_quality_score !== undefined && museum.overall_quality_score !== null && (
+               <div className="flex flex-col items-center rounded-lg border-2 border-emerald-500 bg-emerald-50 p-3 text-center">
+                 <span className="text-xs font-semibold uppercase tracking-wider text-emerald-700">Quality Score</span>
+                 <span className="text-3xl font-bold text-emerald-900">{museum.overall_quality_score}</span>
+                 <span className="text-xs text-emerald-600">Higher is better</span>
+               </div>
+             )}
              {museum.priority_score !== undefined && museum.priority_score !== null && (
-               <div className="flex flex-col items-center rounded-lg border border-slate-100 bg-slate-50 p-3 text-center">
-                 <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">Priority Score</span>
-                 <span className="text-3xl font-bold text-slate-900">{museum.priority_score.toFixed(1)}</span>
+               <div className="flex flex-col items-center rounded-lg border-2 border-blue-500 bg-blue-50 p-3 text-center">
+                 <span className="text-xs font-semibold uppercase tracking-wider text-blue-700">Priority Score</span>
+                 <span className="text-3xl font-bold text-blue-900">{museum.priority_score.toFixed(1)}</span>
+                 <span className="text-xs text-blue-600">Lower is better</span>
                </div>
              )}
           </div>
@@ -242,20 +251,68 @@ export default function MuseumDetailPage() {
         {/* Left Column: 2/3 width */}
         <div className="space-y-6 lg:col-span-2">
           
-          <Section title="Overview">
-            {museum.notes ? (
-              <p className="whitespace-pre-wrap text-slate-700 leading-relaxed">{museum.notes}</p>
-            ) : (
-              <p className="italic text-slate-400">No description available.</p>
-            )}
-            
-            {museum.visit_priority_notes && (
-               <div className="mt-4 rounded-md bg-sky-50 p-4">
-                 <h3 className="mb-1 text-sm font-semibold text-sky-900">Why Visit?</h3>
-                 <p className="text-sm text-sky-800">{museum.visit_priority_notes}</p>
-               </div>
-            )}
-          </Section>
+          {/* LLM-Generated Content Summary */}
+          {museum.content_summary && (
+            <Section title="About This Museum">
+              <div className="prose prose-slate max-w-none">
+                <p className="text-lg leading-relaxed text-slate-800">{museum.content_summary}</p>
+                {museum.content_model && (
+                  <div className="mt-3 flex items-center gap-2 text-xs text-slate-500">
+                    <span className="rounded-full bg-purple-100 px-2 py-0.5 font-medium text-purple-700">
+                      AI-Generated with {museum.content_model}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </Section>
+          )}
+
+          {/* LLM-Generated Full Description */}
+          {museum.content_description && (
+            <Section title="Visitor Experience">
+              <div 
+                className="prose prose-slate max-w-none leading-relaxed"
+                dangerouslySetInnerHTML={{ 
+                  __html: museum.content_description
+                    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+                    .split('\n\n').map(p => `<p>${p}</p>`).join('')
+                }}
+              />
+            </Section>
+          )}
+
+          {/* LLM-Generated Highlights */}
+          {museum.content_highlights && museum.content_highlights.length > 0 && (
+            <Section title="Collection Highlights">
+              <ul className="space-y-2">
+                {museum.content_highlights.map((highlight, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <span className="flex-shrink-0 text-blue-600 mt-1">✓</span>
+                    <span className="text-slate-700 leading-relaxed">{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            </Section>
+          )}
+
+          {/* Fallback: Old Notes Field */}
+          {!hasContent && (
+            <Section title="Overview">
+              {museum.notes ? (
+                <p className="whitespace-pre-wrap text-slate-700 leading-relaxed">{museum.notes}</p>
+              ) : (
+                <p className="italic text-slate-400">No description available.</p>
+              )}
+              
+              {museum.visit_priority_notes && (
+                 <div className="mt-4 rounded-md bg-sky-50 p-4">
+                   <h3 className="mb-1 text-sm font-semibold text-sky-900">Why Visit?</h3>
+                   <p className="text-sm text-sky-800">{museum.visit_priority_notes}</p>
+                 </div>
+              )}
+            </Section>
+          )}
 
           {hasScores && isArt && (
             <Section title="Artistic Profile">

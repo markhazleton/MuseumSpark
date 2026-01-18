@@ -56,10 +56,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted city 'Flagstaff' from page text; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:32:56Z",
+      "updated_at": "2026-01-18T02:58:41Z",
       "notes": null,
       "city_tier": 3,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Immerse yourself in the vibrant world of American Indian art at the **Flagstaff Arts Council**. With 12 galleries showcasing an eclectic mix of contemporary and historic pieces, along with a delightful museum shop and café, this destination is a celebration of creativity and culture that you won't want to miss.",
+      "content_description": "**Flagstaff Arts Council** is a remarkable cultural hub located in the heart of Flagstaff, Arizona. With its commitment to showcasing a diverse range of American Indian art, it presents an *illuminating journey* through both contemporary and historic works that resonate deeply with visitors. Each of the 12 galleries invites you to explore unique expressions of identity, spirituality, and nature, making it a vital resource for both art enthusiasts and casual visitors alike. Throughout your visit, you will find an inviting ambiance that encourages contemplation and appreciation of both established and emerging artists.  \n  \nThe museum's layout thoughtfully integrates **local history** with contemporary issues, providing context to the art displayed. As you wander through the galleries, be prepared to be captivated by the narratives behind each piece, from stunning *weavings* to intricate *pottery*. Additionally, the museum shop offers an array of locally crafted items and art pieces, allowing you to bring a piece of Flagstaff's artistic spirit home with you. End your visit by relaxing in the café, where you can enjoy local flavors while reflecting on all that you’ve experienced. **Flagstaff Arts Council** is more than a museum; it’s an enriching experience that highlights the profound connections between art, culture, and community.",
+      "content_highlights": [
+        "Twelve galleries featuring a blend of contemporary and historic American Indian art",
+        "Unique local craftsmanship available in the museum shop",
+        "Informative exhibitions that link art with local history",
+        "A café offering delicious local cuisine",
+        "Accessibility for visitors of all ages with engaging educational programs"
+      ],
+      "content_generated_at": "2026-01-18T02:58:41Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-kitt-peak-national-observatory",
@@ -79,7 +91,7 @@
       "place_id": "ChIJk9p2m6lx1oYR3vncIVKtKqk",
       "address_source": "google_places",
       "address_last_verified": "2026-01-17",
-      "museum_type": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM",
+      "museum_type": "Science Museum",
       "primary_domain": "Science",
       "topics": null,
       "audience_focus": null,
@@ -115,10 +127,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: DNS lookup failed for https://www.noao.edu/kpno; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:32:56Z",
+      "updated_at": "2026-01-18T02:58:49Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Discover the wonders of the universe at the **Kitt Peak National Observatory**, a premier science museum located near Tucson, Arizona. With its stunning telescopes and engaging educational programs, this is a must-visit destination for star-gazers and science enthusiasts alike.",
+      "content_description": "**Kitt Peak National Observatory** is home to one of the largest collections of optical and radio telescopes in the world, providing visitors with a unique opportunity to connect with the cosmos. Nestled in the picturesque Sonoran Desert, this scientific haven features an impressive 12 observatories, offering breathtaking views both of the night sky and the stunning surrounding landscapes. From its founding in 1958, Kitt Peak has played a pivotal role in astronomical research, making it an invaluable resource for both scientists and the curious minds of the public. The architecture is striking, with each observatory designed for specific telescopes and research functions while blending harmoniously into the desert environment. Visitors are greeted by expansive views and the tranquil ambiance of the natural landscape, enhancing the overall experience of discovery and exploration. \n\nThe observatory provides a variety of educational programs, including guided tours and night sky viewings that allow guests to gaze through powerful telescopes at stars, planets, and other celestial phenomena. You can learn about the history of astronomy, the technology behind telescopes, and the significance of ongoing research efforts. Whether you're an amateur astronomy enthusiast or a seasoned expert, the **Kitt Peak National Observatory** offers an immersive experience that sparks wonder and curiosity about the universe. Take a step outside of this world and explore the cosmos in a way that is both enlightening and exhilarating.",
+      "content_highlights": [
+        "Home to the world's largest collection of optical and radio telescopes",
+        "Stunning views of the night sky with guided stargazing sessions",
+        "Educational programs and presentations on astronomy and science",
+        "Architecture that blends seamlessly with the Sonoran Desert landscape",
+        "Interactive exhibits that engage visitors in the wonders of the universe"
+      ],
+      "content_generated_at": "2026-01-18T02:58:49Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-phippen-museum",
@@ -155,14 +179,14 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Phippen Museum primarily serves the local community, which is reflected in its local reputation score. The evidence does not provide information on its impressionist or modern/contemporary collections, nor does it indicate the depth of historical context, leading to null scores in those areas.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a small local museum centered on George Phippen and Western/Cowboy art (Cowboy Artists of America), with no indication of Impressionist holdings, so Impressionism is scored negligible. Western art implies some 20th-century material, but without clear modern/contemporary collecting depth it remains minor. As a single-artist/namesake-focused institution it likely provides decent interpretive context for that niche, but broader art-historical framing is uncertain.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -174,11 +198,23 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:33:00Z",
+      "updated_at": "2026-01-17T23:28:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "9287781385",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "In Prescott, the Phippen Museum offers an art-lover’s deep dive into the visual cultures of the American West and American Indian traditions across 12 intimate galleries. With rotating exhibitions that balance historic works and contemporary voices, it’s an easy, rewarding stop for anyone curious about regional identity, landscape, and storytelling through art. Pair the galleries with a strong museum shop and a café break, and you have a compact, well-rounded museum visit that feels tailored to travelers.",
+      "content_description": "The **Phippen Museum** in Prescott is a focused, visitor-friendly art museum that rewards close looking. Organized across **12 galleries**, it invites you to move between **American Indian art**—both contemporary and historic—and broader currents of American art shaped by place, tradition, and lived experience. For travelers, the scale is a strength: you can absorb the galleries without rushing, noticing how artists handle *line*, *pattern*, and *material* to convey identity, memory, and landscape.\n\nExpect a mix of changing exhibitions and collection displays, with an emphasis on the American West and Indigenous artistic traditions. Even when you arrive without a checklist of famous names, the viewing experience is rich: look for the contrast between highly refined *craft traditions* and contemporary approaches that borrow from *modern* compositional strategies, and pay attention to how curatorial themes guide you from historical works toward living, evolving practices.\n\nThe museum experience extends beyond the walls. A **world-class museum shop** makes this a particularly satisfying stop for collectors of books, prints, and artisan-made objects, while the **on-site café** offers a welcome pause between galleries—ideal for discussing what you’ve seen or planning your next Prescott art stop. Overall, it’s a compact museum that feels designed for art enthusiasts: clear gallery flow, approachable scale, and a strong emphasis on regional and Indigenous perspectives you’re unlikely to get from bigger, generalist institutions.",
+      "content_highlights": [
+        "Twelve-gallery layout that makes it easy to see a wide range of works in a single visit",
+        "American Indian art presentations spanning historic pieces and contemporary interpretations",
+        "Rotating exhibitions that encourage repeat visits and highlight multiple artistic perspectives",
+        "Well-regarded museum shop with art-focused gifts and publications (great for collectors)",
+        "On-site café—an art-trip-friendly break spot between galleries"
+      ],
+      "content_generated_at": "2026-01-17T23:28:59Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-phoenix-art-museum",
@@ -218,11 +254,11 @@
       "impressionist_strength": null,
       "modern_contemporary_strength": null,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum is recognized as a major destination within the U.S., indicating a national reputation. However, there is insufficient evidence regarding its impressionist and modern/contemporary collections, as well as historical context, to assign scores in those areas.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary describes the Musical Instrument Museum rather than the Phoenix Art Museum, so there is no reliable evidence to score Impressionist or Modern/Contemporary art strengths. The evidence does support strong interpretive/educational framing for a large, globally organized permanent collection of instruments, suggesting good historical context. Prior assessments are used for reputation (national) and collection tier (strong), but mismatch lowers confidence.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -236,11 +272,23 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:33:03Z",
+      "updated_at": "2026-01-17T23:29:09Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "6022571880",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "Phoenix Art Museum is a must for art lovers seeking both breadth and depth in the Southwest. Anchored by 12 galleries of American Indian art, it pairs regional strength with an ambitious, national-caliber program spanning historic and contemporary works. Expect a thoughtfully paced visit—gallery-to-gallery discoveries, strong design and craft, and a rewarding museum shop and café for lingering. It’s an ideal stop for travelers who want meaningful cultural context alongside fresh, contemporary energy.",
+      "content_description": "**Phoenix Art Museum** offers a richly layered encounter with art in the heart of Phoenix, balancing local context with a confidently national reputation. The museum’s standout draw is its **suite of 12 galleries dedicated to American Indian art**, where travelers can spend real time with works that speak to continuity, innovation, and community—an experience that’s especially powerful in Arizona, where the living presence of Indigenous cultures is part of the region’s fabric. The presentation encourages close looking, rewarding visitors who appreciate material intelligence, symbolism, and the way contemporary voices extend longstanding traditions.\n\nBeyond this core strength, the museum functions as a wide-ranging **art museum** in the fullest sense: expect a mix of historic and contemporary works that invite comparisons across time, technique, and ideas—ideal for visitors who like to build their own narrative as they move through the building. The gallery experience is designed for unrushed exploration, with clear sightlines and an easy rhythm between focused rooms and broader thematic groupings.\n\nMake time to treat the visit as a full outing. The **museum shop** is often a destination in itself for design-minded travelers, and the **café** provides a welcome pause to reflect on what you’ve seen—perfect for planning a second loop through your favorite galleries or discussing the details of *craft*, *form*, and *visual storytelling* that you’ll notice throughout the collection.",
+      "content_highlights": [
+        "Twelve galleries devoted to American Indian art—an immersive, regionally essential experience",
+        "A strong mix of contemporary and historic works, encouraging cross-era comparisons",
+        "National-caliber programming in a Phoenix setting, ideal for travelers building an arts-focused itinerary",
+        "World-class museum shop with art books, design-forward gifts, and culture-minded finds",
+        "On-site café for a relaxed break between galleries and a longer, more contemplative visit"
+      ],
+      "content_generated_at": "2026-01-17T23:29:09Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-scottsdale-museum-of-contemporary-art",
@@ -277,14 +325,14 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "There is no evidence provided regarding the museum's impressionist or modern/contemporary collections, nor its historical context. The museum is primarily serving the local community, which is reflected in the local reputation score. The collection tier suggests a respectable but limited scope.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum name identifies it as a contemporary art museum, supporting strong Modern/Contemporary strength and negligible Impressionist holdings. No evidence is provided about permanent-collection depth or interpretive/chronological presentation, so historical context is estimated as moderate. Existing assessments indicate local reputation and a moderate collection tier.",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -293,14 +341,26 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:33:06Z",
+      "updated_at": "2026-01-17T23:29:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5206245019",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "In the heart of Old Town Scottsdale, Scottsdale Museum of Contemporary Art offers a focused, gallery-rich visit that pairs bold contemporary vision with the deep continuity of American Indian art. With 12 galleries to explore, you’ll move from historic works to today’s voices, often discovering how tradition, material, and place shape innovation. A standout museum shop and an on-site café make it easy to linger—ideal for art lovers who enjoy thoughtful exhibitions, design-forward spaces, and a curated, unrushed museum experience.",
+      "content_description": "**Scottsdale Museum of Contemporary Art (SMoCA)** is a rewarding stop for travelers who like their museum visits concentrated, visually punchy, and idea-driven. Across **12 galleries**, the museum spotlights both **American Indian art**—historic and contemporary—and wider currents in contemporary practice, giving visitors a chance to see how artists navigate identity, landscape, and material in the Southwest and beyond. Expect rotating exhibitions that keep the experience fresh: you’re not coming for a single “permanent masterpiece,” but for a curated sequence of shows where *contemporary* experimentation and historical depth can speak to each other.\n\nThe building itself contributes to the visit. As you move through the galleries, the museum’s **clean lines** and **gallery-focused layout** encourage close looking—ideal for works that reward attention to surface, process, and concept. The best strategy is to slow down: allow time for wall texts and installation details, which often frame the artistic stakes, from technique and symbolism in American Indian works to the strategies of *installation* and *conceptual* approaches in contemporary art.\n\nMake room for the museum’s **shop**—described as world-class—which is often a highlight for collectors and design-minded visitors, with books and objects that extend the exhibition themes. Finish (or start) at the **café** for a reflective pause before heading back into Old Town. For art enthusiasts, SMoCA’s appeal lies in its manageable scale, strong curatorial point of view, and the chance to encounter living traditions alongside today’s art-world questions.",
+      "content_highlights": [
+        "12 galleries offering a compact but varied contemporary-art museum circuit",
+        "American Indian art presented in both historic and contemporary contexts",
+        "Rotating exhibitions that encourage repeat visits and reflect current artistic conversations",
+        "Design-forward museum shop geared to art books, gifts, and collection-worthy objects",
+        "On-site café for a relaxed break between galleries and nearby Old Town exploring"
+      ],
+      "content_generated_at": "2026-01-17T23:29:21Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-scottsdale-museum-of-the-west",
@@ -320,7 +380,7 @@
       "place_id": "ChIJNY7OVZULK4cRcampG1e1sjw",
       "address_source": "google_places",
       "address_last_verified": "2026-01-17",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -356,11 +416,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:32:56Z",
+      "updated_at": "2026-01-18T02:58:57Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4806869539",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The Scottsdale Museum of the West is a captivating destination that expertly showcases the rich cultural heritage and artistic expressions of the American West. Visitors will be enchanted by its diverse galleries featuring both historic and contemporary Native American art, set against a stunning architectural backdrop that mirrors the beauty of the region. A visit here promises a unique blend of education, inspiration, and exploration.",
+      "content_description": "**Scottsdale Museum of the West** offers an immersive experience into the heart of the American West through a thoughtful presentation of its art and history. The museum features 12 dynamic galleries that span a wide range of artistic expressions, including an impressive collection of *American Indian art*. Guests can delve into both *contemporary* and *historic* works that encapsulate the diverse narratives and cultural significance of Indigenous communities throughout the region. **Scottsdale Museum of the West** not only serves as a repository of art but also as a platform for storytelling that connects visitors with the past and present of this iconic area.  \n\nThe architectural design of the museum itself mirrors the enchanting desert landscape, characterized by warm colors and natural materials that blend seamlessly with the environment. It houses a world-class museum shop and café, where visitors can unwind and reflect on their experience. The museum’s commitment to educational programs and community events fosters an inclusive atmosphere that welcomes everyone from art enthusiasts to families seeking a meaningful day out. Engaging exhibitions, such as *Native American textiles* and *cowboy culture*, highlight the rich tapestry of the West, ensuring visitors leave with deeper insights and appreciation for this unique cultural heritage.",
+      "content_highlights": [
+        "Twelve galleries showcasing diverse collections of American Indian art",
+        "Significant exhibitions on contemporary and historic Western culture",
+        "Stunning architectural design that reflects the surrounding desert landscape",
+        "World-class museum shop featuring art and crafts from local artisans",
+        "Café offering unique dining experiences with a Western twist"
+      ],
+      "content_generated_at": "2026-01-18T02:58:57Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-sedona-arts-center",
@@ -403,9 +475,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Sedona Arts Center primarily serves the local community, which is reflected in its local reputation score. However, there is insufficient evidence regarding its impressionist or modern/contemporary collections, as well as its historical context, leading to null scores in those areas.",
-      "score_last_verified": "2026-01-17",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of Sedona Arts Center's permanent collection, so strengths in Impressionist and Modern/Contemporary art and the quality of historical interpretation cannot be reliably scored. Given the existing assessments and the institution’s location signals, it is best characterized as a local institution with a small/limited collection tier.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -418,11 +490,23 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted city 'Art Barn Road Sedona' from page text; Wikidata: no search results; Nominatim: matched 1 result; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:33:09Z",
+      "updated_at": "2026-01-18T02:56:25Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "9288210515",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "In the red-rock light of Sedona, Sedona Arts Center offers a concentrated, gallery-hopping immersion into American Indian art alongside contemporary and historic works. With 12 galleries, you can move from finely crafted objects to boldly experimental pieces in a single visit—then linger in a museum shop known for artful finds and refuel at the on-site café. It’s an ideal stop for art lovers who want local authenticity, strong regional voices, and a relaxed, discovery-driven museum experience.",
+      "content_description": "**Sedona Arts Center** is one of Sedona’s most rewarding stops for art-focused travelers: a compact yet thoughtfully curated hub where you can experience **12 galleries** devoted to American Indian art—both contemporary and historic—while also encountering the broader creative energy that defines Northern Arizona. Rather than feeling encyclopedic, the visit feels *intimate* and *place-based*: you’re invited to look closely at materials, craftsmanship, and the visual languages that continue to evolve across generations.\n\nThe strength here is the immediacy of the encounter. Galleries typically rotate, encouraging repeat visits, and the emphasis on American Indian art makes this a particularly meaningful complement to Sedona’s landscape and cultural geography. Expect a mix of media—works that foreground line, pattern, and surface, and others that prioritize story, identity, and experimentation—offering art lovers a chance to track the dialogue between *tradition* and *contemporary practice*.\n\nBeyond the galleries, **the visitor experience** is a major draw. The **world-class museum shop** is not an afterthought; it’s part of the destination, often functioning like an extension of the exhibition program with high-quality art objects, books, and design-forward gifts. Add the **café** for an easy pause between galleries, and you have a museum visit that feels both culturally substantial and pleasantly unhurried—perfect for building into a day exploring Sedona’s trails, architecture, and light.",
+      "content_highlights": [
+        "Twelve galleries devoted to American Indian art, spanning contemporary and historic work",
+        "A rotating, discovery-driven approach that rewards close looking and repeat visits",
+        "Strong sense of place: art that resonates with Sedona’s regional landscape and cultural context",
+        "World-class museum shop for art objects, books, and design-minded gifts",
+        "On-site café for a relaxed mid-visit break between gallery circuits"
+      ],
+      "content_generated_at": "2026-01-17T23:29:48Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-sedona-heritage-museum",
@@ -442,7 +526,7 @@
       "place_id": "ChIJFeZEA-CjLYcRSwXCyzCtalM",
       "address_source": "google_places",
       "address_last_verified": "2026-01-17",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -477,11 +561,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:32:56Z",
+      "updated_at": "2026-01-18T02:59:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "9282827038",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Nestled in the stunning red rock landscapes of Sedona, the **Sedona Heritage Museum** invites visitors to dive into the rich tapestry of local history. With a focus on American Indian art and culture, visitors can explore an impressive array of galleries that highlight the profound connection between the region's heritage and its vibrant contemporary art scene. This museum is a must-visit for art enthusiasts and history lovers alike!",
+      "content_description": "**Sedona Heritage Museum** stands as a beacon of cultural appreciation and historical exploration within Arizona’s breathtaking scenery. As you step through its doors, you'll be greeted by twelve meticulously curated galleries, each showcasing a diverse collection of *American Indian art*, both historic and modern. This unique fusion not only highlights the significance of indigenous heritage but also examines its enduring influence on contemporary visions, inviting visitors to reflect on the interconnectedness of past and present. The artworks speak volumes, capturing the spirit of the land and its people, while the museum shop offers exclusive pieces that allow you to take a piece of Sedona's culture home with you.  \n\nArchitecture-wise, the museum is a beautiful homage to the *local environment*, with designs that harmonize with the iconic red rocks surrounding it. The landscape itself seems to inform the architectural decisions, creating a setting that enhances the experience. After an immersive journey through art and history, guests can recharge at the on-site café, enjoying a menu inspired by local ingredients—perfect for relaxing and reflecting on all you've seen. Whether you're an art aficionado or simply exploring the wonders of Sedona, a visit to the **Sedona Heritage Museum** promises insights into the area's rich stories and creative expressions.",
+      "content_highlights": [
+        "Twelve galleries featuring American Indian art",
+        "Exclusive contemporary and historic art collections",
+        "A world-class museum shop with unique local art",
+        "A café offering local culinary delights",
+        "Stunning architecture in harmony with Sedona's landscape"
+      ],
+      "content_generated_at": "2026-01-18T02:59:03Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-unknown-tucson-museum-of-art",
@@ -524,9 +620,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Tucson Museum of Art is known regionally, which supports a reputation score of 2. The collection is described as respectable but limited in scope, justifying a collection tier score of 2. However, there is insufficient evidence to assess the other scoring categories.",
-      "score_last_verified": "2026-01-17",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia evidence is for Tucson International Airport rather than the Tucson Museum of Art, so there is no reliable collection-based information to score Impressionist, Modern/Contemporary, or interpretive historical context. Using only the supplied prior assessments, the museum is best treated as a regional institution with a moderate collection tier.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
@@ -534,14 +630,26 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:33:13Z",
+      "updated_at": "2026-01-18T02:56:25Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5206967450",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "In the heart of downtown Tucson, the Tucson Museum of Art offers an art-lover’s itinerary in miniature: 12 galleries that move from the Southwest’s deep Indigenous traditions to contemporary voices and historic American art. It’s an easy-to-navigate museum with the added pleasures of a strong museum shop and an inviting café—ideal for building a half-day around looking closely, learning locally, and taking home something thoughtfully made.",
+      "content_description": "**Tucson Museum of Art** is a rewarding stop for travelers who want more than a quick overview of “Southwestern art.” Across **12 galleries**, the museum gives you a focused, gallery-to-gallery journey that highlights the region’s cultural depth—especially through **American Indian art**, where you can expect careful presentations of materials, technique, and visual storytelling. The experience is well-suited to close looking: works are typically installed in a way that lets you compare forms, surface treatments, and iconography across periods, moving from historic traditions to living, contemporary makers.\n\nBeyond Indigenous holdings, **Tucson Museum of Art** broadens the lens with selections that balance **historic** and **contemporary** work, offering a regional museum’s best strength: thoughtful curation that connects local context to wider American art histories. Rather than feeling encyclopedic, the museum reads as intentionally edited—ideal for visitors who appreciate thematic hangs and the chance to spend real time with individual objects.\n\nThe visit is made especially pleasant by the on-site amenities: a **world-class museum shop** that emphasizes artful design and gift-worthy objects, and a **café** that turns your museum stop into a linger-worthy downtown outing. Plan to take breaks between galleries, revisit a favorite room, and leave time for the shop—often one of the best places in Tucson to find artist-made pieces that echo what you’ve just seen on the walls.",
+      "content_highlights": [
+        "Twelve-gallery layout that’s easy to cover in one satisfying visit (with time to linger)",
+        "American Indian art as a major throughline, foregrounding the Southwest’s living artistic traditions",
+        "Mix of contemporary and historic presentations that link regional context to broader American art narratives",
+        "World-class museum shop with design-forward, art-minded souvenirs and gifts",
+        "On-site café that makes it simple to turn your museum visit into a relaxed downtown afternoon"
+      ],
+      "content_generated_at": "2026-01-17T23:30:15Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-camp-verde-verde-valley-archaeology-center",
@@ -561,7 +669,7 @@
       "place_id": "ChIJBfxzyGNVLIcR-fOwJhPpnRc",
       "address_source": "google_places",
       "address_last_verified": "2026-01-17",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -597,11 +705,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:32:56Z",
+      "updated_at": "2026-01-18T02:59:13Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9285670066",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The Verde Valley Archaeology Center offers an immersive journey into the rich tapestry of American Indian culture, showcasing an impressive collection of contemporary and historical art across twelve engaging galleries. With a world-class shop and café, it's a perfect destination for art enthusiasts and history buffs alike.",
+      "content_description": "**Verde Valley Archaeology Center** is not just a museum; it's a gateway into the vibrant heritage of American Indian culture. Nestled in the heart of Camp Verde, this center features twelve unique galleries dedicated to both *contemporary* and *historic* American Indian art. Visitors can delve into an array of artworks that tell stories of resilience and transition, showcasing everything from intricate *pottery* and *beadwork* to powerful modern expressions of identity and artistry. Each piece is a testament to the cultural significance and creative spirit of indigenous peoples, making every visit an enlightening experience. Among these galleries, you may encounter rare artifacts that narrate the ancient history of the Verde Valley region, offering profound insights into the lives of those who inhabited it long before European contact.  **  ",
+      "content_highlights": [
+        "Twelve galleries showcasing both contemporary and historic American Indian art",
+        "Unique artifacts from the Verde Valley region",
+        "Artworks featuring traditional pottery, beadwork, and modern expressions",
+        "A world-class museum shop with exclusive art pieces",
+        "A cozy café serving refreshments"
+      ],
+      "content_generated_at": "2026-01-18T02:59:13Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-flagstaff-museum-of-northern-arizona",
@@ -658,11 +778,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:32:56Z",
+      "updated_at": "2026-01-18T02:59:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9287745213",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The Museum of Northern Arizona is a vibrant cultural hub, offering a deep dive into the rich history and artistic expressions of American Indian cultures. With 12 diverse galleries, visitors can explore both contemporary and historic artworks, making it a unique and enriching experience in Flagstaff.",
+      "content_description": "**The Museum of Northern Arizona** is a must-visit destination for anyone interested in understanding the intricate tapestry of Native American history and art. Nestled amidst the stunning landscapes of Flagstaff, Arizona, this museum stands out for its dedication to preserving and interpreting the rich cultural heritage of the region's Indigenous peoples. With **12 thoughtfully curated galleries**, visitors can immerse themselves in a breathtaking collection that showcases everything from *historic pottery* to *contemporary beadwork*, providing an expansive view of the artistic evolution of American Indian cultures. Each exhibit is a testament to the skill and creativity of the artists, evoking a sense of connection to both past and present traditions. The museum is also known for its *dedication to authenticity*, ensuring that the art and artifacts presented are true representations of their respective cultures. This commitment enriches the visitor's experience, making each piece not just an item of beauty, but a story waiting to be told. \n\nThe **Museum of Northern Arizona** also features a world-class museum shop and café, inviting guests to indulge in local culinary delights or take home unique handcrafted items. The architecture of the museum itself is a harmonious blend of modern design and traditional influences, reflecting the cultures it showcases. Visitors can enjoy peaceful views of the surrounding mountains while exploring the museum's offerings. A visit here is not just an educational outing; it’s an intimate journey into the spirit and heritage of the Indigenous peoples of the Southwest, making it a noteworthy stop on any travel itinerary in Arizona. Whether you're a history buff, an art lover, or simply curious, the experience awaits you at this exceptional institution.",
+      "content_highlights": [
+        "12 galleries featuring American Indian art",
+        "Unique blend of contemporary and historic artworks",
+        "World-class museum shop with handcrafted items",
+        "Café offering local cuisine",
+        "Architectural design reflecting Indigenous influences"
+      ],
+      "content_generated_at": "2026-01-18T02:59:21Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-phoenix-heard-museum",
@@ -682,7 +814,7 @@
       "place_id": "ChIJq1ARW0ISK4cRItccBOgJS9w",
       "address_source": "google_places",
       "address_last_verified": "2026-01-17",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -717,11 +849,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:32:56Z",
+      "updated_at": "2026-01-18T02:59:30Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "6022528840",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The **Heard Museum** in Phoenix is an essential destination for anyone interested in the rich heritage and artistry of American Indian culture. With an impressive collection of traditional and contemporary works, it offers visitors an immersive experience that connects art, history, and identity. Don't miss the gorgeous galleries and the world-class museum shop!",
+      "content_description": "**Heard Museum** is not just a museum; it is a vibrant celebration of American Indian culture and artistry. Located in the heart of Phoenix, this renowned institution features 12 galleries showcasing a breathtaking array of *traditional* and *contemporary American Indian art*. From intricate Navajo textiles to stunning pottery and striking beadwork, every piece tells a story steeped in cultural significance and artistic innovation. Visitors can expect to be captivated by the exquisite craftsmanship and deep connections to heritage embodied in every exhibit.  \n\nArchitecturally, the **Heard Museum** brilliantly merges modern design with traditional elements, creating a welcoming atmosphere that invites exploration and reflection. As you wander through the thoughtfully curated galleries, don’t miss the immersive storytelling opportunities that engage guests through multimedia displays and educational programs. The museum also hosts seasonal exhibitions and community events, further enhancing the visitor experience and enabling meaningful interactions with contemporary Native artists. After your tour, relax in the museum café or browse the world-class shop, which offers unique, ethically sourced artworks and crafts that support Native artisans. Each visit is a journey not just through art but also through the enduring spirit and resilience of American Indian communities.  \n\nWhether you are an art enthusiast or a curious traveler, **Heard Museum** offers a profound insight into a rich culture, making it an unmissable part of your Phoenix itinerary.",
+      "content_highlights": [
+        "World's largest collection of Navajo textiles",
+        "Engaging multimedia exhibits on American Indian history",
+        "Stunning outdoor sculpture garden",
+        "Native American music and dance performances",
+        "Curated museum shop featuring authentic Indigenous art"
+      ],
+      "content_generated_at": "2026-01-18T02:59:30Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-az-tuscon-museum-of-contemporary-art",
@@ -758,14 +902,14 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
       "scoring_version": "phase2_v1",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "There is no evidence provided regarding the strength of the Impressionist or Modern/Contemporary collections, nor the historical context. The museum is primarily serving the local community, which justifies a local reputation score. The collection tier is moderate based on the limited information available.",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is explicitly dedicated to contemporary art, design, and architecture, with a growing permanent collection and a permanently installed James Turrell Skyspace, supporting strong modern/contemporary strength. No evidence suggests Impressionist holdings. As a contemporary museum with five galleries and rotating exhibitions, it likely provides some interpretive context but not a broad chronological narrative; reputation and overall collection scale appear primarily local/regional and mode",
       "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
@@ -778,12 +922,24 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T14:33:16Z",
+      "updated_at": "2026-01-17T23:31:17Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5206245019",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "In Scottsdale, the Museum of Contemporary Art offers a focused, gallery-rich visit centered on American Indian art across historic and contemporary expressions. With 12 galleries to explore, it’s an ideal stop for art lovers who want more than a quick walkthrough—expect thoughtful installations, strong design and craft traditions, and living artistic voices in dialogue with the past. Pair your visit with time in the museum shop and café for an easy, all-in-one cultural afternoon.",
+      "content_description": "**Museum of Contemporary Art (Scottsdale)** invites art-minded travelers into a concentrated, gallery-driven experience built around **American Indian art—historic and contemporary—across 12 dedicated galleries**. Rather than a single “overview” room, the museum’s strength is the way it encourages close looking: you’ll move between works that foreground material mastery (from textiles and basketry to carving, metalwork, and mixed media) and pieces that speak to today’s artists working with identity, place, and community. The curatorial approach—pairing continuity with innovation—makes the visit especially rewarding for viewers interested in how tradition evolves into new visual languages.\n\nArchitecturally, the museum functions as a calm, controlled setting for art: clean sightlines, purposeful lighting, and gallery pacing that supports slow engagement. For fans of contemporary display strategies, you’ll appreciate how *installation* choices and interpretive texts frame objects as both aesthetic achievements and cultural knowledge.\n\nPlan to linger. The **museum shop** is a genuine draw for collectors and design lovers, often offering art-forward gifts and craftsmanship that echoes what you see in the galleries, while the **café** makes it easy to turn a visit into a relaxed half-day. For travelers building an arts itinerary in Scottsdale, this museum works best as a focused, meditative stop—less about blockbuster crowds, more about encountering living artistic traditions in a contemporary museum context.",
+      "content_highlights": [
+        "Twelve-gallery layout dedicated to American Indian art, spanning historic works and contemporary practice",
+        "Strong emphasis on material traditions—textiles, basketry, carving, and mixed-media works—inviting close looking",
+        "Contemporary presentations that place living artists in dialogue with inherited forms and cultural narratives",
+        "World-class museum shop geared toward art and design enthusiasts (excellent for meaningful, well-made souvenirs)",
+        "On-site café that supports a leisurely, unhurried museum day in Scottsdale"
+      ],
+      "content_generated_at": "2026-01-17T23:31:17Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-17T14:33:16Z"
+  "updated_at": "2026-01-18T02:59:30Z"
 }

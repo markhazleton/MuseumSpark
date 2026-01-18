@@ -55,10 +55,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Enfield' from open data; MRD: computed city_tier=3 for Enfield; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:51Z",
+      "updated_at": "2026-01-18T04:05:36Z",
       "notes": null,
       "city_tier": 3,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The **Enfield Shaker Museum** is a hidden gem that offers a unique glimpse into the fascinating world of the Shaker religious community. Visitors can explore original Shaker buildings, beautifully crafted wooden furniture, and intriguing artifacts that embody the Shaker commitment to craftsmanship, simplicity, and communal living. Experience a part of American history that still resonates today, making it a must-visit destination for history enthusiasts and cultural travelers alike.",
+      "content_description": "**Enfield Shaker Museum** is a captivating portal into the life and legacy of the Shakers, a religious sect known for their distinct beliefs in communal living, craftsmanship, and pacifism. Nestled in the serene landscapes of New Hampshire, this museum features historic buildings that represent a quintessential Shaker village, allowing visitors to immerse themselves in the tranquil lifestyle that flourished here in the 19th century. The beauty of the architecture, with its simple yet striking design, reflects the Shaker philosophy of utility and beauty merging seamlessly. The museum often showcases original structures, including the *dwelling house* and *barn*, that have been preserved to tell the story of the Shaker way of life.  \n\nVisitors can explore an impressive collection of Shaker furniture and crafts, known for their minimalistic elegance and extraordinary functionality. The intricately crafted wooden pieces, such as chairs and cabinets, not only exhibit outstanding craftsmanship but also represent a philosophy of simplicity and sustainability that resonates in today’s world. Throughout the year, the museum hosts engaging events and workshops that invite guests to connect with this heritage creatively. With guided tours and educated staff ready to share profound insights, the **Enfield Shaker Museum** promises an enriching experience that echoes the harmonious spirit of the Shakers.",
+      "content_highlights": [
+        "Original Shaker buildings showcasing authentic architectural designs",
+        "Extensive collection of handcrafted Shaker furniture and artifacts",
+        "Interactive workshops and events that immerse visitors in Shaker life",
+        "Beautifully landscaped grounds that enhance the serene visitor experience",
+        "Insightful guided tours led by knowledgeable staff"
+      ],
+      "content_generated_at": "2026-01-18T04:05:36Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nh-unknown-museum-of-the-white-mountains",
@@ -113,30 +125,42 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:51Z",
+      "updated_at": "2026-01-18T04:05:49Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6035353214",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Nestled in the heart of Plymouth, the **Museum of the White Mountains** offers a captivating exploration of the breathtaking landscape and rich history of New Hampshire's White Mountains. With diverse exhibitions and engaging programs, this museum immerses visitors in the region's natural beauty and cultural heritage, making it a must-visit for nature lovers and history enthusiasts alike.",
+      "content_description": "**Museum of the White Mountains** serves as a vibrant gateway into the enchanting world of New Hampshire's White Mountains. This unique museum highlights the *natural history*, cultural significance, and artistic interpretations of this stunning region. Featuring a variety of exhibitions, visitors can engage with art, artifacts, and stories that encapsulate the essence of the mountains and their influence on society over the years. The museum's commitment to showcasing the unique relationship between people and their environment is evident in every corner, offering an educational experience for all ages. Both locals and travelers find inspiration in the beautiful displays and curated works that reflect the mountains' glory and allure.  \n\nArchitecturally, the **Museum of the White Mountains** embodies a charming local aesthetic that resonates with its natural surroundings. The **stunning views** from within the museum draw visitors to appreciate the beauty beyond its walls while also providing a contemplative space for reflection and learning. Throughout the year, the museum hosts various programs and events, inviting guests to deeply engage with the *local culture*, *preservation efforts*, and *artistic endeavors* inspired by the stunning vistas outside. Education, creativity, and an appreciation for nature harmoniously converge here, ensuring that each visitor leaves with newfound knowledge and inspiration from the extraordinary landscape that defines the White Mountains. \n",
+      "content_highlights": [
+        "Interactive exhibits on the natural history of the White Mountains",
+        "Seasonal art and photography collections showcasing local artists",
+        "Educational programs for all ages focusing on environmental stewardship",
+        "Collaborations with local conservation organizations",
+        "Beautiful scenic views from the museum's windows and outdoor spaces"
+      ],
+      "content_generated_at": "2026-01-18T04:05:49Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nh-unknown-new-hampshire-historical-society",
       "country": "USA",
       "state_province": "New Hampshire",
-      "city": "New Hampshire",
+      "city": "Concord",
       "museum_name": "New Hampshire Historical Society",
       "alternate_names": null,
       "website": "http://nhhistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "30 Park Street",
+      "street_address": "30 Park St, Concord, NH 03301, USA",
       "address_line2": null,
       "postal_code": "03301",
-      "latitude": 43.207,
-      "longitude": -71.53991,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.2072841,
+      "longitude": -71.5396265,
+      "place_id": "ChIJnUNX05Jq4okRf0_Q2KzvpP8",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -167,16 +191,160 @@
         "walker_reciprocal",
         "official_website",
         "http://nhhistory.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Hampshire' from open data; MRD: computed city_tier=3 for New Hampshire; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:52Z",
+      "updated_at": "2026-01-18T04:05:57Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6082286688",
-      "is_scoreable": false
+      "phone": "(603) 228-6688",
+      "is_scoreable": false,
+      "website_google": "https://www.nhhistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:30 AM – 5:00 PM",
+          "Wednesday: 9:30 AM – 5:00 PM",
+          "Thursday: 9:30 AM – 5:00 PM",
+          "Friday: 9:30 AM – 5:00 PM",
+          "Saturday: 9:30 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.2,
+      "google_reviews_count": 31,
+      "google_reviews": [
+        {
+          "author_name": "Darcey Mussey",
+          "author_url": "https://www.google.com/maps/contrib/106996761924662826330/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIV_LrBb9U5g7ZINdQ9dDLuc7oG__eit8rBel5Ppy8yAXSo71H=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "It's very quiet and low-key here. The building is so beautiful and the exhibits are interesting and well displayed. You can get very close and get a good look at the things on display, which is great because some have very fine details that are wonderful to experience up close. The staff was friendly and helpful in answering questions I had. There are beautiful paintings all over the building to lose yourself in. Some of the paintings of scenery are massive and really transport you to the settings shown.",
+          "time": 1689637457,
+          "translated": false
+        },
+        {
+          "author_name": "Tim Thompson",
+          "author_url": "https://www.google.com/maps/contrib/102572390735763477773/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUmMUVBou7vLnVG2md04MFsR0OekgXSm-LY6pUGarWCSNi2uKnO=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "The docent during our visit was wonderful.  Full of information and and really kept us entertained.  Very beautiful inside.\nHe shared a fascinating story behind the marble and some of the archways, so be sure to ask about those.",
+          "time": 1503151395,
+          "translated": false
+        },
+        {
+          "author_name": "Hadi Shojaee",
+          "author_url": "https://www.google.com/maps/contrib/111081207287991317664/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK4JopkiRy3FVXJHH0-1o_Uq-9R81XoNBSfZS2zLP_6QJcPaZU=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 2,
+          "relative_time_description": "7 years ago",
+          "text": "It's nice to visit to see some historical items of NH but doesn't make sense to charge $6 for such small collection!",
+          "time": 1547661685,
+          "translated": false
+        },
+        {
+          "author_name": "Karibou Schaw",
+          "author_url": "https://www.google.com/maps/contrib/115625532501030885337/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjURdjI_7ooOhGaQ4Wn9UHZErpprGuGAb51ODqmCj5rIpUdFceA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "My husband and I came to this place to do research on my 6x great grandfather.\n\nThe 2 librarians were so helpful finding requested books.  They also found some artifacts that belonged to my relative during the Revolutionary War.\n\nIt was the best part of my trip to New England.  Thank you to the helpful staff.",
+          "time": 1726014939,
+          "translated": false
+        },
+        {
+          "author_name": "Googler 123",
+          "author_url": "https://www.google.com/maps/contrib/102344654320380281943/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW8_AIMVLVYvN2MtBp3TROsIAVmQVZfetPHKxP6Rjz8ynIshZVauQ=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "So much history about New Hampshire, if you are new in the state, do try and visit this society in Concord to learn more about NH.",
+          "time": 1691269900,
+          "translated": false
+        }
+      ],
+      "content_summary": "The New Hampshire Historical Society offers a fascinating journey through the state's rich past. With beautifully curated exhibits, a stunning historic building, and a commitment to preserving local culture, this museum is a must-visit for anyone interested in understanding New Hampshire's unique heritage.",
+      "content_description": "**New Hampshire Historical Society** is not just a repository of artifacts; it is a vibrant testament to the rich tapestry of New Hampshire's history. Nestled in the heart of Concord, this museum invites visitors to explore immersive exhibits that span centuries, showcasing everything from *Colonial-era artifacts* to the more modern 20th-century narratives that have shaped the Granite State. Dedicated to historic preservation, the society offers a wealth of educational programs and interactive displays that appeal to enthusiasts of all ages. You'll find compelling stories told through various mediums, including textiles, photographs, and original documents that breathe life into the history of New Hampshire.  \n\nThe museum itself occupies a striking building that reflects classic New England architecture. Visitors can enjoy the blend of historic charm and modern functionality. With thoughtfully designed exhibit spaces, each room brings unique elements of the state’s history to the forefront. Add to that the knowledgeable staff, who are always on hand to provide insights and answer questions, and you have an engaging environment that welcomes both locals and tourists alike. Whether you're delving into the life of a Revolutionary War hero or learning about the state’s impact on American art, the **New Hampshire Historical Society** promises a thought-provoking experience that emphasizes the importance of local history in shaping our future. \n\nFor anyone eager to appreciate the roots of this great state, a trip to the **New Hampshire Historical Society** is not just an educational endeavor; it is a journey that connects you to the very essence of New Hampshire itself.",
+      "content_highlights": [
+        "Engaging exhibits on Colonial and Revolutionary War history",
+        "Interactive programs for families and children",
+        "A stunning historic building showcasing New England architecture",
+        "A rich collection of documents and artifacts related to local culture",
+        "Insightful guided tours by knowledgeable staff"
+      ],
+      "content_generated_at": "2026-01-18T04:05:57Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nh-unknown-new-hampshire-telephone-museum",
@@ -231,30 +399,42 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Keene' from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:52Z",
+      "updated_at": "2026-01-18T04:06:06Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6034562234",
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "Explore the fascinating evolution of telecommunications at the New Hampshire Telephone Museum in Keene, where history comes alive through vintage phones, interactive exhibits, and a rich narrative of innovation. Experience the transition from the humble beginnings of telephony to the digital age, making it a must-visit for tech enthusiasts and history buffs alike.",
+      "content_description": "**New Hampshire Telephone Museum** is a portal through time that celebrates the rich history of telecommunication. Nestled in Keene, this *history museum* showcases an impressive collection of over 800 artifacts that reveal the evolution of communication technology. As you step inside, you'll find yourself immersed in the captivating story of the telephone—from Alexander Graham Bell's groundbreaking invention to the modern mobile devices we rely on today. Each exhibit is meticulously curated, allowing visitors to trace the intricate timeline of innovation and societal change driven by telephony.  \n\nThe museum's architecture reflects its historical significance, with a welcoming environment that encourages exploration and interaction. Guests will encounter rare items such as candlestick phones, vintage switchboards, and early mobile telephones that highlight the remarkable advancements in communication technology. The interactive exhibits provide a unique hands-on experience, allowing visitors to attempt dialing a phone from the past or listening to recorded messages that showcase the transformation of voice transmission. Not only does the **New Hampshire Telephone Museum** appeal to history and technology enthusiasts, but it also offers delightful nostalgia for those who remember the charm of old phone technology. Whether you’re on a family trip, a tech pilgrimage, or a solo adventure, a visit to this museum promises to enlighten and entertain, making every journey through its doors an unforgettable experience.",
+      "content_highlights": [
+        "Interactive exhibits that allow hands-on experiences with vintage telecommunication devices",
+        "A vast collection of over 800 artifacts showcasing the evolution of the telephone",
+        "Historical narratives connecting the invention of the telephone to societal changes",
+        "Engaging storytelling through recordings and demonstrations",
+        "Unique architectural features reflecting its historical significance"
+      ],
+      "content_generated_at": "2026-01-18T04:06:06Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nh-unknown-portsmouth-historical-society",
       "country": "USA",
       "state_province": "New Hampshire",
-      "city": "Rhode Island",
+      "city": "Portsmouth",
       "museum_name": "Portsmouth Historical Society",
       "alternate_names": null,
       "website": "https://portsmouthhistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "10 Middle Street",
+      "street_address": "10 Middle Street, Portsmouth, NH 03801, USA",
       "address_line2": null,
       "postal_code": "03801",
-      "latitude": 43.06542,
-      "longitude": -70.76706,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.075415,
+      "longitude": -70.760744,
+      "place_id": "ChIJ-UVhGAu_4okRZlWpxrJVULQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -285,15 +465,180 @@
         "walker_reciprocal",
         "official_website",
         "https://portsmouthhistory.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Rhode Island' from open data; MRD: computed city_tier=3 for Rhode Island; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:53Z",
+      "updated_at": "2026-01-18T04:06:14Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "phone": "(603) 436-8433",
+      "website_google": "https://portsmouthhistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.9,
+      "google_reviews_count": 301,
+      "google_reviews": [
+        {
+          "author_name": "lyn rowden",
+          "author_url": "https://www.google.com/maps/contrib/105555082295613288948/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVMB0UMrZWE8P0lzcITNSIZQVEqxDWL8U7T1va2d7etjdph-zao=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The walking tour was a wonderful opportunity to learn more about the glorious history of Portsmouth, NH and its deep roots in American history. Our guide, Elizabeth,, was knowledgeable,  accommodating and shared personal anecdotes to enliven the stories. I highly recommend this tour. Please be aware if you add the John Paul Jones House on a 230pm tour you must see it first. It was closed after our tour but the society staff refunded us. And we enjoyed visiting with them at the lovely gift shop. Next visit we will see all the old homes that were pointed out on the tour and go to Strawberry Banke. Portsmouth is a delightful city and everyone we met was so friendly and helpful we will definitely be returning soon.",
+          "time": 1756752225,
+          "translated": false
+        },
+        {
+          "author_name": "Kris Szabo",
+          "author_url": "https://www.google.com/maps/contrib/105893626081799407582/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWcivwBJCLxljTEJOVPQH2hJPvDwYUpPU14-HvJNKpr8gKYV5k=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I went on a Historical Walking Tour of Downtown Portsmouth, NH and it was wonderful! Our guide, Alan, was knowledgeable, funny, and clearly passionate about Portsmouth’s history. His stories brought the city to life and gave me a much deeper appreciation for the area beyond the cool shopping and great dining. Highly recommend this tour—it’s worth every penny!",
+          "time": 1757775214,
+          "translated": false
+        },
+        {
+          "author_name": "Theresa Hoban",
+          "author_url": "https://www.google.com/maps/contrib/106882462441569180985/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWGh3Q8kYouRbCGF-DudhS98IRLQAlXs8YXlCi1ySsg6qeemTuO=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We really enjoyed our 90 minute walking tour with Ron Sher, he is an excellent historian. The museum is small but informative. We liked all of the exhibits and the staff were super nice and helpful. We felt it was worth the admission price. The shop has a lot of good Portsmouth history. 17 minute movie was a good orientation.",
+          "time": 1728342275,
+          "translated": false
+        },
+        {
+          "author_name": "Theresa St. John",
+          "author_url": "https://www.google.com/maps/contrib/104069393277790409586/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUAuktuvyZf0dnERwJ4IpjnSTRvv0n68GTnp_qKPTw6NuC8FEw=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I already know I will revisit this place after the holidays. Great staff, friendly and informative. The building houses the historical society, a wonderful gift shop, and an African American Cultural Center. The day I went, there was an amazing gingerbread display on the first floor and upstairs there was an exhibit of gorgeous furniture. I never knew this was here, just a few miles away from York, Maine, where I was celebrating Thanksgiving. I can't wait to go back to experience other exhibits and perhaps a walking tour around this historic hub.",
+          "time": 1733226852,
+          "translated": false
+        },
+        {
+          "author_name": "Art Hoffman",
+          "author_url": "https://www.google.com/maps/contrib/117347173760355436895/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJJipD_vpzWeJGL7TB56MnMynxeZiEMDMBws-99VVQm5ZfZFA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We recently enjoyed an excellent Portsmouth walking tour with Alan as our guide.  We have lived on the Seacoast for over 40 years, always appreciating our whole area.  However, this was a special treat.  Alan was very knowledgeable, sharing so much  interesting information, much that was new to us.  His pace was great, always allowing time for questions, and the earphones made it easy to hear regardless of our distance from our guide.  We left with a whole new appreciation of our home area.\nThank you, Alan!",
+          "time": 1760461521,
+          "translated": false
+        }
+      ],
+      "content_summary": "Immerse yourself in the rich tapestry of Portsmouth's history at the **Portsmouth Historical Society**. This museum not only preserves the past but also offers engaging exhibits and community programs that connect visitors with local heritage. A must-visit for history buffs!",
+      "content_description": "**Portsmouth Historical Society** serves as a vibrant hub for understanding the unique history and culture of Portsmouth. Housed in a historic building that reflects the city’s architectural heritage, the museum captivates visitors with its thoughtfully curated exhibits showcasing the evolution of the area from its maritime beginnings to its modern-day community. Each display is designed to weave stories that resonate with those who step through its doors, fostering a deeper connection to the town’s past. As a historic preservation society, the museum is dedicated to maintaining the integrity of Portsmouth’s significant sites and artifacts, ensuring that the rich narratives are not lost to time.  \n\nVisitors will appreciate the balance between educational and interactive experiences throughout the museum. Special programs, guided tours, and community events make it an excellent destination for all ages, allowing families and individuals alike to participate in the ongoing celebration of Portsmouth's heritage. The museum also highlights artworks and artifacts that reflect the area’s artistic movements, providing a unique lens through which to explore the local culture. Whether you are a casual visitor or a history enthusiast, **Portsmouth Historical Society** offers an unforgettable glimpse into the heart of this historic seaport city.",
+      "content_highlights": [
+        "Engaging exhibits that bring Portsmouth's history to life",
+        "Historic building showcasing local architectural heritage",
+        "Interactive community programs and events for all ages",
+        "Insights into local artistic movements and cultural contributions",
+        "Dedicated preservation of significant artifacts and sites"
+      ],
+      "content_generated_at": "2026-01-18T04:06:14Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nh-lebanon-ava-gallery-and-art-center",
@@ -348,10 +693,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Lebanon; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:53Z",
+      "updated_at": "2026-01-18T04:06:20Z",
       "notes": null,
       "city_tier": 3,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The **AVA Gallery and Art Center** in Lebanon is a vibrant hub of creativity, showcasing contemporary art that resonates with the community. Its commitment to arts education and community engagement makes it a unique destination for visitors seeking both inspiration and artistic dialogue.",
+      "content_description": "**AVA Gallery and Art Center** offers a distinctive blend of contemporary art, community engagement, and educational programming that sets it apart in the museum landscape. Located in the picturesque town of Lebanon, this art center not only features rotating exhibitions showcasing works from diverse artists, but also serves as a platform for local talent, creating an inclusive environment that nurtures creativity at all levels. Visitors are welcomed into a space where art is not just displayed but also created, making it an interactive experience worth experiencing firsthand.  \n\nThe architectural design of the **AVA Gallery and Art Center** enhances its artistic mission, featuring open and inviting spaces that encourage exploration and interaction with various art forms. From *paintings* to *sculptures* and *multimedia installations*, the exhibitions offer a glimpse into current artistic trends while reflecting the cultural vibrancy of the community. Beyond exhibitions, the center provides workshops and classes that invite visitors of all ages to engage with art, making it a perfect stop for families and art enthusiasts alike. Whether you're an art connoisseur or just curious about contemporary practices, **AVA Gallery and Art Center** promises a memorable, enriching experience that feeds the soul of creativity.",
+      "content_highlights": [
+        "Engaging contemporary art exhibitions featuring local and national artists",
+        "Interactive workshops and educational programs for all ages",
+        "A community-focused approach that highlights local talent",
+        "Inviting architectural design that encourages exploration",
+        "A calendar of events that includes lectures, artist talks, and special programs"
+      ],
+      "content_generated_at": "2026-01-18T04:06:20Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nh-manchester-currier-museum-of-art",
@@ -379,8 +736,8 @@
       "tickets_url": "https://www.currier.org/free-admission-opportunities",
       "reservation_required": null,
       "accessibility_url": "https://www.currier.org/accessibility-statement",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day",
       "estimated_visit_minutes": null,
       "best_season": null,
@@ -388,30 +745,43 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 3,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The permanent collection explicitly includes Monet, supporting moderate Impressionist representation, but the evidence does not indicate a large or dedicated Impressionist focus. Named holdings by Picasso, Matisse, O'Keeffe, and Calder suggest a solid modern/art-of-the-20th-century presence without clear flagship depth. As a general art museum with broad European/American painting and decorative arts plus associated Frank Lloyd Wright house museums and robust public programs, it likely offers go",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.currier.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Manchester; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:55Z",
+      "updated_at": "2026-01-18T02:03:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "6036696144",
-      "is_scoreable": true
+      "is_scoreable": true,
+      "content_summary": "In Manchester, New Hampshire, the Currier Museum of Art is a standout regional museum that rewards close looking: intimate galleries, a thoughtfully edited collection spanning European and American art, and an architecture experience art lovers rarely get—two Frank Lloyd Wright houses you can tour. It’s an easy, high-impact visit for travelers who want serious painting, design, and modernism without the crowds, plus a calm, well-paced museum experience ideal for lingering with favorite works.",
+      "content_description": "**Currier Museum of Art** in Manchester punches above its regional profile, offering a concentrated, high-quality encounter with European and American art in galleries designed for unhurried viewing. Expect a satisfying sweep from Old Master painting to modern and contemporary works, with particular strength in American art and the kinds of pieces that reward repeat visits—paintings, prints, photographs, and decorative arts presented in a clear, visitor-friendly layout. For art enthusiasts, the pleasure here is the museum’s *curatorial focus*: you can move from luminous European canvases to distinctly American voices and then to modern innovations without feeling overwhelmed.\n\nJust as memorable is the museum’s architectural dimension. The main building delivers a clean, welcoming setting that keeps the emphasis on the art, but the true pilgrimage for design lovers is the museum’s stewardship of two Frank Lloyd Wright homes, the Zimmerman House (1950) and the Kalil House (1955). These guided tours—often requiring advance booking—offer a rare chance to experience Wright’s *Usonian* ideals in situ: built-in furniture, rhythmic geometries, and carefully framed views that make everyday space feel composed like a work of art.\n\nFor visitors, the experience is polished and personable: manageable scale, strong interpretive labels, and a pace that suits both a quick cultural stop and a deeper half-day. If you’re planning a New England itinerary, the Currier is an excellent anchor—an art museum where the galleries satisfy and the architecture becomes part of the collection.",
+      "content_highlights": [
+        "Tours of two Frank Lloyd Wright houses: Zimmerman House (1950) and Kalil House (1955)",
+        "A well-curated mix of European and American painting in an intimate, easy-to-navigate setting",
+        "Strong opportunities to see modern and contemporary art alongside earlier works for context",
+        "Visitor-friendly galleries with clear interpretation—ideal for lingering and close looking",
+        "A high-reward stop on a New England art itinerary, offering serious art without big-city crowds"
+      ],
+      "content_generated_at": "2026-01-18T02:03:32Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-nh-peterborough-mariposa-museum-world-culture-center",
@@ -465,11 +835,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Peterborough; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T15:17:55Z",
+      "updated_at": "2026-01-18T04:06:29Z",
       "notes": null,
       "city_tier": 3,
-      "is_scoreable": false
+      "is_scoreable": false,
+      "content_summary": "The **Mariposa Museum & World Culture Center** in Peterborough is a hidden gem that celebrates global cultures through a captivating collection of art, artifacts, and interactive exhibits. This museum offers visitors a unique opportunity to engage with the diverse narratives of our world, making it a must-visit for those seeking a broader understanding of cultural heritage.",
+      "content_description": "**Mariposa Museum & World Culture Center** invites you on an enriching journey through the tapestry of global cultures. Nestled in the scenic town of Peterborough, this museum stands out for its commitment to showcasing the cultural vibrancy of people from around the world. Exhibits encompass a wide range of artifacts and artistic expressions, from traditional folk art to contemporary pieces, highlighting the beauty and diversity of human creativity. Visitors can explore a variety of cultures, participating in interactive displays and programs that offer a hands-on experience of the stories behind the artifacts. This interactive approach fosters a deeper understanding and appreciation of cultural differences and similarities.  The museum also features rotating exhibitions that ensure there's always something new to discover, inviting visitors to return frequently.  With an architectural layout designed for accessibility and engagement, guests can wander through thoughtfully curated displays at their own pace, absorbing the rich narratives each piece conveys.  The center also hosts workshops, lectures, and community events that connect visitors not only with the museum’s mission but also with each other, creating a vibrant cultural dialogue within the community.  Whether you're an art enthusiast, a traveler eager for knowledge, or simply curious about the world's diverse cultures, **Mariposa Museum & World Culture Center** promises an enlightening experience that will inspire and enrich your travel itinerary.",
+      "content_highlights": [
+        "Interactive exhibits fostering engagement with global cultures",
+        "Rotating exhibitions showcasing cultural narratives",
+        "Workshops and community events connecting visitors and cultures",
+        "A diverse collection of artifacts from around the world",
+        "Architectural design promoting accessibility and exploration"
+      ],
+      "content_generated_at": "2026-01-18T04:06:29Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-17T15:17:55Z"
+  "updated_at": "2026-01-18T04:06:29Z"
 }

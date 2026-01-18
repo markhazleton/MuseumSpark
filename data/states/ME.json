@@ -7,21 +7,21 @@
       "museum_id": "usa-me-unknown-brick-store-museum",
       "country": "USA",
       "state_province": "Maine",
-      "city": "Maine",
+      "city": "Kennebunk",
       "museum_name": "Brick Store Museum",
       "alternate_names": null,
       "website": "http://www.brickstoremuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "117 Main St, Kennebunk, ME 04043, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.38684,
-      "longitude": -70.53879,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "HISTORY MUSEUM",
+      "postal_code": "04043",
+      "latitude": 43.38747619999999,
+      "longitude": -70.5372701,
+      "place_id": "ChIJSSoWVtatskwR58Wy10NVBHU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -34,7 +34,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -51,35 +51,190 @@
         "walker_reciprocal",
         "official_website",
         "http://www.brickstoremuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Maine' from open data; MRD: computed city_tier=3 for Maine; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:54:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2079854802"
+      "phone": "(207) 985-4802",
+      "website_google": "http://www.brickstoremuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 115,
+      "google_reviews": [
+        {
+          "author_name": "Lindsy Jackson",
+          "author_url": "https://www.google.com/maps/contrib/106094472079953653774/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWudMCuacwDGQtVnaJzxvuIUgSq35Lj_ukgu69962LkdlDUnZiA2g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Really neat historical building with interesting exhibits. This place has a great little playroom where kids can do some crafts, do a puppet show, and more. The volunteer working yesterday was also lovely, and helpful.",
+          "time": 1766323588,
+          "translated": false
+        },
+        {
+          "author_name": "Simon Wright",
+          "author_url": "https://www.google.com/maps/contrib/113850647832194160678/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhoHBcT2ldnTDpAPe8yQPPu9jxa65dqoEmnPnnYjjyuyapc0ZI=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We were really impressed with this cute little town museum. It has plenty interesting artifacts and artworks, as well as a ton of info on the history of the town and Maine in general. The minke whale skeleton is really cool. There is some interactivity, snd plenty of hands on activities for kids. The Lego exhibition is small but really good. And the $5 adult entrance fee is an absolute steal. Highly recommended.",
+          "time": 1754930743,
+          "translated": false
+        },
+        {
+          "author_name": "Libby Conn",
+          "author_url": "https://www.google.com/maps/contrib/107841388339537339053/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-7jWJqxB1Kw6EiwBtbLeEinlpit688efjm802nt352BqDIzHBGA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "It was interesting. Probably would not go back, but glad I went.",
+          "time": 1757563177,
+          "translated": false
+        },
+        {
+          "author_name": "Tony",
+          "author_url": "https://www.google.com/maps/contrib/101996244321886725437/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWJfiWREqED4engSZtCeBgDjFtogmi4OXKrlm5FSZfL5vP4ifyxBw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The Brick Store Museum in Kennebunk is a hidden gem that blends history, imagination, and hands-on creativity. We were blown away by the LEGO art exhibit—ingenious designs that sparked curiosity and joy for all ages. The undersea theme was especially captivating, with vibrant displays that felt both educational and magical. It’s rare to find a museum that balances local heritage with such playful innovation. The staff was friendly, the space was welcoming, and the exhibits were thoughtfully curated.",
+          "time": 1755912903,
+          "translated": false
+        },
+        {
+          "author_name": "Jesse Bien",
+          "author_url": "https://www.google.com/maps/contrib/116162423356482658883/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIQ9Q4nUt01-dKOtfU4QfDAVx_OzslJDUrNe1UbBM8C1Cb1hkhO=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Go see the current great exhibition,\n\nJane Morgan, In My Style\n\nFabulous vintage performance gowns ,photos and more extremely  well curated.\n\nStarted 2/1/22 through the 3rd week of May.",
+          "time": 1646174992,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The **Brick Store Museum** in Kennebunk offers a captivating journey through local history, showcasing artifacts and stories that embody the spirit of the community. With its charming architecture and diverse collections, this museum is a must-visit for anyone looking to connect with the past in a unique and engaging way.",
+      "content_description": "**The Brick Store Museum** is a hidden gem in Kennebunk, Maine, celebrated for its rich historical narratives and compelling exhibits that reflect the heart of the community. Established in 1936, the museum occupies a stunning *19th-century* brick building that itself tells a story, blending beautiful architecture with an inviting atmosphere. As you step inside, you will be greeted by a tapestry of local history, from the early settlers to the vibrant culture of the region today. The museum's thoughtful curation showcases artifacts ranging from vintage photographs and personal memorabilia to maritime artifacts that highlight Kennebunk's coastal heritage. Visitors are often enchanted by the *intricate details* found in the exhibits, offering a glimpse into *everyday life* during different periods.  As you explore, you'll discover the deeply intertwined tales of the town’s development and the people who shaped it.  The museum also houses a charming gift shop, where you can find unique items related to Kennebunk's history, supporting local artisans and historians alike. Visitors are encouraged to engage with the exhibits through interactive displays, making the experience not just educational, but also memorable.  Whether you are a history buff, an art enthusiast, or simply looking for a unique way to spend an afternoon, the **Brick Store Museum** promises a rich understanding of the past that resonates with all who visit.  Don’t miss out on the chance to experience the warmth and character of Kennebunk through its fascinating history and the welcoming arms of this charming museum.",
+      "content_highlights": [
+        "19th-century brick building showcasing historic architecture",
+        "Diverse collections including maritime artifacts, local photographs, and personal memorabilia",
+        "Interactive displays allowing visitors to engage with history directly",
+        "Charming gift shop featuring local artisan works",
+        "Thoughtful curation reflecting the evolution of Kennebunk's community"
+      ],
+      "content_generated_at": "2026-01-18T03:54:59Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-unknown-center-for-maine-contemporary-art",
       "country": "USA",
       "state_province": "Maine",
-      "city": "Maine",
+      "city": "Rockland",
       "museum_name": "Center for Maine Contemporary Art",
       "alternate_names": null,
       "website": "https://cmcanow.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "21 Winter Street",
+      "street_address": "21 Winter St, Rockland, ME 04841, USA",
       "address_line2": null,
       "postal_code": "04841",
-      "latitude": 44.17673,
-      "longitude": -69.10228,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "latitude": 44.10320540000001,
+      "longitude": -69.10829230000002,
+      "place_id": "ChIJ360-eyXXrUwRyLMYSBx4zvs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -87,57 +242,203 @@
       "tickets_url": "https://www.facebook.com/cmcanow/",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "CMCA is described as a contemporary arts institution focused on a year-round program of changing exhibitions, with no evidence of a permanent Impressionist collection (so Impressionist is negligible). Its focus suggests some modern/contemporary strength, but the evidence emphasizes temporary programming rather than permanent holdings, keeping the score modest. Educational programs and talks imply some interpretive context, and its Rockland location points to a primarily local reputation and smal",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://cmcanow.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Maine' from open data; MRD: computed city_tier=3 for Maine; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:34:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8159642424"
+      "phone": "(207) 701-5005",
+      "website_google": "https://www.cmcanow.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 120,
+      "google_reviews": [
+        {
+          "author_name": "Tracy Sheppard",
+          "author_url": "https://www.google.com/maps/contrib/116162027010171241760/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-Cynz6sWfQosSUrAqguIciqkbHIiWE8-4_JBIA4bLGh8Ek_E=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Such a fantastic local resource. Not only do they have fantastic exhibits, but they have loads of community activities, workshops and a wonderful makers lab for both adults and children. Great for visitors to Rockland but an even better resource for local residents!\n\nLocal residents can get a free membership and can make use of their makers lab whenever its open and not being used by one of the wonderful workshops being taught. They have monthly adult workshops being led by guest artists - these do carry a nominal fee (sliding scale of $5-$15) to pay the artist leading the workshops, but they also have tons of free workshops that you can attend.",
+          "time": 1765061146,
+          "translated": false
+        },
+        {
+          "author_name": "Joanne “GJ” R",
+          "author_url": "https://www.google.com/maps/contrib/110288804779357474055/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJDV4NWygx8CGGxuZBn0YH9LddV2XNWeGzD-xJIuSSIW926Mj8=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 1,
+          "relative_time_description": "5 months ago",
+          "text": "Very small and only 3 rooms to see a minimal amount of mediocre Art. $8 per person senior rate not worth it. The museum was basically empty and now I know why",
+          "time": 1754241644,
+          "translated": false
+        },
+        {
+          "author_name": "Patricia Drolet",
+          "author_url": "https://www.google.com/maps/contrib/111661062158828842860/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUyjX4YDM0dLgksm0RhPsU15uaJ1IY2Yet4bLFbQAj5PYj1R4al=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Went to a fun family activity gear for kids to make reticulated animals based off animal themed art in one of the galleries. Had a great time making a wolf with my grandson and son.",
+          "time": 1699967022,
+          "translated": false
+        },
+        {
+          "author_name": "David Bjork",
+          "author_url": "https://www.google.com/maps/contrib/104414123906715382599/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXcUctNDZW1mNhpB2Mn_2eLZWn33alSFrMnsi_K6GVem1-j2n0kcA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "This is a fascinating facility.  Their exhibits are fantastic.  They push the envelope and are a great addition to the Rockland ,Maine art experience.",
+          "time": 1692399448,
+          "translated": false
+        },
+        {
+          "author_name": "Ludvig Kingfors",
+          "author_url": "https://www.google.com/maps/contrib/115940273828921020795/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX38IJLfYZtCDMlmp9Xcc2hpUuzRUjYbjHtwsMukLVcLqkefyTBJw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Excellent exhibition, great place and good bathrooms.",
+          "time": 1750375450,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "In the heart of Rockland’s arts corridor, the Center for Maine Contemporary Art is a sharp, intimate stop for anyone curious about what artists are making right now in Maine and beyond. With a small but thoughtfully programmed set of galleries, CMCA rewards close looking: you’ll encounter rotating exhibitions of painting, photography, sculpture, and installation, often with fresh regional perspectives. It’s an ideal visit between coastal walks and nearby museum-hopping—compact, design-forward, and consistently surprising.",
+      "content_description": "Set in downtown Rockland, **Center for Maine Contemporary Art (CMCA)** is a focused destination for travelers who want a concentrated dose of **contemporary art**—the kind best experienced in person, where scale, texture, and material choices land with full impact. Rather than relying on a vast permanent collection, CMCA’s strength is its **tight, rotating exhibition program**, bringing together Maine-connected artists alongside broader contemporary conversations in painting, photography, sculpture, and installation. For art lovers, this means the galleries feel **new on every visit**, with curatorial themes that encourage comparison and careful looking.\n\nArchitecturally, CMCA’s 2016 home—designed by **Toshiko Mori Architect**—is part of the pleasure. The building’s crisp forms and **light-filled galleries** create a clean backdrop for challenging work, while the street-facing presence adds a distinctly modern counterpoint to Rockland’s historic, working-waterfront character. Expect a visitor experience that’s refreshingly manageable: you can see everything without fatigue, yet still leave with the sense of having encountered ideas in motion—*process*, experimentation, and the urgency of the present.\n\nPlan to linger for the wall texts and programming, which often deepen the art’s local context. CMCA pairs well with Rockland’s wider cultural scene, making it a smart anchor for a day of gallery strolling and coastal exploration.",
+      "content_highlights": [
+        "Rotating exhibitions spotlighting contemporary Maine and New England–connected artists across painting, photography, and installation",
+        "Architect-designed 2016 building by Toshiko Mori Architect, known for its modern, light-oriented gallery spaces",
+        "Intimate scale: easy to fully experience in one visit while still offering rigorous curatorial depth",
+        "Strong sense of place—contemporary work framed by Rockland’s waterfront town atmosphere and arts district energy",
+        "Frequent programs and talks that add context and make repeat visits especially rewarding"
+      ],
+      "content_generated_at": "2026-01-18T01:34:19Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-unknown-maine-mineral-gem-museum",
       "country": "USA",
       "state_province": "Maine",
-      "city": null,
+      "city": "Bethel",
       "museum_name": "Maine Mineral & Gem Museum",
       "alternate_names": null,
       "website": "https://mainemineralmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "99 Main St, Bethel, ME 04217, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 44.39543,
-      "longitude": -70.79112,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "postal_code": "04217",
+      "latitude": 44.40766730000001,
+      "longitude": -70.7885769,
+      "place_id": "ChIJz3hVtdfEs0wRN-L9VYm1IY4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -150,7 +451,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -165,14 +466,170 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:55:07Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 2
+      "city_tier": 2,
+      "phone": "(207) 824-3036",
+      "website_google": "https://mainemineralmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.9,
+      "google_reviews_count": 293,
+      "google_reviews": [
+        {
+          "author_name": "John Doe",
+          "author_url": "https://www.google.com/maps/contrib/111903877937050007673/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJZ2DJY3LviRvDrhawAz6vi-hKTxs5n9pxwhySYwfdIDw89yA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "My girlfriend likes rocks and a lot of rocks. This museum was reasonably priced and she was able to spend about 3 hours staring at rocks, touching rocks and dreaming of rocks. Definitely worth the visit if you or anyone you like is obsessed with rocks and any derivatives. Staff was wonderful and we were able to touch moon rocks and martian rocks. It rocks!",
+          "time": 1764884926,
+          "translated": false
+        },
+        {
+          "author_name": "Jim Mohler",
+          "author_url": "https://www.google.com/maps/contrib/111490739835619013506/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUe6pfLaYkZYSpDqWlSQhuAz11oWFh-MRWfrHsIeKEmyVlu8Gyj=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "This museum was recommended to us by neighbors when we were looking for places to visit with our granddaughter (age 9) and it is truly a remarkable, out of the way place.  The exhibits are informative and some are interactive. There are hundreds of drawers with clearly identified mineral samples and there are maps showing where deposits are found.\n\nFor me the highlight was the collection of meteorites and a short video display along with sound and flashing lights which the kids love.  Many of the meteorites are displayed where they can be touched and near the exit you are given the opportunity to hold a piece of the Moon and a piece of Mars.\n\nFor us it was worth the visit.",
+          "time": 1753022623,
+          "translated": false
+        },
+        {
+          "author_name": "Phillip Wall",
+          "author_url": "https://www.google.com/maps/contrib/108033688579642276178/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX0CTlCLsMbf1fd7zszlb-TPogSTM4LZ4gnYPKs3bJwGY_m8mYQMg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Amazing, interesting, super interactive, and the Owner (84yo) gave a tour of the Space Rocks collection that was impressive, funny, and really brought the rocks and collection to Life!\n- You wouldn't have thought rocks would be interesting, but this place was AWESOME (Kept an 11yo Roblox addict occupied for 2.5 hours)\n- They have 1/2 of the World's collection of Moon Meteors and Mars Meteors (More than NASA)\nDon't miss out, this is a \"gem\" you don't want to miss!",
+          "time": 1754315980,
+          "translated": false
+        },
+        {
+          "author_name": "Jiaren Li",
+          "author_url": "https://www.google.com/maps/contrib/102635373076644181576/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocImNdBMTGTEv_jVSXMhPYUhg44CCLh7nnOfgDciglMe_LgqSQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Definitely feels like a great almost-hidden-gem kind of place that has an extensive collection of pretty rocks laid out in an informative and educational manner. Staff are friendly and very passionate about the subject matters. Definitely recommend you stay around for the meteorite show if available.",
+          "time": 1750738785,
+          "translated": false
+        },
+        {
+          "author_name": "Kimberly Greeley",
+          "author_url": "https://www.google.com/maps/contrib/111381060265311435886/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXFyjR58YMPhXCRzfpwL4JSJYvqDYF8bv8geXnm9Xws8Eh1h52t=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This museum is awe-inspiring! I didn’t know what to expect and I was delighted by all of the rock, mineral, gem, and meteorite exhibits. The staff was incredibly knowledgeable and kind in every room, from the check-in to buy tickets (no wait!) to the exhibit rooms, to the gift shop. There’s extensive information on the history of quarries and gem mining in Maine, interactive exhibits, and my husband and I even got to hold pieces of the moon and Mars! I would say this is a good place to bring kids aged 7-ish and up. There are gifts for kids and adults in the gift shop, ranging from greeting cards and magnets to beautiful rings and jewelry to crack-your-own geodes and plush planets. I highly recommend a visit if you’re even a little interested in geology, gems, space, or Maine history. I recommended this place to all of my friends and family and I will be back soon!",
+          "time": 1760357784,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Discover the dazzling world of minerals and gems at the Maine Mineral & Gem Museum in Bethel. This unique museum offers an expansive collection of geological wonders, making it a must-see for gem enthusiasts and curious travelers alike. Dive into the artistry and beauty of these natural treasures that showcase the Earth's vibrant history.",
+      "content_description": "**Maine Mineral & Gem Museum** in Bethel is an exceptional destination for those captivated by the stunning intricacies of our planet's geological artistry. With its expansive collection of minerals, gemstones, and related artifacts, this museum highlights the natural beauty and scientific significance of these treasures. The museum curates a remarkable assortment of Maine's historic finds, including specimens from local mines that served as the backbone of the gem trade. Visitors will be in awe of the brilliant display of colorful minerals and gemstones in various forms, from luminous quartz to glittering tourmaline, showcasing the diverse geology of the region. The museum’s not only a visual feast but also an educational hub, offering insights into gemology and mineralogy through engaging exhibits and interactive displays.  *Time spent here feels like a journey through the Earth's depths, revealing the hidden gems beneath our feet.*  Immerse yourself in the richness of this geological chronicle and witness the Earth’s art manifest in its purest forms.  In addition to its impressive collection, the museum hosts various events and workshops throughout the year, providing visitors with hands-on experiences in gem cutting and identification. Whether you are a seasoned gemologist or a curious novice, **Maine Mineral & Gem Museum** ensures an enriching visit that will resonate long after you've left. Every corner of the museum invites exploration, intrigue, and a newfound appreciation for the Earth's magnificent creations.",
+      "content_highlights": [
+        "Extensive collection of Maine's rare minerals and gems",
+        "Unique exhibits on local mining history and geology",
+        "Interactive displays for hands-on learning",
+        "Regular workshops on gemology and mineral identification",
+        "Vibrant gifts and educational resources for gem enthusiasts"
+      ],
+      "content_generated_at": "2026-01-18T03:55:07Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-unknown-pejepscot-historical-society",
@@ -192,7 +649,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -205,7 +662,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -225,30 +682,31 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Brunswick' from open data; MRD: computed city_tier=3 for Brunswick; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-17T22:59:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2077296606"
+      "phone": "2077296606",
+      "is_scoreable": false
     },
     {
       "museum_id": "usa-me-unknown-penobscot-marine-museum",
       "country": "USA",
       "state_province": "Maine",
-      "city": "Maine",
+      "city": "Searsport",
       "museum_name": "Penobscot Marine Museum",
       "alternate_names": null,
       "website": "http://www.penobscotmarinemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "5 CHURCH ST",
+      "street_address": "40 E Main St, Searsport, ME 04974, USA",
       "address_line2": null,
-      "postal_code": "4974",
-      "latitude": 44.4571,
-      "longitude": -68.91541,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "postal_code": "04974",
+      "latitude": 44.4588134,
+      "longitude": -68.92534859999999,
+      "place_id": "ChIJDaMfBLNorkwRRxFmPNN0Kzk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": "Science",
       "topics": null,
       "audience_focus": null,
@@ -261,7 +719,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -276,15 +734,95 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Maine' from open data; MRD: computed city_tier=3 for Maine; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:55:51Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "2075482529"
+      "phone": "(207) 548-2529",
+      "website_google": "https://www.penobscotmarinemuseum.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.4,
+      "google_reviews_count": 152,
+      "google_reviews": [
+        {
+          "author_name": "Debra S",
+          "author_url": "https://www.google.com/maps/contrib/103812405511473645220/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK4Z98hnAk8okxkEGbK5FhlifxHd0jylnxmyqjzA0CKesvN8A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The museum is a number of buildings.  Be sure to pick a nice day to walk around.  The guides were very knowledgeable and engaging.   Glad they maintained the items to show the way of life at the turn of the century in Maine.",
+          "time": 1727222987,
+          "translated": false
+        },
+        {
+          "author_name": "Alison Morrell",
+          "author_url": "https://www.google.com/maps/contrib/103234621078990355704/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIOevxkqFFXE0PzTTNb_cGphZh3zBZG0XvSljIXcgQrmpoqoA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "If you’re in the area make a point to go. The sardine exhibit is great. I am not a sardine fan but it definitely makes me want to try them. The tours are interesting and informative too.",
+          "time": 1752795313,
+          "translated": false
+        },
+        {
+          "author_name": "Anne & Rob Bavier",
+          "author_url": "https://www.google.com/maps/contrib/117259252246285895976/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFF5bC7F5lskORmo0Uuq98UbGSA1-VEUkWHsZqMnI0SnN2HBJ-yQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Wonderful collection of Buttersworth paintings, both Thomas and James. Loved the ship models, both half and full.",
+          "time": 1753325815,
+          "translated": false
+        },
+        {
+          "author_name": "Teresa Hall",
+          "author_url": "https://www.google.com/maps/contrib/103877633375071998111/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWWygWEbUS4v2UNTy-n3rj_mkyUriOcac7lIA_p4eiQiX6ar88UIQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great museum with tons of artifacts and displays to illustrate Maine's rock Maritime history.  The museum is spread over a campus of building that contribute their own history.  In addition to ship building, there are exhibits honoring logging and granite mining industries. Lots of maps,  charts, shop models and pictures of ships from Maine's rich history.",
+          "time": 1720350239,
+          "translated": false
+        },
+        {
+          "author_name": "Wil Greene",
+          "author_url": "https://www.google.com/maps/contrib/105619733945242375450/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV7HYRNEv6_KB13FI0S7D8Gh32usdgLJAW7MAozRQ66vOVsXxBs=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "Really enjoyed our visit mostly because the buildings are real & relate to people who lived in Searsport, lots of old smaller boats, paintings, scrimshaw, models. You could spend days reading & enjoying the exhibits & the church building is so beautiful with a 1,000+ pipe organ still used for Sunday services. They could use some hefty donations to spruce things up & finish projects. Very pleased with our visit",
+          "time": 1691890754,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Penobscot Marine Museum is a captivating destination that immerses visitors in the rich maritime history and culture of Maine's coastal communities. Offering a confluence of interesting artifacts, engaging exhibits, and stunning architecture, it is a treasure trove for history enthusiasts and travelers alike.",
+      "content_description": "**Penobscot Marine Museum** is more than just a museum; it's a vibrant celebration of Maine's storied maritime heritage. Nestled in the picturesque town of Searsport, this museum features an extensive collection of over 50,000 artifacts that highlight the region's deep-rooted history in shipbuilding, fishing, and maritime trade. Here, visitors can explore historic vessels, from sturdy fishing boats to elegant schooners, each telling tales of a life spent at sea. The museum’s twelve original historic buildings create a unique village atmosphere, inviting guests to wander through maritime-themed exhibits set in the very structures that have withstood the test of time.  With its breathtaking coastal views and inviting gardens, the museum allows you to take in the essence of Maine’s maritime character in a serene setting.  <br><br>Participants can engage with hands-on exhibits, which cater to all ages, making it a fantastic destination for families and school groups. The museum often hosts events, lectures, and guided tours that delve deeper into the lives of sailors and the evolution of marine technologies. Additionally, the museum's beautiful architecture – a blend of traditional New England style with nautical details – provides a stunning backdrop, enhancing the immersive experience. For anyone eager to connect with Maine’s maritime roots or simply bask in the beauty of coastal history, the **Penobscot Marine Museum** offers a profound and enriching escape.",
+      "content_highlights": [
+        "Over 50,000 artifacts documenting Maine's maritime history",
+        "Historic vessels, including fishing boats and schooners",
+        "Twelve original historic buildings in a charming village setting",
+        "Hands-on interactive exhibits for all ages",
+        "Stunning coastal views and picturesque gardens"
+      ],
+      "content_generated_at": "2026-01-18T03:55:51Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-unknown-portland-museum-of-art",
@@ -304,7 +842,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -312,37 +850,51 @@
       "tickets_url": "http://www.facebook.com/portlandmuseumofart",
       "reservation_required": null,
       "accessibility_url": "https://www.portlandmuseum.org/magazine/accessibility",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence only establishes PMA as Maine’s largest/oldest public art institution, which supports a moderate overall collection tier and regional reputation, but provides no specific permanent-collection details for Impressionism or Modern/Contemporary. With limited collection evidence, Impressionism is scored as minor and Modern/Contemporary as moderate based on typical scope of a long-established state-leading art museum; historical context is set to mid-range absent documentation of interpretive",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://www.portlandmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Portland' from open data; MRD: computed city_tier=1 for Portland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:35:12Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "2077756148"
+      "phone": "2077756148",
+      "is_scoreable": true,
+      "content_summary": "Maine’s leading art museum, the Portland Museum of Art is a must for travelers who want a concentrated, high-quality encounter with American and European art in a walkable waterfront city. Its strengths shine in American masters, Maine-connected artists, and thoughtfully curated exhibitions—paired with memorable architecture, including a landmark I.M. Pei building. Plan time for both the galleries and the museum’s historic homes nearby for a layered experience of art, place, and design.",
+      "content_description": "**Portland Museum of Art** is the cultural anchor of Maine’s largest city and an excellent stop for art lovers who enjoy museums that feel both ambitious and intimate. The collection is especially strong in American art, with major works by **Winslow Homer**, **John Singer Sargent**, and **Edward Hopper**—artists whose clarity of light and atmosphere resonates with the New England coast. You’ll also encounter European painting and sculpture alongside rotating exhibitions that regularly bring fresh perspectives to the permanent holdings, often connecting Maine’s creative history to broader currents in modern and contemporary art.\n\nArchitecturally, the museum offers a rewarding mix. The crisp geometry of the **I.M. Pei–designed** wing provides a modern counterpoint to the older parts of the campus, creating a satisfying rhythm as you move from gallery to gallery. Just as compelling is the museum’s connection to Portland’s historic built environment: nearby, the **McLellan House** and the **Winslow Homer Studio** (part of the museum’s broader constellation of sites) deepen your sense of how art was made and lived in Maine.\n\nFor visitors, the experience is easy to love: manageable scale, strong wall texts, and galleries that encourage close looking—perfect for lingering over brushwork, *plein-air* light effects, and the quiet drama of American realism. Add in a well-situated location for pairing your visit with Old Port dining and waterfront walks, and you have a museum day that feels distinctly Portland.",
+      "content_highlights": [
+        "American masters including Winslow Homer, John Singer Sargent, and Edward Hopper",
+        "A distinctive I.M. Pei–designed building as part of the museum campus",
+        "Maine-focused collecting and storytelling that ties art to the state’s coastal identity",
+        "Rotating exhibitions that complement the permanent collection and keep repeat visits fresh",
+        "Historic-house and studio experiences (McLellan House and Winslow Homer Studio) for deeper context"
+      ],
+      "content_generated_at": "2026-01-18T01:35:12Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-unknown-seal-cove-auto-museum",
@@ -362,7 +914,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -375,7 +927,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -397,10 +949,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:55:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "2072449242"
+      "phone": "2072449242",
+      "is_scoreable": false,
+      "content_summary": "The Seal Cove Auto Museum is a hidden gem for automobile enthusiasts and history buffs alike, showcasing an impressive collection of antique and vintage automobiles from the early 20th century. Visitors will revel in the charm and craftsmanship of these classic cars, making it an unforgettable destination for anyone fascinated by the evolution of automotive design and engineering.",
+      "content_description": "**Seal Cove Auto Museum** invites you into a world where history meets innovation on four wheels. Nestled in the scenic surroundings of Seal Cove, Maine, this unique museum boasts an enchanting collection that spans over a century, highlighting the artistry and engineering prowess of early automobiles. Visitors will be captivated by the meticulously curated displays, featuring rare models from the golden age of automotive design in the 1890s through the 1930s. Each vehicle tells a story, reflecting the cultural significance and technological advancements of its time, and bringing to life the spirited era of American motoring.  &nbsp;  With its rustic charm and intimate setting, the **Seal Cove Auto Museum** is housed in a beautifully restored barn that enhances the authenticity of the experience. Visitors can explore an array of classic cars, including stunning examples from brands like Daimler, Packard, and Ford, along with a fascinating blend of related memorabilia and artifacts. Each exhibit provides insights into the evolution of automotive technology, from hand-crafted details to the rise of mass production, all within an engaging and informative context.  &nbsp;  Whether you’re a seasoned car aficionado or merely curious about vintage vehicles, the museum promises an engaging visit. Special events, guided tours, and interactive displays offer something for every visitor. Don’t miss the chance to step back in time and appreciate the artistry and innovation that have shaped the automotive world at this charming and educational museum.",
+      "content_highlights": [
+        "Collection of rare antique automobiles from the early 20th century",
+        "Beautifully restored barn setting enhancing the visitor experience",
+        "Exhibits showcasing the evolution of automotive technology",
+        "Engaging guided tours providing deeper insights",
+        "Special events and interactive displays for all ages"
+      ],
+      "content_generated_at": "2026-01-18T03:55:59Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-bangor-university-of-maine-museum-of-art",
@@ -420,7 +985,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -428,12 +993,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -442,20 +1007,34 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the University of Maine Museum of Art’s permanent collection or interpretive approach, so category strengths and historical context cannot be scored from this record. As a university art museum in Bangor with no cited major holdings, it is most consistent with a primarily local reputation and a moderate (not flagship) collection tier by inference.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Bangor; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": true,
+      "content_summary": "In the heart of downtown Bangor, the University of Maine Museum of Art offers an intimate, thoughtfully curated encounter with American art—especially the artists and visual culture of Maine. It’s the kind of museum art lovers appreciate for its rotating exhibitions, strong regional focus, and calm, gallery-forward atmosphere. Expect a rewarding mix of modern and contemporary work, occasional surprises from traveling shows, and a visit that feels both scholarly and welcoming—perfect for pairing with a day exploring Bangor’s historic streets and waterfront.",
+      "content_description": "**University of Maine Museum of Art** is a compact, art-focused museum that punches above its “local gem” reputation—especially for travelers eager to understand Maine’s creative identity beyond postcard scenery. While it’s not a mega-institution, its strength lies in **curation and context**: exhibitions often spotlight Maine-connected artists alongside broader currents in American art, giving you fresh ways to read the region through painting, photography, prints, and contemporary media. For art enthusiasts, the pleasure here is in the *close looking*—works are presented in a way that rewards attention, with labels and interpretive materials that feel grounded in university-level scholarship without becoming academic overload.\n\nThe museum’s downtown setting makes it an easy cultural anchor for Bangor. Inside, galleries are designed for **clear sightlines, controlled lighting, and quiet viewing**, ideal for experiencing works on paper and photography—media that thrive in a more intimate scale. Rotating shows keep repeat visits worthwhile, and the programming often reflects *modern* and *contemporary* concerns: place, identity, landscape, and the changing visual language of Maine.\n\nVisitor experience is straightforward and satisfying: you’ll move comfortably through a manageable number of galleries, rarely feeling rushed or overwhelmed. Plan to linger—this is a museum where you can take time with individual pieces, then step back into the city for coffee, bookstores, or a riverside walk. For art travelers, it’s a rewarding stop that connects regional culture to bigger artistic conversations.",
+      "content_highlights": [
+        "A strong Maine-centric curatorial lens that ties regional art to wider American themes",
+        "Rotating exhibitions that keep the visit fresh, with a mix of modern and contemporary work",
+        "Intimate, quiet galleries ideal for close looking—especially at prints, drawings, and photography",
+        "Downtown Bangor location that pairs easily with walking, dining, and waterfront exploring",
+        "University-affiliated scholarship and interpretation that enhances understanding without feeling heavy"
+      ],
+      "content_generated_at": "2026-01-18T01:35:38Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-bar-harbor-abbe-museum",
@@ -475,7 +1054,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -488,7 +1067,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -511,10 +1090,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Bar Harbor; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:56:08Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "2072883519"
+      "phone": "2072883519",
+      "is_scoreable": false,
+      "content_summary": "The **Abbe Museum** is a unique gem in Bar Harbor, showcasing the rich history, culture, and art of Maine’s Native American tribes. With interactive exhibits and stunning artifacts, this museum offers visitors an engaging insight into the lives of the Wabanaki people and their enduring legacy.",
+      "content_description": "**Abbe Museum** is more than just a repository of artifacts; it is a vibrant hub that celebrates the rich history and culture of the Wabanaki tribes in Maine. Established in 1928 by Dr. Emily B. Abbe, this museum serves as a beacon of knowledge and understanding, offering visitors an in-depth perspective of the region's indigenous peoples through meticulously curated exhibits. You will journey through time as you explore the intricate beadwork, beautifully crafted pottery, and historical photographs that tell the story of a people deeply connected to their land. Each piece in the collection whispers tales of tradition, resilience, and artistry, making this museum invaluable for anyone interested in American history and culture.  \n\nThe museum's architecture is as engaging as its exhibits, combining modern design elements with a sense of place, subtly echoing the natural beauty of the surrounding Acadia region. As you walk through the museum, the layout fosters *interactive learning*, encouraging visitors to engage through touch screens and multimedia displays, which bring to life the vibrant storytelling traditions of the Wabanaki. Unique events, workshops, and guided tours further enhance the visitor experience, inviting you to participate in the crafting traditions of the Native peoples. Whether you are an art enthusiast, history buff, or a family looking for an educational outing, the **Abbe Museum** offers a captivating glimpse into Maine’s indigenous heritage that is sure to leave a lasting impression.",
+      "content_highlights": [
+        "Extensive exhibits on Wabanaki history and culture",
+        "Unique artifacts, including traditional crafts and pottery",
+        "Interactive displays that engage visitors of all ages",
+        "Special events and workshops featuring Native artists",
+        "Architectural design harmonizing with the natural landscape"
+      ],
+      "content_generated_at": "2026-01-18T03:56:08Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-brunswick-bowdoin-college-museum-of-art",
@@ -534,7 +1126,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -542,38 +1134,52 @@
       "tickets_url": "https://www.bowdoin.edu/admissions/index.html",
       "reservation_required": null,
       "accessibility_url": "https://www.bowdoin.edu/accessibility/index.html",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates the museum is historically strong in classical art, with no specific mention of Impressionist or Modern/Contemporary strengths, so those areas are scored as minor. As a long-established college museum (since 1894) it likely provides some educational framing, but the evidence does not confirm robust chronological galleries or interpretive depth. Its profile and location suggest a regional reputation and a moderate, not flagship, collection scale.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.bowdoin.edu/art-museum",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Brunswick; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:36:00Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2077253275"
+      "phone": "2077253275",
+      "is_scoreable": true,
+      "content_summary": "Tucked into Bowdoin College’s picturesque Brunswick campus, the Bowdoin College Museum of Art delivers the pleasures of a major collection with the ease of an intimate visit. Expect smartly curated galleries that span centuries—from Old Master–era paintings and European prints to modern and contemporary work—paired with rotating exhibitions that keep the experience fresh. It’s a rewarding stop for art lovers exploring Maine: thoughtful interpretation, strong teaching-museum energy, and a calm, beautiful setting made for lingering.",
+      "content_description": "**Bowdoin College Museum of Art** is one of New England’s quietly consequential teaching museums—small enough to feel personal, yet ambitious in scope. On a visit, you’ll move through galleries that connect art to ideas, with installations designed to slow you down and sharpen your looking. The museum’s strengths often shine in works on paper and painting, where *printmaking* traditions and European-to-American dialogues can be encountered at close range—exactly the kind of proximity that turns an art-history survey into a memorable, eye-level experience.\n\nArchitecturally, the museum’s campus setting contributes to its charm: **clean, gallery-forward interiors** suited to careful lighting and close study, paired with the collegiate atmosphere of Brunswick just outside the doors. Exhibitions frequently rotate, so repeat visits are genuinely worthwhile—expect a mix of collection-driven shows and contemporary projects that feel in conversation with today’s questions, not isolated from them.\n\nFor travelers, this is a museum built for the pleasure of looking: manageable in scale, rich in curatorial context, and ideal for pairing with a walk through Bowdoin’s grounds or a day exploring the Maine coast. Art enthusiasts will appreciate the museum’s **thoughtful labels and scholarship**, the chance to encounter works without crowds, and the satisfying rhythm of a visit that feels both cultured and unhurried.",
+      "content_highlights": [
+        "A focused, high-quality teaching-museum experience with carefully curated, idea-driven installations",
+        "Strong opportunities to see works on paper up close—prints, drawings, and photography often featured in rotating displays",
+        "A broad collection range spanning European and American art through modern and contemporary works",
+        "Rotating exhibitions that encourage repeat visits and keep the galleries feeling current",
+        "A serene campus setting in Brunswick that pairs naturally with a stroll through Bowdoin College and nearby downtown"
+      ],
+      "content_generated_at": "2026-01-18T01:36:00Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-portland-african-center-for-the-sacred-arts-museum-of-african-art-culture",
@@ -606,7 +1212,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -627,9 +1233,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Portland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:56:17Z",
       "notes": null,
-      "city_tier": 1
+      "city_tier": 1,
+      "is_scoreable": false,
+      "content_summary": "Discover the rich tapestry of African culture at the African Center for the Sacred Arts, Museum of African Art & Culture in Portland. This museum offers a unique perspective with its focus on the spiritual and cultural significance of African art, making it a must-visit for travelers seeking a deeper understanding of the continent's diverse heritage.",
+      "content_description": "**The African Center for the Sacred Arts, Museum of African Art & Culture** serves as a vibrant portal into the heart of African spiritual life and artistic expression. Often overlooked, this museum uniquely combines sacred art traditions with cultural practices, emphasizing the integral role art plays in rituals and community life across various African cultures. Visitors can expect an immersive experience that includes art pieces like masks, sculptures, textiles, and ceremonial objects that are not only visually captivating but also laden with history and meaning. Each exhibit is curated to showcase the profound connections between art, spirituality, and daily living, lending visitors a deeper appreciation of these intricate cultural narratives. Given that the museum focuses on *sacred arts*, you’ll find that the pieces are selected for their significance in communal and individual African practices, offering insights into a world that feels both ancient and contemporary. \n\nArchitecturally, the museum complements its mission with a design that is reminiscent of traditional African structures, creating a sense of place that enhances your journey through the exhibits. The atmosphere is inviting and educational, encouraging visitors to engage critically with each artifact. Interactive sessions and workshops often accompany exhibitions, allowing guests to experience African art forms first-hand, from storytelling to traditional craft-making. The museum stands not only as a place of learning but as a communal space where creativity and culture intersect, making your visit not just a passive experience, but an enriching, participatory journey into the sacred dimensions of African art. \n\nWhether you’re a seasoned art aficionado or a curious traveler, a visit to the **African Center for the Sacred Arts** promises to leave you inspired and enlightened about the multifaceted beauty and spiritual depth of African cultures.",
+      "content_highlights": [
+        "Immersive exhibits on the spiritual significance of African art",
+        "Interactive workshops on traditional African art forms",
+        "Curated collections showcasing masks, sculptures, and textiles",
+        "Architectural design reflecting traditional African structures",
+        "Educational programs and community events celebrating African culture"
+      ],
+      "content_generated_at": "2026-01-18T03:56:17Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-portland-maine-historical-society-museum-and-longfellow-house",
@@ -662,7 +1281,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -683,9 +1302,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Portland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:56:31Z",
       "notes": null,
-      "city_tier": 1
+      "city_tier": 1,
+      "is_scoreable": false,
+      "content_summary": "The Maine Historical Society: Museum and Longfellow House offers an enlightening journey through Maine's rich heritage and literary history. Nestled in Portland, it not only showcases historical artifacts but also invites visitors to step inside the childhood home of renowned poet Henry Wadsworth Longfellow. This unique blend of history and literature makes it a must-visit destination for history buffs and poetry lovers alike.",
+      "content_description": "**Maine Historical Society: Museum and Longfellow House** is a treasure trove of Maine's history and culture, housed in a beautifully preserved historic building. Established in the early 19th century, this museum is dedicated to collecting, preserving, and sharing the rich heritage of Maine. Visitors can explore a captivating collection of artworks, documents, and artifacts that highlight the state's unique journey through time. The museum's exhibitions delve into the history of Maine's indigenous peoples, colonial settlers, and the evolution of its communities, presenting a comprehensive view of what makes this state so special. Each item tells a story, creating an immersive experience for all who walk through the doors.  Because **Maine Historical Society** also connects visitors to the literary legacy of Henry Wadsworth Longfellow, the museum captivates enthusiasts with poignant insights into the life and works of one of America’s most beloved poets.  Notably, the **Longfellow House**, his childhood home, offers guided tours that provide personal anecdotes and historical context, bringing his poetry to life.  Visitors can stroll through the period-furnished rooms, which remain largely unchanged since Longfellow's youth, and admire the beautiful gardens that have inspired countless literary works.  In addition to its rich collections and engaging exhibitions, the museum often hosts local events, lectures, and workshops, encouraging community involvement and interaction with history in meaningful ways. The picturesque setting and strong sense of local pride make **Maine Historical Society** a compelling stop for anyone wishing to understand Maine's pivotal role in American history.  Don’t miss the chance to connect with the past while reflecting on the enduring power of words from a literary giant.",
+      "content_highlights": [
+        "Extensive collections of artifacts from Maine's colonial and indigenous history",
+        "Guided tours of the Longfellow House, preserving the poet's legacy",
+        "Engaging temporary exhibitions focusing on local culture and history",
+        "Historical documents, letters, and manuscripts that illuminate Maine's past",
+        "Beautifully landscaped gardens that inspired Henry Wadsworth Longfellow"
+      ],
+      "content_generated_at": "2026-01-18T03:56:31Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-me-rockland-farnsworth-art-museum",
@@ -718,7 +1350,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -740,9 +1372,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Rockland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:56:42Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The Farnsworth Art Museum in Rockland, Maine, is a captivating destination for art lovers, showcasing the rich artistic heritage of Maine and its vitality through stunning collections and exhibitions. A visit promises not only a view of exceptional works but also an immersive experience into the state's cultural narrative.",
+      "content_description": "**Farnsworth Art Museum** stands as a testament to Maine's vibrant artistic legacy, offering visitors an intimate glimpse into the world of American art. Established in 1948, the museum is dedicated to celebrating the works of notable Maine artists, including the celebrated Andrew Wyeth. With a focus on 19th and 20th-century American art, the Farnsworth curates a diverse array of paintings, sculptures, and photography, fostering a deep connection between visitors and the state's rich artistic heritage. The museum’s thoughtfully planned exhibitions and programs engage both novices and connoisseurs alike, making it a must-see in the region.  \n\n \nBeyond its impressive collection, the architectural charm of the **Farnsworth Art Museum** is equally alluring. Housed in a blend of historic structures and modern additions, the museum itself reflects a harmony between contemporary and traditional styles. Visitors may find themselves wandering through spaces that feel at once welcoming and inspiring, with light-filled galleries that enhance the viewing experience. The beautiful outdoor gardens provide a serene space for reflection after exploring the art inside.\n\n \nFor anyone visiting Rockland, the Farnsworth is not simply a place to see art—it's a chance to immerse yourself in the narratives that shape Maine's cultural fabric. Engaging tours, workshops, and community events add a personal touch to the experience, ensuring that every visitor leaves with a deeper appreciation for the artistic expressions that resonate within these walls.",
+      "content_highlights": [
+        "Home to a significant collection of works by Andrew Wyeth, including iconic pieces that define American art",
+        "Showcases Maine's artistic heritage through diverse exhibitions of local artists",
+        "A stunning mix of historic and contemporary architecture that enhances the visitor experience",
+        "Beautiful gardens for peaceful reflection and enjoyment of the outdoor space",
+        "Engaging community programs and workshops that invite interaction with the art and artists"
+      ],
+      "content_generated_at": "2026-01-18T03:56:42Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T03:56:42Z"
 }

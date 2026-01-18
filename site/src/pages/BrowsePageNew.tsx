@@ -1,11 +1,23 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { loadAllMuseums } from '../lib/api'
-import { isFullRecord } from '../lib/fullness'
-import { getScoreBadgeColor, getScoreLabel, getTopScores, hasAnyScore } from '../lib/scoring'
 import type { Museum } from '../lib/types'
 
-type SortKey = 'priority_score' | 'museum_name' | 'collection_quality' | 'family_friendly' | 'educational'
+type SortKey = 'state_province' | 'city' | 'museum_name' | 'museum_type' | 'time_needed' | 'reputation' | 'collection_tier' | 'overall_quality_score' | 'priority_score' | 'nearby_museum_count'
+
+const REPUTATION_MAP: Record<number, string> = {
+  0: 'International',
+  1: 'National',
+  2: 'Regional',
+  3: 'Local',
+}
+
+const COLLECTION_TIER_MAP: Record<number, string> = {
+  0: 'Flagship',
+  1: 'Strong',
+  2: 'Moderate',
+  3: 'Small',
+}
 
 export default function BrowsePage() {
   const [loading, setLoading] = useState(true)
@@ -15,13 +27,11 @@ export default function BrowsePage() {
   const [q, setQ] = useState('')
   const [stateFilter, setStateFilter] = useState<string>('')
   const [domainFilter, setDomainFilter] = useState<string>('')
-  const [minQuality, setMinQuality] = useState<number>(0)
-  const [minFamily, setMinFamily] = useState<number>(0)
-  const [minEducational, setMinEducational] = useState<number>(0)
   const [showScoredOnly, setShowScoredOnly] = useState(false)
-  const [sortKey, setSortKey] = useState<SortKey>('collection_quality')
+  const [sortKey, setSortKey] = useState<SortKey>('overall_quality_score')
+  const [sortDesc, setSortDesc] = useState(true)
   const [page, setPage] = useState(1)
-  const pageSize = 50
+  const pageSize = 100
 
   useEffect(() => {
     let cancelled = false
@@ -42,7 +52,7 @@ export default function BrowsePage() {
   }, [])
 
   const scoredCount = useMemo(() => {
-    return museums.filter(m => m.tour_planning_scores && hasAnyScore(m.tour_planning_scores)).length
+    return museums.filter(m => m.is_scoreable && (m.impressionist_strength || m.modern_contemporary_strength)).length
   }, [museums])
 
   const facets = useMemo(() => {
@@ -66,7 +76,7 @@ export default function BrowsePage() {
     for (const m of museums) {
       // Text search
       if (qn) {
-        const hay = [m.museum_name, ...(m.alternate_names ?? [])].filter(Boolean).map(s => String(s).toLowerCase()).join(' | ')
+        const hay = [m.museum_name, m.city, ...(m.alternate_names ?? [])].filter(Boolean).map(s => String(s).toLowerCase()).join(' | ')
         if (!hay.includes(qn)) continue
       }
 
@@ -75,56 +85,48 @@ export default function BrowsePage() {
       if (domainFilter && String(m.primary_domain ?? '').toLowerCase() !== domainFilter.toLowerCase()) continue
       
       // Scoring filters
-      const scores = m.tour_planning_scores
-      if (showScoredOnly && !hasAnyScore(scores)) continue
-      if (minQuality > 0 && (!scores?.collection_quality || scores.collection_quality < minQuality)) continue
-      if (minFamily > 0 && (!scores?.family_friendly_score || scores.family_friendly_score < minFamily)) continue
-      if (minEducational > 0 && (!scores?.educational_value_score || scores.educational_value_score < minEducational)) continue
+      if (showScoredOnly && (!m.is_scoreable || (!m.impressionist_strength && !m.modern_contemporary_strength))) continue
 
       out.push(m)
     }
     return out
-  }, [museums, q, stateFilter, domainFilter, minQuality, minFamily, minEducational, showScoredOnly])
+  }, [museums, q, stateFilter, domainFilter, showScoredOnly])
 
   const sorted = useMemo(() => {
     const arr = [...filtered]
     arr.sort((a, b) => {
+      let comparison = 0
+
       if (sortKey === 'museum_name') {
-        return String(a.museum_name || '').localeCompare(String(b.museum_name || ''))
+        comparison = String(a.museum_name || '').localeCompare(String(b.museum_name || ''))
+      } else if (sortKey === 'state_province') {
+        comparison = String(a.state_province || '').localeCompare(String(b.state_province || ''))
+      } else if (sortKey === 'city') {
+        comparison = String(a.city || '').localeCompare(String(b.city || ''))
+      } else if (sortKey === 'museum_type') {
+        comparison = String(a.museum_type || '').localeCompare(String(b.museum_type || ''))
+      } else if (sortKey === 'time_needed') {
+        comparison = String(a.time_needed || '').localeCompare(String(b.time_needed || ''))
+      } else if (sortKey === 'reputation') {
+        comparison = (a.reputation ?? 999) - (b.reputation ?? 999)
+      } else if (sortKey === 'collection_tier') {
+        comparison = (a.collection_tier ?? 999) - (b.collection_tier ?? 999)
+      } else if (sortKey === 'overall_quality_score') {
+        comparison = (a.overall_quality_score ?? -1) - (b.overall_quality_score ?? -1)
+      } else if (sortKey === 'priority_score') {
+        comparison = (a.priority_score ?? 999) - (b.priority_score ?? 999)
+      } else if (sortKey === 'nearby_museum_count') {
+        comparison = (a.nearby_museum_count ?? 0) - (b.nearby_museum_count ?? 0)
       }
 
-      if (sortKey === 'collection_quality') {
-        const av = a.tour_planning_scores?.collection_quality ?? -1
-        const bv = b.tour_planning_scores?.collection_quality ?? -1
-        if (av !== bv) return bv - av
-        return String(a.museum_name).localeCompare(String(b.museum_name))
+      if (sortDesc) comparison = -comparison
+      if (comparison === 0) {
+        comparison = String(a.museum_name).localeCompare(String(b.museum_name))
       }
-
-      if (sortKey === 'family_friendly') {
-        const av = a.tour_planning_scores?.family_friendly_score ?? -1
-        const bv = b.tour_planning_scores?.family_friendly_score ?? -1
-        if (av !== bv) return bv - av
-        return String(a.museum_name).localeCompare(String(b.museum_name))
-      }
-
-      if (sortKey === 'educational') {
-        const av = a.tour_planning_scores?.educational_value_score ?? -1
-        const bv = b.tour_planning_scores?.educational_value_score ?? -1
-        if (av !== bv) return bv - av
-        return String(a.museum_name).localeCompare(String(b.museum_name))
-      }
-
-      if (sortKey === 'priority_score') {
-        const av = a.priority_score ?? 999999
-        const bv = b.priority_score ?? 999999
-        if (av !== bv) return av - bv
-        return String(a.museum_name).localeCompare(String(b.museum_name))
-      }
-
-      return 0
+      return comparison
     })
     return arr
-  }, [filtered, sortKey])
+  }, [filtered, sortKey, sortDesc])
 
   const totalPages = Math.max(1, Math.ceil(sorted.length / pageSize))
   const paged = useMemo(() => {
@@ -134,7 +136,7 @@ export default function BrowsePage() {
 
   useEffect(() => {
     setPage(1)
-  }, [q, stateFilter, domainFilter, minQuality, minFamily, minEducational, showScoredOnly])
+  }, [q, stateFilter, domainFilter, showScoredOnly])
 
   if (loading) {
     return (
@@ -160,44 +162,29 @@ export default function BrowsePage() {
     <div className="space-y-6">
       {/* Hero Section */}
       <div className="rounded-xl bg-gradient-to-br from-blue-600 to-purple-700 p-8 text-white shadow-xl">
-        <h1 className="text-4xl font-bold">Discover Museums</h1>
+        <h1 className="text-4xl font-bold">Museum Master Data</h1>
         <p className="mt-3 text-xl text-blue-100">
-          {museums.length.toLocaleString()} museums • {scoredCount} with AI-powered tour planning scores
+          {museums.length.toLocaleString()} museums • {scoredCount} with AI-powered art scoring
         </p>
-        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-            <div className="text-3xl font-bold">{museums.length.toLocaleString()}</div>
-            <div className="text-sm text-blue-100">Total Museums</div>
-          </div>
-          <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-            <div className="text-3xl font-bold">{scoredCount}</div>
-            <div className="text-sm text-blue-100">AI-Scored Museums</div>
-          </div>
-          <div className="rounded-lg bg-white/10 p-4 backdrop-blur">
-            <div className="text-3xl font-bold">{facets.states.length}</div>
-            <div className="text-sm text-blue-100">States Covered</div>
-          </div>
-        </div>
       </div>
 
       {/* Filters */}
       <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 className="mb-4 text-lg font-semibold text-slate-900">Filters</h2>
+        <h2 className="mb-4 text-lg font-semibold text-slate-900">Filters & Search</h2>
         
         {/* Search */}
         <div className="mb-4">
-          <label className="block text-sm font-medium text-slate-700 mb-2">Search</label>
           <input
             type="text"
-            placeholder="Search by museum name..."
+            placeholder="Search by museum name or city..."
             className="w-full rounded-md border border-slate-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
         </div>
 
-        {/* Basic Filters */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mb-4">
+        {/* Filters Row */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">State</label>
             <select
@@ -226,91 +213,23 @@ export default function BrowsePage() {
             </select>
           </div>
 
-          <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Sort By</label>
-            <select
-              className="w-full rounded-md border border-slate-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-              value={sortKey}
-              onChange={(e) => setSortKey(e.target.value as SortKey)}
-            >
-              <option value="collection_quality">Collection Quality</option>
-              <option value="family_friendly">Family-Friendly</option>
-              <option value="educational">Educational Value</option>
-              <option value="museum_name">Name (A-Z)</option>
-              <option value="priority_score">Priority Score</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Score Filters */}
-        <div className="border-t border-slate-200 pt-4">
-          <div className="mb-3 flex items-center gap-2">
-            <span className="text-sm font-medium text-slate-700">AI Tour Planning Scores</span>
-            <span className="rounded-full bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-700">
-              {scoredCount} museums scored
-            </span>
-          </div>
-          
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-            <label className="flex items-center gap-2">
+          <div className="flex items-end">
+            <label className="flex items-center gap-2 cursor-pointer">
               <input
                 type="checkbox"
                 className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-2 focus:ring-blue-500/20"
                 checked={showScoredOnly}
                 onChange={(e) => setShowScoredOnly(e.target.checked)}
               />
-              <span className="text-sm text-slate-700">Scored Only</span>
+              <span className="text-sm font-medium text-slate-700">AI-Scored Only ({scoredCount})</span>
             </label>
-
-            <div>
-              <label className="block text-sm text-slate-700 mb-1">Min Quality</label>
-              <select
-                className="w-full rounded-md border border-slate-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-                value={minQuality}
-                onChange={(e) => setMinQuality(Number(e.target.value))}
-              >
-                <option value="0">Any</option>
-                <option value="5">5+ Good</option>
-                <option value="7">7+ Excellent</option>
-                <option value="8">8+ Outstanding</option>
-                <option value="9">9+ World-Class</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-sm text-slate-700 mb-1">Min Family-Friendly</label>
-              <select
-                className="w-full rounded-md border border-slate-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-                value={minFamily}
-                onChange={(e) => setMinFamily(Number(e.target.value))}
-              >
-                <option value="0">Any</option>
-                <option value="7">7+</option>
-                <option value="8">8+</option>
-                <option value="9">9+</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-sm text-slate-700 mb-1">Min Educational</label>
-              <select
-                className="w-full rounded-md border border-slate-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-                value={minEducational}
-                onChange={(e) => setMinEducational(Number(e.target.value))}
-              >
-                <option value="0">Any</option>
-                <option value="7">7+</option>
-                <option value="8">8+</option>
-                <option value="9">9+</option>
-              </select>
-            </div>
           </div>
         </div>
       </div>
 
       {/* Results Summary */}
-      <div className="flex items-center justify-between">
-        <div className="text-sm text-slate-600">
+      <div className="flex items-center justify-between text-sm text-slate-600">
+        <div>
           Showing {((page - 1) * pageSize) + 1}–{Math.min(page * pageSize, sorted.length)} of {sorted.length.toLocaleString()} museums
         </div>
         {totalPages > 1 && (
@@ -320,123 +239,86 @@ export default function BrowsePage() {
               disabled={page === 1}
               className="rounded-md border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Previous
+              ← Prev
             </button>
-            <span className="text-sm text-slate-600">
-              Page {page} of {totalPages}
-            </span>
+            <span>Page {page} of {totalPages}</span>
             <button
               onClick={() => setPage(Math.min(totalPages, page + 1))}
               disabled={page === totalPages}
               className="rounded-md border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Next
+              Next →
             </button>
           </div>
         )}
       </div>
 
-      {/* Museum Cards */}
-      <div className="space-y-4">
-        {paged.map((museum) => {
-          const scores = museum.tour_planning_scores
-          const hasScores = hasAnyScore(scores)
-          const topScores = getTopScores(scores)
-
-          return (
-            <Link
-              key={museum.museum_id}
-              to={`/museums/${museum.museum_id}`}
-              className="block rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-blue-400 hover:shadow-md"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-start gap-3">
-                    <h3 className="text-xl font-semibold text-slate-900 hover:text-blue-600">
-                      {museum.museum_name}
-                    </h3>
-                    {hasScores && (
-                      <span className="flex-shrink-0 rounded-full bg-purple-100 px-2 py-1 text-xs font-medium text-purple-700">
-                        AI Scored
-                      </span>
-                    )}
-                  </div>
-                  
-                  <div className="mt-1 flex items-center gap-2 text-sm text-slate-600">
-                    <span>{museum.city}, {museum.state_province}</span>
-                    {museum.primary_domain && (
-                      <>
-                        <span>•</span>
-                        <span>{museum.primary_domain}</span>
-                      </>
-                    )}
-                  </div>
-
-                  {museum.summary_short && (
-                    <p className="mt-3 text-sm text-slate-700 line-clamp-2">
-                      {museum.summary_short}
-                    </p>
-                  )}
-
-                  {hasScores && scores && (
-                    <div className="mt-4 space-y-3">
-                      {/* Core Scores */}
-                      <div className="flex flex-wrap gap-2">
-                        {scores.collection_quality && (
-                          <div className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium ring-1 ring-inset ${getScoreBadgeColor(scores.collection_quality)}`}>
-                            <span className="text-xs">🏛️</span>
-                            <span>Quality: {scores.collection_quality}/10</span>
-                            <span className="text-xs opacity-75">({getScoreLabel(scores.collection_quality)})</span>
-                          </div>
-                        )}
-                        {scores.family_friendly_score && scores.family_friendly_score >= 7 && (
-                          <div className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium ring-1 ring-inset ${getScoreBadgeColor(scores.family_friendly_score)}`}>
-                            <span className="text-xs">👨‍👩‍👧‍👦</span>
-                            <span>Family: {scores.family_friendly_score}/10</span>
-                          </div>
-                        )}
-                        {scores.educational_value_score && scores.educational_value_score >= 7 && (
-                          <div className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium ring-1 ring-inset ${getScoreBadgeColor(scores.educational_value_score)}`}>
-                            <span className="text-xs">📚</span>
-                            <span>Educational: {scores.educational_value_score}/10</span>
-                          </div>
-                        )}
-                        {scores.architecture_score && scores.architecture_score >= 7 && (
-                          <div className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium ring-1 ring-inset ${getScoreBadgeColor(scores.architecture_score)}`}>
-                            <span className="text-xs">🏛️</span>
-                            <span>Architecture: {scores.architecture_score}/10</span>
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Top Specialties */}
-                      {topScores.length > 0 && (
-                        <div className="flex flex-wrap gap-1.5">
-                          <span className="text-xs font-medium text-slate-500">Specialties:</span>
-                          {topScores.map((s) => (
-                            <span
-                              key={s.label}
-                              className="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700"
-                            >
-                              {s.label} <span className="font-bold">{s.score}</span>
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-
-                <div className="text-right">
-                  <div className="text-sm font-medium text-blue-600">View Details →</div>
-                </div>
-              </div>
-            </Link>
-          )
-        })}
+      {/* Table */}
+      <div className="overflow-x-auto rounded-lg border border-slate-200 bg-white shadow-sm">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-slate-200 bg-slate-50">
+              <SortableHeader label="State" sortKey="state_province" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="City" sortKey="city" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Museum Name" sortKey="museum_name" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Type" sortKey="museum_type" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Time Needed" sortKey="time_needed" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Reputation" sortKey="reputation" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Collection" sortKey="collection_tier" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Quality ↑" sortKey="overall_quality_score" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Priority ↓" sortKey="priority_score" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Nearby" sortKey="nearby_museum_count" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <th className="px-4 py-3 text-left font-semibold text-slate-700">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {paged.map((museum, idx) => (
+              <tr key={museum.museum_id} className={`border-b border-slate-100 hover:bg-slate-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/30'}`}>
+                <td className="px-4 py-3 text-slate-700">{museum.state_province}</td>
+                <td className="px-4 py-3 text-slate-700">{museum.city}</td>
+                <td className="px-4 py-3">
+                  <Link
+                    to={`/museums/${museum.museum_id}`}
+                    className="font-medium text-blue-600 hover:underline"
+                  >
+                    {museum.museum_name}
+                  </Link>
+                </td>
+                <td className="px-4 py-3 text-slate-600">{museum.museum_type || '—'}</td>
+                <td className="px-4 py-3 text-slate-600">{museum.time_needed || '—'}</td>
+                <td className="px-4 py-3 text-slate-600">
+                  {museum.reputation !== null && museum.reputation !== undefined ? REPUTATION_MAP[museum.reputation] : '—'}
+                </td>
+                <td className="px-4 py-3 text-slate-600">
+                  {museum.collection_tier !== null && museum.collection_tier !== undefined ? COLLECTION_TIER_MAP[museum.collection_tier] : '—'}
+                </td>
+                <td className="px-4 py-3 text-center font-medium text-emerald-700">
+                  {museum.overall_quality_score !== null && museum.overall_quality_score !== undefined ? museum.overall_quality_score : '—'}
+                </td>
+                <td className="px-4 py-3 text-center font-medium text-blue-700">
+                  {museum.priority_score !== null && museum.priority_score !== undefined ? museum.priority_score.toFixed(1) : '—'}
+                </td>
+                <td className="px-4 py-3 text-center text-slate-600">
+                  {museum.nearby_museum_count || '—'}
+                </td>
+                <td className="px-4 py-3 text-slate-600 max-w-xs truncate">
+                  {museum.content_summary ? (
+                    <span className="text-xs" title={museum.content_summary}>
+                      {museum.content_summary.slice(0, 80)}...
+                    </span>
+                  ) : museum.notes ? (
+                    <span className="text-xs" title={museum.notes}>
+                      {museum.notes.slice(0, 80)}...
+                    </span>
+                  ) : '—'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
-      {/* Pagination */}
+      {/* Pagination Bottom */}
       {totalPages > 1 && (
         <div className="flex items-center justify-center gap-2 border-t border-slate-200 pt-6">
           <button
@@ -444,7 +326,7 @@ export default function BrowsePage() {
             disabled={page === 1}
             className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Previous
+            ← Previous
           </button>
           <span className="px-4 py-2 text-sm text-slate-600">
             Page {page} of {totalPages}
@@ -454,10 +336,48 @@ export default function BrowsePage() {
             disabled={page === totalPages}
             className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Next
+            Next →
           </button>
         </div>
       )}
     </div>
   )
+}
+
+function SortableHeader({ 
+  label, 
+  sortKey, 
+  currentSort, 
+  desc, 
+  onSort, 
+  onToggleDesc 
+}: { 
+  label: string
+  sortKey: SortKey
+  currentSort: SortKey
+  desc: boolean
+  onSort: (key: SortKey) => void
+  onToggleDesc: () => void
+}) {
+  const isActive = currentSort === sortKey
+  return (
+    <th 
+      className="px-4 py-3 text-left font-semibold text-slate-700 cursor-pointer hover:bg-slate-100 select-none"
+      onClick={() => {
+        if (isActive) {
+          onToggleDesc()
+        } else {
+          onSort(sortKey)
+        }
+      }}
+    >
+      <div className="flex items-center gap-1">
+        {label}
+        {isActive && (
+          <span className="text-blue-600">{desc ? '↓' : '↑'}</span>
+        )}
+      </div>
+    </th>
+  )
+}
 }

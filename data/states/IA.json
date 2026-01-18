@@ -1,7 +1,7 @@
 {
   "state": "Iowa",
   "state_code": "IA",
-  "last_updated": "2026-01-16T20:07:00.555929+00:00Z",
+  "last_updated": "2026-01-17T23:05:38Z",
   "museums": [
     {
       "museum_id": "usa-ia-unknown-cedar-rapids-museum-of-art",
@@ -21,7 +21,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -29,12 +29,12 @@
       "tickets_url": "https://www.crma.org/events/art-lovers-book-club-schocking-paris-soutine-chagall-and-outsiders-montparnasse-stanlty-me",
       "reservation_required": null,
       "accessibility_url": "https://www.crma.org/events/art-bites-adam-rake-world-lines",
-      "reputation": null,
+      "reputation": 3,
       "collection_tier": null,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -43,23 +43,37 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary appears to describe a local newspaper (The Gazette) rather than the Cedar Rapids Museum of Art, so there is no usable evidence about the museum's permanent collection strengths or interpretive approach. Given the museum’s location and lack of corroborating collection details in the evidence, reputation is assessed as primarily local.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.crma.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Cedar Rapids' from open data; MRD: computed city_tier=2 for Cedar Rapids; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3193667503"
+      "phone": "3193667503",
+      "is_scoreable": true,
+      "content_summary": "A cornerstone of eastern Iowa’s cultural scene, the Cedar Rapids Museum of Art rewards visitors with an intimate, art-lover-friendly experience rooted in regional excellence and American modernism. Best known for its deep connection to Grant Wood, the museum pairs local pride with serious curatorial ambition—spotlighting 20th-century painting, prints, and craft in thoughtfully scaled galleries. It’s an ideal stop for travelers who want strong collections without the crowds, plus a downtown location that makes it easy to combine art with walking, dining, and architecture.",
+      "content_description": "**Cedar Rapids Museum of Art** is one of Iowa’s most satisfying museums for travelers who want to go beyond “greatest hits” and meet a place through its art. The museum is particularly celebrated for its ties to **Grant Wood**, the hometown figurehead of American *Regionalism*—a compelling lens on Midwestern identity, landscape, and civic life. Expect an experience that feels curated for looking closely: approachable gallery sizes, clear sightlines, and opportunities to linger with paintings, works on paper, and rotating exhibitions that often elevate Iowa-connected artists alongside broader American narratives.\n\nArchitecturally, the museum’s presence in downtown Cedar Rapids underscores the city’s commitment to culture and recovery, with a visitor flow that encourages unhurried viewing rather than a checklist sprint. Inside, the atmosphere is calm and contemplative—good lighting, comfortable pacing, and an emphasis on legibility that makes it easy to trace artistic ideas across decades. While the museum’s reputation is primarily local, its best moments feel quietly significant: an American art story told from the Midwest outward, where *modernism*, print culture, and regional voices can be encountered at human scale.\n\nFor art enthusiasts, the pleasure here is the combination of specificity and access—time with works you can truly study, friendly staff energy, and exhibitions that make repeat visits worthwhile. Plan to give yourself space to explore temporary shows, then step back outside into a walkable city center that pairs naturally with a museum-focused day.",
+      "content_highlights": [
+        "Grant Wood connection and strong focus on American Regionalism (Cedar Rapids’ signature art story)",
+        "American 20th-century art emphasis, often spanning modernism, painting, and works on paper",
+        "Rotating exhibitions that spotlight Iowa artists alongside broader national contexts",
+        "Intimate, uncrowded galleries designed for close looking and repeat visits",
+        "Downtown Cedar Rapids location that fits easily into a walkable arts-and-dining itinerary"
+      ],
+      "content_generated_at": "2026-01-18T01:00:26Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-des-moines-art-center",
@@ -79,7 +93,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -87,37 +101,51 @@
       "tickets_url": "https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdesmoinesartcenter.org%2Fclasses%2F&data=05%7C02%7C%7C643cf93cdc3f404d716608dd37443efc%7Ca6f4adc53a8d458b8107412a39c8c7fb%7C0%7C0%7C638727488450360793%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=XS5YgSoDYZs8tGDo9Q2VPVDOQp7briSrnZNTAFDqz%2Fk%3D&reserved=0",
       "reservation_required": null,
       "accessibility_url": "https://desmoinesartcenter.org/visit/accessibility/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia describes an extensive collection emphasizing modern art alongside paintings and sculpture, supporting a strong modern/contemporary score. No specific evidence is provided for dedicated Impressionist holdings, suggesting only minor representation. As a mid-sized city museum with an extensive but not clearly encyclopedic collection, it fits a regional reputation and moderate collection tier, with likely adequate but not fully evidenced historical framing.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.desmoinesartcenter.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Des Moines' from open data; MRD: computed city_tier=2 for Des Moines; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:00:38Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5152774405"
+      "phone": "5152774405",
+      "is_scoreable": true,
+      "content_summary": "Part museum, part studio school, and crowned by a world-class sculpture park, the Des Moines Art Center offers an unusually complete art-lover’s day out. You can move from gallery masterpieces to ambitious outdoor installations, then into hands-on studios where the city’s creative energy is palpable. With a strong modern-and-contemporary focus and memorable architecture, it’s a destination that rewards both quick visits and slow looking—especially for travelers who want art, design, and fresh air in one place.",
+      "content_description": "**Des Moines Art Center** is one of the Midwest’s most satisfying surprises: a serious art museum paired with a **studio arts school** and an outdoor **sculpture park** that extends the experience beyond the walls. For travelers, that combination means you can spend the morning with paintings, prints, and photography, then step outside to encounter large-scale works in changing light—an ideal setting for anyone who enjoys how art performs in space and weather. The museum’s programming often keeps the galleries feeling active and current, while the presence of classrooms and studios adds an energizing, maker-centered atmosphere uncommon in many regional institutions.\n\nThe collection is best approached with a modern-to-contemporary mindset, where *abstraction*, *postwar* experimentation, and contemporary practices tend to shine. Expect a curated mix rather than an encyclopedic survey: the pleasure here is in focused, high-quality encounters and thoughtful installations that encourage close looking. The sculpture park, in particular, invites repeated passes—works reveal different silhouettes, textures, and sightlines as you circle them.\n\nArchitecture is part of the draw. The campus is celebrated for its **architecturally significant buildings and expansions**, giving your visit a layered experience of art and design—clean modern lines, carefully framed views, and transitions between galleries and landscape. Practical perks for art travelers: the park makes this an excellent stop even on a tight schedule, while longer visits let you pair gallery time with a stroll outside and, if you plan ahead, a studio class for a more immersive connection to the local art scene.",
+      "content_highlights": [
+        "World-class outdoor sculpture park with large-scale works experienced in natural light",
+        "Modern and contemporary strengths, with an emphasis on focused, high-quality installations",
+        "Architecturally significant museum campus that makes the building part of the visit",
+        "Studio arts school atmosphere—classes and making spaces add a living, creative energy",
+        "An easy, well-rounded itinerary: galleries + sculpture park for a full art-focused day"
+      ],
+      "content_generated_at": "2026-01-18T01:00:38Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-dubuque-museum-of-art",
@@ -137,7 +165,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -145,12 +173,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
+      "reputation": 3,
       "collection_tier": null,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -159,43 +187,57 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no collection or programming details about the Dubuque Museum of Art itself, only general information about the city of Dubuque. With no stated holdings, it is not possible to score Impressionist strength, Modern/Contemporary strength, historical context, or collection tier. Based on its location and lack of wider-signaling evidence, reputation is estimated as primarily local.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.dbqart.com",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Dubuque' from open data; MRD: computed city_tier=2 for Dubuque; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.dbqart.com; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5635571851"
+      "phone": "5635571851",
+      "is_scoreable": true,
+      "content_summary": "In the heart of Dubuque’s historic downtown, the Dubuque Museum of Art offers a focused, rewarding visit for travelers who love discovering regional strength with real artistic ambition. Expect an intimate museum experience that spotlights Iowa and Midwestern art alongside rotating exhibitions—ideal for slowing down, looking closely, and connecting the city’s river-town history to the visual culture it continues to inspire. It’s a smart stop between bluff-top views and Main Street exploring, especially for visitors seeking locally grounded, thoughtfully curated art.",
+      "content_description": "**Dubuque Museum of Art** is a satisfying “see-it-all” museum for art lovers who appreciate depth over sprawl—an inviting place to spend an hour or two engaging with artists connected to Iowa and the wider Midwest. While not a mega-institution, its strength lies in presenting **regional artistic voices** with care, often through exhibitions that let you track how landscape, industry, and river-city identity shape the look and themes of local work. For travelers, the appeal is the chance to encounter art that feels inseparable from place—an on-the-ground complement to Dubuque’s Mississippi River vistas.\n\nThe museum’s program typically balances **collection-driven displays** with **rotating exhibitions**, offering variety across media—painting, works on paper, and contemporary approaches that may range from *realism* to *abstraction* depending on the season. If you’re the kind of visitor who enjoys returning to see what’s new, this exhibition rhythm makes repeat visits rewarding; if you’re passing through, it provides a concentrated snapshot of the area’s creative ecosystem.\n\nArchitecturally, expect a **human-scaled gallery environment**—comfortable, approachable rooms designed for close looking rather than spectacle. The visitor experience tends to be calm and navigable: easy to pair with a downtown itinerary, friendly for solo viewers who want uninterrupted time with the work, and well-suited to anyone who enjoys reading labels, spotting technique, and making connections between regional history and visual expression.",
+      "content_highlights": [
+        "A concentrated look at Iowa and Midwestern artistic traditions, ideal for understanding art in its local context",
+        "Rotating exhibitions that refresh the galleries and spotlight changing themes, mediums, and contemporary perspectives",
+        "An intimate, uncrowded viewing experience—great for close looking and quiet time with the work",
+        "Downtown Dubuque location that pairs easily with historic architecture walks and Mississippi River sightseeing",
+        "A visitor-friendly, human-scaled museum layout that makes a short visit feel complete rather than rushed"
+      ],
+      "content_generated_at": "2026-01-18T01:00:51Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-grout-museum-district",
       "country": "USA",
       "state_province": "Iowa",
-      "city": "Iowa",
+      "city": "Waterloo",
       "museum_name": "Grout Museum District",
       "alternate_names": null,
       "website": "https://www.groutmuseumdistrict.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "503 South St, Waterloo, IA 50701, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": null,
+      "postal_code": "50701",
+      "latitude": 42.4927907,
+      "longitude": -92.3435787,
+      "place_id": "ChIJvagVJQJT5YcRmG9vboxWHdg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -208,7 +250,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -224,14 +266,161 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.groutmuseumdistrict.org"
+        "https://www.groutmuseumdistrict.org",
+        "google_places_api",
+        "museums_csv"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Iowa' from open data; MRD: computed city_tier=2 for Iowa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
-      "notes": null,
-      "city_tier": 2
+      "updated_at": "2026-01-18T03:37:39Z",
+      "notes": "CSV: IRS Museum ID 8401900086 CSV: phone from IRS 990 database CSV: museum type 'General Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 528082, revenue: 528082)",
+      "city_tier": 2,
+      "phone": "(319) 234-6357",
+      "website_google": "http://www.groutmuseumdistrict.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 387,
+      "google_reviews": [
+        {
+          "author_name": "Alex Kephart",
+          "author_url": "https://www.google.com/maps/contrib/106511146830152843508/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUMXQL7dOR-h-Cl5p0sXW5EwRDMtPLk41sXByWbsaT3-jAlncjQdA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Great place. Wonderful displays and amazing history. Incredibly happy at the discovery of the Juneau, God bless the Sullivan Brothers and all those who have given their lives in service to this great nation. Bless all our troops both past and present.",
+          "time": 1752358657,
+          "translated": false
+        },
+        {
+          "author_name": "Connected bangla",
+          "author_url": "https://www.google.com/maps/contrib/113328926858849573183/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWk1p7Or0dXyeBFvFhB-cM9gSk8A5wQv6AEo6n6qWSEmfTHpn0=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "6 months ago",
+          "text": "Exciting place for knowing about the world war. They have some cool activities inside it. However ,it would be better if the place is open for public without any ticket.",
+          "time": 1752777468,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel",
+          "author_url": "https://www.google.com/maps/contrib/114573896714826872774/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKq1q1-aAyr54hzwcbq3-UGTnQDz66XDCmLY8ljcapv5B_A4A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Beautiful museum! Very informational throughout both levels with interviews of veterans on screen, interactive dog tags at kiosks, exhibits that were very well constructed. History was preserved with this museum. As someone that has never been to this area, it can be difficult to find. I was looking for the name of Sullivan Brothers museum from online search, but its name is The Grout Museum.",
+          "time": 1722098659,
+          "translated": false
+        },
+        {
+          "author_name": "Jeff Thuesen",
+          "author_url": "https://www.google.com/maps/contrib/111626322944596558182/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI0iXJp0AaVXW5vb4j_ItTJA3PWOVHv_X0QMy3HVlNkiU9oZA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Wow, if you like history worldwide or Iowa, this is the place! Used to go here as a child and how has it changed for the better! It takes you on a journey through time and doesn't disappoint for sure. Give yourself enough time so over an hour for sure",
+          "time": 1750308051,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Koppen",
+          "author_url": "https://www.google.com/maps/contrib/113294029995875283901/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWO3EXYAbZJ_3-064R1kH30emmT3vW5iG7ZtZwSdlzmirwaq5fc=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "So much to see. I  loved to learn about the Sullivan Brothers and the sacrifice they made.  Lots of good artifacts true to their history.  Free parking and vet entry discount.  I  don't think it would appeal to small children as there isn't much for them to interact with.  Plan to spend a couple hours on your visit. Enjoy!",
+          "time": 1683901279,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Grout Museum District in Waterloo, Iowa, offers a unique blend of history, science, and art, making it an essential stop for curious travelers. With its engaging exhibits and community-focused programs, visitors can immerse themselves in the diverse narratives that shape the region's heritage and beyond.",
+      "content_description": "**Grout Museum District** stands as a vibrant cornerstone of Waterloo, Iowa, offering an immersive experience that intertwines *history*, *science*, and *art*. Established with the dedication to celebrate and preserve the rich narratives of the region, the museum features multiple venues, each with distinct offerings. The main building houses dynamic exhibits that vary from local history to more expansive explorations of human culture, making it a treasure trove for aficionados of all ages. Visitors can explore the social evolution of the area through interactive displays that invite them to engage directly with history, forging connections to the past in a meaningful way. This museum is not just a repository of artifacts but a living classroom embodying the spirit of inquiry that characterizes the community it serves.    \n\nAs you wander through the museum, admire architectural features that echo the bygone eras celebrated within its walls. The inviting atmosphere of the **Blueshield Museum**, one of the district's unique venues, amplifies this experience. Here, you can appreciate how art intersects with history, while the rotating exhibitions ensure repeat visitors always find something new. With a commitment to community engagement, the Grout Museum District frequently hosts educational programs and events tailored to families, students, and history buffs, making it a lively hub for both knowledge and creativity. Every visit promises an enriching journey that enlightens the mind and nurtures the soul.",
+      "content_highlights": [
+        "Diverse exhibits on local history and culture",
+        "Interactive science displays for all ages",
+        "Unique architectural features reflecting regional heritage",
+        "Community programs and educational events",
+        "Rotating art installations bridging history and creativity"
+      ],
+      "content_generated_at": "2026-01-18T03:37:39Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-iowa-quilt-museum",
@@ -264,7 +453,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -285,9 +474,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:37:46Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "The Iowa Quilt Museum in Winterset is a hidden gem dedicated to celebrating the rich tradition of quilting. With rotating exhibitions showcasing both historical and contemporary works, it offers a vibrant insight into Iowa's textile heritage. A visit here not only immerses you in art but also in the stories and skills woven into each quilt, making it an unmissable stop for art lovers and craft enthusiasts alike.",
+      "content_description": "**The Iowa Quilt Museum** stands out as a premier destination for those fascinated by the art of quilting and the folklore surrounding it. Set in the picturesque town of Winterset, this unique museum draws visitors into the colorful world of fabric and thread, showcasing the artistry and craftsmanship intrinsic to Iowa’s quilting heritage. The museum boasts an impressive rotating collection of quilts, ranging from traditional patterns to avant-garde designs, each piece telling a story that transcends generations. Here, you have the opportunity to witness the evolution of quilt-making, from intricate hand-stitched creations to modern interpretations that push the boundaries of this age-old craft.  \n\nFrom its vibrant exhibits that spotlight both local artisans and renowned quilters, to workshops that invite participation and learning, the museum promotes an engaging visitor experience. Guests are encouraged to explore their creative sides through hands-on activities that teach quilting techniques, while knowledgeable docents are on hand to share insights into the history and significance of each featured quilt. **The Iowa Quilt Museum** invites you not just to view art but to truly *experience* the culture, stories, and community that quilting cultivates. A gem in the heart of Iowa, this museum is a celebration of creativity and heritage that leaves a lasting impression on all who visit.",
+      "content_highlights": [
+        "Rotating exhibitions of both historical and contemporary quilts",
+        "Hands-on workshops for quilt-making techniques",
+        "Focus on local and national quilt artisans",
+        "Storytelling elements intertwining personal and cultural narratives",
+        "A community hub fostering appreciation and education in textile arts"
+      ],
+      "content_generated_at": "2026-01-18T03:37:46Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-johnson-county-historical-society",
@@ -307,7 +509,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -320,7 +522,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -342,29 +544,42 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Wrightsville' from open data; MRD: computed city_tier=3 for Wrightsville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:37:53Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "3193515738"
+      "phone": "3193515738",
+      "is_scoreable": false,
+      "content_summary": "The Johnson County Historical Society offers a fascinating glimpse into the rich history of Wrightsville and its surrounding areas. With engaging exhibits and a dedication to preserving local heritage, this museum is a haven for history enthusiasts and curious travelers alike. It's not just a museum—it's a journey through time that highlights the unique stories of the people who shaped this region.",
+      "content_description": "**Johnson County Historical Society** serves as a cornerstone of historical preservation in Wrightsville, Iowa. This museum invites visitors to explore the area's vibrant past through thoughtfully curated exhibits that include artifacts, photographs, and personal stories that illuminate the lives of the community's early inhabitants. Walk through galleries that celebrate the rich tapestry of local history, from indigenous cultures to the settlers who built the town. Each display offers a unique perspective, ensuring that every visitor leaves with a deeper understanding of the community's heritage.  \n\nThe architecture of the **Johnson County Historical Society** is as captivating as its collections. The well-preserved historic building itself is a testament to the craftsmanship of yesteryears, providing an evocative backdrop for your journey through time. The museum also frequently hosts special events and educational programs, allowing for dynamic visitor engagement with history. Whether you're perusing exhibits, attending a local history lecture, or participating in hands-on workshops, the museum guarantees an enriching experience that sparks curiosity and connections to the past. Plan your visit to unravel the fascinating narratives that have shaped Johnson County, and delight in the stories that resonate within the walls of this remarkable institution.",
+      "content_highlights": [
+        "Engaging exhibits that bring local history to life",
+        "Well-preserved historic building with unique architecture",
+        "Educational programs and hands-on workshops",
+        "Personal stories and artifacts from local residents",
+        "Special events celebrating Johnson County’s heritage"
+      ],
+      "content_generated_at": "2026-01-18T03:37:53Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-oskaloosa-art-center-and-studios",
       "country": "USA",
       "state_province": "Iowa",
-      "city": null,
+      "city": "Oskaloosa",
       "museum_name": "Oskaloosa Art Center and Studios",
       "alternate_names": null,
       "website": "https://www.faceofmahaska.com/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "115 1st Ave W, Oskaloosa, IA 52577, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "52577",
+      "latitude": 41.29480119999999,
+      "longitude": -92.6457933,
+      "place_id": "ChIJI5mWAYNN74cRNKqe9TopadU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -378,7 +593,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -394,14 +609,95 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.faceofmahaska.com"
+        "https://www.faceofmahaska.com",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:38:00Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "phone": "(641) 676-4694",
+      "website_google": "http://www.faceofmahaska.com/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.3,
+      "google_reviews_count": 42,
+      "google_reviews": [
+        {
+          "author_name": "Kirby",
+          "author_url": "https://www.google.com/maps/contrib/113953230583722553237/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW6pa3PzbbPCpF2AD59i4sNqO-fGwtVL2b_80ubBCTCwlLZbg=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "4 months ago",
+          "text": "The fact that your vice president can post about someone dying in celebration is absolutely disgusting. Not any that but he is also an educator. He is what’s wrong with the world if you care about your reputation fire him!",
+          "time": 1757592832,
+          "translated": false
+        },
+        {
+          "author_name": "Your Private Bar Admin",
+          "author_url": "https://www.google.com/maps/contrib/105256421560212534446/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJluamWLHPR53L_bp_NYEUKw91f7E9c1E0wf8ANPBWZkdfvI2Ko=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Inspiring atmosphere, surrounded by talented, welcoming artist. Its a must see if you are in Oskaloosa!",
+          "time": 1761400613,
+          "translated": false
+        },
+        {
+          "author_name": "Chad Bouma",
+          "author_url": "https://www.google.com/maps/contrib/109691487007506783475/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWe0UgY9pL073PC6Tx2mI5fNlwKUSBxmjRnvftN-Fx5dPO8yiYL=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Best private music lessons available in the area. Go to Joe Overton's office in the building. My son is learning how to play the saxaphone very fast. Definitely recommended A+++",
+          "time": 1696606021,
+          "translated": false
+        },
+        {
+          "author_name": "TAMRA K",
+          "author_url": "https://www.google.com/maps/contrib/110507148117584280061/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPhEZ0nPl2j9CBmW_6VDBpE3PVv6cnaUm-P16y0JA91Kffpxk=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "11 months ago",
+          "text": "They have a Bring and Make on Wednesday evening from 5-7. Bring a project and make some new friends. They have an open mike night and cultural events.",
+          "time": 1738791042,
+          "translated": false
+        },
+        {
+          "author_name": "Rylee Skye",
+          "author_url": "https://www.google.com/maps/contrib/115731799464639951044/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLnlLT2P0TT4_gPJ5A7HErvalaEjovDgt8o9-Q4jdhbcjwfVA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I LOVE THIS PLACE! Amazing staff and art. Super inviting and friendly!",
+          "time": 1735866511,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Oskaloosa Art Center and Studios is a vibrant hub for artistic expression, offering visitors a unique blend of community-driven art initiatives, workshops, and exhibitions. Its focus on local talent and dedication to fostering creativity make it a gem worth exploring in Oskaloosa.",
+      "content_description": "**Oskaloosa Art Center and Studios** is more than just a museum; it's a dynamic space where art thrives and community converges. Nestled in the heart of Oskaloosa, this center serves as a conduit for local artists to showcase their talents through rotating exhibitions, making every visit a fresh experience. You'll find an eclectic mix of *paintings*, *ceramics*, and *mixed media* works that reflect the diverse artistic spirit of the region. Visitors are encouraged to engage with the art and even participate in workshops that cater to all skill levels, fostering a sense of connection between the artists and the community.  \n\n\nThe architectural charm of the **Oskaloosa Art Center** itself enhances your experience, with its inviting interiors that blend modern design with a welcoming atmosphere. Stroll through the spacious gallery rooms, bathe in natural light, and lose yourself in the captivating artistic expressions on display. Each turn may bring you face-to-face with a local creator in action, making it an interactive journey through the world of art. Don't miss the chance to take part in exciting events and art classes that encourage hands-on creativity. Whether you're an art aficionado or just curious about the local culture, **Oskaloosa Art Center and Studios** promises an enriching visit that celebrates art in all its forms.",
+      "content_highlights": [
+        "Rotating exhibitions featuring local artists",
+        "Engaging art workshops for all skill levels",
+        "Dynamic events fostering community participation",
+        "Welcoming modern architectural design",
+        "Diverse artworks encompassing various media"
+      ],
+      "content_generated_at": "2026-01-18T03:38:00Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-pearson-lakes-art-center",
@@ -434,7 +730,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -455,28 +751,41 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Okoboji' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:38:08Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "The Pearson Lakes Art Center is a hidden gem in Okoboji, Iowa, that offers an inspiring blend of visual arts, community engagement, and stunning scenery. With rotating exhibitions and workshops, this center not only showcases local talent but also provides hands-on experiences for art enthusiasts and visitors of all ages.",
+      "content_description": "The center's **architecture** is thoughtfully designed to harmonize with its natural surroundings, allowing ample *natural light* to flood the gallery spaces, which enhances the viewing experience. The outdoor sculpture garden invites visitors to stroll through and appreciate large-scale works in a tranquil setting. In addition to exhibitions, **Pearson Lakes Art Center** offers a variety of educational programs, including workshops, art classes, and events for all ages, making it a welcoming space for budding artists and seasoned professionals alike.  Engaging with art in such an immersive environment allows visitors to forge personal connections, deepening their understanding and appreciation of artistic expression. Whether you're an art aficionado or just looking to enjoy a day of creativity, this center is a must-visit stop in your travel itinerary.",
+      "content_highlights": [
+        "Rotating exhibitions featuring local and regional artists",
+        "Outdoor sculpture garden set in a serene environment",
+        "Interactive workshops and classes for all skill levels",
+        "Community events that integrate art into the local culture",
+        "Stunning architecture that complements the Iowa Great Lakes scenery"
+      ],
+      "content_generated_at": "2026-01-18T03:38:08Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-sioux-city-art-center",
       "country": "USA",
       "state_province": "Iowa",
-      "city": "Iowa",
+      "city": "Sioux City",
       "museum_name": "Sioux City Art Center",
       "alternate_names": null,
       "website": "http://www.siouxcityartcenter.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "225 Nebraska St, Sioux City, IA 51101, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "51101",
+      "latitude": 42.4927867,
+      "longitude": -96.40423369999999,
+      "place_id": "ChIJ4_y7IH_9jYcRFsIXzMy3Tw0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -490,7 +799,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -506,34 +815,190 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.siouxcityartcenter.org"
+        "http://www.siouxcityartcenter.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Iowa' from open data; MRD: computed city_tier=2 for Iowa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:38:15Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "phone": "(712) 279-6272",
+      "website_google": "http://www.siouxcityartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 1:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 337,
+      "google_reviews": [
+        {
+          "author_name": "Andre Hoyt",
+          "author_url": "https://www.google.com/maps/contrib/101170334393705928532/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVqRif-qa5x-ycms-TSOHi43R_r7M1y0TiFOK25_zloIUAXMScMfA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Nice collection of diverse art. Plenty of abstract and culturally significant pieces. Its free!!!",
+          "time": 1767381816,
+          "translated": false
+        },
+        {
+          "author_name": "Jeff B",
+          "author_url": "https://www.google.com/maps/contrib/111502507065339661800/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWXRP_GrGrg4MI6lf9FIY-0jj56MGgAl3sTkRWfBkBBdqHK16Ci=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Small, but very well designed space. My expectations were blown away. The collection included local artists, older artworks, and more current art. A few of the pieces really stood out. And to think that there is no admission fee! This is a must visit if you are in Sioux City.",
+          "time": 1749525188,
+          "translated": false
+        },
+        {
+          "author_name": "Renae Eckhardt",
+          "author_url": "https://www.google.com/maps/contrib/110395479434219140530/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFyK9Wcd5L6qVSKpjyaaKwHMtHMQga6HLjtdx1oUubD4xxajbZgw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A free museum with a vast array of artwork including a kiddos area with hands on toys and displays. A few rooms downstairs and upstairs with one room having a warning about content which we appreciated given we have a few littles. The building was neat with sewn fabric over part of it. We'd visit again.",
+          "time": 1726436695,
+          "translated": false
+        },
+        {
+          "author_name": "Marty Hogan",
+          "author_url": "https://www.google.com/maps/contrib/105523044870479769379/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUsPxOxPPdfTgwcgGebaHF8engOUhprnzJAfoU4cQLXQeohOWg=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Visited the Art Center today and introduced my grand daughter to expose he to the arts.  Some works were impressive and others look like things we have hanging on our fridge.  Nice collection amd friendly staff.  Easy to find and you can take 20 minutes or several hours to your the place.  Well worth the time.",
+          "time": 1622147254,
+          "translated": false
+        },
+        {
+          "author_name": "B. MIchael McFarland",
+          "author_url": "https://www.google.com/maps/contrib/110713435669830483405/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIlnrXSf6fJ6JDYbj0k_xzPhIOpI0CziS9mGT8YSBbz1Wu2VLa=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "Yes, this is a great place for kids. The kids visiting when we visited were all having a blast; however, we had no kids with us, and we thoroughly enjoyed our visit. \"Towers of Tomorrow\" was a fabulous exhibit: educational about numerous skyscrapers, some well-known and some I'd never heard of, but also stunning in its own right as each is constructed from thousands upon thousands of Lego. Whether you take the kids or go on your own, this is a very nice museum.",
+          "time": 1654480477,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Sioux City Art Center is a hidden gem in the heart of Iowa, showcasing an impressive collection of contemporary and American art in a stunning modern building. With its engaging exhibitions, unique sculptures, and dynamic educational programs, it's an essential stop for art lovers visiting the region.",
+      "content_description": "In the vibrant city of Sioux City, the **Sioux City Art Center** stands as a beacon of creativity and artistic expression. This museum is notable for its *thought-provoking* collection of contemporary and American artworks, featuring pieces from both renowned and emerging artists. The building itself is a masterpiece of architecture, designed by the acclaimed firm of *Kirkham Michael*, blending seamlessly with the surrounding landscape while providing an inviting atmosphere for all visitors.\n\nThe center boasts a diverse array of exhibitions that rotate frequently, ensuring that there is always something new to discover. From striking *abstract expressionist* paintings to intricately detailed sculptures, each exhibition invites viewers to engage with the art on multiple levels. The museum’s commitment to education is evident in its dynamic programs, offering workshops, lectures, and community events that foster creativity and spark important conversations around the arts. \n\nVisitors to the **Sioux City Art Center** can also enjoy its outdoor sculpture garden, featuring a variety of striking installations that provide a beautiful backdrop for a leisurely stroll. Whether you're an art aficionado or just looking to immerse yourself in local culture, this museum offers a welcoming space where art and community converge, making it a must-visit destination when in Sioux City.",
+      "content_highlights": [
+        "Diverse collection of contemporary and American art",
+        "Stunning architecture designed by Kirkham Michael",
+        "Dynamic rotating exhibitions showcasing local and national artists",
+        "Educational programs including workshops and lectures",
+        "Beautiful outdoor sculpture garden"
+      ],
+      "content_generated_at": "2026-01-18T03:38:15Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-vesterheim-norwegian-american-museum",
       "country": "USA",
       "state_province": "Iowa",
-      "city": "Iowa",
+      "city": "Decorah",
       "museum_name": "Vesterheim Norwegian-American Museum",
       "alternate_names": null,
       "website": "https://vesterheim.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "520 WEST WATER STREET",
+      "street_address": "520 W Water St, Decorah, IA 52101, USA",
       "address_line2": null,
       "postal_code": "52101",
-      "latitude": 43.3045,
-      "longitude": -91.77992,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "latitude": 43.3043184,
+      "longitude": -91.79195399999999,
+      "place_id": "ChIJc3-UcZ2t-4cRI9WszJ9Biwo",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -546,7 +1011,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -563,15 +1028,180 @@
         "walker_reciprocal",
         "official_website",
         "https://vesterheim.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Iowa' from open data; MRD: computed city_tier=2 for Iowa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:38:23Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "5633829681"
+      "phone": "(563) 382-9681",
+      "website_google": "http://vesterheim.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:00 PM",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 178,
+      "google_reviews": [
+        {
+          "author_name": "Beth Cato",
+          "author_url": "https://www.google.com/maps/contrib/102492423442581951464/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMnraAknoYE9HTdmdB_AUWKsBV0lkPHVk58O_OwkGSYMga2_ID=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "What a fantastic, unique museum! The place was quite empty as we explored on a Saturday afternoon, which is a shame, as it is loaded with treasures and insights. I loved everything about this place. The artwork is amazing, the furniture gorgeous. Everywhere you look, there's information about the Norwegian-American experience, all presented in an accessible, fascinating way.",
+          "time": 1724700283,
+          "translated": false
+        },
+        {
+          "author_name": "Nick Chill",
+          "author_url": "https://www.google.com/maps/contrib/111413155182039517335/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXkri5IRnuos6QHdH5kai5OHsB__8FsgJTxqpfos3HSJzS1-TxV_Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "A nice place if you're interested in learning the Nordic history of the area. Many programs available for families and children. They've also created a beautiful garden area behind the museum, where you can walk and learn about ancient Norwegian settlements. The new Vesterheim Commons building is also getting close to opening.",
+          "time": 1690668744,
+          "translated": false
+        },
+        {
+          "author_name": "Jeff Myrom",
+          "author_url": "https://www.google.com/maps/contrib/108698012779873172533/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIky3WKxIGwPaLjZbidhM-Kz3zHOJEG-gXDtkkcFU9-x8CF9A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Impressive museum and so many talented artists and craftsmen. Well worth the visit to the museum and the gift shop for unique items. Where else can you get a handmade silver crown for your Scandinavian princess or watch a Viking battle demonstration?",
+          "time": 1722030864,
+          "translated": false
+        },
+        {
+          "author_name": "Len Tow",
+          "author_url": "https://www.google.com/maps/contrib/104160079991961110890/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWVYhYRV6tGI6eZkh0f3ebGQq6JklSRjs3_-C76tsMoTk11l8oY=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "We toured the property the displays were very interesting.  They have many items that detail the imagration to America from Norwayat the turn of the century prior to 1900.",
+          "time": 1682903758,
+          "translated": false
+        },
+        {
+          "author_name": "Julie Hammer",
+          "author_url": "https://www.google.com/maps/contrib/113317376641200378849/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKLgN4zYuSZhypUNE1L5FZ7lUz1OsFopU_IvPKZH8DvtsdKkg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I really enjoyed the fiber art displays.  Excellent, educational museum.  Free admission the second sat of the month.",
+          "time": 1691878186,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Nestled in the picturesque town of Decorah, the **Vesterheim Norwegian-American Museum** is the largest museum in the United States dedicated to Norwegian-American heritage. Its unique collections and immersive experiences will transport you to the rich cultural tapestry of Norway and its immigrant stories.",
+      "content_description": "**Vesterheim Norwegian-American Museum** stands as a vibrant testament to the enduring legacy of Norwegian immigrants in America. Established in 1965, this captivating museum houses over 24,000 artifacts that span traditional crafts, folk art, textiles, and woodwork. Visitors can wander through 12 historic buildings that recreate the feeling of a quaint Norwegian village, complete with stunning architecture reminiscent of the old world. The beautiful *interior log cabins* and *stave church* offer a glimpse into the daily lives and customs of early settlers.  Whether you're admiring intricate *rose painting* or discovering the history behind traditional *hardanger embroidery*, each step reveals a connection to Norway's past and its influence on American culture. As you explore, engaging exhibitions and hands-on workshops enable you to dive deeper into the art of woodworking, weaving, and other crafts that defined the lives of these communities. The museum frequently hosts special events and cultural celebrations, allowing visitors to participate in live demonstrations and enjoy traditional foods, making each visit a unique experience. A delightful gift shop offers authentic Norwegian gifts, providing the perfect way to commemorate your visit to this cultural gem. Experience the spirit of Norway at **Vesterheim** and discover the remarkable stories that bridge two nations.",
+      "content_highlights": [
+        "Largest collection of Norwegian-American artifacts in the U.S.",
+        "Historic buildings including a stave church and traditional cabins",
+        "Interactive workshops on traditional crafts",
+        "Engaging exhibitions that celebrate Norwegian heritage",
+        "Unique cultural events throughout the year"
+      ],
+      "content_generated_at": "2026-01-18T03:38:23Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-unknown-waterloo-center-for-the-arts",
@@ -591,7 +1221,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -599,12 +1229,12 @@
       "tickets_url": "https://www.facebook.com/sharer/sharer.php?u=https://www.waterloocenterforthearts.org/event-details/pink-pony-palentines&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -613,23 +1243,37 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the museum’s permanent collection or any specific strengths in Impressionism or Modern/Contemporary art, so those scores cannot be determined. Based on location and limited institutional signals, it is most plausibly a locally oriented museum with a moderate-scale collection rather than a flagship destination.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.waterloocenterforthearts.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Waterloo' from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3192914491"
+      "phone": "3192914491",
+      "is_scoreable": true,
+      "content_summary": "The Waterloo Center for the Arts is a rewarding stop for art lovers exploring northeast Iowa, pairing gallery-going with a community-minded cultural hub. Expect an intimate museum experience: rotating exhibitions, a focus on regional creativity, and opportunities to connect with the city’s artistic life beyond the walls. It’s the kind of place where you can look closely, linger without crowds, and leave with a clearer sense of Iowa’s visual culture—especially when you time your visit with a special show or program.",
+      "content_description": "**Waterloo Center for the Arts** offers a satisfying, close-up museum visit in downtown Waterloo—ideal for travelers who love discovering local perspectives alongside broader art conversations. While it doesn’t present itself as a mega-institution, its strength is the ability to deliver **well-paced galleries** and **changing exhibitions** that keep repeat visits fresh. For art enthusiasts, that means you’re often encountering new work, contemporary voices, and regionally grounded themes that help map the cultural character of northeast Iowa. Think of it as a museum where the pleasure comes from *looking closely* and watching how curators build narratives through rotating shows and community-connected programming.\n\nAs an art-museum-and-arts-center hybrid, the experience extends beyond traditional gallery viewing. You’ll typically find a strong emphasis on **education and making**—the kind of environment where studios, classes, and workshops sharpen the sense that art is a lived practice, not just a finished product on a wall. Architecturally, the appeal is often in the museum’s **functional, visitor-friendly layout**: easy navigation, comfortable pacing, and a focus on access over spectacle.\n\nPlan to give yourself time to browse exhibitions, then check the schedule for talks, openings, or hands-on programs that animate the galleries. For travelers building an art itinerary through Iowa, **Waterloo Center for the Arts** works best as a focused cultural pause—an engaging encounter with the region’s creative energy and an inviting space to slow down and look.",
+      "content_highlights": [
+        "Rotating exhibitions that encourage repeat visits and spotlight diverse themes",
+        "A community-centered museum experience with an emphasis on access and education",
+        "Studio classes and creative programs that connect viewing with art-making",
+        "Manageable, uncrowded galleries ideal for close looking and lingering",
+        "A strong stop for understanding regional Iowa art and cultural storytelling"
+      ],
+      "content_generated_at": "2026-01-18T01:03:08Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-cedar-rapids-african-american-museum-of-iowa",
@@ -649,7 +1293,7 @@
       "place_id": null,
       "address_source": "museums_csv",
       "address_last_verified": "2026-01-16",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -662,7 +1306,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -685,10 +1329,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Cedar Rapids; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:38:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "3198622101"
+      "phone": "3198622101",
+      "is_scoreable": false,
+      "content_summary": "The African American Museum of Iowa is a vibrant cultural hub dedicated to preserving and celebrating the history and contributions of African Americans in Iowa. Its unique focus on regional narratives, alongside interactive exhibits, makes it a key destination for anyone looking to deepen their understanding of the diverse tapestry of American history.",
+      "content_description": "**The African American Museum of Iowa** stands as a beacon of cultural heritage, strategically located in Cedar Rapids. This one-of-a-kind museum is dedicated to preserving the rich history and influence of African Americans in Iowa, showcasing stories that have often been overlooked in traditional narratives. Visitors can explore a dynamic collection of artifacts, photographs, and personal stories that illuminate the struggles and triumphs of African Americans in the state, making it an essential stop for those seeking to understand Iowa's diverse history. The museum presents the impact of these communities through a variety of engaging exhibits, highlighting figures who have made significant contributions across various fields, from education to the arts and civil rights. This focus on local history not only personalizes the experience but also fosters a sense of connection for visitors from all backgrounds.  \n\nAs you walk through the museum’s thoughtfully designed galleries, you will encounter *interactive displays* and *educational programs* that resonate with people of all ages. The welcoming atmosphere encourages dialogue and reflection, making it more than just a visit—it's an experience that invites visitors to engage with history actively. The museum also features an assortment of programs, lectures, and events that highlight current issues facing African American communities, ensuring that the conversation continues and grows. Each corner of the museum serves as a testament to resilience and innovation, making your visit both enlightening and inspiring. Don’t miss the chance to learn and connect at this essential cultural institution of **Iowa**.",
+      "content_highlights": [
+        "Interactive exhibits that engage visitors of all ages",
+        "Focus on local African American history and contributions",
+        "Educational programs and community events",
+        "Diverse collections including artifacts and personal stories",
+        "Prominent figures in civil rights and cultural history"
+      ],
+      "content_generated_at": "2026-01-18T03:38:32Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-cedar-rapids-national-czech-slovak-museum-and-library",
@@ -708,7 +1365,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -721,7 +1378,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -741,10 +1398,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Cedar Rapids; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:38:40Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3193628500"
+      "phone": "3193628500",
+      "is_scoreable": false,
+      "content_summary": "The National Czech & Slovak Museum and Library offers a captivating exploration of Czech and Slovak heritage through its rich collections and engaging exhibits that showcase the contributions of these cultures in America. It's a must-visit destination for history enthusiasts and anyone interested in the vibrant stories of the Czech and Slovak people.",
+      "content_description": "**The National Czech & Slovak Museum and Library** is a hidden gem located in Cedar Rapids, Iowa, that provides a unique glimpse into the rich tapestry of Czech and Slovak heritage. Established to preserve the stories and histories of the Czech and Slovak communities in America, this museum serves as both a cultural hub and a repository of invaluable artifacts. Visitors are often captivated by the thoughtful exhibitions that explore traditional customs, immigrant experiences, and the profound impact of these cultures on American society. Each exhibit is an invitation to step into the past, offering insights into age-old traditions and contemporary contributions alike.  \n\nArchitecturally, the museum itself is a striking blend of modern design and historic significance, providing an inviting space that encourages exploration and reflection. The library is particularly noteworthy, housing an extensive collection of books, periodicals, and historic documents that provide a deeper understanding of the Czech and Slovak narrative. Interactive programs and events allow visitors to engage with the culture through music, dance, and cooking demonstrations, making it not just a museum but an experience that resonates long after leaving its doors. You can uncover the compelling stories of resilience and celebration that define the Czech and Slovak spirit, making it a memorable stop on your travels.  \n\nWhether you are a history buff or simply curious about the diverse cultures that shape our world, the **National Czech & Slovak Museum and Library** will leave you with a newfound appreciation for the rich heritage and vibrant community it represents.",
+      "content_highlights": [
+        "Extensive collection of Czech and Slovak artifacts",
+        "Interactive exhibits showcasing immigrant experiences",
+        "Cultural programs including music and culinary demonstrations",
+        "Research library with historic documents and literature",
+        "Stunning modern architectural design"
+      ],
+      "content_generated_at": "2026-01-18T03:38:40Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-davenport-figge-art-museum",
@@ -764,7 +1434,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -772,38 +1442,52 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 1,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": null,
       "modern_contemporary_strength": null,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia describes the Figge as having an encyclopedic collection and serving as the major art museum for the eastern Iowa and western Illinois region, supporting a strong (but not flagship) collection tier and regional reputation. No specific evidence is provided about Impressionist or Modern/Contemporary holdings. Its long institutional history and role as an educational/collections hub imply a generally strong historical/interpretive context.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://figgeartmuseum.org/Home.aspx",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Davenport; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Access forbidden (403) for http://figgeartmuseum.org/Home.aspx; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T01:03:49Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5633267804"
+      "phone": "5633267804",
+      "is_scoreable": true,
+      "content_summary": "Set on the Mississippi Riverfront, Davenport’s Figge Art Museum pairs ambitious collections with a striking piece of contemporary architecture. It’s a regional powerhouse for American art, with standout holdings in Haitian and Mexican modernism and a deep commitment to Midwestern artists. Light-filled galleries, thoughtful exhibitions, and river views make the Figge feel both intimate and world-aware—an essential stop for art lovers traveling through Iowa’s Quad Cities.",
+      "content_description": "**Figge Art Museum** is one of the Midwest’s most rewarding surprises: a riverfront art destination in Davenport that combines serious collecting with an easy, traveler-friendly scale. The museum is especially strong in **American art**, from 19th- and 20th-century painting and works on paper to rotating exhibitions that place regional stories in a broader national context. Art enthusiasts will also appreciate the Figge’s notable emphasis on global modernism—particularly **Haitian art** and **Mexican modern and contemporary work**—which gives the galleries a distinctive voice compared with many regional museums.\n\nArchitecturally, the Figge is a visit in itself. Designed by **David Chipperfield**, the building’s **glass-forward façade** and crisp modern lines create a calm, luminous setting where daylight and river scenery become part of the experience. Inside, the galleries read as clean, spacious “white boxes” that suit everything from *modernism* to contemporary installations, while sightlines and open circulation keep the visit feeling relaxed rather than overwhelming.\n\nFor visitors, the Figge offers a satisfying rhythm: begin with collection highlights, then follow the museum’s changing exhibitions for discoveries you didn’t expect to find in Iowa. Between galleries, pause for Mississippi views and enjoy the sense of a museum that’s both locally rooted and globally curious—ideal for art lovers planning a dedicated museum stop or a cultural interlude on a Quad Cities itinerary.",
+      "content_highlights": [
+        "David Chipperfield–designed riverfront building with a luminous glass façade and modernist interior galleries",
+        "Strong American art holdings, spanning 19th- and 20th-century painting and works on paper",
+        "Notable collection strengths in Haitian art, offering a rare focus in a Midwestern museum",
+        "Mexican modern and contemporary works that broaden the museum’s narrative beyond regional collecting",
+        "Rotating exhibitions that mix collection gems with contemporary programming—good reason to return"
+      ],
+      "content_generated_at": "2026-01-18T01:03:49Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-iowa-city-university-of-iowa-museum-of-art",
@@ -823,7 +1507,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -831,12 +1515,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -845,23 +1529,37 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary appears to describe Iowa State University rather than the University of Iowa Museum of Art, so there is no direct evidence about the museum's permanent collections or interpretive approach. Given the name and type (a university art museum in Iowa City), it is reasonable to infer a primarily local reputation and a moderate-sized academic collection, but specific strengths (Impressionist or Modern/Contemporary) cannot be determined from the evidence.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://uima.uiowa.edu",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Iowa City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://uima.uiowa.edu; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3193351727"
+      "phone": "3193351727",
+      "is_scoreable": true,
+      "content_summary": "The University of Iowa Museum of Art in Iowa City rewards art lovers with a campus-rooted museum experience that feels both scholarly and approachable. Expect thoughtfully curated galleries that balance teaching-museum clarity with real visual punch, offering a strong sense of how art is studied, preserved, and enjoyed. It’s an ideal stop for travelers who like to look slowly: intimate viewing spaces, rotating exhibitions, and an emphasis on close looking make it feel like a museum designed for curious, serious visitors rather than quick crowds.",
+      "content_description": "**The University of Iowa Museum of Art** is a quintessential university museum: intellectually ambitious, visitor-friendly, and shaped by the rhythms of research, teaching, and discovery. For travelers in Iowa City, it offers the pleasure of seeing art presented with the kind of interpretive care you expect from an academic setting—clear labels, purposeful juxtapositions, and exhibitions that often connect objects to bigger questions about culture, identity, and visual form. The result is a museum visit that feels both contemplative and fresh, especially for repeat visitors who enjoy returning for rotating shows.\n\nCollection displays typically emphasize **depth over spectacle**, giving you time with works on paper, painting, sculpture, and photography in galleries scaled for close looking. As with many strong campus museums, the programming tends to highlight *modern and contemporary* conversations alongside historical foundations, using thematic installations to make connections across time and media. Expect a mix of permanent-collection presentations and changing exhibitions that can introduce emerging artists or spotlight focused, research-driven topics.\n\nArchitecturally, the experience is defined by **clean, gallery-forward spaces** designed to keep attention on artworks—good lighting, quiet corners, and a pace that encourages slow viewing. Plan your visit like an art lover: check what’s on view, give yourself time for the special exhibition galleries, and treat the museum as part of a larger cultural day in Iowa City—especially rewarding if you pair it with campus architecture and nearby cafés for post-gallery conversation.",
+      "content_highlights": [
+        "A visitor-friendly university-museum atmosphere with strong interpretation and a “close looking” pace",
+        "Rotating exhibitions that reward repeat visits and often feel research-driven and timely",
+        "Galleries suited to intimate encounters with drawing, prints, photography, and small-to-mid scale works",
+        "A balanced mix of historical context and *modern/contemporary* perspectives typical of teaching museums",
+        "A cultural anchor in Iowa City—easy to combine with campus walks, readings, and café stops for an art-focused day"
+      ],
+      "content_generated_at": "2026-01-18T01:04:02Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-ia-spencer-arts-on-grand",
@@ -894,7 +1592,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -913,9 +1611,11 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Spencer; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-17T22:59:21Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T03:39:17Z"
 }

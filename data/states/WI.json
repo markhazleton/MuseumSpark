@@ -7,21 +7,21 @@
       "museum_id": "usa-wi-unknown-beloit-historical-society",
       "country": "USA",
       "state_province": "Wisconsin",
-      "city": null,
+      "city": "Beloit",
       "museum_name": "Beloit Historical Society",
       "alternate_names": null,
       "website": "http://www.beloithistoricalsociety.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "845 Hackett St, Beloit, WI 53511, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 42.50696,
-      "longitude": -89.05141,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "postal_code": "53511",
+      "latitude": 42.5067056,
+      "longitude": -89.0505359,
+      "place_id": "ChIJ4cxr9gGhCIgRfcm8nsl2rp0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -34,7 +34,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -49,14 +49,134 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:14:34Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
-      "city_tier": 2
+      "city_tier": 2,
+      "phone": "(608) 365-7835",
+      "website_google": "http://www.beloithistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1900"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 4:00 PM",
+          "Wednesday: 12:00 – 7:00 PM",
+          "Thursday: 12:00 – 4:00 PM",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 5,
+      "google_reviews_count": 6,
+      "google_reviews": [
+        {
+          "author_name": "Andrew Herbrand",
+          "author_url": "https://www.google.com/maps/contrib/100678018058261745263/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI37wIOzr0zAoWkVjqFB7G26EoQxt-YjWGvw8OK6NWne6D5CvcS=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "It needs their south beloit.",
+          "time": 1755095111,
+          "translated": false
+        },
+        {
+          "author_name": "James Scoot",
+          "author_url": "https://www.google.com/maps/contrib/114372989506711597963/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLdknPygKQY3GX-gdPyYg1ZeBsJukp-wURcVP7f_1NEVnmy=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "It was so fun",
+          "time": 1497267505,
+          "translated": false
+        },
+        {
+          "author_name": "C T",
+          "author_url": "https://www.google.com/maps/contrib/103648174074372696150/reviews",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXAg0fofEQiaejJv0J0Yj0IoEaH3YHNTg8M_gm-lZE4ZrhArvhlhw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "",
+          "time": 1692464815,
+          "translated": false
+        },
+        {
+          "author_name": "Adrian Enyeart",
+          "author_url": "https://www.google.com/maps/contrib/112281639874533248238/reviews",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_Y45NBRaIwygpwDTAOAkskJEDHjtKeM_cbEdGvNPShq7DRCD_=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "",
+          "time": 1614013160,
+          "translated": false
+        },
+        {
+          "author_name": "Angelia Isabell",
+          "author_url": "https://www.google.com/maps/contrib/115138561733247789670/reviews",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWs18Rt8q4K0g-6pxDoPN90TRu9SriaCYG0Xt15y81QzxrMYeM_=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "",
+          "time": 1604438927,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Discover the rich tapestry of Beloit's history at the **Beloit Historical Society**, where the past comes alive through engaging exhibits and local artifacts. This museum is a treasure trove for history buffs and curious travelers alike, providing a unique glimpse into the cultural heritage and milestones that shaped the Beloit community. Don't miss out on this immersive experience that brings history right to your fingertips.",
+      "content_description": "**Beloit Historical Society** is more than just a museum; it is a gateway to the vibrant history of Beloit and its surroundings. Established to preserve the rich narratives of the region, this museum showcases an array of *artifacts*, photographs, and documents that narrate the tales of the community from its beginnings to modern times. Visitors can explore decades of history, from the city’s founding in the early 19th century to the industrial boom that transformed its landscape. Each exhibit is carefully curated, providing insights into different aspects of life in Beloit, including the local industries, social movements, and cultural traditions that shaped its identity. These tangible pieces of history captivate both the young and the seasoned historian alike. If you’re lucky, you might even engage in one of their interactive programs or workshops, which offer a hands-on approach to learning about local history.    With its inviting atmosphere and knowledgeable staff, the **Beloit Historical Society** transforms a traditional museum visit into a communal experience of discovery.   The museum's architecture itself is a nod to the past, housed in a charming building that reflects the historical styling characteristic of the area. Each room echoes the voices of those who came before us, making it a perfect spot for contemplation and reflection on what it means to be part of this community. A visit to the **Beloit Historical Society** is not just about observing history; it’s about connecting with it, feeling its pulse, and understanding how it influences the present.  ",
+      "content_highlights": [
+        "Engaging exhibits that showcase local artifacts",
+        "Interactive programs and workshops on Beloit's history",
+        "Rich archives detailing the community's cultural heritage",
+        "Charming historic architecture that reflects the city's past",
+        "Deep connections to Beloit's founding and industrial development"
+      ],
+      "content_generated_at": "2026-01-18T05:14:34Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-captain-frederick-pabst-mansion",
@@ -76,7 +196,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "HISTORY MUSEUM",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -89,7 +209,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -109,10 +229,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:14:43Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4149310808"
+      "phone": "4149310808",
+      "is_scoreable": false,
+      "content_summary": "Discover the opulence of the Gilded Age at the **Captain Frederick Pabst Mansion** in Milwaukee, where history comes alive through its striking architecture and rich stories of beer baron Frederick Pabst. Step into a world of elegance and craftsmanship that is both immersive and inspiring.",
+      "content_description": "**Captain Frederick Pabst Mansion** stands as a remarkable testament to the grandeur of American history and architectural elegance during the late 19th century. Nestled in Milwaukee, this history museum is not only a former residence of the famous beer magnate but also a stunning showcase of *Richardsonian Romanesque* architecture. Visitors will marvel at the intricate woodwork, exquisite stained glass windows, and elaborate murals that embody the luxurious lifestyle of the Pabst family. Each room tells a story, transporting you back to a time of elegance and cultural significance in Wisconsin's history. The mansion serves as a time capsule, offering guests a glimpse into the lifestyle of one of America's most influential brewing families. You can almost hear the laughter and conversations echoing from its walls as you wander through its beautifully preserved halls. \n\nIn addition to its architectural beauty, the **Pabst Mansion** invites visitors to explore the rich tapestry of the Pabst family legacy, from their brewing empire to their philanthropic endeavors. Guided tours provide fascinating insights into Milwaukee's history and the ways these families shaped the city. The museum often hosts exhibitions, events, and educational programs that further enhance the visitor experience, making it an engaging destination for families, history enthusiasts, and architecture buffs alike. The stunning gardens that surround the mansion provide a peaceful respite and a perfect setting to contemplate the beauty and history encapsulated within these walls. Don't miss this opportunity to step back in time and experience the charm and heritage of Milwaukee’s Gilded Age.",
+      "content_highlights": [
+        "Exquisite *Richardsonian Romanesque* architecture",
+        "Intricate woodwork and elaborate murals",
+        "Historical insights into the Pabst brewing legacy",
+        "Guided tours with engaging narratives",
+        "Beautiful gardens surrounding the mansion"
+      ],
+      "content_generated_at": "2026-01-18T05:14:43Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-chazen-museum-of-art",
@@ -132,7 +265,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -140,37 +273,51 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a sizable university art museum with over 24,000 objects, suggesting a broadly representative collection but without specific mention of Impressionist strengths, so Impressionism is scored as minor. Its scale and typical university-museum scope support moderate modern/contemporary representation and mid-level historical context, while being the second-largest art museum in Wisconsin suggests primarily regional reputation and a moderate overall collection tier.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.chazen.wisc.edu",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Madison' from open data; MRD: computed city_tier=2 for Madison; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:14:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "6082632246"
+      "phone": "6082632246",
+      "is_scoreable": true,
+      "content_summary": "Set on the University of Wisconsin–Madison campus, the Chazen Museum of Art rewards art lovers with a thoughtfully curated, wide-ranging collection in a bright, modern setting. Expect an engaging mix of European and American painting, prints and drawings, photography, and decorative arts—presented with the intimacy of a regional museum and the ambition of a university collection. It’s an ideal stop for travelers who want high-quality art, strong interpretation, and an easy, unrushed museum visit in the heart of Madison.",
+      "content_description": "**The Chazen Museum of Art** is Madison’s essential museum stop for travelers who love to see big ideas in a manageable, beautifully designed space. As the art museum of the University of Wisconsin–Madison, it balances scholarly depth with an inviting, visitor-friendly approach—making it easy to move from close-looking to broader art-historical context without feeling overwhelmed.\n\nInside, you’ll encounter a **well-rounded, cross-medium collection** that plays to the strengths of a university museum: strong holdings in **prints and drawings**, **photography**, and **decorative arts**, alongside painting and sculpture that trace key shifts in European and American art. Rotating installations keep the experience fresh, and the curatorial emphasis on technique and process makes this a particularly rewarding visit for anyone interested in how artworks are made—etching versus lithography, *Impressionist* brushwork versus academic finish, or the expressive possibilities of the photographic image.\n\nArchitecturally, the museum’s **contemporary, light-filled galleries** create a calm rhythm for viewing, with clean lines and generous wall space that let individual works breathe. For visitors, the pleasures are practical as well as aesthetic: a campus location that’s easy to pair with lakeside walks and Madison dining, galleries that encourage repeat visits, and a program of changing displays that gives art enthusiasts a reason to return to see new acquisitions, focused thematic shows, and fresh rotations from the permanent collection.",
+      "content_highlights": [
+        "University-museum strengths: deep, study-friendly displays of prints, drawings, and works on paper",
+        "Photography presentations that reward close looking at technique, tone, and historical context",
+        "Decorative arts and design objects that expand the visit beyond painting into materials and craftsmanship",
+        "Bright, contemporary galleries with an unhurried viewing experience—ideal for slow, attentive looking",
+        "Rotating exhibitions and collection rehangs that make repeat visits worthwhile for local and traveling art lovers"
+      ],
+      "content_generated_at": "2026-01-18T05:14:56Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-chippewa-valley-museum",
@@ -190,7 +337,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORY MUSEUM",
+      "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -203,7 +350,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -225,29 +372,42 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Eau Claire' from open data; MRD: computed city_tier=2 for Eau Claire; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:15:08Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "7158347871"
+      "phone": "7158347871",
+      "is_scoreable": false,
+      "content_summary": "Nestled in the heart of Eau Claire, the **Chippewa Valley Museum** offers a captivating exploration of the region's rich heritage. This history museum stands out for its unique focus on local stories and artifacts that reflect the lives and experiences of the Chippewa Valley community. Discover the tapestry of cultures, industries, and innovations that have shaped this beautiful area, making it a must-visit for history enthusiasts and curious travelers alike.",
+      "content_description": "**Chippewa Valley Museum** invites visitors on an engaging journey through the history of this vibrant region. With a focus on local culture and community, the museum showcases a variety of exhibits that highlight the area's unique stories, from its early indigenous inhabitants to the rise of local industries. The thoughtfully curated collections illustrate the evolution of the Chippewa Valley, offering a window into the lives of those who have called this place home. Expect to see artifacts ranging from traditional Native American crafts to innovations from the lumbering era, all richly contextualized to provide a full picture of the regional identity.  \n\nThe museum is housed in a beautifully renovated building that itself is a piece of history, enhancing the visitor experience with its *architectural charm*. As you wander through the exhibits, you'll find interactive displays that encourage engagement and learning for all ages. Special events and educational programs further enrich your visit, allowing you to connect with local historians and learn more about specific aspects of the Chippewa Valley's past. Whether you are a history buff or family seeking educational fun, the **Chippewa Valley Museum** presents an opportunity to dive deep into the legacy of this enchanting region.*  \n\nYour visit wouldn't be complete without exploring the museum's outdoor exhibits, including historic structures and scenic walking paths that merge history with nature. Each corner of the museum unfolds a new chapter in the narrative of the Chippewa Valley, revealing the stories that have shaped this community and ensuring that each visitor leaves with a greater appreciation for its heritage.",
+      "content_highlights": [
+        "Extensive exhibits on local history and culture",
+        "Artifacts from the Chippewa Valley's indigenous communities",
+        "Unique collections from the lumbering industry era",
+        "Interactive displays suitable for all ages",
+        "Beautifully preserved historic building and outdoor exhibits"
+      ],
+      "content_generated_at": "2026-01-18T05:15:08Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-civil-war-museum",
       "country": "USA",
       "state_province": "Wisconsin",
-      "city": "Kentucky",
+      "city": "Kenosha",
       "museum_name": "Civil War Museum",
       "alternate_names": null,
       "website": "http://www.kenosha.org/wp-civilwar",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "5400 1st Ave, Kenosha, WI 53140, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53140",
+      "latitude": 42.5872581,
+      "longitude": -87.8129986,
+      "place_id": "ChIJrWWs_PReBYgRR7E-UIzCmis",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -261,7 +421,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -277,14 +437,180 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.kenosha.org/wp-civilwar"
+        "http://www.kenosha.org/wp-civilwar",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kentucky' from open data; MRD: computed city_tier=3 for Kentucky; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.kenosha.org/wp-civilwar; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:15:18Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "phone": "(262) 653-4141",
+      "website_google": "https://museums.kenosha.org/civil-war-museum",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 684,
+      "google_reviews": [
+        {
+          "author_name": "Cindy Jarzembinski",
+          "author_url": "https://www.google.com/maps/contrib/112745587707982678225/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLf_Dkqui_c-JR1sPdWfFPTdnFy1QKDOH1G6P6AEIQhlc76JA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I am a re-enactor.  The museum was free today and they had merchants selling xmas merchandise.  Fun to teach people about the time period. Loved the way it was presented.  Made me think of the streets of old milwaukee at the museum downtown.  The coolest thing is to sit down next to passengers on a train and they tell you who they are and about their life. Right on Lake Michigan so very pretty.",
+          "time": 1765150936,
+          "translated": false
+        },
+        {
+          "author_name": "CJ Carver (Sage)",
+          "author_url": "https://www.google.com/maps/contrib/101745617440739853294/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLDVCjuBHYtMuxMDOGybadWReD_aObz9-W-FwllgIKEjuHX1g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "It's a good museum with plenty to see for free as well as a paid exhibit. During warmer months, there's a patio open so you can experience the whole of the view without windows in the way.\n\nIf you're visiting in broad daylight..........I know it's a bit out of the way to do this but trust me: walk to the building entrance on 2nd Avenue. That's the side without the parking lot. Go through the entrance and immediately go to the dark exhibit on the left. Yes it looks really really dark and kind of scary because you can't see much yet. As your eyes slowly adjust to the darkness, more of the details of the exhibit are revealed bit by bit and it makes the whole thing so much more impactful.",
+          "time": 1764270926,
+          "translated": false
+        },
+        {
+          "author_name": "Jean-Kim-Bud Kaczmarek",
+          "author_url": "https://www.google.com/maps/contrib/105469384541187194950/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9FmqkLdcFzm8PZ3YK8XN7rf3_Hlo7df4oHtqbDdCiqsJRTl4=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "A mesmorizing experience. Full of endless information, wonderful visual effects. Spent four hours but didn't finish & left with a firm understanding & joy that I'll be back to finish; be it one or two more times. The best $10 I laid out.",
+          "time": 1763675490,
+          "translated": false
+        },
+        {
+          "author_name": "Danny",
+          "author_url": "https://www.google.com/maps/contrib/116984904634226578343/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYTaekhCRPZp3yeF4B9rW4lXFMVO8kFbU7FePYi7LI_ndyGz5Trg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This museum focuses on Union Soldiers from this region, and tells their story with life-size dioramas, talking mannequins, and a well made short film - Seeing the Elephant.",
+          "time": 1758921547,
+          "translated": false
+        },
+        {
+          "author_name": "Luann LaPointe",
+          "author_url": "https://www.google.com/maps/contrib/108791481861460152170/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUa7CcPIrbE15wHsa9Ifb942YX1j4JjBrEQ94I92J25TfjbhTTo=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A great place to learn about history. The displays are very interesting and well put together and the Docents are very knowledgeable and friendly and encourage questions. It’s very pretty around Christmas time as well.",
+          "time": 1714428899,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "A visit to the **Civil War Museum** in Kenosha offers a captivating journey through one of America's most tumultuous eras. With its engaging exhibits and unique storytelling, this museum brings history to life, making it a must-see for both history buffs and casual visitors alike.",
+      "content_description": "**The Civil War Museum** is a hidden gem that invites visitors to delve into the intricate stories of the American Civil War. Nestled in the picturesque town of Kenosha, Wisconsin, this museum stands out not only for its rich collections but also for its dedication to the personal narratives that shaped the war. The museum focuses on the impact of the Civil War on the people of Wisconsin, showcasing artifacts, photographs, and documents that reflect their sacrifices and contributions during this pivotal time in history. Visitors will discover how local soldiers engaged in battles far from home and how the war influenced their families and communities back in Wisconsin. The emphasis on personal narratives offers a deeply human connection to historical events, engaging visitors on an emotional level. \n\nThe architectural design of **The Civil War Museum** complements its exhibits beautifully. Its contemporary yet historically respectful space allows for an immersive experience, with interactive displays that encourage hands-on learning. As guests wander through the exhibits, they are met with pensive moments of reflection, vibrant storytelling techniques, and thought-provoking installations like life-sized battle dioramas and multimedia presentations. The visitor experience is further enriched through special events and lectures that connect the Civil War's themes to contemporary society, ensuring that every visit to this remarkable museum is unique. Whether you’re a seasoned historian or simply looking for an enlightening day out, **The Civil War Museum** offers a powerful journey into the past, making it a must-visit destination for anyone traveling through Kenosha.",
+      "content_highlights": [
+        "Interactive exhibits featuring personal stories of Wisconsin soldiers",
+        "Vibrant battle dioramas illustrating significant Civil War events",
+        "Special events and lectures connecting historical themes to contemporary society",
+        "A vast collection of artifacts and original documents from the Civil War era",
+        "Well-designed architectural layout providing an immersive visitor experience"
+      ],
+      "content_generated_at": "2026-01-18T05:15:18Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-dinosaur-discovery-museum",
@@ -304,7 +630,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": "Science",
       "topics": null,
       "audience_focus": null,
@@ -317,7 +643,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -339,29 +665,42 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kenosha' from open data; MRD: computed city_tier=2 for Kenosha; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.kenosha.org/wp-dinosaur; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:15:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2626534450"
+      "phone": "2626534450",
+      "is_scoreable": false,
+      "content_summary": "The Dinosaur Discovery Museum in Kenosha is a one-of-a-kind destination for anyone captivated by the prehistoric world. Home to an impressive collection of dinosaur fossils and engaging interactive exhibits, this museum allows visitors to step back in time and explore the lives of these magnificent creatures.",
+      "content_description": "**Dinosaur Discovery Museum** is an extraordinary gateway into the ancient past, bringing the age of dinosaurs to life in a way that captivates both young minds and adult enthusiasts alike. Nestled in the heart of Kenosha, this museum boasts an impressive array of fossil specimens, including *dinosaur skeletons* and *reconstructed models* that span millions of years of history, allowing guests to witness the spectacular evolution of these monumental creatures firsthand. The museum's design combines modern architectural elements with the natural ambiance, creating a welcoming environment that invites exploration and curiosity. Visitors can expect to see everything from the ferocious *Tyrannosaurus rex* to the gentle *Brachiosaurus*, making for a visually stunning and educational experience.  With hands-on interactive exhibits, children and adults alike will have the chance to explore various aspects of paleontology, transport themselves to the era of the dinosaurs, and even participate in mock fossil digs.  By engaging visitors through immersive experiences, **Dinosaur Discovery Museum** elevates learning beyond conventional methods, making education fun and accessible to all.  Whether you're a dedicated dinosaur aficionado or simply looking for a unique family outing, this museum promises an unforgettable journey through Earth’s prehistoric past.  Plan your visit today and uncover the mysteries that lie within the walls of the **Dinosaur Discovery Museum**.",
+      "content_highlights": [
+        "Extensive collection of dinosaur fossils",
+        "Interactive exhibits for hands-on learning",
+        "Life-sized dinosaur models",
+        "Child-friendly fossil excavation area",
+        "Educational programs and events for all ages"
+      ],
+      "content_generated_at": "2026-01-18T05:15:26Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-history-center-of-washington-county",
       "country": "USA",
       "state_province": "Wisconsin",
-      "city": null,
+      "city": "West Bend",
       "museum_name": "History Center of Washington County",
       "alternate_names": null,
       "website": "https://www.historyisfun.com/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "320 S 5th Ave, West Bend, WI 53095, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53095",
+      "latitude": 43.4197838,
+      "longitude": -88.18275779999999,
+      "place_id": "ChIJo6JyD25fBIgR-ZX4Cokt2yI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -375,7 +714,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -391,14 +730,94 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.historyisfun.com"
+        "https://www.historyisfun.com",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing https://www.historyisfun.com: Network error for https://www.historyisfun.com: <urlopen error [WinError 10060] A connection attempt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:15:37Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "website_google": "http://www.thetowerheritagecenter.org/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.7,
+      "google_reviews_count": 94,
+      "google_reviews": [
+        {
+          "author_name": "Markocon",
+          "author_url": "https://www.google.com/maps/contrib/106289696773517959381/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWbvwXz8Jbiunu_oHcccqTO0Ucb-31fPALviQrTk_WB3mJQv15=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "This is a local treasure of information and architectural beauty. Everyone should stop in to walk the lovely grounds, visit the outdoor memorials, and tour the Washington County Jail and Museum. The center also has a beautiful courthouse that can be rented for weddings and celebrations and an amazing dollhouse and native american interactive area where kids can touch and see things to make their experience more real.\n\nI am a fan of the previous executive director, but I am not certain of the new director's approachability or devotion to the organization. Time will tell. Go check it out for yourself, and don't miss the Memorial Day and Veteran's Day celebrations--they are heart-warming and wonderful to witness.",
+          "time": 1725778445,
+          "translated": false
+        },
+        {
+          "author_name": "Kathy Groleau",
+          "author_url": "https://www.google.com/maps/contrib/106170618562165419348/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK65GFI4rs56c1xqltFqNF2KciAUob-colWw31sJxdaC4yn8A=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Absolutely wonderful museum.  Historical items presented in each room. Loved learning about the area and its ancestors.",
+          "time": 1572111262,
+          "translated": false
+        },
+        {
+          "author_name": "Sandy Leitheiser",
+          "author_url": "https://www.google.com/maps/contrib/114676522087509205092/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKSOAEITRKsq2Tar5O32dXI_TbbDSU1ZzV1q9Yyut6LbkQJ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "We rented the Tower Heritage Center for my daughter’s bridal shower.  It was the perfect place to host the event. Steve was so accommodating and helpful. He went above and beyond to make our day memorable! The venue is gorgeous which made decorating a breeze.  Many of our guests had never been to the space and were thoroughly impressed with its beauty and history.  I highly recommend checking it out if you need a space for a social gathering.",
+          "time": 1682957501,
+          "translated": false
+        },
+        {
+          "author_name": "Brandy Lane",
+          "author_url": "https://www.google.com/maps/contrib/105405964069820724948/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL6C4DlIbJTGBYj5kcBkS0Qx3qnOEZVGzB6HOGISfaM93H6qQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Neat to see, worth the short tour. Tour guide was very knowledgeable.",
+          "time": 1751202867,
+          "translated": false
+        },
+        {
+          "author_name": "Paul Cellphone",
+          "author_url": "https://www.google.com/maps/contrib/106705964083899784073/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIqs5Pt_nVZTXcj9rBS2Ye8tWwg5fs6HpjP9JEieiJ_33LhaQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "Nice, small museum about West Bend and surrounding Washington county. Elevator and handicapped parking in back.",
+          "time": 1571955997,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The History Center of Washington County is a must-visit for anyone intrigued by local heritage and community stories. It offers a rich experience where visitors can explore unique artifacts that chronicle the evolution of West Bend and its surrounding areas, making it a hidden gem for history enthusiasts.",
+      "content_description": "**The History Center of Washington County** invites visitors to embark on a journey through time, showcasing the vibrant tapestry of the region's past. Housed in a charming historic building, the museum offers a rare glimpse into the lives of the communities that shaped this area. Each exhibit is thoughtfully curated to highlight the significant events, figures, and traditions that have influenced local culture, making history resonate with modern audiences. You’ll find a variety of artifacts, photographs, and documents, all telling the rich story of West Bend’s development from a budding settlement to a thriving community. The center’s intimate scale allows for personal connections to the exhibits, drawing visitors into narratives that might otherwise remain untold.  \n\nAs you wander through the **History Center**, you'll encounter a warm and inviting atmosphere, enhanced by knowledgeable staff eager to share stories and insights. Engaging programs and interactive experiences bring heritage to life, providing a chance to participate in events and workshops that connect history with the present. The museum also emphasizes local history with rotating exhibits that spotlight specific themes, ensuring that there’s always something new to discover. Whether you're a history buff or simply curious, the **History Center of Washington County** promises a memorable experience that adds depth to your understanding of Wisconsin's past.",
+      "content_highlights": [
+        "Extensive collections of local artifacts and photographs",
+        "Interactive exhibits that engage visitors of all ages",
+        "Regular community events and heritage workshops",
+        "Special rotating exhibits focused on thematic historical topics",
+        "Warm and knowledgeable staff offering personalized narratives"
+      ],
+      "content_generated_at": "2026-01-18T05:15:37Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-history-museum-at-the-castle",
@@ -431,7 +850,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -452,9 +871,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Appleton' from open data; MRD: computed city_tier=2 for Appleton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:15:45Z",
       "notes": null,
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": false,
+      "content_summary": "The **History Museum at the Castle** in Appleton, Wisconsin, is a hidden gem that transports visitors through time, highlighting the unique stories and heritage of the Fox Valley region. With its captivating exhibits and charming castle-like architecture, this museum offers a delightful and educational escape that is well worth a visit.",
+      "content_description": "**History Museum at the Castle** presents a unique blend of historical storytelling and immersive experiences. Housed in a building resembling a castle, this museum's striking architecture sets the tone for an adventure through local history. Visitors are greeted with a series of engaging exhibits that explore the rich tapestry of the Fox Valley, encompassing Native American cultures, European settlement, and the region's industrial past. The museum's design incorporates interactive elements that enhance understanding of the area's heritage, making it perfect for families and history buffs alike. Additionally, the museum frequently hosts special events and programs that bring history to life, from reenactments to workshops. In every exhibit, you will sense the commitment to preserving and sharing local stories, creating connections with visitors of all ages.  Embrace the community spirit and learn about the remarkable people who shaped Appleton into what it is today. Whether you’re fascinated by the memorabilia, the *artifacts*, or the educational programs, you’ll leave with a deeper appreciation for the region's history and its people. **History Museum at the Castle** isn’t just a museum; it’s a portal to the past, inviting you to explore, engage, and reflect on the powerful narrative of Appleton’s heritage.",
+      "content_highlights": [
+        "Interactive exhibits on local history",
+        "Architecture resembling a castle",
+        "Insights into Native American cultures",
+        "Focus on Fox Valley's industrial past",
+        "Special events and educational programs"
+      ],
+      "content_generated_at": "2026-01-18T05:15:45Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-jewish-museum-milwaukee",
@@ -474,7 +906,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -487,7 +919,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -507,9 +939,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:15:54Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
-      "city_tier": 1
+      "city_tier": 1,
+      "is_scoreable": false,
+      "content_summary": "The Jewish Museum Milwaukee stands as a beacon of history and culture in Wisconsin, inviting visitors to explore the rich heritage and contributions of Jewish communities in the region. Its engaging exhibits and community-focused programs make it a vital space for education and reflection, truly worth a visit.",
+      "content_description": "**Jewish Museum Milwaukee** offers a captivating journey into the history and culture of the Jewish community in Milwaukee and beyond. Established to preserve and share the stories of Jewish immigrants who enriched the local tapestry, this **historic preservation museum** is not just a collection of artifacts, but a living testament to resilience and identity. With its thoughtfully curated exhibits, visitors are invited to engage with narratives that span generations, offering insights into traditions, struggles, and achievements that have shaped the community.   \n\nOne of the highlights of the museum is its *permanent collection,* featuring historical photographs, documents, and art that showcase the Jewish experience in Milwaukee. The museum also hosts rotating exhibits that delve into various aspects of Jewish culture and history, ensuring there’s always something new to discover. Architecturally, the museum is housed in an intimate, welcoming setting that encourages exploration and reflection. Furthermore, engaging educational programs, talks, and community events foster a sense of belonging and partnership within the city. A visit to **Jewish Museum Milwaukee** is not merely a step into the past; it’s an invitation to participate in ongoing conversations about heritage, identity, and community resilience.",
+      "content_highlights": [
+        "Engaging permanent collection of historical photographs and documents",
+        "Rotating exhibits featuring diverse aspects of Jewish culture",
+        "Community-focused educational programs and events",
+        "Intimate architectural setting enhancing visitor experience",
+        "Interactive narratives celebrating local Jewish contributions"
+      ],
+      "content_generated_at": "2026-01-18T05:15:54Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-kenosha-public-museum",
@@ -529,7 +974,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -542,7 +987,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 2,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -564,30 +1009,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kenosha' from open data; MRD: computed city_tier=2 for Kenosha; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.kenosha.org/wp-museum",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:16:02Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2626534140"
+      "phone": "2626534140",
+      "is_scoreable": false,
+      "content_summary": "The **Kenosha Public Museum** offers a unique blend of natural history, cultural heritage, and art that captivates visitors of all ages. With its stunning lakefront location and engaging exhibits, it's a must-see destination for anyone exploring Wisconsin's vibrant museum scene.",
+      "content_description": "**Kenosha Public Museum** stands out as a beacon of history and culture on the scenic shores of Lake Michigan. This thoughtfully designed museum showcases over 50,000 artifacts that highlight the rich natural history and cultural evolution of the region. Visiting the museum, you'll find interactive exhibits that capture the essence of life in southeastern Wisconsin—from prehistoric times to contemporary art. The engaging displays offer a narrative that not only informs but also celebrates the local community's diversity and ingenuity. With a multifaceted approach to storytelling, the museum invites visitors to explore and reflect on their surroundings in a new light. \n\nArchitecturally, the **Kenosha Public Museum** impresses with its modern, eco-friendly design that complements the beautiful lakefront scenery. The spacious galleries are designed to inspire curiosity, featuring natural light that enhances the viewing experience. As you walk through the museum, you'll encounter a rotating schedule of temporary exhibitions that delve into various themes, including art from the American Crafts movement and local historicalifacts. This dynamic exhibition space ensures that every visit feels fresh and stimulating, making it a perfect destination for families, history buffs, and art lovers alike. In addition, the museum offers numerous programs and events that engage visitors further, making it a community hub where knowledge and creativity thrive.",
+      "content_highlights": [
+        "Diverse collections of local history artifacts",
+        "Interactive exhibits about regional natural history",
+        "Rotating exhibitions featuring contemporary art",
+        "Stunning lakefront views enhancing the museum experience",
+        "Educational programs and events for all ages"
+      ],
+      "content_generated_at": "2026-01-18T05:16:02Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-madison-museum-of-contemporary-art",
       "country": "USA",
       "state_province": "Wisconsin",
-      "city": null,
+      "city": "Madison",
       "museum_name": "Madison Museum of Contemporary Art",
       "alternate_names": null,
       "website": "http://www.mmoca.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "227 State St, Madison, WI 53703, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.07464,
-      "longitude": -89.38822,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "53703",
+      "latitude": 43.0744554,
+      "longitude": -89.3892675,
+      "place_id": "ChIJmSVBjDdTBogRuzGIoj4o9pM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -600,7 +1058,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -609,21 +1067,167 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about 945 Madison Avenue (the former Whitney/Met Breuer/Frick Madison building in New York) and does not describe the Madison Museum of Contemporary Art’s permanent collection or interpretive approach. With no evidence about MMoCA’s holdings, scope, or curatorial presentation, collection-strength and context scores cannot be reliably assigned.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:16:14Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "6082570158"
+      "phone": "(608) 257-0158",
+      "website_google": "https://www.mmoca.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 12:00 – 6:00 PM",
+          "Thursday: 12:00 – 9:00 PM",
+          "Friday: 12:00 – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 671,
+      "google_reviews": [
+        {
+          "author_name": "Mikah H",
+          "author_url": "https://www.google.com/maps/contrib/112038642343188864352/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJDqPuIjEqajLnwr2lXPUOHjqsrooJnogQNcC6IcKP9ELeeHw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Beautiful with engaging exhibits and glass stairs. It's free and the people are very friendly. There is paid parking nearby and the area is pretty walkable, the sidewalk is clear and salted. The bathrooms were clean and the areas seem wheelchair accessible with ramps and a elevator.",
+          "time": 1766013008,
+          "translated": false
+        },
+        {
+          "author_name": "Hilda Palermo",
+          "author_url": "https://www.google.com/maps/contrib/115297141962275166759/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyLle7kNrCLZuYcY5QWlrfTYHaMluFNCtMwqWGTQ0NhXJSPV8KPA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "⭐️⭐️⭐️⭐️⭐️\nA Hidden Gem in the Heart of Madison – MMoCA\n\nI had the chance to visit the Madison Museum of Contemporary Art (MMoCA), and it completely exceeded my expectations. The museum itself is a stunning piece of architecture—modern, sleek, and filled with light. It creates the perfect setting for the powerful and thought-provoking exhibitions inside.\n\nEach gallery offered something different, from bold installations to emotionally resonant photography and multimedia art. I was especially impressed by the museum’s commitment to showcasing diverse and emerging voices, as well as pieces that spark real reflection on social, cultural, and personal issues.\n\nThe rooftop sculpture garden is a must-see—it’s peaceful, inspiring, and gives you a beautiful view of downtown Madison. Admission is free, which makes this cultural experience accessible to everyone, and the staff was incredibly welcoming and knowledgeable.\n\nWhether you’re an art lover or just curious, MMoCA is a place that invites you to slow down, reflect, and connect with contemporary creativity in meaningful ways. I’ll definitely be returning for future exhibitions!",
+          "time": 1752377319,
+          "translated": false
+        },
+        {
+          "author_name": "Marie Higginbottom",
+          "author_url": "https://www.google.com/maps/contrib/117803669109507909264/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKOXCd7-3YQ3nb1B9Tk_sv_EWI51BO2sg87OQ8h3pu3Q_TfLZNUw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful museum with a lot of thought provoking art. Free admission with a parking garage nearby. We left a donation. There are stairs, so be aware.",
+          "time": 1754851292,
+          "translated": false
+        },
+        {
+          "author_name": "Brianna Kraft (Brianna Kraft Photography)",
+          "author_url": "https://www.google.com/maps/contrib/115406251739573994686/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUVgLndjzfZZROaCE_yb2LYn_KQSzV1khfABQB4eD0rwO0kNTBH=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I am a wedding photographer and have photographed a few weddings at the Madison Museum of Contemporary Art, most recently in September 2023. This is such a stunning venue to work at! The venue is located right on State Street so it’s easy to walk up to the Capitol or along the street for exciting photos. The glass staircase is filled with natural light and becomes an amazing backdrop for photos. The rooftop sculpture garden is a great location for an outdoor ceremony with views of the Capitol and State Street. The venue staff is excellent to work with. There were several options of areas for the wedding party to get ready, to have the reception dinner, and to have cocktail hour. I would definitely recommend booking your wedding ceremony and reception here!",
+          "time": 1708271956,
+          "translated": false
+        },
+        {
+          "author_name": "Chris Wagner",
+          "author_url": "https://www.google.com/maps/contrib/104279056312378217607/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIKq7xHMFc761hQeh3JKH1I5PblDtTyDeZlveOYfBCSmIezYg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "Very friendly staff but unfortunately everything was pretty much literally stored away because they were changing over to Art Mart. Bad luck for me but what I’ve seen online looks very cool so maybe next time.",
+          "time": 1760145990,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "Set right in the heart of downtown, the Madison Museum of Contemporary Art (MMoCA) is Madison’s go-to place for seeing what artists are making now—and how today’s ideas connect to recent art history. Expect an energizing mix of exhibitions across painting, sculpture, photography, and new media, presented in a modern setting that feels woven into the city’s street life. It’s an ideal stop for travelers who like to pair serious looking with an easy, walkable museum experience.",
+      "content_description": "In downtown Madison, **Madison Museum of Contemporary Art (MMoCA)** offers an experience designed for art lovers who want to stay close to the present tense. As a contemporary museum, its greatest strength is the *exhibition-driven* approach: galleries rotate regularly, so repeat visits feel genuinely new. You’ll typically encounter a cross-section of media—painting, sculpture, photography, and time-based work—organized to foreground current conversations in art rather than a fixed “greatest hits” timeline. For visitors, that means the museum can function like a cultural barometer of the region and beyond, spotlighting emerging practices alongside more established contemporary voices.\n\nArchitecturally, MMoCA’s appeal is how it matches contemporary art’s clarity: **clean lines, open galleries, and abundant natural light** help keep attention on material, scale, and process. The building’s downtown placement also shapes the visit—this is a museum that feels integrated with the city rather than isolated from it. Step in from the street for a focused gallery circuit, then step back out to continue exploring Madison’s cafes, bookstores, and Capitol-area walks.\n\nPlan to give yourself time to linger: contemporary installations often reward slow looking, and the museum’s changing schedule means there’s usually something that sparks conversation—whether it’s *conceptual* work, *abstraction*, or socially engaged projects. For travelers, MMoCA is a smart, adaptable stop: easy to fit into a day downtown, yet substantive enough to anchor an art-centered itinerary.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions across painting, sculpture, photography, and new media—ideal for repeat visits",
+        "Downtown Madison location that pairs naturally with a walkable day of dining, shopping, and Capitol-area exploring",
+        "Modern, light-filled gallery spaces designed to complement contemporary installation and large-scale work",
+        "Exhibition-first curatorial approach that emphasizes today’s artistic debates over a fixed permanent-display circuit",
+        "A focused, city-integrated museum visit that can be a quick cultural stop or a deeper looking session"
+      ],
+      "content_generated_at": "2026-01-18T05:16:14Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-milwaukee-art-museum",
@@ -643,7 +1247,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -651,37 +1255,51 @@
       "tickets_url": "https://www.facebook.com/milwaukeeart",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 1,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 4,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence highlights strengths in early-20th-century German Expressionism and a major Georgia O’Keeffe holding, supporting a strong Modern/Contemporary score, but it does not indicate notable Impressionist depth beyond general 19th-century European art. Its large scale (nearly 35,000 works) and being among the largest U.S. art museums suggest a strong collection tier, and its long institutional history and established departments imply generally good historical framing. Despite national press",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://mam.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:16:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4142243200"
+      "phone": "4142243200",
+      "is_scoreable": true,
+      "content_summary": "Milwaukee Art Museum is a must for art lovers who want both strong collections and a building that feels like a work of art. Set on the Lake Michigan waterfront, it pairs outstanding American art and modern masters with one of the most dramatic museum experiences in the Midwest. Come for Georgia O’Keeffe and contemporary photography, stay for the soaring architecture and ever-changing lake light that turns a visit into something cinematic.",
+      "content_description": "**Milwaukee Art Museum** is one of the Midwest’s most rewarding stops for travelers who like their museum days equal parts art pilgrimage and architectural spectacle. Its collections are especially strong in **American art**, with signature depth in works connected to Wisconsin—including a celebrated group of paintings by **Georgia O’Keeffe**—alongside robust holdings of European painting and sculpture, modern and contemporary art, and photography. The galleries reward slow looking: you can move from refined 19th-century portraiture and *Impressionist* touches to punchier 20th-century experiments and today’s evolving contemporary voices.\n\nThe museum’s architectural identity is inseparable from the experience. The lakefront campus culminates in Santiago Calatrava’s **Quadracci Pavilion**, whose winglike brise-soleil opens and closes throughout the day—an engineering ballet that makes timing your visit feel delightfully theatrical. Inside, the soaring white forms, long sightlines, and abundant natural light create a gallery atmosphere that feels crisp and meditative, while framing Lake Michigan as a living backdrop.\n\nFor visitors, it’s an easy museum to love: clear circulation between wings, frequent special exhibitions, and plenty of moments to pause—whether you’re studying brushwork up close, chasing a favorite modern master, or simply absorbing the interplay of **architecture, water, and light**. Plan extra time for the pavilion views and the sensation of art-viewing at the edge of the lake.",
+      "content_highlights": [
+        "Santiago Calatrava’s Quadracci Pavilion, with its dramatic winglike brise-soleil that opens and closes daily",
+        "Major strength in American art, including a notable group of works by Georgia O’Keeffe",
+        "Waterfront setting on Lake Michigan with panoramic views integrated into the museum experience",
+        "Strong modern and contemporary holdings, with an engaging mix of painting, sculpture, and photography",
+        "A campus that blends multiple architectural eras—an art-and-architecture double destination for design-minded visitors"
+      ],
+      "content_generated_at": "2026-01-18T05:16:26Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-milwaukee-public-museum",
@@ -701,7 +1319,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "GENERAL MUSEUM",
+      "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -714,7 +1332,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -736,10 +1354,23 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:16:36Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4142782728"
+      "phone": "4142782728",
+      "is_scoreable": false,
+      "content_summary": "The **Milwaukee Public Museum** is a captivating journey through the wonders of our planet, offering immersive exhibits that transport visitors through time and nature. With its stunning architecture and extensive collections, it's a must-visit destination for history lovers, families, and curious minds alike.",
+      "content_description": "**Milwaukee Public Museum** stands as a beacon of knowledge and discovery, showcasing the rich tapestry of natural and cultural history. Opened in 1882, this dynamic institution has grown into a remarkable repository, featuring over 4 million artifacts that span the globe. From the lively *Tropical Rainforest* exhibit, which features butterflies flitting among verdant flora, to the awe-inspiring *Dinosaurs** exhibition, where life-sized skeletal replicas of these ancient creatures tower over visitors, every corner of the museum invites exploration and wonder. The building itself, with its intricate architectural details, is as much a part of the experience as the exhibits it houses. As you wander through its halls, you will encounter stunning *dioramas* that detail diverse ecosystems and human cultures, providing perspective on our planet's rich narratives. Visitors are often captivated by the engaging stories told through the museum's collection, making them feel a connection to the past and present alike. \n\nThe **Milwaukee Public Museum** also offers a variety of interactive learning experiences, perfect for families wishing to inspire curiosity in their children. Special exhibits and programs are frequently updated, ensuring there's always something new to discover. Be sure to check out the museum's *IMAX theater*, where breathtaking nature documentaries come alive. Whether you are a local or a tourist, this museum promises a fascinating dive into the history of our world, all within a deeply immersive environment that leaves a lasting impression on every visitor. \n\nA trip to the **Milwaukee Public Museum** is more than just a visit—it's an invitation to wander, learn, and marvel at the complexity of life on Earth, providing memories that will last long after you leave its grand halls.",
+      "content_highlights": [
+        "Tropical Rainforest exhibit with live butterflies",
+        "Dinosaurs exhibition featuring life-sized replicas",
+        "Extensive collection of over 4 million artifacts",
+        "Interactive learning experiences for all ages",
+        "IMAX theater showcasing stunning nature documentaries"
+      ],
+      "content_generated_at": "2026-01-18T05:16:36Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-racine-art-museum",
@@ -759,7 +1390,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -767,12 +1398,12 @@
       "tickets_url": "https://www.facebook.com/RacineArtMuseumWI/",
       "reservation_required": null,
       "accessibility_url": "https://www.ramart.org/info/deia/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -781,42 +1412,56 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the Racine Art Museum’s permanent collection or interpretive approach, so collection-specific strengths and historical context cannot be scored. Based only on its location and lack of broader collection evidence, it is assessed as a primarily local museum with a likely small-to-limited collection scope.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.ramart.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Racine' from open data; MRD: computed city_tier=2 for Racine; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:16:50Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 2
+      "city_tier": 2,
+      "is_scoreable": true,
+      "content_summary": "Racine Art Museum is a rewarding stop for design-minded art lovers, celebrated for its standout focus on contemporary craft. In a compact, approachable setting, you’ll encounter studio art at a high level—especially ceramic work—presented with the care and clarity of a much larger institution. It’s an ideal museum to slow down, look closely, and appreciate the intelligence of materials and making. Pair your visit with a walk through downtown Racine for a satisfying, art-forward afternoon.",
+      "content_description": "**Racine Art Museum (RAM)** is one of Wisconsin’s most satisfying destinations for travelers who love contemporary art with a strong sense of *materiality* and process. Though small in scale, RAM punches above its weight by treating **craft and design as fine art**, inviting you to read surfaces, glazes, fibers, and forms the way you might parse brushwork in painting. Exhibitions typically foreground the rigor of studio practice—perfect for visitors who enjoy close looking and want to understand how ideas become objects.\n\nA major strength is RAM’s reputation for **contemporary craft**, with a particular emphasis on **ceramics**—a field where innovation in form and finish can feel as radical as any *avant-garde* experiment. Expect rotating exhibitions rather than an encyclopedic permanent display: the museum’s size makes it easy to take in a full show without fatigue, and the galleries encourage intimate viewing distances where technique and detail reward attention.\n\nFrom a visitor’s perspective, the experience is **focused, calm, and conversation-friendly**—an excellent counterpoint to big-city museum marathons. Plan to spend an hour or two, linger with the current installations, and use the museum as a springboard to explore Racine’s broader design culture and lakeside setting. For art enthusiasts who value contemporary makers and smart curatorial storytelling, RAM is a compelling, highly concentrated visit.",
+      "content_highlights": [
+        "Strong focus on contemporary craft and studio art, with exhibitions that emphasize materials and process",
+        "Notable reputation for ceramics-focused programming and displays",
+        "Rotating exhibitions that make repeat visits rewarding despite the museum’s small footprint",
+        "Intimate galleries designed for close looking—ideal for appreciating texture, technique, and finish",
+        "Easy-to-fit-in visit for travelers: a concentrated, high-quality museum experience in downtown Racine"
+      ],
+      "content_generated_at": "2026-01-18T05:16:50Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-unknown-trout-museum-of-art",
       "country": "USA",
       "state_province": "Wisconsin",
-      "city": null,
+      "city": "Appleton",
       "museum_name": "Trout Museum of Art",
       "alternate_names": null,
       "website": "http://www.troutmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "325 E College Ave, Appleton, WI 54911, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 44.27632,
-      "longitude": -88.397,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "54911",
+      "latitude": 44.2616482,
+      "longitude": -88.4011718,
+      "place_id": "ChIJe__eXzG3A4gRPPXFrbDBEL4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -824,12 +1469,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 1,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -838,21 +1483,177 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence only establishes that this is a local art museum in downtown Appleton, Wisconsin, without details on the permanent collection. Based on location and limited institutional signals, it is best characterized as a local museum with a small or limited-scope collection; strengths in Impressionism or Modern/Contemporary cannot be determined from the provided summary.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:17:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9207334089"
+      "phone": "(920) 733-4089",
+      "website_google": "http://troutmuseumart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1900"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 70,
+      "google_reviews": [
+        {
+          "author_name": "Laney C",
+          "author_url": "https://www.google.com/maps/contrib/104478681394452274548/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUIA4Cgx7XIvEOxfY5W8HH5UB2_HCA7XmDVfGIehYm01NUV7Bw7=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "I loved this museum- lots of unique and unconventional artwork often focused on social and historical commentary. The coffee shop and gift shop are great too. I got a strawberry vanilla dirty chai. You can’t bring your coffee or other food/drink into the exhibits themselves, but there are lockers available. Entry is free up till the end of 2026 so go for free while you can!",
+          "time": 1768075672,
+          "translated": false
+        },
+        {
+          "author_name": "Jason Born",
+          "author_url": "https://www.google.com/maps/contrib/109726743760806676424/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXoZbSWKQ5_k8btVv-R2lTyTeZ_17wBsEssxAva2lDkEJVftrfng=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Parking can be an issue but worth the distance because the art space is Amazing 🤩 Hugh vaulted ceiling allow for grand pieces and floor to ceiling windows in the lobby frame a beautiful view of Lawrence University.",
+          "time": 1760490677,
+          "translated": false
+        },
+        {
+          "author_name": "Jess Ehm",
+          "author_url": "https://www.google.com/maps/contrib/112843108379475634544/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLWkTE0LdNNNANai1eIxo2wGj76DArte38uiBL-CTEboQBS6g=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 2,
+          "relative_time_description": "11 months ago",
+          "text": "Very unprofessional experience. People working the gift shop/selling tickets were extremely rude and loud. Instead of enjoying art, we got to listen to bodily noises and loud, immature chatter about TV, movies and whatever other subjects the two employees felt necessary to discuss. You could hear their conversation throughout the entire first floor. What a disheartening experience for something that was supposed to be enjoyable.",
+          "time": 1739050477,
+          "translated": false
+        },
+        {
+          "author_name": "Lynn",
+          "author_url": "https://www.google.com/maps/contrib/102024645794685468230/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIPJiSUavqMIeEE0mxFUFXquXNesgpF-pmcrU9LhCZezs0MVAwU=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 3,
+          "relative_time_description": "3 years ago",
+          "text": "A small art museum, conveniently located in downtown Appleton. I've seen several fascinating exhibitions there, like an absolutely amazing origami display. I've also been there when I found the items on display to be \"not much.\" If you think you'll go more than once, membership is a much better deal than admission.\n\nInsider tip:  You're not likely to see fish at the Trout Museum. It's named after Dr. Monroe & Sandra Trout.",
+          "time": 1654966450,
+          "translated": false
+        },
+        {
+          "author_name": "Nerd Grrl",
+          "author_url": "https://www.google.com/maps/contrib/117218645407174117203/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU355K7o6bNaSVCw3-e75qLfuCEs8SuY-_BuWeeHSfz7cBNGWQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "We loved this museum. The staff was helpful and informative. The Bart exhibit is a great collection! Today worth getting an annual membership to visit again!",
+          "time": 1680894038,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "In downtown Appleton, the Trout Museum of Art offers a focused, rewarding encounter with art on a human scale. Its intimate galleries spotlight rotating exhibitions that often pair regional talent with nationally recognized names, making repeat visits especially worthwhile. Expect a thoughtfully curated mix of contemporary and modern work, occasional deep dives into photography and works on paper, and a welcoming atmosphere that invites close looking. For art lovers exploring Wisconsin, it’s an excellent stop for fresh discoveries without the crowds.",
+      "content_description": "Set in the heart of downtown Appleton, the **Trout Museum of Art** is a compact museum with an outsized impact—ideal for travelers who prefer **close, unhurried looking** over marathon gallery days. While the museum’s permanent holdings are modest, its real strength lies in **well-curated, frequently changing exhibitions** that can span contemporary painting, sculpture, photography, and works on paper. The programming often highlights Wisconsin and Midwest artists alongside broader conversations in modern and contemporary art, making the museum feel both rooted in place and tuned to current artistic dialogue.\n\nArchitecturally, the experience is refreshingly direct: **clean, accessible galleries** that keep attention on the art, with sightlines that encourage you to move intuitively from room to room. The smaller footprint becomes an advantage—works can be installed with breathing space, and you can give time to details of surface, process, and *composition* without jostling through crowds.\n\nFor visitors, the Trout excels as a “starter museum” for a day in Appleton or a palate cleanser between bigger institutions. Plan to linger for the exhibition texts and interpretive framing, then step back into the city’s walkable core for cafés and nearby cultural stops. If you enjoy discovering emerging voices and seeing how *contemporary practice* connects to a region’s creative identity, this museum is an especially satisfying visit.",
+      "content_highlights": [
+        "Rotating exhibition program emphasizing contemporary and modern art across multiple media",
+        "Spotlight on Wisconsin and Midwest artists, offering a strong sense of regional creative identity",
+        "Intimate, uncrowded galleries that reward slow looking and close attention to technique and materials",
+        "Walkable downtown Appleton location—easy to pair with dining and other cultural stops",
+        "Frequent reasons to return: changing shows and curated installations rather than a static “greatest hits” collection"
+      ],
+      "content_generated_at": "2026-01-18T05:17:03Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-manitowoc-rahr-west-art-museum",
@@ -872,7 +1673,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -880,37 +1681,51 @@
       "tickets_url": "https://www.facebook.com/RahrWestArtMuseum",
       "reservation_required": null,
       "accessibility_url": "http://www.rahrwestartmuseum.org/accessibility",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 2,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no specifics about permanent collection highlights, so Impressionist and Modern/Contemporary strengths are estimated as minor rather than absent. The museum’s setting in a National Register Queen Anne house suggests some historical framing and interpretive potential, but collection scope and broader reputation appear primarily local, implying a small institution.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.rahrwestartmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Manitowoc; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:17:15Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9206863090"
+      "phone": "9206863090",
+      "is_scoreable": true,
+      "content_summary": "Housed in a grand lakeshore mansion, the Rahr West Art Museum offers an intimate, quietly impressive art experience in Manitowoc. Its strength lies in approachable galleries that mix regional artists, American and European works, and rotating exhibitions—ideal for visitors who love discovering gems without the crowds. Come for the historic architecture, linger for the changing shows, and enjoy a museum visit that feels personal, local, and thoughtfully curated.",
+      "content_description": "**Rahr West Art Museum** is one of those destinations art lovers treasure: a **small, carefully paced museum** set inside an elegant historic home near Lake Michigan. The building itself is part of the attraction—an early-20th-century mansion with **period rooms, decorative details, and a residential scale** that makes viewing art feel intimate rather than institutional. As you move from gallery to gallery, you’re not just looking at works on walls—you’re experiencing art in conversation with a place that still carries the atmosphere of its original domestic architecture.\n\nThe museum’s collection and programming emphasize discovery. Expect a **mix of American and European paintings, prints, and decorative arts**, with particular appeal for travelers interested in **Wisconsin and regional artists** alongside broader traditions. Rather than a single blockbuster holding, **rotating exhibitions** do much of the storytelling here—often spotlighting local creators, thematic groupings, and community-connected projects that reveal how artistic life in the region intersects with national currents. The result is a visit that feels fresh and responsive, rewarding repeat stops.\n\nFor visitors, the experience is calm and welcoming: manageable galleries, good opportunities to look closely, and a setting that invites slow looking. Pair it with a walk around Manitowoc’s lakeshore for a day that blends architecture, art, and a distinctly local sense of place.",
+      "content_highlights": [
+        "Historic mansion setting with period architecture that shapes an intimate viewing experience",
+        "Rotating exhibitions that regularly refresh the museum’s storytelling and encourage repeat visits",
+        "Regional Wisconsin-focused presentations alongside broader American and European works",
+        "Smaller galleries designed for close looking—ideal for travelers who prefer unhurried museum time",
+        "A quiet cultural stop near Lake Michigan, easy to combine with lakeshore sightseeing"
+      ],
+      "content_generated_at": "2026-01-18T05:17:15Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-marquette-university-haggerty-museum-of-art",
@@ -930,7 +1745,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -938,37 +1753,51 @@
       "tickets_url": "https://www.facebook.com/HaggertyMuseum/",
       "reservation_required": null,
       "accessibility_url": "http://marquette.edu/accessible-technology/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 3,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a university art museum with a sizable permanent collection (~10,000 works) but limited on-view space, suggesting a moderate overall collection tier. A prominent Keith Haring mural points to at least moderate modern/contemporary representation, but the evidence does not specify Impressionist holdings. As a campus museum in Milwaukee, it appears primarily local in reputation, and no clear evidence is provided about the depth of chronological/historical interpretive framing.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://marquette.edu/haggerty",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Marquette University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:17:27Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4142881669"
+      "phone": "4142881669",
+      "is_scoreable": true,
+      "content_summary": "Tucked into Marquette University’s campus in Milwaukee, the Haggerty Museum of Art rewards art lovers with an intimate, intellectually lively museum experience. Expect rotating exhibitions that punch above their size, strengths in modern and contemporary art, and the rare chance to see museum-quality works in a setting designed for close looking. It’s an excellent stop for travelers who enjoy thoughtful curation, fresh perspectives, and the feeling of discovering a serious collection without the crowds.",
+      "content_description": "**Haggerty Museum of Art** at Marquette University is a campus museum that feels tailor-made for curious, visually attentive travelers. Its greatest pleasure is immediacy: galleries are close at hand, labels tend to be ideas-forward, and exhibitions often connect art history to contemporary questions. Rather than overwhelming you with sheer scale, the museum invites *slow looking*—a focused encounter with painting, sculpture, photography, prints, and works on paper presented in rotating, research-driven shows. For art enthusiasts, the energy comes from the museum’s exhibition program: thoughtfully curated installations that spotlight modern and contemporary practices alongside deeper art-historical context.\n\nArchitecturally, the museum’s university setting shapes the visit in a good way: you’re stepping into a cultural hub where art is treated as a living part of campus life. Expect clean, gallery-style interiors suited to changing displays, with a pace that encourages multiple passes through the rooms—ideal for comparing mediums and noticing curatorial choices in sequencing, lighting, and sightlines.\n\nFor visitors planning a museum day in Milwaukee, **Haggerty Museum of Art** works especially well as a “quality over quantity” stop—compact enough to fit between larger institutions, yet strong enough to merit dedicated time. Come for a fresh exhibition, stay for the pleasure of seeing a serious collection in an approachable space, and leave with the sense that you’ve encountered art as a conversation rather than a checklist.",
+      "content_highlights": [
+        "Rotating exhibitions with a strong modern and contemporary emphasis—perfect for repeat visits",
+        "Campus-museum intimacy: close viewing distances and an unhurried, thoughtful gallery pace",
+        "Strengths across painting, sculpture, photography, prints, and works on paper in changing displays",
+        "Curatorial, ideas-driven interpretation that connects art history to current themes",
+        "Easy-to-slot stop on a Milwaukee itinerary—museum-quality experience without big-museum crowds"
+      ],
+      "content_generated_at": "2026-01-18T05:17:27Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-wi-neenah-bergstrom-mahler-museum",
@@ -988,7 +1817,7 @@
       "place_id": null,
       "address_source": null,
       "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -996,12 +1825,12 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -1010,23 +1839,38 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the museum’s permanent holdings, so collection strengths and interpretive context cannot be scored. Based on the small-city location (Neenah) and lack of broader institutional signals in the evidence, it is assessed as primarily local in reputation with a small, focused collection tier.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.paperweightmuseum.com",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Neenah; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.paperweightmuseum.com",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T05:17:38Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": true,
+      "content_summary": "Tucked along the wooded shoreline of Lake Winnebago, the Bergstrom-Mahler Museum in Neenah is a small museum with a surprisingly memorable specialty: glass paperweights. Set in an elegant lakeside mansion, it offers an intimate, close-looking experience—perfect for art lovers who enjoy craftsmanship, design history, and the sparkle of light through glass. Expect a calm visit with strong curatorial focus, beautiful views, and the pleasure of discovering how a “decorative” object can become a miniature masterpiece.",
+      "content_description": "**Bergstrom-Mahler Museum** is one of those delightful, destination-worthy small museums that art travelers treasure: focused, serene, and beautifully situated on the edge of Lake Winnebago. Housed in the former Bergstrom family estate, the museum’s setting shapes the experience—more like visiting a refined lakeside home than a cavernous institution. Its **historic mansion architecture**, generous windows, and intimate rooms encourage slow looking, with natural light often catching on glass surfaces and amplifying the museum’s signature collection.\n\nThe museum is best known for its deep commitment to **glass paperweights**, a niche that becomes unexpectedly thrilling when seen up close. You’ll encounter works that showcase the virtuosity of lampwork and *millefiori* techniques—tiny floral canes, intricate concentric patterns, and miniature scenes suspended in crystal-clear domes. Rather than overwhelming you with scale, the galleries reward attention: you begin to notice precision, optical effects, and the design lineage that connects 19th- and 20th-century decorative arts to contemporary studio glass.\n\nFor visitors, this is a museum made for **connoisseurship and quiet pleasure**. Plan to linger: the small footprint means you can take your time, revisit favorite cases, and pair your visit with a lakeside stroll. If you love applied arts, craftsmanship, and the way materials carry history, Bergstrom-Mahler offers a concentrated, visually luminous stop that feels both local and singular.",
+      "content_highlights": [
+        "Specialized focus on glass paperweights, emphasizing close-up craftsmanship and optical artistry",
+        "Historic lakeside mansion setting with intimate gallery rooms and strong natural light",
+        "Detailed displays of *millefiori* and lampwork techniques—minute patterns, florals, and miniature scenes in glass",
+        "A calm, unrushed visitor experience ideal for slow looking and design-minded art lovers",
+        "Lake Winnebago grounds and views that pair naturally with a contemplative museum visit"
+      ],
+      "content_generated_at": "2026-01-18T05:17:38Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T05:17:38Z"
 }

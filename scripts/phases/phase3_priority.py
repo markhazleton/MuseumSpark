@@ -78,8 +78,9 @@ class ScoreBreakdown:
     dual_strength_bonus: int = 0
     nearby_cluster_bonus: int = 0
 
-    # Final score
-    priority_score: Optional[int] = None
+    # Final scores
+    priority_score: Optional[int] = None  # Hidden gem score (lower = better)
+    overall_quality_score: Optional[int] = None  # Best museum score (higher = better)
     missing_fields: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
@@ -87,6 +88,7 @@ class ScoreBreakdown:
             "museum_id": self.museum_id,
             "can_score": self.can_score,
             "priority_score": self.priority_score,
+            "overall_quality_score": self.overall_quality_score,
             "breakdown": {
                 "primary_art_strength": self.primary_art_strength,
                 "art_component": self.art_component,
@@ -223,6 +225,16 @@ def compute_priority_score(museum: dict) -> ScoreBreakdown:
         - breakdown.nearby_cluster_bonus
     )
 
+    # Compute overall quality score (higher = better)
+    # This inverts the logic to reward strong collections and reputation
+    # Quality = Art Strength + Reputation + Collection Tier + Bonuses
+    breakdown.overall_quality_score = (
+        breakdown.primary_art_strength * 3  # Higher art strength = better
+        + (3 - breakdown.reputation)  # 0=International gets 3 points, 3=Local gets 0
+        + (3 - breakdown.collection_tier)  # 0=Flagship gets 3 points, 3=Small gets 0
+        + breakdown.dual_strength_bonus  # Add bonus for excellence in both
+    )
+
     breakdown.can_score = True
     return breakdown
 
@@ -318,12 +330,14 @@ def process_state(
 
         # Print score breakdown
         print(f"  [{idx}/{total}] {museum_id}")
-        print(f"           art={breakdown.art_component} + hist={breakdown.history_component} + rep={breakdown.reputation_penalty} + tier={breakdown.collection_penalty} - dual={breakdown.dual_strength_bonus} - cluster={breakdown.nearby_cluster_bonus}")
-        print(f"           = PRIORITY {breakdown.priority_score}")
+        print(f"           Hidden Gem: art={breakdown.art_component} + hist={breakdown.history_component} + rep={breakdown.reputation_penalty} + tier={breakdown.collection_penalty} - dual={breakdown.dual_strength_bonus} - cluster={breakdown.nearby_cluster_bonus}")
+        print(f"           = PRIORITY {breakdown.priority_score} (lower=better hidden gem)")
+        print(f"           Overall Quality: {breakdown.overall_quality_score} (higher=better overall)")
 
         if not dry_run:
-            # Apply score to museum record
+            # Apply scores to museum record
             museum["priority_score"] = breakdown.priority_score
+            museum["overall_quality_score"] = breakdown.overall_quality_score
             if primary_art:
                 museum["primary_art"] = primary_art
             museum["scoring_version"] = "mrd_v2"

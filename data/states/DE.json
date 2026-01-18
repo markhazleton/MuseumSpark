@@ -7,21 +7,21 @@
       "museum_id": "usa-de-unknown-delaware-art-museum",
       "country": "USA",
       "state_province": "Delaware",
-      "city": "Delaware",
+      "city": "Wilmington",
       "museum_name": "Delaware Art Museum",
       "alternate_names": null,
       "website": "https://www.delart.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2301 Kentmere Pkwy, Wilmington, DE 19806, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.765,
-      "longitude": -75.56624,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "19806",
+      "latitude": 39.7652681,
+      "longitude": -75.5651084,
+      "place_id": "ChIJe5tvDgP9xokR5QqSJcEWlpQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -29,55 +29,201 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The collection focus is American art and illustration from the 19th to the 21st century and the English Pre-Raphaelite movement; no specific Impressionist emphasis is indicated, suggesting only minor representation. Coverage into the 21st century and a sculpture park support a moderate Modern/Contemporary score. A defined collecting focus and substantial holdings (12,000+ objects) imply solid interpretive/historical framing, while overall scope suggests a regional, moderate-tier museum rather th",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Delaware' from open data; MRD: computed city_tier=3 for Delaware; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T00:27:48Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3025719590"
+      "phone": "(302) 571-9590",
+      "website_google": "https://delart.org/?utm_source=GMBListing&utm_medium=organic",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 277,
+      "google_reviews": [
+        {
+          "author_name": "Josh Weber",
+          "author_url": "https://www.google.com/maps/contrib/115958818189394663720/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU08h-gqOTSwzf_0BT4N96Cz4ZkEpd8Ao8zsarEZS1o5gY90XXzwg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Beautiful, well curated museum with a diverse collection of paintings from many different time periods, styles and regions. A little bit of something for everyone. To top it off the sculpture garden surrounding the museum is a great way to start or finish your experience.",
+          "time": 1758971357,
+          "translated": false
+        },
+        {
+          "author_name": "Brian Forseth",
+          "author_url": "https://www.google.com/maps/contrib/103030264668624561333/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU7WaESaiRqgxDDZMAw9wAHef9r2u0FPkBxf3ac-bgn2V6dOzH0yw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Maybe it was because our first visit coincided with an Eagles game, or the beautiful fall weather that there were no crowds to contend with, leaving us to enjoy the museum at our own pace. The permanent exhibits provided a great opportunity to view multiple pieces by Sloan and Pyle as well as the excellent temporary exhibits on Illustrating Race, and Plant Photography.",
+          "time": 1760918330,
+          "translated": false
+        },
+        {
+          "author_name": "April Ferry",
+          "author_url": "https://www.google.com/maps/contrib/104667829738747836154/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUK_45OhPCcktWY5Yl4ZpmG9RhUFDllD3lrHbcWH3RB-FYAp41TvA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Beautiful museum located in a charming neighborhood. I went on an autumn evening and was greeted by warm and friendly staff. The collections are GORGEOUS and focus on the golden age of illustration and the Pre-Raphaelites which is so wonderful to see. The museum is a great size and can be done in a few hours and has a sculpture garden as well (can't wait to visit in the spring). Everyone I met there was so kind, from those at the front desk to the person running the gift shop. Can't wait to visit again",
+          "time": 1767043250,
+          "translated": false
+        },
+        {
+          "author_name": "Tax Professional",
+          "author_url": "https://www.google.com/maps/contrib/114251414138013752637/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVBKGOPGnPee33COGiCzZJ8Y1DT6FagJWia9Zt8_iBA-uPHLT5o=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "I still love this place. The second time around is even better. The staff is so sweet and helpful. Bring a sweater. It's freezing inside!\n\nHighly recommend this place. I discovered new American artists and enjoyed artwork that told stories (thanks to well written historical summaries), made me feel curious, happy, and inspired wonder.\n\nThe small-ish museum is located on gorgeous land with trails, greens, picnic areas. And if you want even more, head over to nearby Rockford Park.\n\nEven though there were no tours on the Saturday I went, the sweet person from whom I bought the tix was so knowledgeable. I really appreciate that she understood my frustration with the website and shared that similar feedback has already been shared with IT. She also suggested other area museums I may enjoy based on my preferences.",
+          "time": 1754265639,
+          "translated": false
+        },
+        {
+          "author_name": "Nat Fine",
+          "author_url": "https://www.google.com/maps/contrib/111887558000911036192/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXNCDbYsj8mOyS6i0Fpw_rsB6UGa9P-f6OKEDnQ8kWI0Zz-2Cs=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Fantastic museum for fans of the Pre-Raphaelites. The museum is small, but thoughtfully curated with a diverse collection. The exhibit on illustration was very unique.",
+          "time": 1756757988,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "In Wilmington’s leafy Kentmere Parkway museum district, the Delaware Art Museum offers an art-lover’s day out with real depth: British Pre-Raphaelite treasures, one of America’s strongest collections of Howard Pyle and the Brandywine illustration tradition, and engaging modern and contemporary galleries. The scale is manageable but rewarding—ideal for slow looking—while the building’s bright, renovated spaces and sculpture garden make it as pleasant to wander as it is to study.",
+      "content_description": "**Delaware Art Museum** is one of the Mid-Atlantic’s most satisfying “discoveries”: a regional museum with **national-caliber strengths**. Its signature holdings spotlight **British Pre-Raphaelite art**—the luminous, detail-driven paintings and works on paper associated with Dante Gabriel Rossetti, Edward Burne-Jones, and their circle—bringing *Victorian* imagination, medieval revivalism, and symbol-laden storytelling into crisp focus. Equally compelling is the museum’s deep commitment to Delaware’s artistic legacy through **Howard Pyle** and the Brandywine tradition of illustration, where you’ll see how narrative drawing shaped American visual culture—from swashbuckling adventure imagery to the refined craft of book and magazine art.\n\nThe museum’s campus-like setting along Kentmere Parkway suits its role as a place to linger. Renovated galleries emphasize **clear sightlines, generous light, and a calm rhythm of rooms**—a welcome environment for close study of works on paper, jewel-toned paintings, and rotating presentations that often connect historic storytelling with contemporary themes. Outdoors, a **sculpture garden** extends the visit with fresh air and art in conversation.\n\nFor travelers planning a museum day in Wilmington, the experience feels curated for enthusiasts: you can move from *Pre-Raphaelite* ideals to American illustration and onward to modern and contemporary works without fatigue. Expect a visit that rewards attention to technique—line, surface, and narrative—while offering the ease, comfort, and intimacy that larger encyclopedic museums sometimes lack.",
+      "content_highlights": [
+        "Pre-Raphaelite collection—key works tied to Rossetti, Burne-Jones, and the Victorian medieval revival",
+        "Howard Pyle and the Brandywine illustration tradition—an exceptional window into American narrative art",
+        "Works on paper focus—drawings and illustrations where draftsmanship and storytelling take center stage",
+        "Bright, renovated galleries with an easy-to-navigate layout ideal for unrushed looking",
+        "Outdoor sculpture garden—an art-filled break that complements an indoor gallery visit"
+      ],
+      "content_generated_at": "2026-01-18T00:27:48Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-de-unknown-delaware-museum-of-natural-history",
       "country": "USA",
       "state_province": "Delaware",
-      "city": "Delaware",
+      "city": "Wilmington",
       "museum_name": "Delaware Museum of Natural History",
       "alternate_names": null,
       "website": "http://delmnh.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "4840 KENNETT PIKE",
+      "street_address": "4840 Kennett Pike, Wilmington, DE 19807, USA",
       "address_line2": null,
       "postal_code": "19807",
-      "latitude": 39.79635,
-      "longitude": -75.60768,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
-      "museum_type": "NATURAL HISTORY MUSEUM",
+      "latitude": 39.7984042,
+      "longitude": -75.60976289999999,
+      "place_id": "ChIJy7afwxn8xokRqiH_GdDIxU8",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Natural History Museum",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -90,7 +236,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -107,15 +253,180 @@
         "walker_reciprocal",
         "official_website",
         "http://delmnh.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Delaware' from open data; MRD: computed city_tier=3 for Delaware; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:25:00Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'NATURAL HISTORY MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "3026589111"
+      "phone": "(302) 658-9111",
+      "website_google": "https://delmns.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:30 AM – 4:00 PM",
+          "Tuesday: 9:30 AM – 4:00 PM",
+          "Wednesday: 9:30 AM – 4:00 PM",
+          "Thursday: 9:30 AM – 4:00 PM",
+          "Friday: 9:30 AM – 4:00 PM",
+          "Saturday: 9:30 AM – 4:00 PM",
+          "Sunday: 9:30 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 1096,
+      "google_reviews": [
+        {
+          "author_name": "Dee D",
+          "author_url": "https://www.google.com/maps/contrib/114684930180765404143/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ1ZI9IA1emT3WLZwml9uYI6i_w45Kw8bi3NGBt6KZu494amQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We took our kids here recently and they loved it (5 and 2 years old). It is small but lots of things to look at, learn about, and touch. When we went into the Dino area an employee came over with a chest and let us look at some real fossils! Very cool. Everyone was kind and helpful. We walked some of the trial but didn't do any of the group lead activities this time. We will definitely be back.",
+          "time": 1759260161,
+          "translated": false
+        },
+        {
+          "author_name": "PhillipsVision YT",
+          "author_url": "https://www.google.com/maps/contrib/110512667463737322033/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_XRMT2RGjgsozJuNnbKtuvWcqCuabc458Iu1S1nAricqCLXGw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "First time visiting this place. We went with my family as a field trip since they are home schooled. I was very impressed with the exhibits and the layout. The building is not huge but they really cover a lot in there. They have it broken down into section, with various geographical locations specified. When we were there they had an animatronic dinosaur exhibit on display. There was also a room where the kids could see a live turtle, snake and tarantula. They have a nice gift shop and also a place to eat. Admission was around $30 per person. There is an outdoor area as well but it was raining when we were there.",
+          "time": 1747103654,
+          "translated": false
+        },
+        {
+          "author_name": "Em Fisher",
+          "author_url": "https://www.google.com/maps/contrib/101398668404779837463/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocII7i8Uw2u7AV9ZJi7f38hdx-CCYn0oqVGz4kV90oKd91qP2A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "I visited from out of state. I can say that it was very cool! It's small but has a ton of awesome things! You can learn so much from here. A bunch of educational things along with taxidermy animals to give a feel of what the animal is like. They also have an outdoor area I didn't get to go to but definitely will if we ever come back! There is also an awesome little nook room. Great for younger kids. Has live animals, toys, a cave and books! Only thing I wish is the cafe had more options. Though overall amazing experience and would recommend! Super nice employees I must add!",
+          "time": 1747051844,
+          "translated": false
+        },
+        {
+          "author_name": "Sreekanth Kancharla",
+          "author_url": "https://www.google.com/maps/contrib/113946858005463066537/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKooEOmNaFQAsi9TLPglP-0kwNGFj1R9XFiJTlHS7rpbAHBicSXw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Nice museum. Great staff.\nStaff welcomesld well and explained in detail what can be done here. Tickets price is as listed in the website. No reservation required as crowd is less even on public holiday. Paying ticket price with cash, we get discount.\nImmediate right after the entrance is restroom. This museum is small. They have all varieties of animals.\n\nSome fossils are real and some are man made by experts with their research on actual fossils.\n\nThey explained about the history of the museum and effort that scientists spent on fossils.\n\nThey have food available inside to purchase. Outside seating is also available to have our own food.\nThe trail at the back the museum is ok but nothing much there.\nIf we've interest on plants, they listed the names the grown there.\n\nParking is free and plenty available. Lots of pictures can be taken outside itself with the animal statues outside. Kids love them.\n\nInside, they have audio at each attraction to make it real, even though the fossils are not which is very nice.\n\nWe should watch for each animal they listed as some are not visible unless we notice them as they were designed pretty awesome which shows their 100% efforts.",
+          "time": 1748297097,
+          "translated": false
+        },
+        {
+          "author_name": "sara Mitchell",
+          "author_url": "https://www.google.com/maps/contrib/117686697855474705113/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI1htszzqPANxDsfIk4luV2zWOcOD6l4XObuNayFmXRn82C=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Amazing, kid friendly museum. Lots of interactive exhibits.  Well worth the cost of admission. The staff was friendly. Everything was clean. They gad a room ig someone needed a sensory break. The staff were great with kids and adults. The rooms were distinctive, but felt well put together.",
+          "time": 1743298753,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "The Delaware Museum of Natural History invites visitors on an exhilarating journey through biodiversity and ecosystems, making it a must-see destination for nature lovers and families alike. Engage with its interactive exhibits and discover the wonders of the natural world right in Wilmington, Delaware.",
+      "content_description": "**Delaware Museum of Natural History** stands out as a beacon of education and exploration in Wilmington. Founded in 1972, this captivating museum places a strong emphasis on the interplay between humans and the environment. With a mission to ignite a passion for nature and science, the museum houses over 1.6 million specimens, including a stunning array of *marine life, fossils,* and *African mammals*, offering visitors a comprehensive look at the richness of our planet's biodiversity. Each exhibit is designed to be interactive, ensuring that guests of all ages can engage deeply with the material and spark their curiosity about the natural world.  \n\nArchitecturally, the museum is an inviting structure, surrounded by lush gardens that provide a serene setting for those looking to immerse themselves in nature. The vast galleries allow for easy navigation, ensuring that every corner of the museum can be explored without feeling overwhelmed. Notable exhibits include the *Rosenberg African Mammal Gallery*, with lifelike dioramas showcasing Africa's most iconic wildlife, as well as the *Delaware's Changing Landscape* exhibit, which delves into the state's unique ecosystems and the impact of climate change. As you explore the **Delaware Museum of Natural History**, you'll find it not only a place of learning but also a hub for community engagement, making it a special destination for anyone interested in the wonders of natural history.",
+      "content_highlights": [
+        "Over 1.6 million specimens across various collections",
+        "Interactive exhibits designed for all ages",
+        "Rosenberg African Mammal Gallery featuring lifelike dioramas",
+        "Delaware's Changing Landscape exhibit on local ecosystems",
+        "Educational programs and events for families and schools"
+      ],
+      "content_generated_at": "2026-01-18T03:25:00Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-de-unknown-historic-odessa-foundation",
@@ -135,7 +446,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORIC PRESERVATION",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -148,7 +459,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -170,30 +481,43 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:25:09Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3023784119"
+      "phone": "3023784119",
+      "is_scoreable": false,
+      "content_summary": "Step back in time at the **Historic Odessa Foundation**, where 18th and 19th-century Delaware comes alive through beautifully preserved buildings and captivating stories. Experience unique events and exhibitions that celebrate the rich cultural heritage of the region, making it a must-visit for history enthusiasts and curious travelers alike.",
+      "content_description": "**Historic Odessa Foundation** offers a fascinating glimpse into the past, showcasing the architectural beauty and historical significance of Odessa, Delaware. The foundation oversees a collection of meticulously preserved structures, including the charming *Odessa Inn* and the elegant *Cannonball House*, each telling a unique story of the town’s once-thriving shipbuilding and agricultural economy during the 18th and 19th centuries. Visitors will find themselves enchanted by the fine period furnishings, art, and artifacts that illustrate a lifestyle long gone yet vividly remembered. Throughout the museum, guided tours encourage exploration and engagement, with expert staff ready to illuminate the fascinating narratives behind each location.               Previously part of the Delaware seaport, Odessa was essential in the trading of goods, and its historic structures are testaments to this vibrant past. The captivating gardens act as a serene backdrop for leisurely strolls, while various seasonal events mingling art, history, and community further enrich the visitor experience. The museum not only preserves the architecture but also frequently hosts educational programs, workshops, and themed tours that invite a deeper understanding and appreciation of the area's heritage. Embrace the charm of historical Delaware at the **Historic Odessa Foundation**, where every visit uncovers the rich tapestry of its storied past.",
+      "content_highlights": [
+        "Beautifully preserved historic buildings from the 18th and 19th centuries",
+        "Educational programs and workshops that engage visitors",
+        "Stunning gardens and peaceful outdoor spaces",
+        "Insightful guided tours led by knowledgeable staff",
+        "Seasonal events that celebrate local culture and history"
+      ],
+      "content_generated_at": "2026-01-18T03:25:09Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-de-unknown-new-castle-historical-society",
       "country": "USA",
       "state_province": "Delaware",
-      "city": "New Hampshire",
+      "city": "New Castle",
       "museum_name": "New Castle Historical Society",
       "alternate_names": null,
       "website": "https://www.newcastlehistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "30 Market Street",
+      "street_address": "30 Market St, New Castle, DE 19720, USA",
       "address_line2": null,
       "postal_code": "19720",
-      "latitude": 39.66082,
-      "longitude": -75.56455,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
-      "museum_type": "HISTORIC PRESERVATION",
+      "latitude": 39.6601741,
+      "longitude": -75.5627732,
+      "place_id": "ChIJcyAR0HEDx4kRVRo5al85-j4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
       "audience_focus": null,
@@ -206,7 +530,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -223,35 +547,170 @@
         "walker_reciprocal",
         "official_website",
         "https://www.newcastlehistory.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Hampshire' from open data; MRD: computed city_tier=3 for New Hampshire; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:25:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3023222794"
+      "phone": "(302) 322-2794",
+      "website_google": "http://www.newcastlehistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1630"
+            },
+            "open": {
+              "day": 0,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 9:30 AM – 4:30 PM",
+          "Friday: 9:30 AM – 4:30 PM",
+          "Saturday: 9:30 AM – 4:30 PM",
+          "Sunday: 11:30 AM – 4:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 54,
+      "google_reviews": [
+        {
+          "author_name": "Charlie R",
+          "author_url": "https://www.google.com/maps/contrib/117568234039043745925/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXti8X_ocVciQiheNM_RoUQ9w43x5C-swGyfwVedyF6ZZW0k7Dn=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "My wife and I did the tour today when in town and it was so much fun. The tour guide, Jackie, was so nice and beyond knowledgeable about the town and buildings. The buildings were so beautiful and authentic. It was like stepping back into time. The town itself and so amazing.",
+          "time": 1731802501,
+          "translated": false
+        },
+        {
+          "author_name": "Mike Binder",
+          "author_url": "https://www.google.com/maps/contrib/115957430820245711486/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiOXQQlk3y9kQr4cRMNcrFlmWLObPJVPTAkuvfDyCF0p2r5VuR=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "A very nice starting point for your New Castle visit. Spoke with Mike, a local volunteer who ran me through all the center had to offer and showed me the excellent video. Everything you need to get the most from your visit is here!",
+          "time": 1738527674,
+          "translated": false
+        },
+        {
+          "author_name": "Jamieson Thomas",
+          "author_url": "https://www.google.com/maps/contrib/105630801214694011174/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX3XqZm4J5mzHybPUp2zaYjgnFrf29MYuB8C9bvcfozeaupUNFL=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "A bike ride exploring one of the Delaware Greenways to Historic New Castle,  founded by Dutch settlers in the 1650s along the Delaware river provides a step back into history. William Penn first set foot in Battery Park. An historic sign state “He proceeded to the fort and performed livery of seizin, he took the key, therefof,… we did deliver unto him 1 Turf with a twig upon it, a porringer with river water and soil, in part of all”. The gifts symbolized his proprietorship of Pennsylvania which at that time included the three lower counties that became the state of Delaware, “the first state”.",
+          "time": 1688576576,
+          "translated": false
+        },
+        {
+          "author_name": "Brittany Olson",
+          "author_url": "https://www.google.com/maps/contrib/100542582111816131107/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhZCfKpEziFe8mRzeVHHgZyYEkNaUHkgFkEzZPnVKhRGTwMegpMg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We visited 2 homes and were given very informative tours. The houses were furnished and have an idea of what they would use.",
+          "time": 1723406874,
+          "translated": false
+        },
+        {
+          "author_name": "Behzad Taimur",
+          "author_url": "https://www.google.com/maps/contrib/110729236088208545814/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-z9kR74fvhB9kDapfYViD6GqVir2vwQDTrUVWLzR8YiLqjPRKbg=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "This is one of the oldest spots in the US. Nearby, William Penn and co landed. This is one of the earliest settlements in the Americas. It makes sense to explore and learn more about this chapter of history while you're there. Make sure to visit offices of the Historical Society and ask for some additional information and resources. You could also talk to them about organizing tours. They'll have some great stuff for you which you otherwise would not have gotten to learn about!",
+          "time": 1579444216,
+          "translated": false
+        }
+      ],
+      "is_scoreable": false,
+      "content_summary": "Discover the rich tapestry of the past at the **New Castle Historical Society**, a beacon of historic preservation in Delaware. This museum offers visitors an intimate look at the area's heritage, showcasing unique collections and the beautiful architecture that defines New Castle's historical charm. Immerse yourself in the stories that have shaped this community over centuries.",
+      "content_description": "**New Castle Historical Society** invites visitors to explore the vibrant history of one of Delaware's oldest towns. Nestled within the brick-paved streets and colonial architecture, the museum is dedicated to preserving and celebrating the unique heritage of New Castle. The charming atmosphere sets the stage for a journey through time, as you navigate through meticulously curated exhibits that cover everything from colonial life to the impact of significant historical events on the region. Each artifact tells a story, woven together to provide a holistic view of the town's evolution.  \n\nThe museum itself is housed within historic buildings that reflect the architectural styles of various periods, providing a stunning backdrop for your visit. Delve into collections that feature everything from antique furnishings to documents that offer insights into local governance and community life. As you meander through the exhibits, don't miss the chance to engage with knowledgeable docents who are eager to share their passion for history and uncover more about New Castle's influential figures. The **New Castle Historical Society** is not just a museum; it’s an experience that encourages exploration, learning, and appreciation for the past, making it a memorable stop on your travels.  \n\nUnique programs and events throughout the year further enhance the visitor experience, ensuring that there’s always something new to discover. Whether you are a history buff, a family looking for a fun educational outing, or a curious traveler, the **New Castle Historical Society** promises a warm welcome and a captivating journey into Delaware's storied past.",
+      "content_highlights": [
+        "A deep dive into colonial life with authentic artifacts",
+        "Historic buildings showcasing architectural diversity",
+        "Engaging programs and workshops for all ages",
+        "Exploration of New Castle's influential historical figures",
+        "Rich collection of documents and photographs depicting local history"
+      ],
+      "content_generated_at": "2026-01-18T03:25:18Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-de-unknown-the-delaware-contemporary",
       "country": "USA",
       "state_province": "Delaware",
-      "city": null,
+      "city": "Wilmington",
       "museum_name": "The Delaware Contemporary",
       "alternate_names": null,
       "website": "http://www.thedcca.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "200 S Madison St #2, Wilmington, DE 19801, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.7403,
-      "longitude": -75.55938,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
-      "museum_type": "ART MUSEUM",
+      "postal_code": "19801",
+      "latitude": 39.7383625,
+      "longitude": -75.5602009,
+      "place_id": "ChIJKTcAfWX9xokRr1we8Zw4REo",
+      "address_source": "google_places",
+      "address_last_verified": "2026-01-17",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -259,37 +718,183 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 2,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": null,
+      "impressionist_strength": 1,
+      "modern_contemporary_strength": 3,
       "primary_art": null,
-      "historical_context_score": null,
+      "historical_context_score": 4,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence describes a collection centered on American art and illustration from the 19th–21st centuries and the Pre-Raphaelite Brotherhood, with no indication of notable Impressionist holdings, so Impressionism is scored negligible. The 19th–21st century scope supports a moderate modern/contemporary presence, and the focused movements plus substantial holdings (12,000+ objects) suggest good historical framing, though not a flagship encyclopedic museum.",
+      "score_last_verified": "2026-01-17",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.thedcca.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.thedcca.org: HTTP 429 for http://www.thedcca.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T00:28:51Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3026566466"
+      "phone": "(302) 656-6466",
+      "website_google": "https://www.decontemporary.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "1600"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1030"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 4:00 – 8:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 10:30 AM – 5:00 PM",
+          "Sunday: 10:30 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 367,
+      "google_reviews": [
+        {
+          "author_name": "Genevieve Hansen",
+          "author_url": "https://www.google.com/maps/contrib/103730205971431265679/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5LCYHrnIfopCSqgkgR_JjNgVulm6QuNL4UF6joO7dx8NvweJs=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This museum was absolutely spectacular. I was there for about an hour and a half, most people might spend an hour or less. This was my first visit and i loved all of the art displayed. There were 3D pieces, big and small paintings, puppets, it was so cool. Not only was the art displayed neatly and easy to navigate, but admission was free!! Also, the staff today were extremely friendly i love them. They greeted me with giant smiles, genuine care, and gave me information about the current displays and how they would change along with a pamphlet that gave information about the artists. I would definitely visit here again.",
+          "time": 1714251314,
+          "translated": false
+        },
+        {
+          "author_name": "Eva Fox",
+          "author_url": "https://www.google.com/maps/contrib/109932967951150094341/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRQPtpFjjJyLs943UQ997Zawq7hbCWqKlPA1k8HLpzLNpZAj1W2A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "I've always loved the contemporary. This time I was attending the award ceremony for the art addiction show this year it's a community supported art show held by the Latin American community center to showcase artists and their struggles with addiction or  mental health and how it's affected your life. They did a beautiful job with the show this year and in my opinion it was the best one yet. Even more awesome....I won first place in the beginners category this year!! So It was an amazing night and  they made the entire evening magical 🖤",
+          "time": 1751250193,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa S",
+          "author_url": "https://www.google.com/maps/contrib/108052460215023402857/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVEydc4TBKcOZt2ONNky2tt7LpVtTId5crqgFYSJhqBZuX4OjdP4A=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This is a nice little museum highlighting up and coming artists from all areas. For admission, they only ask for a small donation, with the minimum asking being $12. Since the place is small, you can spend at least an hour here looking at all of the fascinating exhibits. The museum itself is very clean and well organized. They have a large parking area, coat check area, restroom and a small gift shop near the entrance. I enjoyed my visit and would definitely recommend it to anyone who loves art.",
+          "time": 1713835318,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Miller",
+          "author_url": "https://www.google.com/maps/contrib/118213994603547692729/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUQ-b7FVJ8h2A-Hy68bhxp5n8mmteqkR2xZ8SkyPBAzDLPvJH7P=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "4 months ago",
+          "text": "A nice but small contemporary art museum. Tickets cost $7. It was worth the price, enjoyed the exhibits — the theme was on AI and art, and I liked the perspective they shared. It’s downtown right next to the River walk, so easy to hit that after.",
+          "time": 1758308800,
+          "translated": false
+        },
+        {
+          "author_name": "Rachael DK",
+          "author_url": "https://www.google.com/maps/contrib/104973186673557858686/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUV-62k7eJk1jQ72KWhJNZ7foKuf1NVTw39DF3OWw6ybLQ_LmjK=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "I love museums and galleries, and in recent times, I have been looking for something more manageable since I am not always able to walk as far or as long as other friends and family members. I want to mention this for any visitors who may bring along an elderly relative or someone with an illness or restrictions to their movements.\n\nWith this in mind, I must say this museum was comfortable and easy to navigate. I couldn't believe they didn't charge entry but simply recommended donations. I think it's worth the trip and donations to keep this valuable resource in the community! By the way, they have a store where I honestly had to stop myself from buying too many things.\n\nAs far as the art being showcased this season, it had interesting installations and interactives from 16 artists. I felt it called upon our curiosity and open-mindedness to observe and understand some of the topics woven through the art. I will admit this was a good experience for me because I'm not typically a fan of contemporary art.\n\nI wanted to open myself up to new experiences. Trying to understand what some artists are trying to bring to our attention made for a good afternoon and great conversation after my husband and I left. I look forward to checking out upcoming exhibits this year and maybe visiting during an art loop.",
+          "time": 1696039664,
+          "translated": false
+        }
+      ],
+      "is_scoreable": true,
+      "content_summary": "The Delaware Contemporary is Wilmington’s go-to destination for seeing what’s happening in art right now. Expect a thoughtfully curated mix of regional and national voices across painting, photography, sculpture, and new media, presented in a welcoming, light-filled setting. With rotating exhibitions that keep repeat visits fresh, it’s an ideal stop for art lovers who want discovery over “greatest hits”—and who enjoy the energy of a museum where the story is still being written.",
+      "content_description": "**The Delaware Contemporary** offers a compelling snapshot of art in the present tense—less a “treasure vault” than a vibrant platform for evolving ideas. As a regional contemporary art museum, its strengths lie in **rotating exhibitions** and an emphasis on living artists, often pairing Delaware and Mid-Atlantic talent with broader national perspectives. Expect an engaging range of media—painting, photography, sculpture, and installation—where curatorial themes help you connect the dots between material experimentation, social questions, and the visual language of today. Rather than building around a fixed canon, the museum rewards curiosity and repeat visits, since what you see changes meaningfully over the year.\n\nArchitecturally, the experience is designed around looking: **clean-lined galleries**, flexible exhibition spaces, and a layout that prioritizes clear sightlines and close viewing—especially satisfying for contemporary work where surface, scale, and process are part of the message. The overall atmosphere feels approachable and current, with a pace that suits travelers: you can do a focused visit in an hour, or linger to read wall texts and trace an exhibition’s argument.\n\nFor art enthusiasts planning a Wilmington itinerary, **The Delaware Contemporary** works best as a “right-now” counterpoint to more encyclopedic museums. Go with the mindset of discovery—seek out the most ambitious installation on view, spend time with photographic series and works on paper, and let the museum’s changing program introduce you to artists you may not have encountered yet.",
+      "content_highlights": [
+        "Rotating contemporary exhibitions showcasing emerging and mid-career artists (expect the program to change significantly across seasons)",
+        "Strong mix of media—painting, photography, sculpture, and installation—ideal for visitors who like variety in a single visit",
+        "Flexible, modern gallery spaces that accommodate ambitious contemporary scale and immersive works",
+        "A distinctly regional lens that connects Delaware and Mid-Atlantic artmaking to national conversations",
+        "An easy-to-navigate visitor experience—excellent for a focused, high-impact stop on a Wilmington art day"
+      ],
+      "content_generated_at": "2026-01-18T00:28:51Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-de-unknown-winterthur-museum-country-estate",
@@ -322,7 +927,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -343,9 +948,22 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:25:29Z",
       "notes": null,
-      "city_tier": 3
+      "city_tier": 3,
+      "is_scoreable": false,
+      "content_summary": "The Winterthur Museum & Country Estate is a treasure trove of American decorative arts, featuring an exquisite collection of 90,000 objects, serene gardens, and a stunning historic mansion. Its emphasis on both cultural heritage and natural beauty makes it a must-visit for art enthusiasts and nature lovers alike.",
+      "content_description": "**Winterthur Museum & Country Estate** offers a unique blend of art, history, and nature set within a magnificent 175-room mansion located on 1,000 acres of lush gardens. Founded by the renowned collector Henry Francis du Pont, this museum showcases an extraordinary collection of American decorative arts from the 17th through the 19th centuries, including furniture, textiles, ceramics, and silver. Visitors can explore the enchanting period rooms, each meticulously designed to transport you back in time, revealing stories of American life and craftsmanship. The museum’s commitment to education and cultural preservation is evident in its extensive research library and ongoing exhibitions.  With changing displays throughout the year, there is always something new to discover.  As you roam through the elegant halls, you’ll appreciate the beauty of *American craftsmanship* and the stories encapsulated within each piece.  In addition to the captivating interior, Winterthur is renowned for its breathtaking gardens, designed to inspire a connection with nature.  Visitors can stroll through vibrant landscapes that change with the seasons, showcasing a diverse array of plants and florals, perfect for a tranquil afternoon.  Whether you seek artistic inspiration or a peaceful escape, **Winterthur Museum & Country Estate** promises an enriching experience that engages all the senses.  This unique estate is not just a museum; it is a journey into the past and an exploration of the beauty of the American landscape.  Don’t miss out on the chance to witness historical artifacts paired with artistic excellence in such an idyllic setting.",
+      "content_highlights": [
+        "90,000 objects in the American decorative arts collection",
+        "Impeccably preserved period rooms each telling a distinct story",
+        "Breathtaking 1,000-acre garden featuring seasonal plantings",
+        "Research library dedicated to American history and culture",
+        "Special exhibitions that bring fresh perspectives on American art and design"
+      ],
+      "content_generated_at": "2026-01-18T03:25:29Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-de-dover-biggs-museum-of-american-art",
@@ -365,7 +983,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "ART MUSEUM",
+      "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
       "audience_focus": null,
@@ -373,12 +991,12 @@
       "tickets_url": "http://www.biggsmuseum.org/visit/hours-and-admission/",
       "reservation_required": null,
       "accessibility_url": "http://www.biggsmuseum.org/visit/accessibility-and-museum-policies/",
-      "reputation": null,
-      "collection_tier": null,
+      "reputation": 3,
+      "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 0,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -387,24 +1005,38 @@
       "primary_art": null,
       "historical_context_score": null,
       "priority_score": null,
-      "scoring_version": null,
-      "scored_by": null,
-      "score_notes": null,
-      "score_last_verified": null,
+      "scoring_version": "phase2_v1",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia evidence is about First State Heritage Park rather than the Biggs Museum of American Art, so collection-specific strengths and interpretive approach cannot be reliably assessed. Based on the museum name and location (Dover) with local institutional signals, it is most likely a local/regional museum with a moderate-sized American-art-focused permanent collection.",
+      "score_last_verified": "2026-01-18",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.biggsmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "llm_scoring"
       ],
-      "confidence": null,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Dover; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T02:56:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3026742111"
+      "phone": "3026742111",
+      "is_scoreable": true,
+      "content_summary": "Set in downtown Dover, the Biggs Museum of American Art is a rewarding stop for travelers who want a focused, intimate look at American creativity with a distinct Delaware point of view. Expect thoughtfully curated galleries that spotlight regional history alongside broader national stories in painting, sculpture, and decorative arts. It’s the kind of local museum that rewards close looking—easy to navigate, rarely overwhelming, and ideal for pairing with Dover’s historic sites for a full day of culture.",
+      "content_description": "In the heart of downtown Dover, the **Biggs Museum of American Art** offers art lovers a satisfying, gallery-to-gallery encounter with American art—especially when you’re curious about how national styles and ideas take root in a specific place. As a local institution with a moderate-sized collection, Biggs excels at the pleasures of *close looking*: you can spend time with individual works, notice materials and technique, and follow how American visual culture shifts across centuries without the fatigue that can come with larger encyclopedic museums.\n\nThe museum’s strengths typically center on American traditions you can experience at human scale—think *portraiture*, *landscape*, and objects that bridge art and craft through American decorative arts. For visitors, the Delaware emphasis is part of the appeal: you’ll often find exhibitions and collection displays that connect the region’s history, people, and material culture to wider currents in American art. Rotating shows and focused installations keep repeat visits fresh, while interpretive texts tend to be approachable for both newcomers and seasoned museum-goers.\n\nArchitecturally and experientially, Biggs feels designed for an unhurried visit. Its downtown location makes it easy to combine with Dover’s walkable civic and historic core, turning a museum stop into a broader itinerary of architecture, heritage, and local food. Come with an eye for detail—brushwork, carving, glazing, patina—and you’ll leave with a richer sense of how American art is built not only in major capitals, but also in places like Dover where local identity remains visible in the collection.",
+      "content_highlights": [
+        "Downtown Dover location—easy to pair with historic walks and nearby civic architecture",
+        "Intimate, art-lover-friendly galleries ideal for close study rather than crowds",
+        "American painting and sculpture presented at a manageable scale for a 1–2 hour visit",
+        "Strong regional lens—exhibitions and displays that connect Delaware to broader American art stories",
+        "Rotating exhibitions that encourage return visits and deepen the museum’s local focus"
+      ],
+      "content_generated_at": "2026-01-18T00:29:20Z",
+      "content_model": "gpt-5.2",
+      "content_source": "openai"
     },
     {
       "museum_id": "usa-de-wilmington-hagley-museum-and-library",
@@ -424,7 +1056,7 @@
       "place_id": null,
       "address_source": "official_website",
       "address_last_verified": "2026-01-15",
-      "museum_type": "SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM",
+      "museum_type": "Science Museum",
       "primary_domain": null,
       "topics": null,
       "audience_focus": null,
@@ -437,7 +1069,7 @@
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
       "best_season": null,
-      "nearby_museum_count": null,
+      "nearby_museum_count": 3,
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
@@ -459,10 +1091,24 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Wilmington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-15",
+      "updated_at": "2026-01-18T03:25:35Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3026582400"
+      "phone": "3026582400",
+      "is_scoreable": false,
+      "content_summary": "Explore the unique intersection of science and history at the **Hagley Museum and Library** in Wilmington, Delaware. With its extensive collections, historic industrial site, and commitment to educating visitors about the evolution of American innovation, this museum is a fascinating destination for those curious about science, technology, and heritage.",
+      "content_description": "**Hagley Museum and Library** offers a captivating glimpse into America’s industrial past, centered around the original site of the DuPont gunpowder mills. Nestled along the banks of the Brandywine River, the museum blends *nature* and *technology*, showcasing the legacy of one of America’s most significant companies. Visitors can explore over 234 acres filled with picturesque gardens, historic machinery, and interactive exhibits that illuminate the ingenuity behind the DuPont family and their contributions to science and industry. It's a serene escape that also inspires a deep appreciation for the complexities of science and innovation.  \n\nInside the museum, you'll find a wealth of artifacts, from the **DuPont family archives** that tell the story of entrepreneurship and scientific advancements to richly detailed exhibits that illustrate the processes behind *chemical engineering* and *materials science*. The **Library** houses an impressive collection of manuscripts, books, and photographs, making it a vital resource for scholars and casual visitors alike. The museum’s combination of education and recreation creates a unique environment where you can engage with both the history of the American industry and the scientific strides that have shaped our world today. Whether you are strolling through the vibrant gardens, witnessing interactive demonstrations, or exploring in-depth exhibits, a visit to **Hagley Museum and Library** is sure to be both enlightening and enjoyable.",
+      "content_highlights": [
+        "Historic DuPont gunpowder mills site",
+        "Vast collections of the DuPont family archives",
+        "Interactive exhibits on chemical engineering and innovation",
+        "Beautifully landscaped gardens featuring native plants",
+        "Educational programs and workshops for all ages"
+      ],
+      "content_generated_at": "2026-01-18T03:25:35Z",
+      "content_model": "gpt-4o-mini",
+      "content_source": "openai"
     }
-  ]
+  ],
+  "updated_at": "2026-01-18T03:25:35Z"
 }
