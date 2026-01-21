@@ -191,6 +191,72 @@ export default function BrowsePage() {
     setPage(1)
   }
 
+  const handleDownloadCSV = () => {
+    // Define the columns we want to export
+    const columns = [
+      { key: 'state_province', header: 'State' },
+      { key: 'city', header: 'City' },
+      { key: 'museum_name', header: 'Museum Name' },
+      { key: 'museum_type', header: 'Type' },
+      { key: 'primary_domain', header: 'Domain' },
+      { key: 'time_needed', header: 'Time Needed' },
+      { key: 'reputation', header: 'Reputation' },
+      { key: 'collection_tier', header: 'Collection Tier' },
+      { key: 'priority_score', header: 'Priority Score' },
+      { key: 'website', header: 'Website' },
+      { key: 'street_address', header: 'Address' },
+      { key: 'postal_code', header: 'Postal Code' },
+      { key: 'latitude', header: 'Latitude' },
+      { key: 'longitude', header: 'Longitude' },
+      { key: 'phone', header: 'Phone' },
+      { key: 'status', header: 'Status' },
+      { key: 'estimated_visit_minutes', header: 'Visit Duration (min)' },
+    ]
+
+    // Escape CSV values
+    const escapeCSV = (value: unknown): string => {
+      if (value === null || value === undefined) return ''
+      const str = String(value)
+      // Escape double quotes and wrap in quotes if contains comma, quote, or newline
+      if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+        return `"${str.replace(/"/g, '""')}"`
+      }
+      return str
+    }
+
+    // Build CSV content
+    const headers = columns.map(col => col.header).join(',')
+    const rows = sorted.map(museum => {
+      return columns.map(col => {
+        const value = (museum as Record<string, unknown>)[col.key]
+        return escapeCSV(value)
+      }).join(',')
+    })
+
+    const csvContent = [headers, ...rows].join('\n')
+
+    // Create blob and download
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
+    const link = document.createElement('a')
+    const url = URL.createObjectURL(blob)
+    
+    // Generate filename with timestamp and filter info
+    const timestamp = new Date().toISOString().split('T')[0]
+    let filename = `museums-${timestamp}`
+    if (stateFilter) filename += `-${stateFilter}`
+    if (domainFilter) filename += `-${domainFilter}`
+    if (onlyFull) filename += '-full'
+    filename += '.csv'
+    
+    link.href = url
+    link.download = filename
+    link.style.display = 'none'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
+  }
+
   if (loading) {
     return (
       <div className="rounded-lg border border-slate-200 bg-white p-6">
@@ -343,8 +409,19 @@ export default function BrowsePage() {
 
       <div className="rounded-lg border border-slate-200 bg-white">
         <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3">
-          <div className="text-sm text-slate-600">
-            Page {page} of {totalPages}
+          <div className="flex items-center gap-4">
+            <div className="text-sm text-slate-600">
+              Page {page} of {totalPages}
+            </div>
+            <button
+              onClick={handleDownloadCSV}
+              className="flex items-center gap-2 rounded-md border border-emerald-500 bg-emerald-50 px-3 py-1.5 text-sm font-medium text-emerald-700 hover:bg-emerald-100"
+            >
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download CSV ({sorted.length})
+            </button>
           </div>
           <div className="flex items-center gap-2">
             <button
