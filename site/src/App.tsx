@@ -4,6 +4,9 @@ import MuseumDetailPage from './pages/MuseumDetailPage'
 import ProgressPage from './pages/ProgressPage'
 import HomePage from './pages/HomePage'
 import RoadmapPage from './pages/RoadmapPage'
+import ScoringMethodologyPage from './pages/ScoringMethodologyPage'
+import DataModelPage from './pages/DataModelPage'
+import DataPipelinePage from './pages/DataPipelinePage'
 
 function Nav() {
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
@@ -46,6 +49,9 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/browse" element={<BrowsePage />} />
           <Route path="/roadmap" element={<RoadmapPage />} />
+          <Route path="/roadmap/scoring" element={<ScoringMethodologyPage />} />
+          <Route path="/roadmap/data-model" element={<DataModelPage />} />
+          <Route path="/roadmap/pipeline" element={<DataPipelinePage />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/museums/:museumId" element={<MuseumDetailPage />} />
           <Route

@@ -134,8 +134,9 @@ export default function BrowsePage() {
     return sorted.slice(start, start + pageSize)
   }, [sorted, page, pageSize])
 
+  // Reset to page 1 when filters change - this is intentional UX behavior
   useEffect(() => {
-    setPage(1)
+    setPage(1) // eslint-disable-line react-hooks/set-state-in-effect
   }, [q, stateFilter, domainFilter, showScoredOnly])
 
   const handleDownloadCSV = () => {

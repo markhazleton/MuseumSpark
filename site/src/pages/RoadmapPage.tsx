@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom'
+import RoadmapNav from '../components/RoadmapNav'
 
 export default function RoadmapPage() {
   return (
     <div className="mx-auto max-w-4xl space-y-12 pb-20">
+      <RoadmapNav />
       
-      <div className="text-center">
-        <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">Project Roadmap</h1>
-        <p className="mt-4 text-lg text-slate-600">
-          The evolution of MuseumSpark: From open data aggregation to a full-featured AI travel agent.
+      {/* Header */}
+      <div className="rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 p-8 text-white shadow-xl">
+        <h1 className="text-4xl font-bold">Project Roadmap</h1>
+        <p className="mt-3 text-xl text-indigo-100">
+          The evolution of MuseumSpark: From open data aggregation to a full-featured AI travel agent
         </p>
       </div>
 
@@ -73,6 +76,63 @@ export default function RoadmapPage() {
           we enable travelers to prioritize visits that match their specific cultural interests
           and logistical constraints.
         </p>
+      </div>
+
+      {/* Documentation Links */}
+      <div className="rounded-xl border-2 border-blue-200 bg-blue-50 p-8">
+        <h2 className="mb-4 text-xl font-bold text-blue-900">📚 Technical Documentation</h2>
+        <p className="mb-6 text-slate-700">
+          Explore the details of how MuseumSpark collects, processes, and scores museum data.
+        </p>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link 
+            to="/roadmap/pipeline"
+            className="group rounded-lg border border-blue-300 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:border-blue-500"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-3xl">🔄</span>
+              <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-700">Data Pipeline</h3>
+            </div>
+            <p className="text-sm text-slate-600">
+              Complete walkthrough of our 10-phase enrichment process from raw roster to validated, scored data.
+            </p>
+            <div className="mt-4 text-sm font-medium text-blue-600 group-hover:text-blue-700">
+              View Pipeline →
+            </div>
+          </Link>
+
+          <Link 
+            to="/roadmap/scoring"
+            className="group rounded-lg border border-blue-300 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:border-blue-500"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-3xl">⭐</span>
+              <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-700">Scoring Methodology</h3>
+            </div>
+            <p className="text-sm text-slate-600">
+              Detailed explanation of our scoring rubrics, formulas, and how Priority and Quality scores are calculated.
+            </p>
+            <div className="mt-4 text-sm font-medium text-blue-600 group-hover:text-blue-700">
+              View Methodology →
+            </div>
+          </Link>
+
+          <Link 
+            to="/roadmap/data-model"
+            className="group rounded-lg border border-blue-300 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:border-blue-500"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-3xl">🗂️</span>
+              <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-700">Data Model</h3>
+            </div>
+            <p className="text-sm text-slate-600">
+              Complete field reference with data sources, pipeline phases, and examples for every museum record field.
+            </p>
+            <div className="mt-4 text-sm font-medium text-blue-600 group-hover:text-blue-700">
+              View Data Model →
+            </div>
+          </Link>
+        </div>
       </div>
      
       <div className="flex justify-center pt-8">
