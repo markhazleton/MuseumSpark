@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-"""Phase 1.5: Wikipedia Enrichment for Art Museums (MRD v2).
+"""Phase 1.5: Wikipedia Enrichment for All Museums (MRD v2).
 
-This module fetches Wikipedia data for art museums only to build
+This module fetches Wikipedia data for all museums to build
 a curated evidence packet for Phase 2 LLM scoring.
-
-IMPORTANT: Only processes museums where is_scoreable=True (art museums).
-Non-art museums are skipped entirely.
 
 Data Fetched:
     - Wikipedia URL (if found)
@@ -15,7 +12,7 @@ Data Fetched:
     - Historical founding information
 
 Design Principles:
-    1. ART MUSEUMS ONLY: Skip non-art museums (is_scoreable=False)
+    1. ALL MUSEUMS: Process all museums regardless of type
     2. RATE LIMITED: Respect Wikipedia API limits (polite delay)
     3. CACHED: Store Wikipedia data in museum folder cache
     4. IDEMPOTENT: Skip museums that already have Wikipedia data (unless --force)
@@ -58,6 +55,10 @@ except ImportError:
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 STATES_DIR = PROJECT_ROOT / "data" / "states"
 RUNS_DIR = PROJECT_ROOT / "data" / "runs"
+
+# Configure stdout for UTF-8 on Windows to handle special characters
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 # Wikipedia API endpoint
 WIKIPEDIA_API_URL = "https://en.wikipedia.org/w/api.php"
@@ -270,7 +271,7 @@ def process_state(
     force: bool = False,
     dry_run: bool = False,
 ) -> Phase1_5Stats:
-    """Process all art museums in a state for Wikipedia enrichment.
+    """Process all museums in a state for Wikipedia enrichment.
 
     Args:
         state_code: Two-letter state code
@@ -297,11 +298,6 @@ def process_state(
         museum_id = museum.get("museum_id", "")
         museum_name = museum.get("museum_name", "")
         stats.total_processed += 1
-
-        # Only process art museums (is_scoreable=True)
-        if not museum.get("is_scoreable", False):
-            stats.skipped_not_art += 1
-            continue
 
         print(f"  [{idx}/{total}] {museum_name[:50]}")
 
@@ -334,7 +330,7 @@ def process_state(
 def main() -> int:
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Phase 1.5: Wikipedia Enrichment for Art Museums",
+        description="Phase 1.5: Wikipedia Enrichment for All Museums",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -370,7 +366,7 @@ def main() -> int:
     run_dir.mkdir(parents=True, exist_ok=True)
 
     print("=" * 60)
-    print("Phase 1.5: Wikipedia Enrichment for Art Museums")
+    print("Phase 1.5: Wikipedia Enrichment for All Museums")
     print("=" * 60)
     print(f"States: {', '.join(state_codes)}")
     print(f"Force: {args.force}")

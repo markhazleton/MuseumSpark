@@ -66,6 +66,10 @@ STATES_DIR = PROJECT_ROOT / "data" / "states"
 RUNS_DIR = PROJECT_ROOT / "data" / "runs"
 CSV_PATH = PROJECT_ROOT / "data" / "museums.csv"
 
+# Configure stdout for UTF-8 on Windows to handle special characters
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+
 # Cache for CSV data
 _CSV_BY_STATE_CACHE: Optional[dict[str, list[dict[str, str]]]] = None
 
