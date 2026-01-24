@@ -6610,12 +6610,13 @@
         "official_website",
         "http://mocajacksonville.unf.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q3329582; Wikidata: inferred reputation=2 from sitelinks; Nominatim: matched 1 result; MRD: computed city_tier=1 for Jacksonville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T06:13:48Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3058936211",
@@ -6632,7 +6633,20 @@
       "content_generated_at": "2026-01-18T00:45:07Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 14
+      "overall_quality_score": 14,
+      "planner_priority_score": 14,
+      "planner_outcome_tier": "High Priority",
+      "planner_historical_context": 2,
+      "planner_impressionist_strength": 0,
+      "planner_modern_contemporary_strength": 3,
+      "planner_traditional_strength": 0,
+      "planner_exhibition_advantage": 4,
+      "planner_collection_pas": 3,
+      "planner_effective_pas": 4,
+      "planner_reputation_level": "Regional",
+      "planner_collection_level": "Small",
+      "planner_notes": "Exhibition-focused contemporary art institution emphasizing rotating shows, experimental practice, and community engagement with limited permanent holdings.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-fl-jacksonville-beach-beaches-museum-historical-park",
@@ -7538,12 +7552,13 @@
         "official_website",
         "http://www.mocanomi.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for North Miami; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T06:13:48Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3058936211",
@@ -7560,7 +7575,20 @@
       "content_generated_at": "2026-01-18T00:48:18Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 14
+      "overall_quality_score": 14,
+      "planner_priority_score": 14,
+      "planner_outcome_tier": "High Priority",
+      "planner_historical_context": 2,
+      "planner_impressionist_strength": 0,
+      "planner_modern_contemporary_strength": 3,
+      "planner_traditional_strength": 0,
+      "planner_exhibition_advantage": 4,
+      "planner_collection_pas": 3,
+      "planner_effective_pas": 4,
+      "planner_reputation_level": "Regional",
+      "planner_collection_level": "Small",
+      "planner_notes": "Exhibition-focused contemporary art institution emphasizing rotating shows, experimental practice, and community engagement with limited permanent holdings.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-fl-ocala-appleton-museum-of-art",
@@ -7903,12 +7931,13 @@
         "official_website",
         "http://www.visualartcenter.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Punta Gorda; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:56:26Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -7923,7 +7952,21 @@
       ],
       "content_generated_at": "2026-01-18T00:49:29Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "planner_priority_score": 20,
+      "planner_outcome_tier": "Consider",
+      "planner_consider_label": "Community-Run Cultural Space",
+      "planner_historical_context": 2,
+      "planner_impressionist_strength": 0,
+      "planner_modern_contemporary_strength": 1,
+      "planner_traditional_strength": 0,
+      "planner_exhibition_advantage": 2,
+      "planner_collection_pas": 1,
+      "planner_effective_pas": 2,
+      "planner_reputation_level": "Local",
+      "planner_collection_level": "Small",
+      "planner_notes": "An exhibition-focused visual arts center housed in a historic Carnegie library building. The center presents rotating exhibitions by contemporary artists and regional practitioners. It emphasizes community access and does not maintain a permanent collection.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-fl-quincy-gadsden-arts-center",
@@ -8331,12 +8374,13 @@
         "official_website",
         "http://www.fine-arts.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for St. Petersburg; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T06:13:48Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "7278962667",
@@ -8353,7 +8397,20 @@
       "content_generated_at": "2026-01-18T00:50:56Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 7
+      "overall_quality_score": 7,
+      "planner_priority_score": 12,
+      "planner_outcome_tier": "Regionally Important",
+      "planner_historical_context": 2,
+      "planner_impressionist_strength": 2,
+      "planner_modern_contemporary_strength": 3,
+      "planner_traditional_strength": 4,
+      "planner_exhibition_advantage": 3,
+      "planner_collection_pas": 4,
+      "planner_effective_pas": 4,
+      "planner_reputation_level": "Regional",
+      "planner_collection_level": "Moderate",
+      "planner_notes": "An art museum with permanent collections of fine art alongside temporary exhibitions. The institution emphasizes public access, education, and cultural programming. It operates as a municipal museum serving the Montgomery area.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-fl-tallahassee-goodwood-museum-and-gardens",
@@ -8545,7 +8602,8 @@
         "openstreetmap",
         "official_website",
         "http://www.fmopa.org",
-        "museums_csv"
+        "museums_csv",
+        "museum_planner_spreadsheet"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Tampa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
@@ -8565,7 +8623,8 @@
       ],
       "content_generated_at": "2026-01-18T03:34:05Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-fl-tarpon-springs-leepa-rattner-museum-of-art",
@@ -8859,5 +8918,5 @@
       "overall_quality_score": 10
     }
   ],
-  "updated_at": "2026-01-18T06:13:48Z"
+  "updated_at": "2026-01-24T21:52:22Z"
 }

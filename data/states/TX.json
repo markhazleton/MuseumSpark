@@ -6189,12 +6189,13 @@
         "official_website",
         "http://www.mfah.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q1565911; Wikidata: inferred reputation=1 from sitelinks; Nominatim: matched 1 result; MRD: computed city_tier=1 for Houston; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Access forbidden (403) for http://www.mfah.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T06:13:48Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "is_scoreable": true,
@@ -6210,7 +6211,20 @@
       "content_generated_at": "2026-01-18T04:55:18Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 18
+      "overall_quality_score": 18,
+      "planner_priority_score": 12,
+      "planner_outcome_tier": "Regionally Important",
+      "planner_historical_context": 2,
+      "planner_impressionist_strength": 2,
+      "planner_modern_contemporary_strength": 3,
+      "planner_traditional_strength": 4,
+      "planner_exhibition_advantage": 3,
+      "planner_collection_pas": 4,
+      "planner_effective_pas": 4,
+      "planner_reputation_level": "Regional",
+      "planner_collection_level": "Moderate",
+      "planner_notes": "An art museum with permanent collections of fine art alongside temporary exhibitions. The institution emphasizes public access, education, and cultural programming. It operates as a municipal museum serving the Montgomery area.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-tx-kerrville-kerr-arts-and-cultural-center",
@@ -6503,5 +6517,5 @@
       "overall_quality_score": 15
     }
   ],
-  "updated_at": "2026-01-18T06:13:48Z"
+  "updated_at": "2026-01-24T21:52:22Z"
 }

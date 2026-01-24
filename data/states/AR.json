@@ -53,12 +53,13 @@
         "http://www.fsram.org",
         "openstreetmap",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:56:25Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4797842787",
@@ -74,7 +75,21 @@
       ],
       "content_generated_at": "2026-01-17T23:27:30Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "planner_priority_score": 17,
+      "planner_outcome_tier": "Consider",
+      "planner_consider_label": "Specialized Art Site",
+      "planner_historical_context": 1,
+      "planner_impressionist_strength": 0,
+      "planner_modern_contemporary_strength": 2,
+      "planner_traditional_strength": 1,
+      "planner_exhibition_advantage": 3,
+      "planner_collection_pas": 2,
+      "planner_effective_pas": 3,
+      "planner_reputation_level": "Regional",
+      "planner_collection_level": "Small",
+      "planner_notes": "The Fort Smith Regional Art Museum is an exhibition-driven institution focused on contemporary art. It emphasizes rotating shows, artist projects, and regional engagement rather than permanent holdings. The museum serves as a key cultural venue for western Arkansas.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-ar-unknown-the-momentary",
@@ -124,12 +139,13 @@
         "walker_reciprocal",
         "official_website",
         "https://themomentary.org",
-        "openstreetmap"
+        "openstreetmap",
+        "museum_planner_spreadsheet"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:58:34Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -144,7 +160,20 @@
       ],
       "content_generated_at": "2026-01-18T02:58:34Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "planner_priority_score": 11,
+      "planner_outcome_tier": "High Priority",
+      "planner_historical_context": 1,
+      "planner_impressionist_strength": 0,
+      "planner_modern_contemporary_strength": 4,
+      "planner_traditional_strength": 0,
+      "planner_exhibition_advantage": 5,
+      "planner_collection_pas": 4,
+      "planner_effective_pas": 5,
+      "planner_reputation_level": "National",
+      "planner_collection_level": "Small",
+      "planner_notes": "The Momentary operates as a kunsthalle-style contemporary art and performance space affiliated with Crystal Bridges. Its focus is on temporary installations, time-based media, and live performance. Programming prioritizes experimentation and new artistic production.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-ar-bentonville-crystal-bridges-museum-of-contemporary-american-art",
@@ -195,12 +224,13 @@
         "official_website",
         "http://crystalbridges.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T06:13:48Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "4794185700",
@@ -217,7 +247,20 @@
       "content_generated_at": "2026-01-17T23:27:56Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 15
+      "overall_quality_score": 15,
+      "planner_priority_score": 5,
+      "planner_outcome_tier": "Must-See",
+      "planner_historical_context": 3,
+      "planner_impressionist_strength": 2,
+      "planner_modern_contemporary_strength": 5,
+      "planner_traditional_strength": 3,
+      "planner_exhibition_advantage": 5,
+      "planner_collection_pas": 5,
+      "planner_effective_pas": 5,
+      "planner_reputation_level": "National",
+      "planner_collection_level": "Flagship",
+      "planner_notes": "Crystal Bridges is a nationally significant museum dedicated to American art across multiple periods. Its permanent collection anchors large-scale exhibitions within a distinctive architectural and landscape setting. The institution functions as a major destination museum with broad national reach.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-ar-el-dorado-south-arkansas-arts-center",
@@ -267,12 +310,13 @@
         "walker_reciprocal",
         "openstreetmap",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T02:56:25Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "8625474",
@@ -288,7 +332,21 @@
       ],
       "content_generated_at": "2026-01-17T23:28:07Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "planner_priority_score": 21,
+      "planner_outcome_tier": "Consider",
+      "planner_consider_label": "Community-Run Cultural Space",
+      "planner_historical_context": 1,
+      "planner_impressionist_strength": 0,
+      "planner_modern_contemporary_strength": 1,
+      "planner_traditional_strength": 0,
+      "planner_exhibition_advantage": 2,
+      "planner_collection_pas": 1,
+      "planner_effective_pas": 2,
+      "planner_reputation_level": "Local",
+      "planner_collection_level": "Small",
+      "planner_notes": "The South Arkansas Arts Center functions primarily as a community arts hub serving El Dorado and the surrounding area. It supports visual and performing arts through exhibitions, classes, and local programming. Participation and access are central to its mission.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-ar-little-rock-arkansas-museum-of-fine-arts",
@@ -340,12 +398,13 @@
         "official_website",
         "http://www.arkarts.com",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T23:28:18Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "5013724000",
@@ -361,8 +420,21 @@
       ],
       "content_generated_at": "2026-01-17T23:28:18Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "planner_priority_score": 10,
+      "planner_outcome_tier": "High Priority",
+      "planner_historical_context": 2,
+      "planner_impressionist_strength": 1,
+      "planner_modern_contemporary_strength": 3,
+      "planner_traditional_strength": 3,
+      "planner_exhibition_advantage": 3,
+      "planner_collection_pas": 3,
+      "planner_effective_pas": 3,
+      "planner_reputation_level": "Statewide",
+      "planner_collection_level": "Strong",
+      "planner_notes": "The Arkansas Museum of Fine Arts serves as the state’s most comprehensive art institution, combining permanent collections with rotating exhibitions. Its programming spans historical and contemporary works while also integrating performance and education. The museum plays a central role in Arkansas’s cultural infrastructure.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     }
   ],
-  "updated_at": "2026-01-18T06:13:48Z"
+  "updated_at": "2026-01-24T21:52:22Z"
 }

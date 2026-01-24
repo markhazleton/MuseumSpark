@@ -48,6 +48,7 @@ Whether planning a 2-hour layover or a weekend art tour, MuseumSpark helps you d
 **Phase 1.5**: Wikipedia article extraction  
 **Phase 1.75**: Heuristic fallback for missing data  
 **Phase 1.8**: CSV lookup integration  
+**Phase 1.9**: Museum planner metadata (product owner scores & notes)  
 **Phase 2**: Expert scoring (collections, historical context)  
 **Phase 2.5**: Rich content extraction  
 **Phase 3**: Priority score calculation

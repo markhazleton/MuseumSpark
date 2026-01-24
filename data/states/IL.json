@@ -1877,12 +1877,13 @@
         "official_website",
         "http://www.mcachicago.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "museum_planner_spreadsheet"
       ],
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q118142; Wikidata: inferred reputation=1 from sitelinks; Nominatim: matched 1 result; MRD: computed city_tier=1 for Chicago; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-17T19:14:43Z",
+      "updated_at": "2026-01-24T21:52:22Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3122802660",
@@ -1899,7 +1900,20 @@
       "content_generated_at": "2026-01-17T19:02:50Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 19
+      "overall_quality_score": 19,
+      "planner_priority_score": 14,
+      "planner_outcome_tier": "High Priority",
+      "planner_historical_context": 2,
+      "planner_impressionist_strength": 0,
+      "planner_modern_contemporary_strength": 3,
+      "planner_traditional_strength": 0,
+      "planner_exhibition_advantage": 4,
+      "planner_collection_pas": 3,
+      "planner_effective_pas": 4,
+      "planner_reputation_level": "Regional",
+      "planner_collection_level": "Small",
+      "planner_notes": "Exhibition-focused contemporary art institution emphasizing rotating shows, experimental practice, and community engagement with limited permanent holdings.",
+      "planner_data_updated_at": "2026-01-24T21:52:22Z"
     },
     {
       "museum_id": "usa-il-chicago-oriental-institute",
@@ -2683,5 +2697,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-18T02:56:26Z"
+  "updated_at": "2026-01-24T21:52:22Z"
 }
