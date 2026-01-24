@@ -190,6 +190,7 @@ export default function MuseumDetailPage() {
   const isArt = museum.primary_domain === 'Art' || museum.museum_type?.toLowerCase().includes('art')
   const hasScores = museum.is_scored || museum.is_scoreable || (museum.priority_score !== null && museum.priority_score !== undefined)
   const hasContent = museum.content_summary || museum.content_description || museum.content_highlights
+  const hasPlannerData = museum.planner_priority_score || museum.planner_outcome_tier || museum.planner_notes
 
   return (
     <div className="space-y-6 pb-20">
@@ -340,6 +341,99 @@ export default function MuseumDetailPage() {
                   )}
                 </div>
               </div>
+            </Section>
+          )}
+
+          {hasPlannerData && (
+            <Section title="Planner Assessment">
+              <div className="grid gap-6 md:grid-cols-2">
+                {/* Left Column: Priority & Tier */}
+                <div className="space-y-4">
+                  {museum.planner_priority_score !== undefined && museum.planner_priority_score !== null && (
+                    <div className="rounded-lg border-2 border-purple-200 bg-purple-50 p-4">
+                      <div className="text-xs font-semibold uppercase tracking-wider text-purple-700">Planner Priority</div>
+                      <div className="mt-1 text-3xl font-bold text-purple-900">{museum.planner_priority_score}</div>
+                    </div>
+                  )}
+                  
+                  {museum.planner_outcome_tier && (
+                    <Field label="Outcome Tier" value={
+                      <span className="inline-flex rounded-full bg-indigo-100 px-3 py-1 text-sm font-semibold text-indigo-800">
+                        {museum.planner_outcome_tier}
+                      </span>
+                    } />
+                  )}
+                  
+                  {museum.planner_consider_label && (
+                    <Field label="Category" value={museum.planner_consider_label} />
+                  )}
+                  
+                  {museum.planner_reputation_level && (
+                    <Field label="Planner Reputation" value={museum.planner_reputation_level} />
+                  )}
+                  
+                  {museum.planner_collection_level && (
+                    <Field label="Planner Collection Level" value={museum.planner_collection_level} />
+                  )}
+                </div>
+
+                {/* Right Column: Collection Strengths & Scores */}
+                <div className="space-y-4">
+                  {(museum.planner_impressionist_strength || museum.planner_modern_contemporary_strength || museum.planner_traditional_strength) && (
+                    <div>
+                      <h3 className="mb-3 text-sm font-semibold text-slate-900">Planner Collection Strengths</h3>
+                      {museum.planner_impressionist_strength && (
+                        <RatingBar label="Impressionist" value={museum.planner_impressionist_strength} />
+                      )}
+                      {museum.planner_modern_contemporary_strength && (
+                        <RatingBar label="Modern/Contemporary" value={museum.planner_modern_contemporary_strength} />
+                      )}
+                      {museum.planner_traditional_strength && (
+                        <RatingBar label="Traditional" value={museum.planner_traditional_strength} />
+                      )}
+                      {museum.planner_historical_context && (
+                        <RatingBar label="Historical Context" value={museum.planner_historical_context} />
+                      )}
+                    </div>
+                  )}
+                  
+                  {(museum.planner_exhibition_advantage || museum.planner_collection_pas || museum.planner_effective_pas) && (
+                    <div className="grid grid-cols-3 gap-2">
+                      {museum.planner_exhibition_advantage !== undefined && museum.planner_exhibition_advantage !== null && (
+                        <div className="rounded bg-slate-50 p-2 text-center">
+                          <div className="text-xs text-slate-500">ECA</div>
+                          <div className="text-lg font-semibold text-slate-900">{museum.planner_exhibition_advantage}</div>
+                        </div>
+                      )}
+                      {museum.planner_collection_pas !== undefined && museum.planner_collection_pas !== null && (
+                        <div className="rounded bg-slate-50 p-2 text-center">
+                          <div className="text-xs text-slate-500">Coll PAS</div>
+                          <div className="text-lg font-semibold text-slate-900">{museum.planner_collection_pas}</div>
+                        </div>
+                      )}
+                      {museum.planner_effective_pas !== undefined && museum.planner_effective_pas !== null && (
+                        <div className="rounded bg-slate-50 p-2 text-center">
+                          <div className="text-xs text-slate-500">Eff PAS</div>
+                          <div className="text-lg font-semibold text-slate-900">{museum.planner_effective_pas}</div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+              
+              {museum.planner_notes && (
+                <div className="mt-4 rounded-md border border-purple-200 bg-purple-50 p-4">
+                  <h3 className="mb-2 text-sm font-semibold text-purple-900">Planner Notes</h3>
+                  <p className="whitespace-pre-wrap text-sm text-purple-800 leading-relaxed">{museum.planner_notes}</p>
+                </div>
+              )}
+              
+              {museum.planner_data_updated_at && (
+                <div className="mt-3 text-xs text-slate-500">
+                  Planner data last updated: {new Date(museum.planner_data_updated_at).toLocaleDateString()}
+                </div>
+              )}
             </Section>
           )}
 

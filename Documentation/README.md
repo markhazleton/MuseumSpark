@@ -12,6 +12,7 @@ Documentation is organized into four main areas:
 - **[data-pipeline/](data-pipeline/)** - Enrichment strategies, LLM integration, quality rules
 - **[setup-deployment/](setup-deployment/)** - Configuration and deployment guides  
 - **[reference/](reference/)** - Technical references and requirements
+- **[copilot/](copilot/)** - GitHub Copilot instructions and session documentation
 
 ## 🏠 Start Here
 
@@ -28,6 +29,7 @@ The Home.md provides:
 ### Essential Documents
 - **System Design**: [architecture/ApplicationArchitecture.md](architecture/ApplicationArchitecture.md)
 - **API Specification**: [architecture/MuseumAPI.md](architecture/MuseumAPI.md)
+- **Copilot Instructions**: [copilot-instructions.md](copilot-instructions.md)
 - **Dataset Schema**: [architecture/DataSetDesign.md](architecture/DataSetDesign.md)
 
 ### Getting Started

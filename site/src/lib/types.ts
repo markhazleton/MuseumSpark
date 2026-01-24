@@ -81,6 +81,22 @@ export type Museum = {
   score_notes?: string | null;
   score_last_verified?: string | null;
 
+  // Product Owner/Planner Metadata (Phase 1.9)
+  planner_priority_score?: number | null;
+  planner_outcome_tier?: string | null;
+  planner_consider_label?: string | null;
+  planner_historical_context?: number | null;
+  planner_impressionist_strength?: number | null;
+  planner_modern_contemporary_strength?: number | null;
+  planner_traditional_strength?: number | null;
+  planner_exhibition_advantage?: number | null;
+  planner_collection_pas?: number | null;
+  planner_effective_pas?: number | null;
+  planner_reputation_level?: string | null;
+  planner_collection_level?: string | null;
+  planner_notes?: string | null;
+  planner_data_updated_at?: string | null;
+
   // Enriched Content (LLM-Generated Phase 2.5)
   content_summary?: string | null; // 50-100 words
   content_description?: string | null; // 200-300 words with markdown

@@ -34,6 +34,12 @@ Technical references, API documentation, and requirements
 - **[Location Extraction Libraries](reference/Location-Extraction-Libraries.md)** - Technical reference for geocoding libraries and address parsing
 - **[Museum Business Data APIs](reference/Museum-Business-Data-APIs.md)** - Available external APIs and data sources for museum information
 
+### 🤖 [Copilot](copilot/)
+GitHub Copilot instructions and session documentation
+
+- **[GitHub Copilot Instructions](copilot-instructions.md)** - Comprehensive Copilot guidance integrating SpecKit constitution and repository patterns
+- **[Copilot Documentation](copilot/)** - Session notes and copilot-generated exploratory documentation
+
 ## 🚀 Quick Start Paths
 
 ### For New Developers
@@ -51,6 +57,11 @@ Technical references, API documentation, and requirements
 1. Follow [GitHub Pages Setup](setup-deployment/GitHub-Pages-Setup.md) for initial deployment
 2. Review [GitHub Pages Deployment](setup-deployment/GitHubPagesDeployment.md) for the deployment workflow
 3. Check [API Keys Setup](setup-deployment/API-Keys-Setup.md) for required configurations
+
+### For AI-Assisted Development
+1. Review [GitHub Copilot Instructions](copilot-instructions.md) for constitutional principles and best practices
+2. Check [SpecKit Constitution](../.specify/memory/constitution.md) for non-negotiable requirements
+3. See [CLAUDE.md](../CLAUDE.md) for runtime development guidance
 
 ## 🔗 Related Documentation
 
@@ -85,4 +96,4 @@ All documentation in this folder follows these principles:
 
 ---
 
-*Last updated: January 18, 2026*
+*Last updated: January 24, 2026*

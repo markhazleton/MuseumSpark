@@ -335,7 +335,7 @@ def process_state(
         print(f"           Overall Quality: {breakdown.overall_quality_score} (higher=better overall)")
 
         if not dry_run:
-            # Apply scores to museum record
+            # Apply scores to museum record (preserves all existing fields including planner_* fields from Phase 1.9)
             museum["priority_score"] = breakdown.priority_score
             museum["overall_quality_score"] = breakdown.overall_quality_score
             if primary_art:

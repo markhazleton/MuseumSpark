@@ -583,6 +583,7 @@ def process_state(
             stats.scored += 1
 
             # Apply scores to museum record
+            # NOTE: This preserves all existing fields including planner_* fields from Phase 1.9
             patch = result.to_patch()
             for key, value in patch.items():
                 museum[key] = value

@@ -471,7 +471,7 @@ def process_state(
         else:
             stats.standard_model_used += 1
         
-        # Apply patch
+        # Apply patch (preserves all existing fields including planner_* fields from Phase 1.9)
         patch = result.to_patch()
         updated_museum = {**museum, **patch}
         updated_museum["updated_at"] = now_utc_iso()
