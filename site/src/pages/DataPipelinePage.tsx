@@ -427,13 +427,15 @@ export default function DataPipelinePage() {
             </div>
           </SubSection>
 
-          <SubSection title="Scoring Dimensions">
+          <SubSection title="Scoring Dimensions (MRD v3)">
             <FieldList fields={[
-              { name: "impressionist_strength", description: "1-5 scale: Impressionist collection quality" },
-              { name: "modern_contemporary_strength", description: "1-5 scale: Modern/Contemporary collection quality" },
-              { name: "historical_context_score", description: "1-5 scale: Curatorial and educational quality" },
+              { name: "impressionist_strength", description: "0-5 scale: Impressionist collection quality (0=None, 5=Canon-Defining)" },
+              { name: "modern_contemporary_strength", description: "0-5 scale: Modern/Contemporary collection quality (0=None, 5=Canon-Defining)" },
+              { name: "historical_context_score", description: "0-5 scale: Historical importance regardless of size/reputation (5=Must-See)" },
+              { name: "eca_score", description: "0-5 scale: Exhibitions & Curatorial Authority (programmatic influence)" },
+              { name: "collection_based_strength", description: "0-5 scale: Permanent holdings scholarly importance (0=None, 5=Canon-Defining)" },
               { name: "reputation", description: "0-3 scale: Cultural significance (0=International, 3=Local)" },
-              { name: "collection_tier", description: "0-3 scale: Collection size/depth (0=Flagship, 3=Small)" },
+              { name: "must_see_candidate", description: "Boolean flag when Historical Context = 5" },
               { name: "confidence", description: "1-5 scale: LLM self-assessed confidence" },
               { name: "score_notes", description: "2-3 sentence explanation of key scores" },
             ]} />
@@ -559,29 +561,30 @@ export default function DataPipelinePage() {
           <SubSection title="Formulas">
             <div className="space-y-4">
               <div className="rounded-lg bg-emerald-50 border border-emerald-200 p-4 text-sm">
-                <h4 className="font-bold text-emerald-900 mb-2">Priority Score (Lower = Better)</h4>
+                <h4 className="font-bold text-emerald-900 mb-2">Priority Score (Lower = Better) — MRD v3</h4>
                 <pre className="bg-white p-3 rounded border border-emerald-300 overflow-x-auto text-xs font-mono">
-{`Primary Art = max(Impressionist, Modern/Contemporary)
+{`Primary Art Strength = max(Impressionist, Modern/Contemporary)
 
 Priority Score = 
-  (6 - Primary Art) × 3
-  + (6 - Historical Context) × 2
+  (5 - Primary Art Strength) × 3
+  + (5 - Historical Context) × 2
+  + (5 - Collection-Based Strength) × 2
   + Reputation (0-3)
-  + Collection Tier (0-3)
   - Dual Strength Bonus (2 if both ≥ 4)
-  - Nearby Cluster Bonus (1 if 3+ museums in city)`}
+  - ECA Bonus (1 if ECA ≥ 4)`}
                 </pre>
               </div>
 
               <div className="rounded-lg bg-blue-50 border border-blue-200 p-4 text-sm">
-                <h4 className="font-bold text-blue-900 mb-2">Quality Score (Higher = Better)</h4>
+                <h4 className="font-bold text-blue-900 mb-2">Quality Score (Higher = Better) — MRD v3</h4>
                 <pre className="bg-white p-3 rounded border border-blue-300 overflow-x-auto text-xs font-mono">
 {`Quality Score = 
-  Primary Art × 3
+  Primary Art Strength × 3
   + Historical Context × 2
+  + Collection-Based Strength × 2
   + (3 - Reputation) × 1
-  + (3 - Collection Tier) × 1
-  + Dual Strength Bonus (2 if both ≥ 4)`}
+  + Dual Strength Bonus (2 if both ≥ 4)
+  + ECA Bonus (1 if ECA ≥ 4)`}
                 </pre>
               </div>
             </div>
@@ -728,7 +731,7 @@ Priority Score =
 
       {/* Version Info */}
       <div className="rounded-lg bg-slate-100 p-4 text-center text-sm text-slate-600">
-        <div><strong>Pipeline Version:</strong> MRD v2.0 (January 2026)</div>
+        <div><strong>Pipeline Version:</strong> MRD v3.0 (January 2026)</div>
         <div className="mt-1"><strong>Total Phases:</strong> 10 (Ingestion + 9 enrichment phases)</div>
         <div className="mt-1"><strong>Typical Runtime:</strong> 2-4 hours per state (varies by museum count)</div>
       </div>

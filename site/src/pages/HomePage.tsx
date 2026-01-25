@@ -36,7 +36,7 @@ export default function HomePage() {
         <div className="grid gap-8 md:grid-cols-3">
           <FeatureCard 
             title="Curated Scoring" 
-            description="Our unique Priority Score ranks museums based on Impressionist & Modern/Contemporary collection strengths, ensuring you see the best art first."
+            description="Our comprehensive MRD v3 scoring evaluates 6 dimensions: Impressionist & Modern/Contemporary collections, Historical Context, Exhibitions & Curatorial Authority, Collection-Based Strength, and Reputation. Find Must-See museums with field-defining collections."
             icon="🏆"
           />
           <FeatureCard 

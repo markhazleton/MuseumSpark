@@ -29,15 +29,16 @@ export default function RoadmapPage() {
       </Section>
 
       {/* Phase 2 */}
-      <Section status="planned" title="Phase 2: AI & LLM Enrichment">
+      <Section status="completed" title="Phase 2: AI & LLM Enrichment (MRD v3)">
         <p className="mb-4 text-slate-700">
           <strong>Focus:</strong> Deepening the dataset with qualitative insights using advanced AI models.
         </p>
         <ul className="list-inside list-disc space-y-2 text-sm text-slate-600">
-          <li><strong>Targeted Processing:</strong> Selecting high-priority museums for deep-dive analysis.</li>
-          <li><strong>Smart Scoring:</strong> Using Claude and OpenAI models to analyze collections and assign Master Requirement scores (Impressionist Strength, Historical Context).</li>
-          <li><strong>Details Extraction:</strong> Automated gathering of detailed logistical info (hours, accessibility, precise location semantics).</li>
-          <li><strong>Source Verification:</strong> Ensuring LLM outputs are cross-referenced with reliable web sources.</li>
+          <li><strong>Comprehensive Scoring:</strong> 354 art museums scored across 6 dimensions using Claude 3.5 Sonnet and GPT-4o-mini.</li>
+          <li><strong>MRD v3 Rubrics:</strong> 0-5 scales for Impressionist, Modern/Contemporary, Historical Context, ECA, and Collection-Based Strength.</li>
+          <li><strong>Must-See Candidates:</strong> Automatic flagging of museums with field-defining historical importance (Historical Context = 5).</li>
+          <li><strong>Evidence-Based:</strong> All scores derived from curated Wikipedia articles and official website content—no hallucinations.</li>
+          <li className="font-semibold text-emerald-600">Status: Completed (January 2026)</li>
         </ul>
       </Section>
 

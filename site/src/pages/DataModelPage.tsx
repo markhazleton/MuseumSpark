@@ -368,7 +368,7 @@ export default function DataModelPage() {
       <FieldSection 
         title="Scoring Metrics (Art Museums)" 
         icon="⭐"
-        description="LLM-assigned and computed scores"
+        description="LLM-assigned and computed scores (MRD v3)"
       >
         <Field
           name="is_scoreable"
@@ -380,46 +380,62 @@ export default function DataModelPage() {
         />
         <Field
           name="impressionist_strength"
-          type="number (1-5) | null"
-          source="LLM judgment (Claude 3.5 Sonnet)"
+          type="number (0-5) | null"
+          source="LLM judgment (Claude 3.5 Sonnet, GPT-4o-mini)"
           phase="Phase 2"
-          description="Impressionist collection strength: 1=None, 2=Minor, 3=Moderate, 4=Strong, 5=Flagship"
+          description="Impressionist collection strength: 0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining"
           example="4"
         />
         <Field
           name="modern_contemporary_strength"
-          type="number (1-5) | null"
-          source="LLM judgment (Claude 3.5 Sonnet)"
+          type="number (0-5) | null"
+          source="LLM judgment (Claude 3.5 Sonnet, GPT-4o-mini)"
           phase="Phase 2"
-          description="Modern/Contemporary collection strength: 1=None, 2=Minor, 3=Moderate, 4=Strong, 5=Flagship"
+          description="Modern/Contemporary collection strength: 0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining"
           example="5"
         />
         <Field
           name="historical_context_score"
-          type="number (1-5) | null"
-          source="LLM judgment (Claude 3.5 Sonnet)"
+          type="number (0-5) | null"
+          source="LLM judgment (Claude 3.5 Sonnet, GPT-4o-mini)"
           phase="Phase 2"
-          description="Curatorial and educational quality: 1=Poor, 2=Minimal, 3=Moderate, 4=Strong, 5=Outstanding"
+          description="Historical importance independent of size/reputation: 0=None, 1=Limited, 2=Local, 3=Strong Regional, 4=Nationally Significant, 5=Canon-Level (qualifies for Must-See)"
+          example="5"
+        />
+        <Field
+          name="eca_score"
+          type="number (0-5) | null"
+          source="LLM judgment (Claude 3.5 Sonnet, GPT-4o-mini)"
+          phase="Phase 2"
+          description="Exhibitions & Curatorial Authority (programmatic influence outside permanent collections): 0=None, 1=Minimal, 2=Competent, 3=Strong Regional, 4=Nationally Recognized, 5=Field-Shaping"
+          example="4"
+        />
+        <Field
+          name="collection_based_strength"
+          type="number (0-5) | null"
+          source="LLM judgment (Claude 3.5 Sonnet, GPT-4o-mini)"
+          phase="Phase 2"
+          description="Permanent holdings quality across all art categories: 0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining"
           example="5"
         />
         <Field
           name="reputation"
           type="number (0-3) | null"
-          source="LLM judgment (Claude 3.5 Sonnet)"
+          source="LLM judgment (Claude 3.5 Sonnet, GPT-4o-mini)"
           phase="Phase 2"
           description="Cultural significance: 0=International, 1=National, 2=Regional, 3=Local"
           example="0"
         />
         <Field
-          name="collection_tier"
-          type="number (0-3) | null"
-          source="LLM judgment (Claude 3.5 Sonnet)"
+          name="must_see_candidate"
+          type="boolean | null"
+          source="Computed from historical_context_score"
           phase="Phase 2"
-          description="Collection size/depth: 0=Flagship, 1=Strong, 2=Moderate, 3=Small"
-          example="0"
+          description="Flagged when Historical Context = 5 (canon-level historical importance)"
+          example="true"
         />
         <Field
-          name="primary_art"
+          name="primary_art_focus"
           type="enum"
           source="Derived from max(impressionist_strength, modern_contemporary_strength)"
           phase="Phase 2"
@@ -472,7 +488,7 @@ export default function DataModelPage() {
           source="Pipeline metadata"
           phase="Phase 2"
           description="Version of scoring algorithm used"
-          example="MRD-v2.0"
+          example="MRD-v3.0"
         />
         <Field
           name="scored_by"
