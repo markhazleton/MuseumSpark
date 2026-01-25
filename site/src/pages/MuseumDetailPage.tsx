@@ -20,19 +20,34 @@ const REPUTATION_MAP: Record<number, string> = {
   3: 'Local',
 }
 
-const COLLECTION_TIER_MAP: Record<number, string> = {
-  0: 'Flagship',
-  1: 'Strong',
-  2: 'Moderate',
-  3: 'Small',
+// MRD v3: Collection-Based Strength replaces Collection Tier (0-5 scale)
+const COLLECTION_STRENGTH_MAP: Record<number, string> = {
+  5: 'Canon-Defining',
+  4: 'Major Scholarly',
+  3: 'Strong Regional',
+  2: 'Modest',
+  1: 'Limited',
+  0: 'None',
 }
 
+// MRD v3: Updated 0-5 scale for art strength fields
 const STRENGTH_MAP: Record<number, string> = {
-  5: 'Flagship Collection',
-  4: 'Strong Collection',
-  3: 'Moderate Representation',
-  2: 'Minor Works',
-  1: 'None',
+  5: 'Canon-Defining',
+  4: 'Major Scholarly',
+  3: 'Strong Regional',
+  2: 'Modest',
+  1: 'Limited',
+  0: 'None',
+}
+
+// MRD v3: Exhibitions & Curatorial Authority (ECA)
+const ECA_MAP: Record<number, string> = {
+  5: 'Field-Shaping',
+  4: 'Nationally Recognized',
+  3: 'Strong Regional',
+  2: 'Competent',
+  1: 'Minimal',
+  0: 'None',
 }
 
 function Section({ title, children, className = '' }: { title: string; children: React.ReactNode; className?: string }) {
@@ -221,9 +236,19 @@ export default function MuseumDetailPage() {
                   {REPUTATION_MAP[museum.reputation]} Reputation
                 </span>
               )}
-              {typeof museum.collection_tier === 'number' && (
+              {typeof museum.collection_based_strength === 'number' && (
                 <span className="inline-flex items-center rounded-full bg-violet-100 px-2.5 py-0.5 text-xs font-medium text-violet-800">
-                  {COLLECTION_TIER_MAP[museum.collection_tier]}
+                  {COLLECTION_STRENGTH_MAP[museum.collection_based_strength]} Collection
+                </span>
+              )}
+              {typeof museum.eca_score === 'number' && museum.eca_score >= 4 && (
+                <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800">
+                  {ECA_MAP[museum.eca_score]} Curatorial Program
+                </span>
+              )}
+              {museum.must_see_candidate && (
+                <span className="inline-flex items-center rounded-full bg-rose-100 px-2.5 py-0.5 text-xs font-medium text-rose-800">
+                  ★ Must-See Candidate
                 </span>
               )}
             </div>
@@ -316,21 +341,35 @@ export default function MuseumDetailPage() {
           )}
 
           {hasScores && isArt && (
-            <Section title="Artistic Profile">
+            <Section title="Artistic Profile (MRD v3)">
               <div className="grid gap-8 md:grid-cols-2">
                 <div>
-                   <h3 className="mb-3 text-sm font-semibold text-slate-900">Collection Strengths</h3>
+                   <h3 className="mb-3 text-sm font-semibold text-slate-900">Collection Strengths (0-5)</h3>
                    <RatingBar label="Impressionist" value={museum.impressionist_strength} />
                    <RatingBar label="Modern & Contemporary" value={museum.modern_contemporary_strength} />
+                   <RatingBar label="Collection-Based Strength" value={museum.collection_based_strength} />
                 </div>
                 <div>
-                  <h3 className="mb-3 text-sm font-semibold text-slate-900">Context & Focus</h3>
+                  <h3 className="mb-3 text-sm font-semibold text-slate-900">Context & Authority</h3>
                   <RatingBar label="Historical Context" value={museum.historical_context_score} />
+                  <RatingBar label="Exhibitions & Curatorial (ECA)" value={museum.eca_score} />
                   
-                  {museum.primary_art && (
+                  {museum.primary_art_focus && (
                     <div className="mt-4">
                       <div className="text-xs font-medium text-slate-500 uppercase">Primary Focus</div>
-                      <div className="text-lg font-medium text-slate-900">{museum.primary_art}</div>
+                      <div className="text-lg font-medium text-slate-900">{museum.primary_art_focus}</div>
+                    </div>
+                  )}
+                  
+                  {museum.must_see_candidate && (
+                    <div className="mt-4 rounded-lg border-2 border-rose-300 bg-rose-50 p-3">
+                      <div className="flex items-center gap-2 text-rose-800 font-semibold">
+                        <span className="text-lg">★</span>
+                        <span>Must-See Candidate</span>
+                      </div>
+                      <p className="mt-1 text-sm text-rose-700">
+                        Outstanding historical context score qualifies this museum for Must-See status.
+                      </p>
                     </div>
                   )}
                   

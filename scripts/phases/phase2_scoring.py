@@ -1,15 +1,27 @@
 #!/usr/bin/env python3
-"""Phase 2: Art Museum Scoring (MRD v2 Reboot).
+"""Phase 2: Art Museum Scoring (MRD v3 - January 2026).
 
 This module is the THIRD phase of the rebooted MuseumSpark pipeline.
 It scores ONLY art museums using LLM-as-judge with curated evidence.
 
-Scoring Fields (MRD Section 4):
-    - impressionist_strength: 1-5 scale
-    - modern_contemporary_strength: 1-5 scale
-    - historical_context_score: 1-5 scale
+Scoring Fields (MRD Section 4 - Updated January 2026):
+    - impressionist_strength: 0-5 scale (0=none, 5=canon-defining)
+    - modern_contemporary_strength: 0-5 scale (0=none, 5=canon-defining)
+    - historical_context_score: 0-5 scale (0=no context, 5=canon-level importance)
+    - eca_score: 0-5 Exhibitions & Curatorial Authority (0=none, 5=field-shaping)
+    - collection_based_strength: 0-5 scale (0=no collection, 5=canon-defining)
     - reputation: 0 (International), 1 (National), 2 (Regional), 3 (Local)
-    - collection_tier: 0 (Flagship), 1 (Strong), 2 (Moderate), 3 (Small)
+
+Priority Score Formula (computed in Phase 3):
+    Primary Art Strength = max(impressionist_strength, modern_contemporary_strength)
+    Dual-Strength Bonus = -2 if both >= 4
+    ECA Bonus = -1 if eca_score >= 4
+    Priority Score = (5 - Primary Art Strength) × 3
+                   + (5 - historical_context_score) × 2
+                   + (5 - collection_based_strength) × 2
+                   + reputation
+                   - Dual-Strength Bonus
+                   - ECA Bonus
 
 Design Principles:
     1. ELIGIBILITY GATE: Only museums with is_scoreable=True are processed
@@ -61,7 +73,7 @@ CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "phase2"
 RUNS_DIR = PROJECT_ROOT / "data" / "runs"
 
 # =============================================================================
-# LLM SCORING PROMPT (Judge Role - MRD Aligned)
+# LLM SCORING PROMPT (Judge Role - MRD v3 Aligned - January 2026)
 # =============================================================================
 
 SCORING_SYSTEM_PROMPT = """You are a museum expert and art historian. Your task is to assign bounded scores to art museums based on curated evidence.
@@ -70,55 +82,136 @@ IMPORTANT RULES:
 1. You are a JUDGE, not a researcher. Only use the evidence provided.
 2. Use your expert knowledge combined with the evidence to make informed assessments.
 3. For art museums, infer collection strength from museum name, type, and Wikipedia descriptions.
-4. All scores must be within their defined ranges.
-5. Be reasonable: only give high scores (4-5) with clear evidence, but use available clues to estimate mid-range scores.
-6. Focus on PERMANENT COLLECTIONS, not temporary exhibitions.
+4. All scores must be within their defined ranges (0-5 for art fields, 0-3 for reputation).
+5. Be rigorous: only give high scores (4-5) with clear evidence of canon-level or nationally significant holdings.
+6. Focus on PERMANENT COLLECTIONS for art strength scores, not temporary exhibitions.
+7. ECA (Exhibitions & Curatorial Authority) evaluates PROGRAMMATIC authority only, separate from collections.
 
-SCORING DEFINITIONS (from Museum Requirements Document):
+SCORING DEFINITIONS (from Museum Requirements Document - January 2026):
 
-impressionist_strength (1-5):
-  5 = Flagship collection (major Impressionist holdings, dedicated galleries)
-  4 = Strong collection (multiple significant Impressionist works)
-  3 = Moderate representation (some Impressionist works)
-  2 = Minor works only (few pieces, no focus)
-  1 = None or negligible
+=== impressionist_strength (0-5) ===
+Purpose: Measures the depth, authority, and scholarly importance of permanent Impressionist holdings.
 
-modern_contemporary_strength (1-5):
-  5 = Flagship collection (major Modern/Contemporary holdings)
-  4 = Strong collection (significant 20th-21st century works)
-  3 = Moderate representation
-  2 = Minor works only
-  1 = None or negligible
+5 — Canon-Defining Collection
+    The museum holds Impressionist works that are field-defining at the national or international level. Holdings contain canonical works (not merely representative examples), and the institution functions as a reference point for Impressionist scholarship and curation.
 
-historical_context_score (1-5):
-  5 = Strong narrative (chronological galleries, interpretive materials, educational depth)
-  4 = Good context (clear organization, informative labels)
-  3 = Inconsistent or surface-level context
-  2 = Minimal context
-  1 = Absent or poor historical framing
+4 — Major Scholarly Collection
+    Deep, high-quality Impressionist holdings with clear scholarly value and national significance. Includes important works and artists, supports sustained research and serious exhibitions.
 
-reputation (0-3):
-  0 = International (world-renowned, draws global visitors)
-  1 = National (major US destination, widely known)
-  2 = Regional (known within multi-state region)
-  3 = Local (primarily serves local community)
+3 — Strong Regional or Thematic Collection
+    Coherent, well-curated Impressionist holdings with recognized strength within a region or theme. Supports credible exhibitions but does not substantially influence national scholarship.
 
-collection_tier (0-3):
-  0 = Flagship (encyclopedic, world-class holdings)
-  1 = Strong (significant depth in multiple areas)
-  2 = Moderate (respectable but limited scope)
-  3 = Small (focused or limited collection)
+2 — Modest or Supporting Collection
+    Impressionist works provide contextual or educational value but lack depth, rarity, or sustained curatorial impact. Works are largely illustrative or supplementary.
+
+1 — Limited Collection Presence
+    Small or inconsistent Impressionist holdings with minimal curatorial or scholarly relevance.
+
+0 — No Meaningful Impressionist Holdings
+    The institution does not maintain Impressionist works of significance.
+
+=== modern_contemporary_strength (0-5) ===
+Purpose: Measures the depth, authority, and scholarly importance of permanent Modern and Contemporary art holdings.
+
+5 — Canon-Defining Collection
+    The museum holds Modern/Contemporary works that are field-defining at the national or international level. Holdings contain canonical works, and the institution functions as a reference point for scholarship and curation.
+
+4 — Major Scholarly Collection
+    Deep, high-quality Modern/Contemporary holdings with clear scholarly value and national significance. Includes important works and artists, supports sustained research and serious exhibitions.
+
+3 — Strong Regional or Thematic Collection
+    Coherent, well-curated Modern/Contemporary holdings with recognized strength within a region or theme. Supports credible exhibitions but does not substantially influence national scholarship.
+
+2 — Modest or Supporting Collection
+    Modern/Contemporary works provide contextual or educational value but lack depth, rarity, or sustained curatorial impact. Works are largely illustrative or supplementary.
+
+1 — Limited Collection Presence
+    Small or inconsistent Modern/Contemporary holdings with minimal curatorial or scholarly relevance.
+
+0 — No Meaningful Modern/Contemporary Holdings
+    The institution does not maintain Modern/Contemporary works of significance.
+
+=== historical_context_score (0-5) ===
+Purpose: Measures how essential a museum is to understanding art history, cultural history, or a specific historical narrative, independent of collection size, reputation, or attendance.
+
+5 — Canon-Level Historical Importance
+    The museum provides essential, field-defining historical context for understanding a major movement, culture, or historical subject. The institution is a foundational reference point for the subject it interprets.
+    NOTE: A score of 5 may qualify a museum for Must-See status.
+
+4 — Nationally Significant Context
+    Provides strong historical framing for a major movement, region, or cultural narrative with relevance beyond the local level.
+
+3 — Strong Regional Context
+    Anchors the history of a region, city, or cultural community in a meaningful and sustained way.
+
+2 — Local Context
+    Interprets or preserves local history or culture with relevance primarily to the immediate community.
+
+1 — Limited Context
+    Includes historical interpretation, but it is narrow, secondary, or not a core institutional strength.
+
+0 — No Contextual Framing
+    Institution is not historically oriented; history is absent or incidental.
+
+=== eca_score (0-5) - Exhibitions & Curatorial Authority ===
+Purpose: Measures curatorial influence that exists OUTSIDE permanent collections, including exhibition authorship, commissioning power, and intellectual leadership. ECA evaluates programmatic authority only.
+
+5 — Field-Shaping Curatorial Authority
+    Produces exhibitions, research, or commissions that shape discourse nationally or internationally.
+
+4 — Nationally Recognized Curatorial Program
+    Sustained record of original, influential exhibitions with national reach.
+
+3 — Strong Regional Curatorial Program
+    Original and respected exhibitions with regional influence.
+
+2 — Competent Exhibition Programming
+    Professionally executed but largely derivative or touring exhibitions.
+
+1 — Minimal Curatorial Authority
+    Limited scope or intellectual contribution.
+
+0 — No Curatorial Program of Note
+    No meaningful exhibition programming or curatorial presence.
+
+=== collection_based_strength (0-5) ===
+Purpose: Measures the depth, authority, and scholarly importance of permanent holdings across ALL relevant art categories. This is art-first and does not evaluate popularity, attendance, branding, or reputation.
+
+5 — Canon-Defining Collection
+    The museum holds a collection that is field-defining at the national or international level. Its holdings contain canonical works, and the institution functions as a reference point for scholarship, curation, and major exhibitions. The collection demonstrates either encyclopedic breadth across major periods and regions or unquestioned authority within a specific domain.
+
+4 — Major Scholarly Collection
+    The museum holds a deep, high-quality collection with clear scholarly value and national significance. The collection includes important works and artists, supports sustained research and serious exhibitions, and meaningfully advances understanding of its field.
+
+3 — Strong Regional or Thematic Collection
+    The museum maintains a coherent, well-curated collection with recognized strength within a region, medium, movement, or theme. Holdings support credible exhibitions and interpretation but do not substantially influence national scholarship.
+
+2 — Modest or Supporting Collection
+    The collection provides contextual or educational value but lacks depth, rarity, or sustained curatorial impact. Works are largely illustrative or supplementary.
+
+1 — Limited Collection Presence
+    The museum holds a small or inconsistent permanent collection with minimal curatorial or scholarly relevance.
+
+0 — No Meaningful Permanent Collection
+    The institution does not maintain a permanent collection of significance (e.g., exhibition-only spaces, archives without object collections).
+
+=== reputation (0-3) ===
+0 = International (world-renowned, draws global visitors)
+1 = National (major US destination, widely known)
+2 = Regional (known within multi-state region)
+3 = Local (primarily serves local community)
 
 RESPONSE FORMAT:
 Return ONLY valid JSON matching this schema:
 {
-  "impressionist_strength": <1-5 or null>,
-  "modern_contemporary_strength": <1-5 or null>,
-  "historical_context_score": <1-5 or null>,
+  "impressionist_strength": <0-5 or null>,
+  "modern_contemporary_strength": <0-5 or null>,
+  "historical_context_score": <0-5 or null>,
+  "eca_score": <0-5 or null>,
+  "collection_based_strength": <0-5 or null>,
   "reputation": <0-3 or null>,
-  "collection_tier": <0-3 or null>,
   "confidence": <1-5>,
-  "score_notes": "<2-3 sentences explaining key scores>"
+  "score_notes": "<2-3 sentences explaining key scores, flag if Historical Context = 5 for Must-See consideration>"
 }
 
 If you cannot determine a score from the evidence, use null.
@@ -301,8 +394,9 @@ class ScoringResult:
     impressionist_strength: Optional[int] = None
     modern_contemporary_strength: Optional[int] = None
     historical_context_score: Optional[int] = None
+    eca_score: Optional[int] = None
+    collection_based_strength: Optional[int] = None
     reputation: Optional[int] = None
-    collection_tier: Optional[int] = None
     confidence: Optional[int] = None
     score_notes: Optional[str] = None
     error: Optional[str] = None
@@ -320,16 +414,32 @@ class ScoringResult:
             patch["modern_contemporary_strength"] = self.modern_contemporary_strength
         if self.historical_context_score is not None:
             patch["historical_context_score"] = self.historical_context_score
+        if self.eca_score is not None:
+            patch["eca_score"] = self.eca_score
+        if self.collection_based_strength is not None:
+            patch["collection_based_strength"] = self.collection_based_strength
         if self.reputation is not None:
             patch["reputation"] = self.reputation
-        if self.collection_tier is not None:
-            patch["collection_tier"] = self.collection_tier
         if self.confidence is not None:
             patch["confidence"] = self.confidence
         if self.score_notes:
             patch["score_notes"] = self.score_notes
         if self.model_used:
             patch["scored_by"] = self.model_used
+        
+        # Compute derived fields (MRD Section 4, Field 9)
+        imp = self.impressionist_strength or 0
+        mod = self.modern_contemporary_strength or 0
+        if imp > mod:
+            patch["primary_art_focus"] = "Impressionist"
+        elif mod > imp:
+            patch["primary_art_focus"] = "Modern/Contemporary"
+        elif imp > 0:
+            patch["primary_art_focus"] = "Impressionist"  # Default if equal
+        
+        # Flag potential Must-See candidates (MRD: Historical Context = 5)
+        if self.historical_context_score == 5:
+            patch["must_see_candidate"] = True
 
         return patch
 
@@ -371,32 +481,41 @@ def is_scoreable(museum: dict) -> bool:
 
 
 def is_already_scored(museum: dict) -> bool:
-    """Check if museum already has LLM scores."""
+    """Check if museum already has LLM scores (MRD v3 fields)."""
     # Consider scored if ANY of the key scoring fields are set
+    # MRD v3 adds eca_score and collection_based_strength
     return any([
         museum.get("impressionist_strength") is not None,
         museum.get("modern_contemporary_strength") is not None,
         museum.get("historical_context_score") is not None,
+        museum.get("eca_score") is not None,
+        museum.get("collection_based_strength") is not None,
     ])
 
 
 def validate_scores(scores: dict) -> dict:
-    """Validate and clamp scores to allowed ranges."""
+    """Validate and clamp scores to allowed ranges (MRD v3 - January 2026)."""
     validated = {}
 
-    # 1-5 scale fields
-    for field in ["impressionist_strength", "modern_contemporary_strength", "historical_context_score", "confidence"]:
+    # 0-5 scale fields (updated from 1-5 in MRD v3)
+    for field in ["impressionist_strength", "modern_contemporary_strength", 
+                  "historical_context_score", "eca_score", "collection_based_strength"]:
         value = scores.get(field)
         if value is not None:
             if isinstance(value, (int, float)):
-                validated[field] = max(1, min(5, int(value)))
+                validated[field] = max(0, min(5, int(value)))
 
-    # 0-3 scale fields
-    for field in ["reputation", "collection_tier"]:
-        value = scores.get(field)
-        if value is not None:
-            if isinstance(value, (int, float)):
-                validated[field] = max(0, min(3, int(value)))
+    # 1-5 scale for confidence only
+    if scores.get("confidence") is not None:
+        value = scores.get("confidence")
+        if isinstance(value, (int, float)):
+            validated["confidence"] = max(1, min(5, int(value)))
+
+    # 0-3 scale fields (reputation only - collection_tier removed in MRD v3)
+    if scores.get("reputation") is not None:
+        value = scores.get("reputation")
+        if isinstance(value, (int, float)):
+            validated["reputation"] = max(0, min(3, int(value)))
 
     # String fields
     if scores.get("score_notes"):
@@ -441,8 +560,9 @@ def score_museum(
             result.impressionist_strength = cached.get("impressionist_strength")
             result.modern_contemporary_strength = cached.get("modern_contemporary_strength")
             result.historical_context_score = cached.get("historical_context_score")
+            result.eca_score = cached.get("eca_score")
+            result.collection_based_strength = cached.get("collection_based_strength")
             result.reputation = cached.get("reputation")
-            result.collection_tier = cached.get("collection_tier")
             result.confidence = cached.get("confidence")
             result.score_notes = cached.get("score_notes")
             result.model_used = cached.get("model_used")
@@ -469,8 +589,9 @@ def score_museum(
         result.impressionist_strength = validated.get("impressionist_strength")
         result.modern_contemporary_strength = validated.get("modern_contemporary_strength")
         result.historical_context_score = validated.get("historical_context_score")
+        result.eca_score = validated.get("eca_score")
+        result.collection_based_strength = validated.get("collection_based_strength")
         result.reputation = validated.get("reputation")
-        result.collection_tier = validated.get("collection_tier")
         result.confidence = validated.get("confidence")
         result.score_notes = validated.get("score_notes")
         result.model_used = model
@@ -488,8 +609,9 @@ def score_museum(
             "impressionist_strength": result.impressionist_strength,
             "modern_contemporary_strength": result.modern_contemporary_strength,
             "historical_context_score": result.historical_context_score,
+            "eca_score": result.eca_score,
+            "collection_based_strength": result.collection_based_strength,
             "reputation": result.reputation,
-            "collection_tier": result.collection_tier,
             "confidence": result.confidence,
             "score_notes": result.score_notes,
             "model_used": result.model_used,
@@ -589,7 +711,7 @@ def process_state(
                 museum[key] = value
 
             # Update metadata
-            museum["scoring_version"] = "phase2_v1"
+            museum["scoring_version"] = "phase2_v3_mrd2026"
             museum["score_last_verified"] = now_utc_iso()[:10]
             museum["updated_at"] = now_utc_iso()
 
@@ -601,11 +723,15 @@ def process_state(
 
             changes_made = True
 
-            # Print summary
-            imp = result.impressionist_strength or "?"
-            mod = result.modern_contemporary_strength or "?"
+            # Print summary with new MRD v3 fields
+            imp = result.impressionist_strength if result.impressionist_strength is not None else "?"
+            mod = result.modern_contemporary_strength if result.modern_contemporary_strength is not None else "?"
+            hist = result.historical_context_score if result.historical_context_score is not None else "?"
+            eca = result.eca_score if result.eca_score is not None else "?"
+            cbs = result.collection_based_strength if result.collection_based_strength is not None else "?"
             rep = result.reputation if result.reputation is not None else "?"
-            print(f"OK imp={imp} mod={mod} rep={rep}")
+            must_see = " ★MUST-SEE" if result.historical_context_score == 5 else ""
+            print(f"OK imp={imp} mod={mod} hist={hist} eca={eca} cbs={cbs} rep={rep}{must_see}")
         else:
             stats.failed += 1
             stats.flagged.append(museum_id)

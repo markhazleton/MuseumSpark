@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { loadAllMuseums } from '../lib/api'
 import type { Museum } from '../lib/types'
 
-type SortKey = 'state_province' | 'city' | 'museum_name' | 'museum_type' | 'time_needed' | 'reputation' | 'collection_tier' | 'overall_quality_score' | 'priority_score' | 'nearby_museum_count'
+type SortKey = 'state_province' | 'city' | 'museum_name' | 'museum_type' | 'time_needed' | 'reputation' | 'collection_based_strength' | 'overall_quality_score' | 'priority_score' | 'nearby_museum_count' | 'eca_score'
 
 const REPUTATION_MAP: Record<number, string> = {
   0: 'International',
@@ -12,11 +12,24 @@ const REPUTATION_MAP: Record<number, string> = {
   3: 'Local',
 }
 
-const COLLECTION_TIER_MAP: Record<number, string> = {
-  0: 'Flagship',
-  1: 'Strong',
-  2: 'Moderate',
-  3: 'Small',
+// MRD v3: Collection-Based Strength (0-5 scale)
+const COLLECTION_STRENGTH_MAP: Record<number, string> = {
+  5: 'Canon-Defining',
+  4: 'Major Scholarly',
+  3: 'Strong Regional',
+  2: 'Modest',
+  1: 'Limited',
+  0: 'None',
+}
+
+// MRD v3: ECA (0-5 scale)
+const ECA_MAP: Record<number, string> = {
+  5: 'Field-Shaping',
+  4: 'Nationally Recognized',
+  3: 'Strong Regional',
+  2: 'Competent',
+  1: 'Minimal',
+  0: 'None',
 }
 
 export default function BrowsePage() {
@@ -109,8 +122,10 @@ export default function BrowsePage() {
         comparison = String(a.time_needed || '').localeCompare(String(b.time_needed || ''))
       } else if (sortKey === 'reputation') {
         comparison = (a.reputation ?? 999) - (b.reputation ?? 999)
-      } else if (sortKey === 'collection_tier') {
-        comparison = (a.collection_tier ?? 999) - (b.collection_tier ?? 999)
+      } else if (sortKey === 'collection_based_strength') {
+        comparison = (a.collection_based_strength ?? -1) - (b.collection_based_strength ?? -1)
+      } else if (sortKey === 'eca_score') {
+        comparison = (a.eca_score ?? -1) - (b.eca_score ?? -1)
       } else if (sortKey === 'overall_quality_score') {
         comparison = (a.overall_quality_score ?? -1) - (b.overall_quality_score ?? -1)
       } else if (sortKey === 'priority_score') {
@@ -149,12 +164,15 @@ export default function BrowsePage() {
       { key: 'primary_domain', header: 'Domain' },
       { key: 'time_needed', header: 'Time Needed' },
       { key: 'reputation', header: 'Reputation', format: (val: number | null | undefined) => val !== null && val !== undefined ? REPUTATION_MAP[val] : '' },
-      { key: 'collection_tier', header: 'Collection Tier', format: (val: number | null | undefined) => val !== null && val !== undefined ? COLLECTION_TIER_MAP[val] : '' },
+      { key: 'collection_based_strength', header: 'Collection Strength', format: (val: number | null | undefined) => val !== null && val !== undefined ? COLLECTION_STRENGTH_MAP[val] : '' },
+      { key: 'eca_score', header: 'ECA Score', format: (val: number | null | undefined) => val !== null && val !== undefined ? ECA_MAP[val] : '' },
       { key: 'overall_quality_score', header: 'Quality Score' },
       { key: 'priority_score', header: 'Priority Score' },
       { key: 'nearby_museum_count', header: 'Nearby Museums' },
       { key: 'impressionist_strength', header: 'Impressionist Strength' },
       { key: 'modern_contemporary_strength', header: 'Modern/Contemporary Strength' },
+      { key: 'historical_context_score', header: 'Historical Context' },
+      { key: 'must_see_candidate', header: 'Must-See Candidate' },
       { key: 'website', header: 'Website' },
       { key: 'street_address', header: 'Address' },
       { key: 'postal_code', header: 'Postal Code' },
@@ -345,7 +363,7 @@ export default function BrowsePage() {
               <SortableHeader label="Type" sortKey="museum_type" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
               <SortableHeader label="Time Needed" sortKey="time_needed" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
               <SortableHeader label="Reputation" sortKey="reputation" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
-              <SortableHeader label="Collection" sortKey="collection_tier" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
+              <SortableHeader label="Collection" sortKey="collection_based_strength" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
               <SortableHeader label="Quality ↑" sortKey="overall_quality_score" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
               <SortableHeader label="Priority ↓" sortKey="priority_score" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
               <SortableHeader label="Nearby" sortKey="nearby_museum_count" currentSort={sortKey} desc={sortDesc} onSort={setSortKey} onToggleDesc={() => setSortDesc(!sortDesc)} />
@@ -362,6 +380,7 @@ export default function BrowsePage() {
                     className="font-medium text-blue-600 hover:underline"
                   >
                     {museum.museum_name}
+                    {museum.must_see_candidate && <span className="ml-1 text-rose-500" title="Must-See Candidate">★</span>}
                   </Link>
                 </td>
                 <td className="px-4 py-3 text-slate-600">{museum.museum_type || '—'}</td>
@@ -370,7 +389,7 @@ export default function BrowsePage() {
                   {museum.reputation !== null && museum.reputation !== undefined ? REPUTATION_MAP[museum.reputation] : '—'}
                 </td>
                 <td className="px-4 py-3 text-slate-600">
-                  {museum.collection_tier !== null && museum.collection_tier !== undefined ? COLLECTION_TIER_MAP[museum.collection_tier] : '—'}
+                  {museum.collection_based_strength !== null && museum.collection_based_strength !== undefined ? COLLECTION_STRENGTH_MAP[museum.collection_based_strength] : '—'}
                 </td>
                 <td className="px-4 py-3 text-center font-medium text-emerald-700">
                   {museum.overall_quality_score !== null && museum.overall_quality_score !== undefined ? museum.overall_quality_score : '—'}

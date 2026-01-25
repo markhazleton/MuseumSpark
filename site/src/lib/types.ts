@@ -64,20 +64,24 @@ export type Museum = {
   public_transit_notes?: string | null;
   notes?: string | null;
 
-  // Scoring & Metrics (Art Museums)
+  // Scoring & Metrics (Art Museums) - MRD v3 January 2026
   reputation?: 0 | 1 | 2 | 3 | null; // 0=International, 1=National, 2=Regional, 3=Local
-  collection_tier?: 0 | 1 | 2 | 3 | null; // 0=Flagship, 1=Strong, 2=Moderate, 3=Small
+  collection_tier?: 0 | 1 | 2 | 3 | null; // DEPRECATED - use collection_based_strength
   priority_score?: number | null; // Hidden gem score (lower=better)
   overall_quality_score?: number | null; // Best museum score (higher=better)
-  impressionist_strength?: 1 | 2 | 3 | 4 | 5 | null;
-  modern_contemporary_strength?: 1 | 2 | 3 | 4 | 5 | null;
-  primary_art?: "Impressionist" | "Modern/Contemporary" | null;
-  historical_context_score?: 1 | 2 | 3 | 4 | 5 | null;
+  impressionist_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: 0-5 scale
+  modern_contemporary_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: 0-5 scale
+  historical_context_score?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: 0-5 scale (5 = Must-See candidate)
+  eca_score?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: Exhibitions & Curatorial Authority
+  collection_based_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: replaces collection_tier
+  primary_art_focus?: "Impressionist" | "Modern/Contemporary" | null; // MRD v3: renamed from primary_art
+  primary_art?: "Impressionist" | "Modern/Contemporary" | null; // DEPRECATED - use primary_art_focus
+  must_see_candidate?: boolean | null; // MRD v3: flagged when historical_context_score = 5
   nearby_museum_count?: number | null;
   is_scored?: boolean | null;
   is_scoreable?: boolean | null;
   scoring_version?: string | null;
-  scored_by?: "assistant" | "manual" | "hybrid" | "gpt-5.2" | null;
+  scored_by?: "assistant" | "manual" | "hybrid" | "gpt-5.2" | "claude-3-haiku-20240307" | string | null;
   score_notes?: string | null;
   score_last_verified?: string | null;
 

@@ -195,16 +195,23 @@ def build_context(museum: dict[str, Any], state_code: str) -> str:
     if visitor_info:
         context_parts.append("Visitor Info: " + ", ".join(visitor_info))
     
-    # Museum characteristics
+    # Museum characteristics (MRD v3 - January 2026)
     chars = []
     if museum.get("museum_type"):
         chars.append(f"Type: {museum['museum_type']}")
     if museum.get("reputation") is not None:
         rep_labels = {0: "International", 1: "National", 2: "Regional", 3: "Local"}
         chars.append(f"Reputation: {rep_labels.get(museum['reputation'], 'Unknown')}")
-    if museum.get("collection_tier") is not None:
-        tier_labels = {0: "Flagship", 1: "Strong", 2: "Moderate", 3: "Small"}
-        chars.append(f"Collection: {tier_labels.get(museum['collection_tier'], 'Unknown')}")
+    if museum.get("collection_based_strength") is not None:
+        cbs_labels = {5: "Canon-Defining", 4: "Major Scholarly", 3: "Strong Regional", 
+                      2: "Modest", 1: "Limited", 0: "No Collection"}
+        chars.append(f"Collection: {cbs_labels.get(museum['collection_based_strength'], 'Unknown')}")
+    if museum.get("eca_score") is not None:
+        eca_labels = {5: "Field-Shaping", 4: "Nationally Recognized", 3: "Strong Regional", 
+                      2: "Competent", 1: "Minimal", 0: "None"}
+        chars.append(f"Curatorial Authority: {eca_labels.get(museum['eca_score'], 'Unknown')}")
+    if museum.get("must_see_candidate"):
+        chars.append("★ Must-See Candidate")
     
     if chars:
         context_parts.append(" | ".join(chars))

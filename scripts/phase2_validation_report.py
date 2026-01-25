@@ -1,4 +1,4 @@
-"""Comprehensive Phase 2 validation report."""
+"""Comprehensive Phase 2 validation report (MRD v3 - January 2026)."""
 
 import json
 from pathlib import Path
@@ -7,9 +7,19 @@ from collections import defaultdict
 STATES_DIR = Path("data/states")
 CACHE_DIR = Path("data/cache/phase2")
 
+def has_phase2_scores(record: dict) -> bool:
+    """Check if a record has any MRD v3 Phase 2 scores."""
+    return any([
+        record.get("impressionist_strength") is not None,
+        record.get("modern_contemporary_strength") is not None,
+        record.get("historical_context_score") is not None,
+        record.get("eca_score") is not None,
+        record.get("collection_based_strength") is not None,
+    ])
+
 def main():
     print("="*70)
-    print("PHASE 2 VALIDATION REPORT")
+    print("PHASE 2 VALIDATION REPORT (MRD v3)")
     print("="*70)
     
     # Load all museums from state files
@@ -28,13 +38,14 @@ def main():
     print(f"   Total museums: {len(museums_by_id)}")
     print(f"   Art museums (is_scoreable=True): {len(art_museums)}")
     
-    # Count state file scores
-    state_scored = [m for m in art_museums if any([
-        m.get("impressionist_strength") is not None,
-        m.get("modern_contemporary_strength") is not None,
-        m.get("historical_context_score") is not None
-    ])]
+    # Count state file scores using MRD v3 fields
+    state_scored = [m for m in art_museums if has_phase2_scores(m)]
+    must_see_candidates = [m for m in art_museums if m.get("must_see_candidate")]
+    high_eca = [m for m in art_museums if (m.get("eca_score") or 0) >= 4]
+    
     print(f"   Art museums with Phase 2 scores in state: {len(state_scored)}")
+    print(f"   ★ Must-See Candidates (Historical Context = 5): {len(must_see_candidates)}")
+    print(f"   ♦ High ECA Score (≥ 4): {len(high_eca)}")
     
     # Analyze cache files
     cache_files = list(CACHE_DIR.rglob("*.json"))
@@ -57,10 +68,13 @@ def main():
             cache_by_museum[museum_id].append(cache_data)
             
             if cache_data.get("success"):
+                # MRD v3: check all 5 scoring fields
                 has_scores = any([
                     cache_data.get("impressionist_strength") is not None,
                     cache_data.get("modern_contemporary_strength") is not None,
-                    cache_data.get("historical_context_score") is not None
+                    cache_data.get("historical_context_score") is not None,
+                    cache_data.get("eca_score") is not None,
+                    cache_data.get("collection_based_strength") is not None,
                 ])
                 if has_scores:
                     success_with_scores.add(museum_id)
@@ -91,11 +105,8 @@ def main():
         if not museum:
             continue
         
-        state_has_scores = any([
-            museum.get("impressionist_strength") is not None,
-            museum.get("modern_contemporary_strength") is not None,
-            museum.get("historical_context_score") is not None
-        ])
+        # MRD v3: check all scoring fields
+        state_has_scores = has_phase2_scores(museum)
         cache_has_scores = museum_id in success_with_scores
         
         if state_has_scores:
@@ -133,7 +144,10 @@ def main():
             print(f"   - {museum.get('museum_name')} ({museum_id})")
             print(f"     Cache: imp={cache_latest.get('impressionist_strength')}, " +
                   f"mod={cache_latest.get('modern_contemporary_strength')}, " +
-                  f"scored_at={cache_latest.get('scored_at')}")
+                  f"hist={cache_latest.get('historical_context_score')}, " +
+                  f"eca={cache_latest.get('eca_score')}, " +
+                  f"cbs={cache_latest.get('collection_based_strength')}")
+            print(f"     scored_at={cache_latest.get('scored_at')}")
     
     # Wikipedia quality (bonus)
     wiki_cache_dir = STATES_DIR
