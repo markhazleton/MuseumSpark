@@ -357,7 +357,6 @@ Same scale as Impressionist Strength
 
 ```
 Documentation/
-├── copilot-instructions.md          # This file
 ├── README.md                         # Documentation index
 ├── Home.md                           # Full navigation guide
 ├── architecture/                     # System design, API specs, data models
@@ -377,10 +376,14 @@ Documentation/
 
 **Rules**:
 1. **NEVER** create markdown documents outside `/Documentation` folder
-2. Place copilot session notes in `/Documentation/copilot/session-{date}/`
+2. **ALL AI-generated documentation (.md files) MUST go to `/Documentation/copilot/session-{date}/`**
+   - Session notes, analysis, summaries, work logs
+   - Use format: `session-YYYYMMDD/` (e.g., `session-20260126/`)
+   - **NEVER place .md files in source code folders** (`scripts/`, `site/`, `data/`, etc.)
 3. Place feature documentation in `/Documentation/features/`
 4. Update `/Documentation/README.md` when adding new sections
 5. Link to canonical documents rather than duplicating content
+6. This file (`.github/copilot-instructions.md`) is the ONLY exception to the /Documentation rule
 
 ### Code Organization
 
@@ -592,6 +595,19 @@ tests/
 - Use try-except with informative error messages
 - Use environment variables or config files for credentials
 
+### Documentation Violations
+
+❌ **Don't**:
+- Create .md files in `scripts/`, `site/`, `data/`, or any source code folder
+- Save session notes or AI analysis outside `/Documentation/copilot/session-{date}/`
+- Create README.md files in feature branches (update existing docs instead)
+- Generate documentation summaries in working directories
+
+✅ **Do**:
+- Always use `/Documentation/copilot/session-YYYYMMDD/` for AI-generated content
+- Update existing documentation files rather than creating new ones
+- Link to canonical docs in `/Documentation/architecture/` when referencing specs
+
 ### Architecture Violations
 
 ❌ **Don't**:
@@ -653,7 +669,9 @@ Does it process museum records?
 └─ No → Continue
 
 Does it create documentation?
-├─ Yes → Place in /Documentation following structure
+├─ Yes → Is it AI-generated session notes/analysis?
+│   ├─ Yes → Place in /Documentation/copilot/session-YYYYMMDD/
+│   └─ No → Place in /Documentation/features/ or /Documentation/architecture/
 └─ No → Continue
 
 Generate code following:
@@ -712,7 +730,7 @@ python scripts/validate_cache_vs_state.py
 7. **State files are canonical** — index files are derived (rebuild via build-index.py)
 8. **Never Replace Known With Null** — preserve existing data during enrichment
 9. **Python 3.11+ required** — use modern type hints
-10. **All docs go in /Documentation** — respect the folder structure
+10. **AI-generated docs ONLY in /Documentation/copilot/session-{date}/** — never in source folders
 
 ### Quick Validation Checklist
 - [ ] Does this change align with the constitution?
@@ -722,7 +740,7 @@ python scripts/validate_cache_vs_state.py
 - [ ] Have I preserved existing non-null values?
 - [ ] Have I tracked provenance with data_sources/address_source?
 - [ ] Have I followed the Python 3.11+ standards?
-- [ ] Have I placed documentation in /Documentation?
+- [ ] Have I placed AI-generated docs in /Documentation/copilot/session-YYYYMMDD/ (not in source folders)?
 
 ---
 

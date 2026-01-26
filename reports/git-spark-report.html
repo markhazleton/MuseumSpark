@@ -1,0 +1,3226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="git-spark v1.2.0">
+  <meta name="report-date" content="2026-01-25T16:13:31.544Z">
+  <meta name="repository" content="MuseumSpark">
+  <meta property="og:title" content="GitSpark Report - MuseumSpark">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="57 commits • 2 contributors • 3797 files changed">
+  <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNDE4JyB2aWV3Qm94PScwIDAgODAwIDQxOCcgcm9sZT0naW1nJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB5MT0nMCcgeDI9JzEnIHkyPScxJz48c3RvcCBzdG9wLWNvbG9yPSclMjMwMDY2Y2MnIG9mZnNldD0nMCcvPjxzdG9wIHN0b3AtY29sb3I9JyUyMzI4YTc0NScgb2Zmc2V0PScxJy8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9JzgwMCcgaGVpZ2h0PSc0MTgnIGZpbGw9JyUyMzFlMjIyNycvPjx0ZXh0IHg9JzQwJyB5PSc4MCcgZm9udC1mYW1pbHk9J1NlZ29lIFVJLFJvYm90byxBcmlhbCxzYW5zLXNlcmlmJyBmb250LXNpemU9JzQyJyBmaWxsPSd3aGl0ZSc+R2l0IEFjdGl2aXR5IFJlcG9ydDwvdGV4dD48dGV4dCB4PSc0MCcgeT0nMTQwJyBmb250LXNpemU9JzI2JyBmaWxsPSd3aGl0ZSc+TXVzZXVtU3Bhcms8L3RleHQ+PHRleHQgeD0nNDAnIHk9JzIwMCcgZm9udC1zaXplPScyMCcgZmlsbD0nd2hpdGUnPkNvbW1pdHM6IDU3PC90ZXh0Pjx0ZXh0IHg9JzQwJyB5PScyMzUnIGZvbnQtc2l6ZT0nMjAnIGZpbGw9J3doaXRlJz5BdXRob3JzOiAyPC90ZXh0Pjx0ZXh0IHg9JzQwJyB5PScyNzAnIGZvbnQtc2l6ZT0nMjAnIGZpbGw9J3doaXRlJz5GaWxlczogMzc5NzwvdGV4dD48dGV4dCB4PSc0MCcgeT0nMzIwJyBmb250LXNpemU9JzE2JyBmaWxsPScjYmJiJz5HZW5lcmF0ZWQgMjAyNi0wMS0yNTwvdGV4dD48cmVjdCB4PSc2MDAnIHk9JzYwJyB3aWR0aD0nMTYwJyBoZWlnaHQ9JzE2MCcgcng9JzgnIGZpbGw9J3VybCgjZyknIG9wYWNpdHk9JzAuOCcvPjx0ZXh0IHg9JzY4MCcgeT0nMTYwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzMyJyBmaWxsPSd3aGl0ZScgZm9udC13ZWlnaHQ9JzcwMCc+MS4xTTwvdGV4dD48dGV4dCB4PSc2ODAnIHk9JzE4NScgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxNCcgZmlsbD0nd2hpdGUnPkxpbmVzIENoYW5nZWQ8L3RleHQ+PC9zdmc+">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'sha256-pZ8t0YUbabfss2KI0Zz7MxKo/sCK86XgKP/IYc4sjhA='; script-src 'self' 'nonce-cf04d1d156971a0f'; font-src 'self'">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <title>GitSpark Report - MuseumSpark</title>
+  <style>
+      :root {
+        --color-primary: #0066cc;
+        --color-success: #28a745;
+        --color-warning: #fd7e14;
+        --color-danger: #dc3545;
+        --color-bg: #f5f7fb;
+        --color-surface: #ffffff;
+        --color-border: #dde3ea;
+        --color-text: #222222;
+        --color-text-secondary: #6c757d;
+        --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
+      }
+      :root.dark {
+        --color-bg: #121417;
+        --color-surface: #1e2227;
+        --color-border: #2c3239;
+        --color-text: #e6e8ea;
+        --color-text-secondary: #97a0ab;
+      }
+      html { scroll-behavior: smooth; }
+      body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; background: var(--color-bg); color: var(--color-text); margin:0; }
+      .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+      .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+      .skip-link:focus { position:static; width:auto; height:auto; padding:.5rem 1rem; background:#000; color:#fff; z-index:999; }
+      .theme-toggle-wrapper { position:fixed; top:.5rem; right:.5rem; z-index:150; }
+      .theme-toggle { background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); padding:.4rem .6rem; border-radius:4px; cursor:pointer; box-shadow:var(--shadow-sm); font-size:.85rem; }
+      .theme-toggle:hover, .theme-toggle:focus { border-color: var(--color-primary); }
+      .site-header { position:sticky; top:0; background:var(--color-surface); border-bottom:1px solid var(--color-border); z-index:100; box-shadow:var(--shadow-sm); }
+      .header-inner { display:flex; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; padding:.5rem 1rem; }
+      .branding { font-weight:600; font-size:1rem; }
+      .repo-name { color:var(--color-primary); font-weight:700; }
+      .main-nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+      .main-nav a { text-decoration:none; color:var(--color-text-secondary); font-size:.9rem; }
+      .main-nav a:hover, .main-nav a:focus { color:var(--color-primary); }
+      .report { max-width:1200px; margin:0 auto; padding:1rem; }
+      .section { background:var(--color-surface); padding:1.2rem 1.4rem; margin:1.2rem 0; border:1px solid var(--color-border); border-radius:8px; box-shadow:var(--shadow-sm); }
+      h1 { font-size:2rem; margin:.2rem 0 1rem; }
+      h2 { font-size:1.4rem; margin:0 0 .75rem; }
+      h3 { font-size:1.15rem; margin:1rem 0 .5rem; }
+      .summary-grid { display:grid; gap:.75rem; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); margin-bottom:1rem; }
+      .metric-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:6px; padding:.6rem .75rem; text-align:center; display:flex; flex-direction:column; gap:.25rem; box-shadow:var(--shadow-sm); }
+      .metric-card:focus { outline:2px solid var(--color-primary); outline-offset:2px; }
+      .metric-value { font-size:1.2rem; font-weight:600; }
+      .metric-label { font-size:.7rem; text-transform:uppercase; letter-spacing:.05em; color:var(--color-text-secondary); }
+      .health-badges { display:flex; gap:1rem; align-items:center; flex-wrap:wrap; margin:.5rem 0 1rem; }
+      .health-score, .gov-score { padding:.6rem .9rem; border-radius:6px; font-weight:600; background:var(--color-primary); color:#fff; display:inline-flex; align-items:center; gap:.5rem; }
+      .health-score[data-rating='high'] { background:var(--color-success); }
+      .health-score[data-rating='moderate'] { background:var(--color-primary); }
+      .health-score[data-rating='fair'] { background:var(--color-warning); }
+      .health-score[data-rating='low'] { background:var(--color-danger); }
+      .activity-breakdown { margin:1rem 0; padding:1rem; background:var(--color-bg); border:1px solid var(--color-border); border-radius:6px; }
+      .activity-breakdown h3 { margin:0 0 .75rem; font-size:1rem; color:var(--color-text); }
+      .activity-explanation { margin-bottom:1rem; padding:.75rem; background:var(--color-surface); border-left:4px solid var(--color-warning); border-radius:4px; }
+      .activity-explanation p { margin:0; font-size:.9rem; color:var(--color-text); }
+      .breakdown-components { display:grid; gap:.75rem; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); margin-bottom:1rem; }
+      .component { background:var(--color-surface); padding:.75rem; border-radius:4px; border:1px solid var(--color-border); }
+      .component-label { font-size:.75rem; color:var(--color-text-secondary); text-transform:uppercase; letter-spacing:.05em; margin-bottom:.25rem; }
+      .component-value { font-size:1.1rem; font-weight:600; color:var(--color-primary); margin-bottom:.25rem; }
+      .component-detail { font-size:.7rem; color:var(--color-text-secondary); }
+      .formula { margin-top:.75rem; padding-top:.75rem; border-top:1px solid var(--color-border); }
+      .formula code { background:var(--color-surface); padding:.25rem .4rem; border-radius:3px; font-size:.8rem; }
+      .formula-line { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-top:.75rem; padding-top:.75rem; border-top:1px solid var(--color-border); flex-wrap:wrap; }
+      .formula-line .formula { margin:0; padding:0; border:none; flex:1; min-width:300px; }
+      .formula-line .health-score { margin:0; flex-shrink:0; }
+      .analysis-period { font-size:.8rem; margin:.25rem 0 1rem; color:var(--color-text-secondary); }
+      
+      /* New Limitation Section Styles */
+      .critical-notice { background:#fff3cd; border:1px solid #ffeaa7; border-radius:8px; padding:1.5rem; margin-bottom:2rem; border-left:4px solid #fd7e14; }
+      :root.dark .critical-notice { background:#2d2419; border-color:#635a3e; }
+      .critical-notice h3 { color:#856404; margin:0 0 1rem; font-size:1.2rem; }
+      :root.dark .critical-notice h3 { color:#ffeaa7; }
+      .limitation-grid { display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-bottom:1.5rem; }
+      .limitation-category { background:var(--color-surface); border:1px solid var(--color-border); border-radius:6px; padding:1rem; }
+      .limitation-category h4 { margin:0 0 .75rem; color:var(--color-text); font-size:1rem; }
+      .limitation-category ul { margin:.5rem 0; padding-left:1.2rem; }
+      .limitation-category li { margin:.5rem 0; font-size:.9rem; }
+      
+      .honest-metrics-notice { background:var(--color-bg); border:1px solid var(--color-border); border-radius:6px; padding:1.5rem; border-left:4px solid var(--color-primary); }
+      .honest-metrics-notice h4 { margin:0 0 1rem; color:var(--color-primary); }
+      .honest-metrics-notice p { margin:.75rem 0; }
+      .metric-categories { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); margin:1rem 0; }
+      .metric-category { background:var(--color-surface); border:1px solid var(--color-border); border-radius:4px; padding:1rem; }
+      .metric-category h5 { margin:0 0 .75rem; color:var(--color-text); font-size:.95rem; }
+      .usage-guidelines { margin-top:1.5rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:4px; padding:1rem; }
+      
+      /* Team Patterns Section */
+      .section-description { font-style:italic; color:var(--color-text-secondary); margin-bottom:1.5rem; font-size:.9rem; }
+      .team-patterns-grid { display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); margin-bottom:2rem; }
+      .pattern-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:8px; padding:1.5rem; box-shadow:var(--shadow-sm); }
+      .pattern-card h3 { margin:0 0 1rem; font-size:1.1rem; color:var(--color-text); border-bottom:2px solid var(--color-primary); padding-bottom:.5rem; }
+      .pattern-metrics { display:flex; flex-direction:column; gap:.75rem; }
+      .pattern-metric { display:flex; justify-content:space-between; align-items:center; padding:.5rem; background:var(--color-bg); border-radius:4px; }
+      .pattern-metric .metric-label { font-size:.85rem; color:var(--color-text-secondary); }
+      .pattern-metric .metric-value { font-weight:600; }
+      .pattern-metric .metric-note { font-size:.75rem; color:var(--color-text-secondary); font-style:italic; }
+      
+      /* Activity badge styles (renamed from risk badges) */
+      .activity-badge { padding:.25rem .5rem; border-radius:4px; font-size:.65rem; font-weight:600; }
+      .activity-high { background:var(--color-danger); color:#fff; }
+      .activity-medium { background:var(--color-warning); color:#000; }
+      .activity-low { background:var(--color-success); color:#fff; }
+      .activity-minimal { background:#3b7ddd; color:#fff; }
+      
+      /* Measurement Principles */
+      .measurement-principles { margin-bottom:2rem; }
+      .principles-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); margin-top:1rem; }
+      .principle-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:6px; padding:1rem; border-left:4px solid var(--color-primary); }
+      .principle-card h4 { margin:0 0 .75rem; color:var(--color-primary); font-size:1rem; }
+      .principle-card p { margin:0; font-size:.9rem; }
+      
+      /* Updated formula explanations */
+      .formula-explanation { margin-top:.75rem; }
+      .formula-explanation ul { margin:.5rem 0; padding-left:1.2rem; }
+      .formula-explanation li { font-size:.85rem; margin:.25rem 0; }
+      ul { padding-left:1.1rem; }
+      li { margin:.25rem 0; }
+      .table-wrapper { overflow:auto; border:1px solid var(--color-border); border-radius:6px; }
+      table.data-table { width:100%; border-collapse:collapse; font-size:.85rem; }
+      table.data-table th, table.data-table td { padding:.5rem .6rem; border-bottom:1px solid var(--color-border); text-align:left; }
+      table.data-table th.num, table.data-table td.num { text-align:right; }
+      table.data-table tbody tr:hover { background:#f2f6fa; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:.75rem; }
+      .risk-badge { padding:.25rem .5rem; border-radius:4px; font-size:.65rem; font-weight:600; }
+      .risk-high { background:var(--color-danger); color:#fff; }
+      .risk-medium { background:var(--color-warning); color:#000; }
+      .risk-low { background:var(--color-success); color:#fff; }
+      .risk-minimal { background:#3b7ddd; color:#fff; }
+      .gov-grid { display:grid; gap:.5rem; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); margin-bottom:.75rem; }
+      .gov-card { background:var(--color-bg); border:1px solid var(--color-border); padding:.6rem .7rem; border-radius:4px; font-size:.7rem; font-weight:500; }
+      .meta-grid { display:grid; grid-template-columns: 120px 1fr; gap:.35rem .75rem; font-size:.75rem; }
+      .meta-grid dt { font-weight:600; }
+      .site-footer { text-align:center; padding:1.5rem .5rem 3rem; font-size:.7rem; color:var(--color-text-secondary); }
+      .footer-content p { margin: 0.25rem 0; }
+      .footer-content a { color:var(--color-primary); text-decoration:none; }
+      .footer-content a:hover { text-decoration:underline; }
+      .back-to-top { position:fixed; bottom:1rem; right:1rem; background:var(--color-primary); color:#fff; border:none; padding:.55rem .7rem; border-radius:4px; font-size:.85rem; cursor:pointer; box-shadow:var(--shadow-sm); }
+      .back-to-top:hover, .back-to-top:focus { background:#004f99; }
+      .warnings { margin:0; padding-left:1rem; }
+      .warnings li { font-size:.7rem; }
+      @media (max-width: 760px) { .main-nav ul { flex-wrap:wrap; gap:.5rem; } .branding { font-size:.85rem; } }
+      @media print { .site-header, .back-to-top { display:none !important; } body { background:#fff; } .section { page-break-inside:avoid; } }
+      @media (prefers-reduced-motion: reduce) { * { animation-duration:0.01ms !important; transition-duration:0.01ms !important; } }
+      .show-more { background:var(--color-primary); color:#fff; border:1px solid var(--color-primary); padding:.4rem .7rem; border-radius:4px; cursor:pointer; font-size:.7rem; font-weight:500; box-shadow:var(--shadow-sm); }
+      .show-more:hover, .show-more:focus { background:#004f99; }
+      :root.dark .show-more { background:#2489ff; border-color:#2489ff; }
+      .show-more { margin-top:.6rem; }
+      .hidden-row { display:none; }
+      
+      /* Author Profile Styles */
+      .author-link { color:var(--color-primary); text-decoration:none; font-weight:500; }
+      .author-link:hover { text-decoration:underline; }
+      .author-profiles { display:flex; flex-direction:column; gap:1.5rem; }
+      .author-profile-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:8px; padding:1.5rem; box-shadow:var(--shadow-sm); }
+      .author-header { margin-bottom:1rem; border-bottom:1px solid var(--color-border); padding-bottom:1rem; }
+      .author-header h3 { margin:0; font-size:1.4rem; color:var(--color-text); }
+      .author-email { color:var(--color-text-secondary); font-size:.85rem; font-family:ui-monospace, monospace; }
+      .author-period { color:var(--color-text-secondary); font-size:.8rem; margin-top:.25rem; }
+      
+      .contribution-overview, .commit-patterns, .code-focus, .commit-distribution, .insights-section { margin-bottom:1.25rem; }
+      .contribution-overview h4, .commit-patterns h4, .code-focus h4, .commit-distribution h4, .insights-section h4 { 
+        margin:0 0 .75rem; font-size:1.1rem; color:var(--color-text); border-bottom:1px solid var(--color-border); padding-bottom:.5rem; 
+      }
+      
+      .metrics-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr)); gap:.75rem; margin-bottom:.75rem; }
+      .metric-box { background:var(--color-surface); border:1px solid var(--color-border); border-radius:6px; padding:.75rem; text-align:center; color:var(--color-text); }
+
+      /* Team Score Styles */
+      .team-score-overview { margin-bottom:2rem; }
+      .team-score-main { display:flex; align-items:center; gap:2rem; flex-wrap:wrap; justify-content:center; }
+      .score-circle { 
+        display:flex; flex-direction:column; align-items:center; justify-content:center; 
+        width:120px; height:120px; border-radius:50%; 
+        background:linear-gradient(135deg, var(--color-primary), #0056b3);
+        color:#fff; box-shadow:0 4px 12px rgba(0,102,204,0.3);
+      }
+      .score-value { font-size:2.5rem; font-weight:700; line-height:1; }
+      .score-label { font-size:.8rem; text-transform:uppercase; letter-spacing:.05em; opacity:.9; }
+      
+      .score-rating { text-align:center; }
+      .rating-label { 
+        font-size:1.5rem; font-weight:600; color:var(--color-primary);
+        display:block; margin-bottom:.5rem;
+      }
+      .rating-description { font-size:.9rem; color:var(--color-text-secondary); max-width:300px; }
+      
+      .team-metrics-grid { 
+        display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); 
+        gap:1.5rem; margin-bottom:2rem; 
+      }
+      .team-metrics-grid .metric-card { 
+        background:var(--color-surface); border:1px solid var(--color-border); 
+        border-radius:8px; padding:1.5rem; box-shadow:var(--shadow-sm);
+        text-align:left; display:block;
+      }
+      .team-metrics-grid .metric-card h3 { 
+        margin:0 0 1rem; font-size:1.2rem; color:var(--color-text);
+        border-bottom:2px solid var(--color-primary); padding-bottom:.5rem;
+      }
+      .team-metrics-grid .metric-score { 
+        font-size:2rem; font-weight:700; color:var(--color-primary);
+        margin-bottom:1rem; text-align:center;
+      }
+      
+      .metric-details { display:flex; flex-direction:column; gap:.75rem; }
+      .metric-item { 
+        display:flex; justify-content:space-between; align-items:center;
+        padding:.5rem; background:var(--color-bg); border-radius:4px;
+      }
+      .metric-name { font-size:.85rem; color:var(--color-text-secondary); }
+      .metric-value { 
+        font-weight:600; 
+        background:var(--color-primary); color:#fff; 
+        padding:.25rem .5rem; border-radius:4px; font-size:.8rem;
+      }
+      .metric-limitations { 
+        margin-top:.5rem; padding:.25rem .5rem; 
+        background:var(--color-bg); border-radius:4px; 
+        text-align:left; opacity:0.8;
+      }
+      .metric-limitations small { 
+        font-size:.75rem; color:var(--color-text-secondary); 
+        font-style:italic;
+      }
+      
+      /* File Type Breakdown Styles */
+      .file-type-breakdown {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: var(--color-bg);
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+      }
+      .file-type-breakdown h4 {
+        margin: 0 0 1rem;
+        font-size: 1.1rem;
+        color: var(--color-text);
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: 0.5rem;
+      }
+      .file-type-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .category-item {
+        padding: 0.75rem;
+        background: var(--color-surface);
+        border-radius: 6px;
+        border: 1px solid var(--color-border);
+      }
+      .category-name {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--color-primary);
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+      }
+      .category-percentage {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-text);
+      }
+      .file-type-extensions {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--color-border);
+      }
+      .file-type-extensions h5 {
+        margin: 0 0 0.75rem;
+        font-size: 0.95rem;
+        color: var(--color-text-secondary);
+      }
+      .extensions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.5rem;
+      }
+      .file-type-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0.75rem;
+        background: var(--color-bg);
+        border-radius: 4px;
+        border: 1px solid var(--color-border);
+        font-size: 0.85rem;
+      }
+      .file-extension {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+      .file-percentage {
+        font-weight: 600;
+        color: var(--color-text);
+      }
+      
+      /* Repository details styling */
+      .repository-details {
+        margin-top: 1.5rem;
+      }
+      .repository-details .table-wrapper {
+        margin-bottom: 2rem;
+      }
+      .repository-details h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-text);
+      }
+      .directory-path {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+        background: var(--color-surface);
+        padding: 0.125rem 0.375rem;
+        border-radius: 3px;
+        border: 1px solid var(--color-border);
+      }
+      
+      .team-insights { margin-top:2rem; }
+      .insights-section h3 { margin:0 0 1rem; font-size:1.3rem; }
+      .dynamic-badges { display:flex; gap:.75rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+      .dynamic-badge { 
+        padding:.5rem 1rem; background:var(--color-primary); color:#fff; 
+        border-radius:20px; font-size:.85rem; font-weight:500;
+        text-transform:capitalize;
+      }
+      
+      .insights-grid { 
+        display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); 
+        gap:1.5rem; margin-bottom:2rem; 
+      }
+      .insight-category { 
+        background:var(--color-bg); border:1px solid var(--color-border); 
+        border-radius:6px; padding:1rem; 
+      }
+      .insight-category h4 { 
+        margin:0 0 .75rem; font-size:1rem; 
+        color:var(--color-text); border-bottom:1px solid var(--color-border); 
+        padding-bottom:.5rem; 
+      }
+      .insight-category ul { margin:0; padding-left:1.2rem; }
+      .insight-category li { font-size:.85rem; margin:.5rem 0; }
+
+
+      /* Documentation Section Styles */
+      .doc-intro { font-style:italic; color:var(--color-text-secondary); margin-bottom:2rem; }
+      
+      .measurement-limitations {
+        background:#fff3cd; border:1px solid #ffeaa7; border-radius:8px; 
+        padding:1.5rem; margin-bottom:2rem; border-left:4px solid #fdcb6e;
+      }
+      :root.dark .measurement-limitations {
+        background:#2d2419; border-color:#635a3e; border-left-color:#fdcb6e;
+      }
+      .measurement-limitations h3 {
+        color:#856404; margin:0 0 1rem; font-size:1.2rem;
+      }
+      :root.dark .measurement-limitations h3 { color:#ffeaa7; }
+      .measurement-limitations p { margin:.75rem 0; }
+      .measurement-limitations ul { margin:.5rem 0; padding-left:1.5rem; }
+      .measurement-limitations li { margin:.25rem 0; }
+      .limitation-notice {
+        background:#fff3cd; border:1px solid #ffeaa7; border-radius:4px;
+        padding:.75rem; margin:.75rem 0; font-size:.9rem;
+        border-left:3px solid #fd7e14;
+      }
+      :root.dark .limitation-notice {
+        background:#2d2419; border-color:#635a3e; color:#ffeaa7;
+      }
+      
+      .doc-section { 
+        margin-bottom:2.5rem; padding-bottom:1.5rem; 
+        border-bottom:1px solid var(--color-border); 
+      }
+      .doc-section:last-child { border-bottom:none; }
+      .doc-section h3 { 
+        color:var(--color-primary); font-size:1.4rem; 
+        margin-bottom:1rem; border-bottom:2px solid var(--color-primary); 
+        padding-bottom:.5rem; 
+      }
+      .doc-section h4 { 
+        color:var(--color-text); font-size:1.1rem; 
+        margin:1.5rem 0 .75rem; 
+      }
+      
+      .formula-box { 
+        background:var(--color-bg); border:1px solid var(--color-border); 
+        border-radius:6px; padding:1rem; margin:1rem 0; 
+        border-left:4px solid var(--color-primary); 
+      }
+      .formula-box h4 { 
+        margin:0 0 .75rem; font-size:1rem; 
+        color:var(--color-primary); 
+      }
+      .formula { 
+        font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; 
+        font-size:.9rem; display:block; 
+        background:var(--color-surface); padding:.75rem; 
+        border-radius:4px; border:1px solid var(--color-border); 
+        margin:.5rem 0; color:var(--color-text); 
+        overflow-x:auto; 
+      }
+      
+      .metric-docs { margin-top:1.5rem; }
+      .metric-category { 
+        margin-bottom:2rem; background:var(--color-surface); 
+        border:1px solid var(--color-border); border-radius:6px; 
+        padding:1.5rem; 
+      }
+      .metric-category h4 { 
+        margin-top:0; color:var(--color-primary); 
+        border-bottom:1px solid var(--color-border); 
+        padding-bottom:.5rem; 
+      }
+      .metric-category ul { margin:.75rem 0; }
+      .metric-category li { 
+        margin:.75rem 0; line-height:1.5; 
+        font-size:.9rem; 
+      }
+      .metric-category strong { color:var(--color-text); }
+      
+      .score-thresholds { 
+        background:var(--color-bg); border:1px solid var(--color-border); 
+        border-radius:6px; padding:1.5rem; margin-top:1.5rem; 
+        border-left:4px solid var(--color-success); 
+      }
+      .score-thresholds h4 { 
+        margin-top:0; color:var(--color-success); 
+      }
+      .score-thresholds ul { margin:.75rem 0; }
+      .score-thresholds li { 
+        margin:.5rem 0; font-size:.9rem; 
+        line-height:1.4; 
+      }
+      
+      .methodology-note { 
+        background:var(--color-bg); border:1px solid var(--color-border); 
+        border-radius:6px; padding:1.5rem; margin-top:2rem; 
+        border-left:4px solid var(--color-warning); 
+      }
+      .methodology-note h4 { 
+        margin-top:0; color:var(--color-warning); 
+        margin-bottom:1rem; 
+      }
+      .methodology-note p { 
+        margin:.75rem 0; font-size:.9rem; 
+        line-height:1.5; 
+      }
+      .methodology-note strong { color:var(--color-text); }
+      .metric-box .metric-value { font-size:1.2rem; font-weight:600; }
+      .metric-box .metric-label { font-size:.7rem; color:var(--color-text-secondary); text-transform:uppercase; margin-top:.25rem; }
+      
+      .summary-stats { font-size:.85rem; color:var(--color-text-secondary); text-align:center; padding:.5rem; background:var(--color-bg); border-radius:4px; }
+      .pattern-info, .collab-stats, .focus-info { font-size:.85rem; line-height:1.4; }
+      .pattern-info div, .collab-stats div, .focus-info div { margin:.25rem 0; }
+      
+      .size-distribution { background:var(--color-bg); padding:.75rem; border-radius:6px; border:1px solid var(--color-border); }
+      .size-bar { display:flex; align-items:center; margin:.5rem 0; gap:.75rem; }
+      .size-label { min-width:120px; font-size:.75rem; color:var(--color-text-secondary); }
+      .size-bar-container { flex:1; position:relative; background:var(--color-border); height:24px; border-radius:12px; overflow:hidden; }
+      .size-bar-fill { height:100%; border-radius:12px; transition:width 0.3s ease; min-width:0; }
+      .size-bar-fill.micro { background:#28a745; }
+      .size-bar-fill.small { background:#20c997; }
+      .size-bar-fill.medium { background:#ffc107; }
+      .size-bar-fill.large { background:#fd7e14; }
+      .size-bar-fill.very-large { background:#dc3545; }
+      /* Width classes for commit size bars - CSP compliant */
+      .size-bar-fill.w-0 { width: 0%; }
+      .size-bar-fill.w-1 { width: 1%; }
+      .size-bar-fill.w-2 { width: 2%; }
+      .size-bar-fill.w-3 { width: 3%; }
+      .size-bar-fill.w-4 { width: 4%; }
+      .size-bar-fill.w-5 { width: 5%; }
+      .size-bar-fill.w-10 { width: 10%; }
+      .size-bar-fill.w-15 { width: 15%; }
+      .size-bar-fill.w-20 { width: 20%; }
+      .size-bar-fill.w-25 { width: 25%; }
+      .size-bar-fill.w-30 { width: 30%; }
+      .size-bar-fill.w-35 { width: 35%; }
+      .size-bar-fill.w-40 { width: 40%; }
+      .size-bar-fill.w-45 { width: 45%; }
+      .size-bar-fill.w-50 { width: 50%; }
+      .size-bar-fill.w-55 { width: 55%; }
+      .size-bar-fill.w-60 { width: 60%; }
+      .size-bar-fill.w-65 { width: 65%; }
+      .size-bar-fill.w-70 { width: 70%; }
+      .size-bar-fill.w-75 { width: 75%; }
+      .size-bar-fill.w-80 { width: 80%; }
+      .size-bar-fill.w-85 { width: 85%; }
+      .size-bar-fill.w-90 { width: 90%; }
+      .size-bar-fill.w-95 { width: 95%; }
+      .size-bar-fill.w-100 { width: 100%; }
+      .size-percentage { position:absolute; right:.5rem; top:50%; transform:translateY(-50%); font-size:.7rem; font-weight:500; color:var(--color-text); background:var(--color-surface); padding:.1rem .4rem; border-radius:10px; border:1px solid var(--color-border); }
+      .size-percentage.no-data { background:transparent; border:none; color:var(--color-text-secondary); }
+      
+      .insights-content { display:flex; flex-direction:column; gap:.5rem; }
+      .insight { padding:.5rem .75rem; border-radius:4px; font-size:.85rem; }
+      .insight.positive { background:#d4edda; color:#155724; border-left:4px solid #28a745; }
+      .insight.growth { background:#fff3cd; color:#856404; border-left:4px solid #ffc107; }
+      .largest-commit { background:var(--color-bg); padding:.75rem; border-radius:4px; font-size:.85rem; margin-top:.5rem; }
+      .largest-commit strong { color:var(--color-primary); }
+      .largest-commit em { color:var(--color-text-secondary); }
+      .no-data { text-align:center; color:var(--color-text-secondary); font-size:.85rem; padding:1rem; }
+      
+      /* Responsive design for author profiles */
+      @media (max-width: 768px) { 
+        .metrics-grid { grid-template-columns:repeat(auto-fit, minmax(100px, 1fr)); }
+        .size-bar { flex-direction:column; align-items:flex-start; gap:.25rem; }
+        .size-label { min-width:auto; }
+        .size-bar-container { width:100%; }
+      }
+
+      /* Daily Trends Section Styles */
+      .trends-overview { margin-bottom:2rem; }
+      .trends-summary-grid { 
+        display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); 
+        gap:1rem; margin-bottom:1.5rem; 
+      }
+      .trend-summary-card { 
+        background:var(--color-surface); border:1px solid var(--color-border); 
+        border-radius:8px; padding:1.5rem; text-align:center; 
+        box-shadow:var(--shadow-sm); 
+      }
+      .summary-metric .metric-value { 
+        font-size:2rem; font-weight:700; margin-bottom:.5rem; 
+      }
+      .summary-metric .metric-label { 
+        font-size:.9rem; font-weight:600; color:var(--color-text); 
+        margin-bottom:.25rem; 
+      }
+      .summary-metric .metric-detail { 
+        font-size:.75rem; color:var(--color-text-secondary); 
+      }
+      
+      .key-trends { margin-bottom:2rem; }
+      .trend-category { 
+        margin-bottom:2.5rem; background:var(--color-surface); 
+        border:1px solid var(--color-border); border-radius:8px; 
+        padding:1.5rem; border-left:4px solid var(--color-primary); 
+      }
+      .trend-category h4 { 
+        margin:0 0 1rem; font-size:1.2rem; color:var(--color-primary); 
+        border-bottom:1px solid var(--color-border); padding-bottom:.5rem; 
+      }
+      .trend-explanation { 
+        margin-bottom:1.5rem; padding:.75rem; 
+        background:var(--color-bg); border-radius:4px; 
+        border-left:3px solid var(--color-primary); 
+      }
+      .trend-explanation p { margin:0; font-size:.9rem; color:var(--color-text); }
+      
+      .trends-table { font-size:.8rem; }
+      .trends-table th, .trends-table td { padding:.4rem .6rem; }
+      .table-note { 
+        font-size:.75rem; color:var(--color-text-secondary); 
+        margin-top:.5rem; font-style:italic; 
+      }
+      
+      .trends-limitations { 
+        background:#fff3cd; border:1px solid #ffeaa7; 
+        border-radius:8px; padding:1.5rem; 
+        border-left:4px solid #fd7e14; 
+      }
+      :root.dark .trends-limitations { 
+        background:#2d2419; border-color:#635a3e; 
+      }
+      .trends-limitations h3 { 
+        color:#856404; margin:0 0 1rem; font-size:1.2rem; 
+      }
+      :root.dark .trends-limitations h3 { color:#ffeaa7; }
+      .trends-limitations h4 { 
+        color:#856404; margin:1.5rem 0 .75rem; font-size:1rem; 
+      }
+      :root.dark .trends-limitations h4 { color:#ffeaa7; }
+      .trends-limitations ul { margin:.5rem 0; padding-left:1.5rem; }
+      .trends-limitations li { margin:.25rem 0; font-size:.9rem; }
+
+      /* Contributions Graph Styles */
+      .contributions-graph { 
+        margin: 2rem 0; 
+        background: var(--color-surface); 
+        border: 1px solid var(--color-border); 
+        border-radius: 8px; 
+        padding: 1.5rem; 
+        border-left: 4px solid var(--color-primary); 
+      }
+      .contributions-graph h3 { 
+        margin: 0 0 1rem; 
+        font-size: 1.2rem; 
+        color: var(--color-primary); 
+        border-bottom: 1px solid var(--color-border); 
+        padding-bottom: .5rem; 
+      }
+      .contributions-calendar { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 3px; 
+        max-width: 100%; 
+        overflow-x: auto; 
+        padding: 1rem 0; 
+      }
+      .contributions-header { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin-bottom: 1rem; 
+        font-size: .9rem; 
+        color: var(--color-text-secondary); 
+      }
+      .contributions-weeks { 
+        display: flex; 
+        gap: 3px; 
+      }
+      .contributions-week { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 3px; 
+      }
+      .contribution-day { 
+        width: 10px; 
+        height: 10px; 
+        border-radius: 2px; 
+        border: 1px solid var(--color-border); 
+        cursor: pointer; 
+        transition: all 0.2s ease; 
+      }
+      .contribution-day:hover { 
+        border-color: var(--color-primary); 
+        transform: scale(1.2); 
+      }
+      .contribution-day.intensity-0 { 
+        background: var(--color-bg); 
+      }
+      .contribution-day.intensity-1 { 
+        background: #9be9a8; 
+      }
+      .contribution-day.intensity-2 { 
+        background: #40c463; 
+      }
+      .contribution-day.intensity-3 { 
+        background: #30a14e; 
+      }
+      .contribution-day.intensity-4 { 
+        background: #216e39; 
+      }
+      .contributions-legend { 
+        display: flex; 
+        align-items: center; 
+        gap: .5rem; 
+        margin-top: 1rem; 
+        font-size: .75rem; 
+        color: var(--color-text-secondary); 
+      }
+      .legend-scale { 
+        display: flex; 
+        gap: 2px; 
+      }
+      .legend-day { 
+        width: 8px; 
+        height: 8px; 
+        border-radius: 1px; 
+        border: 1px solid var(--color-border); 
+      }
+      .contribution-tooltip { 
+        position: absolute; 
+        background: var(--color-surface); 
+        border: 1px solid var(--color-border); 
+        border-radius: 4px; 
+        padding: .5rem; 
+        font-size: .75rem; 
+        box-shadow: var(--shadow-lg); 
+        z-index: 1000; 
+        pointer-events: none; 
+        opacity: 0; 
+        transition: opacity 0.2s ease; 
+      }
+      .contribution-tooltip.visible { 
+        opacity: 1; 
+      }
+
+      /* Visual Trends Chart Styles */
+      .visual-trends { margin: 2rem 0; }
+      .charts-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+        gap: 2rem; 
+        margin: 1.5rem 0; 
+      }
+      
+      .chart-container { 
+        background: var(--color-surface); 
+        border: 1px solid var(--color-border); 
+        border-radius: 8px; 
+        padding: 1.5rem; 
+        box-shadow: var(--shadow-sm); 
+      }
+      .chart-container h4 { 
+        margin: 0 0 1rem; 
+        font-size: 1.1rem; 
+        color: var(--color-text); 
+        border-bottom: 1px solid var(--color-border); 
+        padding-bottom: 0.5rem; 
+      }
+      
+      .trend-chart { 
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 4px; 
+        background: var(--color-surface); 
+      }
+      .trend-chart .data-points circle:hover { 
+        r: 5; 
+        stroke: var(--color-surface); 
+        stroke-width: 2; 
+        cursor: pointer; 
+      }
+      .trend-chart .grid line { 
+        stroke: var(--color-border); 
+        stroke-opacity: 0.3; 
+      }
+      
+      .chart-placeholder { 
+        text-align: center; 
+        color: var(--color-text-secondary); 
+        font-style: italic; 
+        padding: 2rem; 
+        background: var(--color-bg); 
+        border-radius: 4px; 
+        border: 1px dashed var(--color-border); 
+      }
+      
+      /* Sparklines Styles */
+      .sparklines-container { 
+        grid-column: 1 / -1;
+        background: var(--color-surface); 
+        border: 1px solid var(--color-border); 
+        border-radius: 8px; 
+        padding: 1.5rem; 
+        box-shadow: var(--shadow-sm); 
+      }
+      .sparklines-container h4 { 
+        margin: 0 0 1rem; 
+        font-size: 1.1rem; 
+        color: var(--color-text); 
+        border-bottom: 1px solid var(--color-border); 
+        padding-bottom: 0.5rem; 
+      }
+      
+      .sparklines-grid { 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5rem; 
+      }
+      
+      .sparkline-item { 
+        background: var(--color-bg); 
+        border: 1px solid var(--color-border); 
+        border-radius: 6px; 
+        padding: 1rem; 
+      }
+      .sparkline-label { 
+        font-size: 0.85rem; 
+        font-weight: 600; 
+        color: var(--color-text); 
+        margin-bottom: 0.5rem; 
+      }
+      .sparkline-summary { 
+        font-size: 0.75rem; 
+        color: var(--color-text-secondary); 
+        margin-top: 0.5rem; 
+        text-align: center; 
+      }
+      
+      .sparkline-chart { 
+        height: 60px; 
+        margin: 0.75rem 0; 
+        position: relative;
+      }
+      .sparkline-chart svg {
+        display: block;
+        width: 100%;
+        height: 50px;
+      }
+      .sparkline-chart svg rect {
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+      }
+      .sparkline-chart svg rect:hover {
+        opacity: 0.8;
+      }
+      
+      /* Responsive design for charts */
+      @media (max-width: 768px) { 
+        .charts-grid { 
+          grid-template-columns: 1fr; 
+        }
+        .sparklines-grid { 
+          grid-template-columns: 1fr; 
+        }
+        .trend-chart { 
+          width: 100%; 
+          height: auto; 
+        }
+      }
+
+      /* Azure DevOps Integration Styles */
+      .azure-devops-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+        gap: 1.5rem; 
+        margin: 2rem 0; 
+      }
+      .devops-card { 
+        background: var(--color-surface); 
+        border: 1px solid var(--color-border); 
+        border-radius: 8px; 
+        padding: 1.5rem; 
+        box-shadow: var(--shadow-sm); 
+        border-left: 4px solid #0078d4; 
+      }
+      .devops-card.full-width { 
+        grid-column: 1 / -1; 
+      }
+      .devops-card h3 { 
+        margin: 0 0 1rem; 
+        font-size: 1.1rem; 
+        color: #0078d4; 
+        border-bottom: 1px solid var(--color-border); 
+        padding-bottom: .5rem; 
+      }
+      .devops-card h4 { 
+        margin: 1rem 0 .75rem; 
+        font-size: 1rem; 
+        color: var(--color-text); 
+      }
+
+      /* Metric Grid Styles */
+      .metric-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+        gap: 1rem; 
+        margin-bottom: 1.5rem; 
+      }
+      .metric-item { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        background: var(--color-bg); 
+        padding: 1rem; 
+        border-radius: 6px; 
+        border: 1px solid var(--color-border); 
+      }
+      .metric-label { 
+        font-size: .8rem; 
+        color: var(--color-text-secondary); 
+        margin-bottom: .5rem; 
+      }
+      .metric-value { 
+        font-size: 1.5rem; 
+        font-weight: 700; 
+        color: var(--color-text); 
+      }
+
+      /* PR Size Distribution */
+      .size-bars .size-bar { 
+        display: flex; 
+        align-items: center; 
+        margin: .5rem 0; 
+        gap: .75rem; 
+      }
+      .size-bars .size-label { 
+        min-width: 120px; 
+        font-size: .75rem; 
+        color: var(--color-text-secondary); 
+      }
+      .size-bars .bar { 
+        flex: 1; 
+        background: var(--color-border); 
+        height: 20px; 
+        border-radius: 10px; 
+        overflow: hidden; 
+        position: relative; 
+      }
+      .size-bars .bar-fill { 
+        height: 100%; 
+        background: linear-gradient(90deg, #28a745, #20c997); 
+        border-radius: 10px; 
+        transition: width 0.3s ease; 
+      }
+      .size-bars .size-count { 
+        min-width: 30px; 
+        font-size: .8rem; 
+        font-weight: 600; 
+        color: var(--color-text); 
+      }
+
+      /* Timing and Quality Grids */
+      .timing-grid, .quality-grid, .participation-grid, .health-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+        gap: .75rem; 
+      }
+      .timing-metric, .quality-metric, .participation-metric, .health-metric { 
+        background: var(--color-bg); 
+        padding: .75rem; 
+        border-radius: 4px; 
+        text-align: center; 
+        border: 1px solid var(--color-border); 
+      }
+      .timing-label, .quality-label, .participation-label, .health-label { 
+        display: block; 
+        font-size: .7rem; 
+        color: var(--color-text-secondary); 
+        margin-bottom: .25rem; 
+      }
+      .timing-value, .quality-value, .participation-value, .health-value { 
+        font-size: 1.2rem; 
+        font-weight: 600; 
+        color: var(--color-text); 
+      }
+
+      /* Status Grid */
+      .status-grid { 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: .75rem; 
+      }
+      .status-item { 
+        padding: .75rem; 
+        border-radius: 4px; 
+        text-align: center; 
+        border: 1px solid var(--color-border); 
+      }
+      .status-item.completed { 
+        background: #d4edda; 
+        color: #155724; 
+        border-color: #28a745; 
+      }
+      .status-item.active { 
+        background: #d1ecf1; 
+        color: #0c5460; 
+        border-color: #17a2b8; 
+      }
+      .status-item.abandoned { 
+        background: #f8d7da; 
+        color: #721c24; 
+        border-color: #dc3545; 
+      }
+      :root.dark .status-item.completed { 
+        background: #1e3a29; 
+        color: #6fb877; 
+      }
+      :root.dark .status-item.active { 
+        background: #1e2a32; 
+        color: #5bc0de; 
+      }
+      :root.dark .status-item.abandoned { 
+        background: #3a1e20; 
+        color: #f5c6cb; 
+      }
+      .status-label { 
+        display: block; 
+        font-size: .8rem; 
+        margin-bottom: .25rem; 
+      }
+      .status-count { 
+        font-size: 1.4rem; 
+        font-weight: 700; 
+      }
+
+      /* Integration Methods and Quality */
+      .method-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        gap: .75rem; 
+        margin-bottom: 1rem; 
+      }
+      .method-item { 
+        background: var(--color-bg); 
+        padding: .75rem; 
+        border-radius: 4px; 
+        text-align: center; 
+        border: 1px solid var(--color-border); 
+      }
+      .method-label { 
+        display: block; 
+        font-size: .7rem; 
+        color: var(--color-text-secondary); 
+        margin-bottom: .25rem; 
+      }
+      .method-count { 
+        font-size: 1.2rem; 
+        font-weight: 600; 
+        color: var(--color-text); 
+      }
+
+      /* Quality Indicators */
+      .quality-indicators { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        gap: .5rem; 
+      }
+      .quality-item { 
+        padding: .5rem; 
+        border-radius: 4px; 
+        text-align: center; 
+        border: 1px solid var(--color-border); 
+      }
+      .quality-item.high { 
+        background: #d4edda; 
+        color: #155724; 
+        border-color: #28a745; 
+      }
+      .quality-item.medium { 
+        background: #fff3cd; 
+        color: #856404; 
+        border-color: #ffc107; 
+      }
+      .quality-item.low { 
+        background: #ffeaa7; 
+        color: #6c5400; 
+        border-color: #fd7e14; 
+      }
+      .quality-item.unmapped { 
+        background: #f8d7da; 
+        color: #721c24; 
+        border-color: #dc3545; 
+      }
+      :root.dark .quality-item.high { 
+        background: #1e3a29; 
+        color: #6fb877; 
+      }
+      :root.dark .quality-item.medium { 
+        background: #2d2419; 
+        color: #ffeaa7; 
+      }
+      :root.dark .quality-item.low { 
+        background: #2a1f15; 
+        color: #ffb84d; 
+      }
+      :root.dark .quality-item.unmapped { 
+        background: #3a1e20; 
+        color: #f5c6cb; 
+      }
+      .quality-label { 
+        display: block; 
+        font-size: .7rem; 
+        margin-bottom: .25rem; 
+      }
+      .quality-count { 
+        font-size: 1rem; 
+        font-weight: 600; 
+      }
+
+      /* Team Collaboration */
+      .top-creators { 
+        margin-bottom: 1rem; 
+      }
+      .creator-item { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: .5rem .75rem; 
+        margin: .25rem 0; 
+        background: var(--color-bg); 
+        border-radius: 4px; 
+        border: 1px solid var(--color-border); 
+      }
+      .creator-name { 
+        font-size: .85rem; 
+        color: var(--color-text); 
+      }
+      .creator-count { 
+        font-size: .8rem; 
+        font-weight: 600; 
+        color: var(--color-primary); 
+      }
+      .distribution-metric { 
+        background: var(--color-bg); 
+        padding: .75rem; 
+        border-radius: 4px; 
+        text-align: center; 
+        border: 1px solid var(--color-border); 
+      }
+
+      /* Data Quality Assessment */
+      .data-quality-grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 2rem; 
+        margin-bottom: 2rem; 
+      }
+      .completeness-bars { 
+        margin-bottom: 1rem; 
+      }
+      .completeness-bar { 
+        display: flex; 
+        align-items: center; 
+        margin: .75rem 0; 
+        gap: .75rem; 
+      }
+      .completeness-label { 
+        min-width: 160px; 
+        font-size: .8rem; 
+        color: var(--color-text-secondary); 
+      }
+      .completeness-value { 
+        min-width: 40px; 
+        font-size: .8rem; 
+        font-weight: 600; 
+        color: var(--color-text); 
+      }
+
+      /* Confidence Badges */
+      .confidence-grid { 
+        display: grid; 
+        gap: .75rem; 
+      }
+      .confidence-item { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: .5rem .75rem; 
+        background: var(--color-bg); 
+        border-radius: 4px; 
+        border: 1px solid var(--color-border); 
+      }
+      .confidence-label { 
+        font-size: .8rem; 
+        color: var(--color-text); 
+      }
+      .confidence-badge { 
+        padding: .25rem .5rem; 
+        border-radius: 12px; 
+        font-size: .7rem; 
+        font-weight: 600; 
+        text-transform: uppercase; 
+      }
+      .confidence-badge.high { 
+        background: #28a745; 
+        color: white; 
+      }
+      .confidence-badge.medium { 
+        background: #ffc107; 
+        color: #212529; 
+      }
+      .confidence-badge.low { 
+        background: #dc3545; 
+        color: white; 
+      }
+
+      /* Recommendations */
+      .recommendations { 
+        margin-top: 2rem; 
+        padding: 1.5rem; 
+        background: var(--color-bg); 
+        border-radius: 6px; 
+        border: 1px solid var(--color-border); 
+      }
+      .recommendation-list { 
+        margin: 0; 
+        padding-left: 1.5rem; 
+      }
+      .recommendation-list li { 
+        margin: .5rem 0; 
+        font-size: .9rem; 
+        line-height: 1.4; 
+      }
+
+      /* Azure DevOps Notice */
+      .azure-devops-notice { 
+        margin-top: 2rem; 
+        padding: 1.5rem; 
+        background: #e7f3ff; 
+        border: 1px solid #b3d9ff; 
+        border-radius: 8px; 
+        border-left: 4px solid #0078d4; 
+      }
+      :root.dark .azure-devops-notice { 
+        background: #1a2533; 
+        border-color: #2a3441; 
+      }
+      .azure-devops-notice h4 { 
+        margin: 0 0 1rem; 
+        color: #0078d4; 
+        font-size: 1.1rem; 
+      }
+      .azure-devops-notice p { 
+        margin: .75rem 0; 
+        font-size: .9rem; 
+        line-height: 1.4; 
+      }
+
+      /* Responsive Design for Azure DevOps */
+      @media (max-width: 768px) { 
+        .azure-devops-grid { 
+          grid-template-columns: 1fr; 
+        }
+        .metric-grid { 
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        }
+        .data-quality-grid { 
+          grid-template-columns: 1fr; 
+          gap: 1rem; 
+        }
+        .timing-grid, .quality-grid, .participation-grid, .health-grid { 
+          grid-template-columns: 1fr; 
+        }
+        .status-grid { 
+          grid-template-columns: 1fr; 
+        }
+        .method-grid { 
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="theme-toggle-wrapper"><button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button></div>
+  <a class="skip-link" href="#summary">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="branding">GitSpark Report <span class="repo-name">MuseumSpark</span></div>
+      <nav class="main-nav" aria-label="Section navigation">
+        <ul>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#authors">Authors</a></li>
+          <li><a href="#team-patterns">Team Patterns</a></li>
+          <li><a href="#files">File Hotspots</a></li>
+          <li><a href="#author-details">Author Details</a></li>
+          
+          <li><a href="#daily-trends">Detailed Daily Tables</a></li>
+          <li><a href="#limitations">Limitations</a></li>
+          <li><a href="#documentation">Documentation</a></li>
+          <li><a href="#meta">Metadata</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="report" id="top">
+    <section id="summary" class="section">
+      <h1>Executive Summary</h1>
+      <p class="analysis-period" aria-label="Analysis date range">Analyzed Period: 2026-01-15 → 2026-01-25 (11 days, 57 commits)</p>
+      <div class="summary-grid">
+        <div class="metric-card" tabindex="0"><div class="metric-value">57</div><div class="metric-label">Commits</div></div><div class="metric-card" tabindex="0"><div class="metric-value">2</div><div class="metric-label">Contributors</div></div><div class="metric-card" tabindex="0"><div class="metric-value">3,797</div><div class="metric-label">Files Changed</div></div><div class="metric-card" tabindex="0"><div class="metric-value">1.1M</div><div class="metric-label">Code Churn</div></div><div class="metric-card" tabindex="0"><div class="metric-value">50%</div><div class="metric-label">Bus Factor</div></div>
+      </div>
+    </section>
+
+    <section id="current-state" class="section">
+      <h2>Current Repository State</h2>
+      <p class="section-description">Current filesystem analysis showing all files present in the repository today, regardless of Git history.</p>
+      
+      <!-- Executive Summary style metrics grid -->
+      <div class="summary-grid">
+        <div class="metric-card" tabindex="0">
+                <div class="metric-value">20,257</div>
+                <div class="metric-label">Total Files</div>
+              </div><div class="metric-card" tabindex="0">
+                <div class="metric-value">1.2 GB</div>
+                <div class="metric-label">Total Size</div>
+              </div><div class="metric-card" tabindex="0">
+                <div class="metric-value">20</div>
+                <div class="metric-label">File Types</div>
+              </div><div class="metric-card" tabindex="0">
+                <div class="metric-value">10</div>
+                <div class="metric-label">Directories</div>
+              </div>
+      </div>
+
+      <!-- Repository details in clean table layout -->
+      <div class="repository-details">
+        <div class="table-wrapper" role="region" aria-label="File extensions breakdown">
+          <h3>File Extensions</h3>
+          <p class="section-description">Most common file types in the repository</p>
+          <table class="data-table" data-sortable data-initial-limit="10" data-table="file-extensions">
+            <thead>
+              <tr>
+                <th scope="col">Extension</th>
+                <th class="num" scope="col">Files</th>
+                <th class="num" scope="col">%</th>
+                <th class="num" scope="col">Size</th>
+              </tr>
+            </thead>
+            <tbody><tr>
+            <td><span class="file-extension">.json</span></td>
+            <td class="num">15,051</td>
+            <td class="num">74.3%</td>
+            <td class="num">212.6 MB</td>
+          </tr><tr>
+            <td><span class="file-extension">.html</span></td>
+            <td class="num">5,078</td>
+            <td class="num">25.1%</td>
+            <td class="num">1.0 GB</td>
+          </tr><tr>
+            <td><span class="file-extension">.md</span></td>
+            <td class="num">50</td>
+            <td class="num">0.2%</td>
+            <td class="num">386.0 KB</td>
+          </tr><tr>
+            <td><span class="file-extension">.py</span></td>
+            <td class="num">30</td>
+            <td class="num">0.1%</td>
+            <td class="num">347.0 KB</td>
+          </tr><tr>
+            <td><span class="file-extension">.tsx</span></td>
+            <td class="num">12</td>
+            <td class="num">0.1%</td>
+            <td class="num">176.0 KB</td>
+          </tr><tr>
+            <td><span class="file-extension">.ps1</span></td>
+            <td class="num">6</td>
+            <td class="num">0.0%</td>
+            <td class="num">43.3 KB</td>
+          </tr><tr>
+            <td><span class="file-extension">.txt</span></td>
+            <td class="num">5</td>
+            <td class="num">0.0%</td>
+            <td class="num">32.7 KB</td>
+          </tr><tr>
+            <td><span class="file-extension">.csv</span></td>
+            <td class="num">5</td>
+            <td class="num">0.0%</td>
+            <td class="num">13.3 MB</td>
+          </tr><tr>
+            <td><span class="file-extension">.ts</span></td>
+            <td class="num">5</td>
+            <td class="num">0.0%</td>
+            <td class="num">10.9 KB</td>
+          </tr><tr>
+            <td><span class="file-extension">.pdf</span></td>
+            <td class="num">3</td>
+            <td class="num">0.0%</td>
+            <td class="num">1022.7 KB</td>
+          </tr></tbody>
+          </table>
+          <button class="show-more" data-target-table="file-extensions" hidden>Show more</button>
+        </div>
+
+        
+        <div class="table-wrapper" role="region" aria-label="File categories breakdown">
+          <h3>File Categories</h3>
+          <p class="section-description">Files grouped by type and purpose</p>
+          <table class="data-table" data-sortable data-initial-limit="8" data-table="file-categories">
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th class="num" scope="col">Files</th>
+                <th class="num" scope="col">%</th>
+                <th class="num" scope="col">Size</th>
+              </tr>
+            </thead>
+            <tbody><tr>
+              <td>Configuration</td>
+              <td class="num">15,054</td>
+              <td class="num">74.3%</td>
+              <td class="num">212.6 MB</td>
+            </tr><tr>
+              <td>Other</td>
+              <td class="num">5,096</td>
+              <td class="num">25.2%</td>
+              <td class="num">1.0 GB</td>
+            </tr><tr>
+              <td>SourceCode</td>
+              <td class="num">47</td>
+              <td class="num">0.2%</td>
+              <td class="num">533.4 KB</td>
+            </tr><tr>
+              <td>Documentation</td>
+              <td class="num">40</td>
+              <td class="num">0.2%</td>
+              <td class="num">322.5 KB</td>
+            </tr><tr>
+              <td>Tests</td>
+              <td class="num">20</td>
+              <td class="num">0.1%</td>
+              <td class="num">135.4 KB</td>
+            </tr></tbody>
+          </table>
+          <button class="show-more" data-target-table="file-categories" hidden>Show more</button>
+        </div>
+        
+
+        
+        <div class="table-wrapper" role="region" aria-label="Directory breakdown">
+          <h3>Directory Breakdown</h3>
+          <p class="section-description">Largest directories by file count</p>
+          <table class="data-table" data-sortable data-initial-limit="8" data-table="directories">
+            <thead>
+              <tr>
+                <th scope="col">Directory</th>
+                <th class="num" scope="col">Files</th>
+                <th class="num" scope="col">%</th>
+              </tr>
+            </thead>
+            <tbody><tr>
+              <td><code class="directory-path">site\public\data\cache\open-data</code></td>
+              <td class="num">6,457</td>
+              <td class="num">31.9%</td>
+            </tr><tr>
+              <td><code class="directory-path">site\public\data\cache\http</code></td>
+              <td class="num">4,730</td>
+              <td class="num">23.3%</td>
+            </tr><tr>
+              <td><code class="directory-path">site\public\data\cache\wikidata</code></td>
+              <td class="num">1,260</td>
+              <td class="num">6.2%</td>
+            </tr><tr>
+              <td><code class="directory-path">site\public\data\cache\phase2</code></td>
+              <td class="num">778</td>
+              <td class="num">3.8%</td>
+            </tr><tr>
+              <td><code class="directory-path">site\public\data\cache\phase0</code></td>
+              <td class="num">297</td>
+              <td class="num">1.5%</td>
+            </tr><tr>
+              <td><code class="directory-path">data\states</code></td>
+              <td class="num">54</td>
+              <td class="num">0.3%</td>
+            </tr><tr>
+              <td><code class="directory-path">site\public\data\states</code></td>
+              <td class="num">54</td>
+              <td class="num">0.3%</td>
+            </tr><tr>
+              <td><code class="directory-path">site\public\data\cache\wikipedia_population</code></td>
+              <td class="num">18</td>
+              <td class="num">0.1%</td>
+            </tr></tbody>
+          </table>
+          <button class="show-more" data-target-table="directories" hidden>Show more</button>
+        </div>
+        
+      </div>
+    
+    </section>
+
+    <section id="authors" class="section">
+      <h2>Top Contributors (Author Metrics)</h2>
+      <p class="section-description">Individual developer metrics calculated from Git commit data. These represent observable activity patterns, not productivity or performance.</p>
+      <div class="table-wrapper" role="region" aria-label="Top authors table">
+        <table class="data-table" data-sortable data-initial-limit="15" data-table="authors">
+          <thead><tr><th scope="col">Author</th><th class="num" scope="col">Commits</th><th class="num" scope="col">Lines Changed</th><th class="num" scope="col">Avg Commit Size</th><th class="num" scope="col">Files Touched</th></tr></thead>
+          <tbody><tr>
+        <td><a href="#author-mark-markhazleton-com" class="author-link">Mark Hazleton</a></td>
+        <td class="num" data-sort="56">56</td>
+        <td class="num" data-sort="1148219" title="+989082 / -159137">+989,082 / -159,137</td>
+        <td class="num" data-sort="20503.91">20503.9</td>
+        <td class="num" data-sort="5121">5121</td>
+      </tr><tr>
+        <td><a href="#author-mark-hazleton-controlorigins-com" class="author-link">Mark Hazleton</a></td>
+        <td class="num" data-sort="1">1</td>
+        <td class="num" data-sort="162" title="+162 / -0">+162 / -0</td>
+        <td class="num" data-sort="162.00">162.0</td>
+        <td class="num" data-sort="3">3</td>
+      </tr></tbody>
+        </table>
+      </div>
+      <button class="show-more" data-target-table="authors" hidden>Show more</button>
+    </section>
+
+    <section id="team-patterns" class="section">
+      <h2>Team Activity Patterns (Aggregate Metrics)</h2>
+      <p class="section-description">Repository-wide patterns calculated from all Git commits. These show activity distribution, not team performance or quality.</p>
+      
+      <div class="team-patterns-grid">
+        <div class="pattern-card">
+          <h3>Commit Distribution</h3>
+          <div class="pattern-metrics">
+            <div class="pattern-metric">
+              <span class="metric-label">Total Commits</span>
+              <span class="metric-value">57</span>
+            </div>
+            <div class="pattern-metric">
+              <span class="metric-label">Avg per Day</span>
+              <span class="metric-value">5.7</span>
+            </div>
+            <div class="pattern-metric">
+              <span class="metric-label">Active Days</span>
+              <span class="metric-value">10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <h3>Code Volume</h3>
+          <div class="pattern-metrics">
+            <div class="pattern-metric">
+              <span class="metric-label">Total Churn</span>
+              <span class="metric-value">1.1M</span>
+            </div>
+            <div class="pattern-metric">
+              <span class="metric-label">Files Changed</span>
+              <span class="metric-value">3,797</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <h3>Contributor Patterns</h3>
+          <div class="pattern-metrics">
+            <div class="pattern-metric">
+              <span class="metric-label">Total Authors</span>
+              <span class="metric-value">2</span>
+            </div>
+            <div class="pattern-metric">
+              <span class="metric-label">Bus Factor</span>
+              <span class="metric-value">50%</span>
+              <span class="metric-note">Percentage of authors for 50% of commits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Activity Period Overview -->
+      <div class="trends-overview">
+        <h3>Analysis Period Overview</h3>
+        <div class="trends-summary-grid">
+          <div class="trend-summary-card">
+            <div class="summary-metric">
+              <div class="metric-value">8</div>
+              <div class="metric-label">Active Days</div>
+              <div class="metric-detail">out of 11 total days</div>
+            </div>
+          </div>
+          <div class="trend-summary-card">
+            <div class="summary-metric">
+              <div class="metric-value">5.2</div>
+              <div class="metric-label">Avg Commits/Day</div>
+              <div class="metric-detail">across active days</div>
+            </div>
+          </div>
+          <div class="trend-summary-card">
+            <div class="summary-metric">
+              <div class="metric-value">20</div>
+              <div class="metric-label">Peak Day</div>
+              <div class="metric-detail">2026-01-15</div>
+            </div>
+          </div>
+          <div class="trend-summary-card">
+            <div class="summary-metric">
+              <div class="metric-value">0</div>
+              <div class="metric-label">Total Reverts</div>
+              <div class="metric-detail">across all days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contributions Calendar -->
+      
+      <div class="contributions-graph">
+        <h3>🗓️ Contributions Calendar</h3>
+        <div class="contributions-header">
+          <span>Activity from 2026-01-15 to 2026-01-25 (8 active days)</span>
+          <span>57 total commits</span>
+        </div>
+        <div class="contributions-calendar">
+          <div class="contributions-weeks">
+            <div class="contributions-week"><div class="contribution-day intensity-4" title="2026-01-15: 20 commits" data-count="20" data-date="2026-01-15"></div><div class="contribution-day intensity-3" title="2026-01-16: 13 commits" data-count="13" data-date="2026-01-16"></div><div class="contribution-day intensity-2" title="2026-01-17: 9 commits" data-count="9" data-date="2026-01-17"></div><div class="contribution-day intensity-2" title="2026-01-18: 6 commits" data-count="6" data-date="2026-01-18"></div><div class="contribution-day intensity-1" title="2026-01-19: 1 commit" data-count="1" data-date="2026-01-19"></div></div><div class="contributions-week"><div class="contribution-day intensity-0" title="2026-01-20: 0 commits" data-count="0" data-date="2026-01-20"></div><div class="contribution-day intensity-1" title="2026-01-21: 2 commits" data-count="2" data-date="2026-01-21"></div><div class="contribution-day intensity-0" title="2026-01-22: 0 commits" data-count="0" data-date="2026-01-22"></div><div class="contribution-day intensity-0" title="2026-01-23: 0 commits" data-count="0" data-date="2026-01-23"></div><div class="contribution-day intensity-1" title="2026-01-24: 3 commits" data-count="3" data-date="2026-01-24"></div><div class="contribution-day intensity-1" title="2026-01-25: 3 commits" data-count="3" data-date="2026-01-25"></div></div>
+          </div>
+        </div>
+        <div class="contributions-legend">
+          <span>Less</span>
+          <div class="legend-scale">
+            <div class="legend-day intensity-0"></div>
+            <div class="legend-day intensity-1"></div>
+            <div class="legend-day intensity-2"></div>
+            <div class="legend-day intensity-3"></div>
+            <div class="legend-day intensity-4"></div>
+          </div>
+          <span>More</span>
+        </div>
+      </div>
+    
+
+      <!-- Visual Trend Charts -->
+      <div class="visual-trends">
+        <h3>Visual Trend Analysis</h3>
+        <div class="charts-grid">
+          
+      <div class="chart-container">
+        <h4>Daily Commits Trend</h4>
+        <svg class="trend-chart" width="800" height="200" viewBox="0 0 800 200">
+          <defs>
+            <linearGradient id="commitTrendGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:0.6" />
+              <stop offset="100%" style="stop-color:var(--color-primary);stop-opacity:0.1" />
+            </linearGradient>
+          </defs>
+          
+          <!-- Grid lines -->
+          <g class="grid" stroke="var(--color-border)" stroke-width="1" opacity="0.3">
+            <line x1="50" y1="20" x2="750" y2="20"/><line x1="50" y1="57.5" x2="750" y2="57.5"/><line x1="50" y1="95" x2="750" y2="95"/><line x1="50" y1="132.5" x2="750" y2="132.5"/><line x1="50" y1="170" x2="750" y2="170"/>
+          </g>
+          
+          <!-- Area fill -->
+          <path d="M 50 170 L 50 20 L 120 72.5 L 190 102.5 L 260 125 L 330 162.5 L 400 170 L 470 155 L 540 170 L 610 170 L 680 147.5 L 750 147.5 L 750 170 Z" fill="url(#commitTrendGradient)"/>
+          
+          <!-- Trend line -->
+          <path d="M 50 20 L 120 72.5 L 190 102.5 L 260 125 L 330 162.5 L 400 170 L 470 155 L 540 170 L 610 170 L 680 147.5 L 750 147.5" fill="none" stroke="var(--color-primary)" stroke-width="2"/>
+          
+          <!-- Data points -->
+          <g class="data-points">
+            <circle cx="50" cy="20" r="3" fill="var(--color-primary)" 
+                      title="2026-01-15: 20 commits">
+                 <title>2026-01-15: 20 commits</title>
+               </circle><circle cx="120" cy="72.5" r="3" fill="var(--color-primary)" 
+                      title="2026-01-16: 13 commits">
+                 <title>2026-01-16: 13 commits</title>
+               </circle><circle cx="190" cy="102.5" r="3" fill="var(--color-primary)" 
+                      title="2026-01-17: 9 commits">
+                 <title>2026-01-17: 9 commits</title>
+               </circle><circle cx="260" cy="125" r="3" fill="var(--color-primary)" 
+                      title="2026-01-18: 6 commits">
+                 <title>2026-01-18: 6 commits</title>
+               </circle><circle cx="330" cy="162.5" r="3" fill="var(--color-primary)" 
+                      title="2026-01-19: 1 commits">
+                 <title>2026-01-19: 1 commits</title>
+               </circle><circle cx="400" cy="170" r="3" fill="var(--color-primary)" 
+                      title="2026-01-20: 0 commits">
+                 <title>2026-01-20: 0 commits</title>
+               </circle><circle cx="470" cy="155" r="3" fill="var(--color-primary)" 
+                      title="2026-01-21: 2 commits">
+                 <title>2026-01-21: 2 commits</title>
+               </circle><circle cx="540" cy="170" r="3" fill="var(--color-primary)" 
+                      title="2026-01-22: 0 commits">
+                 <title>2026-01-22: 0 commits</title>
+               </circle><circle cx="610" cy="170" r="3" fill="var(--color-primary)" 
+                      title="2026-01-23: 0 commits">
+                 <title>2026-01-23: 0 commits</title>
+               </circle><circle cx="680" cy="147.5" r="3" fill="var(--color-primary)" 
+                      title="2026-01-24: 3 commits">
+                 <title>2026-01-24: 3 commits</title>
+               </circle><circle cx="750" cy="147.5" r="3" fill="var(--color-primary)" 
+                      title="2026-01-25: 3 commits">
+                 <title>2026-01-25: 3 commits</title>
+               </circle>
+          </g>
+          
+          <!-- Y-axis labels -->
+          <g class="y-labels" font-size="12" fill="var(--color-text-secondary)" text-anchor="end">
+            <text x="40" y="25">20</text>
+            <text x="40" y="175">0</text>
+          </g>
+          
+          <!-- Chart title -->
+          <text x="400" y="15" text-anchor="middle" font-size="14" font-weight="600" fill="var(--color-text)">
+            Last 11 Days
+          </text>
+        </svg>
+      </div>
+    
+          
+      <div class="chart-container">
+        <h4>Active Authors Trend</h4>
+        <svg class="trend-chart" width="800" height="200" viewBox="0 0 800 200">
+          <defs>
+            <linearGradient id="authorTrendGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--color-success);stop-opacity:0.6" />
+              <stop offset="100%" style="stop-color:var(--color-success);stop-opacity:0.1" />
+            </linearGradient>
+          </defs>
+          
+          <!-- Grid lines -->
+          <g class="grid" stroke="var(--color-border)" stroke-width="1" opacity="0.3">
+            <line x1="50" y1="20" x2="750" y2="20"/><line x1="50" y1="57.5" x2="750" y2="57.5"/><line x1="50" y1="95" x2="750" y2="95"/><line x1="50" y1="132.5" x2="750" y2="132.5"/><line x1="50" y1="170" x2="750" y2="170"/>
+          </g>
+          
+          <!-- Trend line -->
+          <path d="M 50 20 L 120 95 L 190 95 L 260 95 L 330 95 L 400 170 L 470 95 L 540 170 L 610 170 L 680 95 L 750 95" fill="none" stroke="var(--color-success)" stroke-width="2"/>
+          
+          <!-- Data points -->
+          <g class="data-points">
+            <circle cx="50" cy="20" r="3" fill="var(--color-success)" 
+                      title="2026-01-15: 2 authors">
+                 <title>2026-01-15: 2 authors</title>
+               </circle><circle cx="120" cy="95" r="3" fill="var(--color-success)" 
+                      title="2026-01-16: 1 authors">
+                 <title>2026-01-16: 1 authors</title>
+               </circle><circle cx="190" cy="95" r="3" fill="var(--color-success)" 
+                      title="2026-01-17: 1 authors">
+                 <title>2026-01-17: 1 authors</title>
+               </circle><circle cx="260" cy="95" r="3" fill="var(--color-success)" 
+                      title="2026-01-18: 1 authors">
+                 <title>2026-01-18: 1 authors</title>
+               </circle><circle cx="330" cy="95" r="3" fill="var(--color-success)" 
+                      title="2026-01-19: 1 authors">
+                 <title>2026-01-19: 1 authors</title>
+               </circle><circle cx="400" cy="170" r="3" fill="var(--color-success)" 
+                      title="2026-01-20: 0 authors">
+                 <title>2026-01-20: 0 authors</title>
+               </circle><circle cx="470" cy="95" r="3" fill="var(--color-success)" 
+                      title="2026-01-21: 1 authors">
+                 <title>2026-01-21: 1 authors</title>
+               </circle><circle cx="540" cy="170" r="3" fill="var(--color-success)" 
+                      title="2026-01-22: 0 authors">
+                 <title>2026-01-22: 0 authors</title>
+               </circle><circle cx="610" cy="170" r="3" fill="var(--color-success)" 
+                      title="2026-01-23: 0 authors">
+                 <title>2026-01-23: 0 authors</title>
+               </circle><circle cx="680" cy="95" r="3" fill="var(--color-success)" 
+                      title="2026-01-24: 1 authors">
+                 <title>2026-01-24: 1 authors</title>
+               </circle><circle cx="750" cy="95" r="3" fill="var(--color-success)" 
+                      title="2026-01-25: 1 authors">
+                 <title>2026-01-25: 1 authors</title>
+               </circle>
+          </g>
+          
+          <!-- Y-axis labels -->
+          <g class="y-labels" font-size="12" fill="var(--color-text-secondary)" text-anchor="end">
+            <text x="40" y="25">2</text>
+            <text x="40" y="175">0</text>
+          </g>
+          
+          <!-- Chart title -->
+          <text x="400" y="15" text-anchor="middle" font-size="14" font-weight="600" fill="var(--color-text)">
+            Last 11 Days
+          </text>
+        </svg>
+      </div>
+    
+          
+      <div class="sparklines-container">
+        <h4>Volume Trends (Last 14 Days)</h4>
+        <div class="sparklines-grid">
+          <div class="sparkline-item">
+            <div class="sparkline-label">Lines Changed</div>
+            <div class="sparkline-chart">
+              <svg width="100%" height="50" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="lines-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2196f3;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect x="0%" y="22.379351819046377" width="7.272727272727273%" height="27.620648180953623" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-15: 236,994 lines</title>
+        </rect><rect x="9.090909090909092%" y="0" width="7.272727272727273%" height="50" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-16: 429,016 lines</title>
+        </rect><rect x="18.181818181818183%" y="32.738522572584706" width="7.272727272727273%" height="17.261477427415294" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-17: 148,109 lines</title>
+        </rect><rect x="27.272727272727273%" y="16.419317694444963" width="7.272727272727273%" height="33.58068230555504" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-18: 288,133 lines</title>
+        </rect><rect x="36.36363636363637%" y="49.989977063792495" width="7.272727272727273%" height="0.010022936207507412" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-19: 86 lines</title>
+        </rect><rect x="45.45454545454546%" y="50" width="7.272727272727273%" height="0" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-20: 0 lines</title>
+        </rect><rect x="54.54545454545455%" y="49.660618718183" width="7.272727272727273%" height="0.3393812818169952" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-21: 2,912 lines</title>
+        </rect><rect x="63.63636363636364%" y="50" width="7.272727272727273%" height="0" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-22: 0 lines</title>
+        </rect><rect x="72.72727272727273%" y="50" width="7.272727272727273%" height="0" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-23: 0 lines</title>
+        </rect><rect x="81.81818181818183%" y="48.37360378167714" width="7.272727272727273%" height="1.62639621832286" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-24: 13,955 lines</title>
+        </rect><rect x="90.90909090909092%" y="46.59966061871818" width="7.272727272727273%" height="3.4003393812818166" fill="url(#lines-gradient)" rx="1">
+          <title>2026-01-25: 29,176 lines</title>
+        </rect>
+              </svg>
+            </div>
+            <div class="sparkline-summary">Peak: 429,016</div>
+          </div>
+          
+          <div class="sparkline-item">
+            <div class="sparkline-label">Files Touched</div>
+            <div class="sparkline-chart">
+              <svg width="100%" height="50" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="files-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" style="stop-color:var(--color-success);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4caf50;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect x="0%" y="45.70063694267516" width="7.272727272727273%" height="4.2993630573248405" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-15: 162 files</title>
+        </rect><rect x="9.090909090909092%" y="36.252653927813164" width="7.272727272727273%" height="13.747346072186836" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-16: 518 files</title>
+        </rect><rect x="18.181818181818183%" y="33.359872611464965" width="7.272727272727273%" height="16.64012738853503" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-17: 627 files</title>
+        </rect><rect x="27.272727272727273%" y="0" width="7.272727272727273%" height="50" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-18: 1884 files</title>
+        </rect><rect x="36.36363636363637%" y="49.97346072186836" width="7.272727272727273%" height="0.02653927813163482" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-19: 1 files</title>
+        </rect><rect x="45.45454545454546%" y="50" width="7.272727272727273%" height="0" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-20: 0 files</title>
+        </rect><rect x="54.54545454545455%" y="49.65498938428875" width="7.272727272727273%" height="0.3450106157112527" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-21: 13 files</title>
+        </rect><rect x="63.63636363636364%" y="50" width="7.272727272727273%" height="0" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-22: 0 files</title>
+        </rect><rect x="72.72727272727273%" y="50" width="7.272727272727273%" height="0" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-23: 0 files</title>
+        </rect><rect x="81.81818181818183%" y="15.445859872611464" width="7.272727272727273%" height="34.554140127388536" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-24: 1302 files</title>
+        </rect><rect x="90.90909090909092%" y="48.32802547770701" width="7.272727272727273%" height="1.6719745222929936" fill="url(#files-gradient)" rx="1">
+          <title>2026-01-25: 63 files</title>
+        </rect>
+              </svg>
+            </div>
+            <div class="sparkline-summary">Peak: 1884</div>
+          </div>
+        </div>
+      </div>
+    
+        </div>
+      </div>
+    
+    </section>
+
+    <section id="files" class="section">
+      <h2>File Activity Hotspots</h2>
+      <p class="section-description">Source code files with the most Git activity. High activity may indicate maintenance hotspots but does not imply code quality issues.</p>
+      <div class="table-wrapper" role="region" aria-label="File activity table">
+        <table class="data-table" data-sortable data-initial-limit="25" data-table="files">
+          <thead><tr><th scope="col">File</th><th class="num" scope="col">Commits</th><th class="num" scope="col">Lines Changed</th><th class="num" scope="col">Authors</th><th class="num" scope="col">Activity Score</th></tr></thead>
+          <tbody><tr>
+          <td><code title="scripts/enrich-open-data.py">scripts/enrich-open-data.py</code></td>
+          <td class="num" data-sort="12">12</td>
+          <td class="num" data-sort="2927">2,927</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="41"><span class="activity-badge activity-low" title="Commits: 12
+Lines Changed: 2927
+Authors: 1">41%</span></td>
+        </tr><tr>
+          <td><code title="scripts/_archive_legacy_DEPRECATED_2026-01-17/enrich-open-data.py">scripts/_archive_l...nrich-open-data.py</code></td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="2689">2,689</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="37"><span class="activity-badge activity-low" title="Commits: 1
+Lines Changed: 2689
+Authors: 1">37%</span></td>
+        </tr><tr>
+          <td><code title="site/src/pages/BrowsePageNew.tsx">site/src/pages/BrowsePageNew.tsx</code></td>
+          <td class="num" data-sort="6">6</td>
+          <td class="num" data-sort="1018">1,018</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="26"><span class="activity-badge activity-minimal" title="Commits: 6
+Lines Changed: 1018
+Authors: 1">26%</span></td>
+        </tr><tr>
+          <td><code title="site/src/pages/DataPipelinePage.tsx">site/src/pages/DataPipelinePage.tsx</code></td>
+          <td class="num" data-sort="2">2</td>
+          <td class="num" data-sort="896">896</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="24"><span class="activity-badge activity-minimal" title="Commits: 2
+Lines Changed: 896
+Authors: 1">24%</span></td>
+        </tr><tr>
+          <td><code title="site/src/pages/MuseumDetailPage.tsx">site/src/pages/MuseumDetailPage.tsx</code></td>
+          <td class="num" data-sort="5">5</td>
+          <td class="num" data-sort="824">824</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="25"><span class="activity-badge activity-minimal" title="Commits: 5
+Lines Changed: 824
+Authors: 1">25%</span></td>
+        </tr><tr>
+          <td><code title="site/src/pages/DataModelPage.tsx">site/src/pages/DataModelPage.tsx</code></td>
+          <td class="num" data-sort="2">2</td>
+          <td class="num" data-sort="792">792</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="24"><span class="activity-badge activity-minimal" title="Commits: 2
+Lines Changed: 792
+Authors: 1">24%</span></td>
+        </tr><tr>
+          <td><code title="scripts/phases/phase0_7_website.py">scripts/phases/phase0_7_website.py</code></td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="769">769</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="23"><span class="activity-badge activity-minimal" title="Commits: 1
+Lines Changed: 769
+Authors: 1">23%</span></td>
+        </tr><tr>
+          <td><code title="scripts/phase2_scoring.py">scripts/phase2_scoring.py</code></td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="768">768</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="23"><span class="activity-badge activity-minimal" title="Commits: 1
+Lines Changed: 768
+Authors: 1">23%</span></td>
+        </tr><tr>
+          <td><code title="scripts/phase0_identity.py">scripts/phase0_identity.py</code></td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="712">712</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="23"><span class="activity-badge activity-minimal" title="Commits: 1
+Lines Changed: 712
+Authors: 1">23%</span></td>
+        </tr><tr>
+          <td><code title="scripts/phases/phase1_8_csv_lookup.py">scripts/phases/phase1_8_csv_lookup.py</code></td>
+          <td class="num" data-sort="2">2</td>
+          <td class="num" data-sort="710">710</td>
+          <td class="num" data-sort="1">1</td>
+          <td class="num" data-sort="23"><span class="activity-badge activity-minimal" title="Commits: 2
+Lines Changed: 710
+Authors: 1">23%</span></td>
+        </tr></tbody>
+        </table>
+      </div>
+      <button class="show-more" data-target-table="files" hidden>Show more</button>
+    </section>
+
+    <section id="author-details" class="section">
+      <h2>Author Activity Details</h2>
+      <p class="section-description">Detailed activity patterns for individual contributors. All metrics are derived from Git commit data and represent observable patterns only.</p>
+      <div class="author-profiles">
+        
+    <div class="author-profile-card" id="author-mark-markhazleton-com">
+      <div class="author-header">
+        <h3>Mark Hazleton</h3>
+        <span class="author-email">mark@markhazleton.com</span>
+        <div class="author-period">Active: 2026-01-15 → 2026-01-25 (10 days)</div>
+      </div>
+
+      <div class="contribution-overview">
+        <h4>Observable Activity Metrics</h4>
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="metric-value">56</div>
+            <div class="metric-label">Commits</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">3,796</div>
+            <div class="metric-label">Files</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">+989,082</div>
+            <div class="metric-label">Lines Added</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">-159,137</div>
+            <div class="metric-label">Lines Deleted</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">1,148,219</div>
+            <div class="metric-label">Code Churn</div>
+          </div>
+        </div>
+        <div class="summary-stats">
+          Avg: 20503.9 lines/commit • 
+          91.4 files/commit • 
+          5.60 commits/day
+        </div>
+      </div>
+
+      <div class="commit-patterns">
+        <h4>Commit Timing Patterns</h4>
+        <div class="pattern-info">
+          <p><strong>⚠️ Note:</strong> Timing patterns reflect when commits were made, not actual working hours or availability.</p>
+          <div>Most Active Day: <strong>Thursday</strong> (33.9% of commits)</div>
+          <div>Most Active Time: <strong>Afternoon (12-3pm)</strong></div>
+          <div>Weekend Commits: <strong>35.7%</strong></div>
+          <div>After-Hours Commits: <strong>19.6%</strong></div>
+        </div>
+      </div>
+
+      <div class="code-focus">
+        <h4>File Activity Focus</h4>
+        <div class="focus-info">
+          <div>Primary Directories: data/states/ (90%), data/runs/ (9%), site/src/ (1%)</div>
+          <div>Repository Coverage: 100.0% of total files</div>
+          <div>Source Code Changes: +952,126 / 
+          -136,836 
+          (54 commits)</div>
+        </div>
+
+        
+      <div class="file-type-breakdown">
+        <h4>File Type Activity</h4>
+        <div class="file-type-categories">
+          <div class="category-item">
+          <div class="category-name">Configuration</div>
+          <div class="category-percentage">78.3%</div>
+        </div><div class="category-item">
+          <div class="category-name">Other</div>
+          <div class="category-percentage">5.1%</div>
+        </div><div class="category-item">
+          <div class="category-name">SourceCode</div>
+          <div class="category-percentage">4.5%</div>
+        </div><div class="category-item">
+          <div class="category-name">Documentation</div>
+          <div class="category-percentage">1.8%</div>
+        </div><div class="category-item">
+          <div class="category-name">Tests</div>
+          <div class="category-percentage">1.8%</div>
+        </div>
+        </div>
+        <div class="file-type-extensions">
+          <h5>Top File Extensions</h5>
+          <div class="extensions-grid">
+            <div class="file-type-item">
+        <span class="file-extension">.json</span>
+        <span class="file-percentage">78.3%</span>
+      </div><div class="file-type-item">
+        <span class="file-extension">.py</span>
+        <span class="file-percentage">5.1%</span>
+      </div><div class="file-type-item">
+        <span class="file-extension">.html</span>
+        <span class="file-percentage">4.6%</span>
+      </div><div class="file-type-item">
+        <span class="file-extension">.md</span>
+        <span class="file-percentage">2.3%</span>
+      </div><div class="file-type-item">
+        <span class="file-extension">.tsx</span>
+        <span class="file-percentage">0.3%</span>
+      </div>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+
+      <div class="commit-distribution">
+        <h4>Commit Size Distribution</h4>
+        <div class="size-distribution">
+          
+        <div class="size-bar">
+          <div class="size-label">Micro (&lt;20)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill micro w-4" data-actual="3.6"></div>
+            <span class="size-percentage has-data">2 (3.6%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Small (20-50)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill small w-2" data-actual="1.8"></div>
+            <span class="size-percentage has-data">1 (1.8%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Medium (51-200)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill medium w-15" data-actual="12.5"></div>
+            <span class="size-percentage has-data">7 (12.5%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Large (201-500)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill large w-15" data-actual="10.7"></div>
+            <span class="size-percentage has-data">6 (10.7%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Very Large (&gt;500)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill very-large w-75" data-actual="71.4"></div>
+            <span class="size-percentage has-data">40 (71.4%)</span>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="activity-details">
+        <h4>Activity Details</h4>
+        <div class="activity-content">
+          
+          <div class="largest-commit">
+            <strong>Largest Single Change:</strong> 322,267 lines 
+            (6cf949d) on 
+            1/16/2026<br>
+            <em>"Add CSV enrichment script and integration tests"</em>
+          </div>
+          
+          <div class="activity-summary">
+            <p><strong>Activity Summary:</strong> This author contributed 56 commits over 10 active days, 
+            changing 3,796 unique files with an average of 
+            20503.9 lines per commit.</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="author-profile-card" id="author-mark-hazleton-controlorigins-com">
+      <div class="author-header">
+        <h3>Mark Hazleton</h3>
+        <span class="author-email">mark.hazleton@controlorigins.com</span>
+        <div class="author-period">Active: 2026-01-15 → 2026-01-15 (1 days)</div>
+      </div>
+
+      <div class="contribution-overview">
+        <h4>Observable Activity Metrics</h4>
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="metric-value">1</div>
+            <div class="metric-label">Commits</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">3</div>
+            <div class="metric-label">Files</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">+162</div>
+            <div class="metric-label">Lines Added</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">-0</div>
+            <div class="metric-label">Lines Deleted</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">162</div>
+            <div class="metric-label">Code Churn</div>
+          </div>
+        </div>
+        <div class="summary-stats">
+          Avg: 162.0 lines/commit • 
+          3.0 files/commit • 
+          1.00 commits/day
+        </div>
+      </div>
+
+      <div class="commit-patterns">
+        <h4>Commit Timing Patterns</h4>
+        <div class="pattern-info">
+          <p><strong>⚠️ Note:</strong> Timing patterns reflect when commits were made, not actual working hours or availability.</p>
+          <div>Most Active Day: <strong>Thursday</strong> (100.0% of commits)</div>
+          <div>Most Active Time: <strong>Early Morning (6-9am)</strong></div>
+          <div>Weekend Commits: <strong>0.0%</strong></div>
+          <div>After-Hours Commits: <strong>100.0%</strong></div>
+        </div>
+      </div>
+
+      <div class="code-focus">
+        <h4>File Activity Focus</h4>
+        <div class="focus-info">
+          <div>Primary Directories: .gitignore/ (33%), LICENSE/ (33%), README.md/ (33%)</div>
+          <div>Repository Coverage: 0.1% of total files</div>
+          <div>Source Code Changes: +162 / 
+          -0 
+          (1 commits)</div>
+        </div>
+
+        
+      <div class="file-type-breakdown">
+        <h4>File Type Activity</h4>
+        <div class="file-type-categories">
+          <div class="category-item">
+          <div class="category-name">Documentation</div>
+          <div class="category-percentage">33.3%</div>
+        </div><div class="category-item">
+          <div class="category-name">Other</div>
+          <div class="category-percentage">33.3%</div>
+        </div>
+        </div>
+        <div class="file-type-extensions">
+          <h5>Top File Extensions</h5>
+          <div class="extensions-grid">
+            <div class="file-type-item">
+        <span class="file-extension">.no-extension</span>
+        <span class="file-percentage">33.3%</span>
+      </div><div class="file-type-item">
+        <span class="file-extension">.md</span>
+        <span class="file-percentage">33.3%</span>
+      </div>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+
+      <div class="commit-distribution">
+        <h4>Commit Size Distribution</h4>
+        <div class="size-distribution">
+          
+        <div class="size-bar">
+          <div class="size-label">Micro (&lt;20)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill micro w-0" ></div>
+            <span class="size-percentage no-data">0 (0.0%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Small (20-50)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill small w-0" ></div>
+            <span class="size-percentage no-data">0 (0.0%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Medium (51-200)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill medium w-100" data-actual="100.0"></div>
+            <span class="size-percentage has-data">1 (100.0%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Large (201-500)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill large w-0" ></div>
+            <span class="size-percentage no-data">0 (0.0%)</span>
+          </div>
+        </div>
+        <div class="size-bar">
+          <div class="size-label">Very Large (&gt;500)</div>
+          <div class="size-bar-container">
+            <div class="size-bar-fill very-large w-0" ></div>
+            <span class="size-percentage no-data">0 (0.0%)</span>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="activity-details">
+        <h4>Activity Details</h4>
+        <div class="activity-content">
+          
+          <div class="largest-commit">
+            <strong>Largest Single Change:</strong> 162 lines 
+            (160349d) on 
+            1/15/2026<br>
+            <em>"Initial commit"</em>
+          </div>
+          
+          <div class="activity-summary">
+            <p><strong>Activity Summary:</strong> This author contributed 1 commits over 1 active days, 
+            changing 3 unique files with an average of 
+            162.0 lines per commit.</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+      </div>
+    </section>
+
+    
+    <section id="daily-trends" class="section">
+      <h2>� Detailed Daily Tables</h2>
+      <p class="section-description">
+        Detailed day-by-day breakdowns of repository metrics computed from Git commit history. These tables provide 
+        granular data for analysis but should not be used for performance evaluation.
+      </p>
+
+      <!-- Key Trends -->
+      <div class="key-trends">
+        <h3>Daily Metrics Breakdown</h3>
+        
+        <!-- Flow Trends -->
+        <div class="trend-category">
+          <h4>📊 Daily Flow & Throughput</h4>
+          <div class="trend-explanation">
+            <p>Observable patterns in commit frequency, author participation, and code volume changes.</p>
+          </div>
+          
+          
+      <div class="table-wrapper">
+        <table class="data-table trends-table" data-sortable>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th class="num">Commits</th>
+              <th class="num">Authors</th>
+              <th class="num">Lines Changed</th>
+              <th class="num">Files Touched</th>
+              <th class="num">P50 Commit Size</th>
+              <th class="num">P90 Commit Size</th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr>
+        <td>2026-01-15</td>
+        <td class="num">20</td>
+        <td class="num">2</td>
+        <td class="num">236,994</td>
+        <td class="num">162</td>
+        <td class="num">1604</td>
+        <td class="num">9627</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-16</td>
+        <td class="num">13</td>
+        <td class="num">1</td>
+        <td class="num">429,016</td>
+        <td class="num">518</td>
+        <td class="num">5135</td>
+        <td class="num">34647</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-17</td>
+        <td class="num">9</td>
+        <td class="num">1</td>
+        <td class="num">148,109</td>
+        <td class="num">627</td>
+        <td class="num">2075</td>
+        <td class="num">119965</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-18</td>
+        <td class="num">6</td>
+        <td class="num">1</td>
+        <td class="num">288,133</td>
+        <td class="num">1884</td>
+        <td class="num">26809</td>
+        <td class="num">117385</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-19</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">86</td>
+        <td class="num">1</td>
+        <td class="num">86</td>
+        <td class="num">86</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-20</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-21</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">2,912</td>
+        <td class="num">13</td>
+        <td class="num">874</td>
+        <td class="num">2038</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-22</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-23</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-24</td>
+        <td class="num">3</td>
+        <td class="num">1</td>
+        <td class="num">13,955</td>
+        <td class="num">1302</td>
+        <td class="num">4056</td>
+        <td class="num">8934</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-25</td>
+        <td class="num">3</td>
+        <td class="num">1</td>
+        <td class="num">29,176</td>
+        <td class="num">63</td>
+        <td class="num">611</td>
+        <td class="num">28465</td>
+      </tr>
+    </tbody>
+        </table>
+      </div>
+      
+    
+        </div>
+
+        <!-- Stability Trends -->
+        <div class="trend-category">
+          <h4>⚖️ Daily Stability Indicators</h4>
+          <div class="trend-explanation">
+            <p>Patterns that may indicate repository stability, including reverts, merges, and file retouch rates.</p>
+          </div>
+          
+          
+      <div class="table-wrapper">
+        <table class="data-table trends-table" data-sortable>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th class="num">Reverts</th>
+              <th class="num">Merge Ratio</th>
+              <th class="num">Retouch Rate</th>
+              <th class="num">Renames</th>
+              <th class="num">Out of Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr>
+        <td>2026-01-15</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0%</td>
+        <td class="num">2</td>
+        <td class="num">10.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-16</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">12.0%</td>
+        <td class="num">0</td>
+        <td class="num">7.7%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-17</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">3.7%</td>
+        <td class="num">99</td>
+        <td class="num">100.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-18</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">10.8%</td>
+        <td class="num">17</td>
+        <td class="num">100.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-19</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">100.0%</td>
+        <td class="num">0</td>
+        <td class="num">100.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-20</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0%</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-21</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">46.2%</td>
+        <td class="num">0</td>
+        <td class="num">100.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-22</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0%</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-23</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0%</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-24</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">31.8%</td>
+        <td class="num">0</td>
+        <td class="num">100.0%</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-25</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">100.0%</td>
+        <td class="num">0</td>
+        <td class="num">100.0%</td>
+      </tr>
+    </tbody>
+        </table>
+      </div>
+      
+    
+        </div>
+
+        <!-- Ownership Trends -->
+        <div class="trend-category">
+          <h4>👥 Daily Ownership Patterns</h4>
+          <div class="trend-explanation">
+            <p>File ownership distribution and knowledge spreading patterns based on authorship data.</p>
+          </div>
+          
+          
+      <div class="table-wrapper">
+        <table class="data-table trends-table" data-sortable>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th class="num">New Files</th>
+              <th class="num">Single Owner Files</th>
+              <th class="num">Total Files Touched</th>
+              <th class="num">Single Owner %</th>
+              <th class="num">Avg Authors/File</th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr>
+        <td>2026-01-15</td>
+        <td class="num">165</td>
+        <td class="num">0</td>
+        <td class="num">162</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-16</td>
+        <td class="num">466</td>
+        <td class="num">62</td>
+        <td class="num">518</td>
+        <td class="num">12.0%</td>
+        <td class="num">0.1</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-17</td>
+        <td class="num">510</td>
+        <td class="num">23</td>
+        <td class="num">627</td>
+        <td class="num">3.7%</td>
+        <td class="num">0.0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-18</td>
+        <td class="num">1625</td>
+        <td class="num">202</td>
+        <td class="num">1884</td>
+        <td class="num">10.7%</td>
+        <td class="num">0.1</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-19</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">100.0%</td>
+        <td class="num">1.0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-20</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-21</td>
+        <td class="num">8</td>
+        <td class="num">6</td>
+        <td class="num">13</td>
+        <td class="num">46.2%</td>
+        <td class="num">0.5</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-22</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-23</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+        <td class="num">0.0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-24</td>
+        <td class="num">891</td>
+        <td class="num">413</td>
+        <td class="num">1302</td>
+        <td class="num">31.7%</td>
+        <td class="num">0.3</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-25</td>
+        <td class="num">0</td>
+        <td class="num">63</td>
+        <td class="num">63</td>
+        <td class="num">100.0%</td>
+        <td class="num">1.0</td>
+      </tr>
+    </tbody>
+        </table>
+      </div>
+      
+    
+        </div>
+
+        <!-- Coupling Trends -->
+        <div class="trend-category">
+          <h4>🔗 Daily Coupling Indicators</h4>
+          <div class="trend-explanation">
+            <p>Patterns in file co-changes that may indicate architectural coupling or batch changes.</p>
+          </div>
+          
+          
+      <div class="table-wrapper">
+        <table class="data-table trends-table" data-sortable>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th class="num">Co-change Density</th>
+              <th class="num">Total Co-change Pairs</th>
+              <th class="num">Multi-file Commits</th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr>
+        <td>2026-01-15</td>
+        <td class="num">418.15</td>
+        <td class="num">8363</td>
+        <td class="num">17</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-16</td>
+        <td class="num">3199.69</td>
+        <td class="num">41596</td>
+        <td class="num">11</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-17</td>
+        <td class="num">6721.33</td>
+        <td class="num">60492</td>
+        <td class="num">9</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-18</td>
+        <td class="num">235662.17</td>
+        <td class="num">1413973</td>
+        <td class="num">6</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-19</td>
+        <td class="num">0.00</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-20</td>
+        <td class="num">0.00</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-21</td>
+        <td class="num">21.00</td>
+        <td class="num">42</td>
+        <td class="num">2</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-22</td>
+        <td class="num">0.00</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-23</td>
+        <td class="num">0.00</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-24</td>
+        <td class="num">269530.33</td>
+        <td class="num">808591</td>
+        <td class="num">3</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-25</td>
+        <td class="num">451.00</td>
+        <td class="num">1353</td>
+        <td class="num">3</td>
+      </tr>
+    </tbody>
+        </table>
+      </div>
+      
+    
+        </div>
+
+        <!-- Hygiene Trends -->
+        <div class="trend-category">
+          <h4>🧹 Daily Hygiene Patterns</h4>
+          <div class="trend-explanation">
+            <p>Commit message quality patterns and documentation practices observed in commit data.</p>
+          </div>
+          
+          
+      <div class="table-wrapper">
+        <table class="data-table trends-table" data-sortable>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th class="num">Median Message Length</th>
+              <th class="num">Short Messages</th>
+              <th class="num">Conventional Commits</th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr>
+        <td>2026-01-15</td>
+        <td class="num">387</td>
+        <td class="num">2</td>
+        <td class="num">12</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-16</td>
+        <td class="num">71</td>
+        <td class="num">1</td>
+        <td class="num">5</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-17</td>
+        <td class="num">568</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-18</td>
+        <td class="num">151</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-19</td>
+        <td class="num">46</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-20</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-21</td>
+        <td class="num">70</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-22</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-23</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-24</td>
+        <td class="num">79</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+    
+      <tr>
+        <td>2026-01-25</td>
+        <td class="num">122</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+    </tbody>
+        </table>
+      </div>
+      
+    
+        </div>
+      </div>
+
+      <!-- Limitations and Context -->
+      <div class="trends-limitations">
+        <h3>⚠️ Daily Trends Limitations</h3>
+        <div class="limitation-notice">
+          <h4>Git Data Only - No External Context</h4>
+          <p>These trends are calculated exclusively from Git commit history and have significant limitations:</p>
+          <ul>
+            <li><strong>Timing:</strong> Commit timestamps reflect when commits were made, not actual working hours</li>
+            <li><strong>Batch Operations:</strong> Large commits may represent batch changes, merges, or automated processes</li>
+            <li><strong>Development Workflows:</strong> Patterns affected by branching strategies, release cycles, and team practices</li>
+            <li><strong>No Quality Context:</strong> Cannot distinguish between bug fixes, features, refactoring, or maintenance</li>
+            <li><strong>No External Events:</strong> Cannot correlate with releases, incidents, holidays, or business events</li>
+          </ul>
+          
+          <h4>Appropriate Usage</h4>
+          <ul>
+            <li><strong>Activity Monitoring:</strong> Track repository activity levels and participation</li>
+            <li><strong>Pattern Recognition:</strong> Identify unusual spikes, drops, or cyclical patterns</li>
+            <li><strong>Planning Context:</strong> Understand historical activity patterns for capacity planning</li>
+            <li><strong>Process Insights:</strong> Observe effects of workflow or tooling changes</li>
+          </ul>
+          
+          <h4>Inappropriate Usage</h4>
+          <ul>
+            <li><strong>Performance Assessment:</strong> Do not use for individual or team performance evaluation</li>
+            <li><strong>Quality Measurement:</strong> Trends do not indicate code quality or defect rates</li>
+            <li><strong>Productivity Metrics:</strong> Commit patterns ≠ productivity or business value</li>
+            <li><strong>Work-Life Balance:</strong> Timing patterns do not indicate actual working hours or stress</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="limitations" class="section">
+      <h2>⚠️ Important: Measurement Limitations</h2>
+      <div class="critical-notice">
+        <h3>What Git Repository Data Can and Cannot Tell Us</h3>
+        
+        <div class="limitation-grid">
+          <div class="limitation-category">
+            <h4>✅ Available from Git Repository</h4>
+            <ul>
+              <li>Commit metadata (author, timestamp, message)</li>
+              <li>File changes (additions, deletions, modifications)</li>
+              <li>Branch and merge history</li>
+              <li>Authorship and co-authorship information</li>
+              <li>Commit relationships and ancestry</li>
+            </ul>
+          </div>
+          
+          <div class="limitation-category">
+            <h4>❌ NOT Available from Git Repository</h4>
+            <ul>
+              <li><strong>Code review data:</strong> No reviewer info, approval status, or review comments</li>
+              <li><strong>Pull/merge request metadata:</strong> No PR numbers, descriptions, or review workflows</li>
+              <li><strong>Issue tracking:</strong> No bug reports, feature requests, or issue relationships</li>
+              <li><strong>Team structure:</strong> No organizational hierarchy, roles, or responsibilities</li>
+              <li><strong>Work hours/timezones:</strong> No actual working hours or availability</li>
+              <li><strong>Performance metrics:</strong> No build times, test results, or runtime performance</li>
+              <li><strong>Code quality:</strong> No actual defect rates, test coverage, or maintainability scores</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="honest-metrics-notice">
+          <h4>📊 Our Approach: Honest, Observable Metrics Only</h4>
+          <p>All metrics in this report are calculated exclusively from Git commit history. We do not guess, estimate, or infer team performance, code quality, or individual productivity from Git data alone.</p>
+          
+          <div class="metric-categories">
+            <div class="metric-category">
+              <h5>Author Metrics (Individual)</h5>
+              <ul>
+                <li><strong>Commit Count:</strong> Number of commits authored</li>
+                <li><strong>Lines Changed:</strong> Sum of insertions and deletions</li>
+                <li><strong>Commit Size Distribution:</strong> Pattern of small vs large commits</li>
+                <li><strong>Active Days:</strong> Number of days with at least one commit</li>
+                <li><strong>Files Touched:</strong> Number of unique files modified</li>
+              </ul>
+            </div>
+            
+            <div class="metric-category">
+              <h5>Team Metrics (Aggregate)</h5>
+              <ul>
+                <li><strong>Commit Frequency:</strong> Total commits per time period</li>
+                <li><strong>Code Churn:</strong> Total lines changed across repository</li>
+                <li><strong>Batch Size Distribution:</strong> Average and variation in commit sizes</li>
+                <li><strong>Active Contributors:</strong> Number of distinct authors in time window</li>
+                <li><strong>File Hotspots:</strong> Files with highest number of changes</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="usage-guidelines">
+            <h5>🎯 Appropriate Usage Guidelines</h5>
+            <ul>
+              <li><strong>DO:</strong> Use to understand activity patterns and contribution distribution</li>
+              <li><strong>DO:</strong> Identify files that change frequently (maintenance hotspots)</li>
+              <li><strong>DO:</strong> Track repository activity trends over time</li>
+              <li><strong>DON'T:</strong> Use for performance reviews or productivity assessments</li>
+              <li><strong>DON'T:</strong> Assume commit count equals productivity or value</li>
+              <li><strong>DON'T:</strong> Draw conclusions about code quality from Git metrics alone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="documentation" class="section">
+      <h2>Calculation Documentation</h2>
+      <p class="doc-intro">This section provides detailed explanations of the metrics and calculations used, all based exclusively on Git repository commit data.</p>
+      
+      <div class="measurement-principles">
+        <h3>📐 Measurement Principles</h3>
+        <div class="principles-grid">
+          <div class="principle-card">
+            <h4>Objective Data Only</h4>
+            <p>All metrics are calculated from observable Git commit data without interpretation or speculation about team dynamics, productivity, or code quality.</p>
+          </div>
+          <div class="principle-card">
+            <h4>Transparent Limitations</h4>
+            <p>We clearly state what our metrics can and cannot measure, avoiding false claims about team performance or code quality assessment.</p>
+          </div>
+          <div class="principle-card">
+            <h4>No Speculation</h4>
+            <p>We do not infer work-life balance, collaboration effectiveness, or individual performance from Git commit patterns alone.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="doc-section">
+        <h3>Repository Activity Index</h3>
+        <p>The Activity Index provides a normalized measure of repository activity based on observable Git patterns.</p>
+        
+        <div class="formula-box">
+          <h4>Activity Index Formula</h4>
+          <code class="formula">
+            Activity Index = (Commit Frequency + Author Participation + Change Consistency) ÷ 3
+          </code>
+          <div class="formula-explanation">
+            <ul>
+              <li><strong>Commit Frequency:</strong> Daily commit rate normalized to 0-1 scale</li>
+              <li><strong>Author Participation:</strong> Author-to-commit ratio indicating contribution spread</li>
+              <li><strong>Change Consistency:</strong> Variation in commit sizes (derived component)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="limitation-notice">
+          <strong>⚠️ Important:</strong> This index measures repository activity patterns, not project health, team performance, or code quality. High activity doesn't necessarily indicate good outcomes, and low activity doesn't indicate problems.
+        </div>
+      </div>
+
+      <div class="doc-section">
+        <h3>Author Activity Metrics</h3>
+        <p>Individual contributor metrics focus on observable activity patterns from Git commit history.</p>
+
+        <div class="metric-docs">
+          <div class="metric-category">
+            <h4>Core Activity Metrics</h4>
+            <ul>
+              <li><strong>Commit Count:</strong> Total number of commits authored in the analysis period</li>
+              <li><strong>Lines Changed:</strong> Sum of all line insertions and deletions across all commits</li>
+              <li><strong>Average Commit Size:</strong> Mean number of lines changed per commit</li>
+              <li><strong>Files Touched:</strong> Number of unique files modified by the author</li>
+              <li><strong>Active Days:</strong> Number of distinct days with at least one commit</li>
+            </ul>
+            <div class="formula-box">
+              <code class="formula">
+                Lines Changed = Total Insertions + Total Deletions
+              </code>
+              <code class="formula">
+                Average Commit Size = Total Lines Changed ÷ Total Commits
+              </code>
+            </div>
+          </div>
+
+          <div class="metric-category">
+            <h4>Commit Size Distribution</h4>
+            <p>Classification of commits by the number of lines changed, showing different development patterns:</p>
+            <ul>
+              <li><strong>Micro (&lt;20 lines):</strong> Small fixes, minor changes</li>
+              <li><strong>Small (20-50 lines):</strong> Focused changes, bug fixes</li>
+              <li><strong>Medium (51-200 lines):</strong> Feature additions, moderate refactoring</li>
+              <li><strong>Large (201-500 lines):</strong> Significant features, major changes</li>
+              <li><strong>Very Large (&gt;500 lines):</strong> Major features, large refactors, or merged changes</li>
+            </ul>
+            <p><em>Note: Commit size alone does not indicate quality, complexity, or effort. Large commits may represent legitimate batch changes, while small commits may address complex issues.</em></p>
+          </div>
+
+          <div class="metric-category">
+            <h4>Temporal Patterns</h4>
+            <p>Observable timing patterns in commit history:</p>
+            <ul>
+              <li><strong>Commit Timing:</strong> Distribution of commits across hours and days (timestamp analysis only)</li>
+              <li><strong>Activity Periods:</strong> Identification of high and low activity periods</li>
+              <li><strong>Consistency:</strong> Regularity of contributions over time</li>
+            </ul>
+            <div class="limitation-notice">
+              <strong>⚠️ Timing Limitations:</strong> Commit timestamps reflect when commits were made, not actual working hours. They can be affected by time zones, commit strategies, and development workflows. Do not use for work-life balance assessment.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="doc-section">
+        <h3>Team Activity Patterns</h3>
+        <div class="metric-docs">
+          <div class="metric-category">
+            <h4>Aggregate Repository Metrics</h4>
+            <ul>
+              <li><strong>Total Commits:</strong> Complete count of commits in the analysis period</li>
+              <li><strong>Code Churn:</strong> Total lines inserted and deleted across all commits</li>
+              <li><strong>Active Contributors:</strong> Number of unique authors with commits in the period</li>
+              <li><strong>File Activity:</strong> Number of unique files modified during the period</li>
+              <li><strong>Bus Factor:</strong> Percentage of contributors needed to account for 50% of commits</li>
+            </ul>
+            <div class="formula-box">
+              <code class="formula">
+                Bus Factor = (Minimum authors needed for 50% of total commits ÷ Total authors) × 100%
+              </code>
+              <code class="formula">
+                Daily Commit Average = Total Commits ÷ Active Days
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="doc-section">
+        <h3>File Activity Hotspots</h3>
+        <div class="metric-docs">
+          <div class="metric-category">
+            <h4>File Activity Analysis</h4>
+            <ul>
+              <li><strong>File Commit Count:</strong> Number of commits that modified each file</li>
+              <li><strong>File Line Changes:</strong> Total lines added and removed for each file</li>
+              <li><strong>File Author Count:</strong> Number of different authors who modified each file</li>
+              <li><strong>Activity Score:</strong> Composite score based on commit frequency and author count</li>
+            </ul>
+            <p><strong>Interpretation:</strong> Files with high activity scores are changed frequently and/or by many authors. This may indicate:</p>
+            <ul>
+              <li>Core functionality that requires frequent updates</li>
+              <li>Configuration files that change with features</li>
+              <li>Files that need architectural attention</li>
+              <li>Areas of active development</li>
+            </ul>
+            <div class="limitation-notice">
+              <strong>⚠️ Activity ≠ Problems:</strong> High file activity does not necessarily indicate problems, bugs, or poor code quality. Many legitimate factors can cause frequent file changes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="methodology-note">
+        <h4>Methodology and Data Sources</h4>
+        <p><strong>Data Source:</strong> All metrics are calculated exclusively from Git commit history using standard Git commands (git log, git show, git diff).</p>
+        <p><strong>Scope:</strong> Analysis covers the specified date range and branch(es) with all calculations based on available commit data.</p>
+        <p><strong>Normalization:</strong> Some metrics are normalized to 0-100 scale for consistency and comparison across different repository sizes.</p>
+        <p><strong>Accuracy:</strong> Metric accuracy depends on the completeness and quality of Git commit history. Repositories with missing history or non-standard workflows may show different patterns.</p>
+        <p><strong>No External Data:</strong> We deliberately avoid integrating external data sources (issue trackers, CI/CD systems, code quality tools) to maintain transparency about what Git data alone can and cannot reveal.</p>
+      </div>
+    </section>
+
+    <section id="meta" class="section">
+      <h2>Report Metadata</h2>
+      <dl class="meta-grid">
+        <dt>Generated</dt><dd>1/25/2026, 10:13:31 AM</dd>
+        <dt>Version</dt><dd>1.2.0</dd>
+        <dt>Branch</dt><dd>main</dd>
+        <dt>Commit</dt><dd><code>0c1f1ca4</code></dd>
+        <dt>Processing Time</dt><dd>75.89s</dd>
+        <dt>Repo Path</dt><dd>C:\GitHub\MarkHazleton\MuseumSpark</dd>
+        <dt>CLI Arguments</dt><dd><code>html --days 3000 --heavy</code></dd>
+        
+      </dl>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      <p>Generated by GitSpark v1.2.0 • 1/25/2026, 10:13:31 AM</p>
+      <p>GitSpark is a <a href="https://markhazleton.com" target="_blank" rel="noopener noreferrer">Mark Hazleton</a> project</p>
+    </div>
+  </footer>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" hidden>▲</button>
+  <div id="liveRegion" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <script nonce="cf04d1d156971a0f">(() => {
+      const backBtn = document.getElementById('backToTop');
+      const root = document.documentElement;
+      const themeToggle = document.getElementById('themeToggle');
+      const savedTheme = localStorage.getItem('gitSparkTheme');
+      
+      if (savedTheme === 'dark') {
+        root.classList.add('dark');
+        themeToggle?.setAttribute('aria-pressed','true');
+        if (themeToggle) themeToggle.textContent = '☀️';
+      }
+      
+      themeToggle?.addEventListener('click', () => {
+        const isDark = root.classList.toggle('dark');
+        themeToggle?.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        if (themeToggle) themeToggle.textContent = isDark ? '☀️' : '🌙';
+        localStorage.setItem('gitSparkTheme', isDark ? 'dark' : 'light');
+      });
+      
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) backBtn?.removeAttribute('hidden'); 
+        else backBtn?.setAttribute('hidden','');
+      });
+      
+      backBtn?.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+      
+      function makeSortable(){
+        document.querySelectorAll('table[data-sortable]')?.forEach(table => {
+          table.querySelectorAll('th')?.forEach((th, idx) => {
+            th.addEventListener('click', () => {
+              const tbody = table.querySelector('tbody');
+              if(!tbody) return;
+              const rows = Array.from(tbody.querySelectorAll('tr'));
+              const dir = th.getAttribute('data-sort-dir') === 'asc' ? 'desc' : 'asc';
+              table.querySelectorAll('th').forEach(h => h.removeAttribute('aria-sort'));
+              th.setAttribute('aria-sort', dir === 'asc' ? 'ascending' : 'descending');
+              th.setAttribute('data-sort-dir', dir);
+              rows.sort((a,b) => {
+                const av = (a.querySelectorAll('td')[idx] || {}).getAttribute?.('data-sort') || '0';
+                const bv = (b.querySelectorAll('td')[idx] || {}).getAttribute?.('data-sort') || '0';
+                const na = parseFloat(av); const nb = parseFloat(bv);
+                if(!isNaN(na) && !isNaN(nb)) return dir==='asc'? na-nb : nb-na;
+                return dir==='asc'? av.localeCompare(bv) : bv.localeCompare(av);
+              });
+              rows.forEach(r => tbody.appendChild(r));
+              const live = document.getElementById('liveRegion');
+              if(live) live.textContent = 'Sorted column ' + th.innerText + ' ' + dir;
+            });
+          });
+        });
+      }
+      
+      function initPagination(){
+        document.querySelectorAll('table[data-initial-limit]')?.forEach(table => {
+          const limit = parseInt(table.dataset.initialLimit || '0');
+          if(!limit) return;
+          const rows = Array.from(table.querySelectorAll('tbody tr'));
+          if(rows.length <= limit) return;
+          rows.slice(limit).forEach(r => r.classList.add('hidden-row'));
+          const name = table.dataset.table;
+          const btn = document.querySelector('button.show-more[data-target-table="' + name + '"]');
+          if(btn){
+            btn.hidden = false;
+            btn?.addEventListener('click', () => {
+              rows.slice(limit).forEach(r => r.classList.toggle('hidden-row'));
+              const expanded = rows.slice(limit)[0].classList.contains('hidden-row') === false;
+              btn.textContent = expanded ? 'Show less' : 'Show more';
+            });
+          }
+        });
+      }
+      
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(() => { makeSortable(); }, 0); 
+      } else {
+        document.addEventListener('DOMContentLoaded', () => { makeSortable(); });
+      }
+      
+      document.addEventListener('DOMContentLoaded', () => { 
+        initPagination(); 
+      });
+    })();</script>
+</body>
+</html>

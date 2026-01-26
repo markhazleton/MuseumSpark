@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "analysis": {
+    "excludePaths": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      ".git/**"
+    ],
+    "excludeExtensions": [],
+    "excludeAuthors": [],
+    "timezone": "America/Chicago",
+    "thresholds": {
+      "largeCommitLines": 500,
+      "smallCommitLines": 50,
+      "staleBranchDays": 30,
+      "largeFileKB": 300,
+      "hotspotAuthorThreshold": 3
+    }
+  },
+  "output": {
+    "defaultFormat": "html",
+    "outputDir": "./reports",
+    "redactEmails": false
+  },
+  "performance": {
+    "maxBuffer": 200,
+    "enableCaching": true,
+    "cacheDir": ".git-spark-cache",
+    "chunkSize": 1000
+  }
+}

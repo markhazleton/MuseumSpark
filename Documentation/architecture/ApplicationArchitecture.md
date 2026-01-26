@@ -1,7 +1,8 @@
 # MuseumSpark — Application Architecture
 
-**Last updated:** 2026-01-15  
-**Status:** Living document (derived from the two architecture PDFs; adapted into a single, implementable reference).
+**Last updated:** 2026-01-26  
+**Status:** Living document (derived from the two architecture PDFs; adapted into a single, implementable reference).  
+**Authority**: This document implements the requirements defined in [MasterRequirements.md](MasterRequirements.md), which is the authoritative product specification written by the Product Owner.
 
 ## Phase 1 Implementation Status
 
@@ -200,7 +201,7 @@ The museum dataset is the system’s “single source of truth”:
 
 - `data/states/*.json` (canonical records)
 - `data/schema/museum.schema.json` (validation rules)
-- `scripts/validate-json.py` / `scripts/validate-json.ps1` (quality gates)
+- `scripts/validation/validate-json.py` (quality gates)
 
 The initial museum roster comes from Walker’s reciprocal membership list:
 
@@ -245,6 +246,11 @@ This architecture document does not attempt to lock the API contract, but it ass
 - `/api/v1/museums/*` endpoints for museum browsing
 - `/api/v1/trips/*` endpoints for trip management
 - `/api/v1/*` AI-trigger endpoints (e.g., generate/refine itinerary)
+
+All API implementations MUST align with:
+- `Documentation/MasterRequirements.md` (product requirements and scoring algorithm)
+- `Documentation/DataSetDesign.md` (dataset structure and methodology)
+- `data/schema/museum.schema.json` (field definitions and validation)
 
 ---
 

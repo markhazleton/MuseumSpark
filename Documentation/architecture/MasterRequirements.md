@@ -1,8 +1,10 @@
 MuseumSpark: A Museum Travel Prioritization System
 
 Master Requirements Document (MRD)
-Owner: Marlis Hazleton
-Use Case: Prioritize museum visits based on art collection relevance, historical context, curatorial authority, and travel efficiency.
+**Last updated:** 2026-01-26  
+**Owner:** Marlis Hazleton (Product Owner)  
+**Status:** Authoritative product specification - all architecture and implementation documents derive from this source  
+**Use Case:** Prioritize museum visits based on art collection relevance, historical context, curatorial authority, and travel efficiency.
 
 
 SECTION 1: OBJECTIVE

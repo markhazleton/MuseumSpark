@@ -1,7 +1,8 @@
 # MuseumSpark API
 
 **Last updated:** 2026-01-15  
-**Status:** Canonical API specification for MuseumSpark.
+**Status:** Canonical API specification for MuseumSpark.  
+**Authority**: This document implements the requirements defined in [MasterRequirements.md](MasterRequirements.md), which is the authoritative product specification written by the Product Owner.
 
 This document defines the HTTP API surface for:
 
@@ -12,6 +13,7 @@ This document defines the HTTP API surface for:
 
 It is designed to align with:
 
+- `Documentation/MasterRequirements.md` (authoritative product requirements and scoring algorithm)
 - `data/index/walker-reciprocal.csv` (seed roster of reciprocal museums)
 - `data/schema/museum.schema.json` (authoritative museum record model)
 - `Documentation/DataSetDesign.md` (dataset methodology + scoring)
@@ -97,7 +99,7 @@ Query parameters (selected):
 - Location: `city`, `state_province`, `country`
 - Classification: `primary_domain`, `museum_type`, `audience_focus`, `status`, `best_season`
 - Quality: `reputation`, `collection_tier`, `min_confidence`
-- Art/scoring: `min_priority_score`, `max_priority_score`, `min_impressionist_strength`, `min_modern_contemporary_strength`, `primary_art`
+- Art/scoring: `min_priority_score`, `max_priority_score`, `min_impressionist_strength`, `min_modern_contemporary_strength`, `min_historical_context_score`, `min_exhibitions_curatorial_authority`, `min_collection_based_strength`, `primary_art`, `is_scored`
 - Travel: `time_needed`, `min_estimated_visit_minutes`, `max_estimated_visit_minutes`
 - Pagination: `limit`, `offset`
 
@@ -114,9 +116,10 @@ Response: `200 OK`
       "state_province": "Illinois",
       "country": "USA",
       "primary_domain": "Art",
-      "reputation": "International",
-      "collection_tier": "Flagship",
-      "priority_score": 1.2
+      "reputation": 0,
+      "collection_tier": 0,
+      "priority_score": -2.5,
+      "is_scored": true
     }
   ]
 }
@@ -276,6 +279,9 @@ Suggested HTTP status usage:
 ## 8. Consistency Rules (Non-negotiable)
 
 - Museum field names/types MUST match `data/schema/museum.schema.json`.
-- Priority scoring behavior MUST match `Documentation/DataSetDesign.md`.
+- Priority scoring behavior MUST match `Documentation/MasterRequirements.md` (authoritative product requirements).
+- Priority scoring implementation details in `Documentation/DataSetDesign.md` MUST align with MasterRequirements.md.
 - Public read endpoints MUST NOT require auth for basic browsing (unless explicitly changed across the docs).
 - AI endpoints MUST be server-side and rate-limited.
+- Reputation field MUST use integer scale (0=International, 1=National, 2=Regional, 3=Local), not string values.
+- Non-art museums MUST have `is_scored: false` and `priority_score: null`.
