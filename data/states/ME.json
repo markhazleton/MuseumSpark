@@ -255,8 +255,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 24,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Center for Maine Contemporary Art holds a strong regional collection with recognized strength in contemporary art, but it does not significantly impact national scholarship. Historical context is more localized, providing relevance primarily to the immediate community.",
       "score_last_verified": "2026-01-25",
@@ -271,7 +271,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Maine' from open data; MRD: computed city_tier=3 for Maine; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:24:41Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(207) 701-5005",
@@ -422,7 +422,10 @@
       "overall_quality_score": 6,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-me-unknown-maine-mineral-gem-museum",
@@ -879,8 +882,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Portland Museum of Art has a modest collection, noted as the largest and oldest public art institution in Maine, which suggests some regional importance. Its historical context score reflects limited significance beyond the local level.",
       "score_last_verified": "2026-01-25",
@@ -894,7 +897,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Portland' from open data; MRD: computed city_tier=1 for Portland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:25:16Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "2077756148",
@@ -912,7 +915,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-me-unknown-seal-cove-auto-museum",
@@ -1022,10 +1028,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": null,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 17,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The University of Maine Museum of Art has limited strengths in both Impressionist and Modern/Contemporary collections, primarily serving local audiences. Its mission aligns more with educational and contextual value rather than influencing national scholarship.",
       "score_last_verified": "2026-01-25",
@@ -1037,7 +1043,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Bangor; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:25:36Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -1055,7 +1061,10 @@
       "content_source": "openai",
       "eca_score": 1,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-me-bar-harbor-abbe-museum",
@@ -1166,10 +1175,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 22,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a modest collection that is historically strong in classical art, but it lacks significant Impressionist or Modern/Contemporary works. Its historical context is primarily local, which limits its broader significance.",
       "score_last_verified": "2026-01-25",
@@ -1184,7 +1193,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Brunswick; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:25:56Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2077253275",
@@ -1202,7 +1211,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 8,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-me-portland-african-center-for-the-sacred-arts-museum-of-african-art-culture",
@@ -1413,5 +1425,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:26:17Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

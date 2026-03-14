@@ -286,8 +286,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Chazen Museum of Art has a modest collection of over 24,000 objects, which supports educational and contextual value but lacks depth in specific art movements. Its regional significance and connection to the University of Wisconsin provide a basic framework for historical interpretation.",
       "score_last_verified": "2026-01-25",
@@ -301,7 +301,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Madison' from open data; MRD: computed city_tier=2 for Madison; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:57:32Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "6082632246",
@@ -319,7 +319,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-wi-unknown-chippewa-valley-museum",
@@ -1270,8 +1273,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 12,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 7,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Milwaukee Art Museum has a recognized collection that includes notable works, particularly in American and European art. However, the collection lacks the depth typically required for a higher score in art strength categories, and while it serves a significant role regionally, it doesn't significantly influence national scholarship.",
       "score_last_verified": "2026-01-25",
@@ -1285,7 +1288,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:59:13Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "4142243200",
@@ -1303,7 +1306,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 15,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-wi-unknown-milwaukee-public-museum",
@@ -1698,10 +1704,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 24,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 18,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a strong regional presence but does not have notable impressionist or modern/contemporary holdings. The historical context score reflects its local significance in preserving art history, while the collection strength is coherent within its regional context.",
       "score_last_verified": "2026-01-25",
@@ -1715,7 +1721,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Manitowoc; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:59:53Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9206863090",
@@ -1733,7 +1739,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 6,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-wi-marquette-university-haggerty-museum-of-art",
@@ -1774,8 +1783,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 20,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 15,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Haggerty Museum of Art has a modest permanent collection and serves primarily the local community, giving it a reputation score of 3. It provides local context for the arts, but lacks significant holdings in Impressionism or Modern/Contemporary art that would elevate its scores further.",
       "score_last_verified": "2026-01-25",
@@ -1789,7 +1798,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Marquette University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:00:08Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4142881669",
@@ -1807,7 +1816,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 10,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-wi-neenah-bergstrom-mahler-museum",
@@ -1883,5 +1895,5 @@
       "collection_based_strength": 2
     }
   ],
-  "updated_at": "2026-01-25T04:00:18Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

@@ -194,8 +194,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": null,
-      "priority_score": 15,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 12,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a strong focus on contemporary art, indicating a significant collection in that area. However, there is no evidence of Impressionist works or historical context provided, and its reputation is regional, serving the Boulder and Denver Metro Area.",
       "score_last_verified": "2026-01-25",
@@ -214,7 +214,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boulder' from open data; MRD: computed city_tier=2 for Boulder; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800445; CSV: financial data available (income: 889895, revenue: 773192)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:28:40Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "Boulder Museum of Contemporary Art is known for presenting innovative works of contemporary art in Boulder and the Denver Metro Area for over 50 years. The museum offers dynamic artistic expression programs for young artists and curatorial services beyond its galleries.",
       "city_tier": 2,
       "phone": "3034432122",
@@ -232,7 +232,10 @@
       "content_generated_at": "2026-01-25T01:28:40Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
@@ -427,8 +430,8 @@
       "modern_contemporary_strength": null,
       "primary_art": "Impressionist",
       "historical_context_score": null,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 12,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Denver Art Museum has some Impressionist works, indicating moderate representation. It is recognized as a major destination within the U.S., contributing to its national reputation. However, there is insufficient evidence regarding its modern/contemporary strength and historical context.",
       "score_last_verified": "2026-01-25",
@@ -445,7 +448,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Denver' from open data; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800365; CSV: financial data available (income: 40083926, revenue: 5907991)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:29:23Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "The Denver Art Museum is an art museum known for its diverse exhibitions, including Impressionist works. It offers a variety of programs and events to engage visitors with art.",
       "city_tier": 1,
       "phone": "7208655000",
@@ -463,7 +466,10 @@
       "content_generated_at": "2026-01-25T01:29:23Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-co-unknown-denver-firefighters-museum",
@@ -653,8 +659,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": null,
-      "priority_score": 21,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 19,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The evidence provided does not include any specific information about the museum's collections, strengths in Impressionism or Modern/Contemporary art, historical context, or its reputation. Therefore, all scores are returned as null due to insufficient evidence.",
       "score_last_verified": "2026-01-25",
@@ -669,7 +675,7 @@
       "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boulder' from open data; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800445",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:29:50Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3034432122",
@@ -686,7 +692,10 @@
       ],
       "content_generated_at": "2026-01-25T01:29:50Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-co-unknown-golden-history-museums",
@@ -871,8 +880,8 @@
       "modern_contemporary_strength": 5,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": null,
-      "priority_score": 9,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 8,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Clyfford Still Museum has a flagship collection focused on modern and contemporary art, particularly the works of Clyfford Still. However, there is no evidence provided regarding Impressionist works or historical context, and its reputation is recognized nationally.",
       "score_last_verified": "2026-01-25",
@@ -888,7 +897,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800689",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:30:11Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "7203544880",
@@ -906,7 +915,10 @@
       "content_generated_at": "2026-01-25T01:30:11Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 5,
+      "effective_pas": 5,
+      "outcome_tier": "Must-See"
     },
     {
       "museum_id": "usa-co-denver-molly-brown-house-museum",
@@ -1019,8 +1031,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": 15,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 12,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a regional reputation, indicated by the prior reputation score of 2. However, there is insufficient evidence to assess its strengths in Impressionist or Modern/Contemporary collections, as well as historical context and collection tier.",
       "score_last_verified": "2026-01-25",
@@ -1040,7 +1052,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q16895577; Wikidata: inferred reputation=2 from sitelinks; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Inferred primary_domain=Art from name/type; Wikidata: matched Q16895577; Wikidata: no applicable fields to fill; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:30:27Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "7192553567",
@@ -1070,7 +1082,10 @@
       "planner_reputation_level": "Regional",
       "planner_collection_level": "Small",
       "planner_notes": "Exhibition-focused contemporary art institution emphasizing rotating shows, experimental practice, and community engagement with limited permanent holdings.",
-      "planner_data_updated_at": "2026-01-24T21:52:22Z"
+      "planner_data_updated_at": "2026-01-24T21:52:22Z",
+      "collection_based_pas": 3,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-co-golden-foothills-art-center",
@@ -1432,5 +1447,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T01:31:12Z"
+  "updated_at": "2026-03-14T19:41:18Z"
 }

@@ -877,10 +877,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 3,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 11,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The New Orleans Museum of Art has a historical context that is significant within the local region, anchoring cultural narratives related to the city. Its collection is noted for providing educational value but lacks depth in major art movements like Impressionism or Modern/Contemporary art.",
       "score_last_verified": "2026-01-25",
@@ -894,7 +894,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Orleans' from open data; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:09:54Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5046584100",
@@ -912,7 +912,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-la-unknown-newcomb-art-museum-of-tulane-university",
@@ -1022,8 +1025,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Ogden Museum of Southern Art provides local context focused on Southern art, but its holdings are modest and primarily serve educational purposes. The institutional reputation supports regional significance rather than national or international recognition.",
       "score_last_verified": "2026-01-25",
@@ -1037,7 +1040,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Orleans' from open data; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:10:11Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5045399650",
@@ -1055,7 +1058,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-la-unknown-paul-and-lulu-hilliard-university-art-museum",
@@ -1096,8 +1102,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 24,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 18,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Hilliard Art Museum has a collection that is coherent and well-curated, supporting strong exhibitions within its regional context. Its historical importance is notable, but primarily localized, reflecting its role in the community rather than on a national level.",
       "score_last_verified": "2026-01-25",
@@ -1111,7 +1117,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Lafayette' from open data; MRD: computed city_tier=2 for Lafayette; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://museum.louisiana.edu: Network error for http://museum.louisiana.edu: <urlopen error [WinError 10060] A connection attempt ; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:10:22Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3374820811",
@@ -1129,7 +1135,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 6,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-la-unknown-vermilionville-living-history-museum-and-folklife-park",
@@ -2212,8 +2221,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Contemporary Arts Center has a strong regional collection in Modern and Contemporary art, evidenced by its established presence since 1976 and programming related to various art forms. However, its historical context and curatorial programming are primarily regional in scope, indicating it plays a significant role locally but lacks national prominence.",
       "score_last_verified": "2026-01-25",
@@ -2229,7 +2238,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q5164964; Wikidata: inferred reputation=2 from sitelinks; Nominatim: matched 1 result; MRD: computed city_tier=1 for New Orleans; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:11:52Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5133458400",
@@ -2249,7 +2258,10 @@
       "overall_quality_score": 13,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-la-new-orleans-hermann-grima-and-gallier-historic-houses",
@@ -2460,5 +2472,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:12:13Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

@@ -1161,8 +1161,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 10,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a notable emphasis on supporting scholarly research and includes significant holdings in Western European paintings, especially from the Renaissance to the 19th century, as well as substantial contemporary art. Its historical importance and collection depth justify a high score for historical context and collection-based strength, although it lacks particularly strong impressionist holdings.",
       "score_last_verified": "2026-01-25",
@@ -1176,7 +1176,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Princeton' from open data; MRD: computed city_tier=3 for Princeton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:47:52Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6092583788",
@@ -1196,7 +1196,10 @@
       "overall_quality_score": 12,
       "eca_score": 2,
       "collection_based_strength": 4,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-nj-unknown-the-montclair-history-center",
@@ -1377,8 +1380,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 1,
-      "priority_score": 26,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 20,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Hunterdon Art Museum has a modest collection that serves more educational purposes rather than offering significant depth or scholarly influence. Its historical context is primarily local and does not substantially frame broader narratives in art history.",
       "score_last_verified": "2026-01-25",
@@ -1393,7 +1396,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Clinton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:48:20Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9087358415",
@@ -1413,7 +1416,10 @@
       "overall_quality_score": 6,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-nj-freehold-monmouth-county-historical-association",
@@ -1941,10 +1947,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 13,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 10,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Zimmerli Art Museum has a strong emphasis on nineteenth-century French art and a diverse collection of over 60,000 works, which supports its scores in impressionist and modern contemporary strengths. However, its historical significance appears localized, and its prior collection tier indicates a limited depth in canonical holdings.",
       "score_last_verified": "2026-01-25",
@@ -1959,7 +1965,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for New Brunswick; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:49:44Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "7329327237",
@@ -1979,7 +1985,10 @@
       "overall_quality_score": 15,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-nj-summit-visual-arts-center-of-new-jersey",
@@ -2054,5 +2063,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:49:55Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

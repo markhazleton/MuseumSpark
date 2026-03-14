@@ -182,8 +182,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 26,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 19,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a moderate collection strength, primarily focusing on agrarian art, which provides local cultural context. Given the small population of the area and the lack of nearby museums, its historical context is relevant mainly to the local community.",
       "score_last_verified": "2026-01-25",
@@ -197,7 +197,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for David City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:44:10Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4023674488",
@@ -215,7 +215,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 6,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-ne-kearney-museum-of-nebraska-art",
@@ -399,8 +402,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Sheldon Museum of Art has a modest collection with some depth in American art movements but lacks significant Impressionist holdings. Its reputation is regional, known primarily within the multi-state area, and it provides local historical context.",
       "score_last_verified": "2026-01-25",
@@ -415,7 +418,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Lincoln; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:44:38Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "4024722461",
@@ -435,7 +438,10 @@
       "overall_quality_score": 14,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-ne-omaha-joslyn-art-museum",
@@ -476,8 +482,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 17,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 13,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Joslyn Art Museum has a significant permanent collection with over 12,000 objects, contributing to a strong regional and thematic strength. While it houses a diverse array of art, including Western American Art, its reputation remains primarily local to regional, aligning with the prior assessments.",
       "score_last_verified": "2026-01-25",
@@ -492,7 +498,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Omaha; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:44:49Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "4023423300",
@@ -512,8 +518,11 @@
       "overall_quality_score": 11,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     }
   ],
-  "updated_at": "2026-01-25T02:44:49Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

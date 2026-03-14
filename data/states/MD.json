@@ -40,10 +40,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 4,
       "modern_contemporary_strength": 4,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 3,
-      "priority_score": 6,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 5,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Baltimore Museum of Art has a major collection including over 1,000 works by Henri Matisse and significant holdings of French 19th-century art, reflecting its national importance. While it serves a regional audience, its modern and contemporary collections also establish it as a strong institutional presence.",
       "score_last_verified": "2026-01-25",
@@ -57,7 +57,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Baltimore' from open data; MRD: computed city_tier=1 for Baltimore; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:22:04Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "4435731700",
@@ -77,7 +77,10 @@
       "overall_quality_score": 21,
       "eca_score": 3,
       "collection_based_strength": 4,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-md-unknown-baltimore-museum-of-industry",
@@ -467,10 +470,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 1,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 27,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 21,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Havre de Grace Decoy Museum provides local context primarily related to the cultural significance of decoys and their role in local history, earning it a score of 2 for historical context. The collection is modest in scope, reflected in a collection-based strength score of 2, and the museum is primarily known within its local community, justifying a reputation score of 3.",
       "score_last_verified": "2026-01-25",
@@ -482,7 +485,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Havre de Grace' from open data; MRD: computed city_tier=3 for Havre de Grace; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:22:40Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4109393739",
@@ -500,7 +503,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 3,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 1,
+      "effective_pas": 1,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-md-unknown-historic-london-town-and-gardens",
@@ -1661,8 +1667,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 26,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 18,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Academy Art Museum has a strong community focus and provides educational value, but it lacks nationally significant holdings that would elevate its scores. Its historical context is relevant primarily to the local area, and its exhibition program indicates regional influence.",
       "score_last_verified": "2026-01-25",
@@ -1676,7 +1682,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Easton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:24:11Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4108228121",
@@ -1695,7 +1701,10 @@
       "content_source": "openai",
       "overall_quality_score": 6,
       "eca_score": 2,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-md-hagerstown-washington-county-museum-of-fine-art",
@@ -1734,10 +1743,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 22,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum provides a modest collection of 19th and early 20th Century American Art and Decorative art, which supports local education but lacks significance for broader scholarship. Its historical context score highlights its role in local culture, but it does not achieve national or canon-level importance.",
       "score_last_verified": "2026-01-25",
@@ -1751,7 +1760,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Hagerstown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:24:20Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "3017395727",
@@ -1770,7 +1779,10 @@
       "content_source": "openai",
       "overall_quality_score": 8,
       "eca_score": 2,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-md-silver-spring-pyramid-atlantic-arts-center",
@@ -1842,5 +1854,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:24:26Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

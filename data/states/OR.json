@@ -1755,10 +1755,10 @@
       "public_transit_notes": null,
       "impressionist_strength": null,
       "modern_contemporary_strength": null,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": null,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 20,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Arts Center in Corvallis has a modest collection that provides contextual value but lacks significant depth or scholarly impact. It primarily serves the local community and has a limited reputation beyond its immediate area.",
       "score_last_verified": "2026-01-25",
@@ -1772,7 +1772,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Corvallis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:20:16Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": true,
@@ -1802,7 +1802,10 @@
       "planner_collection_level": "Small",
       "planner_notes": "An exhibition-focused visual arts center housed in a historic Carnegie library building. The center presents rotating exhibitions by contemporary artists and regional practitioners. It emphasizes community access and does not maintain a permanent collection.",
       "planner_data_updated_at": "2026-01-24T21:52:22Z",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 1,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-or-eugene-jordan-schnitzer-museum-of-art-university-of-oregon",
@@ -1977,8 +1980,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 23,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 17,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Hallie Ford Museum of Art has a modest collection primarily focused on Oregon-related art, which limits its impact on broader art scholarship. Its historical context score reflects its local significance but does not rise to a national level, and it is recognized within its region.",
       "score_last_verified": "2026-01-25",
@@ -1992,7 +1995,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Willamette University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: Page not found (404) at http://www.willamette.edu/arts/hfma/index.html/visit/index.html#admission; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:20:51Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5033706300",
@@ -2011,8 +2014,11 @@
       "content_source": "openai",
       "overall_quality_score": 7,
       "eca_score": 2,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     }
   ],
-  "updated_at": "2026-01-25T03:20:51Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

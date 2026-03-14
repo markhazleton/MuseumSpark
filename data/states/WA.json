@@ -3349,8 +3349,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 21,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Museum of Northwest Art has a strong focus on the Northwest School art movement, providing local context. While it has a coherent collection and contributes to regional artistic dialogue, it does not appear to exert significant influence on national scholarship.",
       "score_last_verified": "2026-01-25",
@@ -3365,7 +3365,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for La Conner; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:55:14Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "3604664446",
@@ -3384,7 +3384,10 @@
       "content_source": "openai",
       "overall_quality_score": 9,
       "eca_score": 2,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-wa-port-orchard-sidney-museum-and-art-gallery-and-log-cabin-museum",
@@ -3636,8 +3639,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 15,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Frye Art Museum has a modest collection primarily focused on modern and contemporary art and offers educational value. Its historical context score is limited as it mostly interprets local narratives. It maintains an average reputation within its region.",
       "score_last_verified": "2026-01-25",
@@ -3652,7 +3655,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Seattle; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:55:44Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5093592494",
@@ -3671,7 +3674,10 @@
       "content_source": "openai",
       "overall_quality_score": 14,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-wa-seattle-henry-art-gallery",
@@ -3995,10 +4001,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 22,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Northwest Museum of Arts and Culture has a modest collection and provides local historical context, but lacks significant nationally or internationally recognized holdings. Its regional reputation is recognized, but it does not play a major role in broader art historical scholarship.",
       "score_last_verified": "2026-01-25",
@@ -4013,7 +4019,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Spokane; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:56:30Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "5094563931",
@@ -4031,7 +4037,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 8,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-wa-stevenson-columbia-george-interpretive-center",
@@ -4213,8 +4222,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 15,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 11,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Museum of Glass is primarily focused on the studio glass movement, giving it a modest collection based on the evidence. Its reputation as a regional destination is supported but does not indicate a national or international influence.",
       "score_last_verified": "2026-01-25",
@@ -4229,7 +4238,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tacoma; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:56:53Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "2532844750",
@@ -4247,7 +4256,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 14,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-wa-vancouver-clark-county-historical-museum",
@@ -4392,5 +4404,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T03:57:07Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

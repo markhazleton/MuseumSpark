@@ -2428,10 +2428,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 3,
-      "priority_score": 15,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 9,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Virginia Museum of Fine Arts provides strong regional context and supports the local cultural narrative; however, its collection exhibits limited depth in Impressionist or Modern/Contemporary art, which is reflected in the scores. The historical context score indicates the museum's significance within Richmond's art scene.",
       "score_last_verified": "2026-01-25",
@@ -2446,7 +2446,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Richmond; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.vmfa.state.va.us: Network error for http://www.vmfa.state.va.us: <urlopen error [WinError 10060] A connection attempt ; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:47:46Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "8043401580",
@@ -2464,7 +2464,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 12,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-va-richmond-wilton-house-museum",
@@ -2577,8 +2580,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 20,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Taubman Museum of Art has a modest collection emphasizing American art and offers contextual value to the local culture. Its historical context score reflects its role in preserving local art history, but its overall influence is primarily limited to the immediate community.",
       "score_last_verified": "2026-01-25",
@@ -2593,7 +2596,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Roanoke; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:48:06Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "5403425760",
@@ -2611,7 +2614,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 10,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-va-virginia-beach-virginia-museum-of-contemporary-art-moca",
@@ -2652,8 +2658,8 @@
       "modern_contemporary_strength": 0,
       "primary_art": "Impressionist",
       "historical_context_score": 1,
-      "priority_score": 27,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 20,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "Virginia MOCA is a non-collecting museum, which results in a score of 0 for both modern/contemporary strength and overall collection-based strength. The historical context score is limited, as the museum primarily serves local needs rather than offering significant historical framing.",
       "score_last_verified": "2026-01-25",
@@ -2667,7 +2673,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Virginia Beach; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:48:19Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": true,
@@ -2685,7 +2691,10 @@
       "content_source": "openai",
       "overall_quality_score": 3,
       "eca_score": 2,
-      "collection_based_strength": 0
+      "collection_based_strength": 0,
+      "collection_based_pas": 1,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-va-williamsburg-muscarelle-museum-of-art-lamberson-hall-the-college-of-william-and-mary",
@@ -2757,5 +2766,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T03:48:25Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

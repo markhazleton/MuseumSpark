@@ -1850,10 +1850,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 4,
-      "priority_score": 21,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 15,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a diverse collection spanning various cultures and historical periods, but there is no specific mention of Impressionist or Modern/Contemporary works. Its reputation is local, primarily serving the Shawnee community, and the collection is respectable but limited in scope.",
       "score_last_verified": "2026-01-25",
@@ -1867,7 +1867,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Shawnee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:17:32Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4058785300",
@@ -1884,7 +1884,10 @@
       "content_generated_at": "2026-01-25T03:17:32Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 7
+      "overall_quality_score": 7,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-ok-tulsa-gilcrease-museum",
@@ -1995,8 +1998,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 11,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a strong focus on Native American art and showcases a variety of collections, indicating a significant depth in its holdings. However, there is no specific mention of Impressionist or Modern/Contemporary works, and the historical context is not detailed in the evidence provided.",
       "score_last_verified": "2026-01-25",
@@ -2012,7 +2015,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tulsa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8404000562; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:17:50Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "9187485318",
@@ -2030,8 +2033,11 @@
       "content_generated_at": "2026-01-25T03:17:50Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 12
+      "overall_quality_score": 12,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     }
   ],
-  "updated_at": "2026-01-25T03:17:50Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

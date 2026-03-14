@@ -536,8 +536,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 23,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Haan Museum focuses on Indiana art, with a notable collection of Hoosier Group and Indiana Regionalism artists, although it lacks the depth for a higher collection score. Its regional importance provides a strong historical context relevant to Indiana art, justifying a score of 3 in that area.",
       "score_last_verified": "2026-01-25",
@@ -551,7 +551,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:04:06Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -568,7 +568,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 7,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-in-unknown-indiana-state-museum-and-historic-sites",
@@ -671,8 +674,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 10,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 9,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Indianapolis Museum of Art possesses a collection featuring significant works, including Neo-Impressionist paintings and a strong contemporary design collection, which supports a regional significance but lacks the depth to reach national prominence. Its historical context and curatorial authority suggest a solid regional role in art discourse.",
       "score_last_verified": "2026-01-25",
@@ -686,7 +689,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Indianapolis' from open data; MRD: computed city_tier=1 for Indianapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:04:28Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3179202662",
@@ -706,7 +709,10 @@
       "overall_quality_score": 18,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-in-unknown-lubeznik-center-for-the-art",
@@ -1166,10 +1172,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 20,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Evansville Museum of Arts has a modest collection that provides some educational value but lacks depth in key art categories. While it has historical significance for the region, it does not impact national scholarship notably.",
       "score_last_verified": "2026-01-25",
@@ -1183,7 +1189,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for History & Science; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:05:32Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "8124252406",
@@ -1202,7 +1208,10 @@
       "content_source": "openai",
       "overall_quality_score": 8,
       "eca_score": 2,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-in-terra-haute-swope-art-museum",
@@ -1315,10 +1324,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 1,
-      "priority_score": 22,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 17,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Snite Museum of Art has a modest collection providing contextual value but lacks depth and scholarly impact. Its historical context score is limited, primarily serving local relevance.",
       "score_last_verified": "2026-01-25",
@@ -1332,7 +1341,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for University of Norte Dame; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://sniteartmuseum.nd.edu; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:05:53Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -1349,8 +1358,11 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 8,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     }
   ],
-  "updated_at": "2026-01-25T02:05:53Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

@@ -461,10 +461,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a modest collection focused on American art, showcasing voices from the 19th century to the present with an emphasis on diversity. Its historical context is primarily local, serving the community with limited influence beyond the region.",
       "score_last_verified": "2026-01-25",
@@ -478,7 +478,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:33:19Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6512661030",
@@ -497,7 +497,10 @@
       "content_source": "openai",
       "overall_quality_score": 11,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-mn-unknown-the-museum-of-russian-art",
@@ -538,8 +541,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 12,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Museum of Russian Art has modest holdings and offers local context primarily relevant to the immediate community, with limited influence beyond that. The historical context score reflects its role in preserving and interpreting local art history, although it does not reach national or major regional significance.",
       "score_last_verified": "2026-01-25",
@@ -553,7 +556,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Yerevan' from open data; MRD: computed city_tier=2 for Yerevan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:33:29Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "6128219045",
@@ -571,7 +574,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 14,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-mn-unknown-tweed-museum-of-art",
@@ -610,10 +616,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 3,
-      "priority_score": 17,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 15,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Tweed Museum of Art has a modest collection of American and European art with significant works, indicating a supporting level of depth. The historical context score reflects its role in regional cultural heritage, but it does not have the authority or significance to rank higher.",
       "score_last_verified": "2026-01-25",
@@ -627,7 +633,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Duluth' from open data; MRD: computed city_tier=2 for Duluth; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:33:41Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "2187268222",
@@ -647,7 +653,10 @@
       "overall_quality_score": 11,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-mn-minneapolis-weisman-art-museum",
@@ -688,8 +697,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Weisman Art Museum has a modern and American art focus but lacks major national recognition or canonical works in the modern/contemporary domain. The historical context score reflects its role in the local art scene, but it does not hold significant collections that influence larger narratives.",
       "score_last_verified": "2026-01-25",
@@ -702,7 +711,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Minneapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:33:52Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "6126259494",
@@ -721,7 +730,10 @@
       "content_source": "openai",
       "overall_quality_score": 14,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-mn-rochester-rochester-art-center",
@@ -797,5 +809,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:34:04Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

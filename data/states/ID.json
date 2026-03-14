@@ -40,10 +40,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": null,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Boise Art Museum has limited Impressionist holdings and a modest collection of Modern/Contemporary works, which contributes to its score of 1 in Impressionist strength and 2 in Modern/Contemporary strength. Its historical context is local in relevance, reflecting its community focus.",
       "score_last_verified": "2026-01-25",
@@ -57,7 +57,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boise' from open data; MRD: computed city_tier=2 for Boise; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:58:24Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "2083458330",
@@ -76,7 +76,10 @@
       "content_source": "openai",
       "eca_score": 1,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-id-idaho-falls-art-museum-of-eastern-idaho",
@@ -152,5 +155,5 @@
       "collection_based_strength": 2
     }
   ],
-  "updated_at": "2026-01-25T01:58:36Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

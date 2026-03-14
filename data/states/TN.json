@@ -255,8 +255,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a supporting collection that is largely illustrative and does not have notable significance for national scholarship. Its historical context is primarily local, with roots in the community, aligning it with its role as the largest art museum in Tennessee.",
       "score_last_verified": "2026-01-25",
@@ -270,7 +270,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Memphis' from open data; MRD: computed city_tier=1 for Memphis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:32:30Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "9015446200",
@@ -288,7 +288,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-tn-unknown-the-abraham-lincoln-library-and-museum",
@@ -831,10 +834,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Hunter Museum has a recognized strength in American Impressionism and modern contemporary art, which supports a solid regional collection. While its holdings are credible, they do not have significant national impact, resulting in moderate strength scores across categories. Historical context is limited primarily to regional importance.",
       "score_last_verified": "2026-01-25",
@@ -849,7 +852,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Chattanooga; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:33:03Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "4232670968",
@@ -869,7 +872,10 @@
       "overall_quality_score": 10,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-tn-clarksville-customs-house-museum-cultural-center",
@@ -1051,8 +1057,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 12,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Dixon Gallery and Gardens has a strong collection of Impressionist works, featuring notable artists such as Monet, Degas, and Cassatt, which supports a regional strength. However, while it holds important pieces, it does not significantly influence national scholarship, indicating a score of 3 for Impressionist strength. The historical context score is modest due to its local significance rather than a broader impact.",
       "score_last_verified": "2026-01-25",
@@ -1067,7 +1073,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Memphis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:33:36Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "9017615250",
@@ -1087,7 +1093,10 @@
       "overall_quality_score": 14,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-tn-nashville-frist-center-for-the-visual-arts",
@@ -1234,5 +1243,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T03:33:52Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

@@ -114,8 +114,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Des Moines Art Center has a moderate collection that provides educational value but lacks depth in renowned pieces, particularly in Impressionism. Its reputation and regional influence are recognized, but it does not significantly shape national discourse in art.",
       "score_last_verified": "2026-01-25",
@@ -129,7 +129,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Des Moines' from open data; MRD: computed city_tier=2 for Des Moines; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:55:51Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "5152774405",
@@ -149,7 +149,10 @@
       "overall_quality_score": 14,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-ia-unknown-dubuque-museum-of-art",
@@ -1624,5 +1627,5 @@
       "is_scoreable": false
     }
   ],
-  "updated_at": "2026-01-25T01:58:12Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

@@ -393,10 +393,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 17,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 12,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The RISD Museum has a modest collection and provides local context in the art historical narrative. Its reputation is notable, but it does not have substantial national or international influence in the field.",
       "score_last_verified": "2026-01-25",
@@ -410,7 +410,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Providence; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:29:24Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
       "phone": "4012534400",
@@ -427,8 +427,11 @@
       "content_generated_at": "2026-01-25T03:29:24Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     }
   ],
-  "updated_at": "2026-01-25T03:29:24Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

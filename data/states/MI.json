@@ -529,8 +529,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 15,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Cranbrook Art Museum has a modest collection that lacks depth and significant curatorial impact, primarily providing educational value. Its historical context score reflects its role in anchoring the history of a specific regional educational community, but it does not influence national scholarship.",
       "score_last_verified": "2026-01-25",
@@ -544,7 +544,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Bloomfield Hills' from open data; MRD: computed city_tier=3 for Bloomfield Hills; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.cranbrookart.edu/museum; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:26:56Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2486453320",
@@ -564,7 +564,10 @@
       "overall_quality_score": 11,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-mi-unknown-dennos-museum-center",
@@ -816,10 +819,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 4,
       "modern_contemporary_strength": 4,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 5,
-      "priority_score": 9,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 3,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Detroit Institute of Arts is recognized for having one of the largest and most significant art collections in the United States with an encyclopedic quality, thus earning a score of 5 for collection-based strength. Additionally, it plays a crucial role in cultural and historical understanding, evidenced by its status as a foundational reference point, meriting a score of 5 for historical context.",
       "score_last_verified": "2026-01-25",
@@ -833,7 +836,7 @@
       "confidence": 5,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Detroit' from open data; MRD: computed city_tier=1 for Detroit; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:27:14Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3138337900",
@@ -852,7 +855,10 @@
       "content_source": "openai",
       "overall_quality_score": 19,
       "collection_based_strength": 5,
-      "must_see_candidate": true
+      "must_see_candidate": true,
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Must-See"
     },
     {
       "museum_id": "usa-mi-unknown-edsel-and-eleanor-ford-house",
@@ -1466,10 +1472,10 @@
       "public_transit_notes": null,
       "impressionist_strength": null,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": null,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Grand Rapids Art Museum has a modest collection strength in modern and contemporary art, scoring a 2. Its historical context and collection-based strength also reflect local significance rather than national importance, with a reputation score indicating recognition primarily within the Michigan region.",
       "score_last_verified": "2026-01-25",
@@ -1484,7 +1490,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Michigan' from open data; MRD: computed city_tier=3 for Michigan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:28:02Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(616) 831-1000",
@@ -1633,7 +1639,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-mi-unknown-holland-museum",
@@ -1865,10 +1874,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": null,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 17,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Kalamazoo Institute of Arts has a modest collection that provides educational value, particularly regionally, but lacks significant depth or rarity. Its established reputation primarily serves the local community, with local historical context mainly relevant to Kalamazoo.",
       "score_last_verified": "2026-01-25",
@@ -1881,7 +1890,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Michigan' from open data; MRD: computed city_tier=3 for Michigan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:28:18Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(269) 349-7775",
@@ -2031,7 +2040,10 @@
       "content_source": "openai",
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-mi-unknown-krasl-art-center",
@@ -2649,8 +2661,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": 12,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 4,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum is considered among the top six in the United States and has an encyclopedic collection spanning various periods and regions, which supports a score of 5 for collection-based strength. Its reputation is globally recognized, justifying a score of 0 for international status.",
       "score_last_verified": "2026-01-25",
@@ -2662,7 +2674,7 @@
       "confidence": 5,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Detroit' from open data; MRD: computed city_tier=1 for Detroit; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:29:04Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "is_scoreable": true,
@@ -2679,7 +2691,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 16,
-      "collection_based_strength": 5
+      "collection_based_strength": 5,
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-mi-unknown-muskegon-museum-of-art",
@@ -3387,8 +3402,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 23,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The UICA has a strong regional collection in Modern and Contemporary art, evidenced by its prior collection tier assessment of 3. Its historical context score is minimal, primarily serving local cultural narratives but does not significantly frame broader movements. Its reputation reflects regional acknowledgment rather than national prominence.",
       "score_last_verified": "2026-01-25",
@@ -3403,7 +3418,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:30:02Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(616) 454-7000",
@@ -3488,7 +3503,10 @@
       "overall_quality_score": 9,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-mi-unknown-university-of-michigan-matthaei-botanical-gardens-and-nichols-arboretum",
@@ -4143,10 +4161,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 4,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 8,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The University of Michigan Museum of Art has a strong collection spanning various eras and cultures, granting it a solid reputation as a regional institution. It is significant for historical context, especially due to its university affiliation, thus warranting a score of 4 in Historical Context. However, additional specifics about its impressionist holdings are lacking.",
       "score_last_verified": "2026-01-25",
@@ -4161,7 +4179,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Ann Arbor; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:30:54Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "7347640395",
@@ -4181,7 +4199,10 @@
       "overall_quality_score": 11,
       "eca_score": 3,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-mi-dearborn-arab-american-national-museum",
@@ -4364,7 +4385,7 @@
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
       "priority_score": 14,
-      "scoring_version": "phase2_v3_mrd2026",
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a strong focus on contemporary art and holds a substantial collection, but its historical context is more oriented to educational value rather than foundational. Its reputation reflects regional recognition with a diverse collection that supports credible exhibitions.",
       "score_last_verified": "2026-01-25",
@@ -4378,7 +4399,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for East Lansing; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:31:46Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "5178844800",
@@ -4398,7 +4419,10 @@
       "overall_quality_score": 14,
       "eca_score": 3,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-mi-grand-haven-tri-cities-historical-museum",
@@ -4690,5 +4714,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:32:18Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

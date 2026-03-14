@@ -1,32 +1,27 @@
 📘 MuseumSpark Dataset Design
 Walker Art Reciprocal Program — Product Brief & Methodology Specification
 
+**Version:** v3.1.T (2026-03-14)
 **Authority**: This document implements the requirements defined in [MasterRequirements.md](MasterRequirements.md), which is the authoritative product specification written by the Product Owner.
 
 ## Purpose
 
-This dataset is built to **prioritize museum visits based on art collection relevance, historical context, and travel efficiency** per the Master Requirements Document (MRD) v1.0.
+This dataset is built to **prioritize museum visits based on art collection relevance, historical context, and travel efficiency** per the Master Requirements Document (MRD) v3.1.T.
 
 The system enables users to:
 
 - Discover reciprocal museums while traveling (Walker Art Reciprocal Program)
-- Plan efficient multi-museum itineraries based on Priority Score ranking
+- Plan efficient multi-museum itineraries based on Priority Score ranking and Outcome Tier
 - Compare visit value (time required, reputation/scope, collection strengths)
-- Filter art museums by Impressionist and Modern/Contemporary strengths
+- Filter art museums by Impressionist, Modern/Contemporary, and Historical Art Traditions strengths
 - Review opportunities unlocked by reciprocal membership (admission access)
 
-Seed source
-The authoritative “seed list” of museums comes from Walker’s reciprocal membership page (https://walkerart.org/support/membership/reciprocal-membership/), extracted into:
+Seed source: The authoritative "seed list" of museums comes from Walker's reciprocal membership page, extracted into `data/index/walker-reciprocal.csv`.
 
-- `data/index/walker-reciprocal.csv`
-
-Walker’s main site is https://walkerart.org/.
-
-MuseumSpark then enriches each seed row into a complete museum record using:
-
+MuseumSpark enriches each seed row into a complete museum record using:
 - LLM-assisted normalization and structured extraction
-- official museum websites and other public sources
-- computed fields (e.g., nearby museum count, derived ranking signals)
+- Official museum websites and other public sources
+- Computed fields (e.g., nearby museum count, derived ranking signals)
 
 ## Scope (MRD-Aligned)
 
@@ -45,7 +40,7 @@ MuseumSpark enriches each seed row into a complete museum record using:
 
 - **Open data sources** (prioritized, free): Official museum websites, Wikipedia, Google Places, etc.
 - **LLM-assisted normalization**: Structured extraction, classification, and enrichment
-- **Computed fields**: `nearby_museum_count`, `primary_art`, `priority_score`, `city_tier` (derived)
+- **Computed fields**: `nearby_museum_count`, `primary_art`, `priority_score`, `outcome_tier` (derived)
 
 —
 
@@ -97,16 +92,17 @@ Canonical reference: `data/schema/museum.schema.json` defines the authoritative 
 
 | Field Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `museum_type` | string | Human-friendly classification (can be mixed/nuanced). | `Mixed (Art & History)` |
-| `primary_domain` | `Art` \| `History` \| `Science` \| `Culture` \| `Specialty` \| `Mixed` \| null | Primary domain used for filtering and (if applicable) scoring eligibility. | `Mixed` |
+| `museum_type` | string | Human-friendly classification (locked set per MRD Section 7). | `Art Museum` |
+| `primary_domain` | `Art` \| `History` \| `Science` \| `Culture` \| `Specialty` \| `Mixed` \| null | Primary domain used for filtering and scoring eligibility. | `Art` |
 | `topics` | string[] \| null | Topic tags (periods, communities, themes). | `["Native Alaskan", "Contemporary"]` |
 | `audience_focus` | `General` \| `Family` \| `Academic` \| `Children` \| `Specialist` \| null | Primary audience. | `General` |
+| `primary_focus` | string \| null | Concise classification phrase (neutral, factual, sortable — see MRD Section 8). | `Modern and contemporary art museum` |
 
 ### 🔹 Visit planning metadata
 
 | Field Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `time_needed` | string \| null | Coarse visit duration estimate ("Quick stop" <1hr, "Half day" 2-4hr, "Full day" 5+hr). | `Half day` |
+| `time_needed` | string \| null | Coarse visit duration estimate. Values: "Quick stop" (~1–1.25hr), "Half day" (~2.5–3hr), "Most of the Day" (~4–5hr), "All Day" (~6–7hr). | `Half day` |
 | `estimated_visit_minutes` | integer \| null | More precise estimate in minutes. | `180` |
 | `best_season` | `Year-round` \| `Spring` \| `Summer` \| `Fall` \| `Winter` \| null | Best season to visit. | `Year-round` |
 | `nearby_museum_count` | integer \| null | Count of other museums in the same city (computed from dataset). | `3` |
@@ -127,8 +123,8 @@ Canonical reference: `data/schema/museum.schema.json` defines the authoritative 
 
 | Field Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `reputation` | integer (0-3) \| null | Cultural significance tier (0=International, 1=National, 2=Regional, 3=Local). | `2` |
-| `collection_tier` | integer (0-3) \| null | Relative size/depth of collections (0=Flagship, 1=Strong, 2=Moderate, 3=Small). Note: Separate from collection_based_strength used in scoring. | `2` |
+| `reputation_level` | string \| null | Structural scope of institutional recognition (International / National / Regional / Supra-Local / Local). See MRD Section 4, field 14 for full definitions and evidence standards. | `Regional` |
+| `collection_level` | string \| null | Scale and structural role of permanent holdings (Flagship / Strong / Moderate / Small). See MRD Section 4, field 15 for full definitions and evidence standards. | `Strong` |
 
 ### 🔹 Art scoring inputs (art museums only)
 
@@ -136,20 +132,25 @@ These fields are primarily used for visual art museums; non-art museums have the
 
 | Field Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `impressionist_strength` | integer (0–5) \| null | Impressionist collection strength (0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining). | `4` |
-| `modern_contemporary_strength` | integer (0–5) \| null | Modern/contemporary collection strength (same 0-5 scale). | `3` |
-| `primary_art` | `Impressionist` \| `Modern/Contemporary` \| null | Dominant art strength category (derived as max of strength scores). | `Impressionist` |
-| `historical_context_score` | integer (0–5) \| null | Quality of historical framing (0=None, 1=Limited, 2=Local, 3=Strong Regional, 4=Nationally Significant, 5=Canon-Level). | `5` |
-| `exhibitions_curatorial_authority` | integer (0–5) \| null | ECA: Programmatic influence beyond permanent holdings (0=None, 1=Minimal, 2=Competent, 3=Strong Regional, 4=Nationally Recognized, 5=Field-Shaping). | `4` |
+| `impressionist_strength` | integer (0–5) \| null | Impressionist/Post-Impressionist collection strength (0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining). | `4` |
+| `modern_contemporary_strength` | integer (0–5) \| null | Modern/Contemporary collection strength (same 0-5 scale). | `3` |
+| `hat_strength` | integer (0–5) \| null | Historical Art Traditions collection strength (same 0-5 scale). Art grounded in sustained historical traditions; tradition-based rather than modernist. | `2` |
+| `historical_context_score` | integer (0–5) \| null | Quality of historical interpretation depth (0=None, 1=Minimal, 2=Descriptive/Local, 3=Intentional Framing, 4=Deep Integrated, 5=Canon-Defining). | `5` |
+| `eca_score` | integer (0–5) \| null | Exhibitions & Curatorial Authority: Programmatic influence beyond permanent holdings (0=None, 1=Minimal, 2=Competent, 3=Strong Regional, 4=Nationally Recognized, 5=Field-Shaping). | `4` |
 | `collection_based_strength` | integer (0–5) \| null | Overall depth/authority across all art categories (0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining). | `4` |
 
 ### 🔹 Computed scoring
 
 | Field Name | Type | Description | Notes |
 | --- | --- | --- | --- |
-| `priority_score` | number \| null | Weighted score used for ranking (MRD formula, computed during data build). | Lower = higher priority |
+| `collection_based_pas` | integer (0–5) \| null | MAX(impressionist_strength, modern_contemporary_strength, hat_strength). The strongest single art category. | Derived |
+| `effective_pas` | integer (0–5) \| null | MAX(collection_based_pas, eca_score). ECA may elevate but does not sum. | Derived |
+| `priority_score` | integer \| null | Weighted score used for ranking (v3.1.T formula, computed during data build). Floor of 1. Lower = higher priority. | Lower = higher priority |
+| `outcome_tier` | string \| null | Behavioral routing tier: Must-See / High Priority / Regionally Important / Detour / Consider / Background. | Deterministic |
+| `additional_labels` | string \| null | Subtype for Detour/Consider tiers (e.g., Specialized Art Site, Locally Historic, Kunsthalle). | Required for Detour/Consider |
+| `audit_tracker` | string \| null | Version, date, and outcome of last audit (format: "v3.1.T | 2026-03-01 | NC"). | Informational only |
 | `is_scored` | boolean \| null | Whether this museum has been scored (true for art museums, false/null otherwise). | For filtering |
-| `scoring_version` | string \| null | Version label of the scoring algorithm used. | e.g. `v1.0` |
+| `scoring_version` | string \| null | Version label of the scoring algorithm used. | e.g. `v3.1.T` |
 | `scored_by` | `assistant` \| `manual` \| `hybrid` \| null | How the score was produced. | `hybrid` |
 | `score_notes` | string \| null | Notes about scoring decisions. |  |
 | `score_last_verified` | date (YYYY-MM-DD) \| null | Date score inputs/outputs last verified. |  |
@@ -163,88 +164,118 @@ These fields are primarily used for visual art museums; non-art museums have the
 | `row_notes_internal` | string \| null | Internal notes for curators/maintainers. | `Needs geo coordinates.` |
 | `created_at` | date (YYYY-MM-DD) \| null | Record creation date. | `2026-01-15` |
 | `updated_at` | date (YYYY-MM-DD) \| null | Record last update date. | `2026-01-15` |
-| `notes` | string \| null | Public-facing notes (highlights, tips, context). | `Excellent Alaska Native art...` |
+| `notes` | string \| null | Public-facing notes (factual, neutral, 2–4 sentences per MRD Section 8). | `Excellent Alaska Native art...` |
 
 —
 
-📐 Scoring Methodology
+📐 Scoring Methodology (v3.1.T)
 
-MuseumSpark includes all Walker Reciprocal museums in the dataset. Some ranking inputs are art-centric; museums without sufficient scoring inputs can:
+MuseumSpark includes all Walker Reciprocal museums in the dataset. Museums without sufficient scoring inputs have `priority_score: null` and sort after scored records.
 
-- have `priority_score` left as `null` (and sort after scored records), or
-- be ranked by alternate/default heuristics (e.g., reputation + visit practicality) if/when introduced
+### PAS Model
 
-🧮 Priority Score Formula (Lower = Higher Priority)
-
-**Step 1: Determine Primary Art Strength**
+**Collection-Based PAS (Primary Art Strength)**
 ```
-Primary Art Strength = max(Impressionist Strength, Modern/Contemporary Strength)
+Collection-Based PAS = MAX(impressionist_strength, modern_contemporary_strength, hat_strength)
+```
+Only the strongest single axis feeds into the priority score. Strengths are never summed.
+
+**Effective PAS**
+```
+Effective PAS = MAX(Collection-Based PAS, eca_score)
+```
+ECA may elevate PAS to reflect curatorial authority even when permanent holdings are weaker. The floor behavior ensures an exhibition-powerhouse institution is never penalized by a weak collection alone.
+
+### 🧮 Priority Score Formula (Lower = Higher Priority)
+
+**Step 1: Dual-Strength Bonus**
+```
+Dual-Strength Bonus = -2  if impressionist_strength >= 3 AND modern_contemporary_strength >= 3
+                    =  0  otherwise
+```
+Note: Threshold is ≥3 (not ≥4). HAT does not qualify for this bonus.
+
+**Step 2: Reputation Penalty**
+```
+International  = +0
+National       = +0
+Regional       = +2
+Supra-Local    = +3
+Local          = +4
 ```
 
-**Step 2: Calculate Base Score**
+**Step 3: Collection Penalty**
 ```
-Priority Score =
-  (5 – Primary Art Strength) × 3
-+ (5 – Historical Context Score) × 2
-+ (5 – Collection-Based Strength) × 2
-+ Reputation Tier
-```
-
-**Step 3: Apply Bonuses (Subtract from Score)**
-```
-– Dual-Strength Bonus (–2 if both Impressionist Strength ≥4 AND Modern/Contemporary Strength ≥4)
-– ECA Bonus (–1 if Exhibitions & Curatorial Authority ≥4)
+Flagship = +0
+Strong   = +0
+Moderate = +2
+Small    = +4
 ```
 
-**Scoring Dimensions** (MRD Section 4):
+**Step 4: Priority Score**
+```
+Priority Score = MAX(1,
+    (6 - Effective PAS) × 2
+  + (6 - Historical Context Score)
+  + Reputation Penalty
+  + Collection Penalty
+  + Dual-Strength Bonus
+)
+```
 
-* **Impressionist Strength** (0–5): Depth of Impressionist permanent collection
-  * 5 = Canon-Defining Collection (field-defining national/international authority)
-  * 4 = Major Scholarly Collection (deep holdings with national significance)
-  * 3 = Strong Regional or Thematic Collection
-  * 2 = Modest or Supporting Collection
-  * 1 = Limited Collection Presence
-  * 0 = No Meaningful Impressionist Holdings
+### Outcome Tier Assignment (Deterministic)
 
-* **Modern/Contemporary Strength** (0–5): Depth of Modern/Contemporary permanent collection (same scale as Impressionist)
+| Tier | Assignment Criteria |
+|------|---------------------|
+| Must-See | Collection-Based PAS = 5, OR Historical Context = 5 |
+| High Priority | Priority Score ≤ 9; OR Flagship + PAS = 4; OR ECA ≥ 4; OR HC = 4 + National/International rep |
+| Regionally Important | Score 10–15 AND Regional rep AND strong regional art or HC reference |
+| Detour | Specialization signal AND (Effective PAS ≥ 3 OR HC ≥ 3) |
+| Consider | Proximity-dependent value; no routing pull |
+| Background | Default; limited travel gravity |
 
-* **Historical Context Score** (0–5): Quality of historical framing and interpretation
-  * 5 = Canon-Level Historical Importance (essential for understanding major movements)
-  * 4 = Nationally Significant Context
-  * 3 = Strong Regional Context
-  * 2 = Local Context
-  * 1 = Limited Context
-  * 0 = No Contextual Framing
+### Score Dimensions Summary
 
-* **Exhibitions & Curatorial Authority (ECA)** (0–5): Programmatic influence beyond permanent holdings
-  * 5 = Field-Shaping Curatorial Authority
-  * 4 = Nationally Recognized Curatorial Program
-  * 3 = Strong Regional Curatorial Program
-  * 2 = Competent Exhibition Programming
-  * 1 = Minimal Curatorial Authority
-  * 0 = No Curatorial Program of Note
+**Impressionist/Post-Impressionist Strength** (0–5)
+* 5 = Canon-Defining (field-defining national/international authority, canonical works)
+* 4 = Major Scholarly (deep holdings, national significance)
+* 3 = Strong Regional or Thematic
+* 2 = Modest or Supporting
+* 1 = Limited Presence
+* 0 = None
 
-* **Collection-Based Strength** (0–5): Overall depth/authority across all art categories
-  * 5 = Canon-Defining Collection
-  * 4 = Major Scholarly Collection
-  * 3 = Strong Regional or Thematic Collection
-  * 2 = Modest or Supporting Collection
-  * 1 = Limited Collection Presence
-  * 0 = No Meaningful Permanent Collection
+**Modern/Contemporary Strength** (0–5) — same scale as Impressionist
 
-* **Reputation Tier** (0–3): Cultural significance tier
-  * 0 = International
-  * 1 = National
-  * 2 = Regional
-  * 3 = Local
+**Historical Art Traditions (HAT) Strength** (0–5) — same scale; tradition-based art (pre-modern lineage, non-Western canons, workshop/court traditions); NOT defined by modernist rupture
 
-**Score Interpretation**:
-* Lower scores = higher priority
-* Negative scores are possible (world-class institutions with multiple bonuses)
-* Museums with Historical Context = 5 flagged as potential "Must-See"
-* Non-art museums have `priority_score: null` and `is_scored: false`
+**Historical Context Score** (0–5)
+* 5 = Canon-Defining Interpretation (field-shaping, Must-See qualifier)
+* 4 = Deep Integrated Interpretation
+* 3 = Intentional Historical Framing
+* 2 = Descriptive / Place-Based
+* 1 = Minimal Historical Presence
+* 0 = None
 
-This design ensures high-value institutions (e.g., AIC, MoMA, MFA Boston) float to the top automatically, while also revealing hidden gems with relevant strength and historical curation.
+**Exhibitions & Curatorial Authority (ECA)** (0–5)
+* 5 = Field-Shaping Curatorial Authority
+* 4 = Nationally Recognized Curatorial Program
+* 3 = Strong Regional Curatorial Program
+* 2 = Competent Exhibition Programming
+* 1 = Minimal Curatorial Authority
+* 0 = None
+
+**Collection-Based Strength** (0–5) — same scale; overall permanent holdings depth
+
+**Reputation Level** (string)
+* International / National — penalty +0
+* Regional — penalty +2
+* Supra-Local — penalty +3
+* Local (default) — penalty +4
+
+**Collection Level** (string)
+* Flagship / Strong — penalty +0
+* Moderate — penalty +2
+* Small (default) — penalty +4
 
 —
 
@@ -252,10 +283,12 @@ This design ensures high-value institutions (e.g., AIC, MoMA, MFA Boston) float 
 
 1. Validate the Walker reciprocal roster (`data/index/walker-reciprocal.csv`) for structural integrity and scrape artifacts
 2. Add every reciprocal museum to `data/index/all-museums.json` (the master list used for browsing/search)
-3. Add museums by state to `data/states/{state}.json` as the primary per-state “work queue” for enrichment
+3. Add museums by state to `data/states/{state}.json` as the primary per-state "work queue" for enrichment
 4. For each state file, enrich each museum record to fully populate the schema fields (LLM-assisted + official sites + other public sources)
-5. Run JSON validation for the updated state file(s) against `data/schema/museum.schema.json`
-6. Rebuild/update `data/index/all-museums.json` to reflect the newly enriched per-state records
+5. Phase 2: Run LLM scoring for art museums (impressionist_strength, hat_strength, modern_contemporary_strength, historical_context_score, eca_score, collection_based_strength, reputation_level, collection_level)
+6. Phase 3: Run deterministic priority score and outcome tier computation
+7. Run JSON validation for the updated state file(s) against `data/schema/museum.schema.json`
+8. Rebuild/update `data/index/all-museums.json` to reflect the newly enriched per-state records
 
 —
 
@@ -265,9 +298,6 @@ Available as a clean, structured spreadsheet (CSV or Excel) with:
 
 * Fully filterable columns
 * Sortable priority scores
+* Outcome tier classification
 * Hyperlinked museum names
 * Ready for itinerary planning, analysis, or expansion
-
-—
-
-Let me know if you'd like this delivered as a downloadable spreadsheet, API schema, or embedded database model.

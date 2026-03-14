@@ -113,8 +113,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 9,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Corcoran Gallery of Art is no longer operational, and its collection has been distributed to other institutions, leading to a score of 0 for collection-based strength. Its reputation remains as a national art destination, as indicated by the prior reputation score of 1.",
       "score_last_verified": "2026-01-25",
@@ -128,7 +128,7 @@
       "confidence": 5,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.corcoran.org: HTTP 500 for http://www.corcoran.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:35:25Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "2026391700",
@@ -146,7 +146,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 13,
-      "collection_based_strength": 0
+      "collection_based_strength": 0,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-dc-unknown-dumbarton-house",
@@ -671,8 +674,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 14,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 9,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The National Portrait Gallery provides a strong regional context through its focus on portraits of historically significant figures, but its collection is limited to this thematic scope. It does not house important works from the Impressionist or Modern/Contemporary art movements, thus scoring low on collection-based strength.",
       "score_last_verified": "2026-01-25",
@@ -686,7 +689,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'City of Westminster' from open data; MRD: computed city_tier=3 for City of Westminster; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:36:16Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2026338300",
@@ -704,7 +707,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 14,
-      "collection_based_strength": 1
+      "collection_based_strength": 1,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-dc-unknown-phillips-collection",
@@ -743,10 +749,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 4,
       "modern_contemporary_strength": 4,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 3,
-      "priority_score": 9,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 5,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Phillips Collection has a strong holding of Impressionist and modern works, including canonical artists like Renoir and Monet, which supports a Major Scholarly Collection score. Its historical context score reflects its role in providing a solid but not nationally defining narrative of art history, while the reputation score acknowledges its notable regional influence.",
       "score_last_verified": "2026-01-25",
@@ -760,7 +766,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:36:28Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "2023872151",
@@ -780,7 +786,10 @@
       "overall_quality_score": 18,
       "eca_score": 3,
       "collection_based_strength": 4,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-dc-unknown-smithsonian-american-art-museum-and-renwick-gallery",
@@ -821,8 +830,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 14,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 9,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Smithsonian American Art Museum and Renwick Gallery has limited collection presence with a score of 1, indicating small or inconsistent holdings of scholarly relevance. The historical context score of 3 reflects its moderate importance in anchoring the history of American craft and decorative arts, but it does not have a significant influence on national scholarship.",
       "score_last_verified": "2026-01-25",
@@ -836,7 +845,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Washington' from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:36:43Z",
+      "updated_at": "2026-03-14T19:41:18Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2023571445",
@@ -854,7 +863,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 14,
-      "collection_based_strength": 1
+      "collection_based_strength": 1,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-dc-unknown-the-george-washington-university-museum-and-the-textile-museum",
@@ -1138,5 +1150,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T01:37:16Z"
+  "updated_at": "2026-03-14T19:41:18Z"
 }

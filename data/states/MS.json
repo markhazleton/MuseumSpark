@@ -384,8 +384,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 24,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 18,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a strong focus on the ceramics of George E. Ohr, which provides local historical context but does not carry national significance. The collection strength is notable for its regional impact, evidenced by its previous assessments and local engagement.",
       "score_last_verified": "2026-01-25",
@@ -400,7 +400,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Biloxi; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:37:00Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2283745547",
@@ -418,7 +418,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 6,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-ms-jackson-mississippi-museum-of-art",
@@ -457,10 +460,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 22,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Mississippi Museum of Art appears to have a modest permanent collection and local significance, lacking detailed evidence supporting high scores in Impressionist or Modern/Contemporary holdings. The historical context score reflects its role in local cultural interpretation, rather than a broader historical framing.",
       "score_last_verified": "2026-01-25",
@@ -475,7 +478,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Jackson; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:37:10Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "6019601515",
@@ -493,7 +496,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 8,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-ms-laurel-lauren-rogers-museum-of-art",
@@ -532,10 +538,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 1,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 26,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 19,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum has a modest collection primarily featuring American art and Native American baskets, which lack significant depth in Impressionist or Modern/Contemporary works. Historical context is primarily local, serving the immediate community with value but not extensively influential beyond that.",
       "score_last_verified": "2026-01-25",
@@ -550,7 +556,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Laurel; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:37:21Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6016496374",
@@ -568,7 +574,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 4,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 1,
+      "effective_pas": 1,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-ms-ocean-springs-walter-anderson-museum-of-art",
@@ -609,8 +618,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 24,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 19,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "While the museum's focus on Walter Anderson is unique, it primarily serves local interests and hosts regional programming rather than influencing broader scholarship.",
       "score_last_verified": "2026-01-25",
@@ -625,7 +634,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Ocean Springs; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:37:32Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "6018723164",
@@ -644,7 +653,10 @@
       "content_source": "openai",
       "overall_quality_score": 6,
       "eca_score": 2,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-ms-oxford-university-of-mississippi-museum",
@@ -790,5 +802,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:37:50Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

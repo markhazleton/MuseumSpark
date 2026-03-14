@@ -43,32 +43,40 @@ The core entity is a **Museum** record with the following key components:
 
 **Core Identity**: Country, State/Province, City, Museum Name, Museum Type
 
-**Travel Planning**: Time Needed (Quick stop/Half day/Full day), Nearby Museum Count
+**Travel Planning**: Time Needed (Quick stop / Half day / Most of the Day / All Day), Nearby Museum Count
 
-**Reputation & Scope**: Reputation tier (Local/Regional/National/International), Collection Tier (Small/Moderate/Strong/Flagship)
+**Reputation & Scope**: Reputation Level (Local / Supra-Local / Regional / National / International), Collection Level (Small / Moderate / Strong / Flagship)
 
-**Collection Focus**: Impressionism Strength, Contemporary/Modern Strength, Primary Art Focus, Historical Context Score (1-5)
+**Collection Focus**: Impressionist Strength, Modern/Contemporary Strength, Historical Art Traditions (HAT) Strength, Historical Context Score (0-5), ECA (0-5), Collection-Based Strength (0-5)
 
-**Computed Metrics**: Priority Score (lower = higher priority)
+**Computed Metrics**: Collection-Based PAS, Effective PAS, Priority Score (lower = higher priority), Outcome Tier (Must-See → Background)
 
 Full data model specification is in `Documentation/DataSetDesign.md`.
 
-### Prioritization Algorithm
+### Prioritization Algorithm (MRD v3.1.T)
 
-The priority score formula weights multiple factors to rank museums:
+The priority score formula uses a PAS (Primary Art Strength) model:
 
 ```
-Priority Score =
-  (10 - Impressionism Weight × 3)
-  × (10 - Modern/Contemporary Weight × 3)
-  × (5 - Historical Context Score × 2)
-  × (5 - Reputation Score)
-  × (5 - Collection Tier Score)
-  - Dual Collection Bonus
-  - Nearby Cluster Bonus
+Collection-Based PAS = MAX(impressionist_strength, modern_contemporary_strength, hat_strength)
+Effective PAS        = MAX(Collection-Based PAS, eca_score)
+Dual-Strength Bonus  = -2 if impressionist >= 3 AND modern_contemporary >= 3
+
+Reputation Penalty: International/National=0, Regional=+2, Supra-Local=+3, Local=+4
+Collection Penalty: Flagship/Strong=0, Moderate=+2, Small=+4
+
+Priority Score = MAX(1,
+    (6 - Effective PAS) × 2
+  + (6 - Historical Context Score)
+  + Reputation Penalty
+  + Collection Penalty
+  + Dual-Strength Bonus
+)
 ```
 
-This ensures high-value institutions rank highest while revealing hidden gems with relevant strengths.
+Outcome Tier is assigned deterministically (Must-See / High Priority / Regionally Important / Detour / Consider / Background).
+
+Full specification: `Documentation/architecture/MasterRequirements.md` (authoritative), `Documentation/architecture/DataSetDesign.md`.
 
 ### API Design
 

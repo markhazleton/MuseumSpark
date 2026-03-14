@@ -19,6 +19,7 @@ export type Museum = {
     | "Specialty"
     | "Mixed"
     | null;
+  primary_focus?: string | null;
   topics?: string[] | null;
   audience_focus?:
     | "General"
@@ -55,7 +56,8 @@ export type Museum = {
   accessibility_url?: string | null;
   reservation_required?: boolean | null;
   best_season?: "Year-round" | "Spring" | "Summer" | "Fall" | "Winter" | null;
-  time_needed?: "Quick stop" | "Half day" | "Full day" | null;
+  /** v3.1.T: Quick stop ~1-1.25hr | Half day ~2.5-3hr | Most of the Day ~4-5hr | All Day ~6-7hr */
+  time_needed?: "Quick stop" | "Half day" | "Most of the Day" | "All Day" | null;
   estimated_visit_minutes?: number | null;
 
   // Notes
@@ -64,50 +66,103 @@ export type Museum = {
   public_transit_notes?: string | null;
   notes?: string | null;
 
-  // Scoring & Metrics (Art Museums) - MRD v3 January 2026
-  reputation?: 0 | 1 | 2 | 3 | null; // 0=International, 1=National, 2=Regional, 3=Local
-  collection_tier?: 0 | 1 | 2 | 3 | null; // DEPRECATED - use collection_based_strength
-  priority_score?: number | null; // Hidden gem score (lower=better)
-  overall_quality_score?: number | null; // Best museum score (higher=better)
-  impressionist_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: 0-5 scale
-  modern_contemporary_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: 0-5 scale
-  historical_context_score?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: 0-5 scale (5 = Must-See candidate)
-  eca_score?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: Exhibitions & Curatorial Authority
-  collection_based_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null; // MRD v3: replaces collection_tier
-  primary_art_focus?: "Impressionist" | "Modern/Contemporary" | null; // MRD v3: renamed from primary_art
-  primary_art?: "Impressionist" | "Modern/Contemporary" | null; // DEPRECATED - use primary_art_focus
-  must_see_candidate?: boolean | null; // MRD v3: flagged when historical_context_score = 5
+  // ── Scoring & Metrics (MRD v3.1.T - March 2026) ──────────────────────────
+
+  // Reputation & Collection Level (v3.1.T: named strings)
+  /** Primary: International / National / Regional / Supra-Local / Local */
+  reputation_level?: "International" | "National" | "Regional" | "Supra-Local" | "Local" | null;
+  /** Primary: Flagship / Strong / Moderate / Small */
+  collection_level?: "Flagship" | "Strong" | "Moderate" | "Small" | null;
+
+  // Legacy integer fields (kept for backwards compatibility with existing data)
+  /** @deprecated Use reputation_level. 0=International, 1=National, 2=Regional, 3=Supra-Local, 4=Local */
+  reputation?: 0 | 1 | 2 | 3 | 4 | null;
+  /** @deprecated Use collection_level. 0=Flagship, 1=Strong, 2=Moderate, 3=Small */
+  collection_tier?: 0 | 1 | 2 | 3 | null;
+
+  // Art Collection Strength Scores (0-5)
+  /** Impressionist/Post-Impressionist collection strength */
+  impressionist_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null;
+  /** Modern/Contemporary collection strength */
+  modern_contemporary_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null;
+  /** Historical Art Traditions strength (v3.1.T). Tradition-based art: non-Western canons, workshop lineage, court art. */
+  hat_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null;
+  /** Historical Context Score: quality and depth of historical interpretation (5 = Must-See qualifier) */
+  historical_context_score?: 0 | 1 | 2 | 3 | 4 | 5 | null;
+  /** Exhibitions & Curatorial Authority: programmatic influence beyond permanent holdings */
+  eca_score?: 0 | 1 | 2 | 3 | 4 | 5 | null;
+  /** Overall depth/authority across all art categories */
+  collection_based_strength?: 0 | 1 | 2 | 3 | 4 | 5 | null;
+
+  // Derived Scoring Fields (v3.1.T)
+  /** MAX(impressionist_strength, modern_contemporary_strength, hat_strength) */
+  collection_based_pas?: number | null;
+  /** MAX(collection_based_pas, eca_score) — used in Priority Score formula */
+  effective_pas?: number | null;
+  /** Primary art focus: strongest of the three collection axes */
+  primary_art?: "Impressionist" | "Modern/Contemporary" | "Historical Art Traditions" | null;
+
+  // Computed Scores
+  /** Priority Score (lower = higher priority). Floor of 1. Formula: MAX(1, (6-eff_pas)*2 + (6-HC) + rep_penalty + coll_penalty + dual_bonus) */
+  priority_score?: number | null;
+  /** Behavioral routing tier (deterministic from priority score + qualifiers) */
+  outcome_tier?: "Must-See" | "High Priority" | "Regionally Important" | "Detour" | "Consider" | "Background" | null;
+  /** Subtype label for Detour/Consider tiers (e.g., Specialized Art Site, Kunsthalle, Locally Historic) */
+  additional_labels?: string | null;
+  /** Audit provenance: "v3.1.T | 2026-03-01 | NC" (NC=No Change, CH=Changed) */
+  audit_tracker?: string | null;
+  /** Flagged when historical_context_score = 5 or collection_based_pas = 5 */
+  must_see_candidate?: boolean | null;
+
   nearby_museum_count?: number | null;
   is_scored?: boolean | null;
   is_scoreable?: boolean | null;
   scoring_version?: string | null;
-  scored_by?: "assistant" | "manual" | "hybrid" | "gpt-5.2" | "claude-3-haiku-20240307" | string | null;
+  scored_by?: "assistant" | "manual" | "hybrid" | string | null;
   score_notes?: string | null;
   score_last_verified?: string | null;
 
-  // Product Owner/Planner Metadata (Phase 1.9)
+  // ── Legacy planner fields from Phase 1.9 ─────────────────────────────────
+  /** @deprecated Use priority_score */
   planner_priority_score?: number | null;
+  /** @deprecated Use outcome_tier */
   planner_outcome_tier?: string | null;
+  /** @deprecated Use additional_labels */
   planner_consider_label?: string | null;
+  /** @deprecated Use historical_context_score */
   planner_historical_context?: number | null;
+  /** @deprecated Use impressionist_strength */
   planner_impressionist_strength?: number | null;
+  /** @deprecated Use modern_contemporary_strength */
   planner_modern_contemporary_strength?: number | null;
+  /** @deprecated Use hat_strength */
   planner_traditional_strength?: number | null;
+  /** @deprecated Use eca_score */
   planner_exhibition_advantage?: number | null;
+  /** @deprecated Use collection_based_pas */
   planner_collection_pas?: number | null;
+  /** @deprecated Use effective_pas */
   planner_effective_pas?: number | null;
+  /** @deprecated Use reputation_level */
   planner_reputation_level?: string | null;
+  /** @deprecated Use collection_level */
   planner_collection_level?: string | null;
   planner_notes?: string | null;
   planner_data_updated_at?: string | null;
 
   // Enriched Content (LLM-Generated Phase 2.5)
-  content_summary?: string | null; // 50-100 words
-  content_description?: string | null; // 200-300 words with markdown
-  content_highlights?: string[] | null; // 5-8 bullet points
+  content_summary?: string | null;
+  content_description?: string | null;
+  content_highlights?: string[] | null;
   content_generated_at?: string | null;
   content_model?: string | null;
   content_source?: string | null;
+
+  // Legacy (removed field aliases)
+  /** @deprecated Use primary_art */
+  primary_art_focus?: "Impressionist" | "Modern/Contemporary" | "Historical Art Traditions" | null;
+  /** @deprecated Use priority_score */
+  overall_quality_score?: number | null;
 
   // Contact Info
   phone?: string | null;
@@ -145,3 +200,36 @@ export type ProgressIndex = {
     { total: number; full: number; placeholder: number }
   >;
 };
+
+/** Outcome tiers in priority order (highest to lowest travel gravity) */
+export const OUTCOME_TIERS = [
+  "Must-See",
+  "High Priority",
+  "Regionally Important",
+  "Detour",
+  "Consider",
+  "Background",
+] as const;
+
+export type OutcomeTier = typeof OUTCOME_TIERS[number];
+
+/** Reputation levels in priority order */
+export const REPUTATION_LEVELS = [
+  "International",
+  "National",
+  "Regional",
+  "Supra-Local",
+  "Local",
+] as const;
+
+export type ReputationLevel = typeof REPUTATION_LEVELS[number];
+
+/** Collection levels in priority order */
+export const COLLECTION_LEVELS = [
+  "Flagship",
+  "Strong",
+  "Moderate",
+  "Small",
+] as const;
+
+export type CollectionLevel = typeof COLLECTION_LEVELS[number];

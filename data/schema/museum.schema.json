@@ -147,7 +147,7 @@
         },
         "museum_type": {
           "type": "string",
-          "description": "Primary museum classification",
+          "description": "Primary museum classification (locked set per MRD Section 7)",
           "minLength": 1
         },
         "primary_domain": {
@@ -162,6 +162,10 @@
             null
           ],
           "description": "Primary domain of museum"
+        },
+        "primary_focus": {
+          "type": ["string", "null"],
+          "description": "Concise classification phrase: neutral, factual, sortable (per MRD Section 8)"
         },
         "topics": {
           "type": ["array", "null"],
@@ -205,22 +209,45 @@
           "format": "uri",
           "description": "URL to accessibility information"
         },
+        "reputation_level": {
+          "type": ["string", "null"],
+          "enum": [
+            "International",
+            "National",
+            "Regional",
+            "Supra-Local",
+            "Local",
+            null
+          ],
+          "description": "Structural scope of institutional recognition (MRD v3.1.T Section 4, field 14). International/National=penalty+0; Regional=+2; Supra-Local=+3; Local=+4"
+        },
         "reputation": {
           "type": ["integer", "null"],
           "minimum": 0,
-          "maximum": 3,
-          "description": "Cultural significance tier (MRD: 0=International, 1=National, 2=Regional, 3=Local)"
+          "maximum": 4,
+          "description": "DEPRECATED: Use reputation_level (string). Legacy integer mapping: 0=International, 1=National, 2=Regional, 3=Supra-Local, 4=Local"
+        },
+        "collection_level": {
+          "type": ["string", "null"],
+          "enum": [
+            "Flagship",
+            "Strong",
+            "Moderate",
+            "Small",
+            null
+          ],
+          "description": "Scale and structural role of permanent holdings (MRD v3.1.T Section 4, field 15). Flagship/Strong=penalty+0; Moderate=+2; Small=+4"
         },
         "collection_tier": {
           "type": ["integer", "null"],
           "minimum": 0,
           "maximum": 3,
-          "description": "Collection size and depth (MRD: 0=Flagship, 1=Strong, 2=Moderate, 3=Small)"
+          "description": "DEPRECATED: Use collection_level (string). Legacy integer mapping: 0=Flagship, 1=Strong, 2=Moderate, 3=Small"
         },
         "time_needed": {
           "type": ["string", "null"],
-          "enum": ["Quick stop", "Half day", "Full day", null],
-          "description": "Estimated visit duration"
+          "enum": ["Quick stop", "Half day", "Most of the Day", "All Day", null],
+          "description": "Estimated visit duration. Quick stop ~1-1.25hr; Half day ~2.5-3hr; Most of the Day ~4-5hr; All Day ~6-7hr"
         },
         "estimated_visit_minutes": {
           "type": ["integer", "null"],
@@ -290,38 +317,94 @@
         },
         "impressionist_strength": {
           "type": ["integer", "null"],
-          "minimum": 1,
+          "minimum": 0,
           "maximum": 5,
-          "description": "Impressionist collection strength (MRD: 1=None, 2=Minor, 3=Moderate, 4=Strong, 5=Flagship)"
+          "description": "Impressionist/Post-Impressionist collection strength (0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining)"
         },
         "modern_contemporary_strength": {
           "type": ["integer", "null"],
-          "minimum": 1,
+          "minimum": 0,
           "maximum": 5,
-          "description": "Modern/contemporary collection strength (MRD: 1=None, 2=Minor, 3=Moderate, 4=Strong, 5=Flagship)"
+          "description": "Modern/Contemporary collection strength (same 0-5 scale as impressionist_strength)"
+        },
+        "hat_strength": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Historical Art Traditions strength (0-5). Art grounded in sustained cultural/workshop/lineage traditions. Does not include works defined by modernist rupture. Added v3.1.T"
         },
         "primary_art": {
           "type": ["string", "null"],
-          "enum": ["Impressionist", "Modern/Contemporary", null],
-          "description": "Primary art period focus (MRD: derived as max of strength scores, stored not computed)"
+          "enum": ["Impressionist", "Modern/Contemporary", "Historical Art Traditions", null],
+          "description": "Primary art period focus (derived as strongest of the three collection axes)"
         },
         "historical_context_score": {
           "type": ["integer", "null"],
-          "minimum": 1,
+          "minimum": 0,
           "maximum": 5,
-          "description": "Interpretive/curatorial strength (1-5)"
+          "description": "Quality and depth of historical interpretation (0=None, 1=Minimal, 2=Descriptive/Local, 3=Intentional Framing, 4=Deep Integrated, 5=Canon-Defining). Score 5 = Must-See qualifier."
+        },
+        "eca_score": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Exhibitions & Curatorial Authority (0=None, 1=Minimal, 2=Competent, 3=Strong Regional, 4=Nationally Recognized, 5=Field-Shaping). Evaluates programmatic authority only, not permanent holdings."
+        },
+        "collection_based_strength": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Overall depth/authority across all art categories (0=None, 1=Limited, 2=Modest, 3=Strong Regional, 4=Major Scholarly, 5=Canon-Defining)"
+        },
+        "collection_based_pas": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Collection-Based Primary Art Strength: MAX(impressionist_strength, modern_contemporary_strength, hat_strength). Computed field. Added v3.1.T"
+        },
+        "effective_pas": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Effective Primary Art Strength: MAX(collection_based_pas, eca_score). ECA may elevate but does not sum. Used in Priority Score formula. Added v3.1.T"
         },
         "priority_score": {
-          "type": ["number", "null"],
-          "description": "Computed priority ranking (lower = higher priority)"
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "description": "Computed priority ranking (lower = higher priority). Floor of 1. Formula: MAX(1, (6-effective_pas)*2 + (6-historical_context_score) + reputation_penalty + collection_penalty + dual_strength_bonus)"
+        },
+        "outcome_tier": {
+          "type": ["string", "null"],
+          "enum": [
+            "Must-See",
+            "High Priority",
+            "Regionally Important",
+            "Detour",
+            "Consider",
+            "Background",
+            null
+          ],
+          "description": "Behavioral routing tier reflecting predicted visitor travel gravity. Deterministically assigned per MRD Section 6. Added v3.1.T"
+        },
+        "additional_labels": {
+          "type": ["string", "null"],
+          "description": "Subtype label for Detour and Consider tiers (e.g., Specialized Art Site, Locally Historic, Quirky / Memorable, Kunsthalle, Generalized Collection Museum, You Won't See This Again, Specialized Cultural Site). Required when outcome_tier is Detour or Consider. Added v3.1.T"
+        },
+        "audit_tracker": {
+          "type": ["string", "null"],
+          "description": "Provenance of most recent audit: Version | Date | Outcome (CH=Changed, NC=No Change). Example: 'v3.1.T | 2026-03-01 | NC'. Informational only. Added v3.1.T"
         },
         "is_scored": {
           "type": ["boolean", "null"],
           "description": "Whether this museum has been scored (for filtering art vs non-art museums)"
         },
+        "is_scoreable": {
+          "type": ["boolean", "null"],
+          "description": "Whether this museum is eligible for scoring (art museums only)"
+        },
         "scoring_version": {
           "type": ["string", "null"],
-          "description": "Version of scoring algorithm used (e.g., v1.0)"
+          "description": "Version of scoring algorithm used (e.g., v3.1.T)"
         },
         "scored_by": {
           "type": ["string", "null"],
@@ -339,7 +422,7 @@
         },
         "notes": {
           "type": ["string", "null"],
-          "description": "General notes, highlights, or additional context"
+          "description": "Public-facing notes (factual, neutral, 2-4 sentences per MRD Section 8 writing standards)"
         }
       }
     }

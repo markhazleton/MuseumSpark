@@ -1,27 +1,26 @@
 #!/usr/bin/env python3
-"""Phase 2: Art Museum Scoring (MRD v3 - January 2026).
+"""Phase 2: Art Museum Scoring (MRD v3.1.T - March 2026).
 
 This module is the THIRD phase of the rebooted MuseumSpark pipeline.
 It scores ONLY art museums using LLM-as-judge with curated evidence.
 
-Scoring Fields (MRD Section 4 - Updated January 2026):
+Scoring Fields (MRD v3.1.T Section 4):
     - impressionist_strength: 0-5 scale (0=none, 5=canon-defining)
     - modern_contemporary_strength: 0-5 scale (0=none, 5=canon-defining)
-    - historical_context_score: 0-5 scale (0=no context, 5=canon-level importance)
+    - hat_strength: 0-5 scale Historical Art Traditions (0=none, 5=canon-defining)
+    - historical_context_score: 0-5 scale (0=no context, 5=canon-defining interpretation)
     - eca_score: 0-5 Exhibitions & Curatorial Authority (0=none, 5=field-shaping)
     - collection_based_strength: 0-5 scale (0=no collection, 5=canon-defining)
-    - reputation: 0 (International), 1 (National), 2 (Regional), 3 (Local)
+    - reputation_level: International / National / Regional / Supra-Local / Local
+    - collection_level: Flagship / Strong / Moderate / Small
 
-Priority Score Formula (computed in Phase 3):
-    Primary Art Strength = max(impressionist_strength, modern_contemporary_strength)
-    Dual-Strength Bonus = -2 if both >= 4
-    ECA Bonus = -1 if eca_score >= 4
-    Priority Score = (5 - Primary Art Strength) × 3
-                   + (5 - historical_context_score) × 2
-                   + (5 - collection_based_strength) × 2
-                   + reputation
-                   - Dual-Strength Bonus
-                   - ECA Bonus
+Priority Score Formula (computed in Phase 3, MRD v3.1.T):
+    Collection-Based PAS = MAX(impressionist_strength, modern_contemporary_strength, hat_strength)
+    Effective PAS = MAX(Collection-Based PAS, eca_score)
+    Dual-Strength Bonus = -2 if impressionist >= 3 AND modern_contemporary >= 3
+    Reputation Penalty: International/National=0, Regional=2, Supra-Local=3, Local=4
+    Collection Penalty: Flagship/Strong=0, Moderate=2, Small=4
+    Priority Score = MAX(1, (6 - Effective PAS)*2 + (6 - HC) + Rep + Coll + Dual)
 
 Design Principles:
     1. ELIGIBILITY GATE: Only museums with is_scoreable=True are processed
@@ -81,137 +80,145 @@ SCORING_SYSTEM_PROMPT = """You are a museum expert and art historian. Your task 
 IMPORTANT RULES:
 1. You are a JUDGE, not a researcher. Only use the evidence provided.
 2. Use your expert knowledge combined with the evidence to make informed assessments.
-3. For art museums, infer collection strength from museum name, type, and Wikipedia descriptions.
-4. All scores must be within their defined ranges (0-5 for art fields, 0-3 for reputation).
-5. Be rigorous: only give high scores (4-5) with clear evidence of canon-level or nationally significant holdings.
-6. Focus on PERMANENT COLLECTIONS for art strength scores, not temporary exhibitions.
-7. ECA (Exhibitions & Curatorial Authority) evaluates PROGRAMMATIC authority only, separate from collections.
+3. All scores must be within their defined ranges (0-5 for art fields).
+4. Be rigorous: only give high scores (4-5) with clear evidence of canon-level or nationally significant holdings.
+5. Focus on PERMANENT COLLECTIONS for art strength scores, not temporary exhibitions.
+6. ECA evaluates PROGRAMMATIC authority only, separate from collections.
+7. Absence of evidence constrains scores downward. Do not guess or hallucinate.
 
-SCORING DEFINITIONS (from Museum Requirements Document - January 2026):
+SCORING DEFINITIONS (MRD v3.1.T - March 2026):
 
 === impressionist_strength (0-5) ===
-Purpose: Measures the depth, authority, and scholarly importance of permanent Impressionist holdings.
+Measures depth, authority, and scholarly importance of permanent Impressionist/Post-Impressionist holdings.
+Core period: c. 1860s–1905. Core figures: Monet, Renoir, Degas, Pissarro, Morisot, Sisley, Cézanne, Gauguin, Van Gogh, Seurat.
+What counts: Authentic Impressionist/Post-Impressionist works; American Impressionism only when explicitly treated as such.
+What does NOT count: Modern works "in the spirit of" Impressionism; exhibition programming alone.
 
-5 — Canon-Defining Collection
-    The museum holds Impressionist works that are field-defining at the national or international level. Holdings contain canonical works (not merely representative examples), and the institution functions as a reference point for Impressionist scholarship and curation.
-
-4 — Major Scholarly Collection
-    Deep, high-quality Impressionist holdings with clear scholarly value and national significance. Includes important works and artists, supports sustained research and serious exhibitions.
-
-3 — Strong Regional or Thematic Collection
-    Coherent, well-curated Impressionist holdings with recognized strength within a region or theme. Supports credible exhibitions but does not substantially influence national scholarship.
-
-2 — Modest or Supporting Collection
-    Impressionist works provide contextual or educational value but lack depth, rarity, or sustained curatorial impact. Works are largely illustrative or supplementary.
-
-1 — Limited Collection Presence
-    Small or inconsistent Impressionist holdings with minimal curatorial or scholarly relevance.
-
-0 — No Meaningful Impressionist Holdings
-    The institution does not maintain Impressionist works of significance.
+5 — Canon-Defining: Field-defining at national/international level. Canonical works, reference institution for Impressionist scholarship.
+4 — Major Scholarly: Deep high-quality holdings with clear scholarly value and national significance.
+3 — Strong Regional: Coherent, well-curated holdings with recognized regional strength.
+2 — Modest/Supporting: Contextual or educational value; lacks depth, rarity, or sustained curatorial impact.
+1 — Limited: Small or inconsistent holdings with minimal scholarly relevance.
+0 — None: No Impressionist works of significance.
 
 === modern_contemporary_strength (0-5) ===
-Purpose: Measures the depth, authority, and scholarly importance of permanent Modern and Contemporary art holdings.
+Measures depth, authority, and scholarly importance of permanent Modern and Contemporary art holdings.
+Scope: Late Modern (roughly 1920s–1960s: Surrealism, Abstract Expressionism) and Contemporary (roughly 1970s–present).
+What counts: Works within modern/contemporary artistic framework; permanent holdings by recognized artists or movements.
+What does NOT count: Exhibition programming alone; rotating shows without permanent holdings.
 
-5 — Canon-Defining Collection
-    The museum holds Modern/Contemporary works that are field-defining at the national or international level. Holdings contain canonical works, and the institution functions as a reference point for scholarship and curation.
+5 — Canon-Defining: Field-defining at national/international level.
+4 — Major Scholarly: Deep high-quality holdings with national significance.
+3 — Strong Regional: Coherent, well-curated holdings with recognized regional strength.
+2 — Modest/Supporting: Contextual value; lacks depth or sustained impact.
+1 — Limited: Small or inconsistent holdings with minimal relevance.
+0 — None: No meaningful Modern/Contemporary holdings.
 
-4 — Major Scholarly Collection
-    Deep, high-quality Modern/Contemporary holdings with clear scholarly value and national significance. Includes important works and artists, supports sustained research and serious exhibitions.
+=== hat_strength (0-5) — Historical Art Traditions ===
+Measures depth, authority, and coherence of tradition-based artistic production — art grounded in sustained
+cultural, academic, workshop, ceremonial, courtly, or lineage-based systems. Defined by continuity of
+tradition rather than chronology alone.
 
-3 — Strong Regional or Thematic Collection
-    Coherent, well-curated Modern/Contemporary holdings with recognized strength within a region or theme. Supports credible exhibitions but does not substantially influence national scholarship.
+What counts: Painting, sculpture, decorative arts, textiles, ceremonial works, court art, and materially
+grounded visual traditions. Non-Western canons, Indigenous lineage art, and workshop traditions when
+interpreted as art-historical traditions (not merely ethnographic material).
 
-2 — Modest or Supporting Collection
-    Modern/Contemporary works provide contextual or educational value but lack depth, rarity, or sustained curatorial impact. Works are largely illustrative or supplementary.
+CRITICAL SORTING RULE: When a collection aligns with a defined art movement, movement classification takes
+precedence. Impressionist/Post-Impressionist works belong in impressionist_strength. Works defined by
+modernist rupture belong in modern_contemporary_strength, NOT here.
 
-1 — Limited Collection Presence
-    Small or inconsistent Modern/Contemporary holdings with minimal curatorial or scholarly relevance.
+What does NOT count: Objects presented primarily as historical artifacts without art-historical interpretation
+(those influence historical_context_score, not hat_strength).
 
-0 — No Meaningful Modern/Contemporary Holdings
-    The institution does not maintain Modern/Contemporary works of significance.
+5 — Canon-Defining: Field-defining tradition-based collection; institution is a reference point within its tradition.
+4 — Major Scholarly: Deep, high-quality tradition-based holdings with clear scholarly value.
+3 — Strong Regional: Coherent, well-curated tradition-based holdings with recognized regional strength.
+2 — Modest/Supporting: Tradition-based works provide contextual value; lacks depth or sustained impact.
+1 — Limited: Small or inconsistent tradition-based holdings.
+0 — None: No tradition-based works of significance.
 
 === historical_context_score (0-5) ===
-Purpose: Measures how essential a museum is to understanding art history, cultural history, or a specific historical narrative, independent of collection size, reputation, or attendance.
+Measures the quality and depth of historical interpretation — how clearly, rigorously, and insightfully the
+museum constructs historical understanding. Evaluates interpretive strength, NOT collection size, reputation,
+or attendance. Applies to art, science, cultural, or social history.
 
-5 — Canon-Level Historical Importance
-    The museum provides essential, field-defining historical context for understanding a major movement, culture, or historical subject. The institution is a foundational reference point for the subject it interprets.
+5 — Canon-Defining Interpretation: Field-shaping; defines or reshapes understanding of a major historical subject.
+    Interpretation is multi-layered, analytical, and grounded in exceptionally strong primary material.
     NOTE: A score of 5 may qualify a museum for Must-See status.
+4 — Deep, Integrated Interpretation: Substantial depth and coherence; integrates multiple layers of context;
+    goes beyond explanation into analysis and synthesis.
+3 — Intentional Historical Framing: Clear intent and solid explanatory structure; explains what happened and
+    why it matters; limited in depth or layering.
+2 — Descriptive/Place-Based: Primarily descriptive or documentary; focuses on facts, chronology, or
+    preservation; primarily local relevance.
+1 — Minimal: Limited or incidental historical content; does not meaningfully construct a narrative.
+0 — None: Institution is not historically oriented; history is absent or incidental.
 
-4 — Nationally Significant Context
-    Provides strong historical framing for a major movement, region, or cultural narrative with relevance beyond the local level.
+=== eca_score (0-5) — Exhibitions & Curatorial Authority ===
+Measures curatorial influence OUTSIDE permanent collections: exhibition authorship, commissioning power,
+intellectual leadership. ECA evaluates programmatic authority only; does not assess permanent holdings.
 
-3 — Strong Regional Context
-    Anchors the history of a region, city, or cultural community in a meaningful and sustained way.
-
-2 — Local Context
-    Interprets or preserves local history or culture with relevance primarily to the immediate community.
-
-1 — Limited Context
-    Includes historical interpretation, but it is narrow, secondary, or not a core institutional strength.
-
-0 — No Contextual Framing
-    Institution is not historically oriented; history is absent or incidental.
-
-=== eca_score (0-5) - Exhibitions & Curatorial Authority ===
-Purpose: Measures curatorial influence that exists OUTSIDE permanent collections, including exhibition authorship, commissioning power, and intellectual leadership. ECA evaluates programmatic authority only.
-
-5 — Field-Shaping Curatorial Authority
-    Produces exhibitions, research, or commissions that shape discourse nationally or internationally.
-
-4 — Nationally Recognized Curatorial Program
-    Sustained record of original, influential exhibitions with national reach.
-
-3 — Strong Regional Curatorial Program
-    Original and respected exhibitions with regional influence.
-
-2 — Competent Exhibition Programming
-    Professionally executed but largely derivative or touring exhibitions.
-
-1 — Minimal Curatorial Authority
-    Limited scope or intellectual contribution.
-
-0 — No Curatorial Program of Note
-    No meaningful exhibition programming or curatorial presence.
+5 — Field-Shaping: Produces exhibitions, research, or commissions shaping discourse nationally or internationally.
+4 — Nationally Recognized: Sustained record of original, influential exhibitions with national reach.
+3 — Strong Regional: Original and respected exhibitions with regional influence.
+2 — Competent: Professionally executed but largely derivative or touring exhibitions.
+1 — Minimal: Limited scope or intellectual contribution.
+0 — None: No meaningful exhibition programming or curatorial presence.
 
 === collection_based_strength (0-5) ===
-Purpose: Measures the depth, authority, and scholarly importance of permanent holdings across ALL relevant art categories. This is art-first and does not evaluate popularity, attendance, branding, or reputation.
+Measures depth, authority, and scholarly importance of permanent holdings across ALL relevant art categories.
+Art-first; does not evaluate popularity, attendance, branding, or reputation. Scores based on strongest
+applicable category or combination.
 
-5 — Canon-Defining Collection
-    The museum holds a collection that is field-defining at the national or international level. Its holdings contain canonical works, and the institution functions as a reference point for scholarship, curation, and major exhibitions. The collection demonstrates either encyclopedic breadth across major periods and regions or unquestioned authority within a specific domain.
+5 — Canon-Defining: Field-defining at national/international level. Canonical works, reference institution.
+    Either encyclopedic breadth or unquestioned authority within a specific domain.
+4 — Major Scholarly: Deep, high-quality collection with national significance. Supports sustained research.
+3 — Strong Regional: Coherent, well-curated collection with recognized strength within a region or theme.
+2 — Modest/Supporting: Contextual or educational value; lacks depth, rarity, or sustained curatorial impact.
+1 — Limited: Small or inconsistent permanent collection with minimal scholarly relevance.
+0 — None: No meaningful permanent collection (exhibition-only, archives without objects).
 
-4 — Major Scholarly Collection
-    The museum holds a deep, high-quality collection with clear scholarly value and national significance. The collection includes important works and artists, supports sustained research and serious exhibitions, and meaningfully advances understanding of its field.
+=== reputation_level (string) ===
+Structural scope of institutional recognition and role — NOT collection strength, interpretive quality,
+attendance, or media visibility. Use structural evidence only (governance, funding, originating exhibitions
+with documented reach, formal institutional roles). Media coverage may NEVER increase reputation level.
 
-3 — Strong Regional or Thematic Collection
-    The museum maintains a coherent, well-curated collection with recognized strength within a region, medium, movement, or theme. Holdings support credible exhibitions and interpretation but do not substantially influence national scholarship.
+"International" — sustained cross-border institutional role; originating exhibitions/research with ongoing
+    international circulation; formal cross-national governance; multi-national network leadership.
+"National" — national-scale institutional role; national governance/funding/designation; sustained multi-state
+    exhibition/research reach; national network leadership.
+"Regional" — functions as recognized anchor across a broader region (multi-metro, multi-state, or culturally
+    defined region). Regional status does not require influence beyond the defined region.
+"Supra-Local" — operates meaningfully beyond its immediate locality (multi-city participation, statewide
+    governance/funding, originated programming with reach beyond one city), but is NOT a recognized regional anchor.
+"Local" — recognition confined primarily to the immediate city or locality. Default if unclear.
 
-2 — Modest or Supporting Collection
-    The collection provides contextual or educational value but lacks depth, rarity, or sustained curatorial impact. Works are largely illustrative or supplementary.
+=== collection_level (string) ===
+Scale and structural role of a museum's permanent holdings. Requires explicit, documentable evidence.
+Do not infer from exhibition volume, media, visitor numbers, building size, or awards.
 
-1 — Limited Collection Presence
-    The museum holds a small or inconsistent permanent collection with minimal curatorial or scholarly relevance.
-
-0 — No Meaningful Permanent Collection
-    The institution does not maintain a permanent collection of significance (e.g., exhibition-only spaces, archives without object collections).
-
-=== reputation (0-3) ===
-0 = International (world-renowned, draws global visitors)
-1 = National (major US destination, widely known)
-2 = Regional (known within multi-state region)
-3 = Local (primarily serves local community)
+"Flagship" — field-shaping depth or breadth; active scholarly reference; substantial primary evidence whose
+    loss would materially reduce the field's accessible research base. ALL three conditions must be met.
+"Strong" — clearly documented permanent holdings forming a central institutional asset; coherent scope;
+    used in sustained curatorial, interpretive, or research contexts. ALL conditions must be met.
+"Moderate" — documented, identifiable discrete collection; some internal structure or focus; supports
+    interpretation or exhibitions in a sustained and recurring way. ALL conditions must be met.
+"Small" — default/floor: minimal, fragmented, weakly documented, or incidental holdings; exhibition-driven
+    institution; or insufficient evidence to qualify for Moderate or higher.
 
 RESPONSE FORMAT:
 Return ONLY valid JSON matching this schema:
 {
   "impressionist_strength": <0-5 or null>,
   "modern_contemporary_strength": <0-5 or null>,
+  "hat_strength": <0-5 or null>,
   "historical_context_score": <0-5 or null>,
   "eca_score": <0-5 or null>,
   "collection_based_strength": <0-5 or null>,
-  "reputation": <0-3 or null>,
+  "reputation_level": <"International"|"National"|"Regional"|"Supra-Local"|"Local"|null>,
+  "collection_level": <"Flagship"|"Strong"|"Moderate"|"Small"|null>,
   "confidence": <1-5>,
-  "score_notes": "<2-3 sentences explaining key scores, flag if Historical Context = 5 for Must-See consideration>"
+  "score_notes": "<2-3 sentences explaining key scores; flag if Historical Context = 5 for Must-See; note if HAT strength applies>"
 }
 
 If you cannot determine a score from the evidence, use null.

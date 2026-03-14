@@ -521,10 +521,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 3,
-      "priority_score": 14,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 11,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Speed Art Museum has a strong collection of contemporary art and significant pieces from various periods, but it lacks the depth to be considered nationally influential. Its historical significance and regional context are notable but do not reach national importance.",
       "score_last_verified": "2026-01-25",
@@ -536,7 +536,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Louisville' from open data; MRD: computed city_tier=1 for Louisville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:07:42Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "is_scoreable": true,
@@ -555,7 +555,10 @@
       "overall_quality_score": 14,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-ky-bowling-green-national-corvette-museum",
@@ -665,8 +668,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The collection includes a range of European and American artworks, with notable artists represented, indicating a strong regional presence but lacking canon-defining works. The museum's historical context and curatorial authority are modest, suggesting local significance.",
       "score_last_verified": "2026-01-25",
@@ -680,7 +683,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Lexington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.uky.edu/ArtMuseum: [WinError 10054] An existing connection was forcibly closed by the remote host; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:07:59Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "8592575716",
@@ -700,7 +703,10 @@
       "overall_quality_score": 11,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-ky-louisville-frazier-international-history-museum",
@@ -916,5 +922,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:08:25Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

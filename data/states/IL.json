@@ -110,10 +110,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 4,
       "modern_contemporary_strength": 4,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 4,
-      "priority_score": 7,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 4,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The evidence provides insufficient detail on specific permanent collections, strengths in Impressionism or Modern/Contemporary art, and the museum's historical context. However, the museum is recognized internationally, which supports a high reputation score.",
       "score_last_verified": "2026-01-25",
@@ -127,7 +127,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Chicago' from open data; MRD: computed city_tier=1 for Chicago; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:58:54Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3124433600",
@@ -144,7 +144,10 @@
       "content_generated_at": "2026-01-25T01:58:54Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "overall_quality_score": 20
+      "overall_quality_score": 20,
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-il-unknown-chicago-history-museum",
@@ -1717,8 +1720,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 13,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum focuses on self-taught and outsider art, providing a strong regional context for this niche. While its collection offers educational value, it lacks the depth found in more prominent institutions, and thus scores modestly in collection strength.",
       "score_last_verified": "2026-01-25",
@@ -1732,7 +1735,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Chicago; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:01:06Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3122439088",
@@ -1750,7 +1753,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-il-chicago-loyola-university-museum-of-art-luma",
@@ -1789,10 +1795,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 1,
       "modern_contemporary_strength": 1,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 26,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 21,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum primarily focuses on medieval, Renaissance, and Baroque art, which does not have significant Impressionist or modern/contemporary holdings. Its historical context score reflects its local relevance in understanding the spiritual aspects of art, but it primarily serves the immediate community.",
       "score_last_verified": "2026-01-25",
@@ -1806,7 +1812,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Chicago; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: non-HTML or empty response; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:01:16Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3129157600",
@@ -1824,7 +1830,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 3,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 1,
+      "effective_pas": 1,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-il-chicago-museum-of-contemporary-art",
@@ -1865,8 +1874,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 10,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 13,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Museum of Contemporary Art Chicago has a major scholarly collection of contemporary art, featuring important artists like Andy Warhol and Jasper Johns, fulfilling the criteria for a score of 4. Its historical significance in showcasing notable exhibitions and artists contributes to a solid regional context score of 3, while the strong curatorial programming elevates its ECA score to 4.",
       "score_last_verified": "2026-01-25",
@@ -1883,7 +1892,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q118142; Wikidata: inferred reputation=1 from sitelinks; Nominatim: matched 1 result; MRD: computed city_tier=1 for Chicago; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:01:27Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "3122802660",
@@ -1916,7 +1925,10 @@
       "planner_data_updated_at": "2026-01-24T21:52:22Z",
       "eca_score": 4,
       "collection_based_strength": 4,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-il-chicago-oriental-institute",
@@ -2101,8 +2113,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 16,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Museum of Contemporary Photography has a significant collection of contemporary photography with around 15,000 objects, establishing it as a strong regional player in the field. While it provides valuable context in the realm of photography, its historical relevance may lack the depth of a nationally significant institution.",
       "score_last_verified": "2026-01-25",
@@ -2114,7 +2126,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Columbia College; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:01:55Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "3126635554",
@@ -2133,7 +2145,10 @@
       "content_source": "openai",
       "overall_quality_score": 14,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-il-evanston-mary-and-leigh-block-museum-of-art-northwestern-university",
@@ -2525,8 +2540,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Smart Museum of Art has a permanent collection of over 17,000 objects but lacks specific evidence of significant Impressionist or Modern/Contemporary holdings. Its historical context score reflects a local interpretive role rather than a national significance.",
       "score_last_verified": "2026-01-25",
@@ -2540,7 +2555,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for University of Chicago; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:02:45Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "3129157600",
@@ -2558,7 +2573,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-il-urbana-spurlock-museum",
@@ -2703,5 +2721,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:03:10Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

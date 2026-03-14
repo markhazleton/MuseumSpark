@@ -246,8 +246,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 19,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 15,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Albuquerque Museum has a modest collection that emphasizes the art of the American Southwest, providing regional historical context but lacks depth in broader national or international terms. Its standing as a cultural institution in Albuquerque reflects a local significance, which is consistent with the prior assessments.",
       "score_last_verified": "2026-01-25",
@@ -262,7 +262,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Mexico' from open data; MRD: computed city_tier=3 for New Mexico; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:50:15Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(505) 243-7255",
@@ -422,7 +422,10 @@
       "content_source": "openai",
       "overall_quality_score": 8,
       "eca_score": 2,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-nm-unknown-bosque-redondo-memorial-at-fort-sumner",
@@ -1719,8 +1722,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 15,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "SITE Santa Fe has a modest collection that lacks depth and significance in the Modern and Contemporary art categories, thereby justifying a score of 2 for collection-based strength and modern contemporary strength. Its historical context is limited and more relevant to local narratives rather than offering a nationally significant perspective.",
       "score_last_verified": "2026-01-25",
@@ -1735,7 +1738,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Mexico' from open data; MRD: computed city_tier=3 for New Mexico; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:51:58Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(505) 989-1199",
@@ -1905,7 +1908,10 @@
       "content_source": "openai",
       "overall_quality_score": 14,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-nm-unknown-taos-art-museum-at-fechin-house",
@@ -1946,8 +1952,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 24,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 17,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Taos Art Museum at Fechin House is recognized for its regional importance, especially in the context of the historical Taos art colony, thus supporting a strong regional historical context score. Its collection is noted as coherent and of regional significance, while its reputation indicates it serves a wider community outside of just local presence.",
       "score_last_verified": "2026-01-25",
@@ -1961,7 +1967,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Taos' from open data; MRD: computed city_tier=3 for Taos; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:52:10Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "5757582690",
@@ -1979,7 +1985,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 6,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-nm-albuquerque-university-of-new-mexico-art-museum",
@@ -2508,8 +2517,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": 13,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 10,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Georgia O'Keeffe Museum has a strong focus on American modernism, particularly on the works of Georgia O'Keeffe. While it has valuable modern contemporary holdings, its overall permanence and impact on national scholarship is regional rather than national. The museum provides significant historical context regarding American modernism, justifying a score of 4 in that category.",
       "score_last_verified": "2026-01-25",
@@ -2524,7 +2533,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:53:13Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5059461001",
@@ -2544,7 +2553,10 @@
       "overall_quality_score": 14,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-nm-santa-fe-museum-of-indian-arts-culture",
@@ -2797,8 +2809,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 14,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The New Mexico Museum of Art offers a modest collection that is regionally relevant but lacks significant depth or prominence in national scholarship. Its historical context score indicates local interpretative value rather than a defining historical significance.",
       "score_last_verified": "2026-01-25",
@@ -2813,7 +2825,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Santa Fe; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:53:51Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "5054765072",
@@ -2831,7 +2843,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 11,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-nm-taos-harwood-museum-of-art-of-the-university-of-new-mexico",
@@ -2903,5 +2918,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T02:53:58Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

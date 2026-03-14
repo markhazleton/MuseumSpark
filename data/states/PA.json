@@ -750,8 +750,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Impressionist",
       "historical_context_score": 4,
-      "priority_score": 5,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 2,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Barnes Foundation has a canon-defining collection of Impressionist and Modernist works, making it a vital reference point for art scholarship. Its strong reputation at a national level, coupled with significant historical context, bolsters its importance in understanding art history.",
       "score_last_verified": "2026-01-25",
@@ -765,7 +765,7 @@
       "confidence": 5,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Philadelphia' from open data; MRD: computed city_tier=1 for Philadelphia; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:21:41Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "6106670290",
@@ -784,7 +784,10 @@
       "content_source": "openai",
       "overall_quality_score": 22,
       "collection_based_strength": 5,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 5,
+      "effective_pas": 5,
+      "outcome_tier": "Must-See"
     },
     {
       "museum_id": "usa-pa-unknown-carnegie-museums-of-pittsburgh",
@@ -3097,8 +3100,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": 11,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 4,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Philadelphia Museum of Art has a strong collection with notable modern and contemporary holdings, as well as a solid impressionist collection recognized regionally. It also provides essential historical context, especially for American art movements, warranting a high historical context score, though it does not have international acclaim.",
       "score_last_verified": "2026-01-25",
@@ -3112,7 +3115,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Philadelphia' from open data; MRD: computed city_tier=1 for Philadelphia; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:24:14Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "2157638100",
@@ -3132,7 +3135,10 @@
       "overall_quality_score": 16,
       "eca_score": 3,
       "collection_based_strength": 4,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-pa-unknown-philadelphia-s-magic-gardens",
@@ -3173,8 +3179,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 24,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 18,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "Philadelphia's Magic Gardens focuses on folk art, specifically the mosaics of Isaiah Zagar, and provides local cultural context but lacks a significant influence on broader art movements. Its collection strength is recognized regionally, evidenced by a prior assessment of 3, while the historical context score remains modest, rooted in local significance.",
       "score_last_verified": "2026-01-25",
@@ -3186,7 +3192,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Philadelphia' from open data; MRD: computed city_tier=1 for Philadelphia; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:24:24Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
       "phone": "2157330390",
@@ -3205,7 +3211,10 @@
       "content_source": "openai",
       "overall_quality_score": 7,
       "eca_score": 2,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-pa-unknown-powel-house",
@@ -4580,8 +4589,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 18,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 15,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Westmoreland Museum of American Art has a collection that provides contextual value within southwestern Pennsylvania but lacks notable depth and significance for broader scholarship. The museum serves primarily a local audience, contributing to its local reputation and historical context interpretation.",
       "score_last_verified": "2026-01-25",
@@ -4594,7 +4603,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Pennsylvania' from open data; MRD: computed city_tier=3 for Pennsylvania; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:25:50Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(724) 837-1500",
@@ -4743,7 +4752,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 10,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-pa-allentown-america-on-wheels-museum",
@@ -4999,8 +5011,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
       "historical_context_score": 3,
-      "priority_score": 14,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 13,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Michener Art Museum has a notable collection of Pennsylvania Impressionism and focuses on regionally significant American art, which supports a strong regional narrative. Its collections provide a meaningful context for understanding the Bucks County art scene, though it does not possess nationally significant holdings.",
       "score_last_verified": "2026-01-25",
@@ -5014,7 +5026,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Doylestown & New Hope; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:26:21Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "2153409800",
@@ -5034,7 +5046,10 @@
       "overall_quality_score": 14,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important"
     },
     {
       "museum_id": "usa-pa-elkins-park-beth-sholom-synagogue-visitor-center",
@@ -5144,10 +5159,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": null,
+      "primary_art": "Impressionist",
       "historical_context_score": 1,
-      "priority_score": null,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 17,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Susquehanna Art Museum has a modest collection that supports educational value but lacks significant depth or nationally recognized works. Its historical context score reflects a limited narrative focus, and the ECA score suggests a competent but not particularly influential curatorial program.",
       "score_last_verified": "2026-01-25",
@@ -5162,7 +5177,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Harrisburg; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.sqart.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:26:40Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "7172338668",
@@ -5181,7 +5196,10 @@
       "content_source": "openai",
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Impressionist"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-pa-lancaster-pennsylvania-guild-of-craftsmen",
@@ -5715,8 +5733,8 @@
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": 14,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 8,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The museum primarily focuses on 19th- and 20th-century American art, providing substantial historical context for American art but lacking major Impressionist or Modern/Contemporary works. Its collection is recognized but modest, indicating limited depth.",
       "score_last_verified": "2026-01-25",
@@ -5730,7 +5748,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Philadelphia; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:27:36Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "2159727600",
@@ -5748,7 +5766,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 13,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-pa-philadelphia-rosenbach-museum-library",
@@ -6002,8 +6023,8 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 4,
-      "priority_score": 22,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 10,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Woodmere Art Museum has a notable history and serves as a strong regional resource; however, its collection is primarily supportive rather than field-defining. The historical context score is elevated due to its significance in interpreting local art history, though it does not reach canon-level importance for broader movements.",
       "score_last_verified": "2026-01-25",
@@ -6018,7 +6039,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Philadelphia; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:28:10Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "phone": "2152487183",
@@ -6037,7 +6058,10 @@
       "content_source": "openai",
       "overall_quality_score": 7,
       "eca_score": 3,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 3,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-pa-pittsburgh-frick-art-and-historical-center",
@@ -6076,10 +6100,10 @@
       "public_transit_notes": null,
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
-      "primary_art": "Modern/Contemporary",
+      "primary_art": "Impressionist",
       "historical_context_score": 2,
-      "priority_score": 20,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 16,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Frick Art and Historical Center has a modest collection and serves as a local cultural institution but lacks significant national or international holdings in Impressionist or Modern/Contemporary art. Its historical importance is primarily local, given its focus on the life of Henry Clay Frick and the preservation of his estate.",
       "score_last_verified": "2026-01-25",
@@ -6094,7 +6118,7 @@
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Pittsburgh; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:28:20Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "4123710600",
@@ -6112,7 +6136,10 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "overall_quality_score": 8,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "collection_based_pas": 2,
+      "effective_pas": 2,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-pa-pittsburgh-mattress-factory",
@@ -6153,8 +6180,8 @@
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
-      "priority_score": 13,
-      "scoring_version": "phase2_v3_mrd2026",
+      "priority_score": 9,
+      "scoring_version": "v3.1.T",
       "scored_by": "gpt-4o-mini",
       "score_notes": "The Mattress Factory has a substantial collection of permanent installations by notable contemporary artists, showcasing its significance in site-specific installation art. Its role in Pittsburgh's revitalization contributes to a moderate historical context score, and its exhibitions reflect a strong curatorial authority in contemporary art.",
       "score_last_verified": "2026-01-25",
@@ -6167,7 +6194,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Pittsburgh; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:28:30Z",
+      "updated_at": "2026-03-14T19:41:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "4122313169",
@@ -6187,7 +6214,10 @@
       "overall_quality_score": 17,
       "eca_score": 4,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-pa-scranton-everhart-museum-of-natural-history-science-art",
@@ -6261,5 +6291,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-01-25T03:28:35Z"
+  "updated_at": "2026-03-14T19:41:19Z"
 }

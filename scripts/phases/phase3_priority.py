@@ -1,24 +1,47 @@
 #!/usr/bin/env python3
-"""Phase 3: Priority Score Calculation (MRD v2 Reboot).
+"""Phase 3: Priority Score and Outcome Tier Calculation (MRD v3.1.T).
 
 This module is the FOURTH phase of the rebooted MuseumSpark pipeline.
-It computes the deterministic priority score using the MRD formula.
+It computes the deterministic priority score and outcome tier using the MRD v3.1.T formula.
 
 IMPORTANT: This phase is DETERMINISTIC. No LLM involvement.
 The priority score is computed entirely from the scoring fields set in Phase 2.
 
-Priority Score Formula (from MRD Section 5):
-    Primary Art Strength = max(impressionist_strength, modern_contemporary_strength)
+Priority Score Formula (MRD v3.1.T Section 5):
 
-    Priority Score =
-        (6 - Primary Art Strength) * 3
-        + (6 - Historical Context Score) * 2
-        + Reputation Penalty (0-3)
-        + Collection Penalty (0-3)
-        - Dual Strength Bonus (2 if both >= 4)
-        - Nearby Cluster Bonus (1 if 3+ museums in city)
+    Step 1: Collection-Based PAS
+        Collection-Based PAS = MAX(impressionist_strength, modern_contemporary_strength, hat_strength)
 
-    Lower score = Higher priority for visiting
+    Step 2: Effective PAS
+        Effective PAS = MAX(Collection-Based PAS, eca_score)
+
+    Step 3: Dual-Strength Bonus
+        -2 if impressionist_strength >= 3 AND modern_contemporary_strength >= 3
+         0 otherwise
+        (HAT does not qualify; threshold is >=3 not >=4)
+
+    Step 4: Reputation Penalty
+        International = +0, National = +0, Regional = +2, Supra-Local = +3, Local = +4
+
+    Step 5: Collection Penalty
+        Flagship = +0, Strong = +0, Moderate = +2, Small = +4
+
+    Step 6: Priority Score
+        MAX(1,
+            (6 - Effective PAS) * 2
+          + (6 - Historical Context Score)
+          + Reputation Penalty
+          + Collection Penalty
+          + Dual-Strength Bonus
+        )
+
+Outcome Tier Assignment (MRD v3.1.T Section 6):
+    Must-See       — Collection-Based PAS = 5, OR Historical Context = 5
+    High Priority  — Priority Score <= 9; OR Flagship + PAS=4; OR ECA>=4; OR HC=4+Nat/Int rep
+    Regionally Important — Score 10-15 AND Regional rep AND strong art/HC reference
+    Detour         — Specialization signal AND (Effective PAS >= 3 OR HC >= 3)
+    Consider       — Proximity-dependent value
+    Background     — Default; limited travel gravity
 
 Design Principles:
     1. DETERMINISTIC: No LLM, no external API calls
@@ -28,16 +51,16 @@ Design Principles:
 
 Usage:
     # Compute priority scores for a state
-    python scripts/phase3_priority.py --state CO
+    python scripts/phases/phase3_priority.py --state CO
 
     # Compute for all states
-    python scripts/phase3_priority.py --all-states
+    python scripts/phases/phase3_priority.py --all-states
 
     # Dry run (show scores without saving)
-    python scripts/phase3_priority.py --state CO --dry-run
+    python scripts/phases/phase3_priority.py --state CO --dry-run
 
     # Force recalculation
-    python scripts/phase3_priority.py --state CO --force
+    python scripts/phases/phase3_priority.py --state CO --force
 """
 
 from __future__ import annotations
@@ -54,33 +77,72 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 STATES_DIR = PROJECT_ROOT / "data" / "states"
 RUNS_DIR = PROJECT_ROOT / "data" / "runs"
 
+SCORING_VERSION = "v3.1.T"
+
+# Reputation penalty mapping (MRD v3.1.T Section 5)
+REPUTATION_PENALTY: dict[str, int] = {
+    "International": 0,
+    "National": 0,
+    "Regional": 2,
+    "Supra-Local": 3,
+    "Local": 4,
+}
+
+# Legacy integer reputation penalty mapping (backwards compat)
+REPUTATION_PENALTY_INT: dict[int, int] = {
+    0: 0,  # International
+    1: 0,  # National
+    2: 2,  # Regional
+    3: 3,  # Supra-Local
+    4: 4,  # Local
+}
+
+# Collection penalty mapping (MRD v3.1.T Section 5)
+COLLECTION_PENALTY: dict[str, int] = {
+    "Flagship": 0,
+    "Strong": 0,
+    "Moderate": 2,
+    "Small": 4,
+}
+
+# Legacy integer collection penalty mapping (backwards compat)
+COLLECTION_PENALTY_INT: dict[int, int] = {
+    0: 0,  # Flagship
+    1: 0,  # Strong
+    2: 2,  # Moderate
+    3: 4,  # Small
+}
+
 
 @dataclass
 class ScoreBreakdown:
-    """Detailed breakdown of priority score calculation."""
+    """Detailed breakdown of priority score calculation (MRD v3.1.T)."""
     museum_id: str
     can_score: bool = False
 
     # Input values
     impressionist_strength: Optional[int] = None
     modern_contemporary_strength: Optional[int] = None
+    hat_strength: Optional[int] = None
     historical_context_score: Optional[int] = None
-    reputation: Optional[int] = None
-    collection_tier: Optional[int] = None
-    nearby_museum_count: Optional[int] = None
+    eca_score: Optional[int] = None
+    reputation_level: Optional[str] = None  # Primary: string
+    reputation_int: Optional[int] = None    # Legacy fallback
+    collection_level: Optional[str] = None  # Primary: string
+    collection_tier_int: Optional[int] = None  # Legacy fallback
 
-    # Computed values
-    primary_art_strength: Optional[int] = None
-    art_component: Optional[int] = None
-    history_component: Optional[int] = None
+    # Computed intermediate values
+    collection_based_pas: Optional[int] = None
+    effective_pas: Optional[int] = None
+    dual_strength_bonus: int = 0
+
+    # Penalty components
     reputation_penalty: Optional[int] = None
     collection_penalty: Optional[int] = None
-    dual_strength_bonus: int = 0
-    nearby_cluster_bonus: int = 0
 
     # Final scores
-    priority_score: Optional[int] = None  # Hidden gem score (lower = better)
-    overall_quality_score: Optional[int] = None  # Best museum score (higher = better)
+    priority_score: Optional[int] = None
+    outcome_tier: Optional[str] = None
     missing_fields: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
@@ -88,15 +150,20 @@ class ScoreBreakdown:
             "museum_id": self.museum_id,
             "can_score": self.can_score,
             "priority_score": self.priority_score,
-            "overall_quality_score": self.overall_quality_score,
+            "outcome_tier": self.outcome_tier,
             "breakdown": {
-                "primary_art_strength": self.primary_art_strength,
-                "art_component": self.art_component,
-                "history_component": self.history_component,
-                "reputation_penalty": self.reputation_penalty,
-                "collection_penalty": self.collection_penalty,
+                "impressionist_strength": self.impressionist_strength,
+                "modern_contemporary_strength": self.modern_contemporary_strength,
+                "hat_strength": self.hat_strength,
+                "collection_based_pas": self.collection_based_pas,
+                "eca_score": self.eca_score,
+                "effective_pas": self.effective_pas,
+                "historical_context_score": self.historical_context_score,
                 "dual_strength_bonus": self.dual_strength_bonus,
-                "nearby_cluster_bonus": self.nearby_cluster_bonus,
+                "reputation_level": self.reputation_level,
+                "reputation_penalty": self.reputation_penalty,
+                "collection_level": self.collection_level,
+                "collection_penalty": self.collection_penalty,
             },
             "missing_fields": self.missing_fields,
         }
@@ -128,25 +195,70 @@ def now_utc_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
+def resolve_reputation_penalty(museum: dict) -> tuple[Optional[str], Optional[int]]:
+    """Resolve reputation level and penalty from museum record.
+
+    Prefers reputation_level (string), falls back to legacy reputation (integer).
+
+    Returns:
+        (reputation_label, penalty) or (None, None) if unresolvable
+    """
+    # Prefer string reputation_level (v3.1.T)
+    rep_level = museum.get("reputation_level")
+    if rep_level and rep_level in REPUTATION_PENALTY:
+        return rep_level, REPUTATION_PENALTY[rep_level]
+
+    # Also check planner_reputation_level
+    planner_rep = museum.get("planner_reputation_level")
+    if planner_rep and planner_rep in REPUTATION_PENALTY:
+        return planner_rep, REPUTATION_PENALTY[planner_rep]
+
+    # Fall back to legacy integer reputation field
+    rep_int = museum.get("reputation")
+    if rep_int is not None and rep_int in REPUTATION_PENALTY_INT:
+        label = {0: "International", 1: "National", 2: "Regional", 3: "Supra-Local", 4: "Local"}.get(rep_int)
+        return label, REPUTATION_PENALTY_INT[rep_int]
+
+    return None, None
+
+
+def resolve_collection_penalty(museum: dict) -> tuple[Optional[str], Optional[int]]:
+    """Resolve collection level and penalty from museum record.
+
+    Prefers collection_level (string), falls back to legacy collection_tier (integer).
+
+    Returns:
+        (collection_label, penalty) or (None, None) if unresolvable
+    """
+    # Prefer string collection_level (v3.1.T)
+    coll_level = museum.get("collection_level")
+    if coll_level and coll_level in COLLECTION_PENALTY:
+        return coll_level, COLLECTION_PENALTY[coll_level]
+
+    # Also check planner_collection_level
+    planner_coll = museum.get("planner_collection_level")
+    if planner_coll and planner_coll in COLLECTION_PENALTY:
+        return planner_coll, COLLECTION_PENALTY[planner_coll]
+
+    # Fall back to legacy integer collection_tier field
+    coll_int = museum.get("collection_tier")
+    if coll_int is not None and coll_int in COLLECTION_PENALTY_INT:
+        label = {0: "Flagship", 1: "Strong", 2: "Moderate", 3: "Small"}.get(coll_int)
+        return label, COLLECTION_PENALTY_INT[coll_int]
+
+    return None, None
+
+
 def compute_priority_score(museum: dict) -> ScoreBreakdown:
-    """Compute priority score using MRD formula.
+    """Compute priority score using MRD v3.1.T formula.
 
-    From MRD Section 5:
-        Priority Score (lower = better):
-
-        Primary Art Strength = max(Impressionist Strength, Modern/Contemporary Strength)
-
-        Dual-Strength Bonus:
-        If Impressionist Strength >= 4 AND Modern/Contemporary Strength >= 4 -> subtract 2
-
-        Formula:
-        Priority Score =
-            (6 - Primary Art Strength) * 3
-            + (6 - Historical Context Score) * 2
-            + Reputation Penalty (0=International, 1=National, 2=Regional, 3=Local)
-            + Collection Penalty (0=Flagship, 1=Strong, 2=Moderate, 3=Small)
-            - Dual Strength Bonus (if applicable)
-            - Nearby Cluster Bonus (1 if 3+ museums in same city)
+    Formula:
+        Collection-Based PAS = MAX(impressionist_strength, modern_contemporary_strength, hat_strength)
+        Effective PAS = MAX(Collection-Based PAS, eca_score)
+        Dual-Strength Bonus = -2 if imp >= 3 AND mod >= 3, else 0
+        Reputation Penalty = International/National=0, Regional=2, Supra-Local=3, Local=4
+        Collection Penalty = Flagship/Strong=0, Moderate=2, Small=4
+        Priority Score = MAX(1, (6 - Effective PAS)*2 + (6 - HC) + Rep + Coll + Dual)
 
     Args:
         museum: Museum record with scoring fields
@@ -157,113 +269,150 @@ def compute_priority_score(museum: dict) -> ScoreBreakdown:
     museum_id = museum.get("museum_id", "")
     breakdown = ScoreBreakdown(museum_id=museum_id)
 
-    # Get input values
-    breakdown.impressionist_strength = museum.get("impressionist_strength")
-    breakdown.modern_contemporary_strength = museum.get("modern_contemporary_strength")
-    breakdown.historical_context_score = museum.get("historical_context_score")
-    breakdown.reputation = museum.get("reputation")
-    breakdown.collection_tier = museum.get("collection_tier")
-    breakdown.nearby_museum_count = museum.get("nearby_museum_count")
+    # Gather art strength inputs
+    breakdown.impressionist_strength = museum.get("impressionist_strength") or museum.get("planner_impressionist_strength")
+    breakdown.modern_contemporary_strength = museum.get("modern_contemporary_strength") or museum.get("planner_modern_contemporary_strength")
+    breakdown.hat_strength = museum.get("hat_strength") or museum.get("planner_traditional_strength")
+    breakdown.historical_context_score = museum.get("historical_context_score") or museum.get("planner_historical_context")
+    breakdown.eca_score = museum.get("eca_score") or museum.get("planner_exhibition_advantage")
 
-    # Check required fields for scoring
-    # Per MRD: We need at least art strength and reputation/collection to score
-    required_for_scoring = []
-
-    # Need at least one art strength
     imp = breakdown.impressionist_strength
     mod = breakdown.modern_contemporary_strength
-    if imp is None and mod is None:
-        breakdown.missing_fields.append("art_strength (both imp and mod are null)")
+    hat = breakdown.hat_strength
+    hc = breakdown.historical_context_score
+    eca = breakdown.eca_score
 
-    # Reputation and collection_tier are required
-    if breakdown.reputation is None:
-        breakdown.missing_fields.append("reputation")
-    if breakdown.collection_tier is None:
-        breakdown.missing_fields.append("collection_tier")
+    # Resolve reputation and collection
+    rep_label, rep_penalty = resolve_reputation_penalty(museum)
+    coll_label, coll_penalty = resolve_collection_penalty(museum)
 
-    # If missing critical fields, we cannot score
+    breakdown.reputation_level = rep_label
+    breakdown.reputation_penalty = rep_penalty
+    breakdown.collection_level = coll_label
+    breakdown.collection_penalty = coll_penalty
+
+    # Check required fields
+    if imp is None and mod is None and hat is None:
+        breakdown.missing_fields.append("art_strength (impressionist, modern_contemporary, and hat are all null)")
+    if rep_penalty is None:
+        breakdown.missing_fields.append("reputation_level (or legacy reputation)")
+    if coll_penalty is None:
+        breakdown.missing_fields.append("collection_level (or legacy collection_tier)")
+
     if breakdown.missing_fields:
         breakdown.can_score = False
         return breakdown
 
-    # Compute primary art strength
-    # Use 1 as default if one is null (conservative - assume weak)
-    imp_val = imp if imp is not None else 1
-    mod_val = mod if mod is not None else 1
-    breakdown.primary_art_strength = max(imp_val, mod_val)
+    # Step 1: Collection-Based PAS = MAX(imp, mod, hat)
+    art_values = [v for v in [imp, mod, hat] if v is not None]
+    breakdown.collection_based_pas = max(art_values) if art_values else 0
 
-    # Compute art component: (6 - Primary Art Strength) * 3
-    breakdown.art_component = (6 - breakdown.primary_art_strength) * 3
+    # Step 2: Effective PAS = MAX(Collection-Based PAS, ECA)
+    eca_val = eca if eca is not None else 0
+    breakdown.effective_pas = max(breakdown.collection_based_pas, eca_val)
 
-    # Compute history component: (6 - Historical Context Score) * 2
-    # Default to 3 (middle) if not scored
-    hist = breakdown.historical_context_score if breakdown.historical_context_score is not None else 3
-    breakdown.history_component = (6 - hist) * 2
+    # Step 3: Dual-Strength Bonus (-2 if both imp >= 3 AND mod >= 3)
+    imp_val = imp if imp is not None else 0
+    mod_val = mod if mod is not None else 0
+    if imp_val >= 3 and mod_val >= 3:
+        breakdown.dual_strength_bonus = -2
 
-    # Reputation penalty (already 0-3 from MRD)
-    breakdown.reputation_penalty = breakdown.reputation
+    # Step 4 & 5: Reputation + Collection penalties already resolved above
 
-    # Collection penalty (already 0-3 from MRD)
-    breakdown.collection_penalty = breakdown.collection_tier
+    # Step 6: Historical context (default to 0 if null — no history = no penalty)
+    hc_val = hc if hc is not None else 0
 
-    # Dual strength bonus: 2 if both >= 4
-    if imp is not None and mod is not None and imp >= 4 and mod >= 4:
-        breakdown.dual_strength_bonus = 2
-
-    # Nearby cluster bonus: 1 if 3+ museums in same city
-    nearby = breakdown.nearby_museum_count or 0
-    if nearby >= 3:
-        breakdown.nearby_cluster_bonus = 1
-
-    # Compute final score
-    breakdown.priority_score = (
-        breakdown.art_component
-        + breakdown.history_component
+    # Priority Score = MAX(1, (6 - Effective PAS)*2 + (6 - HC) + Rep + Coll + Dual)
+    raw_score = (
+        (6 - breakdown.effective_pas) * 2
+        + (6 - hc_val)
         + breakdown.reputation_penalty
         + breakdown.collection_penalty
-        - breakdown.dual_strength_bonus
-        - breakdown.nearby_cluster_bonus
+        + breakdown.dual_strength_bonus
     )
-
-    # Compute overall quality score (higher = better)
-    # This inverts the logic to reward strong collections and reputation
-    # Quality = Art Strength + Reputation + Collection Tier + Bonuses
-    breakdown.overall_quality_score = (
-        breakdown.primary_art_strength * 3  # Higher art strength = better
-        + (3 - breakdown.reputation)  # 0=International gets 3 points, 3=Local gets 0
-        + (3 - breakdown.collection_tier)  # 0=Flagship gets 3 points, 3=Small gets 0
-        + breakdown.dual_strength_bonus  # Add bonus for excellence in both
-    )
-
+    breakdown.priority_score = max(1, raw_score)
     breakdown.can_score = True
     return breakdown
 
 
-def derive_primary_art(museum: dict, breakdown: ScoreBreakdown) -> Optional[str]:
-    """Derive primary_art field from strengths.
+def assign_outcome_tier(museum: dict, breakdown: ScoreBreakdown) -> str:
+    """Assign Outcome Tier per MRD v3.1.T Section 6 (deterministic).
 
-    From MRD Section 4:
-        Primary Art Focus: String: "Impressionist" or "Modern/Contemporary"
-        Chosen as the stronger of the two strengths
+    Args:
+        museum: Museum record
+        breakdown: Computed score breakdown
+
+    Returns:
+        Outcome tier string
     """
-    imp = breakdown.impressionist_strength
-    mod = breakdown.modern_contemporary_strength
+    cbp = breakdown.collection_based_pas or 0
+    hc = breakdown.historical_context_score or 0
+    ps = breakdown.priority_score or 99
+    eca = breakdown.eca_score or 0
+    rep = breakdown.reputation_level or "Local"
+    coll = breakdown.collection_level or "Small"
+    eff_pas = breakdown.effective_pas or 0
 
-    if imp is None and mod is None:
+    # Must-See: Collection-Based PAS = 5, OR HC = 5
+    if cbp >= 5 or hc >= 5:
+        return "Must-See"
+
+    # High Priority: PS <= 9, OR Flagship+PAS=4, OR ECA>=4, OR HC=4+Nat/Int
+    if ps <= 9:
+        return "High Priority"
+    if coll == "Flagship" and cbp >= 4:
+        return "High Priority"
+    if eca >= 4:
+        return "High Priority"
+    if hc >= 4 and rep in ("National", "International"):
+        return "High Priority"
+
+    # Regionally Important: Score 10-15 AND Regional AND art/HC reference
+    if 10 <= ps <= 15 and rep == "Regional":
+        if eff_pas in (3, 4) or hc in (3, 4):
+            return "Regionally Important"
+
+    # Detour and Consider: check for specialization signals in additional_labels or planner fields
+    is_specialized = _is_specialized(museum)
+    if is_specialized and (eff_pas >= 3 or hc >= 3):
+        return "Detour"
+
+    if is_specialized or eff_pas >= 2 or hc >= 2 or cbp >= 2:
+        return "Consider"
+
+    # Background: default
+    return "Background"
+
+
+def _is_specialized(museum: dict) -> bool:
+    """Check if museum has specialization signals for Detour eligibility."""
+    labels = (museum.get("additional_labels") or museum.get("planner_consider_label") or "").lower()
+    specialized_keywords = [
+        "specialized art site",
+        "specialized cultural site",
+        "you won't see this again",
+        "you wont see this again",
+        "kunsthalle",
+    ]
+    return any(kw in labels for kw in specialized_keywords)
+
+
+def derive_primary_art(breakdown: ScoreBreakdown) -> Optional[str]:
+    """Derive primary_art field from the strongest collection axis."""
+    candidates = []
+    if breakdown.impressionist_strength is not None:
+        candidates.append(("Impressionist", breakdown.impressionist_strength))
+    if breakdown.modern_contemporary_strength is not None:
+        candidates.append(("Modern/Contemporary", breakdown.modern_contemporary_strength))
+    if breakdown.hat_strength is not None:
+        candidates.append(("Historical Art Traditions", breakdown.hat_strength))
+
+    if not candidates:
         return None
 
-    imp_val = imp if imp is not None else 0
-    mod_val = mod if mod is not None else 0
-
-    if imp_val > mod_val:
-        return "Impressionist"
-    elif mod_val > imp_val:
-        return "Modern/Contemporary"
-    elif imp_val == mod_val and imp_val > 0:
-        # Tie - default to Modern/Contemporary (more common focus)
-        return "Modern/Contemporary"
-
-    return None
+    # Return the category with the highest strength
+    best = max(candidates, key=lambda x: x[1])
+    return best[0] if best[1] > 0 else None
 
 
 def process_state(
@@ -325,22 +474,27 @@ def process_state(
 
         stats.scored += 1
 
+        # Assign outcome tier
+        outcome_tier = assign_outcome_tier(museum, breakdown)
+
         # Derive primary_art
-        primary_art = derive_primary_art(museum, breakdown)
+        primary_art = derive_primary_art(breakdown)
 
         # Print score breakdown
         print(f"  [{idx}/{total}] {museum_id}")
-        print(f"           Hidden Gem: art={breakdown.art_component} + hist={breakdown.history_component} + rep={breakdown.reputation_penalty} + tier={breakdown.collection_penalty} - dual={breakdown.dual_strength_bonus} - cluster={breakdown.nearby_cluster_bonus}")
-        print(f"           = PRIORITY {breakdown.priority_score} (lower=better hidden gem)")
-        print(f"           Overall Quality: {breakdown.overall_quality_score} (higher=better overall)")
+        print(f"           cbPAS={breakdown.collection_based_pas} effPAS={breakdown.effective_pas} HC={breakdown.historical_context_score}")
+        print(f"           rep={breakdown.reputation_level}(+{breakdown.reputation_penalty}) coll={breakdown.collection_level}(+{breakdown.collection_penalty}) dual={breakdown.dual_strength_bonus}")
+        print(f"           => PRIORITY {breakdown.priority_score} | TIER: {outcome_tier}")
 
         if not dry_run:
-            # Apply scores to museum record (preserves all existing fields including planner_* fields from Phase 1.9)
+            # Apply scores to museum record
+            museum["collection_based_pas"] = breakdown.collection_based_pas
+            museum["effective_pas"] = breakdown.effective_pas
             museum["priority_score"] = breakdown.priority_score
-            museum["overall_quality_score"] = breakdown.overall_quality_score
+            museum["outcome_tier"] = outcome_tier
             if primary_art:
                 museum["primary_art"] = primary_art
-            museum["scoring_version"] = "mrd_v2"
+            museum["scoring_version"] = SCORING_VERSION
             museum["updated_at"] = now_utc_iso()
             changes_made = True
 
@@ -358,7 +512,7 @@ def process_state(
 def main() -> int:
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Phase 3: Priority Score Calculation",
+        description="Phase 3: Priority Score and Outcome Tier Calculation (MRD v3.1.T)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -394,7 +548,8 @@ def main() -> int:
     run_dir.mkdir(parents=True, exist_ok=True)
 
     print("=" * 60)
-    print("Phase 3: Priority Score Calculation")
+    print("Phase 3: Priority Score and Outcome Tier Calculation")
+    print(f"Version: MRD {SCORING_VERSION}")
     print("=" * 60)
     print(f"States: {', '.join(state_codes)}")
     print(f"Force: {args.force}")
@@ -421,6 +576,7 @@ def main() -> int:
     # Save run summary
     summary = {
         "run_id": run_id,
+        "scoring_version": SCORING_VERSION,
         "states": state_codes,
         "force": args.force,
         "dry_run": args.dry_run,
