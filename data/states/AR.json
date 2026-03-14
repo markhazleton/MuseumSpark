@@ -13,14 +13,14 @@
       "website": "http://www.fsram.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "5 pm Address 1601 Rogers Avenue",
+      "street_address": "1601 Rogers Ave, Fort Smith, AR 72901, USA",
       "address_line2": null,
       "postal_code": "72901",
-      "latitude": 35.3814555,
-      "longitude": -94.4154894,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.3814597,
+      "longitude": -94.4154387,
+      "place_id": "ChIJQSTbaplMyocRi1JLM79AmLw",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -44,9 +44,9 @@
       "historical_context_score": 2,
       "priority_score": 16,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a modest collection that provides contextual or educational value, but lacks depth or notable significance. Its historical context score reflects a local relevance tied to Fort Smith's development, but it does not meet the threshold for national importance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no information about the museum's permanent collection or interpretive approach, so collection-strength and historical-context scores cannot be determined. Based on the institution being a regional art museum in a mid-sized city with no additional prominence signals in the evidence, it is most reasonably scored as local in reputation with a small-to-limited collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -54,15 +54,16 @@
         "openstreetmap",
         "museums_csv",
         "llm_scoring",
-        "museum_planner_spreadsheet"
+        "museum_planner_spreadsheet",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4797842787",
+      "phone": "(479) 784-2787",
       "is_scoreable": true,
       "content_summary": "Fort Smith Regional Art Museum is a welcoming, community-driven stop for art lovers exploring western Arkansas. With a modest but thoughtfully presented lineup of rotating exhibitions, RAM offers a chance to see contemporary and regional voices up close—often with an emphasis on creativity, learning, and hands-on discovery. It’s the kind of museum where you can linger, talk about what you’re seeing, and leave inspired—especially if you enjoy smaller institutions that feel connected to the place and the people who make its art scene thrive.",
       "content_description": "**Fort Smith Regional Art Museum (RAM)** is Fort Smith’s hub for seeing art in motion: a locally rooted institution that prioritizes **learning, inspiration, and creative expression** for visitors of all ages. Rather than relying on a vast permanent collection, RAM’s strength is its **rotating exhibition program**, which keeps the galleries feeling fresh—ideal for travelers who like to check what’s on view and return for something new. Expect a mix that often spotlights **Arkansas and regional artists** alongside broader contemporary work, creating a sense of place without feeling insular.\n\nArchitecturally, RAM reads as a modern civic space designed for accessibility and curiosity: clean gallery lines, flexible rooms suited to changing installations, and an overall atmosphere that encourages looking closely. The museum’s mission shows up in the visitor experience—exhibitions are typically complemented by interpretive materials and opportunities to engage with process, making it especially rewarding for art enthusiasts who enjoy understanding how a work is made, not just what it depicts.\n\nFor travelers, the pleasure here is intimacy: you can take your time with individual pieces, revisit a favorite wall, and often catch programming that bridges viewing with doing—workshops, talks, and family-friendly studios. If your museum itinerary balances major institutions with smaller discoveries, RAM offers that satisfying, local pulse—an art stop that feels both approachable and purposeful, with a focus on *contemporary practice* and community connection.",
@@ -93,7 +94,148 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 3,
-      "outcome_tier": "Detour"
+      "outcome_tier": "Detour",
+      "website_google": "https://fsram.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 238,
+      "google_reviews": [
+        {
+          "author_name": "Juanita Landry",
+          "author_url": "https://www.google.com/maps/contrib/106185712121892629692/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXyUMBRfeX3c6K4uXzIBv7sUK5ewT-T_oxZ0btCJbQkKG0btfMa=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Great fun for the Ft Smith Fall Festival.  Kids got goodie bags and did a scavenger hunt.  The art was beautiful and some was touchable for the kids.",
+          "time": 1759608653,
+          "translated": false
+        },
+        {
+          "author_name": "Hannah T.",
+          "author_url": "https://www.google.com/maps/contrib/113197456679220742518/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK3gjbK95xqK3CybmTcjNLRhvNkqGqAqDgJUdTp6xQ6U8Z8Xg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "My kids and I go here every couple of months and it never disappoints. Lot of classes and activities.",
+          "time": 1761634055,
+          "translated": false
+        },
+        {
+          "author_name": "Jessiii",
+          "author_url": "https://www.google.com/maps/contrib/101649182269145937343/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiNidNqKdjgrPp6WcoCju6tUyALlUgGpFgt411fsoFfjrxPdr5=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Hands down the best art museum I’ve ever been to! Amazing art and nice calm atmosphere. Drove over an hour to see it and it was well worth the drive. I highly recommend seeing it if you have some free time in the area. I even bought some stunning art from their gift shop!",
+          "time": 1755436838,
+          "translated": false
+        },
+        {
+          "author_name": "Bethany Williams",
+          "author_url": "https://www.google.com/maps/contrib/112898149699636746169/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIYPAEfoke4Mx25juPQJNR1ycahiD2FrG8wAxYtutCDv4YYgQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "My children and I really liked this place. It was peaceful.",
+          "time": 1766193245,
+          "translated": false
+        },
+        {
+          "author_name": "Kevin Walburn",
+          "author_url": "https://www.google.com/maps/contrib/115442618268661720395/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWxQSA3TvqadPrcPL7fIiF8Y8tx5504gGRTan3rjvP1tF2y4m0T=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This was an awesome place to visit. We went on a Saturday and they had a free craft session in the basement. I think it's only on Saturday mornings. Great exhibits and a fun front desk employee. All around, a great experience.",
+          "time": 1762664741,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ar-unknown-the-momentary",
@@ -105,14 +247,14 @@
       "website": "https://themomentary.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "507 SE E St",
+      "street_address": "507 SE E St, Bentonville, AR 72712, USA",
       "address_line2": null,
       "postal_code": "72712",
-      "latitude": 36.3666427,
-      "longitude": -94.2025546,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 36.3665519,
+      "longitude": -94.2026659,
+      "place_id": "ChIJhx-8ypwayYcRrNWIuYSM7yg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -144,12 +286,13 @@
         "official_website",
         "https://themomentary.org",
         "openstreetmap",
-        "museum_planner_spreadsheet"
+        "museum_planner_spreadsheet",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T00:54:28Z",
+      "updated_at": "2026-03-14T19:49:22Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -177,7 +320,149 @@
       "planner_reputation_level": "National",
       "planner_collection_level": "Small",
       "planner_notes": "The Momentary operates as a kunsthalle-style contemporary art and performance space affiliated with Crystal Bridges. Its focus is on temporary installations, time-based media, and live performance. Programming prioritizes experimentation and new artistic production.",
-      "planner_data_updated_at": "2026-01-24T21:52:22Z"
+      "planner_data_updated_at": "2026-01-24T21:52:22Z",
+      "phone": "(479) 367-7500",
+      "website_google": "https://themomentary.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2000"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 8:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 1233,
+      "google_reviews": [
+        {
+          "author_name": "Madeline Elaine Stone",
+          "author_url": "https://www.google.com/maps/contrib/106321622785685021606/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXI8kTxmgHjNhksoI0VXNWXFHUD6IcWCygNTN10x3iVyWxcY2Q=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Had so much fun performing at The Momentary! Love the intimate atmosphere curated by Spida and DJ Dsewell and really enjoyed performing with so many amazing local artists. Working with the Momentary crew was seamless and also such a pleasure.\n\nWhether you want to visit the current exhibition, walk the grounds, see a live show or enjoy amazing sunset views over a drink at the Tower Bar, The Momentary is THE spot!",
+          "time": 1762903582,
+          "translated": false
+        },
+        {
+          "author_name": "Ashley Slocum",
+          "author_url": "https://www.google.com/maps/contrib/100335290481804247721/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXr4rMruQwFmZtzhZojGl0jOUytoOIzrt1V9djZz0JgO35LcDbf=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Momentary in Bentonville is an incredible space for contemporary art and culture. The exhibits are always engaging and thought-provoking, and the building itself is architecturally stunning. The staff is friendly and knowledgeable, and the atmosphere is welcoming. It’s a must-visit for art lovers, offering a unique and inspiring experience every time. We attended our first concert there this fall watching Blues Traveler and the location and venue is big enough for a decent number of people to attend but small enough to have a great experience with your friends.",
+          "time": 1765965643,
+          "translated": false
+        },
+        {
+          "author_name": "Alexis Jaime",
+          "author_url": "https://www.google.com/maps/contrib/109723404939212500261/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUV-gzVxHK90oS8fBoyJTBoYcXaImSyL4Mzu4jBREMQfsJqcyu7=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Free, easy parking, can take lidded drinks inside the exhibit. Onyx inside has drinks and comfy seating. They have great festivals and exhibits here! (Bar is uber pricey, venue is ok!).",
+          "time": 1765810392,
+          "translated": false
+        },
+        {
+          "author_name": "Cheyenne McCausland",
+          "author_url": "https://www.google.com/maps/contrib/105214807410325508102/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIR9BYI0C_ZBw5NZlQ3hRLqWO8RKh4NLBkYAXMCVEvVuh1DFg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "I’m from out of town and have now been to The Momentary 3 times for live shows. I’m not exaggerating when I say the organization is some of the best I have ever experienced for concert entry! The space itself is nice with options for food, drink, and to just hang out inside. The staff are all amazing, but I want to give a special shout out to Meghan - she’s a real one! She remembered me from when I was there months ago, helped me and my friends get proper check in, and even brought me bandaids within a couple minutes when I asked while she was busy. I hope to go back there for more events, music, or food from Onyx. Seriously cannot recommend this place enough!",
+          "time": 1772126292,
+          "translated": false
+        },
+        {
+          "author_name": "Cami Ward",
+          "author_url": "https://www.google.com/maps/contrib/102020715442988199346/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXiFBGLNTEjQtoI5VDAiff9h40B7VW_DTDagy5salujXP6qSlQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "What an amazing space. We saw Best in Show which focused on Animal Photography. Everything was thoughtfully curated, easy to navigate, and it was such a good experience. So many great venues in this spot as well. If you love art and music, you need to check it out! General exhibit admission is free of charge. What are you waiting for!",
+          "time": 1741813046,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ar-bentonville-crystal-bridges-museum-of-contemporary-american-art",
@@ -189,14 +474,14 @@
       "website": "http://crystalbridges.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "600 Museum Way, Bentonville, AR 72712, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 36.38053,
-      "longitude": -94.19285,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "72712",
+      "latitude": 36.3818542,
+      "longitude": -94.2026525,
+      "place_id": "ChIJW5IzxBQayYcROxRb5FkDJq0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -215,29 +500,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 1,
-      "modern_contemporary_strength": 2,
-      "primary_art": "Historical Art Traditions",
+      "modern_contemporary_strength": 4,
+      "primary_art": "Modern/Contemporary",
       "historical_context_score": 3,
       "priority_score": 5,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a modest collection focusing on American art but does not excel in depth or rarity. Its historical context is strong at a regional level, contributing to the broader narrative of American art, but it is not nationally influential.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "From the name and Wikipedia summary, the museum focuses on American art with a contemporary emphasis, supporting a strong Modern/Contemporary score. No evidence here indicates dedicated Impressionist holdings. As a purpose-built American art museum opened in 2011, it likely provides some chronological/historical framing for American art, but the evidence does not confirm depth of interpretation; reputation and tier are estimated as strong regional based on prominence and single-site signals.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://crystalbridges.org",
         "museums_csv",
         "llm_scoring",
-        "museum_planner_spreadsheet"
+        "museum_planner_spreadsheet",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "4794185700",
+      "phone": "(479) 418-5700",
       "is_scoreable": true,
       "content_summary": "Set in the woods of Bentonville, Crystal Bridges Museum of Contemporary American Art pairs a surprising range of American art with one of the most memorable museum settings in the region. Come for iconic works by artists like Georgia O’Keeffe, Norman Rockwell, and Andy Warhol, and stay for the experience: galleries connected by forest trails, water views, and architecture that feels integrated with the landscape. It’s an art-focused getaway that’s as restorative as it is inspiring.",
       "content_description": "**Crystal Bridges Museum of Contemporary American Art** is one of Arkansas’s most compelling cultural destinations—an art museum designed for both deep looking and easy wandering. Founded by philanthropist Alice Walton, the museum has become a regional anchor for **learning and creative expression**, pairing approachable storytelling with ambitious ambitions for American art. For travelers, it’s an ideal “museum plus nature” day: you can move from major canvases to shaded paths in minutes, with the landscape acting like a changing, living gallery.\n\nInside, the collection spotlights key chapters of American art, from *American Modernism* and *Regionalism* to *Pop* and contemporary practices. Visitors often seek out celebrated names such as **Georgia O’Keeffe**, **Norman Rockwell**, **Andy Warhol**, and **Mark Rothko**, encountering works that make the history of American visual culture feel immediate rather than academic. Exhibitions and interpretive materials are geared toward a wide audience—excellent for art lovers who want rigor without dryness, and for mixed groups where not everyone arrives with the same level of art-historical context.\n\nThe museum’s architectural identity is inseparable from the visit: **Moshe Safdie’s** design places curved pavilions around a spring-fed pond, with generous glazing that frames the Ozark setting like a series of composed views. Plan time for the outdoor trails and sculpture installations; the transitions between galleries and nature are part of the museum’s signature rhythm. Practical bonus for travelers: the campus atmosphere makes lingering easy—return to a favorite room, catch a program, then end with a slow walk back through the trees.",
@@ -267,9 +553,150 @@
       "planner_data_updated_at": "2026-01-24T21:52:22Z",
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 3,
+      "collection_based_pas": 4,
       "effective_pas": 5,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "https://crystalbridges.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1800"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 6:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 8:00 PM",
+          "Friday: 11:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 15322,
+      "google_reviews": [
+        {
+          "author_name": "Maura",
+          "author_url": "https://www.google.com/maps/contrib/110419305604194386711/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXiRF4YPV-CA11XT1zWZ03hf6qpIbHkFnT04dYrQg-x0I6Pq7Xd9g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "The Crystal Bridges Art Museum in Bentonville, Arkansas is one of my top 5 favorite art museums. It is set in a beautiful wooded area with a Frank Lloyd Wright home, and a wonderful art trail that is also a great hiking and biking trail for visitors and locals. There were moms with baby strollers, friend groups, solo bicyclists and walkers on the trail when I was here. I loved seeing all the interesting sculptures, both looming over you (like the big spider sculpture) or tucked away like little easter eggs to be noticed. I especially liked the Redsticks horse sculpture I found along the trail.\nThe architectural design of the museum is oustanding. I often find myself lost and confused in big art museums, but this museum with so many windows and natural light, along with staff in each gallery, it was very easy to find my way and enjoy the journey. The art selection i eclectic with lots of old classics, including two recognizable George Washington portraits, Grandma Moses art folk art, a niceGeorgia O'Keefe painting, sculpture, modern art, so much to see.\nI enjoyed the artist self-portrait gallery, where artists from different eras and mediums portrayed themselves, in very different ways. There was lots of comfortable seating arouind for people who want to take a break or just sit and soak up all the wonderful art.\nThe dining area is across from the gift shop was a lovely space. It had a more expensive area, which I did not visit, and a less expensive counter with snacks and drinks. I had a very tasty cranberry scone, which they warmed up for me and a cold drink. All. very reasonably priced. I really enjoyed my visit to the art museum and I would definitely return if I visited Bentonville again.",
+          "time": 1771509916,
+          "translated": false
+        },
+        {
+          "author_name": "Annabelle Engelbart",
+          "author_url": "https://www.google.com/maps/contrib/106646552663100536959/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUv9N2PuAnPAM2sr5j35aB3Fu0q4vwIbyAQSqsAkJHvySGtIkCV=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "I don’t want to write a whole paragraph but I LOVE this museum! It has a huge selection of modern/contemporary and “classical” paintings. Gorgeous outdoor trails with art and gardens along the way. They typically have special exhibitions that you can pay to access, but the museum general admission is completely free!! There is also a delicious restaurant and a coffee bar. Additionally, there’s a large library upstairs full of art history and books. Would HIGHLY recommend this place to anyone!",
+          "time": 1772399721,
+          "translated": false
+        },
+        {
+          "author_name": "1 Humble1 Beginning in Monterey",
+          "author_url": "https://www.google.com/maps/contrib/109594339334342433700/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWvt4LNUi2pxhJSWKP9sXv7bfGRsY8aSA37F3xKnPHixYaZsXI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Wonderful museum and activities for all ages. Really enjoyed the coffee shop & gift shop! Plan on spending a whole bunch of time there taking in all of the art and installations. Bring the whole family since there is something for everyone!\nHere's the best part, admission is free 😁!!!!",
+          "time": 1769524888,
+          "translated": false
+        },
+        {
+          "author_name": "Jarrett Kirby",
+          "author_url": "https://www.google.com/maps/contrib/110440881950777867561/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWu-JobJuOrF2ueHUXFDSgkHP8Q0D_Iv-D5bXWqyppdUw9scKOTJg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I don't want to write a book, but man, this place is prhmeonal. Between classic art, contemporary pieces, and modern sculpture... you do not want to miss this FREE museum if you're in the area.\n\nThere are some ticketed / paid seasonal parts we didn't visit while we were there, but it was just boring sports stuff so kinda silly.\n\nThere's a sandwich shop and a mini bar, so you can take a boozy brunch break between wings! And that's the thing, there were MORE WINGS that weren't even open while we were there. It still took us about an hour and a half to walk the majority of what was available, including a little bit of the grounds.\n\nYou can get guided tours or self-tour, and there's a section to make art, too! Highly recommended for people and kids of all ages. The complex itself is a work of art - y'know, the crystal bridges themselves - so definitely make time for this place.\n\nOnly feedback is please make entry signage easier to see, you have to go downstairs several floors to access the museum 😂",
+          "time": 1766604628,
+          "translated": false
+        },
+        {
+          "author_name": "Christopher Garza",
+          "author_url": "https://www.google.com/maps/contrib/115862959751536788816/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVSVa8Ohc6FHTqDweHayY9g8EqI9Ef20HBeK3h4uRRGnVNOySar=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Beautiful museum and mostly free. They really had some great art and I wanted to take more pictures but I was trying not to disturb everyone else. It truly was a great place to see some great works. I didn't even make it to the house but the gallery was wonderful.",
+          "time": 1771472566,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ar-el-dorado-south-arkansas-arts-center",
@@ -281,14 +708,14 @@
       "website": "http://www.saac-arts.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "110 E 5th St, El Dorado, AR 71730, USA",
       "address_line2": null,
       "postal_code": "71730",
-      "latitude": 33.2224381,
-      "longitude": -92.6627602,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 33.2224204,
+      "longitude": -92.6626611,
+      "place_id": "ChIJrc2ggHwaMoYR5oyGp-KP-w4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -312,23 +739,24 @@
       "historical_context_score": 2,
       "priority_score": 22,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The South Arkansas Arts Center has limited exhibition programming and a modest collection, suggesting a supportive but not substantial role in the broader art landscape. It provides educational value primarily to the local community, reflected in its historical context score.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence identifies SAAC as a multi-cultural arts center in a small city, with no provided details about a permanent collection or specific strengths (e.g., Impressionism or Modern/Contemporary). Given the local context and lack of collection evidence, it is best assessed as a primarily local institution with a likely small or limited permanent collection.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "museums_csv",
         "llm_scoring",
-        "museum_planner_spreadsheet"
+        "museum_planner_spreadsheet",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8625474",
+      "phone": "(870) 862-5474",
       "is_scoreable": true,
       "content_summary": "In the heart of El Dorado, the South Arkansas Arts Center is a welcoming hub for seeing and making art—an ideal stop for travelers who love local creativity as much as big-name masterworks. Expect rotating exhibitions that spotlight Arkansas artists and regional voices, plus a lively calendar of classes, performances, and community events. It’s a museum experience that feels personal: you can view contemporary work in the galleries, then step into studios where art is actively being taught, discussed, and made.",
       "content_description": "Set in downtown El Dorado, the **South Arkansas Arts Center** is less a “trophy collection” museum and more a living arts campus—an inviting place where **learning, inspiration, and creative expression** are at the center of the visit. For art lovers on the road, that makes it especially rewarding: the galleries function as a rotating window onto the region’s visual culture, often emphasizing Arkansas-based artists and contemporary practices. While the permanent holdings are modest, the programming-driven approach means there’s typically something new to see, from juried shows and student exhibitions to community-curated projects that reflect South Arkansas’s creative ecosystem.\n\nArchitecturally, the pleasure here comes from the museum’s **purpose-built feel as a community arts center**: you’re moving between exhibition spaces and areas dedicated to instruction and events, reinforcing the sense that art is not only displayed but actively cultivated. That emphasis on process is part of the appeal—after spending time with a show, you may find yourself drawn into the educational heartbeat of the building, where classes and workshops support skills from drawing and painting to other studio-based practices.\n\nPlan your visit with an enthusiast’s mindset: check the exhibition schedule in advance, arrive ready for discovery, and leave space for the “extra” that makes SAAC distinctive—public programs, talks, and performances that broaden the experience beyond the walls of the gallery. In a region where major museums can be far apart, **South Arkansas Arts Center** offers a concentrated, human-scale encounter with art as a shared local language.",
@@ -360,7 +788,138 @@
       "collection_based_strength": 2,
       "collection_based_pas": 1,
       "effective_pas": 1,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "https://saac-arts.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.9,
+      "google_reviews_count": 30,
+      "google_reviews": [
+        {
+          "author_name": "Kimber Decor",
+          "author_url": "https://www.google.com/maps/contrib/107697868102300254155/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXeNDBCEbBdQ1of2CFL988U_OkVB6EkBxHFYOR3Udu--kuicYFgwQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Absolutely loved working as a vendor for an event at the arts center. Professional and Friendly staff . Everyone that was onsite with the Arts center was extremely helpful.  Clean atmosphere.  Easy load in and load out. Definitely will recommend the space for future events. Absolutely love all the upgrades and classy decor designs.",
+          "time": 1770741485,
+          "translated": false
+        },
+        {
+          "author_name": "Sara York",
+          "author_url": "https://www.google.com/maps/contrib/113735718357672247031/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9Y2kSekfFakaX443aqLLJNf_1uBl6Zxbyb_VDheVcT8CI1kAk=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Visited the arts center for the Gayle Hurley exhibit. Beautifully done.\nVery nice facility.\n\nI also attended a play at the theater in the arts center, “The Play That Goes Wrong”.  I laughed from beginning to end.  The cast was wonderful.",
+          "time": 1744763416,
+          "translated": false
+        },
+        {
+          "author_name": "Mary Scott Post",
+          "author_url": "https://www.google.com/maps/contrib/110272715924534896525/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhntcb4_XgOnqWUGflWYVEa98ZpNoxbj5lEKS_Z39Ck8V9jtJx=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "We visited & viewed it art. There was wonderful art there by local people & many children's art. Definitely worth a visit.",
+          "time": 1746579472,
+          "translated": false
+        },
+        {
+          "author_name": "TM",
+          "author_url": "https://www.google.com/maps/contrib/113613783850670545429/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU4pmg3AMS9f3iUhPGT1e398vZnnI9tax4Kgrf_nkOAT3DX6dnOBg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Art center is pretty nice. Plays and musicals held here are great!",
+          "time": 1545260227,
+          "translated": false
+        },
+        {
+          "author_name": "Doug Wood",
+          "author_url": "https://www.google.com/maps/contrib/109347331879924972251/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVoWpyok3cWb3Z29VrEZKEgtgI45I8P0YYT8EtpOEIvbae0jDRI=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "First time seeing a live performance... saw \"A Christmas Carol\" tonight...the absolute best performance ever...",
+          "time": 1733634645,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ar-little-rock-arkansas-museum-of-fine-arts",
@@ -372,14 +931,14 @@
       "website": "http://www.arkarts.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "501 E 9th St, Little Rock, AR 72202, USA",
       "address_line2": null,
-      "postal_code": "72203",
-      "latitude": 34.7383258,
-      "longitude": -92.2663529,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "72202",
+      "latitude": 34.7380757,
+      "longitude": -92.2660985,
+      "place_id": "ChIJs9p-Prq70ocRsOLKzPMoEuk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -400,12 +959,12 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
       "primary_art": "Historical Art Traditions",
-      "historical_context_score": 1,
-      "priority_score": 13,
+      "historical_context_score": 3,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Arkansas Museum of Fine Arts has a modest collection that provides contextual value but lacks depth and significant curatorial impact. Its historical context is limited, primarily serving local interests and lacking broader relevance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence confirms a permanent collection plus research library and education programming, but provides no details on specific strengths in Impressionism or Modern/Contemporary, so those are left null. As a state-noted top attraction in Arkansas and a general fine arts museum in Little Rock, it suggests a regional profile and a moderate-scope collection rather than a flagship institution; interpretive context is inferred as adequate but not clearly documented.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
@@ -413,15 +972,16 @@
         "http://www.arkarts.com",
         "museums_csv",
         "llm_scoring",
-        "museum_planner_spreadsheet"
+        "museum_planner_spreadsheet",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5013724000",
+      "phone": "(501) 372-4000",
       "is_scoreable": true,
       "content_summary": "In the heart of Little Rock, the Arkansas Museum of Fine Arts offers a thoughtfully curated, highly approachable art experience that blends galleries, education, and studio creativity under one roof. Expect a regional museum done well: a modest but well-chosen mix of American and international works, rotating exhibitions that keep repeat visits fresh, and an emphasis on learning through close looking and making. It’s an ideal stop for art lovers who enjoy discovery, strong programming, and an inviting museum atmosphere.",
       "content_description": "**Arkansas Museum of Fine Arts** (Little Rock) is a rewarding destination for travelers who like museums that feel both *serious* and *welcoming*. With a mission centered on learning, inspiration, and creative expression, the museum leans into the pleasures of close looking—pairing a compact, navigable set of galleries with programming that encourages you to go beyond “viewing” and into understanding how art is made, taught, and shared across a community. As a regional museum with competent curatorial authority, its strengths often shine in well-paced presentations and rotating exhibitions that can spotlight fresh scholarship and contemporary voices.\n\nWhile the permanent holdings are **modest**, the visitor experience is thoughtfully layered: expect works that trace key threads in American and broader art history—often mixing painting, works on paper, photography, and craft-focused mediums—with changing installations that invite comparison across *modern* and *contemporary* approaches. For art enthusiasts, the pleasure here is in the museum’s scale: you can spend real time with individual objects without the fatigue of mega-museum crowds, and you’ll often find interpretive materials and gallery organization designed for clarity rather than intimidation.\n\nArchitecturally, the museum experience is geared toward **accessibility and flow**—spaces that support both exhibitions and making. Plan to balance gallery time with the museum’s educational and creative offerings (classes, demonstrations, family-friendly activities), which underscore its identity as an arts hub for Arkansas. In short: come for an engaging, well-curated look at art in a relaxed setting, and leave with the sense that the museum is as much about building artists and audiences as it is about collecting.",
@@ -453,8 +1013,149 @@
       "primary_art_focus": "Impressionist",
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://arkmfa.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 8:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1036,
+      "google_reviews": [
+        {
+          "author_name": "Edward Klein",
+          "author_url": "https://www.google.com/maps/contrib/107709950949738926730/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUVvIDWmotan89ulraK2KEro05DbwRtGxWsZ2FbVBt-HtHVV2T2nA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "A nice free resource for the residents and visitors of Little Rock.  A nice variety of art styles from many points in history, though the majority are from the 20th and 21st century.\nThe museum building itself is a nice piece of art itself inside and there are spaces where you can sit for some quiet relaxation.\nDefinitely worth spending some time if you are in town.",
+          "time": 1768776340,
+          "translated": false
+        },
+        {
+          "author_name": "Shannon Newerth-Henson",
+          "author_url": "https://www.google.com/maps/contrib/112486684510233417996/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXNDLN7WXz8fZXU-WJWVizt-fAnUPeLv1rMapjLtngoK0fYXOX1cw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This review is long overdue! I visited the Arkansas Museum of Fine Arts in August 2024. My husband's brother and his wife live in Little Rock! We were looking for something to do and decided to visit the museum. It was well worth it! We happened to go during the Arkansas Cinema Society's Filmland. It was bustling! We didn't participate in any of the programming, but had we had known about it in advance we may have! The museum itself is beautiful. It has a very great atmosphere! The team members that we did come in contact with were friendly and helpful. We probably spent 2 hours at the museum looking at all the art. I included a few photos! Thank you, Arkansas Museum of Fine Arts!!",
+          "time": 1764110166,
+          "translated": false
+        },
+        {
+          "author_name": "Bridget Phelps",
+          "author_url": "https://www.google.com/maps/contrib/109320019038919833215/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXaqiI38RyPUPvHAnRL1enjX_IwPbn0D3FPRSAm_ZWu6ZdM41B6Mw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Arkansas Museum of Fine Arts is a rare gem where the art is so captivating I actually forgot to take pictures. It was a refreshing change of pace to be fully present and enjoy the collection without a screen in the way.\nWhile the museum is intimate in size, it is incredibly dense with talent. I was particularly impressed by the strong representation of Arkansan artists, which gives the galleries a deep sense of local pride and identity.\nThe experience was made even better by the incredibly helpful and polite staff who make the space feel welcoming from the moment you walk in. If you’re looking for a sophisticated, high-quality museum experience that doesn't feel overwhelming, this is it.",
+          "time": 1766874240,
+          "translated": false
+        },
+        {
+          "author_name": "Mary B",
+          "author_url": "https://www.google.com/maps/contrib/113530750512105012517/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUbVomiCzLmTEhcW4HNpfvcKVh1aWP45N_GjXitPWTE590kXcGCjg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "🎨✨ The Arkansas Museum of Fine Arts – where architecture and emotion become one.\n\nThis museum is absolutely breathtaking. The building itself is a true work of art — so elegant, modern, and full of light. Honestly, I didn’t want to leave. It feels like the kind of place you could live in forever.\n\nThe atmosphere inside is so peaceful and inspiring. I want to give a special mention to the staff — they look incredibly polished and professional, and the service was impeccable. Every detail made the experience even more pleasant.\n\nI found so much joy just being there — especially from an aesthetic point of view. Every corner feels thoughtfully designed, and it truly elevates your spirit.\n\nI highly recommend visiting the Arkansas Museum of Fine Arts. Explore the exhibitions, soak in the beauty, grab a cup of coffee, and read a book while looking through those stunning floor-to-ceiling glass walls. ☕📚🪟\n\nThis place isn’t just about art. It’s about feeling alive.",
+          "time": 1754103531,
+          "translated": false
+        },
+        {
+          "author_name": "Danyelle Warner",
+          "author_url": "https://www.google.com/maps/contrib/115357019075714178367/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXKGVYcdZV0K00q_ZAqw6OFK75C-FCYzjFKzJ2ay0EInGQ3QY=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "From reception to our self guided tour of the museum, we felt welcome and enjoyed our visit very much! Security officers were kind and were watchful but polite. So many of the exhibits are unique and thought provoking. The cafe on the 2nd level is so light, bright and peaceful with relevant books and comfortable seating to enjoy a cup of ☕. Highly reccomend; especially for families with older children who enjoy history and art!",
+          "time": 1756694502,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:18Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

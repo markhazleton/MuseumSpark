@@ -13,14 +13,14 @@
       "website": "http://www.artlafayette.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "102 S. 10th Street",
+      "street_address": "102 S 10th St, Lafayette, IN 47905, USA",
       "address_line2": null,
       "postal_code": "47905",
-      "latitude": 40.4172,
-      "longitude": -86.88589,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.4163165,
+      "longitude": -86.886406,
+      "place_id": "ChIJ35_DwUYdE4gRHOI9Ynomn8c",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -44,23 +44,24 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum is primarily serving the local community in Lafayette, Indiana, which is reflected in its reputation score of 3. There is no information provided that indicates significant permanent collections or historical context.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary appears to describe Galeries Lafayette (a French department store), not the Art Museum of Greater Lafayette, so there is no usable evidence about the museum’s permanent collection strengths or interpretive approach. Given the small-city context (Lafayette, Indiana) and no evidence of broader prominence, reputation is assessed as primarily local.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.artlafayette.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 2,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Lafayette' from open data; MRD: computed city_tier=2 for Lafayette; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:03:20Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "7657421128",
+      "phone": "(765) 742-1128",
       "is_scoreable": true,
       "content_summary": "The Art Museum of Greater Lafayette is a rewarding stop for art lovers exploring Lafayette, offering an intimate, locally rooted museum experience where you can slow down and look closely. Expect thoughtfully curated exhibitions that spotlight regional creativity alongside broader art-historical ideas—often with a contemporary edge. It’s the kind of museum that rewards repeat visits: approachable in scale, strong in community energy, and ideal for travelers who want meaningful encounters with art rather than a rushed checklist.",
       "content_description": "**The Art Museum of Greater Lafayette** offers the pleasures of a well-edited art visit: a local museum where exhibitions are curated with intention and where the focus is on *looking*—not just passing through. While its reputation is primarily regional, that’s part of the appeal for travelers: you’ll encounter work that reflects Lafayette and the surrounding Midwest, often presented in thematic shows that connect contemporary practice to enduring art-historical questions—portraiture, place, abstraction, and the shifting boundary between craft and fine art.\n\nAs with many community-centered art museums, the strengths here tend to be rotating exhibitions and partnerships, which means there’s a sense of discovery from season to season. You may find shows highlighting Indiana artists, emerging voices, and media ranging from painting and printmaking to photography and mixed-media installation—formats that reward close viewing and invite conversation about process, materials, and artistic intent. Keep an eye out for exhibition text and programming that situates what you’re seeing within larger currents like *modernism* and *contemporary* art.\n\nThe visitor experience is refreshingly human-scaled: an easy-to-navigate space where you can spend an hour with real focus, then return later without feeling like you “missed” something. For art enthusiasts planning a day in Lafayette, it’s a satisfying cultural anchor—especially if you enjoy museums that feel connected to their community and offer changing reasons to come back.",
@@ -73,7 +74,158 @@
       ],
       "content_generated_at": "2026-01-25T02:03:20Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.artlafayette.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 4:00 PM",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 193,
+      "google_reviews": [
+        {
+          "author_name": "Mary Egbert",
+          "author_url": "https://www.google.com/maps/contrib/116566568000534881710/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWYsJnomYmkDkDl-Y8dPMRpZvzSN0H7ilZQg4w36VlDrfL4HmkV=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Went here on a date with my boyfriend and we had a lot of fun, there were a lot of cool pieces. Would maybe have been nice to see more classic stuff, but they rotate exhibits so there's always a chance. Check out the Sculpture Garden at Haan Museum if you liked this",
+          "time": 1757202100,
+          "translated": false
+        },
+        {
+          "author_name": "Saranya Ravva",
+          "author_url": "https://www.google.com/maps/contrib/101008706052455525036/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXjSifFj7yAPvs6Cp-HfFNf6SydrhxWycDgiampnEUtvEGg3AZLkQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Really loved Neo Neufeld’s art work. It’s a decent place with great art pieces. Looks like they also run a bunch of art classes. Their Art Shop is adorable and has great collection. A nice getaway if you want to roam around Lafayette, IN",
+          "time": 1655040155,
+          "translated": false
+        },
+        {
+          "author_name": "Mallory Pratt",
+          "author_url": "https://www.google.com/maps/contrib/116467803771025807617/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWCyapYMSjnmC8AAoG7PqfWjBXJ5gWupqJdF8KxNqVFaOw2jPz1g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "I am a part of the Tuesday Open Studio at the Art Museum of Greater Lafayette. My painting \"River Rocks\" is featured here! 10/10 I highly recommend a museum visit.",
+          "time": 1745429517,
+          "translated": false
+        },
+        {
+          "author_name": "Ember Shen",
+          "author_url": "https://www.google.com/maps/contrib/117465885711011307889/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUTDsusnetYbY0hLczH1lIOHCatqSOTs-gwxdOqaEw5c2XKknU=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "I love this place. It’s a hidden gem. They have exciting activities too like pottery.\n\nTips: if you’re taking bus 9, the entrance is actually all the way on the other side, you have to walk 1 big round past the Fowler house mansion.",
+          "time": 1655346359,
+          "translated": false
+        },
+        {
+          "author_name": "M C",
+          "author_url": "https://www.google.com/maps/contrib/100567304503575382381/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKz1nRkvgZoF8z-9PHGRizYR_N45_M5YHEoCm4BxXRDr3q40QSK=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "My husband and I took Jeri's stained glass class this Sunday, and highly recommend you do too!\nJeri was thorough in explaining techniques and tools, let us get a feel for everything and made recommendations based on what she saw/how we felt/used each one, and explained the different types of glass, soldering, foils, etc.\nWe had an absolute blast with Jeri and even ended up with beautiful pieces as newbies thanks to her guidance!",
+          "time": 1757939720,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-auburn-cord-duesenberg-automobile-museum",
@@ -85,14 +237,14 @@
       "website": "https://automobilemuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "1600 S Wayne St",
+      "street_address": "1600 Wayne St, Auburn, IN 46706, USA",
       "address_line2": null,
       "postal_code": "46706",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 41.3561674,
+      "longitude": -85.0571717,
+      "place_id": "ChIJbxy3yNAbFogR5YGN8jiSorY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -122,12 +274,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://automobilemuseum.org"
+        "https://automobilemuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Auburn' from open data; MRD: computed city_tier=3 for Auburn; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:03:28Z",
+      "updated_at": "2026-03-14T19:55:28Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -142,26 +295,178 @@
       ],
       "content_generated_at": "2026-01-25T02:03:28Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(260) 925-1444",
+      "website_google": "https://automobilemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.9,
+      "google_reviews_count": 2091,
+      "google_reviews": [
+        {
+          "author_name": "John Arthur",
+          "author_url": "https://www.google.com/maps/contrib/108365398290227718122/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW8_Lety9qTtvWZpas8zFkL1KLfe1sBu48L-M4Hnu3lyPCQFErP=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Beautiful original cars and a couple planes! We love the Cords! But there are many other classics! We took our 10 year old and our 3 week old. And it was quite for the baby and big enough for the 10 year old to get lost and find an activity to do ahead of us! Wonderful place for the cold weather! Very affordable and if your have Ebt assistance you bring the card and get in for free! We didn't use that service but it was offered!",
+          "time": 1764419023,
+          "translated": false
+        },
+        {
+          "author_name": "Audry N",
+          "author_url": "https://www.google.com/maps/contrib/113411572771811146175/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUihZv7E8Q1wfCM06E3NqjBVxmr4C8jX041U4PITgBb1bQiELEKgA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Luxe hotel with outstanding staff. Rooftop indoor outdoor bar/brasserie , weekend piano bar and restaurant. Great neighbourhood. Excellent beds, linens, bathrooms and cozy robes complete this luxe vibe.",
+          "time": 1772689609,
+          "translated": false
+        },
+        {
+          "author_name": "ED Woodard",
+          "author_url": "https://www.google.com/maps/contrib/110863148049977155397/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV4roh-hYhSJQP8grn9rBxdY4Im_uAO3TV8SFrnpiwhOZQNYiXscA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Wonderful experience well layed out. Also have the auto and truck museum behind worth checking out. Lots of Indiana vehicle history and older autos. Lots of cars, and 3 levels! Some very unique.",
+          "time": 1769394402,
+          "translated": false
+        },
+        {
+          "author_name": "Joe Marietta",
+          "author_url": "https://www.google.com/maps/contrib/117027603605319976051/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVZe8YyI2Gw6ZVfJMTkLNHrKKbvXroPpXeAlb0yXo6w4QSfd3_c=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "A great museum for the car lover. It's in the old Auburn Auto HQ so the restored art deco building is on display along with a great collection  of cars and the history of the brands (Auburn, Cord, and Duesenberg). I would recommend the National Auto & Truck Museum which is right behind and in the old Auburn factory. It's heavy on muscle cars and International bricks but worth the stop. You can do both on 3-6hrs depending on how you like to museum.",
+          "time": 1761053379,
+          "translated": false
+        },
+        {
+          "author_name": "Kaleb !",
+          "author_url": "https://www.google.com/maps/contrib/112903871452033140177/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhlSAk013jRDbuI4s3lp1ThBCRDNqqNXM2jyLmXFEc1YQJkPEP=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 3,
+          "relative_time_description": "3 months ago",
+          "text": "Love how they decorated for Christmas throughout the building! Lots of classic and old cars to look at. They even have planes.",
+          "time": 1765427263,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-evansville-wartime-museum",
       "country": "USA",
       "state_province": "Indiana",
-      "city": "EVANSVILLE",
+      "city": "Evansville",
       "museum_name": "Evansville Wartime Museum",
       "alternate_names": null,
       "website": "https://www.evansvillewartimemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "579 S GARVIN ST",
+      "street_address": "7503 Petersburg Rd, Evansville, IN 47725, USA",
       "address_line2": null,
-      "postal_code": "47731",
-      "latitude": 37.9705,
-      "longitude": -87.55631,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "postal_code": "47725",
+      "latitude": 38.04158400000001,
+      "longitude": -87.53729,
+      "place_id": "ChIJDRECYf4pbogRSVLDcO5oMLI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
@@ -190,15 +495,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:03:36Z",
+      "updated_at": "2026-03-14T19:55:29Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "8124235188",
+      "phone": "(812) 424-7461",
       "is_scoreable": false,
       "content_summary": "The **Evansville Wartime Museum** offers a unique and engaging glimpse into the realities of wartime life, showcasing personal stories and military artifacts that draw you into the past. A visit here is not just about viewing history; it's about experiencing the sacrifices and resilience of those who served, making it a must-see for history enthusiasts and families alike.",
       "content_description": "**Evansville Wartime Museum** invites visitors on a heartfelt journey through the American wartime experience. Established to honor the countless sacrifices of servicemen and women, this museum captures the spirit of determination, resilience, and community during trying times in our nation’s history. From World War II to the Vietnam War, the museum's displays reflect not only military events but also the everyday lives of civilians who contributed to the war efforts, ensuring that stories of bravery and sacrifice are not forgotten. Visitors can engage with a diverse collection of artifacts, including uniforms, letters, and weaponry, providing an intimate look at the personal side of conflict. This immersive exploration of wartime narratives creates a powerful emotional impact, reminding us all of the human cost of war.  \n\nThe museum is housed in a thoughtfully designed space that reflects both the architectural style of the eras represented and the spirit of the American home front. *Interactive exhibits* and dedicated spaces allow families and individuals alike to connect with history on a personal level. Special programs and events enhance the visitor experience, including guest speakers and memorial observances that commemorate significant wartime anniversaries. As you wander through the thoughtfully laid-out exhibits, you'll not only witness history but also gain a deeper appreciation for the resilience and bravery of the human spirit. A trip to the **Evansville Wartime Museum** is a moving reminder of how past struggles shape the present, making it a compelling stop on your journey through American history.",
@@ -211,7 +517,158 @@
       ],
       "content_generated_at": "2026-01-25T02:03:36Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://evansvillewartimemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 4:00 PM",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.9,
+      "google_reviews_count": 301,
+      "google_reviews": [
+        {
+          "author_name": "Lacey Manhart",
+          "author_url": "https://www.google.com/maps/contrib/111159577277839112307/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUqSDO0nC2Xx1N7uswyixoA3SOpQR-r449A5vP1b2nC0tQA2nAc=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Evansville Wartime Museum was an absolutely fantastic experience. We ended up getting a personal tour completely free, which made the visit even more special and memorable. Every single person working there is a volunteer, and they are incredibly friendly, welcoming, and extremely knowledgeable about the history and exhibits.\n\nYou can truly tell how passionate they are about preserving and sharing this important part of history. As an added bonus, we even got to do flight simulator training at no cost, which was such a fun and unique experience you don’t get at most museums.\n\nThis museum is a must-visit if you’re in the area—educational, interactive, and filled with people who genuinely love what they do. Highly recommend!",
+          "time": 1766788227,
+          "translated": false
+        },
+        {
+          "author_name": "Bill Stumph",
+          "author_url": "https://www.google.com/maps/contrib/117178463232262616753/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUTwdZT6VMGKlMT_0XnEmLnLt0gvgnXzqWcICIQFbU52_ffYupm=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This place is incredible.  We booked a tank ride months ago and the tank broke, ending rides…but we didn’t know.  The staff (especially Cole) worked hard to “make it right” by allowing us to tour.  Frank spent 2 hours with my son, showing him the ins and outs of tanks, planes, cars and guns in the museum.  My son even spent time flying a couple of different planes in the simulator.  It was an incredible experience for both of us.  The history represented and the artifacts presented were great!  My huge gratitude goes to the docents, who serve to share this knowledge, answer questions, engage visitors and keep the stories alive.  I’m really grateful to Frank and his teammates for the exceptional experience!",
+          "time": 1758419582,
+          "translated": false
+        },
+        {
+          "author_name": "Dustin Remick",
+          "author_url": "https://www.google.com/maps/contrib/108429848125019837586/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUodV0o14SPk0FL3CvUe7WUJt0tOGVJ8Ey8MCJu0R-c1xymkvuLnw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "I saw the sign for this museum as I was leaving the airport and decided to stop by. It's a cute little museum with plenty of things to look at and read about. I learned a lot about the history of Evansville during the WWII era and the impact that the locals had on the war efforts. Everyone working there was delightful and they had some really cool vintage gifts in the shop.",
+          "time": 1745574887,
+          "translated": false
+        },
+        {
+          "author_name": "Wayne-O",
+          "author_url": "https://www.google.com/maps/contrib/106560939991613429934/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5N7TGm8kDSdWIGBWmk0ys-xRo2fN5KxeAWHQV5-maM0k3DRC2=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "The Evansville Wartime Museum is an excellent place to visit and learn more about the history of war and the role that Evansville played. They have many historical facts about the different wars fought, and several displays of war memorabilia including a WWII tank, a P-47 Thunderbolt aircraft and a Boeing Stearman WWII training aircraft.\n\nThere are many other historical examples from WWII including models of military aircraft, ships and other weapons. They had a B-29 Bomber on static display on the day we were there. You could take a tour, and if you wanted to spend some $$$$$ you could take a flight in this historic aircraft.\n\nCheck out some of the photos from the Museum….",
+          "time": 1747056852,
+          "translated": false
+        },
+        {
+          "author_name": "Brian D. Weidemann",
+          "author_url": "https://www.google.com/maps/contrib/114591037297255002734/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU0aKNuCqSBoZ-VxviGk50doBzQJnHzLvq6-L7Aijc8J3j6dSig=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Wonderful little gem in the heart of Southern Indiana. Amazing collection of artifacts & memorable to help explain the impact Evansville had on the war efforts. The museum docents also did an amazing job explaining everything and answering questions! A must see/visit when in Southern Indiana or nearby!",
+          "time": 1765178957,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-fort-wayne-museum-of-art",
@@ -230,7 +687,7 @@
       "longitude": -85.1360498,
       "place_id": "ChIJyWl-XZLkFYgRg7UYVIQT5o4",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -254,9 +711,9 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Fort Wayne Museum of Art has limited permanent collections with modest depth, primarily serving local educational and contextual purposes. It plays a significant role in preserving local culture, justifying a Local Context score of 2. Its reputation mainly supports the local community, reflected in a score of 3.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no museum-specific information about the Fort Wayne Museum of Art’s permanent collection, so strengths in Impressionism, Modern/Contemporary art, and interpretive historical context cannot be determined. Based on the museum being in a mid-sized regional city with no nearby museum signals provided, reputation is scored as primarily local and the collection is estimated as moderate rather than flagship.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -265,10 +722,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Indiana' from open data; MRD: computed city_tier=3 for Indiana; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:03:46Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(260) 422-6467",
@@ -432,20 +889,20 @@
       "museum_id": "usa-in-unknown-gabis-arboretum-at-purdue-northwest",
       "country": "USA",
       "state_province": "Indiana",
-      "city": "North Valparaiso",
+      "city": "Valparaiso",
       "museum_name": "Gabis Arboretum at Purdue Northwest",
       "alternate_names": null,
       "website": "https://www.pnw.edu/gabis-arboretum/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "450 W 100 N, Valparaiso, IN 46385, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "46385",
+      "latitude": 41.4477683,
+      "longitude": -87.15275969999999,
+      "place_id": "ChIJc222XTWSEYgR_Ps1QqRIgi8",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -475,12 +932,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.pnw.edu/gabis-arboretum"
+        "https://www.pnw.edu/gabis-arboretum",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'North Valparaiso' from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:03:56Z",
+      "updated_at": "2026-03-14T19:55:30Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -495,7 +953,74 @@
       ],
       "content_generated_at": "2026-01-25T02:03:56Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(219) 462-0025",
+      "website_google": "https://www.pnw.edu/gabis-arboretum/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.7,
+      "google_reviews_count": 459,
+      "google_reviews": [
+        {
+          "author_name": "Adam Hill",
+          "author_url": "https://www.google.com/maps/contrib/110079833818579591782/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtsmtP2qIYc7NounOkcx6A68ciTchGhv25q5ncU0NVjptjr_KD=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Walkers and nature lovers will love this place, anytime of year. The trails are well maintained and easy to follow. The kids will enjoy the huge train set outside when the weather permits. Bring a lunch, there are many places to sit outside. A great time for everyone!",
+          "time": 1763007322,
+          "translated": false
+        },
+        {
+          "author_name": "Michelle K",
+          "author_url": "https://www.google.com/maps/contrib/115254271594784578239/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUteyTCuYj8cAZxsMOC1qSEPol-bvK-ca3UJ0yJ5uQK_IXQshHc=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We arrived about 40 minutes before closing, but with a goal of seeing the trains, so that was enough time. The other outdoor spaces looked beautiful and we plan to come back to explore more. The train display was well worth it. The dioramas were very detailed and the plants and vegetation were gorgeous. The staff was helpful and the depot/shop was clean and well maintained.",
+          "time": 1758402175,
+          "translated": false
+        },
+        {
+          "author_name": "Kelly March",
+          "author_url": "https://www.google.com/maps/contrib/114680338322041691172/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJqSwkaj2nf2diFANPoIWCS58WrTaSHSgp59DD0-ZVy7J5VOw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "What a great place!  We took our grandson to the model train display and spent a couple hours there.  The staff were super friendly and very knowledgeable!  We would recommend Gabis Arboretum to anyone!  There is something there for everyone, from model trains to beautiful gardens & trails.",
+          "time": 1749060890,
+          "translated": false
+        },
+        {
+          "author_name": "Priscilla Lopez",
+          "author_url": "https://www.google.com/maps/contrib/103726740481117476263/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXl7PjNTzIy5uI_SLwBs720s5jKT5nuaK8utFYf7YNec_U9DtAHNA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Expensive ,10 bucks  ,but so beautiful . Many trails, lovely scenery. Brings my memories of childhood back… just beautiful Forrest sounds. Highly recommend not being on your phone to appreciate the beauty and sounds of nature.",
+          "time": 1745813148,
+          "translated": false
+        },
+        {
+          "author_name": "Pam Isley",
+          "author_url": "https://www.google.com/maps/contrib/108163462168574917251/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWi9xMQJPuZBAvEXOkkFh6ZufkKOnkqhntfUD49dVkvCNjUANM=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Absolutely wonderful nature experience. I have a blast everytime I come here!\n\nJust last weekend I went with my family for the winter walk. We saw a lot of evidence of beaver activitiy and learned  much about the local ecosystem and the grounds of Gabis.\n\nOur guide Jonathan was very knowledgeable and friendly, and he was GREAT with my 6 y.o. nephew. We had a blast, and will definitely be coming back!",
+          "time": 1771255775,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-haan-museum-of-indiana-art",
@@ -507,14 +1032,14 @@
       "website": "https://haanmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "920 State Street",
+      "street_address": "920 State St, Lafayette, IN 47905, USA",
       "address_line2": null,
       "postal_code": "47905",
-      "latitude": 40.41242,
-      "longitude": -86.88569,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.4128201,
+      "longitude": -86.8852785,
+      "place_id": "ChIJCeC4G0EdE4gR6qcoBcbCKKE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -538,20 +1063,21 @@
       "historical_context_score": 3,
       "priority_score": 16,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Haan Museum focuses on Indiana art, with a notable collection of Hoosier Group and Indiana Regionalism artists, although it lacks the depth for a higher collection score. Its regional importance provides a strong historical context relevant to Indiana art, justifying a score of 3 in that area.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The collection is described as the largest collection of Indiana art, emphasizing Hoosier Group and Indiana Regionalism painters plus decorative arts, with no evidence of French Impressionist holdings. Modern/contemporary appears minor-to-moderate via early-to-mid 20th-century regional movements rather than broad 20th–21st-century coverage. As a mansion-based museum with a focused regional collection, it likely offers some contextual interpretation but is primarily local in reputation and modera",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://haanmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -571,7 +1097,130 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "phone": "(765) 742-6449",
+      "website_google": "https://thehaan.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1300"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 1:00 – 4:00 PM",
+          "Thursday: 1:00 – 4:00 PM",
+          "Friday: 1:00 – 4:00 PM",
+          "Saturday: 1:00 – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 154,
+      "google_reviews": [
+        {
+          "author_name": "Cricket B",
+          "author_url": "https://www.google.com/maps/contrib/104394680758631471028/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJ8fkchriDDQeRRIl8j555KsH7Oc53dKGZd0vVDI89KtWpr7QAHg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This is truly a magical piece of architecture.  The Haans graciously opened up this to preserve it for the public and every Christmas they decorate it and open it for tours. The furniture is like something out of the John Paul Getty Museum. And the second floor has a train track that winds through two rooms with many amazing cars riding the rails all day long. This is a must-see for anyone who loves interesting places out of the norm. The Haan Museum use to be called Potters Mansion and the tour host will tell you why, and show you pieces of unique art that go with the story. Go see this stunning mansion all decked out in her Christmas glory. You won't regret it. Its absolutely beautiful!",
+          "time": 1766489118,
+          "translated": false
+        },
+        {
+          "author_name": "Peggy Lucas",
+          "author_url": "https://www.google.com/maps/contrib/113894383471431240728/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUV31GCO7StVQpLd79bMfClaQke7zjW7ameiwPDt712vmD2CylVbA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Firstly, there's just the house. What a wonderful space with such an interesting history! Secondly there's the furnishings. They have their own history and enhance the space. Thirdly there's the art---both ceramics and paintings. All very absorbing. And the complete deal with a focus on Indiana. It's a win-win-win-win situation. Go and enjoy.",
+          "time": 1758009086,
+          "translated": false
+        },
+        {
+          "author_name": "Richard Deverell",
+          "author_url": "https://www.google.com/maps/contrib/113859483904013255200/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLwO6EwifLb2XOJW11Bpo90AR3yl9gTM1-qdhbDt5Y34DJQQtcB=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "My girlfriend and I visited the Haan Museum of Indiana Art on Saturday, 3 August. I’d read a bit about the museum online and thought it would be nice to visit. The building was originally at the 1904 St. Louis World’s Fair and was the Connecticut State Building before moving to Missouri and finally Indiana after the fair’s conclusion. Owners Bob and Ellie Haan purchased the building in 1984, restored it, and filled it with art by Indiana artists. The collection is lovely and encompasses several different styles. The antique furniture is also particularly interesting, especially the clocks and even Thaddeus Stevens’ desk from the House of Representatives. The museum currently has a ceramics exhibit that will thrill fans of earthenware as it showcases some amazing creativity in what artists can do with the medium. The volunteer docent working on 3 August was wonderful, greeting everybody who entered and giving us a lovely introduction to the building and its collections in a way that helped us feel connected to the space both artistically and historically. The tour is self-guided and we took our time roaming. She was also at hand anytime we spotted a work of art or object that caught our attention, ready to give us the story of those items. I cannot praise her enough and feel bad that her name escapes me at the moment, but her stories and the clear joy she has for the space and collections made it a wonderful visit. After we toured the inside, my girlfriend and I had a nice walk in the outdoor sculpture garden. A great spot for a day trip!",
+          "time": 1723015128,
+          "translated": false
+        },
+        {
+          "author_name": "Lily",
+          "author_url": "https://www.google.com/maps/contrib/111259688380742513992/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIv6faahjuzweJuls35s0b0cMkuHNrsTnBCY0qfR9vX5kfnLA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "The house is gorgeous, love the architecture & attention to detail. I loved that most of the art is from Indiana. Furniture looked great. Entry was $10 per adult which was definetly worth it, they even let you pay by card if you want. Love seeing history being preserved. A lot quality pieces there. We appreciated the stories & history told by the volunteers to give us some context, you can tell they are very passionate.",
+          "time": 1687038298,
+          "translated": false
+        },
+        {
+          "author_name": "Kristen L",
+          "author_url": "https://www.google.com/maps/contrib/103343421723599453033/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXbFGfzN48EQlK5TCkakPqVUg_cPh7VaK3xL5xPPJ4j_8JPrCk1=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "We had such a great time here!!! The guides were amazing! I believe one was named Amanda and the other lady I can’t recall but they did such an amazing job telling us about the house and other interesting facts regarding the house, art, and furniture on Saturday 2/21!!!",
+          "time": 1771727752,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-in-unknown-indiana-state-museum-and-historic-sites",
@@ -583,14 +1232,14 @@
       "website": "https://www.indianamuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "650 WEST WASHINGTON STREET",
+      "street_address": "650 W Washington St, Indianapolis, IN 46204, USA",
       "address_line2": null,
       "postal_code": "46204",
-      "latitude": 39.76713,
-      "longitude": -86.16946,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 39.7683919,
+      "longitude": -86.1695013,
+      "place_id": "ChIJNzJiEbFQa4gRkBVFg5gciGs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Science Museum",
       "primary_domain": "History",
       "topics": null,
@@ -619,12 +1268,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Indianapolis' from open data; MRD: computed city_tier=1 for Indianapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:04:15Z",
+      "updated_at": "2026-03-14T19:55:32Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
       "is_scoreable": false,
@@ -633,7 +1283,139 @@
       "content_highlights": [],
       "content_generated_at": "2026-01-25T02:04:15Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(317) 232-1637",
+      "website_google": "http://www.indianamuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 4330,
+      "google_reviews": [
+        {
+          "author_name": "Greg Eakins",
+          "author_url": "https://www.google.com/maps/contrib/108677839379708834637/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXt1UDN5O57LpURuOcvZjIoXR0BJq4z4VboMd0s-rbFlEcT3Omb6Q=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "If you live in Indiana, this is a must-visit place to brush up on the history of the land you live on.\n\nThe museum is huge, well design, and exceptionally clean. The displays are visually stunning and informative.\n\nThe history goes all the way back to when this state was underwater, and through the ice age and the native inhabitants. They have a rich recent history of the last couple hundred years, and a large \"special\" place up on the 3rd floor for special displays.\n\nIt's pretty kid friendly, especially the animal bits. But I don't think there's much here for impatient or very young kids.\n\nPlan for about 2-3 hours and don't forget to get your parking ticket approved for a discount.",
+          "time": 1769393386,
+          "translated": false
+        },
+        {
+          "author_name": "Anthony Owens",
+          "author_url": "https://www.google.com/maps/contrib/118406097191546274102/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVMywWHlTytkJ79i8YZyjR9jHxxzUu2CHI0sN0vSTZq08XX-H2xtQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Indianapolis State Museum & IMAX — Surprisingly Incredible\n\nBeing from Colorado, I honestly wasn’t sure what to expect from a state museum in Indiana… but wow, they knocked it out of the park. The timeline-style exhibits were fun, engaging, and way more entertaining than I expected. You actually move through history in a way that feels interactive, not static.\n\nWe also caught a film at the IMAX and oh my—that screen is no joke. The sound, the size, the whole experience was on another level. Totally worth it.\n\nIf you’re visiting Indy, this place is absolutely worth the stop.",
+          "time": 1768865147,
+          "translated": false
+        },
+        {
+          "author_name": "Kerry Ideman (chasnfireflies)",
+          "author_url": "https://www.google.com/maps/contrib/112190738382695513705/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVxFBnBpXGKenlTqc1mjTSQEx22xDGmd3tDcpp0cRzY7f9bqH8xvw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "This was my first experience with the ISM.\nWe went to the IMAX show \"Mesmerica\".\nWhile waiting for entrance to the theater, we sat on comfortable soft benches. We arrived very early so, places to sit became an issue for others who arrived after us.\nThe theater was standard.\nThe advertising of this show seemed a little misleading.\nHonestly, we both felt rather disappointed.\nDont get me wrong. The show was fun and all, but, what we thought would be ~other worldly~ actually seemed more like watching a 3D Screensaver play for an hour+. Some of the images even repeated. I used the restroom afterwards and overheard people saying the same sort things as we were saying.\nI also heard some people talking about how they purchased VIP tickets, and felt there was little to nothing different from regular tickets.\nThey also upsell the higher priced concession items that offer free refills, only to be told there would be no re-entry if we left the theater (to refill them).  By the time we exited the theater, employees were refusing refills with a sour attitude. They were fully aware no one would be able to take advantage of the refills they upsold.\nWhile in line, we were given parking validation passes. So, that was a plus!\nI would like to visit the museum some other time for a different exhibit.\nThis one was a little disappointing.",
+          "time": 1769306308,
+          "translated": false
+        },
+        {
+          "author_name": "Jeffrey Cellini",
+          "author_url": "https://www.google.com/maps/contrib/107684261794985249865/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLS0K7_LQ87G9cxW0t7HzDg_Q3sw1mgYcANdYVa7-1s3cVqkA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Enjoyed the nice displays throughout the museum; parking in garage was only $4 after receiving coupon at front desk;",
+          "time": 1772795112,
+          "translated": false
+        },
+        {
+          "author_name": "Coach T",
+          "author_url": "https://www.google.com/maps/contrib/116312475261995787326/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKKCZPtpszAFTxMmIWUMwaSBe8_yiqTYcR3mwWLu73b6GVkPg=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This place has amazing grounds. We came when they were closed so we walked around outside. They had at least 80 pieces of art on the outside of their building and around the property. You can easily spend a couple hours walking out the beautiful property. Overall if you want to kill some time with the family and see some beautiful art this is the place to check out.",
+          "time": 1760801074,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-indianapolis-art-center",
@@ -645,14 +1427,14 @@
       "website": "http://apm.activecommunities.com/indianapolisartcenter",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "820 E 67th St, Indianapolis, IN 46220, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.82828,
-      "longitude": -86.18258,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "46220",
+      "latitude": 39.877783,
+      "longitude": -86.14378699999999,
+      "place_id": "ChIJeb7sxAdTa4gRj_weAYxUNpw",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -670,29 +1452,30 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": 2,
-      "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
-      "historical_context_score": 3,
-      "priority_score": 9,
+      "impressionist_strength": 4,
+      "modern_contemporary_strength": 4,
+      "primary_art": "Impressionist",
+      "historical_context_score": 4,
+      "priority_score": 4,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Indianapolis Museum of Art possesses a collection featuring significant works, including Neo-Impressionist paintings and a strong contemporary design collection, which supports a regional significance but lacks the depth to reach national prominence. Its historical context and curatorial authority suggest a solid regional role in art discourse.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence describes an encyclopedic museum (IMA at Newfields) with 54,000+ works and explicitly highlights Neo-Impressionist paintings plus major European holdings (e.g., Turner, Gauguin/Pont-Aven), supporting strong Impressionist-era representation. It also cites a dedicated contemporary art and design collection and modern design focus, indicating strong modern/contemporary depth. As a large, long-established encyclopedic museum, it likely offers solid historical framing across global collectio",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://apm.activecommunities.com/indianapolisartcenter",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Indianapolis' from open data; MRD: computed city_tier=1 for Indianapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "3179202662",
+      "phone": "(317) 255-2464",
       "is_scoreable": true,
       "content_summary": "Set in the green heart of Broad Ripple, the Indianapolis Art Center is less a “quiet gallery” and more a lively hub where exhibitions, studios, and the riverside landscape feed each other. With a reputation that reaches beyond Indiana and a strong emphasis on regional art, it’s a rewarding stop for travelers who want to see what Indianapolis artists are making now—then step outside into gardens and trails. Come for the shows, stay for the creative energy and the setting.",
       "content_description": "**Indianapolis Art Center** is an art lover’s stop that feels distinctly local in the best way: a place where you encounter what’s happening in Indiana art—*now*—alongside a robust schedule of exhibitions that keeps the experience fresh. Rather than presenting itself as a single “masterpiece vault,” the Center operates as a dynamic cultural campus: rotating gallery presentations, community-facing programming, and a strong regional emphasis that makes it especially appealing if you want to understand the city’s creative identity beyond the postcard highlights.\n\nArchitecturally and atmospherically, the setting is part of the draw. Tucked into Broad Ripple’s parkland near the White River, the Center rewards visitors who like their museum day to include a change of pace: light-filled indoor viewing, then an immediate shift to the outdoors for a walk that resets the eye between exhibitions. Expect a relaxed, approachable gallery experience—more discovery-driven than encyclopedic—where you can linger over contemporary and regional work without the pressure of an all-day marathon.\n\nFor travelers, the sweet spot is combining focused looking with the pleasures of the neighborhood: pair your visit with time in nearby shops and cafés, or plan for a slower afternoon that moves between galleries and the surrounding landscape. If your museum wish list includes **strong regional strengths**, a sense of artistic community, and a setting that makes art-viewing feel like part of a broader day out, this is a rewarding Indianapolis essential.",
@@ -709,10 +1492,161 @@
       "overall_quality_score": 18,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "High Priority"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority",
+      "website_google": "http://indyartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 10:00 PM",
+          "Tuesday: 9:00 AM – 10:00 PM",
+          "Wednesday: 9:00 AM – 10:00 PM",
+          "Thursday: 9:00 AM – 10:00 PM",
+          "Friday: 9:00 AM – 10:00 PM",
+          "Saturday: 9:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 225,
+      "google_reviews": [
+        {
+          "author_name": "Mark Petrison",
+          "author_url": "https://www.google.com/maps/contrib/103910667486716882566/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXVGKCPcq6NKILW9MHRKenc_LDYpdk-7SWxcKzYpCERNLPo8yh3lg=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 4,
+          "relative_time_description": "6 months ago",
+          "text": "The outdoor area makes for a quiet park for adults -- the nearby Opti Park has a playground, and may be more suitable for kids.",
+          "time": 1756701969,
+          "translated": false
+        },
+        {
+          "author_name": "Julina Stout",
+          "author_url": "https://www.google.com/maps/contrib/118254936995670450394/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUOwPBAHCukWdg3BvMkBu5oB-5_XcSqhDQtSc_eE_aTSC62MtmPEg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Art and nature interspersed to create a charming place to enjoy the outdoors. Kids can roam around with plenty to entertain them. There are places to look over the river. When we went there was a fun community art project inside where you create an ornament to add to a tree on the wall using recycled items. It was a lot of fun and we will definitely go back.",
+          "time": 1731094114,
+          "translated": false
+        },
+        {
+          "author_name": "Ellen Rispoli",
+          "author_url": "https://www.google.com/maps/contrib/116988799602212382721/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0snlXysThoGCqZkOsCg6Vb6iQ6ClVvUFqzsPweUgXEeo8kCWZ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "For years I had dreamed of having my wedding reception at the Indianapolis Art Center, and working with Mason and her team was a dream come true. My husband and I toured the facility 15 months before our big day and highly recommend approximately that time frame for a place as popular as this. The IAC referred us to our caterer, and set up our reception seating with tables and linens. Additionally, they took care of tear down after we made our exit.\n\nOur guests enjoyed cocktail hour under the portico while we headed to the river for our family pictures. The pergola and Ivy wall were a gorgeous backdrop for our sweet heart table and most breath taking of all were all the hanging string lights. I could not imagine a better setting for an outdoor wedding. Beyond that, we booked the library as a place inside to escape just the two of us for our last dance. Magic.",
+          "time": 1728262627,
+          "translated": false
+        },
+        {
+          "author_name": "Jaime Chanter",
+          "author_url": "https://www.google.com/maps/contrib/101837223785195075280/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVG4kw1rmc1LDqOpj-J8OcwPQ3wLiHRmvaI0046TfwO2Vh-3SkZUkM=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Such a great spot! We walked the trails and saw the sculptures. We headed inside to warm up at the little coffee shop. The library was cozy and clean with even some sweet little kid art books. The inside galleries were super cool and the workshops looked fascinating!",
+          "time": 1673965389,
+          "translated": false
+        },
+        {
+          "author_name": "Kayla P",
+          "author_url": "https://www.google.com/maps/contrib/109476265481743840870/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJUTx12IWO1iQ0d2k4_e2qPaBJTCtHH5AEwZ6ogXVk9gLPpWg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 2,
+          "relative_time_description": "7 months ago",
+          "text": "Today’s August 2 it’s a nice summer day, and we came to walk through the sculpture garden. They’re limited sculptures. The landscaping is poorly maintained. The walkways have inconsistent gravel. And there is zero art installation inside. Today is a Saturday. Experience not worth going.\n\nAttendant at the front was very nice and helpful and said that at the end of the month, the art exhibit will actually have art",
+          "time": 1754148577,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-lubeznik-center-for-the-art",
@@ -724,14 +1658,14 @@
       "website": "http://www.lubeznikcenter.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "101 W. 2nd Street",
+      "street_address": "101 W 2nd St # 100, Michigan City, IN 46360, USA",
       "address_line2": null,
       "postal_code": "46360",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 41.7207221,
+      "longitude": -86.9043884,
+      "place_id": "ChIJs3_5QgCoEYgRGI3cEYosAD4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -761,12 +1695,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.lubeznikcenter.org"
+        "http://www.lubeznikcenter.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:04:34Z",
+      "updated_at": "2026-03-14T19:55:34Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -781,26 +1716,168 @@
       ],
       "content_generated_at": "2026-01-25T02:04:34Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(219) 874-4900",
+      "website_google": "https://www.lubeznikcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 214,
+      "google_reviews": [
+        {
+          "author_name": "Kjerstina House",
+          "author_url": "https://www.google.com/maps/contrib/116639340642125844444/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUfRI35AYhO6AS-GeEeAM9xjVoa8Ev3GL6Wp37m675K8MKJZOy3=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We very much enjoyed this place! The unique, hand made stuff in the gift shop kept everyone busy for almost an hour. We LOVED the creation station where we made our own shadow and light boxes that you can display or take home. The mixture of light and art is ahhmazing!",
+          "time": 1763393694,
+          "translated": false
+        },
+        {
+          "author_name": "Eileen Mark",
+          "author_url": "https://www.google.com/maps/contrib/102228037348663054801/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWOodncga9YlYZo6Ea734ngDI_v18ENADAYPkh5PryJsmKv0f21Wg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Wonderful local art museum with ties to the Chicago History Museum and other art organizations of note. The staff is simply extraordinary, friendly, and welcoming, and the Lubeznik offers a space of beauty, learning, and culture that is non-existent and second to none in the NW Indiana region. Don't miss their art festival in the summer, poetry slams and open mic nights that give a space for local artists and those aspiring to become artists to showcase their talent, and fascinating ongoing exhibitions. The Lubeznik Center for the Arts is a true gem in the region and is not to be missed!",
+          "time": 1736609407,
+          "translated": false
+        },
+        {
+          "author_name": "Sandra Yatsko",
+          "author_url": "https://www.google.com/maps/contrib/117537321897223131320/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUHRbhmoQinsS0MxL1DJDYTSCLGTQGC-tE9kvhaz__5JImzvyQ_jg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Women To The Front is a show you shouldn't miss!!! What an incredible selection of work. Everyone was kind and their gift shop has many good finds too. We will be back and I can't stop talking about your show!",
+          "time": 1753474383,
+          "translated": false
+        },
+        {
+          "author_name": "Katie Spencer",
+          "author_url": "https://www.google.com/maps/contrib/102389197172879595957/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXPqj6OKkw2W_HEYym_5TTVcZMHD1xGrgTnFzI5AdQPWBwGbeqB=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "We went in on a rainy day. Really the only people in there but fine by us. The lady at the front desk was very helpful and welcoming. We loved the current exhibit. Also liked the downstairs area showcasing the local kids’ art projects. Great community art center!",
+          "time": 1746564975,
+          "translated": false
+        },
+        {
+          "author_name": "Ashley Sonnenschein",
+          "author_url": "https://www.google.com/maps/contrib/105901141391653082590/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUNd7iA1VH00KLi5C5czpL4sPnbbI-WMrzDuOEVtQrA-sdkb0yN=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "I really loved this gallery. Small but powerful.  Worth stopping by! The gift shop was also pretty neat!",
+          "time": 1756710560,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-minnetrista",
       "country": "USA",
       "state_province": "Indiana",
-      "city": "Hennepin County",
+      "city": "Muncie",
       "museum_name": "Minnetrista",
       "alternate_names": null,
       "website": "http://www.minnetrista.net/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1200 North Minnetrista Parkway",
+      "street_address": "1200 N Minnetrista Pkwy, Muncie, IN 47303, USA",
       "address_line2": null,
       "postal_code": "47303",
-      "latitude": 40.20392,
-      "longitude": -85.39388,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.20504330000001,
+      "longitude": -85.38868099999999,
+      "place_id": "ChIJQ7n8aps9FYgRYwRnAazi95Y",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -831,15 +1908,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.minnetrista.net",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Hennepin County' from open data; MRD: computed city_tier=3 for Hennepin County; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:04:42Z",
+      "updated_at": "2026-03-14T19:55:35Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "7652824848",
+      "phone": "(765) 282-4848",
       "is_scoreable": false,
       "content_summary": "Discover the charm and rich local history at **Minnetrista**, a unique general museum that delves into the stories, art, and culture of Hennepin County. Its engaging exhibits and beautiful grounds make it a must-visit for both locals and travelers alike.",
       "content_description": "**Minnetrista** offers visitors a delightful journey through the eclectic history and vibrant culture of Hennepin County. Nestled in a picturesque setting, this general museum is distinguished by its commitment to preserving regional heritage combined with contemporary exhibits. From art collections that showcase *local artists* to fascinating displays highlighting the area's rich agricultural history, every corner of the museum speaks to the heart of the community. The beautifully landscaped grounds provide an inviting atmosphere for exploration, making it an ideal spot for families and art lovers alike. Visitors can engage with hands-on experiences, connect with knowledgeable staff, or relax in the gardens while immersing themselves in the serene surroundings.  &nbsp;  Additionally, the architecture of **Minnetrista** reflects the cultural significance of the region. The museum features both modern design and historic elements, seamlessly blending the old with the new. Its commitment to dynamic programming—including workshops, lectures, and seasonal events—ensures that there's always something fresh to inspire returning visitors. Whether you're wandering through captivating exhibitions or pausing to admire the breathtaking views from the outdoor spaces, **Minnetrista** provides a rich tapestry of experiences that highlight the unique story of Hennepin County.  &nbsp;  A visit here is more than just an educational trip; it’s an opportunity to celebrate community spirit and creativity in one of Minnesota's outstanding cultural hubs.",
@@ -852,7 +1930,138 @@
       ],
       "content_generated_at": "2026-01-25T02:04:42Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.minnetrista.net/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1356,
+      "google_reviews": [
+        {
+          "author_name": "Katelyn Howard",
+          "author_url": "https://www.google.com/maps/contrib/104236775406862892457/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWcBAOu7V_kkVQD4LRJukWIBCCBiepiTtuSkbpAfpSq0_iNbMBU3A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "5 months ago",
+          "text": "When looking for a garden themed reception, this was the perfect choice! There were some hiccups with the planning team that we had to work through, but it was it worth it for our perfect reception. We hosted on the Carriage House Patio, it was perfect. The forest on one side and the backdrop of the Ball Mansions on the other set the tone; perfect for our whimsical garden theme reception. Also the Rose Garden for first looks was so stunning at the end of May. Minnetrista is beautiful and will always be special for us. Thank you to all who helped us make our dream a reality.",
+          "time": 1760469492,
+          "translated": false
+        },
+        {
+          "author_name": "Marie Gail Stratford",
+          "author_url": "https://www.google.com/maps/contrib/106117882658830859476/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXuOQPSEBOH3ZfwJ_89PJqBa4Vd58e2GAbAgDVxYGJXeupejJvsHA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Wow! Beautiful grounds, many beautiful buildings, lots of exhibits and galleries. I arrived shortly after noon and only had time to explore exhibits in the main building and at the Bob Ross Exhibit, as well as taking walks through some of the gardens. You will need a full day to see everything here. Lots of interactive fun for the whole family. I especially like that you can request sensory-friendly tool kits at the museum to help those with sensory issues enjoy the spaces.",
+          "time": 1754532973,
+          "translated": false
+        },
+        {
+          "author_name": "Jesse Dryer",
+          "author_url": "https://www.google.com/maps/contrib/114753730166436086721/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVmAG80OSvYgRIDXzjvge1LuRg4HQSD-LAG9jgP7tj_lZMiLaoAew=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "A beautiful place.  Great gardens and water features.  A nice shop with cool merchandise for the museum,  Bob Ross Experience. There is a nice walking path along the White River adjacent to the museum a short hike to the Bob Ross experience at Ball State University",
+          "time": 1748360833,
+          "translated": false
+        },
+        {
+          "author_name": "Mike Bank",
+          "author_url": "https://www.google.com/maps/contrib/109444696442123400427/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIh0W3WPy6OXnAdg9dXqgLl6KAlN6oTcqW74M3GuJH2VBuxMA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Hidden gem.  Drive from Indy the 1 hour.  Thought we would spend 1-2 hours here and spent 2.5 and would have stayed longer but couldn't die to other commitment. The Bob Ross experience is fun.  A lot of reading but it gives great information about him and PBS in general.  The Qalhutst house is great to walk thru.  Lots of great memorabilia.  The main building is nice.  Overall worth 2-3 hours especially if you like architecture and gardens.",
+          "time": 1764594080,
+          "translated": false
+        },
+        {
+          "author_name": "Sarah Hartman",
+          "author_url": "https://www.google.com/maps/contrib/105125183085602630773/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXJ6ksHvFnDkBTpxkzPha9MAoI_abQvlE2IflXwmq0-GIbId_sv=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 4,
+          "relative_time_description": "7 months ago",
+          "text": "Open to the public the museum and gardens are nice to stroll around and see. Lots of activity on the grounds but still has a peaceful aura.",
+          "time": 1752955391,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-monroe-county-history-center",
@@ -864,14 +2073,14 @@
       "website": "https://monroehistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "202 E 6th St, Bloomington, IN 47408, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.16746,
-      "longitude": -86.5323,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "47408",
+      "latitude": 39.1671964,
+      "longitude": -86.5319401,
+      "place_id": "ChIJG-XcBt1mbIgRBfchdLeeI5Q",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -902,15 +2111,16 @@
         "walker_reciprocal",
         "official_website",
         "https://monroehistory.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Bloomington' from open data; MRD: computed city_tier=2 for Bloomington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:04:51Z",
+      "updated_at": "2026-03-14T19:55:36Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "8123322517",
+      "phone": "(812) 332-2517",
       "is_scoreable": false,
       "content_summary": "The Monroe County History Center in Bloomington offers a captivating glimpse into the rich heritage of southern Indiana. Visitors are immersed in fascinating exhibits that showcase local history, unique artifacts, and engaging programs that spark curiosity and learning for all ages. It's a must-see for anyone interested in the stories that shaped this vibrant community.",
       "content_description": "**Monroe County History Center** is not just a museum; it’s a treasure trove of local narratives waiting to be explored. Located in the heart of Bloomington, this historic preservation site houses an extensive collection of artifacts that reflect the diverse cultural and social history of Monroe County. From the time-honored traditions of early settlers to the progress of the modern era, every exhibit tells a story that adds depth and vibrant color to the region's history. Visitors can stroll through interactive displays that invite them to touch, feel, and engage with the past, making history come alive in an unparalleled way.  \n\nDelve into **Monroe County's** significant contributions during pivotal moments in American history, including the Civil War and the expansion of agricultural practices. The center's architecture itself is a blend of modern design and historic charm, encouraging guests to appreciate the preservation of the past while they indulge in a contemporary learning environment. With rotating exhibitions and dynamic educational programs, there's always something new to discover. Plus, the friendly staff and knowledgeable volunteers are always on hand to enhance your experience, offering insights that deepen your understanding of the exhibits. Plan your visit to be inspired by the vibrant community spirit that threads through the exhibits at the **Monroe County History Center**.",
@@ -923,7 +2133,138 @@
       ],
       "content_generated_at": "2026-01-25T02:04:51Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://monroehistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 90,
+      "google_reviews": [
+        {
+          "author_name": "Erin Liva",
+          "author_url": "https://www.google.com/maps/contrib/100155880254170638099/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKgatXb47FILW6-AnTWnS2vGlEvVzDWrF3BqrRrnFAn-aAR1mq=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "10 months ago",
+          "text": "There were a lot of interesting exhibits throughout the museum. The limestone  carver exhibit had a nice display of carving tools with a sample of the result of using that tool, and a quary with a few buttons kids would like to push.\nOutside of the wonderful carved piece and the items and articles already displayed on the wall, it would be great to have more  photography displayed of the other pieces of work from the Chicago Civic Opera house to other famous buildings and sculptures.",
+          "time": 1745866795,
+          "translated": false
+        },
+        {
+          "author_name": "Vicki Applegate",
+          "author_url": "https://www.google.com/maps/contrib/111234637296473025983/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXp4NZiwhSTp295UNFYXWLfwCs-W_CAdN1jXLNA4RDOxOh3gaEldA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I'm definitely going back in the near future. I want to learn more about Bloomington and it's a great place to do it.",
+          "time": 1762692876,
+          "translated": false
+        },
+        {
+          "author_name": "Mikey Scales",
+          "author_url": "https://www.google.com/maps/contrib/117852965631994374294/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU62PnSGZ3LtrUJLfxd3f-07XTwmeUAn4k-0-qmk98GtWHjTqQH=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Very cool stuff in this little exhibit. My favorite part was the 1830s cabin wood. I also enjoyed that I was alone but the bear (named Monroe in 2013) kinda freaked me out so I didn't go over there. I looked into the history of the bear and it's very interesting but would you ever consider putting it in a calmer stance or in a corner somewhere and not in the middle of the area?",
+          "time": 1761169226,
+          "translated": false
+        },
+        {
+          "author_name": "Gregory French",
+          "author_url": "https://www.google.com/maps/contrib/115168949328644404794/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6kuNERf-kgBVvhyokFABN3_d_VzVaqZwW7HA5fsbKDhXN5q-M=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Tickets were $2 per adult great price for the experience, staff was very helpful and friendly, displays were well laid out and very informative 👍 and a nice little gift shop too",
+          "time": 1767658481,
+          "translated": false
+        },
+        {
+          "author_name": "Sandy Arnold",
+          "author_url": "https://www.google.com/maps/contrib/110355775131791433264/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUZqfQdybHNGlQ_yw8y9NZ_m25uEd3O0ewj6FUDuwC2eywfUVVqBg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Wonderful displays on Monroe Co History. We enjoyed the temporary exhibit called \"Order Up!\" This exhibit was on many old and a few current restaurants in Monroe County that have been around a long time, many iconic. Lots of information and memorabilia on each. The guy said that they are planning another display in a couple years because they have so much stuff they didn't have room for this time!",
+          "time": 1667598551,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-newfields",
@@ -935,14 +2276,14 @@
       "website": "http://www.discovernewfields.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "4000 Michigan Road.",
+      "street_address": "4000 N Michigan Rd, Indianapolis, IN 46208, USA",
       "address_line2": null,
       "postal_code": "46208",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 39.82596059999999,
+      "longitude": -86.1856632,
+      "place_id": "ChIJvcr7Ua5Wa4gR6pjfPZL9o9g",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -972,12 +2313,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.discovernewfields.org"
+        "http://www.discovernewfields.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Indianapolis' from open data; MRD: computed city_tier=1 for Indianapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:05:02Z",
+      "updated_at": "2026-03-14T19:55:37Z",
       "notes": null,
       "city_tier": 1,
       "is_scoreable": false,
@@ -992,7 +2334,149 @@
       ],
       "content_generated_at": "2026-01-25T02:05:02Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(317) 923-1331",
+      "website_google": "https://www.discovernewfields.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 6564,
+      "google_reviews": [
+        {
+          "author_name": "Mateo Gebon",
+          "author_url": "https://www.google.com/maps/contrib/115758239226019840556/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLcEDr0ls6GMqF_8nSFqNhkrNrMsT-oryIKMGCkqENfnxToEg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "I visited the Newfields art museum in the wintertime, but it was still very impressive.  Since I was there on a weekday, I had many of the exhibits to myself and was able to thoroughly enjoy them without dealing with crowds.  They have a great and varied assortment of art, and it’s in a very nice space.  I loved their Seurat painting, and their Asian art exhibit was delightful.  I know they have some beautiful gardens and outdoors exhibits when the weather is nicer, so I’ll have to visit again in the summertime.  This is quite an amazing asset for Indianapolis and is a destination for anyone interested in art.",
+          "time": 1771687708,
+          "translated": false
+        },
+        {
+          "author_name": "Hannah Reynolds",
+          "author_url": "https://www.google.com/maps/contrib/110240777343990005242/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIfb6N9vMfIYcu4ZKoSKTubffEEJxjhaux45g7ZZDOLp-oEog=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "We had an amazing time at Newfields Winterlights this season! ✨❄️ The light displays were absolutely magical — everywhere you looked felt bright, colorful, and full of holiday spirit. It truly created such a festive and joyful atmosphere that instantly put us in the seasonal mood 🎄🌟.\nWhile we were there, I grabbed a hot cider inside and it was so delicious and comforting 🍎☕ — perfect for walking around in the chilly weather. They also offer a wide variety of drinks, both alcoholic and non-alcoholic, so there’s something for everyone to enjoy 🍷🥤.\nParking was super convenient too. There were plenty of free spots available in the main lot, or you can pay $20 for a closer parking option if you prefer 🚗👍. Overall, it’s definitely a must-see event if you’re in Indiana during the holidays. Such a fun and memorable experience! 💖✨",
+          "time": 1771913918,
+          "translated": false
+        },
+        {
+          "author_name": "Heather Garcia",
+          "author_url": "https://www.google.com/maps/contrib/102482137953317822899/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK5_GPdaBVZ7JGvKzg-FJ0ac8uqH9179RkwTY-eecTNhh4yFA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "The orchid displays inside the museum were gorgeous, perfect for a photo op! Opportunities to purchase orchids inside the gift shop, and many other beautiful gifts available.  More orchids and other tropical and desert plants inside the greenhouses, such an amazing variety! These should not be missed while on display this time of year! Please note, the entrance to the greenhouses is a bit hidden, it's back next to the Lilly House, in the area of the gardens that are under construction, looking as though the whole area is fenced off. Enjoy!",
+          "time": 1771791454,
+          "translated": false
+        },
+        {
+          "author_name": "Laura Salts",
+          "author_url": "https://www.google.com/maps/contrib/111932526251424553108/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWQuiNfIFKI5-o-K2uPF52B4BIgleYj1ShIPSl85niQV1Vqo4Iykg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We went to the Winterlights tonight and it was great. I was surprised at how much there was to see there. We were able to hang out for a long time, we even made and ate some s'mores. The lights were beautiful, and I'm glad that we went a little on the early side. Just be aware parking is difficult and you may have to park at the church across the street or even Butler. Other than that it was a fabulous experience.",
+          "time": 1766374507,
+          "translated": false
+        },
+        {
+          "author_name": "Andrew Agnew",
+          "author_url": "https://www.google.com/maps/contrib/107245564563757599311/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLrbdD1xLBTRK_AMW2MIDoRtythHWUZQy0u2XuuEb53TTckSQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Love this place. So much good art, fantastic experience, activities. Admission is fairly priced, the food and drinks are a bit marked up as is standard for places like this, but come prepared and you will always have a wonderful experience here. The Lume has ALWAYS been worth the money, highly recommend it as an add on to your trip.",
+          "time": 1769891079,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-red-skelton-museum-of-american-comedy",
@@ -1004,14 +2488,14 @@
       "website": "http://redskeltonmuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "20 Red Skelton Blvd.",
+      "street_address": "20 W Red Skelton Blvd, Vincennes, IN 47591, USA",
       "address_line2": null,
       "postal_code": "47591",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.6894466,
+      "longitude": -87.5176676,
+      "place_id": "ChIJ4SqAfBX_bYgRMSGvioUjSdA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1041,12 +2525,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://redskeltonmuseum.org"
+        "http://redskeltonmuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:05:10Z",
+      "updated_at": "2026-03-14T19:55:37Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -1061,7 +2546,149 @@
       ],
       "content_generated_at": "2026-01-25T02:05:10Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(812) 888-4184",
+      "website_google": "http://www.redskeltonmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 400,
+      "google_reviews": [
+        {
+          "author_name": "Fred Soward",
+          "author_url": "https://www.google.com/maps/contrib/106467965079387014801/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK4jDoda28wPGSfEKggI15vzisdav_ISpohkR8NCGmwOVtGdw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Plan to down at least a couple hours here. There’s plenty to see, read, and interact with at this museum. After a 10-minute video, there’s a self-guided tour. Red’s wife donated much of the memorabilia in the museum and there is a lot of it. The displays are logically organized. Be sure to go the end of the building entry hallway, past the restrooms, to see the large bust of Red.",
+          "time": 1759636079,
+          "translated": false
+        },
+        {
+          "author_name": "RandomAndysChannel2",
+          "author_url": "https://www.google.com/maps/contrib/109983482722744782237/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUSqf90cQWVsm14OMd7x4WlQHO4C6RBLAwvTLoTDLt6J_TAIXlt=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The is an extremely underrated museum of an American comedy legend. Wasn't expecting much but came out absolutely loving this place more than I thought I would have. So many cool pieces on display. Tons of great info. Can't wait to come again.",
+          "time": 1741576661,
+          "translated": false
+        },
+        {
+          "author_name": "Virginia Skaggs",
+          "author_url": "https://www.google.com/maps/contrib/108288015956070901890/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXjNtnnO2lzkg5GXFfamB_nGo1OqwCtsD-yqeDchq1aqw0x1pZW5w=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Very nice little museum inside the Red Skelton Performing Arts Center on VU's campus. Lots of interactive displays and videos of Red Skelton in all his glory.",
+          "time": 1720733176,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa Pinaire",
+          "author_url": "https://www.google.com/maps/contrib/117890689994253580284/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWT6GlBD9u9CGPt0g6yGxa7GxUobvV8i4gYQG_tinx1L0lG_eU=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Beautifully built addition to the museum!",
+          "time": 1763668899,
+          "translated": false
+        },
+        {
+          "author_name": "J Hytken",
+          "author_url": "https://www.google.com/maps/contrib/105931047584514297781/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAVogmiU9_Pp8G0AWjSsR8ApLSOP_7oa-QiEJKFS_u3lPtlhF9=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "An excellent tribute to one of the greatest comedians and clowns of the 20th century. Anyone who has heard of Red should make it a point to visit this museum. Plan on spending about 2 hours. Well worth a stop even if out of the way. I understand that some of the greatest comedians such as Jonathan Winters and Robin Williams idolized Red Skelton and learned much from him.  He was a true genius and it surely shows in this marvelous museum. What an amazing man with an equally impressive life. It’s a bargain price to come and spend time.",
+          "time": 1654990129,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-unknown-south-bend-museum-of-art",
@@ -1073,14 +2700,14 @@
       "website": "http://www.southbendart.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "120 S Dr Martin Luther King Jr Blvd",
+      "street_address": "120 Doctor M.L.K. Jr Blvd, South Bend, IN 46601, USA",
       "address_line2": null,
       "postal_code": "46601",
-      "latitude": 41.67548,
-      "longitude": -86.24865,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 41.676201,
+      "longitude": -86.2483985,
+      "place_id": "ChIJw1UrKjfNFogRevnF9iVtH_g",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1089,7 +2716,7 @@
       "tickets_url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsouthbendart.org%2Fevents%2Ffirst-friday-reception-scholastic-art-awards%2F",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1104,20 +2731,21 @@
       "historical_context_score": 1,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum's collection is deemed modest or supporting, lacking depth and national significance. Its historical context is limited, as it primarily serves the local community. The museum's reputation indicates it is known within a regional context.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the South Bend Museum of Art’s permanent collection, so strengths in Impressionism, Modern/Contemporary art, and historical interpretation cannot be determined. Based on institutional signals indicating a smaller city context and no nearby museum clustering evidence, it is most plausibly a local-serving museum with a small-to-limited collection scope.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.southbendart.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'South Bend' from open data; MRD: computed city_tier=3 for South Bend; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:05:21Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -1133,26 +2761,158 @@
       "content_generated_at": "2026-01-25T02:05:21Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "phone": "(574) 235-9102",
+      "website_google": "http://www.southbendart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 12:00 – 5:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 224,
+      "google_reviews": [
+        {
+          "author_name": "Byrl Shaver",
+          "author_url": "https://www.google.com/maps/contrib/106475972557617457239/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWCQcYqGDKmeb8N2wv0MK6CV9R5FfDcy4scVsnq-ZMvCM_NDKaS=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "What a great exhibit, we really enjoyed the scholastic entries. This example was called: In Flight... go check the Art Museum out!!!",
+          "time": 1772838332,
+          "translated": false
+        },
+        {
+          "author_name": "Diane Grams (Somersault Studio 12)",
+          "author_url": "https://www.google.com/maps/contrib/115600033112865551803/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUkc37KctsE0dZdEtwVM6SPRAfVSdOSCZ5jKI4tPc-y8n-6J0k=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Love the South Bend Museum of Art. It has great  collection and does fascinating exhibits of living artists. Great first Friday opening receptions. Love their Around the Bend biennial exhibit of regional artists.",
+          "time": 1717818341,
+          "translated": false
+        },
+        {
+          "author_name": "Mikala Narlock",
+          "author_url": "https://www.google.com/maps/contrib/102798266061289421963/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXnawFmoOg8Kk9Xdlz_wX9bMifbcLENjJmBUUE1KYr2MzoaUcs=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "A gem in downtown SB! Must see for anyone passing through. Free to visitors, and a really interesting collection.\n\nBonus: they have amazing classes so anyone can learn and practice with different media, including ceramics, paints, and fiber arts.",
+          "time": 1764675510,
+          "translated": false
+        },
+        {
+          "author_name": "Kayra Ucpinar",
+          "author_url": "https://www.google.com/maps/contrib/113420754073349545490/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW8_KxpHBKtqdB3Lw2i6iiFrkyCuEtwCwJ53RW4PV5f5-pbDr1VdQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Take an art class from SBMA the instructors are so sweet and amazing! I have only taken Pottery and Lisa is the best, I'll definitely be taking more. You seriously won't regret!!",
+          "time": 1765298071,
+          "translated": false
+        },
+        {
+          "author_name": "johnny rodriguez",
+          "author_url": "https://www.google.com/maps/contrib/107750226540853087347/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWhPxAdb_XLoYjTeyKHuQXx2p0hawE-8X7lwVRyJwDUgosEzn4=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Absolutely beautiful place free admission, there’s all kinds of different paintings, sculptures, and even some graphic design pieces, the building itself is gorgeous and has a nice view of the water overlooking the city.",
+          "time": 1766082398,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-history-science-evansville-museum-of-arts",
       "country": "USA",
       "state_province": "Indiana",
-      "city": "History & Science",
+      "city": "Evansville",
       "museum_name": "Evansville Museum of Arts",
       "alternate_names": null,
       "website": "https://emuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "411 SE Riverside Dr, Evansville, IN 47713, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 37.96585,
-      "longitude": -87.57294,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "47713",
+      "latitude": 37.9650887,
+      "longitude": -87.57284109999999,
+      "place_id": "ChIJYRDB6SXVcYgRvt_ZQ_uIJC4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1173,26 +2933,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 16,
+      "historical_context_score": 4,
+      "priority_score": 14,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Evansville Museum of Arts has a modest collection that provides some educational value but lacks depth in key art categories. While it has historical significance for the region, it does not impact national scholarship notably.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is described as a general-interest institution with comprehensive multi-domain holdings (art, history, anthropology, science) and no specific evidence of dedicated Impressionist or Modern/Contemporary strengths, so those areas are rated as minor. Its broader interpretive capacity is likely strong given its history/science scope and large permanent collection, supporting a good historical-context score. Regional significance is suggested by its standing in Southern Indiana and AAM accr",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://emuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for History & Science; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8124252406",
+      "phone": "(812) 425-2406",
       "is_scoreable": true,
       "content_summary": "Part art museum, part community time capsule, the Evansville Museum of Arts, History & Science rewards curious visitors with a well-rounded cultural stop on the Ohio River. Its art galleries spotlight regional talent alongside broader American and global touchpoints, creating an approachable, discovery-driven experience rather than an overwhelming marathon. Expect thoughtfully organized exhibitions, a strong sense of place, and the pleasure of moving from paintings and sculpture to local history and science in one visit—ideal for art lovers who like context with their canvases.",
       "content_description": "Set along Evansville’s riverfront, the **Evansville Museum of Arts, History & Science** offers art enthusiasts a satisfying, time-efficient museum visit where visual culture is framed by the city’s larger story. As a regional institution with **competent curatorial direction**, it excels at presenting art in a way that feels grounded and intelligible—less about blockbuster spectacle and more about *close looking* and local connection. Travelers who enjoy understanding how a place sees itself through art will appreciate the museum’s steady emphasis on regional makers and rotating exhibitions that keep the galleries fresh.\n\nThe art experience is complemented by the museum’s multi-department identity: moving between art, history, and science encourages visitors to read artworks alongside material culture and civic narratives. This cross-pollination can be especially rewarding for fans of *American art* and *regional modernisms*, where subject matter, landscape, and industry often intertwine. While the collection is described as **modest**, the strength here is coherence—an accessible scale that invites lingering with individual works rather than rushing past highlights.\n\nArchitecturally, the museum reads as a civic landmark designed for public learning—easy to navigate, comfortable for first-time visitors, and well-suited to an unhurried afternoon. For art lovers, the pleasure lies in the rhythm of discovery: a focused gallery pass, a return to a favorite piece, and then a contextual detour through the museum’s history holdings. It’s an excellent stop for travelers building an itinerary of Midwestern museums—especially those who prize *regional specificity* and thoughtful presentation over crowds.",
@@ -1211,26 +2972,148 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://www.emuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 174,
+      "google_reviews": [
+        {
+          "author_name": "Nick",
+          "author_url": "https://www.google.com/maps/contrib/112603988095427965132/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXilnb4w0HF22sDp90g1yFTQzKHXQQp6nMwAuB8Z-Ujj-YAOyI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "in the last week",
+          "text": "A well-done museum with friendly staff. The collection spans city history, American, European, and Asian art, transportation, physics, natural history, sculptures, and more. It's great for children, too. Changing exhibits and events keep things fresh. What keeps it from five stars: the gift store could use an upgrade, and more frequent and diverse programming for local residents would be welcome. Recommended for every visitor to Evansville!",
+          "time": 1772946702,
+          "translated": false
+        },
+        {
+          "author_name": "Jacob Carter",
+          "author_url": "https://www.google.com/maps/contrib/115537256567106911692/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJX3f8bTr9GXuET-YV8wzKUKvkKSXKtkxR0QeKsWp2nTjIVbg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "I’m not originally from the area, but I live here now, and when my dad and his wife visited for the weekend, we decided to check out the museum 🎨🏛️ — and we had an absolute blast 😄✨! It was so fun, informative, and educational 📚💡. I’m already looking forward to having my son visit this summer so I can take him through the museum and explore the train exhibit 🚂😍. A perfect place for learning, exploring, and just having a great time with family ❤️👨‍👩‍👦. Highly recommend it! 🌟🎉",
+          "time": 1772527428,
+          "translated": false
+        },
+        {
+          "author_name": "Greg Haller",
+          "author_url": "https://www.google.com/maps/contrib/103519593811215506949/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV0ixeSEoqfJVzQaT_zv9LllfUWq2ww2eTbiqW__Y3r5-vWhKPw9w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "We came here to attend Frankenstein's Chemistry Lab, a free event, and poked around the rest of the museum. The science room was fun, especially the shadow room, but I wouldn't have paid full price for it. The art and history areas were interesting but not engaging for the kids.",
+          "time": 1761433065,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa Norton",
+          "author_url": "https://www.google.com/maps/contrib/112629796544365212954/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX89LRanbHtiiOgTLvj4uDEnZNytK9I3fcN0YkG5fpi0m4DO1TReQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I have been going to this museum since I was a little girl. I love the down stairs with the village. Looking in all the windows and seeing how they lived back then is so cool. The details are amazing! I also remember the hands on area with all the different experiments. I have taken my children and grand children there as they were growing up.  The train outside is the best part too. You can walk through it and actually touch everything. From the engine to the places where people ate and slept. I could spend all day there and my kids and grand kids too. It’s a very interesting place. Even a real mummy cat. I just can’t say enough about this museum it’s worth going",
+          "time": 1769119086,
+          "translated": false
+        },
+        {
+          "author_name": "Laura Myers",
+          "author_url": "https://www.google.com/maps/contrib/106873074193913530438/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhtMtAcwXMmwxm2LpVCwA1iFDooIbiWZ5iag3MDY53XmAPacZJxA=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Evansville Museum was the perfect stop on a snowy day! A blend of history, science, art, and transportation all in one place. The hands-on science exhibits are fun and reminiscent of The Magic House in St. Louis—just on a smaller scale.\n\nThe history section is truly special, with a recreated town featuring wood floors and charming storefronts. The art museum was partially under construction, but the available exhibit space showcased an eclectic mix of modern art, sculptures, prints, and paintings.\n\nThe transportation exhibits, housed in a separate building, highlighted the railroad’s impact on the region.\n\nIf you’re in Evansville, take an hour or two to explore—it’s worth the visit!\n\nExploring life 1 sip, 1 bite and 1 small town at time. Explore everything!",
+          "time": 1739912489,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-in-terra-haute-swope-art-museum",
       "country": "USA",
       "state_province": "Indiana",
-      "city": "Terra Haute",
+      "city": "Terre Haute",
       "museum_name": "Swope Art Museum",
       "alternate_names": null,
       "website": "http://www.swope.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "25 South 7th Street",
+      "street_address": "25 S 7th St, Terre Haute, IN 47807, USA",
       "address_line2": null,
       "postal_code": "47807",
-      "latitude": 38.15242,
-      "longitude": -86.81062,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 39.4655711,
+      "longitude": -87.40723299999999,
+      "place_id": "ChIJB2xq5zBlbYgRQkYiqKuuwpg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1239,7 +3122,7 @@
       "tickets_url": "https://www.facebook.com/SwopeArtMuseum",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1254,23 +3137,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Swope Art Museum has a modest collection that supports local educational value, hence a score of 2 for collection strength. Its historical context is also primarily relevant to the local community, which aligns with the score of 2. However, the museum does not exhibit evidence of significant national or international holdings.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no collection or curatorial details for the Swope Art Museum, so strengths in Impressionist or Modern/Contemporary art and historical-context quality cannot be assessed. Based on being an art museum in a mid-sized city (Terre Haute) with no nearby-museum signals, it most plausibly has a primarily local reputation and a moderate (non-flagship) collection scope.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.swope.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Terra Haute; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:05:44Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "8125355141",
+      "phone": "(812) 238-1676",
       "is_scoreable": true,
       "content_summary": "Terre Haute’s Swope Art Museum is a rewarding stop for art lovers who enjoy discovering strong regional collections in an intimate setting. Known for a thoughtfully edited range of American and European works, the Swope balances approachable gallery rooms with genuinely compelling highlights—especially for fans of 19th- and 20th-century painting and works on paper. It’s the kind of museum where you can look closely, linger without crowds, and leave with a clearer sense of Indiana’s cultural ambitions and connections to wider art history.",
       "content_description": "**Swope Art Museum** is a classic Midwestern art museum: compact enough to feel personal, yet curated with real seriousness. In Terre Haute, it serves as a cultural anchor, offering art enthusiasts a chance to experience a concentrated survey of American and European art without the scale fatigue of a major metropolis. With a **modest but well-chosen** collection and **competent curatorial voice**, the museum tends to reward slow looking—especially in galleries devoted to painting, prints, and drawings, where shifts in technique and mood can be read up close.\n\nExpect a mix that often foregrounds the strengths typical of regional institutions: **American realism**, portraiture, landscape traditions, and the approachable drama of *Impressionist* and *post-Impressionist* sensibilities as they filtered into U.S. collecting. Works on paper frequently shine in museums like this—etchings, lithographs, and drawings that reveal process and line, and that can be rotated to keep repeat visits fresh.\n\nArchitecturally, the experience is about clarity and concentration rather than spectacle: **well-lit galleries**, human-scaled rooms, and an unhurried pace that makes it easy to build your own mini-itinerary—start with paintings, then move to prints and smaller objects for close study. For travelers, the Swope is ideal as a purposeful hour-long visit or a longer, contemplative afternoon—an art stop that feels both accessible and quietly substantial.",
@@ -1285,26 +3169,92 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "eca_score": 2,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "http://www.swope.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.8,
+      "google_reviews_count": 209,
+      "google_reviews": [
+        {
+          "author_name": "Marilyn Dodds",
+          "author_url": "https://www.google.com/maps/contrib/109673162694561151033/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLJs5-uklPESivtfLG8cz1ShT-ner8b2uEjTm_-2DcI-fgtUw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "10 months ago",
+          "text": "Nice little museum. They are undergoing a huge renovation. Will likely be 5 stars when done",
+          "time": 1745522537,
+          "translated": false
+        },
+        {
+          "author_name": "MIMI B",
+          "author_url": "https://www.google.com/maps/contrib/104921172067654650466/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVyX7v-gnVIDrjBIRFWEqhvPcMG9dh4XKvfuLbVcyZN-bkuunJAuQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "This museum is updating a lot of areas. Nice setup to view your child's art and more.",
+          "time": 1745460586,
+          "translated": false
+        },
+        {
+          "author_name": "Molly Smith",
+          "author_url": "https://www.google.com/maps/contrib/111738552589120212760/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUAmVxs9ulSuyYjU_1QNw2QW84ZvQIC0mxM8vA9Sgb5wJ4IKtWi=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Cute little stop on our drive through Indiana. They had a Renoir on loan and curated a little exhibition of Hoosier school artists to go along with it, but the permanent collection was really lovely. Free entry, docents were so friendly and helpful.",
+          "time": 1648475879,
+          "translated": false
+        },
+        {
+          "author_name": "Aidan",
+          "author_url": "https://www.google.com/maps/contrib/117787325629414212662/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJPIQP9GvasGIpFZRnf7CoG78y20oByoSXBlaaXu2EfQ91zPoc=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "It’s free so the price is definitely right! This isn’t a huge collection, but for a small town it’s impressive. There’s some famous works here including a Andy Warhol and Edward Hopper. If you’re in town and an art fan it’s a no brainer to check this out. For most people I’d assume you’ll spend maybe a half an hour to an hour here.",
+          "time": 1617335896,
+          "translated": false
+        },
+        {
+          "author_name": "Madeline Ramirez",
+          "author_url": "https://www.google.com/maps/contrib/116062661251478013575/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWTUm80rnaP9HTkYeyZAiN1sH-akGkbAl5y9rFNmH5XkjWqowU=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Lovely little museum in Terre Haute, IN. A must see. Friendly staff and patrons. Thanks to locals Phil and David for their welcome and impromptu tour.",
+          "time": 1622995893,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-in-university-of-norte-dame-snite-museum-of-art",
       "country": "USA",
       "state_province": "Indiana",
-      "city": "University of Norte Dame",
+      "city": "Notre Dame",
       "museum_name": "Snite Museum of Art",
       "alternate_names": null,
       "website": "http://sniteartmuseum.nd.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "100 Moose Krause Cir, Notre Dame, IN 46556, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 41.70532,
-      "longitude": -86.2287,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "46556",
+      "latitude": 41.6995878,
+      "longitude": -86.23569909999999,
+      "place_id": "ChIJnUgdJZ7SFogRqbY8t8Sc4pM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1325,23 +3275,24 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
-      "historical_context_score": 1,
-      "priority_score": 17,
+      "historical_context_score": 3,
+      "priority_score": 15,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Snite Museum of Art has a modest collection providing contextual value but lacks depth and scholarly impact. Its historical context score is limited, primarily serving local relevance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "As a university art museum (Notre Dame) without provided evidence of specific Impressionist or Modern/Contemporary holdings, the safest inference is minor representation rather than a focused strength. University museums typically provide some educational/interpretive framing, suggesting moderate historical context, and the institution’s profile supports a regional reputation with a moderate (not flagship) collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://sniteartmuseum.nd.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for University of Norte Dame; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://sniteartmuseum.nd.edu; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -1361,8 +3312,76 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Regionally Important",
+      "phone": "(574) 631-5466",
+      "website_google": "http://raclinmurphymuseum.nd.edu/",
+      "business_status": "CLOSED_PERMANENTLY",
+      "google_rating": 4.7,
+      "google_reviews_count": 194,
+      "google_reviews": [
+        {
+          "author_name": "Kristin Steffen",
+          "author_url": "https://www.google.com/maps/contrib/104367831543076325846/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV1PkVsm69vZK_05gZee35NjVqy-hRgr0rWQLpz6sXwjc49UgbnxQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "This is a great museum!! It's big enough to spend an afternoon but not so big that you get tired or overwhelmed. They have a number of moving sculptures and sculptures that are well lit and cast amazing shadows. I was impressed to see they have a Georgia O'Keeffe, a John Singer Sergeant and a Joan Miro. There are 3 levels so keep that in mind as you're walking around so you don't end up doing 2 sets of stairs at once and they do have an elevator! They were very nice to us and pointed us toward maps. They have a cloak room so we could ditch our winter coats and be comfortable. Bonus: it's FREE (with a suggested donation of $5/person).",
+          "time": 1650492773,
+          "translated": false
+        },
+        {
+          "author_name": "Rocki Stillson",
+          "author_url": "https://www.google.com/maps/contrib/106284330662664044121/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW9H2WbfQk_jD3XfFSIneOXGOYaOkeqJ5Bf_8Ggea3EzsevA1pnrg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "If you are visiting South Bend or Notre Dame the Snite is a wonderful place to visit. Free of charge and full of fantastic collections.  There are three levels that progress from oldest to contemporary.",
+          "time": 1555703390,
+          "translated": false
+        },
+        {
+          "author_name": "Beatriz Dattoli",
+          "author_url": "https://www.google.com/maps/contrib/115833745768093509951/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXAgbAoujR1_6fIlX8rwLpCXQhdBL4aY5Mrd6WSjqGlDAaa-kAqjQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Great collection of art. A bit of everything. Several Renaissance era madonna and child pieces. Several galleries and three floors of art. A great asset on the Notre Dame campus.",
+          "time": 1567635753,
+          "translated": false
+        },
+        {
+          "author_name": "Sean Walton",
+          "author_url": "https://www.google.com/maps/contrib/101772271595041537403/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLgnRDSGA4oKSVSrjXEBenRKImIyR9S7-pg3FZ6Sct4WjUqE4=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "This is a great place to spend an afternoon with the art lover in your life. The exhibits are well thought out and displayed. Plenty of information is provided for the pieces.",
+          "time": 1563877628,
+          "translated": false
+        },
+        {
+          "author_name": "Rene Sousa",
+          "author_url": "https://www.google.com/maps/contrib/113230870968775200313/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXJUeEj-e-86MPeoYiWV4eE172dcG2xXQJ6xwl4EkPfNjLcHmheCg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Some very unique pieces and interesting different exhibits. A must visit on campus ! Hidden right across the street from the stadium.",
+          "time": 1550599410,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

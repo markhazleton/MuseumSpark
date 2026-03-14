@@ -20,7 +20,7 @@
       "longitude": -71.30830259999999,
       "place_id": "ChIJwWptIEOv5YkRX3rmfN8mFpY",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -44,19 +44,19 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum provides some local context but lacks significant historical importance or notable collections in Impressionist or Modern/Contemporary art. Its reputation is primarily local, serving the immediate community.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the Newport Art Museum & Art Association’s permanent collection, galleries, or interpretive approach. The only collection-related content is a general Wikipedia summary about artist George Bellows, which is not evidence of this museum’s holdings or reputation.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 2,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:28:45Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4018488200",
@@ -84,14 +84,14 @@
       "website": "https://providenceathenaeum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "6970 251 Benefit Street",
+      "street_address": "251 Benefit St, Providence, RI 02903, USA",
       "address_line2": null,
       "postal_code": "02903",
-      "latitude": 41.81683,
-      "longitude": -71.4094,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 41.825788,
+      "longitude": -71.406378,
+      "place_id": "ChIJwWTSKhZF5IkR99WHmZo5EeY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Children's Museum",
       "primary_domain": null,
       "topics": null,
@@ -122,15 +122,16 @@
         "walker_reciprocal",
         "official_website",
         "https://providenceathenaeum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Providence' from open data; MRD: computed city_tier=3 for Providence; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:28:51Z",
+      "updated_at": "2026-03-14T20:02:40Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'CHILDREN'S MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4012735437",
+      "phone": "(401) 421-6970",
       "is_scoreable": false,
       "content_summary": "The **Providence Athenaeum** is a treasured institution that blends the wonder of children's literature with the charm of a historic setting. Designed for inquisitive minds, this unique museum offers interactive experiences that inspire creativity and imagination, making it an unforgettable destination for families.",
       "content_description": "**Providence Athenaeum** is not just any children's museum; it's a gem nestled in the heart of Providence, Rhode Island, where the spirit of exploration thrives. Established in 1836, this historic library and museum combines the beauty of classic architecture with a vibrant atmosphere designed to engage the young and the young-at-heart. The Athenaeum's meticulously preserved reading rooms and enchanting spaces encourage a love for reading and storytelling, inviting visitors to lose themselves in the magic of books. Each corner holds a new adventure, fostering curiosity and creativity in visitors of all ages.  \n\nAs you wander through its enchanting halls, you’ll discover beautifully curated exhibitions that bring beloved children's literature to life. *Interactive storytime sessions*, art workshops, and engaging storytelling events are scheduled throughout the year, ensuring there’s always something new to experience. Families can immerse themselves in hands-on activities that challenge their imaginations—a delightful way to encourage literacy and creative expression. With its stunning architectural details and a welcoming atmosphere, the **Providence Athenaeum** is not merely a stop on a travel itinerary; it’s a place where lifelong memories are crafted, lessons learned, and the joys of reading are celebrated.",
@@ -143,7 +144,148 @@
       ],
       "content_generated_at": "2026-01-25T03:28:51Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.providenceathenaeum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 212,
+      "google_reviews": [
+        {
+          "author_name": "Jimbly168",
+          "author_url": "https://www.google.com/maps/contrib/109535599398842572963/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9yWch3b9QN2vShNkfX9AGG8wBM_CykEE1885gyegvqCVEF9k=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "A hidden gem particularly for book lovers - a 200 year old Greek building is still going strong as independent library. Gorgeous architecture, many many old books, downstairs has plenty place to sit and read. The whole place is so calming and relaxing.",
+          "time": 1764784235,
+          "translated": false
+        },
+        {
+          "author_name": "Kristy Johnson",
+          "author_url": "https://www.google.com/maps/contrib/116090463145785638796/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX0mFaowRCN0U3WhbIUa0ZYRWA8aggKA7B_z6SBlujY08-6cSTH=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "This place is spectacular! It’s a lot smaller than the one in Boston, but it’s also a place that’s accessible to everyone, and you just pay what you can, which I think is a really great way of doing it.\n\nThe upper levels were very, very creaky. They made me a little nervous that the floor might not hold so I didn’t stay up there very long, but the layout of the building is so unique. It was really fun to get to climb the stairs and to see all of those ladders everywhere like something from beauty and the beast.\n\nI also really appreciated the variety! I explored some of the reformation writers, and then I went downstairs and there were some books on display written about disability or Palestine or other important topics and I just appreciated being aware that these books exist! So much breadth in such a small space.\n\nI could not figure out how to access the elevator. The handicap parking spot is out front at the very base of a massive staircase. It’s also on a hill, so I think it said the elevator was around back, but you would have to go up the hill to get to it, which is for all practical purposes not accessible. The building is really really old so that’s probably why.\n\nI took those stairs very slowly, and I did make it up, and it was worth the trip.",
+          "time": 1755187957,
+          "translated": false
+        },
+        {
+          "author_name": "Marcus Martinez",
+          "author_url": "https://www.google.com/maps/contrib/106660239309672093724/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJlZgSVHJpV_tWhCWHus97REpCw3ELlcKLMpYGD_O95qtZdOg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Absolutely in love with this place. The interior is stunning, with white bookshelves, antique chairs, and a cozy study in the basement. I love the feature of pay-what-you-can for entry—it was a nice touch. My boyfriend and I went there, picked a book, and read in comfy chairs. Highly recommend this place if you’re a book lover who wants to escape to a majestic getaway. It’s a low-cost option that is accessible for all.",
+          "time": 1768225844,
+          "translated": false
+        },
+        {
+          "author_name": "Jeremiah Joseph",
+          "author_url": "https://www.google.com/maps/contrib/102248142637123898793/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWVc3KnkSNgXTZWqkYc4VjKpVdoxkNtJzfk7pdm1yi59f7BS-R1SQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "The Providence Athenaeum is one of Rhode Island’s true treasures. The building is beautiful and historic, but the talks and programming are what really make it special. I consistently leave events feeling energized and intellectually fed.\nMembership has real value. You get access to excellent lectures and events, borrowing privileges, and NARM reciprocity, which is a fantastic benefit if you visit museums elsewhere. It’s a meaningful way to support a vibrant cultural institution.",
+          "time": 1771624935,
+          "translated": false
+        },
+        {
+          "author_name": "Mattho Mandersloot",
+          "author_url": "https://www.google.com/maps/contrib/116173121034954050212/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXmRD8BeiEnkaLgOPEcgT5ApcC3DTdSqS9K38wqtEn26OsH24Oe=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Beautiful place! I would come here every day if I lived in Providence. Reading room downstairs is very cozy. There's also a rotating small exhibition and they sell used books at reception. 10/10!",
+          "time": 1731723506,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ri-unknown-rhode-island-historical-society-john-brown-house-museum",
@@ -162,7 +304,7 @@
       "longitude": -71.4033366,
       "place_id": "ChIJc1_n1D1F5IkR-oWx_NK1XeU",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -197,7 +339,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:28:58Z",
+      "updated_at": "2026-03-14T20:02:40Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4012738107",
@@ -232,7 +374,7 @@
       "longitude": -71.30728549999999,
       "place_id": "ChIJZWWRZV-v5YkR6vQ4wox-tLU",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -267,7 +409,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:29:05Z",
+      "updated_at": "2026-03-14T20:02:41Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4014230005",
@@ -289,20 +431,20 @@
       "museum_id": "usa-ri-gardens-arboretum-blithewold-mansion",
       "country": "USA",
       "state_province": "Rhode Island",
-      "city": "Gardens & Arboretum",
+      "city": "Bristol",
       "museum_name": "Blithewold Mansion",
       "alternate_names": null,
       "website": "https://www.blithewold.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "101 Ferry Rd, Bristol, RI 02809, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 41.46352,
-      "longitude": -71.3066,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "02809",
+      "latitude": 41.6540633,
+      "longitude": -71.2660152,
+      "place_id": "ChIJo83xPwBV5IkRn8xLCOUz-fA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
@@ -333,12 +475,13 @@
         "walker_reciprocal",
         "official_website",
         "https://www.blithewold.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Gardens & Arboretum; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:29:12Z",
+      "updated_at": "2026-03-14T20:02:42Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "4018463772",
@@ -354,7 +497,59 @@
       ],
       "content_generated_at": "2026-01-25T03:29:12Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.blithewold.org/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.5,
+      "google_reviews_count": 4,
+      "google_reviews": [
+        {
+          "author_name": "Patricia Torcello Catalina",
+          "author_url": "https://www.google.com/maps/contrib/108367642833380771546/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIIvwxEinGzL-ZvDkI_qIpcr0hJOyXQWSj_kleLrLyHy3-KHQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Sparkling lights greeted us upon our entering this beautiful home. There is an original Remington sculpture in the parlor. The butler answered my many questions about the 'box bed' cupboard, and the maid told us about the meals served to the family. The daughter was a very talented artist and the Historical Society owns and displays her work around the house. The family earned its riches mining coal in Pennsylvania. A beautiful historic home!",
+          "time": 1733496586,
+          "translated": false
+        },
+        {
+          "author_name": "the Deterdings",
+          "author_url": "https://www.google.com/maps/contrib/118100193372409812269/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkX7YtHnaQEwkLVt4WRXAZsh4jBrTB6jQ-9ri9b3iEdJ2b4EUi=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 3,
+          "relative_time_description": "6 months ago",
+          "text": "Rainy day ruined our day trip to Boston. So stopped by instead for an indoors activity.\nNice house - easy audio tour by downloading a QR code.\nGrounds had interesting highlights from Giant Sequoia and small bamboo forrest - but ugh the bugs killed the trek (esp after the rain, were out ferocious).\n\nHonestly for the price $22 entry, not quite worth it, unless you need time to kill like we did.",
+          "time": 1757282562,
+          "translated": false
+        },
+        {
+          "author_name": "Mike Egan",
+          "author_url": "https://www.google.com/maps/contrib/104623685745165732432/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLnnCHW6HHfOHQQ0hVDPnWrk64neZ_ktJ3v7s1huWbhpH9-=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Beautiful venue for a wedding in the garden",
+          "time": 1750437434,
+          "translated": false
+        },
+        {
+          "author_name": "CHELSEY KARNES",
+          "author_url": "https://www.google.com/maps/contrib/110854729956965118404/reviews",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUag63gtcBvMeLjuZ86vxUoEfhQO13jsE9VWKg0XrG59f9AT0D6=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "",
+          "time": 1753649244,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ri-providence-risd-museum-of-art",
@@ -366,14 +561,14 @@
       "website": "http://www.risdmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "10 WARDWELL STREET",
+      "street_address": "20 N Main St, Providence, RI 02903, USA",
       "address_line2": null,
-      "postal_code": "2809",
-      "latitude": 41.67151,
-      "longitude": -71.27625,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "postal_code": "02903",
+      "latitude": 41.8261811,
+      "longitude": -71.40805689999999,
+      "place_id": "ChIJF8ZeSxZF5IkRvBdY0FYlEUk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -394,26 +589,27 @@
       "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 12,
+      "historical_context_score": 4,
+      "priority_score": 10,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The RISD Museum has a modest collection and provides local context in the art historical narrative. Its reputation is notable, but it does not have substantial national or international influence in the field.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "As the 20th-largest art museum in the U.S. with seven curatorial departments, RISD Museum likely offers broad coverage including some Impressionist and substantial modern/contemporary representation, but the evidence does not indicate flagship strengths in either. Its long-established (1877) academic-museum setting suggests solid interpretive and educational context. Reputation and collection tier align with the provided prior regional/moderate assessments.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.risdmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Providence; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
-      "phone": "4012534400",
+      "phone": "(401) 454-6500",
       "is_scoreable": true,
       "content_summary": "The RISD Museum in Providence is a must for art lovers who enjoy discovering big ideas in an approachable, beautifully installed setting. Tied to the Rhode Island School of Design, it balances museum-caliber treasures with the freshness of a teaching collection—where you can slow down, look closely, and spot the design DNA behind what you’re seeing. From ancient objects to contemporary work, the galleries reward repeat visits, and the museum’s campus location makes it easy to pair with a day exploring College Hill.",
       "content_description": "Anchored to the Rhode Island School of Design, the **RISD Museum** feels like both a destination museum and a behind-the-scenes classroom for seeing how art is made, studied, and designed. Its strongest appeal is the **breadth of mediums**—painting and sculpture share the stage with textiles, furniture, prints, photography, and decorative arts—so you experience art history not as a straight line but as a conversation across materials and ideas. For travelers, that translates into galleries that invite close looking: brushwork, grain, weave, glaze, and joinery are treated as seriously as iconography.\n\nThe museum’s collection is often praised for the pleasures of discovery: you might move from ancient or medieval works into European and American art, then pivot into design-forward displays where craftsmanship and innovation take center stage. Because it functions as a teaching museum, labels and installations tend to emphasize *process* and *material intelligence*—ideal for anyone who loves tracing the leap from studio practice to finished masterpiece.\n\nArchitecturally and experientially, **RISD Museum** fits Providence’s College Hill character: intimate enough to navigate comfortably, yet rich in distinct gallery environments that make the visit feel varied. Expect thoughtful lighting, strong curatorial pacing, and the particular buzz of a campus museum—students sketching, artists studying details, and visitors who are there to look carefully. Plan time to wander nearby historic streets, then return for a second pass through favorite rooms; this is a museum that rewards lingering.",
@@ -430,8 +626,150 @@
       "collection_based_strength": 2,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://risdmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 12:00 – 8:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2294,
+      "google_reviews": [
+        {
+          "author_name": "Andres Ayala",
+          "author_url": "https://www.google.com/maps/contrib/110385639413066488214/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLtaQD3KflQu3sSgcJyXjs8dmIXk2XuC0By_eieJmLPrba12w=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "What an amazing way to spend a weekend. The exhibits are extraordinary. Six floors of wonderful exhibits which allows one to expand their horizons and experience great emotions. They had plenty of staff and volunteers to help with the different exhibits. What a wonderful time.",
+          "time": 1768689334,
+          "translated": false
+        },
+        {
+          "author_name": "John Powers",
+          "author_url": "https://www.google.com/maps/contrib/100027510776866162734/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXfRms0YcURULmQbQu8_cR9hwFCw3HR5AzNz6gkPGDfjBHdvU_2Rg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "RISD has a bit of everything from modern all the way to ancient works. It took us a couple hours to go through the exhibits, and it's very well curated. The Liz Collins exhibit was intriguing, I was not familiar with her work. Check it out while it's still there. I also enjoyed the Pendleton house the museum essentially surrounds with period pieces of American making. The Asian and medieval exhibits were also highlights. The staff were very friendly and helpful. The entrance is un assuming, and 30 ft from the street in the side of the building. You then take an elevator to the 3rd floor and start your way to the 6th floor. We were nearby on a Sunday and visited. Admission is free on Sundays. It's worth checking out!",
+          "time": 1757270208,
+          "translated": false
+        },
+        {
+          "author_name": "Lady B",
+          "author_url": "https://www.google.com/maps/contrib/110685203792275632823/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIij7Sr3RWdLh73MxTz8IQ5a3CQZbNH_Ssge9HY1o9C0mshEQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We had a wonderful time visiting the RISD Museum. It’s truly a rich and inspiring place, filled with impressive collections from around the world. The museum showcases both artistic and historical pieces, and every corner offers something meaningful to see. It’s not just a museum, but a place where you can spend hours discovering and learning. Anyone visiting Providence should definitely make sure to see this museum!",
+          "time": 1759683696,
+          "translated": false
+        },
+        {
+          "author_name": "John Enright",
+          "author_url": "https://www.google.com/maps/contrib/112883782910823428650/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWqXZwV3GL1h5MZS1NxHEQyCLzIxGFRKHQ7F9DQTrPHyAibrm9q=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "All the spaces are well-organized for viewing and contemplating. The staff was friendly, both in the galleries and at the front desk. I really appreciated the coat lockers. The art has a bit of everything: historical portraits, antiquities, sculptures, photography, textiles, and modern edgy exhibits. The museum spans several buildings. It can be confusing, but the gracious staff is always there to help.",
+          "time": 1766147577,
+          "translated": false
+        },
+        {
+          "author_name": "Eugene Chan",
+          "author_url": "https://www.google.com/maps/contrib/116472932527646817706/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLWCrOXbTAg7A4BIbH4Qa6iYBbqc14Sl3kq49B3kRIPAtbpyA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Found this delightful art museum when visiting Providence on a whim one Sunday which turned out to be the bonus day when entry is free to all every Sunday\n\nThe whole experience of visiting this place really uplifted me from the super helpful and friendly staff at the door to the many myriad of design art on display from many different cultures and across both historical and contemporary timelines\n\nAs an Engineer, I left feeling creatively inspired by the many different art forms on display. I truly did enjoy my time walking through the well laid out exhibits",
+          "time": 1761217773,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

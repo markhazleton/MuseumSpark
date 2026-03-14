@@ -20,7 +20,7 @@
       "longitude": -155.9435169,
       "place_id": "ChIJJ0MtNAQGVHkRK8R2bKxt9p0",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -54,7 +54,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:55:17Z",
+      "updated_at": "2026-03-14T19:54:44Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(808) 322-3362",
@@ -203,14 +203,14 @@
       "website": "http://www.missionhouses.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "553 S King St, Honolulu, HI 96813, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "96813",
+      "latitude": 21.3040406,
+      "longitude": -157.8569992,
+      "place_id": "ChIJQdGSKeBtAHwR_u8RfJpnTUM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -238,12 +238,13 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Honolulu' from open data; MRD: computed city_tier=1 for Honolulu; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:55:23Z",
+      "updated_at": "2026-03-14T19:54:45Z",
       "notes": null,
       "city_tier": 1,
       "is_scoreable": false,
@@ -258,26 +259,158 @@
       ],
       "content_generated_at": "2026-01-25T01:55:23Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(808) 447-3910",
+      "website_google": "https://missionhouses.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1500"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1500"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1500"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1500"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1500"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 3:00 PM",
+          "Wednesday: 10:00 AM – 3:00 PM",
+          "Thursday: 10:00 AM – 3:00 PM",
+          "Friday: 10:00 AM – 3:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.8,
+      "google_reviews_count": 65,
+      "google_reviews": [
+        {
+          "author_name": "Kelly Thomas",
+          "author_url": "https://www.google.com/maps/contrib/114340418209354050889/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJiJArkItUyUH6__2alOjaw8Vkf4V136Ov80lqTLauMXejchQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We had a great tour with only one other person, plus they were getting ready for a special tour with relatives/donors of the place so extra artifacts were out. Loved leaning about the Hawaiian language!\n\nFrom Wiki: \"The Hawaiian Mission Houses Historic Site and Archives was established in 1920 by the Hawaiian Mission Children's Society, a private, non-profit organization and genealogical society, on the 100th anniversary of the arrival of the first Christian missionaries in Hawaiʻi. In 1962, the Mission Houses, together with Kawaiahaʻo Church, both built by those early missionaries, were jointly designated a U.S. National Historic Landmark. In 1966 all the NHLs were included in the National Register of Historic Places.\n\nThe Hawaiian Mission Houses Historic Site and Archives collects, preserves, interprets, and exhibits documents, artifacts, and other records of Hawaii's \"missionary\" period from about 1820 to 1863. It interprets its historic site and collections and makes these collections available for research, educational purposes, and public enjoyment. The archive's collection holds over 3,000 Hawaiian, Western, and Pacific artifacts, and more than 12,000 books, manuscripts, original letters, diaries, journals, illustrations and Hawaiian church records.\"",
+          "time": 1766439778,
+          "translated": false
+        },
+        {
+          "author_name": "Ruth Anne Wolfe",
+          "author_url": "https://www.google.com/maps/contrib/116041145186752337396/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9bff0c0tP71r9OTkHjFkI-n5wzTBlsdO3whRd_RK0kZQfsf3n=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This is a wonderful museum where you learn a nuanced and well researched history of the early missionaries in Hawaii. Take a guided tour if you can, it’s well worth it!",
+          "time": 1765821881,
+          "translated": false
+        },
+        {
+          "author_name": "Doug Ho",
+          "author_url": "https://www.google.com/maps/contrib/104706486944055240357/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW5skRSU0tYnIwzmMTUOZn3HVYENMyNGIKWge1jQCdyfi1hRddH=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Hawaiian Mission Houses Historic Site and Archives\nLocated in 553 S. King Street  Honolulu, Hawaiian Mission Houses Historic Site and Archives (HMH), is an active site for Hawaii’s history since 1820.  It is also a National Historic Landmark (listed in 1965).  This one-acre site in the Historic Capital district in downtown Honolulu, HMH preserves Hawai‘i’s oldest Western-style house, the 1821 Mission House, as well as the 1831 Chamberlain House, the 1841 Bedroom Annex, a cemetery, a collections storage vault, a gift shop, and multi-purpose space. The library, which holds both English and Hawaiian archival material, over 80,000 digital pieces and is home to one of the largest collections of Hawaiian language books in the world. Reserve tickets at least 24 hours in advance. General admission is $20.",
+          "time": 1740199795,
+          "translated": false
+        },
+        {
+          "author_name": "Scott Armstrong",
+          "author_url": "https://www.google.com/maps/contrib/105334172278050507139/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXnS8M7gFdgS_h9xm-MbxBsqOOqXEA8drKPrcnMhJG_Kr92d38=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Since I visited Sunday it was closed but I was still able to access the yard from the back gate and walk around. It has 3 outstanding interpretive signs. Well worth the visit to understand this important aspect and impact on traditional Hawaiian culture. Historic buildings amazingly restored. Oldest wooden building in HI, shipped from Boston pre-cut lumber in 1821.",
+          "time": 1724627358,
+          "translated": false
+        },
+        {
+          "author_name": "Amalina Ariffin",
+          "author_url": "https://www.google.com/maps/contrib/102195129711789371852/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUNv1Y8ZSatLIJvskbjFw8D2x2B0uDbOVwXgqe2OXFLWKVlnd7EPQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "In addition to the museum, locals and visitors should consider going to the Oahu Cemetery Pupu Theater which is organized by the amazing staff at the Mission Houses where there will be historical reenactments of legendary figures in Hawaii every summer. It is definitely an interesting experience you can consider!",
+          "time": 1688961683,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-hi-unknown-volcano-art-center",
       "country": "USA",
       "state_province": "Hawaii",
-      "city": "Hawaii County",
+      "city": "Volcano",
       "museum_name": "Volcano Art Center",
       "alternate_names": null,
       "website": "http://www.volcanoartcenter.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "00 pm. Volcano Art Center Niaulani Campus Admin Office 19-4074 Old Volcano Rd",
+      "street_address": "Hawaiʻi Volcanoes National Park, Bldg 42, Volcano, HI 96785, USA",
       "address_line2": null,
       "postal_code": "96785",
-      "latitude": 19.44303,
-      "longitude": -155.28443,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 19.4302089,
+      "longitude": -155.2581517,
+      "place_id": "ChIJlef_G87WU3kRUAgovp1PeaM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -308,12 +441,13 @@
         "walker_reciprocal",
         "official_website",
         "http://www.volcanoartcenter.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Hawaii County' from open data; MRD: computed city_tier=2 for Hawaii County; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:55:31Z",
+      "updated_at": "2026-03-14T19:54:46Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": false,
@@ -328,8 +462,160 @@
       ],
       "content_generated_at": "2026-01-25T01:55:31Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(808) 967-7565",
+      "website_google": "http://volcanoartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 173,
+      "google_reviews": [
+        {
+          "author_name": "Mel Bell",
+          "author_url": "https://www.google.com/maps/contrib/117521532931584173569/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVz3s4-MyXnD9oXuLS6PmQC1-KA70zh7CeZonKnDYvMEV6d83M-uw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Enjoyed the gallery today, purchased a few items, in support of Islamd Artists. Nice selection of Koa bowls and benches. Lovely prints, and handmade items. Not surebwe would have stopped here, but it was first parkinglot past old welcome center, currently under construction. So glad we did! The gallery staff were very knowledgeable about the works there! Very patient with us, too!",
+          "time": 1758027338,
+          "translated": false
+        },
+        {
+          "author_name": "Ashley Stacer",
+          "author_url": "https://www.google.com/maps/contrib/102871850555513586122/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVMMxpQY1Vj6U9wSw6AxDwVg1HXjtWYuFKo9qqr9ueL-hBWKdVG5Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Beautiful place. Only a couple people inside the building, despite there being lots of people outside and around the visitor center. The two people working the store we’re not very friendly and seemed irritated. I overheard them placing bets on which customers would purchase something. Not exactly welcoming.\n\nThe art is beautiful and widely varied. It is great that is all created locally. Most things cost upwards of $100+, but there’s a small selection of items that are less. They even have some pretty handmade jewelry.",
+          "time": 1719016535,
+          "translated": false
+        },
+        {
+          "author_name": "Steph Couvrette",
+          "author_url": "https://www.google.com/maps/contrib/101635122185071227190/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUyd13fOgVjHHgImGYX8H8DalW2Lzw-yT2AA8RAjQhlh33di_haUA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Art gallery in the original volcano house building. It's pretty big with lots of cool pieces if you're looking for a souvenir. There's a rare restroom with running water right outside (while the visitors center is closed), so take advantage!",
+          "time": 1759380764,
+          "translated": false
+        },
+        {
+          "author_name": "Constance Garrett",
+          "author_url": "https://www.google.com/maps/contrib/115343376654833882990/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLtmNfNsfVZz_aURfvVkmKO6602g4l81pXb0W6gLHVrpmCQYA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Tucked away in Volcano City, this hidden gem of a place is well worth the stop.  A tour through one of the last stands of tropical rain Forest on the Big Island is an easy and most enjoyable walk with markers to educate and guide walkers.  Monday mornings at 9:30 am a guided tour is available.  Art displays are tastefully arranged with gift items.  Beautiful local artisan jewelry, pottery, glass, carved items, and wall art available for purchase.  The sculpture garden is lovely.  Do not miss the mosaics on the educational center next door.  They are amazing!  A quiet place to pause and reflect on old Hawaii aloha.  Welcoming, helpful staff.",
+          "time": 1666109248,
+          "translated": false
+        },
+        {
+          "author_name": "Amber Fallon",
+          "author_url": "https://www.google.com/maps/contrib/116890023248481633538/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUm5LksPhj8xccTC4hxkQuirKJ2wGdNLxDplfHroKR0N0UcH-ki=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Such a cool little place with tons of local art and culture to enjoy! I got some really beautiful earrings and a cool Christmas ornament as well. A great place for unique souvenirs!",
+          "time": 1767096571,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-01-25T01:55:31Z"
+  "updated_at": "2026-03-14T19:54:46Z"
 }

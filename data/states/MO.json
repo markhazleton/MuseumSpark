@@ -7,20 +7,20 @@
       "museum_id": "usa-mo-unknown-american-passenger-rail-heritage-foundation",
       "country": "USA",
       "state_province": "Missouri",
-      "city": "Plata",
+      "city": "La Plata",
       "museum_name": "American Passenger Rail Heritage Foundation",
       "alternate_names": null,
       "website": "http://www.aprhf.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "204 E Moore St, La Plata, MO 63549, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "63549",
+      "latitude": 40.0233961,
+      "longitude": -92.4902948,
+      "place_id": "ChIJ_xFFLNsA6IcRBXUBOmXxHIA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -50,12 +50,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.aprhf.org"
+        "http://www.aprhf.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Plata' from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:34:11Z",
+      "updated_at": "2026-03-14T19:58:02Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -70,7 +71,10 @@
       ],
       "content_generated_at": "2026-01-25T02:34:11Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(660) 616-4676",
+      "website_google": "http://www.aprhf.org/",
+      "business_status": "OPERATIONAL"
     },
     {
       "museum_id": "usa-mo-unknown-boone-county-history-culture-center",
@@ -89,7 +93,7 @@
       "longitude": -92.2937481,
       "place_id": "ChIJybjNp9y53IcRLRUgYDXR6Mg",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -126,7 +130,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:34:17Z",
+      "updated_at": "2026-03-14T19:58:02Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(573) 443-8936",
@@ -282,7 +286,7 @@
       "longitude": -90.2348394,
       "place_id": "ChIJ5R5wwrq02IcRuFSc38xWuqs",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -301,14 +305,14 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 3,
-      "modern_contemporary_strength": 2,
-      "primary_art": "Impressionist",
-      "historical_context_score": 3,
-      "priority_score": 11,
+      "modern_contemporary_strength": 4,
+      "primary_art": "Modern/Contemporary",
+      "historical_context_score": 4,
+      "priority_score": 6,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a modest contemporary art collection and offers rotating exhibitions, but lacks depth in both Impressionist and Modern/Contemporary holdings. Its historical context score reflects a recognition of regional importance, while the ECA score suggests competent programming without significant national influence.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence provided describes the Saint Louis Art Museum as an encyclopedic institution with global holdings and explicit contemporary programming (Currents series, new media), supporting a strong modern/contemporary score and solid historical-context potential. Impressionist strength is not specified, so it is estimated as moderate given the broad painting collection. Overall reputation and tier are judged as strong regional based on visitor scale and scope, but confidence is limited due to misma",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -317,10 +321,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Missouri' from open data; MRD: computed city_tier=2 for Missouri; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(314) 535-4660",
@@ -472,9 +476,9 @@
       "eca_score": 2,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority"
     },
     {
       "museum_id": "usa-mo-unknown-laumeier-sculpture-park",
@@ -493,7 +497,7 @@
       "longitude": -90.4150968,
       "place_id": "ChIJH8tekWHO2IcRc5IaMbrB8cM",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -530,7 +534,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Missouri' from open data; MRD: computed city_tier=2 for Missouri; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:34:36Z",
+      "updated_at": "2026-03-14T19:58:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "(314) 615-5278",
@@ -624,14 +628,14 @@
       "website": "http://maa.missouri.edu/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "1020 Lowry St, Columbia, MO 65201, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "65201",
+      "latitude": 38.9444906,
+      "longitude": -92.3260117,
+      "place_id": "ChIJ8yBOl50ud0ARyiZYzimqujY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -661,12 +665,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://maa.missouri.edu"
+        "http://maa.missouri.edu",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Columbia' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:34:42Z",
+      "updated_at": "2026-03-14T19:58:04Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -681,7 +686,149 @@
       ],
       "content_generated_at": "2026-01-25T02:34:42Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(573) 882-3591",
+      "website_google": "http://maa.missouri.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 12:00 – 4:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 198,
+      "google_reviews": [
+        {
+          "author_name": "Adam Larey",
+          "author_url": "https://www.google.com/maps/contrib/115552378673962950084/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXn6U2PF8kJ3w_hKByFrV7WTkK8ym92mxNXsUaGeYgXhjcOqCuksA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "If you're looking for a museum to visit in Columbia this is the place! It holds an interesting variety of permanent and rotating collections and is completely free. It's definitely worth a visit and re-visit as new exhibits rotate through. Perfect over the winter months or bad weather days. You can extend your visit a bit by checking out the plaster sculpture collection in the library next door.",
+          "time": 1768769553,
+          "translated": false
+        },
+        {
+          "author_name": "Jane Yevheniia Kostia",
+          "author_url": "https://www.google.com/maps/contrib/110221432835607053933/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWNXfIx_6tu0NRXjcoZP7u5vZ3VVn2z6zUO92LVk7VIxBqCSEcA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "30 min stop. Not obvious place to visit.",
+          "time": 1764432036,
+          "translated": false
+        },
+        {
+          "author_name": "Lydia Tyndall",
+          "author_url": "https://www.google.com/maps/contrib/113803674282759365504/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVtEJKraQUKlvLnMYIg6mLHZp-uWi7cC3iEbK0d7oujjAFbturE=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "This was a fun museum and it was entirely free! Honestly there was more to it than I expected. We went during the Art in Bloom exhibition which gave us even more to see!",
+          "time": 1745859796,
+          "translated": false
+        },
+        {
+          "author_name": "Praghalathan Kanthakumar",
+          "author_url": "https://www.google.com/maps/contrib/101912123374798620120/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXrwBu18RzVpINfnjW2faICMmgWQ3pKdOV4cdpXyA8Mf1DwfqAutA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "This is a small but well-kept and nicely curated museum. Good place to spend about an hour or so.",
+          "time": 1722013515,
+          "translated": false
+        },
+        {
+          "author_name": "LB Ammon",
+          "author_url": "https://www.google.com/maps/contrib/109460956805847344942/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMcCKAjW8C6JIXjTjXAt8iUPBZsp-kyhePn59ej0t67rq0Mqo=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "A small but well curated collection of art and historic items. Well worth the visit and the gift shop has a great selection. Parking is typical to downtown situations (best bet is a local garage) but not difficult to navigate and not expensive. Definitely make a stop here.",
+          "time": 1755900548,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-unknown-robidoux-row-museum",
@@ -700,7 +847,7 @@
       "longitude": -94.8570149,
       "place_id": "ChIJCdVjeAsbwIcRYCW66PrATIM",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -736,7 +883,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:34:49Z",
+      "updated_at": "2026-03-14T19:58:04Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(816) 232-5861",
@@ -895,14 +1042,14 @@
       "website": "https://www.stjosephmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "3406 Frederick Avenue",
+      "street_address": "3406 Frederick Ave #2913, St Joseph, MO 64506, USA",
       "address_line2": null,
-      "postal_code": "64506-2913",
-      "latitude": 39.77682,
-      "longitude": -94.81482,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "64506",
+      "latitude": 39.7761463,
+      "longitude": -94.8083863,
+      "place_id": "ChIJx310s2EZwIcRJ-Rzh20xJwA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -933,15 +1080,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.stjosephmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Saint Joseph' from JSON-LD",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:34:55Z",
+      "updated_at": "2026-03-14T19:58:05Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8162328471",
+      "phone": "(816) 232-8471",
       "is_scoreable": false,
       "content_summary": "Visit the **Saint Joseph Museums**, a gem in Missouri that showcases an exceptional blend of local history, art, and culture. With diverse exhibits ranging from historical artifacts to modern art, this museum offers a captivating experience that engages all visitors, making it a must-see destination for history buffs and art lovers alike.",
       "content_description": "**Saint Joseph Museums** is a dynamic cultural hub located in the heart of Saint Joseph, Missouri. The museum serves as a vibrant community space that celebrates the rich history and artistic heritage of the region. Visitors will find an array of engaging exhibits encompassing everything from local historical relics to contemporary artistic expressions. The museum is not only a repository of artifacts; it’s a lively venue that hosts **special events, workshops**, and **art shows**, providing an immersive experience for all ages. Whether you’re discovering the stories behind historical figures from the area or interacting with contemporary art pieces, the museum ensures a memorable visit for everyone. \n\nThe architecture of the **Saint Joseph Museums** is also noteworthy, with its blend of historic and modern elements that reflect the evolution of the city itself. Walking through the halls, visitors are surrounded by both *timeless craftsmanship* and *innovative design*, making each corner of the museum a visual delight. Moreover, the friendly staff is passionate about sharing the stories behind each exhibit, enriching the visitor experience with personal insights and anecdotes. Come and explore a museum that captures the essence of Saint Joseph’s cultural landscape with warmth and engaging enthusiasm.",
@@ -954,7 +1102,158 @@
       ],
       "content_generated_at": "2026-01-25T02:34:55Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.stjosephmuseum.org/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=17516477331079936225",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 41,
+      "google_reviews": [
+        {
+          "author_name": "Alleda Johnsom",
+          "author_url": "https://www.google.com/maps/contrib/106862774616817182926/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKGuGxv7HehwEkxNE8ToHZhNQkhdRh2Xkfn4mWhjDpwOvrO1dA=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "12 years ago",
+          "text": "My experience at the Glore museum was excellent. I loved the doll displays and the real life models. I think that the history movie at the beginning was the best because it was so informative. I never knew all the things that the mental had to go through before there were actual treatments to deal with their symptoms. The whole thing was a great experience and I think that anybody who visit the museum will find that thier experience will be the same,",
+          "time": 1368049071,
+          "translated": false
+        },
+        {
+          "author_name": "Shelia David",
+          "author_url": "https://www.google.com/maps/contrib/104211462309245299101/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVTXyrHf0fAIClhmV_EXXxGjoX7-fKdmwX3VdVDGx68f6wpR0ly=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "4 years ago",
+          "text": "Located in St.Joseph,Missouri.The best features are at The Galore Museum,and features exhibits that describe the history and treatments of mental illness. There are also three other floors that highlight:The hospitals morgue,kitchen,and therapy operations.2nd floor:Black Archives,Barbie Doll Collection,Native American Exhibits,and more. 3rd floor: Art,Music,and Spiritual!🤕🤒",
+          "time": 1632101030,
+          "translated": false
+        },
+        {
+          "author_name": "Heather Bridegan",
+          "author_url": "https://www.google.com/maps/contrib/113880581988377336068/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ5XMwFRjWAyXSSpoeL1_erHo7BB5oek55u1ssOn7qUVNSRdw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 3,
+          "relative_time_description": "4 years ago",
+          "text": "I was so sad to see how much they have updated it. The last time was over 20 yrs and the fact the exhibit was on an actual ward made the experience have an errie and cool. But now it doesn't have that feel. Interesting but not as exciting",
+          "time": 1629903303,
+          "translated": false
+        },
+        {
+          "author_name": "TARA L. R.",
+          "author_url": "https://www.google.com/maps/contrib/105168600281530150869/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW9GRE4S-RIWDqeezwzS_7ulzqSJQKjefByk2xyVww9C5su9O-P=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "The best museum ever.  It's not one of those you just to go and read a bunch of stuff.  They have the best visual displays and artifacts and recreations. Awesome gift shop.  Bought a lot of gifts.",
+          "time": 1634235055,
+          "translated": false
+        },
+        {
+          "author_name": "Eduardo “Cenizo” Vargas",
+          "author_url": "https://www.google.com/maps/contrib/101666085535850590609/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXOnHup-MGMJUDqaO830SLJzWQ-cjD2DAboC5jWOUYetF1o-8M=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "hello, how about good afternoon I just want to be 1 question, are the native's feet from the state of Kansas, Missouri?\nI have the good fortune of having found 1 piece of Native Americans, well, it's really 3, but 1 is one of my favorites.",
+          "time": 1581980097,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-unknown-saint-louis-art-museum",
@@ -966,14 +1265,14 @@
       "website": "http://www.slam.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1 FINE ARTS DRIVE",
+      "street_address": "1 Fine Arts Dr, St. Louis, MO 63110, USA",
       "address_line2": null,
       "postal_code": "63110",
-      "latitude": 38.64281,
-      "longitude": -90.2963,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 38.6393062,
+      "longitude": -90.2944911,
+      "place_id": "ChIJVblHble12IcROpacE9yxpJc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -997,21 +1296,22 @@
       "historical_context_score": 4,
       "priority_score": 6,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The evidence does not provide specific information about the art strengths or collections at the Saint Louis Art Museum, so scores for Impressionist, Modern, Contemporary strengths, historical context, and curatorial authority are indeterminate. It is known as a national destination, reflected in its reputation score.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia characterizes SLAM as holding paintings, sculpture, cultural objects, and ancient masterpieces from around the world, implying a broad, substantial permanent collection with generally strong historical framing. Contemporary activity (Currents series, new media, works on paper) suggests meaningful but not clearly flagship modern/contemporary holdings. Impressionism is not explicitly cited, so it is scored as moderate representation rather than a clear strength.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 2,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'St. Louis' from open data; MRD: computed city_tier=2 for St. Louis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "3147210072",
+      "phone": "(314) 721-0072",
       "is_scoreable": true,
       "content_summary": "Set on the edge of Forest Park, the Saint Louis Art Museum is one of the Midwest’s great art stops—welcoming, wide-ranging, and easy to love. Its strengths span European painting, American art, global antiquities, and compelling contemporary work, all presented in a landmark building with a thoughtful modern expansion. Come for major names, stay for the calm galleries, strong special exhibitions, and a visitor-friendly campus that pairs art viewing with one of St. Louis’s best park settings.",
       "content_description": "**Saint Louis Art Museum** (SLAM) anchors a classic day in Forest Park with a collection that feels both encyclopedic and approachable. For art lovers, the pleasure is in the range: galleries that move from ancient objects and global traditions to European painting, American art, and modern and contemporary works. Expect a museum that rewards close looking—whether you’re drawn to the brushwork and atmosphere of European masters, the storytelling power of American painting, or the formal experimentation of 20th-century art. Rotating exhibitions are typically a major draw, giving repeat visitors a fresh reason to return and offering deeper dives into particular artists, themes, or *movements*.\n\nThe building itself is part of the experience. The original museum structure—grand, symmetrical, and Beaux-Arts in spirit—offers an almost ceremonial arrival, while the later addition provides a more contemporary rhythm of light and space. Together they create a satisfying sequence of galleries: stately rooms for historical collections and more flexible, modern environments for newer work. Architectural details, generous sightlines, and careful lighting make the museum feel made for slow, attentive viewing.\n\nFrom a traveler’s standpoint, SLAM is refreshingly visitor-friendly: comfortable pacing, clear wayfinding, and the option to combine your visit with a stroll through Forest Park’s landscapes nearby. Plan to linger—this is the kind of museum where you can do a highlights tour in a couple of hours, or spend half a day following your interests from gallery to gallery.",
@@ -1028,7 +1328,149 @@
       "overall_quality_score": 13,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "https://www.slam.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 8924,
+      "google_reviews": [
+        {
+          "author_name": "sue pitkin",
+          "author_url": "https://www.google.com/maps/contrib/114064817978892855066/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVDR36nsrvfkNrOuHjK0gs8Ubn3_ThIcBNRNtNzuMCDem9ABOHo=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Went to see the Anselm Kiefer exhibit and it was awe inspiring.   The museum is beautiful and flows easily.  But the best, by far, were the staff, who were helpful, knowledgeable, and fun.  I loved the fact that because it is a free museum it was full of every type of human from the very tiny to the very aged and in every color of the skin rainbow.  Also, and very important for me, the coffee in the cafe was delicious!  We're already planning our next trip back there.",
+          "time": 1768942625,
+          "translated": false
+        },
+        {
+          "author_name": "Pezhman Raeisian",
+          "author_url": "https://www.google.com/maps/contrib/116847415236363458631/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-70U8vbuxZXSvyO4WhwmvjHs2IdQwgWRcTH1qKTgUbKFF5RNg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Saint Louis Art Museum is a beautiful place to visit, especially if you enjoy history and cultural collections. While not all of the paintings stood out to me, the historical sections were truly impressive and very well presented. The building itself is elegant, and the galleries feel calm and easy to explore without feeling rushed.\n\nOne nice advantage is that admission is free, which makes it easy to spend as much or as little time as you want. Some modern or contemporary pieces may not appeal to everyone, but the ancient, classical, and historical works really shine.\n\nTip: Focus on the historical and global art sections if you’re short on time—they are the highlights and well worth it.",
+          "time": 1767302895,
+          "translated": false
+        },
+        {
+          "author_name": "Kevin Hacker (Khacker)",
+          "author_url": "https://www.google.com/maps/contrib/100165644829778565618/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6GqwOat1IElP8YCzN5R2hSlgE0PAoyO6xbcw8_vj6UxMeg0tq=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Saturday( 1/17/26)- Ansel Keifer St. Louis Art Museum. Decided to check out the Ansel Kiefer exhibit  at the St. Louis  Art Museum. It is such a great thing that you can see international Art exhibitions for free. We went early with no waiting. The exhibit was impressive. The medium Ansel used varied but was interesting  natural items. The use of gold leaf, ash, and twigs made these exhibits stand out. His 1991 visit to St. Louis  and  the  journey  on the Mississippi inspired this exhibition. These new luminous new green and gold paintings depicting rivers  and protective water spirits. His earlier works showed The  Rhine river from his childhood memories.  I would recommend you see these impressive  30 foot paintings  before they are gone by the 25th of January.",
+          "time": 1768776721,
+          "translated": false
+        },
+        {
+          "author_name": "Maura",
+          "author_url": "https://www.google.com/maps/contrib/110419305604194386711/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXiRF4YPV-CA11XT1zWZ03hf6qpIbHkFnT04dYrQg-x0I6Pq7Xd9g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "The Saint Louis Art Museum is an outstanding museum. The Beaux-Arts building is beautiful, and the collection offers an wide range of artistic styles, mediums, and historical periods without feeling overwhelming. I especially enjoyed the Asian pottery exhibit, as well as the Egyptian, Native American, and American art galleries. Admission is free, which makes it easy to spend as much or as little time as you like. I had hoped to return the next day to see more, but the museum was closed—so I look forward to visiting again the next time I’m in St. Louis.",
+          "time": 1770765499,
+          "translated": false
+        },
+        {
+          "author_name": "Terry MacZura",
+          "author_url": "https://www.google.com/maps/contrib/109971503965384379492/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXuDCO5PJ0KIslcTWp9pooBIJiHm4RHF1VQ4fYg-Xcu8N0Iw5w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "The St Louis Art Museum is absolutely fantastic. We're so very blessed to have the cultural, artistic and historical exhibits to see so close to home. We come from 3 hours away (Central Illinois) but I grew up in st Louis and it never disappoints, always exceeds expectations. St Louis offers so much to enjoy for FREE‼️ Be sure to b come a member or make a donation in order to support the art museum 's efforts to bring the very best in exhibits and support the arts. It's the least we can all do to help support and keep these valuable gems in our area for generations ❤️🎨🎭🖌️",
+          "time": 1769209368,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-mo-unknown-springfield-art-museum",
@@ -1040,14 +1482,14 @@
       "website": "http://www.springfieldmo.gov/art/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1111 E BROOKSIDE DR",
+      "street_address": "1111 E Brookside Dr, Springfield, MO 65807, USA",
       "address_line2": null,
       "postal_code": "65807",
-      "latitude": 37.18898,
-      "longitude": -93.27932,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 37.1886865,
+      "longitude": -93.2793078,
+      "place_id": "ChIJSd4qXBVjz4cR_zsAFYUoIas",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1071,21 +1513,22 @@
       "historical_context_score": 0,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The evidence suggests that the Springfield Art Museum focuses on historical significance related to firearms rather than art collections, leading to a score of 0 for historical context. However, its role in the local community gives it a regional reputation score.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia evidence describes the Springfield Armory National Historic Site in Springfield, Massachusetts (a firearms and industrial history site), not the Springfield Art Museum in Springfield, Missouri. No reliable evidence about the art museum’s permanent collection, scope, or interpretive approach is included, so collection-related scores cannot be determined.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 2,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Springfield' from open data; MRD: computed city_tier=2 for Springfield; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:35:17Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "4178375700",
+      "phone": "(417) 837-5700",
       "is_scoreable": true,
       "content_summary": "The Springfield Art Museum offers a rewarding stop for art lovers seeking a focused, locally rooted museum experience. Expect an intimate setting where you can slow down with paintings, prints, and sculpture without the crowds of major metros. It’s an ideal visit for travelers who enjoy discovering regional voices alongside broader art-historical touchpoints, with rotating exhibitions that keep repeat visits fresh and gallery spaces designed for close looking and conversation.",
       "content_description": "**Springfield Art Museum** is a satisfying visit for travelers who value the pleasures of close looking—quiet galleries, thoughtfully scaled exhibitions, and the chance to encounter art in a setting that feels connected to the community it serves. As a local art museum, its strength is often the way it balances a **permanent collection** (typically spanning painting, works on paper, and sculpture) with **rotating exhibitions** that spotlight contemporary practice, regional artists, and thematic group shows. For art enthusiasts, this means each visit can offer a different lens—whether you’re tracking how *realism* and *abstraction* play out across media, or comparing emerging voices with more established names.\n\nArchitecturally, museums of this scale tend to prioritize **human-sized galleries**, clear sightlines, and lighting designed to support sustained viewing—an experience that encourages you to notice surface, brushwork, and printmaking techniques at a closer distance than you might in larger institutions. Look for interpretive labels and wall texts that provide accessible context without overwhelming the art, and keep an eye out for curated pairings that create dialogue across periods.\n\nFrom a visitor’s perspective, the museum is best approached like a well-edited exhibition rather than a marathon: plan time to linger, return to a favorite piece after you’ve toured, and check the calendar for talks, tours, or special events that deepen the experience. If your travels are focused on cultural discovery, this is the kind of museum that rewards curiosity—especially for those who enjoy the story of how a region sees itself through art.",
@@ -1098,7 +1541,73 @@
       ],
       "content_generated_at": "2026-01-25T02:35:17Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.sgfmuseum.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.6,
+      "google_reviews_count": 838,
+      "google_reviews": [
+        {
+          "author_name": "phantom green",
+          "author_url": "https://www.google.com/maps/contrib/109981129841711454302/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXth2n5h-BRztQ63qRMnycnaOBsJJHdFrdwu1Hdk5igdUyet-ugww=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Me and a friend went here on a whim on Wednesday, it was pretty fun! a good few art styles/mediums, included a few things about some of the artists, great lighting. also included some things for the general public to contribute to with both a binder full of blank paper to write/doodle a little something in, and a whole room with big wood canvases and free colored pencils to use on the canvas and draw something on the boards! overall very nice, staff super friendly and helpful!",
+          "time": 1723738858,
+          "translated": false
+        },
+        {
+          "author_name": "Frecky Lewis",
+          "author_url": "https://www.google.com/maps/contrib/104906337846430033994/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVyqI1acIAm7cleugNhAqI3s1w3HHMZiC7UbvEnDB7_qB7nEHLKVw=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "Unfortunately by the time we got to this museum (visiting from out of town) it was half an hour before it closed.  But we still spent a pleasant and fairly peaceful 30 minutes surveying the museum and its exhibits, both the permanent collection and a neat exhibit on watercolors.  There is a really nice area for kids that allows them to play and explore with art-related materials.  It's not a large museum but it appears to be well cared for.",
+          "time": 1659873594,
+          "translated": false
+        },
+        {
+          "author_name": "B A",
+          "author_url": "https://www.google.com/maps/contrib/108650482569853272638/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVg426PxaCzSvi5pQ7irYuo2tSBhp5hDsGuWdUqWiwvygp2Lr1TYw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I loved visiting the Springfield Art Museum! The museum has free admission, which is great for a family friendly adventure. They have a good variety of different styles of art. I really loved the Bradi Barth exhibition they had on display when I visited. They have many modern/contemporary artists featured as well. The courtyard is a nice place to relax. The staff here is great. I highly recommend if you're in the area.",
+          "time": 1720315032,
+          "translated": false
+        },
+        {
+          "author_name": "Heather Winder",
+          "author_url": "https://www.google.com/maps/contrib/103754443223561092710/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIEp0ZPw_EEwubQuZOGLNZVnY-1xDicWg6BrHDsoxHdTEVlSQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great visit with my granddaughters this week at the museum. No fee, great collections. We really enjoyed the watercolor exhibit. We were even able to vote for our favorites! They encourage you to sit and create for yourself or just take it all in. There was a room that the kids could add their own drawing to the wall as well. Fun. Interesting. Clean. Welcoming.",
+          "time": 1722275149,
+          "translated": false
+        },
+        {
+          "author_name": "Gary Kibble",
+          "author_url": "https://www.google.com/maps/contrib/111043239813566828314/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYMQtWFBE2gdvSoYyZPemkpBMS9-j0XN6yWEZO-23o0gpzL8J6=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "We were super surprised by the great time we had at this little museum. We've been to many of the great art museums of the world, but this gem we found to be charming. Not stuffy or dark. Nice variety in the exhibits. Interesting modern and temporary works displayed. We spent two hours here.",
+          "time": 1585063246,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-fulton-national-churchill-museum",
@@ -1110,14 +1619,14 @@
       "website": "http://www.churchillmemorial.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "501 Westminster Ave, Fulton, MO 65251, USA",
       "address_line2": null,
       "postal_code": "65251",
-      "latitude": 38.8499969,
-      "longitude": -91.9543476,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 38.8500391,
+      "longitude": -91.9544836,
+      "place_id": "ChIJLUvN8lOO3IcRZ58iZ01j-hc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1149,12 +1658,13 @@
         "openstreetmap",
         "official_website",
         "http://www.churchillmemorial.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Fulton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:35:26Z",
+      "updated_at": "2026-03-14T19:58:08Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -1169,7 +1679,159 @@
       ],
       "content_generated_at": "2026-01-25T02:35:26Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(573) 592-5369",
+      "website_google": "http://www.nationalchurchillmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1630"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1630"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:30 PM",
+          "Tuesday: 10:00 AM – 4:30 PM",
+          "Wednesday: 10:00 AM – 4:30 PM",
+          "Thursday: 10:00 AM – 4:30 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: 10:00 AM – 4:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 424,
+      "google_reviews": [
+        {
+          "author_name": "Hunter Scott",
+          "author_url": "https://www.google.com/maps/contrib/116657174577938530339/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL0mN_-c1grWOKI7ixFHnYFT1BKzzRyV_VbuBbVLv_p7V7DPg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Great seeing some Cold War museum and see where Churchill gave his famous Iron Curtain speech.\n\nI also bought a piece of the Berlin Wall!",
+          "time": 1756589133,
+          "translated": false
+        },
+        {
+          "author_name": "Erik B",
+          "author_url": "https://www.google.com/maps/contrib/112599770060186493045/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMK3tE-7MgmSxRoA3rC3UsHjEhjLDPldEIKDGi5BTeoeh8jpE3Cg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "America’s National Churchill Museum may be a bit off the beaten path, but it’s absolutely worth the trip. Located on a picturesque college campus, the museum offers a fascinating experience for anyone interested in history.\n\nThe museum does an excellent job telling the story of Winston Churchill’s life and legacy, including his pivotal role in world events. One of the most unique aspects is the historic church that houses the museum—a beautiful structure that was carefully relocated from London to Missouri. The interior is stunning.\n\nThe staff are friendly, knowledgeable, and always willing to answer questions or provide additional context. Outside, you’ll find impressive statues of Churchill and even a segment of the Berlin Wall, reinforcing the museum’s deep historical significance. Be sure to also visit the nearby gymnasium where Churchill gave his iconic \"Iron Curtain\" speech.\n\nFor history lovers, this museum is a must-visit. It’s a unique and thoughtfully curated destination that brings global history to life in the heart of Missouri.",
+          "time": 1747276177,
+          "translated": false
+        },
+        {
+          "author_name": "Karen King",
+          "author_url": "https://www.google.com/maps/contrib/103375993920414658840/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLMbCQrzvXkxT5oC8kI2PMcao_xa8q6jcjJZVzQYvsLpAQ6Rg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Very informative on world history, not just Churchill's. We enjoyed our visit.  Several short videos to watch are very well done. The history of the church was very interesting.  Loved being able to see it. Outside is the Berlin wall sculpture. The staff was so helpful and nice, they even gave us directions to a great nearby restaurant!",
+          "time": 1744996583,
+          "translated": false
+        },
+        {
+          "author_name": "Suzanne Chisum",
+          "author_url": "https://www.google.com/maps/contrib/109242992352953710342/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWYnPp2pGW4O8EAYW6DHeQOymm1nFbR8LjfvY00WsfRUEnErhrDiQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Wonderful museum gem located in Fulton, just south of Interstate 70.  Want to return and spend more time.  Interesting.  More appropriate for adults as small children would probably bore quickly.",
+          "time": 1704978475,
+          "translated": false
+        },
+        {
+          "author_name": "Blake Lawrence",
+          "author_url": "https://www.google.com/maps/contrib/100156613327177632297/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUubhtwSqrRk5dnPSHPZTMmipmUCe0bdNxJlbUKaV85JuakTX6a=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Laid out chronologically and sensibly.  The exhibits are well-presented and informative.\n\nThe student docents were very helpful and provided us a scavenger hunt sheet suitable for all ages.  That connected us more to the museum presentations and helped us get more form our visit.\n\nHighly recommended!",
+          "time": 1700246880,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-kansas-city-american-jazz-museum",
@@ -1181,14 +1843,14 @@
       "website": "http://americanjazzmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1616 E 18th St, Kansas City, MO 64108, USA",
       "address_line2": null,
       "postal_code": "64108",
-      "latitude": 39.091392,
-      "longitude": -94.562865,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 39.0914549,
+      "longitude": -94.5629526,
+      "place_id": "ChIJ5V43AXbwwIcRfKK33CDOqKg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1220,15 +1882,16 @@
         "openstreetmap",
         "official_website",
         "http://americanjazzmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Kansas City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:35:33Z",
+      "updated_at": "2026-03-14T19:58:09Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "8164748463",
+      "phone": "(816) 474-8463",
       "is_scoreable": false,
       "content_summary": "Step into the rhythms of history at the **American Jazz Museum**, where the vibrant legacy of jazz music comes alive. Celebrate the culture, artistry, and influential musicians who shaped this quintessential American genre in the heart of Kansas City, a city renowned for its jazz heritage.",
       "content_description": "**The American Jazz Museum** serves as a testimony to the rich tapestry that jazz weaves within American culture. Located in the historic 18th & Vine Jazz District, this museum is not just a collection of artifacts; it is an immersive experience that brings to life the sights and sounds of a musical revolution. Guests are invited to explore exhibits featuring the legendary musicians who defined jazz—such as *Charlie Parker*, *Count Basie*, and *Ella Fitzgerald*—through interactive displays and rare memorabilia that showcase the genre’s evolution from its African American roots to its global impact today.  You’ll hear the music, see the instruments, and feel the pulse of jazz as you walk through the museum’s thoughtfully curated galleries.  In addition to the artifacts, the museum hosts live performances and educational programs that engage visitors of all ages, making it a dynamic place to visit for passionate music lovers or curious students alike.  Experience the heart of jazz as a part of Kansas City's vibrant community, where notes transcend time and continue to inspire.  The museum itself is housed in a modern building that resonates harmony with its dynamic exhibitions, making it an architectural gem as well.  With its welcoming atmosphere and artistic flair, the **American Jazz Museum** promises an unforgettable journey through America’s beloved music genre.",
@@ -1241,7 +1904,148 @@
       ],
       "content_generated_at": "2026-01-25T02:35:33Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://americanjazzmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 822,
+      "google_reviews": [
+        {
+          "author_name": "Kelli Wheeles",
+          "author_url": "https://www.google.com/maps/contrib/105749543143750111295/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKoY90kw2UENIVh6U2FS8xktVe9111eAMhBjuzYlVvahFj4oA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "1st time visiting.  Why did we wait so long?  Informative and amazing staff.  Tons of interactive exhibits that you can spend plenty of time to enjoy.  A couple of films to watch.  Thoroughly enjoyable.  Can’t wait to come back to watch the jam session.  Bonus:  I learned a lot.  Due to construction in the area we parked a couple of blocks away.",
+          "time": 1768159237,
+          "translated": false
+        },
+        {
+          "author_name": "KEITH DALTON",
+          "author_url": "https://www.google.com/maps/contrib/113279601115766479970/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXwuPyLBImsCV0fFuyIrvw88lGn3HjoPSiB4is9dgbFweND4iTY=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "We were the only ones visiting on a Thursday morning right after they opened.\n\nWe had to take our jazz trumpet playing son there and we were welcomed by Muriel who really spent time with us and spent some time educating my son on the Kansas City scene. In addition she encouraged making connections with various individuals associated with the museum as well as potential jazz camp and perhaps career in music.\n\nShe also dispelled our understanding about the Blue Room jazz club and children may attend due to the club is a listening room and even though it serves alcohol it does not bar children from attending performances. So we were super excited we could take him, since my wife and I have been many times to see local and national jazz musicians.\n\nSo glad it is one of the few UNESCO creative arts cities and Kansas City keeping jazz alive as well as its history.",
+          "time": 1761861672,
+          "translated": false
+        },
+        {
+          "author_name": "Harvey Flowers",
+          "author_url": "https://www.google.com/maps/contrib/115199593188777909076/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXTeliekkniI6SjOVSiQHFI4PyK5cCvq_AyTlL-cCbhob2OtmhS=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "The American Jazz Museum is a true gem in the heart of Kansas City! From the moment you walk in, you're immersed in the rich history and soul of jazz music. The exhibits are beautifully curated, featuring legends like Charlie Parker, Ella Fitzgerald, and Duke Ellington. I especially loved the interactive displays and the listening stations—such a cool way to experience the music firsthand.\n\nThe museum does a fantastic job connecting the cultural roots of jazz with the vibrant present-day scene. The staff were friendly, knowledgeable, and clearly passionate about what they do. I also appreciated the live music at the Blue Room—an unforgettable experience!\n\nWhether you're a lifelong jazz fan or just curious about America's musical heritage, this museum is well worth your time. Highly",
+          "time": 1751498000,
+          "translated": false
+        },
+        {
+          "author_name": "Melondy West",
+          "author_url": "https://www.google.com/maps/contrib/117463678468584002820/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVz5vki99hBKIwIkpJbxM1Cq9PRbK8rm5BQUQxJ3PNssgHDw6IM=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "A great place to learn about some of the greatest musicians in jazz history. You can also listen to some of the music and watch old films. I like the fact that the Blue Room is also attached to the museum and they had a live jazz group playing called Go Hard. They were really good. Before you go into the museum check out the Jazz Walk of Fame sidewalk.",
+          "time": 1744126290,
+          "translated": false
+        },
+        {
+          "author_name": "Cynthia R",
+          "author_url": "https://www.google.com/maps/contrib/109044505417801962110/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXz2WLfWO7GbwzM1_4pxTjLqI26JP9fp_xdWGI8x04BelNYxrHzvA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "As an avid jazz lover, I knew visiting this place in the historic jazz district  when I came to town was a must do. It did not disappoint. It’s small but very informative. It has some interactive parts where you can actually hear some of the Jazz greats playing. I enjoyed every minute there. There is an attached Jazz lounge called the Blue room that had a free jazz show at 5:30 that I stuck around for. It was awesome and a great vibe.",
+          "time": 1733539688,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-kansas-city-kemper-museum-of-contemporary-art",
@@ -1253,14 +2057,14 @@
       "website": "http://www.kemperart.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "4420 Warwick Blvd, Kansas City, MO 64111, USA",
       "address_line2": null,
       "postal_code": "64111",
-      "latitude": 39.0463238,
-      "longitude": -94.5850637,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 39.04643,
+      "longitude": -94.5851292,
+      "place_id": "ChIJjz4brcHvwIcRGPdob2HHTD0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1269,7 +2073,7 @@
       "tickets_url": "http://www.kemperart.org/visit",
       "reservation_required": null,
       "accessibility_url": "http://www.kemperart.org/accessibility-statement",
-      "reputation": 1,
+      "reputation": 2,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1279,29 +2083,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 1,
-      "modern_contemporary_strength": 2,
+      "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 3,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Kemper Museum of Contemporary Art has a modest collection that provides contextual value within contemporary art, hence a score of 2 for both modern contemporary strength and collection-based strength. Its historical context is also limited, mainly providing local relevance without significant national impact.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "As Missouri's first and largest contemporary museum (opened 1994), Kemper is strongly oriented toward Modern and Contemporary art, suggesting significant 20th–21st century holdings. No evidence indicates Impressionist works or a historical/chronological focus, so Impressionism is scored negligible and historical context is estimated as moderate. Its scale (75,000 visitors; $5M budget) supports a solid regional reputation and a moderate overall collection tier rather than a flagship encyclopedic ",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.kemperart.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Kansas City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "6605305888",
+      "phone": "(816) 753-5784",
       "is_scoreable": true,
       "content_summary": "Kansas City’s Kemper Museum of Contemporary Art is a smart, approachable stop for anyone who wants to see what contemporary art looks like beyond the coastal giants. Known for punchy exhibitions and a strong emphasis on postwar and living artists, the Kemper pairs a modest but thoughtfully curated collection with an elegant, light-filled building. Expect the pleasure of discovery—works you can spend time with—plus an easy-to-navigate visit in a city with a growing arts scene.",
       "content_description": "**Kemper Museum of Contemporary Art** offers an art-lover’s kind of contemporary museum: focused, digestible, and consistently engaging. With a reputation that reaches beyond Kansas City, the Kemper is particularly rewarding for visitors who enjoy seeing how *postwar* and *contemporary* art connect to today’s cultural questions—often through rotating exhibitions that spotlight living artists, new commissions, and timely themes. Because the museum’s permanent holdings are modest rather than encyclopedic, the experience tends to feel curated and intentional: fewer “trophy” moments, more time to look closely and follow an idea from room to room.\n\nArchitecturally, the Kemper’s appeal is part of the visit. The building’s **clean, modern lines** and **gallery spaces designed for contemporary scale** create a calm setting for art that can be visually demanding—think bold color, large formats, and concept-driven installations. For travelers, that translates into a museum that’s easy to navigate, visually coherent, and satisfying even on a short itinerary.\n\nPlan to approach the Kemper like a gallery-hopping day condensed into one address: come for the temporary shows, linger with a few standout works, and enjoy the sense of discovery that comes from a museum committed to the present tense. It’s an excellent companion stop to Kansas City’s broader cultural offerings, especially if you prefer contemporary art experienced at human pace—close viewing, strong curatorial voice, and an atmosphere that invites return visits.",
@@ -1318,9 +2123,140 @@
       "overall_quality_score": 14,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 2,
-      "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.kemperart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 1357,
+      "google_reviews": [
+        {
+          "author_name": "Kevin O'Dwyer",
+          "author_url": "https://www.google.com/maps/contrib/104934873078994732309/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJUIwIyTwSn3skA_b5MuA-SVfhag5qzk_x1Dwx2gQCX2WL07Q=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Opened in 1994, the museum was founded by collectors Bebe and Crosby Kemper to house and share their growing collection of late-20th- and 21st-century art. The museum focuses on modern and contemporary works, with strengths in postwar painting, sculpture, photography, and new media, alongside rotating exhibitions that highlight emerging and established artists.\nFree admission makes it an accessible entry point into contemporary art for both casual visitors and dedicated art enthusiasts. Expect to spend a couple of hours in the museum as well as the beautifully landscaped outdoor sculpture park.",
+          "time": 1766425980,
+          "translated": false
+        },
+        {
+          "author_name": "Tracy love",
+          "author_url": "https://www.google.com/maps/contrib/105327605944111177917/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWM3FCZktSgNwD5bCYWL2un74IlAal42ICzRIBM_YvZLbpKT041g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "Venue is totally amazing. We went to Oil on Linen (brilliant name). Service was a little slow. Food was too spicy for me, gave me stomach ache. Even the salad was too spicy for my delicate mouth. But it was beautifully presented.\nOur server did get some of our bills confused, which was a little embarrassing. But all in all a wonderful few hours.",
+          "time": 1763860465,
+          "translated": false
+        },
+        {
+          "author_name": "Daffodil Mama",
+          "author_url": "https://www.google.com/maps/contrib/104290323742181426944/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIIgFK2nT7i4FSA53lwDlRhEi_4ty6rbDhxAm9_d8xUsp9qoQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "A small but powerful museum filled with brilliant work from talented artists capturing life from differing perspectives that can be tragic to amusing all in a contemporary way. A must - see. Free admission, free parking in a private lot and handicapped accessible.",
+          "time": 1753683282,
+          "translated": false
+        },
+        {
+          "author_name": "Sara Ameri",
+          "author_url": "https://www.google.com/maps/contrib/116422048454501565528/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWxPUT04K7z7thEWkGJMQ4rMOEJl9KZ9H3uv4GyIvHPG67Qzv2GHw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I love the pointy corners of the building with the open frames that hold a sculpture in them! The shop has creative art pieces!",
+          "time": 1761439677,
+          "translated": false
+        },
+        {
+          "author_name": "its a beer life",
+          "author_url": "https://www.google.com/maps/contrib/100124401743251130687/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWgv0HNVtqoF6ruinULSibzIXMNgdpv0m-kUZeNQJVjGfJA1x9E=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "What a treasure to have such a fine art exhibit location in downtown KC. Easily accessible from the Plaza area and free for all to visit.\n\nThe exhibits were intriguing and vary widely from early European art to post revolutionary art.  There was a great exhibit of Egyptian artifacts from the pyramid too.  Lots of church related early Christianity artifacts and displays. The stained glass works were so beautiful too.\n\nYou can spend a day here easily or break it up into smaller visits over time. There is a nice cafe in the center with great food and a selection of coffees and deserts.\n\nVenture outside and see the world’s largest shuttle cocks and other great displays of art works.  Pack a lunch and enjoy a picnic on the lawn under the shade of the many Ginkgo trees.\n\nThere is plenty of parking in the parking garage and it cost 14 dollars per vehicle, which seems like a bargain for the free entry.  If you have a handicap tag or plaque the parking is free.",
+          "time": 1717509188,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-kansas-city-nelson-atkins-museum-of-art",
@@ -1332,14 +2268,14 @@
       "website": "http://www.nelson-atkins.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "4525 Oak St.",
+      "street_address": "4525 Oak St, Kansas City, MO 64111, USA",
       "address_line2": null,
       "postal_code": "64111",
-      "latitude": 39.0449664,
-      "longitude": -94.5809582,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 39.0449506,
+      "longitude": -94.58092839999999,
+      "place_id": "ChIJRSCf3ervwIcRxcTG-WmRVis",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1370,12 +2306,13 @@
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
-        "http://www.nelson-atkins.org"
+        "http://www.nelson-atkins.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Kansas City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:35:53Z",
+      "updated_at": "2026-03-14T19:58:11Z",
       "notes": null,
       "city_tier": 1,
       "is_scoreable": false,
@@ -1390,26 +2327,158 @@
       ],
       "content_generated_at": "2026-01-25T02:35:53Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(816) 751-1278",
+      "website_google": "https://www.nelson-atkins.org/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb-listing",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 15055,
+      "google_reviews": [
+        {
+          "author_name": "Kira H",
+          "author_url": "https://www.google.com/maps/contrib/110461205291098993069/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWVC9wvWzeiOqjYSwaYVFjI0SnYIBIYiwABNbLnr47aQODVAmQS=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 weeks ago",
+          "text": "this museum is amazing. there’s such a variety of art from different eras and cultures. it’s easy to navigate and all the staff was incredibly helpful. there are two floors with a small exhibit on the lobby floor. admission is free to the museum itself and parking is $14 in their parking garage.\n\nthey even have strollers available for rent for free which was very helpful to us with our toddler. our kids enjoyed looking at the art and especially the sculpture garden.\n\nthe cafe was reasonably priced and they had a good variety of items so we could find something for everyone in our group of 6 people.\n\nwe had an amazing time here!",
+          "time": 1771042183,
+          "translated": false
+        },
+        {
+          "author_name": "Jeevith J",
+          "author_url": "https://www.google.com/maps/contrib/113018482504483832142/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWv3C85JPhYNnUHKbKbk8_g0DnaLy6KpzLJLeiI-IJ-najC4St=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "The Nelson-Atkins Museum of Art is a beautiful and impressive museum that’s absolutely worth visiting when you’re in Kansas City. It features an amazing collection of ancient and historic artworks from around the world, making it a great place for art lovers and casual visitors alike. One of the best parts is that entry is completely free—you just need to pick up a wristband from the self-service kiosk at the entrance.\n\nThe museum is spread across a large area, with extensive indoor galleries and a few outdoor art installations as well. There are two floors of exhibits, and you’ll need at least 2–3 hours to comfortably explore everything without rushing. The layout is spacious and easy to navigate.\n\nParking at the museum is paid, but you can find free roadside parking on some nearby streets, which is a good option if you want to save a few bucks. Overall, a must-visit spot.",
+          "time": 1769103490,
+          "translated": false
+        },
+        {
+          "author_name": "Pedro Hernández Santiago",
+          "author_url": "https://www.google.com/maps/contrib/117416806128112657938/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUgRH1T9p9R2KFo-PmB-8UPxN0sQY7vovkRIu5N4iCehRVY9GbZ6A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "⭐⭐⭐⭐⭐\nThe Nelson-Atkins Museum is an amazing place to visit! The exhibits are beautifully curated, and the variety of art—from classic to modern—makes every visit interesting. The building and gardens are stunning, and everything is very well maintained, including the restrooms, which are spotless and comfortable. The staff is friendly and helpful, making the entire experience even better. It’s definitely one of the best museums in the area and a must-see for anyone who appreciates art and culture.",
+          "time": 1772399342,
+          "translated": false
+        },
+        {
+          "author_name": "Alejandra Cadenas",
+          "author_url": "https://www.google.com/maps/contrib/115691162853314887974/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUoOefhUBlupPOnG0-HaJ5xJDd6L3lv7T5i0UPiKmXA2YxhfxNN=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "This place! Agghhh.. it is amazing .. I love everything about it. I like the way they’re organized and are careful about little details.. the Night Shift event is so good and all the activities they always plan. I’m kind of new in KC and it is one of my favorite places in KC. I go there all the time and the kids love it too! Can’t wait to see the new areas.",
+          "time": 1772308061,
+          "translated": false
+        },
+        {
+          "author_name": "Jennifer Rushton",
+          "author_url": "https://www.google.com/maps/contrib/109668584481802931010/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5KzloTUidsSyVxkv5brY-EEfHmDAgVFPYY3g1CdrF8zd2m564CA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Museum access is currently free, and has been for as long as I can remember (30+ years). There is a kiosk in the lobby now to get wrist bands as tickets, but still free. Their parking lot is $14, but there is some free parking along the street, if you're lucky.\n\nTook my 6 year old here for the first time today, and he enjoyed it enough to want to come back and bring his younger brother next time. He was mainly interested in the fountain and wanting to run around outside, of course.\n\nI have a lot of good memories of visiting the museum as a kid with my family, and am glad I am able to pass that down to my children now.",
+          "time": 1771804782,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-st-louis-field-house",
       "country": "USA",
       "state_province": "Missouri",
-      "city": "St. Louis",
+      "city": "Springfield",
       "museum_name": "Field House",
       "alternate_names": null,
       "website": "http://eugenefieldhouse.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2235 W Kingsley St, Springfield, MO 65807, USA",
       "address_line2": null,
-      "postal_code": "63102",
-      "latitude": 38.6200151,
-      "longitude": -90.1919954,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "65807",
+      "latitude": 37.14202,
+      "longitude": -93.3240349,
+      "place_id": "ChIJue_QODxkz4cRrLFw6rnuUGM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1439,15 +2508,16 @@
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for St. Louis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:35:59Z",
+      "updated_at": "2026-03-14T19:58:12Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3144214689",
+      "phone": "(417) 874-2500",
       "is_scoreable": false,
       "content_summary": "The **World Chess Hall of Fame** in St. Louis is a must-visit destination for chess enthusiasts and casual visitors alike. Celebrating the game and its cultural impact through art and exhibits, it offers a unique blend of creativity, strategy, and entertainment that captivates all age groups.",
       "content_description": "**World Chess Hall of Fame** is not just a museum; it's a vibrant celebration of chess in its many forms. Located in the heart of St. Louis, this remarkable venue marries the art of chess with cultural exhibits, making it a fascinating stop whether you're an avid player or a curious visitor. The museum features changing exhibitions that highlight the rich history of chess, showcasing artistic interpretations of the game alongside rare artifacts and memorabilia from some of the greatest players in history. Here, visitors can explore the intricate connections between chess and art, science, and music through thoughtfully curated displays. Each exhibit offers insights into how chess has shaped creativity and inspired innovation across various disciplines.  \n\nThe architecture of the museum itself is a nod to the sophistication of the game. Spacious galleries are interspersed with intimate settings for events, workshops, and special programs, encouraging social interaction among fellow chess fans. The Hall of Fame honors legendary players, commemorating their contributions to the sport and preserving the legacy of chess through interactive and immersive experiences. Furthermore, the incorporation of artistic endeavors, such as chess-inspired murals and installations, ensures that each visit is unique and engaging. For anyone seeking to deepen their appreciation of chess, or simply enjoy a creative and thought-provoking experience, the **World Chess Hall of Fame** is a definitive destination in the vibrant city of St. Louis.",
@@ -1460,7 +2530,73 @@
       ],
       "content_generated_at": "2026-01-25T02:35:59Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://parkboard.org/fieldhouse",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.4,
+      "google_reviews_count": 422,
+      "google_reviews": [
+        {
+          "author_name": "Lesa",
+          "author_url": "https://www.google.com/maps/contrib/110490242307114100080/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVqTsns4hph4SMM5jc_4VxMR65iBoMUIWhAx-D8nkqOkCS3sPBr=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "My nephew's & my niece play ball out here. It's always a family atmosphere and alot of fun. They always have a full concession area and plenty of seating. Their prices up get in are also very reasonable. It's a great place to go!",
+          "time": 1596793695,
+          "translated": false
+        },
+        {
+          "author_name": "Christy Tracy",
+          "author_url": "https://www.google.com/maps/contrib/116462937424309615621/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUIM-gK4ZockyWUXGqPBg59uzG71GqXF4WjyElM8NFRhLgUMTvh=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "I've only been here to watch my daughters volleyball games. It seems clean and has multiple rooms for different teams. I didnt like having to pay to enter for every game (you have to make sure to get a stamp if you have a second game later on the same day) I feel like as a parent of an athlete we already pay for them to play there. There are concessions and vending machines, even a small gaming area.",
+          "time": 1523480682,
+          "translated": false
+        },
+        {
+          "author_name": "rebekah lebahn",
+          "author_url": "https://www.google.com/maps/contrib/102531444189424715165/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXHnGdkcpIMkUKPNqYZxjGxsFkydbwiPY6862_9aYdEqGgATLSD=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Easily located Sports building. I personally attended a cosigner Sales Event at this location. I'm sure they rent out to whoever's in need. Recently built, clean and sharp interior as well as exterior. Large Parking Lot to assist large quantities of people.",
+          "time": 1553724227,
+          "translated": false
+        },
+        {
+          "author_name": "Fawn Warner",
+          "author_url": "https://www.google.com/maps/contrib/114426823310533918262/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXzl9V4nFUMpE8XyapQ4qWq2vDRMs1D08msQZEmtrF6-C0NbmCrtw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "The fieldhouse is a great facility for basketball and volleyball. Very clean, nice concessions, and comfortable furniture in the lobby for when you're in between games. Court seating is all backless bleachers, so bring a bleacher chair if you're attending multiple games.",
+          "time": 1560525600,
+          "translated": false
+        },
+        {
+          "author_name": "Ozark Mountain Real Estate MO & AR-Melynni Jolliff",
+          "author_url": "https://www.google.com/maps/contrib/106138616369241617797/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXaSWzSnDHda9FRdK8bCsIup9XUfXuCbsOEz0Qnp99rlzjWsNyu=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Watched my granddaughter play a tournament at The Fieldhouse Sportscenter.  It’s a very nice facility.  I like the comfortable seating and tables outside the courts you can watch the games through the glass windows.  Nice concession stand.",
+          "time": 1739290516,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-st-louis-mildred-lane-kemper-art-museum",
@@ -1472,14 +2608,14 @@
       "website": "http://kemperartmuseum.wustl.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1 Brookings Dr, St. Louis, MO 63130, USA",
       "address_line2": null,
       "postal_code": "63130",
-      "latitude": 38.6471166,
-      "longitude": -90.3026577,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 38.6470827,
+      "longitude": -90.30269640000002,
+      "place_id": "ChIJffmkY6nK2IcRQmapJyjoaQo",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1503,22 +2639,23 @@
       "historical_context_score": 3,
       "priority_score": 13,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Mildred Lane Kemper Art Museum has a respectable collection of 19th to 21st-century art, indicating a coherent thematic strength. Its historical context is significant regionally, though it lacks canonical works—which keeps it from scoring higher in the modern and contemporary categories.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia indicates a broad 19th–21st century European and American collection across media, implying moderate modern/contemporary representation but no specific emphasis on Impressionism (scored as minor). As a long-established university museum with antiquities and Old Master prints but no evidence of encyclopedic depth, it fits a moderate-tier, regionally known institution with likely decent but not standout historical framing.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 4,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for St. Louis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3149354523",
+      "phone": "(314) 935-4523",
       "is_scoreable": true,
       "content_summary": "Anchored on Washington University in St. Louis, the Mildred Lane Kemper Art Museum is a rewarding stop for art lovers who want a concentrated, smartly curated survey of modern and contemporary art alongside select works from earlier periods. Expect museum-quality exhibitions, strong academic programming, and a visitor-friendly setting that invites slow looking. It’s an ideal museum to pair with a campus stroll—perfect for travelers who value thoughtful interpretation, lively temporary shows, and the pleasure of discovering excellent art beyond the “big name” encyclopedic museums.",
       "content_description": "Set on the Washington University in St. Louis campus, the **Mildred Lane Kemper Art Museum** offers an art-focused visit that feels both intimate and intellectually ambitious. As a university museum, its curatorial voice is shaped by scholarship—expect wall texts that reward close attention and exhibitions that connect works to bigger ideas in *modernism*, *contemporary practice*, and the shifting histories of art. Even with a modest-sized permanent collection, the museum’s programming often delivers the kind of fresh, research-driven presentation that seasoned museumgoers seek out.\n\nThe collection and exhibition schedule typically foreground **modern and contemporary art**, with rotating installations that keep repeat visits worthwhile. Rather than trying to be encyclopedic, Kemper shines through **tight curatorial framing**—pairing media and movements in ways that clarify how artists experiment with form, politics, and perception. For visitors, this means a gallery experience that can be enjoyed quickly (as part of a broader St. Louis itinerary) or lingered over, especially if you like comparing approaches across painting, photography, and time-based work.\n\nArchitecturally and experientially, the museum benefits from its campus context: calm surroundings, a studious atmosphere, and easy integration with lectures, events, and the broader cultural energy of an academic arts community. Plan for a thoughtful, unhurried visit—ideal for travelers who appreciate **well-edited exhibitions**, strong interpretive materials, and the chance to encounter contemporary art in a setting designed for sustained looking.",
@@ -1538,7 +2675,148 @@
       "primary_art_focus": "Modern/Contemporary",
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.kemperartmuseum.wustl.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 219,
+      "google_reviews": [
+        {
+          "author_name": "Jonathan Hallas",
+          "author_url": "https://www.google.com/maps/contrib/107883192791926493211/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV2OFfChtXNzifQjuq4IOjkbgcmDS5dj6od6f5Crmrm0oTI5YAgeg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 3,
+          "relative_time_description": "10 months ago",
+          "text": "The Mildred Lane Kemper Art Museum is on the campus of Washington University in St. Louis. It’s run by students, and that explains a lot. Most exhibitions focused on social justice issues, including “Decolonize the Garden,” land acknowledgments, and the ways that “eco-exploitive capitalism” have ruined Earth or something. There is little art on display considering the size of the building, space available, and the museum’s financial resources.\n\nThe building itself is a work of art and is probably the best part of the museum experience.\n\nParking is in the underground East End Parking Garage, which is accessed from Forsyth BLVD and Wrighton Way.",
+          "time": 1746460477,
+          "translated": false
+        },
+        {
+          "author_name": "Rebecca Davis",
+          "author_url": "https://www.google.com/maps/contrib/109715025184894203585/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWmXztTqgUwwffoy_0_Tj8uhX62x_fy_q5miKkurRyNucQcQsSW=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "This was a nice adventure. We missed our stop on the train, so we ended up exploring the Washington University campus before finally finding the gallery. The exhibits were nice and thought provoking. They even had a little feedback form.",
+          "time": 1744663359,
+          "translated": false
+        },
+        {
+          "author_name": "juliasface123",
+          "author_url": "https://www.google.com/maps/contrib/110694567215032128790/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLKP543meSUBjEmgAzI554Vk_yvECZZ4TG_R8OJQx-w9MA7kM2gQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Incredible to visit. Easy to park and a great Hidden Gem",
+          "time": 1764909829,
+          "translated": false
+        },
+        {
+          "author_name": "Maria C",
+          "author_url": "https://www.google.com/maps/contrib/115091894025682560176/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUsWTVqZOfyNp-qdeGikaG_iTQgcT_Se9M8RYH9S_knWOswTlZnlg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Nicely curated permanent collections including artists such as Pollock, Warhol, and Max Ernst, plus interesting temporary exhibits. It is a small museum but worth a visit, especially since it's free! Check out the art sculptures/exhibits outside as well.",
+          "time": 1665709427,
+          "translated": false
+        },
+        {
+          "author_name": "Brandon Hentze",
+          "author_url": "https://www.google.com/maps/contrib/117038578670426734543/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVnvThPZNrAgCvjfd8wz42aEYt7I64Nlshw7326I5UIdwezzLxXmA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "This is an little gem of a museum on the Washington University campus.  The rotating exhibitions are always excellent, and their permanent collection includes works from Pollack, Mattise, Warhol, and numerous other artists of note. It's free admission and free parking during the university breaks.",
+          "time": 1627847734,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mo-st-louis-world-chess-hall-of-fame",
@@ -1550,14 +2828,14 @@
       "website": "http://www.worldchesshof.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "4652 Maryland Ave, St. Louis, MO 63108, USA",
       "address_line2": null,
       "postal_code": "63108",
-      "latitude": 38.6444545,
-      "longitude": -90.2610935,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 38.6442971,
+      "longitude": -90.2611568,
+      "place_id": "ChIJPe9Yyde02IcRjg9tvwNv3d0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1586,12 +2864,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "openstreetmap"
+        "openstreetmap",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for St. Louis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:36:17Z",
+      "updated_at": "2026-03-14T19:58:14Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -1606,8 +2885,160 @@
       ],
       "content_generated_at": "2026-01-25T02:36:17Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(314) 367-9243",
+      "website_google": "http://www.worldchesshof.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 9:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 822,
+      "google_reviews": [
+        {
+          "author_name": "Jennifer Hoffman",
+          "author_url": "https://www.google.com/maps/contrib/109516705619309796138/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYygI86nQShvXfsfBkhDF2llYv5jQAopNS0NlDDZPHqtVEyXsn4w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Absolutely incredible staff and beautiful qorks of art on display. It was amazing to see the works of art put into the chess boards on display. I really enjoyed it.\n\nMy husband is an avid chess lover and he was able to join on a facecall so that he can enjoy it to as I was on a business trip and took a small excursion.\n\nMy daughter sent me with a stuffed giraffe. His name is Giraffy. Enjoy seeing his adventure there",
+          "time": 1772455671,
+          "translated": false
+        },
+        {
+          "author_name": "Oshmita",
+          "author_url": "https://www.google.com/maps/contrib/101222194247864808281/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIpR_FelydZTXyZz9ynKFb-SJxCYilmmQlWUSZSY2TSJuF5Gw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Our family spent hours here! Love chess! Gift shop is so cool, couldn't decide on what to buy! I've been rocking my World Chess Hall of Fame gloves all winter long. Till next time St. Louis! Thank you!",
+          "time": 1772290253,
+          "translated": false
+        },
+        {
+          "author_name": "Jon Lau",
+          "author_url": "https://www.google.com/maps/contrib/101664665401377179413/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXFx9xUDZU5s-ezTOQ-MsCmb4JATtFtAfyHt3vHHPcJQ9oh-Uau=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This place is absolutely awesome and the best part is that it is free. The museum has a surprisingly rich collection of chess sets and boards from different parts of the world and across various time periods. Walking through the exhibits brought back many memories of my younger days when I used to play a lot more chess than I do now.\n\nMany visitors also mention the impressive giant chess piece outside and I agree that it is a great photo spot and sets the tone perfectly. Inside, the educational videos are engaging. The staff were friendly and helpful which made the experience even better.\n\nThere is also a nice little gift shop with interesting items for chess lovers. Overall this is a wonderful place to visit whether you are a casual player or a chess enthusiast. Highly recommended.",
+          "time": 1763875763,
+          "translated": false
+        },
+        {
+          "author_name": "Juan Guzman",
+          "author_url": "https://www.google.com/maps/contrib/102880580957510052432/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW7xY0fdxBblLgebMJhP0p2p62vJszC9CT3RYr8-lTlbMzVgxlC=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "This past Sunday we checked out the World Chess Hall of Fame in St. Louis and it turned out to be such a fun and unique stop! I went with my wife Diana, her son Santiago, and his girlfriend Juliana, and we all had a great time wandering through the exhibits and snapping pics with the giant chess pieces.\n\nDiana, being a dentist, loved seeing Dr. Carolina Blanco’s contributions to the game (dentist + chess master = super inspiring). Santiago and Juliana had fun with the colorful art, and we all left with a new appreciation for how creative and deep the game of chess really is.\n\nOh, and the best part? Admission and parking were both free on Sunday—can’t beat that! If you’re in St. Louis, this place is definitely worth a visit for a fun and different kind of experience.",
+          "time": 1756759216,
+          "translated": false
+        },
+        {
+          "author_name": "Steve Johnson",
+          "author_url": "https://www.google.com/maps/contrib/113275076354788998875/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXQEXVu85B-M1_rRuN9Wdb0KDKj2RoXRFHcqleSiznC29EAT84l=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I went with my mom and we loved it.   It's exactly what you think, cool chessbords, and an opportunity to play Chess, 3d chess, and 3 and 4 player chess.  So, some non traditional chess giving new players an edge.",
+          "time": 1770218725,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

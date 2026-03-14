@@ -7,20 +7,20 @@
       "museum_id": "usa-mn-unknown-american-swedish-institute",
       "country": "USA",
       "state_province": "Minnesota",
-      "city": "Phillips West",
+      "city": "Minneapolis",
       "museum_name": "American Swedish Institute",
       "alternate_names": null,
       "website": "https://www.asimn.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "2600 Park Ave",
+      "street_address": "2600 Park Ave, Minneapolis, MN 55407, USA",
       "address_line2": null,
       "postal_code": "55407",
-      "latitude": 44.94142,
-      "longitude": -93.25495,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.9545975,
+      "longitude": -93.2658596,
+      "place_id": "ChIJQYan8awys1IRAIF-sDMDC0o",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -51,15 +51,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.asimn.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Phillips West' from open data; MRD: computed city_tier=3 for Phillips West; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:32:26Z",
+      "updated_at": "2026-03-14T19:57:51Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6128714907",
+      "phone": "(612) 871-4907",
       "is_scoreable": false,
       "content_summary": "The American Swedish Institute offers a unique journey into Swedish-American culture through art and history, making it a must-visit destination. With its stunning architecture and engaging exhibits, visitors can immerse themselves in the rich traditions and innovations that connect these two vibrant cultures.",
       "content_description": "**American Swedish Institute** invites visitors to explore a harmonious blend of art, history, and cultural heritage, celebrating the Swedish-American experience. Housed within the picturesque **Turnblad Mansion**, a magnificent structure reflecting the Swedish Renaissance style, the museum provides a unique backdrop for its diverse exhibits. Designed by architect L.E. Anhalt and completed in 1908, the mansion itself is a work of art, complete with exquisite woodwork, handcrafted furnishings, and beautiful gardens that enhance the visitor experience. As you wander through its elegant halls, you'll feel transported to a different time and place.  \n\nThe museum's collections showcase a tapestry of Swedish history, from early immigration stories to contemporary art, including *textiles, ceramics, and folk art*. Special exhibits highlight the role of Swedish innovation in America and the relationships forged between the two cultures. Guests can enjoy engaging programs, including culinary experiences that feature traditional Swedish dishes and hands-on workshops that allow visitors of all ages to create their own masterpieces. The **American Swedish Institute** not only stands as a repository of cultural heritage but also as a vibrant community hub where art and tradition come alive. Don't miss this opportunity to discover the profound ways in which Swedish heritage continues to shape American identity today.",
@@ -72,26 +73,167 @@
       ],
       "content_generated_at": "2026-01-25T02:32:26Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.asimn.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2151,
+      "google_reviews": [
+        {
+          "author_name": "Been’ there",
+          "author_url": "https://www.google.com/maps/contrib/104229468158929844001/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX04CjkdJjaLIE0KEeT3J2hMSEGe-DSSzZ4kYt-tdj3YYU7Ebs=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "The American Swedish Institute is located on Park Avenue along with old Minneapolis mansions. The mansion here is huge, it was built in the early 1900’s and it’s stunning. It’s well kept. It’s worth the visit to see the glamour of 1900’s. You connect from the modern building on the front. The modern building perhaps stays bushier and the mansion gets some visits but not a ton. I prefer the mansion. Free parking.",
+          "time": 1772334123,
+          "translated": false
+        },
+        {
+          "author_name": "Randi Leigh",
+          "author_url": "https://www.google.com/maps/contrib/107344615167947465992/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWdx1hTF2NhA6qzd-klXLhD-baeEWwRy9peaGFqngQFRCo-N5eldw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Very cool way to experience the swedish heritage in Minneapolis! The architecture is absolutely stunning and we visited when a Weaver's exhibit was up! The people were friendly and helped us learn more about the history of the mansion. Super cool visit!",
+          "time": 1771940655,
+          "translated": false
+        },
+        {
+          "author_name": "Jackie Atkinson",
+          "author_url": "https://www.google.com/maps/contrib/112719533769769894589/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW1eCKb-YXiMO98s-vGBvrZZ0DUo8I9QqbvjK2xtW58WhvVhesZ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Went with my sisters they both had been there before. First time for me totally enjoyed it decorated for the holidays made it extra special. How kind of them to donate that beautiful  home. It’s a lost art all that beautiful woodwork some mahogany wood came from Africa. Very good volunteers they’re very informative. Answered all the questions just a lovely visit.",
+          "time": 1765254091,
+          "translated": false
+        },
+        {
+          "author_name": "Sarah VanBlarcom",
+          "author_url": "https://www.google.com/maps/contrib/116025944101703212160/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXAoxyv-H76unfm3iUAxylVjsyyWuRl02weJhQK1JE5dmZo68HpIg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I felt like I was walking through a fairytale. The woodwork is amazingly intricate, the ceramic fireplaces were stunning, the decor was festive. Friendly folks, family friendly, & free to explore most of the mansion. I went on a difficult day for me, the birthday of my partner who passed away, the atmosphere was warm & helped me feel less alone.",
+          "time": 1765253052,
+          "translated": false
+        },
+        {
+          "author_name": "Beth Cato",
+          "author_url": "https://www.google.com/maps/contrib/102492423442581951464/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMnraAknoYE9HTdmdB_AUWKsBV0lkPHVk58O_OwkGSYMga2_ID=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "Gorgeous estate, an absolute treasure. We waited to visit until they had the Christmas decor up, and that added even more through the accessories and the tomte tales that are fun for all ages. The gift shop is wonderful to walk through, with a large number of books as well as Swedish foods, linens, and outdoor and indoor items. On a short side note, as I have a full separate review, the Fika Cafe is a great stop!",
+          "time": 1763925004,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-unknown-comofriends-como-park-zoo-and-conservatory",
       "country": "USA",
       "state_province": "Minnesota",
-      "city": "abrook Drive Saint Paul",
+      "city": "Saint Paul",
       "museum_name": "ComoFriends/Como Park Zoo and Conservatory",
       "alternate_names": null,
       "website": "http://comofriends.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "8229 1225 Est",
+      "street_address": "1225 Estabrook Dr, St Paul, MN 55103, USA",
       "address_line2": null,
       "postal_code": "55103",
-      "latitude": 44.97416,
-      "longitude": -93.13848,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.9812012,
+      "longitude": -93.15244849999999,
+      "place_id": "ChIJ5c3H2xArs1IRWl8vqH3Jq0U",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Zoo/Aquarium",
       "primary_domain": "Science",
       "topics": null,
@@ -122,12 +264,13 @@
         "walker_reciprocal",
         "official_website",
         "http://comofriends.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:32:34Z",
+      "updated_at": "2026-03-14T19:57:52Z",
       "notes": "CSV: museum type 'ZOO, AQUARIUM, OR WILDLIFE CONSERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -142,26 +285,178 @@
       ],
       "content_generated_at": "2026-01-25T02:32:34Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(651) 487-8201",
+      "website_google": "http://www.comozooconservatory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:00 PM",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 18833,
+      "google_reviews": [
+        {
+          "author_name": "Morgan Muenster",
+          "author_url": "https://www.google.com/maps/contrib/114434423747684103771/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJS0AEGRIBErsGajA2ntMk5VhZRRN3EIFg-ftTTJswGDeOSmQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "This is such a wonderful zoo. I needed to kill about 3 hours so decided to walk around here and I’m so glad I did. The staff was so friendly and ready to answer questions. You can tell they really care about the animals. The animals themselves have spacious areas, with both indoor and outdoor areas. The conservatory was the perfect way to warm up. I went in the middle of the week during February so it was not crowded at all, which was perfect.",
+          "time": 1772464581,
+          "translated": false
+        },
+        {
+          "author_name": "Miguel Hernandez",
+          "author_url": "https://www.google.com/maps/contrib/107408306476008818679/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUaWuB8ixFDnMzAF8g0WIu6dmhbbF413SMPsCXUG_mQCxH_iOvf=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Lovely place to go to see beautiful trees and plants. The palm dome is gorgeous to walk around and marvel at the beauty of nature. The Spice exhibit is interesting. To see where our spices and roots veggies look like while they are growing is quite the scene. The zoo is quite lovely although we didn't get to see much of it since we had to leave due to closing hours. Will return again to experience the full park and will update review",
+          "time": 1769638747,
+          "translated": false
+        },
+        {
+          "author_name": "Kaken Paul",
+          "author_url": "https://www.google.com/maps/contrib/111984704237417777575/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVskY0Uuxizvuub8Mx78IgaLO-vdQYuJJZl1jpRQvy_fum4cmY=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "This place is absolutely beautiful. I went there multiple times because it feels home. In the zoo they have lots of different animals but my favorite place is conservatory. It has all the places and animals from tropical regions. If you some from tropical regions, it’s a must you can go visit it. No tickets, it’s a free entry",
+          "time": 1770022588,
+          "translated": false
+        },
+        {
+          "author_name": "Brooke H",
+          "author_url": "https://www.google.com/maps/contrib/113384936232322239506/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJpr1T60P4ePs3btf17ciQvXSuEKRbKdVE4GPCgC-AQqWba7Enm=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "a week ago",
+          "text": "I love visiting here on the weekends and seeing the animals! Some animals need more space but I understand that they are working with limited resources. I make sure to donate on each visit. Grateful for the staff that takes good care of the animals.",
+          "time": 1772372109,
+          "translated": false
+        },
+        {
+          "author_name": "Liam Olson",
+          "author_url": "https://www.google.com/maps/contrib/104858685678352422874/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMM0rfi7Liv-a0L3SqkBt1U_JkvmI3ARx2E-ZDzg0M2qy4gp8=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "The botanical garden is wonderful, my personal favorite, and occasionally hosts fascinating plants like Horace the Corpse Flower! The zoo section with primates, big cats, giraffes, and other creatures is, of course, also great. The \"Tropical Encounters\" area with birds, turtles, and fish feels nice in the frigid Minnesota winter. Great for a date or spending time with friends and family. 😊 It's also free, but I recommend donating!",
+          "time": 1769014092,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-unknown-franconia-sculpture-park",
       "country": "USA",
       "state_province": "Minnesota",
-      "city": "Franconia Township",
+      "city": "Shafer",
       "museum_name": "Franconia Sculpture Park",
       "alternate_names": null,
       "website": "https://www.franconia.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "29836 St Croix Trail N, Shafer, MN 55074, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "55074",
+      "latitude": 45.3808131,
+      "longitude": -92.7049076,
+      "place_id": "ChIJn1YF36mRslIRm78SyxWpELk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -191,12 +486,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.franconia.org"
+        "https://www.franconia.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Franconia Township' from open data; MRD: computed city_tier=3 for Franconia Township; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:32:41Z",
+      "updated_at": "2026-03-14T19:57:53Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -211,26 +507,178 @@
       ],
       "content_generated_at": "2026-01-25T02:32:41Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(651) 257-6668",
+      "website_google": "http://www.franconia.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2000"
+            },
+            "open": {
+              "day": 0,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2000"
+            },
+            "open": {
+              "day": 1,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "day": 2,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2000"
+            },
+            "open": {
+              "day": 6,
+              "time": "0800"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 8:00 AM – 8:00 PM",
+          "Tuesday: 8:00 AM – 8:00 PM",
+          "Wednesday: 8:00 AM – 8:00 PM",
+          "Thursday: 8:00 AM – 8:00 PM",
+          "Friday: 8:00 AM – 8:00 PM",
+          "Saturday: 8:00 AM – 8:00 PM",
+          "Sunday: 8:00 AM – 8:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1686,
+      "google_reviews": [
+        {
+          "author_name": "Amber Johnson",
+          "author_url": "https://www.google.com/maps/contrib/113891891048425509775/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW6Qv_S9_K9A7pc6opnoeMyatXi3G2QZilQPDJBSxkf2cexF3F3=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Made an hour drive to check this place out. And there are zero regrets!!\n\nSuch a fun, quirky, artistically interesting area!\n\nBrought my kids for the afternoon, spent over an hour walking around, took many pictures, enjoyed the sculptures and the like!\n\nDefinitely a place we will go to more in the future!",
+          "time": 1756415562,
+          "translated": false
+        },
+        {
+          "author_name": "Jody Rodrigues",
+          "author_url": "https://www.google.com/maps/contrib/105043243117056962539/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKu4g01sYOD9aS8aJcxZBCmdojvfn8MapCSeZyP4NmTNDRd4H4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful setting, dog friendly, over 50 acres to explore with a great commons building. Go for peace, learning, and a walk in a beautifully manicured park setting with lots of interesting artwork. Commons building has snacks, nothing substantial so pack food or plan to go elsewhere.",
+          "time": 1760279168,
+          "translated": false
+        },
+        {
+          "author_name": "Corey Williams",
+          "author_url": "https://www.google.com/maps/contrib/103835660893605809518/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIe2Mj0FOYsEDWYs2mgu4QCFPMVVCOE-A2dQnaT4kOHoDIquw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Absolutely stunning! 😍 Very nice place to visit with the family! Do something different and go visit if you have never been here. Truly amazing art work 🥰 Good job to all the artists! 👍 I really enjoyed my visit!❤️",
+          "time": 1753196762,
+          "translated": false
+        },
+        {
+          "author_name": "Steve G",
+          "author_url": "https://www.google.com/maps/contrib/106083807749019932255/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJTG0KikDKRhfX-jXDV9cdBZa40coJ8URnHjmwiaq2iBFASKw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "It was great. Our niece was married there. The only issue we had was the front door is not operable by someone in a wheelchair, meaning there is not an electronic opener.",
+          "time": 1757542660,
+          "translated": false
+        },
+        {
+          "author_name": "Danielle Laveau",
+          "author_url": "https://www.google.com/maps/contrib/103551747269951185779/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWk8Qyml23GBxAfPuveeUUaEBJeD3Nap4aVi7fZXEfOpVKvkzkswQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Gah, I love this place! I've been here several times over the last few years, and it never gets old. Sculptures will swap out from time to time, so there's always something new to see. The playground areas and sculptures are perfect for kids and adults both. Only minutes from Taylors Falls, it's such a cute stop and well worth it!",
+          "time": 1754185030,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-unknown-hallberg-center-for-the-arts",
       "country": "USA",
       "state_province": "Minnesota",
-      "city": "Viking Blvd Wyoming",
+      "city": "Wyoming",
       "museum_name": "Hallberg Center for the Arts",
       "alternate_names": null,
       "website": "https://wyomingcreativearts.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "5521 East",
+      "street_address": "5521 E Viking Blvd, Wyoming, MN 55092, USA",
       "address_line2": null,
       "postal_code": "55092",
-      "latitude": 45.08596,
-      "longitude": -93.04596,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 45.33621300000001,
+      "longitude": -92.99409399999999,
+      "place_id": "ChIJybZ-M-DlslIR-a69nZ6iM5s",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -261,12 +709,13 @@
         "walker_reciprocal",
         "official_website",
         "https://wyomingcreativearts.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:32:47Z",
+      "updated_at": "2026-03-14T19:57:54Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -281,7 +730,139 @@
       ],
       "content_generated_at": "2026-01-25T02:32:47Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(651) 272-5122",
+      "website_google": "http://wyomingcreativearts.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "day": 2,
+              "time": "1400"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "1400"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1400"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1400"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 2:00 – 8:00 PM",
+          "Wednesday: 2:00 – 8:00 PM",
+          "Thursday: 2:00 – 8:00 PM",
+          "Friday: 2:00 – 8:00 PM",
+          "Saturday: 12:00 – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 81,
+      "google_reviews": [
+        {
+          "author_name": "Aaron N",
+          "author_url": "https://www.google.com/maps/contrib/107731509478597341162/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUWWaIN8qATZKqkoSa7eT9FyDHvp4b2q80etx9WeOHa2WVmducr=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "What a great asset to the local artists!\nThis group is a non profit organization that holds several art shows a year. A converted church turned art gallery, it may be a smaller space but they sure have a way of putting a lot of art on the walls, and it looks great.",
+          "time": 1623972529,
+          "translated": false
+        },
+        {
+          "author_name": "Suzanne Paris",
+          "author_url": "https://www.google.com/maps/contrib/117596940829099905120/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-iCka2H-iGsT6hzLVbmNJoRM-t8Ek8waxvTUQdCb0hLxog6gh=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We had a lovely piano and voice recital at the Center. A beautiful and comfortable space for Art events.",
+          "time": 1764315490,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa B",
+          "author_url": "https://www.google.com/maps/contrib/111119105191051275167/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU_Z-QXDhC1HLwdEenTu_Wjycfhv0nin2KledPZSnd4u_KF08Tt=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "This is a lovely place for building community around art. There are shows to attend, volunteer opportunities, time to create and classes for kids and adults.",
+          "time": 1749241520,
+          "translated": false
+        },
+        {
+          "author_name": "Stephanie Mrachek",
+          "author_url": "https://www.google.com/maps/contrib/101944373040953303905/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWWE18wbO6fLA-r1dPXseNs5BZrjUhAVFyyKQzaoj0GzPL0ESEYkQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I took the linocut block printing class tonight, and created a beautiful wearable scarf.\n\nThe instructor was wonderful, and guided the group through the process, step by step. She also offered tips and tricks along the way as well, which made learning easier We got to keep the blocks for future use, and of course the printed scarf.\n\nIf you are feeling creative, or just want to try something new to get those creative juices flowing, check out their website for  a list of classes and events.",
+          "time": 1695781292,
+          "translated": false
+        },
+        {
+          "author_name": "Sam Foster",
+          "author_url": "https://www.google.com/maps/contrib/114410235620466322879/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWPHzIxER3iogrvdu-p4sTgd1focSLtnVWtylLq3SPxh6mbLa4=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Awesome place! Lots of great experiences for kids! Amazing employees!",
+          "time": 1763392662,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-unknown-minneapolis-institute-of-arts",
@@ -293,14 +874,14 @@
       "website": "http://www.artsmia.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "4701 4TH AVE S",
+      "street_address": "2400 3rd Ave S, Minneapolis, MN 55404, USA",
       "address_line2": null,
-      "postal_code": "55419",
-      "latitude": 44.91699,
-      "longitude": -93.26992,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-17",
+      "postal_code": "55404",
+      "latitude": 44.95850009999999,
+      "longitude": -93.273218,
+      "place_id": "ChIJT0k6WbEys1IRpnx9LgDjLMU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -331,12 +912,13 @@
         "walker_reciprocal",
         "official_website",
         "http://www.artsmia.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Minneapolis' from open data; MRD: computed city_tier=1 for Minneapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.artsmia.org: HTTP 429 for http://www.artsmia.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:32:56Z",
+      "updated_at": "2026-03-14T19:57:55Z",
       "notes": "CSV: IRS Museum ID 8409400409 CSV: museum type 'General Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
       "is_scoreable": false,
@@ -351,7 +933,149 @@
       ],
       "content_generated_at": "2026-01-25T02:32:56Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(888) 642-2787",
+      "website_google": "https://new.artsmia.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 10126,
+      "google_reviews": [
+        {
+          "author_name": "Alicia Davis",
+          "author_url": "https://www.google.com/maps/contrib/109086865110250833632/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUTYgGwhM0TjiIV8NeTD8QqecCUGJL1N6RJlGJ9f96jenKHurWX=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "One of the highlights of our trip. Large, light filled and brimming with art and antiques. I especially loved the extensive collection of ceramics and the preserved period architectural rooms. We enjoyed the coffee and beer in the cafe!",
+          "time": 1772455055,
+          "translated": false
+        },
+        {
+          "author_name": "Ian Timberlake",
+          "author_url": "https://www.google.com/maps/contrib/108167209651567871551/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWHGPcxKPHNEUDnQEEH7K1bxfB_tRvhMfk2CA_ftJVV3mt8y1CBPw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "It cannot be understated how incredible of a place this is. There is no general fee for admission at all. The art here is so expansive that it's unlikely you'll be able to cover the entire place in a few hours. I've been here several times and every time it feels like it's my 1st or 2nd time. You'll see artifacts that's are tens of thousands of years old, all the way up to modern day. You'll see the masters. You'll see armor. You'll see carvings of all types of mediums throughout history. You just need to go.\n\nThere's a young kids zone and a place for nursing mothers, which has been really convenient recently with our new baby. There's also a place to get food and buy souvenirs should you desire.\n\nTake a date or have a date-night with your partner. Go by yourself. Go with your kids. Again, just go.",
+          "time": 1768924730,
+          "translated": false
+        },
+        {
+          "author_name": "Enrique Mijares",
+          "author_url": "https://www.google.com/maps/contrib/106884097822042302523/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUsksFxFCLeCeACgigxz8_xqc3NxTfOBFwe36cEXFe6wHQKtQIWkQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Beautiful place, easy to find street parking if you come on a weekday. On this trip the main entrance was closed but the side entrance was easily accessible. MIA definitely takes at least a few visits to fully admire/ explore. Gift shop was a bit pricey but really nice. Overall worth it 100x - I will be coming back.",
+          "time": 1764339145,
+          "translated": false
+        },
+        {
+          "author_name": "Maret",
+          "author_url": "https://www.google.com/maps/contrib/118426298421288438778/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUuQolGmMq1E1TM1Qi0lPZynZsORN7XRiwMFIh83JYzy9J4TK8=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Stepping into a gallery is like opening a door to a thousand different worlds. You can spend ages just getting lost in the details, imagining the stories behind each brushstroke. It’s a really chill way to experience different perspectives and spark your own creativity. Sometimes, a single piece can totally shift your mood or give you a new idea. The MIA is a great place to get lost among the art.",
+          "time": 1772316164,
+          "translated": false
+        },
+        {
+          "author_name": "Chen Zhou",
+          "author_url": "https://www.google.com/maps/contrib/101829376114217252973/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJL-fZhqCqstlD8xadNn_-QjBVWIaGzgqONcdEJ00NuXMuKtw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The Minnesota Institute of Art is truly a cornerstone of Minnesota’s cultural and artistic scene — easily one of the top art museums in the U.S.! Their Asian art section is especially impressive, with thoughtfully curated collections that showcase incredible depth and beauty.\n\nWe always look forward to their rotating special exhibits, and this year’s Cambodian Art of the Divine was absolutely outstanding. The colossal sculpture of the Hindu god Vishnu, a Cambodian national treasure, was breathtaking to see up close.\n\nEvery visit feels like a celebration of art, culture, and community — it’s wonderful to run into familiar faces and share the joy of discovery with fellow art lovers. MIA is truly a gem of Minnesota!",
+          "time": 1761672140,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-unknown-stevens-county-historical-society-and-museum",
@@ -363,14 +1087,14 @@
       "website": "http://www.stevenshistorymuseum.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1719 116 West 6th Street",
+      "street_address": "116 W 6th St, Morris, MN 56267, USA",
       "address_line2": null,
       "postal_code": "56267",
-      "latitude": 45.58552,
-      "longitude": -95.91774,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 45.5857371,
+      "longitude": -95.9178096,
+      "place_id": "ChIJzy9-vXaty1IRe_mm21UTXA4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -401,15 +1125,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.stevenshistorymuseum.com",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:33:03Z",
+      "updated_at": "2026-03-14T19:57:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3205891719",
+      "phone": "(320) 589-1719",
       "is_scoreable": false,
       "content_summary": "The Stevens County Historical Society and Museum in Morris, Minnesota, offers a unique glimpse into the rich tapestry of local history. With engaging exhibits and a commitment to historic preservation, visitors can explore the fascinating stories of the past while enjoying the charming atmosphere of this significant cultural hub. Don't miss the chance to deepen your understanding of the region's heritage.",
       "content_description": "**Stevens County Historical Society and Museum** serves as a vital resource for those interested in uncovering the stories that shaped Morris and its surrounding areas. As a dedicated **historic preservation** center, the museum encompasses a diverse collection of artifacts and exhibits that narrate the local history, from the establishment of early settler communities to notable events that defined the region. Visitors can wander through themed displays that depict the daily lives, struggles, and triumphs of those who contributed to the area’s development. The combination of engaging storytelling and interactive exhibits makes this museum a captivating destination for history enthusiasts and curious travelers alike.  \n\nIn addition to its collections, the **Stevens County Historical Society and Museum** also features *vintage architecture* that houses its artifacts. The beautifully preserved building provides an inviting atmosphere in which to explore the past. The museum offers rotating exhibitions that highlight specific aspects of Stevens County's culture and heritage, ensuring a fresh experience with each visit. From local art shows to historical re-enactments, there's always something intriguing happening here. The dedicated staff are passionate about sharing the region's history, often hosting events that bring the community together and foster a deeper appreciation for Morris's rich legacy. Whether you're a history buff or simply looking to enjoy a day out, this museum offers a unique and enriching experience that is well worth your time. ",
@@ -422,26 +1147,147 @@
       ],
       "content_generated_at": "2026-01-25T02:33:03Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.stevenshistorymuseum.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 8:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.8,
+      "google_reviews_count": 33,
+      "google_reviews": [
+        {
+          "author_name": "Erika Solis",
+          "author_url": "https://www.google.com/maps/contrib/112621264495187356681/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI0AQL-_zVTuT4w6L1L8zP7uy2FEEeMn8s-fa2MJkOHgHlDtA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "I've been there a couple times and it's been really good. Great people working there",
+          "time": 1771806173,
+          "translated": false
+        },
+        {
+          "author_name": "KK Grimm",
+          "author_url": "https://www.google.com/maps/contrib/115770831597682424325/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVTl24uvcOkpG5AWYwiEJ8p09UXEatTx1Ana6O0OX3oTXHZVhcT4g=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "This is a great museum for discovering the history of stevens county! the ladies working at the museum were really friendly and me and my family learned a lot! I really enjoyed the 70s exhibit they had on display when we were there!",
+          "time": 1690130285,
+          "translated": false
+        },
+        {
+          "author_name": "goodnews Minnesota",
+          "author_url": "https://www.google.com/maps/contrib/107387016327941399275/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVWYMipTbJvYKQTzbUIVqpFA-ndbQh1zvVQpE3OTBrZjhSbq6Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "You can find a lot of cool history of Stevens County and the surrounding area of West-Central Minnesota. It's a great place to learn for new and old residents. You'll appreciate living here more.",
+          "time": 1491696540,
+          "translated": false
+        },
+        {
+          "author_name": "John Snell",
+          "author_url": "https://www.google.com/maps/contrib/111200517239976601898/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUP2-VAgxYUR10gTeQ9J9Wg_geyGy0Z5yhOnIiDKSd0B7priaF7=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "4 years ago",
+          "text": "Loved the timeline on the history of Stevens County. Very well done. Hope to see the new exhibits opening soon.",
+          "time": 1629411306,
+          "translated": false
+        },
+        {
+          "author_name": "Dianne Edgett",
+          "author_url": "https://www.google.com/maps/contrib/102884939628497469924/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ-J78mRuK0koCBD8-9khOXyXm4zifI-HOJHAkB5RIjGWtFTA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Small, but very nice. The exibits were nice and well displayed. Well worth the stop. Handicap accessible.\nGift shop Available and elevator.",
+          "time": 1549920620,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-unknown-the-minnesota-museum-of-american-art",
       "country": "USA",
       "state_province": "Minnesota",
-      "city": "Paul",
+      "city": "Saint Paul",
       "museum_name": "The Minnesota Museum of American Art",
       "alternate_names": null,
       "website": "https://mmaa.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "350 Robert Street North St.",
+      "street_address": "350 Robert St N, St Paul, MN 55101, USA",
       "address_line2": null,
       "postal_code": "55101",
-      "latitude": 44.94645,
-      "longitude": -93.09677,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.94716649999999,
+      "longitude": -93.0903518,
+      "place_id": "ChIJs6dSz0zV94cR-ZLCeEMzJ1U",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -460,28 +1306,29 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 2,
-      "modern_contemporary_strength": 2,
-      "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 16,
+      "modern_contemporary_strength": 3,
+      "primary_art": "Modern/Contemporary",
+      "historical_context_score": 3,
+      "priority_score": 13,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a modest collection focused on American art, showcasing voices from the 19th century to the present with an emphasis on diversity. Its historical context is primarily local, serving the community with limited influence beyond the region.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is focused on American art from the 19th century to the present (5,000+ works), supporting a moderate Modern/Contemporary presence but with no specific evidence of dedicated Impressionist holdings beyond possible minor representation. The stated mission suggests some historical framing across periods, but the evidence does not confirm strong chronological/interpretive depth. As a Saint Paul institution without broader signals of national/international prominence, it fits a regional re",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://mmaa.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6512661030",
+      "phone": "(651) 797-2571",
       "is_scoreable": true,
       "content_summary": "The Minnesota Museum of American Art offers a rewarding stop for anyone curious about how American artists have pictured identity, place, and everyday life. As a regional museum with an intimate scale, it’s ideal for visitors who prefer close looking over crowds—where you can spend real time with paintings, prints, and contemporary works without rushing. Expect thoughtfully curated exhibitions that connect national art stories to Minnesota and the Upper Midwest, plus a calm museum-going experience that feels personal and discovery-driven.",
       "content_description": "For art travelers in the Twin Cities orbit, the **Minnesota Museum of American Art** is a satisfying, close-to-the-work museum visit—one that trades blockbuster scale for **careful curating** and a strong sense of regional context. While best known as a regional institution, it’s a smart place to track how American art evolves from representational traditions into more experimental contemporary voices, with exhibitions that often foreground Minnesota and Upper Midwest perspectives within the broader national story.\n\nBecause the museum’s collection is described as modest, the pleasure here is less about “seeing everything” and more about *how* you see: rotating shows, focused thematic groupings, and opportunities to spend unhurried time with individual objects—whether that’s a nuanced print, a compelling figurative canvas, or a contemporary piece that reframes local narratives. The museum’s programming typically supports deeper looking, making it a strong fit for visitors who enjoy returning to a gallery for a second pass and letting connections build.\n\nArchitecturally and experientially, expect a **human-scale** visit rather than a sprawling campus: manageable galleries, a pace that’s easy to tailor to a lunch-hour stop or a lingering afternoon, and the kind of environment where artworks don’t feel swallowed by the room. Plan to check what’s on view before you go—this is a museum where the **current exhibitions** are the main event, and art lovers are rewarded for timing their visit to a theme or artist they’re eager to explore.",
@@ -498,28 +1345,149 @@
       "overall_quality_score": 11,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 2,
-      "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.mmaa.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 169,
+      "google_reviews": [
+        {
+          "author_name": "Marti Benson",
+          "author_url": "https://www.google.com/maps/contrib/103436183170337312323/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWsV15PHWjld4tdEk1KsDTGEn03lnk-NP46-vnO5Lvz3kkVOglwkA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Always a great way to spend some time. The permanent exhibit is lovely and the queer indigenous exhibit is full of beautiful meaningful works.",
+          "time": 1772315137,
+          "translated": false
+        },
+        {
+          "author_name": "doug barense",
+          "author_url": "https://www.google.com/maps/contrib/117550330595155243204/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAZAA9MWu6hGoChtM-zftCWFVXpjoKgbA1SE7jkHvtXTtNSGZTHQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "I'm not sure if posting pictures of the Museum is allowed, so if it is not allowed please let me and I'll take them down.\n\nA very nice museum! Great art! It made me contemplate the lives of Native Americans, both now and before.\n\nTruly a great visit and one I'd go to again!",
+          "time": 1746986917,
+          "translated": false
+        },
+        {
+          "author_name": "Travelgirl Nancy",
+          "author_url": "https://www.google.com/maps/contrib/114592151066906579136/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKCTeUooSvusIAZQg46PE_JeKJE8Yg00K8CZVq88H--Kpwuuk0=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "A lovely space oddly placed in DT.  No entry fee. Handicapped access, large bathrooms, and staff were congenial.  Upon initial entry you don't realize how expansive it is.  The exhibit \"Queering Indigenity\" was not only beautiful artistically but historically instructive!\nWe spent 90 min in 2 exhibit sections and then realized we would have to return at a later date to complete.  If you want to discuss the art over dessert you'll have to find another venue, if it's after 3pm or weekend.",
+          "time": 1761322408,
+          "translated": false
+        },
+        {
+          "author_name": "Cdab 10",
+          "author_url": "https://www.google.com/maps/contrib/116670800661235761135/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKA6lGwOouR9PCcGq4boUmTEjyjDTsEVCVwppr4LDrF3VQXJA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "So this place is very hard to find ,( There is a sign you will have to follow)also would recommend to go on a Sunday to avoid crowds and parking. The art is beautiful to see but yes the workers there will follow you around that I dislike. At most you can finish a walk through of the musuem 20-30 minutes max.",
+          "time": 1745673600,
+          "translated": false
+        },
+        {
+          "author_name": "Pete Willis",
+          "author_url": "https://www.google.com/maps/contrib/102467396706843382361/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6oF-piVF-ufC_gy2lg39LKhJXl6iT-HSChE0hliJPHACXf8HhvA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "I was in the area for a work trip that kept me over the weekend. I appreciated that this museum is open on Sundays (4/6/25). Parking was a breeze.\nA nice quiet morning to enjoy some art and learn some local history.\nThe staff were engaging and great.\nI had a wonderful discussion with one of the volunteers over a few pieces ( I can’t remember her name). She was great, she shared local history and local resources information. She even put up with my questions about how lighting impacts the presentation of different works.\nIf you love art and history pin this museum.",
+          "time": 1745413362,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-unknown-the-museum-of-russian-art",
       "country": "USA",
       "state_province": "Minnesota",
-      "city": "Yerevan",
+      "city": "Minneapolis",
       "museum_name": "The Museum of Russian Art",
       "alternate_names": null,
       "website": "https://tmora.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "5500 Stevens Avenue",
+      "street_address": "5500 Stevens Ave, Minneapolis, MN 55419, USA",
       "address_line2": null,
       "postal_code": "55419",
-      "latitude": 44.90245,
-      "longitude": -93.27588,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.9033691,
+      "longitude": -93.2759371,
+      "place_id": "ChIJEdCYHTkm9ocR_iiy-BDC4KE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -540,26 +1508,27 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 12,
+      "historical_context_score": 3,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Museum of Russian Art has modest holdings and offers local context primarily relevant to the immediate community, with limited influence beyond that. The historical context score reflects its role in preserving and interpreting local art history, although it does not reach national or major regional significance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia evidence describes the Modern Art Museum of Yerevan, indicating a clear modern/contemporary focus, but gives no evidence of Impressionist holdings. As a single-city modern art museum founded in 1972, it likely offers some interpretive context but not necessarily deep encyclopedic framing; reputation and collection tier are inferred as regional/moderate from the limited scope implied by the description.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://tmora.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Yerevan' from open data; MRD: computed city_tier=2 for Yerevan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "6128219045",
+      "phone": "(612) 821-9045",
       "is_scoreable": true,
       "content_summary": "For art lovers in Yerevan, The Museum of Russian Art offers an intimate way to encounter the visual language of Russia—from academic traditions and realist storytelling to the moodier, more experimental currents of the 20th century. As a regional, modest-scale museum, it rewards close looking rather than crowds and spectacle: expect approachable galleries, a calm pace, and the pleasure of discovering lesser-known works and artists. It’s an appealing stop for travelers who want a focused, culturally resonant museum visit.",
       "content_description": "**The Museum of Russian Art** in Yerevan is best approached as a concentrated encounter with Russian painting and graphic art—an opportunity to trace how artists shaped identity, history, and daily life through portraiture, landscape, and narrative scenes. In a city where museum-going often pairs naturally with café culture and strolling, its **human-scale galleries** encourage slow viewing: you can move from room to room without fatigue, returning to works that reward a second look in brushwork, tonal nuance, and composition.\n\nBecause public details can be limited and the collection is described as **modest**, the museum’s strength is the *curatorial focus* more than blockbuster scope. Visitors typically come away with a clearer sense of how Russian art balanced *academic training* and *realist observation*, and how later periods experimented with mood, form, and the printed image. For enthusiasts, the pleasure is in contrasts—between polished studio technique and more spontaneous handling, between public-facing themes and intimate studies.\n\nArchitecturally, expect a functional, gallery-forward setting where lighting and wall space matter more than monumentality. Practically, this is a museum you can pair with other Yerevan cultural stops, making it ideal for travelers building a day around Armenian and regional art histories. If you enjoy quieter museums—where the experience is about proximity to objects rather than spectacle—this visit feels refreshingly direct.",
@@ -577,7 +1546,159 @@
       "collection_based_strength": 2,
       "collection_based_pas": 4,
       "effective_pas": 4,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://tmora.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1064,
+      "google_reviews": [
+        {
+          "author_name": "Benjamin Berg",
+          "author_url": "https://www.google.com/maps/contrib/110110029843224445098/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI-9ek-bNFBDz_XPsPaNdjsg-yWQVSbjLKGQ6vcomFevVSeHQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Esthetically pleasing museum with helpful staff. When I went there were interesting exhibits that were topical with the season and updated. The gift shop was one of the best I have been to and had more than just trinkets and served as an encapsulating experience.",
+          "time": 1764529528,
+          "translated": false
+        },
+        {
+          "author_name": "Adam Morgan",
+          "author_url": "https://www.google.com/maps/contrib/103341245858617987380/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUmc1rDEM-fJzQmviNr29DbgbrofHPruR8PtK6N5W10Y5o8qFhD=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Came here for the first time and I was surprised at the size of the space. There was a variety of art displayed and it was cool to be able to get close to the different pieces. The gift shop was huge and had a big variety of items available. The front desk staff were helpful in outlining how to navigate the museum and I've been told pieces rotate somewhat frequently. I'll definitely be back, and it's an easy 5 stars for me!",
+          "time": 1755283602,
+          "translated": false
+        },
+        {
+          "author_name": "Isabella Ramm",
+          "author_url": "https://www.google.com/maps/contrib/111812495651663907237/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXLOegOa6uUQ2fLAZ0VOaofYQwTp0ju6sDdVSGp4tF7RNY-qgH7=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Stumbled upon this hidden gem scrolling across the map. Had a very pleasant and engaging visit with a former professor! The paintings in the main gallery were quite breathtaking and brought to life further through a lively conversation with tour guide, Margo.",
+          "time": 1756861431,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel Ibes",
+          "author_url": "https://www.google.com/maps/contrib/116415333912560707633/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJj4-R4ItAxc_mMWGv6lwY4FZ4OqCCb5-ve0FUKEwt3ugf-cA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Beautiful art and great rotating exhibitions, friendly staff and a really wonderful gift shop. I like the small scale, you can really get in depth and see everything (and everything is worth seeing!). A free coatroom in the lower level. Easy parking across the street. A fun scavenger hunt for kids. Really great experience overall.",
+          "time": 1769283634,
+          "translated": false
+        },
+        {
+          "author_name": "Mardee Sherman",
+          "author_url": "https://www.google.com/maps/contrib/117197343155129592114/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVbbis4yMgEmnLQgSUpsSZZP0boVgnq_iiGDo7kGy7gbUC3Kh9qDA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "12 months ago",
+          "text": "This is such a lovely museum and always has such interesting exhibits. The highlight I saw on this visit was a huge collection of nesting dolls of all shapes and sizes. It was absolutely wonderful! They have a really cool gift shop here too.",
+          "time": 1742178884,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-mn-unknown-tweed-museum-of-art",
@@ -589,14 +1710,14 @@
       "website": "http://www.d.umn.edu/tma/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1201 Ordean Ct, Duluth, MN 55812, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 46.81652,
-      "longitude": -92.08446,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "55812",
+      "latitude": 46.8186001,
+      "longitude": -92.0844017,
+      "place_id": "ChIJ46iTNCStr1IRsCsVP7IZIK4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -615,28 +1736,29 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 2,
-      "modern_contemporary_strength": 2,
-      "primary_art": "Impressionist",
-      "historical_context_score": 3,
-      "priority_score": 15,
+      "modern_contemporary_strength": 3,
+      "primary_art": "Modern/Contemporary",
+      "historical_context_score": 4,
+      "priority_score": 12,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Tweed Museum of Art has a modest collection of American and European art with significant works, indicating a supporting level of depth. The historical context score reflects its role in regional cultural heritage, but it does not have the authority or significance to rank higher.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The collection spans 15th–21st-century European, American, and world art, but the only clear Impressionist-related evidence is a few relevant American artists (e.g., Childe Hassam, Twachtman), suggesting minor rather than focused Impressionist holdings. Modern/contemporary representation appears moderate given named 20th-century figures like Robert Motherwell and an overall 15th–21st-century scope. As a university museum with a broadly chronological collection and emphasis on regional/historical",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.d.umn.edu/tma",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Duluth' from open data; MRD: computed city_tier=2 for Duluth; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2187268222",
+      "phone": "(218) 726-8222",
       "is_scoreable": true,
       "content_summary": "A standout cultural stop in Duluth, the Tweed Museum of Art pairs an art-lover’s breadth of discovery with a focused sense of place. Expect a thoughtfully curated, regional-scale museum where American and global art are presented with clarity rather than spectacle—ideal for slow looking. Its strengths lie in intimate galleries, serious curatorial care, and a visitor experience that rewards repeat visits, whether you’re drawn to modern painting, works on paper, or Minnesota’s visual culture.",
       "content_description": "Set in Duluth, the **Tweed Museum of Art** offers the kind of visit art enthusiasts prize: **quietly ambitious curating** in an approachable, regional museum setting. Rather than overwhelming you with blockbuster crowds, the Tweed encourages close viewing—works can be encountered at a human scale, with interpretive materials that help you connect technique, context, and meaning. If your travel style favors depth over spectacle, this is a museum where you can truly *look*.\n\nWhile the collection is described as **modest**, its presentation can feel anything but small when it leans into strong thematic groupings—think *modernism*, *regionalism*, and the way place shapes artistic identity. Museums of this type often excel at rotating exhibitions, works on paper, photography, and teaching-collection strengths that make each visit distinct. Expect to see a mix of American art and Minnesota-centered narratives, often presented through focused lenses—material process, landscape and industry, portraiture, or the evolution of *abstraction*.\n\nArchitecturally and experientially, the Tweed reads as a campus-style art museum: designed for easy navigation, repeat visits, and unrushed gallery time. For travelers, it’s an ideal anchor between Lake Superior scenery and Duluth’s neighborhood explorations—plan to spend an hour or two, then linger with any temporary show that catches your eye. The reward is the feeling of encountering art in a setting that values **thoughtful scholarship** and the pleasures of attentive viewing.",
@@ -653,10 +1775,131 @@
       "overall_quality_score": 11,
       "eca_score": 2,
       "collection_based_strength": 2,
-      "primary_art_focus": "Impressionist",
-      "collection_based_pas": 2,
-      "effective_pas": 2,
-      "outcome_tier": "Regionally Important"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://tweed.d.umn.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.7,
+      "google_reviews_count": 43,
+      "google_reviews": [
+        {
+          "author_name": "Elizabeth Christian",
+          "author_url": "https://www.google.com/maps/contrib/105192976218685558299/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUVg6DeNJNIjLoYjFBgZrF2oD_VlVNWbb2luvydsJt-lc59kYhj=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We absolutely loved this museum. Beautiful space, inspiring exhibits, and friendly staff. We’ll be back!",
+          "time": 1758423980,
+          "translated": false
+        },
+        {
+          "author_name": "Warren Hanson",
+          "author_url": "https://www.google.com/maps/contrib/103844741247478152584/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUM9fNjjEl5iSgKIxSJAXLcvnOXLZ-KKC9wWWGAgHIGujR6rIWi=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Amazing museum is definitely worth going to and spending a couple of hours. Huge collection of paintings,  sculpture and traditional native fabric art. Beautiful museum spaces. It is all free. The building is hard to find on campus due to lack of any noticable \"Tweed Museum\"  signage, but plenty of parking in front of the Humanities Building. Look for signage for the \"Humanities Building\" and you are there.",
+          "time": 1717944852,
+          "translated": false
+        },
+        {
+          "author_name": "Terra Henderson",
+          "author_url": "https://www.google.com/maps/contrib/115168869606767932403/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXO2174-gLsccfs28uafN-zZGHpRmH7F81AHA7XBOXItj5mzdI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Very quaint little on campus museum. I appreciated the by donation only admittance as I, myself, am a teacher.  There were some neat printmaking processes here that I was not familiar with. I teach mostly drawing and ceramics so I enjoyed the pottery most, even though I am not widely knowledgeable about many of the firing techniques or processes. I learned a lot and enjoyed the leisurely time I had to wander and read about each artwork.",
+          "time": 1717552905,
+          "translated": false
+        },
+        {
+          "author_name": "Tia Underbakke",
+          "author_url": "https://www.google.com/maps/contrib/109884623253613354014/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYh1zkdANoaHoXV6D9QEIwGhEtO6UmyJZCFotMmr66eSTbtUQUKw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Really enjoyed the arts by students and faculties. I love the live pianist, really added to the experience.",
+          "time": 1705291543,
+          "translated": false
+        },
+        {
+          "author_name": "Wayne Martin",
+          "author_url": "https://www.google.com/maps/contrib/108421906097512139404/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV3GcTyPgb9AzeiQdrZrf9xBhJPl2x70qAIrlX0uNgwlq3eoBtc=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great gallery spaces at a scale that you can easily digest. Wonderful Native American representation. Top quality - second to none.",
+          "time": 1716515766,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-minneapolis-weisman-art-museum",
@@ -668,14 +1911,14 @@
       "website": "http://www.wam.umn.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "333 E River Rd, Minneapolis, MN 55455, USA",
       "address_line2": null,
       "postal_code": "55455",
-      "latitude": 44.9730901,
-      "longitude": -93.2370676,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 44.9730726,
+      "longitude": -93.2375924,
+      "place_id": "ChIJb8naNT4ts1IROphKc-DT8cw",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -694,27 +1937,28 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 1,
-      "modern_contemporary_strength": 3,
+      "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 3,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Weisman Art Museum has a modern and American art focus but lacks major national recognition or canonical works in the modern/contemporary domain. The historical context score reflects its role in the local art scene, but it does not hold significant collections that influence larger narratives.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia describes the Weisman as widely known as a modern art museum, with 20,000+ acquisitions and notable modern American holdings (e.g., Marsden Hartley, Alfred Maurer, Charles Biederman), supporting a strong modern/contemporary score. No evidence is provided for Impressionist holdings, so that score is minimal. As a university museum with substantial but not encyclopedic scope (including traditional Korean furniture), it rates as a moderate-tier collection with likely decent but not explic",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Minneapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "6126259494",
+      "phone": "(612) 625-9494",
       "is_scoreable": true,
       "content_summary": "Perched on the University of Minnesota campus, the Weisman Art Museum is a must for art lovers who want big visual impact in a compact visit. Its sculptural, stainless-steel building is a work of art in itself, setting the stage for a focused mix of modern and contemporary works plus standout strengths in regional art. Expect an easy-to-navigate museum with strong design energy, thoughtful installations, and memorable views along the Mississippi—ideal for pairing with a day in Minneapolis.",
       "content_description": "**Weisman Art Museum** in Minneapolis offers one of the Twin Cities’ most distinctive art encounters: a museum where the **architecture** is as attention-grabbing as the galleries. Set along the Mississippi River on the University of Minnesota campus, the building’s **faceted, metal-clad exterior** creates a shifting play of light and reflection—an experience that starts before you even step inside. For travelers who love art and design, it’s an especially rewarding stop: compact, visually dramatic, and easy to fold into a campus stroll or a riverfront walk.\n\nInside, the museum’s strength is its **focused, regionally resonant collection**, with rotating presentations that often spotlight Minnesota-connected artists alongside broader currents in modern and contemporary practice. You’ll typically encounter installations and thematic hangs that emphasize *material experimentation*, *conceptual approaches*, and the dialogue between local art histories and national movements. Because exhibitions rotate, the pleasure lies in the surprise—what’s on view now—and in the museum’s ability to make a modest-sized collection feel lively through curatorial storytelling.\n\nFor visitors, the experience is intimate and idea-driven: time for close looking, quiet corners for contemplation, and a sense of discovery rather than marathon museum fatigue. Plan for a short-to-medium visit, then linger outside to appreciate how the building’s sculptural forms interact with the surrounding landscape—an ideal finale for anyone who travels for art, architecture, and atmosphere.",
@@ -731,9 +1975,140 @@
       "overall_quality_score": 14,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://wam.umn.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 847,
+      "google_reviews": [
+        {
+          "author_name": "Kathryn Medrow",
+          "author_url": "https://www.google.com/maps/contrib/108026975234685038748/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWrXnppb8STUDmLwKaTqnHSWK521Nh8tpf27OcRnDZh6JMoVCZpYA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Really awesome museum on UMN campus! Hard to beat something that has free admission always. The staff will watch your bags for you while you take your time perusing the exhibits. I was really impressed by their collection for being such a small museum. You could tell there was a lot of intention and thoughtfulness behind each display.",
+          "time": 1768854734,
+          "translated": false
+        },
+        {
+          "author_name": "Alexandra Grizas",
+          "author_url": "https://www.google.com/maps/contrib/116103790683945168488/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUV04JQ4gfUOwhoETWtbHaXs-QT19bD6zdn3_wiDR4VxtAt4Usv0w=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Really interesting exhibits in a unique space. 1-2 hours is perfect timing to make your way through",
+          "time": 1771255338,
+          "translated": false
+        },
+        {
+          "author_name": "Don Dude",
+          "author_url": "https://www.google.com/maps/contrib/110957704875576918819/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJEjFZwyv43m4qvlv-HFRmtOX4Kfr5HD9rHYydsTnT38a8K4Q=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "This is a bit of a hidden gem of a museum that ois on the UMinn campus.  It is FREE, for one thing!  It has a really fun facade that makes it one of more unique buildings in the Cities and certainly on campus.\nThere is a fun Cities concept exhibit that talks about you can think of different City concepts than the norm, and it has an interesting  sky way map in the downtown Minneapolis.\nA variety of classic and modern-ish art displays.  A great reason Togo to campus and then explore a very beautiful campus as well!",
+          "time": 1754257958,
+          "translated": false
+        },
+        {
+          "author_name": "Glen Trebilcock",
+          "author_url": "https://www.google.com/maps/contrib/114672080929211089878/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVUiNCYgE_UqwACk_ErSIs7ZJk_JQ66JVCIkTzJSdptnpUDxNMd=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "10 months ago",
+          "text": "PROS: Worthy and relevant example of great contemporary architecture. Fine urban relations to be explored and discovered.\nCONS: limited visit hours. Extremely difficult to observe from the surrounding, largely due to the U. of Minnesota’s public access restrictions to its buildings across the bridge on the opposite side of the Mississippi River.",
+          "time": 1746064258,
+          "translated": false
+        },
+        {
+          "author_name": "Tam Huynh",
+          "author_url": "https://www.google.com/maps/contrib/100144110124465976660/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ56ZmhPjwQr_phZRwaIX8iWYLx_yPYkI0ZEfWLAHNC5uTc1Y4=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Really neat museum located on the U of M campus near Coffman Union on the west bank. No admission requured.",
+          "time": 1757643484,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-mn-rochester-rochester-art-center",
@@ -745,14 +2120,14 @@
       "website": "http://www.rochesterartcenter.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "120 Rochest",
+      "street_address": "30 Civic Center Dr SE STE 120, Rochester, MN 55904, USA",
       "address_line2": null,
       "postal_code": "55904",
-      "latitude": 44.0214395,
-      "longitude": -92.4583378,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.02132280000001,
+      "longitude": -92.4584185,
+      "place_id": "ChIJ7xYUMtjh-YcRH-izLUPPH5Y",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -776,24 +2151,25 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Rochester Art Center services the local community primarily and does not have significant evidence of major collections or curatorial authority based on the provided information. The reputation score is assigned as local due to its community engagement, but specifics on its collection strength are lacking.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia evidence describes the Rochester Museum & Science Center in Rochester, New York (a science/local history institution), which does not match the named museum (Rochester Art Center in Minnesota). There is no reliable evidence here about the Rochester Art Center’s permanent art collections or interpretive presentation, so collection and strength scores cannot be determined.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.rochesterartcenter.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 2,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Rochester; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:34:04Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "5072882526",
+      "phone": "(507) 722-2552",
       "is_scoreable": true,
       "content_summary": "A rewarding stop for art lovers exploring Rochester, the Rochester Art Center offers an intimate, locally rooted museum experience where contemporary creativity takes center stage. Expect thoughtfully curated exhibitions, a strong sense of regional artistic identity, and an inviting scale that makes close-looking easy and pleasurable. It’s the kind of place where you can slow down, discover emerging and mid-career artists, and leave with a richer feel for the area’s cultural pulse—ideal for travelers who prefer meaningful galleries over blockbuster crowds.",
       "content_description": "For art travelers in Rochester, the **Rochester Art Center** is best approached as a focused contemporary venue: a place to *look closely*, encounter new ideas, and connect with the creative life of the region. While it doesn’t trade on encyclopedic depth, it often excels at what smaller art museums can do especially well—presenting rotating exhibitions with clarity, giving space to individual artists’ voices, and introducing visitors to the textures of local and regional practice across painting, photography, and mixed-media work.\n\nAs you move through the galleries, the pleasure is in the pacing: exhibitions are typically digestible in a single visit yet substantial enough to reward return trips. Expect a program that may lean toward *contemporary* and *experimental* approaches, with installations and thematic shows that invite comparison and conversation rather than quick box-ticking. For enthusiasts, this is an opportunity to see how artistic currents land outside major-market centers—and to discover artists you’re unlikely to encounter elsewhere.\n\nVisitor-wise, the experience is welcoming and unhurried, making it well-suited to travelers building a cultural afternoon around Rochester. Plan to give yourself time to read the wall texts and linger: the museum’s strength is less about famous-name permanence and more about the immediacy of what’s on view right now—an appealing proposition for anyone who likes their museum visits fresh, current, and quietly personal.",
@@ -806,8 +2182,139 @@
       ],
       "content_generated_at": "2026-01-25T02:34:04Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://rochesterartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 307,
+      "google_reviews": [
+        {
+          "author_name": "Scott",
+          "author_url": "https://www.google.com/maps/contrib/105161287457531476494/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXV6Ovs8d5i5IPJQRXTIRdQhW7XknsMKKkiNxsQUnuKh3UxAVrW=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We love working at Rochester Art Center for weddings — the architecture and light give you a beautiful canvas for photos, but what truly makes the day flow is the staff. From planning through load-in and the reception, their team is organized, responsive, and genuinely invested in making sure everything runs smoothly. They balance professionalism with warmth in a way that puts couples and vendors at ease, and that shows up in the photos and the day itself. The modern, clean design of the space is a joy to shoot in, and the flexibility of the layout means you can craft a ceremony and reception that reflect the couple’s personality. If you want a venue that feels creative and elevated with staff that actually makes your timeline work, Rochester Art Center is a standout choice.",
+          "time": 1768253191,
+          "translated": false
+        },
+        {
+          "author_name": "Ricky Vang",
+          "author_url": "https://www.google.com/maps/contrib/112123239736954369784/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtvTbOMoHgLtSQALcblH_ZVBQi58MScMwRaRsbt8vR_OQVxqtt=s128-c0x00000000-cc-rp-mo",
+          "rating": 3,
+          "relative_time_description": "a week ago",
+          "text": "Had our wedding recently here. The wedding itself went smoothly as possible. All the tables, utensils, napkins were all set up the day before and flipping the room from the ceremony to the reception was done quickly.\n\nI give this rating due to the communication between the coordinators, and some other things that were promised but never fulfilled.",
+          "time": 1772425327,
+          "translated": false
+        },
+        {
+          "author_name": "Jessie Jacer",
+          "author_url": "https://www.google.com/maps/contrib/112611071263484052088/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI-rkpdIiGd4fxSl-8PUGLSXqmXWILlDxaUaEym34U22kCfVw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I had a great experience at the Rochester Art Center. The space is modern, open, and easy to explore, with a nice variety of contemporary exhibits. The galleries are well laid out, and there’s always something interesting and unique to see.\n\nThe atmosphere is quiet and welcoming, making it a great place to spend some time downtown. It’s a great local spot for art and culture, and I would definitely visit again.",
+          "time": 1770490810,
+          "translated": false
+        },
+        {
+          "author_name": "Mike Longenbaker",
+          "author_url": "https://www.google.com/maps/contrib/111836330142845951239/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVw2fAnBqTRb6HLinbGiIvfO1A0PzIZdbLVEPgRx4NW7mzfFH8=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "The Rochester Art Center is a great way to open your mind to the value of art in our world. Specifically, there is a nice collection of student art from high schools of South Eastern Minnesota.  The current special exhibition of chair is excellent, and the curators were extremely creative in designing a set of 5 mini golf holes that were inspired by chairs!  Stop by for a few hours and you'll enjoy it.",
+          "time": 1742772865,
+          "translated": false
+        },
+        {
+          "author_name": "Cecilia Dingledy",
+          "author_url": "https://www.google.com/maps/contrib/112236526687826127267/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtRbIUpMpNY5W8Sqp43XyzerP_xZqYuAL8OE-YCvCX7b6-ITA1=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Sometimes life can be stressful, right? The Rochester Art Center offers an oasis to energize the mind and nourish the spirit. My family enjoyed the fun mini-golf and designer chair exhibit over the holidays. I’ve also enjoyed talks by artists and figure drawing sessions. Maya Angelou said, “ You can’t use up creativity. The more you use, the more you have.” The Rochester Art Center provides a welcoming environment to utilize and explore your artistic talents.",
+          "time": 1736130147,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

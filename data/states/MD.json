@@ -13,14 +13,14 @@
       "website": "http://www.artbma.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "10 Art Museum Drive",
+      "street_address": "10 Art Museum Dr, Baltimore, MD 21218, USA",
       "address_line2": null,
       "postal_code": "21218",
-      "latitude": 39.32637,
-      "longitude": -76.61779,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 39.3261668,
+      "longitude": -76.6193437,
+      "place_id": "ChIJYTEkFN4EyIkRIYUo1e89jY4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -39,28 +39,29 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 4,
-      "modern_contemporary_strength": 4,
-      "primary_art": "Impressionist",
-      "historical_context_score": 3,
-      "priority_score": 5,
+      "modern_contemporary_strength": 5,
+      "primary_art": "Modern/Contemporary",
+      "historical_context_score": 4,
+      "priority_score": 2,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Baltimore Museum of Art has a major collection including over 1,000 works by Henri Matisse and significant holdings of French 19th-century art, reflecting its national importance. While it serves a regional audience, its modern and contemporary collections also establish it as a strong institutional presence.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Impressionist strength is strong due to the Cone Collection artists list (Degas, Renoir, Cézanne, Gauguin, van Gogh) and a major French mid-19th-century holding via the George A. Lucas collection. Modern/Contemporary is flagship-level given the Cone Collection’s modern art focus and the museum’s 1,000+ works by Matisse plus broad 20th–21st-century sculpture and contemporary galleries. The breadth across Africa, Asia, ancient mosaics, European/American art, and works on paper supports a strong ov",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.artbma.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Baltimore' from open data; MRD: computed city_tier=1 for Baltimore; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4435731700",
+      "phone": "(443) 573-1700",
       "is_scoreable": true,
       "content_summary": "Baltimore Museum of Art is one of the Mid-Atlantic’s essential art stops, pairing a nationally respected collection with a visitor-friendly campus setting. Come for a deep, beautifully installed survey of modern and contemporary art—especially the museum’s renowned holdings of Henri Matisse—then stay for standout galleries of prints, photography, and global works. With strong regional curatorial authority and an experience designed for looking closely, it’s a museum that rewards both first-time visitors and serious art lovers.",
       "content_description": "**The Baltimore Museum of Art (BMA)** is a must for travelers who want a museum visit that feels both intellectually serious and genuinely pleasurable. Set in Baltimore’s Charles Village area near Johns Hopkins University, the BMA offers the kind of calm, spacious viewing experience that art lovers crave—galleries with room to linger, clear sightlines, and thoughtful wall texts that support close looking without getting in the way. The museum’s reputation rests on its **major scholarly holdings**, and its installations excel at making big art-historical ideas legible in the moment: how *modernism* breaks from tradition, how *abstraction* evolves, and how contemporary artists expand what a museum can be.\n\nCollection-wise, the BMA is particularly celebrated for **Henri Matisse**—a defining strength that draws visitors who want to study the artist beyond a single famous canvas. You’ll also find robust presentations of **modern and contemporary art**, complemented by strong resources in prints, drawings, and photography that reward repeat visits (and provide a quieter, more intimate counterpoint to the large-galleries “greatest hits” rhythm). As a museum with **strong regional curatorial authority**, the BMA also makes Baltimore and the broader American story feel present—through collecting choices, exhibitions, and interpretive framing that connect art to the civic and social fabric.\n\nArchitecturally, the BMA reads as a composed museum campus rather than a one-room monument, emphasizing **light, scale, and legibility**—an environment that supports long, focused looking. For visitors, the pleasures are tangible: planned routes that can be tackled in a single afternoon, galleries that encourage comparative viewing across periods, and a sense that the museum is both nationally significant and unmistakably rooted in place.",
@@ -77,10 +78,141 @@
       "overall_quality_score": 21,
       "eca_score": 3,
       "collection_based_strength": 4,
-      "primary_art_focus": "Impressionist",
-      "collection_based_pas": 4,
-      "effective_pas": 4,
-      "outcome_tier": "High Priority"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 5,
+      "effective_pas": 5,
+      "outcome_tier": "Must-See",
+      "website_google": "https://artbma.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2843,
+      "google_reviews": [
+        {
+          "author_name": "G S",
+          "author_url": "https://www.google.com/maps/contrib/110956147650099373830/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJJygaMYxP3jkpJ2hIFS5xKCc3cLTzB62t1QkxofQoh6bWejQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This place completely exceeded my expectations. I really had no idea what I was getting into, and the Baltimore Museum of Art turned out to be deceivingly massive. From the outside you’d never guess how much is packed inside. You could easily spend an entire day here  and honestly, you should  just to take everything in without rushing.\nThey have this interactive section that’s actually fun (not one of those awkward “pretend to touch this screen” situations), and the historic art rooms are stunning. You walk in and it feels like you’ve stepped into another time. There’s a sculpture garden too I didn’t even make it that far because there was just so much to see plus entire areas dedicated to Mediterranean art, European pieces, and these beautifully curated exhibits that really pull you in.\nOne thing I loved is how organized everything is. The museum feels intentional, thoughtful, and incredibly well put together. Even the flow from room to room makes sense, which is rare for a museum this big.\nOverall, it’s just an extraordinary place. If you’re anywhere near Baltimore, this is absolutely worth your time. I genuinely can’t recommend it enough it’s incredible.",
+          "time": 1763141428,
+          "translated": false
+        },
+        {
+          "author_name": "Kat Reed",
+          "author_url": "https://www.google.com/maps/contrib/104089942832507072042/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_vUTrkCr2BIqQ4Eno-e6u8jbwgELt75BBJWcSWp9aToCOFcbKaw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "It was so fantastic the fact it's free is extra cool. The area is super nice! They had so many different types of art you could take days to explore.",
+          "time": 1771953801,
+          "translated": false
+        },
+        {
+          "author_name": "Pam Spelker",
+          "author_url": "https://www.google.com/maps/contrib/110289043395678245091/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK4qW756jIEQqCMkTD6EzF7xnc6pRzHgI0lCR3K6t9Lu12EHQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Our first time visit ( and we live in relative close vincinty for 20+ years. Shame on us). What a gem of a art museum. Not the MET of course....but on a smaller scale. Worth a visit. Actually worth multiple visits.\nNote: parking lots on site are very small so get there early for a spot or plan to park on the street in close vincinty which is perfectly fine. You just walk a short bit.\n\nAlso... Gertrude's restaurant on site is wonderful.",
+          "time": 1768223678,
+          "translated": false
+        },
+        {
+          "author_name": "Wendy M.",
+          "author_url": "https://www.google.com/maps/contrib/101300555873284409924/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWUGyDMk5CSRq4f9x59rCW0xMhZCt4xboV1hpRT99AmubfhH9Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "I’ve visited the Baltimore Museum of Art a few times over the years and always enjoy the experience. I went recently to see the Amy Sherald: American Sublime exhibition, which is open until April 5, 2026. It’s a popular show with timed entry tickets ($18 + tax/fees for adults; free for members).\n\nI was able to find paid street parking right in front of the museum, and there’s also a dedicated paid lot.\nCheck in at the front desk when you walk in, and the team will point you toward the exhibition. It’s up a few flights of stairs if you prefer to walk, and there’s an elevator route as well.\n\nThe lobby currently features a colorful, quirky display of large-scale abstract figures covered in beads. Throughout the museum, there’s a wide mix of modern and classical works, and the layout flows nicely through different galleries and a central courtyard. It’s a beautiful building and very thoughtfully curated.\n\nSince my visit was focused on American Sublime, a few highlights:\nOnce your ticket is scanned at the entrance, you’re immediately met with bold color, striking compositions, and larger-than-life portraits of African American subjects in distinctive attire. The standout pieces include the iconic portrait of former First Lady Michelle Obama and the moving tribute to Breonna Taylor. The short film about Amy Sherald at the end is absolutely worth watching for more insight into her process.\n\nBefore you head out, the museum store is a great stop that is filled with art-inspired books, jewelry, and gifts.\n\nThere’s also Gertrude’s restaurant and bar on-site if you want a bite or a drink before or after exploring the galleries.\n\nNote: there’s also a quiet room available for visitors if they need a space to nurse, pray or have a quiet moment.",
+          "time": 1763370129,
+          "translated": false
+        },
+        {
+          "author_name": "Kaliopi M",
+          "author_url": "https://www.google.com/maps/contrib/101359522398938507798/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLXCxBbhdmRC_tpaeSRoMk3KTXSOnBBZv2C1ilsD1v7O-2A9g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Cone Sisters Collection at the Baltimore Museum of Art is an absolute treasure. You can truly feel the passion, vision, and bold taste of the Cone sisters in every room. Their dedication to collecting modern art long before it was widely appreciated created a legacy that continues to inspire visitors today.\nThe collection features incredible works by Picasso, Van Gogh and many other influential artists, but what makes it special is the sense that its  almost as if you’re stepping into the world of two women who saw beauty and value where others hadn’t yet noticed it.\nIf you are in Baltimore, the Cone Sisters Collection alone is worth the trip. A must-see for anyone who loves art, history, or stories of strong women with visionary taste.",
+          "time": 1766886960,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-unknown-baltimore-museum-of-industry",
@@ -99,7 +231,7 @@
       "longitude": -76.6016162,
       "place_id": "ChIJ8bWOH3EDyIkR8zD0hvkEH7Y",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -134,7 +266,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Maryland' from open data; MRD: computed city_tier=3 for Maryland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:22:13Z",
+      "updated_at": "2026-03-14T19:57:01Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(410) 727-4808",
@@ -303,14 +435,14 @@
       "website": "https://captainaverymuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1418 E West Shady Side Rd",
+      "street_address": "1418 E West Shady Side Rd, Shady Side, MD 20764, USA",
       "address_line2": null,
       "postal_code": "20764",
-      "latitude": 38.84956,
-      "longitude": -76.51193,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.8495728,
+      "longitude": -76.5119333,
+      "place_id": "ChIJna3kByOLt4kRsqACmxDETaM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
@@ -341,15 +473,16 @@
         "walker_reciprocal",
         "official_website",
         "https://captainaverymuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Shady Side' from open data; MRD: computed city_tier=3 for Shady Side; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:22:20Z",
+      "updated_at": "2026-03-14T19:57:02Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4108674486",
+      "phone": "(410) 867-4486",
       "is_scoreable": false,
       "content_summary": "The Captain Avery Museum in Shady Side is a hidden treasure that offers a unique glimpse into Maryland's maritime history and the legacy of its local community. Embedded in a historic waterfront setting, this museum captures the essence of the region's seafaring past, making it a must-visit for history enthusiasts and families alike.",
       "content_description": "**The Captain Avery Museum** allows visitors to truly immerse themselves in the rich maritime heritage of the Chesapeake Bay region. Housed in a quaint, historic building that dates back to the early 1900s, this museum serves as a gateway to the tales of local watermen, shipbuilders, and the intricate relationship between the community and the water. With its scenic views of the bay and charming nautical décor, the museum transports guests to a time when the waters were teeming with life and adventure. This experience is not just about observing; it's about experiencing Baltimore's maritime story firsthand.  \n\nVisitors can explore intriguing exhibits that feature *artifacts*, photographs, and personal stories that illuminate the everyday lives of those who lived and worked on the water. The museum's collections speak to a diverse range of topics, from the evolution of boatbuilding techniques to the impact of the seafood industry on local culture. **Special events**, including educational workshops and seasonal festivals, add vibrancy to the museum experience, encouraging community interaction and making each visit unique. As you navigate through the museum, you'll discover the profound connection between Baltimore and its waterways, leaving you with a deeper appreciation for this historic region. Immerse yourself in the stories, sights, and sounds of the Chesapeake at **Captain Avery Museum**.",
@@ -362,7 +495,73 @@
       ],
       "content_generated_at": "2026-01-25T02:22:20Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://captainaverymuseum.org/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.5,
+      "google_reviews_count": 72,
+      "google_reviews": [
+        {
+          "author_name": "Devon Williams",
+          "author_url": "https://www.google.com/maps/contrib/109312783033323836436/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWVGrS-TUnGDa_0R1R2MU6vAnoueXjTwwyc96slsc6aPYrRZUAj=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "We went to the Oyster festival this past weekend. Perfect weather and delicious oysters.\n\nMy only complaints: they might want to get some additional shuckers the line for the oysters was super long. I'd love to see some drink options that include spiked seltzers (maybe they we were and we missed them?).\n\nOverall though, totally worth the drive from DC to spend the day outside with live music, the Bay, family, and oysters!",
+          "time": 1728924784,
+          "translated": false
+        },
+        {
+          "author_name": "Moriah Haefner",
+          "author_url": "https://www.google.com/maps/contrib/110736468561011774398/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUZvdLZJKbP73T5KjaSP6Iv4mOPzyYoimBaTsX398T1SQ6jzjTRSw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Wonderful small museum with breathtaking views.",
+          "time": 1757692660,
+          "translated": false
+        },
+        {
+          "author_name": "Luisa Melendez",
+          "author_url": "https://www.google.com/maps/contrib/105010901741565540061/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWQC_45PFhrNsnzdxPLjWWkTm1-WoUq5JUmn3UHjJVSO-tqj0U=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Captain Avery Museum in Shady Side is a charming spot if you're curious about local history and Chesapeake Bay life. The historic house is well-maintained, with interesting exhibits about boats, watermen, and how local families used to live. The setting is lovely — gardens, a dock, and waterfront views make it peaceful. They also host events like oyster festivals or outdoor concerts, which really enhance the experience.",
+          "time": 1758215895,
+          "translated": false
+        },
+        {
+          "author_name": "Sarah Davis",
+          "author_url": "https://www.google.com/maps/contrib/115322196712730715045/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXzivugLvTJDE537yLZqvrRTJOR54OWkKHdPZKhULjhatpuK8Cl=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "We just had our wedding here yesterday, and it couldn't have gone more perfectly than it did. Elaina and Leila (I apologize if I mispelled either of your names) at Captain Avery's went above and beyond to make sure that the venue was perfect, and that we had everything we could possibly need. Through the coordination between them, Whitman's Catering, ANewbyS photography, and our wonderful DJ, they made our dream wedding come true. We can't thank or recommend them enough!",
+          "time": 1680454209,
+          "translated": false
+        },
+        {
+          "author_name": "Tim Smith",
+          "author_url": "https://www.google.com/maps/contrib/108837971345215783976/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVjcpJvEjRV4CuGDhF96S1y5xI0VwCuNVf9q3y3Ojy6TGSB6mtd3w=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "Attended their annual Oyster Festival in support of the working waterman of Maryland.  This is a fantastic event and one that I hit every year.  The oysters are superb and right out of the bay.  There's fantastic bloody mary's provided by George's mix and of course, beer and wine.  With live music from two different bands, this is just an all around wonderful event.",
+          "time": 1540298291,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-unknown-hammond-harwood-house",
@@ -374,14 +573,14 @@
       "website": "https://hammondharwoodhouse.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "19 Maryland Ave, Annapolis, MD 21401, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.98083,
-      "longitude": -76.48862,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "21401",
+      "latitude": 38.9809407,
+      "longitude": -76.4884273,
+      "place_id": "ChIJH5BeR1j2t4kRfIEeYBxWeuM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
@@ -410,15 +609,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Annapolis' from open data; MRD: computed city_tier=3 for Annapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:22:27Z",
+      "updated_at": "2026-03-14T19:57:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4102634683",
+      "phone": "(410) 263-4683",
       "is_scoreable": false,
       "content_summary": "Experience the rich history of colonial Maryland at the Hammond-Harwood House, a stunning example of 18th-century architecture and a treasure trove of period decorative arts. This historic gem invites visitors to step back in time and explore the lives of those who shaped Annapolis and American history.",
       "content_description": "**Hammond-Harwood House** stands as a quintessential landmark of colonial Maryland, offering visitors a window into the lifestyle and craftsmanship of the 18th century. Built in 1774, this stunning mansion showcases the exquisite Georgian architectural style, with its intricate detail and **symmetrical elegance**. As you explore the home, take in the carefully preserved interiors adorned with period furniture, *fine arts*, and decorative objects that reflect the tastes and aspirations of the colonial gentry. The house's design is often hailed as one of the best examples of the work of architect **William Buckland**, making it a must-see for those interested in American architecture and history. The harmonious blend of beauty and practicality that defines the house invites exploration and appreciation of its artistry.  As you wander through the rooms, consider the stories that each piece of furniture and artwork carries—each item reflects the culture, trade, and social dynamics of a developing nation.  The museum also offers guided tours led by knowledgeable staff who bring the past to life through insightful narratives about the home’s original inhabitants, the **Hammond and Harwood families**, and their role within their community.  Visitors can expect an immersive experience that transcends mere observation, allowing them to engage with Maryland's rich history through knowledgeable interactions and breathtaking artistry.  Perhaps one of the most remarkable aspects of the **Hammond-Harwood House** is its commitment to preservation, showcasing the importance of historical conservation in maintaining the legacy of America's architectural heritage.",
@@ -431,7 +631,148 @@
       ],
       "content_generated_at": "2026-01-25T02:22:27Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.hammondharwoodhouse.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 12:00 – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 12:00 – 5:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 100,
+      "google_reviews": [
+        {
+          "author_name": "Laura Nardo",
+          "author_url": "https://www.google.com/maps/contrib/108805734026635600553/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKN03k9_F2mt0Mv_tvNTsZRYvSbZWKnI1D7sm0p5XMImDUa3Qh=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Extremely gorgeous home with many original pieces of the family. The detail put into this home is just gorgeous to see. I think anyone who is even mildly titillated by architecture would enjoy this. Lovely collection of Charles Peale paintings.\nThe docents are very kind and very knowledgeable. Highly recommend",
+          "time": 1762196239,
+          "translated": false
+        },
+        {
+          "author_name": "James Chandanais",
+          "author_url": "https://www.google.com/maps/contrib/115204994967360594699/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVG5uXiMrBt8rIPhczkmvaCoHKGFpOnR-6eFQ_U3G6wLONdhbVR=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The full hour tour is a must! For only $15 you get guided through the house by a docent with a wealth of knowledge not just of the home and those who live there but also the surrounding area. Our guide was fantastic and started by asking each person if they were more interested in the architecture, people, furniture, or art in order to provide a tour tailored to everyone’s specific interests.",
+          "time": 1761857509,
+          "translated": false
+        },
+        {
+          "author_name": "Lori McCullough",
+          "author_url": "https://www.google.com/maps/contrib/115627214446478591643/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUVtOCOyK6--vbRlQfyc7Gb9tjh9TEvS39SyA4EwpNaq6lUJc4y=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "What a fantastic little historical house and museum. They had an Easter egg hunt and my child absolutely loved it. This house is nearly 250 years old and the people who run it still keep it looking fantastic. They should be proud of themselves for the effort and the skill in the projects.",
+          "time": 1680993824,
+          "translated": false
+        },
+        {
+          "author_name": "Brian Copes",
+          "author_url": "https://www.google.com/maps/contrib/107686421064605129999/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXdzqmZMpDBVeT7wPbeItxaP-YpkPGsJiY9Q5O2sSt7fFF9F6ic=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 3,
+          "relative_time_description": "3 years ago",
+          "text": "Last minute Annapolis, MD day trip and we explored this museum on a Saturday afternoon. It was interesting learning about the history of the house, family, and period in  general. Took a 30 minute tour which was $6 dollars each. Good price. Learned a lot and enjoyed the ac from the hot summer weather. Not a history buff. I would not go again personally. It’s a house museum- enough said.",
+          "time": 1658112271,
+          "translated": false
+        },
+        {
+          "author_name": "Russell Wallace",
+          "author_url": "https://www.google.com/maps/contrib/118332010114595193620/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMwejQ6XYotpI9F3XNIK8z7DLVRD4sCLfKVvpJWsVhjBVa_g=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A close-up view of how the late 18th & 19th century wealthy families lived in Annapolis, with an honest and reflective overview of slavery at that time. About 50% of the furnishings, including the paintings, are original to the house, and the remainder are authentic to the period. Our expert docent gave the tour with a unique, close comparison to the novels of Jane Austen. Highly recommended!",
+          "time": 1723845130,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-unknown-havre-de-grace-decoy-museum",
@@ -443,14 +784,14 @@
       "website": "http://www.decoymuseum.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "215 Giles St, Havre De Grace, MD 21078, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.53969,
-      "longitude": -76.087,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "21078",
+      "latitude": 39.5398431,
+      "longitude": -76.0868642,
+      "place_id": "ChIJQzgB_Ve_x4kRRfhLBZiWoYM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": null,
       "topics": null,
@@ -474,21 +815,22 @@
       "historical_context_score": 2,
       "priority_score": 21,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Havre de Grace Decoy Museum provides local context primarily related to the cultural significance of decoys and their role in local history, earning it a score of 2 for historical context. The collection is modest in scope, reflected in a collection-based strength score of 2, and the museum is primarily known within its local community, justifying a reputation score of 3.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no indication of any Impressionist or Modern/Contemporary fine-art holdings; as a decoy museum, its permanent collection is likely focused on decoys and related folk/artisanal objects rather than these movements. With no collection description or interpretive approach provided, historical context cannot be reliably scored. Based on the specialized theme and small-town setting, it is assessed as a local, small collection museum.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Havre de Grace' from open data; MRD: computed city_tier=3 for Havre de Grace; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4109393739",
+      "phone": "(410) 939-3739",
       "is_scoreable": true,
       "content_summary": "A must-stop on Havre de Grace’s waterfront, the Havre de Grace Decoy Museum celebrates the Chesapeake Bay’s most distinctive art form: hand-carved hunting decoys. More than folk craft, these birds are sculptural portraits—painted with keen observation and regional flair. With an intimate, local feel and a focused collection, the museum rewards close looking, whether you’re drawn to coastal traditions, American vernacular art, or the quiet beauty of working objects made with extraordinary skill.",
       "content_description": "**Havre de Grace Decoy Museum** is a small but richly characterful destination for art lovers curious about the Chesapeake’s homegrown sculptural tradition. Here, waterfowl decoys—once essential tools for hunting—are presented as works of **American folk art**, where carving, paint, and keen natural observation come together in tactile, elegant form. Expect to see a range of bird types and carving approaches, from crisp, streamlined silhouettes to more fully modeled bodies with expressive heads and subtle surface detailing—an ideal setting for appreciating *vernacular sculpture* up close.\n\nThe museum’s strength is its **focused collection** and the way it reveals how local makers translated the Bay’s ecology into art. For visitors attuned to material and technique, the appeal lies in the craftsmanship: tool marks that remain visible, carefully layered paint, and the distinct “hand” of individual carvers. Even without blockbuster scale, the displays invite slow looking—comparing profiles, studying how a decoy’s balance suggests buoyancy, and noticing how regional preferences shape form and finish.\n\nSet in walkable Havre de Grace near the water, the visitor experience feels personal and accessible. Plan on a compact, satisfying visit that pairs beautifully with the town’s maritime atmosphere: see the objects inside, then step outdoors to the landscapes that inspired them. It’s an art museum visit in miniature—intimate, specific, and deeply tied to place.",
@@ -506,7 +848,159 @@
       "collection_based_strength": 2,
       "collection_based_pas": 1,
       "effective_pas": 1,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "http://www.decoymuseum.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1630"
+            },
+            "open": {
+              "day": 1,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1030"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:30 AM – 4:30 PM",
+          "Tuesday: 10:30 AM – 4:30 PM",
+          "Wednesday: 10:30 AM – 4:30 PM",
+          "Thursday: 10:30 AM – 4:30 PM",
+          "Friday: 10:30 AM – 4:30 PM",
+          "Saturday: 10:30 AM – 4:30 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 210,
+      "google_reviews": [
+        {
+          "author_name": "M Park",
+          "author_url": "https://www.google.com/maps/contrib/108165664532990184556/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVsu1UIzN88npSsClQOxbFFUs4fXzjK8_jzEH7rz4IeQqxA4yLUmQ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Was looking for any museum that was open in the middle of February. On a weekday. This was pretty much the only one in this area. Very surprised by how extensive it was and how interesting and engaging the displays were.  The videos were very enlightening, especially the decoy carving ones.",
+          "time": 1771441369,
+          "translated": false
+        },
+        {
+          "author_name": "Landon Verbrugge",
+          "author_url": "https://www.google.com/maps/contrib/117287384107672053326/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5ucB45tMHJ0mGlLzFZTnNkqQ3xCVmTUJLGNn5saYc8CX46TGC=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Great to see where all the decoys are made! There are plenty of them in this museum! It was worth understanding who, what, and why they are made!",
+          "time": 1762663456,
+          "translated": false
+        },
+        {
+          "author_name": "Vincent Bittinger",
+          "author_url": "https://www.google.com/maps/contrib/106384641049814880813/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJG0V7yaXz16fc13EBtIEl_jFFanUW7BK3IIimL0bArJIQ5NA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "What a great place to visit. Learn about Maryland history. Experience the beautiful art of decoy making.",
+          "time": 1753600474,
+          "translated": false
+        },
+        {
+          "author_name": "Long Gone",
+          "author_url": "https://www.google.com/maps/contrib/116915065891611989003/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJuOmCh8L5vr5ySqMjv937_n5xWAtHVTJ5W7tfs0gXo0jTkCw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "A true American folk art museum.  While the majority of decoys were carved to support the duck hunting lifestyle they definitely are an Americana art form.  When you think about duck hunting you consider only a few carvers.  But if you stop to visit you will learn that the number of carvers is larger than one would realize.  Don't pass this place up!",
+          "time": 1532569316,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Valdivielso",
+          "author_url": "https://www.google.com/maps/contrib/100434210195751329396/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKMeFjTHR4spMpx5-SKDOTQqo147SR6CFmjiZwy0YCLhocui4=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Well, if you never visited a Decoy Museum I would suggest visiting this one.  Me and my Mom spent a night in Havre De Grace to visit the city and learn of its history and hunting is a huge part of it.  So the museum isn't just about decoys but also tells a lot of the story of the local area.  And the decoys on display are art.  So it is a art museum and a history museum.",
+          "time": 1544245550,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-md-unknown-historic-london-town-and-gardens",
@@ -518,14 +1012,14 @@
       "website": "https://www.historiclondontown.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "839 Londontown Road",
+      "street_address": "839 Londontown Rd, Edgewater, MD 21037, USA",
       "address_line2": null,
       "postal_code": "21037",
-      "latitude": 38.93987,
-      "longitude": -76.53879,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.9408901,
+      "longitude": -76.540854,
+      "place_id": "ChIJ9WeiZA_0t4kRugsMU90Es3Q",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -556,15 +1050,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.historiclondontown.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Edgewater' from open data; MRD: computed city_tier=3 for Edgewater; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:22:50Z",
+      "updated_at": "2026-03-14T19:57:05Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4102221919",
+      "phone": "(410) 222-1919",
       "is_scoreable": false,
       "content_summary": "Discover the enchanting **Historic London Town and Gardens** in Edgewater, where history comes alive amid beautifully preserved landscapes. This unique museum offers an immersive experience that connects visitors with the rich heritage of colonial Maryland through engaging exhibits, picturesque gardens, and interactive programs.",
       "content_description": "**Historic London Town and Gardens** is a captivating destination that bridges the past with the present, nestled along the scenic shores of the South River. This historic preservation site brings to life the story of a once-thriving 18th-century port town, featuring original structures, archaeological finds, and lush gardens that invite visitors to stroll through history. As you explore, you’ll encounter the remnants of colonial architecture and hear stories that showcase the daily lives of the people who shaped this vibrant community. The museum's well-curated exhibits highlight everything from early trade practices to domestic life, making it a treasure trove for history buffs and curious travelers alike.        * *  ** **  * *  ** **  * *  ** **  * *  ** **   * *  * *  * *  * *   *  ! * >  ** **  *  * *  * *  * *  * *  * *  * *  ** *  * *  **  *–* * *–* * * . )_0  **  *<|  | ** !*  ** ** ' ' + ‘  * * * *  * *  ’}}*  This sense of place is enriched by themed gardens that reflect the plant life of the colonial era, allowing for a sensory experience filled with vibrant colors, scents, and sounds that transport you back in time. The immersive experience continues with hands-on activities and programs designed for families and children, ensuring that every visitor can connect with history in a meaningful way.  ** _Immerse yourself in the stories that shaped our nation_ and be inspired by the dedication to preserving this essential landmark. Whether you are on a family outing, a romantic stroll, or a solo adventure, **Historic London Town and Gardens** promises to be a memorable journey through history that will captivate your imagination.  ",
@@ -577,7 +1072,138 @@
       ],
       "content_generated_at": "2026-01-25T02:22:50Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.historiclondontown.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 513,
+      "google_reviews": [
+        {
+          "author_name": "NANCY T",
+          "author_url": "https://www.google.com/maps/contrib/116384529540900479588/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWmHmh0dyW1ykaAjaQURetyNbV2SlnCB6EI4loZAHDat2kQjKpTMA=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Beautiful hidden historic gem at the end of a long street in Edgewater. The buildings are amazingly reconstructed to be exactly as it  must have once looked centuries ago. The history here is palpable. The fact that archeological finds are still being pried from the earth is amazing.\nThe gardens--well, wow! Who knew that camellias bloomed in winter!! Obviously, horticultural enthusiasts may, but not me. Well kept and continually being managed and improved by the in-house horiculturist. The whole place was a very pleasant surprise, and with my membership I plan to visit often. I can't wait to visit the gardens in spring --- I heard the daffodils are everywhere!!\n(More photos to come)",
+          "time": 1770688154,
+          "translated": false
+        },
+        {
+          "author_name": "Naomi Calandro",
+          "author_url": "https://www.google.com/maps/contrib/114776339290014018087/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhsEsYwGQ7PAmqaIU9V5b1HK5f78zNwgDt3rzX4VH3lEYg4DM=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This venue had all of our guests in awe with the incredible views & picturesque landscapes & gardens. Even better, the staff was professional and easy to work with. Kristin originally walked us through the property and helped us throughout our entire wedding planning process. You could tell she is passionate about her job, the property, and the couples that get married there. It was an easy yes for us. Throughout the planning process the venue made renovations we weren’t even expecting that made the property even more magical. If you are looking for a beautiful outdoor/waterfront venue that offers professionalism, ease of planning, great communication and genuine interactions, Historic London Town is your venue. We seriously couldn’t have asked for a better day and feel so lucky that we chose London Town for our special day!",
+          "time": 1720463968,
+          "translated": false
+        },
+        {
+          "author_name": "Anji Martin (Wedding Photographer)",
+          "author_url": "https://www.google.com/maps/contrib/103861630783321476916/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX4h8z2h-YsbfRAsP6HPIaRw7wlPcbar0JoDyF2uABimcYQGWbm=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "What a gorgeous venue for a wedding! Historic London Town & Gardens is truly one of the prettiest event locations in the DMV. You can get married on a spacious lawn with a view of the South River behind you and then have your wedding portraits done in the lovely gardens surrounding the main building. As wedding photographers, we particularly liked the woodsy area down the hill from the open lawn area. The little \"valley\" at the bottom is an especially beautiful spot. It has the added bonus of being secluded, so you can get your portraits done in a relaxed and peaceful environment.",
+          "time": 1684523014,
+          "translated": false
+        },
+        {
+          "author_name": "Catherine Ray",
+          "author_url": "https://www.google.com/maps/contrib/107352809363994294520/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJj55yyJD-dBskMYQqiN9SHqsHzC-7--Tfie7HXLuCTPp3RDw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Beautiful fragrant gardens when in season. A nice tour of William Brown house. Lots of historical information.  A museum that contains archeological finds on the property.  No reason to not spend some time here on a Beautiful day. Pick up a free ticket for a family of 4 at the Anne arundel county library (reserve, there's a wait list at times, though my wait time was only a could of days)",
+          "time": 1712344705,
+          "translated": false
+        },
+        {
+          "author_name": "Cooper and Snow Poppe",
+          "author_url": "https://www.google.com/maps/contrib/107587340740312061722/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLPviLb1Ca1fIXc2MuslKFhXTiYoBDghBv4FrhW8r0e1SAnog=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "My dogsitter cancelled on me and I had to take a giant 1 year old dog with me on my quick vacation to the Annapolis area. London Town was listed on Bring Fido. The visit went even better than I thought it would and this is truly one of the most dog friendly places I've ever been.\n\nThe grounds are beautiful but not fussy with nice walking paths (gravel) and lots of shade overhead from mature trees. The staff were helpful and friendly, the exhibits good and educational.  There were several areas where benches were tucked away in the shade.\n\nThe only place dogs aren't allowed is the actual historic home. If you have a traveling companion, you could easily take turns waiting with the pet outside. I was solo, so we skipped the house. But still had lots to see/do. Definitely worth a visit, especially if you need a dog friendly activity around Annapolis.",
+          "time": 1688846045,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-unknown-historic-st-mary-s-city-museum",
@@ -596,7 +1222,7 @@
       "longitude": -76.4287563,
       "place_id": "ChIJtZ7O1nPguYkRim2atF9hrFY",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
@@ -631,7 +1257,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:22:58Z",
+      "updated_at": "2026-03-14T19:57:05Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(240) 895-4990",
@@ -780,14 +1406,14 @@
       "website": "http://www.mdhs.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "610 Park Ave, Baltimore, MD 21201, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.29737,
-      "longitude": -76.61844,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "21201",
+      "latitude": 39.2965111,
+      "longitude": -76.6184822,
+      "place_id": "ChIJkcDJl6IEyIkRX_oFLaD-g3A",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -816,15 +1442,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Baltimore' from open data; MRD: computed city_tier=1 for Baltimore; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:23:05Z",
+      "updated_at": "2026-03-14T19:57:06Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4106853750",
+      "phone": "(410) 685-3750",
       "is_scoreable": false,
       "content_summary": "The Maryland Historical Society offers an immersive experience into the heart of Baltimore's history, showcasing the intertwined stories of its people and industries. This unique museum invites visitors to see, hear, and touch the elements that shaped a vibrant city through interactive exhibits and rich collections. Don’t miss the chance to connect with the past in a fascinating way!",
       "content_description": "**Maryland Historical Society** stands as a beacon of Baltimore's heritage, revealing the dynamic interplay between its working-class roots and cultural evolution. Inside this historic preservation hub, guests are treated to a fascinating narrative that brings to life the stories of the people who shaped the area. The museum provides a multi-sensory experience—*seeing, hearing,* and even *touching* the artifacts—making it a truly engaging visit for history enthusiasts of all ages. Visitors can explore significant collections, including original documents, photographs, and artifacts that span centuries, offering a glimpse into the daily lives, struggles, and triumphs of Baltimore’s residents through the ages. Each piece captures a moment in time, allowing you to walk alongside those who lived it.  By walking through the halls, you become a part of the narrative that defines this vibrant city.  When you step into the **Maryland Historical Society**, you’re not just observing history; you’re experiencing it firsthand.  Lush paintings and detailed sculptures highlight Baltimore's artistic evolution, often intertwined with socio-economic shifts that reflect the laborers' impact on the local arts.  Enriched by a series of rotating exhibitions and fascinating public programs, the museum ensures that every visit is unique and insightful.  Prepare to be captivated by the *stories*, *art*, and *courage* captured within these walls, making it a must-visit for anyone interested in understanding Baltimore's past and present.  ",
@@ -837,7 +1464,138 @@
       ],
       "content_generated_at": "2026-01-25T02:23:05Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.mdhistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 286,
+      "google_reviews": [
+        {
+          "author_name": "Amber",
+          "author_url": "https://www.google.com/maps/contrib/102223440131502875843/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWxWX4LytWIa3sjmhuXegDU5x592lf3kZ807A3GYnKtDbZ0YhgMPg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "The experience was wonderful. We got a great parking space, it was extremely affordable.  There was no wait to get in.Seating was comfortable, I had more then enough room.\nThe show was absolutely amazing. Hearing the music I grew up in different way made me falling in love with the songs all over again. The artist are truly talented. I highly recommend to go see the show. I can't wait to see Hip Hop Unplugged.",
+          "time": 1772362564,
+          "translated": false
+        },
+        {
+          "author_name": "La Sarmiento",
+          "author_url": "https://www.google.com/maps/contrib/118300330770868393108/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5LlgufxyUF5cgzCE-iLG1ZvcIkwlls8O3PTmRHDKArcWJZDdN1g=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "The musicians were masterful, and the classical renditions of Queen’s and ABBA’s songs were fabulous! Loved the intimate setting and the candles, of course!",
+          "time": 1772936338,
+          "translated": false
+        },
+        {
+          "author_name": "Jessica Argueta",
+          "author_url": "https://www.google.com/maps/contrib/109266538940549552624/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLlRiSIKCQkRqBC5OvpmPWPMit8RR5kOonICvQRXs2kkjsDAaI=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Visit on free first Thursdays. I was pleasantly surprised on how beautiful the museum is. The exhibits are small but very impressive and the layout of the museum just flows! Artwork is pristine and pieces are given their time to shine.\n\nAdditionally, I was so happy that I was able to drop in on a Sip and Stem event. It was so cool to make flower arrangements outside of a museum in Baltimore! It was a great day night idea!",
+          "time": 1746190927,
+          "translated": false
+        },
+        {
+          "author_name": "Holly Stone",
+          "author_url": "https://www.google.com/maps/contrib/107154285493614261837/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX8VtHebVhdYmv-lAoRN-xAjF5oGbxTkl6yYKwNOTOMihUWPmcP=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Cozy venue, incredible music selection, talented musicians, the hostess from the quartet was very dynamic and engaging. The crowd was really enjoying it! Perfect date night!",
+          "time": 1771127450,
+          "translated": false
+        },
+        {
+          "author_name": "Laura W",
+          "author_url": "https://www.google.com/maps/contrib/105198005783825530823/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW6Nft1gA3HyikgxSNKk06RQeo9upVt5Pnx7ZvcKrA4eSIev4Ex=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "This was my first visit here and I really enjoyed it. I loved learning about some MD history and traditions. I especially enjoyed the painted screen exhibit and the Civil rights exhibit. This is a smaller museum but very well appointed. The front desk staff were very nice and I appreciated that there was free lockers where you could leave items that you didn't want to carry around the museum.",
+          "time": 1769390146,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-unknown-piney-point-lighthouse-and-museum",
@@ -856,7 +1614,7 @@
       "longitude": -76.5291049,
       "place_id": "ChIJae2rb7det4kR1nKescmRjWk",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
@@ -891,7 +1649,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:23:15Z",
+      "updated_at": "2026-03-14T19:57:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(301) 994-1471",
@@ -1070,14 +1828,14 @@
       "website": "https://lewismuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "830 East",
+      "street_address": "830 E Pratt St, Baltimore, MD 21202, USA",
       "address_line2": null,
       "postal_code": "21202",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 39.2874862,
+      "longitude": -76.60384239999999,
+      "place_id": "ChIJh4XCh4IEyIkRdh6hXcXk4MM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -1107,12 +1865,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://lewismuseum.org"
+        "https://lewismuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Baltimore' from open data; MRD: computed city_tier=1 for Baltimore; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:23:25Z",
+      "updated_at": "2026-03-14T19:57:08Z",
       "notes": null,
       "city_tier": 1,
       "is_scoreable": false,
@@ -1127,7 +1886,139 @@
       ],
       "content_generated_at": "2026-01-25T02:23:25Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(443) 263-1800",
+      "website_google": "http://www.lewismuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1191,
+      "google_reviews": [
+        {
+          "author_name": "Noturz Mine",
+          "author_url": "https://www.google.com/maps/contrib/100861018076751603755/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW9Pbul19nXjoB1WgnsGpTfRKxVd0VRcbZL6pQS-m8Q6KgeW2BL=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "This museum has a very interesting collection that is not overly overwhelming. The only part that I have anxiety about is a part of our history that has not been obliterated. (Lynching)...",
+          "time": 1763748115,
+          "translated": false
+        },
+        {
+          "author_name": "Art Poetry Images",
+          "author_url": "https://www.google.com/maps/contrib/108762529848914715047/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVIB-fyOnFTCQMj_F2-t859rulkoqNlxZdmSfiNXXQEqcOvsjKH=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Explore Baltimore - Titan | Reginald F Lewis Museum\n830 E Pratt St\nBaltimore, MD 21202\n\nLocated two blocks from Inner Harbor in Downtown Baltimore, the Reginald F. Lewis Museum of Maryland African American History & Culture – a Smithsonian Affiliate – documents, interprets, and preserves the complex experiences, contributions, and culture of Black people. The Lewis Museum serves as a catalyst of sustained change by providing robust programs and exhibitions and bold conversations that educate and challenge. We strive to be a trusted custodian, a respected authority, and a thought-partner on the history, art and culture of the African diaspora with an emphasis on the State of Maryland.\n\nFounded in 2005, the 82,000-square-foot facility accommodates over 13,000 square feet of permanent and temporary exhibition space, hosting more than 11,000 objects in our permanent collection, special exhibitions, educational programs, and public events.\n\nMission: The Reginald F. Lewis Museum documents, interprets and preserves the complex experiences, contributions and culture of Black people in Maryland. We serve as a catalyst for sustained change by providing programs, exhibitions and bold conversations that educate and challenge.\n\nVision: To be a trusted custodian, a respected authority, and a thought-partner on the history, art and culture of the African diaspora with an emphasis on the State of Maryland.",
+          "time": 1739144341,
+          "translated": false
+        },
+        {
+          "author_name": "Artysia",
+          "author_url": "https://www.google.com/maps/contrib/107242254742397815803/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUDXk0xUuT7c-jcjt8YraGHKGp1fXq92rVk23PBBSbF7v5W8dHt6w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I went for a special occasion but definitely a place to visit to hear our untold stories that we don't learn about in schools. Will be a repeat place that I visit.",
+          "time": 1765118605,
+          "translated": false
+        },
+        {
+          "author_name": "TJ Da DJ TV",
+          "author_url": "https://www.google.com/maps/contrib/115751499661282911529/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW94pUegaHRJv0jXF6-O8DHbQ7GNGUw3nD8tVjIWY_haqVzKypK0A=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "I love the intent for this museum, but, feelt underwhelmed with what I saw. BY ALL MEANS, IT'S WORTH THE VISIT! Bit, I wish they had more stuff on display, especially in the Music / Radio / Television aspect of the museum. I would've liked to seen some Chick Webb used drums / Billie Holiday worn dress / some mics or headphone\ns for the radio legends. Just my thoughts. I did about some past Baltimore Black History, though. The staff is pleasant amd they have some great merchandise in the museum shop!\n\nOn the fluo side,I'm not sure if events or parties are thrown here, often, but, I definitely see potential for a great event venue for upscale parties in here! Even a movie premiere in the theater space!",
+          "time": 1731396058,
+          "translated": false
+        },
+        {
+          "author_name": "Senafekish Kebere",
+          "author_url": "https://www.google.com/maps/contrib/105362474993810233548/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKnrBKnOIDw6WguOSqwVvoPh2QfbEKbTnVdmk65al1ECasDdg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "8 months ago",
+          "text": "Great experience, it was a little warm but only because they had a power shortage and the electricity was just turned back on. Lots of Black Maryland history and their gift shop has a lot of cute things I wanted. If you have never been, definitely check it out.",
+          "time": 1752019106,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-unknown-st-clement-s-island-museum",
@@ -1146,7 +2037,7 @@
       "longitude": -76.7508129,
       "place_id": "ChIJg3Baf-ZBt4kRbuoCm-yRaME",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1180,7 +2071,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:23:31Z",
+      "updated_at": "2026-03-14T19:57:08Z",
       "notes": null,
       "city_tier": 2,
       "phone": "(301) 769-2222",
@@ -1366,7 +2257,7 @@
       "longitude": -75.5715542,
       "place_id": "ChIJw8j79HcDuYkRzWDIxqQM1is",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1402,7 +2293,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:23:38Z",
+      "updated_at": "2026-03-14T19:57:08Z",
       "notes": null,
       "city_tier": 2,
       "phone": "(410) 339-0668",
@@ -1496,14 +2387,14 @@
       "website": "http://www.sjc.edu/programs-and-events/annapolis/mitchell-art-gallery/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "60 College Ave, Annapolis, MD 21401, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.80718,
-      "longitude": -89.64487,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "21401",
+      "latitude": 38.9819598,
+      "longitude": -76.4924702,
+      "place_id": "ChIJqewI-VH2t4kRrVeSMlGGx-c",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1527,23 +2418,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Elizabeth Myers Mitchell Gallery has a modest collection that provides contextual value, with limited depth in its holdings. Its historical context score reflects a local significance in interpreting art history, but it does not exhibit strong curatorial influence or a deep permanent collection.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence identifies this as a college gallery at St. John’s College but provides no description of a permanent collection or specific holdings, so movement-specific strengths and historical framing cannot be reliably scored. As a campus gallery in Annapolis with no indications of major collection depth, it is assessed as local in reputation and small in collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.sjc.edu/programs-and-events/annapolis/mitchell-art-gallery",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Annapolis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.sjc.edu/programs-and-events/annapolis/mitchell-art-gallery; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:23:53Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4106262556",
+      "phone": "(410) 626-2556",
       "is_scoreable": true,
       "content_summary": "Tucked into St. John’s College’s historic Annapolis campus, the Elizabeth Myers Mitchell Gallery offers an intimate, contemplative art experience perfectly suited to close looking. Rather than blockbuster crowds, you’ll find thoughtfully curated exhibitions that reward repeat visits—often connecting art, books, and ideas in a setting steeped in academic tradition. It’s an ideal stop for art lovers who enjoy discovering new artists, seeing work up close, and pairing a gallery visit with the architectural charm of one of America’s oldest college towns.",
       "content_description": "Set within the storied grounds of St. John’s College in Annapolis, the **Elizabeth Myers Mitchell Gallery** feels less like a bustling museum and more like a place for **slow, attentive viewing**—a fitting complement to the college’s Great Books ethos. While the gallery’s reputation is primarily local and its holdings modest, its real strength lies in **curatorial focus**: exhibitions are typically designed to spark conversation across disciplines, inviting visitors to look carefully at form, material, and meaning rather than racing from masterpiece to masterpiece.\n\nArchitecturally, the experience is inseparable from Annapolis itself. Approaching the gallery through the college’s historic environment—defined by **Georgian-era character, brickwork, and an atmosphere of scholarly calm**—sets the tone for a visit that feels reflective and immersive. Inside, the gallery’s scale encourages an up-close encounter with artworks: you can study surfaces, *composition*, and *technique* without the distance imposed by large crowds.\n\nFor travelers, this is a rewarding add-on to an art-minded day in Annapolis: pair the gallery with a walk through the city’s colonial streets, and treat the visit like a curated pause—an hour devoted to ideas made visible. Check the exhibition schedule before you go; rotating shows mean there’s often something new, and the pleasure here is in discovery—emerging artists, focused themes, and the kind of viewing experience that reminds you why small academic galleries matter.",
@@ -1557,7 +2449,128 @@
       "content_generated_at": "2026-01-25T02:23:53Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "https://www.sjc.edu/mitchell",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1930"
+            },
+            "open": {
+              "day": 5,
+              "time": "1400"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 2:00 – 7:30 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 37,
+      "google_reviews": [
+        {
+          "author_name": "Brian Kelley",
+          "author_url": "https://www.google.com/maps/contrib/114953267932857591450/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUS-w2xo_OIcm9V_fiMt-Y_WKAxWa_Vpj6Y_qiAWh-sgE5PqGwk=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Art gallery of St. John's College with shows that are of a caliber for university art museums of far larger size. Located within easy walking distance of the statehouse.",
+          "time": 1527376204,
+          "translated": false
+        },
+        {
+          "author_name": "Kenneth Page",
+          "author_url": "https://www.google.com/maps/contrib/103112202432958041117/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU4_0Jw7E7fW9UJJmZlEaI_YeUe_IE5j1JTqvuaxlN_Y3TC2Lk=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "An intimate gallery that hosts small traveling exhibitions of top tier artists. Free to visit and won't take too long. Friendly staff on the beautiful campus of St John's.",
+          "time": 1542199042,
+          "translated": false
+        },
+        {
+          "author_name": "John Mcclure",
+          "author_url": "https://www.google.com/maps/contrib/102654503218248097843/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVsSULSPg4poPGJZPQnnGYDZl7TGPpp32dLCLNTcm5Uq8G9acM=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "A jewel in our fair city and just celebrated it's 30 years of existing.  Worth you making it for a visit.",
+          "time": 1569162991,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Nease Jr.",
+          "author_url": "https://www.google.com/maps/contrib/105656089560565677982/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKdOU7ZZ5HZRLj-NCvFppY9Y23NiftAiGtaL1D5Qq24iqRtfg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "A good if very small art gallery. Don't plan your day around it, but it's a nice diversion.",
+          "time": 1570463815,
+          "translated": false
+        },
+        {
+          "author_name": "Mark Sanford",
+          "author_url": "https://www.google.com/maps/contrib/107713315688550275152/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXAE-j0Z6VbgehhIPkp0a7I1wAA0aTGDUQfVzcS4PxL9LkM_DIn=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "What a great hidden gem. We have been going there for 30 yrs",
+          "time": 1582121363,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-cambridge-heritage-museums-and-gardens-of-dorchester",
@@ -1569,14 +2582,14 @@
       "website": "http://www.dorchesterhistory.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "1003 Greenway Dr, Cambridge, MD 21613, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "21613",
+      "latitude": 38.5663871,
+      "longitude": -76.05927059999999,
+      "place_id": "ChIJ4d3MhIpJuIkRAbyLDLrsIDA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -1606,12 +2619,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.dorchesterhistory.org"
+        "http://www.dorchesterhistory.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Cambridge; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:24:01Z",
+      "updated_at": "2026-03-14T19:57:10Z",
       "notes": null,
       "city_tier": 1,
       "is_scoreable": false,
@@ -1626,7 +2640,139 @@
       ],
       "content_generated_at": "2026-01-25T02:24:01Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(410) 228-7953",
+      "website_google": "https://www.dorchesterhistory.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1400"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1400"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 2:00 PM",
+          "Wednesday: 10:00 AM – 2:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 43,
+      "google_reviews": [
+        {
+          "author_name": "dale branch",
+          "author_url": "https://www.google.com/maps/contrib/112759180252518485029/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVryp4zabSAoy1fWHf_Rcd3VjlJxQafEjt_UU98qOOKITvOfqhB=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 3,
+          "relative_time_description": "4 months ago",
+          "text": "Local history.  Small, dated.  Good information.  Interesting artifacts.\nRoom full of historical records though which aim sure is useful if you need that kind of thing.",
+          "time": 1761395621,
+          "translated": false
+        },
+        {
+          "author_name": "James da BrahmaBull",
+          "author_url": "https://www.google.com/maps/contrib/106363755297621120060/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVSsaK1T4ukSG3kAPGrBSriWGoEGb83xB0bU1WV52CjfXvq1aiTVw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Super fun... So much local history...! I went with my son's school group and we had a blast.. The hospitality was excellent..",
+          "time": 1543255254,
+          "translated": false
+        },
+        {
+          "author_name": "Angela Allemang",
+          "author_url": "https://www.google.com/maps/contrib/113388528093863648621/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX7fkv_znEeB7ztWE0oeb9ufDp6bYgoQNnfXxP3BOg-kvnSoN-tsA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 3,
+          "relative_time_description": "4 years ago",
+          "text": "So I found this facility to be dense and rich in history and Heritage of the local area which is wonderful! I suppose they have a limited budget to work with because things to not seem to be kept up too well aesthetically. Partially this could be attributed to covid. The people who worked there were extremely friendly and appropriately helpful without overdoing it. I'm glad we came.",
+          "time": 1629566864,
+          "translated": false
+        },
+        {
+          "author_name": "George Wheatley",
+          "author_url": "https://www.google.com/maps/contrib/113142434568218436300/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJu4AfUYRl3tGGt-6EsmaEMxvuyU2lLp2vEj1iA4bWjLRF0Sg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Wonderful presentation in great detail work on The Disappearance of my great-aunt Florence Wingate. People go out of their way to be warm and friendly and love to talk about the history of our area almost like going back home and sitting down in front of a warm stove in the winter time and carrying on wonderful conversations. The staff here everyone works very very hard to maintain and carry on the history of our area.",
+          "time": 1534341914,
+          "translated": false
+        },
+        {
+          "author_name": "Andy Nunez",
+          "author_url": "https://www.google.com/maps/contrib/103378346346928713060/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWRDOaB4HZps3BzaP7juOyh5BiaP7vcgJxP9OzzIxFd4nwXR1mv=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "This a wonderful little museum of life along the water,  full of the many items used by hunterszand watermen.  It also has an extensive research library full of maps, records and other books about the Eastern Shore.  Worth a visit if you are interested in local history.",
+          "time": 1675445527,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-md-easton-academy-of-art-museum",
@@ -1638,14 +2784,14 @@
       "website": "http://www.academyartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "106 South St, Easton, MD 21601, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.77229,
-      "longitude": -76.07397,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "21601",
+      "latitude": 38.7720024,
+      "longitude": -76.0739943,
+      "place_id": "ChIJwwFl4IdAuIkRLXPIr-5kObw",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1654,7 +2800,7 @@
       "tickets_url": "https://www.facebook.com/AcademyArtMuseum",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1667,25 +2813,26 @@
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
       "historical_context_score": 2,
-      "priority_score": 18,
+      "priority_score": 19,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Academy Art Museum has a strong community focus and provides educational value, but it lacks nationally significant holdings that would elevate its scores. Its historical context is relevant primarily to the local area, and its exhibition program indicates regional influence.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence describes the Academy Art Museum primarily as an art education and exhibition complex serving the Eastern Shore, with no indication of notable permanent holdings in Impressionism, so Impressionist strength is scored as negligible. With no collection details provided, Modern/Contemporary is estimated as minor (typical for small regional art centers), and historical context is judged minimal due to lack of evidence of structured, interpretive permanent-collection galleries. Location a",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.academyartmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Easton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4108228121",
+      "phone": "(410) 822-2787",
       "is_scoreable": true,
       "content_summary": "The Academy of Art Museum in Easton is a rewarding stop for art lovers exploring Maryland’s Eastern Shore. Known for a strong regional focus and thoughtfully curated exhibitions, it offers an intimate way to connect with local artists, Mid-Atlantic visual culture, and rotating shows that keep repeat visits fresh. Expect a calm, gallery-forward experience—ideal for slow looking—often paired with community programming that brings you closer to the place behind the art.",
       "content_description": "**The Academy of Art Museum** in Easton offers the kind of museum experience art travelers crave: focused, approachable, and deeply rooted in place. With a **strong regional emphasis**, the museum typically shines when presenting artists connected to Maryland’s Eastern Shore and the wider Mid-Atlantic—think *landscape traditions*, *portraiture*, and contemporary responses to coastal life and working communities. While not encyclopedic in scope, its curatorial approach is **confident and coherent**, making it an excellent destination for visitors who enjoy exhibitions that tell a story rather than simply display objects.\n\nArchitecturally, the appeal is in the museum’s **intimate scale and gallery clarity**: rooms designed for close viewing and conversations with the work. The setting in Easton encourages a slow, walkable museum day—arrive with time to linger, revisit a favorite piece, and compare how different media (painting, photography, and works on paper) interpret the region’s light, weather, and human presence.\n\nFor visitors, the pleasure is the museum’s **rotating exhibition rhythm** and community energy. Expect a schedule that often includes curated thematic shows and opportunities to engage through talks or educational programming. If you’re building an itinerary across Maryland, this museum is especially satisfying as a counterpoint to larger institutions—less crowded, more personal, and tuned to the aesthetics and cultural narratives of the Eastern Shore.",
@@ -1704,7 +2851,149 @@
       "collection_based_strength": 3,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "https://academyartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1900"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 7:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 203,
+      "google_reviews": [
+        {
+          "author_name": "Tamara Wolfe",
+          "author_url": "https://www.google.com/maps/contrib/114520162743225353504/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUSFgNe96OV-nHqfN1mGv3gXiDkTXFB2f6xH6SH0lq4AWlgSq8=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Beautiful exhibition. Staff were so welcoming! I didn't take pictures of the KIN exhibit it was spiritual it was so moving. The book was available to take home. As a genealogist it speaks so much to me.",
+          "time": 1748524477,
+          "translated": false
+        },
+        {
+          "author_name": "Steve McCoy",
+          "author_url": "https://www.google.com/maps/contrib/109465633195625529607/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVXSLuF2mq_dwVHMMTsgYoXZozafebHOci3qJAsJWquT9O5pY6UEg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Very cool small (and admission free!) museum.  Exhibits change frequently so always worth a visit!",
+          "time": 1760807252,
+          "translated": false
+        },
+        {
+          "author_name": "Nicole Montgomery",
+          "author_url": "https://www.google.com/maps/contrib/102720987923525817455/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI_k4U0NqqxVRdpLYAHpSmherHTBSB_e27fDjakhuEwsNm0Ug=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Rented space for my daughter's 9th birthday party. Fabulous staff, nice space, fun activity, low-stress party! Big hit with the kids and their parents! A real find! I can't comment on the rest of the building as it was under renovation at that time, but I'm sure had it been complete it would have been a nice bonus to our event. A talented artist artists named Theresa guided the kids on painting the subject matter of the birthday girl's choosing. She made it easy to follow, there were plenty of materials on hand, and she was excellent with the kids. I hadn't even known this space was available to rent for an event and I am so glad someone told me! We had a fabulous time. The staff and coordinators were very in touch for planning and questions and were extremely accommodating.\n\nThere was a deposit for renting the space and then I think it was $5 per person who would be painting (for the materials). They gave them real canvas to use, painters pencils, provided paint brush and paints, and smocks as well. They also provided space for food setup, provided the flatware, and did the cleanup. We had to provide food but they had a small fridge and freezer for cake and ice cream storage. When some of the kids were done with their painting and the others were not she provided paper and things for freestyle drawing to occupy the kids while the others finished up without any cost. So worth it!",
+          "time": 1581454565,
+          "translated": false
+        },
+        {
+          "author_name": "Elissa H",
+          "author_url": "https://www.google.com/maps/contrib/110965770846002395922/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX7V4F0zHQxv1IjULf9EIkfKsuY1pX-h9TqZvhkOtVY9J3Yofth=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "BLUF: I recommend.\nThe parking is all street parking.\nI do NOT recommend bringing walking babies, toddlers, or kindergarten aged kids here.  There are too many temptations to touch things that are NOT touchable.  Parents save your sanity and leave young kids with a babysitter!\n\nI had a wonderful time going through this smaller but packed art museum.  My husband and kids were bored after running through it HOWEVER they aren't ones to stop and stare at art.\n\nFor anyone looking for a unique place to hold a wedding or mature birthday party and NOT decorating, this would be a very good place, except for the street parking.  It's a big issue to me. LoL\n\nIf you plan to take your kids and they aren't big art fans, I'd check the website to see when the museum is offering kid friendly classes.  That may make the trip a bit more enjoyable for them.  I know my kids wouldn't mind coming back but only if they can touch something or do an art class.\n\nBottom line, I recommend.",
+          "time": 1686488182,
+          "translated": false
+        },
+        {
+          "author_name": "Nick T",
+          "author_url": "https://www.google.com/maps/contrib/111891774192657435065/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW1eBq-TMEBRO4XfjHqzhJYTrNpwNF-dEDqL2R_n8OwVjXZOFri=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Cross stitch collection was great! The Bugatti exhibit was really interesting.",
+          "time": 1740702648,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-md-hagerstown-washington-county-museum-of-fine-art",
@@ -1716,14 +3005,14 @@
       "website": "http://www.wcmfa.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "401 Museum Drive",
+      "street_address": "401 Museum Dr, Hagerstown, MD 21740, USA",
       "address_line2": null,
       "postal_code": "21740",
-      "latitude": 39.64067,
-      "longitude": -77.7206,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 39.6370417,
+      "longitude": -77.7314889,
+      "place_id": "ChIJlxE4g0LtyYkRHhudmf7z-XM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1744,26 +3033,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 16,
+      "historical_context_score": 3,
+      "priority_score": 15,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum provides a modest collection of 19th and early 20th Century American Art and Decorative art, which supports local education but lacks significance for broader scholarship. Its historical context score highlights its role in local culture, but it does not achieve national or canon-level importance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The permanent collection is described as 19th–early 20th century American art, Old Masters, and decorative arts, suggesting at most minor Impressionist and Modern/Contemporary representation without a stated focus. As an AAM-accredited museum with a nationally recognized collection but in a small city context, it likely offers a solid but not encyclopedic collection and moderate historical framing.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.wcmfa.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Hagerstown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3017395727",
+      "phone": "(301) 739-5727",
       "is_scoreable": true,
       "content_summary": "A cultural anchor in Hagerstown’s leafy City Park, the Washington County Museum of Fine Arts rewards art lovers with an intimate, thoughtfully curated visit—free admission included. Expect a strong regional lens alongside European and American painting, works on paper, and sculpture presented at an approachable scale. It’s the kind of museum where you can slow down with a single canvas, chat with staff who know the collection, and step back outside to gardens and park views between galleries.",
       "content_description": "**Washington County Museum of Fine Arts** is a destination museum in miniature—serious enough for devoted art travelers, yet relaxed enough to feel like a local secret. Set within Hagerstown’s City Park, it offers the pleasure of close-looking without the crowds: galleries where you can take your time with **American and European painting, prints and drawings, and sculpture**, often with a welcome emphasis on the Mid-Atlantic’s cultural landscape. With a **competently curated, modest collection**, the museum shines through smart rotations and clear interpretation, making it easy to connect individual works to broader stories in *portraiture*, *landscape*, and modern shifts in style and technique.\n\nArchitecturally, the museum’s **classical, civic-minded building** suits its mission—art as a public good—while its park setting adds a distinctly travel-worthy atmosphere. Plan to move at an unhurried pace: the scale encourages repeat visits and careful comparison across mediums, from the crisp line of works on paper to the material presence of sculpture.\n\nFor visitors, the experience is as much about rhythm as it is about highlights: arrive, focus in the galleries, then reset outdoors with views of trees, paths, and seasonal color before returning for another room. If you love museums where the pleasures are **concentration, discovery, and local context**, this is an ideal stop on a Maryland art itinerary—especially when paired with Hagerstown’s historic downtown nearby.",
@@ -1782,26 +3072,168 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.wcmfa.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 584,
+      "google_reviews": [
+        {
+          "author_name": "Theresa Stubblefield",
+          "author_url": "https://www.google.com/maps/contrib/102277649847015091194/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX7JSY8THr8KumUh5itU83ydvwd4QFDnQChbJO2ZZJ-X3jrVexL8g=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Hubby and I had planned to go into Baltimore to the local museum, but it is closed Tuesdays. While searching for a new destination, we found this museum and it did not disappoint.\n\nParking was free and right out front. Steps later we were indoors and greeted by their delightful and informative staff. Entrance was free. We were given a map for self tour. The exhibits were well taken care of and inspirational. Total time to see everything was 1.5 hours. The Scandinavian exhibit is their new one.\n\nLoved the local artist exhibit and reading their inspiration for each piece and getting a chance to vote on them.\n\nOutside is the city park which was fun to walk around (just watch your step - lots of geese).\n\nAlso, the gift shop was a nice addition where I purchased a beautiful pitcher for $20.",
+          "time": 1771965479,
+          "translated": false
+        },
+        {
+          "author_name": "Marvin Grey",
+          "author_url": "https://www.google.com/maps/contrib/101700380772236590440/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW2U8iGgBccX9iycELyKwKw5sXuROTU1hE7o8t2hpxIqV7AUqyY=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "This is my first time visiting the fine arts museum, and I definitely enjoyed my time there. It's free admission, and the staff is very welcoming. I visited early Sunday afternoon so I basically had the museum to myself. The museum itself is a square and not hard to navigate at all. They have a gift shop and plenty of places to sit throughout the galleries. They also showcase local talent.\nWouldn't recommend going with younger children. I saw a family come with their two children, and they spent the majority of the time chasing them around.",
+          "time": 1750265897,
+          "translated": false
+        },
+        {
+          "author_name": "Cody W",
+          "author_url": "https://www.google.com/maps/contrib/102195249439912496224/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJWZ85tqfhqAM3QWFvolotkKlmwLdSZbo5DiZYqiM4l5PLBN68=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "A true cultural treasure in the heart of Hagerstown! The Washington County Museum of Fine Arts is hands-down one of the finest small museums I’ve ever visited—and best of all, admission is completely free! Housed in a beautiful historic building right on the edge of Hagerstown City Park, the museum punches way above its weight with an impressive permanent collection that includes American masters like Childe Hassam, Mary Cassatt, Thomas Hart Benton, and even a stunning Tiffany glass vase. The Hudson River School landscapes and the intimate gallery of Old Masters are personal favorites.\n\nThe rotating exhibitions are always thoughtfully curated and surprisingly ambitious—recent shows have featured everything from contemporary photography to vintage fashion to major traveling exhibits you’d expect to see in D.C. or Baltimore. The staff and docents are warm, knowledgeable, and genuinely passionate; they make every visit feel special.\n\nBonus highlights:\n- The Singer Memorial Gallery with its soaring ceiling and natural light is breathtaking.\n- The outdoor sculpture garden is perfect for a quiet moment.\n- Family-friendly activities, fantastic children’s programs, and the summer concert series on the lawn are pure joy.\n- Spotless facilities, free parking, and a lovely little gift shop with unique items.\n\nWhether you’re an art lover or just looking for a peaceful, inspiring way to spend an hour or two, this museum is an absolute gem. Five stars isn’t enough!",
+          "time": 1763912210,
+          "translated": false
+        },
+        {
+          "author_name": "Liang Huang",
+          "author_url": "https://www.google.com/maps/contrib/118058847821958446540/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhLhTOrK7oZtGHyzAnjrRGcV5ncKGJR2yVMSK_-If8A_3mQBWb=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I went for the floating beauty exhibit, but ended up going through all other exhibits. The museum is not big, but it is nicely organized with lots of fun items ranging from its own collection of Japanese prints, Chinese bronze and pottery items, Native American crafts, African crafts to Rodin’s sculpture, paintings, drawings, Wedgwood tea pots, and a painting attributed to Titian. The American arts works are arrange to cover both classical works to modern works. I also found a painting by Alfred Stieglitz. The E.O Hoppe photography exhibit of Women’s portraits are equally great! I really enjoyed everything in the museum. The staff are super friendly. I think the city is lucky to have a fine Art museum in the city park and everyone shop at the nearby outlets should make a stop at the museum as a routine. I really appreciate it!",
+          "time": 1736635145,
+          "translated": false
+        },
+        {
+          "author_name": "May Gutierrez",
+          "author_url": "https://www.google.com/maps/contrib/112659703395836247463/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVXtXgdEfcFJzYeA7q0NsjeXaXtoT2ccQuVfpdOOWLgHMcKkw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "Many areas were under construction but it was still very enjoyable, beautiful exhibits and friendly staff!",
+          "time": 1768851987,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-md-silver-spring-pyramid-atlantic-arts-center",
       "country": "USA",
       "state_province": "Maryland",
-      "city": "Silver Spring",
+      "city": "Hyattsville",
       "museum_name": "Pyramid Atlantic Arts Center",
       "alternate_names": null,
       "website": "http://www.pyramidatlanticartcenter.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "4318 Gallatin St, Hyattsville, MD 20781, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "20781",
+      "latitude": 38.9526781,
+      "longitude": -76.9410291,
+      "place_id": "ChIJa79RB7zIt4kR3CK3a5T8qyI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1831,12 +3263,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.pyramidatlanticartcenter.org"
+        "http://www.pyramidatlanticartcenter.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Silver Spring; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:24:26Z",
+      "updated_at": "2026-03-14T19:57:13Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -1851,8 +3284,140 @@
       ],
       "content_generated_at": "2026-01-25T02:24:26Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(301) 608-9101",
+      "website_google": "http://www.pyramidatlanticartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 8:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 116,
+      "google_reviews": [
+        {
+          "author_name": "CrashGem",
+          "author_url": "https://www.google.com/maps/contrib/110762278195484291057/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUALBBtoVkKRd2CbqWf9LQXJswiV-W-hAdKPZg1cpiyMJjQOnhDew=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Historical building, friendly and knowledgeable staff, had a free art exhibit upstairs that was a wonderful experience. Picked up some lovely prints. If we were local I would sign up for one of their printing classes.",
+          "time": 1760826850,
+          "translated": false
+        },
+        {
+          "author_name": "Jennifer Leach",
+          "author_url": "https://www.google.com/maps/contrib/113957554821309393413/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXkrF6Hcfk35plI3GLM3aE8HI2zqWPVAcy0HxmZIhrhwsNF6pHG9Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "You need to visit here! They have rotating exhibits in their gorgeous gallery space upstairs, a working studio with classes available to the public (I've taken letterpress classes, which are SO fun), and the most gorgeous gift shop. The people are lovely and you get great advance info if you become a member!",
+          "time": 1759099195,
+          "translated": false
+        },
+        {
+          "author_name": "judi rockhill",
+          "author_url": "https://www.google.com/maps/contrib/100409281325454801576/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVUYYBBpjeyVVPUPpoDwVH3YoKs-lfqBQbYVLo0fRR5mRG-e4k=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Such a cool arts center! I took my first class there.  It won't be my last.  The instructor was knowledgeable and made the class fun. The other participants were interesting which made the class even more fun. Highly recommend.",
+          "time": 1744043459,
+          "translated": false
+        },
+        {
+          "author_name": "bri s",
+          "author_url": "https://www.google.com/maps/contrib/103039267866367168577/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUVrY3BIi3UxgGd2xQOJtmjrFhKor_m_TIQXniLllhCDXXYyyKlgA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "The gallery and the space is great. Love this place.",
+          "time": 1770306268,
+          "translated": false
+        },
+        {
+          "author_name": "Vainuupo Avegalio",
+          "author_url": "https://www.google.com/maps/contrib/117810766921534550691/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUab4qkH_QYDcfMGCj3gzCRNDpxyab87uVefzptODBqYVMVhuLC1g=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "9 years ago",
+          "text": "I thought the place was amazing, was there for a guided tour and was amazed at all of the different types of printing and book making contraptions. I loved that they offer classes on all of their equipment and once you are certified you are free to create. The upstairs gallery is pretty tiny though i will admit. I think they should really think about expanding that area. It kinda has a jail cell feel. Not that I would know anything about that. The staff inside are very friendly and welcoming. The artist that are inside are not stingy with their art style or knowledge and are willing to share their ideas. I really loved the artist for that.  Small gallery yeah but all everything else in my opinion gave this shop a 5 of 5 stars.",
+          "time": 1476762009,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

@@ -20,7 +20,7 @@
       "longitude": -97.5132462,
       "place_id": "ChIJkdZajFgQsocRNdaOvS6ih8k",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -54,7 +54,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Google Places: extracted street address; Google Places: extracted postal code; Google Places: extracted operating hours; Google Places: 4.4/5 rating with 39 reviews",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:15:15Z",
+      "updated_at": "2026-03-14T20:01:28Z",
       "notes": "Phone: (918) 895-6302\nGoogle Rating: 4.4/5 (39 reviews)\n♿ Wheelchair accessible entrance available",
       "city_tier": 3,
       "open_hour_notes": "Monday: Closed\nTuesday: 12:00 – 5:00 PM\nWednesday: 12:00 – 5:00 PM\nThursday: 12:00 – 5:00 PM\nFriday: 12:00 – 5:00 PM\nSaturday: 12:00 – 5:00 PM\nSunday: Closed",
@@ -225,7 +225,7 @@
       "longitude": -95.31044759999999,
       "place_id": "ChIJWZnZDQLitYcRZY--Cj_pihw",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Botanical Garden",
       "primary_domain": null,
       "topics": null,
@@ -262,7 +262,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted meta description; Official site: Failed to parse HTML: name 'url' is not defined",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:15:22Z",
+      "updated_at": "2026-03-14T20:01:28Z",
       "notes": "Muskogee War Memorial Park - Home of the USS Batfish, Muskogee. 22,076 likes · 13 talking about this · 6,167 were here. The Champion \"Submarine-Killing\" Submarine of World War II CSV: IRS Museum ID 8404000061 CSV: phone from IRS 990 database CSV: museum type 'Botanical Garden' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "(918) 682-6294",
@@ -356,14 +356,14 @@
       "website": "https://nationalcowboymuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1700 NE 63rd St, Oklahoma City, OK 73111, USA",
       "address_line2": null,
       "postal_code": "73111",
-      "latitude": 35.5354136,
-      "longitude": -97.4838046,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 35.5356997,
+      "longitude": -97.4831286,
+      "place_id": "ChIJQ-cenbQZsocRzRLrSk7iTUM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -393,12 +393,13 @@
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
-        "official_website/visit"
+        "official_website/visit",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oklahoma City' from open data; MRD: computed city_tier=2 for Oklahoma City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:15:30Z",
+      "updated_at": "2026-03-14T20:01:29Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -413,7 +414,159 @@
       ],
       "content_generated_at": "2026-01-25T03:15:30Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(405) 478-2250",
+      "website_google": "http://nationalcowboymuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 9:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 6162,
+      "google_reviews": [
+        {
+          "author_name": "Abdullah Çetinkaya",
+          "author_url": "https://www.google.com/maps/contrib/105988047902374270671/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWGvbJmoGUOkONggztZSLl55fXt4rybJclut4jJxoiWA6zk9xOs=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "As someone who just moved to States from Europe this was a very interesting experience for me. We’ve always seen and heard about Cowboys growing up through stories and cartoons/movies but had no idea about their culture and lifestyle.\n\nNational Cowboy and Western Heritage Museum complex is huge and you can easily spend half day here. There are lots beautiful painting and artifacts waiting for the visitors. There is also a small “western cowboy movie” type of town inside the museum which feels like you are visiting a real town instead of the museum. It even smells like a barn inside :)\n\nI haven’t visited the outside exhibitions due to bad weather conditions",
+          "time": 1769917440,
+          "translated": false
+        },
+        {
+          "author_name": "Jennifer Bacon",
+          "author_url": "https://www.google.com/maps/contrib/110209178879822743977/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVv42-wKgouBWc3uMbCPXpwB3959h5lEMxxKtAo-gqEWTZpi_8=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "a week ago",
+          "text": "A fun place to explore and learn about the  cowboy and western heritage.  The immersive experience was my favorite part. They have a plethora of items on display. Make the stop if you are in the area you won’t be disappointed.",
+          "time": 1772369975,
+          "translated": false
+        },
+        {
+          "author_name": "Paul G",
+          "author_url": "https://www.google.com/maps/contrib/110169077030441297480/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWpDq8QoCyxJCEKKeDjqRZcNi6OPhD7hAr5h0GepgeKPrZqRMkvpg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I hadn't visited in about 30 years and was more than impressed with the improvements over the years. Incredible collections, paintings and sculptures are just the icing on the cake. So much to see and learn about western heritage and culture. This is a must-see in OKC!",
+          "time": 1762281870,
+          "translated": false
+        },
+        {
+          "author_name": "adventures with FLY Frances Youngblood",
+          "author_url": "https://www.google.com/maps/contrib/107696243569109336869/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIHpBuOYFAtAzDhA2y1J_Mz9bLSTF-4oq0ul-uXP8lgBYhLRLF6=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This was our first time to thw museum and it was amazing. The museum was great and the new immersive show was worth the price of admission. It was very immersive and gave a great insight to the progression of the cowboy. I highly recommend.",
+          "time": 1768073381,
+          "translated": false
+        },
+        {
+          "author_name": "Kamryn Martinez",
+          "author_url": "https://www.google.com/maps/contrib/105883615766050683747/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWT7HlQioARsJke0i91aLo9smgo5j-Jccrbasf1HBLEIFS05PDN=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Absolutely one of the best museums we have ever visited!! They also had so many kid activities and mini outdoor playground. Not to mention the cleanliness of the facility.\nHighly recommend on a nice cool day.",
+          "time": 1768603339,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-unknown-oklahoma-city-museum-of-art",
@@ -432,7 +585,7 @@
       "longitude": -97.5205029,
       "place_id": "ChIJ__8_PiwXsocRSmdKhGQqB4Y",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -456,9 +609,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The evidence provided does not include specific information about the museum's collections, strengths in Impressionist or Modern/Contemporary art, historical context, or its reputation. Therefore, scores cannot be assigned.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is unrelated to the Oklahoma City Museum of Art, so there is no reliable evidence here about permanent collection strengths (Impressionism, Modern/Contemporary) or interpretive/historical presentation. Based on the museum type and location (a regional city) with limited institutional signals, a regional reputation and a moderate overall collection tier are the most supportable inferences.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
@@ -467,10 +620,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 1,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oklahoma' from open data; MRD: computed city_tier=2 for Oklahoma; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:15:42Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(405) 236-3100",
@@ -629,14 +782,14 @@
       "website": "https://oklahomacontemporary.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "3000 General Pershing Blvd.",
+      "street_address": "11 NW 11th St, Oklahoma City, OK 73103, USA",
       "address_line2": null,
-      "postal_code": "73107",
-      "latitude": 35.4805265,
-      "longitude": -97.513172,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "73103",
+      "latitude": 35.4805847,
+      "longitude": -97.5132462,
+      "place_id": "ChIJkdZajFgQsocRNdaOvS6ih8k",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -668,12 +821,13 @@
         "official_website",
         "https://oklahomacontemporary.org",
         "openstreetmap",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Oklahoma City' from JSON-LD; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted meta description",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:15:53Z",
+      "updated_at": "2026-03-14T20:01:30Z",
       "notes": "Through exhibitions, performances, art education and programs at our new, $30 million downtown campus, Oklahoma Contemporary creates opportunities to come together in celebration of contemporary culture and artistic expression. Exhibitions are always free. You are always welcome here. CSV: IRS Museum ID 8404000276 CSV: museum type 'Art Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 300, revenue: 300)",
       "city_tier": 3,
       "open_hour_notes": "Open 11 a.m.-6 p.m. Wednesday-Monday. Closed Tuesdays and holidays.",
@@ -689,7 +843,149 @@
       ],
       "content_generated_at": "2026-01-25T03:15:53Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(405) 951-0000",
+      "website_google": "http://www.oklahomacontemporary.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1800"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 6:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 6:00 PM",
+          "Friday: 11:00 AM – 6:00 PM",
+          "Saturday: 11:00 AM – 6:00 PM",
+          "Sunday: 11:00 AM – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 563,
+      "google_reviews": [
+        {
+          "author_name": "The nay",
+          "author_url": "https://www.google.com/maps/contrib/107390774197755909182/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPZ44XSDk9CC4aLxKyS4zBH-iBiT8IobV3_H-Bw3cnHAQYDmY=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "I have been taking one of the classes for the last 6 weeks and it's been really amazing. I love the atmosphere, it feels so pleasant and safe. My teacher right now is Martha Coates for making Renaissance clothing. I have enjoyed her class so much i am looking forward to enrolling in another class. If i can't get into Mrs. Coates class i will happily enroll in someone elses class.",
+          "time": 1771941225,
+          "translated": false
+        },
+        {
+          "author_name": "Christi Gulikers",
+          "author_url": "https://www.google.com/maps/contrib/108536005015640497795/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjViHzrR3NtOMOJymTo7QYFQ-pNzsetuumsiX1hiwM5AvCfcO7PvJg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "3 weeks ago",
+          "text": "We visited on a day they were switching out exhibits on the second floor, so we didn’t get to see everything — but honestly, it just gives us a reason to go back. The new café/coffee shop was SO good, and the little art vending machine was absolutely adorable. Such a fun touch. The photography on the third floor was incredible — we spent so much time up there. Overall, it was a great experience and we’re definitely going back to see the new exhibits. 🎨✨",
+          "time": 1771516343,
+          "translated": false
+        },
+        {
+          "author_name": "Love Energy",
+          "author_url": "https://www.google.com/maps/contrib/107780788140998800141/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLnSYBxxk1jy4njVsy9gkU7HaEo5TnKqmc76pnRhWLGTTnSTQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The exhibits are rotated frequently and always are moving, inspiring, and fascinating. I love the creative space that invites visitors to express their own creativity freely during their visit. The suggested donation to enjoy such an enriching experience is only $5 per person. I really appreciate how accessible such an intentional, luxurious experience has been made to the public. I took my 3 little ones (1, 4, and 6 years) with me on a Thursday around 5pm and we had a beautiful time, mostly in the creativity room. I always capture the most beautiful and fascinating pictures, videos, and memories in this space,  which is always the best part of the whole experience for me. The museum does close at 6pm daily and I personally love an evening museum experience... so a later closing on   occasion would really be a plus. Overall I look forward to my next visit... and it will be soon.",
+          "time": 1768163924,
+          "translated": false
+        },
+        {
+          "author_name": "ninjagirl702",
+          "author_url": "https://www.google.com/maps/contrib/109740189822608395944/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLwaVLEbIIivfObWDzEG4LRQd4AK9f1Gg_6NJmbgNiQO5pR0Q=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "It was so much fun. We went there for Valentine's Day for like a little clay workshop and made so many fun things. Everyone should check this place out. I will definitely be back. They have tons of things to do and tons of cute little shops!",
+          "time": 1772230304,
+          "translated": false
+        },
+        {
+          "author_name": "Lori Laub",
+          "author_url": "https://www.google.com/maps/contrib/103480341179690610324/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUpsPHMjDFqEIKux523Kf_zNXDgXgr9NSGd2AfGGVHuYhsqN_CZ3Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "This was very enjoyable. Nice variety of art works, some interactive, many thought provoking. Very nice facility. Highly recommend.",
+          "time": 1768754605,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-unknown-stillwater-history-museum-at-the-sheerar",
@@ -701,14 +997,14 @@
       "website": "https://www.sheerarmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "702 S Duncan St, Stillwater, OK 74074, USA",
       "address_line2": null,
       "postal_code": "74074",
-      "latitude": 36.1143653,
-      "longitude": -97.0617162,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 36.1143155,
+      "longitude": -97.06168009999999,
+      "place_id": "ChIJQ3yl5EUKsYcRqsJBK18xJDg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -739,12 +1035,13 @@
         "walker_reciprocal",
         "official_website",
         "https://www.sheerarmuseum.org",
-        "openstreetmap"
+        "openstreetmap",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: extracted city 'Stillwater'; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted meta description",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:16:01Z",
+      "updated_at": "2026-03-14T20:01:31Z",
       "notes": "MAWAR500 adalah link situs toto slot gacor terbaru 2025 yang dikenal sebagai bandar toto togel resmi gampang menang dengan koleksi toto togel terlengkap di indonesia.\n\nPhone: 6281231231",
       "city_tier": 3,
       "is_scoreable": false,
@@ -759,7 +1056,139 @@
       ],
       "content_generated_at": "2026-01-25T03:16:01Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(405) 377-0359",
+      "website_google": "https://www.stillwaterokhistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 85,
+      "google_reviews": [
+        {
+          "author_name": "Cindy",
+          "author_url": "https://www.google.com/maps/contrib/107710138230193572781/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXRR6uHMf5_S_LQxxdtRB8dCzfYUGCXk9iu1LLzWuyWgobJDWA_=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This Museum is Fantastic! Live this Museum! There is So much rich History! I have to go back! Very impressive  how Stillwater has so many fascinating facts!\nDeb was Awesome  , Friendly , knowledgeable & Kind! 😊\nThis is an absolutely  must go place ro see in Stillwater! A hidden gem!💖",
+          "time": 1767970553,
+          "translated": false
+        },
+        {
+          "author_name": "Bryan Tait",
+          "author_url": "https://www.google.com/maps/contrib/115479000068668993680/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUNnacqo6bZmYwc5CO0sMYJneCpGcql6AcnNhyn5HGixHbXItLuLA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "I really enjoyed learning more about this wonderful town. There is so much history packed in a small space.  The curators are super friendly and knowledgeable.  Go check it out, it is definitely a no cost activity. They do accept donations to those feeling generous.",
+          "time": 1615093617,
+          "translated": false
+        },
+        {
+          "author_name": "Topher Kersting",
+          "author_url": "https://www.google.com/maps/contrib/112226323698988296464/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXk-CTwC_lDZ-N93LZ0KwM2NuvlmypWSqhbsxQ9WJiOyFKY7_Isxw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "This is a great little museum that gives visitors a varied view of Stillwater history, ranging from its founding, its growth through Oklahoma State University, and the commercial growth. The staff is very knowledgeable and helpful.\n\nWhile there is no admission charge, they do recommend a $5 donation. There is also a small gift area with a good mix of books and souvenirs.",
+          "time": 1754009786,
+          "translated": false
+        },
+        {
+          "author_name": "Dennis Prichard",
+          "author_url": "https://www.google.com/maps/contrib/110762668785576138193/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAxOc8OsMiaX7ZnCMREvJXGGQK6fRvHzfYZU0kX2bAdX3O--em=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "A behind -the-scenes tour just for our Legacy Village residents. It really surprised us with Stillwater 's unique history. Thanks for the tour!",
+          "time": 1748293940,
+          "translated": false
+        },
+        {
+          "author_name": "Chris Knott",
+          "author_url": "https://www.google.com/maps/contrib/107033333304825701020/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWRAoht6B4hsWhgGMWvb2CbRXfFq-Y5MD5bBEKy8jAF_6HeomRVig=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Very nice place. Very sad reading about the white man abusing native Indians. I would recommend this place to every one just to make you think about how our government and society works when it was decided to relocate the indians.",
+          "time": 1759096982,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-unknown-the-museum-broken-arrow",
@@ -778,7 +1207,7 @@
       "longitude": -95.7911106,
       "place_id": "ChIJMxSi48KLtocRI8cl0Osi7eI",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -814,7 +1243,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted hours information; Official site: Failed to parse HTML: name 'url' is not defined",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:16:10Z",
+      "updated_at": "2026-03-14T20:01:31Z",
       "notes": null,
       "city_tier": 3,
       "open_hour_notes": "MUSEUM HOURS Tuesday, Wednesday, Friday: 10 a.m. - 4 p.m. Thursday: 4 p.m. - 8 p.m.",
@@ -981,7 +1410,7 @@
       "longitude": -94.81998399999999,
       "place_id": "ChIJhw7Tff1xNYYRsVplkuv2Vy0",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1017,7 +1446,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: cached HTML for LLM enrichment; Official site: extracted hours information; Official site: Failed to parse HTML: name 'url' is not defined",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:16:21Z",
+      "updated_at": "2026-03-14T20:01:31Z",
       "notes": null,
       "city_tier": 3,
       "open_hour_notes": "Open Regularly Scheduled Hours Tues-Sat 10am-5pm Sun 10am-3pm Map (click here)",
@@ -1194,7 +1623,7 @@
       "longitude": -95.8957281,
       "place_id": "ChIJI9UUGf_xtocRxpEOhmEZ-eo",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Science Museum",
       "primary_domain": "Science",
       "topics": null,
@@ -1229,7 +1658,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Oklahoma' from open data; MRD: computed city_tier=2 for Oklahoma; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Science from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:16:29Z",
+      "updated_at": "2026-03-14T20:01:32Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "(918) 834-9900",
@@ -1388,14 +1817,14 @@
       "website": "http://www.walkerart.org/www.willrogers.com",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1720 W Will Rogers Blvd, Claremore, OK 74017, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 36.31725,
-      "longitude": -95.61025,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "74017",
+      "latitude": 36.321051,
+      "longitude": -95.631518,
+      "place_id": "ChIJKfxelLtQtocR005Nuuf4Gy4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1428,15 +1857,16 @@
         "http://www.walkerart.org/www.willrogers.com",
         "museums_csv",
         "official_website/visit",
-        "state_record_subset"
+        "state_record_subset",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Wikidata: no search results; Nominatim: no results; City extraction: found 'Claremore' from open data; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:16:38Z",
+      "updated_at": "2026-03-14T20:01:33Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9183410719",
+      "phone": "(918) 341-0719",
       "is_scoreable": false,
       "content_summary": "The Will Rogers Memorial Museums in Claremore, Oklahoma, is a unique tribute to the beloved humorist, actor, and cowboy. Through an extensive collection of memorabilia and exhibits, visitors can immerse themselves in the life and legacy of one of America's most cherished cultural icons.",
       "content_description": "**Will Rogers Memorial Museums** is more than just a museum; it's a heartfelt homage to the life of Will Rogers, who remains a symbol of American wit and wisdom. Located in Claremore, Oklahoma, this extraordinary museum complex showcases an extensive collection of artifacts, photographs, and documents that narrate the story of a man whose humor transcended generations. The museum is set against the backdrop of beautifully landscaped grounds that also feature a stunning memorial to Rogers, giving visitors a serene environment to reflect on his legacy. Each exhibit is designed to engage, educate, and entertain, providing a comprehensive look at the multifaceted life of this remarkable individual.  In addition to the core collections, the museums host rotating exhibitions, such as *The State of Craft 2025*, and other contemporary showcases like **Alicia Kelly: Roughly Right**, allowing guests to experience a dynamic blend of past and present artistic expressions.  The architecture of the museum itself complements its purpose—each building pays tribute to the western spirit Rogers embodied, with design elements that nod to Native American and cowboy cultures. As you explore the galleries, you’ll encounter touching mementos that connect Rogers' heritage to his impact on American culture, offering insights into his roles as an entertainer, writer, and political commentator. The museum also fosters a warm, welcoming atmosphere where laughter reigns, echoing Rogers' own words: 'I never met a man I didn’t like.' Don't miss out on the opportunity to walk the grounds, which include his final resting place, where visitors can pay their respects to a true American icon.  Whether you're an admirer of Will Rogers, a fan of American history, or simply looking for a meaningful experience, the Will Rogers Memorial Museums provide an unforgettable journey through the life of one of America's most endearing figures.  Visiting this museum is not just about viewing exhibits; it's about connecting with the spirit of a man whose humor and philosophy continue to inspire.  **Will Rogers Memorial Museums** is a destination where history, art, and laughter converge, making it a must-visit for travelers exploring the heart of Oklahoma.",
@@ -1449,7 +1879,158 @@
       ],
       "content_generated_at": "2026-01-25T03:16:38Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.willrogers.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 844,
+      "google_reviews": [
+        {
+          "author_name": "Smelling the Roses",
+          "author_url": "https://www.google.com/maps/contrib/101361951839455894938/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUmC1Pw2z3HW1ZNmfqfoeq1qClWLENi2P-VqJBTxCd4KwniVNB3=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful museum, and very friendly people working there. Dont know if the people there were volunteers,  but the distinguished man that met us at the door was very knowledgeable about Will Rogers. I told him he knew enough to be a museum himself. My husband and I enjoyed walking through the main areas. We didnt go to the children's section, or the space section and we only watched 1 movie and it still took us 2 hrs to see what we saw. They had a nice gift shop where we bought our frig magnet. Really lovely place. Lots of parking and several handicapped spots.",
+          "time": 1759349394,
+          "translated": false
+        },
+        {
+          "author_name": "Joe and Tracy McKernan",
+          "author_url": "https://www.google.com/maps/contrib/112734536162704204505/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVsaFUdIEaiS2hqts2vC5sG3-OSbn03kQD5EaUeXuLothnDbJ3t=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Fun side trip from Tulsa to Claremore. Enjoyed the museum, very nice displays, learned a lot about Will Roger's life, insightful and packed a lot in his short time span.",
+          "time": 1771197841,
+          "translated": false
+        },
+        {
+          "author_name": "Irene Estlund",
+          "author_url": "https://www.google.com/maps/contrib/109311727001313992574/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVEcfaZgWroZ5QBCVvNAqNbGSvt_ZqgnzsnUnI6PLtAiUvd09pPOg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Wonderful museum!  Learned so much about Will Rogers.  Donna & Tom are two volunteers who explained so much to us, they were wonderful to talk with!\n\nTalk time to visit this museum!",
+          "time": 1756333115,
+          "translated": false
+        },
+        {
+          "author_name": "Tammy Nowaczynski",
+          "author_url": "https://www.google.com/maps/contrib/108848042255189739479/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKuPiWWGJWxhKKq00q_1VLBGJwdr4F2qNIkT766_O-YHXbD5A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We really enjoyed our visit to the museum.  Very well organized with an array of artifacts, sculptures, paintings, and even an entire theater.  We learned a lot about the birth, life, and death of Will Rogers- Oklahoma's favorite son. The gentleman at the entrance was incredibly informative, giving us things to look for and a thorough explanation of the setup of the museum. The gift shop was also affordable, so we were able to get quite a few souvenirs.",
+          "time": 1735867776,
+          "translated": false
+        },
+        {
+          "author_name": "Phyllis Ogilvie",
+          "author_url": "https://www.google.com/maps/contrib/111716253707476611926/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJVyVxSQciWhLccRSgQnAKWD8ZBAXGJ_IYO0R94NhW9BgLPtoE=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "The museum is such a pleasant way to spend an afternoon and appreciate what a fine Oklahoma Statesman Will Rogers was.   I thoroughly enjoyed his family history, the movies, and the fact that he was such a humanitarian raising money during the depression and even abroad after natural disasters.  He was a great person all the way around and his sense of humor and wisdom lives on. Bravo for an excellent museum staff!",
+          "time": 1754486392,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-unknown-woolaroc-museum-and-wildlife-preserve",
@@ -1461,14 +2042,14 @@
       "website": "http://www.woolaroc.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1925 Woolaroc Ranch Rd",
+      "street_address": "1925 Woolaroc Ranch Rd, Bartlesville, OK 74003, USA",
       "address_line2": null,
       "postal_code": "74003",
-      "latitude": 36.7517,
-      "longitude": -96.03306,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 36.642781,
+      "longitude": -96.0962612,
+      "place_id": "ChIJq3fxiIUTt4cRDK00kdBu2_Q",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Zoo/Aquarium",
       "primary_domain": "Science",
       "topics": null,
@@ -1500,15 +2081,16 @@
         "official_website",
         "http://www.woolaroc.org",
         "museums_csv",
-        "official_website/visit"
+        "official_website/visit",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Bartlesville' from JSON-LD; Inferred primary_domain=Science from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8404000005; Official site: fetched homepage; Official site: cached HTML for LLM enrichment",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:16:46Z",
+      "updated_at": "2026-03-14T20:01:34Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ZOO, AQUARIUM, OR WILDLIFE CONSERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9183360307",
+      "phone": "(918) 336-0307",
       "open_hour_notes": "Summer Hours: Tue-Sun, 10am-5pm",
       "is_scoreable": false,
       "content_summary": "Nestled in the picturesque foothills of the Osage Hills, the **Woolaroc Museum and Wildlife Preserve** offers a unique blend of art, history, and wildlife. Visitors can explore a stunning collection of Western art and artifacts while enjoying vibrant experiences in a wildlife preserve, making it an unforgettable destination for nature and culture lovers alike.",
@@ -1522,7 +2104,138 @@
       ],
       "content_generated_at": "2026-01-25T03:16:46Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.woolaroc.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 1789,
+      "google_reviews": [
+        {
+          "author_name": "Lynsey Benson",
+          "author_url": "https://www.google.com/maps/contrib/102723251251072461047/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKp4fbOces93IqI3cZpOFjVU_hPI8T4b_xQVgTRNO7UIziIsg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Great for all age's. Really enjoyed learning the history behind Frank Phillips and his family. My favorite part was learning about the history of all the Native Indians. So much to look at. Not very expensive, for how much there is to explore. Seeing all animals as you're driving to the museum is so fun.",
+          "time": 1764192062,
+          "translated": false
+        },
+        {
+          "author_name": "Kim M",
+          "author_url": "https://www.google.com/maps/contrib/105814809088666742732/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUI7kHGuyFpPVjX_R8X4vBlBWixoX2LvOIXT_CvbH3cOW7ZPBlu=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Woolaroc Museum in Oklahoma is a wonderful stop for visitors of all ages. The museum features an impressive collection gathered by Frank Phillips, founder of Phillips 66, including Western art, Native American artifacts, firearms, and historical exhibits. The setting itself is beautiful, with scenic grounds and wildlife, making it more than just a museum visit. It’s an easy place to spend a few relaxed hours and a great addition to any trip in the area.",
+          "time": 1766090794,
+          "translated": false
+        },
+        {
+          "author_name": "Twyla King",
+          "author_url": "https://www.google.com/maps/contrib/103787033123423973357/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUSqI34JjPe62i2fITw_nYC2n55TysRVHO1Ve2UAjVXjg1U0m1S=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We recently visited Woolaroc's Wonderland of Lights and there was much fun to be had for the entire family.\n\nThe event is from 5:30PM-9PM. Cars line up at the entryway before the gates even open.  Since it is dark, you're not able to view any of the wildlife on the reserve but that's understandable for the winter season anyways.\n\nThere are several activities around the grounds to do such as: visiting the museum, taking photos with Santa and Mrs. Clause (lobby of museum), going to the Petting Zoo, riding in the hayride (pick-up is outside the barn of petting zoo), and so much more.\n\nI will suggest from personal experience to go on the hayride first then to the museum for photos of Santa afterwards as the lines will typically be shorter in that order. In the year's I have attended, I've noticed people going to visit Santa first and exploring the museum so the noise and crowds can become overwhelming indoors. If you do the hayride and petting zoo first, it gives time for the museum to clear out. On the years I haven't done the hayride first, the line has taken 45mins-1 hour to get on and depending on weather it may be freezing outside. So trust me when I say to go in reverse order! Hayride then photos with Santa.\n\nI, however, do not recommend going to the cafe for concessions or to the cabin for hot chocolate and cookies as those lines can be long as well... there's just so much to do that if you spend your time in line here, you'll miss out on everything else. But to each their own. It's not my family's preference though.  Every year it's the been the same, overly packed jammed full.\n\nOverall, I highly recommend visiting Woolaroc during the holiday season. There will be a crowd no matter the day you attend over the weekend but it is still well worth the experience!",
+          "time": 1765207008,
+          "translated": false
+        },
+        {
+          "author_name": "James Palen",
+          "author_url": "https://www.google.com/maps/contrib/109296269775848295241/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVUZTdZm5b6YN9o6TGDRICJ0GGyhgjX0n384eDaSnqRPI27Fz2UzA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Absolutely amazing. My kids and I enjoyed driving on the property and seeing all the animals. I had a blast taking pictures of items from the museum. I could only post 50 pictures.. but there was so much more to see. Definelty a must when in the area or passing through.",
+          "time": 1755215576,
+          "translated": false
+        },
+        {
+          "author_name": "Donetta Dalman",
+          "author_url": "https://www.google.com/maps/contrib/116940643350463165743/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUZw585yfNWtMUBtVi-N_wIXF4E2tTDn1dfwGT_HhwCPZzn-D27Gw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "What a cool place to visit! They have a lovely scenic drive through the area where you can see animals and beautiful scenery. The museum is incredible! There are so many beautiful pieces of art in there. The stories from the past are amazing and it's such a nice way to spend a day.",
+          "time": 1753363606,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-bartlesville-price-tower-arts-center",
@@ -1534,14 +2247,14 @@
       "website": "http://www.pricetower.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "510 S DEWEY AVE",
+      "street_address": "510 Dewey Ave, Bartlesville, OK 74003, USA",
       "address_line2": null,
-      "postal_code": "74005",
-      "latitude": 36.74764,
-      "longitude": -95.97667,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "postal_code": "74003",
+      "latitude": 36.7478659,
+      "longitude": -95.976247,
+      "place_id": "ChIJNTMpGI8Tt4cRge2uwv183zU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1565,21 +2278,22 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Price Tower Arts Center primarily serves the local community and has limited information on its permanent collections, leading to a low reputation score. The evidence does not provide sufficient details on its Impressionist or Modern/Contemporary collections, nor on its historical context, resulting in null scores for those categories.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence focuses on the Frank Lloyd Wright-designed Price Tower and its later conversion into an arts center/museum, but provides no details about permanent art holdings, so Impressionist and Modern/Contemporary strengths cannot be reliably scored. As a local arts center in Bartlesville with prior assessments indicating local reputation and a small collection tier, it is scored as local (3) and small (3). Some historical/interpretive context is implied through the building’s landmark status ",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Bartlesville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:16:56Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "9183364949",
+      "phone": "(918) 336-4949",
       "is_scoreable": true,
       "content_summary": "In Bartlesville, the Price Tower Arts Center pairs an art-lover’s museum visit with a pilgrimage to one of Frank Lloyd Wright’s most distinctive buildings. Come for the rotating exhibitions—often focused on contemporary craft, ecology, and material experimentation—and stay for the experience of seeing art in a landmark of American modern architecture. With an intimate, local scale and a strong program of seasonal shows, it’s a rewarding stop for travelers who like their museums thoughtful, design-forward, and deeply tied to place.",
       "content_description": "**Price Tower Arts Center** is a small but culturally resonant destination in Bartlesville—especially for visitors who want more than a standard gallery circuit. Rather than relying on a fixed “greatest hits” permanent collection, the museum’s energy comes from **changing exhibitions and artist-centered projects**, such as *The State of Craft 2025* (Dec 5, 2025–Jan 24, 2026) and solo shows including **Alicia Kelly: Roughly Right** (Feb 6–Mar 21, 2026) and **Shawn Smith: Entangled Ecologies** (Apr 3–May 23, 2026). The programming leans into *craft* and contemporary practices—work that rewards close looking at process, materials, and the ideas embedded in making.\n\nFor architecture-minded art travelers, the setting is a major part of the draw: **Price Tower**, designed by **Frank Lloyd Wright**, is an Oklahoma icon and a rare chance to encounter art within a work of *American modernism* that feels sculptural and vertical—more “inhabited design object” than neutral white cube. Expect a viewing experience shaped by the building’s character: shifting sightlines, intimate rooms, and moments where architecture and exhibition design converse.\n\nPlan your visit like you would a focused gallery outing: check the schedule (noting the **winter break closure, Dec 23–Jan 1**) and give yourself time to absorb both the **art on view** and the **architecture itself**. For enthusiasts of contemporary craft, Wright devotees, and travelers tracing Oklahoma’s cultural map, it’s a satisfying, place-specific museum stop.",
@@ -1592,7 +2306,73 @@
       ],
       "content_generated_at": "2026-01-25T03:16:56Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://pricetower.org/",
+      "business_status": "CLOSED_PERMANENTLY",
+      "google_rating": 4.6,
+      "google_reviews_count": 166,
+      "google_reviews": [
+        {
+          "author_name": "Susan - Naperville, IL",
+          "author_url": "https://www.google.com/maps/contrib/117685202554500345887/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWE7i0tkaHdwcecn9wnWWodDXQvGy4AqSGW3thWFfigz50HLVU=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Truly an incredible Frank Lloyd Wright high rise plunked in the middle of Oklahoma. This tour was fantastic since we visited the building, offices, went up in the tiny honeycomb elevator, visited one of the furnished apartments and Mr. Price’s office all which were astounding with all the built ins. Level of detail from the moldings to the stair handles were breathtaking. Highly, highly recommend this incredible tour in this at risk building.",
+          "time": 1719154530,
+          "translated": false
+        },
+        {
+          "author_name": "Joe Dunn",
+          "author_url": "https://www.google.com/maps/contrib/100062721906322964663/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJzL9Vy7ZBNJOjaM3Ys7fCnyK4LF451Lalj4bx1ZZQONui4Jg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "This review is for the \"Inn at the Price Tower.\" It is such a real treat to be able to stay in a Frank Lloyd Wright building as a guest. It is quite eclectic, for sure. Our suite was well appointed. Two levels with floor to ceiling windows on two sides. Bottom floor living area with loft bedroom. Nice views. Staff was very helpful! Quite a bargain, too! Their rates are very fair for the opportunity to stay in a truly historic building like this one!",
+          "time": 1694988755,
+          "translated": false
+        },
+        {
+          "author_name": "Triumph Flower Co.",
+          "author_url": "https://www.google.com/maps/contrib/110382992839213214184/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVuwNOF-lMqDcjw-HtxKu1HOsaTUWfxFJmRi7vxec1JlLKQzoQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This is a really visually interesting location. Lots of art and installations. Great architectural tidbits tucked in corners on the first two floors.. It is in need of a little attention but a great visit for anyone interested in art deco, Frank Lloyd Wright, art or architecture. Current exhibit trends toward Steampunk. Stairs are quite narrow, and crooked (by design) so those that are unsteady should entertain using the elevator. Friendly receptionist. Free but donations suggested.",
+          "time": 1720928179,
+          "translated": false
+        },
+        {
+          "author_name": "Kay Leibel",
+          "author_url": "https://www.google.com/maps/contrib/116680562266158504280/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJYYWqgSuvteEq00pXR2NElzYvQK17BKHvG6Wp4Eju16EPhAA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Who would expect to see a skyscraper designed by Frank Lloyd Wright, office and hotel, in Bartlesville, OK?  Well, there it is! Nineteen floors, with the top three floors restored to their original 1956 condition.  A wonderful restaurant on the 15th and 16th floor with their chef selected from 700 applicants.\n\nWe took the tour of the building and many interesting facts about FLW and Bartlesville.   Please check it out!  You will NOT be disappointed.",
+          "time": 1579124041,
+          "translated": false
+        },
+        {
+          "author_name": "Jeanne Grace",
+          "author_url": "https://www.google.com/maps/contrib/100394165759324664779/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVjHGYnVSwy0GUtFCENMVItrlMgjJPx3CmtvDKgx_vd6f73q5z7=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 3,
+          "relative_time_description": "5 years ago",
+          "text": "As we were looking for Frank Phillips' home, I wanted to see the Price Tower. I had read that Frank Loyd Wright designed the Price Tower in the 50's. It's a pretty tall building. Kind of strange looking. I'm not sure why, but the building is green. There is a very exclusive restaurant on the 15th floor. They said reservations are recommended. I read the menu and it's a little pricey for me, so I can not give any advice on it.",
+          "time": 1604872964,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-duncan-chisholm-trail-heritage-center",
@@ -1604,14 +2384,14 @@
       "website": "http://www.onthechisholmtrail.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2150 Chisholm Trail Pkwy, Duncan, OK 73533, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 34.51712,
-      "longitude": -97.97984,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "73533",
+      "latitude": 34.5154375,
+      "longitude": -97.98338389999999,
+      "place_id": "ChIJyboyjFdDrYcRl1RNrJsFNGQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -1644,15 +2424,16 @@
         "http://www.onthechisholmtrail.com",
         "museums_csv",
         "official_website/visit",
-        "state_record_subset"
+        "state_record_subset",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Duncan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:17:04Z",
+      "updated_at": "2026-03-14T20:01:36Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "5802526692",
+      "phone": "(580) 252-6692",
       "is_scoreable": false,
       "content_summary": "The Chisholm Trail Heritage Center is a must-see destination for anyone fascinated by the history of the American West. This museum vividly brings to life the stories of cattle drives, pioneers, and the rich cultural tapestry of the region, making it a unique and immersive experience for visitors of all ages.",
       "content_description": "**Chisholm Trail Heritage Center** offers a captivating glimpse into the history of one of the most significant cattle trails in the United States. Nestled in Duncan, Oklahoma, this historic preservation museum expertly showcases the extraordinary journey of cattle drives in the 19th century, blending interactive exhibits with authentic artifacts. Visitors can step back in time and experience life on the trail, where they’ll learn about the brave cowboys and cattlemen who played a pivotal role in shaping the American landscape. The center's engaging displays are designed to resonate with history enthusiasts, families, and anyone curious about the American frontier experience.  \n\nThe museum’s architecture harmoniously echoes its historic subject matter, featuring visuals that reflect the rugged yet bold spirit of the Old West. Guests can enjoy immersive exhibits such as a life-size cattle drive diorama, enhancing their understanding of this unique chapter in American history. The **Chisholm Trail Heritage Center** also offers a diverse range of educational programs and special events, ensuring that every visit is dynamic and enriching. Whether you’re intrigued by the cultural exchanges along the trail or the challenges faced by pioneers, this museum provides an inspiring and informative adventure. Don’t miss the opportunity to delve into the heart of the American West and take home enduring stories of innovation, resilience, and discovery.",
@@ -1665,7 +2446,158 @@
       ],
       "content_generated_at": "2026-01-25T03:17:04Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://onthechisholmtrail.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 313,
+      "google_reviews": [
+        {
+          "author_name": "Michael Philliber",
+          "author_url": "https://www.google.com/maps/contrib/104233792966820041018/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXnxQpF1dag1hpY_1cAH1Bf4vkY679Lo8sXDyj1SBaorIxnMQfg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We had such a great visit. The ladies at the check-in desk gave us a red-carpet treatment and made the visit even more enjoyable. The video/theater presentation was delightful, and all the rest. Highly recommend.",
+          "time": 1760043474,
+          "translated": false
+        },
+        {
+          "author_name": "Spike Speedwell",
+          "author_url": "https://www.google.com/maps/contrib/118034878221730758191/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXunMKUlCd0YMeeHqH1ray_xYpScNQ2m7sgI3S-yDVhGm7-tbyM=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Informative and lots of interactive displays.\n\nA very nice small museum that does a great job of conveying what life was like on the cattle drive. They have several hands on displays that are great for kids and adults. There is a movie theater that shows an 18 minute video about life on the cattle drive. I especially enjoyed their collection of western art. Their collection includes Remington, Russell and Catlin paintings. The outdoor bronze sculpture is amazing.\n\nThe staff is very nice! They are very knowledgeable of the history of the Chisholm trail and more than willing to share their knowledge with visitors.",
+          "time": 1729901629,
+          "translated": false
+        },
+        {
+          "author_name": "Shelby Waddell",
+          "author_url": "https://www.google.com/maps/contrib/105558873929771060503/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUtYAweWQ5-B-Nui9TUjl8zXHfqBjYKTvGgXdi39YzFJjjWx3KMmQ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We are from out of state and stopped at this museum on a drive to a different attraction. We are North American Reciprocal Museum (NARM) members. So, we knew our admission would be free and thought we would only spend a few minutes in the building. However, we were so wrong.  This is one of the best NARM museums we’ve ever visited. We were warmly greeted by a lady at the front desk who knew how to process our membership and took the time to walk us through the floor plan of the museum, share some interesting facts, and start a video program for us. Though small, the exhibits are wonderfully designed to hold interest, peak curiosity, and thoroughly inform. There is an art gallery, an interactive touch exhibit, a campfire animatronic show, and a 4D theater with many smells and effects. We spent more time than we anticipated here and are so glad that we could.",
+          "time": 1737227779,
+          "translated": false
+        },
+        {
+          "author_name": "Dori Hertel",
+          "author_url": "https://www.google.com/maps/contrib/108289795590986770467/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVg3jVhMteYjrrLdzil58UzRKS347mqhK14_XGawGKkIXY5_PD9=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "This place is awesome!  There is a 4D cinema with a well told story of the Chisolm Trail. They have a short animatronics show in their second theater. Wonderful interactive exhibits for kids. The art museum is small but very well set up. We arrived about 30 minutes before closing and, after learning we were from Texas, encouraged us to see everything despite staying late for us! The only bad part was realizing that I qualified for their senior discount 😂",
+          "time": 1749165252,
+          "translated": false
+        },
+        {
+          "author_name": "Traci E",
+          "author_url": "https://www.google.com/maps/contrib/114128556226463922498/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVFswBjG4mRRvWuH_t3uAw96R0X2vQGccKg5fKFmE9_G0laqevi4A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Awesome center! Worth a visit. The host/hostess guides you through and you watch a short animatronics show as well as a narrated cattle drive (watch out when it rains!). There are interactive exhibits to make your own brand, take a trail boss quiz, and learn about various sundries at the Duncan General Store. The gallery of Western fine art is impressive and some items are for sale. Finally, a little gift shop offers some souvenirs for all ages!",
+          "time": 1661859634,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-grove-har-ber-village-museum",
@@ -1677,14 +2609,14 @@
       "website": "http://www.har-bervillage.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "4404 West 20th Street",
+      "street_address": "4404 W 20th Rd, Grove, OK 74344, USA",
       "address_line2": null,
       "postal_code": "74344",
-      "latitude": 36.577667,
-      "longitude": -94.8267053,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 36.577641,
+      "longitude": -94.82657599999999,
+      "place_id": "ChIJn1dZ6pIzyIcRIFbZ9_E9f5w",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1715,15 +2647,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.har-bervillage.com",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Grove; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: no results; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8404000071; Official site: fetched homepage; Official site: cached HTML for LLM enrichment",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:17:13Z",
+      "updated_at": "2026-03-14T20:01:37Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9187866446",
+      "phone": "(918) 786-6446",
       "open_hour_notes": "Nature Trails OPEN Year Round Har-Ber Village Museum is closed for 2025! Nature Trails OPEN Year Round Village Re-opens for tours Saturday March 7, 2026",
       "is_scoreable": false,
       "content_summary": "Nestled in the heart of Grove, Oklahoma, **Har-Ber Village Museum** is a captivating journey through early Americana, featuring over 100 genuine structures and artifacts from the 1800s to the 1950s. This living history museum offers visitors an immersive glimpse into the past, making it a must-visit destination for history enthusiasts and families alike.",
@@ -1737,7 +2670,138 @@
       ],
       "content_generated_at": "2026-01-25T03:17:13Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.har-bervillage.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1530"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1530"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1530"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1530"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1530"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 3:30 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 9:00 AM – 3:30 PM",
+          "Friday: 9:00 AM – 3:30 PM",
+          "Saturday: 9:00 AM – 3:30 PM",
+          "Sunday: 9:00 AM – 3:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 565,
+      "google_reviews": [
+        {
+          "author_name": "Twyla King",
+          "author_url": "https://www.google.com/maps/contrib/103787033123423973357/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUSqI34JjPe62i2fITw_nYC2n55TysRVHO1Ve2UAjVXjg1U0m1S=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Har-Ber Village Museum is great and I do recommend visiting it whether you're a local or tourist.\n\nHowever, did you know they have a nature trail, and its free to explore?! We visit it regularly. It is a great place to get outdoors and to go for a little stoll.\n\nThere are two-miles of trails, some paved, which are handicap accessible and others that are non-paved.\n\nAs birders, this, is also a great spot to sit along the lakeside and watch as the birds fly by.  Sometimes, you may even catch a pelican or crane swoop down after a fish.",
+          "time": 1766354192,
+          "translated": false
+        },
+        {
+          "author_name": "Donetta Dalman",
+          "author_url": "https://www.google.com/maps/contrib/116940643350463165743/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUZw585yfNWtMUBtVi-N_wIXF4E2tTDn1dfwGT_HhwCPZzn-D27Gw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "What a cool place! We had such a great time visiting this museum. The staff were so welcoming and friendly and the grounds are just beautiful. All of the buildings and displays are amazing to see. They're very well preserved and give you a great glimpse into history.\n~RoadLifeAdventure",
+          "time": 1760109443,
+          "translated": false
+        },
+        {
+          "author_name": "Kim Wilkerson",
+          "author_url": "https://www.google.com/maps/contrib/115815991926634385833/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJsRhba526gNl-kV9mRwy80mk7poVGINYaL6Xm1HtrFSa0R8g=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "This place was amazing!!!!Me and my youngest son went and toured the village. We were up for the National High School Fishing Tournament. The staff was very friendly and helpful. Must see and do!!!",
+          "time": 1751116676,
+          "translated": false
+        },
+        {
+          "author_name": "Tilly Lo",
+          "author_url": "https://www.google.com/maps/contrib/100390448201842012508/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVIFfjkSUs9jq1Nl3rx3pO7zemmOyMMFGDFZ1tdpHYTz9I0J8fEeA=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "20241005 Wow! This Village Museum is amazing, the best one ever. It has a huge collection of items to include dolls, boy scout, girl scout, military, spoons, marbles as well as furniture, equipment, and so much more. My favorite are the church, courthouse and Jail. The jail cell is perfect for psychopaths. 🤣 There is so much to see. Because it was so hot when we were there and too hot for my pups, I didn't see everything and still spent 1.5 hours. I can easily spend an entire day there or longer. This village is very dogfriendly. The gift shop  is small. The lady knew the woman who made the Angels that I bought all to give to my Christian friends. 🙏✝️🙏",
+          "time": 1728172000,
+          "translated": false
+        },
+        {
+          "author_name": "Dayna Mohr",
+          "author_url": "https://www.google.com/maps/contrib/111696215255388922189/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJuy__gKOY58iUngONNwWO_DC0qNSXnQHYC9R3IF3gY8I0jeDea=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "I brought a group of 22 for a day trip from Van Buren, AR.  We spent 2 hrs 45 min walking the grounds and seeing the displays. Most of the group were made up of senior citizens. Many comments were made about how beautiful the setting was beside Grand Lake. Also, how well kept the grounds were and how extensive the displays were. Everyone enjoyed visiting Har-Ber Museum.",
+          "time": 1750721638,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-norman-fred-jones-jr-museum-of-art",
@@ -1749,14 +2813,14 @@
       "website": "http://www.ou.edu/fjjma",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "20 and look forward to welcoming everyone back in 2026. Fred Jones Jr Museum of Art 555 Elm Avenue",
+      "street_address": "555 Elm Ave, Norman, OK 73019, USA",
       "address_line2": null,
       "postal_code": "73019",
-      "latitude": 35.2107272,
-      "longitude": -97.447323,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.2107325,
+      "longitude": -97.44726639999999,
+      "place_id": "ChIJYatgF9JpsocRMZ1m_2KSntI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1780,24 +2844,25 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum is known regionally within Oklahoma but lacks sufficient evidence to assess its impressionist or modern/contemporary strengths. Its collection is respectable but limited in scope, leading to a moderate collection tier score.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence only identifies it as a university art museum, without details on permanent collection strengths or interpretive approach, so period-specific and context scores cannot be determined. Using the provided existing assessments, it is best characterized as a regional museum with a moderate collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.ou.edu/fjjma",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Norman; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8409503228; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:17:23Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "4053253272",
+      "phone": "(405) 325-3272",
       "open_hour_notes": "Hours: Tuesday through Saturday: 10 a.m. to 5 p.m.",
       "is_scoreable": true,
       "content_summary": "On the University of Oklahoma campus, the Fred Jones Jr. Museum of Art is a rewarding stop for art lovers who want big ideas without big-city crowds. Expect a thoughtfully scaled museum where changing exhibitions keep the experience fresh—especially for visitors interested in contemporary craft and ecological themes in art. With a calm, campus setting and an academic spirit, it’s an ideal place to slow down, look closely, and deepen your understanding of how artists make meaning through materials.",
@@ -1811,7 +2876,148 @@
       ],
       "content_generated_at": "2026-01-25T03:17:23Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.ou.edu/fjjma/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 509,
+      "google_reviews": [
+        {
+          "author_name": "Kate Evans",
+          "author_url": "https://www.google.com/maps/contrib/118367567076894051397/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJKKg-YGoVgmiA3ayxdRyRqweSBDTa8ClQo2cPWjaWO07sR6w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "I love this museum! It is located on the beautiful OU campus in Norman Oklahoma . I visit it one to two times a quarter because it has rotating exhibits. It also has the only Van Gough in the state of Oklahoma.",
+          "time": 1772150050,
+          "translated": false
+        },
+        {
+          "author_name": "Prasad Kaladi",
+          "author_url": "https://www.google.com/maps/contrib/105757486826262505884/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUG4m3EYTFcRFKjPQyQ9VFYX5DdHr9wbwIIuexV8ykvFeRKPyytkw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 3,
+          "relative_time_description": "a year ago",
+          "text": "Visiting the Fred Jones Jr. Museum of Art was a great experience. Located at the University of Oklahoma in Norman, it is easy to get to and has a friendly atmosphere. The building is modern and attractive.\n\nInside, the art collection is impressive. The American art section, featuring works by Georgia O'Keeffe and Allan Houser, stood out. The Native American art collection was also very interesting and gave a good look into their culture. The contemporary art pieces were unique.\n\nThe museum does a great job of educating visitors. There are informative plaques and interactive displays that help you understand the art better. The staff are friendly and knowledgeable, ready to help with any questions.\n\nThe gift shop is nice too, with a good selection of art-related items and souvenirs.\n\nFrom Tuesdays to Saturdays, it is open from 10 AM to 5 PM and on Sundays it's open from 1 PM to 5 pm. The museum is closed on Mondays.",
+          "time": 1719255680,
+          "translated": false
+        },
+        {
+          "author_name": "Elizabeth",
+          "author_url": "https://www.google.com/maps/contrib/117000742353235441143/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXtGkSqAUAbqVcSGjq2OueYVAKZYsZedYVJ_b0NqAtiHwjJ9u3L=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "There were a lot of cool pieces, and the few staff we encountered were very nice. I couldn’t carry my backpack through, but my companion could take her belt bag. The staircases were beautiful and everything was very clean and well laid out. Cool museum to check out on humid or colder days if you’re looking for something free to do inside. I’d love to go back again when they change the exhibits.",
+          "time": 1714163146,
+          "translated": false
+        },
+        {
+          "author_name": "Mai Nguyen",
+          "author_url": "https://www.google.com/maps/contrib/111931944674031328553/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIWqOLVrYdWZYe8xd0_LhM7lg3wQp6P8SocANcJEl1Bo20uXMJ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "This was an amazing art museum. I particularly liked the Native American pottery exhibit. The reason why I’m giving this review a four star is because of the security guard. I understand that it’s important to keep an eye out on anybody suspicious, but there’s no need to stomp on your foot and glare at me. I felt something was off the moment I greeted the security guard and they ALL gave me the silent treatment. I went on my day to explore the museum. Right when I was done with taking photos, one security guard kept eyeing on me and created a very intimating atmosphere. I don’t think I want to go back.",
+          "time": 1763186044,
+          "translated": false
+        },
+        {
+          "author_name": "Belem Carrasco",
+          "author_url": "https://www.google.com/maps/contrib/101165444239539668421/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXSt0vA7MertKTR7g_t5kmAVwgg0Nk1n0Ka_MMZu6wBiCIRJ3Sm0Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "I went to a study hours event there, and it was the perfect opportunity to roam around for a bit. The place is bigger than I expected, with many great spots to sit down and contemplate the art exhibit. People at the front desk are friendly and helpful. I will come back to check it out.",
+          "time": 1746394709,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-shawnee-mabee-gerrer-museum-of-art",
@@ -1823,14 +3029,14 @@
       "website": "http://www.mgmoa.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1900 W MacArthur St, Shawnee, OK 74804, USA",
       "address_line2": null,
       "postal_code": "74804",
-      "latitude": 35.3661108,
-      "longitude": -96.9550809,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 35.3661002,
+      "longitude": -96.9550297,
+      "place_id": "ChIJt5zhQde3s4cRHZH7ggHYQrY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1854,23 +3060,24 @@
       "historical_context_score": 4,
       "priority_score": 15,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a diverse collection spanning various cultures and historical periods, but there is no specific mention of Impressionist or Modern/Contemporary works. Its reputation is local, primarily serving the Shawnee community, and the collection is respectable but limited in scope.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum describes an encyclopedic collection of 3,500 works spanning 8,000 years and many world cultures, which supports a solid historical/educational framing, though specific interpretive depth is not detailed. No specific evidence is given for notable Impressionist or Modern/Contemporary holdings, so these are scored as minor representation. Its location and signals suggest primarily local reputation, while the broad but likely not deeply concentrated collection supports a moderate collect",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "museums_csv",
         "official_website/visit",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Shawnee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4058785300",
+      "phone": "(405) 878-5300",
       "is_scoreable": true,
       "content_summary": "In the heart of Shawnee, the Mabee-Gerrer Museum of Art rewards curious art lovers with an intimate, thoughtfully programmed visit. While local in scale, it offers the pleasures of close looking—rotating exhibitions that spotlight craft and contemporary practice, a calm gallery rhythm, and the sense of discovering a museum that’s deeply connected to its community. Time your trip around its exhibition calendar for a fresh experience, then linger: this is the kind of museum where details—and conversations—stay with you.",
       "content_description": "**Mabee-Gerrer Museum of Art** in Shawnee is a satisfying stop for travelers who prefer museums where you can see everything without rushing—and where the curatorial voice feels personal. Rather than relying on blockbuster crowds, MGMoA builds its appeal through **rotating exhibitions** that bring new work into focus and encourage repeat visits. Recent and upcoming programming points to a strong interest in the handmade and the experimental: **_The State of Craft 2025_** (Dec 5, 2025–Jan 24, 2026) highlights contemporary craft’s material intelligence and studio rigor, while solo shows such as **Alicia Kelly: _Roughly Right_** (Feb 6–Mar 21, 2026) and **Shawn Smith: _Entangled Ecologies_** (Apr 3–May 23, 2026) suggest an engagement with current ideas around process, environment, and form.\n\nFor art enthusiasts, the pleasure here is the **visitor experience**: quieter galleries that invite sustained looking, approachable interpretive materials, and a schedule that makes it easy to plan a return around new installations. Check dates before you go—MGMoA notes a **winter break closure (Dec 23, 2025–Jan 1, 2026)**—and consider pairing your visit with time to absorb the shift in mediums and techniques from show to show. If you love tracing how artists think through materials—fiber, clay, paper, mixed media—this museum’s programming makes Shawnee feel like a worthwhile detour on an Oklahoma art itinerary.",
@@ -1887,7 +3094,149 @@
       "overall_quality_score": 7,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "https://www.mgmoa.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 343,
+      "google_reviews": [
+        {
+          "author_name": "Ashley Hiatt",
+          "author_url": "https://www.google.com/maps/contrib/112178753694550806903/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL2BAMlaVe0EaloGcphugZ9-nqqN_cwH21fM-XV0ufB70fYUA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Im so glad we found this neat museum!! Such a wonderful experience! We were lucky enough to be able to see the Madonna and Child collection, which was an even better surprise!!",
+          "time": 1771810827,
+          "translated": false
+        },
+        {
+          "author_name": "Flip Out",
+          "author_url": "https://www.google.com/maps/contrib/107472940798252838822/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWoTKdnGnRljaT8rqyNpZAwmgkB_GZVwBns39bmb49QFQ35-sOl=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We had been here before but this was the first time for the Littles.  The price is just right for the size of the museum but the artwork and historical artifacts are truly unique.  The Littles enjoyed the wide range of sights to see with one fascinated by the mummy’s and the other ready to skip the area all together so fyi.  We look forward to make another trip out here again since they do a rotation of exhibits.",
+          "time": 1759245734,
+          "translated": false
+        },
+        {
+          "author_name": "robin poston",
+          "author_url": "https://www.google.com/maps/contrib/118396495123537047227/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWN_Z2ER6axmIXbwkZ7UL5aMdBGZOfAYQ3q9z6CENmPrj433gGW9w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Love coming here with my husband! Tutu is a permanent resident where the Madonna and child exhibit leaves Valentines Weekend.",
+          "time": 1770850836,
+          "translated": false
+        },
+        {
+          "author_name": "Spike Speedwell",
+          "author_url": "https://www.google.com/maps/contrib/118034878221730758191/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXunMKUlCd0YMeeHqH1ray_xYpScNQ2m7sgI3S-yDVhGm7-tbyM=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Small, But Some World Class Museum Items\nI still can’t believe I got to see a real mummy! And then real shrunken heads…in Oklahoma! This is a small, but amazing collection.   The museum also has a good collection of other Egyptian artifacts.  It has a first-class collection of art (paintings, sculpture, and pottery), cultural art and historical artifacts. It is well worth the time and it is free!",
+          "time": 1730597636,
+          "translated": false
+        },
+        {
+          "author_name": "jeana tiger",
+          "author_url": "https://www.google.com/maps/contrib/100939141423767267776/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKV4fOCjOocZB-6kF5FQNT526fYFLrt9emYyRSv7AD_wno4yg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "What an amazing experience with the mummy day! Staff was knowledgeable and friendly. Will definitely attend again.",
+          "time": 1763785130,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-ok-tulsa-gilcrease-museum",
@@ -1899,14 +3248,14 @@
       "website": "http://www.gilcrease.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1400 N Gilcrease Museum Rd, Tulsa, OK 74127, USA",
       "address_line2": null,
       "postal_code": "74127",
-      "latitude": 36.1746946,
-      "longitude": -96.0212756,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 36.1742658,
+      "longitude": -96.0210402,
+      "place_id": "ChIJgf7O0rXrtocRbNIDItgE5rs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1937,12 +3286,13 @@
         "walker_reciprocal",
         "openstreetmap",
         "museums_csv",
-        "official_website/visit"
+        "official_website/visit",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tulsa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:17:38Z",
+      "updated_at": "2026-03-14T20:01:40Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": false,
@@ -1957,7 +3307,74 @@
       ],
       "content_generated_at": "2026-01-25T03:17:38Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(918) 596-2700",
+      "website_google": "http://gilcrease.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.7,
+      "google_reviews_count": 1514,
+      "google_reviews": [
+        {
+          "author_name": "K O",
+          "author_url": "https://www.google.com/maps/contrib/111254585460081330850/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWEfebbAcz5Fq0wV0qL9Xo_3ILRjpRk6eJ649clHW0ODYQt6M-T=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 3,
+          "relative_time_description": "a year ago",
+          "text": "We visited in late April 2024 and walked around the grounds. The museum was closed, and the northern part of the grounds are closed off for construction. But we were able to walk around the southeastern part of the gardens. It looks a bit neglected now since they aren't expecting many visitors, but they may be prettier when everything is open again.",
+          "time": 1715190922,
+          "translated": false
+        },
+        {
+          "author_name": "Brian Franks",
+          "author_url": "https://www.google.com/maps/contrib/105059253566722998795/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXC-q-LuPy6dYUyglLo7Yx5bbt7iC70MhxFHHy86B3NY_EHHS75=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Definitely worth a visit at least once. The museum is great, but the gardens and park don't get their due. A must see, the pictures do them no justice. The only disappointment in the gardens are the pre-columbian and Pioneer gardens, they need some attention. As for the museum, they've got several play corners for kids and an entire kid-focused exhibit down stairs. The masterwork and permanent collection of western and Native American art was stunning and interesting. It was great to see the bronze sculptures and the gigantic paintings. Recommended.",
+          "time": 1531947706,
+          "translated": false
+        },
+        {
+          "author_name": "Durgga Muthu",
+          "author_url": "https://www.google.com/maps/contrib/113762791277188602385/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK1Ap8FTj8PaImjyxihOzYAJiXbyaIh0RI8Sc02ad6WiPbYNw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "Some of the gardens were fantastic. It was so Peaceful there. The museum was great it had a large variety of paintings, photographs and sculpture. It's the best place to go to learn about art. Your kids will love it there. They have some activities today we made time capsule and it was soooooo fun. I would highly recommend this place.",
+          "time": 1532307129,
+          "translated": false
+        },
+        {
+          "author_name": "Kaylin B",
+          "author_url": "https://www.google.com/maps/contrib/115092616876152232123/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV1-v90A9-VmENIEa0cv4iA23KilFq5SFeAdbAAn_bPzheFsf2P=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Great museum filled with Native American relics. We spent about 2 hours inside and wandering around the gardens. My boyfriend actually learned quite a bit about his ancestors. I loved the landscaping and the different themed gardens from all the ages. Definitely a must see if you’re in Tulsa.",
+          "time": 1624909483,
+          "translated": false
+        },
+        {
+          "author_name": "50 in a bottle",
+          "author_url": "https://www.google.com/maps/contrib/113448546708792566762/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKUWY3wubYk6awLtp7JCY_-69WgE-E3lo0PSU0to5ViStwrGg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Very nice museum and worth a visit. Artifact room on lower level has more artifacts than you could look at in a day with a wonderful interactive e-guided tour via a tablet you can carry with you as you go through this section. Upstairs has visiting exhibits and some wonderful bronze work by artists such as Remington.  There are wonderful paintings and the gardens are beautiful and peaceful. Great place to spend a morning or afternoon. The current Pulitzer prize exihbit is very intense, you might not want to take small children through it.  But do see it. It will move you.",
+          "time": 1557341512,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ok-tulsa-philbrook-museum-of-art",
@@ -1969,14 +3386,14 @@
       "website": "http://www.philbrook.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "2727 S Rockford",
+      "street_address": "2727 S Rockford Rd, Tulsa, OK 74114, USA",
       "address_line2": null,
       "postal_code": "74114",
-      "latitude": 36.123781,
-      "longitude": -95.9701736,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 36.1238549,
+      "longitude": -95.9700944,
+      "place_id": "ChIJ0VsvX7DstocRErAJ14RYDhI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -2000,9 +3417,9 @@
       "historical_context_score": 3,
       "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a strong focus on Native American art and showcases a variety of collections, indicating a significant depth in its holdings. However, there is no specific mention of Impressionist or Modern/Contemporary works, and the historical context is not detailed in the evidence provided.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia describes nine collections spanning global art, with a cornerstone focus on Native American art rather than European Impressionism, suggesting only minor Impressionist representation. The broad, multi-style scope implies moderate Modern/Contemporary coverage, though not a primary emphasis. As a long-standing art museum with multiple collections, it likely provides some interpretive framing, but the evidence does not confirm strong chronological/educational depth.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
@@ -2010,15 +3427,16 @@
         "http://www.philbrook.org",
         "museums_csv",
         "official_website/visit",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Tulsa; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8404000562; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9187485318",
+      "phone": "(918) 749-7941",
       "open_hour_notes": "Today we are Closed Museum & Gardens Monday Closed Tuesday Closed Wednesday Closed Thursday Closed Friday Closed Saturday Closed Sunday Closed Closed for Winter Break until January 21, 2026.",
       "is_scoreable": true,
       "content_summary": "Set in a spectacular Italian Renaissance–style villa surrounded by lush formal gardens, Philbrook Museum of Art is Tulsa’s most atmospheric art destination. Come for the mansion-turned-museum experience—grand rooms, terraces, fountains, and quiet garden paths—and stay for thoughtfully curated exhibitions that balance regional creativity with broader art-historical conversations. With changing shows highlighting craft and contemporary voices, Philbrook is especially rewarding for visitors who love art in dialogue with architecture, landscape, and place.",
@@ -2036,8 +3454,140 @@
       "overall_quality_score": 12,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.philbrook.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 9:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 4440,
+      "google_reviews": [
+        {
+          "author_name": "T",
+          "author_url": "https://www.google.com/maps/contrib/113397488815833204411/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXzJt4sA28L6UQcQQOowHpiKrNevwUFZ1qiFKihL-SHywAxuLI=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "The museum is absolutely stunning! The landscape design is breathtaking, the building itself is remarkable, and the interior is truly beautiful. But what really amazed me was the collection — an incredibly diverse range of exhibits. I hadn’t heard of this museum before and wasn’t expecting to see so many wonderful works. Visiting was a delightful surprise. I also want to especially highlight the friendliness of the museum staff. I definitely highly recommend it!",
+          "time": 1764293136,
+          "translated": false
+        },
+        {
+          "author_name": "TLP",
+          "author_url": "https://www.google.com/maps/contrib/108683359802883989288/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLxp8QmW836Mn_5-li2B-xTMn57nY8GSCtWw37JZfpwhsN--A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This museum is such an experience, and would be worth visiting even if there weren't any art since the mansion and the gardens are such an experience in themselves.\n\nThe Patrick Gordon exhibit is top notch: so inspiring! And I love how each room in the mansion has a unique vibe and art coordinated to match it.\n\nThe holiday lighting in the garden is magical. I grew up near Disneyland and the garden lighting is a top notch wonderland at night with the lights and music. I wish my phone could do better capturing it, but you have to experience it for yourself.\n\nWhat a beautiful place!",
+          "time": 1765260146,
+          "translated": false
+        },
+        {
+          "author_name": "David Young",
+          "author_url": "https://www.google.com/maps/contrib/117102776259153466094/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIcg5rt_JWf1OpWYo0cLMPQxkd6mD1SL0xIR0qSuGml7nXs-w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "We honestly didn’t know what to expect when we decided to stop by here — it was totally a spontaneous, last-minute plan 😄. My expectations were pretty low, but wow… I was completely blown away! 🤯 This place is an absolute treasure and so much fun to explore. You can easily lose track of time wandering through three floors filled with some of the most fascinating and creative art I’ve ever seen 🎨🖼️. There’s something for everyone, from beautiful old religious paintings to bold and unique abstract pieces.\n\nAnd it doesn’t stop there! After enjoying the incredible art inside this stunning building, you can step outside into a breathtaking garden 🌸🌿. The house and the yard themselves feel like living art. There are so many peaceful corners to relax, feed the fish 🐟, smell the flowers 🌺, and just soak in the calm atmosphere 😌. I would absolutely recommend this place to anyone — it’s inspiring, relaxing, and truly unforgettable! 💖✨",
+          "time": 1772464519,
+          "translated": false
+        },
+        {
+          "author_name": "Ash Corona Westmuckett",
+          "author_url": "https://www.google.com/maps/contrib/105280029447623566110/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWH5wo8rmfO6PGeLo-OFGAqucwhzi21Z0-EBtgNyffhLCcV5l6h6Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Great day out for art lovers. They have a good mix of different time periods and the layout is easy and accessible, this was my our second time coming so it was nice to see how some of the exhibits have changed over the years. The coffee shop was a nice stop over breaking the day with a peaceful rest in the gardens delicious coffee in hand. Come check it out, it's worth the stop if you appreciate art.",
+          "time": 1770504874,
+          "translated": false
+        },
+        {
+          "author_name": "Bee",
+          "author_url": "https://www.google.com/maps/contrib/104343074375106370086/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLCCVgYZMZ9Lldw8DU7xZ0_kuNhBq7sK1skMTr0MVo04eJWR0=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Absolutely stunning building, the museum alone is a stunning structure that houses a lot of different art styles and even their garden is a stunning exhibit of art and beauty. Absolutely worth coming and spending a couple of hours here, well worth the drive. Staff were super friendly and plenty of signage and very clean.",
+          "time": 1764203569,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

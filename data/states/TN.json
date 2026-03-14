@@ -20,7 +20,7 @@
       "longitude": -83.92530370000001,
       "place_id": "ChIJO1xiEtwXXIgRmm_KSOLwQxg",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -44,19 +44,19 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Knoxville Museum of Art has a modest collection and serves primarily the local community, as evidenced by its prior collection tier and local reputation. The historical context score reflects its role in preserving local culture and history, but it lacks significant national relevance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the Knoxville Museum of Art’s permanent collection or interpretive approach, so Impressionist, Modern/Contemporary, and historical-context scores cannot be determined. Based only on its location in Knoxville and lack of corroborating prominence signals, it is best assessed as primarily local in reputation, with a likely moderate (non-flagship) collection tier for a city art museum.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Tennessee' from open data; MRD: computed city_tier=3 for Tennessee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:32:20Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(865) 525-6101",
@@ -226,14 +226,14 @@
       "website": "http://www.brooksmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1934 Poplar Avenue",
+      "street_address": "1934 Poplar Ave, Memphis, TN 38104, USA",
       "address_line2": null,
       "postal_code": "38104",
-      "latitude": 35.14238,
-      "longitude": -89.99601,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.1445403,
+      "longitude": -89.9945175,
+      "place_id": "ChIJdWZ9vKaAf4gRDizIIqUmI9s",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -254,26 +254,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 3,
+      "priority_score": 13,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a supporting collection that is largely illustrative and does not have notable significance for national scholarship. Its historical context is primarily local, with roots in the community, aligning it with its role as the largest art museum in Tennessee.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates it is the oldest and largest art museum in Tennessee, suggesting a respectable, general permanent collection but not necessarily deep Impressionist holdings. As a major state art museum, it likely includes some modern and contemporary works and provides moderate interpretive/historical framing, with a primarily regional reputation.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.brooksmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Memphis' from open data; MRD: computed city_tier=1 for Memphis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "9015446200",
+      "phone": "(901) 544-6200",
       "is_scoreable": true,
       "content_summary": "Set in the leafy heart of Overton Park, the Memphis Brooks Museum of Art offers a rewarding, unhurried way to experience big ideas in a regional-scale museum. Its galleries move from European painting and sculpture to American art and works on paper, giving visitors a clear sense of artistic lineages without the crowds of larger institutions. Come for the pleasure of close looking, the elegant setting, and the feeling of discovering a city’s cultural memory in one concentrated stop.",
       "content_description": "**Memphis Brooks Museum of Art** is Memphis’s long-standing art anchor, and its charm lies in how much you can absorb at a comfortable pace. As a regional museum with a **modest but thoughtfully presented collection**, it’s ideal for travelers who prefer close viewing over marathon museum days. You’ll encounter a cross-section of European and American traditions—paintings, sculpture, and works on paper—often organized to show how styles evolve from classical conventions to more modern approaches. For art lovers, the pleasure is in the details: brushwork you can study up close, intimate gallery transitions, and the way a smaller institution can frame familiar periods with a distinctly local point of view.\n\nThe museum’s setting in Overton Park adds to the experience. Its **purpose-built museum architecture** reads as dignified and civic—an inviting, light-filled place to slow down and look carefully. Expect a calm visitor flow, clear sightlines, and galleries that encourage repeated passes (especially useful for prints and drawings, where nuance rewards time).\n\nPlan to pair your visit with the park itself and nearby cultural stops; it’s the kind of museum that fits beautifully into an art-focused day in Memphis. Check the schedule for **special exhibitions** and rotating installations, which often provide the most surprising moments—new artists, fresh themes, and contemporary dialogues that complement the core holdings.",
@@ -291,7 +292,139 @@
       "collection_based_strength": 2,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://brooksmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 1085,
+      "google_reviews": [
+        {
+          "author_name": "Leo Carter",
+          "author_url": "https://www.google.com/maps/contrib/110438862783756116824/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVt8QKhXcK3_7TMg8TC9fkg6a1TpfHaVq7vBN77RWmSo0WctXMZ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "It was an overall good time.  We attended the Candle Light... Neo-Soul program there. The show started on time. The young lady that narrated it was very informative and energetic. It's a small theater, so there was no bad seat. The way they played their string instruments was amazing. The complimented each other well. The only, slight, drawback I had was my drink. A lot too much lemon juice and not enough whiskey.  It was a drink I hadn't tried before, but the only thing on the menu with whiskey in it, so I dared. I think anyone attending Candle Light would enjoy it.",
+          "time": 1763829335,
+          "translated": false
+        },
+        {
+          "author_name": "Sha",
+          "author_url": "https://www.google.com/maps/contrib/101225184765297559670/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIzz1JWIf2cQ7u0hYtNTTECNeC2VfJNbB6HVQR1ktzl-ERI36w6=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I attended a Candlelight Concert, and Brooks Museum was the perfect venue for it.  Art was accessible, which provided the perfect atmosphere for the event. Staff was AMAZING!!! I'm planning to attend the museum for other events just because it's such a nice place and vibe.",
+          "time": 1767948294,
+          "translated": false
+        },
+        {
+          "author_name": "Lauren Muse",
+          "author_url": "https://www.google.com/maps/contrib/103853084171604765470/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_2-5esed67ajEro_Sq7eqRD7Cp-amkjNTo_zXYa33_gy3wUemvQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I enjoyed a Candlelight Concert here. The venue was perfect for it. Small so there wasn't a bad seat anywhere. The staff did a good job of limiting any disruption to the concert and were all helpful and friendly.  The concert was amazing. I'd definitely see another one.",
+          "time": 1767452003,
+          "translated": false
+        },
+        {
+          "author_name": "Shannon O’Brien",
+          "author_url": "https://www.google.com/maps/contrib/113568158976312852655/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJm8V-QKmjK6h6UMA8TRQDQaST6rT8x-B_JzKPJ2cBK_r5XVQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The overall ambiance and experience was fantastic! My wife loved it! The String Quartet was great with the music selection, and the Brooks Museum Staff was professional and excellent!",
+          "time": 1767444516,
+          "translated": false
+        },
+        {
+          "author_name": "Wayne Nesmith",
+          "author_url": "https://www.google.com/maps/contrib/116604701531632217435/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXDeS4pNCfiUd7k0xHyKUXyn3zsAYCjm33ueF0tVlml7km6R7bC=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Kayla was the barista/cashier at the museum cafe/gift shop. She was professional, not dismissive or preoccupied.  Like good family, she is A treasure to that organization & to Tennessee!",
+          "time": 1767288897,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-tn-unknown-the-abraham-lincoln-library-and-museum",
@@ -303,14 +436,14 @@
       "website": "https://www.lmunet.edu/academics/abraham-lincoln-library-and-museum-1/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "6965 Cumberland Gap Parkway",
+      "street_address": "120 Mars-Debusk Pkwy, Harrogate, TN 37752, USA",
       "address_line2": null,
       "postal_code": "37752",
-      "latitude": 36.57678,
-      "longitude": -83.65511,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 36.5808331,
+      "longitude": -83.65756879999999,
+      "place_id": "ChIJt-Iwn3KDXIgRH_29j_yhnwE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -341,15 +474,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.lmunet.edu/academics/abraham-lincoln-library-and-museum-1",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:32:37Z",
+      "updated_at": "2026-03-14T20:03:04Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4238696235",
+      "phone": "(423) 869-6235",
       "is_scoreable": false,
       "content_summary": "The Abraham Lincoln Library and Museum in Harrogate offers a uniquely immersive experience into the life and legacy of one of America's most revered presidents. With a vast collection of artifacts, interactive exhibits, and educational programs, this museum is a must-visit for history enthusiasts and anyone seeking to understand Lincoln's impact on American history.",
       "content_description": "**The Abraham Lincoln Library and Museum** is more than just a repository of historical artifacts; it is an engaging journey through the life of Abraham Lincoln. Nestled in the charming town of Harrogate, this museum provides visitors with a comprehensive overview of Lincoln's significance during one of the most turbulent times in American history. From his humble beginnings in Kentucky to his profound role in shaping the nation, you will discover stories that resonate through every exhibit. The museum has meticulously curated various displays that showcase original documents, personal items, and photographs, creating a vivid picture of Lincoln's world and the values he stood for.  \n\nThe architecture of the **Lincoln Library and Museum** itself echoes the grandeur of the era, designed to evoke the spirit of the 19th century while providing modern amenities for comfort and accessibility. While exploring the museum, you will encounter interactive exhibits that encourage engagement, such as life-size replicas of Lincoln's famous debates or immersive simulations that allow visitors to step into the shoes of citizens from Lincoln's time. Educational programs and workshops amplify the visitor experience, making it ideal for families, students, and history buffs alike. Whether you are peering into Lincoln's personal letters or participating in thoughtful discussions about his legacy, the **Abraham Lincoln Library and Museum** promises a memorable visit that will deepen your understanding of this iconic figure's enduring influence on American society.",
@@ -362,7 +496,148 @@
       ],
       "content_generated_at": "2026-01-25T03:32:37Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.lmunet.edu/museum",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 92,
+      "google_reviews": [
+        {
+          "author_name": "Kellie Barnes-Elzy",
+          "author_url": "https://www.google.com/maps/contrib/100604261143493152499/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUOxRCPXVh8ZjVu-G2gZ5I-Fs2DLJ223tgqnKlGdvHINLaMR5F_=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Review: Lincoln Memorial Museum\n\nVisiting the Lincoln Memorial Museum was an incredible experience. I learned so much—especially things that were never taught to us in school. The exhibits were eye‑opening, thoughtful, and beautifully presented. You can feel the depth of history in every room, and it truly brings Abraham Lincoln’s story to life in a way that’s both powerful and personal.\n\nI left with a deeper understanding of our country’s past and a real appreciation for the sacrifices and struggles that shaped it. This museum is absolutely worth the visit for anyone who wants to learn, reflect, and walk away inspired.",
+          "time": 1771101371,
+          "translated": false
+        },
+        {
+          "author_name": "Dr. David A Baillie",
+          "author_url": "https://www.google.com/maps/contrib/103977855119987773284/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWHLos99pu372Gxmp9Dv2QwpNW7gMtvKp3F4dkP0wupBkePVoV4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "After driving by this place multiple times a year for the last 20 years I decided to stop.  Ñin summary, well worth the visit and the $5 rate was more than reasonable.  Very interesting collection of memoribilia in a clean well lit and well organized museum.  The connection to LMU and Lincoln. Is well explained.   Definitely recommend.",
+          "time": 1743632282,
+          "translated": false
+        },
+        {
+          "author_name": "Michelle Joseph",
+          "author_url": "https://www.google.com/maps/contrib/115686906495706359523/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW7uFMFIjZT8NoisB6b1XklsM-xJn_BEqP-eq3d8gJWVb35iKx2=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Nice place to stop and walk around for a few minutes.  You can access the parking lot by turning at the light and driving through the campus, if you miss the first entrance.",
+          "time": 1712321633,
+          "translated": false
+        },
+        {
+          "author_name": "A mclean",
+          "author_url": "https://www.google.com/maps/contrib/107374222179449118570/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-pE0EB1aNQSMHk8rgW41btlicjOpYe3-Fkw7sbPAmroj1wcc4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Great place to learn all things Abraham Lincoln. The museum really flows and allows you to move at your own pace. The admission is $5.00 but the knowledge is priceless. Beautiful views of the mountains and countryside can also be seen from the museum. Definitely worth a stop if your in the area.",
+          "time": 1554984374,
+          "translated": false
+        },
+        {
+          "author_name": "SJ Floyd",
+          "author_url": "https://www.google.com/maps/contrib/103604870849843427950/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ0jjLQHBYERA2224XcfzINgN10vMCtPGfIQrMHu5yFVimj=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "10/10 would definitely recommend. We loved it. Extensive collection of artifacts, informative video available, beautiful!",
+          "time": 1737840519,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-tn-unknown-the-international-towing-recovery-museum",
@@ -381,7 +656,7 @@
       "longitude": -85.3232366,
       "place_id": "ChIJrWA5jzdcYIgR6wanA_BK998",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -418,7 +693,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for https://internationaltowingmuseum.org",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:32:46Z",
+      "updated_at": "2026-03-14T20:03:04Z",
       "notes": "CSV: IRS Museum ID 8404700235 CSV: phone from IRS 990 database CSV: museum type 'General Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 732948, revenue: 490482)",
       "city_tier": 3,
       "phone": "(423) 267-3132",
@@ -604,7 +879,7 @@
       "longitude": -90.0577687,
       "place_id": "ChIJMc59UKJ-1YcRa4CHA7Wb37g",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -638,7 +913,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:32:54Z",
+      "updated_at": "2026-03-14T20:03:04Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(901) 521-9699",
@@ -807,14 +1082,14 @@
       "website": "http://www.huntermuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "10 Bluff View Ave.",
+      "street_address": "10 Bluff View Ave, Chattanooga, TN 37403, USA",
       "address_line2": null,
       "postal_code": "37403",
-      "latitude": 35.0558388,
-      "longitude": -85.3061125,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.0558936,
+      "longitude": -85.306405,
+      "place_id": "ChIJB3y4UGZeYIgRWuoUbc77Uys",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -823,7 +1098,7 @@
       "tickets_url": "http://www.huntermuseum.org/visit#address-hours",
       "reservation_required": true,
       "accessibility_url": "http://www.huntermuseum.org/visit#accessibility",
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -833,29 +1108,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 3,
-      "modern_contemporary_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 4,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Hunter Museum has a recognized strength in American Impressionism and modern contemporary art, which supports a solid regional collection. While its holdings are credible, they do not have significant national impact, resulting in moderate strength scores across categories. Historical context is limited primarily to regional importance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The collection explicitly includes American Impressionism, suggesting a moderate but not flagship Impressionist presence. It also spans early modernism through post-WWII modern and contemporary art, indicating moderate modern/contemporary strength within an American-art focus. The named movements across multiple periods imply a well-structured historical narrative, though the museum’s Chattanooga location and scope point to a primarily local reputation and a moderate overall collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.huntermuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Chattanooga; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "4232670968",
+      "phone": "(423) 267-0968",
       "is_scoreable": true,
       "content_summary": "Perched above the Tennessee River, the Hunter Museum of American Art is Chattanooga’s essential stop for art lovers—pairing a strong American collection with one of the city’s most memorable settings. You’ll move from historic spaces to a striking modern building while tracing American art from the 18th century to today. Expect smart, approachable curation, river-and-bridge views from the bluff, and a visit that feels equal parts gallery immersion and scenic overlook.",
       "content_description": "Set dramatically on a bluff above the Tennessee River, the **Hunter Museum of American Art** offers a distinctly Chattanooga way to experience American creativity—through **art, architecture, and landscape in one continuous visit**. The museum’s campus blends a historic mansion with a crisp modern expansion, creating a satisfying progression as you walk: period rooms and intimate galleries give way to more open, light-filled spaces where the river views feel like an extension of the art.\n\nInside, the Hunter’s strength is **American art across multiple eras**, presented with a regional confidence and a national outlook. You can expect works spanning early American painting through modern and contemporary directions—an accessible throughline of changing styles, subjects, and materials. The museum is especially rewarding for visitors who like to connect *American modernism* and *contemporary art* back to earlier traditions, and its **competent, traveler-friendly interpretation** helps you look closely without feeling overwhelmed.\n\nFor art-focused travelers, the experience is as much about *how* you see as *what* you see: galleries that invite slow looking, frequent visual anchors to the surrounding cityscape, and a layout that works well for a focused hour or a longer, unhurried afternoon. Plan to linger at viewpoint moments along the building and grounds—few museums make the transition from artwork to real-world scenery feel so seamless.",
@@ -875,7 +1151,148 @@
       "primary_art_focus": "Impressionist",
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Consider",
+      "website_google": "http://www.huntermuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2025,
+      "google_reviews": [
+        {
+          "author_name": "Chris Watana",
+          "author_url": "https://www.google.com/maps/contrib/114681809405597120173/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJUZAWXPgUcQbLm82sgXsyOCElTXRPVVwWDo-D13noLnxcQlQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "I believe the Hunter Museum provides excellent service to every visitor. Due to a misunderstanding, I received a parking notice during my visit. However, after I emailed the museum for help, they quickly looked into it and cancelled the notice. I highly appreciate their efficiency and the way they care about their guests. It truly made my 600-mile trip worth it!",
+          "time": 1771618058,
+          "translated": false
+        },
+        {
+          "author_name": "Amanda Sue Beck",
+          "author_url": "https://www.google.com/maps/contrib/102945296977664962599/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUwy33_QmpdneozxWWP7HGcQMR3dZi6pZNRhzgXjb4_OzNvNZTM=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Great art work. They have pretty good parking available when you purchase the passes. However, you can also still park along the streets near for free 🤩 ... You'll definitely spend about 2 hours exploring this magical place ❤️",
+          "time": 1771952769,
+          "translated": false
+        },
+        {
+          "author_name": "SherryAnn",
+          "author_url": "https://www.google.com/maps/contrib/103250219254786180538/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJUvJfcNF6j0dRPGkdIV7Oc22Nn30GCcbmBGDqMLSm2cbpo-w=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "The most beautiful and interesting museum!  The grounds around the building have interesting walking paths with more art and the views are spectacular.  The historic building is stunning as well as the art.",
+          "time": 1765734294,
+          "translated": false
+        },
+        {
+          "author_name": "Patrick Dills",
+          "author_url": "https://www.google.com/maps/contrib/116161158755260626741/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWwOP6Bs7-Cn3uVNaffStYSMiRCHRGGQI2RsSdXB71Fro8xmbr9=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "First time going, really enjoyed all of the older art. Only problem now is I got my parking validated inside but now Professional Parking Management is trying to charge me $75 for parking at 10 Bluff View. What gives?",
+          "time": 1762939180,
+          "translated": false
+        },
+        {
+          "author_name": "Ricco Canipe",
+          "author_url": "https://www.google.com/maps/contrib/113454044752383266153/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWvMudXOYTRty63XLl3utSUQyZIhD-b39KJvGQhMdmQVAJPZUXx=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "This Museum in Chattanooga, Tennessee is spectacular and i went there with my dad this weekend. this Museum has it's great History and Art Displays in every single gallery ever from the Colonial American era to the Modern Day Art era of now, plus you can make your own Digital Portrait of yourself and let your imagination go wild; and there Gift Shop is very decent and nice!",
+          "time": 1754162420,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-tn-clarksville-customs-house-museum-cultural-center",
@@ -887,14 +1304,14 @@
       "website": "http://customshousemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "200 S. 2ND STREET",
+      "street_address": "200 S 2nd St, Clarksville, TN 37040, USA",
       "address_line2": null,
       "postal_code": "37040",
-      "latitude": 36.5263,
-      "longitude": -87.35839,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 36.5261417,
+      "longitude": -87.35843609999999,
+      "place_id": "ChIJP4qUfbfZZIgRtgiEcwlvxoA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Children's Museum",
       "primary_domain": "History",
       "topics": null,
@@ -923,15 +1340,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Clarksville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:33:13Z",
+      "updated_at": "2026-03-14T20:03:06Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'CHILDREN'S MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "9316485780",
+      "phone": "(931) 648-5780",
       "is_scoreable": false,
       "content_summary": "The Customs House Museum & Cultural Center in Clarksville offers an enchanting blend of discovery and creativity, making it an ideal destination for families. This children's museum encourages exploration through engaging exhibits and interactive experiences designed to ignite young imaginations and foster a love for learning.",
       "content_description": "**Customs House Museum & Cultural Center** is a vibrant sanctuary for young minds, where learning and play harmoniously blend. Housed in a beautifully restored building that once served as a customs house, this museum stands out not only for its rich history but also for its commitment to engaging children through *interactive exhibits* and *hands-on experiences*. The architecture itself whispers tales of the past, with its stunning facade and thoughtfully designed spaces that invite visitors to explore every nook and cranny. Each room is a doorway into a world of creativity and imagination, tailored specifically for children to thrive and grow.  \n\nVisitors can delight in an array of exhibits that cover everything from art and science to local history and heritage. The museum's interactive sections allow kids to touch, investigate, and create, all while learning fundamental concepts in a fun and playful way. Moreover, regular workshops and special events add an ever-changing element to the experience, ensuring that there’s always something new to discover. Whether your child is exploring the wonders of nature, engaging with artistic materials, or diving into the local history, **Customs House Museum & Cultural Center** makes every visit a unique adventure. As families navigate this captivating space together, they not only learn but build lasting memories that inspire curiosity and wonder.  \n",
@@ -944,7 +1362,148 @@
       ],
       "content_generated_at": "2026-01-25T03:33:13Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://customshousemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 727,
+      "google_reviews": [
+        {
+          "author_name": "Ruth Sisson",
+          "author_url": "https://www.google.com/maps/contrib/100666562649458601039/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUoazYKXmGmdRKr9MEOqrk8ScUExBBmYNGoIT7fpRET6xmh7PIO=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Our visit to the museum was wonderful. I wanted to see the art installation of Caney Hummon and was absolutely thrilled to view them in person. I was moved to tears by his incredible work. We hadn't visited in almost 20 years, so it was nice to see all of the changes.",
+          "time": 1768743385,
+          "translated": false
+        },
+        {
+          "author_name": "Dr. Rosie Ann Riley",
+          "author_url": "https://www.google.com/maps/contrib/104109109585896708820/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-7FPs7SeM7iiguzAilratdpqmwWI1R2X5QHCAk2yRhGwGFtq3=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "There is a free parking lot for museum visitors on south side of museum; on hill.\n\nThis is a great museum and I love that it has specialized areas for children and their families. They have a family art studio and area where the kids can explore the city by learning about different trades; plumbing, electricity, market etc. These areas are simply wonderful and if I lived in Clarksville I would bring my great nephews, frequently.\n\nI didn’t know Wilma Rudolph was from Clarksville and Pat Summit. They have a great gallery dedicated to individuals in sports etc.\n\nI absolutely love the ‘Fly Girls’ exhibit (Oct 13  - Jan 25, 2024) I had never heard of this group and felt so proud to see so many female pilots. These women are/were so inspiring and many lived long lives. I’m it sadly at least 2 dozen were killed while flying. I left wanting to know more about this organization and the women!! They pushed forward through the discrimination by men. Smh So sad that we live in a society where all are created equal but a few feeble minds decide they will create barriers for those who do not look like them!!\n\nThere is also an old log home on display after you pass through area that house old fire trucks. I absolutely love this and like that the wife of a family member donated house to museum.\n\nThere is also modern art on display plus an areas with model trains and track. The train runs at certain times so if you’d like to see the trains going around track check on website for times.\n\nI highly recommend visiting this museum!",
+          "time": 1732384914,
+          "translated": false
+        },
+        {
+          "author_name": "Taylor Lin",
+          "author_url": "https://www.google.com/maps/contrib/101827863833581157579/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWT1_n8BuJphdOpDAg6X1Jvsjg0BNJX79Qc4bCphFkWtnbYexuq=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We took our out of town family to this museum to give them more insight on Clarksville history and culture. We loved it! Sierra at the front desk was very kind and helpful. She was patient with my family and all of the questions that they had. We had a wonderful experience and will be back. :-)",
+          "time": 1764444963,
+          "translated": false
+        },
+        {
+          "author_name": "Brian Douglas",
+          "author_url": "https://www.google.com/maps/contrib/117902159956454022986/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjURj8uUVnRr978OuEyUsBmAza_x3GmZk_VGRbQn_hbw-YWQDTga=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Very cool museum with tons of things from locally and globally to look at. Very clean, and very friendly staff. The bottom level is full of stuff to keep your little ones entertained for hours. $12 per adult is not too bad of a price. Will return soon with the kids.",
+          "time": 1719033753,
+          "translated": false
+        },
+        {
+          "author_name": "Augie Mcguire",
+          "author_url": "https://www.google.com/maps/contrib/106751135408385601483/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWocQ7uGePy7mrEb20n0vOW4l-o5yaQOfftEmZD5RbNJev82Bwr=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "A very cute and educational museum for Clarksville a nice place to take the family",
+          "time": 1767901525,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-tn-cleveland-museum-center-at-5ive-points",
@@ -956,14 +1515,14 @@
       "website": "http://www.museumcenter.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "200 Inman Street",
+      "street_address": "200 Inman St E, Cleveland, TN 37311, USA",
       "address_line2": null,
       "postal_code": "37311",
-      "latitude": 35.1578772,
-      "longitude": -84.8742016,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.1578669,
+      "longitude": -84.87400219999999,
+      "place_id": "ChIJVc7oBZkrXogR2hEk7WfpSEY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -995,15 +1554,16 @@
         "openstreetmap",
         "official_website",
         "http://www.museumcenter.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Cleveland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:33:27Z",
+      "updated_at": "2026-03-14T20:03:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4233395745",
+      "phone": "(423) 339-5745",
       "is_scoreable": false,
       "content_summary": "The Museum Center at 5ive Points in Cleveland is a hidden gem that offers a unique insight into the region's rich history and culture through its diverse exhibits and engaging programs. This lively center is perfect for those looking to immerse themselves in local heritage while enjoying a welcoming atmosphere.",
       "content_description": "**The Museum Center at 5ive Points** stands as a vibrant hub for the exploration of Cleveland's history and cultural narratives. Housed within a beautifully restored historic building, this general museum showcases a blend of local art, historical artifacts, and engaging exhibitions that change regularly, ensuring there's always something new to discover during each visit. The museum's architecture itself is a delight to behold, reflecting the charm of bygone eras while providing a modern space for education and exhibitions. Visitors will find themselves enveloped by the stories of the past, with a focus on embracing community heritage and connecting present generations with their roots. This makes the museum not just a place for observation, but one of interaction and reflection.  **  *  With family-friendly programming and hands-on activities, the Museum Center encourages visitors of all ages to dig deeper into the local narrative. Each exhibit offers a chance to learn, explore, and engage with Cleveland's history in a meaningful way.  **  Art enthusiasts will appreciate the features that highlight regional talents, spanning various mediums and styles, thus enriching the appreciation of local artistic contributions. The dynamic exhibits and events ensure that no two visits are the same, making return trips to the Museum Center not only worthwhile but a joy to anticipate.  **  Whether you're a long-time resident or a first-time visitor, this museum serves as a gateway to understanding the heart of Cleveland through its past and present.  **",
@@ -1016,7 +1576,138 @@
       ],
       "content_generated_at": "2026-01-25T03:33:27Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://museumcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1500"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.7,
+      "google_reviews_count": 220,
+      "google_reviews": [
+        {
+          "author_name": "John King",
+          "author_url": "https://www.google.com/maps/contrib/106342978359916098505/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVaNBaX9PwqaYcF2VuS14urG5vHY66kKkjUXpXCKrlk8F9hAIBIVg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "I went to the Edgar Allan Poe Speakeasy and it was absolutely MAGICAL, the performers were OUTSTANDING to be able to remember those poems and stories brought everything to LIFE. I would DEFINITELY go back if they were every in Cleveland area again.",
+          "time": 1772567953,
+          "translated": false
+        },
+        {
+          "author_name": "Brenda Barcome",
+          "author_url": "https://www.google.com/maps/contrib/108624965914243446043/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJFEbZuMRCQbk6hte-4C2-hGJTH9JVuZq78uN2dmUihgT2YgA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Exceptional show and actors. Well thought out. Easy seating and tasty 🍸 cocktails well worth the price of the ticket. Do remember to tip at the end. We will be going again",
+          "time": 1771712273,
+          "translated": false
+        },
+        {
+          "author_name": "rakshi hanbal",
+          "author_url": "https://www.google.com/maps/contrib/111449971720563133749/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWhQziA7ISjUGBAG5DW6ceCra3hj-IcAIDcNL8TMYYFJNnHwV3a=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "A must visit place in Cleveland to know the history. The staff is very friendly. Because the roof was leaking when we went there they gave an exclusive tour and didn’t send us back. Their love for art and history was evident in their efforts and dedication. Hats off to all the people who are preserving this for the rest.",
+          "time": 1769806248,
+          "translated": false
+        },
+        {
+          "author_name": "Amanda Dorr",
+          "author_url": "https://www.google.com/maps/contrib/101636228295812771873/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIop-tkiJuDqoT-bZDqzCvO0J_c_oJh6K7aZ4_q6OpQByWl=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Absolutely awesome!!! Second time seeing this show in Cleveland,TN!! Can’t wait for the next show!!",
+          "time": 1771887398,
+          "translated": false
+        },
+        {
+          "author_name": "Barb Draper",
+          "author_url": "https://www.google.com/maps/contrib/107256338628414031498/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKAj6fVWVSfJnTU8oh7waRIDCepxVDqiZ0o00uEiPXjcM-tuA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Plan at least an hour. Cool local history with some activities for kids.\nMake sure you shop all the local artist's creations in the gift shop.\nAbby and the rest of the team love to share insights about the Exhibits and the artists.",
+          "time": 1768174108,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-tn-memphis-dixon-gallery-and-gardens",
@@ -1028,14 +1719,14 @@
       "website": "http://www.dixon.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "4339 Park Ave",
+      "street_address": "4339 Park Ave, Memphis, TN 38117, USA",
       "address_line2": null,
       "postal_code": "38117",
-      "latitude": 35.1065843,
-      "longitude": -89.9169664,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.1064644,
+      "longitude": -89.9172667,
+      "place_id": "ChIJu0OraRiEf4gRKiTw0xukNhI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1044,7 +1735,7 @@
       "tickets_url": "https://www.dixon.org/hours-admission",
       "reservation_required": null,
       "accessibility_url": "https://www.dixon.org/accessibility",
-      "reputation": 1,
+      "reputation": 2,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1053,30 +1744,31 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": 3,
+      "impressionist_strength": 4,
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 12,
+      "historical_context_score": 3,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Dixon Gallery and Gardens has a strong collection of Impressionist works, featuring notable artists such as Monet, Degas, and Cassatt, which supports a regional strength. However, while it holds important pieces, it does not significantly influence national scholarship, indicating a score of 3 for Impressionist strength. The historical context score is modest due to its local significance rather than a broader impact.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The Dixon explicitly focuses on French and American Impressionism and lists major Impressionist figures (Monet, Degas, Renoir, Morisot, Sisley, Cassatt) plus an extensive Jean-Louis Forain holding, supporting a strong Impressionist score. Modern/contemporary appears present only incidentally (e.g., Bonnard, Chagall, Matisse), and the evidence does not indicate broad 20th–21st century depth. As a specialized Memphis museum with a notable but not encyclopedic collection (Impressionism plus German ",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.dixon.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Memphis; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "9017615250",
+      "phone": "(901) 761-5250",
       "is_scoreable": true,
       "content_summary": "Set in a serene residential enclave of Memphis, the Dixon Gallery and Gardens pairs an intimate, high-quality art collection with one of the city’s most beloved formal gardens. It’s the kind of museum art lovers cherish: close-looking galleries of French Impressionism and Post‑Impressionism, strong works on paper, and thoughtfully curated modern and contemporary shows—followed by a restorative walk through tulip-lined paths, sculpture, and seasonal color. Come for a concentrated dose of great painting; stay for the garden light.",
       "content_description": "The **Dixon Gallery and Gardens** is a rewarding stop for travelers who prefer museums with **connoisseur-level focus** over blockbuster scale. Founded from a private collection and now a nationally regarded institution, the Dixon excels at presenting art in a setting that encourages slow looking: intimate galleries, knowledgeable interpretation, and exhibitions that feel carefully argued rather than overstuffed. The collection is best known for **French Impressionist and Post‑Impressionist** paintings and works on paper—an ideal place to trace shifts in modern vision, from luminous brushwork to bolder experiments with color and form—alongside rotating presentations of modern and contemporary art.\n\nArchitecturally, the experience is inseparable from the site. The museum’s **elegant, domestic-scale design** and its dialogue with the landscape make visits feel more like entering a cultivated home and garden than a monumental civic palace. After the galleries, the gardens provide a second “collection”: **formal rooms, seasonal plantings (including celebrated tulip displays), and outdoor sculpture** that extend the museum’s aesthetic pleasures into open air.\n\nFor art enthusiasts, the Dixon’s greatest strength is its rhythm: view a tightly edited selection of paintings and prints, then decompress outdoors—returning to the galleries with refreshed eyes. Plan time for special exhibitions and lectures, and if you’re traveling in spring, prioritize a garden stroll for peak bloom and exceptional natural light on the grounds.",
@@ -1094,9 +1786,150 @@
       "eca_score": 2,
       "collection_based_strength": 2,
       "primary_art_focus": "Impressionist",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Consider"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.dixon.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 833,
+      "google_reviews": [
+        {
+          "author_name": "Ricardo Araki",
+          "author_url": "https://www.google.com/maps/contrib/106570131166455382490/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFEmtlHuT2PvytPTZRiQl6bNcmI2t12M7DfysTRIJLfzZyEjMzww=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Visited in mid-February, lots of tulips 🌷 sprouting but not yet blooming... beautiful grounds and really nice museum, which has a large temporary exhibit about Black artists, would like to come back in late March or early April to better enjoy the garden. Specially nice since both museum and garden are free.",
+          "time": 1771202200,
+          "translated": false
+        },
+        {
+          "author_name": "Eda",
+          "author_url": "https://www.google.com/maps/contrib/110923344856451699257/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVtC-SjQ8nSvJzuOint7e0icHXkMyX7TTH5HVgPovcohY4WospVhQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "The Dixon Gallery & Gardens is a beautiful destination for a day trip with family and friends, offering to be immersed in artwork and peaceful outdoor spaces. Stroll through a well-kept flower garden that leads into a shaded trail, perfect for enjoying fresh air and nature with loved ones. I recommend setting aside 2–3 hours to explore both the indoor art galleries and the flower garden and trail.\n\nThe gardens are immaculate—ideal for taking family portraits or just a serene escape from the city. Inside, you’ll find two main painting galleries: a temporary gallery which currently features the Susan Watkins collection from the Chrysler Museum of Art and the permanent oil paintings collection. I especially enjoyed the works of Susan Watkins, a highly regarded painter from San Francisco.\n\nHoused in a beautifully preserved colonial manor, the Dixon Gallery & Gardens stands out as my top choice for its blend of art, history, and natural beauty. Best of all, admission is free, and there’s plenty of parking. Enjoy your trip to Dixon!",
+          "time": 1755057038,
+          "translated": false
+        },
+        {
+          "author_name": "Erik R",
+          "author_url": "https://www.google.com/maps/contrib/100471945272315513360/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKrTRq3w-Brhr-OsTjRvagaqWhEsV-5jmkxKYFCxMZrDpOD=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "A beautiful art museum with beautiful outdoor gardens to walk around in. Admission is free (donations accepted and encouraged) but it makes for a wonderful place to see some art and spend time outside",
+          "time": 1760808285,
+          "translated": false
+        },
+        {
+          "author_name": "Sarah Hawkins",
+          "author_url": "https://www.google.com/maps/contrib/105102537327251426796/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjURu5bX7-LtXjOkHQ3_vaN7OaURSGF-7rTN_0noeoaZB1hdf50q=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Dixon Gallery & Gardens is one of my all time favorite places in Memphis. The gallery is always a nice experience, and the gardens are exquisite. There are quiet spots to experience some zen, and the lawn is always great for a picnic or an event. We recently attended Symphony in the Garden for Mother’s Day and had a fantastic time! Would absolutely attend again.\n\nThe Dixon remaining Free for Good is also such a service to the community, helping Memphis keep arts & culture accessible for all!",
+          "time": 1747354815,
+          "translated": false
+        },
+        {
+          "author_name": "Katherine Prather",
+          "author_url": "https://www.google.com/maps/contrib/113523205485894056428/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKUlRS4w-agyW5aiMgJAYL3BTyYvOP2KgU5vBJONPEhEjP0Kg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We couldn't believe this was free to visit. A beautiful garden along with an impressive collection of impressionist art. Our kids enjoyed the porcelain collection and the interactive area of the museum and we got drinks at the cafe. Such a pleasant afternoon.",
+          "time": 1758393180,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-tn-nashville-frist-center-for-the-visual-arts",
@@ -1108,14 +1941,14 @@
       "website": "http://www.fristcenter.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "919 BROADWAY",
+      "street_address": "919 Broadway, Nashville, TN 37203, USA",
       "address_line2": null,
       "postal_code": "37203",
-      "latitude": 36.1566074,
-      "longitude": -86.7827407,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 36.1578972,
+      "longitude": -86.78385279999999,
+      "place_id": "ChIJEQk8r_VmZIgRm35FEOeHM-c",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1147,15 +1980,16 @@
         "openstreetmap",
         "official_website",
         "http://www.fristcenter.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Nashville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.fristcenter.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:33:44Z",
+      "updated_at": "2026-03-14T20:03:09Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
-      "phone": "6152443340",
+      "phone": "(615) 244-3340",
       "is_scoreable": false,
       "content_summary": "The **Frist Center for the Visual Arts** is a vibrant cultural hub in Nashville that features rotating exhibitions of contemporary and historical art, making it a must-visit for art aficionados. Its stunning Art Deco architecture complements a rich program of educational events and community engagement, truly embodying the heart of Nashville's art scene.",
       "content_description": "**Frist Center for the Visual Arts** is not just a museum; it's a dynamic space where art and community converge. Housed in a beautifully restored 1930s U.S. Post Office building, the museum showcases a stunning *Art Deco* facade, inviting visitors to explore its stunning interiors. With spacious galleries and a thoughtful layout, the center provides an enriching experience for art lovers and casual visitors alike. Emphasizing the importance of diverse artistic expressions, the Frist regularly features rotating exhibitions from both renowned and emerging artists, ensuring that there’s always something new to discover. It's an opportunity to engage with art that resonates with both local narratives and global perspectives.  \n\nIn addition to the art on display, the **Frist Center** prides itself on offering a variety of educational programs, workshops, and special events, making it a cornerstone of Nashville's cultural scene. Visitors can take part in guided tours, film screenings, and community discussions that inspire deeper engagement with the art. The museum's commitment to accessibility and inclusion is evident in its programming, ensuring that everyone feels welcome to explore and appreciate the visual arts. Whether you're a seasoned art enthusiast or simply curious, the **Frist Center** offers an unforgettable experience, fostering connections through the universal language of art.",
@@ -1168,7 +2002,138 @@
       ],
       "content_generated_at": "2026-01-25T03:33:44Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://fristartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1730"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1730"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1730"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1730"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:30 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 5:30 PM",
+          "Saturday: 10:00 AM – 5:30 PM",
+          "Sunday: 1:00 – 5:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 4591,
+      "google_reviews": [
+        {
+          "author_name": "Maryfaith Samuel",
+          "author_url": "https://www.google.com/maps/contrib/110532788680973765361/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWTxCLZybNzuD7R1VrjGQShbhZozpcFWv6AZPvcyzm_FwGkj0J8=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This building is very beautiful. We went here to see Paul McCartney's exhibit, the Eyes of the Storm, and everything was displayed very nicely. We also had a lot of fun in the kids area afterward drawing, making stop motion movies, and more! The price is also very reasonable. I would return for more.",
+          "time": 1768150347,
+          "translated": false
+        },
+        {
+          "author_name": "God-Thicc Pirate Guide Captain Loki Grogh (Capt. Loki Groggy)",
+          "author_url": "https://www.google.com/maps/contrib/111469652093519620527/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXW8EREulzUMfQjgjbC_coakXC6xnBnQdIB6HAA5sWQ8kZ5JoJe2A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Decent but it always seems like they are holding back. They could do better. Like an exhibit of Paul McCartney photos?! I’d rather the museum be completely filled with future artist photos like the one hallway of kids art! The kids play area is always solid for the kidos!",
+          "time": 1767207131,
+          "translated": false
+        },
+        {
+          "author_name": "Snezana Bogdanovic",
+          "author_url": "https://www.google.com/maps/contrib/104540930712410447691/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVNnRjdwn_AQN9IJim-uzWGxgABqPLg1_gXwSP25Q0DCS6V7oZT=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "The Frist Museum is an amazing place for the whole family. Enjoy art and educate yourself in animation, crafts and visual arts in general. The employees are fantastic and knowledgeable. If you visit Nashville, do not miss to see their exhibitions and corner for kids. The Frist is a must! ♥️",
+          "time": 1769510471,
+          "translated": false
+        },
+        {
+          "author_name": "Eva Johnson",
+          "author_url": "https://www.google.com/maps/contrib/114897980848538005988/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW3DBz5F2QDaGEVhXpe_JeCP2kzMqlA1u-WrL-wUWFPfgEp6VRxaA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Absolutely great museum. I particularly liked the quilt exhibition, I'm keen to return for future temporary exhibitions. The main entry hall is unique. Parking is not free, which is annoying for such a lovely museum.",
+          "time": 1770780874,
+          "translated": false
+        },
+        {
+          "author_name": "Suzanne Driessen",
+          "author_url": "https://www.google.com/maps/contrib/114055990345888730097/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIm72GxX0C8t3xw6Flbp8h_X45BmSVcGFfuXVAncZzxxwsvFg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Lovely museum in a historic landmark, once a U.S. post office with free architectural tours on the weekends. Rotating exhibitions will keep you coming back. The Paul McCartney Photographs and the New African Masquerade exhibitions were inspiring and thought provoking. We visited on a Thursday with evening hours until 8 pm. Stop by the cafe for some live music and tasty pizza.",
+          "time": 1764948526,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-tn-nashville-tennessee-state-museum",
@@ -1180,14 +2145,14 @@
       "website": "http://www.tnmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "505 DEADERICK STREET",
+      "street_address": "1000 Rosa L Parks Blvd, Nashville, TN 37208, USA",
       "address_line2": null,
       "postal_code": "37208",
-      "latitude": 36.1724723,
-      "longitude": -86.7900535,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 36.1724769,
+      "longitude": -86.79008639999999,
+      "place_id": "ChIJs8eMBlhmZIgRhwAFFFtMMag",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1219,15 +2184,16 @@
         "openstreetmap",
         "official_website",
         "http://www.tnmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Nashville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:33:52Z",
+      "updated_at": "2026-03-14T20:03:10Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
-      "phone": "6157412692",
+      "phone": "(615) 741-2692",
       "is_scoreable": false,
       "content_summary": "The Tennessee State Museum offers a captivating journey through the rich history and culture of Tennessee. With engaging exhibits and a focus on storytelling, this museum provides a unique glimpse into the state's past, making it a must-visit for history enthusiasts and curious travelers alike.",
       "content_description": "**Tennessee State Museum** stands out as a beacon of history nestled in the heart of Nashville. This remarkable museum invites visitors to traverse through centuries, from the prehistoric era to the modern day, all within its thoughtfully designed galleries. With a mission to educate and inspire, the museum showcases Tennessee’s significant role in American history. Exhibits include artifacts from the Civil War, showcasing both Union and Confederate perspectives, alongside interactive displays that breathe life into historical narratives. Each floor subtly guides visitors through time, creating a seamless experience that is both informative and engaging.  \n\nThe architecture of the **Tennessee State Museum** is as impressive as its collections. The building itself embodies a contemporary yet welcoming design, harmonizing with Nashville's vibrant landscape. Within its walls, visitors can delve into impactful stories of Tennessee's Native American heritage, explore the state's artistic development, and admire the craftsmanship of Civil War-era furnishings. The design encourages exploration and curiosity, with spacious galleries that allow for easy navigation and contemplation. \n\nWhether you are captivated by the advancement of the textile industry, the life of pioneers, or the rich contributions of African American culture in shaping the state, the **Tennessee State Museum** is more than just a collection of artifacts. It’s a multifaceted experience inviting you to reflect on the past and consider its lasting impact on Tennessee today. Don’t miss the museum’s special programs and events, designed to engage visitors of all ages and foster a deeper understanding of Tennessee’s history.",
@@ -1240,8 +2206,149 @@
       ],
       "content_generated_at": "2026-01-25T03:33:52Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.tnmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 3736,
+      "google_reviews": [
+        {
+          "author_name": "Mercy Loughery",
+          "author_url": "https://www.google.com/maps/contrib/113429926418860126011/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVDkfUdPHtBu7KZfTuy03NfFdirfycSaTHCVAvLjM1SqWCnUYFl=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "This museum is very well maintained and has great exhibits; from pre-historic times which my kids really enjoyed to many interactive battle displays. We also loved the Tennessee Playlist exhibit. The little kids area is also very fun!\nIn addition, it has parking and it’s across from all the Farmers Market. It was the perfect FREE family Saturday activity for a cold day!",
+          "time": 1770220979,
+          "translated": false
+        },
+        {
+          "author_name": "Hazel Lo",
+          "author_url": "https://www.google.com/maps/contrib/118274995638892084384/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXndaqhMw_feuEY-QmgdW_8Ybbk39QimvRleBrfboD5SZhJ7CY=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "Love this museum! I enjoyed the videos. hope to visit the museum again and join the guided tour!\n\nThe exhibition in Time Tunnel was organized chronologically, and narrated clearly with some videos, which made the visit more interesting. The exhibit on music was fabulous too. It exhibited how Nashville has developed as a music city and Elvis started his career in Nashville!\n\nThe lady with short hair at the reception welcomed everyone with big smiles. she was very friendly and helpful, which made the visit even more pleasant. I appreciated her recommendations to visit the beautiful falls in the surrounding and i did, that added more memories in the trip!!",
+          "time": 1764617979,
+          "translated": false
+        },
+        {
+          "author_name": "Karen Tucker",
+          "author_url": "https://www.google.com/maps/contrib/107678653921259018255/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX6FLrEvm2IUhkrpky-E-rItHP2Bf_5jP3sKayrzanfSCWuGRw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Love this place!!! Different from other museums I have been too. The staff is super friendly and helpful. And free to get in and explore. They do have a donation box if you want to donate...I did. They also have a gift shop. A kids area for those with small children and handicap accessible restrooms. They have both stairs and elevators for anyone who is able to walk and for handicap.",
+          "time": 1761169666,
+          "translated": false
+        },
+        {
+          "author_name": "Jeff G",
+          "author_url": "https://www.google.com/maps/contrib/117566851369374782066/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKZgWhNS6iX1YKMUVT5BXakxGWBjW6GuATLWQsNrCOMSo6onVe=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "This is was a last  minute stop on a trip before the airport and it was an excellent use of time.    Enjoyed  learning about history of the state.    Many exhibits and short movies Next-door to farmers market and food court as well as a beautiful park.",
+          "time": 1771195554,
+          "translated": false
+        },
+        {
+          "author_name": "kla b",
+          "author_url": "https://www.google.com/maps/contrib/100840246409944732948/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLX6s-8_QLIarEsqPU85cSmGBqKTv9oAhc4PRwq-uRNFfchlw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I dont think I've been to a museum I enjoyed this much. My husband and children split into groups reading and seeing all the amazing items they had on display. The way everything was layed out flowed so well and told the story of events in a way that was easy to follow. I can go on and on about this experience. We eventually left because the museum was closing =( but would absolutely go back. Anyone could easily spent a few hours here.",
+          "time": 1763134077,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

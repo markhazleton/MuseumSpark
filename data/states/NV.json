@@ -20,7 +20,7 @@
       "longitude": -115.1529585,
       "place_id": "ChIJV3uZDnXDyIARWKssPy2HUlA",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -57,7 +57,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Nevada' from open data; MRD: computed city_tier=3 for Nevada; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:54:04Z",
+      "updated_at": "2026-03-14T19:59:44Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "(888) 661-6465",
@@ -151,14 +151,14 @@
       "website": "http://www.neonmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "770 Las Vegas Blvd N, Las Vegas, NV 89101, USA",
       "address_line2": null,
       "postal_code": "89101",
-      "latitude": 36.1765127,
-      "longitude": -115.1352767,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 36.1769882,
+      "longitude": -115.1353374,
+      "place_id": "ChIJcZcZBAzDyIARl--REmYqXNk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -190,15 +190,16 @@
         "openstreetmap",
         "official_website",
         "http://www.neonmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Las Vegas; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:54:12Z",
+      "updated_at": "2026-03-14T19:59:45Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "7023876366",
+      "phone": "(702) 387-6366",
       "is_scoreable": false,
       "content_summary": "The Neon Museum is a vibrant homage to Las Vegas's rich history of neon signs and iconic imagery, making it a must-visit for anyone fascinated by art, design, and the cultural evolution of entertainment. Wander amidst the spectacular open-air gallery filled with illuminated relics that tell the story of the city’s dazzling past.",
       "content_description": "**The Neon Museum**, often dubbed the 'graveyard of signs', is a kaleidoscopic journey through the luminous history of Las Vegas. Founded in 1996, this unique museum houses an extensive collection of more than 200 iconic signs, each representing a piece of Las Vegas's storied past. Visitors can explore the *Boneyard*, an outdoor display where discarded, but beautifully designed neon signs from old casinos and businesses reside, offering a nostalgic glimpse into the vibrant history that shaped the city. The experience captures the quintessential spirit of Las Vegas, blending art, history, and cultural significance in one dazzling showcase.  \n\nOne of the most compelling aspects of **The Neon Museum** is its commitment to restoring and preserving these historical signs. Through thoughtful restoration efforts, many of the signs are brought back to life, illuminating the night in their original splendor. The museum's architecture harmonizes with its collection, merging modern design with retro aesthetics, creating an immersive atmosphere that enhances the visitor's experience. Daily tours, both guided and self-directed, provide context and storytelling that bring the signs to life, ensuring that even the most casual observer can appreciate the artistry and craftsmanship involved. \n\nAs the sun sets, the museum transforms into a nocturnal wonderland, with neon lights flickering to life, creating an enchanting backdrop for photography and reflection. The unforgettable experience at **The Neon Museum** serves not only as a journey through the past but also as a celebration of the enduring allure of Las Vegas's electric identity.",
@@ -211,7 +212,158 @@
       ],
       "content_generated_at": "2026-01-25T02:54:12Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.neonmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2300"
+            },
+            "open": {
+              "day": 0,
+              "time": "1500"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2300"
+            },
+            "open": {
+              "day": 1,
+              "time": "1500"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2300"
+            },
+            "open": {
+              "day": 2,
+              "time": "1500"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2300"
+            },
+            "open": {
+              "day": 3,
+              "time": "1500"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2300"
+            },
+            "open": {
+              "day": 4,
+              "time": "1500"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2300"
+            },
+            "open": {
+              "day": 5,
+              "time": "1500"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2300"
+            },
+            "open": {
+              "day": 6,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 3:00 – 11:00 PM",
+          "Tuesday: 3:00 – 11:00 PM",
+          "Wednesday: 3:00 – 11:00 PM",
+          "Thursday: 3:00 – 11:00 PM",
+          "Friday: 3:00 – 11:00 PM",
+          "Saturday: 3:00 – 11:00 PM",
+          "Sunday: 3:00 – 11:00 PM"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.4,
+      "google_reviews_count": 13010,
+      "google_reviews": [
+        {
+          "author_name": "Matt “Tango” Gunderson",
+          "author_url": "https://www.google.com/maps/contrib/106689342751021806789/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVyRYQuYjiglCjNJ_pYE_pbWrwYDQClkaOn2DoF0VCxh34Cx3XpHA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Alot of fun to see a ton of Vegas history. The employees are super friendly and very knowledgeable. Bob was an absolute gem and told me a bunch of history and facts about the area I would have never known otherwise. It's relatively small but rumor has it they may be looking to expand. We can only hope such a cool piece of history in Vegas will stick around for ages to come.",
+          "time": 1771391085,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa Sands",
+          "author_url": "https://www.google.com/maps/contrib/115028022378069561763/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWTKmnMiWJxldtuWRdQHevJdi1UvakemaywpSk9bZUvMjyzo8o4-A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "About a mile from downtown/Fremont Street, this little gem is worth a visit to support saving the glittering neon history of Las Vegas. You can walk through on your own, but I recommend taking a tour that begins just at sunset.  The twilight sky and tour guide commentary bring each sign alive. Remember to tip your guide! You can buy tickets online in advance if you want - there are senior discounts and sometimes coupon codes, but the price is reasonable regardless. Plan to spend about 90 minutes here - and visit the cute little gift shop on your way out.",
+          "time": 1769092826,
+          "translated": false
+        },
+        {
+          "author_name": "Joel Washing",
+          "author_url": "https://www.google.com/maps/contrib/114591746920046817536/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXHY_99wzkc2nAqpJ8X8367Sa3HrIRj0Bp4wiezFCxI8lMwwrjE=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Fascinating history and beautiful architectural artifacts. The docents are knowledgeable and enthusiastic to share information.\n\nI would recommend driving, taxi or ride share. I walked from downtown; the surrounding area became a little sketchy as I got further from Fremont St. It felt especially uncomfortable at night to walk along Las Vegas Blvd. between Fremont and the Neon Museum.",
+          "time": 1771876130,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel",
+          "author_url": "https://www.google.com/maps/contrib/108919790647235091207/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW5fgS01oKnh66BwbTf7bhVEjuSSehkJbCtf9Vm4tG8TzTmTKOqpg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "This was one of our favorite things we did on our Vegas trip. We bought tickets in advance. We chose a night tour so we could see the signs that were refurbished all lit up. We loved learning about all the history of the casinos and signs. The staff was there to answer any questions. They were eager to share stories. You could tell they loved their jobs. We learn so much! Highly recommend!",
+          "time": 1768628643,
+          "translated": false
+        },
+        {
+          "author_name": "Jeffrey Seidman",
+          "author_url": "https://www.google.com/maps/contrib/111909346360096919049/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiS1qGVInn-5AEclbqPUUTonOxF7rrZzKZcXgW3vw6TkoMjLfL1Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "A visit to the Neon Museum offers a remarkable way to experience the history of Las Vegas—told through the literal neon lights of decades past ✨. Anyone who appreciates the spirit and evolution of Vegas will find this walk both engaging and memorable. I brought my 21 year old son it gave me a vehicle to share \"my\" Vegas with him.\n\nThe experience is efficient and well-paced. You need about an hour to fully appreciate the signs and read the stories behind the restaurants, motels, and casinos that once defined the Strip. Each sign tells a story, and every one is fascinating in its own way.\n\nMy favorite was the sign from the Moulin Rouge, the first integrated casino on the Strip—a powerful reminder that Vegas history is about more than entertainment; it’s also about social change which my son appreciated 🏛️.\n\nThe people who work here genuinely love the history and add rich color commentary that brings the exhibits to life.\n\nThis is a reasonably priced, highly worthwhile walk through the glitter, glam, and color of a truly unique city 🌟. Don’t miss it.",
+          "time": 1767623950,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nv-reno-nevada-museum-of-art",
@@ -223,14 +375,14 @@
       "website": "http://www.nevadaart.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "160 W Liberty St, Reno, NV 89501, USA",
       "address_line2": null,
       "postal_code": "89501",
-      "latitude": 39.520828,
-      "longitude": -119.813362,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 39.5207823,
+      "longitude": -119.8134183,
+      "place_id": "ChIJwTJN6slAmYARgb0NL2uP9qw",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -249,29 +401,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 1,
-      "modern_contemporary_strength": 2,
+      "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 16,
+      "historical_context_score": 4,
+      "priority_score": 12,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Nevada Museum of Art has a modest permanent collection focused on thematic approaches around human interaction with nature, which does not have significant depth or rarity. Its historical context and curatorial programming support local education but lack national influence.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum’s stated collection emphasis is thematic (human interaction with the land / nature), with no evidence of dedicated Impressionist holdings, so Impressionism is scored negligible. A land-and-environment focus commonly aligns with 20th–21st century art practices, supporting a moderate Modern/Contemporary score. The explicitly thematic curatorial approach suggests coherent interpretive framing, and its AAM accreditation and statewide uniqueness point to a regional reputation with a modera",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.nevadaart.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Reno; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "7753293333",
+      "phone": "(775) 329-3333",
       "is_scoreable": true,
       "content_summary": "Reno’s Nevada Museum of Art is the state’s premier art museum and a rewarding stop for travelers who like their culture rooted in place. Expect thoughtfully curated exhibitions that connect art to the Great Basin’s dramatic landscapes, environmental questions, and contemporary life in the American West. The museum’s modern downtown building—designed to echo Nevada’s geology and light—makes the visit feel purposeful from the moment you enter. It’s a compact, high-quality museum experience with strong programming and a calm, gallery-forward atmosphere.",
       "content_description": "**Nevada Museum of Art** is Reno’s flagship art destination and an especially satisfying visit if you’re drawn to how artists interpret land, light, and the American West. While the museum’s permanent holdings are **modest**, the curatorial approach is **confident and thematic**, regularly tying exhibitions to Northern Nevada’s identity—think *landscape*, *environmental art*, and contemporary work that engages place, ecology, and cultural memory. Rotating shows keep the experience fresh, so even repeat visitors often encounter new perspectives, from photography and works on paper to installation and cross-disciplinary projects.\n\nArchitecturally, the museum is a highlight in itself. Its **modern, angular form** is conceived as a response to Nevada’s terrain—suggesting rock strata, desert geometry, and shifting light. Inside, the galleries feel clean and intentional, with sightlines and pacing that encourage slow looking rather than crowds-and-checklists. For art lovers, that translates into a visit where you can actually spend time with the work: lingering over a suite of prints, taking in a focused contemporary exhibition, and then stepping back outside to see how Reno’s bright, high-desert atmosphere mirrors the visual ideas inside.\n\nPlan for a few hours to savor exhibitions and any lectures or programs on the calendar; the museum’s **regional authority** shines most in the way it frames Nevada and the Great Basin as subjects worthy of serious, museum-level attention.",
@@ -289,9 +442,150 @@
       "eca_score": 2,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 2,
-      "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://www.nevadaart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 1509,
+      "google_reviews": [
+        {
+          "author_name": "Javin Ladish",
+          "author_url": "https://www.google.com/maps/contrib/101332058873001051832/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXl1DP9Ma39bPPrnBcPphoOfjeQh0zo8HUwjD6kwDTw_tvXO0aP=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "One of the best museums I’ve been to! We tried to do some sketching but felt tip micro pens are not allowed for some reason. The gift shop was pricey but they have an assortments of beautiful gifts and art. The cafe was really wonderful and the barista, Chloe, was super helpful and friendly which made the experience that much better. Can’t wait to come back!",
+          "time": 1767748912,
+          "translated": false
+        },
+        {
+          "author_name": "Brendan Kiely",
+          "author_url": "https://www.google.com/maps/contrib/117523430071286784872/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU6_HO8R-zn8yYdWoHt0MWaJHW3D_ZXT9x7e7EMdB2pes4eBCpA0A=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Nevada Museum of Art is a cool place to check out in Reno. I went on one of their free Saturdays which is the second weekend of the month. There are a few exhibits, and the dinosaur exhibit on the third floor was my favorite. Very cool to check out and I recommend if you are visiting Reno.",
+          "time": 1768247288,
+          "translated": false
+        },
+        {
+          "author_name": "Jamie Tadrzynski",
+          "author_url": "https://www.google.com/maps/contrib/101248277098161917223/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU7wfls6DJyOBy4JlmGyGCXqzJ9rDFonCE5fL8CbhLvejwD-s_V=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "It’s not very large but absolutely jam packed with awesome exhibits! Definitely worth the time to take and explore. The Ichthyosaurus exhibit is phenomenal and I felt like a kid exploring it. They have a cute cafe (didn’t eat; can’t rate the food) but it was packed and a nice sitting area in the lobby. Gift shop was reasonably priced for a museum.",
+          "time": 1743905379,
+          "translated": false
+        },
+        {
+          "author_name": "Maeve Holden",
+          "author_url": "https://www.google.com/maps/contrib/111071982714625004977/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWgtk4nY0qGk18knPFSa-9xUUiIC39Zwh6kFm2PTIoEmcgRaZ0kBg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I really enjoyed NMA... It is not a stuffy museum. Much more modern than that. I really appreciated that every exhibit had a tie to the Reno or Nevada area. It took us about 21/2-3 hours to go through. There was a very small permanent collection, all related to Reno and nevada. The Cafe is an absolute standout go there for breakfast or lunch.  I had a chocolate peppermint croissant that was the best I've ever had.  We saw several people walk in and just walk out with food and baked goods. Clearly a local favorite. Plenty of room to lounge and be on your computer too if you just need a great spot with good coffee.  Stand out thing for me was they actually did my eggs over medium which even though I tell people I rarely get. Thank you.",
+          "time": 1767918168,
+          "translated": false
+        },
+        {
+          "author_name": "Joe Zott",
+          "author_url": "https://www.google.com/maps/contrib/110563414848488592352/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWzNagMyCqQiMVjuySY7FH8L3kXOij0vQqrjiARNgm-mqU5pPTG=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Much more than art. Everything wonderfully presented. They seen to have created a great experience for people at any age.",
+          "time": 1765751800,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nv-reno-sierra-arts-gallery",
@@ -303,14 +597,14 @@
       "website": "http://sierra-arts.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "17 S. Virginia Street",
+      "street_address": "Riverside, 17 S Virginia St, Reno, NV 89501, USA",
       "address_line2": null,
       "postal_code": "89501",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 39.5243525,
+      "longitude": -119.8124398,
+      "place_id": "ChIJw7w2gcpAmYARFp9R-DsGsnI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -340,12 +634,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://sierra-arts.org"
+        "http://sierra-arts.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Reno; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:54:30Z",
+      "updated_at": "2026-03-14T19:59:47Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -360,8 +655,140 @@
       ],
       "content_generated_at": "2026-01-25T02:54:30Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(775) 329-2787",
+      "website_google": "http://www.sierraarts.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 42,
+      "google_reviews": [
+        {
+          "author_name": "Tristan Lipschutz",
+          "author_url": "https://www.google.com/maps/contrib/103387114814562050162/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXpOxfaDO18xJZJstdwGwQ4zMydaA0pqQ1BQEIQVlkqURT7Vs0=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I have had the pleasure of attending a book signing and a jazz concert here. Both events were great and the space is clean with beautiful art pieces.",
+          "time": 1761877114,
+          "translated": false
+        },
+        {
+          "author_name": "JOHN MENZ",
+          "author_url": "https://www.google.com/maps/contrib/111365221692495046323/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVCPSEbPTxNPBATeB3_HmG59jdmTg5L88fJfTR3fVaYc3mS35U=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "My daughter Avanna Lawson has her paintings there on display till January 27th",
+          "time": 1737269951,
+          "translated": false
+        },
+        {
+          "author_name": "Mush Room",
+          "author_url": "https://www.google.com/maps/contrib/118151691814115806885/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW5O4p6lxSz71h0AAl2u3WhdQIq5Da3ywDieYEdTdpX-38AIyU=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Beautiful building with even better art!",
+          "time": 1768563635,
+          "translated": false
+        },
+        {
+          "author_name": "ava maxwell",
+          "author_url": "https://www.google.com/maps/contrib/116531682641346394798/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK7k4MWTLDSkoVIgAvdbuKbGzUCx_2WY8oQBpcV76voxosfU4MI=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Really Awesome, i actually stopped spontaneously in During Their Book Gathering, Valerie Is An Exceptional Host and I’m Glad to Have been There and See a Lot of Perspectives, Walks of Life and Honestly be unified In Art.",
+          "time": 1699986388,
+          "translated": false
+        },
+        {
+          "author_name": "Dan Pieraccini",
+          "author_url": "https://www.google.com/maps/contrib/110978525016541215114/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9Nt8iMu2FInIYzn9CvX7KyOO_J1G32xzdOWSeLNoRlzeWlD5otw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Excellent and modest gallery with mixed media shows and a minute shop in the bag. The foundation offers public bathrooms, and the themed show they curated when I visited dealt primarily with Shoes. Poems, sculpture, and visual art kept me browsing for almost 40 minutes. Delightful place to visit and easily accessible location. Stop in!",
+          "time": 1562092504,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

@@ -20,7 +20,7 @@
       "longitude": -111.8060852,
       "place_id": "ChIJh1n689B9VIcRixSihuDF9uY",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -29,7 +29,7 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -39,14 +39,14 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 1,
-      "modern_contemporary_strength": 3,
+      "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 4,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum focuses on modern and contemporary art with a coherent collection that reflects regional themes. Though it serves as a local resource, it lacks the depth and national significance for a higher score in modern contemporary strength. Historical context demonstrates local relevance but does not anchor major movements, leading to a moderate score.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "NEHMA is explicitly focused on modern and contemporary art of the Western United States, with a 5,500-object collection and emphasis on movements like Beat, post-surrealism, and Bay Area Abstract Expressionism, supporting a strong modern/contemporary score. No evidence indicates Impressionist holdings, so Impressionism is scored negligible. As an accredited academic museum with art-historical movement framing, it likely provides good interpretive context; its scope appears regionally focused rat",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
@@ -56,7 +56,7 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(435) 797-0165",
@@ -207,9 +207,9 @@
       "overall_quality_score": 13,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Consider"
     },
     {
       "museum_id": "usa-ut-unknown-southern-utah-museum-of-art",
@@ -221,14 +221,14 @@
       "website": "https://www.suu.edu/pva/suma/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "Southern Utah Museum of Art, 13 S 300 W, Cedar City, UT 84720, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 40.78936,
-      "longitude": -111.86357,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "84720",
+      "latitude": 37.677072,
+      "longitude": -113.0662961,
+      "place_id": "ChIJjQeljrthtYARs5x_MsXljWc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -259,12 +259,13 @@
         "walker_reciprocal",
         "official_website",
         "https://www.suu.edu/pva/suma",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Cedar City' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:44:01Z",
+      "updated_at": "2026-03-14T20:03:58Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -279,7 +280,74 @@
       ],
       "content_generated_at": "2026-01-25T03:44:01Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(435) 586-5432",
+      "website_google": "https://www.suu.edu/suma/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.6,
+      "google_reviews_count": 379,
+      "google_reviews": [
+        {
+          "author_name": "luke lamoreaux",
+          "author_url": "https://www.google.com/maps/contrib/107330662502009097487/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX0JsCgR1JJ3STOLlh47les8NRBipdU0iRdX7GQYKAc9fLL7CkM=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "ok what this is the coolest art museum ive ever been to in my whole entire life. the exhibits were all about salt and they were very cool. the architecture of this building is what made me want to come in the first place. such a cool spot.",
+          "time": 1731896503,
+          "translated": false
+        },
+        {
+          "author_name": "Dave Kieda",
+          "author_url": "https://www.google.com/maps/contrib/115272875959706068354/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWf2XWj4M10MjuxBMa0zPC3OZL1Cv0BpdU8ZSQpoqqi-yiSntnM=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "SUMA is a small Arts museum  that hosts a regarding of temporary  exhibits; many are student and local artists.  We spent an hour there onLabor day while waiting to attend a Shakespeare festival  play. The staff was super friendly,  admission was free, and there were a range of modern concept pieces mixed with painting a sculpture.  A nice way to spend a lazy afternoon.  Admission  is free and there is plenty of parking on th streets nearby. A fun visit!",
+          "time": 1759067905,
+          "translated": false
+        },
+        {
+          "author_name": "Drew Terry",
+          "author_url": "https://www.google.com/maps/contrib/102728153845572137967/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW1D0HOZpD_UXFq_XbhinMXB2K_bytcRTnF9nGl3J369mKN7oi_=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 3,
+          "relative_time_description": "a year ago",
+          "text": "Was drawn by the website mentions of Dali and other masters. These were notably absent and the museum featured an interesting audio sculpture exhibit and a series of political statements by one other artist. Not very diverse and devoid of any of the advertised masterpieces. It was a cool place on a hot summer day and it was free so you can’t really lose! The surrounding sculpture garden and homage to Shakespeare was more interesting to me than the museum itself.",
+          "time": 1718682360,
+          "translated": false
+        },
+        {
+          "author_name": "Georgia B",
+          "author_url": "https://www.google.com/maps/contrib/113783760410143391340/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLQCE3UBQDAFGhEIxRoiLGojmoR8AZAx12XoQIxvZzWNd8OqEI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "Wonderful art museum ! Free entry and an awesome spot where you can see the conservation work being carried out :) one critique would be adding more information to the individual labels with each piece of artwork",
+          "time": 1769820192,
+          "translated": false
+        },
+        {
+          "author_name": "Sally Kasper (Sally)",
+          "author_url": "https://www.google.com/maps/contrib/117104100344063950988/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUrIRbZGDWGepFqrQ5bLKp_vqR31-qxQz5OZTZ8pWoD2i0OjrqeKg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I love the staff, very Sweet, attentive, and helpful. Neat experience: corsettes, textures, tapestries, & shakespear. Eclectic mix of traveling and permanent exhibits. Please see the attached photos. I will recommend.",
+          "time": 1697493021,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ut-unknown-utah-museum-of-contemporary-art",
@@ -291,14 +359,14 @@
       "website": "http://www.utahmoca.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "20 S W Temple St, Salt Lake City, UT 84101, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "84101",
+      "latitude": 40.7683461,
+      "longitude": -111.8947354,
+      "place_id": "ChIJcZ7wQAb1UocRMI0M-O08d7k",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -328,12 +396,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.utahmoca.org"
+        "http://www.utahmoca.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Salt Lake City' from open data; MRD: computed city_tier=3 for Salt Lake City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:44:07Z",
+      "updated_at": "2026-03-14T20:03:58Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -348,7 +417,139 @@
       ],
       "content_generated_at": "2026-01-25T03:44:07Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(801) 328-4201",
+      "website_google": "http://www.utahmoca.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 6:00 PM",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 6:00 PM",
+          "Friday: 11:00 AM – 9:00 PM",
+          "Saturday: 11:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 425,
+      "google_reviews": [
+        {
+          "author_name": "John Lee",
+          "author_url": "https://www.google.com/maps/contrib/106614315734306659381/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKfJR-XwtJ93AaHBlh9IgAV66bSxItMdCUD7sjgaUDKqOui6Mg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "It’s nice little art museum. Not a lot of art to see though they have the space to fill it. I’d recommend adding more pieces as you can finis the whole place in like 10 min",
+          "time": 1770580032,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Houlihan",
+          "author_url": "https://www.google.com/maps/contrib/111512331314852346570/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMkTAXdEtkmx8XzdV0_grmeA_IXoRvDcvizIEeZ_1pxgx0YyA2=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "4 galleries when I was visiting. All excellent representations of contemporary artists. Most of them little known. I was impressed. Not the best display modes. Worthwhile.",
+          "time": 1762739976,
+          "translated": false
+        },
+        {
+          "author_name": "Danielle Waters",
+          "author_url": "https://www.google.com/maps/contrib/118148942958382020720/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXz7UHNH6K_9JA_QfpAgXYEgPqbbyyWLvoFypMoEPG8_ZxcA4_nA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The UMOCA’s programs, workshops, and exhibits bring rich creativity to the Utah arts community. I have been to many free workshops with my family, as well as social events, and artists discussion panels. Every visit fills me with inspiration and gratitude.",
+          "time": 1766698178,
+          "translated": false
+        },
+        {
+          "author_name": "Ian Heaton-Campbell",
+          "author_url": "https://www.google.com/maps/contrib/104520390904114257048/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVHkpUrM2FUEwgxN2f9TGmBKwHJmRcT_hqUpNtwoJn-JE3k-gJA8Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 2,
+          "relative_time_description": "7 months ago",
+          "text": "First of all, the art in here isn’t great. I’m no artist but I think I can tell when something was made with skill vs something made like a chill project that got rejected. I know it’s all perspective and point of view but if you’re gonna call yourself a “Museum” and put up what you have then I think you need to rename the place. Honestly it’s small for one, two is the art here is such a reach. To connect 2 dots in the descriptions of the art, you need to really need to reach for it. Doesn’t make sense. The lady up front was kinda nice. The place is actually quite boring and empty. The shop has cool stuff but is quite expensive. Sort of a let down but worth checking out if you want to be flabbergasted on what some people call art.",
+          "time": 1755373252,
+          "translated": false
+        },
+        {
+          "author_name": "Aubri Tuero",
+          "author_url": "https://www.google.com/maps/contrib/112833909976352490442/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVYH1bDywEYdYcECQwlrYaZDl8UJgf_Qd8LBSjl_8J6x4EXSNlt=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I absolutely love UMOCA. It’s a beautiful, thoughtfully curated space, and I really admire the work they do to uplift and promote local artists from across the state. You can feel how much they care about the creative community—every visit leaves me more inspired and connected.",
+          "time": 1769816700,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ut-salt-lake-city-utah-museum-of-fine-arts-university-of-utah",
@@ -360,14 +561,14 @@
       "website": "http://www.umfa.utah.edu/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "410 Campus Center Drive",
+      "street_address": "410 Campus Center Dr, Salt Lake City, UT 84112, USA",
       "address_line2": null,
       "postal_code": "84112",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.7604569,
+      "longitude": -111.8433141,
+      "place_id": "ChIJUfguCu1fUocR7XMXJIy3x88",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -397,12 +598,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.umfa.utah.edu"
+        "http://www.umfa.utah.edu",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Salt Lake City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:44:13Z",
+      "updated_at": "2026-03-14T20:03:59Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -417,8 +619,150 @@
       ],
       "content_generated_at": "2026-01-25T03:44:13Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(801) 581-7332",
+      "website_google": "http://umfa.utah.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 8:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 970,
+      "google_reviews": [
+        {
+          "author_name": "Kimo Kahookele",
+          "author_url": "https://www.google.com/maps/contrib/107645912316253533601/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUcq9KtyvbkcIeU7UVq3kabtPc_OGY6pRz1U9VfO-8k-zHXhYOP=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We were looking for something to do on a Saturday afternoon, and this was the perfect way to spend a couple of hours. I wasn’t sure what to expect, but I was pleasantly surprised. The space was lively yet thoughtful, with families introducing children to art in an engaging way.\n\nAs a big fan of Monet, I was happy to see pieces inspired by his work, capturing that soft, pastel, atmospheric beauty he was known for. The contemporary pieces also stood out, especially the interactive candy-wrapped installation—taking a piece was a unique and exciting experience. The American art collection was fascinating, with detailed descriptions providing insight into the dates, techniques, and materials used.\n\nThe museum does a great job of enhancing the experience with QR codes on the walls, linking visitors to additional information about the pieces as they walk through. The setting itself is stunning—beautiful rooms with high ceilings and large windows offering views of the mountains surrounding the university. The diverse exhibits, including Egyptian, Pacific Asian, and Himalayan sections, were thoughtfully arranged, making the space easy to navigate.\n\nTo top it all off, there’s even a small coffee shop area with tables inside and out, perfect for continuing the conversation about the exhibits with friends or loved ones. I can easily see this as a great date option for an afternoon—relaxed, engaging, and with plenty to talk about.\n\nOverall, a beautifully curated museum in a breathtaking location—well worth a visit.",
+          "time": 1741558139,
+          "translated": false
+        },
+        {
+          "author_name": "luke lamoreaux",
+          "author_url": "https://www.google.com/maps/contrib/107330662502009097487/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX0JsCgR1JJ3STOLlh47les8NRBipdU0iRdX7GQYKAc9fLL7CkM=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "if you had asked me earlier this morning \"wanna spend three and a half hours in an art museum?\" i would've probably said \"umm not particularly\".\n\nwell i did, and that was the best three and a half hours ever. i loved the learning about the himalayan exhibit and was excited to see it but the permanent collection was also amazing. the gift shop was so nice and had a lot of great items and the prices were not to bad. the cafe was also really good. the apple brie baguette was thee greatest sandwich on this planet. like not even kidding. i also got a iced oat milk latte with cinnamon and sugar in the raw and it was the best.\n\nthe employees throughout the whole building were so kind and helpful i will 100% be back again and again and again.",
+          "time": 1752628005,
+          "translated": false
+        },
+        {
+          "author_name": "Mario",
+          "author_url": "https://www.google.com/maps/contrib/104754003418403795227/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWysrQmLhAZuDvRVHXAgLX71LMnxMF6AFJ0jLMhj7EL9hSufJowLQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "UMFA has a thoughtfully eclectic, impressive collection of art. My wife and I enjoyed our time here.",
+          "time": 1763876718,
+          "translated": false
+        },
+        {
+          "author_name": "Anna Leader",
+          "author_url": "https://www.google.com/maps/contrib/108963819622229825996/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVYp-sSdO41gBJy16oxL9PCG7DFVbnRxVfWwy2Ba6WPiAYauoOy4w=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "12 months ago",
+          "text": "A great museum that punches above its weight, with particularly lovely contemporary art and landscapes of the Southwest. There are artworks and artifacts from all over the world, but the strongest collections are really the American paintings and contemporary pieces. The museum is on the university campus and is accessible by public transit; we actually walked down from the Natural History museum (about 30 minutes).",
+          "time": 1742169286,
+          "translated": false
+        },
+        {
+          "author_name": "Brian Withani (Curiosity Creator)",
+          "author_url": "https://www.google.com/maps/contrib/111610115611953233262/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWqvFPgIzH9iz1_UujupqSDh57GLsWHaoiU390fS-YKD-6ST5aoyQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "An excellent collection, brilliantly displayed in a landmark building.\n\nFine works from all over the world, from 1200 BC Egypt to newly acquired contemporary!\n\nEverything is presented in English and Spanish. Bravo!\n\nSo happy to have visited.  Highly recommend!",
+          "time": 1737309864,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

@@ -20,7 +20,7 @@
       "longitude": -103.7293502,
       "place_id": "ChIJjeQ4I6CmMlMR1UY6BaDvu2U",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -57,7 +57,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'South Dakota' from open data; MRD: computed city_tier=3 for South Dakota; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:31:27Z",
+      "updated_at": "2026-03-14T20:02:57Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(605) 578-1714",
@@ -216,14 +216,14 @@
       "website": "https://www.deadwoodhistory.com/about-us/properties/historic-adams-house.html",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "252 150 Sherman St",
+      "street_address": "22 Van Buren St, Deadwood, SD 57732, USA",
       "address_line2": null,
       "postal_code": "57732",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.3721386,
+      "longitude": -103.7267892,
+      "place_id": "ChIJ0YWZXp6mMlMR8z-w1yw1hb4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -253,12 +253,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.deadwoodhistory.com/about-us/properties/historic-adams-house.html"
+        "https://www.deadwoodhistory.com/about-us/properties/historic-adams-house.html",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:31:34Z",
+      "updated_at": "2026-03-14T20:02:58Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -273,7 +274,74 @@
       ],
       "content_generated_at": "2026-01-25T03:31:34Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(605) 578-3724",
+      "website_google": "https://www.deadwoodhistory.com/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.7,
+      "google_reviews_count": 571,
+      "google_reviews": [
+        {
+          "author_name": "David Mueller",
+          "author_url": "https://www.google.com/maps/contrib/100349052985638552315/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMknwTrhA4HE8-ee7rzWAId-WDjU8YhwbbeRSTzYO_39z4_g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Great tour and tour guide!  It's so amazing to hear the preservation and story of this home and residents.  A must see while in Deadwood",
+          "time": 1756500826,
+          "translated": false
+        },
+        {
+          "author_name": "Cathy",
+          "author_url": "https://www.google.com/maps/contrib/104975971741476575163/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWKivWBWSLE_lDpZha-fdj09UDeSfc2Yd5juv-P4iok1s3WMBI20A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I love history and this house did not disappoint.  Desiree was very knowledgeable and kind.  The home is beautiful and a must see.",
+          "time": 1760577375,
+          "translated": false
+        },
+        {
+          "author_name": "Eli Pattridge",
+          "author_url": "https://www.google.com/maps/contrib/100900312275432568967/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXZCut-n6YTZ5KCZJjn8mIj3UzsMbTf2H2DGOSZHaBpYjtRit-4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Very cool museum. The tour guides provide lots of information, but they do have strict rules no touching anything, no standing on the antique rugs, no standing on the tile by the fireplace, no using flash, and no sitting on the furniture. They are very strict about these rules and will not hesitate to yell at you. You must stay with your tour group and keep moving. Other than that our guide shared lots of information, answered every question, and was very detailed. The house was incredible. I highly recommend the Adams House—just follow the rules, as you should always do anyway.",
+          "time": 1720366437,
+          "translated": false
+        },
+        {
+          "author_name": "Kevin Sterwald",
+          "author_url": "https://www.google.com/maps/contrib/111008728461523443062/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVYy8SF4p5l-Mzi405GJvRgRsfiIy5uxqRJVjAnIviQA5K6y4Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Well worth the stop. The house is gorgeous. Very well preserved and a wonderful insight into some of the past in Deadwood. The guide was fantastic. On a very strange twist of fate we were at the Mount Moriah cemetery before this and just happened to stumble upon the gravesite of the prior owner without even knowing it until we were there. I would definitely recommend checking the place out.",
+          "time": 1752924336,
+          "translated": false
+        },
+        {
+          "author_name": "Janis RB",
+          "author_url": "https://www.google.com/maps/contrib/109826387224725696677/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWTnHn2aPSrvupIlwzLlYYe-riYzbQv4fD6cFm93nuDwRf0gvbZ4A=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Amber was a great guide! She seemed to love the house as well as give tours of it. The stories were great. Loved the efforts to restore.",
+          "time": 1718219482,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-sd-unknown-south-dakota-art-museum",
@@ -285,14 +353,14 @@
       "website": "https://www.sdstate.edu/south-dakota-art-museum",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1036 Medary Ave.",
+      "street_address": "1036 Medary Ave, Brookings, SD 57007, USA",
       "address_line2": null,
       "postal_code": "57007",
-      "latitude": 44.29766,
-      "longitude": -96.76821,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.3166913,
+      "longitude": -96.7880405,
+      "place_id": "ChIJiZf_k0uiiYcRtdNXoynythM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -316,23 +384,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The South Dakota Art Museum has a modest collection that supports educational value but lacks depth for significant scholarly impact (Collection Strength = 2). It primarily serves the local community and is known in the region (Reputation = 3), with a limited curatorial authority (ECA Score = 1).",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence only establishes that the South Dakota Art Museum exists in Brookings (a small city) and is associated with South Dakota State University, without details on permanent collection strengths or interpretive approach. Given the local setting and lack of collection evidence, it is most reasonable to rate reputation as primarily local and collection tier as small/limited based on available signals.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://www.sdstate.edu/south-dakota-art-museum",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:31:45Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6056885423",
+      "phone": "(605) 688-5423",
       "is_scoreable": true,
       "content_summary": "Set on the South Dakota State University campus in Brookings, the South Dakota Art Museum offers a focused, approachable way to experience regional art at close range. It’s especially rewarding for visitors who love the stories behind place—prairie light, Plains identity, and the creative voices of the Upper Midwest. With a modest scale that encourages slow looking, the museum is an easy, art-forward stop that pairs well with a day in Brookings and the surrounding prairie landscape.",
       "content_description": "**South Dakota Art Museum** is a quietly compelling destination for art lovers traveling through Brookings—less about blockbuster crowds and more about the pleasure of *close looking*. Located on the South Dakota State University campus, it functions as both a community museum and a teaching collection, which often translates into thoughtful wall texts, student-driven projects, and exhibitions that connect art to regional history, ecology, and lived experience on the northern plains. If your ideal museum visit includes time to revisit works and notice subtle shifts of color and surface, its manageable size is a strength.\n\nExpect the collection to lean into the museum’s sense of place: works by artists connected to South Dakota and the broader Upper Midwest, with an emphasis on *regionalism*, prairie landscapes, portraiture, and craft traditions that resonate with Plains culture. While curatorial authority is more local than encyclopedic, that can be part of the appeal—shows often foreground community narratives and the visual language of the region rather than chasing international trends. For travelers, it’s an inviting way to understand how artists have pictured (and reimagined) South Dakota’s land, weather, and identity.\n\nArchitecturally, the museum experience is campus-based and intimate—more gallery-focused than monumental—making it easy to fit into a day without fatigue. Art enthusiasts will appreciate the calm pacing, the likelihood of rotating exhibitions, and the chance to pair the visit with a walk around SDSU’s grounds. It’s a museum best approached like a sketchbook: small, concentrated, and full of discoveries.",
@@ -347,7 +416,148 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "eca_score": 1,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "http://sdstate.edu/south-dakota-art-museum",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 137,
+      "google_reviews": [
+        {
+          "author_name": "G “Jersey” A",
+          "author_url": "https://www.google.com/maps/contrib/116438894858875626467/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIy0qrnep7JkxBypiQWXoAEcveq7pGAljIXA5CALeVrR21gUBYH=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Great exhibition space at the University's Museum! Lovely staff who were very welcoming! A friend, Tim Peterson, has his Art Show currently on display.",
+          "time": 1743905421,
+          "translated": false
+        },
+        {
+          "author_name": "Chelsea Johnson",
+          "author_url": "https://www.google.com/maps/contrib/118046565767876385018/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUnpJW8Q1HfxFmWprKTBzn0gzUBx2buC6oRle0zutojCmI072Z4=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "3 months ago",
+          "text": "The museum is currently under construction even though the website did not indicate that at all. There were no permanent displays open - no Harvey Dunns or Oscar Howes - which were what we particularly went to view. Only 2 small galleries open. Wish the website would have been accurate and saved a wasted trip.",
+          "time": 1763744894,
+          "translated": false
+        },
+        {
+          "author_name": "Deanna Wallum",
+          "author_url": "https://www.google.com/maps/contrib/117815805784784595275/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLREtx36i2U5qKd6kN8coSp_nGzf7CyYBdXNg8aVl-AtpwBAw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We always enjoy the art displays and gift store. I bought some great labradorite beads and iron rabbit head wall hooks.\nMy father-in-law's father posed for The Farmer and it was on display,  I always like seeing it. The shadow art was ethereal to walk through",
+          "time": 1725861023,
+          "translated": false
+        },
+        {
+          "author_name": "Joanne Jensen",
+          "author_url": "https://www.google.com/maps/contrib/112536322683128581392/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5XivlcCnlkoV5pQLmJFtiLEoJf6spFbZk0bwEIcBS06s4eyo5=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "If you love Harvey Dunn, you can see some of his work here. (I love it...South Dakotan, of course.)",
+          "time": 1760593621,
+          "translated": false
+        },
+        {
+          "author_name": "Eric Salas",
+          "author_url": "https://www.google.com/maps/contrib/106090571586840408349/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUkyNh1sZgQSPoQ6sQ_yc4AxbQ8PuWSLiHR1oKy05UJpZgro3s4FQ=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "Small museum just inside South Dakota State University campus! There aren't a lot to see but the Harvey Dunn exhibit is amazing! Entry is free and that's a good thing😁",
+          "time": 1529859778,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-sd-unknown-the-days-of-76-museum",
@@ -359,14 +569,14 @@
       "website": "https://www.deadwoodhistory.com/about-us/properties/days-of-76-museum.html",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "252 150 Sherman St",
+      "street_address": "18 76th Dr, Deadwood, SD 57732, USA",
       "address_line2": null,
       "postal_code": "57732",
-      "latitude": 44.34766,
-      "longitude": -103.71137,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.385831,
+      "longitude": -103.7159666,
+      "place_id": "ChIJl_0ARKCmMlMRegCzxjIHPmU",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -397,15 +607,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.deadwoodhistory.com/about-us/properties/days-of-76-museum.html",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:31:53Z",
+      "updated_at": "2026-03-14T20:03:00Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6055781657",
+      "phone": "(605) 578-1657",
       "is_scoreable": false,
       "content_summary": "The Days of '76 Museum in Deadwood offers a captivating journey into the rich history of the Black Hills. With its diverse collections ranging from gold rush artifacts to Native American history, this museum immerses visitors in the spirit of the Old West. Experience the thrill of the frontier and the stories of its legendary figures in this unique historical treasure.",
       "content_description": "**The Days of '76 Museum** is a remarkable tribute to the rich tapestry of the Black Hills' history, beautifully preserving the legacy of the American West. Established in the heart of Deadwood, this museum not only showcases artifacts from the iconic Days of '76 celebrations but also captures the essence of the pioneers and Native American culture that shaped this region. Visitors are invited to step back in time as they explore the myriad displays chronicling everything from the gold rush era to the days of the Wild West, including genuine cowboy gear and historical memorabilia of famous figures like Wild Bill Hickok and Calamity Jane. It’s truly a *historic journey* worth taking.  \n\nThe architectural charm of the museum enhances the experience, as the building itself is a reflection of the area's storied past. Inside, guests can find impressive collections, including vintage photographs, intricately crafted Native American artifacts, and even rare horse-drawn vehicles that illustrate transportation in the era. *Interactive exhibits* engage visitors of all ages, ensuring that everyone leaves with a deeper appreciation for the diverse heritage of this corner of the country. Combine the rich history with themed events and reenactments, and you have a destination that delights, educates, and inspires. Don’t miss the opportunity to embrace the spirit of adventure that defines the **Days of '76 Museum**.",
@@ -418,7 +629,138 @@
       ],
       "content_generated_at": "2026-01-25T03:31:53Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.deadwoodhistory.com/about-us/properties/days-of-76-museum.html",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 787,
+      "google_reviews": [
+        {
+          "author_name": "Catherine Shawarby",
+          "author_url": "https://www.google.com/maps/contrib/103895048460752427576/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXAVjX56q9mlDDUk0BXzqLK9wJLdZChAwhMUlJepe9_4SsLk-jknA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "5 months ago",
+          "text": "Interesting, I had understood ( obviously incorrectly) from the visitor centre that it was a museum dedicated to the history of Deadwood. It’s actually dedicated to the parade/celebrations commemorating its past.\nLots of interesting displays .\nLots of carriages but maybe too many for the space they have as they were literally lined up.",
+          "time": 1759549594,
+          "translated": false
+        },
+        {
+          "author_name": "Cathy",
+          "author_url": "https://www.google.com/maps/contrib/104975971741476575163/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWKivWBWSLE_lDpZha-fdj09UDeSfc2Yd5juv-P4iok1s3WMBI20A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "So much great information.  The Wagon displays were my favorite.  A must see if you love history.  I recommend buying the 3fer ticket.",
+          "time": 1760577579,
+          "translated": false
+        },
+        {
+          "author_name": "Keith Wegner",
+          "author_url": "https://www.google.com/maps/contrib/115029124065084572195/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXK11ApznnKISwcNlXarQhZh0-cftJhKDEeG58Kr344uA_M1E84=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Very cool place, I’ve always been fascinated by the Wild West and how things like stage coaches and carriages looked like. This place is amazing in the fact that it has all of this including the evolution of bull riding and guns. This was one of the coolest museums I have ever been too I know you will like it. This is a trip I highly recommend making!",
+          "time": 1728927354,
+          "translated": false
+        },
+        {
+          "author_name": "Debbianna Moon",
+          "author_url": "https://www.google.com/maps/contrib/110178575290705909411/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKss4YVRHP35yXjhgz-OCu14rQYrbOf1QTh-WTkNYqi2xE4ZA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Interesting exhibits from the founding of Deadwood celebrations. Wagon collection is worth the visit.",
+          "time": 1762745450,
+          "translated": false
+        },
+        {
+          "author_name": "Travis K",
+          "author_url": "https://www.google.com/maps/contrib/109956135881885106525/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWDMy6s9jOJFa7fNJBWgVMoKL3tnRquec96EAUJDDbKstaYMB0=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "I enjoyed this museum.  I loved the lower level of wagons and carriages.  I spent quite a bit of time here.  Good place to visit!",
+          "time": 1754834969,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-sd-rapid-city-journey-museum",
@@ -430,14 +772,14 @@
       "website": "http://www.journeymuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "222 New York Street",
+      "street_address": "222 New York St, Rapid City, SD 57701, USA",
       "address_line2": null,
       "postal_code": "57701",
-      "latitude": 44.0865044,
-      "longitude": -103.2182918,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.0865361,
+      "longitude": -103.2186319,
+      "place_id": "ChIJCXqGiildfYcRItEnutGJT6k",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -468,12 +810,13 @@
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
-        "http://www.journeymuseum.org"
+        "http://www.journeymuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Rapid City; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:32:02Z",
+      "updated_at": "2026-03-14T20:03:01Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -488,7 +831,139 @@
       ],
       "content_generated_at": "2026-01-25T03:32:02Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(605) 394-6923",
+      "website_google": "http://www.journeymuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 743,
+      "google_reviews": [
+        {
+          "author_name": "Gulsah Taskin Kilinc",
+          "author_url": "https://www.google.com/maps/contrib/108602827949976599498/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-pC70ZcjrN1B6yQPWsm7u5hT7Ul7DOcbagUvaRifPZ3JAqd9t=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "If you have kids and living in South Dakota you should go this museum. Definitely designed to make children love science. I just moved this state with my family and learned too much about the history of the area. We really enjoyed the time we spent there and went again with our friends. Highly recommended for families who have kids between 2-12",
+          "time": 1768620853,
+          "translated": false
+        },
+        {
+          "author_name": "Evan",
+          "author_url": "https://www.google.com/maps/contrib/117068184982158732665/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXZQiwg279YxQ0PRrq9AV-Q1xvO6ct29pqL-27XJkVhyAIkHe-9Yw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "a month ago",
+          "text": "Very informative museum primarily on the history of South Dakota with lots of reading, but it should be noted that there are mainly child focused activities. It seemed about a third of the exhibits were “under construction” and had nothing present in them besides a sign stating so.\n\nBathrooms were readily available and staff were very polite. The gift shop staff was not present, so we didn’t end up buying anything.\n\nUltimately the price for entry was not very much worth the experience, as even as slowly as we moved through the museum we still only spent about 40 minutes in total.",
+          "time": 1769398878,
+          "translated": false
+        },
+        {
+          "author_name": "E Leonhardt",
+          "author_url": "https://www.google.com/maps/contrib/117188665387839146969/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWPGKdxOYmrAVZWgNh56p04mKcjVdeUIbUU9Kg1w9PheS2qZJa1=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "I was in the area with time to spend and after some research, decided to check this place out with my preschooler. We went on a Friday afternoon and nearly had the place to ourselves! We had a BLAST in the archeology dino digs- looking at fossils and playing in the super fine sand table were my preschooler's favorite. The STEAM corner was somewhat small, but with no other kids present, we had so much fun checking out the plasma ball and the giant microscope. My preschooler thought it was the BEST launching the parachute up the wind tube and racing to see who could catch them as they fell down! Although most weren't my toddler's speed, the curation of artifacts from early Americans was absolutely beautiful. The amount of native beadwork and garb as well as pioneer regalia was really impressive and well displayed. The frequent nooks for kid activities were well thought out and very engaging. We spent nearly 2 and a half hours here and enjoyed every moment. The only point of potential improvement would be that the bathrooms while marked as handicap, are not fully handicap accessible. Although we are not ourselves handicapped, we do work closely with those that are and noticed some things weren't quite up to our hopeful expectations. The sinks, soap, and paper towel were all too high and while you could maneuver a mobility aid in, it could be challenging to close the door due to the inward swung hinges. Aside from the room for improvement in the bathrooms, this place was a 10 out of 10 for us and my preschooler has already asked when we'll be back. If you're in the area, this is a place worth checking out.",
+          "time": 1758591108,
+          "translated": false
+        },
+        {
+          "author_name": "EMMANUEL VARGAS",
+          "author_url": "https://www.google.com/maps/contrib/102253674445601281171/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ2KPyYccIBZ5DNvz2CqwMWRGpWMfe3sKOELqkaEuzmlmEeeA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 weeks ago",
+          "text": "Loved the rich history of the natives, the cleanliness, the look from the inside. Plenty of parking, kid friendly, friendly service from all three workers.\nA few recommendations-\nNeed clothing in the gift shop.\nNeeds Native music in the gift shop and not Jazz music. It messes with the vibe!\nThe museum could use a face lift outside. We almost drove right by it if not for seeing the small sign.\nLots of potential here, until the next time.",
+          "time": 1770936130,
+          "translated": false
+        },
+        {
+          "author_name": "Heidi Gomez",
+          "author_url": "https://www.google.com/maps/contrib/111929666998680736387/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUxU-Cp3GJpJSh521Ppz3hOuUjRg4G6s9Nf15rv22_J2c6yJBxVSA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Such a great museum for families and kids! Each exhibit had interactive and relevant activities for kids as well as an immersive experience! The museum shared multiple viewpoint of SD history making this museum great for all ages! A perfect rainy day escape for any visitors",
+          "time": 1753586913,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-sd-vermillion-national-music-museum",
@@ -500,14 +975,14 @@
       "website": "http://www.nmmusd.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "414 East Clark Street",
+      "street_address": "414 E Clark St, Vermillion, SD 57069, USA",
       "address_line2": null,
       "postal_code": "57069",
-      "latitude": 42.7829359,
-      "longitude": -96.9264649,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 42.782891,
+      "longitude": -96.926358,
+      "place_id": "ChIJNWQ8y4hPjocRap3Pl0t-xeA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -539,12 +1014,13 @@
         "openstreetmap",
         "official_website",
         "http://www.nmmusd.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Vermillion; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:32:10Z",
+      "updated_at": "2026-03-14T20:03:02Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -559,8 +1035,140 @@
       ],
       "content_generated_at": "2026-01-25T03:32:10Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(605) 658-3450",
+      "website_google": "https://nmmusd.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 191,
+      "google_reviews": [
+        {
+          "author_name": "Renae Eckhardt",
+          "author_url": "https://www.google.com/maps/contrib/110395479434219140530/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFyK9Wcd5L6qVSKpjyaaKwHMtHMQga6HLjtdx1oUubD4xxajbZgw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A great museum with a wide variety of musical instruments and culture history. Hands oh displays and instruments, videos  and a jukebox. Very educational, fun and we are looking forward to the upstairs addition. The admission price was decent, we're a family of 8 and we spent less than $40. Nice little gift shop and free postcards with different kinds of instruments on them.",
+          "time": 1726436241,
+          "translated": false
+        },
+        {
+          "author_name": "Bethe Martian",
+          "author_url": "https://www.google.com/maps/contrib/107543626565048226887/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJiKy5ZTb-v47hOj1rwBm734lp1CaVKshejVihwtRDRbsv7twt-=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Gorgeous and meaningful visit here. I was moved many times,  to be so close to Johnny and June Cash's guitars, to see the gorgeous workmanship of the oldest string instruments. The displays are beautiful. The staff is knowledgeable and friendly. The atmosphere is relaxed and energized at the same time.  HIGHLY recommend this museum.",
+          "time": 1725204779,
+          "translated": false
+        },
+        {
+          "author_name": "Stephen Balza",
+          "author_url": "https://www.google.com/maps/contrib/101750886082501178715/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUg0IiCT00PkY4s8pE8LmO9ocGfU_PqeeB4uEct91zhELbHbp09Lw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Very interesting and impressive collection of instruments  A recent renovation (first floor now open) makes it very accessible and easy to navigate.  We brought a traveling choir and they thoroughly enjoyed it. Well worth a visit. Plan 60-90 minutes.",
+          "time": 1697748419,
+          "translated": false
+        },
+        {
+          "author_name": "Jennifer Mast",
+          "author_url": "https://www.google.com/maps/contrib/104260213737196706328/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVB6b_h_X_J2P3gxB11XvO-sn0emY-C03Q7ZCdRzlzcZxhUIAmZ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Bar none, the most well thought out museum we have ever toured, regardless of genre.\nDon't let the fact that more than half of it still being off limits while under renovation dissuade you. Rather, that makes it easier to digest in bite-sized pieces as you will want to return again and again.\nTake your time and read every placard. As you do, you will realize you don't want to miss a single line of information.\nThe interactive elements are fantastic as well.",
+          "time": 1699150920,
+          "translated": false
+        },
+        {
+          "author_name": "Pam Clarkson",
+          "author_url": "https://www.google.com/maps/contrib/110822696170955021935/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV45WVo-mxF9bJaxfU3zKrD_xaqPP2Qb6VMHftB6N_dVqmeTIYn=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Excellent music museum. My only complaint is not enough violins - but they are expanding to a second floor eventually, so I’m guessing they’ll add violins then. Lots of pianos, harpsichords, guitars, brass instruments, and the very cool gamelan.",
+          "time": 1722113577,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-01-25T03:32:10Z"
+  "updated_at": "2026-03-14T20:10:59Z"
 }

@@ -13,14 +13,14 @@
       "website": "http://www.shakermuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "447 Nh Rte 4a, Enfield, NH 03748, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "03748",
+      "latitude": 43.6200842,
+      "longitude": -72.1461975,
+      "place_id": "ChIJswxvqPSytEwRyyBdxiRhbk0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -50,12 +50,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.shakermuseum.org"
+        "http://www.shakermuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Enfield' from open data; MRD: computed city_tier=3 for Enfield; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:44:55Z",
+      "updated_at": "2026-03-14T19:58:55Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -70,7 +71,139 @@
       ],
       "content_generated_at": "2026-01-25T02:44:55Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(603) 632-4346",
+      "website_google": "http://www.shakermuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 157,
+      "google_reviews": [
+        {
+          "author_name": "Kelley C. C.",
+          "author_url": "https://www.google.com/maps/contrib/104110961872593655950/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLVMgiSn31zz6NQSnYVMTju-Z_qt8teBfWvpJ5wongWzVmI4KvY=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "7 months ago",
+          "text": "Rooms are not air conditioned.  It was very warm when we arrived, but once the sun went down, with windows open and the fan provided, we slept comfortably.  There are no dark curtains so when the sun comes up at 6:00 am, you will also be up.  There is no television.  There are no elevators.  That being said, we were not bothered by this, but be forewarned if you think you will be bothered.\nThe tour was wonderful and Lisa was knowledgeable and pleasant.  We thoroughly enjoyed our stay!  Looking forward to seeing how they restore the other buildings!",
+          "time": 1755301106,
+          "translated": false
+        },
+        {
+          "author_name": "Elizabeth Esplin",
+          "author_url": "https://www.google.com/maps/contrib/114124960038264673024/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-9UghnSP1w1JZF1lvdHdMSBmOodcO4g0V2JjX3n6uEtdXTIShOQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Really cool history experience, kind people and a spectacular chapel to tour. Do not miss this hidden gem, other buildings were really neat especially the barn and schoolhouse but the chapel was by far the best part. Highly recommend coming here!",
+          "time": 1722304731,
+          "translated": false
+        },
+        {
+          "author_name": "Brian McGarry",
+          "author_url": "https://www.google.com/maps/contrib/112446847521877071003/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU99jf6vvkjAggyIxChDJKNBEpCtxZz6VYsEZyXGLNj1NZISxDIQA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I stopped here on a whim with my family as we were traveling. Not knowing what to expect, we were honestly blown away by this experience. The Shaker's are a fascinating group to learn about and their craftsmanship is top notch. The tour lasted 1.5 hours and the guide was genuinely knowledgeable and passionate.\n\nThis museum is also a Blue Star Museum which means military families are free for entry.",
+          "time": 1689075365,
+          "translated": false
+        },
+        {
+          "author_name": "Barbara Ho",
+          "author_url": "https://www.google.com/maps/contrib/110336346247269024590/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJgu_pbt3dhvi2Vr2lokt_VtKEdhKSp3xKXdq5IYCD4CBs1NA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "We learned a lot on the tour of the main building. The guide was very knowledgeable and could answer any questions we put to her. She was clearly very experienced.  We toured the main building with her and then were let loose to explore the rest of the grounds ourselves. It would have been nice if the open buildings were marked on the map.  We did meet up with a gentleman who was constructing brooms as the Shakers had, it was very educational.\nBoth my husband and I enjoyed the tour. The only place we did not spend enough time in was the gift shop, but we live close enough that we will be back  for that.",
+          "time": 1658624227,
+          "translated": false
+        },
+        {
+          "author_name": "Phil Trivilino",
+          "author_url": "https://www.google.com/maps/contrib/102817719104191180746/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUMQ0E8SpImtzhBmW0Aixa1kACKRMQju_DnwPFW6UBX9qQ2iUz2=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Great museum of Shaker history.  Buildings are being restored or restoration is complete. Gift shop was nice with lots of Shaker novelties. We had a tour guide that was great and explained a lot of the Shaker life style and customs. Also a garden of fresh herbs to pick from. The chapel was extraordinary. Wonderful stained glass windows and architecture.",
+          "time": 1559776518,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nh-unknown-museum-of-the-white-mountains",
@@ -82,14 +215,14 @@
       "website": "https://www.plymouth.edu/mwm/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "34 Highland St",
+      "street_address": "34 Highland St, Plymouth, NH 03264, USA",
       "address_line2": null,
       "postal_code": "03264",
-      "latitude": 43.24616,
-      "longitude": -71.13351,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.7583382,
+      "longitude": -71.69161609999999,
+      "place_id": "ChIJQ3uJjj5cs0wRpkx_faPPOEk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -120,15 +253,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.plymouth.edu/mwm",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:45:03Z",
+      "updated_at": "2026-03-14T19:58:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6035353214",
+      "phone": "(603) 535-3210",
       "is_scoreable": false,
       "content_summary": "The **Museum of the White Mountains** in Plymouth offers an immersive experience into the natural beauty and cultural heritage of New Hampshire's iconic mountain range. With engaging exhibits that celebrate the region's history, art, and ecology, this museum is a must-visit for anyone seeking to connect with the spirit of the White Mountains.",
       "content_description": "**The Museum of the White Mountains** stands as a vibrant tribute to the stunning landscapes and rich history of New Hampshire's mountainous heart. Nestled in Plymouth, this general museum captivates visitors with its *unique collections* and interactive exhibits that delve into the natural environment, artistic inspirations, and the stories of those who have long revered these majestic peaks. The museum's architecture reflects its commitment to sustainability, subtly integrating with its surroundings and providing an inviting atmosphere for exploration.  The exhibits showcase an impressive array of artifacts, photographs, and displays that narrate the tale of the White Mountains—from the indigenous peoples who first inhabited the region to the artists who have sought to capture its beauty throughout various *artistic movements*. Visitors will be drawn into the legacy of the White Mountains, experiencing their significance in both history and culture.  In addition to the fascinating displays, the museum frequently hosts *community events*, *educational programs*, and *hands-on activities* for families, making it a hub for engagement and learning. The **Museum of the White Mountains** is not just a place to observe; it’s a place to connect, inspire, and ignite a sense of wonder about the extraordinary landscapes that define New Hampshire.  Plan your visit to uncover the stories behind the beauty and deepen your appreciation for this iconic region.",
@@ -141,7 +275,138 @@
       ],
       "content_generated_at": "2026-01-25T02:45:03Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.plymouth.edu/mwm/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 61,
+      "google_reviews": [
+        {
+          "author_name": "River Moon",
+          "author_url": "https://www.google.com/maps/contrib/116696079892333953482/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVsFUS78KPYJNiLSd8jZK2X42DzPixktGzHsS9vj70S_qXCXvdX=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Speaking as someone who's visited, worked, and been featured, I can say Museum of the White Mountains is a gem. This museum is under the Plymouth State University umbrella and run by an amazing team including the Director, Assistant Director, Curator, and student workers. The Museum has a new exhibit about every 4 months, with fun events hosted in the lower level of the museum which you can also find on the museum's YouTube Channel. Great for a solo visit or a larger group. Although this museum may look small from outside, the staff are experts at curation and space utilization and I think you'll be surprised how big it feels on the inside. It's free admission (donations appreciated) and free parking on the side of the building so why not take the time to stop by if you're in the area!",
+          "time": 1691101204,
+          "translated": false
+        },
+        {
+          "author_name": "KINKOKEEPER",
+          "author_url": "https://www.google.com/maps/contrib/116897806386826306650/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUcuT175uNJJu8Q1bCCSwZWDasTQom_4zRHNHV8h2m-HleJAlN6=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "It is small but very nice inside. It is a nice free place to go to if you're in the area!",
+          "time": 1543331782,
+          "translated": false
+        },
+        {
+          "author_name": "LJ Shurpik",
+          "author_url": "https://www.google.com/maps/contrib/115487595727316763669/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUrhlWsPDMrKiworP6ZQD0rcnUnaTMysBLCxJJIA-L0szFHfe7u0A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 3,
+          "relative_time_description": "6 years ago",
+          "text": "Nice little quick stop. It's free so definitely worth checking out, just wish it was more about the actual White Mountains",
+          "time": 1559097521,
+          "translated": false
+        },
+        {
+          "author_name": "Toni Mullen",
+          "author_url": "https://www.google.com/maps/contrib/115087620073492612536/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0KAbI2aH1yHwveVs_muscZ7BlrAW3J2jN1joRIayo3kSDFhtn=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "Interesting place to visit if you have nothing to do. Not my kind of thing.",
+          "time": 1650464057,
+          "translated": false
+        },
+        {
+          "author_name": "sam morrison",
+          "author_url": "https://www.google.com/maps/contrib/107751961034176224995/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNEBa7CIs0dzrZXdq8XczXUu7aQcaCGuxAjUt_iA83bcKdKQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Great place to visit for a few hours of fun between other activities! Informative and fascinating at a reasonable price point.",
+          "time": 1750808521,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nh-unknown-new-hampshire-historical-society",
@@ -160,7 +425,7 @@
       "longitude": -71.5396265,
       "place_id": "ChIJnUNX05Jq4okRf0_Q2KzvpP8",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -197,7 +462,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Hampshire' from open data; MRD: computed city_tier=3 for New Hampshire; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:45:10Z",
+      "updated_at": "2026-03-14T19:58:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(603) 228-6688",
@@ -350,20 +615,20 @@
       "museum_id": "usa-nh-unknown-new-hampshire-telephone-museum",
       "country": "USA",
       "state_province": "New Hampshire",
-      "city": "Keene",
+      "city": "Warner",
       "museum_name": "New Hampshire Telephone Museum",
       "alternate_names": null,
       "website": "https://www.nhtelephonemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1 Depot St, Warner, NH 03278, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.28404,
-      "longitude": -71.82064,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "03278",
+      "latitude": 43.2798896,
+      "longitude": -71.8150447,
+      "place_id": "ChIJm1RnEAYZ4okRSjhcYcu1128",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -394,15 +659,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.nhtelephonemuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Keene' from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:45:18Z",
+      "updated_at": "2026-03-14T19:58:57Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6034562234",
+      "phone": "(603) 456-2234",
       "is_scoreable": false,
       "content_summary": "The New Hampshire Telephone Museum in Keene offers a fascinating journey through the evolution of communication technology. With rare artifacts and engaging exhibits, this museum is a hidden gem that provides a nostalgic look at how the telephone shaped our lives. Don't miss the chance to explore this unique collection that celebrates a vital piece of history!",
       "content_description": "**New Hampshire Telephone Museum** is a captivating destination for anyone fascinated by the evolution of communication. Nestled in the historic town of Keene, this **history museum** boasts an extensive collection of devices and memorabilia that showcase the transformative power of the telephone. Visitors are greeted by a trove of artifacts, ranging from the early wooden switchboards to sleek, modern rotary phones, providing a tangible connection to the past that any tech-lover will appreciate. It's not just a museum; it's a time capsule of ingenuity and progress.  \n\nThe museum's layout is thoughtfully designed to guide you through the story of telecommunications. Guests can immerse themselves in interactive exhibits that shed light on the history of telephony, learning about the pioneers who revolutionized communication and how technology has evolved over the decades. With exhibits like the “Telephone Timeline” and hands-on displays, visitors can not only see but also *experience* the milestones of telecommunication history firsthand. Additionally, the beautiful architecture of the museum itself mirrors the charm of the bygone era it celebrates, making your visit as visually compelling as it is educational.  \n\nA visit to the **New Hampshire Telephone Museum** is perfect for families, school groups, and history buffs alike. Whether you are peering into relics from the past or engaging with immersive technology, this museum promises an enlightening and fun outing. Don't forget to stop by the gift shop for unique souvenirs that will remind you of the extraordinary journey through time you've just experienced!",
@@ -415,7 +681,108 @@
       ],
       "content_generated_at": "2026-01-25T02:45:18Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.nhtelephonemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1400"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: Closed",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 2:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.9,
+      "google_reviews_count": 138,
+      "google_reviews": [
+        {
+          "author_name": "Whit Breeden",
+          "author_url": "https://www.google.com/maps/contrib/104530791404122045276/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWORUuyACOkM19zUzCF1mbMxYadDnUSA7hY4J7IgMcf6ZfeiuV1=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "When I found this museum the night before I knew I was going to enjoy myself, but no where close to how much fun I actually had. Just an absolutely phenomenal and entertaining experience and you should totally go.",
+          "time": 1760326411,
+          "translated": false
+        },
+        {
+          "author_name": "Matthew Paru",
+          "author_url": "https://www.google.com/maps/contrib/108182755717149792713/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUyNW6gql5naX5cilm2AgZpoIi6lSnH5RLUr_ch0gfs6nA26HA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "I came here not knowing what to expect and I had so much fun! This museum is informative, interactive and a lot of fun! The staff is also very friendly, knowledgeable and extremely helpful. I spent lots of time here learning and enjoying myself. It's definitely worth the visit!",
+          "time": 1753787881,
+          "translated": false
+        },
+        {
+          "author_name": "Kathryn Baird",
+          "author_url": "https://www.google.com/maps/contrib/104233750426286582717/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXdKf2uXc8kVIMCDujxQKlr_98zc64y6SFFQWiankT1t3KOLQ4=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "They have a huge collection and very friendly staff. My partner and I were totally blown away by how much stuff they had, and how much information they had to go along with it!!! Definitely worth the trip, it was a fun and informative experience with a nice blend of overall telecommunications history and local history. They also have fun hands-on exhibits if you’re visiting with kids (or adults that like hands-on exhibits!)",
+          "time": 1760632025,
+          "translated": false
+        },
+        {
+          "author_name": "Polly Furth",
+          "author_url": "https://www.google.com/maps/contrib/106524999756211244339/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0HcSY3H1vIGwrjvuW4f8VrAC9TKBYzR424CyZ3GukzKnEjf9Y=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This museum is so fun and engaging!! The hands-on room has all kinds of interesting, quirky ways to explore sound waves, Morse code, telephones, etc. (Is it meant for kids? Maybe—but me and my 30-something friends had a great time.) The rooms with vintage phones & artifacts are beautifully laid out and explained with witty, fascinating captions/blurbs.",
+          "time": 1720885518,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Kimsal",
+          "author_url": "https://www.google.com/maps/contrib/107376902684111594494/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWCIuQXenwXx3rKUk6zKDy82Hgg8v_9FHFVFcwHzWoLYBvsMpxOtA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Random visit based on a small roadside saying \"telephone museum\".  What could this possibly be?  Ahead of schedule, my brother and I popped in - about 1.5 miles off the expressway, through a tiny downtown area, we found it.  Larger than expected, and... lots of weird details about phones and phone systems than you ever expected you might care about.  Engaging staff and some cool 'hands on' stuff like a switchboard you can really operate.  We would have stayed a bit longer except for that pesky airline schedule.\n\nThank you Telephone Museum - you were a fun excursion!",
+          "time": 1763572524,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nh-unknown-portsmouth-historical-society",
@@ -434,7 +801,7 @@
       "longitude": -70.760744,
       "place_id": "ChIJ-UVhGAu_4okRZlWpxrJVULQ",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -471,7 +838,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Rhode Island' from open data; MRD: computed city_tier=3 for Rhode Island; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:45:24Z",
+      "updated_at": "2026-03-14T19:58:57Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -650,14 +1017,14 @@
       "website": "http://avagallery.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "11 Bank Street",
+      "street_address": "11 Bank St, Lebanon, NH 03766, USA",
       "address_line2": null,
       "postal_code": "03766",
-      "latitude": 43.6430718,
-      "longitude": -72.2493132,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.6430865,
+      "longitude": -72.2493061,
+      "place_id": "ChIJPa2seVe0tEwR3hjY5YmppvY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -688,12 +1055,13 @@
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
-        "http://avagallery.org"
+        "http://avagallery.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Lebanon; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:45:31Z",
+      "updated_at": "2026-03-14T19:58:58Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -708,7 +1076,139 @@
       ],
       "content_generated_at": "2026-01-25T02:45:31Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(603) 448-3117",
+      "website_google": "https://avagallery.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.9,
+      "google_reviews_count": 49,
+      "google_reviews": [
+        {
+          "author_name": "Julia Assmus",
+          "author_url": "https://www.google.com/maps/contrib/105521824917587791565/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVaE_fas61KQDJpVzphK6cT3dCupPqYiQByHMCdv02OqJava7Jfug=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "so much art to experience there. Here are a few of my own. I found under Julie.assmus.9 for Facebook.",
+          "time": 1772050798,
+          "translated": false
+        },
+        {
+          "author_name": "Amelia Warfield",
+          "author_url": "https://www.google.com/maps/contrib/104127717449512326490/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKZ2GqkU3p7QDpdoqCkvH1L2aEFs0aXOyMim-5_Vu0AfFEhAg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I've taken drawing classes and a sculpture class using clay and plaster of Paris. The open studios have you work on your art 🎨.",
+          "time": 1766008322,
+          "translated": false
+        },
+        {
+          "author_name": "Sal Fisher",
+          "author_url": "https://www.google.com/maps/contrib/112298921235668925057/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhVe5gD3Up5oidwtjKeNdc5eNLIVGdhOEBIhbt-7Tzm0T9kqaN=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "I liked the everything and the amount of effort every artist put in there work which is amazing and all of it made me like art more",
+          "time": 1755067684,
+          "translated": false
+        },
+        {
+          "author_name": "Sarah B",
+          "author_url": "https://www.google.com/maps/contrib/107727550609932605128/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW14gM8NjADiqW57Hfk1fGEZvcGfRM0IcnII1BSHL0-rVIL5M-b0g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "A wonderful experience",
+          "time": 1765732858,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel Scott",
+          "author_url": "https://www.google.com/maps/contrib/100232438556023473417/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWy9_7wkJZu04l_i59VYhs4YGOkpZRmjIVpnNL516wpnP4aum2Z=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Stop by to see the gallery and shop for one of a kind Holiday gift.",
+          "time": 1765562054,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nh-manchester-currier-museum-of-art",
@@ -720,14 +1220,14 @@
       "website": "http://www.currier.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "150 Ash Street",
+      "street_address": "150 Ash St, Manchester, NH 03104, USA",
       "address_line2": null,
       "postal_code": "03104",
-      "latitude": 42.9977038,
-      "longitude": -71.455607,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 42.997729,
+      "longitude": -71.45561,
+      "place_id": "ChIJlWuIFT1P4okRr6XzDRYzBrY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -746,29 +1246,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 3,
-      "modern_contemporary_strength": 4,
-      "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
+      "modern_contemporary_strength": 3,
+      "primary_art": "Impressionist",
+      "historical_context_score": 4,
       "priority_score": 10,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Currier Museum has a solid collection, particularly in Modern and Contemporary art with notable artists. It has a strong regional significance but lacks the depth for higher historical context. Its reputation is primarily regional, making it a key hub in its locality.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The permanent collection explicitly includes Monet, supporting moderate Impressionist representation, but the evidence does not indicate a large or dedicated Impressionist focus. Named holdings by Picasso, Matisse, O'Keeffe, and Calder suggest a solid modern/art-of-the-20th-century presence without clear flagship depth. As a general art museum with broad European/American painting and decorative arts plus associated Frank Lloyd Wright house museums and robust public programs, it likely offers go",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.currier.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Manchester; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "6036696144",
+      "phone": "(603) 669-6144",
       "is_scoreable": true,
       "content_summary": "In Manchester, New Hampshire, the Currier Museum of Art is a must for art lovers who want big-museum quality without big-city crowds. Known for its thoughtfully curated galleries and a strong regional backbone, the Currier pairs European and American painting with standout modernism and design. Add two Frank Lloyd Wright homes you can tour, and you get a visit that’s as much about space and light as it is about masterpieces—ideal for travelers who like to linger, look closely, and leave inspired.",
       "content_description": "**The Currier Museum of Art** is one of New England’s most rewarding regional museums: compact enough to feel personal, yet ambitious in scope and curatorial polish. Its galleries typically move fluidly between European and American painting, with notable strengths in **19th- and 20th-century art**—including works associated with *Impressionism*, *modernism*, and American realism—presented in a way that rewards slow looking. For travelers, the pleasure is in the pacing: you can take in high-caliber paintings, prints, and sculpture without the sensory overload of a mega-institution, and the museum’s interpretive approach tends to be clear, confident, and visitor-friendly.\n\nArchitecture is part of the appeal. The museum campus combines a refined, modern presentation with spaces designed to keep the focus on art—clean sightlines, strong natural and controlled lighting, and an atmosphere that encourages return visits. The signature experience, however, extends beyond the galleries: the Currier is renowned for its **Frank Lloyd Wright house tours**—two nearby Wright-designed homes that offer an immersive encounter with *Usonian* ideals, where built-in furnishings, warm materials, and choreographed movement through rooms make architecture feel like a lived artwork.\n\nPlan to give yourself time for both museum and house tour(s). For art enthusiasts, it’s a satisfying day: serious objects, thoughtful installation, and an architectural side trip that makes the Currier feel uniquely Manchester—rooted in place, yet confidently connected to broader art history.",
@@ -785,10 +1286,141 @@
       "overall_quality_score": 11,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 4,
-      "effective_pas": 4,
-      "outcome_tier": "Regionally Important"
+      "primary_art_focus": "Impressionist",
+      "collection_based_pas": 3,
+      "effective_pas": 3,
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://currier.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 1360,
+      "google_reviews": [
+        {
+          "author_name": "Jennifer Angus",
+          "author_url": "https://www.google.com/maps/contrib/110224370355953294959/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUPJXdFgUMA-lsDkThSwyrZQ04CCNK-HzmD5OdUf1hifFdi6wWV_w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We recently visited with our students and it was a great experience! The staff were friendly and accommodating. Jim was our group's guide and he was fantastic! He had our students engaged the while time.",
+          "time": 1768214057,
+          "translated": false
+        },
+        {
+          "author_name": "L A",
+          "author_url": "https://www.google.com/maps/contrib/109615187881456536280/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKcGucdJ-mFPcLhmGH1N7vC8oisimlZv1yi2-wDS1xlxm27Rk7H=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Exceeded my expectations! Free to get in that day, huge layout, modern and antique artwork, and professional & knowledgable employees. Also think its neat they rotate exhibits and display new artwork every so often. Definitely returning in the near future.",
+          "time": 1765340461,
+          "translated": false
+        },
+        {
+          "author_name": "Gerry Stark",
+          "author_url": "https://www.google.com/maps/contrib/103396887474355715672/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWQ9kh5wAqy79vQxYi97mz1hNmT23mC1h5TaWYnTdyhktva5g7g2A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "The Currier is a charming and interesting gallery of some lovely pieces.  We went for the tour of the two Frank Lloyd Wright houses that the museum owns which was well worth the costs.  Make sure you get your tickets in advance!",
+          "time": 1757197226,
+          "translated": false
+        },
+        {
+          "author_name": "Susie Wyshak",
+          "author_url": "https://www.google.com/maps/contrib/108242834159095333585/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVrlu7Zs0bRkpwAr01Rf3o0iuoXWwOoq4c-RYtDi4WEzhnDbrw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "I've been to museums all over the world from the Getty to the Met to the Louvre, and from free parking to congenial ticketing to the cafe and galleries, the Currier is in my top favorites. It's such a cool space and history of how the museum came to be. Mix of modern and classic. The cafe has maybe 75' high ceilings, very airy, fantastic coffee and food menu. Thanks to the Curriers for making it possible!\n\nThe tour of two Frank Lloyd Wright houses was well organized, informative  enough to have felt like a true lecture, and very convivial with the guides and guests. Totally worth a drive specifically to the Currier for the museum and home tours (which you can check the ticket availability online. Museum entrance is currently included in the house tour ticket price.)",
+          "time": 1754777498,
+          "translated": false
+        },
+        {
+          "author_name": "Victoria Felson",
+          "author_url": "https://www.google.com/maps/contrib/115286772285735417169/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUbjxOy9tOdkJl59Nv_fInitEMpJ3lUHQ21e45ftfJcSVKgxhuz=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Beautiful exhibits, so varied. Welcoming staff. Easy parking. Lovely cafe. Excellent merchandise in the shop. Can’t wait to return.",
+          "time": 1769622995,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nh-peterborough-mariposa-museum-world-culture-center",
@@ -800,14 +1432,14 @@
       "website": "http://www.mariposamuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "26 Main Street",
+      "street_address": "26 Main St, Peterborough, NH 03458, USA",
       "address_line2": null,
       "postal_code": "03458",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 42.877326,
+      "longitude": -71.949529,
+      "place_id": "ChIJB_NEUwDW44kRGNsydJdFvlg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -837,12 +1469,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.mariposamuseum.org"
+        "http://www.mariposamuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Peterborough; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:45:49Z",
+      "updated_at": "2026-03-14T19:59:00Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -857,8 +1490,130 @@
       ],
       "content_generated_at": "2026-01-25T02:45:49Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(603) 924-4555",
+      "website_google": "http://www.mariposamuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 26,
+      "google_reviews": [
+        {
+          "author_name": "Julie Zimmer",
+          "author_url": "https://www.google.com/maps/contrib/113765516288683521835/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLXIvdsIDQ-2794JCv-Wd5X2XI0A5F053syZQbqbTOQfvflUuw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Unique center with many speakers/programs for all ages. A membership also entitles you to free admission to many other museums across the country. We take our grandchildren often for hands-on experiences and enjoy the adult programs too. Exhibits change regularly, in addition to standing old favorites. I volunteer there.",
+          "time": 1554640877,
+          "translated": false
+        },
+        {
+          "author_name": "Faith Bruce",
+          "author_url": "https://www.google.com/maps/contrib/102500199448525712509/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJw0eisodWlN_lKr3sZAMmyZ1SnakY5xQKwPjxo4fW7RgMv-yNyA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Such a wonderful resource and fun place to spend some of our morning at! The woman at the counter was the sweetest person",
+          "time": 1748547595,
+          "translated": false
+        },
+        {
+          "author_name": "Eric Millet",
+          "author_url": "https://www.google.com/maps/contrib/100453063056166753836/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLR0v2fe8f2VAZPN00mkhJp3GO0vjA-TkX8FAdFuC8Navp5SA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "An absolutely fabulous museum! My son loved playing musical instruments instruments from around the world. Lots of exhibits to interest adults too. A real treat to visit this lovely museum.",
+          "time": 1744490551,
+          "translated": false
+        },
+        {
+          "author_name": "Tom Westheimer",
+          "author_url": "https://www.google.com/maps/contrib/107646604287476707303/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAS7YG5Q9PMi7qCY5z4Y8quNAoanYxc09EKjkaeXsRlaiG-xrDVA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great event with the Tibetan monks Nov 2024",
+          "time": 1731751809,
+          "translated": false
+        },
+        {
+          "author_name": "Stephanie Toumanoff",
+          "author_url": "https://www.google.com/maps/contrib/110815492248152680292/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9CxmYVnjV6oICdQcRQYH3Jq5eAmpakKhztX_FJYRcCj4wTOei1w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Mariposa always has interesting and diverse modern exhibits. Upstairs there is an area for much younger museum attendees with musical instruments of many different cultures, soft seating and other activities. A hidden gem in Peterborough!",
+          "time": 1577376780,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

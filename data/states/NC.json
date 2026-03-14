@@ -20,7 +20,7 @@
       "longitude": -82.5512827,
       "place_id": "ChIJs6F9fFfzWYgRBglywolT2_Q",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -29,7 +29,7 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -44,19 +44,19 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Asheville Art Museum has a modest collection that contributes to local culture but does not have significant depth or rarity to influence national scholarship. Its historical context score reflects its role in regional art, rather than any major movements or narratives.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the Asheville Art Museum’s permanent collection contents, so Impressionist, Modern/Contemporary, and interpretive historical-context scores cannot be determined. Based on being a city art museum in a mid-sized regional city (Western North Carolina) with no nearby-museum signals, it is most plausibly a locally oriented institution with a moderate-sized collection rather than a flagship destination.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'North Carolina' from open data; MRD: computed city_tier=2 for North Carolina; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:39:14Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "(828) 253-3227",
@@ -216,14 +216,14 @@
       "website": "http://www.blowingrockmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "159 CHESTNUT STREET",
+      "street_address": "159 Ginny Stevens Ln, Blowing Rock, NC 28605, USA",
       "address_line2": null,
       "postal_code": "28605",
-      "latitude": 36.13062,
-      "longitude": -81.67937,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 36.1303481,
+      "longitude": -81.67933029999999,
+      "place_id": "ChIJRbzWt0flUIgRfq0obf4VQvQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -232,7 +232,7 @@
       "tickets_url": "http://facebook.com/brmuseum",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -247,23 +247,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a collection with regional importance and supports credible exhibitions, resulting in a score of 3 for collection strength. It provides local context, preserving the art and history relevant to the immediate community.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no information about the museum’s permanent collection contents, so Impressionist/Modern-Contemporary strengths and historical-context quality cannot be determined. Given the very small town location and lack of nearby museum ecosystem signals, this is most plausibly a local institution with a small, focused collection.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.blowingrockmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Blowing Rock' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:39:26Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "8282959099",
+      "phone": "(828) 295-9099",
       "is_scoreable": true,
       "content_summary": "In the heart of the Blue Ridge, the Blowing Rock Art & History Museum offers a thoughtfully scaled, deeply local museum experience with a surprisingly global outlook. As North Carolina’s only museum dedicated to the study of global cultures, it pairs rotating art exhibitions with history and material-culture displays that connect mountain life to wider human stories. Expect an easy-to-navigate visit, strong regional strengths, and a rewarding stop for art lovers who enjoy discovering contemporary craft, Appalachian narratives, and cultural exchange in an intimate setting.",
       "content_description": "Tucked into the walkable village center, the **Blowing Rock Art & History Museum (BRAHM)** is a regional gem that feels tailor-made for travelers who like their museum-going personal, focused, and conversation-starting. The museum distinguishes itself as **North Carolina’s only institution dedicated to the study of global cultures**, bringing an outward-looking lens to a setting best known for scenic overlooks and fresh mountain air. Its scale encourages slow looking—ideal for visitors who want to read labels, compare techniques, and leave with a clear sense of place.\n\nBRAHM’s strengths are rooted in the High Country: expect exhibitions that foreground **Appalachian art, craft, and history**, often drawing connections between local makers and wider traditions of *material culture* and *folk* expression. With a **strong regional** emphasis, the museum’s changing shows are where repeat visits pay off—contemporary artists, community storytelling, and cross-cultural themes appear in a rotating program that keeps the galleries lively without overwhelming the eye.\n\nArchitecturally, the experience is intimate and approachable rather than monumental: a compact museum layout that supports a calm viewing rhythm, with galleries that make it easy to take in an entire exhibition in one sitting—and then return for a second pass. Open **Tuesday through Saturday, 10:00 a.m. to 4:30 p.m.**, BRAHM fits beautifully into a Blowing Rock day: pair it with a stroll through town, a drive along the Blue Ridge Parkway, or a post-visit coffee while you debate your favorite objects and curatorial choices.",
@@ -277,7 +278,148 @@
       "content_generated_at": "2026-01-25T02:39:26Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "website_google": "http://www.blowingrockmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 7:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 337,
+      "google_reviews": [
+        {
+          "author_name": "S T",
+          "author_url": "https://www.google.com/maps/contrib/114663854757083621714/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJuWnJxu00b5H_uHShLQ2ql6R4cqBiTZQTYH-6hRCLaQoP46A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The museum was beautiful and informative.  The staff, to include an amazingly nice young lady at the desk(didnt get her name) and Sam Reep, were extremely friendly and helpful. The young lady gave us directions to find the Junaluska mural that we were interested in, and Sam emailed me some amazing additional information. We mentioned eating and not only did Sam make some great recommendations, he made reservations to a place that the locals loved! We were so very excited to eat there, unfortunately, my friend became a little ill and we had to cancel the early afternoon reservations and they were booked for the rest of the evening! All of this gives us reason to return to the quaint town and see the new exhibits coming to the museum and experience the wonder all over again!",
+          "time": 1762210839,
+          "translated": false
+        },
+        {
+          "author_name": "Carolishca Forster",
+          "author_url": "https://www.google.com/maps/contrib/100755946008307562942/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUWbSO5cqOaY6f4zQ8OxPtcsrhWsXz5Q9AzDO93Rd7lPYsCCme0=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This is a relatively small museum, but oh so delightful. This museum supports the many talented local artists, which I think is fantastic. The people who work here are friendly, kind, pleasant, and very helpful. This is a must-see museum on Main Street in the town of Blowing Rock. While you are here check out the colorful and ultra beautiful gardens everywhere.",
+          "time": 1760499777,
+          "translated": false
+        },
+        {
+          "author_name": "Joe R",
+          "author_url": "https://www.google.com/maps/contrib/114392757174424278851/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWOBr4Be6KOLn_0GLlfTdoqE5Jnlwqf32DIggB4Y8Vg2eGdknsyNA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "What a nice museum. Very informative video on the history of Blowing Rock, and how it came to be. Then a nice flow through the multiple galleries within the museum. My favorite exhibit was the watercolors. A wonderful collection of art and history all under one roof. The gentleman working the welcome desk was very informative and nice.",
+          "time": 1563636299,
+          "translated": false
+        },
+        {
+          "author_name": "Ly Semidey",
+          "author_url": "https://www.google.com/maps/contrib/101471251980292659283/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXv3W_74yyXQ38CB0TR4PDn4SS-HHBmvuqToMXys-GvyvtgRnaiCw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Thank you to Bonnie for spending time with me and my family yesterday afternoon helping us fall in love with the incredible art of Elliott Daingerfield. Her passion for art and history was inspiring and we left completely taken by this visionary. The museum is beautiful and free for everyone. Gift yourself the chance to see the wonderful works they have available",
+          "time": 1760902331,
+          "translated": false
+        },
+        {
+          "author_name": "Brendan Housler",
+          "author_url": "https://www.google.com/maps/contrib/117115295317704741059/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKRM0BMvT1jnbpFDH3QFRUwbi6Pe2AGBuQGPtU95MQqDTNCaQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "There were some incredible exhibits in this museum, which also gave some great history on Blowing Rock. This is 100% worth stopping at! Thanks for having us!",
+          "time": 1743164216,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-unknown-cam-raleigh",
@@ -296,7 +438,7 @@
       "longitude": -78.645663,
       "place_id": "ChIJNSN7nnpfrIkRA32V2yKw1YI",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -330,7 +472,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:39:33Z",
+      "updated_at": "2026-03-14T19:58:29Z",
       "notes": null,
       "city_tier": 3,
       "website_google": "http://camraleigh.org/",
@@ -430,7 +572,7 @@
       "longitude": -77.9468311,
       "place_id": "ChIJj9aCN9sfqokRgreiU45-ih0",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -467,7 +609,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'North Carolina' from open data; MRD: computed city_tier=2 for North Carolina; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:39:40Z",
+      "updated_at": "2026-03-14T19:58:29Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(910) 798-4370",
@@ -568,7 +710,7 @@
       "longitude": -77.374066,
       "place_id": "ChIJK0-1N-PnrokR44qmsA3SNSQ",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -592,9 +734,9 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Greenville Museum of Art has a modest collection that provides contextual and educational value but lacks depth and significant curatorial impact. Its historical context mainly serves the local community, earning a score of 2 for local relevance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about Greenville, Texas rather than the Greenville Museum of Art in North Carolina, so there is no direct evidence about the museum’s permanent collection strengths or interpretive approach. Given the small-city institutional signals (city_tier 3 and no nearby museums), the museum is most plausibly a local institution with a small-to-limited collection footprint.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -603,10 +745,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.greenvillemuseum.org: Network error for http://www.greenvillemuseum.org: <urlopen error [WinError 10054] An existing conne; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:39:51Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(252) 758-1946",
@@ -766,14 +908,14 @@
       "website": "https://gregg.arts.ncsu.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1903 Hillsborough Street",
+      "street_address": "1903 Hillsborough St, Raleigh, NC 27607, USA",
       "address_line2": null,
       "postal_code": "27607",
-      "latitude": 35.79182,
-      "longitude": -78.69672,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.7849656,
+      "longitude": -78.6616762,
+      "place_id": "ChIJ8U9pAJH1rIkRZc2G-A4kewI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -794,26 +936,27 @@
       "impressionist_strength": null,
       "modern_contemporary_strength": null,
       "primary_art": null,
-      "historical_context_score": 2,
+      "historical_context_score": 3,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Gregg Museum has local significance, providing contextual value primarily to the immediate community rather than a broader audience. Its collection tier is modest and it lacks notable strengths in Impressionist or Modern/Contemporary art, reflected in the scores.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a university art museum focused on exhibitions and educational programming, but provides no specific information about permanent holdings in Impressionism or Modern/Contemporary art, so those strengths cannot be scored. As a campus museum welcoming the community with lectures and workshops, it likely offers some interpretive context, though depth is unclear. Reputation appears primarily local/regional and the collection scope is likely moderate rather than flagship based on th",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://gregg.arts.ncsu.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Raleigh' from open data; MRD: computed city_tier=2 for Raleigh; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:40:00Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9195153503",
+      "phone": "(919) 515-3503",
       "is_scoreable": true,
       "content_summary": "Tucked into NC State’s campus in Raleigh, the Gregg Museum of Art & Design offers an intimate, idea-rich visit for art lovers who enjoy close looking. As North Carolina’s only museum dedicated to the study of global cultures, it pairs thoughtfully curated exhibitions with strong design and craft perspectives. Expect a calm gallery experience, rotating shows that reward repeat visits, and a museum-scale encounter that feels personal—ideal for travelers who want substance without the crowds.",
       "content_description": "Set on NC State University’s campus, the **Gregg Museum of Art & Design** is a compact, curatorially sharp museum that rewards visitors who like to slow down and read images, objects, and materials closely. Positioned as North Carolina’s only museum dedicated to the study of global cultures, the Gregg builds its identity through **rotating exhibitions** that connect art, craft, and design across time and place—often highlighting how visual traditions travel, adapt, and gain new meanings.\n\nWhile the permanent holdings are **modest**, the museum’s strength is in how it frames what you see: objects and artworks are presented with an eye toward *material culture*, technique, and context—making it an excellent stop for visitors interested in how **design** and artistic practice intersect with daily life. Expect a mix that can include fine art alongside textiles, decorative arts, and design-oriented works, with interpretation that feels geared to curious, museum-literate audiences.\n\nArchitecturally and experientially, the Gregg shines as a **quiet, focused gallery environment**—more contemplative than blockbuster—where you can take your time with wall texts, exhibition themes, and installations without feeling rushed. It’s open Tuesday through Saturday (10:00am–4:30pm), and the university setting makes it easy to pair your visit with a campus walk or a broader Raleigh art itinerary. For art travelers, the payoff is a thoughtful museum that prioritizes **ideas and making** over spectacle.",
@@ -828,7 +971,138 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "eca_score": 2,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "http://gregg.arts.ncsu.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 156,
+      "google_reviews": [
+        {
+          "author_name": "Madi Hutchings",
+          "author_url": "https://www.google.com/maps/contrib/106743613003307116757/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVxWOcLh5E9dEFwQ_Nxl8UnEVyFOVf9dwz6nfGPij0BHALEvgbU=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Wonderful free little museum with some activities for kids and a lovely little garden outside as well. We went on a Friday morning in the summer and it was not busy at all. During our trip here, my six year old gave me my favorite photo/memory of how art influences us ❤️",
+          "time": 1765852180,
+          "translated": false
+        },
+        {
+          "author_name": "Cari Burns-Ervin",
+          "author_url": "https://www.google.com/maps/contrib/100161398029557302334/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUr6lZpNOdihoC_zECeES2kOnoyXeFnuh-nKnkzJEmmtezzq89o=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Nice contemporary art museum with fashion and abstract art. It is free to enter with no gift shop, but you can purchase books and donate money to help keep them open. It is self guided woth an outdoor sitting area and gardens to walk through too.",
+          "time": 1747449671,
+          "translated": false
+        },
+        {
+          "author_name": "Alex Dreytser",
+          "author_url": "https://www.google.com/maps/contrib/110765688747606037598/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWag8J-2IwUSse3LYl5KsLcvM8PZUG3_zs1FVOLGYbJjILB4Uzo=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Very pleasant small museum. It is free. Nice garden. We enjoy stopping by when visiting Raleigh.",
+          "time": 1745449159,
+          "translated": false
+        },
+        {
+          "author_name": "Uma Bala",
+          "author_url": "https://www.google.com/maps/contrib/105156266207225167448/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXfowcI82KUEqu3HxGBd9oKhdinJViXJGFJc2q9ebKOfSnCbvK=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Beautiful grounds, small museum with rotating temporary exhibits and permanent displays. As they switch out the temporary exhibit section often, revisiting this museum remains interesting, ensuring you won't get bored. Plus entry is free and staff are helpful –overall a worthwhile visit in the NC state area.",
+          "time": 1706993170,
+          "translated": false
+        },
+        {
+          "author_name": "Wordsmith Lynn",
+          "author_url": "https://www.google.com/maps/contrib/114359165081767173791/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWS5ERU_L9LWa-0EMUCITzDxbCsxo67T6LcMZBFL8w6YqwY7Txd=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The Gregg is a fascinating small museum on the grounds of NC State. Free admission and parking but donations are accepted. The exhibits are mainly by contemporary artists. When we visited, they included a display of some beautiful works by an artist named Claire Alexandre, who makes her own paints using natural materials. There’s also a lovely garden adjoining the museum.",
+          "time": 1762640784,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-unknown-hickory-museum-of-art",
@@ -847,7 +1121,7 @@
       "longitude": -81.3337676,
       "place_id": "ChIJ8YyvhywwUYgRY57aJM8KicE",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -856,7 +1130,7 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -871,9 +1145,9 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Hickory Museum of Art has a modest regional presence, indicated by its collection tier and local context score. Its reputation is regional, serving the multi-state area but not recognized nationally.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no information about the Hickory Museum of Art’s permanent collection, so strengths in Impressionism, Modern/Contemporary art, and interpretive historical context cannot be determined. Based on being a city museum in a mid-sized North Carolina locality with no corroborating signals of major collection depth, it is scored as primarily local in reputation and likely small in collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -882,10 +1156,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'North Carolina' from open data; MRD: computed city_tier=2 for North Carolina; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.hickorymuseumofart.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:40:18Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "phone": "(828) 327-8576",
@@ -974,20 +1248,20 @@
       "museum_id": "usa-nc-unknown-lam-museum-of-anthropology",
       "country": "USA",
       "state_province": "North Carolina",
-      "city": "Salem",
+      "city": "Winston-Salem",
       "museum_name": "Lam Museum of Anthropology",
       "alternate_names": null,
       "website": "https://lammuseum.wfu.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "Wake Forest University, Palmer Residence Hall, 1315 Carroll Weathers Dr, Winston-Salem, NC 27109, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 36.13612,
-      "longitude": -80.27798,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "27109",
+      "latitude": 36.1354606,
+      "longitude": -80.27269969999999,
+      "place_id": "ChIJ0YoZAvmtU4gR5VZMc139uuk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Natural History Museum",
       "primary_domain": null,
       "topics": null,
@@ -1018,12 +1292,13 @@
         "walker_reciprocal",
         "official_website",
         "https://lammuseum.wfu.edu",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Salem' from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:40:24Z",
+      "updated_at": "2026-03-14T19:58:31Z",
       "notes": "CSV: museum type 'NATURAL HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -1038,7 +1313,139 @@
       ],
       "content_generated_at": "2026-01-25T02:40:24Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(336) 758-5282",
+      "website_google": "http://lammuseum.wfu.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:30 PM",
+          "Wednesday: 10:00 AM – 4:30 PM",
+          "Thursday: 10:00 AM – 4:30 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 81,
+      "google_reviews": [
+        {
+          "author_name": "Peter Taíno",
+          "author_url": "https://www.google.com/maps/contrib/107539647197428855135/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLDK4C2J-w3LlV7TVpdM078qIgMzg1J02AcD5DVFSDHUj9d0cx=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I chaperoned for my daughter's class field trip. It was a very good experience. Very educating, informative, and even some hands on anthropoligy activities! There's a little picnicking area outside, if you want to bring some food and picnic outside.\nLots of interesting exhibits. Can't wait to return! 👍👍",
+          "time": 1761933687,
+          "translated": false
+        },
+        {
+          "author_name": "Aixa Haskins",
+          "author_url": "https://www.google.com/maps/contrib/114098207388603373219/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIqVu3O8OpxqUo_NQj7k_EuUULWxV1a9LlpvRSPDiVArCYzVw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "It was a small museum, but they have it filled appropriately. They made a beautiful display for Dia de Los Muertos, so it seems they change out displays to accommodate the time of year, which is nice so that the displays and exhibits aren't always the same. It gives you something to look forward to. We went for a field trip, and I liked the side area with toys and picnic tables for the kids. Bathrooms were clean, employees were knowledgeable and friendly enough to tolerate large groups of fifth graders.",
+          "time": 1762799632,
+          "translated": false
+        },
+        {
+          "author_name": "Sheila Busby",
+          "author_url": "https://www.google.com/maps/contrib/117815106914657334539/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUhzCvR2yMAWVxSQHPb6AJ89r4uoUBCYXmXS3vy3Z0nSe3apaI=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Lovely getaway on a Saturday afternoon! Beautiful exhibits with great information. The welcome attendant was so nice and helpful! I especially loved the translations of the pottery vases!",
+          "time": 1752946642,
+          "translated": false
+        },
+        {
+          "author_name": "Ellen Sheppard",
+          "author_url": "https://www.google.com/maps/contrib/115702154259694456495/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXqr1sBURNk8-qOWEwkFJ7onyvmWAGegzkan3a-EBpvv9Gfy2N_=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "Such a tiny, hidden gem! Ok, compared with  Chicago's Field Institute or NYs or DCs museums of natural history, it's zero stars. But for a tiny facility that is free and perhaps convenient during a visit to WS, it's delightful! Staff is on hand to answer questions and everyone was genuinely nice and concerned that my questions were answered. At one point, spouse and I were pondering a fine point of one of the exhibits. When we turned to the nearby receptionist (a student) to ask, he'd already started researching the question online! The exhibits change periodically and the only real cohesiveness is anthropology in general, but introductory panels provide an excellent overview of the many sub-specialties within the field. Clear efforts have been made to make the visit interactive, including an Escape Room option in the Africa room. Throughout, displays are nicely done with up to date and attractive signage and cases. There is clearly much love, great thought, and keen intelligence that goes into the exhibits and making this \"mini museum\"  worth the hour it'll take you to enjoy it.",
+          "time": 1528475895,
+          "translated": false
+        },
+        {
+          "author_name": "Martin Gamer",
+          "author_url": "https://www.google.com/maps/contrib/101660103061408935834/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUOXU33ahbfDTijxx5zXm9Hfw-Wy0Wi589xAIt3qVpEZ2weAAFz=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Though this anthropology museum is significantly smaller than other entities of its kind, its breadth and variety of exhibits are still commendable. It features artifacts from Asia, Africa, and maybe even the Americas if I remember correctly, spanning categories such as ceremonial masks, carvings, and even bladed weaponry. Considering that admission is free, this is a more than worthwhile stop on any visit to W-S.",
+          "time": 1748210516,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-unknown-levine-museum-of-the-new-south",
@@ -1057,7 +1464,7 @@
       "longitude": -80.84668479999999,
       "place_id": "ChIJ3RZXvCSgVogRZ7S5OHgOnnA",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -1094,7 +1501,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'North Carolina' from open data; MRD: computed city_tier=2 for North Carolina; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:40:32Z",
+      "updated_at": "2026-03-14T19:58:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(704) 333-1887",
@@ -1195,7 +1602,7 @@
       "longitude": -81.2206862,
       "place_id": "ChIJkQAP3zo0UYgR2_pRQZlIpHE",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1231,7 +1638,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:40:38Z",
+      "updated_at": "2026-03-14T19:58:32Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(980) 858-4266",
@@ -1360,14 +1767,14 @@
       "website": "https://tryonartsandcrafts.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "373 Harmon Field Rd",
+      "street_address": "373 Harmon Field Rd, Tryon, NC 28782, USA",
       "address_line2": null,
       "postal_code": "28782",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.2240187,
+      "longitude": -82.246963,
+      "place_id": "ChIJeRcUgM7YWYgR2JS4IzAKV30",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1397,12 +1804,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://tryonartsandcrafts.org"
+        "https://tryonartsandcrafts.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:40:44Z",
+      "updated_at": "2026-03-14T19:58:33Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -1417,7 +1825,139 @@
       ],
       "content_generated_at": "2026-01-25T02:40:44Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(828) 859-8323",
+      "website_google": "http://www.tryonartsandcrafts.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1300"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: 9:00 AM – 1:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.7,
+      "google_reviews_count": 38,
+      "google_reviews": [
+        {
+          "author_name": "Julia McIntyre",
+          "author_url": "https://www.google.com/maps/contrib/102012659154814092559/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL6Fi9qzpGgeyLJcyhU_0tZtvDWYUQSpvezI-opPqiv-eY8ZQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Tryon Arts and Crafts School is an excellent place to learn new skills, and to find artists made treasures. Started\nin 1960, this local treasure offers classes and weekend workshops in weaving, fused glass, stained glass, silver smithing, pottery, black smithing, torch worked glass and welding. It also has a gallery featuring local and national artists.",
+          "time": 1729454238,
+          "translated": false
+        },
+        {
+          "author_name": "Katie Poterala",
+          "author_url": "https://www.google.com/maps/contrib/110884120257688274012/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLsKfRBsXMU10s8OsmppYUYsuA8Dn75Jn2Kf8kru5zK3GJbYQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "A wonderful little hidden gem of a school adjacent to Harmon Field.  Great class selection, lots of topics, variety in instruction and a wonderful and growing group of students.  They have a gift shop as well, and host openings for themed rotating shows throughout the year.\n\nAmazing prices on classes compared to similar schools anywhere around.\n\nSome of what you can learn here: Silversmithing, pottery, wood carving, blacksmithing, fibers.\n\nThey host kids camps/classes in the Summer too.\n\nSign up early to get a spot in a class, as they fill with returning students pretty regularly.",
+          "time": 1563627975,
+          "translated": false
+        },
+        {
+          "author_name": "KCorn",
+          "author_url": "https://www.google.com/maps/contrib/115981567177440877565/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYNuYVe8qAH_dhf4iBBTx_-qCJKHEfpjWjHDlmEWaiZgvgkrU=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "TACS is a year-round nonprofit school promoting heritage and contemporary art-making practices. The school offers education and public programs.  It is well run and a welcoming environment regardless of skill level.  The prices are affordable and a real bargain compared to similar schools.\n\nThe former school facility offers a regional artist shop, multiple exhibition spaces, and advanced technological studios in fiber arts, glass, lapidary, ceramics, jewelry, and wood. Separate facilities on TACS’ campus house a welding and torchwork studio and a traditional blacksmithing forge.\n\nOpen studio time is a benefit of membership.   It is available to current students (or students enrolled within the past 12 weeks) who are members and have been certified by their instructor. Additional requirements and fees vary by studio.\n\nKiln firing service is available to members and students.  All Clay must be purchased through TACS.  Glaze – Students may use their own glaze. Cone 6 only.\n\nThe gift shop carries handcrafted items by regional artists, instructors and students.  The annual yard sale is must see.  Generally, its the last weekend in August.  All proceeds benefit Tryon Arts & Crafts School, a 501(c)(3) nonprofit organization.",
+          "time": 1692895093,
+          "translated": false
+        },
+        {
+          "author_name": "Reina Carroll",
+          "author_url": "https://www.google.com/maps/contrib/108711791071751038147/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWW-0kEJ-oqHon1d2OMxd7xyis3kKvvUmnHA0aWfpUUuA2wOjzdHw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "My husband is the woodworking instructor here. All the instructors are fantastic people who are passionate about teaching their craft. And there's so many crafts to choose from -- silk scarf painting to ceramic totem making to pottery and blacksmithing. For anyone looking to learn a new hobby, this is truly a one stop shop. Just a wonderful group of talented people.",
+          "time": 1515625968,
+          "translated": false
+        },
+        {
+          "author_name": "Willliam Cumming",
+          "author_url": "https://www.google.com/maps/contrib/111626882134949424534/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV467b6sHRKQliIKI-6fewpottsP2BrmqSv7nJ4aMuW5oApQmmhmw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "9 years ago",
+          "text": "A real asset for the area. It was brilliant to turn this former school into a consolidated arts and crafts learning and exhibition center. Not only can you take a variety of classes, you can show them on frequent event weekends and sell them in the gift shop. Use their workrooms for your craft and you don't have to take up space in your home.",
+          "time": 1489428592,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-boone-turchin-center-for-the-visual-arts-appalachian-state-university",
@@ -1429,14 +1969,14 @@
       "website": "http://www.turchincenter.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "423 W King St, Boone, NC 28608, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "28608",
+      "latitude": 36.2169973,
+      "longitude": -81.6805716,
+      "place_id": "ChIJISOb8k76UIgR5UfuvyUZth0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1466,12 +2006,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.turchincenter.org"
+        "http://www.turchincenter.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Boone; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.turchincenter.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:40:52Z",
+      "updated_at": "2026-03-14T19:58:34Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -1486,7 +2027,139 @@
       ],
       "content_generated_at": "2026-01-25T02:40:52Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(828) 262-3017",
+      "website_google": "http://tcva.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 12:00 – 8:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 99,
+      "google_reviews": [
+        {
+          "author_name": "Y BAE",
+          "author_url": "https://www.google.com/maps/contrib/110659568069753242141/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtyzRg8D3p-IA4zmYIFf61m7VbbYK1DsXts7n9o6veb_5HlKPv=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Multiple different voices and presentations you could learn through this place. I am so happy to have this wonderful place in Boone. Collections tell you stories that invite you to mirror and window.",
+          "time": 1691725860,
+          "translated": false
+        },
+        {
+          "author_name": "John James",
+          "author_url": "https://www.google.com/maps/contrib/112749934276293657474/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKsgncmTW_niXH12TrQRUvVGjg07GoKD6OAN19o0UfTc77ynA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The Turchin Center is a GEM in downtown Boone. Professionally run, state of the art museum and visual arts center. A must see when in Boone!!!!",
+          "time": 1761997970,
+          "translated": false
+        },
+        {
+          "author_name": "Gloria Gutierrez",
+          "author_url": "https://www.google.com/maps/contrib/100740323812135400809/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK9qBySqd3362ZYL2ZhJzfzXhj-z5VOjdEX1iWWQBrmT7cQRQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Dropped in while walking around and visiting Boone. All staff were so friendly especially Isabel who gave us a lot of info and it was only her second day!  Get a trinket out of the Art-o-Rama vending machine!",
+          "time": 1571488088,
+          "translated": false
+        },
+        {
+          "author_name": "Josh Pagano",
+          "author_url": "https://www.google.com/maps/contrib/113125202558962782604/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXPTI0_zOJTPh9GJPlUKTVFAuiIzn3wtDS4kuXo3b2iovl6kp2lQA=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "4 years ago",
+          "text": "The collections were underwhelming.   But I did enjoy the Erratic exhibit.",
+          "time": 1636414202,
+          "translated": false
+        },
+        {
+          "author_name": "Forrest Spellman",
+          "author_url": "https://www.google.com/maps/contrib/105277326948818751165/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWsyJTWnvULkWeNAQBjw7Cqzsk7r8xK6oUxooEmHVc6nsHNpwEe=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Nice museum, free with a lovely rotating collection of art pieces. The space was easy to navigate and had beautifully established areas for paintings and other visual works. The staff here was incredibly friendly and knowledgeable.",
+          "time": 1741640707,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-chapel-hill-ackland-art-museum",
@@ -1498,14 +2171,14 @@
       "website": "http://www.ackland.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "101 S. Columbia St",
+      "street_address": "101 S Columbia St, Chapel Hill, NC 27599, USA",
       "address_line2": null,
-      "postal_code": "27514",
-      "latitude": 35.9125678,
-      "longitude": -79.0548896,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "27599",
+      "latitude": 35.912593,
+      "longitude": -79.054867,
+      "place_id": "ChIJ30f4tufCrIkRJr67KPa4r9U",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1526,27 +2199,28 @@
       "impressionist_strength": null,
       "modern_contemporary_strength": null,
       "primary_art": null,
-      "historical_context_score": 2,
+      "historical_context_score": 3,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Ackland Art Museum has a modest collection that provides contextual value but lacks significant depth and rarity. Its reputation is recognized regionally, aligning with its local connection and university affiliation.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence describes the Ackland as a university art museum with programming and events, but provides no collection details to score Impressionist or Modern/Contemporary strength. As an academic unit, it likely provides some interpretive/educational framing, suggesting a mid-range historical context score. Its profile appears regional and its collection scope is best inferred as moderate absent clearer evidence of flagship holdings.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.ackland.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Chapel Hill; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:41:03Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9199665736",
+      "phone": "(919) 966-5736",
       "is_scoreable": true,
       "content_summary": "Tucked into the intellectual energy of Chapel Hill, the Ackland Art Museum is a rewarding stop for art lovers who enjoy close looking and thoughtful curation. As North Carolina’s only museum dedicated to the study of global cultures, it invites you to move across centuries and continents in a single visit. Expect an intimate, gallery-focused experience—easy to navigate yet rich in ideas—where prints, drawings, and carefully chosen objects shine. It’s an ideal museum for travelers who prefer depth, context, and discoveries over crowds.",
       "content_description": "In the heart of Chapel Hill, **the Ackland Art Museum** offers an art experience shaped by a university town’s curiosity: exhibitions and displays that reward sustained attention, smart wall texts, and a sense of discovery rather than spectacle. Marketed as North Carolina’s only museum dedicated to the study of global cultures, it’s a place where the story of art is framed broadly—across geography, time, and materials—making it especially satisfying for visitors who enjoy connecting objects to the histories that produced them.\n\nThe Ackland’s strengths often reveal themselves in the quiet power of works on paper and tightly curated rotations: prints, drawings, and photographs that foreground line, experimentation, and the intimacy of the artist’s hand. Even with a modest-sized collection, the museum’s programming can create the feeling of a “greatest hits” seminar—pairing *European* and *American* traditions with works that open onto wider global conversations. Look for galleries that emphasize close-looking skills: tonal subtleties in printmaking, the immediacy of sketch-like drawing, and the way photographic series build meaning through sequencing.\n\nArchitecturally, the museum’s appeal is in its **clean, gallery-forward spaces**—designed for focused viewing, with a calm rhythm that makes it easy to spend an hour or an afternoon. For art travelers, the visitor experience is notably pleasant: manageable scale, uncrowded rooms, and the ability to return to favorite works without fatigue. Open Tuesday through Saturday (10:00am–4:30pm), it fits beautifully into a Chapel Hill day of campus strolling and bookshop browsing—an art stop that feels both scholarly and warmly accessible.",
@@ -1560,7 +2234,138 @@
       "content_generated_at": "2026-01-25T02:41:03Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "http://www.ackland.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 471,
+      "google_reviews": [
+        {
+          "author_name": "Jane Jing",
+          "author_url": "https://www.google.com/maps/contrib/100659293509641257336/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVl7Blw1Eveqlm6Rn52QN2IP10X2wws3jznJcIiK4NxDpIlAPsw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 3,
+          "relative_time_description": "7 months ago",
+          "text": "The clay exhibition is impressive. The second floor was not opened and part of the first floor was not opened. A group of UNC medical students with scrubs were very loud as a group of kindergarteners. I didn’t have joyful time here.",
+          "time": 1755201746,
+          "translated": false
+        },
+        {
+          "author_name": "Lia Lewis",
+          "author_url": "https://www.google.com/maps/contrib/103760583315731260320/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkkANAh9mX4MjxXK-lDWcLU57lMJXoDkfhdo6vdOgMA4BQgDM=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "The Radical Clay exhibition proved to be an excellent complement to our educational program, particularly in the context of our discussions with children regarding materials.\nWe extend our sincere gratitude to the ceramists and organizers for their contributions. The inclusion of goody bags was a delightful touch.\nBased on the children's feedback, the exhibition exceeded our expectations in terms of its impact.",
+          "time": 1753930501,
+          "translated": false
+        },
+        {
+          "author_name": "Ajimon Thomas",
+          "author_url": "https://www.google.com/maps/contrib/113312936515686501317/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV89A9Cc6MtYzYjh1v8iC88vAUM5ow5Tt_CBd35NZQE5qR7E2IQCg=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "A perfect way to spend some time indoors. Free entry and parking. Lots of cool exhibits.",
+          "time": 1751854078,
+          "translated": false
+        },
+        {
+          "author_name": "Angela Paige",
+          "author_url": "https://www.google.com/maps/contrib/112106593429349301400/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXHe4sw2MHPaF_Moeorf2pKdKTsCTYOtCMva4dgpgeu4IiJs46o=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We held an event with 70 guests at the Ackland and got rave reviews from everyone! The Art& space is a perfect spot for a talk with the lobby for our catering table and bar. Not to mention having the actual art galleries for everyone to walk through and see. All of the Ackland staff was wonderful to work with! Such a fun part of UNC to share with guests from out of town.",
+          "time": 1718390660,
+          "translated": false
+        },
+        {
+          "author_name": "Thomas Miller",
+          "author_url": "https://www.google.com/maps/contrib/114115640864395109796/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWqbQfT15ms7JdSB0h7dOZHBpGKw2Ev4TOhPAeeUzzKEX6KEC86=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I was waiting for a friend to finish her classes at UNC-CH for the day and found this impressive art museum to explore. It is located on campus and just one of many interesting caches of culture to scope. Nearby there is a variety of food&bevvies to sample and people from around the globe to interact with. Check it out if you’re in Chapel Hill NC.",
+          "time": 1704737113,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-charlotte-bechtler-museum-of-modern-art",
@@ -1572,14 +2377,14 @@
       "website": "http://www.bechtler.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "420 South Tryon Street",
+      "street_address": "420 S Tryon St, Charlotte, NC 28202, USA",
       "address_line2": null,
       "postal_code": "28202",
-      "latitude": 35.2245882,
-      "longitude": -80.8474049,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.2244822,
+      "longitude": -80.8473279,
+      "place_id": "ChIJvSzQNSmgVogRzpZ1TvxDFz0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1598,29 +2403,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 1,
-      "modern_contemporary_strength": 3,
+      "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 3,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a coherent collection of mid-20th-century modern art but does not have exceptional depth or national significance. Its historical context score indicates a local relevance, underlining its role within the Charlotte area.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is explicitly dedicated to mid-20th-century modern art and holds a sizable family collection (1,400+ works) by major figures of 20th-century modernism, supporting a strong Modern/Contemporary score. No evidence indicates Impressionist holdings, so that is scored as negligible. As a focused modern-art institution opened in 2010, it likely provides some interpretive framing but is not described as encyclopedic; reputation and collection tier appear regional/moderate.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.bechtler.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Charlotte; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "7043539200",
+      "phone": "(704) 353-9209",
       "is_scoreable": true,
       "content_summary": "In Charlotte’s lively Uptown, the Bechtler Museum of Modern Art offers a focused, design-forward encounter with 20th-century masterworks. This compact museum is beloved by art lovers for its strong holdings in European modernism—think Picasso, Miró, Giacometti, and Calder—presented in a calm, intimate setting that rewards close looking. It’s an ideal stop for travelers who want a high-quality modern art experience without the sprawl, paired with standout architecture and an easy, gallery-to-gallery flow.",
       "content_description": "**The Bechtler Museum of Modern Art** is Charlotte’s most concentrated dose of European modernism—a museum that feels intentionally scaled for looking slowly and seeing well. Built around the Bechtler family collection, the galleries foreground the ideas that shaped 20th-century art: the fractured perspectives of *Cubism*, the playful visual language of *Surrealism*, and the elegant reduction of form associated with *modernist abstraction*. Expect to encounter works by major figures such as **Pablo Picasso**, **Joan Miró**, **Alberto Giacometti**, and **Alexander Calder**, alongside related prints, drawings, and sculpture that illuminate how these artists experimented across media.\n\nArchitecture is part of the attraction. Designed by **Mario Botta**, the building reads as a modernist object in its own right, with crisp geometry and a strong sense of procession from entrance to galleries. The experience is intimate rather than encyclopedic: you’ll move through thoughtfully paced rooms where sculpture can be viewed in the round and graphic works reward close inspection.\n\nFor visitors, the museum excels as a refined, time-efficient cultural anchor in Uptown. Plan for a satisfying 60–90 minutes, then linger nearby in Charlotte’s cultural district. With **competent, clear-minded curation** and a **modest but high-impact collection**, the Bechtler is best approached like a concentrated tasting menu of modern art—rich in masterpieces, light on distraction, and memorable for its architectural poise.",
@@ -1638,9 +2444,150 @@
       "eca_score": 2,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://bechtler.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 9:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 851,
+      "google_reviews": [
+        {
+          "author_name": "Bri",
+          "author_url": "https://www.google.com/maps/contrib/117598429890121218220/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXvidC-hj7e_WEJK4zwWDw2faY56lETAtfWrzTGoYT0it1kCZ6P_A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "We came in on a wintry day, all other nearby museums were closed. The museum was small. The top floor is the largest space, the remaining floors are much smaller spaces. They offered a place to store our jackets and belongings and it only took about an hour to complete entire space. One staff worker came up to us several times during our browsing of the gallery, which was different than our usual gallery experience.",
+          "time": 1769328680,
+          "translated": false
+        },
+        {
+          "author_name": "c “cfl” lane",
+          "author_url": "https://www.google.com/maps/contrib/100647360018784601679/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJUKcHCgvD6IB4nT19hjR-B_TmS9Emg9k_rX20B3Sm0ZJJDTG8u=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Good art museum with an eclectic collection of modern art modalities. Friendly staff and nice views of the city on an upstairs patio. Close to the Mint museum for a full a full afternoon of art discovery.",
+          "time": 1762705853,
+          "translated": false
+        },
+        {
+          "author_name": "Harrison Henke",
+          "author_url": "https://www.google.com/maps/contrib/103640893475817558755/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJs4d26UqWYoZjzQOGiZ4KusfXfALHz-QsM2iLUjsW9Quc0FA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Small but thoughtfully presented. It is surely overshadowed by it's neighbor, The Mint Museum, which is also excellent. But this shouldn't suggest that The Bechtler has any less to offer. The building is, in itself, a statement. The works within are presented with pride and curiosity. If anything, it's smaller gallery space might compell one to spend even more time contemplating the work being viewed than one would in a room with hundreds more. I would call this a hidden gem in plain sight. Definitely go here and keep an open mind.",
+          "time": 1772682447,
+          "translated": false
+        },
+        {
+          "author_name": "Mey Wong",
+          "author_url": "https://www.google.com/maps/contrib/111182433186028670406/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUNRTbAqKzJqk0hOLj7yhm8qr3X87UmX4_9_kPxSOjXzz5LK31gBQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Beautiful museum. Was also my lucky day because entrance was free 🙂",
+          "time": 1771681663,
+          "translated": false
+        },
+        {
+          "author_name": "alexia",
+          "author_url": "https://www.google.com/maps/contrib/115598442327817333664/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-bPoPlXST8tHZhR_2SBLtOwgWH72tHS7sYm22fhfeOPQA3ZR8=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Nice museum, clean installations and there’s Andy Warhol works 👍🏼 also interesting books to purchase",
+          "time": 1767110814,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-charlotte-mint-museum",
@@ -1652,14 +2599,14 @@
       "website": "http://www.mintmuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "at Levine Center for the Arts, 500 S Tryon St, Charlotte, NC 28202, USA",
       "address_line2": null,
       "postal_code": "28202",
-      "latitude": 35.2246047,
-      "longitude": -80.8484481,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 35.2244083,
+      "longitude": -80.8480847,
+      "place_id": "ChIJ6QA5TymgVogRwfAmE5zenDE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1688,12 +2635,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "openstreetmap"
+        "openstreetmap",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Charlotte; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:41:22Z",
+      "updated_at": "2026-03-14T19:58:37Z",
       "notes": null,
       "city_tier": 1,
       "is_scoreable": false,
@@ -1708,7 +2656,149 @@
       ],
       "content_generated_at": "2026-01-25T02:41:22Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(704) 337-2000",
+      "website_google": "http://mintmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 6:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 6:00 PM",
+          "Friday: 11:00 AM – 9:00 PM",
+          "Saturday: 11:00 AM – 6:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2457,
+      "google_reviews": [
+        {
+          "author_name": "Michael Brannies",
+          "author_url": "https://www.google.com/maps/contrib/116728467772457021204/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV0DWQQ7UzrvuSHLdmlmeRP6RuHHSY24htrvz43nB0-s2rwOomT=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I needed to kill a couple hours in Charlotte and this museum didn't disappoint! Amazing Keith Haring and some other great artists. Loved it!",
+          "time": 1770586192,
+          "translated": false
+        },
+        {
+          "author_name": "Emily Richter",
+          "author_url": "https://www.google.com/maps/contrib/100504208134960293677/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLxIXESQxRiy5_pA2O3VtkmQIFarlMdQRpCYAeI7VPf6tqnaQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Great space with great art.  I enjoyed the current exhibit on Romanticism.  The price felt fair, even though I'm used to the free art museums in Raliegh and DC.  I went on a Saturday afternoon and there were a lot of people, but it never felt crowded.",
+          "time": 1771117203,
+          "translated": false
+        },
+        {
+          "author_name": "Maitreya Maitreyan",
+          "author_url": "https://www.google.com/maps/contrib/114986709440190457967/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWl6wAt0lZr6JxBDx_yyKqdU9Gv7d4tcr1DqqajFSUjNYXuTOrAjA=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Beautiful museum. Take your family and friends for a feast for eyes. Such a different collection of artifacts and sculptures.",
+          "time": 1767571639,
+          "translated": false
+        },
+        {
+          "author_name": "Diana Bradley",
+          "author_url": "https://www.google.com/maps/contrib/114377763531852205965/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKn3a65kpmvBvkXtYvV6MvGgxAi8Z2tL0_aKmFinHFY7sZv-Q=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Absolutely loved this museum. Very informative. Beautiful paintings, sculptures, woodwork, pottery, and much more.",
+          "time": 1769369094,
+          "translated": false
+        },
+        {
+          "author_name": "c “cfl” lane",
+          "author_url": "https://www.google.com/maps/contrib/100647360018784601679/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJUKcHCgvD6IB4nT19hjR-B_TmS9Emg9k_rX20B3Sm0ZJJDTG8u=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Very good art museum in charlotte. Lots of variety in the collections. Worthy of a visit during a visit in the area or a good weekend outing should you live in the area.",
+          "time": 1762705674,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-durham-nasher-museum-of-art-duke-university",
@@ -1720,14 +2810,14 @@
       "website": "http://www.nasher.duke.edu/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "2001 Campus Drive",
+      "street_address": "2001 Campus Dr, Durham, NC 27705, USA",
       "address_line2": null,
       "postal_code": "27705",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.998994,
+      "longitude": -78.929035,
+      "place_id": "ChIJnY52pALkrIkRVlAlER0_k8M",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1757,12 +2847,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.nasher.duke.edu"
+        "http://www.nasher.duke.edu",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Durham; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T04:04:25Z",
+      "updated_at": "2026-03-14T19:58:38Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -1777,7 +2868,149 @@
       ],
       "content_generated_at": "2026-01-18T04:04:25Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(919) 684-5135",
+      "website_google": "http://nasher.duke.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 929,
+      "google_reviews": [
+        {
+          "author_name": "Nathan Vey",
+          "author_url": "https://www.google.com/maps/contrib/111153726638248786354/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLDAHHqFIfquB3vYfAId5_UESwMiibN3gdR_6S3SCnWZ6o_kg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Free! Good medium sized museum with interesting exhibits and a nice cafe. Delicious chocolate chip cookie at the cafe you've got to try. Do the free kids activity to get a sticker.",
+          "time": 1771106730,
+          "translated": false
+        },
+        {
+          "author_name": "Marina Bonaventura",
+          "author_url": "https://www.google.com/maps/contrib/108571087769924200596/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWUoeXzyxmL76hqce1IOoriEw6jJnHloLy6TgLGy_0K4J3LiRg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Small but enjoyable museum on the Duke campus. Rotating exhibits encourages repeat visits. I will absolutely be back. Paid parking but free admission.",
+          "time": 1768667918,
+          "translated": false
+        },
+        {
+          "author_name": "Jen Gad",
+          "author_url": "https://www.google.com/maps/contrib/106289704991442381048/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXRzME_Cvo-ZYr5LpVZ10JJ954oAP8VeG3w5h4uaQOf90ws_Neaew=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This was a an architecturally beautiful building! A great, free admission museum with art from various genres. Great place to take kids!",
+          "time": 1767449360,
+          "translated": false
+        },
+        {
+          "author_name": "Wamuyu",
+          "author_url": "https://www.google.com/maps/contrib/109144078557088383913/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_1U2q3RbOZ9Za-bm8j-LLtXLKM4-SDAmhC6V05qn_2_95ZNg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Relatively small but incredibly well-curated! High quality collection/exhibition. Love the modern building. And it’s free! Highly recommend",
+          "time": 1764373605,
+          "translated": false
+        },
+        {
+          "author_name": "John Toller",
+          "author_url": "https://www.google.com/maps/contrib/116018896216366017411/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIfV-HnrIc-nI2EQmN9CRvbo20Uhp1i5pf7IiWNNI8ph-WRvQ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Smaller collection but spacious displays of art by a wide array of artists. 🎨  Admission is free and there are excellent docent-led tours. Visitors to Nasher Museum will not be disappointed.",
+          "time": 1771779266,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-greensboro-green-hill-center-for-north-carolina-art",
@@ -1789,14 +3022,14 @@
       "website": "http://www.greenhillcenter.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "200 N Davie St, Greensboro, NC 27401, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 35.67064,
-      "longitude": -78.66372,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "27401",
+      "latitude": 36.0735798,
+      "longitude": -79.7888531,
+      "place_id": "ChIJq53hRCYZU4gRVbS5KC6msdo",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1805,7 +3038,7 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1820,23 +3053,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Green Hill Center for North Carolina Art has a moderate local impact and provides educational value. Its permanent collection indicates a coherent strategy but lacks the depth required for national significance. The historical context score reflects its local importance rather than a broader narrative.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no collection description for the Green Hill Center for North Carolina Art (the Wikipedia summary is for the city of Greensboro), so collection-area strengths and interpretive depth cannot be determined. Based on the specialized, state-focused name and lack of corroborating collection evidence, it is scored as a small, locally oriented institution.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.greenhillcenter.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Greensboro; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:42:04Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9196646760",
+      "phone": "(336) 333-7460",
       "is_scoreable": true,
       "content_summary": "In Greensboro, the Green Hill Center for North Carolina Art is a rewarding stop for travelers who want to understand a place through its artists. With a strong regional focus and consistently thoughtful curation, it spotlights North Carolina’s creative voices across mediums—painting, photography, craft, and contemporary practice. Plan for an unhurried visit: the galleries are approachable, the exhibitions rotate, and the experience feels like stepping into the state’s living art conversation rather than a distant survey of masterworks.",
       "content_description": "**Green Hill Center for North Carolina Art** offers art lovers a focused, regionally grounded museum experience—one that reads North Carolina not as a backdrop, but as a generator of ideas, materials, and artistic communities. While the center’s public-facing information can be modest, its real strength lies in the *regional* lens: exhibitions that elevate artists working in and from the state, often bridging fine art with traditions of craft, design, and socially engaged contemporary practice. Expect a visit that rewards close looking—where curatorial choices emphasize context, place, and the evolving identities of North Carolina’s cities, coasts, and rural landscapes.\n\nArchitecturally, the appeal is less about grand monumentality and more about **gallery clarity**: clean sightlines, manageable room scale, and an exhibition rhythm that encourages repeat visits. Rather than overwhelming you with encyclopedic holdings, the museum’s **competent curatorial authority** comes through in how shows are edited—pairing works to highlight technique, material intelligence, and the push-and-pull between local subjects and broader national conversations in *contemporary art*.\n\nFor visitors, this is a museum best experienced as a “what’s on now” destination. Go with time to read labels, compare approaches across mediums, and return if you can—rotating presentations are part of the draw. Practical note for planners: it’s open Tuesday through Saturday, 10:00am–4:30pm, making it an easy cultural anchor for a Greensboro day built around galleries, cafés, and downtown walking.",
@@ -1851,26 +3085,157 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "eca_score": 2,
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "website_google": "http://www.greenhillnc.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1900"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 5:00 PM",
+          "Wednesday: 12:00 – 7:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 108,
+      "google_reviews": [
+        {
+          "author_name": "Lady Ruby",
+          "author_url": "https://www.google.com/maps/contrib/114920377925844226612/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyilO6M9r9PGk6biWSjiDF5fo_xy_UkXWT3Yo1BfuFCtrxdMnM=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "If you haven't been to family night on Wednesdays from 5:00 to 7:00 p.m. You're definitely missing out. It's a free event weekly and a great place for toddlers kids and family together to learn and express creativity with arts and crafts of all kinds.",
+          "time": 1758729899,
+          "translated": false
+        },
+        {
+          "author_name": "Abi M she-her",
+          "author_url": "https://www.google.com/maps/contrib/111639298007517153230/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUpoCQbxtr6fpERSD1QL6KG1Bm2aAJVsbLj6PBglNcKC6JDAPPRPg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Super cool area for art, the Wednesdays night kids free art event was very crowded but still fun! The puppet exhibit was really cool to see before hand",
+          "time": 1751578429,
+          "translated": false
+        },
+        {
+          "author_name": "Elizabeth McGee",
+          "author_url": "https://www.google.com/maps/contrib/108346814517197783581/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWeP7JaWHgFUmuptUmjGwP4yiAIQHck9rCHIXQ2TRp3Z8HvNoCV=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "I would recommend a visit to GreenHill to anyone. It's the place to connect with North Carolina art, no matter what your experience level. Lots of really fun and free events, artist talks, gallery openings, etc. If you have kids, they will love making art in the studios! If you are looking for locally handmade gifts, this is the place to go. You can easily spend hours here.\n\nThere was a very cool interactive dance performance that was associated with a past exhibition at GreenHill. It was a really special night and one-of-a-kind. I'll attach some photos to this review!",
+          "time": 1552263902,
+          "translated": false
+        },
+        {
+          "author_name": "Joshua Feldman",
+          "author_url": "https://www.google.com/maps/contrib/108463847517467327367/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV20QaE1VZ00wLJKfREsO4sQpRMfRWinKpyLwozA5wr-a0skw5AaA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Community arts gallery spaces for local and regional artists to display, share, and sell.  A great resource and time well spent visiting.  I don't love the postmodern architecture, but that's not why I came.  I came for contemporary art by local and regional artists and I found that in spades.  It's one of the best things in Greensboro and I wish more cities had a place like this.",
+          "time": 1644185254,
+          "translated": false
+        },
+        {
+          "author_name": "Ebony Burnett",
+          "author_url": "https://www.google.com/maps/contrib/110640152198464677740/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXivLGkPvcsUVUXGi0N2hHZQ1abSJOmj1aAAgyKsXXsFIIl19rGvA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "The art studio for kids is lots of fun and we even made a new friend. Love the ability for them to explore different art forms and have it all at their disposal. The staff were friendly and very accommodating. It was very organized and a fun afternoon.",
+          "time": 1575069557,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-highland-bascom-center-for-the-visual-arts",
       "country": "USA",
       "state_province": "North Carolina",
-      "city": "Highland",
+      "city": "Highlands",
       "museum_name": "Bascom Center for the Visual Arts",
       "alternate_names": null,
       "website": "http://www.thebascom.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "323 Franklin Road",
+      "street_address": "323 Franklin Rd, Highlands, NC 28741, USA",
       "address_line2": null,
       "postal_code": "28741",
-      "latitude": 36.21742,
-      "longitude": -81.68181,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.0576081,
+      "longitude": -83.2042003,
+      "place_id": "ChIJwRR0dk0eWYgRGgxacFXa1xk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1894,23 +3259,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Bascom Center for the Visual Arts provides local context, offering educational value but lacking a significant permanent collection of importance. It is recognized primarily within the local community, evidenced by its reputation score.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the Bascom Center for the Visual Arts' permanent collection or holdings, so collection-strength and interpretive-context scores cannot be determined. Based on being a small-town visual arts center in Highland, NC with no nearby-museum signals, it is most plausibly a local institution with a small-to-limited permanent collection scope.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.thebascom.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Highland; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:42:14Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8282623017",
+      "phone": "(828) 526-4949",
       "is_scoreable": true,
       "content_summary": "The Bascom Center for the Visual Arts in Highland offers an intimate, curiosity-driven museum visit centered on global cultures and the visual languages that connect them. As North Carolina’s only museum dedicated to the study of worldwide cultural traditions, it’s a rewarding stop for art lovers who enjoy close-looking, cross-cultural storytelling, and thoughtfully scaled galleries. Open Tuesday through Saturday, it suits travelers seeking a quiet, enriching museum experience—less about blockbuster crowds, more about discovery and context.",
       "content_description": "For art travelers passing through Highland, **Bascom Center for the Visual Arts** is a small but distinctive museum experience: a place to slow down and look closely at how objects, images, and materials carry cultural meaning across the world. Unusually for the region, it positions itself as North Carolina’s only museum dedicated to the study of **global cultures**, making the visit feel like a focused journey through *cross-cultural visual traditions* rather than a conventional regional art hang.\n\nBecause the collection is described as modest and the institution is local in reputation, the strength here is the **curatorial approach**—clear interpretation, approachable galleries, and the pleasure of encountering works at human scale. Expect exhibitions that emphasize **process and material**—how pattern, symbol, and craftsmanship communicate identity—inviting comparisons between traditions rather than isolating them. For art enthusiasts, this is the kind of museum where you’ll spend time reading labels, noticing details, and connecting dots between cultures and aesthetics.\n\nArchitecturally and experientially, the Bascom rewards visitors who value **quiet gallery time** over spectacle: a comfortable pace, easy navigation, and the ability to revisit a room without fighting crowds. Plan your visit for a mid-morning start (open Tuesday–Saturday, 10:00am–4:30pm), and treat it like a compact seminar in seeing—ideal as a reflective counterpoint to larger, collection-heavy museums elsewhere in the state.",
@@ -1924,7 +3290,138 @@
       "content_generated_at": "2026-01-25T02:42:14Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "http://www.thebascom.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 232,
+      "google_reviews": [
+        {
+          "author_name": "Katherine Cain",
+          "author_url": "https://www.google.com/maps/contrib/100112578481289374015/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW8xPd50CEtxP7m8LzMHPkK3WMFg6I7AvXdpnXely56VaUxctM=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful well maintained space.  We had a wonderful visit here.  There is a nature walk through the grounds - there are various art sculptures installations along the way and the path leads you to a stream where there is a covered porch area you can sit and listen to the running water.  It was so peaceful.  They have a retail store that features local artists filled with so many unique items!  There are a few galleries/ exhibits and the majority of the pieces were for sale.  We enjoyed walking the garden and viewing the three exhibits in the main building.  They also offer classes for adults and children.   Everyone we met was very friendly and helpful.",
+          "time": 1758233705,
+          "translated": false
+        },
+        {
+          "author_name": "Greg Hart",
+          "author_url": "https://www.google.com/maps/contrib/113483871010043544178/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhUE_nU9bM3w8ArwqlsQZVO-dg9NtJw5XMxDpCp6zGgtsThbYW=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Didn't know what to expect but this turned out to be a real gem!\nLots of interesting art by local artists alone with an outdoor trail with larger art installations along it. Pretty good selection of locally made pottery for sale as well. Free admission and plenty of parking. Great place to take kids and afterwards I highly recommend Highlands Smokehouse for lunch which is just up the road.",
+          "time": 1755196795,
+          "translated": false
+        },
+        {
+          "author_name": "Adam Smoak",
+          "author_url": "https://www.google.com/maps/contrib/115935266634827606258/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJwLOlBmLGrtJ8vwODOZtOvQbFqDnpNpXSRqFQ4LUX1HbcOqADx=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "It’s right off downtown, and we almost missed the covered bridge.  Since it was Sunday, the main exhibition center was closed, but the pottery studio was open.  They have one of a kind stuff - literally - because it made by local artists.  Not the kitsch stuff.  We loved walking the grounds seeing the sculpture pieces.  It reminded me of a little Brookgreen Gardens.  Stop by.",
+          "time": 1755462901,
+          "translated": false
+        },
+        {
+          "author_name": "gordon pettersen",
+          "author_url": "https://www.google.com/maps/contrib/103721239377441555969/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLFLTZHSAMhuRYsncdQeYpPuG0FHfKXbUJO9CSoWmo0ldcvBQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Great place to visit. The day we were there, they had guest speakers in the pottery studio talking about color glazes. The exhibits we neat. The ground were fun with a short hiking trail where we discovered a covered picnic table under the trees with a running brook. Two blocks from downtown Highlands. A must visit@",
+          "time": 1747921232,
+          "translated": false
+        },
+        {
+          "author_name": "Sandra Sudduth",
+          "author_url": "https://www.google.com/maps/contrib/116844683539168974956/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKsmJS61mFv8JXkr_Mkf34-Wyj7nP1VXY8asbF9C-JVOpwtbis=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "A must see!  Lovely and peaceful grounds with a great gift shop and museum featuring local artists.",
+          "time": 1764856280,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-raleigh-joel-lane-museum-house",
@@ -1936,14 +3433,14 @@
       "website": "http://www.joellane.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "160 SOUTH SAINT MARYS STREET",
+      "street_address": "160 S St Mary's St, Raleigh, NC 27603, USA",
       "address_line2": null,
       "postal_code": "27603",
-      "latitude": 35.7788342,
-      "longitude": -78.6508129,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 35.7790484,
+      "longitude": -78.650764,
+      "place_id": "ChIJL0J5U3tfrIkRHn6Xwvkw3Yw",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
@@ -1975,15 +3472,16 @@
         "openstreetmap",
         "official_website",
         "http://www.joellane.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Raleigh; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:42:21Z",
+      "updated_at": "2026-03-14T19:58:41Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "9198333431",
+      "phone": "(919) 833-3431",
       "is_scoreable": false,
       "content_summary": "Step back in time at the **Joel Lane Museum House**, the birthplace of Raleigh and a testament to North Carolina's rich heritage. This historical gem offers visitors a captivating glimpse into 18th-century life, making it an essential stop for history enthusiasts and curious travelers alike.",
       "content_description": "**Joel Lane Museum House** stands as a monument to Raleigh's founder and the early American South. Nestled in the heart of North Carolina's capital, this museum showcases the captivating history of the Lane family and the vibrant community that flourished around them. As you wander the meticulously restored rooms, you'll be transported back to 1769, when the house was built. Each room is a window into the past, featuring period furniture, historical artifacts, and beautifully landscaped gardens that enhance the experience. The museum not only highlights domestic life but also reflects the architectural style of the *Colonial Revival era* with its elegant details and craftsmanship.  With knowledgeable guides leading insightful tours, guests gain a deeper understanding of the daily lives of the Lane family and their significant role in the founding of the city.  Visiting gives you the chance to hear fascinating stories about the era and gain a firsthand glimpse at the early days of Raleigh.  Whether you explore the garden or step back into the intimate parlor, every corner of the **Joel Lane Museum House** invites reflection and appreciation for our historical narrative.  Ideal for families, students, and tourists alike, this museum offers an engaging mix of education and inspiration amidst the charm of a bygone era.",
@@ -1996,7 +3494,128 @@
       ],
       "content_generated_at": "2026-01-25T02:42:21Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.joellane.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1400"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1400"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1400"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1300"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 2:00 PM",
+          "Thursday: 10:00 AM – 2:00 PM",
+          "Friday: 10:00 AM – 2:00 PM",
+          "Saturday: 1:00 – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 105,
+      "google_reviews": [
+        {
+          "author_name": "Uncle Booshi",
+          "author_url": "https://www.google.com/maps/contrib/105759965918494981964/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVCAJmeX8zbPYDdiaMemBnAiKkCHHo3Vp1NCDlNh5sFmk9BEAgJ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Amazing place where you can learn about the inception of Raleigh. The tour guide was very thorough and elaborate when he walked us through every step of the place. Definitely recommended.",
+          "time": 1659907788,
+          "translated": false
+        },
+        {
+          "author_name": "Karin Nordlander",
+          "author_url": "https://www.google.com/maps/contrib/102692302782288946654/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVS-E7Yp1Bb9uRdlGMvv6KZJSC2z_hg9VE5xBCXM-og6YsSKeDXLg=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Did not go inside. Interesting chimney.",
+          "time": 1766078934,
+          "translated": false
+        },
+        {
+          "author_name": "Div",
+          "author_url": "https://www.google.com/maps/contrib/114854422548446490469/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXSjrtvRzdb0HgvXO77m0s8PAKjUeew0lRz9JK6h9shaZX5gev0qA=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 4,
+          "relative_time_description": "4 years ago",
+          "text": "Thank you Joel Lane museum house for organizing a great July 4th event with fun activities and a chance to visit the history of Raleigh. Enjoyed the herb garden!",
+          "time": 1625434800,
+          "translated": false
+        },
+        {
+          "author_name": "Callaway Gregory",
+          "author_url": "https://www.google.com/maps/contrib/109528655660085098303/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW3O6O1ifLDLnztqjAD2uBinwntMQfjBKQ6K37fsAsPjOgxjsupBw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "This is a beautiful colonial home in downtown Raleigh, North Carolina. The Joel Lane Museum House has been lovingly preserved and maintained by the colonial Dames for ever and this house is over 200 years old. A house built in 1762 by hand by craftsman, artists, Slaves, women who birthed 10 children to get 2,  without electricity and hot water.\n\nWomen who hoofed it for a great cause for America and the beloved place we all want to be. To be Free! USA not some divided country! Joel Lanes' folks came from England English bloodlines and he built a life here and helped start Raleigh. He built a life here and made history here in Raleigh. Things better! Movers and Shakers. I wonder if Julia cooper Haywood an African American daughter of the Haywood's of Haywood Hall and slave and went on to principle of schools She was born into a hard life. Wouldn't let herself be too happy. She Changed the world. Bishop Curry changed the world! He married Meghan and Harry! He is lovely he just spoke at Christ church about Julia Cooper Haywood. People are craving history and legacy! This is where you see it. Visit here! Learn and Lean into our community's history and learn about the capital city Raleigh while visiting. Hear some music. Parks are top notch. Plus Knowledge is power!!",
+          "time": 1748594112,
+          "translated": false
+        },
+        {
+          "author_name": "Polly Rodriguez",
+          "author_url": "https://www.google.com/maps/contrib/100641071912920925025/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVo9I6gJOiN6Y-a09vhW5OM9kYgXoxc0qIkiUa1NCmiaph4bMsFMQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "A hidden gem. You must take the house and garden tour with a docent - and these volunteers are passionate about the history and stories. Great little gift shop with some surprises.",
+          "time": 1675566097,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-raleigh-north-carolina-museum-of-art",
@@ -2008,14 +3627,14 @@
       "website": "http://www.ncartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2110 Blue Ridge Rd, Raleigh, NC 27607, USA",
       "address_line2": null,
       "postal_code": "27607",
-      "latitude": 35.8105029,
-      "longitude": -78.7021777,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 35.8098857,
+      "longitude": -78.7025784,
+      "place_id": "ChIJa2hvU9P1rIkRQaI7E_xzG4Q",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -2033,28 +3652,29 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": 2,
+      "impressionist_strength": 3,
       "modern_contemporary_strength": 3,
-      "primary_art": "Modern/Contemporary",
-      "historical_context_score": 3,
-      "priority_score": 11,
+      "primary_art": "Impressionist",
+      "historical_context_score": 4,
+      "priority_score": 8,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The North Carolina Museum of Art has a coherent collection with recognized strength, particularly in modern and contemporary art, which justifies a score of 3 in that category. Its historical context score reflects its regional importance but does not rise to national significance, while the impressionist collection is modest without deep scholarly relevance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum’s holdings are described as spanning 5,000+ years “from antiquity to the present,” supporting moderate coverage of both Impressionist-era and Modern/Contemporary art but without specific evidence of standout depth. With over 40 galleries and a broad chronological scope, it likely provides good historical framing across periods. As a major state museum with a large campus and long-established collection, it rates as a strong regional institution with a substantial (but not clearly flag",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 4,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Raleigh; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9196646754",
+      "phone": "(919) 839-6262",
       "is_scoreable": true,
       "content_summary": "Set on a beautiful campus in Raleigh, the North Carolina Museum of Art is a rewarding stop for travelers who want both serious art and an easy, spacious visit. As the state’s flagship art museum, it shines in European painting and sculpture, a strong American collection, and thoughtfully curated global works. Expect a calm, well-designed galleries experience paired with an outstanding outdoor park of large-scale sculpture—perfect for art lovers who like to slow down, look closely, and linger.",
       "content_description": "Raleigh’s **North Carolina Museum of Art (NCMA)** is the state’s premier destination for art lovers, with a collection that reaches beyond regional pride into genuinely wide-ranging, museum-quality holdings. Inside the galleries you’ll find a strong throughline from European traditions to American art, with notable works by artists such as **Rodin** (including a major bronze of *The Thinker*), and paintings by **Monet** and **Renoir** that anchor the museum’s strengths in *Impressionism* and modern European art. The museum also builds compelling context around American painting and sculpture, giving visitors a clear sense of artistic change over time rather than a quick “greatest hits” sprint.\n\nArchitecturally, NCMA balances a welcoming, contemporary museum experience with room to breathe—wide sightlines, generous gallery spacing, and a pace that encourages close looking. The real signature, though, is the museum’s outdoor experience: the **Ann and Jim Goodnight Museum Park**, an expansive landscape of trails and large-scale installations that turns a museum visit into an art-and-nature itinerary. For travelers, this means you can pair focused indoor viewing with a restorative walk among monumental works—especially memorable in good weather.\n\nPlan to give yourself extra time: the NCMA rewards repeat passes through favorite rooms, plus unhurried outdoor wandering. It’s an ideal museum for enthusiasts who value **high-quality curation**, a **strong regional base with international reach**, and the pleasure of seeing art both on the wall and out in the open air.",
@@ -2071,10 +3691,141 @@
       "overall_quality_score": 12,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Modern/Contemporary",
+      "primary_art_focus": "Impressionist",
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "High Priority",
+      "website_google": "https://ncartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 11091,
+      "google_reviews": [
+        {
+          "author_name": "Jessica Bricker",
+          "author_url": "https://www.google.com/maps/contrib/112322192311924041978/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKmD7fFiMCHgf-hfaRmgiRNp24YtJ3CIvl-GxJVrqUCF9HHxPwwg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "I had a wonderful visit to the North Carolina Museum of Art. The museum has a great variety of artwork, with an impressive mix of both classic and modern pieces to explore indoors.\n\nWhat really makes this place special is the outdoor museum park. There are beautiful trails, sculptures to discover, and plenty of benches and open spaces where you can sit and relax. It’s a perfect place for a walk after spending time inside the galleries, and it would also be a great spot to bring a picnic and enjoy the surroundings.\n\nThis is a great place for a date day — you can explore the museum together, walk the trails, see the outdoor sculptures, and even have a picnic. Definitely worth a visit if you’re in the area.",
+          "time": 1772058980,
+          "translated": false
+        },
+        {
+          "author_name": "Tim Leung",
+          "author_url": "https://www.google.com/maps/contrib/118352872420975578708/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKiq16wX25wIGqvSzNs4ml9zCPLj2T2Z605iHK4Fb6sHjJ7Xou=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "This place is a great place for Instagram photos. Be sure to get a map and tour the entire grounds, which is very expensive! For outside pictures, it's best when the sun is not so intense, but cloudy days are good for photos too. 😀 Take the time to read the plaques and appreciate the artists for their work. The time I visited, Staff were super nice inside both buildings. You will enjoy 100%!",
+          "time": 1771940149,
+          "translated": false
+        },
+        {
+          "author_name": "Paige Latham Didora",
+          "author_url": "https://www.google.com/maps/contrib/106375709802103320945/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUtomRNnek09SjosqAAaL57tesBSoHhE2Z22IGmZrb5FUto1BvVlA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 weeks ago",
+          "text": "Wonderful museum and grounds. Even though a lot of the outdoors was under construction, there were still many useable trails. I found the maps somewhat inaccurate, but it was pretty easy to get around. The two buildings of the museum have different feels and it is fun to explore. Very open and airy galleries and a wide array of ast styles and types. Helpful printed interpretation. And it's a very big museum!",
+          "time": 1771075972,
+          "translated": false
+        },
+        {
+          "author_name": "Darlene White",
+          "author_url": "https://www.google.com/maps/contrib/104797534240104195518/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLEwu3s0avn5fdQQZL8qa32ZDqAMU8KcyJjiWn2eaogoAmfdUo=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "The free night event was wonderful. Plenty of exhibits . A variety of mediums. A quiet ,clean friendly  atmosphere and plenty of on-site parking. The special exhibit...The book of Esther was informative and well put together. The African American exhibit was full of color and very eye-catching.  The various mediums (wood, wire, paper, metal)will keep a person intrigued. There are benches throughout for time to reflect or just rest. The staff was friendly and knowledgeable. There is a gift shop with a variety of items for sell such as books, jewelry,  artwork and trinkets. There is also a dress up photo opportunity near the book of Esther exhibit.",
+          "time": 1760444172,
+          "translated": false
+        },
+        {
+          "author_name": "Nishith V. Shah",
+          "author_url": "https://www.google.com/maps/contrib/110858967949260494520/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjValmRgIDZrEXN8eOf9DhXHz6cisIiOOsruiptLScaBlukB_vU7Kg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Not to be missed art museum. I have seen many art museums in the world, I shall consider this as one the best viewer friendly museums. Everything is explained in English. Not very huge one but collections very good. Saw special exhibit on Rembrandt era’s collection on ‘ Book of Esther - very unusual. Whole museum is free except special exhibits. Do not miss cafe",
+          "time": 1763676069,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-salisbury-waterworks-visual-arts-center",
@@ -2086,14 +3837,14 @@
       "website": "http://www.waterworks.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "123 E Liberty St, Salisbury, NC 28144, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 35.66883,
-      "longitude": -80.46745,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "28144",
+      "latitude": 35.6685716,
+      "longitude": -80.46717170000001,
+      "place_id": "ChIJfcizbNjyU4gRc61pnDHo2ic",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -2117,23 +3868,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Waterworks Visual Arts Center seems to have limited significance in the context of major art movements and lacks evidence of a substantial permanent collection of either Impressionist or Modern/Contemporary art. Its historical context score is modest, focusing on local significance rather than broader narratives.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the Waterworks Visual Arts Center's permanent collection or curatorial scope, so collection-related strengths and historical context cannot be scored. Based on its location in Salisbury, NC and lack of signals indicating broader prominence, it is most consistent with a primarily local reputation.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.waterworks.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 2,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Salisbury; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:42:46Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "7046361882",
+      "phone": "(704) 636-1882",
       "is_scoreable": true,
       "content_summary": "In Salisbury, the Waterworks Visual Arts Center offers an intimate, art-lover-friendly stop that pairs contemporary exhibitions with the character of a historic utility building. Expect rotating shows that spotlight regional talent, fresh curatorial themes, and a close-up viewing experience you simply don’t get in big-city museums. It’s an easy, rewarding visit for travelers who enjoy discovering local art scenes, chatting with gallery staff, and seeing how architecture and community energy shape a museum’s personality.",
       "content_description": "**Waterworks Visual Arts Center** is a locally beloved hub for seeing what’s happening right now in North Carolina art, presented at an approachable scale that rewards slow looking. Rather than a fixed, encyclopedic collection, the center’s strength is its **rotating exhibitions**—often featuring contemporary painting, photography, ceramics, printmaking, and mixed-media practices by regional artists alongside thoughtfully selected thematic shows. For visitors, that means there’s a strong chance of encountering work you haven’t seen elsewhere: emerging voices, experimental techniques, and distinctly Southern perspectives filtered through today’s visual language.\n\nThe building itself is part of the appeal. Housed in a **repurposed historic waterworks facility**, the center brings an industrial backbone—brick, utilitarian forms, and a sense of civic history—to the gallery experience. That contrast between sturdy infrastructure and luminous, carefully lit art displays gives the visit a particular atmosphere: art feels grounded in place, and the architecture becomes an active frame rather than a neutral container.\n\nFor travelers, it’s an easy-to-navigate museum outing with a community feel: multiple gallery rooms, friendly staff, and an emphasis on discovery over spectacle. Plan to spend an hour or two, then pair your visit with Salisbury’s walkable downtown. If you love contemporary regional art and the *adaptive reuse* of historic buildings, this is a satisfying, beautifully specific stop.",
@@ -2146,7 +3898,148 @@
       ],
       "content_generated_at": "2026-01-25T02:42:46Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.waterworks.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 127,
+      "google_reviews": [
+        {
+          "author_name": "Craig D",
+          "author_url": "https://www.google.com/maps/contrib/114373407243770219811/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIkZF1a7bt5IrunlH1v3qerok0YeN4C-V_hDFVdV2PVlJ-nJQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "We visited and the Heidi Mraz exhibit was there among others.  These were so amazing.  This is a must visit.",
+          "time": 1768525855,
+          "translated": false
+        },
+        {
+          "author_name": "donn castonguay",
+          "author_url": "https://www.google.com/maps/contrib/118294856131614631002/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKn9KPOD3XnNXV612kO9mjJPKprp70xE3zxzWHBqq4zo5nX=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Waterworks is the very classy gallery in the very artsy Salisbury downtown.  Accessible and all one floor.  Not too big so a no problem visit… :)",
+          "time": 1772405180,
+          "translated": false
+        },
+        {
+          "author_name": "Frederick “Fred” von Schmeling",
+          "author_url": "https://www.google.com/maps/contrib/114444964950496553299/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAXnlmyB0TFcOcYFqGKf-st2TTyZmVpDj3A8AAsNfXzcpoNB7FlQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "We really enjoyed our visit to the museum today. What a treat to see the \"Modern Masterpieces\" exhibit and the \"Remembering Bostian Alley\" exhibit. We were first time visitors and look forward to many future visits.",
+          "time": 1756586983,
+          "translated": false
+        },
+        {
+          "author_name": "A. Kendall",
+          "author_url": "https://www.google.com/maps/contrib/104366971097359056426/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVANkjoBoaXNoikbyPfMmU1nH1wkEOt6ub8n2kB345w7Akd0OAfJg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Lovely staff! This place is such a gem. We visited the Robertson exhibit and were just as pleased with the local art history of the town. The art vending machine at the front was a fun touch.",
+          "time": 1750602918,
+          "translated": false
+        },
+        {
+          "author_name": "Family Hurst",
+          "author_url": "https://www.google.com/maps/contrib/108776299176500087908/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVV1lEBxXF1tT_ta8oF_R4-wvVCh0ZF2fvQ0zOXTQxiiLoSMaEb7g=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Heather is a wonderful and knowledgeable docent. She shared a number of interesting facts that we wouldn’t have learned had she not been guiding us. She made the whole experience more enjoyable. We came in as a group and loved learning about the exhibits they offered. All were enjoyable in very different ways. Frankly, this is probably the best art gallery around the Charlotte area.\nThe gift shop offered some beautiful pieces from various artists, many from the area. Very affordable. You can even buy beautiful postcards featuring artists’ works for just a couple of bucks. This place is definitely worth a visit!\nWorth mentioning: I’ve thought since that maybe we should have tipped Heather. Not sure how that works, but I do want to find a way to recognize her. Thank you.",
+          "time": 1743084687,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-statesville-iredell-museums",
@@ -2158,14 +4051,14 @@
       "website": "http://www.iredellmuseums.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "7347 Address 134 Court Street",
+      "street_address": "134 Court St, Statesville, NC 28677, USA",
       "address_line2": null,
       "postal_code": "28677",
-      "latitude": 35.79118,
-      "longitude": -80.86115,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 35.783563,
+      "longitude": -80.889433,
+      "place_id": "ChIJ3Xk74N9bUYgRKbiZTvdIszQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Children's Museum",
       "primary_domain": null,
       "topics": null,
@@ -2196,15 +4089,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.iredellmuseums.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Statesville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:42:54Z",
+      "updated_at": "2026-03-14T19:58:43Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'CHILDREN'S MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "7048727508",
+      "phone": "(704) 873-7347",
       "is_scoreable": false,
       "content_summary": "Iredell Museums offers a unique experience as North Carolina's only museum dedicated to the exploration of global cultures, making it a vibrant destination for families and young learners alike. With interactive exhibits and hands-on activities that ignite curiosity, it's a place where children can connect with diverse backgrounds and traditions in a fun and engaging way.",
       "content_description": "**Iredell Museums** stands out as a lively hub for cultural exploration, distinctly recognized as North Carolina's only museum dedicated to the study of global cultures. Located in Statesville, this children’s museum promises an engaging and educational experience for kids and families. With its hands-on exhibits designed to spark curiosity, the museum creates an immersive environment where children can play, learn, and explore the dynamics of different cultures from around the world. From ancient artifacts to contemporary crafts, every exhibit invites young minds to discover and appreciate the rich tapestry of global heritage. Visitors can experience firsthand the vibrancy of cultures through interactive displays that are as educational as they are entertaining.  As children navigate through the various exhibits, they not only learn about different cultural practices but also develop a sense of empathy and global awareness.  Whether they are partaking in a traditional craft activity or engaging in storytelling sessions, children are encouraged to ask questions and express their creativity.  The museum's design cleverly integrates interactive stations with sensory-rich experiences, ensuring that each visit is a memorable adventure.  **Iredell Museums** isn’t just a place to see; it’s a space to feel, discover, and connect with the world.  Whether you’re a local or just passing through, make sure to plan a visit and immerse your family in the exciting cultural journey that awaits.  **Iredell Museums** is open Tuesday to Saturday from 10:00 AM to 4:30 PM, providing ample opportunity to explore this distinctive treasure.  Don’t miss the chance to enrich your family’s knowledge about the cultures that shape our world!",
@@ -2217,7 +4111,128 @@
       ],
       "content_generated_at": "2026-01-25T02:42:54Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.iredellmuseums.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1500"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1500"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1500"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 3:00 PM",
+          "Thursday: 10:00 AM – 3:00 PM",
+          "Friday: 10:00 AM – 3:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4,
+      "google_reviews_count": 59,
+      "google_reviews": [
+        {
+          "author_name": "Debbie Caruso",
+          "author_url": "https://www.google.com/maps/contrib/109878180561333628448/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVXrHtKsbB-zOFL6tZVK7pDczRtB44ECIWNtkcT3JNZw6MBzBT_jQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Local Museum,  fun for young children,  would like to see more opportunities for explorations.",
+          "time": 1767017742,
+          "translated": false
+        },
+        {
+          "author_name": "Luke “and” Yvonne",
+          "author_url": "https://www.google.com/maps/contrib/114890762463209534184/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWT-b2X_vdq2VHs6aY6bzYfVvdYH9hcOdJC7c76p1ve8DSDObzN=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "This is a tiny museum! But good things come in small packages.\n\nWe visited on a Friday with 4 adults, an 11-yr old, two 5-yr olds, and three 3-yr olds. We came for two hours, had lunch & played in the park, and 6 of us returned for another 2 hours. My 5-yr old wanted to go again today.\n\nThey have a wide variety of toys. A great many of the toys are STEM oriented. Our whole group enjoyed all of the different robots. We all like building activities and there was no shortage of options, both old and new styles.\n\nAs others have noted, the staff is friendly, interactive, and informative.\n\nIf we lived closer, we would definitely have a membership. As it is, $5/ea is a reasonable admission price. We will return!",
+          "time": 1531589157,
+          "translated": false
+        },
+        {
+          "author_name": "Edwina Gazaille",
+          "author_url": "https://www.google.com/maps/contrib/110907112090954542406/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUWKMA7E9murw5SWLgCaBEyFjUIoHY5Pjc9VR_LhObY7kEC6o_UMg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "It's like a Montessori idea.  Hands on!  Awesome, BIG foam blocks to make an obstacle course, a little wooden cabin, life like stuffed animals, train table, craft table, musical instruments and tons of cubbies that contain puzzles, and manipulative a of all kinds for all ages.  The little girl I watch (almost 3) asks me to take her there.  Very fun.  Also, it's free for kids 2 and under and only 5.00 donation for everyone else.  Normally were alone when we go.  So it's quiet, it's cool and it's a hidden treasure.  😉",
+          "time": 1561906100,
+          "translated": false
+        },
+        {
+          "author_name": "Krys Herring",
+          "author_url": "https://www.google.com/maps/contrib/118238265336091589011/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUeOXEnPMjn4yU435wlwUzsS299WCl8K20VvyrudBGvyMRM6BA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "9 years ago",
+          "text": "Excellent place for children of all ages. The staff was helpful and they interact with guest. Melanie was great. She helped assist me with my child that has autism and he had a ball with her.",
+          "time": 1487451498,
+          "translated": false
+        },
+        {
+          "author_name": "Melissa Rivera",
+          "author_url": "https://www.google.com/maps/contrib/109116652111122090609/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW5YOJdqfVX1gtbyZA1nGXai1vvQW-b2PggGmsWylcK2VMbPW1Ajw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 1,
+          "relative_time_description": "3 years ago",
+          "text": "We went a few weeks ago, it was horrible experience because we expected a little more bang for the buck...not a studio apartment size room filled with posters and watered down details of Iredell. Martha also really has nothing to do with Iredell Co (no connections to our area at all) and really should be returned to her home...\n\nWe went to Women in Science STEM that was listed 12 to 2 pm. They cleaned up at 130 and made my daughter cry who wanted to do more stem activity (and was watching her time on her watch) but the young lady with greasy hair kept saying they had \"things to do\". Don't list an event til 2 if you close shop half hour before hand. Also, Women of science in a slide sshow (something you can find on Google) and one stem activity is NOT worth 5 dollars. Ms Baker (director?) is incredibly rude as was her 20 yr old assistant \"Lindsay\". Ms Baker legit TOLD ME TO LEAVE THEM 5 STARS PLS. NO?! I WOULD DO NEGATIVE IF POSSIBLE....",
+          "time": 1678610922,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-wilmington-cameron-art-museum",
@@ -2229,14 +4244,14 @@
       "website": "http://www.cameronartmuseum.com/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "704 COLLEGE ST NE # A",
+      "street_address": "3201 S 17th St, Wilmington, NC 28412, USA",
       "address_line2": null,
       "postal_code": "28412",
-      "latitude": 34.1842334,
-      "longitude": -77.915855,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-17",
+      "latitude": 34.1840949,
+      "longitude": -77.9154152,
+      "place_id": "ChIJa2qFPeX1qYkRKxBKap3hwO4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -2268,16 +4283,17 @@
         "openstreetmap",
         "official_website",
         "http://www.cameronartmuseum.com",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Wilmington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.cameronartmuseum.com; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:43:07Z",
+      "updated_at": "2026-03-14T19:58:44Z",
       "notes": "CSV: IRS Museum ID 8409502824 CSV: phone from IRS 990 database CSV: museum type 'Art Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 33242526, revenue: 32164589)",
       "city_tier": 2,
       "is_scoreable": false,
-      "phone": "2523996477",
+      "phone": "(910) 395-5999",
       "content_summary": "In Wilmington, the Cameron Art Museum offers a thoughtful, intimate art experience that connects coastal North Carolina to wider currents in American and global culture. Expect a well-paced visit with rotating exhibitions, focused collection galleries, and a strong sense of place—where regional history, contemporary voices, and international perspectives intersect. It’s an excellent stop for art lovers who enjoy discovering new artists, seeing fresh curatorial ideas, and pairing museum time with an easy, uncrowded day in a vibrant river-and-sea city.",
       "content_description": "At the **Cameron Art Museum** in Wilmington, the pleasure is in the museum’s *curatorial range*—a program that pairs regional depth with broader cultural perspectives. Art enthusiasts will find a rewarding balance of **changing special exhibitions** and collection presentations, often linking the Cape Fear region’s history to larger narratives in American art and contemporary practice. Because the galleries rotate, repeat visits are especially satisfying: you’re likely to encounter new themes, new artists, and fresh context each time, rather than a static “greatest hits” hang.\n\nArchitecturally, the museum’s experience is defined by **clean, contemporary gallery spaces** designed to keep the focus on the work—bright, legible rooms, comfortable sightlines, and an easy flow that supports slow looking. The overall scale feels approachable (not overwhelming), which is ideal if you like to read labels, study technique, and compare works across media—painting, photography, and mixed-media installations often share the stage. \n\nFor visitors, the Cameron shines as a well-composed half-day cultural anchor: arrive when doors open (Tuesday–Saturday) for quieter viewing, then linger for the exhibition texts and interpretive materials that connect art to place. It’s the kind of museum where art lovers can take their time, follow a thematic thread from gallery to gallery, and leave with a clearer sense of how Wilmington’s coastal identity resonates far beyond North Carolina.",
       "content_highlights": [
@@ -2289,7 +4305,73 @@
       ],
       "content_generated_at": "2026-01-25T02:43:07Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://cameronartmuseum.org/?utm_source=google&utm_medium=organic&utm_campaign=website_gbp",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.6,
+      "google_reviews_count": 708,
+      "google_reviews": [
+        {
+          "author_name": "Brad Lovell",
+          "author_url": "https://www.google.com/maps/contrib/112336162065106657808/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXrnRV8mnXqnBFQP3SGPnLG9BRKXNJSuoieSAjVpVOpy_9JQ3mO=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "My wife and I decided to check this museum out on a rainy day. I’m so glad we did! We both love art, and this museum has some beautiful pieces! There’s also a place to get coffee and small eats inside. Even if you’re not a huge art fan, I would recommend visiting. Good price to enter and you can spend as little or as long as you like.",
+          "time": 1751746967,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Toney",
+          "author_url": "https://www.google.com/maps/contrib/110891383456845196652/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU1hN1X3daEv9s9UuAtbumkHSq62NTdHR1s0FF2oodzqmiH1CpsfA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "This was a great museum with a lot to see and enjoy.  If you are in Wilmington, this is a must visit attraction with a lot to see.  We also visited the sculpture park located outside of the premise and enjoyed the Jazz show.  They do have a cafeteria on site with a gift shop.",
+          "time": 1742917531,
+          "translated": false
+        },
+        {
+          "author_name": "Casey Clarke",
+          "author_url": "https://www.google.com/maps/contrib/109362341201040269162/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVgLZUb9PHRaE73Ycw5aH4G-EJf7qH0CKgB-NqQmpgrd-9voKbWsg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "This museum is always a joy to visit! They've changed the installations since we were last there and it was really cool to see a Picasso in person as I've never seen one!",
+          "time": 1747759116,
+          "translated": false
+        },
+        {
+          "author_name": "Joshua Mann",
+          "author_url": "https://www.google.com/maps/contrib/111984511880101538809/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVxH7GkVy2IlUEOHlxeKt-e2LPcpZtwvXiN15yGogj0otjOc2Klkg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "As time progresses on, it seems that the appreciation for the Arts diminishes.  This is where I am thankful for the Cameron Art Museum.  Today, I visited CAM on a Monday for a private photo shoot and had the opportunity to observe, appreciate and lose myself inside of the Museum, as it was closed to the public.  Heather, our event coordinator, was an amazing hostess, as was the entire staff that was working inside.  We were allowed private access to the 2020 Illumination Exhibit, where local Artists have submitted their pieces up for public vote and they were incredible!!!  I found myself feeling overwhelming peace and serenity the entire time I was working inside.  The galleries are spacious, sterile and showcase the pieces well.  I love visiting, time moves by too fast when I'm here and I cannot wait to come back each time I leave.  Thank you for allowing us the opportunity to visit your wonderful Museum, for your hospitality and also for offering our community a true Gem!  5 STARS!!",
+          "time": 1606793892,
+          "translated": false
+        },
+        {
+          "author_name": "T W",
+          "author_url": "https://www.google.com/maps/contrib/105389491088855670268/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJNLlfzHgPfiwVQm6EiewjLFGeOVMaBvcuOOvz0h7bhWi2Y8OO=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great gallery. First time there. Very friendly staff.  The lace was packed, but we learned it was a community day. They had live music, food trucks, as well as their own cafe. The gallery had great works of art. Many different mediums. We got through in about an hour, then walked the grounds. There is some outdoor art and a very sime oind with various well maintained plants. Highly recommend.",
+          "time": 1723934490,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-winston-salem-museum-of-anthropology-wake-forest-university",
@@ -2301,14 +4383,14 @@
       "website": "http://moa.wfu.edu/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "Wake Forest University, Palmer Residence Hall, 1315 Carroll Weathers Dr, Winston-Salem, NC 27109, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "27109",
+      "latitude": 36.1354606,
+      "longitude": -80.27269969999999,
+      "place_id": "ChIJ0YoZAvmtU4gR5VZMc139uuk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -2338,12 +4420,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://moa.wfu.edu"
+        "http://moa.wfu.edu",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Winston-Salem; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:43:14Z",
+      "updated_at": "2026-03-14T19:58:45Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -2358,7 +4441,139 @@
       ],
       "content_generated_at": "2026-01-25T02:43:14Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(336) 758-5282",
+      "website_google": "http://lammuseum.wfu.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:30 PM",
+          "Wednesday: 10:00 AM – 4:30 PM",
+          "Thursday: 10:00 AM – 4:30 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 81,
+      "google_reviews": [
+        {
+          "author_name": "Peter Taíno",
+          "author_url": "https://www.google.com/maps/contrib/107539647197428855135/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLDK4C2J-w3LlV7TVpdM078qIgMzg1J02AcD5DVFSDHUj9d0cx=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I chaperoned for my daughter's class field trip. It was a very good experience. Very educating, informative, and even some hands on anthropoligy activities! There's a little picnicking area outside, if you want to bring some food and picnic outside.\nLots of interesting exhibits. Can't wait to return! 👍👍",
+          "time": 1761933687,
+          "translated": false
+        },
+        {
+          "author_name": "Aixa Haskins",
+          "author_url": "https://www.google.com/maps/contrib/114098207388603373219/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIqVu3O8OpxqUo_NQj7k_EuUULWxV1a9LlpvRSPDiVArCYzVw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "It was a small museum, but they have it filled appropriately. They made a beautiful display for Dia de Los Muertos, so it seems they change out displays to accommodate the time of year, which is nice so that the displays and exhibits aren't always the same. It gives you something to look forward to. We went for a field trip, and I liked the side area with toys and picnic tables for the kids. Bathrooms were clean, employees were knowledgeable and friendly enough to tolerate large groups of fifth graders.",
+          "time": 1762799632,
+          "translated": false
+        },
+        {
+          "author_name": "Sheila Busby",
+          "author_url": "https://www.google.com/maps/contrib/117815106914657334539/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUhzCvR2yMAWVxSQHPb6AJ89r4uoUBCYXmXS3vy3Z0nSe3apaI=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Lovely getaway on a Saturday afternoon! Beautiful exhibits with great information. The welcome attendant was so nice and helpful! I especially loved the translations of the pottery vases!",
+          "time": 1752946642,
+          "translated": false
+        },
+        {
+          "author_name": "Ellen Sheppard",
+          "author_url": "https://www.google.com/maps/contrib/115702154259694456495/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXqr1sBURNk8-qOWEwkFJ7onyvmWAGegzkan3a-EBpvv9Gfy2N_=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "Such a tiny, hidden gem! Ok, compared with  Chicago's Field Institute or NYs or DCs museums of natural history, it's zero stars. But for a tiny facility that is free and perhaps convenient during a visit to WS, it's delightful! Staff is on hand to answer questions and everyone was genuinely nice and concerned that my questions were answered. At one point, spouse and I were pondering a fine point of one of the exhibits. When we turned to the nearby receptionist (a student) to ask, he'd already started researching the question online! The exhibits change periodically and the only real cohesiveness is anthropology in general, but introductory panels provide an excellent overview of the many sub-specialties within the field. Clear efforts have been made to make the visit interactive, including an Escape Room option in the Africa room. Throughout, displays are nicely done with up to date and attractive signage and cases. There is clearly much love, great thought, and keen intelligence that goes into the exhibits and making this \"mini museum\"  worth the hour it'll take you to enjoy it.",
+          "time": 1528475895,
+          "translated": false
+        },
+        {
+          "author_name": "Martin Gamer",
+          "author_url": "https://www.google.com/maps/contrib/101660103061408935834/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUOXU33ahbfDTijxx5zXm9Hfw-Wy0Wi589xAIt3qVpEZ2weAAFz=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Though this anthropology museum is significantly smaller than other entities of its kind, its breadth and variety of exhibits are still commendable. It features artifacts from Asia, Africa, and maybe even the Americas if I remember correctly, spanning categories such as ceremonial masks, carvings, and even bladed weaponry. Considering that admission is free, this is a more than worthwhile stop on any visit to W-S.",
+          "time": 1748210516,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nc-winston-salem-reynolda-house-museum-of-american-art",
@@ -2370,14 +4585,14 @@
       "website": "http://www.reynoldahouse.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2250 Reynolda Rd, Winston-Salem, NC 27106, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 36.13612,
-      "longitude": -80.27798,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "27106",
+      "latitude": 36.1257509,
+      "longitude": -80.28268729999999,
+      "place_id": "ChIJI_ibtf6xU4gRU3VWnUyWibc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -2398,26 +4613,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 4,
+      "priority_score": 12,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum's collection spans American art from the colonial period to modern times, providing local context but lacking national significance. The museum's historical narrative is important for Winston-Salem, though it does not attain canon-level importance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is described as presenting American art from the colonial period through the modern era, implying some modern holdings but not signaling a major modern/contemporary focus. No evidence indicates dedicated or significant Impressionist holdings, so Impressionism is likely minor. As a historic house museum turned art museum with an education mission and chronological range, it likely provides good historical framing; overall scope suggests a moderate, regional-tier collection.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.reynoldahouse.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 4,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Winston-Salem; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3367585150",
+      "phone": "(336) 758-5150",
       "is_scoreable": true,
       "content_summary": "Set in a storied early-20th-century estate, Reynolda House Museum of American Art pairs museum-caliber American painting with the pleasures of a historic home visit. In Winston-Salem’s leafy Reynolda campus, you’ll move from luminous landscapes and modernist experiments to intimate galleries that reward slow looking—without the crowds of bigger-city institutions. It’s an ideal stop for art lovers who enjoy strong regional context, thoughtful curation, and the sense of discovery that comes with a focused, approachable collection.",
       "content_description": "**Reynolda House Museum of American Art** offers a distinctive North Carolina art pilgrimage: a museum visit woven into the atmosphere of a landmark estate. Housed within the former home of Katharine Reynolds, the setting adds a layer of lived history to the experience—period rooms and estate-scale architecture frame your day with the elegance of an early-20th-century country house. The result is a visit that feels both cultivated and personal, the kind of place where you can linger, return to a favorite canvas, and notice new details in the changing light.\n\nThe collection is **modest but carefully shaped**, with a focus on American art that favors **clarity and depth over sheer quantity**. Expect painting and works on paper that trace key threads in American visual culture—landscape traditions, portraiture, and the push toward *modernism*—presented in galleries designed for close viewing. Rather than overwhelming you, the museum’s competent curatorial approach helps connect styles and ideas, making it rewarding for both seasoned museum-goers and curious travelers building an American art itinerary.\n\nFor visitors, Reynolda shines as an **art-and-place experience**. Plan to move at an unhurried pace, letting the domestic scale of the rooms and the estate ambiance shape your encounter with the art. It’s a satisfying half-day destination for enthusiasts who want a museum that feels intimate, architecturally characterful, and deeply rooted in its region—an inviting counterpoint to blockbuster institutions.",
@@ -2436,8 +4652,150 @@
       "collection_based_strength": 2,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://reynolda.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1630"
+            },
+            "open": {
+              "day": 0,
+              "time": "1330"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:30 AM – 4:30 PM",
+          "Wednesday: 9:30 AM – 4:30 PM",
+          "Thursday: 9:30 AM – 4:30 PM",
+          "Friday: 9:30 AM – 4:30 PM",
+          "Saturday: 9:30 AM – 4:30 PM",
+          "Sunday: 1:30 – 4:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 813,
+      "google_reviews": [
+        {
+          "author_name": "leena roy",
+          "author_url": "https://www.google.com/maps/contrib/104718529859558297659/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXxU4UIA5KTvq9XRwYAmO-V6uqzwYyjWaK3I1NT6t1j4pKg8BWt=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "4 weeks ago",
+          "text": "If u r interested in how it all started with tobacco and how the Reynolda was formed and supported the entire community then make a day free from ur schedule and spend it here. Fascinating to know lot of facts. Not at all kid friendly place as there are security guards who will just follow you around if u go there with young kids as if they r bound to touch something. God forbid you touch something and that's it you will be told off immediately. Don't mind me saying this but I don't think they have lot of visitors from other nationalities that come there either cause I could tell by the looks from security guards as if v r there to ransack the place. Overall I wouldn't recommend kids to go there unless u can really keep hands to urself not even touching walls etc.also if u r looking to eat in salem I suggest to eat here in the village not a huge selection available if u go into town.",
+          "time": 1770947133,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa Montoya",
+          "author_url": "https://www.google.com/maps/contrib/101524289385127442883/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU7FIEPR-4LlqTv1_xrSraYRmugUz22hO2gKx9dZSp2R3VImk2m=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Perfect date trip. We spent 2 hours and could have spent more. The posted history was so informative and fascinating. It's a lot to read.  Walking the grounds gave you a sense of the magnificence of the place, but the house was a highlight. The house itself was a work of art. I loved the basement game area. Being able to play table tennis was a surprisingly welcome treat. The staff wasn't only there for security, which seemed a bit excessive, but I understand. The staff was knowledgeable and had spectacular insight when asked specific questions. We had a great trip. We keep telling others they should see this.",
+          "time": 1765279461,
+          "translated": false
+        },
+        {
+          "author_name": "Lo Holle",
+          "author_url": "https://www.google.com/maps/contrib/109337109911678595419/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVtdIMtaZ8-_CcSzlb67s28K98Abt7cURXqZBtLZu69YPaH2iZG=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "7 months ago",
+          "text": "I’ll be honest, I’m not usually a huge historical home fan so take my review with a grain of salt. I did think the home was beautiful though! It was $18 (before tax) and I felt like it was worth it. There are four floors total, though the attic is small. The outside of the house was my favorite with the white exterior and green windows. If you can swing it, I’d recommend going in the afternoon so you can hear the organ play at 2:45 PM (it’s not exact because I guess it takes a while to turn on) and is digitized. It’s pretty cool though to hear the music while you’re walking through the house. I’ll review it separately, but definitely check out the gardens while you are there! They are free!",
+          "time": 1752890455,
+          "translated": false
+        },
+        {
+          "author_name": "john mitchell",
+          "author_url": "https://www.google.com/maps/contrib/117998301065051250760/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI8oCj6dDd-IYS9yXBDTv6cbdzfiVbnxYOWcwtP_sgYSMAHDxtQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Great walking trails and scenery. I wish there were more garbage cans throughout the park. I had to cary some trash on an entire 2+ mile walk because I couldn't find a trash can anywhere.",
+          "time": 1752422575,
+          "translated": false
+        },
+        {
+          "author_name": "Dee Bee",
+          "author_url": "https://www.google.com/maps/contrib/111580355100465223028/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWYPMVA0Ce24yi7smo-InYAd1XSTw-7vptTaSD1d7qhrCMi_ilL=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I came here for the first time a couple weekends ago because they were doing free admission and it was a great way to spend my afternoon! I had been to Reynolda Village many times but never realized all the history behind this place.\n\nI spent about 2.5 hr walking through the place, reading most of the plaques and really enjoying a lot of the artwork throughout. The house is huge, 4 stories in all. I think my favorite spots were the sleeping porches and then the basement with a shooting range, bowling alley, wet bar, and pool! The main level had a ton of open spaces and lounge areas too.\n\nLearning more about the entire family, as well as the overall community was fascinating and gave me a deeper appreciation for RV.\n\nIf you haven't taken a tour yet, I highly recommend it!",
+          "time": 1732541609,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

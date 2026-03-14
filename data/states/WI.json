@@ -20,7 +20,7 @@
       "longitude": -89.0505359,
       "place_id": "ChIJ4cxr9gGhCIgRfcm8nsl2rp0",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -55,7 +55,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:57:12Z",
+      "updated_at": "2026-03-14T20:05:12Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(608) 365-7835",
@@ -188,14 +188,14 @@
       "website": "https://www.pabstmansion.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2000 W Wisconsin Ave, Milwaukee, WI 53233, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.03877,
-      "longitude": -87.9379,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53233",
+      "latitude": 43.0392649,
+      "longitude": -87.93799410000001,
+      "place_id": "ChIJk7G6WSsaBYgRd2T0SHP7UFE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -224,15 +224,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:57:20Z",
+      "updated_at": "2026-03-14T20:05:13Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4149310808",
+      "phone": "(414) 931-0808",
       "is_scoreable": false,
       "content_summary": "The **Captain Frederick Pabst Mansion** offers a unique glimpse into Milwaukee's brewing history and Gilded Age elegance. Visitors will be captivated by the mansion's stunning architecture and rich artifacts, making it a must-visit destination for history enthusiasts and architecture lovers alike.",
       "content_description": "Step into the charm of Milwaukee's past at the **Captain Frederick Pabst Mansion**, a captivating history museum that brings the Gilded Age to life. This opulent mansion was once home to the famed Captain Frederick Pabst, founder of the Pabst Brewing Company, and is an exquisite example of *Richardsonian Romanesque* architecture. As you walk through its grand halls, you'll be enchanted by the intricate details of the original woodwork, the vibrant patterns of the stained glass, and the elegant furnishings that reflect a bygone era of affluence and sophistication.\n\nExplore the carefully curated exhibits that showcase the life of Captain Pabst and his family, as well as the broader history of Milwaukee and its brewing legacy. With a focus on both personal stories and historical context, the museum provides visitors with a deeper understanding of the individuals who shaped the city, all while highlighting the architectural beauty of the mansion itself. Guided tours allow guests to fully appreciate the craftsmanship of the *late 19th-century* era in each thoughtfully designed room, from the sumptuous dining area to the cozy nooks adorned with priceless artifacts.\n\nVisitors can also enjoy various seasonal events and programs that engage the community, making the **Captain Frederick Pabst Mansion** not just a place to observe history but a vibrant part of the culture of Milwaukee. Whether you are an architecture aficionado or a history buff, this museum offers a remarkable journey through time that will leave a lasting impression on your travels.",
@@ -245,7 +246,158 @@
       ],
       "content_generated_at": "2026-01-25T03:57:20Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.pabstmansion.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:00 PM",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 2659,
+      "google_reviews": [
+        {
+          "author_name": "Engel’s Daniel’s",
+          "author_url": "https://www.google.com/maps/contrib/108904867467826644551/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWWC4JHRRmWpXFE4B5w-K8Nq8LOOW2VDQIWbN9sZJiFZ2d2zk8=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I visited this historic house, and I loved the tour.\n\nVisit during Christmas, if you haven't already visited, you'll be surprised by this house, its architecture and furnishings, which, like everything else, are still in good condition.\n\nAnd you can visualize what Wisconsin Avenue looked like in those years.",
+          "time": 1768099951,
+          "translated": false
+        },
+        {
+          "author_name": "Manuela H (ManuelaH)",
+          "author_url": "https://www.google.com/maps/contrib/103026482596486370126/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKARutkS50LvwJP6Pxmkbl9Nxyk81wwFOHTGvXfudhjjK-5GPX=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful Historic Home\nThe Pabst Mansion offers a rich, well-paced glimpse into Milwaukee’s past. An informative short film sets the context around Captain Frederick Pabst, his family, and the brewing-era prosperity that shaped the house. We opted for the self-guided tour, which lets you move at your own speed through elegantly restored rooms, period furnishings, and thoughtful exhibits. The mansion is in very good condition; note that the exterior façade is currently under renovation, but it doesn’t detract from the experience. Built in 1892 for the Pabst family, the residence later served as the Archbishop’s home before being preserved and opened as a museum in the late 1970s. The blend of architecture, social history, and careful restoration makes this an engaging stop — plan about an hour to enjoy the film, explore the interiors, and appreciate the craftsmanship.",
+          "time": 1759658911,
+          "translated": false
+        },
+        {
+          "author_name": "Elaine Mariano",
+          "author_url": "https://www.google.com/maps/contrib/105379187205736193338/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVvHK4dbvRaOJylUWCTvk9bNZ6HmWFMlwCB1nL7k9E5OZO7r67R=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "It was a cool mansion and appreciate how they preserve this place. I will recommend it to everyone. We also choose the guided one so we can learn the history of this.",
+          "time": 1771336819,
+          "translated": false
+        },
+        {
+          "author_name": "Kat Vee",
+          "author_url": "https://www.google.com/maps/contrib/114324051107810858734/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_2G_k1P-5sEFf3JAyh3CkwpnIycTwnPkvfkXt-KiRu0pHclq3nA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Visited for Christmas, for a picture with Santa, and to check out the decorations.\nI must admit, the place is intriguing. Huge mansion, and pretty well kept, for its age.\nI do think that the Santa attraction could have been a bit better, though.\nAll in all, if you're around, and like that type of thing, it's something interesting to do!",
+          "time": 1767194506,
+          "translated": false
+        },
+        {
+          "author_name": "Dennis Nowak",
+          "author_url": "https://www.google.com/maps/contrib/100615797832830116988/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL2askIVeQliNH8z3q4p4nvhtZiotW9p4_m6wp3aswg4htzRw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This should be a must place to visit for anyone interested in history, especially Milwaukee history. I visited during the Christmas season and it was beautiful. This mansion is an icon of Milwaukee like the Mitchell Park Domes or Leon's. The docents are excellent. I took a couple hundred pictures while visiting and asked a lot of questions. All my questions were easily answered by the knowledgeable docents in staff. I would caution bringing children under the age of 14 due to the historical nature of the mansion. During my visit, I saw several young children touching things that should not have been touched. Teachers could easily align state standards for a field trip experience.",
+          "time": 1766571359,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-chazen-museum-of-art",
@@ -257,14 +409,14 @@
       "website": "http://www.chazen.wisc.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "750-800 University Ave, Madison, WI 53706, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.07334,
-      "longitude": -89.39958,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53706",
+      "latitude": 43.0736499,
+      "longitude": -89.3989253,
+      "place_id": "ChIJgz6D3cqsB4gR4rijc-aT-Ig",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -285,26 +437,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 3,
+      "priority_score": 13,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Chazen Museum of Art has a modest collection of over 24,000 objects, which supports educational and contextual value but lacks depth in specific art movements. Its regional significance and connection to the University of Wisconsin provide a basic framework for historical interpretation.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a sizable university art museum with over 24,000 objects, suggesting a broadly representative collection but without specific mention of Impressionist strengths, so Impressionism is scored as minor. Its scale and typical university-museum scope support moderate modern/contemporary representation and mid-level historical context, while being the second-largest art museum in Wisconsin suggests primarily regional reputation and a moderate overall collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.chazen.wisc.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 4,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Madison' from open data; MRD: computed city_tier=2 for Madison; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "6082632246",
+      "phone": "(608) 263-2246",
       "is_scoreable": true,
       "content_summary": "Set on the University of Wisconsin–Madison campus, the Chazen Museum of Art rewards visitors with a thoughtfully curated, human-scaled collection and a calm, scholarly atmosphere. It’s an ideal stop for art lovers who enjoy moving from European and American painting to prints, photography, and contemporary works without the exhaustion of a mega-museum. The building’s clean, modern lines and light-filled galleries make close looking a pleasure, and the museum’s university setting brings a lively mix of exhibitions, talks, and pop-in discoveries.",
       "content_description": "Anchored within the University of Wisconsin–Madison, the **Chazen Museum of Art** offers the kind of visit art enthusiasts crave: focused galleries, strong curatorial context, and the satisfying sense that you can actually *look*—not just rush. As a regional museum with a **modest but carefully chosen collection**, Chazen shines through breadth and thoughtful display, moving across European and American traditions alongside prints, drawings, photography, and modern/contemporary work. Expect rotating exhibitions that add freshness and depth, often framed by the university’s research culture.\n\nArchitecturally, the experience is refreshingly clear and contemporary, with **bright, modern gallery spaces** that favor natural light and uncluttered sightlines—excellent conditions for studying surface, line, and technique. The museum’s campus location lends an energetic but unpretentious vibe: you’ll likely encounter students sketching, visitors lingering at interpretive labels, and a steady rhythm of lectures or programs that connect artworks to broader ideas.\n\nFor travelers, Chazen is a highly enjoyable “quality over quantity” stop—perfect for a morning or afternoon of sustained looking. Build in time to slow down with works on paper (where *draftsmanship* and intimate scale reward patience), then pivot to contemporary pieces that spark conversation. It’s a museum that feels accessible without feeling lightweight—an inviting Madison essential for anyone who loves art in a gallery setting designed for close attention.",
@@ -322,7 +475,159 @@
       "collection_based_strength": 2,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.chazen.wisc.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1900"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1900"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1900"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1900"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 7:00 PM",
+          "Tuesday: 10:00 AM – 7:00 PM",
+          "Wednesday: 10:00 AM – 7:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 967,
+      "google_reviews": [
+        {
+          "author_name": "Tom S",
+          "author_url": "https://www.google.com/maps/contrib/100978365895019941074/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKldOGYi-pjoBX7wDKT5Ttok4qDJQFKXVcU-kBQ4jBmUzwnTPI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Upon mine recent sojourn to the esteemed Museum of Art, I am compelled, by both delight and duty, to render an account most favourable of that wondrous edifice and its contents. Verily, it is a temple to the muses, wherein the soul is stirred and the senses enraptured.\n\nThe halls, vast and stately, are adorned with works of such exquisite craft that even Apelles himself might blush with envy. Paintings of divine countenance and sculptures wrought with celestial grace do line the chambers, each a testament to man’s striving toward the sublime. Methinks the very air within is perfumed with genius.\n\nI did behold a portrait of a maiden, her gaze so tender and true that I fancied she might speak; and a landscape so vivid that I near mistook it for a window unto Arcadia. Such marvels abound that time itself doth lose meaning, and one wanders as if in a dream spun by the gods.\n\nAnd the sculptures! What marvels of form and spirit do grace the gallery’s noble halls. Each figure, cast with divine precision, doth seem to breathe and ponder, as though caught mid-thought by the hand of a master. Be it the sinewed hero poised in triumph, or the gentle maiden cloaked in serenity, these works do whisper of antiquity and echo the grandeur of Olympus. Methinks the very stone hath been persuaded to yield its soul, that we might behold the essence of man and myth alike. To stand amongst them is to commune with genius incarnate.\n\nIn sum, this Museum is a jewel in the crown of civilization—a place where the weary spirit may find solace, and the curious mind, nourishment. I commend it to all persons of taste and refinement, and do vow to return, lest my heart grow dull in absence of such splendour.\n\nYours in admiration and awe,\nSir T. of Madison, Devotee of the Arts\n\nTLDR: This museum rocks.\n\nIf you’re into jaw-dropping art, inspiring spaces, and staff who actually know their stuff, this place is a must. Every room is packed with masterpieces that make you stop, stare, and feel something real. Whether it’s a portrait that pulls you in or a sculpture that feels like a portal, the experience is unforgettable.\n\nMajor props to the patrons and benefactors who keep this treasure alive, especially the Chazen family. Your support turns a building into a sanctuary of creativity and culture. You’re not just preserving art, you’re fueling inspiration for generations.",
+          "time": 1762521128,
+          "translated": false
+        },
+        {
+          "author_name": "Chris Wagner",
+          "author_url": "https://www.google.com/maps/contrib/104279056312378217607/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIKq7xHMFc761hQeh3JKH1I5PblDtTyDeZlveOYfBCSmIezYg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Excellent small museum with a nice cross section of different type of artwork on display.",
+          "time": 1760145805,
+          "translated": false
+        },
+        {
+          "author_name": "Devin Geis",
+          "author_url": "https://www.google.com/maps/contrib/111605649071058264268/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK9Z4GZJw-6AYCSXdndjUVcOKEuSw-HYVtQllrFV5gK4mf2zQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The Chazen Museum of Art in Madison, Wisconsin, is a standout destination for art lovers and casual visitors alike. This museum offers a strikingly diverse collection, featuring everything from ancient artifacts to contemporary works. The layout of the museum facilitates an easy flow from one exhibit to another, making the exploration of different cultures and time periods seamless and engaging.\n\nWhat truly sets the Chazen apart is its commitment to accessibility and education. The museum hosts a variety of programs and tours that enrich the visitor experience, making art approachable for all ages and backgrounds. Additionally, the use of natural lighting in many of the galleries enhances the viewing experience, bringing out the true colors and details in each piece.\n\nWhether you're a long-time art enthusiast or a curious first-timer, the Chazen Museum of Art offers a welcoming and enriching environment to explore the vast world of visual arts. It’s a must-visit for anyone in Madison seeking a dose of culture and inspiration.",
+          "time": 1738525651,
+          "translated": false
+        },
+        {
+          "author_name": "Alex Williams",
+          "author_url": "https://www.google.com/maps/contrib/104046708842768345187/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUoggsjg_UMB92yYghQdL_Om_8NMwWf_vrwo15p9j_Zny21mJ-p=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Perfectly sized and free to visit, the Chazen Museum of Art is conveniently located among the UW campus buildings. Plan to spend 30 minutes to an hour at most. It's small, but it has some unique works.",
+          "time": 1753575074,
+          "translated": false
+        },
+        {
+          "author_name": "Meredith Anderson",
+          "author_url": "https://www.google.com/maps/contrib/102619269227231167431/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVTd5sZHqKE9zOB_WFKzPxTQMbMJGUyBIqTp1IoEq3gb_A17xQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "This was a beautiful, expansive museum! You can't bring waterbottles in or any sort of food or drink, and they have you check your bags, so prepare for that. I'm excited to come back and see even more of the art!",
+          "time": 1770044302,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-wi-unknown-chippewa-valley-museum",
@@ -334,14 +639,14 @@
       "website": "https://www.cvmuseum.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "360 Tour navigate the museum 1204 E. Half Moon Drive",
+      "street_address": "1204 E Half Moon Dr, Eau Claire, WI 54703, USA",
       "address_line2": null,
       "postal_code": "54703",
-      "latitude": 44.80661,
-      "longitude": -91.47333,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.8114724,
+      "longitude": -91.5176097,
+      "place_id": "ChIJ9_Of99WX-IcRKJpf_mIzN1A",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -372,15 +677,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.cvmuseum.com",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Eau Claire' from open data; MRD: computed city_tier=2 for Eau Claire; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:57:39Z",
+      "updated_at": "2026-03-14T20:05:15Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "7158347871",
+      "phone": "(715) 834-7871",
       "is_scoreable": false,
       "content_summary": "The **Chippewa Valley Museum** offers a captivating glimpse into the rich heritage of the Chippewa Valley, showcasing both Native American and settler history. With engaging exhibits, interactive displays, and a commitment to community storytelling, this museum is a must-visit for anyone looking to understand the heart of Eau Claire and its surrounding areas.",
       "content_description": "**Chippewa Valley Museum**, located in the vibrant city of Eau Claire, is a treasure trove of local history that invites visitors to delve into the past. This history museum excels in showcasing the narratives that define the Chippewa Valley, featuring a diverse range of artifacts related to Native American life, early settler experiences, and the region’s industrial evolution. Visitors can explore how these distinct cultures have intertwined, reflected in the museum's meticulously curated exhibits and community-driven storytelling. The museum emphasizes engagement and interactivity, often including hands-on activities that make history come alive for audiences of all ages.  \n\nThe museum's architecture itself is noteworthy, blending *modern design* with traditional elements to create an inviting environment. With thoughtful layouts, visitors can easily navigate through various themes, each highlighting pivotal moments in the area's history. The museum regularly hosts events, workshops, and lectures, further enriching the visitor experience. Those who visit the **Chippewa Valley Museum** can also embrace the charm of Eau Claire by enjoying its surrounding parks and artistic districts, making it a perfect day-out destination for families and history enthusiasts alike.  \n\nIn essence, a trip to the **Chippewa Valley Museum** promises not just an educational experience, but also a heartfelt connection to the stories that have shaped this remarkable region. Plan your visit and step back in time to explore the rich tapestry of life in the Chippewa Valley.",
@@ -393,7 +699,138 @@
       ],
       "content_generated_at": "2026-01-25T03:57:39Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.cvmuseum.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 5:00 – 8:00 PM",
+          "Wednesday: 12:00 – 5:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 221,
+      "google_reviews": [
+        {
+          "author_name": "Theresa Hoban",
+          "author_url": "https://www.google.com/maps/contrib/106882462441569180985/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWGh3Q8kYouRbCGF-DudhS98IRLQAlXs8YXlCi1ySsg6qeemTuO=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "This was an excellent history museum where we spent several hours. Visit the schoolhouse, log cabin and lumber museum also while there. Very educational about Norwegian immigrants and native Americans. Also quite a number of exhibits on farming equipment and lumber production.  The movies on farm life were very good and we felt it was worth the cost of admission. They also have a vintage soda fountain where you can get ice cream.",
+          "time": 1751756140,
+          "translated": false
+        },
+        {
+          "author_name": "Amanda Talford",
+          "author_url": "https://www.google.com/maps/contrib/101718824915846068542/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWn0iuBH83-CG-M3EBi-aS1-neHbPDJ8fpXBiqUxvwopBsH0wcu=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "My nephews had such a wonderful time exploring all of the interactive exhibits. The train and fishing area was a huge hit. And I’ll never forget dancing in the theater with them to lumberjack music!",
+          "time": 1772501915,
+          "translated": false
+        },
+        {
+          "author_name": "Matt Neher",
+          "author_url": "https://www.google.com/maps/contrib/112697442231695166137/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKqulBFO1JVM74m_IupmQ-tqCUMxr38uiogunGTnPE_Tleoxg=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "We had a very enjoyable time, walking on our self guided tour through the museum. It is well laid out. The flow from display to display was well thought out. The information presented was easy to comprehend and assimilate. The staff were very friendly and inviting. I would your this museum again.",
+          "time": 1767960240,
+          "translated": false
+        },
+        {
+          "author_name": "Nadine Lundell",
+          "author_url": "https://www.google.com/maps/contrib/115537355444504770881/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIOxhSAUWFuafzQWWnZEOnR0d6dl4SEld9vFBT78LDt-tysDA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Really nice museum with fantastic displays and plenty to see. The ice cream shop is a total bonus. The staff was very friendly too. It was a great visit.",
+          "time": 1752195946,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel Deterding",
+          "author_url": "https://www.google.com/maps/contrib/116114296483890516522/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVbb4W4rrTSvQk6V-zOVndAaJa6x1I8J5SB9pSeLaXxqrkNyXjg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Nice visit to a well maintained regional museum. Admission was $10 for adults and we spent a little over an hour there. This is a great place to learn about the area throughout history, from fur trading to logging to farming and more. I appreciated the relatively honest history about the exploitation of Native Americans and immigrants and was impressed to see some Hmong textiles and a video about Hmong New Year. When we visited there was also a Star Wars nostalgia exhibit that made my boyfriend geek out. Definitely worth a visit if you are in Eau Claire.",
+          "time": 1636294215,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-civil-war-museum",
@@ -412,7 +849,7 @@
       "longitude": -87.8129986,
       "place_id": "ChIJrWWs_PReBYgRR7E-UIzCmis",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -448,7 +885,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kentucky' from open data; MRD: computed city_tier=3 for Kentucky; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.kenosha.org/wp-civilwar; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:57:47Z",
+      "updated_at": "2026-03-14T20:05:15Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(262) 653-4141",
@@ -627,14 +1064,14 @@
       "website": "http://www.kenosha.org/wp-dinosaur/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "5608 10th Ave, Kenosha, WI 53140, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 42.58422,
-      "longitude": -87.82345,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53140",
+      "latitude": 42.583895,
+      "longitude": -87.8236582,
+      "place_id": "ChIJ0zFCe1teBYgR4CcSjlRh5zE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Science",
       "topics": null,
@@ -665,15 +1102,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.kenosha.org/wp-dinosaur",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kenosha' from open data; MRD: computed city_tier=2 for Kenosha; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.kenosha.org/wp-dinosaur; Inferred primary_domain=Science from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:57:53Z",
+      "updated_at": "2026-03-14T20:05:16Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2626534450",
+      "phone": "(262) 653-4450",
       "is_scoreable": false,
       "content_summary": "The Dinosaur Discovery Museum in Kenosha is a fossil lover's paradise, showcasing one of the most comprehensive collections of dinosaur skeletons and interactive exhibits that bring these ancient giants to life. This museum is not just about observation; it's an engaging experience that ignites curiosity and passion for paleontology in visitors of all ages.",
       "content_description": "**Dinosaur Discovery Museum** offers a unique blend of education and excitement, perfect for families and dinosaur enthusiasts alike. Nestled in Kenosha, this museum is dedicated entirely to dinosaurs, featuring an impressive array of fossils and life-sized replicas that transport you back in time to the Mesozoic era. Its collection includes rare specimens that have shaped our understanding of these magnificent creatures, alongside interactive displays that allow visitors to engage directly with the science of paleontology. The museum's layout is designed for exploration and discovery, making it an ideal destination for curious minds of all ages. Visitors can marvel at the skeletal remains of various species, including towering theropods and the gentle giants of the Jurassic period. The museum's hands-on exhibits invite you to touch real fossils and participate in digging simulations, ensuring a fun-filled experience that combines education with play. In addition, informative signage and videos enhance your understanding of the evolutionary history and habitats of these prehistoric animals. Furthermore, the architecture of the **Dinosaur Discovery Museum** enhances your visit; its spacious, bright galleries are thoughtfully designed to evoke the excitement of a scientific excavation site. Adding to the charm of the museum, occasional events and guest lectures by paleontologists provide fascinating insights into the latest discoveries in the field, ensuring that every visit is a new adventure.** This museum uniquely informs while it entertains, making it an essential stop for anyone exploring Kenosha.",
@@ -686,7 +1124,148 @@
       ],
       "content_generated_at": "2026-01-25T03:57:53Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.dinosaurdiscoverymuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 5:00 PM",
+          "Wednesday: 12:00 – 5:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 1013,
+      "google_reviews": [
+        {
+          "author_name": "Kyla Wenger",
+          "author_url": "https://www.google.com/maps/contrib/102281495428189856145/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUihl0Px_4GpgpLRa90mjpGdd9TK7iPWi4F0Hjk-aus2UtyBDFOmQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We really enjoyed our visit here! It’s free/donation based and really welcoming staff. The skeletons they have are so great to see, signs are well written. The basement with the lab and kids activity area was great as well. My son could have stayed and played all day!",
+          "time": 1759083145,
+          "translated": false
+        },
+        {
+          "author_name": "jbrumundsmith",
+          "author_url": "https://www.google.com/maps/contrib/108613116166474161205/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU8goxwnl_NYwikTVstc926zMLtpiSQdlxO0TfDaamE2nyENEKAew=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Wonderful little museum here in Kenosha! They have lots of great fossils on display, some great kids activities on the top floor, plus a play area in the basement. My kids love it and I am sure yours will too.",
+          "time": 1769981748,
+          "translated": false
+        },
+        {
+          "author_name": "Marissa Lecy",
+          "author_url": "https://www.google.com/maps/contrib/105101402244475113183/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLt9QgwqhuNDan72iSkY_rM2t4NLU2h0sW4GdHpoze1aFXKByGGQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This was a great museum for my dinosaur loving 3 year old. It was a no charge small donation suggestion museum. They had lots of dinosaur bones, a dino fig and a few activities for the kids. We spent about 45 min here before we moved on to a other museum in town.",
+          "time": 1767751379,
+          "translated": false
+        },
+        {
+          "author_name": "Derek Dees",
+          "author_url": "https://www.google.com/maps/contrib/117161979422573331728/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXl3tW5y-u8Z6IYS_QhbTpdTVsFipBznqI9kzfehGfLxiTa-SU=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Loved it. I've been to bigger displays but few with a specialty and a great display. The volunteers were friendly and knew their stuff. The building itself is interesting, as the original post office and moved from its original location.\n\nGreat place to spend a half hour or hour. The downstairs work area is small and there's space for kids with toys and activities.\n\nI especially liked the kids costumes upstairs to get them involved.",
+          "time": 1733442076,
+          "translated": false
+        },
+        {
+          "author_name": "Ashley Swanlund",
+          "author_url": "https://www.google.com/maps/contrib/111485835977454854725/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWN4RLqkv0JUaomTSlPpYirxuKFT2RCN6Wxxr1LlKKCmkJSyn6CTg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Impressive one-room museum! I was worried by some reviews it would be small. Well.. it’s small but packed!! Our toddler LOVED it and it was just the right size and time amount for him! Donations accepted instead of tickets, but surprisingly a lot here to enjoy, when the Chicago Field Museum seems like a lot, and this was focused primarily on just dinosaurs!(Which is what drew us the most!)\n\nWe enjoyed walking through the large room a few times taking our time, then enjoying the front entrance area where there are some kid-friendly activities - costumers/puzzles/ hands-on exhibits. Downstairs (basement) there is an official dinosaur lab and an open toy/play area! Also a dig box for fossils! Very pleasantly surprised coming from about an hour away-drive. Our little Dino-lover LOVED it!",
+          "time": 1706997458,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-history-center-of-washington-county",
@@ -705,7 +1284,7 @@
       "longitude": -88.18275779999999,
       "place_id": "ChIJo6JyD25fBIgR-ZX4Cokt2yI",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -741,7 +1320,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing https://www.historyisfun.com: Network error for https://www.historyisfun.com: <urlopen error [WinError 10060] A connection attempt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:57:59Z",
+      "updated_at": "2026-03-14T20:05:16Z",
       "notes": null,
       "city_tier": 2,
       "website_google": "http://www.thetowerheritagecenter.org/",
@@ -834,14 +1413,14 @@
       "website": "http://www.myhistorymuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "330 E. College Ave.",
+      "street_address": "330 E College Ave, Appleton, WI 54911, USA",
       "address_line2": null,
       "postal_code": "54911",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.2621443,
+      "longitude": -88.4014413,
+      "place_id": "ChIJ-QvozcywA4gRCn3O26mrI8k",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -871,12 +1450,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.myhistorymuseum.org"
+        "http://www.myhistorymuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Appleton' from open data; MRD: computed city_tier=2 for Appleton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T05:15:45Z",
+      "updated_at": "2026-03-14T20:05:17Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -891,7 +1471,159 @@
       ],
       "content_generated_at": "2026-01-18T05:15:45Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(920) 735-9370",
+      "website_google": "http://www.myhistorymuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:00 PM",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 441,
+      "google_reviews": [
+        {
+          "author_name": "xiraSK0625",
+          "author_url": "https://www.google.com/maps/contrib/113171681580004590777/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJOLggq_4T6P6XTAahUEdron2OnxO0hifvTiFSZcZckbUmBMQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 3,
+          "relative_time_description": "5 months ago",
+          "text": "It was ok, the only part I actually understood why it was there was the houdini exhibit on the third floor and the historical pieces of the 19th century.  There were too many pieces that were confusing and didn't make sense in the museum in my opinion. We paid 12 dollars per person all adults in case anyone is curious on prices...very cool architecture and I would recommend the back story from the clerk that was offered but we forgot to circle back and ask!",
+          "time": 1758649909,
+          "translated": false
+        },
+        {
+          "author_name": "Malinda",
+          "author_url": "https://www.google.com/maps/contrib/108758910557014211719/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX9Y3Q5cHsMWwJGm0T8HYmRbLPMLluX9Y5M8ecoGYinha6YdCco=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 3,
+          "relative_time_description": "3 months ago",
+          "text": "Came to see guitars from the pictures, guess that was a limited event as it wasn't there. For a castle it lacked antiques and old vibes. It was too modernized. The basement floor was interesting on the changes in Appleton but the monlogues for one the displays was laud. I felt like I was interrupting other groups wandering around. The 3rd floor had a haudini exit. The room had I think original paint and fixtures like the doors. That was cool. But the bright red and blue was offputing from the displays. It was cool the display had some interactivity but some seemed to need maintenance.",
+          "time": 1764644585,
+          "translated": false
+        },
+        {
+          "author_name": "Md al mamun Sek",
+          "author_url": "https://www.google.com/maps/contrib/118310185216533057239/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUAgpZ46ooP33LaDDaZBcheNabUrX31tQuZa3-DfY5tyGoC7WE=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The History Museum at the Castle is a fascinating and beautifully curated museum that brings history to life. The exhibits are interactive, well-organized, and full of engaging displays that appeal to visitors of all ages.\n\nThe museum offers a wide variety of topics, from local history to broader cultural and historical themes, making it both educational and entertaining. The staff and volunteers are friendly, knowledgeable, and eager to enhance your visit with interesting insights.\nThe building itself is charming and adds to the overall experience, creating an inviting and immersive environment. Whether you’re visiting with family, friends, or on your own, The History Museum at the Castle is a must-see destination for anyone interested in history. Highly recommended!",
+          "time": 1767714130,
+          "translated": false
+        },
+        {
+          "author_name": "Languid Excursion",
+          "author_url": "https://www.google.com/maps/contrib/117783488937050457710/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV86jl0S4gyBpvOzCHaB04R3L20-BHyFo6Df4CKOmH_eB8h0pg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 1,
+          "relative_time_description": "7 months ago",
+          "text": "I was really excited because it’s in a castle . The inside architecture doesn’t look antique at all. I was very disappointed. The museum was not what I was expecting . It wasn’t at all anything special. I wouldn’t go out of my way to ever go again.  (Came from 3 hours away)\nIt was $12 a person and just not worth it\nThere is so much space that isn’t utilized.\nAll four of us walked away disappointed",
+          "time": 1753537276,
+          "translated": false
+        },
+        {
+          "author_name": "Bob Lambert",
+          "author_url": "https://www.google.com/maps/contrib/110867207129213745455/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJoddn0SFOwepYTGCq735ptdZDOTV9bT8WkHDIoWOq4F-7HGQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Nice place. We were there to visit a small Harry Houdini exhibit. Nice display. They do give away some secrets of his tricks, but nice to visit if nearby.",
+          "time": 1732433559,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-jewish-museum-milwaukee",
@@ -903,14 +1635,14 @@
       "website": "https://jewishmuseummilwaukee.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1360 N Prospect Ave, Milwaukee, WI 53202, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.03726,
-      "longitude": -87.90891,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53202",
+      "latitude": 43.0479913,
+      "longitude": -87.8948862,
+      "place_id": "ChIJD57ouAIZBYgRa7xcLhNNOCc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
@@ -939,12 +1671,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:58:40Z",
+      "updated_at": "2026-03-14T20:05:18Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "is_scoreable": false,
@@ -959,7 +1692,149 @@
       ],
       "content_generated_at": "2026-01-25T03:58:40Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(414) 390-5730",
+      "website_google": "http://jewishmuseummilwaukee.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1500"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.6,
+      "google_reviews_count": 199,
+      "google_reviews": [
+        {
+          "author_name": "Listening Heart",
+          "author_url": "https://www.google.com/maps/contrib/115847135316656562947/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5dgrl5h6PjxwdAD72-iAVsbDJPcgiWj_sYwMttlrW0USJxjqc=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "Excellent multifacted historical objects including The Violins of Hope. I especially enjoyed the local artifacts and history, being new to this area. Secured with locked entrance which is sonething I don't think I'll ever get used to. So sad there is so much to make these measures necessary. But it's our shared reality.  I wish there was a docent present in the display area to help visitors appreciate and take in the information.",
+          "time": 1764181499,
+          "translated": false
+        },
+        {
+          "author_name": "Karl Mueller",
+          "author_url": "https://www.google.com/maps/contrib/118146136713978302400/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL71AoJCd3AIOm3U34MVMq9iOi7Nf19OYcviMRvcdtea5BeLQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "The Jewish Museum of Milwaukee is a rare gem that you should visit. The museum goes into great detail about the history of Milwaukee's Jewish community and their impact on society. The only downside to this museum is nothing changes that often. There are special exhibits. Some are better than others. This is a small issue though. Overall  the museum is great.",
+          "time": 1766760120,
+          "translated": false
+        },
+        {
+          "author_name": "Robin Roseth",
+          "author_url": "https://www.google.com/maps/contrib/109789717208124302484/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWggmlrhypdb2RW6OA7NEPnVgmGy3Lpz1Q5nQy4ic4IbnOUTwuBUw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "I’ve been visiting the Jewish Museum for about a year and a half now. I drive in from Chicago and add other activities to take advantage of my time in Milwaukee. I always learned so much from the Jewish Museum, it’s a great place.",
+          "time": 1743953732,
+          "translated": false
+        },
+        {
+          "author_name": "Wendy “Sis” Winkler",
+          "author_url": "https://www.google.com/maps/contrib/104693083276525748502/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXEge3TDzGBnb75i_Dlh_wM6ugUo8sYYBrnBRD6MmPMBdA-DMrVRg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "A wonderful, educational exhibit, \"Brother Can You Spare a Dime.\" It was the last day so I'm glad I got there.\n\nI also checked out the Museum's ongoing exhibit again that depicts the Jewish experience in Milwaukee as well as across the globe. Of course it's an indescribably sad story, but a story that must be told now and forever.\n\nEveryone should experience the exhibit. It's so informative and arranged in sections of the complete story. Every facet of Jewish life is laid out before your eyes with photos and artifacts and stories.\n\nIt's a wonderful museum. Milwaukee is fortunate to have this.",
+          "time": 1630998888,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa Grueneberg",
+          "author_url": "https://www.google.com/maps/contrib/107612756971407690921/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVpPrcp2-uEKdyNnMxHW1kpJb651-HiXsJSrKzwWAjMjhbw6xWr=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "A nice little museum. Note that you will need to be buzzed in for security measures, and provide a photo ID. Very informative.",
+          "time": 1773006297,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-kenosha-public-museum",
@@ -971,14 +1846,14 @@
       "website": "http://www.kenosha.org/wp-museum",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "5500 1st Ave, Kenosha, WI 53140, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 42.58663,
-      "longitude": -87.82166,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53140",
+      "latitude": 42.5862408,
+      "longitude": -87.8129451,
+      "place_id": "ChIJ52nG-PReBYgRLDc7m7CogCY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1009,15 +1884,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.kenosha.org/wp-museum",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kenosha' from open data; MRD: computed city_tier=2 for Kenosha; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.kenosha.org/wp-museum",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:58:47Z",
+      "updated_at": "2026-03-14T20:05:19Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2626534140",
+      "phone": "(262) 653-4140",
       "is_scoreable": false,
       "content_summary": "The Kenosha Public Museum is a hidden gem that invites visitors to explore rich natural history, art, and the cultural heritage of the Great Lakes region. With engaging exhibitions and unique artifacts, this museum is an essential stop for anyone wishing to delve into Wisconsin's exciting past and dynamic present.",
       "content_description": "**Kenosha Public Museum** stands out as a captivating destination, seamlessly blending art, history, and the natural world. Located on the picturesque shores of Lake Michigan, this museum offers a unique opportunity to explore the interplay between regional ecology and culture. Visitors are immersed in a rich tapestry of exhibitions that highlight the significance of the Great Lakes region, from its Native American heritage to its industrial past. The museum's impressive collection includes over 30,000 artifacts, featuring everything from prehistoric fossils to fine art that reflects the area's diverse history. Each visit offers a fresh perspective and a chance to learn something new about the local community's roots and evolution.  In addition to its vibrant collections, the museum's architecture is a standout feature. The facility itself boasts a blend of modern and traditional design elements, characterized by large windows that invite natural light and afford stunning views of the lake, creating a serene ambiance for exploration.  Interactivity is central to the visitor experience at the **Kenosha Public Museum**. Engaging exhibits encourage hands-on learning and provide a family-friendly atmosphere, perfect for adventurers of all ages. From seasonal events and workshops to educational programs and guided tours, every visit is an opportunity for discovery and connection to the region's storied past. Whether you’re an art lover, a history buff, or simply curious about the world around you, this museum promises inspiration and education in equal measure.",
@@ -1030,7 +1906,158 @@
       ],
       "content_generated_at": "2026-01-25T03:58:47Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://museums.kenosha.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1329,
+      "google_reviews": [
+        {
+          "author_name": "Weston McAloney",
+          "author_url": "https://www.google.com/maps/contrib/108514259902669852899/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_waGK90HLr9F88DHMWBXF6RMPScZBkCH14NbUgIgZFqyZwo-K=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "A wonderful museum that is both highly informative, and well cared for. As someone with, I'd say, extensive experience in museum/exhibit fabrication, maintenance, repair, and security, I could scarcely believe the high quality of the exhibit spaces, their level of information and interactivity, and the clear care the staff and/or volunteers provide the space. The staff also knows how to make the space fun (we went just after the holidays, and many of the taxidermy specimens in the \"Curiosity to Science\" exhibit had been bedecked with little hats or scarves with care and respect for the specimens clearly evident).\n\nThe staff/volunteers we interacted with were all charming and informative. The exhibits given the respect and wonder they deserve, and all who were there even at the late business hour we attended were engrossed in learning as a result. I only wish we'd had enough time to read everything each exhibit provided, and I can think of no higher praise for a museum than than!",
+          "time": 1767493028,
+          "translated": false
+        },
+        {
+          "author_name": "Drew Davis",
+          "author_url": "https://www.google.com/maps/contrib/112380352403898773029/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUY3mRbKe3mWNC8sGcCRdKe95vOs0mvVvyXW5h4fjfbbAWhGbhjwA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Took My kids here now i'm taking my grandkids. Complete no brainer! Museum is free in the trolley cost a buck. Stop at the public museum.Take the trolley to the dinosaur museum! Great , educationally , for kids , lots of outdoor space!",
+          "time": 1771190312,
+          "translated": false
+        },
+        {
+          "author_name": "jbrumundsmith",
+          "author_url": "https://www.google.com/maps/contrib/108613116166474161205/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU8goxwnl_NYwikTVstc926zMLtpiSQdlxO0TfDaamE2nyENEKAew=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Amazing museum right by the lake! Take the trolley there and bring the whole family. There's two levels, a play area, and so much to do and see.",
+          "time": 1769981872,
+          "translated": false
+        },
+        {
+          "author_name": "Maribeth Barrons",
+          "author_url": "https://www.google.com/maps/contrib/108304451587674971631/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKMM4I6yTm_s-KtxDSToXoZLWWoH4-EMCRBJvsYs4HxDj_ZyA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "This is a great learning experience for 3-10 year old aspiring  paleontologists.  (Naturally this depends on each students unique learning style for age appropriateness.) Upstairs is an amazing exhibit of dinosaurs from land and air with just the right amount of ambient sounds to add more depth to the immersive experience. My 4 year old grandson (with the attention span to match) was very intrigued and came away with more knowledge. The “excavation site” down in the basement is an awesome hands on paleontological dig  for young scientists, plus there is interactive floor and diorama play. Tables are set up for artistic renditions of their experience. My grandson can’t wait to go again.",
+          "time": 1770649729,
+          "translated": false
+        },
+        {
+          "author_name": "Brent Towle",
+          "author_url": "https://www.google.com/maps/contrib/113985988319041895014/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMSH9WqZWBO4NDWGsJtBE8cr6OLgYCdTsAp5o8RwNEYhTwmQR_=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Kenosha is blessed to have not just one, but four great museums.  Two within walking distance.  Three if you can walk on water to the History museum on the north side of the harbor. The Dinosaur Museum just a few blocks to the west or short Street Car ride away.  Is also awesome.  It is great being able to be a tourist in our own home town.",
+          "time": 1764961536,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-madison-museum-of-contemporary-art",
@@ -1049,7 +2076,7 @@
       "longitude": -89.3892675,
       "place_id": "ChIJmSVBjDdTBogRuzGIoj4o9pM",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1073,19 +2100,19 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The evidence does not provide specific information about the museum's permanent collections in contemporary or impressionist art, leading to null scores in those areas. The museum appears to primarily serve the local community.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about 945 Madison Avenue (the former Whitney/Met Breuer/Frick Madison building in New York) and does not describe the Madison Museum of Contemporary Art’s permanent collection or interpretive approach. With no evidence about MMoCA’s holdings, scope, or curatorial presentation, collection-strength and context scores cannot be reliably assigned.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 2,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:59:00Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(608) 257-0158",
@@ -1244,14 +2271,14 @@
       "website": "http://mam.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "700 N. Art Museum Dr.",
+      "street_address": "700 N Art Museum Dr, Milwaukee, WI 53202, USA",
       "address_line2": null,
       "postal_code": "53202",
-      "latitude": 43.04109,
-      "longitude": -87.89908,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.04007259999999,
+      "longitude": -87.897058,
+      "place_id": "ChIJxXFqjwAZBYgRnSJa_ZcX094",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1260,7 +2287,7 @@
       "tickets_url": "https://www.facebook.com/milwaukeeart",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 1,
+      "reputation": 2,
       "collection_tier": 1,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1272,26 +2299,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 3,
-      "priority_score": 7,
+      "historical_context_score": 4,
+      "priority_score": 8,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Milwaukee Art Museum has a recognized collection that includes notable works, particularly in American and European art. However, the collection lacks the depth typically required for a higher score in art strength categories, and while it serves a significant role regionally, it doesn't significantly influence national scholarship.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence highlights strengths in early-20th-century German Expressionism and a major Georgia O’Keeffe holding, supporting a strong Modern/Contemporary score, but it does not indicate notable Impressionist depth beyond general 19th-century European art. Its large scale (nearly 35,000 works) and being among the largest U.S. art museums suggest a strong collection tier, and its long institutional history and established departments imply generally good historical framing. Despite national press",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://mam.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4142243200",
+      "phone": "(414) 224-3200",
       "is_scoreable": true,
       "content_summary": "Perched on Lake Michigan, the Milwaukee Art Museum is a must for art lovers who want a museum experience that’s as visually thrilling as the art itself. Its nationally recognized building—Santiago Calatrava’s wing with dramatic, sail-like “wings”—turns a visit into a memorable encounter with architecture, light, and water. Inside, you’ll find strengths in American art, modern and contemporary work, and compelling decorative arts, all presented in a setting made for lingering, looking, and photographing.",
       "content_description": "Set against the sweep of Lake Michigan, the **Milwaukee Art Museum** delivers a double hit: **high-impact architecture** and a thoughtfully scaled collection that rewards close looking. The museum’s signature is the **Quadracci Pavilion** (designed by **Santiago Calatrava**), whose brise-soleil “wings” open and close, transforming the building into a kinetic sculpture. The soaring, cathedral-like atrium and luminous lake views create a sense of ceremony before you even reach the galleries—an experience that feels tailor-made for travelers who love design as much as painting.\n\nInside, the museum’s strengths lean toward **American art**, with welcome depth in **20th-century and contemporary** holdings alongside European and decorative arts. Expect a visitor-friendly mix: paintings and sculpture that trace shifting ideas from *Realism* through *Modernism* and beyond, plus period rooms and design objects that contextualize how art lived in everyday spaces. Because the collection is modest rather than encyclopedic, galleries are digestible—ideal if you want quality encounters without marathon museum fatigue.\n\nPlan time to move between art and architecture: pause in the pavilion for changing light, then return to the galleries with fresh eyes. The lakefront setting, generous public spaces, and frequent rotating exhibitions make it easy to build a day around the museum—whether you’re chasing architectural icons, contemporary shows, or simply a beautiful place to look slowly.",
@@ -1309,7 +2337,139 @@
       "collection_based_strength": 2,
       "collection_based_pas": 4,
       "effective_pas": 4,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "https://mam.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 8443,
+      "google_reviews": [
+        {
+          "author_name": "Michelle",
+          "author_url": "https://www.google.com/maps/contrib/101803191333534150766/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLnOdWaosM8z313n9pX1fcjISpxgKFIHZ1eX8V6_LLy0dG-xJA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I spent an afternoon at the Milwaukee Art Museum today and I was blown away What an incredible building with beautiful and interesting exhibits! And the gift shop is amazing. I loved my experience so much that I bought a membership for the year. Can't wait to go back!",
+          "time": 1769038619,
+          "translated": false
+        },
+        {
+          "author_name": "Scott W",
+          "author_url": "https://www.google.com/maps/contrib/102842621857820242708/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUib3WU2k6hVaimUagsfMg_UWC-it2s1h7ZQDZe0SKaS6-KingZgw=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We come here about once a year. It's not something we normally plan to do, but think about it when we might be downtown for some other activity and find that we have some time.\n\nAlways enjoy the building itself and the featured exhibits. This time they were showcasing some of the Bradley Collection. Another special exhibit (although much smaller in scale) was the \"Reviving the Dance of Death.\" The docent suggested that we use the magnifier app on our phone to get a closer look — great suggestion!\n\nWe never try to see everything, and usually have enough after one hour. The lower level parking is a great option if there are spaces available.\n\nThe MAM is a nice amenity on our beautiful lakefront.",
+          "time": 1760366607,
+          "translated": false
+        },
+        {
+          "author_name": "Andrea Anthony",
+          "author_url": "https://www.google.com/maps/contrib/115474298988138329795/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXytWDPm7EW8e3qK2wddfshvPE_cqhiCxX3TBDOQD3o2C8amzT0cQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The exterior is a work of art as well as the interior of the building. With four floors of paintings and structures that are just breathtaking and that view of Lake Michigan, its truly a sight to see! When coming to Milwaukee for leisure or even business, be sure to check out our art museum. You're in for one heck of a treat!",
+          "time": 1767232203,
+          "translated": false
+        },
+        {
+          "author_name": "Mamidi Praveen",
+          "author_url": "https://www.google.com/maps/contrib/113555510122654428224/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWTfC4dv5CpBztn8c2-GM09z9azJP225hG6VzoF05E3_Vm8SRngxQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "A well-curated art museum with a strong balance between classical and contemporary works. The gallery spaces are spacious, calm, and thoughtfully designed, allowing each artwork to stand out without feeling crowded. The collection offers both visual impact and historical depth. Definitely worth visiting if you appreciate art, architecture, and a quiet cultural experience.",
+          "time": 1765849174,
+          "translated": false
+        },
+        {
+          "author_name": "Brib Bripnairbnab (Brib Bripnairbnab)",
+          "author_url": "https://www.google.com/maps/contrib/115113938525877628805/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVTK8g9YdHT0FjkvfX3S5__HAM7wznSjo7q6bJ43Pp6CjrBCrig=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "THis is an old review but when we went in 2017 it was amazing.  I am not an art lover, but woodworker by hobby.  Amazing pieces from centuries past.  Sam Maloof, James Krenov, and George Nakashima would appreciate some of the pieces shown.",
+          "time": 1767209860,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-wi-unknown-milwaukee-public-museum",
@@ -1321,14 +2481,14 @@
       "website": "http://www.mpm.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "4 million objects in our collection. View Collections Body TEST Milwaukee Public Museum 800 West",
+      "street_address": "800 W Wells St, Milwaukee, WI 53233, USA",
       "address_line2": null,
       "postal_code": "53233",
-      "latitude": 43.0403,
-      "longitude": -87.92167,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.0405367,
+      "longitude": -87.9208579,
+      "place_id": "ChIJ5Q1PzncZBYgR7fctbILQwVs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1359,15 +2519,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.mpm.edu",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Milwaukee' from open data; MRD: computed city_tier=1 for Milwaukee; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:59:20Z",
+      "updated_at": "2026-03-14T20:05:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "4142782728",
+      "phone": "(414) 278-2728",
       "is_scoreable": false,
       "content_summary": "The Milwaukee Public Museum is a captivating destination that immerses visitors in the wonders of natural and human history. With its extensive collections and engaging exhibits, it promises an enriching experience that appeals to all ages. Don't miss the chance to explore this treasure trove of knowledge and inspiration in the heart of Milwaukee.",
       "content_description": "**Milwaukee Public Museum** stands as a cornerstone of cultural edification in Wisconsin, showcasing a diverse range of exhibits that attract both locals and tourists. Established in 1882, this museum not only houses over 4.5 million specimens but also serves as a testament to the rich tapestry of life and history that forms our planet. The museum’s architecture itself is a sight to behold, featuring a stunning *Neo-Classical style* facade that invites curiosity from the moment you arrive. Inside, visitors are greeted by awe-inspiring dioramas representing various ecosystems, educational installations, and interactive displays that engage all ages.   \n\nAs you journey through the **Milwaukee Public Museum**, prepare to be amazed by its notable collections, such as the world’s largest known collection of *African artifacts* and a comprehensive array of *dinosaur fossils* that captivate the imaginations of young and old alike. The museum also proudly features an authentic *Polish village* exhibit, which transports visitors to 19th-century Poland, vividly illustrating the lives of early immigrants. Beyond the collections, the museum’s programming, including live demonstrations and immersive experiences, ensures a visit that is both educational and memorable. Come to explore and discover the stories that shaped our world—each corner of the **Milwaukee Public Museum** unfolds a new narrative waiting to be embraced.",
@@ -1380,7 +2541,148 @@
       ],
       "content_generated_at": "2026-01-25T03:59:20Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.mpm.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 6976,
+      "google_reviews": [
+        {
+          "author_name": "Autumn Girmscheid",
+          "author_url": "https://www.google.com/maps/contrib/114665616467745990758/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRr-ocmSfbxtp99GWJZ4Okiqunfgnj3k5xa68aoA6laS-ahwlH=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Have loved this museum as long as I can remember! They have the most realistic displays and thoughtful arrangements showcasing wisconsin, wildlife, around the world and so much more! the old streets of wisconsin and the candy shop are one of a kind and unfortunately with the new building for the museum they will be demolished with the current building so definitely stop in and see it before it's gone!   The memories I have from this place along with many other wisconsin locals is so easy to see when walking through the museum. Good for all people and all ages! its very accessible and affordable, making it a great outing option! (if you attend jury duty downtown, you can get free admission to the museum. they also have had tons of free days!) Along with the moving of the museums building they're bringing back a bunch of old displays every couple months so I definitely recommend not missing those as well☺️ happy exploring! it's been fun💗",
+          "time": 1768778493,
+          "translated": false
+        },
+        {
+          "author_name": "Atika Hussain",
+          "author_url": "https://www.google.com/maps/contrib/103326751560959150585/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV2eqbngHHkgy0v-sJPd2F2sl0kZNzBK7AKqQt27G-VYGSb5Z5Mcw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Had a good time at the museum. Some of the stuff was pretty good like the old age times and butterfly house. A one time visit is recommended. Have some time for it if you are planning to go it will take some time to finish seeing everything. It looks small from the outside but is actually quite big. Tickets can be purchased at the counter.",
+          "time": 1766521238,
+          "translated": false
+        },
+        {
+          "author_name": "Lovey Dovey",
+          "author_url": "https://www.google.com/maps/contrib/112359626999569350309/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXcjhWumZtvYnXhP0ZpYJd9Fjymp5pJ013qiJmO9B9YkM1uOW7l=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Milwaukee Public Museum will always be my favorite museum because of its immersive, walk-through design. From the moment you enter, it truly feels like you are stepping into different worlds. Each exhibit—whether it’s Old World Wisconsin, historic Milwaukee, or the rainforest—makes you feel as though you’ve traveled back in time.\n\nWith five levels to explore, the museum was thoughtfully built to fully surround visitors with history and culture. What made it so special to me was how interactive and lifelike each exhibit felt, unlike anything I’ve experienced at other museums. The Milwaukee Public Museum was a huge part of my childhood, and it holds so many memories. I am really going to miss it😭 it’s a place that shaped my curiosity and imagination in a way no other museum ever has.",
+          "time": 1765894721,
+          "translated": false
+        },
+        {
+          "author_name": "Christopher Cooper",
+          "author_url": "https://www.google.com/maps/contrib/112224582861458499045/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX0zq9x5z6ttnR41UaauZYRRinUvQ2DL1hXZ-zEdpXlapu_e-lm=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Today I got to spend the day with a school group touring the museum, these are a couple pictures from inside the butterfly exhibit.\nThe reason I am giving 5 stars is because this may be the last time I enter this building as the museum. Besides that it is a little fun down right now, but when the new building is done, it will look amazing!\nCurrently there are some things missing because they are in the process of packing up things and moving to the new building, but again it fun to walk around and enjoy the sights and sounds!",
+          "time": 1770409319,
+          "translated": false
+        },
+        {
+          "author_name": "Eleanor",
+          "author_url": "https://www.google.com/maps/contrib/106362857360888351176/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJw2C941lxzSiNtKJAgAuOLlElrTHtRwU8Qa80FpjLPbdo85w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Love visiting the museum! So many fun secrets and details that make it uniquely Milwaukee. Easy to spend a few hours or a full day here. It will be missed.",
+          "time": 1771696180,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-racine-art-museum",
@@ -1392,14 +2694,14 @@
       "website": "http://www.ramart.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "441 Main Street",
+      "street_address": "441 Main St, Racine, WI 53403, USA",
       "address_line2": null,
       "postal_code": "53403",
-      "latitude": 42.64769,
-      "longitude": -87.84924,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 42.7282684,
+      "longitude": -87.7825819,
+      "place_id": "ChIJP8cFyINDBYgRntFlteFRn-I",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1408,7 +2710,7 @@
       "tickets_url": "https://www.facebook.com/RacineArtMuseumWI/",
       "reservation_required": null,
       "accessibility_url": "https://www.ramart.org/info/deia/",
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1423,20 +2725,21 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Racine Art Museum has a regional collection strength, allowing it to support credible exhibitions but not substantially influence national scholarship. Its historical context is relevant primarily to the local community, and its reputation reflects recognition within a multi-state region.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the Racine Art Museum’s permanent collection or interpretive approach, so collection-specific strengths and historical context cannot be scored. Based only on its location and lack of broader collection evidence, it is assessed as a primarily local museum with a likely small-to-limited collection scope.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.ramart.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Racine' from open data; MRD: computed city_tier=2 for Racine; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:59:31Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": true,
@@ -1452,7 +2755,129 @@
       "content_generated_at": "2026-01-25T03:59:31Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "phone": "(262) 638-8300",
+      "website_google": "http://ramart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 194,
+      "google_reviews": [
+        {
+          "author_name": "Sandy Christensen",
+          "author_url": "https://www.google.com/maps/contrib/113456928483312469622/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUUKgRPC-ygr-o0Br6CzHjNXDahcdK9E7jsAY5u-ARJBx0ennLH=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "The Racine Art Museum is a little gem of a museum in downtown Racine and worth the trip.\n\nI live in Racine and am recently retired, so I figured I should start visiting more places in my own community.  I even became a member at my visit, which is nice because I went to the Peeps exhibit twice, now that I can go for free.\n\nThe Peeps exhibit was exceptional, very unique, and worth the visit.  But there's so much more (and we didn't even have time to see it all!).  There was a wonderful exhibit in their main gallery from a husband-wife duo.  In one of the other galleries they had an exhibit of collage involving found objects which was also great.  We looked at everything with a careful eye and an open mind and enjoyed the experience.\n\nOverall, it was time well spent and made for an engaging afternoon.  People who think there's nothing to do in Racine aren't trying hard enough.",
+          "time": 1746186376,
+          "translated": false
+        },
+        {
+          "author_name": "Barbara Schumacher",
+          "author_url": "https://www.google.com/maps/contrib/106168406792222032953/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWd8otGWV09oPn1QQw-A9DeFbfTTuYhKAQlbrvdBiCp1iNBcg8mng=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "Been going to this museum during the PEEPS show on Easter for years now. It is an awesome family fun event. The rest of the museum is just ok, but this exhibit it's my kid's favorite! They are also right by the lake, so you can go for a walk by lake Michigan afterwards.",
+          "time": 1746583729,
+          "translated": false
+        },
+        {
+          "author_name": "Amy Helwig",
+          "author_url": "https://www.google.com/maps/contrib/100541191543528488000/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUiWhqOtas4GbKDZxP5qq3emSbOOhnzYWXQSZzkg97wCJmPix3A8g=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Just stopped in Racine to have lunch with someone and realized I hadn't been to the Racine Art Museum.\n\nWhat a treat, I happened to visit on a great day. The second floor renovation was done and the current fabrics exhibit up there by Randall Darwall was fabulous.\n\nThere was also beautiful jewelry and a ceramics exhibit along with a few other items.\n\nThe space the museum occupies is 100% part of the experience.  The building really lends itself to the art and helps provide exactly the right mood, tone and setting to enjoy whatever you are viewing.\n\nThe gift shop for any art museum fan is like the cherry on top. I know while I'm strolling through enjoying all a museum has to offer in the back of my mind I'm wondering what the gift shop may have. The gift shop at RAM does not disappoint.  They have an exquisite display which was carefully thought out and many items to choose from.\n\nRacine is not too far from where I live and a bonus to traveling there, you can hit up O & H Bakery on your way home for some kringle. That's a different review though 😁\n\nIf you haven't been to RAM and have put it off, delay no longer. The staff is wonderful and so helpful. The price is right and you can take anyone, it's just the right size a museum. It's not too big and not too small.\n\nDepending on your interest in the current exhibit you could walk through in an hour or hour and a half. They have elevators for anyone who can't stairs climb and restrooms and plenty of chairs for those who may need to rest a minute.",
+          "time": 1664065037,
+          "translated": false
+        },
+        {
+          "author_name": "Lauren Link",
+          "author_url": "https://www.google.com/maps/contrib/112973860238354174015/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJo9FS_0xBYByaZcLTX90zpDE_--eIafaYlYFeD-hnGYCNynw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "First time here in many years. What a wonderful art museum if you only want to spend a couple of hours. Exhibits change often, and I think there is something for everyone. Located in the downtown area. Plenty of street parking and very close to the lake.",
+          "time": 1732929031,
+          "translated": false
+        },
+        {
+          "author_name": "David Hong",
+          "author_url": "https://www.google.com/maps/contrib/112866363156274159086/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW_U96_QxF_6t7rInkDw007JTHZuvBzlHLnaJCRzgvyX7budb12yg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "A lovely museum in downtown racine. They have events and kind staff in the front. There are two floors and good artwork. Lots of jewelry and fun special exhibits like a peeps exhibit. 4 stars because it could be larger.",
+          "time": 1679774718,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wi-unknown-trout-museum-of-art",
@@ -1471,7 +2896,7 @@
       "longitude": -88.4011718,
       "place_id": "ChIJe__eXzG3A4gRPPXFrbDBEL4",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1480,7 +2905,7 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1495,19 +2920,19 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Trout Museum of Art has a solid regional collection that appears coherent, giving it a score of 3 for collection-based strength. Its historical context is limited to local significance, justifying a score of 2. The institution is known within its multi-state region.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence only establishes that this is a local art museum in downtown Appleton, Wisconsin, without details on the permanent collection. Based on location and limited institutional signals, it is best characterized as a local museum with a small or limited-scope collection; strengths in Impressionism or Modern/Contemporary cannot be determined from the provided summary.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:59:42Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(920) 733-4089",
@@ -1677,14 +3102,14 @@
       "website": "http://www.rahrwestartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "610 N. Eighth Street",
+      "street_address": "610 N 8th St, Manitowoc, WI 54220, USA",
       "address_line2": null,
       "postal_code": "54220",
-      "latitude": 44.099,
-      "longitude": -87.65778,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.09917739999999,
+      "longitude": -87.65832759999999,
+      "place_id": "ChIJDYgNMU02A4gRpVO_gQj_qAQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1693,7 +3118,7 @@
       "tickets_url": "https://www.facebook.com/RahrWestArtMuseum",
       "reservation_required": null,
       "accessibility_url": "http://www.rahrwestartmuseum.org/accessibility",
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -1705,26 +3130,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
+      "historical_context_score": 3,
       "priority_score": 18,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a strong regional presence but does not have notable impressionist or modern/contemporary holdings. The historical context score reflects its local significance in preserving art history, while the collection strength is coherent within its regional context.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no specifics about permanent collection highlights, so Impressionist and Modern/Contemporary strengths are estimated as minor rather than absent. The museum’s setting in a National Register Queen Anne house suggests some historical framing and interpretive potential, but collection scope and broader reputation appear primarily local, implying a small institution.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.rahrwestartmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Manitowoc; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9206863090",
+      "phone": "(920) 686-3090",
       "is_scoreable": true,
       "content_summary": "Set in an elegant lakeside mansion, the Rahr West Art Museum is Manitowoc’s most atmospheric place to see art. Its strength is regional: expect a thoughtfully curated look at Wisconsin and Upper Midwest creativity, paired with rotating exhibitions that keep the galleries fresh. The setting—historic rooms, grand staircases, and views toward Lake Michigan—adds a sense of occasion. For art lovers who enjoy discovering local stories through painting, printmaking, and sculpture, it’s an intimate, rewarding stop.",
       "content_description": "**Rahr West Art Museum** offers a distinctly Manitowoc art experience: a **regional museum** housed in a memorable historic home, where art and place feel inseparable. The museum’s identity is anchored in the Upper Midwest, making it an excellent stop for travelers who like to trace how local landscapes, industry, and community history shape visual culture. Rotating exhibitions broaden the scope—often pairing regional perspectives with wider themes—so even repeat visitors can expect new work and new contexts.\n\nThe museum’s **architectural setting** is part of the appeal. Installed in a stately mansion, galleries unfold through character-rich interior spaces rather than anonymous white cubes. As you move room to room, you’ll notice details—woodwork, generous windows, and a residential scale—that subtly change how you read the art, encouraging slower looking and close attention. It’s a refreshing contrast to big-city museums: intimate, legible, and full of small discoveries.\n\nFor visitors, the experience is both approachable and quietly immersive. Plan time to read labels and wall texts—regional collections often reward careful viewing with stories about patrons, artists’ networks, and the evolution of local taste. If you’re building a Wisconsin art itinerary, **Rahr West** functions as a grounding point: a place to see how *regionalism* and community collecting can produce a focused, characterful museum visit.",
@@ -1742,26 +3168,168 @@
       "collection_based_strength": 3,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "http://www.rahrwestartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 328,
+      "google_reviews": [
+        {
+          "author_name": "Ramya Sadagopan",
+          "author_url": "https://www.google.com/maps/contrib/110208461159738671847/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWuNYDGV4ml94t2Zm75ji6jiEIHHt8WubDywXtIbsNQ7a7xq8zW8Q=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "For a museum of this size, I was blown away by the massive collection of original Keith Haring subway drawings on chalk paper. Honestly, it’s so impressive they could easily charge $30 or $40 for admission, and I’d happily pay it. The fact that it’s free is incredible - don’t miss it! I think exhibition is here until Feb 2026",
+          "time": 1767311703,
+          "translated": false
+        },
+        {
+          "author_name": "Lord Eldwyn",
+          "author_url": "https://www.google.com/maps/contrib/101631244527288898225/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVtbrgpdEelLoX7X_Tg8aGcX6sUE640obTLudPV6X8uOqumRAaC=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Not only is the house itself a great glimpse into the history and grandeur of the late 19th/early 20th century, but it makes amazing use of the sprawling space to highlight artists of multiple genres.\n\nGalleries featuring folk non traditional, equine pieces, local artists, pottery/China, scrimshaw/carved ivory, and even an original Georgia O'Keefe full the many rooms and hallways. It also highlights how art is not just what is on a canvas, but the artistry employed by master craftsman of the last and present.\n\nThere is a self guided tour and many quue cards to be sure that you get a full understanding of the pieces and collections presented. All of this painstakingly preserved and presented art is done so at no cost to the public at entry!\n\nI would however be sure to leave a donation, and thank the staff as well for being part of an exhibit that houses culture right in your backyard",
+          "time": 1759826623,
+          "translated": false
+        },
+        {
+          "author_name": "Mark Renfro",
+          "author_url": "https://www.google.com/maps/contrib/104800082005552439483/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWaglgP95RZiDQKtz8qB8V0n-2X4NDosypMsbdyq_SBD7NYJHc=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "This is a beautiful home listed in the National Register of Historic Places. Outside are some cool sculptures and a Sputnik crash site display. Inside you’ll enjoy rotating art exhibits and some access to the home as it was years ago. There is no admission. A great place to visit.",
+          "time": 1744038123,
+          "translated": false
+        },
+        {
+          "author_name": "Darlene K",
+          "author_url": "https://www.google.com/maps/contrib/115324890411171759413/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVNs8AXfNXESkCZE9YW_yRu4_9dTZE3YeasLBPK3hFNyf2qHpEQiQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "A beautiful Victoria Period home is the setting for the Art museum. No charge, but donation accepted. Beautifully decorated for Christmas.  Some unusual and attractive art displays ,  stunning chandelier , and interesting history of the house and its many owners. Friendly staff.",
+          "time": 1671746690,
+          "translated": false
+        },
+        {
+          "author_name": "Ted Hertel",
+          "author_url": "https://www.google.com/maps/contrib/107514405670953715082/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMCNOWIZ0xKLAySNgLsesfTRQVsStj0YR5xltp3oC8qB2v0z8rEA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Beautiful Holiday decorations throughout the mansion, along with other artwork in the attached museum. And of course \"Sputnikfest\" in September each year.",
+          "time": 1766444493,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-wi-marquette-university-haggerty-museum-of-art",
       "country": "USA",
       "state_province": "Wisconsin",
-      "city": "Marquette University",
+      "city": "Milwaukee",
       "museum_name": "Haggerty Museum of Art",
       "alternate_names": null,
       "website": "http://marquette.edu/haggerty",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1234 W Tory Hill St, Milwaukee, WI 53233, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.03557,
-      "longitude": -87.92809,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "53233",
+      "latitude": 43.03699520000001,
+      "longitude": -87.9277932,
+      "place_id": "ChIJEfhXSIIZBYgRRpMwjwdna9Q",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1782,26 +3350,27 @@
       "impressionist_strength": null,
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 15,
+      "historical_context_score": 3,
+      "priority_score": 14,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Haggerty Museum of Art has a modest permanent collection and serves primarily the local community, giving it a reputation score of 3. It provides local context for the arts, but lacks significant holdings in Impressionism or Modern/Contemporary art that would elevate its scores further.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a university art museum with a sizable permanent collection (~10,000 works) but limited on-view space, suggesting a moderate overall collection tier. A prominent Keith Haring mural points to at least moderate modern/contemporary representation, but the evidence does not specify Impressionist holdings. As a campus museum in Milwaukee, it appears primarily local in reputation, and no clear evidence is provided about the depth of chronological/historical interpretive framing.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://marquette.edu/haggerty",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Marquette University; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "4142881669",
+      "phone": "(414) 288-1669",
       "is_scoreable": true,
       "content_summary": "On Marquette University’s campus in Milwaukee, the Haggerty Museum of Art offers a smart, intimate museum experience built for close looking. Its galleries are ideal for art lovers who enjoy thoughtful curation, rotating exhibitions, and the chance to see modern and contemporary works without big-museum crowds. Come for a focused visit—then linger: the museum’s academic setting often brings fresh perspectives, strong interpretive labels, and programming that makes even a modest collection feel lively and current.",
       "content_description": "**The Haggerty Museum of Art** at Marquette University is a rewarding stop for travelers who prefer *close viewing* over blockbuster bustle. As a campus museum, it excels at presenting art in dialogue with ideas—pairing a **modest permanent collection** with **frequently changing exhibitions** that keep repeat visits worthwhile. Expect galleries that encourage slow looking, clear wall texts, and a curatorial approach that often connects historical work to contemporary questions—an experience especially satisfying for visitors who like to leave with new context, not just photos.\n\nArchitecturally, the museum’s university setting gives the visit a distinctive rhythm: you arrive through an active campus environment, then step into a quieter, contemplative space designed for study and discovery. The building’s **clean, gallery-forward layout** supports attentive viewing—ideal for works on paper, photography, and smaller-scale painting or sculpture that reward proximity.\n\nFor art enthusiasts planning a Milwaukee itinerary, the Haggerty functions beautifully as a **high-quality, time-efficient museum**: a place to recalibrate your eye between larger institutions, or to anchor a day exploring nearby neighborhoods, architecture, and dining. Check the current exhibition list before you go—because the museum’s real strength is the way it turns limited square footage into a dynamic, curated encounter with *modern* and *contemporary* art.",
@@ -1819,7 +3388,149 @@
       "collection_based_strength": 2,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "http://www.marquette.edu/haggerty-museum/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1630"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:30 PM",
+          "Tuesday: 10:00 AM – 4:30 PM",
+          "Wednesday: 10:00 AM – 4:30 PM",
+          "Thursday: 10:00 AM – 4:30 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 63,
+      "google_reviews": [
+        {
+          "author_name": "Holly",
+          "author_url": "https://www.google.com/maps/contrib/108427236664051559757/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJT0r5Rm_HuFobEZJb-a0vc7-ZIUgSHbsb05PybXgZjCMso5Q=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful pieces, accessible to public with free admission, very polite staff. A pleasure to visit, i will be back again soon.",
+          "time": 1759605933,
+          "translated": false
+        },
+        {
+          "author_name": "Mike Dorn",
+          "author_url": "https://www.google.com/maps/contrib/100488299059347901949/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjViPdcNu3tBgRyVaTbWKKg3aKNd1mPCzV5eDoAHu6d8xXvzaJXL=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "The Haggerty Museum of Art at Marquette University is truly a hidden gem in Milwaukee! I was amazed to learn that admission is completely free, making world-class art accessible to everyone. Walking through the gallery, I had the unforgettable experience of seeing my first Picasso in person — something I’ll never forget.\n\nWhat made my visit even more meaningful was seeing a college friend’s artwork proudly displayed alongside such incredible pieces. It was surreal and inspiring to see both legendary and emerging artists represented in the same space.\n\nThe museum itself is beautifully curated, peaceful, and welcoming — a perfect spot to slow down, reflect, and appreciate creativity in all its forms. The staff were kind and knowledgeable, and the atmosphere had this quiet magic that makes you want to stay longer.\n\nIf you’re in Milwaukee or near the Marquette campus, do yourself a favor and stop by the Haggerty Museum of Art. It’s free, inspiring, and one of the city’s best-kept treasures.",
+          "time": 1759666406,
+          "translated": false
+        },
+        {
+          "author_name": "McKenna Dietze",
+          "author_url": "https://www.google.com/maps/contrib/112288691649893466553/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVfzcVFCRw4db-rDWJSZaYKC99aBHUxoY7NaLlQ6SQEcchZP6GHKQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Never really thought to go to this museum, but glad we did. It was fairly small, but had a lot of thought provoking and modern art pieces, and many from \"popular\" or famous artists. I think it would be great for a school field trip or someone just getting into the basics of art, as it has a lot of interactive elements and a good mix of pieces within its exhibits.",
+          "time": 1643577722,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Houlihan",
+          "author_url": "https://www.google.com/maps/contrib/111512331314852346570/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMkTAXdEtkmx8XzdV0_grmeA_IXoRvDcvizIEeZ_1pxgx0YyA2=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Small space for well curated exhibits.\nFree. You should go!",
+          "time": 1757786382,
+          "translated": false
+        },
+        {
+          "author_name": "Timothy Rothhaar",
+          "author_url": "https://www.google.com/maps/contrib/110818932094588680516/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWhxRI2AURxJz6jVsvtXsOhJbhJjP6BdBqQMC4mpa9xTFRW1JUc=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "The Haggerty has many pieces I do not consider \"art,\" but given it is a small university museum and not a large operation, I'm willing to overlook.  Known for its religious Dali piece (pictured) and Marc Chagall's religious pieces, it's nice place to stop by when you're in the area.  Also pictured \"The Great Lakes Cycle\" by Alexis Rosman.  The curator, Lynne, is quite nice--willing to explain the pieces and walk you through the exhibition.",
+          "time": 1551992469,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-wi-neenah-bergstrom-mahler-museum",
@@ -1831,14 +3542,14 @@
       "website": "http://www.paperweightmuseum.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "165 N Park Ave, Neenah, WI 54956, USA",
       "address_line2": null,
       "postal_code": "54956",
-      "latitude": 44.1819454,
-      "longitude": -88.4457384,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 44.1819981,
+      "longitude": -88.44555009999999,
+      "place_id": "ChIJBb48I-e4A4gRCldFihPPptI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": null,
       "topics": null,
@@ -1862,21 +3573,22 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Bergstrom-Mahler Museum has a modest collection strength which provides educational value but lacks depth or significant scholarly impact. Its historical context is mainly local and serves primarily the immediate community, leading to a score of 2 in that category.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the museum’s permanent holdings, so collection strengths and interpretive context cannot be scored. Based on the small-city location (Neenah) and lack of broader institutional signals in the evidence, it is assessed as primarily local in reputation with a small, focused collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.paperweightmuseum.com",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Neenah; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.paperweightmuseum.com",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:00:18Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -1892,8 +3604,150 @@
       "content_generated_at": "2026-01-25T04:00:18Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "phone": "(920) 751-4658",
+      "website_google": "http://bmmglass.com/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1630"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:30 PM",
+          "Wednesday: 10:00 AM – 4:30 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: 1:00 – 4:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 445,
+      "google_reviews": [
+        {
+          "author_name": "cody herman",
+          "author_url": "https://www.google.com/maps/contrib/100494975131901664405/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVLc_XqoMvmMOyVKsmJarpKHYvhDvt4zhabRQqWk2NdBKagCHqH3g=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Love this place! Free museum. Go at your own pace. Depending on times you go they have different activities you can do and different showings. Nice little gift shop as well.",
+          "time": 1758254887,
+          "translated": false
+        },
+        {
+          "author_name": "Kristina Mosley",
+          "author_url": "https://www.google.com/maps/contrib/108577095023263188784/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV0hJ6cAXPMsVGbl4L-MesTeuPgLLNgpLYa7Vousj5kP81RPX7yug=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Really great museum. Lovely exhibits with a lot of information and knowledgeable volunteers. Very friendly staff and a multitude of classes and free open art areas available in the museum.",
+          "time": 1757190772,
+          "translated": false
+        },
+        {
+          "author_name": "Pamela Ann",
+          "author_url": "https://www.google.com/maps/contrib/103666006980811346796/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXVXIvecehL-DbYw7ss6_SPPhQOlwguOI00KtP9dIl05L1sXk_d=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Very nice exhibits, they had a lot of beautiful glass paperweights that date back hundreds of years and from many countries along with other glass items.  The staff were welcoming and informative.  I was surprised to learn it was free to enter!  Left me with extra money to spend in the gift shop.",
+          "time": 1724884261,
+          "translated": false
+        },
+        {
+          "author_name": "Steve Hellmann",
+          "author_url": "https://www.google.com/maps/contrib/117827799049890062041/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJJ_tRX2oIvF4lubxL1n2gXP6pdjdt6Xr-SlmOMw1PeU9-3IA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "This is a very nice museum offering a variety of glass objects.  Of special note is a large number of millefiori glass paperweights which are exceptionally artistic.  It is certainly a museum worth visiting, and as a bonus there is no admission fee.",
+          "time": 1749957299,
+          "translated": false
+        },
+        {
+          "author_name": "Jubei San",
+          "author_url": "https://www.google.com/maps/contrib/107500783595672437827/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVI9ehVUJDXsiIDqmvKEYI8dq5ivdygSlSWJSjnSS_F5bSDv9c=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "There is no entrance fee for this display, but there are a few opportunities to support the museum with strategically located boxes which are easy to find. You may feel inclined to do so after walking through the masterfully crafted exhibits.\n\nThis quarter(?) they have on display works from a local high school, and I was very pleasantly surprised by the level of detail and quality. These are in combination with what are likely more traditional pieces, all beautiful, interesting, and sometimes even amusing.\n\nThe museum itself is very clean, well-lit and easy to navigate. The staff are welcoming and helpful, and appear to have an intimate grasp of the museum and its process.",
+          "time": 1677580851,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

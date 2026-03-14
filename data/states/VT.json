@@ -13,14 +13,14 @@
       "website": "https://www.amff.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "4070 Main Street",
+      "street_address": "4070 Main St, Manchester, VT 05254, USA",
       "address_line2": null,
       "postal_code": "05254",
-      "latitude": 43.16285,
-      "longitude": -73.07033,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.16802269999999,
+      "longitude": -73.0671638,
+      "place_id": "ChIJ4VzV1spf4IkRtpfKndziIwY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -51,15 +51,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.amff.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Manchester' from open data; MRD: computed city_tier=3 for Manchester; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:48:33Z",
+      "updated_at": "2026-03-14T20:04:24Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8023623300",
+      "phone": "(802) 362-3300",
       "is_scoreable": false,
       "content_summary": "The American Museum of Fly Fishing in Manchester, Vermont, is a unique haven for angling enthusiasts and nature lovers alike, showcasing a captivating blend of history, art, and culture centered around the art of fly fishing. With its rich collections and inviting atmosphere, this museum is a must-visit destination for anyone wishing to appreciate the sport’s heritage and artistry.",
       "content_description": "**The American Museum of Fly Fishing** offers a one-of-a-kind experience that goes beyond mere fishing; it delves into the *artistry* and *heritage* woven into the fabric of this beloved pastime. Established in 1968, this museum is dedicated to preserving the history of freshwater fishing in America, focusing especially on the intricate craft of fly tying and *fishing lore*. Here, visitors can explore a vast collection of over 20,000 artifacts, including historic rods, reels, and *vintage fly patterns* that showcase the evolution of this fine sport. Each piece tells a story, offering you a glimpse into the lives of those who have embraced the delicate balance between angler and environment over centuries.         \n\n The museum is not only a repository of fishing artifacts but a sanctuary that celebrates the *trout-rich waters* of the region. Beautifully landscaped grounds invite you to relax and reflect on the beautiful relationship between humanity and nature. As you explore the exhibitions, don’t miss the opportunity to participate in engaging workshops, where you can learn the techniques of fly tying firsthand. With its charming architecture that mirrors the rustic elegance of Vermont, **The American Museum of Fly Fishing** truly serves as a refuge for both seasoned anglers and families looking for an enjoyable day out, complete with stunning views of the surrounding Green Mountains.",
@@ -72,7 +73,118 @@
       ],
       "content_generated_at": "2026-01-25T03:48:33Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.amff.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.7,
+      "google_reviews_count": 69,
+      "google_reviews": [
+        {
+          "author_name": "Matt L.",
+          "author_url": "https://www.google.com/maps/contrib/113660962748737942733/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWrwSUtUSweXBk2IGIuy5RVT0qSK99FoN9K-keJu8rTPWYy7lXD=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Very cool museum dedicated to the craft of fly fishing. The reel collection is impressive and there are rods and reels on display that were fished with by former US presidents. Some cool art work is on display on the first floor as well. Small, yet informative museum that will surely be of interest to any angler.",
+          "time": 1740276518,
+          "translated": false
+        },
+        {
+          "author_name": "William Cloutier",
+          "author_url": "https://www.google.com/maps/contrib/110217039695391821643/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKlTz3Rtfx_hm7Kj9-TF3DtiYDnO5cljrAjRU24eNdr0WJCag=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "One of the few places open on Wednesday's in Manchester Center. I thoroughly enjoyed my tour through this detailed history of fly fishing. The young man on duty was a delight to converse with. I highly recommend taking a walk through this well informed history of fly fishing.",
+          "time": 1718429790,
+          "translated": false
+        },
+        {
+          "author_name": "Erika Floriani",
+          "author_url": "https://www.google.com/maps/contrib/101678046089480908081/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5SW_WS2bmOpRYuHnfsnudCvQET7iaZfAJVF9YVTtNKptNA3jY=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This little museum packs a lot into its space. A must stop for Fly fishing enthusiasts and anyone who wants to learn and appreciate the roots of the sport in America. The staff is friendly and knowledgeable. One of my favorite rooms was the Joan Wulff exhibit",
+          "time": 1761920161,
+          "translated": false
+        },
+        {
+          "author_name": "Laura G",
+          "author_url": "https://www.google.com/maps/contrib/111721679544206754148/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIufJJpgdL3k4DpSObPCxvETD0BsTSs24hlzxjg5dTEJ9G1R6h_=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Such a wonderful visit. Thank you to Bob who was working on Saturday. He shared so many wonderful stories with my family and I, and he made some great recommendations for reading material. He also took the time to mark up a map with where to access the local river.\nWould love to return in the future.",
+          "time": 1709007136,
+          "translated": false
+        },
+        {
+          "author_name": "Steve",
+          "author_url": "https://www.google.com/maps/contrib/107000472358067416141/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWM86wqBJrxBMyAj0qy_SFCCvRTDCeNp1KiEknQErEvNS2BwBez=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "If your into fly fishing this is a must see!\nThey have just finished redoing many of the exhibit areas and it is well done.    Especially enjoyed the section on the presidents that spent their down time fly fishing.  You can even see some of their rods and flies.  Really cool!  Cost is $5 per adult.  We spent about 1 1/2 hours looking at the various exhibits and talking with the curators.  You will also be greeted by the host lab tippet.",
+          "time": 1558127831,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-american-precision-museum",
@@ -84,14 +196,14 @@
       "website": "https://americanprecision.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "196 MAIN STREET",
+      "street_address": "196 Main St, Windsor, VT 05089, USA",
       "address_line2": null,
-      "postal_code": "5089",
-      "latitude": 43.4761,
-      "longitude": -72.38822,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "postal_code": "05089",
+      "latitude": 43.47476899999999,
+      "longitude": -72.389543,
+      "place_id": "ChIJBwHXaC3D4YkRYZIn-UlerQE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -120,15 +232,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Windsor' from open data; MRD: computed city_tier=3 for Windsor; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:48:40Z",
+      "updated_at": "2026-03-14T20:04:25Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "8026745781",
+      "phone": "(802) 674-5781",
       "is_scoreable": false,
       "content_summary": "The American Precision Museum in Windsor is a hidden gem that celebrates the birthplace of precision manufacturing in America. Visitors can explore its rich history through fascinating exhibits and artifacts, making it a must-visit for anyone interested in innovation and engineering.",
       "content_description": "**The American Precision Museum** offers a captivating journey into the evolution of manufacturing techniques that shaped the 19th and 20th centuries. Housed in a beautifully restored 1846 industrial mill on the banks of the Connecticut River, this museum not only showcases the rich heritage of precision manufacturing but also highlights the contributions of local inventors and engineers who revolutionized the industry. Guests are welcomed into a spacious exhibit area brimming with intriguing machinery, displays, and interactive educational experiences that bring the past to life. Visitors will marvel at the intricate details of vintage machine tools, as well as unique items like the world’s first milling machine and some of the most notable machine designs ever created in America. As you meander through the museum, the blend of history and engineering innovation is both inspiring and enlightening. Each exhibit is thoughtfully curated to show not just the functionality of these machines but the stories behind them. \n\nThe museum's dedication to preserving the legacy of precision manufacturing is evident in the quality of its collections and the passionate storytelling of its staff. Visitors can expect engaging demonstrations, workshops, and lectures that invite hands-on exploration of engineering principles and manufacturing techniques. Whether you’re a history buff, an engineering enthusiast, or simply curious about the ways technology has shaped our world, the **American Precision Museum** delivers an eye-opening experience. Enjoy the scenic views of Windsor while learning about the crossroads of history and industrial innovation that define American manufacturing.",
@@ -141,7 +254,138 @@
       ],
       "content_generated_at": "2026-01-25T03:48:40Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.americanprecision.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:00 PM",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.8,
+      "google_reviews_count": 329,
+      "google_reviews": [
+        {
+          "author_name": "TerrIY",
+          "author_url": "https://www.google.com/maps/contrib/101538334832093547019/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ4Ji-LTJxr5XPcwLwJlh9ODWXdc9c7E58iwfH0PbQ-5W0f1Q=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "5 star experience due to my husband's appreciation, passion and devotion in his work as a carpenter and Millwright over 30 years. He lit up like a Christmas tree here. For me to watch him like a kid in a candy store was a joy to behold. They did apologize for the upstairs being under construction but everything was on one floor and we both were good with that. The outside is quite a view to behold too. From guns, first engines built, type writers, sowing machines , airplanes, space ships ect...there was much to see. If your an enthusiast in the trades or just a fellow admirer like myself it's a must see. And the price of admission is super affordable\nMust add great for teens/highschoolers that are thinking about going into the trades",
+          "time": 1766580635,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Ellis",
+          "author_url": "https://www.google.com/maps/contrib/109623427912451400012/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIcgjFPOfHSzmT3W2teZQPHJYIOsePJhxb0Q1FA0eg_qRnp2g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "What is often called the second industrial revolution originated in this valley. Federally funded research at the armories at Harper's Ferry and Springfield developed the original technology for precision interchangeable parts to make rifles or muskets (forget which at the time...). Machinists in this valley commercialized the technology and made possible the manufacturer of both precision manufacturing machines, and the products those machines produced. With standardized interchangeable parts - which is a big thing. Suppose to fix something you had to call a machinist and not just buy a screw? It's not something people perhaps much think about, but the techniques underpin about all technology advances since. Call ahead for a tour of things not on exhibit. The Museum has a lot more stuff than they have place to display. Take the time to watch the video. Listen to the audio tour. It might even be thematically correct to pair this with a visit to the Star Trek Set Tour in reasonably nearby Ticonderoga.",
+          "time": 1772815589,
+          "translated": false
+        },
+        {
+          "author_name": "Sachin Jha",
+          "author_url": "https://www.google.com/maps/contrib/106292449118622817849/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVW-dTQGD7BUzQDdJngvTBxHoJOLlp_F9sORT3MNH7PQpq-X_pL=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "I went there on a Weekday. This is a great place to see how scrapping machines evolved in USA making guns/rifles first. There is no RV parking but you can park your RV near Boston Dreams cafe for 2 hrs and enjoy great coffee and bagels.",
+          "time": 1753490659,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Quinn",
+          "author_url": "https://www.google.com/maps/contrib/101326485208520929053/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiRh5eMX_oI4o7qRIpGtMuW7lxCqhSZkDRfkYjYUEF3fY3oKxf=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Not a big place, but well worth a visit if you're in the area.  Beautiful machines and an inspiring story. Very reasonable admission, audio tour included.",
+          "time": 1757175372,
+          "translated": false
+        },
+        {
+          "author_name": "nick ciranni",
+          "author_url": "https://www.google.com/maps/contrib/106193108247532569390/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJAUpez6ecNI64DIBgHuVyyzWtEn71rXL3zneI7qeRZw8wwvQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Very interesting history of the development of machines.  in the process of expanding into the 2nd floor. Great waterfall.",
+          "time": 1764217313,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-bennington-museum",
@@ -153,14 +397,14 @@
       "website": "http://www.benningtonmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "75 Main Street",
+      "street_address": "75 Main St, Bennington, VT 05201, USA",
       "address_line2": null,
       "postal_code": "05201",
-      "latitude": 42.88239,
-      "longitude": -73.20774,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 42.8831395,
+      "longitude": -73.21006419999999,
+      "place_id": "ChIJS5rGnl6W4IkRGqIzTnzaWRM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -191,15 +435,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.benningtonmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Bennington' from open data; MRD: computed city_tier=3 for Bennington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:48:46Z",
+      "updated_at": "2026-03-14T20:04:26Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8024471571",
+      "phone": "(802) 447-1571",
       "is_scoreable": false,
       "content_summary": "The **Bennington Museum** offers a unique glimpse into the rich history and artistic legacy of Vermont. With its remarkable collection of folk art, historical artifacts, and notable exhibitions, it stands out as a must-visit destination for those interested in regional culture and heritage. Experience the stories of Bennington through engaging exhibits and immersive displays.",
       "content_description": "**Bennington Museum** is an enchanting destination that invites you to explore the diverse narrative of Vermont’s history and artistry. Nestled in the heart of Bennington, this museum is famed for its impressive collection of American folk art, antiques, and Revolutionary War artifacts. It is also home to the world’s largest collection of works by *grandma Moses*, a celebrated painter known for her charming depictions of rural life. Here, visitors can appreciate the transformative power of art and history, all housed within an inviting space that encourages exploration and discovery.  \n\nThe architecture of the **Bennington Museum** is a harmonious blend of historic and contemporary design, creating a welcoming atmosphere that invites you to linger. The museum’s galleries host rotating exhibitions that highlight local talent, ensuring that each visit offers something fresh and exciting. Additionally, the museum's outdoor spaces provide a picturesque setting for reflection, offering sweeping views of the surrounding landscape. As you journey through its halls, engage with thoughtful displays that foster a deeper understanding of Vermont’s rich culture and heritage while also showcasing significant national narratives. Whether you are a history buff or an art lover, the **Bennington Museum** promises an enriching experience that connects you to the heart of New England’s past.",
@@ -212,7 +457,73 @@
       ],
       "content_generated_at": "2026-01-25T03:48:46Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.benningtonmuseum.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.7,
+      "google_reviews_count": 512,
+      "google_reviews": [
+        {
+          "author_name": "Ells J",
+          "author_url": "https://www.google.com/maps/contrib/116553595948903172520/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKreTzmfMgvUQhRiDOKNzIWIeLEcoGQqkK459Zo_Y0Gav2y3F5Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Didn't expect much, but pretty cool place to visit. Family-friendly. There are little guided questions and activity sheets for kids. Cute museum shop with maple syrup samples.",
+          "time": 1764466994,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Schwartz",
+          "author_url": "https://www.google.com/maps/contrib/105319285651536710795/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRE6L9q2dviWOgBQGRGyhw1isXTXvwEcJ02Q0BE_fDBQ2jm1xa6g=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "A museum changing with the times. A interesting permanent collection being updated to show less items but to allow better presentation. Has started to have interesting changing exhibitions. A great resource for local history and art.",
+          "time": 1759725255,
+          "translated": false
+        },
+        {
+          "author_name": "Frenite",
+          "author_url": "https://www.google.com/maps/contrib/107787538413030771628/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYXqkohFG-E2_KJ0wfqeCR3yT6jLBPRCQIydTNCW5-fi5rqtvNTw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "The Bennington Museum is a great place to learn about the local history and culture. The museum has a variety of historical household artifacts, pottery, furniture, granny clocks, musical instruments, paintings dating back to the 1700s, and so many other historical artifacts from the Bennington area. An important highlight is the 1924 Martin-Wasp touring car, the only car model made in Bennington. There’s even an exhibit with a large collection of Grandma Moses paintings. The museum is quite compact, so you can see just about everything in an hour.  There is plenty of signage giving valuable information about all the artifacts. I really learned a lot at this Museum and I highly recommend a visit.",
+          "time": 1754440825,
+          "translated": false
+        },
+        {
+          "author_name": "Sara Kahn",
+          "author_url": "https://www.google.com/maps/contrib/113875453446281955780/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVCFqW6JyFc_nftPrIjGI6JG8tcloDgJzRlmf1xz9nZlJBLZL7R=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Bennington museum is a local gem. It showcases the works of folk artist grandma Moses, as well as contemporary works of art.\nThe building is historical and well preserved. The gardens are beautiful and there is a hiking trail beside the museum. The museum store has a good selection of related merchandise, the staff is friendly and knowledgeable. Grandma Moses school can be visited at this museum . This museum also houses some historic items and artifacts. The museum hosts several educational events and serves as a hub for local art. The children’s artwork from the nearby schools are showcased in this museum annually",
+          "time": 1714492750,
+          "translated": false
+        },
+        {
+          "author_name": "Kristin Donovan",
+          "author_url": "https://www.google.com/maps/contrib/112661784839832353716/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMPvcuPUCenuB7mUpatolYVoBbu00nRIuuFgLmLfMW0M4oo1na=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Came here with my teenage daughter and really enjoyed it.  We loved the Grandma Moses exhibit and the old furniture and kitchenware.  Great way to spend a couple of hours.",
+          "time": 1755028511,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-brattleboro-museum-and-art-center",
@@ -231,7 +542,7 @@
       "longitude": -72.5565423,
       "place_id": "ChIJ-RMlZU8a4YkRmT2Gnl6QFkw",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -240,7 +551,7 @@
       "tickets_url": "http://www.facebook.com/brattmuseum",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": null,
       "time_needed": "Half day",
       "estimated_visit_minutes": null,
@@ -255,9 +566,9 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Brattleboro Museum and Art Center has local significance but does not exhibit a strong historical context that advances national narratives. With a reputation primarily regional in nature, it serves the local community rather than having a national or international draw.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the museum’s permanent collection or curatorial focus, so strengths in Impressionism, Modern/Contemporary art, and historical context cannot be reliably scored. Based on its location in a small Vermont town (population ~12,000) and limited institutional signals, its reputation is best inferred as primarily local.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -266,10 +577,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Vermont' from open data; MRD: computed city_tier=3 for Vermont; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:48:57Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(802) 257-0124",
@@ -435,7 +746,7 @@
       "longitude": -73.19711199999999,
       "place_id": "ChIJlX2ZSFx6ykwR1uQfFi9Vktc",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -469,7 +780,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:05Z",
+      "updated_at": "2026-03-14T20:04:26Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -635,7 +946,7 @@
       "longitude": -73.169898,
       "place_id": "ChIJk2XI9wNdtUwRFWVOY-KhQss",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -671,7 +982,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:13Z",
+      "updated_at": "2026-03-14T20:04:26Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -820,14 +1131,14 @@
       "website": "http://museum.middlebury.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "72 Porter Field Road",
+      "street_address": "72 Porter Field Rd, Middlebury, VT 05753, USA",
       "address_line2": null,
       "postal_code": "05753",
-      "latitude": 44.01474,
-      "longitude": -73.16985,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.00519999999999,
+      "longitude": -73.1760073,
+      "place_id": "ChIJLV5ln_5ctUwRkLs8dXln9yc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -851,20 +1162,21 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Middlebury College Museum of Art offers limited historical context primarily relevant to the local community. Its collection provides contextual value but lacks depth and notable contributions to the broader art discourse.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence only establishes that this is a college art museum in a small Vermont town, with no provided description of its permanent collection strengths or interpretive approach. Given the institutional type and local setting, reputation is assessed as primarily local and the collection is likely small, but specific strengths (Impressionism, Modern/Contemporary) cannot be determined from the supplied evidence.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://museum.middlebury.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Middlebury' from open data; MRD: computed city_tier=3 for Middlebury; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:24Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -880,7 +1192,149 @@
       "content_generated_at": "2026-01-25T03:49:24Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "phone": "(802) 443-5007",
+      "website_google": "http://museum.middlebury.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 67,
+      "google_reviews": [
+        {
+          "author_name": "Judy Grillo",
+          "author_url": "https://www.google.com/maps/contrib/104024401080314758944/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhuVr64_MijZg-KQpHJybIlotUjae-tX0WoFnSdZyeZLfnkcqG=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "If you're in Middlebury be sure to find time to visit this Museum of Art. My expectation was that it would be locally focused; perhaps some works by alumnae and current students. Wasn't I surprised at the incredible collection in this museum! From Egyptian to Rodin to a portrait painted by acclaimed artist Kehinde Wiley. Well worth an hour or two.",
+          "time": 1686357472,
+          "translated": false
+        },
+        {
+          "author_name": "Elad Rosen",
+          "author_url": "https://www.google.com/maps/contrib/115042504935812532727/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW9njzE0AVKCwGFyCLpklnh_Mz0tRkpOfP2Mb7pcgsLFN-R0lg4=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "This museum is small but well curated. Love being able to move from ancient Egyptian art to Warhol in a few short steps.",
+          "time": 1531525389,
+          "translated": false
+        },
+        {
+          "author_name": "Dan Gottlieb",
+          "author_url": "https://www.google.com/maps/contrib/102764319305295279243/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWQWvL5_d731RnD87bLvRqpwo0O-aesvpTSp8Ih8iyKyHxoIWs=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The place took a while to find as we were on foot and the google directions seemed to contradict how to drive there.  No loss, though- the Middlebury campus is simply  incredible and huge considering it's low number of students.   Roughly 1/2 of the museum is dedicated to temporary exhibits.  Both were excellent- layout, lighting and commentary were spot on.  The permanent exhibit may not be for everyone, but it's awe inspiriing to see works of art created 2,000+ years ago.    An hour or so is plenty at the museum, but easy to make a whole day by adding in art galleries, interesting shopping, checking out the 200 year old houses and perhaps one of the many outdoor events Middlebury and the college hold during the summer.",
+          "time": 1713111611,
+          "translated": false
+        },
+        {
+          "author_name": "Worldofthe Raven",
+          "author_url": "https://www.google.com/maps/contrib/103144910093012922722/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUjkGiCsj25C9RPorGZE7g9XijwE99rGQU3_IoHRnlQ8IzQzqlU=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "Beautiful collection of Ancient and Modern pieces. Wonderful atmosphere in the scenic city of Middlebury, Vermont.",
+          "time": 1500570710,
+          "translated": false
+        },
+        {
+          "author_name": "Allison B.",
+          "author_url": "https://www.google.com/maps/contrib/108300870077160092226/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU1sVjN7bqtut3c4zWqNEZbnwZIPKAEi1cVYFtGt98xXmYgZkk=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We love visiting Middlebury College Museum of Art. The exhibit “ An Invitation to Awe” is excellent. Very engaging and interesting. It is laid out in a very thoughtful and creative way. I highly recommend it",
+          "time": 1731432953,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-old-stone-house-museum",
@@ -892,14 +1346,14 @@
       "website": "http://www.oldstonehousemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "109 Old Stone House Rd, Brownington, VT 05860, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.48406,
-      "longitude": -72.38536,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "05860",
+      "latitude": 44.8360142,
+      "longitude": -72.1658127,
+      "place_id": "ChIJjW05vDR4tkwRLgebIOMa5Mc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": null,
       "topics": null,
@@ -928,15 +1382,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Brownington' from open data; MRD: computed city_tier=3 for Brownington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:33Z",
+      "updated_at": "2026-03-14T20:04:29Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8026723773",
+      "phone": "(802) 754-2022",
       "is_scoreable": false,
       "content_summary": "The **Old Stone House Museum** in Brownington, Vermont, offers visitors a captivating glimpse into early American life through its well-preserved architecture and rich historical significance. As a center for historic preservation, it showcases not only the beauty of 19th-century craftsmanship but also serves as a hub for community engagement and educational programs, making it a must-visit destination for history enthusiasts.",
       "content_description": "**Old Stone House Museum** is a striking testament to Vermont's heritage, beautifully set against the backdrop of Brownington's picturesque landscape. Constructed in 1833, the museum is housed in a granite structure that originally served as a boarding house for students of the Orleans County Grammar School. Its robust architecture reflects the *Gothic Revival* style, complemented by intricate stonework and timeless craftsmanship, inviting visitors to step back in time and experience life in early America firsthand. Within the walls of this charming historic site, guests can explore thoughtfully curated exhibits that depict everyday life in the 19th century, highlighting the stories of the people who shaped the community. The museum also showcases a variety of artifacts, from period furniture to educational materials that further illuminate Brownington's local history.  A visit to the **Old Stone House Museum** offers an immersive experience, with seasonal programs and events that engage visitors of all ages. Join hands-on workshops or guided tours, gaining deeper insights into the educational principles that once guided the young minds in this building. It's more than just a museum; it's a vibrant community resource dedicated to preserving and appreciating the past. Here, you can relish the charm of bygone days while also participating in enlightening activities that resonate with the spirit of learning and preservation.  In every corner, from the period rooms to the stories shared by knowledgeable staff, visitors will find a profound connection to history, making **Old Stone House Museum** a unique intersection of education, culture, and heritage.",
@@ -949,7 +1404,138 @@
       ],
       "content_generated_at": "2026-01-25T03:49:33Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://oldstonehousemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.8,
+      "google_reviews_count": 146,
+      "google_reviews": [
+        {
+          "author_name": "Michael Miller",
+          "author_url": "https://www.google.com/maps/contrib/117994976149737763254/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW4AzQ-UpvEXrNmhWKQMkM98nqqx9qw4VCXZfb1D8UQhIkJZw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Man! I love this place. Be sure to note the website: Museum is viewable by guided tour only. As of this writing, they offer tours at 11:00, 1:00 and 3:00. There is also a lovely (free) nature walk. It's almost 2 miles if you walk the entire length. Very interesting history. Price is quite reasonable for a tour that lasted about 1.5 hours. Highly recommended.",
+          "time": 1748527658,
+          "translated": false
+        },
+        {
+          "author_name": "Outback with Tom",
+          "author_url": "https://www.google.com/maps/contrib/116011688934883891414/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFCExd26Oz0IqTce3jn318lScK_Y-UwqoIxSFnIV0cS52QF_V6=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Had a great visit to the Old Stone House Museum.  Our tour guide was very friendly, informative, and funny.  The history that you will encounter is amazing and displayed very well.  The grounds are beautiful and peaceful.  Stop by and do not  miss this tour",
+          "time": 1720836346,
+          "translated": false
+        },
+        {
+          "author_name": "Scott Statson",
+          "author_url": "https://www.google.com/maps/contrib/104230522373590975770/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVkr2jytigRO37e-R6XW8O73QMkfmMgIDDALyRgz2iFXYJTx8tgbg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "A relaxing location that is extremely well maintained. The staff working here are outstanding! We were introduced through Harvest Hosts and are glad we stopped.",
+          "time": 1691322398,
+          "translated": false
+        },
+        {
+          "author_name": "Theresa V (Reesy Marie)",
+          "author_url": "https://www.google.com/maps/contrib/105443335566066536313/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWl7bLaEJiNGa-D_E80oZLeTjl7hSgJGH2UHF-uedT36z7K3AXqAQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "A hidden gem of the Northeast Kingdom. The staff is very knowledgeable and everyone that stops gets a tour guide. There are multiple buildings on site include the old grammar school, the boardinghouse, the blacksmith's shop (where they hold regular classes), the observatory, etc.\nThe grounds are stunning and can be rented out for weddings or even smaller events. There is a full kitchen and the terrace of the Hall House is PERFECT for any small event. Also, the observatory has the best view I have come across yet. You can see all the way past Newport and into Canada and can be rented out for weddings!\nA must if you are in Vermont!",
+          "time": 1501427133,
+          "translated": false
+        },
+        {
+          "author_name": "Marcus Hanwell",
+          "author_url": "https://www.google.com/maps/contrib/113975743934359964892/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhyFh4PfoqKtKzckE-CxeViQksAKP_rBCY0xZyLjoC64F4hiG57A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Really great tour, lots of interesting artifacts and great stories from a small town with lots of history.",
+          "time": 1753579997,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-shelburne-museum",
@@ -961,14 +1547,14 @@
       "website": "http://shelburnemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "6000 SHELBURNE RD",
+      "street_address": "6000 Shelburne Rd, Shelburne, VT 05482, USA",
       "address_line2": null,
-      "postal_code": "5482",
-      "latitude": 44.38364,
-      "longitude": -73.19532,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "postal_code": "05482",
+      "latitude": 44.3730401,
+      "longitude": -73.2317935,
+      "place_id": "ChIJg4CF4tx9ykwRAXqR6OSFu5o",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -997,15 +1583,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Shelburne' from open data; MRD: computed city_tier=3 for Shelburne; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:39Z",
+      "updated_at": "2026-03-14T20:04:29Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
-      "phone": "8029853346",
+      "phone": "(802) 985-3346",
       "is_scoreable": false,
       "content_summary": "The **Shelburne Museum** is a treasure trove of Americana, offering an eclectic collection that spans centuries. Its unique blend of historic buildings and art collections invites visitors to explore the rich tapestry of American life, making it a must-visit for anyone fascinated by culture and history.",
       "content_description": "**Shelburne Museum** is a remarkable 45-acre campus that serves as a vibrant homage to American history and artistry. Founded in 1947 by Electra Havemeyer Webb, the museum showcases over 150,000 objects, including folk art, decorative arts, and textiles, all meticulously curated to reflect the diverse narratives of American culture. Visitors are drawn to its distinctive *galleries*, which range from whimsical *carousels* to intricate *furniture design*, presenting a tangible connection to the past that few museums can offer. The museum stands as a bridge between historical contexts and contemporary reflections, allowing guests to truly immerse themselves in the experience of American life through the ages.  The unique architecture of historic buildings—some dating back to the 18th century—adds to the charm. Each structure not only houses pieces of art but also tells its own story, inviting you to wander through former homes, a lighthouse, and even a steam train.  Visitors will find joy in discovering rare items, such as the **world’s most extensive collection of American folk art**, alongside engaging programs that revitalize traditional crafts, making the museum a hub for learning and creativity. For families, hands-on activities and seasonal events promise an enjoyable experience for all ages.  With its unique blend of history, architecture, and education, the **Shelburne Museum** not only showcases the past but also inspires future generations, ensuring a memorable visit.",
@@ -1018,7 +1605,73 @@
       ],
       "content_generated_at": "2026-01-25T03:49:39Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.shelburnemuseum.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.8,
+      "google_reviews_count": 2104,
+      "google_reviews": [
+        {
+          "author_name": "William Pataky",
+          "author_url": "https://www.google.com/maps/contrib/104178310784792802474/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLQludknKlbWhUMCYuOLkC0PErMny3hvC7aQX7yv3TmgVg49w=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Great museum in Shelburne Vermont.\nWhen we make our yearly pilgrimage to Burlington we always make it a point to stop at the Shelburne Museum.\nThere are multiple buildings with a ton of exhibits including a covered bridge !\nYou can explore at your own place and the exhibits are well marked and explained. There is also a pretty nice concert venue there where we have seen Grace Potter and the Nocturnals a few times.\nIt's is worth the trip If you are in the area.",
+          "time": 1771632218,
+          "translated": false
+        },
+        {
+          "author_name": "Allie Arnaiz",
+          "author_url": "https://www.google.com/maps/contrib/106996929816250452015/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVX6cmKPa_jO9IHRMQ4f_sI7wVgWqfYz1nqT3XoCI_4gUFowpcI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "I was genuinely blown away with how intense this museum was. Though I am not a huge fan of museums, I did thoroughly enjoy roaming around the exhibits, though my dad had the most incredible time ever. This is a good all day, nice weather activity. I like the fact that most stuff is outside. I don't have much insight on the specific exhibits, but I did really enjoy the toy store exhibit.",
+          "time": 1759969974,
+          "translated": false
+        },
+        {
+          "author_name": "Fred",
+          "author_url": "https://www.google.com/maps/contrib/112125196900961184295/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW7tqzLt1DhjsY4IqgxbQMyZrI0vi0O3t5ydkkNc3ranpAEV7h8YQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Huge museum and grounds. Can’t be done in one day luckily the ticket is good for two days. We only had one day so just hit the historic parts. Didn’t have thime for the art portion.\nThe circus carvings were just amazing. Just so much to see at that one building. RR building and station in great condition.\nWish we could go back.\nHighly recommend.",
+          "time": 1760453956,
+          "translated": false
+        },
+        {
+          "author_name": "Mark Savoca",
+          "author_url": "https://www.google.com/maps/contrib/112623533886043634001/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXs367VOFiT2jNMGu3e-McwiemxO3jev_DNfZGCcx1YJ80cFXOg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We had an excellent time at the Shelburne Museum. We originally thought a couple of hours would be enough, but we ended up spending about four hours, including lunch at the café. The exhibits were both interesting and fun, offering a great way to learn about history. There were also plenty of opportunities for photography. Highly recommended!",
+          "time": 1759241722,
+          "translated": false
+        },
+        {
+          "author_name": "Rachana Borkar",
+          "author_url": "https://www.google.com/maps/contrib/108906229768675635567/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhOba2cFIokCDqfpqPfcjV4m2C5GAZ6uF28ycFcgOxRh_Q7Wn5=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Amazing Museum, a good place to visit with the whole family. It has a little bit of everything so everyone’s going to have a good time and I recommend visitors do take the whole day to experience this museum. Bonus points ante free apple picking when season is right. My toddlers had a blast.",
+          "time": 1757273743,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-vermont-center-for-photography",
@@ -1030,14 +1683,14 @@
       "website": "https://vcphoto.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "10 Green Street",
+      "street_address": "10 Green St, Brattleboro, VT 05301, USA",
       "address_line2": null,
       "postal_code": "05301",
-      "latitude": 44.19541,
-      "longitude": -72.49812,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 42.8530304,
+      "longitude": -72.5594275,
+      "place_id": "ChIJ459G-U4a4YkRrk2F3J0lsLs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "Art",
       "topics": null,
@@ -1068,16 +1721,17 @@
         "walker_reciprocal",
         "official_website",
         "https://vcphoto.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:44Z",
+      "updated_at": "2026-03-14T20:04:30Z",
       "notes": "CSV: IRS Museum ID 8405000056 CSV: phone from IRS 990 database CSV: museum type 'Historic Preservation' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 2454291, revenue: 1740940)",
       "city_tier": 3,
       "is_scoreable": false,
-      "phone": "8024798500",
+      "phone": "(802) 251-6051",
       "content_summary": "The Vermont Center for Photography in Brattleboro is a hidden gem that celebrates the art of photography through historic preservation and contemporary exhibits. With a focus on local and regional artists, this museum offers a unique glimpse into the evolving landscape of photographic artistry. Don’t miss the opportunity to experience the creative synergy of past and present through engaging displays and community-driven events.",
       "content_description": "Nestled in the picturesque town of Brattleboro, the **Vermont Center for Photography** stands out as a sanctuary for photography enthusiasts and casual visitors alike. As a pivotal space committed to historic preservation, this museum brings to life the stories captured through the lens over the decades. Here, traditional *black-and-white photography* coexists with cutting-edge contemporary works, creating a rich tapestry that reflects the evolution of visual storytelling.\n\nVisitors to the **Vermont Center for Photography** will find themselves immersed in thoughtfully curated exhibitions that highlight both local talent and historical significance. The collections often feature works by notable Vermont photographers, juxtaposed with pieces that represent national trends in *photographic art*. Architectural enthusiasts will appreciate the museum's charming historic setting, where the blend of modern exhibition spaces and the time-honored structure fosters a unique ambiance that encourages exploration and discovery.\n\nBeyond static displays, the museum hosts regular workshops, artist talks, and community events, inviting visitors to engage directly with the art and artists. Whether you're an avid photographer or simply wish to appreciate the visual arts in a welcoming environment, the **Vermont Center for Photography** promises an inspiring experience that connects you to the heart of Vermont's creative spirit.",
       "content_highlights": [
@@ -1089,7 +1743,138 @@
       ],
       "content_generated_at": "2026-01-25T03:49:44Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.vcphoto.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.9,
+      "google_reviews_count": 49,
+      "google_reviews": [
+        {
+          "author_name": "John",
+          "author_url": "https://www.google.com/maps/contrib/108740940722608646960/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkDD_euvuZFTLRTJmaJ5oqtiTWD2LcOzbukVsFyAyPHrlA7uz_=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "The gallery and exhibits are great. I could spend hours in the photo-thrift shop!",
+          "time": 1773005539,
+          "translated": false
+        },
+        {
+          "author_name": "Twu Films",
+          "author_url": "https://www.google.com/maps/contrib/100454011124945245737/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXi5YvLJCHz4qs9K6xPjxzIMUcOJ-NV1zb4DoKoqHTmAm6UYUyF=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "They helped me out with some screws I had missing on my Pentax K1000! Go Enrico ! Love u",
+          "time": 1765751543,
+          "translated": false
+        },
+        {
+          "author_name": "Tyler Dix",
+          "author_url": "https://www.google.com/maps/contrib/115636430356832570127/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLqn8mjxw3db2-l2OOjbHhXvG-n3bdF72PnwIIWlWTE0SX3-Fo=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Lots of old school cameras in their thrift store at very solid prices! Enrico was super helpful with my decision and helping me get what I was looking for!",
+          "time": 1768947146,
+          "translated": false
+        },
+        {
+          "author_name": "G Benett (mothratwins)",
+          "author_url": "https://www.google.com/maps/contrib/104703430011908814099/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUqzJPA0XW5qSTPRkrqOhAhXPLrURpbg4xjhRNz1lo9h8Hqv2-q=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Welcoming small gallery with darkroom and digital printing resources, a photo book library, and even a shop selling exotic/antique cameras and lenses. The juried exhibition I saw was soulfully curated and captioned. VCP is a rarity, dedicated to upholding an art form, supported by a passionate local community. Stop by.",
+          "time": 1694111908,
+          "translated": false
+        },
+        {
+          "author_name": "Mark Mastrocinque",
+          "author_url": "https://www.google.com/maps/contrib/108648900631070530596/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVm4Vp8A2Oaj-71d0tnFN9fArI2zaO4yyjqU2PgI6RzjPRhLQLMOw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "They have an incredible film camera and equipment store and they sell film. Film is not dead here.",
+          "time": 1755633590,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-vermont-granite-museum",
@@ -1101,14 +1886,14 @@
       "website": "http://www.vtgranitemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "282 7 Jones Bros. Way",
+      "street_address": "7 Jones Brothers Way, Barre, VT 05641, USA",
       "address_line2": null,
       "postal_code": "05641",
-      "latitude": 44.19703,
-      "longitude": -72.49838,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 44.2118129,
+      "longitude": -72.52060689999999,
+      "place_id": "ChIJ9aCPBwMHtUwRkwTMO_tUrDI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Natural History Museum",
       "primary_domain": null,
       "topics": null,
@@ -1139,15 +1924,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.vtgranitemuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Barre' from open data; MRD: computed city_tier=3 for Barre; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:51Z",
+      "updated_at": "2026-03-14T20:04:31Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'NATURAL HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8024764605",
+      "phone": "(802) 476-4605",
       "is_scoreable": false,
       "content_summary": "The Vermont Granite Museum in Barre is a unique destination that celebrates the legacy of granite quarrying and craftsmanship in Vermont. Visitors will discover the fascinating history, art, and industry of granite while exploring interactive exhibits and stunning sculptures, making it a must-visit for nature and history enthusiasts alike.",
       "content_description": "**Vermont Granite Museum** offers an immersive journey into the world of granite, a stone that not only shapes the landscape of Vermont but also reflects its rich history and craftsmanship. As the heart of the nation's granite industry, Barre welcomes visitors to explore the museum’s collections that detail the quarrying process, the artistry involved in stone carving, and the key figures who shaped this industry. From insightful displays to remarkable sculptures carved from the very granite sourced locally, this museum embodies the spirit of innovation and artistry inherent in the region's culture. It’s a testament to how stone can symbolize both strength and beauty. ",
@@ -1160,7 +1946,73 @@
       ],
       "content_generated_at": "2026-01-25T03:49:51Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.vtgranitemuseum.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.6,
+      "google_reviews_count": 154,
+      "google_reviews": [
+        {
+          "author_name": "S ETodd",
+          "author_url": "https://www.google.com/maps/contrib/109687060867242679605/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXDsWCtVTa1KZ0XOJ7aNrXGmFGHblDnqlZuHlpnk2yKsYwtBMOU=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "We were fortunate to have arrived in time to catch most of Scott’s tour. He is an amazing wealth of knowledge about the history, use and artistry of granite. The history along with the artists studio are perfect companions. You get to learn about the history of Barre and see what’s being created with the artists in residence. Highly recommend!!",
+          "time": 1759966691,
+          "translated": false
+        },
+        {
+          "author_name": "Retired “Foodie” Lady",
+          "author_url": "https://www.google.com/maps/contrib/112842803711271700011/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXR31gVejv6aIMGgPAVZyov4MgttN6NScTe0CR7uulXScfigqEm=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "5 months ago",
+          "text": "We visited the Vermont Granite Museum for a guided tour. It was interesting to hear the history and process of the granite industry and how granite is processed from the quarry into headstones, statues, etc. The 2 gentlemen who did the tour were very knowledgeable and definitely passionate about what they do!",
+          "time": 1758989451,
+          "translated": false
+        },
+        {
+          "author_name": "Rejane Castro",
+          "author_url": "https://www.google.com/maps/contrib/101612322235391803774/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVxYRGsNPDlnsXrdYKe6xXiPuaV5o0Qn-JaYSaKlSrvWREXJ3wu=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Very well curated museum that tells the history and industry of granite production in Vermont from tools used, labor conditions and immigrant groups that joined the workforce in the early 1900s.  Ms. Sue is a knowledgeable and pleasant museum guide that made the visit even more special! Thank you!",
+          "time": 1753665819,
+          "translated": false
+        },
+        {
+          "author_name": "Eric Marshall",
+          "author_url": "https://www.google.com/maps/contrib/109359823484258354300/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJdNcou0i6Ipt_NQf20CU7HGUgg4MbUrk31YE97XzbdbKicOw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "The Barre (pronounced Barry) Gray Granite is world renowned.  We enjoyed the sculpter Miller's presentation of how he carved the hard rock.  He was working on a bear and pink pig.",
+          "time": 1752433546,
+          "translated": false
+        },
+        {
+          "author_name": "Leonard Klepner",
+          "author_url": "https://www.google.com/maps/contrib/111711149349019973301/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWx7E5xhpmp_bKIYFwUZJchVBtA30fWDs01pniycJNiBI7gm1wr=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "So much could be said about a visit experience at a well kept secret.  In comparison to other venerable sites that present and celebrate aspects of Vermont's industrial heritage, this place announces how special it is upon one's arrival.  The exterior structure of the Granite Museum is not just intact. It is in exemplary condition.\n\nInside is an endless and well documented presentation of countless photos, artifacts, sculptures, craft and the artistry, culture, history and people at the heart of the granite industry in Vermont. Accounted for in addition to the industrial barons who initiated and directed the enterprise are the skilled immigrant stone cutters, masons, sculptors and workers who pit themselves against the challenges to be surmounted in transforming the stone from its natural state to the near endless forms it takes in service to civiization.\n\nMost fortunate we were to enter the sculpting studio where we met and spoke at length to Chris Miller, the veritable dean of Vermont sculptors.  Mr. Miller permitted us to witness his technique in moving a huge granite slab onto three pillars that were major features of a commission on which he was progressing.  Now that's entertainment!",
+          "time": 1666055605,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-unknown-vermont-historical-society",
@@ -1179,7 +2031,7 @@
       "longitude": -72.4984881,
       "place_id": "ChIJ7SXbK9AGtUwRnvjxIXzkfGk",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -1216,7 +2068,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Vermont' from open data; MRD: computed city_tier=3 for Vermont; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:49:56Z",
+      "updated_at": "2026-03-14T20:04:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(802) 479-8500",
@@ -1372,7 +2224,7 @@
       "longitude": -72.51864979999999,
       "place_id": "ChIJFX_eQCDY4YkRwbwWHxo87W0",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -1409,7 +2261,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Vermont' from open data; MRD: computed city_tier=3 for Vermont; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:50:02Z",
+      "updated_at": "2026-03-14T20:04:32Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(802) 457-1822",
@@ -1503,14 +2355,14 @@
       "website": "http://www.hildene.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1005 Hildene Rd, Manchester, VT 05254, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.16285,
-      "longitude": -73.07033,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "05254",
+      "latitude": 43.1409543,
+      "longitude": -73.0810023,
+      "place_id": "ChIJkUggYPtf4IkRzzCKXt2goww",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1541,12 +2393,13 @@
         "walker_reciprocal",
         "official_website",
         "http://www.hildene.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Manchester; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T03:50:10Z",
+      "updated_at": "2026-03-14T20:04:33Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -1561,7 +2414,139 @@
       ],
       "content_generated_at": "2026-01-25T03:50:10Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(802) 362-1788",
+      "website_google": "https://hildene.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1630"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1630"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:30 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 4:30 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: 10:00 AM – 4:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 1349,
+      "google_reviews": [
+        {
+          "author_name": "Manuil Tonev",
+          "author_url": "https://www.google.com/maps/contrib/115078453481516629163/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVr-ARybf4HEfPSOqWivQFltW99TLRnxlfFmXPCtkrsXwONVTaFvg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "What a fascinating time capsule that we are incredibly lucky to have been preserved and made available to the public, all thanks to the generous donations from local and national benefactors.  The tour guides are fantastic and happy to indulge in engaging storytelling waving national and international history and figures. Plan to take a few hours to enjoy, especially during warmer months when you can tour the farm and participate in outdoor activities. Both kids and adults had plenty to learn and looking forward to coming back during a different season.",
+          "time": 1772403054,
+          "translated": false
+        },
+        {
+          "author_name": "Ingrid Hill",
+          "author_url": "https://www.google.com/maps/contrib/103806950693080538047/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKcht-LNTAsyioVJEXvl0-BTJF-a5yGgr5PGR80EN7zGecouA=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Beautiful home and flawless  gorgeous gardens.  Here on Aug 31 and garden was in full bloom.  One of 3 remaining Lincoln top hats on display and it has a fascinating story of provenance.  Ask a docent to tell you...esp the part about the Dorset Inn piano!  The organ is amazing...what a birthday gift!  Do NOT miss the restored Pullman train car...it is spectacular and a must see.",
+          "time": 1756675294,
+          "translated": false
+        },
+        {
+          "author_name": "Wendi Richards",
+          "author_url": "https://www.google.com/maps/contrib/108828090484779818441/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYPZnTdMs6agdE-gc2A2NzExTkg1iQ6DUQLq6X9rynBwh4SkwxBw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Visiting the Hildene Lincoln family home was an incredible experience! The house is beautifully preserved and truly captures the feel of the 1905 era. The docents were wonderfully knowledgeable, sharing history and details that brought the home to life.\n\nEven though it was a rainy day, the property itself was stunning and well worth exploring. One of the highlights was the restored Pullman train car—absolutely fascinating! John, the docent, did an amazing job explaining the history and significance of the car, making it one of the most memorable parts of the visit.\n\nA truly special place to learn, explore, and appreciate history. Highly recommend!",
+          "time": 1758026892,
+          "translated": false
+        },
+        {
+          "author_name": "TR Fowl",
+          "author_url": "https://www.google.com/maps/contrib/104401754474820117208/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXJSV_jZ4EV1Dm6FAQdowmj3A9fYUhAY87L8YQoBIFNz8ykn5_zGA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The Hildene, Lincoln Family Home, was the home of Abe's son and family. You enter and purchase tickets at the Visitor's Center where a map is provided to guide you around the property. While you can walk it, there are also trams to take you from site to site. The main family home is a two story dwelling with all the artifacts of the family on display. A garden in back and view of the valley reveals why this location was selected. The observatory is intriguing, and the Pullman train car used on location but now just for viewing is a rare sight. The goat farm is a working stable with milking daily producing gallons. The Hildene is definitely worth the several hours of investigation you can invest.",
+          "time": 1760746924,
+          "translated": false
+        },
+        {
+          "author_name": "Cher Ann",
+          "author_url": "https://www.google.com/maps/contrib/105000656322745556649/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXD0Fg6A_4gwzKwUBh5_i1p8ztL_QW-2KpZZ-slxj8HHkSaZsUC=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Well worth the trip! Beautifully restored home of the Lincoln family. Some historic homes can feel like a museum but this one is special!",
+          "time": 1761340055,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-vt-manchester-southern-vermont-arts-center",
@@ -1573,14 +2558,14 @@
       "website": "http://www.svac.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "05254 802.362.1405 Mailing Address Southern Vermont Arts Center PO Box 617 Manchest",
+      "street_address": "860 Southern Vermont Arts Center Dr, Manchester, VT 05254, USA",
       "address_line2": null,
-      "postal_code": "05255",
-      "latitude": 43.1872983,
-      "longitude": -73.0764936,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "05254",
+      "latitude": 43.1769934,
+      "longitude": -73.08076,
+      "place_id": "ChIJh7lQRvxe4IkRdh2IRW5HBb0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1604,24 +2589,25 @@
       "historical_context_score": 2,
       "priority_score": 19,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Southern Vermont Arts Center provides local context and preserves cultural narratives relevant to the immediate community, but lacks a deep or scholarly permanent collection. The center's programming and reputation are primarily regional, aligning with the provided evidence.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence describes a multi-disciplinary arts center with galleries featuring permanent and rotating exhibits and a large sculpture park, but provides no indication of significant Impressionist holdings, so Impressionism is scored negligible. Sculpture park and contemporary-oriented programming are plausible, but without collection specifics Modern/Contemporary is kept minor and overall collection tier is scored small with primarily local reputation.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.svac.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Manchester; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "8023621405",
+      "phone": "(802) 362-1405",
       "is_scoreable": true,
       "content_summary": "Set on a wooded hillside in Manchester, the Southern Vermont Arts Center is a rewarding stop for art lovers who enjoy discovering regional talent in a serene, gallery-focused setting. Expect thoughtfully curated exhibitions—often spotlighting Vermont and New England artists—alongside seasonal shows, community-based programming, and an experience that feels both intimate and professionally run. It’s a place to slow down, look closely, and connect with the visual culture of the Green Mountains, with the added pleasure of a scenic campus-like visit.",
       "content_description": "**Southern Vermont Arts Center** offers a distinctly Vermont approach to museum-going: a calm, contemplative setting paired with **competently curated exhibitions** that emphasize the region’s creative voices. Rather than a blockbuster, encyclopedic collection, SVAC shines through **rotating shows**—often highlighting Vermont and New England artists working in painting, sculpture, photography, and craft traditions. For visitors, that means there’s a strong sense of discovery: you’re likely to encounter contemporary work in dialogue with local landscapes, material culture, and the state’s long history of artist communities.\n\nArchitecturally, SVAC’s appeal is tied to its **rural campus atmosphere**—a museum visit here feels like a retreat. The galleries are approachable and human-scaled, encouraging close looking and repeat passes through an exhibition. Expect a pace that favors absorption over crowds, with thoughtful wall texts and a curatorial approach that frames works within broader *regional modernism* and *contemporary practice* without overwhelming newcomers.\n\nFor art-focused travelers, the visitor experience is the real strength: this is an ideal stop between Manchester’s village shopping and the area’s outdoor beauty. Plan time to linger—SVAC rewards those who treat it less like a checklist and more like an encounter with place. If your favorite museum moments involve meeting artists you didn’t know you were looking for, SVAC delivers that quiet, memorable kind of surprise.",
@@ -1640,8 +2626,150 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "https://www.svac.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 176,
+      "google_reviews": [
+        {
+          "author_name": "Mary Ann",
+          "author_url": "https://www.google.com/maps/contrib/117285265615298637326/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9QGocSb2TdA7q9OdSQSFp0eRYe42BT3-CDeZBM7UZ2CO4B32m=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "My husband took me to CurATE in Vermont for \"linner\" on my birthday. The only thing better than the grounds at this establishment and the scenery was the food. Chef prepared us a fresh scallop and creamy corn appetizer that was \"to die for\" delicious 😋.  I had the salmon for lunch, Rick had the ham, tomato and cheese quiche, which, in a word, was YUM. I had the decadent carrot cake for dessert, which they adorned with a birthday candle for me, and Rick had his beloved ice cream, vanilla and strawberry.  We also thought the bill at the end was reasonable for this expertly prepared and served food in a beautiful, clean setting. Many thanks to Leila, who was delightful,  took perfect care of us, and had us leaving happy. Treat yourself soon to this perfect gem in Southern Vermont. You know you deserve it!",
+          "time": 1730636747,
+          "translated": false
+        },
+        {
+          "author_name": "Raychael Chavez Coombes",
+          "author_url": "https://www.google.com/maps/contrib/106067589133500320740/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWrgCZDTtnhhq9XUKEzlfFUjBKLLeszPdvlnqrw6t92BIWX2_FyhA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 3,
+          "relative_time_description": "2 years ago",
+          "text": "This place was nice. Loads to see. The story of the dress was so moving. I was not please that there is no elevator in the art gallery. My father in law was only able to see one floor. I took loads of photos for him but it's not right that he was not able to see it for himself. There was no additional discount for only seeing 1 floor of the gallery. The lady at the front seemed to not be bothered and was not apologetic in the least. There is a restaurant in the gallery, however we did not eat there.",
+          "time": 1691439018,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel Newquist",
+          "author_url": "https://www.google.com/maps/contrib/111724273041892296413/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJcYrFXj8oXKmi5CSZbAW5mgwOea3OQ_B-db9dzPbIogY0hNQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "An interesting choice in winter, but the galleries were nice. It is more difficult to enjoy the outdoor sculptures. Some can be seen, while others would require  trek through the snow. But the surrounding views are amazing!",
+          "time": 1680246873,
+          "translated": false
+        },
+        {
+          "author_name": "Batman The Dark Knight",
+          "author_url": "https://www.google.com/maps/contrib/106423474481961214470/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVdrTNQ3v6p47kcdyaGCNNm76Vhv_JDVE83Dkjh23Cp54AmbTiR9Q=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "Found this place after visiting Mt. Equinox. Pics online looked cool so decided to check it out. There's a long driveway up to the parking lot, with around 20-30 sculpture's scattered throughout fields and trees along the driveway. It's about a mile long or so. At the top near the parking lot there are a couple different grassy areas with sculpture's along with a big field. The art museum building is on the smaller side, with a few exhibits throughout. They close around 4:30, we got there almost at closing, so we were able to quickly look around for free. All in all, it was a good stop to pass some time.",
+          "time": 1655085648,
+          "translated": false
+        },
+        {
+          "author_name": "Zarina",
+          "author_url": "https://www.google.com/maps/contrib/103696902495547969115/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUCw2vrEBhb6U046uWyjsDda2pL6sj9sLiXvMijbjXnlG5pSIPVnw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "I truly loved it here.  What a unique and wonderful experience.  Amazing for all wondrous souls. Parking available on site.  Great open outdoor area with so much beauty(nature and art). Indoor museums(exhibit halls) inside park as well.  Interesting sculptures throughout park,  story telling trails that I truly loved ( especially the \" already a butterfly - a meditation story\") that takes you into the forest,  and shows you what type of plants/ trees your amongst while reading the story as a puzzle.  There's gift shops as well.  I highly recommend this beautiful location that truly is a journey and an adventure.\n\nPs: I loved that book so much that my partner went and bought it for me in the Northshire bookstore ( which I highly recommend as well).\nIg: zarinazzzgab for more",
+          "time": 1636577012,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

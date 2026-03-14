@@ -7,20 +7,20 @@
       "museum_id": "usa-dc-unknown-american-university-museum",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "Washington, D.C.",
+      "city": "Washington",
       "museum_name": "American University Museum",
       "alternate_names": null,
       "website": "http://www.american.edu/cas/museum",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "4400 Massachusetts Ave NW, Washington, DC 20016, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.93694,
-      "longitude": -77.08947,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "20016",
+      "latitude": 38.93871499999999,
+      "longitude": -77.086236,
+      "place_id": "ChIJs9U8YuPJt4kRdJhpW4Zx6kc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -51,15 +51,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.american.edu/cas/museum",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Access forbidden (403) for http://www.american.edu/cas/museum",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:35:15Z",
+      "updated_at": "2026-03-14T19:52:51Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2028851300",
+      "phone": "(202) 885-1300",
       "is_scoreable": false,
       "content_summary": "The American University Museum in Washington, D.C. is a vibrant hub of contemporary art and culture, making it a must-visit destination for art enthusiasts and travelers alike. Nestled within the heart of the university campus, this unique museum offers a dynamic blend of exhibitions, workshops, and cultural events that truly celebrate the diversity of artistic expression.",
       "content_description": "**American University Museum** is not just a place to view art; it’s an immersive experience that intertwines academia with the vibrant world of contemporary art. Established as part of American University, this museum showcases a diverse range of exhibitions that highlight both local and international artists. Visitors can explore works spanning various mediums, from *painting* and *sculpture* to *mixed media* installations that challenge traditional boundaries. Each exhibition is carefully curated, reflecting themes that resonate with contemporary social issues, cultural dialogues, and innovative artistic practices.  Moreover, the museum regularly hosts artist talks, workshops, and panel discussions, providing an enriching experience that fosters a deeper understanding of the artworks on display.  In addition to the exhibits, the museum's architecture is noteworthy with its open, inviting spaces that encourage exploration and contemplation. The gallery layout enhances the interactive experience, allowing visitors to connect with the art in a meaningful way.  Whether you are an art aficionado or simply curious, your visit to **American University Museum** will leave you inspired by the compelling narratives expressed through art. Don’t miss the chance to engage with thought-provoking works that speak to the complexities of today's world.  Experience creativity, inspiration, and dialogue in this extraordinary space.",
@@ -72,26 +73,157 @@
       ],
       "content_generated_at": "2026-01-25T01:35:15Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.american.edu/museum",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 94,
+      "google_reviews": [
+        {
+          "author_name": "Richard R",
+          "author_url": "https://www.google.com/maps/contrib/110582426281053879779/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIakXN91zds6QprG_O_pMmZfapI8xUBrPg9yPvmFHz-y4sBaw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This is a surprisingly good small museum.  Three floors with different exhibitions on each. It's also free to enter. Liking each exhibition is a personal decision but the lighting and setting are very good.",
+          "time": 1758374734,
+          "translated": false
+        },
+        {
+          "author_name": "Bonnie Wolfe",
+          "author_url": "https://www.google.com/maps/contrib/106790773845402076459/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtLetM2u0PKt12kBCTbso7znKjF_k5Y16atg0uH-ESMVqjeVQY=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The opening of the Katzen Fall 2024 Exhibition was an inspiring experience. I was especially thrilled to see \"Ralph Steadman: And Another Thing.\" As Tim Robbins aptly put it, \"Steadman's art is visceral and alive; it rips from the heart and penetrates the psyche,\" and this collection certainly lived up to that description. Joseph Holston's \"Call and Response\" exudes a cool jazz rhythm-you can almost hear the music as you immerse yourself in his vibrant work. Connie Imboden's \"Endless Transformations\" uses a photography technique with mirrors to create haunting, thought provoking images that linger in your mind. In contrast, \"The Corcoran Legacy Collection of Nineteenth and Early Twentieth-Century American Landscape Paintings\" feels like a nostalgic glimpse into a distant world. There were even more fabulous exhibitions on display, but suffice it to say, this is a must-see Fall event!🤩😍👏",
+          "time": 1726108318,
+          "translated": false
+        },
+        {
+          "author_name": "Alina Kirshon-Goldman",
+          "author_url": "https://www.google.com/maps/contrib/108941317808269212072/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXwxD7Dh5-MQHZdwd1FXc-QF1mB0yEWvx8bMtmoWTGnRB-gtS3-fA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Multiple exhibitions in one location. It was great to see local and international artists.",
+          "time": 1757378489,
+          "translated": false
+        },
+        {
+          "author_name": "aki okuda",
+          "author_url": "https://www.google.com/maps/contrib/105844850958720822491/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVycpyTlKoEKeQM3gKKIMlzjCWZY-_CBx-9xsksZvLYGHbQHA=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Not a big but great museum",
+          "time": 1762179807,
+          "translated": false
+        },
+        {
+          "author_name": "Pavel Vančát",
+          "author_url": "https://www.google.com/maps/contrib/106157263283082806196/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWHtPwEdWbqYrQ8NNV5VN_OR_x7ZaHcSEgUIep7Qg0ptEXFLJNVxQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Impressive museum with rich variety od contemporary exhibitions.",
+          "time": 1757273178,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-unknown-corcoran-gallery-of-art",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "Washington, D.C.",
+      "city": "Washington",
       "museum_name": "Corcoran Gallery of Art",
       "alternate_names": null,
       "website": "http://www.corcoran.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "500 SEVENTEENTH ST NW",
+      "street_address": "500 17th St NW, Washington, DC 20006, USA",
       "address_line2": null,
       "postal_code": "20006",
-      "latitude": 38.89616,
-      "longitude": -77.03946,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 38.89593929999999,
+      "longitude": -77.04009350000001,
+      "place_id": "ChIJu4f6-Tm2t4kRvcI1p1lDdww",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -115,23 +247,24 @@
       "historical_context_score": 3,
       "priority_score": 9,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Corcoran Gallery of Art is no longer operational, and its collection has been distributed to other institutions, leading to a score of 0 for collection-based strength. Its reputation remains as a national art destination, as indicated by the prior reputation score of 1.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The Corcoran held an important collection largely concentrated in American art; the evidence does not indicate major Impressionist holdings, suggesting at most minor representation. As a long-running major U.S. art museum (founded 1869) with a substantial collection (19,456 works) and an associated art school, it likely had moderate modern/contemporary coverage and decent but not clearly documented historical framing. Its prominence in Washington, D.C. supports national-level reputation, though ",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.corcoran.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 5,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.corcoran.org: HTTP 500 for http://www.corcoran.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "2026391700",
+      "phone": "(202) 994-1700",
       "is_scoreable": true,
       "content_summary": "A landmark in Washington, D.C.’s cultural history, the Corcoran Gallery of Art is best known for its legacy as one of America’s earliest major art museums and a champion of American artists. Though the Corcoran’s collection is no longer displayed on-site, the building remains an architectural and institutional touchstone—especially for visitors interested in the city’s museum story beyond the Smithsonian. Come for the history of patronage, the spirit of ambitious exhibitions, and a sense of how Washington became an art capital.",
       "content_description": "**The Corcoran Gallery of Art** occupies a distinctive place in Washington’s art life: founded in the 19th century by banker and philanthropist William Wilson Corcoran, it helped set a precedent for private patronage shaping a national cultural scene. For generations, the Corcoran was closely associated with advancing **American art**, mounting influential exhibitions and presenting ambitious surveys that broadened what Washington audiences could see. While the museum no longer operates in its original form and its holdings are not presented there as a single, intact collection, the Corcoran name still resonates with art lovers as a signpost in the evolution of museum culture in the United States.\n\nArchitecturally, the Corcoran’s historic home is itself a work of civic artistry—an elegant, grand-scale museum building designed to feel ceremonial, with an emphasis on **monumental galleries** and a dignified sense of procession. Visiting the site is rewarding for travelers who appreciate museum architecture: the experience evokes the 19th-century ideal of the art museum as a temple-like public space, where light, proportion, and decorative detail heighten the act of looking.\n\nFor today’s art-focused traveler, a Corcoran visit is less about “checking off” a permanent collection and more about engaging with Washington’s cultural infrastructure—pair it with nearby institutions to trace the city’s shifting art map. Come with an eye for the building’s atmosphere, the legacy of exhibition-making, and the wider story of how *American art* has been promoted, debated, and displayed in the capital.",
@@ -149,26 +282,93 @@
       "collection_based_strength": 0,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "http://corcoran.gwu.edu/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.3,
+      "google_reviews_count": 48,
+      "google_reviews": [
+        {
+          "author_name": "J LA",
+          "author_url": "https://www.google.com/maps/contrib/106760875315873969061/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-Vf9Sf-lO4IS1Y5l0SxSdDeb_I79jGIp4s7kUYMa9OwkNmbN6=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Stunning architecture 🙌 the lion statues and door knockers on the beautiful doors are exquisite.",
+          "time": 1769135423,
+          "translated": false
+        },
+        {
+          "author_name": "Nea Bacolod",
+          "author_url": "https://www.google.com/maps/contrib/113596917461931338078/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVe1d7Vs7nEEesqO4GfBWpFGGr11nxMabVmz51wiJ-nTf_f1G6T=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "The Corcoran boasts a beautiful and striking facade, showcasing its rich architectural charm. The building’s design is elegant and adds to the historical and artistic ambiance of the area.\n\nWhether you're admiring it from the outside or exploring what it has to offer inside, it’s a visually captivating place with a deep cultural significance.",
+          "time": 1743630460,
+          "translated": false
+        },
+        {
+          "author_name": "Sam Lee",
+          "author_url": "https://www.google.com/maps/contrib/115138220370271598367/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXbFDNjXzPTnhqPD-Q0jWhmlj57Eqhu83vJAhrMcqrra9RGVNHb=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Art school located in a beautiful building. Student's artworks are located mainly in lounge areas. They also have events/exhibits after-hours, check website.",
+          "time": 1695248263,
+          "translated": false
+        },
+        {
+          "author_name": "Hilda Kroll",
+          "author_url": "https://www.google.com/maps/contrib/100441671474418921617/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLpqdr2HAYYR6GyteJDIodyhpe66mZSOWG9OWV3T6jnXuNy2w=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "With the Smithsonian and National Gallery currently closed, now is the perfect time to visit the Corcoran School galleries and discover the variety of exhibits.",
+          "time": 1761841198,
+          "translated": false
+        },
+        {
+          "author_name": "Gigi Wes Travels",
+          "author_url": "https://www.google.com/maps/contrib/113435890238270402639/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVo_R_L-WrJmvizYg_AiAQFNsra2YA_OxvSQaAYfcsqmV2UayM=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Attended a graduate open house and learn a lot about the program and met some staff of other programs and they were fabulous to hear from.",
+          "time": 1571418247,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-dc-unknown-dumbarton-house",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "Washington, D.C.",
+      "city": "Washington",
       "museum_name": "Dumbarton House",
       "alternate_names": null,
       "website": "http://dumbartonhouse.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1703 32ND STREET NW",
+      "street_address": "2715 Q St NW, Washington, DC 20007, USA",
       "address_line2": null,
       "postal_code": "20007",
-      "latitude": 38.91465,
-      "longitude": -77.06352,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 38.9108454,
+      "longitude": -77.05586319999999,
+      "place_id": "ChIJ11kD18q3t4kR3GeZMERc02g",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Botanical Garden",
       "primary_domain": null,
       "topics": null,
@@ -197,12 +397,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:35:33Z",
+      "updated_at": "2026-03-14T19:52:53Z",
       "notes": "CSV: museum type 'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "is_scoreable": false,
@@ -217,26 +418,93 @@
       ],
       "content_generated_at": "2026-01-25T01:35:33Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(202) 337-2288",
+      "website_google": "http://www.dumbartonhouse.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.3,
+      "google_reviews_count": 207,
+      "google_reviews": [
+        {
+          "author_name": "Stephen M",
+          "author_url": "https://www.google.com/maps/contrib/114512403632911442126/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyqcsjujQ-H1fJFlI89aUYqpcXPC_S11Kn1Fd5sF3Ow2y7sXNG=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "We had our wedding at Dumbarton House last year. They have a great team and are well prepared to work with repeat vendors to ensure success. For anyone considering this venue: The site allows for great \"sectioning\" where dinner setup, cocktail hour, and family photos can all be happening on site simultaneously with no one bumping into each other. Highly recommend the garden for cocktail hour, just know you'll need lighting. Doing this frees up the entire \"upper deck\" of house, upper terrace, north garden etc for photos with no one seeing or in your way.",
+          "time": 1672786344,
+          "translated": false
+        },
+        {
+          "author_name": "Fred Pineau",
+          "author_url": "https://www.google.com/maps/contrib/106781449395322418281/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVYQGRaboF1k-F3d5x3kgiJgBKdrYly1ySBAJkhys6P9XIeBYuHlw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "Dumbarton is a remarkable venue for a small and intimate wedding. They have a beautiful garden (with a lovely brick backdrop) for the ceremony and an outdoor cocktail hour. We had the reception in a lower level tented area complete with interior bar and dance floor. Street parking is difficult to find.",
+          "time": 1685299304,
+          "translated": false
+        },
+        {
+          "author_name": "WI WO",
+          "author_url": "https://www.google.com/maps/contrib/106645797430177329956/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVSazFCCOyso0G2E4tKkdP7ZQ7aaU9NDyy3Dh9NtSX_WrdDCqo=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Conservative of love for Dumbarton House can be experienced in every room. If visiting DC and you want to experience an old era this is a beautiful place to visit. It is wheelchair accessible the staff friendly and free. Donations suggested.",
+          "time": 1697823410,
+          "translated": false
+        },
+        {
+          "author_name": "Austin Graff",
+          "author_url": "https://www.google.com/maps/contrib/101810068829626301924/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUic_vh6O2H8gaV2mtpmlu0OLJpH-eU28X1Ln0ZPhzek8xRUT2x=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "Dumbarton House is a historic house in Georgetown built in 1800 when the federal government was in Philadelphia and not D.C. It was a private residence until 1928 when it became the National Society of the Colonial Dames of America HQ. Four years later, they opened a house museum inside.\n\nThey offer tours for $10 and it takes you through the house museum on the ground floor and the exhibit on the second floor, which rotates every six months. There's also a large garden on the property as well.\n\nDumbarton House also hosts some of the most unique events in the city- 1) The Dumbarton House in Georgetown hosts some of the most unique events in the city- 1) Jane Austen movie nights on July Wednesdays in the garden, 2) Ice cream making on the lawn in honor of First Lady Dolley Madison, 3) Afternoon tea for families, and 4) Chamber music concerts.\n\nIf you love events and history, it's worth a visit. The staff are also very friendly and very knowledgeable about D.C. and the museum industry.",
+          "time": 1651628267,
+          "translated": false
+        },
+        {
+          "author_name": "Skye Brockman",
+          "author_url": "https://www.google.com/maps/contrib/118376883030869553443/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ4YIz7NuaZNoSli5gSxptf5a6kFgqw62eZITa_TpTMsKeUiA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Stunning Georgetown venue. I am a photographer who found their staff to be great and the entire place to be picture perfect.",
+          "time": 1625193037,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-unknown-international-arts-and-artists-hillyer-art-space",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "NW Washington",
+      "city": "Washington",
       "museum_name": "International Arts and Artists’ Hillyer Art Space",
       "alternate_names": null,
       "website": "http://www.artsandartists.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "9 Hillyer Court",
+      "street_address": "9 Hillyer Ct NW, Washington, DC 20008, USA",
       "address_line2": null,
       "postal_code": "20008",
-      "latitude": 38.91184,
-      "longitude": -77.04839,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.912201,
+      "longitude": -77.04727299999999,
+      "place_id": "ChIJKQ8A0ci3t4kRD7QNwQsLDA4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -267,15 +535,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.artsandartists.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:35:41Z",
+      "updated_at": "2026-03-14T19:52:54Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2023380680",
+      "phone": "(202) 338-0325",
       "is_scoreable": false,
       "content_summary": "The **International Arts and Artists’ Hillyer Art Space** in NW Washington is a dynamic platform for innovative contemporary art that aims to connect artists and the public. Visitors can immerse themselves in unique exhibitions and engage with a diverse array of artistic expressions, making it a must-see for anyone interested in the heartbeat of today's art scene.",
       "content_description": "**International Arts and Artists’ Hillyer Art Space** stands out as a vibrant hub for contemporary art in the heart of Washington, DC. This general museum isn't just a gallery; it embodies a commitment to promoting international artists who push the boundaries of creativity and challenge perceptions. The space, both intimate and inviting, showcases rotating exhibitions that spotlight the bold, thought-provoking work of emerging and underrepresented artists from around the globe. As visitors walk through its thoughtfully curated spaces, they can expect to encounter a diverse spectrum of artistic mediums, including painting, sculpture, photography, and installation art. Each exhibition invites dialogue and introspection, making the experience deeply personal and communal at once. Now situated in an architecturally appealing setting, the museum encourages exploration and encourages the gravity of the displayed works to resonate with guests.  \n\nIn addition to its stunning exhibitions, **Hillyer Art Space** offers a range of public programs, including artist talks, workshops, and community engagement initiatives that further bridge the gap between artists and audiences. This interactive approach to art is what sets **Hillyer** apart from typical museums: visitors are not just passive observers but active participants in the gallery's mission. Whether you are a seasoned art connoisseur or a curious newcomer, **Hillyer Art Space** provides an enriching environment that fosters appreciation for contemporary creativity and cultural exchange, making it a genuinely unique destination in Washington's cultural landscape.",
@@ -288,7 +557,148 @@
       ],
       "content_generated_at": "2026-01-25T01:35:41Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://athillyer.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 6:00 PM",
+          "Wednesday: 12:00 – 6:00 PM",
+          "Thursday: 12:00 – 6:00 PM",
+          "Friday: 12:00 – 6:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 53,
+      "google_reviews": [
+        {
+          "author_name": "Taina Litwak",
+          "author_url": "https://www.google.com/maps/contrib/104963326716980220084/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXQ-PjepWAhhgGzC-wYW0ouBeaU8IBqJGDN19EyNVWi-hMTezz2=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This is a must see gallery - 3 rooms, 3 solo shows which change more or less monthly. Great curation. Important DC Non-Profit Arts Space.",
+          "time": 1766507203,
+          "translated": false
+        },
+        {
+          "author_name": "Julieta Tetelbaum",
+          "author_url": "https://www.google.com/maps/contrib/111210398481990005988/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMEUqqXtOxuj-PBE0xsAoiJYi-74xNKU9SWCsC-atE9cZyMMPn=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Honored to have my solo show, ‘Black Chalk Intimacy,’ here for a month—so grateful! The space, the energy, the support—it was electric. Big love to the gallery!",
+          "time": 1744826065,
+          "translated": false
+        },
+        {
+          "author_name": "Janathel Shaw",
+          "author_url": "https://www.google.com/maps/contrib/103760362090993296247/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVMCliqeDczD11icIIJ_926FOMzfuhXDG1wEFlmHC9OxL41Gdh4tA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "It's in a great location (behind the Phillips Collection (private museum).  They show the work of American (local) and International artists.  I went to a riveting artist talk of James Brown Jr, Felt artist.",
+          "time": 1708290804,
+          "translated": false
+        },
+        {
+          "author_name": "Tobias Shaw",
+          "author_url": "https://www.google.com/maps/contrib/100275421459466380639/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWTwL4XQI_e52tDqLj_ZO58aHgZQBGOIPbmIJQhV1vBAQzVhxtp=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Charming 3 room gallery.  I’ve seen a few shows here and the curation has been very interesting.  First Friday of the month they have extended hours 6-8pm usually with the artists present.  Good way to see the shows.",
+          "time": 1754504164,
+          "translated": false
+        },
+        {
+          "author_name": "J Foodgeek",
+          "author_url": "https://www.google.com/maps/contrib/114746997797051978207/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKhSnKxybvicXdpmdAbTIRfGvtF_P2nmNCMc4qbUbC7ihX7jA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Great art center that has three exhibits that are changing and also has the artists talk at the art openings, on 1st Friday, and on the third Thursday Dupont art Walk.",
+          "time": 1676785626,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-unknown-jewish-historical-society-of-greater-washington-lilian-albert-small-jewish-museum",
@@ -307,7 +717,7 @@
       "longitude": -77.0148742,
       "place_id": "ChIJRSJWXom3t4kRzZklOUS4c8k",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
@@ -344,7 +754,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.jhsgw.org; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:35:49Z",
+      "updated_at": "2026-03-14T19:52:54Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(202) 789-0900",
@@ -497,20 +907,20 @@
       "museum_id": "usa-dc-unknown-kreeger-museum",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "Washington, D.C.",
+      "city": "Washington",
       "museum_name": "Kreeger Museum",
       "alternate_names": null,
       "website": "http://www.kreegermuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "2401 FOXHALL ROAD NW",
+      "street_address": "2401 Foxhall Rd NW, Washington, DC 20007, USA",
       "address_line2": null,
       "postal_code": "20007",
-      "latitude": 38.92284,
-      "longitude": -77.08888,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 38.9219585,
+      "longitude": -77.0887965,
+      "place_id": "ChIJOwtLbBC2t4kRITVHc77X4mE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -541,15 +951,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.kreegermuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:35:55Z",
+      "updated_at": "2026-03-14T19:52:55Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "2023373050",
+      "phone": "(202) 337-3050",
       "is_scoreable": false,
       "content_summary": "Nestled in the heart of Washington, D.C., the **Kreeger Museum** offers a unique blend of art, architecture, and natural beauty. Its intimate setting and impressive collection make it a hidden gem worth exploring for both art lovers and casual visitors alike.",
       "content_description": "**The Kreeger Museum** is more than just a place to view art; it's an immersive experience that harmonizes visual artistry with architectural elegance. Founded by David and Carmen Kreeger, the museum opened its doors in 1994 and is celebrated for its unique blend of *Impressionist* and *Post-Impressionist* paintings, along with notable works of *modern* and *contemporary* art. The collections include pieces by renowned artists such as *Picasso*, *Monet*, and *Matisse*, showcasing a diverse array of styles and mediums that invite visitors to engage with the evolution of art across different periods. The museum's intimate atmosphere allows for a contemplative experience, where every corner reveals something intriguing, encouraging visitors to linger and reflect. In addition to its art, the museum is set within a stunning building designed by architect *Philip Johnson*, celebrated for both its aesthetics and its seamless integration with the surrounding landscape. The lush gardens, featuring sculptures and tranquil pathways, compel you to wander and enjoy the interplay of nature and artistry. Here, you can find inspiration in every step, whether you’re viewing a striking *abstract sculpture* or enjoying the serene views of the adjoining gardens. Each visit is a personal journey through artistic expression and architectural brilliance, making the **Kreeger Museum** a must-see destination in the nation's capital.",
@@ -562,26 +973,157 @@
       ],
       "content_generated_at": "2026-01-25T01:35:55Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.kreegermuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 431,
+      "google_reviews": [
+        {
+          "author_name": "John Vogtman",
+          "author_url": "https://www.google.com/maps/contrib/112961457818747511964/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVzHOJGdiTc4K_LqbowUVP_PX5LNMX3kQ3x4YNknWqwM4z5Jumn=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Well worth a visit to see this Architectural masterpiece. Make sure you go outside, the exterior sculpture garden and reflecting pool present some of the best views. The staff were also friendly and helpful.",
+          "time": 1770351189,
+          "translated": false
+        },
+        {
+          "author_name": "Claire",
+          "author_url": "https://www.google.com/maps/contrib/112413561040637840493/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW46wkZt0ncl4BDLQdqQVkbBuCW_yIUPwkjqHaoTRxAx4CKvYY=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Words can’t fully describe how extraordinary this place is. The selection is absolutely world-class — you’ll rediscover Picasso, Man Ray, and more in a whole new light. Every detail feels awe-inspiring, and the architecture and landscape are artworks in themselves. ✨",
+          "time": 1761303905,
+          "translated": false
+        },
+        {
+          "author_name": "Richard R",
+          "author_url": "https://www.google.com/maps/contrib/110582426281053879779/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIakXN91zds6QprG_O_pMmZfapI8xUBrPg9yPvmFHz-y4sBaw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "An absolute gem of  small museum. Amazing collection of some of the best known artists. Great outdoor paths and sculptures.  Recommend reservations on weekends but there are often openings during the weekdays. Walk-ins occasionally available.",
+          "time": 1768328472,
+          "translated": false
+        },
+        {
+          "author_name": "Serena Liao",
+          "author_url": "https://www.google.com/maps/contrib/115311102911367464714/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-TIOlxVF3dFYZKrcYV8ZJMWA5ZD9cJKD9dD5V6JdPpLDX-Tpd=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "I visited this beautiful museum with my daughter on a quiet Friday, and we had such a relaxed, enjoyable time exploring both indoors and out. The architecture is fascinating—modern in form, yet layered with global references. You’ll notice Roman-inspired arches and corridors, Islamic-style domes, and even a Mayan stone head tucked into the lush, tropical-themed atrium.\n\nOne detail draws my attention is the contrast between the elegant railing panels and modern art—an Alexander Calder mobile suspended in the central staircase. What a brilliant idea!\n\nFor the first time, I noticed limestone walls adorned with textiles—possibly rugs—which felt both functional and artistic. It makes sense for a family that clearly cherishes the arts, regularly hosts music performances, and rotates paintings on the walls.\n\nEven my daughter was captivated by the contemporary painting titled Cosmos, with its bold colors, which hangs in a muted mid-century-style library, fully paneled in warm wood.\n\nThe museum interior is thoughtfully divided into rooms, each with its own theme—French Impressionism, Cubism, color galley, African masks, contemporary exhibits, and newly acquired works. It’s very easy to follow and digest, especially for younger visitors.\n\nThe space isn’t huge, but it’s rich with detail. I’d recommend setting aside 1–2 hours to explore both the indoor galleries and outdoor garden areas at a comfortable pace. The staff are incredibly friendly and welcoming—this place truly feels like a hidden gem.",
+          "time": 1752982697,
+          "translated": false
+        },
+        {
+          "author_name": "Saleela Chanyutthakul",
+          "author_url": "https://www.google.com/maps/contrib/105790453079675284861/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUsrqZCXnnlXY9uDbfYWAXNrtBx_PEM4AJ9w3GQe1HjcgZmfxJoSA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The Kreeger Museum is definitely one of my favorite museums in the DMV area. It’s totally worth the $15 admission! I got to see many pieces from one of my favorite artists, Monet. The atmosphere was peaceful, and the staff were very kind and welcoming.",
+          "time": 1762445805,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-unknown-national-building-museum",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "Washington, D.C.",
+      "city": "Washington",
       "museum_name": "National Building Museum",
       "alternate_names": null,
       "website": "http://www.nbm.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "401 F St NW, Washington, DC 20001, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.89779,
-      "longitude": -77.01752,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "20001",
+      "latitude": 38.8977516,
+      "longitude": -77.0176188,
+      "place_id": "ChIJc1s06I63t4kRRV9ykdE7I0g",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -612,15 +1154,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.nbm.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:36:03Z",
+      "updated_at": "2026-03-14T19:52:56Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2022722448",
+      "phone": "(202) 272-2448",
       "is_scoreable": false,
       "content_summary": "The **National Building Museum** in Washington, D.C. is a unique tribute to architecture, design, and construction. Its stunning Beaux-Arts architecture and immersive exhibitions make it a must-visit for anyone interested in the built environment. Experience hands-on activities, engaging displays, and thought-provoking themes that celebrate the art of building.",
       "content_description": "**The National Building Museum** stands as a monumental shrine to architecture and design in the heart of Washington, D.C. Housed in a former U.S. Pension Bureau building, this museum showcases stunning **Beaux-Arts** architecture characterized by its grand interior space and striking brick columns. Visitors are immediately drawn to the breathtaking Great Hall, where a magnificent atrium stretches skyward, adorned with exquisite skylights that fill the space with natural light. The museum is a celebration of the built environment, spanning the realm of architecture, urban planning, and landscape design. Through its extensive collections and dynamic displays, guests can appreciate the interconnection of these fields in shaping the world around us.   With exhibitions that range from historical architecture to modern design innovations, each visit offers something new and insightful.   Hands-on activities and interactive presentations make for a captivating experience, appealing to visitors of all ages and backgrounds. The museum encourages you to think critically about the spaces we inhabit and the impact of construction on our lives. Explore the unique perspectives on how buildings influence culture and society, complemented by seasonal exhibitions that bring fresh ideas and topics to the forefront of architectural discourse.   This journey through the architecture and construction landscape is not just educational; it's also a celebration of human creativity and ingenuity, inviting each visitor to engage, reflect, and be inspired. You won't want to miss the **National Building Museum** during your D.C. adventure!",
@@ -633,26 +1176,157 @@
       ],
       "content_generated_at": "2026-01-25T01:36:03Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.nbm.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 4239,
+      "google_reviews": [
+        {
+          "author_name": "Kevin A",
+          "author_url": "https://www.google.com/maps/contrib/105852374018685079081/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWWl1_JkCR5JAAhfSEq-ThyGfNPu_gfjKiveJp_hGJA0Wn-iRxV8w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Fascinating, unexpected museum in a *spectacular* nineteenth century building. I've been a DC regular visitor and occasional short-resident for decades and only learned about this museum recently. The exhibits are almost all creative, interesting rotating exhibits drawn from the museums huge armored collection of artifacts and from guest curators and groups, so repeat visits are a great idea. And I can't say enough about the restored 1880s Pension Building with it's amazing 15-story atrium and massive columns. In a city of magnificent architecture, it's truly a hidden gem and a worthy host for this privately run museum. Well worth the $10 admission!! Very family friendly with lots of kid-oriented activities too. Highly recommended! Not at all crowded on the weekend day in January that we visited.",
+          "time": 1770867345,
+          "translated": false
+        },
+        {
+          "author_name": "Fritz Plinke",
+          "author_url": "https://www.google.com/maps/contrib/116691655618440481065/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKA0Li_eweQNKnmgh89UbSLJIjosh6G5bsxy8eaNE-vAio-KfH-=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We visited this play close to closing - the the museum attendants warned us when we bought our tickets that it would be closing soon.  But it was still a good way to spend 90 minutes or so.\n\nWe especially enjoyed the Lego exhibit.  It was beautiful, and was a bit empty.",
+          "time": 1766363869,
+          "translated": false
+        },
+        {
+          "author_name": "Anne Masterson",
+          "author_url": "https://www.google.com/maps/contrib/101046887625676086286/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU7-1vE7AQdxDd5s50UeQ2b18hicF9njtkxH1Ux5YpKWt71IykW=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The building itself is a masterpiece and a wonder.\nStandout Exhibits:  The Visible Vault (behind-the-scenes look at the museum's collection) and Brick City, (an incredible LEGO® display of well-known global landmarks).\nWhether you’re an architecture buff or looking for a family-friendly afternoon, this museum is a gem.",
+          "time": 1767016528,
+          "translated": false
+        },
+        {
+          "author_name": "Richard T. Anderson",
+          "author_url": "https://www.google.com/maps/contrib/108278100761984787296/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUG9X02KZA2eLHEYr9hyhSd0yiipnvvauXEFyelEN_kcfLsUDSM=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Beautiful building and great exhibits. Would recommend 100% if you're interested in architecture or urban design.",
+          "time": 1767211364,
+          "translated": false
+        },
+        {
+          "author_name": "Matt Howerton",
+          "author_url": "https://www.google.com/maps/contrib/105242454811350139763/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK-d83_PkBSPyk7V0bWLiJNSO_ejdzfcdImqmfnwZnF7ClhJw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 4,
+          "relative_time_description": "a week ago",
+          "text": "Interesting history and unique red brick building for around the National Mall; Lego exhibit was worth the stop, but I left 4 stars because the interactive portion left something to be desired. There wasn’t a ton to else to see as I would like to see a focus on unique builds around the country exhibited with history in one place such as the National Building Museum that highlights tools and techniques for building construction. As expected, it looks to get plenty of use for community and political events hosted there and I expect it acts as a great spot for these.",
+          "time": 1772340193,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-unknown-national-portrait-gallery",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "City of Westminster",
+      "city": "Washington",
       "museum_name": "National Portrait Gallery",
       "alternate_names": null,
       "website": "https://npg.si.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1 Home Smithsonian Institution Museum Location National Portrait Gallery 8th and G St",
+      "street_address": "8th St NW & G St NW, Washington, DC 20001, USA",
       "address_line2": null,
       "postal_code": "20001",
-      "latitude": 38.90477,
-      "longitude": -77.03023,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.8978267,
+      "longitude": -77.02301899999999,
+      "place_id": "ChIJldJnhJG3t4kRnJ3McC1qVyo",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -673,26 +1347,27 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 3,
-      "priority_score": 9,
+      "historical_context_score": 4,
+      "priority_score": 8,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The National Portrait Gallery provides a strong regional context through its focus on portraits of historically significant figures, but its collection is limited to this thematic scope. It does not house important works from the Impressionist or Modern/Contemporary art movements, thus scoring low on collection-based strength.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence describes the London National Portrait Gallery as a major national institution focused on portraits of historically important British people, not an Impressionism-focused collection, so Impressionist strength is scored negligible. Portrait collections typically span from historical to modern figures, supporting a moderate modern/contemporary score, and the mission implies strong historical framing and interpretive context. As a long-established national gallery in London near Trafal",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://npg.si.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'City of Westminster' from open data; MRD: computed city_tier=3 for City of Westminster; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2026338300",
+      "phone": "(202) 633-8300",
       "is_scoreable": true,
       "content_summary": "In the heart of Westminster, the National Portrait Gallery offers an unusually intimate way to experience British history: through faces. From Tudor power plays to modern celebrity culture, its portraits capture the evolving ideas of identity, status, and fame. The museum is celebrated internationally for pairing iconic sitters with standout artists, making it a must for art lovers who want both aesthetic pleasure and a vivid narrative of the people who shaped Britain.",
       "content_description": "**The National Portrait Gallery** in the City of Westminster is one of London’s most rewarding stops for travelers who like their art with a strong human story. Rather than organizing the past by battles or monarchs, it builds a living timeline through portraits—images made to persuade, memorialize, and project status. Expect a compelling range of media: painted portraits, sculpture, photography, and works on paper that chart how likeness-making evolves from courtly display to modern image culture. Among the best-known treasures are the **Chandos portrait of William Shakespeare**, Hans Holbein the Younger’s sharply observed sitters from the Tudor world, and later icons such as Joshua Reynolds and Thomas Gainsborough, where *Grand Manner* ambition meets painterly bravura.\n\nArchitecturally, the gallery’s Westminster setting adds to the sense of occasion: you move through a purpose-built cultural landmark and its contemporary additions with the feeling of stepping into a national memory palace. The visitor experience is designed for looking closely—faces, fabrics, props, and gestures—so plan to slow down and compare styles: the crisp realism of *Renaissance* portraiture, the theatricality of *Baroque* and *Georgian* society painting, and the frank immediacy of modern photography.\n\nFor art enthusiasts, the pleasure lies in the mix: **canonical works you’ll recognize** alongside discoveries in quieter rooms. Allow time for curated thematic displays and temporary exhibitions, which often make surprising connections between art, politics, literature, and celebrity—and leave you seeing portraiture not as illustration, but as **a sophisticated art of identity**.",
@@ -710,26 +1385,178 @@
       "collection_based_strength": 1,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "https://npg.si.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1900"
+            },
+            "open": {
+              "day": 0,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1900"
+            },
+            "open": {
+              "day": 1,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1900"
+            },
+            "open": {
+              "day": 2,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1900"
+            },
+            "open": {
+              "day": 3,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1900"
+            },
+            "open": {
+              "day": 5,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1900"
+            },
+            "open": {
+              "day": 6,
+              "time": "1130"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:30 AM – 7:00 PM",
+          "Tuesday: 11:30 AM – 7:00 PM",
+          "Wednesday: 11:30 AM – 7:00 PM",
+          "Thursday: 11:30 AM – 7:00 PM",
+          "Friday: 11:30 AM – 7:00 PM",
+          "Saturday: 11:30 AM – 7:00 PM",
+          "Sunday: 11:30 AM – 7:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 13321,
+      "google_reviews": [
+        {
+          "author_name": "Wendy M.",
+          "author_url": "https://www.google.com/maps/contrib/101300555873284409924/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWUGyDMk5CSRq4f9x59rCW0xMhZCt4xboV1hpRT99AmubfhH9Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "3 weeks ago",
+          "text": "The National Portrait Gallery in Washington, DC is never just a museum visit. It is an experience. There is always something new to discover, and the annual unveiling of the “Portraits of a Nation” cultural icons is a highlight. The 2025 class is now on view on the main level, and it is fascinating to see how each artist interprets their subject through style, mood, and storytelling.\n\nHoused in the same historic building as the Smithsonian American Art Museum, you get two world class museums in one visit. There are three expansive floors to explore on the Portrait Gallery side alone, featuring historic figures, contemporary leaders, and cultural trailblazers.\n\nThe Kogod Courtyard is a standout feature. It is a bright, airy space that is perfect for sitting, reading, meeting friends, or taking a break between galleries. It is also a stunning venue for private events and large gatherings. The museum includes a versatile auditorium theater downstairs with dressing rooms and a reception area, making it ideal for talks, screenings, and special programs.\n\nHelpful details: security screening is required upon entry, lockers are available for personal items, and there is a café offering sandwiches, salads, snacks, and beverages. There is also a gift shop on the main level near the information desk with art inspired finds.\n\nWhether you visit for the iconic portraits, the architecture, or a quiet moment in the courtyard, this is one of DC’s most dynamic and thoughtfully curated spaces. A must visit for art lovers, history enthusiasts, and anyone who appreciates seeing America’s story told through faces.",
+          "time": 1771218629,
+          "translated": false
+        },
+        {
+          "author_name": "PL Lau",
+          "author_url": "https://www.google.com/maps/contrib/108671385992214123453/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX_kjCx3N7Oe5EIg03qgHTSqYbHJ9Dr8h6_hZbfJqZYWeYejkv9=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "⭐⭐⭐⭐⭐\n\nThe Smithsonian American Art MuseumClick to open side panel for more information and National Portrait Gallery are absolute must-visits in DC! We spent about 3 hours walking through and admiring hundreds of masterpieces from all kinds of schools and techniques. The place is fairly big and houses some incredibly beautiful and interesting pieces of art.\n\nHighlights of the visit:\n\nStunning Atmosphere: The central courtyard is beautiful and provides a space where you don't feel pressured to look at the art; you can just let it come naturally.\n\nDiverse Exhibits: The art installations on display are so varied, ranging from classic portraits to modern multimedia pieces.\n\nGreat Accessibility: It’s completely free to enter and stays open until 7:00 PM, which is perfect if you want to visit after other museums close.\n\nConvenient Location: While it's in a busy area, there are plenty of parking garages located right around the building.\n\nWhether you are a serious art critic or just looking for a peaceful place to spend an afternoon, this museum is a fantastic choice.",
+          "time": 1767459058,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Wilson",
+          "author_url": "https://www.google.com/maps/contrib/105247326336442885082/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9_CiAMRWxiryetENUludTLvI5OzVQhZjWDv7OHb1R2HuUA64=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I didn’t realize until I arrived that I was going to get to experience the portrait gallery and the American art museum in the same place. The combination of the two really allows you to see so much more than you walked into the door expecting. I suggest giving yourself a good two hours to really thoughtfully move slowly through the exhibits and read enough of the signs to appreciate the value of the pieces. It’s a rather funny feeling to see a painting and realize that that face in that exact pose from that person is what’s been on your currency for your whole life.",
+          "time": 1770141572,
+          "translated": false
+        },
+        {
+          "author_name": "Kasia Czeczkowska",
+          "author_url": "https://www.google.com/maps/contrib/103075924487285138233/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWM-YqZsbwqSjy5PLM_RAm6zESBI6EOSw2ZdS6ZbGx7B7a9w93RMw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Great museum. I visited on Thursday 12pm. Free entrance. Not crowded, they had free tour at 12 and 12:30. I took 12pm tour and it was great experience! If you like stop and read I would recommend to plan around  2,5-3 hours for visiting.",
+          "time": 1770324369,
+          "translated": false
+        },
+        {
+          "author_name": "Youssef George",
+          "author_url": "https://www.google.com/maps/contrib/100498572018469914016/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUcywPkqrewHErGKLxmekCzzEHbPbLXRMTz-K5kTkYtGv2DodI=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "The National Portrait Gallery is one of the most fascinating museums in Washington, D.C. It perfectly blends art, history, and storytelling — each portrait brings to life the people who shaped America’s past and present. The collection is incredibly diverse, from presidents and civil rights leaders to artists, athletes, and cultural icons.\n\nThe Presidential Portraits Hall is a highlight — seeing the portraits of all U.S. presidents, especially the striking ones of Obama, Lincoln, and Kennedy, is unforgettable. The museum itself is beautifully designed, with a stunning glass-covered courtyard where you can relax between exhibits.\n\nEntry is free, the staff are welcoming, and the space is calm and inspiring. Whether you love history, art, or photography, this gallery is an absolute must-visit in D.C.",
+          "time": 1760394525,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-dc-unknown-phillips-collection",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "Washington, D.C.",
+      "city": "Washington",
       "museum_name": "Phillips Collection",
       "alternate_names": null,
       "website": "http://www.phillipscollection.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1600 21st St NW, Washington, DC 20009, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.91199,
-      "longitude": -77.04671,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "20009",
+      "latitude": 38.9118575,
+      "longitude": -77.0469689,
+      "place_id": "ChIJERCNwci3t4kR92ClBSxkv14",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": null,
       "topics": null,
@@ -750,26 +1577,27 @@
       "impressionist_strength": 4,
       "modern_contemporary_strength": 4,
       "primary_art": "Impressionist",
-      "historical_context_score": 3,
-      "priority_score": 5,
+      "historical_context_score": 4,
+      "priority_score": 4,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Phillips Collection has a strong holding of Impressionist and modern works, including canonical artists like Renoir and Monet, which supports a Major Scholarly Collection score. Its historical context score reflects its role in providing a solid but not nationally defining narrative of art history, while the reputation score acknowledges its notable regional influence.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The collection explicitly includes key Impressionist/Post-Impressionist figures (Monet, Renoir, van Gogh, Bonnard), indicating a strong but not necessarily flagship Impressionist presence. Its roster of major modern artists (Picasso, Braque, Klee, Mir\u0018, Rothko, O\u0007Keeffe, Lawrence) supports strong modern/contemporary holdings, consistent with a nationally known, high-quality but non-encyclopedic museum.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.phillipscollection.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Washington, D.C.' from open data; MRD: computed city_tier=2 for Washington, D.C.; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2023872151",
+      "phone": "(202) 387-2151",
       "is_scoreable": true,
       "content_summary": "An essential stop for art lovers in Washington, D.C., the Phillips Collection offers an intimate, scholarly encounter with modern art in a refined townhouse setting. Founded by collector Duncan Phillips, it pairs masterworks by Renoir, Rothko, and O’Keeffe with unexpected dialogues across time and style. Its jewel-box galleries reward slow looking—close enough to see brushwork, color relationships, and daring compositions—making the experience feel personal rather than monumental, even as the collection ranks among the nation’s most influential.",
       "content_description": "Tucked into Dupont Circle, **The Phillips Collection** pioneered the idea of the American “museum of modern art” as a living, intimate space for close viewing. Founded in 1921 by Duncan Phillips, it remains deeply shaped by a collector’s eye and a scholar’s rigor—galleries are arranged to spark visual conversations rather than march through a strict timeline. That curatorial approach is one of the museum’s great pleasures: you’re invited to compare color, texture, and mood across artists and eras, and to linger with works at a human scale.\n\nThe collection is especially strong in *Impressionism* and *Post-Impressionism* through to early and mid-century modernism. Expect touchstone names—Renoir, Degas, Cézanne, Van Gogh, Bonnard, and Matisse—alongside American modernists such as Georgia O’Keeffe and Arthur Dove. A defining centerpiece is Pierre-Auguste Renoir’s **“Luncheon of the Boating Party,”** often experienced here not as a famous reproduction, but as a radiant, life-sized tableau of light, friendship, and virtuoso brushwork.\n\nArchitecturally, the museum’s historic townhouse atmosphere is part of the draw: **domestic-scale rooms**, warm materials, and carefully lit galleries encourage unhurried looking. For visitors, it’s a respite from blockbuster crowds—ideal for art enthusiasts who want to study surfaces up close, notice curatorial pairings, and leave feeling they’ve truly spent time with the art rather than simply passed it by.",
@@ -789,26 +1617,167 @@
       "primary_art_focus": "Impressionist",
       "collection_based_pas": 4,
       "effective_pas": 4,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "https://www.phillipscollection.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2197,
+      "google_reviews": [
+        {
+          "author_name": "Denis OUDARD",
+          "author_url": "https://www.google.com/maps/contrib/109895896021646443140/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV34F7YL77jiAschM1TKfy-FxudPWf-vrbiAEzd1ekMdupO7TI=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This is our second visit to this museum. Last visit was about 20 years ago. But it did not disappoint. Still an astonishing collection. We visited the Kreeger museum yesterday. Both are remarkable. The star at the PHILLIPS Collection is clearly  Renoir’s ‘Déjeuner des cannotiers’. Take at least a couple of hours to enjoy.",
+          "time": 1763610011,
+          "translated": false
+        },
+        {
+          "author_name": "Ruth Harper",
+          "author_url": "https://www.google.com/maps/contrib/113002311349245885170/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUOmhckdMjWa9b9zAj2BQ6x8j0NV4zC7uW6p50DXK9LRaidH2Q7=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This is terrible, but almost every time I leave an art museum, I’m disappointed. ‘What did I just see? Was it even good? Did I recognize any of the artists that I saw? No.’\nThe Phillips Collection is completely different. Every corner you discover, ‘OMG that’s a Picasso, OMG Matisse, OMG Vincent van Gogh!’\nNewly obsessed with Rothko, I went specifically for the Rothko room. I was there on a weekday afternoon, and it was wonderful. I could sit there by myself for 30 minutes and just take it all in. It was absolutely the best art experience I’ve ever had. I interacted with five staff members, who were all extremely helpful and polite. Absolutely five stars, highly recommend!",
+          "time": 1759072849,
+          "translated": false
+        },
+        {
+          "author_name": "Sandra Neuhaus",
+          "author_url": "https://www.google.com/maps/contrib/113935222151569331938/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUCWVc-LNWHK207ZaM3kvLZxrNBBj7jZHFr2bvdibrSDL1xz4RL=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Compact but really good. Modern Art but not totally bonkers. Especially enjoyed the Rothko-room. Entry isn't free but for me it was well worth it. Gift shop was fun too",
+          "time": 1765036774,
+          "translated": false
+        },
+        {
+          "author_name": "The Arts",
+          "author_url": "https://www.google.com/maps/contrib/102143688756467103479/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW44CDVNW1_RyTWt2qNDM1b-NVaUw4UH3PO-tegSVzVxKhrOQOh=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "THE PHILLIPS COLLECTION\n\nThe Phillips Collection is America’s first museum of modern art. It is a smaller museum, located in the home of its founder Duncan Phillips, and an adjacent building. I lived in Washington DC’s Dupont Circle neighborhood where the museum was nearby and was thrilled to visit often. The smaller size and elegant architecture of the museum is intimate and inviting. You feel as though you’ve been invited by the collector into his home. There's even a grand piano and a larger room where musical events are hosted.\n\nThe permanent collection is notably diverse, representing a wide range of art movements, including European, Impressionist, Post-Impressionist, African American, American Modernist and Contemporary art. The museum rotates its exhibited paintings and regularly features traveling exhibitions—so there's always something new to see.\n\n🌟COLLECTION HIGHLIGHTS\n\n• European Art: Masterpieces such as Pierre-Auguste Renoir’s Luncheon of the Boating Party. Other artists include Edgar Degas, Claude Monet, Berthe Morisot, Vincent van Gogh, Paul Cézanne, Henri Matisse, and El Greco.\n\n• African American Art: Jacob Lawrence's The Migration Series is a powerful example of storytelling through painting. Works by Romare Bearden are also featured.\n\n• American Art: Artists include Childe Hassam, Maurice Prendergast, J. Alden Weir, Georgia O’Keeffe, Richard Diebenkorn  and Mark Rothko.\n\n• Rothko Room: A special room is dedicated to the meditative paintings of Mark Rothko.\n\n• Contemporary Art: Artists such as Sam Gilliam and Rufino Tamayo.\n\nI appreciate being able to look closely at the works, at my own pace. Visiting during the week makes this even more possible. I highly recommend this museum and look forward to my next visit.",
+          "time": 1761003501,
+          "translated": false
+        },
+        {
+          "author_name": "j j",
+          "author_url": "https://www.google.com/maps/contrib/110833847408550113593/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIUaF2twpsFoB9oIrLZlKqPDRYpFNlvMLbqdj1Kz5rFDIX85w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "The Phillips Collection allows an opportunity for intimate viewing of art within their brownstone rooms, as well as stunning exhibits in the “new” wing. Everyone should seek out Jacob Lawrence’s The Migration Series (most of the odd panels are in display within one of the parlors of the brownstone, and the evens are in NY in the MOMA). Stop in the gift shop, too, they have affordable lovely things!",
+          "time": 1757767815,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-unknown-smithsonian-american-art-museum-and-renwick-gallery",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "NW Washington",
+      "city": "Washington",
       "museum_name": "Smithsonian American Art Museum and Renwick Gallery",
       "alternate_names": null,
       "website": "https://americanart.si.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "00 pm Renwick Gallery Pennsylvania Avenue at 17th Street",
+      "street_address": "1661 Pennsylvania Ave NW #1, Washington, DC 20006, USA",
       "address_line2": null,
       "postal_code": "20006",
-      "latitude": 38.90105,
-      "longitude": -77.04009,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.8991117,
+      "longitude": -77.03907600000001,
+      "place_id": "ChIJj2jfgLy3t4kRYSELN0_MkHk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -829,26 +1798,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 3,
-      "priority_score": 9,
+      "historical_context_score": 4,
+      "priority_score": 8,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Smithsonian American Art Museum and Renwick Gallery has limited collection presence with a score of 1, indicating small or inconsistent holdings of scholarly relevance. The historical context score of 3 reflects its moderate importance in anchoring the history of American craft and decorative arts, but it does not have a significant influence on national scholarship.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence points to a strong Smithsonian-level American art institution, with the Renwick Gallery specifically focused on American craft and decorative arts spanning the 19th–21st centuries, supporting moderate modern/contemporary strength and good interpretive context. Impressionism is not indicated as a focus and, given the craft/decorative emphasis, is likely minor. As part of the Smithsonian in Washington, D.C., the museum has international reputation and a strong permanent-collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://americanart.si.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Washington' from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2023571445",
+      "phone": "(202) 633-7970",
       "is_scoreable": true,
       "content_summary": "In NW Washington, the Smithsonian American Art Museum and its jewel-box companion, the Renwick Gallery, offer a richly layered tour of American creativity—from iconic paintings and photographs to boundary-pushing contemporary craft. Housed in historic landmark buildings near the National Mall and the White House, they’re ideal for art lovers who want both museum “greatest hits” and surprise discoveries. Expect strong holdings in American realism, modernism, and folk traditions, plus immersive installations and impeccable architectural atmospheres.",
       "content_description": "**Smithsonian American Art Museum (SAAM)** is one of the best places in Washington to understand how American artists have pictured—and debated—the nation. Its strengths span **early portraiture and landscape**, the grit and lyricism of **American realism**, and key strands of *modernism* and *contemporary* practice. Seek out touchstones like **Edward Hopper**, **Georgia O’Keeffe**, **Winslow Homer**, **John Singer Sargent**, **Jacob Lawrence**, and **Nam June Paik**, alongside photography and deeply engaging folk and self-taught art that expands the story beyond the canon. For visitors, the pleasure is in the breadth: you can move from 19th‑century painting to time-based media in a single afternoon and come away with a sharper sense of American visual culture.\n\nA major part of the experience is architectural. SAAM shares the grand **Old Patent Office Building**, where soaring, daylit galleries and monumental staircases lend a civic scale to the art; the **Kogod Courtyard** (a glass-canopied interior courtyard) offers a calm pause between galleries. A short distance away, the **Renwick Gallery**—a historic, French Second Empire-style landmark near the White House—celebrates American craft and decorative arts with bracing ambition: think *studio craft*, sculpture-in-the-round, and often spectacular, room-filling installations that reward slow looking and repeat visits.\n\nTogether, they make an ideal two-stop itinerary: start with SAAM’s big-picture survey, then finish at the Renwick for **craft as contemporary art**, with plenty of architectural beauty in between.",
@@ -866,26 +1836,178 @@
       "collection_based_strength": 1,
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "https://americanart.si.edu/visit/renwick",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1730"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1730"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1730"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1730"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1730"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1730"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1730"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:30 PM",
+          "Tuesday: 10:00 AM – 5:30 PM",
+          "Wednesday: 10:00 AM – 5:30 PM",
+          "Thursday: 10:00 AM – 5:30 PM",
+          "Friday: 10:00 AM – 5:30 PM",
+          "Saturday: 10:00 AM – 5:30 PM",
+          "Sunday: 10:00 AM – 5:30 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 5243,
+      "google_reviews": [
+        {
+          "author_name": "Alpha Sumareh",
+          "author_url": "https://www.google.com/maps/contrib/105163821413229256195/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXQcQ8BZS0NCan6dE_SLM1w7TIed-EMdA7bITi7RWh8_3LXXYv_mA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I visited the Renwick Gallery of the Smithsonian American Art Museum as part of the IVLP program. With the U.S. preparing for its 250th anniversary, this was a perfect deep dive into American history through art.\n\nMy highlights: The Butter Cow: Absolutely fascinating! A life-size cow sculpted from 700 pounds of butter by artist Sarah Pratt. State Fair Exhibit: The glowing pyramid of preserved food jars is a stunning display of color and tradition. Cultural Echoes: I loved seeing the historical connections between American textiles and African culture. Hogwarts Vibes: The \"library\" and whimsical sculptures made me feel like I was at Hogwarts!",
+          "time": 1770209132,
+          "translated": false
+        },
+        {
+          "author_name": "Bren",
+          "author_url": "https://www.google.com/maps/contrib/108186684316349392847/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI4M4VvFJB5UPvU6FcdFOnDjh-EOC6e5xT12SMaloumnXgdyA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "The butter cow was incredible. I seriously could not get over it. This is a fabulous space that I highly recommend visiting. It is not the flashiest Smithsonian, but it shows items you would never expect. A fun space with low crowds. I will be sad when they take the butter cow away.",
+          "time": 1768169245,
+          "translated": false
+        },
+        {
+          "author_name": "Alice Kunce",
+          "author_url": "https://www.google.com/maps/contrib/107868385371332815567/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV4VOA_xyMOfOvDFq-UVrtdhfBmfH5qiTBwNqew4OQXpG8Z_BahqA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "First time visit was to the State Fair exhibit to see the butter cow. Had a toddler and a baby with me and was nervous about taking little ones to a fancy museum. They were both fascinated by the fish room. Who knew a toddler could sit still and be memorized for ten minutes straight?! The room with the giant corn was also a hit. Super grateful to the staff who let the little one run around in a safe space where he could marvel at the biggest corn he will ever see. An excellent escape from the brutal weather.",
+          "time": 1770500623,
+          "translated": false
+        },
+        {
+          "author_name": "The Arts",
+          "author_url": "https://www.google.com/maps/contrib/102143688756467103479/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW44CDVNW1_RyTWt2qNDM1b-NVaUw4UH3PO-tegSVzVxKhrOQOh=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The Renwick Gallery, part of the Smithsonian American Art Museum, showcases contemporary American craft and decorative arts. The gallery features both traveling exhibitions and works from its permanent collection, displaying a wide range of media including wood, glass, ceramics, textiles, metalwork, paintings, and light installations.\n\nThe building itself is a masterpiece—an historic structure originally designed by architect James Renwick Jr. in 1859. Though smaller than many of the Smithsonian museums, the Renwick offers an intimate and thought-provoking experience. I especially appreciate the diversity of its exhibitions and the depth of the ideas they explore.\n\nThe gallery is currently closed temporarily. Check the Smithsonian website for updates on reopening dates and visiting hours.\n\n🌟 TIPS\n•\tRenwick Gallery is free. Donations help it further its mission.\n•\tReservations not required.\n•\tSpecial events may require tickets.\n•\tCheck website for current schedule and hours.\n•\tThe gallery is wheelchair accessible. The entrance for visitors with wheelchairs is on the left side of the building. Elevators enable wheelchair access to exhibitions and restrooms.",
+          "time": 1760862500,
+          "translated": false
+        },
+        {
+          "author_name": "Lon Welsh",
+          "author_url": "https://www.google.com/maps/contrib/112592440888789542857/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9ps8BZReX3iftewx06UyJgZTouQ0fGpjrXXgcqC83rx332bvx=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 3,
+          "relative_time_description": "5 months ago",
+          "text": "If you are a fan of arts and crafts and this will be a high priority for you. Otherwise, you can safely skip it. It’s a pretty small museum and the artwork is all homemade, it’s not sophisticated. I did really enjoy seeing the county fair winner for the butter cow!",
+          "time": 1760105941,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-dc-unknown-the-george-washington-university-museum-and-the-textile-museum",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "NW Washington",
+      "city": "Washington",
       "museum_name": "The George Washington University Museum and The Textile Museum",
       "alternate_names": null,
       "website": "https://museum.gwu.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "10 a.m.-5 p.m. Closed on university holidays . 701 21st Street",
+      "street_address": "701 21st St NW, Washington, DC 20052, USA",
       "address_line2": null,
       "postal_code": "20052",
-      "latitude": 39.05186,
-      "longitude": -77.43757,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.8988419,
+      "longitude": -77.04635760000001,
+      "place_id": "ChIJLacZQLC3t4kRy7ygpc5TSJg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -916,15 +2038,16 @@
         "walker_reciprocal",
         "official_website",
         "https://museum.gwu.edu",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:36:52Z",
+      "updated_at": "2026-03-14T19:53:00Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2029945200",
+      "phone": "(202) 994-5200",
       "is_scoreable": false,
       "content_summary": "The George Washington University Museum and The Textile Museum offers an enriching glimpse into cultural heritage and artistry through its diverse collections. Located in the heart of Washington, D.C., this museum uniquely combines academic resources with stunning textile art, making it a must-visit for art enthusiasts and history buffs alike.",
       "content_description": "**The George Washington University Museum and The Textile Museum** presents a unique convergence of art, history, and education. Nestled in the vibrant academic environment of Washington, D.C., this museum is dedicated to showcasing the richness of worldwide textile traditions. With its extensive collection, visitors can explore over 1000 years of textile art, from exquisite *Navajo weavings* to intricate *Japanese kimonos* and *Persian carpets*. The museum's approach intertwines both the artistic and social narratives surrounding textiles, offering a multi-faceted experience that goes beyond visual appeal. Here's a chance to delve into the cultural stories embedded within each piece of fabric and thread.  In the museum's gallery, you can admire textiles displayed in thoughtfully curated exhibitions that highlight their historical significance and artistic techniques.  Through interactive installations and informative signage, you will gain insights into the craftsmanship and cultural practices that shape these treasured items.  Visiting **The Textile Museum** provides not only an aesthetic feast for the eyes but also an opportunity to engage with the profound narratives of global cultures.  The building itself reflects a blend of modern architecture with elements that evoke a sense of history, creating a warm and inviting atmosphere conducive to exploration and learning.  Moreover, the museum regularly hosts workshops and lectures, inviting visitors to learn about textile care, conservation, and the techniques of weaving or dyeing, making it a dynamic space for both observation and hands-on experience.",
@@ -937,26 +2060,157 @@
       ],
       "content_generated_at": "2026-01-25T01:36:52Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://museum.gwu.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 260,
+      "google_reviews": [
+        {
+          "author_name": "Tong Zhang",
+          "author_url": "https://www.google.com/maps/contrib/109837271145239079646/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXLdtyOcdtT-ZEPkgk_3m1tttbaeSHVkyhfh_REY11hmw8oUn1d=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful exhibits for the museum's centennial celebration! It is small, but has well documented textile pieces from many countries around the world with sustainable fashion in the lower level. Allow yourself some time to learn and enjoy.",
+          "time": 1760065459,
+          "translated": false
+        },
+        {
+          "author_name": "Adina Klein",
+          "author_url": "https://www.google.com/maps/contrib/112493265840161496644/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJiWeBBJ-G2ONaozsH8JgxskF9S8JC9p7j-J1bZz8QrgGEYRg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Fabulous museum, with collections encompassing many countires and cultures, but focusing on South American and Asian textiles. Good library and textile resource study center. Friendly, knowlegable staff and a nice shop with a wide selection of gifts and books. No cafe on site, but plenty are nearby on campus and in the residential area where this museum is located. Suitable for families and serious textile researchers alike. Located a few minutes' walk from Foggy Bottom-GWU metro station. Highly recommended!",
+          "time": 1757516991,
+          "translated": false
+        },
+        {
+          "author_name": "Jill Wade",
+          "author_url": "https://www.google.com/maps/contrib/110959107197322105453/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIycWiBDHNm2eTbQgLBzzKABWC38faTc2aIR8gEziBIqFJshA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Fantastic little museum. They truly have some treasures here, from many cultures around the world. I love the emphasis and education about natural fibers that is woven throughout the informational text in the museum. They highlight the loss of culture in addition to the ecologically destructive results of synthetic fiber production. I loved this museum and hope I can find my way back to spend more time here. There is so much to glean.",
+          "time": 1747772159,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Christofferson",
+          "author_url": "https://www.google.com/maps/contrib/116776075796289944032/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ3h8T6FhA3yxANbxj80S31oUrtANnkiP47MWDfPgRsYcSW3g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "A very cool place. You can see lots of textiles from around the world with easy to understand informational signs. And it’s free!",
+          "time": 1762303540,
+          "translated": false
+        },
+        {
+          "author_name": "Linda Rosales",
+          "author_url": "https://www.google.com/maps/contrib/105177951947900781491/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI3K33lFjjvKtBYa9BeEyDPbwonnGu6N6a0RLZxAnRjzW_mqQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "A little gem currently celebrating it's 100th anniversary, not far from Metro connections, tucked into the lovely GWU campus. The compact uncrowded galleries were a welcome change of pace. Don't skip the wonderful gift store.",
+          "time": 1744214307,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-unknown-tudor-place-historic-house-and-garden",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "WASHINGTON",
+      "city": "Washington",
       "museum_name": "Tudor Place Historic House and Garden",
       "alternate_names": null,
       "website": "http://www.tudorplace.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1644 31ST ST NW",
+      "street_address": "1644 31st St NW, Washington, DC 20007, USA",
       "address_line2": null,
       "postal_code": "20007",
-      "latitude": 38.91288,
-      "longitude": -77.06334,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 38.9114894,
+      "longitude": -77.0629465,
+      "place_id": "ChIJk1vXfTa2t4kREf5Vm-IqfAI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Botanical Garden",
       "primary_domain": "History",
       "topics": null,
@@ -985,12 +2239,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:37:00Z",
+      "updated_at": "2026-03-14T19:53:01Z",
       "notes": "CSV: museum type 'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "is_scoreable": false,
@@ -1005,26 +2260,168 @@
       ],
       "content_generated_at": "2026-01-25T01:37:00Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(202) 965-0400",
+      "website_google": "https://www.tudorplace.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 598,
+      "google_reviews": [
+        {
+          "author_name": "Sadie Sokolowski",
+          "author_url": "https://www.google.com/maps/contrib/118198514380528861598/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX_yk08zRi8FgR7vyQktcL4Y2H7glP6sVYyZpwbYxmzmm8AK8g7gg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This is such a cool place to visit if you’re in Georgetown! I brought my family here, and they were shocked that they had missed out on such a beautiful experience on previous trips. The staff are super friendly and knowledgeable. Take the tour if you’re interested in learning more, or simply wander around the beautiful grounds. We came on a Sunday morning and it was very quiet and peaceful. Definitely recommend coming for a visit!",
+          "time": 1760130879,
+          "translated": false
+        },
+        {
+          "author_name": "Mike Z",
+          "author_url": "https://www.google.com/maps/contrib/109360247575469523874/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKns_0RYR_wB6vpBH7ozlC3pYjy2-RXgo75HzOPqzc5uB2w=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Beautiful historic house and gardens in Georgetown. Got as much enjoyment from the gardens visit as from house tour. One constructive feedback to tour organizers: it feels weird that all you remember from tour are stories about servants of the house rather than owners’ stories. Maybe tours should be split every other hour to let the visitors choose tour’s focus. Also would be good to extend tours to gardens, even for few minutes.",
+          "time": 1755660569,
+          "translated": false
+        },
+        {
+          "author_name": "Toni Odejimi",
+          "author_url": "https://www.google.com/maps/contrib/108735275780922157113/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVcGJGAExdMbsLs_bZHkym5-TeNE0p9p6kuewVJKg_n3cK-0-Mn=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "If you’re even slightly interested in history, absolutely go here.\nTLDR: Gorgeous home with knowledgeable tour guides, willing to tackle tough history while still making the information palatable with an adorable gift shop.\nI went last year (June 2024) during their exhibit about the history of the enslaved workers in the house. Our lovely tour guide not only gave our group context about the home, but centered it squarely on the enslaved workers, their stories and struggles, and where their descendants are now. They replaced the photos of the home owners with the enslaved workers for this exhibit, which I found touching. Any question I poised the tour guide tackled with incredible knowledge and depth, never making me feel silly for inquiring.\nThe tour was around an hour, seeing most areas of the home and marveling in their architectural beauty. The home wasn’t air conditioned, but they provided fans and had electric fans blowing during the start of our tour. The tour ended in a big loop, so make sure to swing by the gift shop to look at their cute goodies. I also decided to stroll through their luscious gardens, which is an absolute must do. (Also the route walking to the house is gorgeous!)\nI cannot comment on their current exhibit as I’m back from DC, but I’m sure it’s to the high caliber of this one last year. This was incredibly informative on the changing DC landscape and on those who quietly keep the homes of the rich and powerful working. I implore you to go.",
+          "time": 1754166414,
+          "translated": false
+        },
+        {
+          "author_name": "Dave Bloom",
+          "author_url": "https://www.google.com/maps/contrib/113031425950996516635/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXOyNI-h7-7byd3I95Lva9fNGLynsbauD_-8dFsB3JbBll6znyL=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Very cool house in Washington DC with direct ties to George Washington. I had never heard of it until today, and I was extremely happy that I found It. Tour guide was amazing at relaying the information to us. I would definitely recommend adding this site to your list of places to visit in Washington DC!",
+          "time": 1755312826,
+          "translated": false
+        },
+        {
+          "author_name": "Ken Pak",
+          "author_url": "https://www.google.com/maps/contrib/111882695419889444271/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKdTZzKoyZSUzzVQjTavld8jcRojr_gxXiEF89XHixqM8lnyqg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "What a gorgeous gem for eco-friendly weddings & portraits!  Loved the experience with my client couples' small wedding and environmental portrait session.  I would definitely recommend this venue to anyone looking for gorgeous & quiet greenery environment away from D.C crowds and busy streets & parks.",
+          "time": 1751484605,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-dc-historical-society-of-washington",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "DC",
+      "city": "Washington",
       "museum_name": "Historical Society of Washington",
       "alternate_names": null,
       "website": "http://www.historydc.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "801 K St NW 2nd Floor, Washington, DC 20001, USA",
       "address_line2": null,
-      "postal_code": "20002",
-      "latitude": 38.89259,
-      "longitude": -77.0032005,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "20001",
+      "latitude": 38.9026329,
+      "longitude": -77.0228916,
+      "place_id": "ChIJSdRSiZK3t4kR5R6KoBCFPQ8",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -1056,15 +2453,16 @@
         "openstreetmap",
         "official_website",
         "http://www.historydc.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for DC; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.historydc.org; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:37:06Z",
+      "updated_at": "2026-03-14T19:53:02Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2023831850",
+      "phone": "(202) 516-1363",
       "is_scoreable": false,
       "content_summary": "Discover the rich tapestry of Washington, DC's history at the **Historical Society of Washington**. This unique museum not only preserves artifacts and documents but also serves as a hub for engaging with the city’s diverse past. Experience history through a captivating blend of exhibitions, programs, and community events that celebrate the heritage of our nation's capital.",
       "content_description": "**The Historical Society of Washington** is not just a museum; it's a portal into the heart of the nation's capital. Nestled within the vibrant city, it showcases a fascinating collection of over 300,000 artifacts, photographs, and manuscripts that tell the story of Washington, DC, from its founding to the present day. Visitors can explore exhibitions that illuminate the city’s social, political, and cultural history, making it a treasure trove for history enthusiasts and casual visitors alike. Whether you’re walking through immersive displays or perusing exquisite portraits from the *American Realism* period, each corner invites a deeper understanding of the capital's evolution. The museum serves as a dynamic research center, inviting scholars and tourists to delve into the rich narratives that define this unique city. At various events, guests can engage with community programs that foster public dialogue about the city’s ongoing history and heritage.  \n\nBeyond its compelling collections, **The Historical Society of Washington** is housed in a beautifully preserved historic building that reflects the architectural legacy of the area. The structure itself is a prime example of late 19th-century design, offering visitors a glimpse into the craftsmanship of the era. The museum not only connects visitors with the past but also actively participates in the preservation of documents and objects, ensuring that the stories of Washington, DC endure for generations to come. A visit here is not just about observing history; it’s about experiencing the very essence of the city and understanding its future as well as its past.",
@@ -1077,26 +2475,147 @@
       ],
       "content_generated_at": "2026-01-25T01:37:06Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.dchistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 12:00 – 6:00 PM",
+          "Friday: 12:00 – 6:00 PM",
+          "Saturday: 12:00 – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 28,
+      "google_reviews": [
+        {
+          "author_name": "Augusto Paulino",
+          "author_url": "https://www.google.com/maps/contrib/115862479330323357853/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUZ6LZjNZci-HCGo3Z1urQFFtn0xxTIbvDBy5bWMRUK-gw_XM-e=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "If you’re a fan of architecture then this is a must-see. Formerly the Carnegie Library, it was masterfully restored in 2019. The lower level, in particular, has an amazing ceiling detail. That level showcases a photographic review of the history of the library. The main exhibit is on the top level (be aware of its limited viewing hours). The space is batted in natural light as you ascend the staircase. The Apple Store occupies the main level.",
+          "time": 1691757164,
+          "translated": false
+        },
+        {
+          "author_name": "The Munch Travelogue",
+          "author_url": "https://www.google.com/maps/contrib/109825975948315458518/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6mI41mMw9FcQ36n9ogpTQSZ8y6ljXI17K1zcNvTqzoALST-Ti=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "On a random day in DC browsing thru the Apple Store, I discovered the DC History center that is located on the second floor of the historic Carnegie Library.\n\nAt the time of my visit, the pop up exhibit entitled DC Home Rule 50 was on display.  The collection of images highlights topics such as DC statehood and full citizenship.\n\nI was very intrigued by the panoramic photos of black culture in the 1950’s & 1960’s.  Especially the junior high school picture of Marvin Gaye.\n\nThe museum is free to visit, however donations are always welcomed.",
+          "time": 1689222680,
+          "translated": false
+        },
+        {
+          "author_name": "willku9000",
+          "author_url": "https://www.google.com/maps/contrib/118083363547641409136/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYiGpipm7MLeM6vdyeYQsMXuaoboq6Xbl8h__0TNSSTYfv4XEBIw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Honestly a really cool little museum for being right above an Apple Store. I joke around but it really is kinda neat and it was really cool of apple to save this historic building.",
+          "time": 1759270326,
+          "translated": false
+        },
+        {
+          "author_name": "Heather Terral",
+          "author_url": "https://www.google.com/maps/contrib/102371338021053889444/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUgXjpG5sqpc73lksS7d1wxbO9W8H5JWVPfKWDz38l2NTCWz8jA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "It's unfortunate the apple store fills most of the building with audio, BUT... it's still worth checking out. It's great for a quick visit, as the exhibits aren't large and if you're like me and like to read most/all of the information presented, you could probably view them all in an hour or so. Karen was incredibly welcoming, warm, and informative. I was able to much better appreciate the exhibits with the info she shared with me.\nAnd I almost forgot- unlike many museums that sanitize the history of this country, I really appreciated the clear, accurate language used to describe the violence perpetrated in the establishment of DC. Thank you!",
+          "time": 1717117970,
+          "translated": false
+        },
+        {
+          "author_name": "A T",
+          "author_url": "https://www.google.com/maps/contrib/115412499985489917209/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUN6a80sAwSv6MN7j0s526rA6mZiFPNn9JirAPCH5Puy1Aa_lJE=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 2,
+          "relative_time_description": "2 years ago",
+          "text": "Beautiful place outside but I’m mad about to see instead historical place the F Apple Store. Good job",
+          "time": 1693520680,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-dc-museum-and-gardens-hillwood-estate",
       "country": "USA",
       "state_province": "District of Columbia",
-      "city": "Museum and Gardens",
+      "city": "Washington",
       "museum_name": "Hillwood Estate",
       "alternate_names": null,
       "website": "http://www.hillwoodmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "4155 LINNEAN AVENUE NW",
+      "street_address": "4155 Linnean Ave NW, Washington, DC 20008, USA",
       "address_line2": null,
       "postal_code": "20008",
-      "latitude": 38.9438,
-      "longitude": -77.05251,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 38.9436362,
+      "longitude": -77.0526363,
+      "place_id": "ChIJC02_gzPIt4kRricOEUNB4rI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Botanical Garden",
       "primary_domain": null,
       "topics": null,
@@ -1127,12 +2646,13 @@
         "walker_reciprocal",
         "official_website",
         "http://www.hillwoodmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Museum and Gardens; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:37:16Z",
+      "updated_at": "2026-03-14T19:53:03Z",
       "notes": "CSV: museum type 'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "is_scoreable": false,
@@ -1147,8 +2667,150 @@
       ],
       "content_generated_at": "2026-01-25T01:37:16Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(202) 686-5807",
+      "website_google": "http://www.hillwoodmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 2291,
+      "google_reviews": [
+        {
+          "author_name": "John Bueno",
+          "author_url": "https://www.google.com/maps/contrib/112007641286955058743/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXi0NVEuVK5g1RE9Q5Qpp9EdGeRwNqnPUar-TKvP7yad1cRk5E5nw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This is a hidden gem in Washington. I found it looking for options because of the government shutdown and I am happy I did. What a beautiful place. It's perfect to take your parents and children because it's not too big but it has enough interesting things for the whole family. Art, architecture, flowers, gardens, etc. Convenient parking, nice staff, and a good cafe. You can donit all in three hours. Worth the price. Make sure of starting with the Mansion, then go around starting with the French garden and ending with the green house.",
+          "time": 1761053114,
+          "translated": false
+        },
+        {
+          "author_name": "Dylan Gribble",
+          "author_url": "https://www.google.com/maps/contrib/102661898069587174445/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUdT8A08FkmOn8na7RbL7CrWIdpp-04rK6hDShWV5u1-cjL7dU7=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "One of the most beautiful homes/exhibits I have ever been to! Absolutely stunning. Some of the coolest and most rare artifacts I have seen outside of Europe. The staff are incredibly friendly and extremely knowledgeable. I highly recommend the mansion tour, I learned a lot more than I would’ve solo.",
+          "time": 1759167514,
+          "translated": false
+        },
+        {
+          "author_name": "Sally Kizer",
+          "author_url": "https://www.google.com/maps/contrib/104968073863883525873/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfuNtqFt4e4PONOcspbSXHjm9zHDeiyxVgZtS655yvO-GcIKKMpA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Return visit just to see special exhibit on Princess Natalie Paley. Nicely done. Spent about an hour viewing and learning about her life and her family’s relationship to Russian royalty.  The grounds were nicely landscaped for fall but were past their peak with the recent cold weather.",
+          "time": 1763609691,
+          "translated": false
+        },
+        {
+          "author_name": "Deniz Kural Vagabond",
+          "author_url": "https://www.google.com/maps/contrib/104701627350354985056/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9r79yVUqpLDVAFyrfpp-0_PJJ1Y1Vp8nNcfgVNgD10BvglcQp=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Ever since I’ve read the book about Marjorie Post, I wanted to visit this place and see her Russian collection.\nIt didn’t dissapoint.\nBeautifully kept mansion and gardens, a nice cafe and the traces of an incredible life.\n\nIt’s the perfect gateaway from DC.",
+          "time": 1763671163,
+          "translated": false
+        },
+        {
+          "author_name": "Sophie Nowak",
+          "author_url": "https://www.google.com/maps/contrib/100822497761659055981/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUExDXQpZVEOlOPhkK1ja7NL4WmE6iAESwJdWINxHvv8eWvj-8=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "An absolute must-see in Washington, D.C.! Hillwood Estate is one of those rare places that completely takes you by surprise — the gardens are breathtaking, the mansion feels like a time capsule of elegance, and every corner tells a story. You’ll be amazed by Marjorie Merriweather Post’s life and the treasures she collected from around the world — from Russian imperial art to stunning French décor. The attention to detail and preservation is unmatched, and you truly feel transported to another era. Whether you’re into art, history, or just want a peaceful, beautiful escape from the city, Hillwood is worth every penny and every minute. Don’t skip this hidden gem — it’s one of D.C.’s best-kept secrets!",
+          "time": 1762750853,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:18Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

@@ -13,14 +13,14 @@
       "website": "http://www.plainsart.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "PO BOX 2338",
+      "street_address": "704 1st Ave N, Fargo, ND 58102, USA",
       "address_line2": null,
       "postal_code": "58102",
-      "latitude": 46.8769526,
-      "longitude": -96.7918307,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 46.8769949,
+      "longitude": -96.7918692,
+      "place_id": "ChIJ4V5DeWDJyFIRi9kuPdLkI7g",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -29,7 +29,7 @@
       "tickets_url": "https://plainsart.org/visit/hours-and-admission/",
       "reservation_required": null,
       "accessibility_url": "https://plainsart.org/wellness-and-access-programs/",
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -41,27 +41,28 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
+      "historical_context_score": 3,
       "priority_score": 16,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Plains Art Museum has a modest permanent collection with some educational value but lacks depth and critical acclaim. Its regional significance is noted, but the museum's overall impact and holdings do not strongly influence art historical scholarship.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence only identifies this as a general fine arts museum in Fargo, with no stated emphasis on Impressionism, so Impressionist strength is scored as negligible. In the absence of collection details, modern/contemporary is estimated as minor-to-moderate typical of a regional fine arts museum, and overall collection tier and reputation are scored as moderate/local given the location and lack of signals indicating a nationally prominent collection.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.plainsart.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Fargo; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "7012323821",
+      "phone": "(701) 551-6100",
       "is_scoreable": true,
       "content_summary": "In downtown Fargo, Plains Art Museum offers an intimate, thoughtfully curated encounter with art rooted in the Northern Plains. Housed in a beautifully adapted historic warehouse building, it’s a rewarding stop for travelers who enjoy contemporary exhibitions, regional voices, and Indigenous perspectives presented at a human scale. Expect a calm, gallery-focused visit—less “blockbuster” and more discovery—where you can slow down with painting, photography, and installation art, then step back out into Fargo’s walkable arts district.",
       "content_description": "**Plains Art Museum** is Fargo’s essential art stop for visitors who prefer *close-looking* over crowds. As a regional museum with a modest permanent collection, its strength is the way it **pairs local and Northern Plains narratives with contemporary practice**—often through rotating exhibitions that spotlight emerging and mid-career artists. You’re likely to encounter a mix of painting, photography, and mixed-media work that feels responsive to place: big skies, prairie histories, and the cultural complexity of the region. For art lovers, the pleasure here is the museum’s scale: you can give each gallery time, read labels without jostling, and leave feeling you’ve actually absorbed what you saw.\n\nThe building itself is part of the experience. Set within a repurposed historic warehouse in downtown Fargo, the museum’s **industrial bones, tall volumes, and clean gallery lines** create a crisp backdrop for contemporary displays—an appealing contrast between *heritage architecture* and current visual culture. Rather than overwhelming you with endless rooms, the layout encourages an unhurried circuit: drift from one exhibition to the next, return to a piece that caught you, and appreciate how lighting and wall space give works room to breathe.\n\nPlan your visit around what’s on view—because **exhibitions are the main draw**. Combine the museum with Fargo’s nearby cafés and storefront galleries for a full afternoon of looking. If you enjoy regional institutions that champion artists close to home while inviting broader conversations, Plains Art Museum is a satisfying, thoughtfully paced visit.",
@@ -81,8 +82,159 @@
       "primary_art_focus": "Modern/Contemporary",
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "https://plainsart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 5:00 PM",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 178,
+      "google_reviews": [
+        {
+          "author_name": "MEGHAN CUMA",
+          "author_url": "https://www.google.com/maps/contrib/109831460910336482605/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXrSNFSVXfmFdCo4qp9YOYQ4qp-R5S_svuQRy0-koNIkmlCVXzJ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "What a fantastic FREE art museum! The fact that it’s free gives it 5 stars for me. The quality of the art is beautiful but the museum isn’t huge. I was a bit disappointed that there was only one or two photos from North Dakota artists, I was expecting more local art.",
+          "time": 1753449275,
+          "translated": false
+        },
+        {
+          "author_name": "Alecs Kay Photography",
+          "author_url": "https://www.google.com/maps/contrib/113145686931274485297/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIg6f80vYYPD1Tjgoej6r06akxoP0tYu_gotNZoCwyxmS39og=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "The Plains Art Museum in Downtown Fargo is a beautiful place for a wedding ceremony and reception. They have the main floor for smaller weddings, or the bigger third floor for more guests. Guests can enjoy the galleries and there is plenty of space to spread out throughout the venue. There is also space for the bride and groom to get ready for the day!",
+          "time": 1747769168,
+          "translated": false
+        },
+        {
+          "author_name": "Bruce InCharlotte",
+          "author_url": "https://www.google.com/maps/contrib/103302868121897207836/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWd0BKk0GS4eNlMzvlugB1neEK2VNPshjAFBKounZE39buNi6tqgg=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "It is not a large museum but don't let that stop you. It is still full of new, different and unique pieces that you're not going to see elsewhere. I was here for an hour on a peaceful Sunday morning, just about the only patron. So it was quiet and reflective.\n\nI particularly enjoyed the \"Jacqueline Kennedy\" by Andy Warhol (1965) screenprint. But there is plenty more in all sorts of different media. Quite interesting and since the admission is free, you have no excuse!",
+          "time": 1700421690,
+          "translated": false
+        },
+        {
+          "author_name": "Patrick Moises",
+          "author_url": "https://www.google.com/maps/contrib/113553056282675914120/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPdM3k18mpfjh2B4R6OyNqzjD9mPKJ5BlJNHXxLaaQ2ZMpdWU=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Serena and the whole team was absolutely the best! They helped us with almost everything for our Wedding. The venue was everything we hoped for and more! Would definitely recommend this place for your special events. It has so much personality and with the help of Serena and other staff you can definitely put twist and other details to make the venue the best fit for your events. Check it out!!!",
+          "time": 1759803435,
+          "translated": false
+        },
+        {
+          "author_name": "Zia Muhammad",
+          "author_url": "https://www.google.com/maps/contrib/106959382816643955598/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIAiR-z6ucjkVtGxaqh4aEqe1OnvMIWxfh7gqo0VnKLTOubABY=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "A must visit place If you are an art lower and plan to visit Fargo. Fun place and classic art\n- No tickets need. Free entry\n- A gift shop to buy stuff",
+          "time": 1706046107,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

@@ -13,14 +13,14 @@
       "website": "https://www.deltabluesmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1 Blues Alley Lane",
+      "street_address": "1 Blues Alley, Clarksdale, MS 38614, USA",
       "address_line2": null,
       "postal_code": "38614",
-      "latitude": 34.2021,
-      "longitude": -90.57356,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 34.200244,
+      "longitude": -90.5732657,
+      "place_id": "ChIJjVznoQjfKoYRgMdj6QAzIuY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -51,15 +51,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.deltabluesmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Clarksdale' from open data; MRD: computed city_tier=3 for Clarksdale; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:36:26Z",
+      "updated_at": "2026-03-14T19:58:15Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6626276820",
+      "phone": "(662) 627-6820",
       "is_scoreable": false,
       "content_summary": "Immerse yourself in the soul of the Mississippi Delta at the **Delta Blues Museum**. This unique museum not only celebrates the history of the blues but also showcases the profound connection between the genre and its cultural roots. Experience engaging exhibits, live music, and a deep dive into the stories of legendary artists that defined a musical era. Don’t miss the chance to feel the rhythm and resonance of this iconic art form in the heart of Clarksdale.",
       "content_description": "**Delta Blues Museum** is a captivating homage to one of America's most significant musical genres. Nestled in Clarksdale, the birthplace of the blues, this museum invites visitors to explore the rich tapestry of the Delta Blues, celebrating its artists, rhythm, and cultural impact. With its collection of artifacts, photographs, and musical instruments, the museum immerses you in the stories of legendary figures like Muddy Waters and B.B. King, whose sounds have shaped the musical landscape not just in America, but worldwide. Each exhibit provides a glimpse into the life and times of these artists, showcasing how their environment influenced their music and spirit. Here, the air is thick with history and southern charm, inviting you to listen, learn, and feel the essence of the blues.  \n\nThe museum itself is housed in a historic railroad depot, providing a nostalgic backdrop that enhances the overall visitor experience. The architecture features warm wood accents and ample light, creating an inviting atmosphere that encourages exploration. As you wander through the thoughtfully curated exhibits, take advantage of interactive displays and live performances that often fill the space with electric energy. Whether you're a lifelong blues aficionado or a curious newcomer, the **Delta Blues Museum** offers an enriching experience that deepens your appreciation for this profound musical genre. Don’t forget to check the museum's schedule for special events and intimate performances — they truly encapsulate the heart and soul of Delta blues, making each visit unique and memorable.",
@@ -72,7 +73,148 @@
       ],
       "content_generated_at": "2026-01-25T02:36:26Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.deltabluesmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 580,
+      "google_reviews": [
+        {
+          "author_name": "Jessica Eubanks",
+          "author_url": "https://www.google.com/maps/contrib/110824725141877290872/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3WEI2WhMz_5q6XTBal9l7lX6oZNkKWHdhxQMP60lkPJbzojY=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Great place, one the best place to visit in this town. Guest service employee was extremely friendly and helpful.  Lots of information in the museum.  I highly recommend,  but not photos inside.\nAnd there is a mall gift shop.\nThere is a Entry fee, but they offer the usual discounts.",
+          "time": 1759622311,
+          "translated": false
+        },
+        {
+          "author_name": "Renee J.",
+          "author_url": "https://www.google.com/maps/contrib/105867377865482158496/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXdlLrfQfkRTDRdixk0NDDNrUkj6J0PFyw1keCh_ch7gY1WPiMl=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Great museum, it gets better every time I visit, which is about every other year or so due to living in a different state.  Museum has expanded, nice and cold with a very nice gift shop selling t shirts and memorabilia, staff working there was friendly and knowledgeable, give her a bonus! The museum is located downtown Clarksdale, Ms which seems to be going through a revitalization, also there's a main stage right next to the museum, we loved it and took lots of photos. If you're a Coahoma county resident, entry is free, all others, pay a small fee to enter and it's worth it. If you're in the area, you'd be crazy to bypass this gem of a museum in the heart of Clarksdale, Ms.",
+          "time": 1753473739,
+          "translated": false
+        },
+        {
+          "author_name": "Sheldon Timin",
+          "author_url": "https://www.google.com/maps/contrib/100855283579945346024/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXyqn_ke8hLGpnXVDQB0urqw3uUxixETzvKWx-S167VoVRnEM_M=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 1,
+          "relative_time_description": "4 weeks ago",
+          "text": "Never/ever order online [Or in person?] I ordered a $10 item online . No shipping charge posted. I thought oh Great.  Waited a week. Nothing. Got call today saying there site was down?! and they want $7.95 to ship item?.  There site wasn't Down to order I got confirmation of order and A $10 . total on order.  Now order is 17.95 total ?!",
+          "time": 1770926800,
+          "translated": false
+        },
+        {
+          "author_name": "T. Wesley",
+          "author_url": "https://www.google.com/maps/contrib/114916862113178422553/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAKaDtLCnqsH3loLmpxh5zih0Wki5hf26maRyXM673J-yrEnth=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Really fantastic museum which lays out lots of famous and obscure musicians from the region. The main room is packed with artifacts, including guitars and outfits worn by the musicians. You could easily spend an entire afternoon here if you take your time and read everything. It's maybe not the most modern museum, but it was fun, interesting and well thought out. Highly recommended!",
+          "time": 1759514028,
+          "translated": false
+        },
+        {
+          "author_name": "Dr. Rosie Ann Riley",
+          "author_url": "https://www.google.com/maps/contrib/104109109585896708820/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-7FPs7SeM7iiguzAilratdpqmwWI1R2X5QHCAk2yRhGwGFtq3=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I didn’t have to pay to enter this museum: Washington, DC—The National Endowment for the Arts and Blue Star Families (BSF) are pleased to announce that museums across the nation will be participating in the 14th summer of the Blue Star Museums program. From Saturday, May 20, 2023, Armed Forces Day, to Monday, September 4, 2023, Labor Day, active duty military families can enjoy free admission to participating museums in all 50 states, District of Columbia, and Puerto Rico.\n\nWanted to share that information in case other museums are visited. I’m not active duty but most will also allow Veterans free entrance.\n\nThis museums has tons of information. You could really feel overwhelmed and it’s a pretty large museum. I didn’t have enough time to properly view. I highly recommend allowing at least 2-3 hours to tour. You are not allowed to take photos or videos. This part I didn’t like!!\n\nThe home of Muddy Waters is in museum. Actually it’s one room, the others were destroyed in tornado. There is a lot of written information about him on display in that area.\nThere are so many artist on display, it seems like they didn’t leave anyone out!\n\nIke Turner was born in Clarksdale, MS. I didn’t have a clue about this. You learn so many details about the artist in these museums. This all ties into the Blues Museum and Hall of Fame in Memphis because many of them were produced by Sam Phillips before leaving MS.\n\nThis was my 2nd time at museum and I noticed that it had been updated and is much nicer in 2024. It’s very upscale and they have added new displays, photos. It also seems the floor has been redone. I absolutely love this museum!\n\nThere is a gift shop and the staff is very friendly! I did take photos of gift shop and area outside of building. They have very nice murals in area and blues marker for Ike Turner.\n\nThis museum is very interesting, I highly recommend visiting!!",
+          "time": 1722717923,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ms-unknown-maritime-and-seafood-industry-museum",
@@ -84,14 +226,14 @@
       "website": "https://maritimemuseum.org",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "115 1st Street",
+      "street_address": "115 E 1st St, Biloxi, MS 39530, USA",
       "address_line2": null,
       "postal_code": "39530",
-      "latitude": 30.3932,
-      "longitude": -88.85934,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 30.39338789999999,
+      "longitude": -88.8590289,
+      "place_id": "ChIJA2j_Yy4JnIgRCVIVEF2EUO0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
@@ -122,15 +264,16 @@
         "walker_reciprocal",
         "official_website",
         "https://maritimemuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Biloxi' from JSON-LD; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:36:40Z",
+      "updated_at": "2026-03-14T19:58:16Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2284356320",
+      "phone": "(228) 435-6320",
       "is_scoreable": false,
       "content_summary": "The Maritime and Seafood Industry Museum in Biloxi, Mississippi, offers visitors a unique glimpse into the rich maritime heritage and seafood industry of the Gulf Coast. With its engaging exhibits and historical artifacts, this museum is a treasure trove for those interested in nautical history and the cultural significance of seafood in local communities.",
       "content_description": "**The Maritime and Seafood Industry Museum** is a hidden gem that immerses guests in the vibrant world of Biloxi's maritime history and rich seafood industry. Located in the scenic coastal town of Biloxi, this museum features a captivating collection of artifacts and exhibits that highlight the crucial role that the sea has played in the lives of the Gulf Coast residents. From vintage fishing equipment to the history of boat building in the region, visitors can explore how these elements have shaped local culture and economy. The museum also pays tribute to the resilience of the fishing communities that have adapted over generations, particularly in the wake of natural disasters such as Hurricane Katrina.  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * * * * * * * * * * * * * *  *  *  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  *  *  *  *  *  *  *  * * * * * * * * *  *  *  *  *  *  *  *  * * * * * * * * * * * * * * * *  *  *  *  *  *  * * * * * * * * * * * * * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * * * * * * * * * * * * * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * * * * * * *  * *  * *  * *  * *  * * * * * * * *  *  *  **In addition to its informative displays, the museum hosts various interactive workshops and educational programs designed to engage visitors of all ages. Whether you’re trying your hand at fishing techniques or learning about sustainable seafood practices, there’s something for everyone! After exploring the exhibits, visitors can enjoy beautiful Gulf Coast views from the museum’s waterfront location, making it a perfect spot to relax and reflect on the rich maritime culture that defines this region.  * *  *  * * * * * * * * * * * * * * * * * * * **  * * * * * * * * * * * * * *  * *  *  *  *  *  **  *  *  *  *  *  **  *  *  *  *  *  *  **  *  *  *  * *  *  *  *  *  *  *",
@@ -143,7 +286,158 @@
       ],
       "content_generated_at": "2026-01-25T02:36:40Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.maritimemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1630"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 4:30 PM",
+          "Tuesday: 9:00 AM – 4:30 PM",
+          "Wednesday: 9:00 AM – 4:30 PM",
+          "Thursday: 9:00 AM – 4:30 PM",
+          "Friday: 9:00 AM – 4:30 PM",
+          "Saturday: 9:00 AM – 4:30 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 622,
+      "google_reviews": [
+        {
+          "author_name": "Sheila Sullivan",
+          "author_url": "https://www.google.com/maps/contrib/100235159765469948682/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLv_ZEMWb_eZ-UYHM3NqjzLhUOBOOF5N0d2DvuUqn4lU2u_ug=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Love this museum- the location, the memorials, and the exhibits! Lovely staff. SO MUCH to see/view. I only had 2 hours to spend there but would definitely go back for another two or three hours to see more of their exhibits! Peaceful grounds close to the water; a perfect place for a quiet contemplation or respite from a busy (or very hot!, LOL) day.",
+          "time": 1758817627,
+          "translated": false
+        },
+        {
+          "author_name": "Crab Bee",
+          "author_url": "https://www.google.com/maps/contrib/113643269515775835118/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ5XaNq60r4B5NjpWEyht3ABNorf-PBBxs9W-5uDZTK4L0UmQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Loved this place. Informative Katrina video on third floor. Very cool maritime displays. Recommend.",
+          "time": 1762479391,
+          "translated": false
+        },
+        {
+          "author_name": "Timothy Vaught",
+          "author_url": "https://www.google.com/maps/contrib/110256815107712139298/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJJLgW0Hhds936eHeIeT1t1kjyDdLemchrvPOEJtEuq7eMMOg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Museum does a good job at covering local fishing and maritime history, did learn some interesting things.  Enjoyed the room dedicated to Mississippi hurricanes.  When you tour the local area, you can still see the many empty lots and signs dedicated to buildings that are now gone.",
+          "time": 1738331769,
+          "translated": false
+        },
+        {
+          "author_name": "Bria Casteel",
+          "author_url": "https://www.google.com/maps/contrib/103393447345391283811/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKaQQzxDbfzm8HzaxW39rTAnnW97tCPB0jYt6kLjtCvZZqiXIE=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "I loved it and learned so much. We arrived an hour and a half before closing and it still wasn’t enough time to read everything but I got what I needed out of it. The lady at the front was extremely kind and helpful. They also have a AAA discount so that was nice!",
+          "time": 1752349715,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Richardson",
+          "author_url": "https://www.google.com/maps/contrib/117630370947913527963/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWI8acCXCy8dbkpOTBremaYOTooaTjLLRY38Xsa68zflO5DseU=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "If You're interested in history for the Gulf Coast and the seafood industry, this is the place to go. It's very clean and nicely done.  Plenty of public parking maybe 100 yards from the entrance.  Oh, if you're hungry after, there is the BEST BUFFET BY FAR right up the road inside the Palace Casino, see photo:). The attached brochure gives an overview of the Museum along with pricing. I went on a Monday and it was open even though the brochure shows closed. The entry door had it closed on Sunday but the brochure has it open, so maybe call 1st if going Sunday or Monday!!",
+          "time": 1705959076,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ms-unknown-mississippi-arts-entertainment-experience-the-max",
@@ -162,7 +456,7 @@
       "longitude": -88.6985984,
       "place_id": "ChIJAQAAAO99hIgRRcWvqpNOYL4",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -196,7 +490,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:36:48Z",
+      "updated_at": "2026-03-14T19:58:16Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(601) 581-1550",
@@ -355,14 +649,14 @@
       "website": "http://www.georgeohr.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "386 Beach Boulevard",
+      "street_address": "386 Beach Blvd, Biloxi, MS 39530, USA",
       "address_line2": null,
-      "postal_code": "39533",
-      "latitude": 30.3935445,
-      "longitude": -88.8721852,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "39530",
+      "latitude": 30.3932933,
+      "longitude": -88.8722786,
+      "place_id": "ChIJf08A6S8OnIgRhJGjUPv9_1E",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -371,7 +665,7 @@
       "tickets_url": "https://www.facebook.com/profile.php?id=61577198743487",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -383,27 +677,28 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
+      "historical_context_score": 3,
       "priority_score": 18,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a strong focus on the ceramics of George E. Ohr, which provides local historical context but does not carry national significance. The collection strength is notable for its regional impact, evidenced by its previous assessments and local engagement.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum is dedicated to the ceramics of George E. Ohr (1857–1918), indicating a focused, specialized permanent collection rather than painting-heavy areas like Impressionism (scored negligible). Ohr’s work falls closer to craft/early modern American art, suggesting some limited modern relevance but not broad 20th–21st century depth. As a local Biloxi institution centered on a single artist, overall reputation and collection tier are scored as local/small; historical context is assumed moderat",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.georgeohr.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Biloxi; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2283745547",
+      "phone": "(228) 374-5547",
       "is_scoreable": true,
       "content_summary": "On the Mississippi Gulf Coast, the Ohr-O’Keefe Museum of Art is a must for art lovers drawn to bold design and regional craft traditions. Dedicated to the radical ceramicist George E. Ohr—“the Mad Potter of Biloxi”—the museum pairs astonishing, shape-defying pottery with an architectural experience unlike any other in the region. Expect a focused, personality-driven visit: inventive vessels, Gulf Coast context, and a campus that feels like a piece of sculpture you walk through.",
       "content_description": "**Ohr-O’Keefe Museum of Art** in Biloxi celebrates the restless imagination of George E. Ohr (1857–1918), the self-styled “Mad Potter of Biloxi,” whose daring forms and experimental glazes make him a key figure in American ceramics. Inside, you’ll encounter pottery that pushes clay to its limits—thin-walled, twisted, pinched, and theatrical objects that feel decades ahead of their time. For visitors who love the boundary between *fine art* and *craft*, Ohr’s work offers a thrilling, up-close study in process, innovation, and artistic persona, grounded in the cultural texture of the Gulf Coast.\n\nThe museum’s campus is also part of the draw: a series of **Frank Gehry–designed** pavilions whose rippling metal roofs and asymmetrical volumes echo the spirit of Ohr’s own experimentation. Moving between galleries can feel like moving through a contemporary installation—architecture and art reinforcing each other in a way that’s rare outside major cities.\n\nPlan to linger: the experience rewards slow looking, from the subtle shifts in glaze to the surprising silhouettes of each vessel. As a regional museum with a strong local identity, it’s an ideal stop for travelers building a Gulf Coast itinerary—pairing beautifully with nearby historic sites and waterfront walks—while offering a focused, memorable encounter with one of America’s most original ceramic voices.",
@@ -421,7 +716,139 @@
       "collection_based_strength": 3,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "http://www.georgeohr.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.2,
+      "google_reviews_count": 290,
+      "google_reviews": [
+        {
+          "author_name": "Dustin Ebaugh",
+          "author_url": "https://www.google.com/maps/contrib/107458993397740110213/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXHTQxiCUh7KHcwDiVeDO6_2LuH16FQPoFGAowTj7HXPbaAnIVHfQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This is a fantastic art museum!\n\nThey offer a reciprocal membership with our art museum at home through the NARM program. So we were able to visit at no charge.\n\nGeorge Ohr was a genius! We very much enjoyed his work. We had never been exposed to him before and this was really a treat.\n\nAnytime you get to be on a campus designed by Frank Gehry, that is a treat!\n\nStop by here if you have some time.",
+          "time": 1760471395,
+          "translated": false
+        },
+        {
+          "author_name": "Alicia M.",
+          "author_url": "https://www.google.com/maps/contrib/100223295439413560986/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMOalqC-kfyhD5LJ00NGN886hUP_5m4qVwoVi9NeGmsR4E-2TXNg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "This museum is a must see! The campus is large and consists of multiple buildings., so it’s best to visit when the weather is nice. I learned a lot about the history of the area, particularly the beach and how people of color weren’t allowed to go. The exhibits were really cool and you’ll get some great photos. The staff were super helpful throughout our visit as well.",
+          "time": 1751252905,
+          "translated": false
+        },
+        {
+          "author_name": "Debbie Gibson",
+          "author_url": "https://www.google.com/maps/contrib/117257538364031464071/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV0fs-IBgxS3kmKmAlnFl-BbP6SCvmXNav2DyT2DOHY_wqn06m7=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Unique and interesting reflections on culture and art in the region, especially the pottery of George Ohr. Other exhibits change so a visit is in order even if you've been before.. They had onsite pottery class and a lovely gift shop. Relaxing and art-filled.",
+          "time": 1751372808,
+          "translated": false
+        },
+        {
+          "author_name": "Timothy Vaught",
+          "author_url": "https://www.google.com/maps/contrib/110256815107712139298/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJJLgW0Hhds936eHeIeT1t1kjyDdLemchrvPOEJtEuq7eMMOg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Rating it a 5 because of the friendly and informative staff.  After buying the tickets, one of the staff explained the museum layout and gave overview of the displays.  Museum grounds were interesting.",
+          "time": 1738332106,
+          "translated": false
+        },
+        {
+          "author_name": "James VonCannon",
+          "author_url": "https://www.google.com/maps/contrib/108183095312759105244/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWdVyQH-t0eijWNY0OQQTpRkDQoBureU5t2T4ekjgLzS6bNm3A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "So glad I visited here during my trip to Biloxi! Not only does this Museum house amazing buildings to learn about history, but the exhibits within those buildings are truly wonderful! They have classes for students and adults, and even a café to enjoy coffee or food while you're on the premises. Definitely worth a visit!!!",
+          "time": 1716740767,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-ms-jackson-mississippi-museum-of-art",
@@ -433,14 +860,14 @@
       "website": "https://www.msmuseumart.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "380 S Lamar St, Jackson, MS 39201, USA",
       "address_line2": null,
-      "postal_code": "39215",
-      "latitude": 32.2963078,
-      "longitude": -90.1856248,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "39201",
+      "latitude": 32.2964008,
+      "longitude": -90.1860543,
+      "place_id": "ChIJL8q7N00yKIYRzXPen4r1Sm0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -461,27 +888,28 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 16,
+      "historical_context_score": 3,
+      "priority_score": 15,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Mississippi Museum of Art appears to have a modest permanent collection and local significance, lacking detailed evidence supporting high scores in Impressionist or Modern/Contemporary holdings. The historical context score reflects its role in local cultural interpretation, rather than a broader historical framing.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence only establishes that it is a public art museum and the largest in Mississippi, without specifics on Impressionist or Modern/Contemporary permanent holdings, so strengths are estimated as minor. As a state-leading museum it likely offers some interpretive framing but not enough evidence for a high context score. Reputation is best inferred as regional, and collection tier as moderate for a statewide flagship without proof of encyclopedic depth.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "https://www.msmuseumart.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Jackson; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "6019601515",
+      "phone": "(601) 960-1515",
       "is_scoreable": true,
       "content_summary": "In Jackson’s cultural heart, the Mississippi Museum of Art offers an art-lover’s blend of Southern context, American breadth, and a calm, gallery-forward visitor experience. Come for strong regional and Mississippi-connected holdings, rotating contemporary exhibitions, and an easy-to-navigate campus that rewards slow looking. It’s a thoughtful stop for travelers who want to understand how place shapes art—without the crowds of larger institutions.",
       "content_description": "**Mississippi Museum of Art** in Jackson is the state’s flagship art museum—an accessible, regionally focused collection presented with the polish of a major institution. For art enthusiasts, the appeal is the museum’s ability to connect Mississippi’s visual culture to wider American narratives: expect galleries that foreground artists and themes tied to the South, alongside rotating exhibitions that introduce new voices and fresh scholarship. Even with a **modest** permanent collection, the programming keeps repeat visits rewarding, often pairing local context with contemporary perspectives.\n\nThe museum’s strengths lie in offering a clear sense of place—works that resonate with Mississippi history, landscape, and cultural memory—while also inviting you to compare regional aesthetics with broader currents in American art. Look for exhibitions that spotlight modern and contemporary practices, with curatorial framing that emphasizes process, material, and storytelling—hallmarks of engaging *gallery* experiences for travelers who like to read labels, trace influences, and linger.\n\nArchitecturally and experientially, the museum aims for a **welcoming, uncluttered visit**: bright, calm galleries; logical sightlines; and a pace that suits close looking rather than rushing. Plan to spend time with special exhibitions (often the most ambitious component), then reset in the museum’s public spaces before stepping back into downtown Jackson—making this an easy, satisfying anchor for a day of cultural exploration.",
@@ -499,7 +927,149 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://www.msmuseumart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 638,
+      "google_reviews": [
+        {
+          "author_name": "Nae",
+          "author_url": "https://www.google.com/maps/contrib/112638971229256594582/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWPbjs5BqpyivE5Jt5_jc4s8EfGORjntPFmqGffLp3F1DBWBRg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "We had my daughter's baby shower here in one of the event rooms. It was a wonderful venue for this occasion, beautiful gardens...",
+          "time": 1772650323,
+          "translated": false
+        },
+        {
+          "author_name": "Dr. Rosie Ann Riley",
+          "author_url": "https://www.google.com/maps/contrib/104109109585896708820/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-7FPs7SeM7iiguzAilratdpqmwWI1R2X5QHCAk2yRhGwGFtq3=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "This is a Blue Star Museum\nMy favorite part of this museum was the GARDEN!!! It’s absolutely beautiful and has a very unique design. There is a Cspire stage with plenty of tables. There is a swing, fountain and so much more.\nThey have the 2025 Invitational Artist and Jerrod Partridge is the best hands down. His art is simply beautiful with his handmade paper. There were other artist who caught eye but he is THE BES!!\nStephanie and Stacy were so very kind and professional. You must check out the gift shop. The children you see in photo are in their summer camp. They wanted to show me how they hola hoop. The one little girl in video made it clear to me that she was THE BEST!\nThe museum has an area where you can draw an object that represents you! They have a book nook and area to create art. I definitely will return to enjoy these areas.\n\nI highly recommend visiting this wonderful museum.",
+          "time": 1751496646,
+          "translated": false
+        },
+        {
+          "author_name": "Eric Guelcher",
+          "author_url": "https://www.google.com/maps/contrib/104454876205317582336/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLiRGt186OMVG_gJDURVR8adinDQYuegdPuZKF5x1IHEl7SMg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "One of our favorite things to do is visit art museums, so we were happy to see that Jackson had an art museum. We visited on a Saturday and the place was not too busy. We paid $15.00 each to experience all the exhibits, and it was well worth it.\nThe art collection is not the most impressive I have seen as there were no works from any of the great masters. With that being said, the exhibits left me feeling uneasy and had an impact I had never experienced during previous visits to other art museums.\nThe \"What happened to Dr. Smith\" exhibit was really profound and provided an intimate connection with the artist in dealing with what obviously was a highly personal, and I am sure painful, journey. The artwork conveyed the sadness of the devastating consequences of mental illness and the history of the suffering of the afflicted, going from a promising medical practice to a state run asylum. I was so impressed by the personal connection the artist achieved in researching his grandfather's plight, and translating it into such an engaging, emotional experience for me, through some brush strokes on canvas.\nThe museum also explored other uncomfortable topics through the art on display, dealing with race and other difficult subjects. As I said, I have never had an experience where the art seemed to resonate so deeply to feelings that left me somewhat uncomfortable, but isn't that what art should do? I definitely recommend the experience.",
+          "time": 1726444485,
+          "translated": false
+        },
+        {
+          "author_name": "Gerald Martin",
+          "author_url": "https://www.google.com/maps/contrib/112395843425827370554/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVAWpluVDmRk_WXWliSKwcFlX_9L9FjgHUh_z6ot4taJtyp8eOZCw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Energized by Art Party 2026: A Floral Féte on 26 January",
+          "time": 1770487673,
+          "translated": false
+        },
+        {
+          "author_name": "Jennifer M.",
+          "author_url": "https://www.google.com/maps/contrib/113985477001497986851/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK5dNvP8GwqrQNbv4p9V7y02C9R8EuJoZWy374PYMRG9JAssw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Had a great visit. Really enjoyed the quilt exhibit “Of Salt and Spirit”.\nIt really showcased the talent of the women who made them and each quilt told its own story.",
+          "time": 1742669713,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-ms-laurel-lauren-rogers-museum-of-art",
@@ -511,14 +1081,14 @@
       "website": "http://lrma.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "565 N 5th Ave, Laurel, MS 39440, USA",
       "address_line2": null,
       "postal_code": "39440",
-      "latitude": 31.6964658,
-      "longitude": -89.1303899,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 31.6965307,
+      "longitude": -89.1304265,
+      "place_id": "ChIJuzq158o1g4gR3YPcfPSGqJs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -539,27 +1109,28 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 1,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 19,
+      "historical_context_score": 3,
+      "priority_score": 18,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a modest collection primarily featuring American art and Native American baskets, which lack significant depth in Impressionist or Modern/Contemporary works. Historical context is primarily local, serving the immediate community with value but not extensively influential beyond that.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence highlights Native American baskets and a selection of American art (e.g., Winslow Homer, Bierstadt, Sargent) but provides no indication of dedicated Impressionist or Modern/Contemporary holdings, so those scores are minimal. As Mississippi's first art museum with identifiable collection areas, it likely provides some interpretive framing, but nothing suggests especially deep historical narrative. Visitor numbers and location point to primarily local recognition, with a respectable b",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://lrma.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Laurel; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6016496374",
+      "phone": "(601) 649-6374",
       "is_scoreable": true,
       "content_summary": "In Laurel, Mississippi, the Lauren Rogers Museum of Art is a rewarding small-city museum stop with a surprisingly broad sweep—fine art, decorative arts, and rotating exhibitions in an intimate setting. It’s the kind of place where you can slow down, look closely, and still see a lot in a single visit. Come for the pleasure of discovery: thoughtfully presented galleries, a calm pace, and the chance to pair serious art-looking with an easy day exploring historic Laurel.",
       "content_description": "**Lauren Rogers Museum of Art** in Laurel offers art lovers a focused, unhurried museum experience—ideal for travelers who prefer close viewing over crowds. As a local museum with a **modest but varied collection**, it tends to shine through breadth and presentation: galleries that let you move from painting and sculpture to **decorative arts** and special exhibitions without the fatigue of mega-museum scale. The result is a visit that rewards careful looking—textures, materials, and technique read clearly at intimate distances.\n\nArchitecturally, the museum’s appeal is its **human-scale design** and the way the building supports a contemplative rhythm: short sightlines, manageable rooms, and the sense that each gallery has been arranged for sustained attention. Rather than racing a checklist, you can take time with objects—tracking brushwork, surface patina, or the formal logic of a composition—then reset between spaces.\n\nFor art-focused travelers, the visitor experience is the real strength: **approachable, quiet, and easy to navigate**, with the flexibility to spend 45 minutes or a full afternoon depending on your curiosity. Plan to pair your visit with Laurel’s walkable downtown and historic neighborhoods—an appealing context for thinking about regional culture while enjoying a museum that feels personal, not performative.",
@@ -577,7 +1148,149 @@
       "collection_based_strength": 2,
       "collection_based_pas": 1,
       "effective_pas": 1,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "http://lrma.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1645"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1645"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1645"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1645"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1645"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:45 PM",
+          "Wednesday: 10:00 AM – 4:45 PM",
+          "Thursday: 10:00 AM – 4:45 PM",
+          "Friday: 10:00 AM – 4:45 PM",
+          "Saturday: 10:00 AM – 4:45 PM",
+          "Sunday: 1:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 525,
+      "google_reviews": [
+        {
+          "author_name": "Maura",
+          "author_url": "https://www.google.com/maps/contrib/110419305604194386711/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXiRF4YPV-CA11XT1zWZ03hf6qpIbHkFnT04dYrQg-x0I6Pq7Xd9g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "I visited the Lauren Rogers Museum of Art in Laurel, Mississippi today. Its a great little museum! It has a nice variety of paintings, sculptuture, mixed media, textiles, Native American baskets. I really enjoyed the basket gallery and the exhibits describing the different Native American cultures throughout the U.S. and the features of their work.",
+          "time": 1771112670,
+          "translated": false
+        },
+        {
+          "author_name": "Alan Windham",
+          "author_url": "https://www.google.com/maps/contrib/117093238711907655735/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWmt3rkHCXrhW22yuIC_FhDTSYutlcfFx0jrDp3vi1UsfJZWkQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Don't miss this museum if you are in Laurel.  Beautiful building and very nice collection.  Our group enjoyed the museum and the visiting exhibit of vintage MLB photography.  We also walked the historic district afterwards.  Very friendly, helpful staff. Highly recommend.",
+          "time": 1761655262,
+          "translated": false
+        },
+        {
+          "author_name": "wew lad",
+          "author_url": "https://www.google.com/maps/contrib/105447836002530427466/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWXND0boP9QAgYw6BFR9S89zHawACqB5efl3IiQj6HESigHsxIlyA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Visiting the Lauren Rogers Museum of Art was a delightful experience. Nestled in the charming town of Laurel, Mississippi, this museum may be small, but it is a treasure trove of diverse and fascinating collections. From the exquisite Indian baskets to the elegant antique silver, and from American art to European masterpieces, there's something to pique the interest of any art enthusiast.\n\nThe museum's architecture itself is a work of art, with stunning woodwork and a welcoming atmosphere that invites you to linger and explore. The staff are friendly and knowledgeable, enhancing the visit with their insights and assistance. The museum also offers informative videos on the history of Laurel and the museum itself, which I found to be particularly enlightening.\n\nWhile not typically a frequent visitor to art museums, the positive reviews and the allure of free admission convinced me to give the Lauren Rogers Museum of Art a chance, and I'm glad I did. It's a cultural gem that deserves recognition, and I would recommend it to anyone visiting Laurel. Whether you're a seasoned art lover or just looking for a pleasant way to spend an afternoon, the Lauren Rogers Museum of Art is definitely worth a visit.",
+          "time": 1713148515,
+          "translated": false
+        },
+        {
+          "author_name": "Greg Squyres",
+          "author_url": "https://www.google.com/maps/contrib/110454529311585920731/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXqzD1y72jroSrSjLvFGhO-PLKuC_OOcoiJSHWPj3khJdVpxj9vfQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Nice little museum. It was interesting learning about the museum's history and the reason it was built. The museum stands as a wonderful memorial following the tragic death of its namesake. A museum such as this isn't what I would expect in a small town like Laurel, but if you like museums, don't miss it while you're in town!",
+          "time": 1750354347,
+          "translated": false
+        },
+        {
+          "author_name": "Dex Jones",
+          "author_url": "https://www.google.com/maps/contrib/101112144844680123948/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKFh18kpEIyCv1Uo5O7u1LKqm8gii8538dpCEhxndUGwhzQvA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Museum staff were incredibly helpful, the items on display were well marked, and very informative. Would highly recommend anyone to visit at least once in their life. It isn't just art, but the history of the town too.",
+          "time": 1771315681,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-ms-ocean-springs-walter-anderson-museum-of-art",
@@ -589,14 +1302,14 @@
       "website": "http://www.walterandersonmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "510 Washington Avenue",
+      "street_address": "510 Washington Ave, Ocean Springs, MS 39564, USA",
       "address_line2": null,
       "postal_code": "39564",
-      "latitude": 30.4105588,
-      "longitude": -88.8274955,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 30.4104985,
+      "longitude": -88.8274775,
+      "place_id": "ChIJZZT5o3UJnIgRl2ta1EABzK0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -617,27 +1330,28 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 19,
+      "historical_context_score": 3,
+      "priority_score": 18,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "While the museum's focus on Walter Anderson is unique, it primarily serves local interests and hosts regional programming rather than influencing broader scholarship.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "WAMA is a single-artist-focused museum dedicated primarily to Walter Inglis Anderson and his family, with no evidence of Impressionist holdings, so Impressionism is scored negligible. Anderson is a 20th-century artist and the museum preserves major mural projects and an immersive “Little Room” installation, supporting a minor-to-moderate modern strength and some historical framing, but overall scope appears small and locally oriented.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.walterandersonmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Ocean Springs; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6018723164",
+      "phone": "(228) 872-3164",
       "is_scoreable": true,
       "content_summary": "In the coastal town of Ocean Springs, the Walter Anderson Museum of Art is a pilgrimage site for lovers of American nature-inspired art. Dedicated to the visionary Walter Inglis Anderson (1903–1965), the museum offers an intimate, deeply regional encounter with the Gulf Coast’s ecosystems translated into luminous watercolors, prints, and drawings. Come for the storytelling—birds, fish, forests, and barrier islands—and leave with a heightened sense of place, craft, and the poetic power of looking closely at the natural world.",
       "content_description": "**The Walter Anderson Museum of Art (WAMA)** in Ocean Springs is a rewarding stop for art travelers who appreciate artists rooted in landscape and ecology. Centered on the work of American master Walter Inglis Anderson (1903–1965), the museum invites you into a world where the Gulf Coast’s marshes, birds, fish, and barrier islands become subjects of rigorous observation and imaginative transformation. Anderson’s art—often lyrical and exploratory in line—bridges field-note precision with a personal, almost mythic sense of nature, making the visit feel both scholarly and intimate.\n\nThe museum’s strength is its **focused presentation of Anderson’s work**, supported by exhibitions that extend his legacy to **kindred artists** who engage the natural world. Expect a close look at technique and process—how a line suggests motion, how repeated animal forms build visual rhythm, how the artist’s lived environment shapes iconography. For viewers interested in American art beyond the major coastal centers, WAMA offers a compelling, place-based lens: regional in geography, expansive in artistic ambition.\n\nArchitecturally and experientially, WAMA reads as a **boutique museum campus**—manageable in scale, easy to navigate, and ideal for slow looking. It pairs well with a day in Ocean Springs: arrive early for quiet galleries, then continue into the town’s walkable streets and coastal atmosphere that echo the museum’s subject matter. For art lovers, the pleasure here is concentrated—an immersive encounter with one artist’s sustained devotion to the natural world and the community that continues to steward it.",
@@ -656,7 +1370,159 @@
       "collection_based_strength": 3,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "http://www.walterandersonmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 5:00 PM",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.9,
+      "google_reviews_count": 622,
+      "google_reviews": [
+        {
+          "author_name": "Elizabeth Pinckney",
+          "author_url": "https://www.google.com/maps/contrib/115852080580840083557/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWvy42DMdDRPW6dJS-Ubi-dvsv9vf2vsZ7tCYU6pOKLJpHD3I6Jyg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Fascinating art museum showcasing the life and work of Walter Anderson. Well worth a special trip to Ocean Springs!",
+          "time": 1769089801,
+          "translated": false
+        },
+        {
+          "author_name": "Tim Evans",
+          "author_url": "https://www.google.com/maps/contrib/116693698988442101253/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJS82a9Qr8tCTZqozvMEGIeYxExyGV_NkUIhISnoxtT8waICrc=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "I'm not an artsy guy. I did not expect to like this, and I could not have been more wrong. Anderson's genius was on clear display. It is impossible to come away from here and not be impressed.",
+          "time": 1767121285,
+          "translated": false
+        },
+        {
+          "author_name": "Jane Casey",
+          "author_url": "https://www.google.com/maps/contrib/114958493739220681263/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5t8leBbpCg9XlBnad2Tm0Q4hhqZlP0nfF3X0tiXy0Mud3WW4E=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "We added three hours to our drive to visit this museum, and we are so glad we did!\nWe all loved the mural in the community center, especially the kids. And my daughter and I were very interested in the pottery. That was a part of his story that we didn't know.",
+          "time": 1771947483,
+          "translated": false
+        },
+        {
+          "author_name": "Herbert Lee Pace Jr",
+          "author_url": "https://www.google.com/maps/contrib/101678464789702210853/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUFSWm12diAw1cJbUyfe0n3vCALJmXEW1RGTDsQ9RS6x-WnLs4=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I Was Driving Downtown Ocean Springs Mississippi....Now Area , Great For Families and Fishing",
+          "time": 1763809803,
+          "translated": false
+        },
+        {
+          "author_name": "Dr. Chadwick Lawson",
+          "author_url": "https://www.google.com/maps/contrib/111549429407871552313/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ6IC_8_spdVu7WqFEm6CRi-QFd3PHzU0IZDYcXa08KI-IPSA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "We were recently in Ocean Springs for our daughter's wedding at a beautiful local venue The Jackson Pearl, and this museum was on their venue list of \"must see\" experiences that we shared with the entire family. Feeling very grateful we took their advice as it was a wonderful short and peaceful walk from our accommodations, and was an afternoon filled with beauty and history. We highly recommend taking time to visit this incredible Museum to anyone visiting the area. Make sure to add time in your planning to enjoy the surrounding gardens, shops and bistros.  We walked down the street to their local beach afterwards and soaked in a paint worthy sunset.",
+          "time": 1761679843,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-ms-oxford-university-of-mississippi-museum",
@@ -668,14 +1534,14 @@
       "website": "http://museum.olemiss.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "University Ave &, Buie-Skipwith Museum, S 5th St, Oxford, MS 38655, USA",
       "address_line2": null,
-      "postal_code": "38677",
-      "latitude": 34.3642949,
-      "longitude": -89.5253801,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "38655",
+      "latitude": 34.3644511,
+      "longitude": -89.5254049,
+      "place_id": "ChIJi6XY8vF6gIgRlkgSKyRwuTQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -707,15 +1573,16 @@
         "openstreetmap",
         "official_website",
         "http://museum.olemiss.edu",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Oxford; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:37:39Z",
+      "updated_at": "2026-03-14T19:58:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6629157073",
+      "phone": "(662) 915-7073",
       "is_scoreable": false,
       "content_summary": "Nestled in the heart of Oxford, Mississippi, the **University of Mississippi Museum** offers a unique blend of art, history, and culture. With an eclectic collection ranging from American art to ancient artifacts, this museum is a treasure trove for curious minds and art enthusiasts alike. Don't miss the opportunity to explore its stunning exhibitions that connect the past with the present.",
       "content_description": "**The University of Mississippi Museum** stands as a beacon of cultural richness, nestled in the scenic college town of Oxford. Established in 1939, this museum offers diverse collections that span centuries, reflecting the artistic and historical journey of the region. The museum's architecture harmoniously blends with its surroundings, creating an inviting and engaging atmosphere for visitors. Upon entering, you are greeted by a warm and welcoming ambiance that hints at the artistic treasures waiting to be discovered inside. Each gallery is thoughtfully curated to evoke curiosity and appreciation for the art and artifacts displayed.  \n\nThe museum’s diverse collection features over 20,000 items, including significant works of American art, Southern decorative arts, and archaeology of the ancient Americas. Among the highlights is the **Collection of American Art**, featuring pieces by renowned artists such as John James Audubon and Charles Burchfield. Visitors can immerse themselves in the stories behind these artworks, each telling a narrative that invites reflection and exploration. The museum also includes a dedicated space for rotating exhibitions, allowing for new and exciting artistic expressions that engage all ages. Whether you're a lover of art, history, or culture, the **University of Mississippi Museum** guarantees a captivating experience that nurtures curiosity and leaves lasting memories.",
@@ -728,7 +1595,138 @@
       ],
       "content_generated_at": "2026-01-25T02:37:39Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://museum.olemiss.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 112,
+      "google_reviews": [
+        {
+          "author_name": "Dr. Rosie Ann Riley",
+          "author_url": "https://www.google.com/maps/contrib/104109109585896708820/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-7FPs7SeM7iiguzAilratdpqmwWI1R2X5QHCAk2yRhGwGFtq3=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "This museum is FREE! Free visitor parking is next to museum. This museum is 30 minutes East from I-55 if near Batesville, MS and definitely worth taking the time to visit.\n\nI really enjoyed this museum and the staff were very nice! There are no guided tours but they do have a small gift shop. And if you plan to visit the Rowan Oak (William Faulkner’s home) you must purchase souvenirs in this gift shop because there are none at the house. They have not set up a gift shop at the home.\n\nThey have a very nice quilt collection and Roman and Greek art. The largest in  southwestern USA. I was surprised to see a collection of bust of early Roman emperors like Tiberius, Marcus Aurelius, Agrippa the elder, Head of Emperor Augustus et al bequeath by David M. Robinson, 1958.\n\nI loved the quilts and several reminded me of the ones made by my neighbor when I was a young g girl. There is a very large collection; 2 galleries.\n\nThere is a collection if art by M.B. Mayfield and Theora Hamblett plus various American artist.\n\nI highly recommend visiting this museum is you are a lover of museums and what they have to offer!!!",
+          "time": 1744467178,
+          "translated": false
+        },
+        {
+          "author_name": "Rebecca L Mize",
+          "author_url": "https://www.google.com/maps/contrib/114585973427111810397/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL93nRrurZm62YDTFS0LSCrt_Ho_gdt6gRuVWaoapbu7a5BYw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "This FREE museum is a great place to experience the arts of ancient history & today. Take Bailey's Trail for a 20 minute leisurely stroll to Rowan Oak, William Faulkner's historic home.",
+          "time": 1567712644,
+          "translated": false
+        },
+        {
+          "author_name": "Randy Bullock",
+          "author_url": "https://www.google.com/maps/contrib/102721446320696085539/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXJ1blDc7UZVW53JeKrUmM-teYQoGsKaVVfofqG3CrPhlOR489wRA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A wonderful museum, I am going to enjoyed the Greek section of the museum. The mission is free the staff was very friendly and helpful",
+          "time": 1717266012,
+          "translated": false
+        },
+        {
+          "author_name": "Mark Byrne",
+          "author_url": "https://www.google.com/maps/contrib/116333607086792391808/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVocvh2rMWhBrOOWuOsv5w9m-Qj57UAOpU2J8LDYJQJJ3Ci3fatVg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "It needs better signage,I had a great time. It is free. It is small but has great displays. Crafts, art, local and European history.",
+          "time": 1747968689,
+          "translated": false
+        },
+        {
+          "author_name": "Aria “Blue” Kramer",
+          "author_url": "https://www.google.com/maps/contrib/107267222744167535293/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUY0VPPlfuWj-RNZSgSDGn1eUjS7_mnbM8iDZ_9bD9zx3lFE9_HdA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "This is a great place if you absolutely love old and modern art! They have the best staff anyone could even ever ask for!",
+          "time": 1566954312,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ms-tupelo-gumtree-museum-of-art",
@@ -740,14 +1738,14 @@
       "website": "http://www.gumtreemuseum.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "2787 GumTree Museum of Art 211 West",
+      "street_address": "211 W Main St, Tupelo, MS 38804, USA",
       "address_line2": null,
       "postal_code": "38804",
-      "latitude": 34.25741,
-      "longitude": -88.70976,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 34.2571643,
+      "longitude": -88.7049335,
+      "place_id": "ChIJW_TIaQBPh4gRTVjv2sDOO-o",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -771,20 +1769,21 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The GumTree Museum of Art appears to have some local significance but lacks specific evidence of Impressionist or Modern/Contemporary collections. The historical context score reflects its role in interpreting local culture, but it's primarily relevant to the Tupelo area.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence includes no description of the GumTree Museum of Art’s permanent collection or curatorial focus, so strengths in Impressionism, Modern/Contemporary art, and historical context cannot be determined. Based only on it being a museum in Tupelo, Mississippi with no further prominence signals, its reputation is assessed as primarily local.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.gumtreemuseum.com",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Tupelo; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:37:50Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": true,
@@ -799,8 +1798,75 @@
       ],
       "content_generated_at": "2026-01-25T02:37:50Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(662) 844-2787",
+      "website_google": "https://www.gumtreemuseum.com/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.8,
+      "google_reviews_count": 13,
+      "google_reviews": [
+        {
+          "author_name": "Vicki Daggett",
+          "author_url": "https://www.google.com/maps/contrib/105199222346549518762/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVrj8Ut9WXqCgqfL2nfGeMiil2Q5GRHw8JrzENCwTa5qPAPBAZ4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Small museum,  but some lovely pieces. I would have liked more, but it was just right for my son.",
+          "time": 1753070427,
+          "translated": false
+        },
+        {
+          "author_name": "Mary Belle",
+          "author_url": "https://www.google.com/maps/contrib/106963488789418362999/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXpvKDwSVlNmZg3vz-rq1PBn5Ir7bI7iWC4PuAbsNW_NLMvj6qeBg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This is a beautiful place! Beautiful building, beautiful artwork, and a great place to go with friends and family! The workers were very nice and helpful, too. I definitely recommend going!",
+          "time": 1721662525,
+          "translated": false
+        },
+        {
+          "author_name": "Pat Edwards",
+          "author_url": "https://www.google.com/maps/contrib/113905891426988728296/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL-aknZ8MnskhS1xlQRhPyFXNLqqXHzm-KWwY2EGLcc9u-Gbg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "The museum was great. TPSD TUPELO schools had art work up . Fantastic!",
+          "time": 1744917858,
+          "translated": false
+        },
+        {
+          "author_name": "Kelly Quick",
+          "author_url": "https://www.google.com/maps/contrib/109782039555427162162/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKfUvcMasPBmii0uvoV7x5AEa61-BMbprCFY1yK8m6uDTg6Xxm=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A lovely space to experience some amazing exhibits and to learn more about various local artists and their artwork.",
+          "time": 1727883172,
+          "translated": false
+        },
+        {
+          "author_name": "Charles Truscott",
+          "author_url": "https://www.google.com/maps/contrib/104363403746137986851/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-GjvWLXt2x5DSp1T2KfhWspR1Wh85pfs2R-6spVtCYcCC5F8L=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "It's a beautiful day or night and old building, well kept up, and a friendly staff",
+          "time": 1715455474,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

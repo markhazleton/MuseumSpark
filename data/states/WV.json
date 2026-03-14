@@ -20,7 +20,7 @@
       "longitude": -82.4672513,
       "place_id": "ChIJR9Rl-C7iRYgRMokSUjc1nWg",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -56,7 +56,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing https://www.heritagefarmmuseum.com: Network error for https://www.heritagefarmmuseum.com: <urlopen error [WinError 10060] A connection a; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:00:26Z",
+      "updated_at": "2026-03-14T20:05:26Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(304) 522-1244",
@@ -149,14 +149,14 @@
       "website": "https://www.hmoa.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2033 McCoy Rd, Huntington, WV 25701, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.39675,
-      "longitude": -82.43439,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "25701",
+      "latitude": 38.3928053,
+      "longitude": -82.4345228,
+      "place_id": "ChIJkxy1g2HiRYgRb0huG6vimQY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -177,26 +177,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 2,
       "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 16,
+      "historical_context_score": 3,
+      "priority_score": 15,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Huntington Museum of Art features a diverse collection, including American and European works, but lacks specific strengths in Impressionist or significant Modern/Contemporary holdings. Its historical context score reflects a local relevance rather than national significance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The permanent collection is described broadly (American/European paintings, prints, decorative arts, Asian decorative objects, folk and Haitian art) without specific evidence of notable Impressionist or Modern/Contemporary depth, suggesting only minor representation in those areas. As the largest art museum in West Virginia with a varied collection and research library, it likely provides some historical framing, but evidence for strong chronological/interpretive presentation is limited. Overall",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "https://www.hmoa.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Huntington' from open data; MRD: computed city_tier=3 for Huntington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Access forbidden (403) for https://www.hmoa.org; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3045292701",
+      "phone": "(304) 529-2701",
       "is_scoreable": true,
       "content_summary": "Set on a wooded hill above Huntington, the Huntington Museum of Art offers an intimate, art-lover’s escape with the feel of a cultural retreat. It’s a strong regional museum where you can slow down and look closely—moving from gallery highlights to outdoor sculpture and gardens in one visit. Expect thoughtfully curated exhibitions, a welcoming scale (easy to cover in a few hours), and a peaceful campus atmosphere that makes it especially rewarding for travelers who like art with breathing room.",
       "content_description": "**Huntington Museum of Art** is a satisfying stop for travelers who prefer a museum experience that’s **focused, well-curated, and unhurried**. As a regional institution with a modest but carefully managed collection, it excels at offering approachable entry points into art history—think rotating exhibitions and collection selections that invite close looking rather than marathon museum fatigue. For art enthusiasts, the pleasure here is in the details: good sightlines, readable interpretation, and the chance to see works in a setting that prioritizes quiet concentration.\n\nThe museum’s strengths are best experienced as a layered visit: begin in the galleries for changing shows and collection presentations, then step outside to enjoy the **campus-like grounds**, where art and landscape complement one another. This blend of indoor viewing and outdoor wandering gives the day a gentle rhythm—gallery time followed by fresh-air reflection—ideal for anyone who likes to digest what they’ve seen before moving on.\n\nArchitecturally and atmospherically, the setting is part of the draw: a museum that feels **embedded in nature**, encouraging you to treat the visit as both a cultural outing and a restorative break. Plan to linger—this is the kind of place where a single exhibition, a few standout objects, and a walk among outdoor artworks can add up to a memorable, distinctly local museum experience.",
@@ -215,7 +216,149 @@
       "collection_based_strength": 2,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Regionally Important",
+      "website_google": "https://www.hmoa.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 8:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 146,
+      "google_reviews": [
+        {
+          "author_name": "Aaron Jones",
+          "author_url": "https://www.google.com/maps/contrib/106916595981169621976/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVqK90T-Nbljx_2RuzeCdcfEuDv8GN4g-43_pLXegtLiF8WY_vf=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "5 months ago",
+          "text": "Had a nice visit to the museum with the wife and kids. Lots of interesting stuff inside and plenty to look at for a couple of hours. The short concrete trail was well maintained but couldn’t make out where the branching trails were. Everything seemed to be overgrown which was kind of a bummer. Really enjoyed the firearms collection. Staff were very friendly and gave us a little tour of the conservatory which the kids loved. They also enjoyed the craft room and the gift shop. Would recommend it for a chill day out.",
+          "time": 1759432120,
+          "translated": false
+        },
+        {
+          "author_name": "keith hudson",
+          "author_url": "https://www.google.com/maps/contrib/117244916835811078038/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXuBoFeIx2CY5429Y4f6xBGGi_Fo_UCliNygPws0p8hurBRLNw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Entertaining and creative museum with some excellent content. Displays are very well done by a creative curatorial staff. Particularly enjoyed the firearms and display of local artists. Also has extensive glassware galleries.\nHas botanical garden with walking trails filled with lush plants and exotic flowers - a nice indoor treat during a West Virginia winter.\nGets some very interesting travelling exhibitions - be sure to checkout the Gropius Fellowships when they come.\nOutside are extensive and colorful gardens and trails that are well worth exploring.\nRecommend!",
+          "time": 1767735173,
+          "translated": false
+        },
+        {
+          "author_name": "Sandraella Call",
+          "author_url": "https://www.google.com/maps/contrib/105827242332352651584/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWHv61Ehj9vZmMLR_ozgl_l5mCj-iBjL6PKG4pJXSBYHaj8qzAt=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Such a magnificent part of the WV heritage! Full botanical garden with glass sculptures only unique for this museum. Lots of history and artifacts. Several walking trails secluded in the forest all surrounding this majestic landscape. Very impressive & modern. Rich in history. Stop off & enjoy WV Art & Culture! Convenient to the interstate and gasoline! Drive less than a mile and see the Ritter Mansion with the original brick road from the turn of the century 1900’s. Large busses may take the entrance near the I64 interchange. Enjoy!",
+          "time": 1757299677,
+          "translated": false
+        },
+        {
+          "author_name": "CaseyM",
+          "author_url": "https://www.google.com/maps/contrib/116229011948346780333/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWxXVs9Q6Hya6Va3z7nNycwiyE51xu9lkPORLqQaUPMAeNP6F4=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "6 months ago",
+          "text": "Smaller, but well-curated collection with rotating exhibits. This art museum is a combo gallery plus botanical conservatory in the other wing which includes a saltwater aquarium and an axolotl habitat. On the grounds are considerable nature trails with an active pollinator garden where we saw several different species of butterflies and a Hummingbird Moth.",
+          "time": 1755458560,
+          "translated": false
+        },
+        {
+          "author_name": "Mahyar Zargari",
+          "author_url": "https://www.google.com/maps/contrib/114527805915836443830/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3bcR0R4sIjsvqaQKMT6TE8EysUFx-zOHoF97s99imw-5iKzRO=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Super creative exhibits, definitely worth stopping by if you’re in the area. It was pretty empty when we went, so we got to explore everything without distractions. We had a lot of fun playing giant chess, and the axolotls were adorable but very shy.",
+          "time": 1754688203,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Impressionist"
     },
     {
       "museum_id": "usa-wv-unknown-the-clay-center-for-the-arts-sciences",
@@ -234,7 +377,7 @@
       "longitude": -81.6296105,
       "place_id": "ChIJLYmvXsksT4gRawcIqiq9oSw",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Science Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -271,7 +414,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://theclaycenter.org: Network error for http://theclaycenter.org: <urlopen error [WinError 10054] An existing connection w; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:00:44Z",
+      "updated_at": "2026-03-14T20:05:27Z",
       "notes": "CSV: IRS Museum ID 8409500340 CSV: museum type 'Science Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "(304) 561-3570",
@@ -431,5 +574,5 @@
       "content_source": "openai"
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

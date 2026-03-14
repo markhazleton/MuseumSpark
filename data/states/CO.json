@@ -20,7 +20,7 @@
       "longitude": -106.816641,
       "place_id": "ChIJleFOF9Y7QIcRAhouhlg1wEA",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -44,9 +44,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Aspen Art Museum primarily serves the local community, indicated by its local reputation score. The evidence does not provide information on its impressionist or modern/contemporary collections, nor does it detail the historical context or collection tier beyond being small and local.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence includes no museum-specific description of the Aspen Art Museum’s permanent collection, so collection-area strengths and historical context cannot be reliably scored. Given Aspen’s small city size and the existing assessments indicating a local profile and small collection scope, reputation is scored as local and collection tier as small.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -60,7 +60,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado' from open data; MRD: computed city_tier=3 for Colorado; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800624; CSV: financial data available (income: 1348510, revenue: 1303455)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:28:21Z",
+      "updated_at": "2026-03-14T20:10:46Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "9709258050",
@@ -96,7 +96,7 @@
       "longitude": -105.2809922,
       "place_id": "ChIJldMlWzfsa4cRd6MQGGDygGE",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -136,7 +136,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado' from open data; MRD: computed city_tier=3 for Colorado; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800407; CSV: financial data available (income: 559651, revenue: 504077)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:28:27Z",
+      "updated_at": "2026-03-14T19:52:13Z",
       "notes": "Historic Preservation museum focusing on local history. Notable for its community engagement and preservation efforts.",
       "city_tier": 3,
       "phone": "3034493464",
@@ -165,14 +165,14 @@
       "website": "http://www.bmoca.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "1750 13th St, Boulder, CO 80302, United States",
+      "street_address": "1750 13th St, Boulder, CO 80302, USA",
       "address_line2": null,
       "postal_code": "80302",
-      "latitude": 40.01478,
-      "longitude": -105.27749,
+      "latitude": 40.0151638,
+      "longitude": -105.2773698,
       "place_id": "ChIJXWa3XS_sa4cRSoyyFGj5frc",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -190,15 +190,15 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
+      "impressionist_strength": 0,
       "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": null,
-      "priority_score": 12,
+      "historical_context_score": 1,
+      "priority_score": 11,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a strong focus on contemporary art, indicating a significant collection in that area. However, there is no evidence of Impressionist works or historical context provided, and its reputation is regional, serving the Boulder and Denver Metro Area.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence emphasizes BMoca’s role in presenting innovative contemporary art and offering programs/curatorial services in Boulder and the Denver metro area, supporting a Strong Regional-level exhibitions profile (ECA=3). No permanent collection details or named holdings are provided, constraining all collection-strength scores to minimal/none (collection_level=Small; collection_based_strength=0; movement/tradition categories not evidenced).",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -211,13 +211,13 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 4,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boulder' from open data; MRD: computed city_tier=2 for Boulder; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800445; CSV: financial data available (income: 889895, revenue: 773192)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "Boulder Museum of Contemporary Art is known for presenting innovative works of contemporary art in Boulder and the Denver Metro Area for over 50 years. The museum offers dynamic artistic expression programs for young artists and curatorial services beyond its galleries.",
       "city_tier": 2,
-      "phone": "3034432122",
+      "phone": "(303) 443-2122",
       "open_hour_notes": "Museum & Store Hours Tuesday – Sunday: 11am - 5pm",
       "is_scoreable": true,
       "content_summary": "Boulder Museum of Contemporary Art is Boulder’s intimate hub for the art of right now—thoughtful, experimental, and deeply connected to the Front Range creative community. Housed downtown in a character-rich historic building, BMoCA specializes in rotating exhibitions that spotlight contemporary artists and urgent ideas across painting, photography, installation, and new media. It’s an easy, rewarding stop for art lovers who enjoy discovery, strong curatorial voices, and a museum visit that feels plugged into the city’s cultural pulse.",
@@ -235,7 +235,150 @@
       "primary_art_focus": "Modern/Contemporary",
       "collection_based_pas": 4,
       "effective_pas": 4,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://www.bmoca.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 245,
+      "google_reviews": [
+        {
+          "author_name": "Chuck Baumgart",
+          "author_url": "https://www.google.com/maps/contrib/114434410942705279889/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIne-SGdIxd0mAn9XAEqZNAeYjicDCVqSOhtpWfet4gn_0xmQ=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "An excellent location right by downtown  Boulder.  On a weekday, pay parking was immediately  available. Look for sign that says how you can go online and pay. There is only a $2 entrance fee for the museum.  The current exhibit was interesting but not always well explained as to the meanings  intended with the pieces.  Recommend looking at what is showing in the gallery before you go.",
+          "time": 1687473473,
+          "translated": false
+        },
+        {
+          "author_name": "LS Sheldon",
+          "author_url": "https://www.google.com/maps/contrib/107016724440783982378/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3GWOmCYYpVYZ1KHAUeF4QOS1ijTdBip3nE1O-ATTvVTQ57BPa=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "This was my second visit to the museum. Each time I have been impressed with the art. They show 3-4 artists at a time in their small space. Here are some pictures from the current shows. They have a cute gift shop, too. Go visit and support this great museum!",
+          "time": 1684086641,
+          "translated": false
+        },
+        {
+          "author_name": "Harvey Flowers",
+          "author_url": "https://www.google.com/maps/contrib/115199593188777909076/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXTeliekkniI6SjOVSiQHFI4PyK5cCvq_AyTlL-cCbhob2OtmhS=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "This is a somewhat small museum with an interesting collection of works. It was very affordable and there is a nice little tea shop right next door. I very much enjoyed the fabric art and textiles on the 2nd floor. Would highly recommend to anyone looking to view the world from a different perspective.",
+          "time": 1661026712,
+          "translated": false
+        },
+        {
+          "author_name": "Dave Abel",
+          "author_url": "https://www.google.com/maps/contrib/107087842192664190892/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJYES5bSNRjwu6Bm2_rbGoyyP0q9tTL1cscwSD7RmIQAv2E6Q=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I had the pleasure of touring this small but intimate space with my son and granddaughter. They offer a yearly membership which is a fantastic value. Staff is friendly and knowledgeable",
+          "time": 1764966231,
+          "translated": false
+        },
+        {
+          "author_name": "Sara Beth Wade",
+          "author_url": "https://www.google.com/maps/contrib/109444180488262712967/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWIJEpgkZMuZD9gGDgwZVilMfxtoLFKGchg_hinQOjUZ7PRdcgD9g=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "This is a small but impactful museum - only three galleries but interesting artists. The three in the fall/winter selection are a collection of altered photographs (often polaroids), by splicing and intercutting several shots in a collage. (By Kevin Hoth & George Perez.) Then a black artist who combines photographs and printing techniques for rich examples of everyday life (by Kristopher Wright.) And upstairs, a collection of projected photos on the shifting nature of \"home\" (by Erin Hyunhee Kang.)\n\nAlso, it's free on Saturday and right next door to the Dushanbe Tea House, so if you're there already, you might as well stop in. The small store is worth a look, too, I liked some of the earrings on sale.",
+          "time": 1676482167,
+          "translated": false
+        }
+      ],
+      "eca_score": 3,
+      "collection_based_strength": 0
     },
     {
       "museum_id": "usa-co-unknown-colorado-snowsports-museum-and-hall-of-fame",
@@ -247,14 +390,14 @@
       "website": "https://www.snowsportsmuseum.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "231 S Frontage Rd E, Vail, CO 81657, United States",
+      "street_address": "231 S Frontage Rd E, Vail, CO 81657, USA",
       "address_line2": null,
       "postal_code": "81657",
-      "latitude": 39.74401,
-      "longitude": -105.0177,
+      "latitude": 39.64223940000001,
+      "longitude": -106.3733055,
       "place_id": "ChIJhSRsjmtwaocRloxMz7oH7eo",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -295,10 +438,10 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Vail' from open data; MRD: computed city_tier=3 for Vail; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800673; CSV: financial data available (income: 959317, revenue: 745702)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:28:58Z",
+      "updated_at": "2026-03-14T19:52:15Z",
       "notes": "Colorado Snowsports Museum and Hall of Fame is a general museum celebrating Colorado snow sports. It features exhibits that educate and inspire visitors about the history and culture of snow sports in Colorado. The museum is open daily and offers free admission.",
       "city_tier": 3,
-      "phone": "7202583888",
+      "phone": "(970) 476-1876",
       "open_hour_notes": "10 AM-6 PM daily",
       "is_scoreable": false,
       "content_summary": "The Colorado Snowsports Museum and Hall of Fame celebrates the rich history and culture of snowsports in Colorado, making it a must-visit for winter sports enthusiasts and history buffs alike. Explore fascinating exhibits and engage with the legacy of legendary athletes who shaped the world of skiing and snowboarding.",
@@ -312,7 +455,158 @@
       ],
       "content_generated_at": "2026-01-25T01:28:58Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.snowsportsmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1800"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 227,
+      "google_reviews": [
+        {
+          "author_name": "Keith Custer",
+          "author_url": "https://www.google.com/maps/contrib/105236498925321278412/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWaogaHokidC3gTdqn7FV7z8B1Wa5YK4r5Fi5ui81VQPZ4P8z9g=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "It was refreshing to have something interesting for the family that was actually free!  Not much hands-on for small children, but with my youngest at 13, it was a very interesting stop for a couple hours.  Truly a spirit of honor to the various pioneers of the sport.  I also geeked out a bit learning how the ski binding evolved over time.",
+          "time": 1769333854,
+          "translated": false
+        },
+        {
+          "author_name": "Amirreza Sahami",
+          "author_url": "https://www.google.com/maps/contrib/116060788696244084419/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIKTMOSjBZGm5Jb1pIvRr0gMpcBDJZa1HVMqx8fWy0TpVNFpQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "A small sweet museum. It is worth a one-time exploration.",
+          "time": 1769998024,
+          "translated": false
+        },
+        {
+          "author_name": "Aigo M (Miss Aigo)",
+          "author_url": "https://www.google.com/maps/contrib/101438364864924542704/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVedydZsoRvB6qctN2Zytbs3hgJ2v500C10Qt3ZES-1GLX3mwTIfw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Very interesting museum, I also watched the movie, I don't know how long it is but it felt very long for a museum. It helps to understand more about Colorado ski history and about people who contributed to the growth of that place.",
+          "time": 1740578199,
+          "translated": false
+        },
+        {
+          "author_name": "sean shivley",
+          "author_url": "https://www.google.com/maps/contrib/117761548282658007792/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXBDbRyv48Skc4r5-MtvW7K0xkv_Jht7FSN1nvLNSZSS18Gw74K=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great place to gain an appreciation of how the 10th Mountain Division was formed during WW II. Also exhibits about the winter Olympics, the evolution of ski gear and technology. Good perspective with interactive exhibit and informative about Colorado ski areas. Fun gift shop as well.",
+          "time": 1735018726,
+          "translated": false
+        },
+        {
+          "author_name": "qlv assoc",
+          "author_url": "https://www.google.com/maps/contrib/105681529994417096950/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUxPyg-RkcezQ0v6aZhQ_ljTMWMAPF4hJiU8nJQ9kfjLRF-g1b9cg=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "A museum near Transportation Center with several artifacts, and chronological display of progressing of snow sports as well as legendary pioneers. There is also gift section inside the museum that offers souvenirs for visitors to take back home. It is free admission with suggestion of donation to help run the museum.",
+          "time": 1700169991,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-unknown-colorado-springs-fine-arts-center",
@@ -324,14 +618,14 @@
       "website": "http://www.csfineartscenter.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "30 WEST DALE STREET",
+      "street_address": "30 W Dale St, Colorado Springs, CO 80903, USA",
       "address_line2": null,
       "postal_code": "80903",
-      "latitude": 38.84539,
-      "longitude": -104.82545,
+      "latitude": 38.8457835,
+      "longitude": -104.8261714,
       "place_id": "ChIJx2B2mkBFE4cRkigrEjMuErU",
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -355,9 +649,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum is known regionally within Colorado, which supports a reputation score of 2. The collection tier is moderate, indicating a respectable but limited scope, but there is no specific evidence provided for Impressionist or Modern/Contemporary strengths or historical context.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence describes the Colorado Springs Fine Arts Center as an arts center with historic designation but gives no details on permanent collection scope or specific strengths (e.g., Impressionism or Modern/Contemporary). Given the existing assessments and its role as a regional institution in Colorado Springs, a regional reputation and moderate collection tier are the most supportable scores.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -369,13 +663,13 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado Springs' from open data; MRD: computed city_tier=2 for Colorado Springs; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800396",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:29:11Z",
+      "updated_at": "2026-03-14T20:10:50Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "7196345583",
+      "phone": "(719) 634-5581",
       "open_hour_notes": "Monday: Closed\nTuesday: Closed\nWednesday: 10:00 AM – 5:00 PM\nThursday: 10:00 AM – 5:00 PM\nFriday: 10:00 AM – 8:00 PM\nSaturday: 10:00 AM – 5:00 PM\nSunday: Closed",
       "is_scoreable": true,
       "content_summary": "Anchoring Colorado Springs’ cultural district, the Colorado Springs Fine Arts Center is a rewarding stop for art lovers who want strong regional stories alongside broader American currents. Expect a museum visit that feels both intimate and ambitious: galleries that foreground the art of the Southwest and the Rockies, rotating exhibitions that keep repeat visits fresh, and an architecturally distinctive campus that blends museum-going with an active performing-arts atmosphere. It’s a smart, satisfying half-day for anyone building an arts-focused itinerary in the Pikes Peak region.",
@@ -389,7 +683,128 @@
       ],
       "content_generated_at": "2026-01-25T01:29:11Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://fac.coloradocollege.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 500,
+      "google_reviews": [
+        {
+          "author_name": "H G",
+          "author_url": "https://www.google.com/maps/contrib/116236969660606281709/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIWl6XXDpiDCQf4x6tfQPjX8_ddbAJuD9LOAa6djddxD808KA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "I adore The Fine Art Center! My husband and I love to come here on weekends and can easily spend 2-3 hours looking at the art. The free parking across the street makes it so convenient to stop by. The Cochiti pottery is stunning!",
+          "time": 1771351008,
+          "translated": false
+        },
+        {
+          "author_name": "Angel Tainted",
+          "author_url": "https://www.google.com/maps/contrib/107956827122189792239/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXkZZyrCi9oz4XcvOrAoxGXE_7CvFAKKi82P99r0VqsuFQKgK6pyw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This hidden gem is truly worth the trip in. So many gorgeous exhibits to wonder thru each one offering inspiration and provoking conversation. The collection of Chihuly glass on display was truly a highlight of my visit.",
+          "time": 1765418044,
+          "translated": false
+        },
+        {
+          "author_name": "Morgan Rios",
+          "author_url": "https://www.google.com/maps/contrib/117190896907635242057/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVD4BfZGrJIMkyQKFJ6TUcNsGhcapOl7eulGWVCLRXiz5xMVIRZ9w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Beautiful hand crafted pieces. Very open spaced museum. Welcoming of all ages. It does have an activity library as well",
+          "time": 1761769862,
+          "translated": false
+        },
+        {
+          "author_name": "Merrilee Ellis",
+          "author_url": "https://www.google.com/maps/contrib/111403828607159983107/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV0YU_bfrytGceNO63L9pxcwRnVcDN3kyUV2BRLbA_53TVTSQeo=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 3,
+          "relative_time_description": "3 months ago",
+          "text": "We attended a matinee of Mary Poppins. Everything was excellent except the sound. It was awful. I'm not sure if it was the mixer, mics or sound system but it was very shrill and treble heavy. We were seated in the 3rd row. We moved to the last row which helped a lot. Still couldn't understand most of the speaking and music was too loud during songs. My mom said she doesn't want to return to this theater. I've been coming here for 25 years and a season ticket holder for years. I truly hope they fix this problem.",
+          "time": 1764780440,
+          "translated": false
+        },
+        {
+          "author_name": "Chuck Baumgart",
+          "author_url": "https://www.google.com/maps/contrib/114434410942705279889/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIne-SGdIxd0mAn9XAEqZNAeYjicDCVqSOhtpWfet4gn_0xmQ=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "We come down from Denver for a visit every 3 or 4 months.  Love the Southwestern art exhibit.  You won't find a larger array of Spanish Colonial art, including 200 year old retablos and statues anywhere else in the West - unless you're in Santa Fe.  There are always a number of rotating exhibits that are well done.",
+          "time": 1688217478,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-unknown-denver-art-museum",
@@ -401,14 +816,14 @@
       "website": "https://denverartmuseum.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "100 W 14th Ave Pkwy, Denver, CO 80204, United States",
+      "street_address": "100 W 14th Ave Pkwy, Denver, CO 80204, USA",
       "address_line2": null,
       "postal_code": "80204",
-      "latitude": 39.74122,
-      "longitude": -104.98672,
+      "latitude": 39.7371878,
+      "longitude": -104.9893451,
       "place_id": "ChIJFaqhMyt_bIcRMfeTGF4E8kM",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -426,15 +841,15 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": 3,
+      "impressionist_strength": 1,
       "modern_contemporary_strength": null,
       "primary_art": "Impressionist",
       "historical_context_score": null,
-      "priority_score": 12,
+      "priority_score": 16,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Denver Art Museum has some Impressionist works, indicating moderate representation. It is recognized as a major destination within the U.S., contributing to its national reputation. However, there is insufficient evidence regarding its modern/contemporary strength and historical context.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence provided does not document Denver Art Museum permanent-collection strengths; the only relevant claim is a vague note of “diverse exhibitions, including Impressionist works,” which is insufficient for higher collection scores and does not establish permanent holdings. With no concrete collection details or programmatic record, Impressionist strength and overall collection-based strength are kept at Limited, and ECA is scored Minimal due to lack of evidence beyond generic programming lang",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -445,13 +860,13 @@
         "official_website/visit",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Denver' from open data; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800365; CSV: financial data available (income: 40083926, revenue: 5907991)",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "The Denver Art Museum is an art museum known for its diverse exhibitions, including Impressionist works. It offers a variety of programs and events to engage visitors with art.",
       "city_tier": 1,
-      "phone": "7208655000",
+      "phone": "(720) 865-5000",
       "open_hour_notes": "Today is January 15. We are open 10 am – 5 pm. Plan Your Visit",
       "is_scoreable": true,
       "content_summary": "Denver Art Museum is a must for art lovers seeking both bold architecture and deep, regionally distinctive collections. Known nationally for its Native American art and strong modern and contemporary holdings, it offers everything from intricate Indigenous textiles and jewelry to major European and American works. The museum’s striking buildings make the visit feel like an art experience before you even enter the galleries, and its thoughtfully designed spaces invite slow looking, sketching, and discovery across centuries and cultures.",
@@ -467,9 +882,152 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "primary_art_focus": "Impressionist",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Consider"
+      "collection_based_pas": 1,
+      "effective_pas": 1,
+      "outcome_tier": "Background",
+      "website_google": "https://www.denverartmuseum.org/en",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 8:00 PM",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 16029,
+      "google_reviews": [
+        {
+          "author_name": "Justyn Davidson",
+          "author_url": "https://www.google.com/maps/contrib/108313284166319539174/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX4I9MSVwWlX9HOlMmf6Ejk5FJ-0Bi03enlvaoJjXSHH5T88jvz=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "The DAM is a world-class experience. The diversity of the art and intricacy of many exhibits make the museum a must-see. One of the top attractions in Denver and one of my favorite museums, period (and I’ve been to many in the US and Europe). The staff is always amazing and there are plenty of sites for all ages, including many interactive pieces.\n\nThe new-ish Hamilton building always had great galleries and temporary exhibits, but don’t miss the Martin (large castle-like building) as well. Absolutely fantastic.",
+          "time": 1764721710,
+          "translated": false
+        },
+        {
+          "author_name": "Thebeholder Photographer",
+          "author_url": "https://www.google.com/maps/contrib/118388867254054319331/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUZJ5l2zYZ00s-z_TiZrS55zYYo3gOF4RTEfrB1E6kkA3lIsRo=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I couldn't spend enough time at this museum! There's not enough time in a day to simply look at every single piece of art. We arrived at 1pm, easily spent two hours on one level for an exhibit, another hour on a different floor and before we knew it, it was closing time.\nNext time I'm spending all day!\nThere's so much to see and be inspired by. ❤️ the student, teacher & military discount.",
+          "time": 1764224729,
+          "translated": false
+        },
+        {
+          "author_name": "Chris Andolsek",
+          "author_url": "https://www.google.com/maps/contrib/101703526344461409303/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWYnOZAlCS8xaDxo91lT1GPIPrwQ2RC_RNKDWCuZRErL_RgsAK7EA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "What a treasure! We've learned to take advantage of memberships at various Denver cultural centers, and the D.A.M.membership is our most recent. It is so wonderful to be able to take advantage of \"members only\" events and exhibits that are scheduled at the museum. Our most recent visit was to view the Camille Pissarro viewing and take the self-guided audio tour. The educational experience from discovering details about the artist and the history behind the paintings was enlightening!",
+          "time": 1763990053,
+          "translated": false
+        },
+        {
+          "author_name": "Adriana M",
+          "author_url": "https://www.google.com/maps/contrib/105720832939633608440/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW6ou3anv7778HhssDGXUDpMRf31YY90D2IlTYpaBJVgPLYXfqb=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "a week ago",
+          "text": "It really is an amazing place. I don't know why I couldn't give it quite five stars, probably because the places I wanted to see were closed. But it really is definitely worth a visit. It's amazing. Also, I took this infrared photo of it a couple days ago when it was a bright sunny day. The infrared turns the blue sky black and I find it really interesting .",
+          "time": 1772427071,
+          "translated": false
+        },
+        {
+          "author_name": "Heartbeatlove",
+          "author_url": "https://www.google.com/maps/contrib/101324489911308309027/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXlQPRSqO76hGwj61wKZl7eKmbTGloi_7TQBOMm1Jeo7x4zXw8=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "It was a really great experience. The staff were very helpful and friendly. I’m not an artist so I really enjoyed having the Bloomberg Connects app. Paintings with a little red tag had a number you could look up and hear/read a little snippet about the work and the artist. I loved that, a much more involved experience for me.\n\nThe works were displayed beautifully and being able to visit another building via a connecting bridge was fun and convenient. They even had an artist in house sculpting and you could watch his process as he worked. I definitely want to visit again but give myself more time because there was so much to see!",
+          "time": 1758028382,
+          "translated": false
+        }
+      ],
+      "eca_score": 1,
+      "collection_based_strength": 1
     },
     {
       "museum_id": "usa-co-unknown-denver-firefighters-museum",
@@ -488,7 +1046,7 @@
       "longitude": -104.9925256,
       "place_id": "ChIJ9c58mtN4bIcRBsmUBvq_jko",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -526,7 +1084,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Colorado' from open data; MRD: computed city_tier=3 for Colorado; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800451",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:29:31Z",
+      "updated_at": "2026-03-14T19:52:17Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "3038921436",
@@ -555,14 +1113,14 @@
       "website": "http://durangoarts.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "802 E 2nd Ave, Durango, CO 81301, United States",
+      "street_address": "802 E 2nd Ave, Durango, CO 81301, USA",
       "address_line2": null,
       "postal_code": "81301",
-      "latitude": 37.27262,
-      "longitude": -107.87911,
+      "latitude": 37.2721428,
+      "longitude": -107.879523,
       "place_id": "ChIJESVHKaICPIcRCO-AhTbRwWw",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -586,9 +1144,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Durango Arts Center is known regionally within Colorado but lacks sufficient evidence for specific strengths in Impressionist or Modern/Contemporary collections. Its collection appears to be respectable but limited in scope.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about an individual (Shan Wells) rather than the Durango Arts Center, offering no evidence about the museum's permanent collection or interpretive approach. Given only the existing assessments and the institution's regional setting, reputation and collection tier are kept at a regional/moderate level while other categories cannot be determined.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
@@ -598,13 +1156,13 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: extracted city 'Durango'; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800211",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:29:41Z",
+      "updated_at": "2026-03-14T20:10:54Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9702592606",
+      "phone": "(970) 259-2606",
       "open_hour_notes": "Monday: Closed\nTuesday: 12:00 – 6:00 PM\nWednesday: 12:00 – 6:00 PM\nThursday: 12:00 – 6:00 PM\nFriday: 12:00 – 6:00 PM\nSaturday: 12:00 – 6:00 PM\nSunday: Closed",
       "is_scoreable": true,
       "content_summary": "In the heart of Durango, the Durango Arts Center is a lively hub for seeing what artists are making right now in the Four Corners. Expect rotating exhibitions that mix regional voices with contemporary trends—painting, photography, ceramics, and mixed media—often with openings and events that make the visit feel like stepping into the town’s creative pulse. It’s an ideal stop between hikes and historic rail adventures: intimate in scale, easy to explore, and designed for art lovers who enjoy discovery and community energy.",
@@ -618,26 +1176,157 @@
       ],
       "content_generated_at": "2026-01-25T01:29:41Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.durangoarts.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 6:00 PM",
+          "Wednesday: 12:00 – 6:00 PM",
+          "Thursday: 12:00 – 6:00 PM",
+          "Friday: 12:00 – 6:00 PM",
+          "Saturday: 12:00 – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 120,
+      "google_reviews": [
+        {
+          "author_name": "Nathan Swartz",
+          "author_url": "https://www.google.com/maps/contrib/101851069402185145885/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXrhEdIFbNLpbCobs-UFkyeh7nH2I4XiUL6PccA6fjp5YT2UhYi=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "What an exceptional resource in our community. A place for kids who are into the theater, acting, the technical aspects or just not comfortable in other extracurricular activities to find a place to express themselves, to be themselves through imagination, dedication and a little hard work.\n\nPlus, the theater itself is enjoyable. It’s easy to see the entire stage(s) and the drinks and popcorn certainly help, too. :)\n\nSo grateful for what this has done for my son, the confidence building, the friendships and providing a way for him to learn how to do something that can be both challenging and difficult with all the strangers in the crowd.\n\nThe art store, art classes and library full of art books is also a hit with our family.",
+          "time": 1766371526,
+          "translated": false
+        },
+        {
+          "author_name": "Philip Raymond Brown",
+          "author_url": "https://www.google.com/maps/contrib/101829720387535643558/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU0_U9n4LI0pMgchlaox7G7JNTPsX7IMS6zicNzKiW9XmvCBl9JXA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Durango Arts Center (“DAC”)  is one of my family’s favorite places in Durango.  Our relationship with DAC began as a spectator at its wonderful plays.  We then sent our kids to DAC’s programs for teens and have been blown away by their productions.  My daughter sold paintings in the DAC art gallery.  Finally, I have performed in several of their Durango Art Repertory Productions which has been a wonderful experience.",
+          "time": 1728392090,
+          "translated": false
+        },
+        {
+          "author_name": "Brittany Harris",
+          "author_url": "https://www.google.com/maps/contrib/113213946059372207639/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocITwESR3c9iQ4DKc7DmIESZU5msHx2MkUsYV94DIqCd7ZaruA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Took a wonderful ink drawing class hosted by Deena. She is such a gifted teacher, with a charismatic and fun passion that radiates from her in everything she does. You can feel how much she loves art in all its forms, and she speaks words of encouragement that everyone should hear. The DAC presents so many opportunities for artists to be seen and welcomed, both old and young. What an incredible place.",
+          "time": 1717814841,
+          "translated": false
+        },
+        {
+          "author_name": "Denise G",
+          "author_url": "https://www.google.com/maps/contrib/109207331632953924515/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVZ52S4SIV2kABW8qRLXhkK5q31gOGvjhhlPRiUIfVmmbos8VBq9g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "6 years ago",
+          "text": "So nice to have a venue for live theatrical performances. This venue is minimal in size and viewing from small tables and chairs makes for crowding and obscured viewing of the stage. Love the high quality productions, but this facility does not do them justice.",
+          "time": 1582499731,
+          "translated": false
+        },
+        {
+          "author_name": "Christine Gacharná",
+          "author_url": "https://www.google.com/maps/contrib/110887827072603724106/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-bEnjv41U4eSb6JtHh0zS-wDKU9-CZM6ENsVyGCCU1TLUD7fA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "We saw a flyer for \"The Complete Works of William Shakespeare abridged\" while we were out to eat one evening and thought hmmm, sounds fun. It was way better than fun — we laughed the whole performance! Shakespeare in football was positively brilliant! Brian Devine, Geoff Johnson, and Jason Lythgoe are super talented. Durango is so lucky to have this Arts Center, we look forward to our next visit!",
+          "time": 1666775078,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-unknown-fort-collins-museum-of-contemporary-art",
       "country": "USA",
       "state_province": "Colorado",
-      "city": "Boulder",
+      "city": "Fort Collins",
       "museum_name": "Fort Collins Museum of Contemporary Art",
       "alternate_names": null,
       "website": "http://www.ftcma.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "1750 13th St, Boulder, CO 80302, United States",
+      "street_address": "The museum of art building, 201 S College Ave, Fort Collins, CO 80524, USA",
       "address_line2": null,
-      "postal_code": "80302",
-      "latitude": 40.01478,
-      "longitude": -105.27749,
-      "place_id": "ChIJXWa3XS_sa4cRSoyyFGj5frc",
+      "postal_code": "80524",
+      "latitude": 40.5853252,
+      "longitude": -105.0773788,
+      "place_id": "ChIJWSDdEvVKaYcRwc_nhIzUnnQ",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -661,9 +1350,9 @@
       "historical_context_score": null,
       "priority_score": 19,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The evidence provided does not include any specific information about the museum's collections, strengths in Impressionism or Modern/Contemporary art, historical context, or its reputation. Therefore, all scores are returned as null due to insufficient evidence.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Based on the museum name, it is focused on contemporary art, implying at least moderate Modern/Contemporary representation, while Impressionism is likely negligible. The provided Wikipedia evidence is not about the museum’s permanent collection (it covers photographer Mark Sink), so collection tier and reputation are estimated as local/small with low confidence and historical context cannot be determined.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -672,13 +1361,13 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 1,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boulder' from open data; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800445",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3034432122",
+      "phone": "(970) 482-2787",
       "open_hour_notes": "Monday: Closed\nTuesday: 11:00 AM – 5:00 PM\nWednesday: 11:00 AM – 5:00 PM\nThursday: 11:00 AM – 5:00 PM\nFriday: 11:00 AM – 5:00 PM\nSaturday: 11:00 AM – 5:00 PM\nSunday: 11:00 AM – 5:00 PM",
       "is_scoreable": true,
       "content_summary": "Fort Collins Museum of Contemporary Art (MoCA) is a smart stop for art lovers who want to see what’s happening now in Colorado and beyond. Expect rotating exhibitions that spotlight emerging and mid-career artists, bold ideas, and fresh materials—from painting and photography to installation and time-based work. With an intimate scale and a lively downtown setting, it’s an easy, high-impact visit that rewards close looking and repeat trips.",
@@ -695,7 +1384,139 @@
       "content_source": "openai",
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "https://www.moafc.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1900"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 205,
+      "google_reviews": [
+        {
+          "author_name": "Jason Keller",
+          "author_url": "https://www.google.com/maps/contrib/112605412232764310435/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPD50I4P7HtN8llKWTtZeN_6yqMaVBlgNfPvTmP54coh3Av5MR=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "When it comes to the museums that Fort Collins will have. It is flattering that such a vibrant city does not have a large diversity of museums. But with the small amount of museums the city has, they hold up in one thing, quality.\n\nThis was my first time visiting this museum, which was an art museum that was in a historic building from the early 20th century. When I first walked in, I entered through the gift shop, and at first, felt unimpressed by the museum, I did, however, get my admission free, which was a positive to start this experience. I went into the first exhibit, which was the Installation Nation, one of the many seasonal exhibits that the museum happens to offer, the exhibit was an interesting display of sculpture, as it featured indie artists from the region, who showed off their expertise in mache crafting. One thing that also stood out about this exhibit was also the use of sound, made to enhance the experience to decipher meaning in the artworks displayed.\n\nThe second exhibit, dealt with the murals of Colorado artist, Gina Blickenstaff, the murals, displayed all in the first floor hallway, were quite vibrant, and featured multimedia paintings that were designed primarily to expose the public about the wonders of Colorado's beautiful landmarks, combined with Blickenstaff's exposure in the artwork field.\n\nThe third and last exhibit was held in the Jung-Springberg Gallery, a gallery meant to honor a deceased contributor from Montana, who had this gallery honored in 2017, this exhibit was housing an extension of the Installation Nation. This featured works of other regional artists in the Springberg Gallery section, and distinct mediums for sculpture, similar to the likes of those in the first exhibit, but featuring differing themes of perspective in the art world, accompanied also by narration for the themes of the artists involved.\n\nOverall, with the experience I had, it was quite a good way to expose myself to the arts and the humanities of the city of Fort Collins, but compared to other art museums, such as the Newark Museum of Art in New Jersey, which is comparable for the admission price and size alone and the amenities, it is lacking, despite the exhibits changing on a seasonal basis for two factors. Number one, the museum is too small, this is my main gripe, as I think that the second floor could be converted to house more art exhibitions, rather than for private use. And Number Two, the price tag does not really reflect the experience, as the time it takes can easily ruin the worth of the museum, if you're a paying customer.\n\nDespite those complaints, I may come back in the future to experience the changing exhibits, which includes their Masks fair in the Spring and other showcases of art.",
+          "time": 1769293610,
+          "translated": false
+        },
+        {
+          "author_name": "Evan Bills",
+          "author_url": "https://www.google.com/maps/contrib/103759121505922982907/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUeUJptTIjt6qLKOVzY-QEBJDWFxcVaP1dNlfcQxufyIO8jwN4=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "4 weeks ago",
+          "text": "While it does indeed have interesting art from local artists, the floorspace is very small. My wife and I saw everything on display after about 10 minutes, and we were definitely not rushing.\n\nStop in of you want to support your local museum, but be aware that the quantity of art is relatively low",
+          "time": 1770951190,
+          "translated": false
+        },
+        {
+          "author_name": "Jewel Jackson",
+          "author_url": "https://www.google.com/maps/contrib/108815833784760639481/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXxFiB36jJsHOtqRZjHdrcEynd7r2n6uQoBr15F03OQ24rwmbqSzA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "My wife and I love visiting for each new collection. Always thought provoking. I highly recommend going during a Friday night art walk or using the curiosity pass through the library if you are on a budget!",
+          "time": 1762641317,
+          "translated": false
+        },
+        {
+          "author_name": "Chu Leo",
+          "author_url": "https://www.google.com/maps/contrib/104655889102431946428/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV7yaadd2dtFIzixyX2cTR1QtrxbYIrnlll0fx3CXp27Blkvhyf=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Small gallery with active community engagement\nvisited during Dia de los mortes 💀 🎃",
+          "time": 1762041750,
+          "translated": false
+        },
+        {
+          "author_name": "LS Sheldon",
+          "author_url": "https://www.google.com/maps/contrib/107016724440783982378/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3GWOmCYYpVYZ1KHAUeF4QOS1ijTdBip3nE1O-ATTvVTQ57BPa=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "We were just lucky enough to catch the final days of the current exhibit, Triennial. Although this museum is small, they offer works carefully curated works that echo the show’s theme. Here are some favorites. I was glad to see more rooms in the museum being used, plus the gift shop looked great!",
+          "time": 1691282110,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-co-unknown-golden-history-museums",
@@ -707,14 +1528,14 @@
       "website": "http://www.goldenhistory.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "923 10th St.",
+      "street_address": "923 10th St, Golden, CO 80401, USA",
       "address_line2": null,
       "postal_code": "80401",
-      "latitude": 39.75692,
-      "longitude": -105.22421,
+      "latitude": 39.7560634,
+      "longitude": -105.2247593,
       "place_id": "ChIJFSGtHtKaa4cRmme6zDxuogQ",
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": "History",
       "topics": null,
@@ -752,10 +1573,10 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800608",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:29:52Z",
+      "updated_at": "2026-03-14T19:52:20Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3032783557",
+      "phone": "(303) 278-3557",
       "open_hour_notes": "Visit Tuesday - Saturday",
       "is_scoreable": false,
       "content_summary": "The Golden History Museums in Golden, Colorado, invite visitors to explore the intriguing legacy of the area's past. Home to significant historical sites and collections, this museum offers a unique glimpse into the rich tapestry of Colorado's frontier history, making it a must-visit for history enthusiasts and curious travelers alike.",
@@ -763,7 +1584,138 @@
       "content_highlights": [],
       "content_generated_at": "2026-01-25T01:29:52Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://goldenhistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1630"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1630"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1630"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1630"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1630"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:30 PM",
+          "Wednesday: 10:00 AM – 4:30 PM",
+          "Thursday: 10:00 AM – 4:30 PM",
+          "Friday: 10:00 AM – 4:30 PM",
+          "Saturday: 10:00 AM – 4:30 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 204,
+      "google_reviews": [
+        {
+          "author_name": "Connie",
+          "author_url": "https://www.google.com/maps/contrib/104464290114284234269/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXY5COUgOK6FepvrZ6MEIOA2a0-Hc2tMWX__4NTL-I4AAia9ZRU=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Happy we stopped by this visit to Golden. Have been by the area many times but they're always closed due to the hours. They close on the earlier aide of the day. But today they were open. Cute small museum. We entered 30 minutes before closing time and that was enough time for us to go through the different rooms and see some of the highlights. Interesting history. The staff was very nice and helpful. Free admission. Free Activities for kiddos to do if you have younger kids. Recommend if you have free time and are in the area.",
+          "time": 1767250810,
+          "translated": false
+        },
+        {
+          "author_name": "Tamara Brady",
+          "author_url": "https://www.google.com/maps/contrib/108432739683849628848/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUaQnvF1rW64QIQVjSoTi_eAsndmEJ7ZhSDG75p3lGsg444gh5XEA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Great lecture Jan 28th on the WWII 10th Mountain Division by author Lance Blyth \"Ski Climb Fight\" (Instagram @mtn_war).\n\nThe photos I've attached are in a display of the local Native American attire. The small ivory colored decorations are elk teeth.",
+          "time": 1769878019,
+          "translated": false
+        },
+        {
+          "author_name": "Katie Fiola Jones",
+          "author_url": "https://www.google.com/maps/contrib/108573779560180730641/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVWOW781Rf_-cwYaHuVUTbk1SEviGj_VuaM-pfLBCdqPsfKHQCrHA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We enjoyed walking around the museum. It's free and a nice place to spend an afternoon. They have kids activities, seating, WiFi, and tables outside by the river. The parking is free. Just be sure to park in the museum designated spots or you can get a ticket. The employees at the desk are very friendly and helpful. We learned that their chicken coop currently does not have chickens but they are getting new baby chicks in spring 2025.",
+          "time": 1729282351,
+          "translated": false
+        },
+        {
+          "author_name": "Shirley-Ann Garcia",
+          "author_url": "https://www.google.com/maps/contrib/116173428859751077628/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiPDlzW9GQpFTNkR07N-qj_Y6D7pyrffuWzuW8TMVedYHVptWq8g=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Enjoyed the interesting history they had about Golden and it's community members. A small and neat museum.",
+          "time": 1762897093,
+          "translated": false
+        },
+        {
+          "author_name": "Leon Sekunda",
+          "author_url": "https://www.google.com/maps/contrib/103236257257603179281/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXrrgOWwaX8YwyPNdzcH4yDYLQQm-zHmZQ2EkqdiJ58VdIvplP=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "What a museum for free. Very well done and not crowded on a Saturday on 30 Jan 2021.  Very friendly and helpful staff.  Lots of free parking on property and close by.  Clean restrooms and facility.\n\nRecommend allowing 3 hours to do all the inside, less if you don't read everything or watch the videos. An additional hour for the outside exhibits where you can feed chickens; $.25 cents for feed available. There are also ducks in the creek if you want to bring something to feed them.\n\nLike many things in life, this museum gives back what you put into it.  Our group including 3 teens, age 12 to 15 spent 3 hours inside and an hour outside.  The teens participated in a scavenger hunt and were given a prize upon completion.\n\nThe museum itself has lots of little gems if you take the time to search them out and can be accomplished in three hours very easily, but many spend much less time. We learned a lot about Golden and the people the museum highlights.  Exhibits evidently do change and we'll be back again.   Woody's Pizza is a great finish to the day.",
+          "time": 1612045644,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-unknown-longmont-museum",
@@ -775,14 +1727,14 @@
       "website": "https://www.longmontcolorado.gov/departments/departments-e-m/museum",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "400 Quail Road",
+      "street_address": "400 Quail Rd, Longmont, CO 80501, USA",
       "address_line2": null,
       "postal_code": "80501",
-      "latitude": 40.14285,
-      "longitude": -105.09925,
+      "latitude": 40.145675,
+      "longitude": -105.0996435,
       "place_id": "ChIJje9uhL_5a4cR2sYxriMRJLM",
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -822,10 +1774,10 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Longmont' from open data; MRD: computed city_tier=2 for Longmont; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800483",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:30:00Z",
+      "updated_at": "2026-03-14T19:52:21Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3036518374",
+      "phone": "(303) 651-8374",
       "open_hour_notes": "Monday: 9:00 AM – 5:00 PM\nTuesday: 9:00 AM – 5:00 PM\nWednesday: 9:00 AM – 5:00 PM\nThursday: 9:00 AM – 5:00 PM\nFriday: 9:00 AM – 5:00 PM\nSaturday: Closed\nSunday: Closed",
       "is_scoreable": false,
       "content_summary": "The Longmont Museum is a captivating destination that intertwines local history with vibrant contemporary displays, making it a must-visit for anyone exploring Colorado. Its engaging exhibitions and community-focused programs showcase the rich heritage and artistic spirit of Longmont, ensuring a memorable experience for all visitors.",
@@ -839,7 +1791,138 @@
       ],
       "content_generated_at": "2026-01-25T01:30:00Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://www.longmontcolorado.gov/museum",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.5,
+      "google_reviews_count": 482,
+      "google_reviews": [
+        {
+          "author_name": "Silvia Kraft",
+          "author_url": "https://www.google.com/maps/contrib/112217607125922243535/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIPIzFDw6E0o7ypY4wiJ0HgF96uKpvq4zRlY5tmyJsoHq9yqw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Tonight I attended a nighttime historical haunted walking tour in Longmont. What a great and fun event for a spooky October evening! The tour guides were so knowledgeable and so qualified to present on their topics, which made the tour very enjoyable, lush with stories about the old buildings, the eclectic characters who lived in town AND the documented paranormal investigations topped with chilling and captivating local lore. I learned so much. A special thanks to Dr. Keenan for her wonderful stories. A truly fun outing! Highly recommend!",
+          "time": 1761107658,
+          "translated": false
+        },
+        {
+          "author_name": "Christa Plaza",
+          "author_url": "https://www.google.com/maps/contrib/106645826470404456809/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXkxTeUIc5uytpg92XhA7CWMzDCH-2gEdcSaku7HM7ytPs2IPxP=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This is more than a museum. Live music in the auditorium and outdoor spaces creat great community gathering events. The Childrens programs are amazing. Currently under construction for new gallery spaces and dedicated children's museum. There is something for all ages to enjoy!",
+          "time": 1763244909,
+          "translated": false
+        },
+        {
+          "author_name": "GRUMPYGILLZ",
+          "author_url": "https://www.google.com/maps/contrib/102009271554901750027/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXbxcfID3KiVQJ4e5wwkdRaK3FUomP0oPSXMxKJMj1N-OznK84=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The Lego exhibit Was great and it was interactive so my son and I had a great time!\n\nLooking forward to future events.\n\nGood parking. The place was clean and spacious.",
+          "time": 1726490760,
+          "translated": false
+        },
+        {
+          "author_name": "Sara Beth Wade",
+          "author_url": "https://www.google.com/maps/contrib/109444180488262712967/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWIJEpgkZMuZD9gGDgwZVilMfxtoLFKGchg_hinQOjUZ7PRdcgD9g=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "A really well-done history museum with interesting displays and a clear narrative. And there are lots of old-school interactive elements that are great for kids. (I liked the one where you divert water to where it needs to go.)\n\nThe \"Duality\" gallery curated by Gregg Deal is really amazing - contemporary works by indigenous artists. Definitely a must-see. Then for kids, there is a treehouse play area up in the tower that's a lot of fun and had great views.",
+          "time": 1676481145,
+          "translated": false
+        },
+        {
+          "author_name": "Chuck Baumgart",
+          "author_url": "https://www.google.com/maps/contrib/114434410942705279889/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIne-SGdIxd0mAn9XAEqZNAeYjicDCVqSOhtpWfet4gn_0xmQ=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "A great local museum. Their core exhibit takes you through the history of Longmont over 100 plus years and is very interesting to go through. This portion of the exhibit is free. There are other rotating exhibits which are an additional charge and have been quite varied and get changed up frequently.  We always look for what's going on at the museum to plan another visit!\n\nMore recent new exhibit - agriCULTURE - teaming up local artists with local farms.\n\nAn update.  Continued new, high quality exhibits on a regular basis.  A great recent example is the Picasso prints exhibit.  Who knew?  A person in Fort Collins has this collection of over 60 prints!\nPriceless!",
+          "time": 1748041939,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-denver-clyfford-still-museum",
@@ -851,14 +1934,14 @@
       "website": "http://clyffordstillmuseum.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "1250 Bannock St, Denver, CO 80204, United States",
+      "street_address": "1250 Bannock St, Denver, CO 80204, USA",
       "address_line2": null,
       "postal_code": "80204",
-      "latitude": 39.7362911,
-      "longitude": -104.9898454,
+      "latitude": 39.7363194,
+      "longitude": -104.9897917,
       "place_id": "ChIJrfRCFCt_bIcRXZXnUpY9cu4",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": null,
       "topics": null,
@@ -876,15 +1959,15 @@
       "visit_priority_notes": null,
       "parking_notes": null,
       "public_transit_notes": null,
-      "impressionist_strength": null,
-      "modern_contemporary_strength": 5,
+      "impressionist_strength": 0,
+      "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": null,
-      "priority_score": 8,
+      "historical_context_score": 3,
+      "priority_score": 7,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Clyfford Still Museum has a flagship collection focused on modern and contemporary art, particularly the works of Clyfford Still. However, there is no evidence provided regarding Impressionist works or historical context, and its reputation is recognized nationally.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum’s permanent collection is exceptionally deep for a single major Abstract Expressionist: 3,125 works by Clyfford Still (93% of his lifetime output) plus complete archives, supporting a Major Scholarly score for modern/contemporary and overall collection-based strength. Historical context appears intentionally framed through archive displays and visible storage/conservation, but evidence does not indicate field-defining interpretive scholarship. Programmatic authority is inferred as str",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
@@ -897,10 +1980,10 @@
       "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800689",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "7203544880",
+      "phone": "(720) 354-4880",
       "open_hour_notes": "Monday: Closed\nTuesday: 10:00 AM – 5:00 PM\nWednesday: 10:00 AM – 5:00 PM\nThursday: 10:00 AM – 5:00 PM\nFriday: 10:00 AM – 5:00 PM\nSaturday: 10:00 AM – 5:00 PM\nSunday: 10:00 AM – 5:00 PM",
       "is_scoreable": true,
       "content_summary": "Denver’s Clyfford Still Museum is a rare chance to step inside the world of a single, fiercely independent pioneer of Abstract Expressionism. Purpose-built to hold nearly the entirety of Still’s artistic legacy, it offers an immersive, chronological journey from early figuration to monumental fields of jagged color. The calm architecture and intimate galleries encourage slow looking, making this a must for modern-art lovers who want depth rather than a greatest-hits stroll.",
@@ -916,9 +1999,152 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 5,
-      "effective_pas": 5,
-      "outcome_tier": "Must-See"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority",
+      "website_google": "https://clyffordstillmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 839,
+      "google_reviews": [
+        {
+          "author_name": "A D",
+          "author_url": "https://www.google.com/maps/contrib/105581815429916087481/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWCGwToKfoeb8aqJvAbAAdrj0GH3H79ATWHxTH1jcIsQt336WHVaA=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "5 months ago",
+          "text": "My friend and I were just using library passes so we didn’t pay for a tour, but it might have helped us understand Still’s life and work better. The artwork was large and stimulating. There’s a small gift shop area in the front. Wish it had some magnets/stickers with the name of the museum on them. There are some quirky magnets and stickers but I’d love some more basic ones with the museum’s name. Street parking could be found.",
+          "time": 1758578639,
+          "translated": false
+        },
+        {
+          "author_name": "Jena R",
+          "author_url": "https://www.google.com/maps/contrib/101148699312761055898/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkphj5CdNXIscbCvOaqOunzrsbe4O_Vy-tvCqlcut8IHnD9bIIfg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "This museum is fantastic! Such knowledgeable guides and a wealth of information and experience about Clifford Still; a father of abstract expressionism. They house over 95% of his lifetime of work and regularly change exhibits so that you can always go back to see more of his paintings. Such a wonderful experience. To eat, you must go outside even if you’ve packed your own food. No water allowed inside exhibit halls unless carefully stowed away (and not removed). You can’t get a sense of the enormity of what he did from photos alone. You must visit in person. The architecture was also a lovely experience. Make sure you get the brochure about that too. Enjoy!",
+          "time": 1757540929,
+          "translated": false
+        },
+        {
+          "author_name": "Kia Gutiérrez",
+          "author_url": "https://www.google.com/maps/contrib/104354550734659011134/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWEaEaNeSJlMuiAUUVc2MB-Ijxg9KoLkfVinRDaoMcWd6lk6_u4oQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Clifford work as displayed in his museum sold me on the value of abstract art. It is incredible to see his progression as an artist over time. The scale of his work is larger than most and gives an incredibly powerful impression. This exhibit on display when I went was curated by children, which only added to the experience. There is a hands on art section. My 10 year old was able to do her own art there while I walked the exhibit. The staff are incredibly kind and thoughtful. A must visit for any art enthusiast.",
+          "time": 1762842410,
+          "translated": false
+        },
+        {
+          "author_name": "john mullis",
+          "author_url": "https://www.google.com/maps/contrib/102176245494231042991/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWQSW2NyfjYY34DNamXt9fgSaIlTQRRdFNVg2x1S1ZQxlhfKLqh=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "This is one of my favorite spaces on the planet. The art is stunning and thought provoking. To have 93% of Still’s work in one place allows the viewer to begin to understand his modern Impressionism.  It’s a wonderful experience every time I go.",
+          "time": 1754774563,
+          "translated": false
+        },
+        {
+          "author_name": "Wassim Ayass",
+          "author_url": "https://www.google.com/maps/contrib/115864862472361505614/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU4CnlwQqWj7tL_sHvLATbPuS9pOp0PUExh6-I51ZnXgsPY-rz7=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "A hidden gem and an absolute must-visit in Denver for art lovers.\nThe Clyfford Still Museum offers a rare and deeply personal glimpse into the life and work of one of the most important figures in modern American art. As the only museum dedicated entirely to Clyfford Still, it provides a truly unique experience that you won’t find anywhere else.\nThe museum itself is a masterpiece of architectural design: clean, minimalist, and purposefully constructed to complement and elevate Still’s bold, emotionally charged paintings. The layout is thoughtful and intimate, allowing visitors to engage with the artwork without feeling rushed or overwhelmed.\nThe collection is beautifully curated, showcasing Still’s artistic evolution, from early representational works to his groundbreaking abstract expressionist pieces. Each gallery tells a story, offering context and insight into the artist’s philosophy, technique, and vision.\n\nThe staff were exceptionally friendly and knowledgeable, eager to answer questions and provide deeper background on Still’s work and legacy. Their passion for the art truly enhanced the visit.",
+          "time": 1747526228,
+          "translated": false
+        }
+      ],
+      "eca_score": 3,
+      "collection_based_strength": 4
     },
     {
       "museum_id": "usa-co-denver-molly-brown-house-museum",
@@ -930,14 +2156,14 @@
       "website": "http://www.mollybrown.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "1340 Pennsylvania Street",
+      "street_address": "1340 Pennsylvania St, Denver, CO 80203, USA",
       "address_line2": null,
       "postal_code": "80203",
-      "latitude": 39.73751,
-      "longitude": -104.9807688,
+      "latitude": 39.7374933,
+      "longitude": -104.9807338,
       "place_id": "ChIJd8jaltR-bIcRrftppzqiBeY",
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -974,7 +2200,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Google Places: extracted operating hours; Google Places: 4.7/5 rating with 2804 reviews",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:30:16Z",
+      "updated_at": "2026-03-14T19:52:23Z",
       "notes": "Visit the Molly Brown House Museum! Discover the legacy of Margaret Brown with tours, events, and a museum store supporting local goods. Check hours & book now!",
       "city_tier": 1,
       "open_hour_notes": "We will reopen at 10am on Saturday, January 17th!",
@@ -990,7 +2216,149 @@
       ],
       "content_generated_at": "2026-01-25T01:30:16Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(303) 832-4092",
+      "website_google": "https://mollybrown.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2826,
+      "google_reviews": [
+        {
+          "author_name": "Gail Jones",
+          "author_url": "https://www.google.com/maps/contrib/101912106388588268286/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-w38luEfwDih8stY-DJh-X7OTCUqQxnGGDVexORCUZiwukDE=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Bought a Art Culture Pass that was good for 3 days & 7-8 places for $42. Such a great bargain - don't miss it!\n\nWe took a self-guided tour of this magnificent house. So much to read & see. It offers a wonderful glimpse into the people who lived there, the culture, and history of those times.\n\nShe was an amazing woman that I would have been proud to call a friend!",
+          "time": 1769370335,
+          "translated": false
+        },
+        {
+          "author_name": "Our Haunted Travels - PANICd",
+          "author_url": "https://www.google.com/maps/contrib/116930802376831029165/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWGJOD3dcu_7357GO3w48ItrHfa8lXXk9ACn1D7y8XyhJkpXLi1=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "We had the opportunity to visit this location in 2009, and we are pleased to finally share our review.   We remember it was simple to get tickets to take the tour, but at the time we were not permitted to take photography on the inside of the house.  I don't know if this has changed, but some other reviews have photos from inside the building.\n\nOne thing that sticks out is the information on how the Browns actually made their money.  It was excellent history, and we enjoyed it quite well.\n\nWe will definitely go back if we find ourselves in Denver again in the future.",
+          "time": 1767639173,
+          "translated": false
+        },
+        {
+          "author_name": "Alaskan Beachbums",
+          "author_url": "https://www.google.com/maps/contrib/112530755131616055690/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYH3O-IaAHM7_ECetcsJEVHGh2O25W0d1_t7rnpl-ahfvlEersHw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Beautiful house. Like a walk through the past. We learned so much more about Mrs. Molly Brown. She truly was an amazing individual. Also a great well of knowledge about Leadville Colorado.",
+          "time": 1771969261,
+          "translated": false
+        },
+        {
+          "author_name": "Greg Free",
+          "author_url": "https://www.google.com/maps/contrib/103647102801540038808/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU1USoBn-cLf6rTugcXQOZ3OwfV69iNpHyjQE8giNjCzwj5nxqZ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Really enjoyed this short walk-through history. So many of the items were donated to the museum after they had been sold upon her death. It’s nice to see the original items in their original home. The layout of the home allows for a self guided tour that can take about 30 to 45 minutes. There are cards in each room that describe what you’re seeing and also show pictures of the original room from when Molly Brown was there. Don’t forget to look up at the ceiling for original fresco’s and colors. And pick up a souvenir in the well stock souvenir shop. Bathrooms are available on site and there are always helpful guides at every term.",
+          "time": 1766332747,
+          "translated": false
+        },
+        {
+          "author_name": "Gretchen Mominee",
+          "author_url": "https://www.google.com/maps/contrib/103371115176665741351/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVmdCiYSOx_CpD8gH9_hYIZjXPVpU4p-ejQ8QqZRGvjHqqM7rYpbA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "The employees are fantastic- kind, knowledgeable, really helpful. It’s a beautiful house, full of interesting artifacts and information. Molly Brown was amazing. She was probably great before surviving the Titanic, but going through the house you can really get the sense that she felt a responsibility as a survivor to live a big life and do some good and help others. I did the self-guided tour, but you can also do a guided tour.",
+          "time": 1760543493,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-denver-museum-of-contemporary-art",
@@ -1002,14 +2370,14 @@
       "website": "http://www.mcadenver.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "2644 W 32 nd Ave",
+      "street_address": "1485 Delgany St, Denver, CO 80202, USA",
       "address_line2": null,
       "postal_code": "80202",
-      "latitude": 39.7525,
-      "longitude": -105.004,
+      "latitude": 39.7523022,
+      "longitude": -105.0042101,
       "place_id": "ChIJvcHQQcF4bIcRmDttJRd0FN4",
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1033,9 +2401,9 @@
       "historical_context_score": 4,
       "priority_score": 12,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a regional reputation, indicated by the prior reputation score of 2. However, there is insufficient evidence to assess its strengths in Impressionist or Modern/Contemporary collections, as well as historical context and collection tier.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary describes the Denver Art Museum as an encyclopedic institution with 70,000+ works across centuries, supporting a strong overall collection tier and generally good historical framing. It highlights strengths in American Indian and Western American art rather than Impressionism, so Impressionist holdings are inferred as minor. Modern/contemporary strength is not explicitly evidenced beyond the museum being large and diverse, so it is scored as moderate.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "wikidata",
@@ -1049,13 +2417,13 @@
         "llm_scoring",
         "museum_planner_spreadsheet"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: matched Q16895577; Wikidata: inferred reputation=2 from sitelinks; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: computed city_tier=1 for Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Inferred primary_domain=Art from name/type; Wikidata: matched Q16895577; Wikidata: no applicable fields to fill; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:18Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "7192553567",
+      "phone": "(303) 298-7554",
       "open_hour_notes": "Monday: Closed\nTuesday: 12:00 – 7:00 PM\nWednesday: 12:00 – 7:00 PM\nThursday: 12:00 – 7:00 PM\nFriday: 12:00 – 7:00 PM\nSaturday: 10:00 AM – 5:00 PM\nSunday: 10:00 AM – 5:00 PM",
       "is_scoreable": true,
       "content_summary": "Denver’s Museum of Contemporary Art offers a sharp, ever-changing look at art being made right now—often by voices shaping the Rocky Mountain region alongside national and international names. Expect bold installations, experimental media, and thought-provoking exhibitions that reward repeat visits. The building itself adds to the experience: a contemporary setting designed for immersive viewing, with a lively, urban energy that fits the museum’s forward-looking mission. It’s a standout stop for art lovers who want to feel the pulse of contemporary culture in Denver.",
@@ -1085,7 +2453,149 @@
       "planner_data_updated_at": "2026-01-24T21:52:22Z",
       "collection_based_pas": 3,
       "effective_pas": 4,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "https://mcadenver.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1900"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1900"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1900"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 12:00 – 7:00 PM",
+          "Wednesday: 12:00 – 7:00 PM",
+          "Thursday: 12:00 – 7:00 PM",
+          "Friday: 12:00 – 7:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 2048,
+      "google_reviews": [
+        {
+          "author_name": "Michael Houlihan",
+          "author_url": "https://www.google.com/maps/contrib/111512331314852346570/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMkTAXdEtkmx8XzdV0_grmeA_IXoRvDcvizIEeZ_1pxgx0YyA2=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Small but very well done.\nDefinitely visit the rooftop!\nExcellent exhibition of local teen artwork.",
+          "time": 1767224873,
+          "translated": false
+        },
+        {
+          "author_name": "Hayli Nemeth",
+          "author_url": "https://www.google.com/maps/contrib/100599588200158571277/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIJTYopiTkfuEDcoKIqSQn_iTdKU17fLMvxqo0I6OJSzQ__CQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Obsessed. I always love what I find on exhibit here. The museum as an organization is so generous with the community: resident penny admission days, artist memberships, etc. you can feel how much intention goes into making the space accessible. I love the special events they do too! Concerts in the summer, creative discussion topic nights. Keep them coming please!",
+          "time": 1771636551,
+          "translated": false
+        },
+        {
+          "author_name": "Francis Abbott",
+          "author_url": "https://www.google.com/maps/contrib/105780037958871663028/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU1Bq-_o-jTyQsrMwso9dQxcMQKhV6DVJlef5dkY6eAO_VT8k0o=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Great installations! Extremely contemporary. Roof top bar and food were a vibe in itself!",
+          "time": 1757255451,
+          "translated": false
+        },
+        {
+          "author_name": "Lindsay Surdell",
+          "author_url": "https://www.google.com/maps/contrib/114654928849636174191/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUDfOCISMkCfaU5JOImXltXXk49iKqYJXc7BKAQXl4JMf02NuuD6g=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "The current exhibit focuses on New Orleans Louisiana history and art.  There is a 50 minute film/exhibit on dual screens which is informative and mesmerizing.  Would recommend a visit to the museum  and make an afternoon of it.",
+          "time": 1753101549,
+          "translated": false
+        },
+        {
+          "author_name": "Christopher Conner",
+          "author_url": "https://www.google.com/maps/contrib/117801150614244131177/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUCKzfyYSZ7PYD8DPT1boOmn7Cz3WYf76E9FUEaTVTYMR-QqpHb8w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "a year ago",
+          "text": "The rooftop was the coolest part of it. The architecture of the building was cool as someone else commented and it has A.C. which was really cool! I didn't think there were that many exhibits and what constitutes as art nowadays blows me away. I saw broken glass, water, air, and a dirty napkin on display. It's worth checking out I suppose. You should read the description of the exhibits. They say they change the exhibits every so often so I'll probably go back.",
+          "time": 1724445672,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-co-golden-foothills-art-center",
@@ -1097,14 +2607,14 @@
       "website": "http://www.foothillsartcenter.org/#feature1",
       "status": "Temporarily Closed",
       "last_updated": "2026-01-17",
-      "street_address": "1133 Arapahoe St, Golden, CO 80401, United States",
+      "street_address": "1133 Arapahoe St, Golden, CO 80401, USA",
       "address_line2": null,
       "postal_code": "80401",
-      "latitude": 39.7525432,
-      "longitude": -105.2191988,
+      "latitude": 39.7550721,
+      "longitude": -105.2224148,
       "place_id": "ChIJgwgkViuFa4cRvZrQfMTPgEg",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1139,7 +2649,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Golden; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; Google Places: extracted street address; Google Places: 4.6/5 rating with 129 reviews",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:30:38Z",
+      "updated_at": "2026-03-14T19:52:25Z",
       "notes": "Phone: (303) 279-3922\nGoogle Rating: 4.6/5 (129 reviews)\n♿ Wheelchair accessible entrance available",
       "city_tier": 3,
       "is_scoreable": false,
@@ -1154,7 +2664,139 @@
       ],
       "content_generated_at": "2026-01-25T01:30:38Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(303) 279-3922",
+      "website_google": "http://www.foothillsartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 130,
+      "google_reviews": [
+        {
+          "author_name": "Paul Weinrauch",
+          "author_url": "https://www.google.com/maps/contrib/117581808221450747563/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUeMR6v4MInLnEm6XFXHRjBWJC2hdBycJz3X7B74CFMYtJYz4cc=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Foothills Art Center – Astor House consistently demonstrates a strong commitment to community engagement. Their ongoing partnership with Red Rocks Community College through the annual VAMA Art Exhibition provides RRCC students with a meaningful opportunity to present their work in a professional gallery setting.\n\nEach year, Foothills Art Center creates\na supportive environment that values student voices and creative exploration. The exhibition experience gives students real-world exposure, reinforces professional standards, and helps bridge the gap between academic learning and the broader arts community.\n\nTheir continued collaboration reflects a genuine investment in emerging artists and highlights the positive impact that sustained community partnerships can have on student growth and confidence.\n\nThank you!",
+          "time": 1770129226,
+          "translated": false
+        },
+        {
+          "author_name": "Theresa Davis",
+          "author_url": "https://www.google.com/maps/contrib/101645554280987181647/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-W27fw7LT0FWQU__7qOXxToWLniaTT2nt2drkb5UtUFs5QXE6mw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Took my third watercolor class.  Crowded, but the the instructor, Janet Nunn, is a fabulous teacher.  Learned a lot and came home with 8 really nice cards.",
+          "time": 1761665873,
+          "translated": false
+        },
+        {
+          "author_name": "Montgomery Hughes",
+          "author_url": "https://www.google.com/maps/contrib/103713066911013918594/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVU8ztFEQfhEiK3E9kLgZC3o-xjM1B7G-M5qNGqhWcekrpmmiRK=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "In my four years living here in Golden, I had never visited Foothills Art Center, and what a mistake that was. There were 3 smaller art exhibits during my visit, but they were all absolutely wonderful and stunning. Especially since it’s free, stopping in here for 30 minutes to an hour is absolutely worth it. The house itself is also beautiful, and the staff were incredibly helpful and friendly!",
+          "time": 1761000056,
+          "translated": false
+        },
+        {
+          "author_name": "Sarah Ji-Mei Lofgren",
+          "author_url": "https://www.google.com/maps/contrib/109836044062841309657/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVH7u82ic72XNUCgTclnQdeMkTFaAR3oxDVmMugSRWJ5gd56Wk6=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "What a great place! The building alone adds character (it used to be a church) and they had pretty interesting exhibits. I definitely want to go back again.",
+          "time": 1601681067,
+          "translated": false
+        },
+        {
+          "author_name": "Ally",
+          "author_url": "https://www.google.com/maps/contrib/110181908970241325819/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI8FUdpLneJowc2K3TmFKuhFMJ7xfowgL6aioHuvoC7DbJ67w=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 2,
+          "relative_time_description": "3 months ago",
+          "text": "I tried to go shop at the holiday art market but they were doing Santa pictures so the most of the upstairs part of the market was not accessible. I was actually asked to not look at the art work because Santa pictures were going on and I was told that I was in the way.",
+          "time": 1765662952,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-grand-junction-western-colorado-center-for-the-arts",
@@ -1166,14 +2808,14 @@
       "website": "http://www.gjartcenter.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "1803 N 7th St, Grand Junction, CO 81501, United States",
+      "street_address": "1803 N 7th St, Grand Junction, CO 81501, USA",
       "address_line2": null,
       "postal_code": "81501",
-      "latitude": 39.0838499,
-      "longitude": -108.5614303,
+      "latitude": 39.0838358,
+      "longitude": -108.5612752,
       "place_id": "ChIJedRc01McR4cR0fcue793qjY",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1197,9 +2839,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum is known regionally within Colorado, which supports a reputation score of 2. The collection appears to be respectable but limited in scope, justifying a collection tier score of 2. However, there is insufficient evidence to assess the other scoring categories.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the Western Colorado Center for the Arts' permanent collection or interpretive/chronological presentation, so strengths in Impressionism, Modern/Contemporary, and historical context cannot be reliably scored. Given the regional setting (Grand Junction, western Colorado) and the prior assessments provided, a regional reputation (2) and moderate collection tier (2) are the most supportable estimates.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
@@ -1211,13 +2853,13 @@
         "state_record_subset",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Grand Junction; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800409",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:30:48Z",
+      "updated_at": "2026-03-14T20:10:57Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9702437337",
+      "phone": "(970) 243-7337",
       "open_hour_notes": "Monday: Closed\nTuesday: 9:00 AM – 4:00 PM\nWednesday: 9:00 AM – 4:00 PM\nThursday: 9:00 AM – 4:00 PM\nFriday: 9:00 AM – 4:00 PM\nSaturday: 9:00 AM – 4:00 PM\nSunday: Closed",
       "is_scoreable": true,
       "content_summary": "In the heart of Grand Junction, the Western Colorado Center for the Arts is a rewarding stop for travelers who want to understand the region through its artists. Expect rotating exhibitions that spotlight Western Colorado makers alongside broader contemporary voices, plus a lively calendar of openings and community events. It’s an intimate, regional museum experience—ideal for slowing down, looking closely, and discovering work you won’t see in big-city institutions, often with the chance to meet artists and collect locally made pieces.",
@@ -1231,26 +2873,157 @@
       ],
       "content_generated_at": "2026-01-25T01:30:48Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://gjartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: 9:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 223,
+      "google_reviews": [
+        {
+          "author_name": "Li-Ling Hsiao",
+          "author_url": "https://www.google.com/maps/contrib/113020202652082601139/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLDf1B7SMn1SD5oZIih_IkwksCtoasCgqWA-87Ux6CvfFIHOg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The staff are dedicated, and the museum effectively fosters an atmosphere of artistic interaction among the city's residents! It's very approachable, yet the artistic level remains excellent!",
+          "time": 1762628180,
+          "translated": false
+        },
+        {
+          "author_name": "LMichelle Kubali",
+          "author_url": "https://www.google.com/maps/contrib/116408392181240155578/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJQ8f9KnzIBOWussyhEOtAraMoWAEv7E9s2goz_h5gEw15ijQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "This was a great Arts and Crafts show, we had a very nice time. Local alcohol inks artist Anastasia Kenner was there and she talked with us about classes that she offers. This photo does not showcase her most outstanding works so please check her out. There are so many really good artists that work out of The Arts Center.",
+          "time": 1542568480,
+          "translated": false
+        },
+        {
+          "author_name": "Chad Jones",
+          "author_url": "https://www.google.com/maps/contrib/115184502508273814058/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL8Sk79mDlNMDeRS8gDubGCLrTIPTDBRtcv7CcjYPHjDRE8EA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "It is wonderful and lots of local work my grandson had a sculpture there and award show",
+          "time": 1650411297,
+          "translated": false
+        },
+        {
+          "author_name": "raul",
+          "author_url": "https://www.google.com/maps/contrib/106400612953865901501/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKiRzTJNqTpW0H8GSx_ZJ9gYEbc5uL5leNbadn8F6Xj3vQu9rLz=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A friend of mine who is also a artist who showed here tolled me about this center my daughter and her school brought us here a lot of great Artist work I highly recommend this center to any one who enjoys art and to other artist such as myself come and enjoy the gifts that our creator blessed us all with to shear with the world God bless!",
+          "time": 1738090303,
+          "translated": false
+        },
+        {
+          "author_name": "sheena lange",
+          "author_url": "https://www.google.com/maps/contrib/104321844590808966756/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKs6o7in8kjVtlErv9TGF0qJ5KbMSPlWVzEXe2tSrYd-27jIk=s128-c0x00000000-cc-rp-mo",
+          "rating": 3,
+          "relative_time_description": "3 years ago",
+          "text": "I’m going to preface this by saying, my event was about 3 years ago, I’m writing about it now because it still bothers me that it happened.\nI had my baby shower here because I was wanting a classy and more sophisticated type of shower. We had two full cars of decorations and food. We had payed for a certain amount of time and I understood this. It’s a beautiful location and everything looked nice and was comfortable. My issue and the reason for my rating is the customer service was lacking and insensitive. I was right in the middle of opening my baby shower presents when the front desk person came in and told us we had to wrap everything up, he was not very nice and seemed put out that we were there at all. From my understanding he wanted to go home and my baby shower was in his way of leaving. We had almost reached our limit of time which I understand, but he didn’t ask if we wanted to pay extra to extend our time, which I would have done since it was to be my only baby shower. Instead we were unceremoniously rushed out of the venue. I would recommend this venue because the courtyard is beautiful, but only if you are willing to pay extra ahead of time for more time then you will need so you aren’t pushed out the door before you time is up.",
+          "time": 1651948744,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-inc-hamill-house-museum-historic-georgetown",
       "country": "USA",
       "state_province": "Colorado",
-      "city": "Inc. Hamill House Museum",
+      "city": "Georgetown",
       "museum_name": "Historic Georgetown",
       "alternate_names": null,
       "website": "https://www.historicgeorgetown.org",
       "status": "Temporarily Closed",
       "last_updated": "2026-01-17",
-      "street_address": "305 Argentine St, Georgetown, CO 80444, United States",
+      "street_address": "409 Sixth St, Georgetown, CO 80444, USA",
       "address_line2": null,
       "postal_code": "80444",
-      "latitude": 39.35724,
-      "longitude": -104.70563,
-      "place_id": "ChIJBYIizOeta4cRQFayOZX8Iuo",
+      "latitude": 39.705775,
+      "longitude": -105.6958472,
+      "place_id": "ChIJj7KM4-ata4cRzqkywIlkA3E",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -1285,7 +3058,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Inc. Hamill House Museum; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800500; Google Places: extracted street address",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:30:54Z",
+      "updated_at": "2026-03-14T19:52:27Z",
       "notes": "CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -1300,7 +3073,109 @@
       ],
       "content_generated_at": "2026-01-25T01:30:54Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(303) 569-2311",
+      "website_google": "http://hoteldeparismuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: Closed",
+          "Friday: Closed",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 140,
+      "google_reviews": [
+        {
+          "author_name": "Mia Voss",
+          "author_url": "https://www.google.com/maps/contrib/101696764219780312734/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUjQVo3tX_bSqH5D5XedLFcVtcnlZ2JI4zHTzL6m2gGmTqY6zoG3g=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "One of the most authentic and delightful museums set in the charming town of georgetown Colorado which is a quick 70ish minute drive from Denver. Exec. Director Kevin Kuharic and staff were delightful and so knowledgeable. 90% of the items in the hotel museum are original! I went to a experiential wine cheese and charcuterie event... I definitely recommend that for future visitors. I love that even the mini tour includes information about all of the people involved in the history of the hotel... I can't wait to come back for the full museum tour.",
+          "time": 1569682330,
+          "translated": false
+        },
+        {
+          "author_name": "Chris Sotraidis",
+          "author_url": "https://www.google.com/maps/contrib/103623462561048891391/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVi8NhVruqI9DLKzC9OPBimYke3bocKd_87egCi9rRxTCU2Fd_IZg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Seriously fantastic snippet of history here. The cost is reasonable to enter, and the tour is really worth it. The minutae and little facts behind this place truly are fascinating. Definitely a great stop for people who love history, or stories of the old west.\n\nThe gift shop is cool, and the people working here really care about the place. If you bring kids, make them listen and seriously shut up while the tour guide is telling the story. Have respect. Learn. Don't answer phone calls on the tour, please.",
+          "time": 1528662856,
+          "translated": false
+        },
+        {
+          "author_name": "Samantha Bonk",
+          "author_url": "https://www.google.com/maps/contrib/108754475115313452001/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKSZoXQK16gwsJjhlwg5AS74z0snyJR2qXnTx11ZZ8FIdfuco=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Decided to get out of the city for the day and come up to Georgetown, stumbling upon the Hotel de Paris Museum. We stepped into the shop around 2:10 and they had an open tour at 3. We grabbed some ice cream and for $10ea my boyfriend and I listened in on an hour long tour of the Hotel. It was definitely a fun thing to do if you enjoy history. I wish we had more time to just “poke around” and less time we were trying to listen to the guide, but overall this is definitely one of the neatest things in Georgetown!",
+          "time": 1659933607,
+          "translated": false
+        },
+        {
+          "author_name": "Marcus Forelius",
+          "author_url": "https://www.google.com/maps/contrib/117117897176870081787/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWf0GDpDjKp_fnNmvJtkneuD3Yf1CQG60Dyoc1ORPDDAUz1OQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "What a cool tour! 45 minutes long and $10 it gave you a great history of the hotel, Georgetown, and the owners. Almost all of the furnishings are original and are in like new condition. You’d almost think you had gone back in time to the late 1800’s. Don’t miss this!",
+          "time": 1620505468,
+          "translated": false
+        },
+        {
+          "author_name": "Curt R",
+          "author_url": "https://www.google.com/maps/contrib/106989645722877575782/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVBab2AFG04ABhR8U_mqa9EIIF_OJn0if-6GCLgxrZUFHeVg3NQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Our tour host was a wealth of knowledge and delivered information in a storybook way that tied together many characters during the history of the hotel.  The preservation of the hotel is unbelievable, truly a step back in time.  Highly recommended.",
+          "time": 1687019148,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-leadville-national-mining-hall-of-fame-and-museum",
@@ -1312,14 +3187,14 @@
       "website": "http://www.mininghalloffame.org",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "120 W 9TH ST",
+      "street_address": "120 W 9th St, Leadville, CO 80461, USA",
       "address_line2": null,
       "postal_code": "80461",
-      "latitude": 39.2513134,
-      "longitude": -106.2939451,
+      "latitude": 39.2512168,
+      "longitude": -106.2940493,
       "place_id": "ChIJ8VQY_SORaocRdOouAX-pZC4",
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Science Museum",
       "primary_domain": null,
       "topics": null,
@@ -1355,7 +3230,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Leadville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8400800444",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:31:01Z",
+      "updated_at": "2026-03-14T19:52:28Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "open_hour_notes": "Monday: Closed\nTuesday: 10:00 AM – 4:00 PM\nWednesday: 10:00 AM – 4:00 PM\nThursday: 10:00 AM – 4:00 PM\nFriday: 10:00 AM – 4:00 PM\nSaturday: 10:00 AM – 4:00 PM\nSunday: 10:00 AM – 3:00 PM",
@@ -1371,26 +3246,168 @@
       ],
       "content_generated_at": "2026-01-25T01:31:01Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(719) 486-1229",
+      "website_google": "http://www.mininghalloffame.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1500"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 3:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 782,
+      "google_reviews": [
+        {
+          "author_name": "Kevin O'Dwyer",
+          "author_url": "https://www.google.com/maps/contrib/104934873078994732309/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJUIwIyTwSn3skA_b5MuA-SVfhag5qzk_x1Dwx2gQCX2WL07Q=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Fascinating walk through mining history and the men and women who moved west to make thier fortune. The museum covers mining history, local heritage, and the science behind mineral extraction, all in a historic and engaging setting. It highlights the many immigrants who arrived including prospectors Samuel Morgan and Aden Alexander, who founded the Wolftone mine in 1876 and named it after Theobald Wolfe Tone, an Irish revolutionary figure.\nOne of the highlights - especially for children - is the walk-through replica of an underground hard-rock mine, complete with tracks, ore carts, and mining tools.\nI would higly recommend a visit and a walk through the town to get a flavour of what it must of been like when the gold and silver mines were at thier peak in the boom times of the early 20th century. The buildings that are still remaining (including an Opersa House) will give you an indication.",
+          "time": 1766395140,
+          "translated": false
+        },
+        {
+          "author_name": "Michele Weir",
+          "author_url": "https://www.google.com/maps/contrib/106340047360280635732/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWMw5s_G-KKMv2xGec4gu5cPR8dhbXiak1AStCvxJXo1v5r82Z79A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "As a descendant of an immigrant miner and also Baby Doe on my husband's side, the museum held a lot of significance. The interactive exhibits were very realistic. You can spend a few hours here and learn quite a bit.",
+          "time": 1756598677,
+          "translated": false
+        },
+        {
+          "author_name": "Peter Prombo-Cates",
+          "author_url": "https://www.google.com/maps/contrib/113907202447269395341/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXH1xv9k9ApDb-PRoBDb3dJma1SG0Er9KE2waafPdLxy4mgogzE=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Awesome old School Building turning into a Mining Museum and Hall of Fame. Lots of cool mining facts and artifacts to see. There's an awesome Miniature room, and several immersive walk through rooms that transport you under the earth. Also didn't trigger my Claustrophobia at all.",
+          "time": 1763492033,
+          "translated": false
+        },
+        {
+          "author_name": "lea allen",
+          "author_url": "https://www.google.com/maps/contrib/117944630294892391279/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVgsE--BeoF_Vs3YiuXD6RMggybNSumr5NEtpPuu1NPzs-QrAPH=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Such a neat place. You could easily spend a few hours here learning about history of the area and interacting w/displays. Staff is super friendly and happy to tell you anything you need to know about Leadville area.",
+          "time": 1755085634,
+          "translated": false
+        },
+        {
+          "author_name": "Jay Francis",
+          "author_url": "https://www.google.com/maps/contrib/111397690774329136432/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXZIIRD4pmgHnhgG8-kKW9LUgzY-s-M1I2kJPGLJ7M6EZ6ektCX=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Just a perfect museum. Either a willingness one comes away with such an incredible treasure of new knowledge. Highly recommended.",
+          "time": 1757124267,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-co-msu-denver-center-for-visual-art",
       "country": "USA",
       "state_province": "Colorado",
-      "city": "MSU Denver",
+      "city": "Denver",
       "museum_name": "Center for Visual Art",
       "alternate_names": null,
       "website": "https://www.msudenver.edu/cva",
       "status": "Active",
       "last_updated": "2026-01-17",
-      "street_address": "965 Santa Fe Dr, Denver, CO 80204, United States",
+      "street_address": "965 Santa Fe Dr, Denver, CO 80204, USA",
       "address_line2": null,
       "postal_code": "80204",
-      "latitude": 39.73096,
-      "longitude": -104.99872,
+      "latitude": 39.7316689,
+      "longitude": -104.9987825,
       "place_id": "ChIJUXvWUcN4bIcROzwCgHtl8cM",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-16",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1414,9 +3431,9 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum serves primarily the local community, indicated by its local reputation score. However, there is insufficient evidence regarding its collections, particularly in Impressionist and Modern/Contemporary art, leading to null scores in those areas.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about the contemporary artist Alexandra Grant rather than the Center for Visual Art, so there is no reliable evidence about the museum’s permanent collection strengths or interpretive/historical framing. Given the existing assessments and the institution being a university-affiliated center, reputation is scored as local and collection tier as small.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
@@ -1428,7 +3445,7 @@
       "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for MSU Denver; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type; Wikidata: no search results; Nominatim: no results; MRD: normalized time_needed 'Half day (2-4 hours)' -> 'Half day'; CSV: coordinates from IRS 990 database; CSV: IRS Museum ID 8409502942; Google Places: extracted street address",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:31:12Z",
+      "updated_at": "2026-03-14T20:10:57Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "open_hour_notes": "Monday: Closed\nTuesday: 11:00 AM – 6:00 PM\nWednesday: 11:00 AM – 6:00 PM\nThursday: 11:00 AM – 6:00 PM\nFriday: 11:00 AM – 6:00 PM\nSaturday: 12:00 – 5:00 PM\nSunday: Closed",
@@ -1444,8 +3461,140 @@
       ],
       "content_generated_at": "2026-01-25T01:31:12Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(303) 615-0282",
+      "website_google": "https://www.msudenver.edu/cva/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 6:00 PM",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 6:00 PM",
+          "Friday: 11:00 AM – 6:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 126,
+      "google_reviews": [
+        {
+          "author_name": "Miss Rosalynda Lucero",
+          "author_url": "https://www.google.com/maps/contrib/103301374524311084198/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKn6EuR_czPWWrnq6E-LMGf8-dlzbIuMaISrzc5fcaQjhCvtvwn=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Loved the Art and the people working. So inviting! Can't wait to go again",
+          "time": 1772269804,
+          "translated": false
+        },
+        {
+          "author_name": "Brady Jones",
+          "author_url": "https://www.google.com/maps/contrib/118119460822016680557/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5fNRZEnsHHFjnoWkaDrHyqHcT8EWFykVeVcpnh1CUDts3jANw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "Pretty decent little gallery. What's inside always changes. I got to go see some Senior thesis projects for some students who were attending Metropolitan University downtown. It was a very nice show. The building is very clean and does have bathrooms!",
+          "time": 1554672335,
+          "translated": false
+        },
+        {
+          "author_name": "Mike Macey",
+          "author_url": "https://www.google.com/maps/contrib/114701698476965321023/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXJiBrUT7O0UjPf9N4I2XP4DajVFaLniXbQloT4FEoBEARezUMkfA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Always interesting art.  We stop every First Friday.",
+          "time": 1571232169,
+          "translated": false
+        },
+        {
+          "author_name": "Ronnilee Aragon",
+          "author_url": "https://www.google.com/maps/contrib/111035783804097293079/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhrXCgSdZhHFPp2A3qcTd5QH22XwNzOpb6z8YJ_uyzQFn1SBgI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Going to online college here so I give it a five star",
+          "time": 1766533192,
+          "translated": false
+        },
+        {
+          "author_name": "Barbara Polston",
+          "author_url": "https://www.google.com/maps/contrib/115352984769513190898/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfBPSGQX5QSCDmxAYHNxU5BzA4RsWTzrkpCQ8fWcKeTPOCl80=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Lovely gallery space. We went for the Common Nouns show. Well worth the visit. Watch for their changing shows. Nice addition to your First Friday fun.",
+          "time": 1720469413,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:18Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

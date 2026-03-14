@@ -7,20 +7,20 @@
       "museum_id": "usa-wy-unknown-art-association-of-jackson-hole",
       "country": "USA",
       "state_province": "Wyoming",
-      "city": "JACKSON",
+      "city": "Jackson",
       "museum_name": "Art Association of Jackson Hole",
       "alternate_names": null,
       "website": "http://artassociation.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "225 N CACHE",
+      "street_address": "240 S Glenwood St, Jackson, WY 83001, USA",
       "address_line2": null,
       "postal_code": "83001",
-      "latitude": 43.483,
-      "longitude": -110.76229,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 43.4773485,
+      "longitude": -110.7633899,
+      "place_id": "ChIJYT9LsmkaU1MRE9jzek6BmA8",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -49,15 +49,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:00:53Z",
+      "updated_at": "2026-03-14T20:05:28Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "3077332414",
+      "phone": "(307) 733-6379",
       "is_scoreable": false,
       "content_summary": "The **Art Association of Jackson Hole** invites art lovers to explore a vibrant community of creativity and culture, showcasing a diverse range of artwork by local and regional artists. Free admission, stunning exhibitions, and engaging programs make this museum a unique gem in Jackson and a must-visit for travelers seeking an authentic artistic experience.",
       "content_description": "At the heart of Jackson, Wyoming, the **Art Association of Jackson Hole** serves as a flourishing hub for local artistry and cultural expression. This dynamic museum showcases an impressive array of works by both established and emerging artists from the region, giving visitors an intimate glimpse into the vibrant art scene of the American West. The museum presents rotating exhibitions that highlight various artistic styles, mediums, and challenges, ensuring that there is always something new and surprising to experience.\n\nIn addition to its captivating exhibitions, the museum offers an array of engaging programs and workshops organized to foster creativity among locals and visitors alike. From interactive art classes to artist talks, there is an opportunity for everyone to connect with the art community. The museum's architecture beautifully reflects the natural landscapes that surround it, inviting guests to enjoy the art in a serene and inspiring environment.\n\nWhether you are a seasoned art enthusiast or a curious traveler, the **Art Association of Jackson Hole** promises an enriching experience that will leave you inspired. Stroll through the galleries to discover local talent, participate in a workshop, or simply delight in the stunning views of the Teton Range. This museum not only emphasizes the beauty of art but also highlights the unique stories that art can tell about the place it comes from.",
@@ -70,7 +71,112 @@
       ],
       "content_generated_at": "2026-01-25T04:00:53Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.artassociation.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 5,
+      "google_reviews_count": 3,
+      "google_reviews": [
+        {
+          "author_name": "Trevor Tindell",
+          "author_url": "https://www.google.com/maps/contrib/113752659987300117683/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVnrZdWk9ujxG7FSmo2QACVOEa-uXCS9sqJO4Lnpc-xAXyFz6BX=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Fun place I love when we get to cater for this place.\nThe people are great and out going, very friendly.\nGood place to take your kids.",
+          "time": 1666225752,
+          "translated": false
+        },
+        {
+          "author_name": "scott james",
+          "author_url": "https://www.google.com/maps/contrib/114203971261424016862/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU1L8QeAu1gf8Jg3p6XZ32vlWjr5YOuv_ivv5TqKnQLfxajo7edLA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Great local resource!!",
+          "time": 1625105391,
+          "translated": false
+        },
+        {
+          "author_name": "John Frechette",
+          "author_url": "https://www.google.com/maps/contrib/111190932313494688031/reviews",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUWflxJsVzkQIK22XBiKc8Cvb0RV_DnZSk8-MW_hJ-C-pKW0KQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "14 years ago",
+          "text": "",
+          "time": 1327877977,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wy-unknown-buffalo-bill-center-of-the-west",
@@ -89,7 +195,7 @@
       "longitude": -109.0731945,
       "place_id": "ChIJVXyTAtgeTFMRVVTj_aD-T6E",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -126,7 +232,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Wyoming' from open data; MRD: computed city_tier=3 for Wyoming; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:01:00Z",
+      "updated_at": "2026-03-14T20:05:28Z",
       "notes": "CSV: IRS Museum ID 8405600108 CSV: phone from IRS 990 database CSV: museum type 'History Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990 CSV: financial data available (income: 18697668, revenue: 12361666)",
       "city_tier": 3,
       "phone": "(307) 587-4771",
@@ -275,14 +381,14 @@
       "website": "http://www.heartmountain.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "1539 Rd 19, Powell, WY 82435, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "82435",
+      "latitude": 44.6704009,
+      "longitude": -108.9413921,
+      "place_id": "ChIJeVdijxepTlMRkbYLzhT00fA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Mixed",
       "topics": null,
@@ -312,12 +418,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.heartmountain.org"
+        "http://www.heartmountain.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Powell' from page text; Inferred primary_domain=Mixed from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:01:07Z",
+      "updated_at": "2026-03-14T20:05:29Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -332,26 +439,148 @@
       ],
       "content_generated_at": "2026-01-25T04:01:07Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(307) 754-8000",
+      "website_google": "http://www.heartmountain.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 449,
+      "google_reviews": [
+        {
+          "author_name": "Bethany",
+          "author_url": "https://www.google.com/maps/contrib/102300272716852533196/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUd0Mq4JEHMZIPL9JzTeSDsOuKPD-O-6hY3leeC7rZ1YpQ2qKePpA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "A very educational place to stop & remember/ reflect on one of the darkest parts of US history. You could take anywhere from 1 hour to half a day, here. There is an inside museum area for a fee, as well as areas you can walk around outside and read about the history of when USA rounded up US citizens after Japan attacked Pearl Harbor. Well worth the so if you're a history person",
+          "time": 1752790162,
+          "translated": false
+        },
+        {
+          "author_name": "Jennifer Herweyer Parker",
+          "author_url": "https://www.google.com/maps/contrib/110215377539798407686/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK6wQzaMVnjzzA74Sq6wVYD-A4RCZ3_4AKnO1SxSqAFuOb4JRSB=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "It was an eye opening experience, and one I highly recommend others should witness first hand, in order to prevent this terrible tragedy from repeating again from our Nation's past. There are written stories and accounts from survivors located in the center that help give you a true sense of what life was really like for the detainees back then. You can also tour the grounds and see some buildings that still stand today. If you can, please visit",
+          "time": 1723064682,
+          "translated": false
+        },
+        {
+          "author_name": "Lisa L",
+          "author_url": "https://www.google.com/maps/contrib/112978625858154630996/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXQLVN2DjHfp36scVlLHmXsHAtLcsihWEQ8G72B1SHn8igBIvSL=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I love the story here but it’s so sad that our United States would do this to its owe citizens. It really makes you think, could this happen again?! But a great tribute to those who were imprisoned by their own country.",
+          "time": 1738746991,
+          "translated": false
+        },
+        {
+          "author_name": "James Grissom",
+          "author_url": "https://www.google.com/maps/contrib/109468930611267304928/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVIHXiGqVl6kgIk1DT47Rr3KIhbXLdjikXhNteBMhMIY4wHi7o=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "If you want to see what the government did to the Japanese Americans at the beginning of WW2 this is a must.\nAt the start of the war they were made to go to these intermittent camps. They could only bring what they could carry. Had to leave their homes and businesses. Held behind bobwire and armed guards until 1945 at the end of the war then we're given $25.00 and a ticket to return home. They lost their businesses and all that was in their homes was stolen.\nNow, these camps were not like the camps the Jewish people had. The Japanese Americans were not treated like in the death camps. Go see it .",
+          "time": 1717213440,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Hirano",
+          "author_url": "https://www.google.com/maps/contrib/100698803409847593271/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL4W1foYAWub-3Un3zfHpMfwLAUU57yNO4ArXS_Q9XBA3ZiYE8=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Absolutely a must see. Recalls a dark chapter in American history.  Very well done museum & displays on the Japanese American experience during WW2.  We were so glad we stopped here to visit.",
+          "time": 1719507936,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wy-unknown-jackson-hole-historical-society-and-museum",
       "country": "USA",
       "state_province": "Wyoming",
-      "city": "JACKSON",
+      "city": "Jackson",
       "museum_name": "Jackson Hole Historical Society and Museum",
       "alternate_names": null,
       "website": "https://jacksonholehistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "225 N CACHE ST AND A MUSEUM AT 105 GLENWOOD",
+      "street_address": "175 E Broadway Ave, Jackson, WY 83001, USA",
       "address_line2": null,
       "postal_code": "83001",
-      "latitude": 43.47566,
-      "longitude": -110.76968,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "latitude": 43.4798416,
+      "longitude": -110.7592051,
+      "place_id": "ChIJPUcq210aU1MR60ZFoutdvvQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -380,15 +609,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:01:15Z",
+      "updated_at": "2026-03-14T20:05:30Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
-      "phone": "3077332414",
+      "phone": "(307) 733-2414",
       "is_scoreable": false,
       "content_summary": "Discover the rich history of Jackson Hole at the **Jackson Hole Historical Society and Museum**. This captivating museum showcases everything from local pioneer stories to the unique cultures that have shaped this stunning region, making it a must-visit destination for history aficionados and casual travelers alike.",
       "content_description": "**Jackson Hole Historical Society and Museum** invites you to explore the multifaceted history of one of the most picturesque valleys in the United States. Located in charming Jackson, Wyoming, this museum offers a treasure trove of artifacts, photographs, and stories that illuminate the area's Native American heritage, pioneering past, and environmental significance. The museum’s collection spans centuries, capturing the evolution of the valley from a bustling trading post to a renowned outdoor destination. Each exhibit provides insights into the lives and experiences of those who have called Jackson home over the years.    <br/><br/>  Visitors will have the unique opportunity to engage with exhibits that feature everything from *fine art* to pioneering tools and early photographs. Notably, the museum stimulates connection and curiosity through its **hands-on displays** encouraging visitors to touch and interact with history. The architecture itself is reflective of the region's heritage, harmoniously blending with the surrounding natural beauty.    <br/><br/>  A visit to the **Jackson Hole Historical Society and Museum** promises not just discovery but a deeper appreciation for the stories that have shaped this stunning corner of the world. Whether you're a history buff or just seeking an enriching experience, the museum’s friendly staff and passionate presentations will ensure a memorable journey through time, making it well worth your visit.",
@@ -401,7 +631,138 @@
       ],
       "content_generated_at": "2026-01-25T04:01:15Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://jacksonholehistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 152,
+      "google_reviews": [
+        {
+          "author_name": "Serena Becker",
+          "author_url": "https://www.google.com/maps/contrib/103463971022523872486/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVnMmmdqGX1lkurtsirdWoWK5RNZJsp1TeWTKRHxh9HndwfVGjX=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Small but very interesting. Mini movies tell a lot of stories and history of the area and the people that helped to settle the area including indigenous people. A bit about the Rockefeller family. Two cabins to look at. What films were made and cast too. Not bad for the price.",
+          "time": 1761410394,
+          "translated": false
+        },
+        {
+          "author_name": "Emma M",
+          "author_url": "https://www.google.com/maps/contrib/101517667164546443119/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLG9BbdKFjuGOl50s1kEwqzVFfKkJjjzAzsDULMFA9Mp4Z83Tg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Absolutely loved spending some time here. We learned so much from the permanent exhibits, especially this wall of artifacts where you could learn about the community through each artifacts story. Also adored the cowboy trade exhibit upstairs. I learned SO much about the craft involved in western wear. No kids with us, but the kids room looked really well done. Bought a few things at the gift shop, which had a great selection for such a small footprint. Really recommend stopping in here!",
+          "time": 1760415665,
+          "translated": false
+        },
+        {
+          "author_name": "Christy Shannon Smirl",
+          "author_url": "https://www.google.com/maps/contrib/108890340562381029417/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKu0uLAXZyS8cJaR166FjUH_MihySG_iZ0EDtwbuiXsHUAKqf1=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Newly built history museum - wonderful exhibits, informative and interesting content on the history of Jackson Hole and the Tetons. All in a beautifully designed space.\n\nRotating exhibit space, classroom, and terrace for events upstairs. Lovely gift/book shop at the front. All within walking distance of the square and lunch options. A must-see for tourists and locals alike.",
+          "time": 1721882342,
+          "translated": false
+        },
+        {
+          "author_name": "Barbi Zimmerman",
+          "author_url": "https://www.google.com/maps/contrib/116244755718968870630/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKgK2gUrChTjfnrXIO2L-dMi_dhAZ3yaDSIc86UxqT6ukXJVQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The museum was very informative, and I loved learning about the history of Jackson Hole. The films were a bit long, but they provided excellent information. The museum was very clean and well maintained. A great stop while visiting Jackson Hole.\nI would encourage visitors to stop in.",
+          "time": 1765775406,
+          "translated": false
+        },
+        {
+          "author_name": "Stephanie Watts",
+          "author_url": "https://www.google.com/maps/contrib/110010711634364142134/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKzpyeyb1MEg6MFRnQirDJXi9lyrt9G3OX6JRO7WBzhkblzxA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Wonderful educational experience in Jackson! Staff were extremely friendly and knowledgeable about the history of the area. There was a wonderful traveling exhibit of the woman from Jackson Hole including the woman's basketball team from 1910. I would recommend stopping by when in the area.",
+          "time": 1658803985,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wy-unknown-museum-of-the-mountain-man",
@@ -420,7 +781,7 @@
       "longitude": -109.85233,
       "place_id": "ChIJsaCQ96mWV4cRUJM_8Sa0Lo4",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -457,7 +818,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Wyoming' from open data; MRD: computed city_tier=3 for Wyoming; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:01:25Z",
+      "updated_at": "2026-03-14T20:05:30Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 3,
       "phone": "(307) 367-4101",
@@ -551,14 +912,14 @@
       "website": "http://thenic.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "400 E Collins Street",
+      "street_address": "400 E Collins Dr, Casper, WY 82601, USA",
       "address_line2": null,
       "postal_code": "82601",
-      "latitude": 42.84739,
-      "longitude": -106.32095,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 42.848025,
+      "longitude": -106.3201374,
+      "place_id": "ChIJy4SRO5-8YIcRgXV1gTYL7kY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -567,7 +928,7 @@
       "tickets_url": "https://www.thenic.org/services-7",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -582,23 +943,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Nicolaysen Art Museum has a moderate collection and serves primarily the regional community, reflected in its scores. The historical context score of 2 indicates some local relevance but does not suggest it is essential for broader historical understanding.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of The Nicolaysen Art Museum’s permanent collection, so Impressionist, Modern/Contemporary, and historical-context scores cannot be determined. Given its location in Casper, Wyoming and lack of broader collection evidence, it is most reasonably assessed as a local museum with a small-to-limited collection scope.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://thenic.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Casper' from open data; MRD: computed city_tier=2 for Casper; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:01:35Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "3072355247",
+      "phone": "(307) 235-5247",
       "is_scoreable": true,
       "content_summary": "Casper’s Nicolaysen Art Museum (The NIC) is a smart stop for art lovers who want both a strong sense of place and a contemporary edge. Known for showcasing Wyoming and Rocky Mountain creativity alongside rotating exhibitions, it mixes regional storytelling with polished gallery presentation. Expect an accessible, thoughtfully curated museum experience—part local culture hub, part contemporary art space—ideal for a focused hour or a relaxed afternoon of looking, learning, and discovering artists connected to the American West.",
       "content_description": "**The Nicolaysen Art Museum (The NIC)** in Casper is a regional art museum with an outsized impact: it’s one of the city’s most rewarding places to understand how the American West continues to be pictured, debated, and reinvented through art. Rather than feeling like a static “heritage” museum, The NIC typically balances **Wyoming- and Rocky Mountain–connected artists** with rotating exhibitions that keep the galleries fresh—an approach that invites repeat visits and makes it easy for travelers to catch something new.\n\nInside, you’ll encounter a mix of **regional fine art, contemporary works, and exhibition programming** that often touches on Western identity, landscape, and community narratives. For art enthusiasts, the pleasure is in seeing how familiar subjects—wide-open terrain, resource histories, local lives—are translated into different visual languages, from representational painting and photography to more concept-driven contemporary installations. The museum’s curatorial strength is its **regional focus**: you’re not just seeing “Western art” as a cliché, but a living continuum shaped by present-day voices.\n\nArchitecturally, The NIC reads as a modern civic museum: clean gallery spaces designed for close looking, with a visitor-friendly scale that makes it easy to take your time without fatigue. The experience is approachable—often family-friendly and community-oriented—yet still satisfying for serious viewers who want well-installed exhibitions, interpretive context, and the pleasure of encountering artists tied to Wyoming’s cultural landscape. Plan to linger: the best visits here are unhurried, letting the regional specificity deepen into something memorable.",
@@ -612,7 +974,138 @@
       "content_generated_at": "2026-01-25T04:01:35Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "website_google": "http://www.thenic.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 274,
+      "google_reviews": [
+        {
+          "author_name": "Annie Knapp",
+          "author_url": "https://www.google.com/maps/contrib/116004998290710349802/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJaHF5XsgUfRH35uF3nQMf9rt0PtTyesgZMJ6sKA7jqxk0X=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "This museum is a true gem! The collection is both diverse and thoughtfully curated—there’s always something new to discover. What makes it even better is how accessible it is: the membership is surprisingly affordable!  For only $35.00 a year you can visit often without breaking the bank. The staff are welcoming, the gallery is beautifully maintained, and the atmosphere is both inspiring and relaxing for everyone. Everything from engaging children’s events to exquisite galas. It’s the perfect place to spend a quiet afternoon, recharge creatively, or bring kids to share in the experience. An incredible value for such a high-quality cultural institution—I can’t recommend it enough!",
+          "time": 1755377620,
+          "translated": false
+        },
+        {
+          "author_name": "Chris Facey",
+          "author_url": "https://www.google.com/maps/contrib/100850831957736178788/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUfmd6752E-neYy7Sp7awreqYK1q90RkKcMIo7Gg4qDexx3MDs=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "This place is kind of amazing, here were a couple of my favorites and don’t miss the kids table for some drawings and one of those things you stick your head through and take a goofy picture.\n\nBut, seriously this place is awesome, it was $5 a head and we were LITERALLY the only people there the whole time on a Saturday.\n\nShe’s bored, do it.",
+          "time": 1540014042,
+          "translated": false
+        },
+        {
+          "author_name": "Amanda B",
+          "author_url": "https://www.google.com/maps/contrib/104310354699384031836/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJlV9T3-lZdaALcPKMC1iZeE64ZlrAeTdx9NfiG3mczHC4keA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "I stumbled upon the Nic while my family and I were in town for the eclipse. The kid-friendly eclipse stations were adorable! My three year old niece was thrilled. The child size door to the kids' room was amazing. I enjoyed the actual museum art myself. I loved that it was very WY specific. Thank you for creating things for kids to do! The gift shop also had the best eclipse t-shirts around. (I wish I could post pictures of the kids' room, but I don't want to post pictures of the kids themselves)",
+          "time": 1503593516,
+          "translated": false
+        },
+        {
+          "author_name": "Greg Fischer",
+          "author_url": "https://www.google.com/maps/contrib/116187994724179205496/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWCtqOvW021TF1onTiWBDLrSfmGd0oIvFa8zRVsU8rCrQXxIc19=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "This is a hidden gem in Casper. We walked to it and got there right at opening time. They should advertise a little outside to the fact that they open. Great exhibits that change often and make you want to come back at least quarterly.",
+          "time": 1689902773,
+          "translated": false
+        },
+        {
+          "author_name": "Bue No",
+          "author_url": "https://www.google.com/maps/contrib/106079581830275484575/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWwwW_Hze35DkWZPPAMX599SfvVLjF_vOcb2RdauPW3tWyP9O20ng=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Dont miss this hidden gem in Cheyenne, WY.\nThis repurposed factory, in the heart of the city continues to expand, spaces to display local creative art works.\nAmazing lace latticework details the two Honeylocust trees astride the street entrance. The intricate detail drew me in,  circling each trunk, revealing new patterns that branched and shaped along the trunks.\nThe current art exhibits are diverse,  displayed with expert care.\nDon't miss their in-house exhibit of a historic churchtower clockwork, complete with weights and pendulum.",
+          "time": 1628393567,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wy-unknown-university-of-wyoming-art-museum",
@@ -624,14 +1117,14 @@
       "website": "http://www.uwyo.edu/artmuseum/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "2111 East",
+      "street_address": "Centennial Complex, 2111 E Willett Dr, Laramie, WY 82071, USA",
       "address_line2": null,
       "postal_code": "82071",
-      "latitude": 41.42252,
-      "longitude": -105.60719,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 41.3149296,
+      "longitude": -105.567725,
+      "place_id": "ChIJq8Ylx2uQaIcR76h679-vVIM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -655,23 +1148,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum provides local context, preserving and interpreting regional art and culture, but lacks significant national prominence. The collection strength is modest, primarily serving educational and contextual purposes for the local community.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence gives no description of the University of Wyoming Art Museum's permanent collection, so Impressionist, Modern/Contemporary, and historical-context scores cannot be determined. As a university art museum in Laramie with no indicated nearby museum ecosystem, it is most plausibly a locally oriented institution with a moderate-scale academic collection rather than a flagship destination.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.uwyo.edu/artmuseum",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Laramie' from open data; MRD: computed city_tier=3 for Laramie; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:01:45Z",
+      "updated_at": "2026-03-14T20:10:59Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "3077666622",
+      "phone": "(307) 766-6622",
       "is_scoreable": true,
       "content_summary": "The University of Wyoming Art Museum in Laramie is a smart, rewarding stop for art lovers who enjoy discovering ambitious exhibitions in an intimate setting. As the state’s flagship university museum, it mixes museum-caliber shows with the energy of a campus gallery—making it ideal for repeat visits. Expect rotating exhibitions that range from contemporary art to regional perspectives, plus thoughtful programming and an easy, unhurried viewing experience. It’s a cultural anchor in Laramie and a satisfying complement to Wyoming’s wide-open landscapes.",
       "content_description": "Set on the University of Wyoming campus, the **University of Wyoming Art Museum** offers a focused, visitor-friendly art experience where you can spend an hour—or an afternoon—engaging closely with artworks without the crowds of bigger institutions. While the museum’s permanent holdings are modest, its real strength is **curation and rotation**: expect changing exhibitions that spotlight contemporary practice, campus-driven scholarship, and art that resonates with the region’s histories and visual culture. For travelers, that means there’s often something new on view, and gallery texts tend to be clear, educational, and genuinely helpful for deep looking.\n\nArchitecturally, the museum reads as a **purpose-built academic museum space**—clean sightlines, flexible galleries, and a calm, contemplative atmosphere that suits everything from works on paper to installation-based contemporary shows. The visitor experience is typically relaxed and approachable: you can move at your own pace, return to favorite rooms, and often encounter **student and faculty perspectives** that add an extra layer of interpretation.\n\nFor art enthusiasts planning a museum day in Laramie, this is an excellent place to pair with campus architecture, a coffee nearby, and a walk between galleries and public spaces. Come for the exhibitions, stay for the sense of discovery—this is the kind of museum where you can feel the conversation between art, place, and learning in real time.",
@@ -685,7 +1179,138 @@
       "content_generated_at": "2026-01-25T04:01:45Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "http://www.uwyo.edu/artmuseum/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1900"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 97,
+      "google_reviews": [
+        {
+          "author_name": "Ernesto Casas",
+          "author_url": "https://www.google.com/maps/contrib/107919536706611338958/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUC8_qU7C-KPwrkQjkMv6QhS7C7mGdj33er06hnCbFcKDikcYf6Wg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "Very fun art museum! Loved the alumni artwork and they had a Picasso when I visited. Connor at the front desk was very welcoming and informative, will definitely revisit!",
+          "time": 1744837494,
+          "translated": false
+        },
+        {
+          "author_name": "Chuck Baumgart",
+          "author_url": "https://www.google.com/maps/contrib/114434410942705279889/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIne-SGdIxd0mAn9XAEqZNAeYjicDCVqSOhtpWfet4gn_0xmQ=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "A great university  art museum with many rotating exhibits. And it's  free with very easy parking. Be sure  to visit the galleries of the attached  American  Heritage  center which have many unique historical Western paintings.",
+          "time": 1678586401,
+          "translated": false
+        },
+        {
+          "author_name": "LS Sheldon",
+          "author_url": "https://www.google.com/maps/contrib/107016724440783982378/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3GWOmCYYpVYZ1KHAUeF4QOS1ijTdBip3nE1O-ATTvVTQ57BPa=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "This is my second visit to this sensational university art museum. There are many treasures in the collection—like this selection (the red woodblock print by Faith McManus is exquisite). My favorite part is the exceptional work by student artists.",
+          "time": 1682194288,
+          "translated": false
+        },
+        {
+          "author_name": "Sara Kahn",
+          "author_url": "https://www.google.com/maps/contrib/113875453446281955780/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVCFqW6JyFc_nftPrIjGI6JG8tcloDgJzRlmf1xz9nZlJBLZL7R=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "According to the brochure: “In 1993, the AHC and the UW Art Museum moved into the award-winning Centennial Complex designed by acclaimed architect Antoine Predock.”\n\nI find the architecture of the building interesting but I am not fond of how one moves through it. The spaces are awkward and seem jammed at places yet too open at others.",
+          "time": 1716331284,
+          "translated": false
+        },
+        {
+          "author_name": "Junior Samod",
+          "author_url": "https://www.google.com/maps/contrib/104243541424303002119/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX89ApLHiZL9XgGXSHwKnLfH8KoDU8Ym3SALHInNyPI92Vf_JuI7A=s128-c0x00000000-cc-rp-mo",
+          "rating": 3,
+          "relative_time_description": "a year ago",
+          "text": "I m here for matthew shepard'😭😭😭😭 On October 7, 1998, Matthew Shepard, a 21-year-old student at the University of Wyoming, was brutally attacked and tied to a fence in a field outside of Laramie, Wyoming and left to die. On October 12, Matt succumbed to his wounds in a hospital in Fort Collins, Colorado.",
+          "time": 1730911986,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-wy-big-horn-brinton-museum",
@@ -697,14 +1322,14 @@
       "website": "http://thebrintonmuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "239 Brinton Rd, Big Horn, WY 82833, USA",
       "address_line2": null,
       "postal_code": "82833",
-      "latitude": 44.6444029,
-      "longitude": -107.008477,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 44.64363280000001,
+      "longitude": -107.0079398,
+      "place_id": "ChIJ09dssxn1NVMRHo1kFOjfXK4",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -733,12 +1358,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "openstreetmap"
+        "openstreetmap",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Big Horn; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T04:01:50Z",
+      "updated_at": "2026-03-14T20:05:33Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -753,8 +1379,140 @@
       ],
       "content_generated_at": "2026-01-25T04:01:50Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(307) 672-3173",
+      "website_google": "http://www.thebrintonmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:30 AM – 5:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 9:30 AM – 5:00 PM",
+          "Friday: 9:30 AM – 5:00 PM",
+          "Saturday: 9:30 AM – 5:00 PM",
+          "Sunday: 9:30 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 340,
+      "google_reviews": [
+        {
+          "author_name": "Ryan Stice",
+          "author_url": "https://www.google.com/maps/contrib/114615903394786667283/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWaEGNQsV1g7kMFw5a6AUbjvd5gWBKMJ4wTgIOGWMMa7b4DkMNcwg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Well worth your time. We thoroughly enjoyed our 4 hours here. Check the hours of the bistro, eating a relaxed lunch outside with the incredible views was a highlight, this was an upscale bistro meal, not typical museum cafeteria experience. The exhibits are well done and convey the history of the area and connection to native cultures. We did the full ranch buildings tour, the house only would have been fine, but this includes seeing the hunting lodge which was another highlight. The gardener must be incredible, the variety of plants and set up of the green house and outdoor garden were inspiring.",
+          "time": 1754107658,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel",
+          "author_url": "https://www.google.com/maps/contrib/103785067461474456457/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXTIPwNx2pCn1EBsDKSbHxUQuf--QBaLF7eLcaVBCBs6gcOYOws=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "An amazing museum for such a small area.  The grounds are absolutely gorgeous.  Make sure to eat at the bistro after touring.  They have good food and excellent views.",
+          "time": 1751747880,
+          "translated": false
+        },
+        {
+          "author_name": "Jenny Anderson",
+          "author_url": "https://www.google.com/maps/contrib/115133950369614558668/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIXVJNfWnPsjYqw-Q-5CaQx1HvLlk3HwRWoZRPJRd-czqhhZQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We love this amazing museum, not just for the exhibits and history of the Brinton's, but the architecture of the building and majestic setting of the location. Be prepared to have your jaw drop. The Bistro on the 3rd floor has great food and - of course - secular views no matter where you sit. We came upon this museum by surprise, but have been back 4 times! Worth the detour!",
+          "time": 1765206594,
+          "translated": false
+        },
+        {
+          "author_name": "M C",
+          "author_url": "https://www.google.com/maps/contrib/115529046206038121844/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUQovGzrJm2jkXh5vxwSVNZWa33BZd11huGXf27B2cKeZiXJDg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "7 months ago",
+          "text": "The setting is beautiful. It is nice that it is free.  The tours do cost. The day I visited the restaurant was closed. The art museum is small. I was expecting more. I did the house tour. It was the best part. 1 to 2 hours was plenty for me.",
+          "time": 1753756864,
+          "translated": false
+        },
+        {
+          "author_name": "Alejandra De La Cruz",
+          "author_url": "https://www.google.com/maps/contrib/105410368879473568695/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUtq6bFW08KZ4iI-o3a5Yco1LwxTNWhD39qchdgx8zk4eIPrvXV=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Beautiful museum, grounds, and bistro all in one. The museum is free of charge thanks to a collaboration with Ramaco Carbon with a stunning variety of American Indigenous artworks and artifacts. The museum and grounds are extremely ADA friendly. Directly next to the handicapped parking is the prettiest wheelchair ramp I’ve ever seen. While there are three floors, there is an extra large elevator and free wheelchairs to borrow if needed. The staff even noticed my grandfather using a walker and had the doors open to welcome us by the time we made it to the entrance.\n\nThe bistro was extremely well informed about dietary restrictions and takes great care to even have their own garden with seasonal offerings. The view of the Bighorns from the dining area is absolutely gorgeous, especially on an autumn day as the leaves change.\n\nVery highly recommend a visit for a special occasion or just for fun, this museum is a true gem in northern Wyoming.",
+          "time": 1697779642,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-01-25T04:01:50Z"
+  "updated_at": "2026-03-14T20:10:59Z"
 }

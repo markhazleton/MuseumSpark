@@ -13,14 +13,14 @@
       "website": "http://www.boiseartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "670 Julia Davis Dr, Boise, ID 83702, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 43.61027,
-      "longitude": -116.20591,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "83702",
+      "latitude": 43.60974179999999,
+      "longitude": -116.2064251,
+      "place_id": "ChIJp0K54_D4rlQROKEMbPX_2mM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -44,23 +44,24 @@
       "historical_context_score": 2,
       "priority_score": 16,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Boise Art Museum has limited Impressionist holdings and a modest collection of Modern/Contemporary works, which contributes to its score of 1 in Impressionist strength and 2 in Modern/Contemporary strength. Its historical context is local in relevance, reflecting its community focus.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is not about the Boise Art Museum or its collections, so strengths in Impressionism, Modern/Contemporary art, and interpretive historical context cannot be reliably scored from the evidence. Based on being a city art museum in Boise (a smaller regional capital) with limited external signals, it is assessed as a regional institution with a moderate collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.boiseartmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Boise' from open data; MRD: computed city_tier=2 for Boise; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "2083458330",
+      "phone": "(208) 345-8330",
       "is_scoreable": true,
       "content_summary": "Set beside Boise’s leafy Julia Davis Park, the Boise Art Museum is a rewarding stop for art lovers who enjoy intimate galleries, thoughtfully rotated exhibitions, and a close look at contemporary creativity in the Intermountain West. Its strengths lie in changing shows—often spotlighting living artists and regional voices—plus approachable scale, calm viewing conditions, and a pleasant park-centered setting that makes it easy to pair art with a stroll through downtown Boise’s cultural corridor.",
       "content_description": "In the heart of Julia Davis Park, **Boise Art Museum** offers a focused, visitor-friendly encounter with art in a city better known for outdoor landscapes than gallery-hopping—making the museum’s curated quiet and steady stream of exhibitions feel like a welcome discovery. While the institution’s permanent holdings are **modest**, the museum’s real draw is its **rotating program**, which typically foregrounds contemporary practice, traveling shows, and regional perspectives that connect Boise to broader conversations in American art.\n\nArchitecturally, the experience is defined less by monumental spectacle and more by an **accessible, human-scaled** museum presence within the park. Expect clear sightlines, comfortable pacing, and galleries that encourage close looking—ideal for appreciating the material intelligence of contemporary painting, photography, and mixed-media work. The setting itself matters: stepping out of the galleries into the green of the park creates a natural rhythm between concentrated viewing and reflective breaks.\n\nFor travelers, **Boise Art Museum** works best as a *curatorially led* visit: check what’s on view, then give yourself time to slow down and follow the exhibition narrative rather than hunt only for famous names. It’s a museum that rewards repeat visits—returning locals and weekend visitors alike will find the galleries transformed by new shows, often with a distinctly Northwest/Intermountain sensibility and an emphasis on artists working now.",
@@ -79,7 +80,148 @@
       "primary_art_focus": "Modern/Contemporary",
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "http://www.boiseartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 651,
+      "google_reviews": [
+        {
+          "author_name": "Brian Lewis",
+          "author_url": "https://www.google.com/maps/contrib/105293274249491042776/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKqp13zEgQxmM6mzVFpC78LoNQyXaCA3oB1r80jy88LmUPucQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "The Boise Art Museum snuck up on me emotionally, which is rude for a building with such clean, well-behaved lines. I walked in expecting a quiet stroll and instead got ambushed by an exhibit that made me question whether I’ve been living my life in the wrong color palette. One gallery had a video installation looping something both soothing and vaguely unsettling—like a screensaver having an existential crisis. I lingered way too long. A security guard gave me the “you good?” look, which, honestly, fair. The ceramics section felt like a meetup of objects with secrets; I kept wanting to pick them up even though my inner adult screamed NO. Kids were doing some art project in the corner, splattering paint like joyful chaos gremlins, and it made the whole museum feel more alive. I left with my brain buzzing, my heart weirdly lighter, and the sense that Boise hides its magic in places you don’t expect—like inside a perfectly lit white cube.",
+          "time": 1764860905,
+          "translated": false
+        },
+        {
+          "author_name": "Heather Dougherty",
+          "author_url": "https://www.google.com/maps/contrib/102279498725457717872/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXB7GTGn_7iaYxMgWmiYizLPD6jWxlmYWQhjkiJBncmRfY_8C-V=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Wonderful exhibits. Really engaging works by each of the highlighted artists. Spent about 45 min there. It's relatively small, as museums go, but was chock full of art you could spend some good time taking in.\n\nIt's free to enter. Do please consider leaving a donation on your way out near the entrance so this place can continue to provide an inspiring experience to visitors of Cedar City.",
+          "time": 1725063948,
+          "translated": false
+        },
+        {
+          "author_name": "Faith",
+          "author_url": "https://www.google.com/maps/contrib/108924117689616786456/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0Fl7jhk_unTjlPr5wDsw9V2mQwemCEbQMGnI6BPut0eMbkSoWIA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 3,
+          "relative_time_description": "a month ago",
+          "text": "The facility itself is very nice and clean. I personally would not recommend this for kids younger than eight. There is only one area that is kid friendly and less than a handful samples where kids can touch. Staff will also follow you from area to area. On one account I was leaned closer (with my face only)trying to read some small print (on the wall) next to a wooden art so I could learn more about the piece and a member promptly told me I was too close and that I was to remain 18 inches from exhibits.\n\nThere is no food nor water allowed in the museum and can only be ate or drank outside. No designated area inside and no cafeteria/vendors.  So come well fed and watered.\n\nThe highlight for the trip was the kid area where they could touch, build with magnet tiles, pick a string to add to the wall of emotions, stamp a rainbow and I Spy board with two flash cards.",
+          "time": 1770428173,
+          "translated": false
+        },
+        {
+          "author_name": "Nikol Johnson",
+          "author_url": "https://www.google.com/maps/contrib/113171921880499513098/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRxYnOm2gDcWcM8EZr-KJ4fzcZfKjSoVFMu8XHieljuTBzDmU=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I am a teacher in the Boise School District, and I’ve been bringing my class to the Boise Art Museum for the past five years. We are always greeted with smiles and knowledgeable volunteers who are wonderful with kids. My students consistently love this field trip—especially the hands-on art activity they get to do after the tour. I recommend it for all ages.",
+          "time": 1770147490,
+          "translated": false
+        },
+        {
+          "author_name": "Samantha Baughman",
+          "author_url": "https://www.google.com/maps/contrib/116608371022981154283/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUg1TURmj82TUjGwVbvjlNm4tLQ_JA1IIFtj19crYsuLy290RZJ=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "a month ago",
+          "text": "I am writing to formally share a deeply disappointing and distressing experience I had at the Boise Art Museum while attempting to participate in my child’s school field trip.\nI arrived at the museum after taking time off work to support my child, his teacher, and his class, at the teacher’s direct request. The teacher has conducted this same tour for many years and clearly instructed parents who were meeting their children at the museum (rather than riding the bus) to enter through the front doors, pay admission, and then be directed to the group.\nDespite following these instructions exactly, I was immediately treated as a nuisance and an unwanted visitor by the front desk staff. I was told I was “in the wrong spot” and that I “would have to pay,” in a tone that was dismissive and unwelcoming. After a prolonged and uncomfortable exchange—and only after a phone call was made to a front desk supervisor—I was allowed to pay the $9.00 admission fee. Even then, I was scolded and told I would not be allowed in the education room.\nAt no point was I shown where my child’s group would be within the museum. Throughout the visit, I felt closely watched, judged, and clearly made to feel that my presence was neither welcome nor appreciated. There was nothing positive, warm, or inviting about my interaction with staff during this visit.\nFor context, I hold a Bachelor of Arts degree from California State University, Fresno, with an emphasis in Art. I am a member of this community, a supporter of the arts, and a parent who values arts education. I was genuinely ashamed to have such an experience in my own community—particularly as a mother who made the effort to be present for her child and to support his teacher.\nThe only positive aspect of the visit was the museum guides who worked directly with the children. These individuals were excellent and engaged appropriately with the students and chaperones.\nHowever, the experience worsened at the conclusion of the tour. When the children entered the education room, I and the other parents who had entered through the front doors were abruptly and rudely stopped and told, in a blunt tone, that we were not allowed to enter because we did not have name tags.\nAt that point, I requested that my son—who is autistic—be brought back to me so I could say goodbye. This request was met with visible irritation, including huffing at the inconvenience. After I said goodbye to my child, a staff member stated to me, “I think he would have been fine.”\nThis comment was entirely inappropriate. No staff member has the right to tell a parent how to interact with their child, particularly a child with special needs.\nI am not someone who regularly complains or writes negative feedback. However, this experience was so profoundly negative that I feel compelled to speak up. From the perspective of a mother, a community member, and someone involved in the art community, this visit reflected extremely poor judgment, lack of empathy, and a failure to uphold the values an institution like the Boise Art Museum should represent.\nThis was, simply put, bad form. I am deeply disappointed and hope this feedback leads to meaningful reflection and staff training so that no other parent, child, or educator has a similar experience.\nSincerely,\nSamantha Baughman",
+          "time": 1769799601,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-id-idaho-falls-art-museum-of-eastern-idaho",
@@ -91,14 +233,14 @@
       "website": "http://www.theartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "7777 300 S. Capital Ave.",
+      "street_address": "300 S Capital Ave, Idaho Falls, ID 83402, USA",
       "address_line2": null,
       "postal_code": "83402",
-      "latitude": 43.48919,
-      "longitude": -112.04481,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 43.4901557,
+      "longitude": -112.0454372,
+      "place_id": "ChIJD5uu90RZVFMRm4xOTPdXVD0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -107,7 +249,7 @@
       "tickets_url": "https://www.facebook.com/TheArtMuseumofEasternIdaho/",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -122,20 +264,21 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Art Museum of Eastern Idaho has a modest collection that may provide educational value but lacks depth and significance for broader scholarship. Its historical context score reflects its relevance to the immediate community, while its reputation indicates regional recognition.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides no description of the museum’s permanent collection or interpretive approach, so collection-area strengths and historical context cannot be reliably scored. Based on the institution’s local/regional setting in Idaho Falls and lack of evidence for major holdings, it is most plausibly a local museum with a small collection tier.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.theartmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Idaho Falls; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T01:58:36Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": true,
@@ -152,8 +295,140 @@
       "content_model": "gpt-5.2",
       "content_source": "openai",
       "eca_score": 1,
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "phone": "(208) 524-7777",
+      "website_google": "http://theartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 166,
+      "google_reviews": [
+        {
+          "author_name": "Marcus Daley",
+          "author_url": "https://www.google.com/maps/contrib/106094305333864636668/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWU6D_0Gskp4KSgXmwQawdbY_8lefzcLMx2ftSD0xPO4UZl-xsG=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "While it’s a somewhat small art museum, it makes up for it in its location, professionalism and cleanliness.\nThe showcase my wife and I went to showcases local artists and I was actually impressed by most of what I saw. Who knew Idaho Falls was such a hotbed for watercolor artists?\nBut either way we enjoyed it, the cheap price for entry, and walked away happy. The outside is just a pretty as the inside and it sits close to the river, giving it a beautiful view.\nWill go back again someday.",
+          "time": 1653773586,
+          "translated": false
+        },
+        {
+          "author_name": "Aaron Dworetzky",
+          "author_url": "https://www.google.com/maps/contrib/109058003235787751952/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUB04Pwi3N_phqrYhAk2vPztQZssSa3CucXKW3g5enmGcvqfvVH=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "Nice place to see rotating exhibits. Small, but doable in 45 minutes or less. Adults are $4, so worth it for the price.",
+          "time": 1703802896,
+          "translated": false
+        },
+        {
+          "author_name": "Meridy Palmer",
+          "author_url": "https://www.google.com/maps/contrib/116189831830089237900/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXjEtoPz_BGer3pcErpb6Q4WT48iPs4t-QzsoNEf3mBs0ZzqharTA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Loved the most recent art display entitled Project 52!",
+          "time": 1717122314,
+          "translated": false
+        },
+        {
+          "author_name": "Bryce Tarnasky",
+          "author_url": "https://www.google.com/maps/contrib/101380597682543216411/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0pcLuGJcqEwu8DtrL29lARNoskyl2kFr45n1N7DwUpUhmb_S9Iw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Great place for kids to discover and learn! Didn’t realize there were so many different fun activities to do in one place! Great job, and thank you!",
+          "time": 1679159102,
+          "translated": false
+        },
+        {
+          "author_name": "**",
+          "author_url": "https://www.google.com/maps/contrib/108651036520827060702/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWcHfPHaV8jCz5u3cvWyyKtH3j0c6sbUIOcsdtAHVjdy9pHOli4Ng=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "We really enjoyed our time here. We had to get creative and get the kids more involved by asking to find their favorite color in their favorite picture in each room. We then eventually ended up in the kids art room where we spent a majority of our time. The kids had a blast with all the different types of art and crafts all over the room. The staff was very kind and helpful and she was also right there to help us turn on the lights for the art room. We will look forward to going there again. The prices are great for the fun we all had.",
+          "time": 1543071771,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

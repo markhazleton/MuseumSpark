@@ -20,7 +20,7 @@
       "longitude": -85.7592729,
       "place_id": "ChIJ95owDFENaYgR2wdbWBctD2o",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -54,7 +54,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:07:04Z",
+      "updated_at": "2026-03-14T19:55:46Z",
       "notes": null,
       "city_tier": 3,
       "phone": "(502) 635-2240",
@@ -220,7 +220,7 @@
       "longitude": -84.5385762,
       "place_id": "ChIJSds3XcK2QYgR_90Px0cVpcM",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -257,7 +257,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:07:14Z",
+      "updated_at": "2026-03-14T19:55:46Z",
       "notes": "CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(859) 491-4003",
@@ -351,14 +351,14 @@
       "website": "http://www.jmam.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "71 Main St, Cadiz, KY 42211, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 36.86519,
-      "longitude": -87.83293,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "42211",
+      "latitude": 36.8632626,
+      "longitude": -87.8359838,
+      "place_id": "ChIJpa0Lpe3BeogRVFhPnm4tfAs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -367,7 +367,7 @@
       "tickets_url": "https://jmam.org/jmam-art-book-club/",
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -382,23 +382,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Janice Mason Art Museum has provided local context, making it relevant to its immediate community. While the collection may have some strength regionally, there is no indication of significant holdings in Impressionist or Modern/Contemporary art.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence provides only the museum name and location (Cadiz, Kentucky) with no collection description, so Impressionist, Modern/Contemporary, and historical-context scores cannot be determined. Given the small-city setting and lack of corroborating signals, the museum is most plausibly a local institution with a small-to-limited permanent collection.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.jmam.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Cadiz' from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:07:24Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2705229056",
+      "phone": "(270) 522-9056",
       "is_scoreable": true,
       "content_summary": "In the heart of Cadiz, the Janice Mason Art Museum is a rewarding stop for art lovers who want to understand a place through its artists. With a reputation for strong regional holdings, it offers an intimate, thoughtfully curated experience—less about blockbuster crowds and more about close looking. Expect exhibitions that spotlight local talent, landscapes, and community narratives, with an inviting scale that makes it easy to take your time, revisit favorite works, and leave with a clearer sense of the region’s visual identity.",
       "content_description": "Tucked into Cadiz, the **Janice Mason Art Museum** is the kind of regional museum that rewards attentive visitors: it’s not built around spectacle, but around **place, artists, and the stories art can hold**. Its strength lies in a **strong regional collection**, offering a focused lens on the area’s creative output—often through painting, works on paper, and craft-informed practices that reflect local life, landscape, and cultural memory. For travelers who enjoy tracing how artists respond to their surroundings, this museum provides a grounded, human-scale counterpoint to big-city institutions.\n\nArchitecturally, regional museums like this typically prioritize **approachable galleries and clear sightlines**, creating an experience where you can stand close, read the brushwork, and notice materials—key pleasures when encountering emerging or locally significant artists. Expect rotating presentations that may highlight *plein-air* sensibilities, *regionalism*, or contemporary approaches rooted in familiar terrain, along with community-centered exhibitions that connect art to Cadiz’s broader identity.\n\nFor visitors, the appeal is the **slow-looking experience**: fewer rooms, more time with each piece, and staff or interpretive texts that tend to be personal and locally informed. Plan to linger—this is an ideal museum for art enthusiasts who value discovery, conversation, and the satisfaction of seeing how a region’s visual language develops over time. Pair your visit with a walk through town to extend the feeling of art meeting place.",
@@ -412,7 +413,148 @@
       "content_generated_at": "2026-01-25T02:07:24Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 3
+      "collection_based_strength": 3,
+      "website_google": "http://www.jmam.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 1:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 107,
+      "google_reviews": [
+        {
+          "author_name": "Jenny Brandon",
+          "author_url": "https://www.google.com/maps/contrib/115236644930668687353/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWEIQ0-u4QSJmxiAZs1TWB27sY60PyLZyyVMHvD0ZQi1n_ZCLNBHw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "What a wonderful visit! The featured artist exhibit was breathtaking. The staff were very helpful. The gift shop is filled with items created by local artists. I wish I lived close enough to participate in the classes. Don’t skip the restrooms. No kidding. Definitely worth visiting frequently.",
+          "time": 1763907612,
+          "translated": false
+        },
+        {
+          "author_name": "Jessica crenshaw",
+          "author_url": "https://www.google.com/maps/contrib/110515095472011839276/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXmNp8big5k7I7qRd2Ogi9aq7dY1Praasr7g-6qoeHJFctiCVk=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "The museum is clean, quiet and has a friendly staff. The newly renovated bathrooms are gorgeous! The gift shop is full of items that cater to all those who love and appreciate art. Something for everyone. The artist Michelle Hayden's beautiful creations were on display during our visit. An incredible exhibit!! We enjoyed ourselves! Admission is free and donations are appreciated.",
+          "time": 1663516815,
+          "translated": false
+        },
+        {
+          "author_name": "Renee Kochanski",
+          "author_url": "https://www.google.com/maps/contrib/104098448457043436236/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX6vdiy7V1of6J7eDu4NeooZYWPhu7H8MxavCqRulk3WUQPZc-8=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "It's nice to have a museum in a small town.\nIt always has different stuff going on. So every time you go it's different.",
+          "time": 1733803928,
+          "translated": false
+        },
+        {
+          "author_name": "Nena Curtsinger",
+          "author_url": "https://www.google.com/maps/contrib/108422405628068780995/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVureIn-HMvnO22ZlX3ee5bj10kQcqcFOLmRN_CHDjtD9cfyP-P=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Very nice an great for kids,I drove school bus an would drive them an they love it",
+          "time": 1771559800,
+          "translated": false
+        },
+        {
+          "author_name": "Brent Meredith",
+          "author_url": "https://www.google.com/maps/contrib/111567466729531403725/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUYQgi-kw4mFQvudjFk5btximHaBq0PBnjVAkGMONremWhU2vv1=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "So proud of my hometown's Janice Mason Art Museum! A great repurpose of the former Post Office building and a wonderful place to visit while in Cadiz. :)",
+          "time": 1752593067,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ky-unknown-kentucky-gateway-museum-center",
@@ -424,14 +566,14 @@
       "website": "https://www.kygmc.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "215 Sutton St, Maysville, KY 41056, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.6478,
-      "longitude": -83.76702,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "41056",
+      "latitude": 38.6481745,
+      "longitude": -83.7670638,
+      "place_id": "ChIJbwrAQalaQYgRoi6oXUNELhs",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -462,12 +604,13 @@
         "walker_reciprocal",
         "official_website",
         "https://www.kygmc.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Maysville' from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:07:29Z",
+      "updated_at": "2026-03-14T19:55:48Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "is_scoreable": false,
@@ -482,7 +625,139 @@
       ],
       "content_generated_at": "2026-01-25T02:07:29Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(606) 564-5865",
+      "website_google": "http://www.kygmc.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1530"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1530"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1530"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1530"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1530"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 3:30 PM",
+          "Wednesday: 10:00 AM – 3:30 PM",
+          "Thursday: 10:00 AM – 3:30 PM",
+          "Friday: 10:00 AM – 3:30 PM",
+          "Saturday: 10:00 AM – 3:30 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.8,
+      "google_reviews_count": 196,
+      "google_reviews": [
+        {
+          "author_name": "rebecca schaffer wells",
+          "author_url": "https://www.google.com/maps/contrib/118364442749688650779/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLoL0qu_nqYcL7NHb5RntxOkoiqK1zzz0NWoSpH3OmyoqDrkVW=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "What??! This GEM is a secret, but everyone will love it.\nRegional History, a bit of archeology, the grand architechture of an early US library, and the MINIATURES collection is world class.\n\nAffordable.\nStaff is most helpful.\nSimoly a beautiful way to learn, enjoy, be amazed.\nYou could spend pretty.kuch the whole day here.",
+          "time": 1768438354,
+          "translated": false
+        },
+        {
+          "author_name": "Lisbeth Redden",
+          "author_url": "https://www.google.com/maps/contrib/116893005108335553345/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMQ9KsiG6_9GTc_fFTl23JiiceVPa-8MrdVY9RElt3YeNjMQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Went to see the miniatures and Dollhouses . They are amazing wish I had more time to see the other exhibits",
+          "time": 1759069945,
+          "translated": false
+        },
+        {
+          "author_name": "Shannon Robbins",
+          "author_url": "https://www.google.com/maps/contrib/107082144591789093156/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWLryciYHoo1B3rdUPaY7B3ag-bRvvnCZVmkmsX34kti5UESlKUDg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Awesome Local Museum!  I never thought miniatures could be so interesting!  The detail was simply amazing!  We enjoyed the local history section as well. Nicely done!  The distillery museum was open next door too so we got to enjoy the history of Pogue Spirits. I liked how you could even buy a shot or even a bottle if you wanted to. The Staff was very helpful and informative!  Very well done!  I definitely recommend checking it out if you’re staying in the area.",
+          "time": 1719146007,
+          "translated": false
+        },
+        {
+          "author_name": "Pete Knight",
+          "author_url": "https://www.google.com/maps/contrib/111775603585142965095/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX7-bgmpH_ua9r4SqydZSF9ea09g_9tqU55gho9zgRYKXxhK6v9=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "We went to visit the genealogy research center at the museum. The museum has a great deal of local Maysville KY history.\nThe very large miniature collection was a highlight. It's spectacular.",
+          "time": 1747565256,
+          "translated": false
+        },
+        {
+          "author_name": "Barbara Funk",
+          "author_url": "https://www.google.com/maps/contrib/114833321052191447711/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKd3EkaS5gDD4IDh-aJpIHAyecWhLWKGnk3N0J1txaRZMM0Uw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Most amazing doll house collection with so many miniatures!! Can not even say enough! Definitely a must see!! Loved it ALL, and plan to go back during the holidays for the mini Christmas decorations and Creche Exhibit!",
+          "time": 1752708629,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ky-unknown-speed-art-museum",
@@ -494,14 +769,14 @@
       "website": "http://www.speedmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "2035 S 3rd St, Louisville, KY 40208, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.21792,
-      "longitude": -85.76154,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "40208",
+      "latitude": 38.2183706,
+      "longitude": -85.7609428,
+      "place_id": "ChIJKWYeNWcNaYgRWOtVDo11q-E",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -520,23 +795,24 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 3,
-      "modern_contemporary_strength": 3,
-      "primary_art": "Impressionist",
-      "historical_context_score": 3,
-      "priority_score": 11,
+      "modern_contemporary_strength": 4,
+      "primary_art": "Modern/Contemporary",
+      "historical_context_score": 4,
+      "priority_score": 8,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Speed Art Museum has a strong collection of contemporary art and significant pieces from various periods, but it lacks the depth to be considered nationally influential. Its historical significance and regional context are notable but do not reach national importance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The Speed is described as housing Western art from antiquity to the present with significant French painting holdings, suggesting at least moderate Impressionist representation but not clearly a flagship focus. It explicitly cites \"important contemporary art\" and modern/contemporary collections, supporting a strong modern/contemporary score. Its broad chronological scope (ancient through contemporary) implies solid historical framing, and as Kentucky's oldest/largest art museum it has regional s",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 4,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Louisville' from open data; MRD: computed city_tier=1 for Louisville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
       "is_scoreable": true,
@@ -556,9 +832,141 @@
       "eca_score": 2,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority",
+      "phone": "(502) 634-2700",
+      "website_google": "http://www.speedmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 2041,
+      "google_reviews": [
+        {
+          "author_name": "Kelly Solomon",
+          "author_url": "https://www.google.com/maps/contrib/117704218636729930839/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVqwmTIc2YpHBl1IG-YG0tMwSQQEZBWzJ_wu-dV18SbYHss2Cw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Great art museum with a great variety of genres. However, I was disappointed by the exhibit “Otherworldly Journeys - The Fantastical Worlds of Bosch and Bruegel.” I feel like it was not sufficiently clear in the advertisement and descriptions that there actually zero works done directly by either Bosch or Bruegel. These were only print works inspired by them. Now, for what it actually was, it was wonderful and amazing. However, I had my hopes up to see a collection of the original artists’ work. In the advertisement, there is only a few sentences at the very end clarifying this. If I wasn’t so disappointed not to find any Bosch or Bruegel directly, I would give this five stars, six if I could!",
+          "time": 1767298584,
+          "translated": false
+        },
+        {
+          "author_name": "Noyana Middleton",
+          "author_url": "https://www.google.com/maps/contrib/103386861954290856145/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWlbX6i5VHe5JVVlpMjKJk3GG3F16ZaFIp_WcB93Oo9aHbpyq9yVA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "I am a supporter of the arts and went to see the Bosch exhibit. However, it's a bit misleading because there were no actual original Bosch pieces, only \"artists inspired by Bosch\". I think they misrepresented the exhibit. Enjoyed our time there despite the disappointment that there was no Bosch artwork.",
+          "time": 1767581667,
+          "translated": false
+        },
+        {
+          "author_name": "Emily Martinez",
+          "author_url": "https://www.google.com/maps/contrib/100246487722802727963/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWnuggGgHwYTCogybkLkvB_2mlep0xW5OXt5liPmz4xgx6Egt5J=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "I went to the Brilliant Blooms event and had such a wonderful time. The art museum really put a lot of effort into this event, there were drinks, live jazz music, a bouquet bar and of course the beautiful displays created by local florists.\n\nThis event was affordable and I LOVED that they gave local florists an opportunity to show their work. One of my favorite aspects was that you really could smell the flowers and it looked like they curated each piece to fit with the art in the room. Would definitely go back and definitely recommend.",
+          "time": 1748180941,
+          "translated": false
+        },
+        {
+          "author_name": "Tammy McKinney",
+          "author_url": "https://www.google.com/maps/contrib/110247172179565727972/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0b-5Hzsck0V21dDBRWC8gm4v6JiNDPTiTOXyOL_FPkpqM1dV2ng=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Wow! This is a true gem in Louisville,  KY. I mean that. There is so much depth and beauty to be discovered here in this masterfully laid out museum. There are exhibits that are ancient and then there are modern and contemporary exhibits. The newer addition of the building is a piece of art all in itself. I recommend a trip to see this art museum. I am thankful I took my family.",
+          "time": 1760227106,
+          "translated": false
+        },
+        {
+          "author_name": "S L",
+          "author_url": "https://www.google.com/maps/contrib/116955451382716858660/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLl0AUJdK9tArgYbjgwrO_g_S8VllMt4fcKgackjybK5A0aMk4F=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Love the architecture. This museum is around U of Louisville so went on a weekday during winter break. Fridays have a children’s day, but planned to go right when it opened, to bet the rush.\n\nGreat special exhibits and solid permanent pieces.\n\nDefinitely plan to go back.",
+          "time": 1736603752,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ky-bowling-green-national-corvette-museum",
@@ -570,14 +978,14 @@
       "website": "http://www.corvettemuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "350 Corvette Dr, Bowling Green, KY 42101, USA",
       "address_line2": null,
       "postal_code": "42101",
-      "latitude": 37.0042236,
-      "longitude": -86.3744523,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 37.0041426,
+      "longitude": -86.37461700000001,
+      "place_id": "ChIJLURpfjbkZYgRipykUJPYSl0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -607,12 +1015,13 @@
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Bowling Green; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:07:49Z",
+      "updated_at": "2026-03-14T19:55:50Z",
       "notes": "CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "is_scoreable": false,
@@ -627,7 +1036,159 @@
       ],
       "content_generated_at": "2026-01-25T02:07:49Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(270) 781-7973",
+      "website_google": "https://www.corvettemuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 11782,
+      "google_reviews": [
+        {
+          "author_name": "America's Crossroads Garage",
+          "author_url": "https://www.google.com/maps/contrib/110188018165758697372/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWrqUSEf33gAeYBWUaHrqcPwtduj-_9jmEmsk9NhD4tJhxeRZQ1mw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "If you like cars, especially Corvette, and/or history the Corvette museum is a must see. They present the history of the Corvette well with lots of interactive exhibits & learning opportunities with concept cars, movie cars, scale models, and the only 1983 Corvette!\n\nThe museum is constantly making improvements and changing out vehicles on display.\n\nIf it's available when you're there, I highly recommend the factory tour. It's roughly a 1.5 hour tour of the factory just across the street & you won't be disappointed!",
+          "time": 1771506457,
+          "translated": false
+        },
+        {
+          "author_name": "Double Cross",
+          "author_url": "https://www.google.com/maps/contrib/114853645679033243342/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYSWsYwijV0w1QDFAV4nPddOy4Zh5PuCXbKbPE12I57bBCorszhg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Came thur her a couple of months ago on my way to Nigeria falls and didn't stop so here we are agan. Great visit a little pricey but very cool. lots of cool cars and history of the corvettes. Put together in a timeline in history. Cool cRs for actors and famous people. Cool concept vets you probably wouldn't see anywhere else . Spent about 1 1/2 hours inthw place and seen it all. Cool gift shop and a restaurant. Cool stop very interesting. Keep up the great job. Maby knock the price down a bit but cool. Thanks a whole lot and hope to see yall agan.!!!@@@!!",
+          "time": 1761602912,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Jance",
+          "author_url": "https://www.google.com/maps/contrib/116978601544220331520/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXUjh1hg5gfNjG3Ixgr40Fimpnok_iOlv8KsGVBVVo3tm-D4ID89g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Great facility, wide range of vehicles on display. This is the second time that I've been to visit. The vehicles on display change periodically, so there is always something different to see on each visit. The racing simulator was fun. Highly recommended for any car enthusiast.",
+          "time": 1766663038,
+          "translated": false
+        },
+        {
+          "author_name": "Barbara Loftis",
+          "author_url": "https://www.google.com/maps/contrib/114649403685572368806/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXpzgGsb6FHDwKggS9k_zc4zg3T6Fzvpy2b1tqxwdlmghwm0-GASw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "This museum had lots of beautiful cars to admire! I was into the viewing part, but there was plenty of informational material for my husband to enjoy reading.\nWe changed our Chevy Blazer while enjoying the museum, which was very convenient. Luckily the path through the corvettes is very structured, so when I left briefly to disconnect our EV, I was able to locate my husband with no trouble.",
+          "time": 1771253564,
+          "translated": false
+        },
+        {
+          "author_name": "Opinion Oracle",
+          "author_url": "https://www.google.com/maps/contrib/106567060225185940854/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ6Un0cL7EE-I1mOvsoGDmR4wPndF7djcsvMcfTk5rNDhwnAA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 weeks ago",
+          "text": "Excellent experience overall. The museum has a great collection of Corvettes from all eras, and the layout is well organized and easy to follow. They also have a nice interactive area for kids, and they even offer small car-shaped strollers free of charge, which was a really thoughtful touch for families.\n\nThey gave a $5 military discount, which was appreciated. The admission price is somewhat reasonable, though slightly higher than expected, but the overall experience made it worth it. Highly recommend visiting, especially if you’re a Corvette fan or visiting with family.",
+          "time": 1771098349,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ky-lexington-university-of-kentucky-art-museum",
@@ -639,14 +1200,14 @@
       "website": "http://www.uky.edu/ArtMuseum",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "405 Rose St, Lexington, KY 40508, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 38.03643,
-      "longitude": -84.50189,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "40508",
+      "latitude": 38.0378919,
+      "longitude": -84.501645,
+      "place_id": "ChIJC99PgMBEQogRvVi9W__jcac",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -667,26 +1228,27 @@
       "impressionist_strength": 2,
       "modern_contemporary_strength": 3,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 14,
+      "historical_context_score": 3,
+      "priority_score": 13,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The collection includes a range of European and American artworks, with notable artists represented, indicating a strong regional presence but lacking canon-defining works. The museum's historical context and curatorial authority are modest, suggesting local significance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The summary describes a broad collection from Old Masters to contemporary and lists several modern/contemporary figures (e.g., Calder, Dubuffet, Gilliam, Nevelson), supporting moderate modern/contemporary strength. No clear evidence of significant Impressionist holdings is provided, so Impressionism is scored as minor. As a university art museum with a mixed European/American and some non-Western material, it likely offers some historical framing but not on the scale of a major encyclopedic inst",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.uky.edu/ArtMuseum",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Lexington; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Network error accessing http://www.uky.edu/ArtMuseum: [WinError 10054] An existing connection was forcibly closed by the remote host; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "8592575716",
+      "phone": "(859) 257-5716",
       "is_scoreable": true,
       "content_summary": "In Lexington, the University of Kentucky Art Museum offers a thoughtful, university-driven encounter with art—ideal for travelers who like looking closely and learning something new. Expect a modest but well-curated mix of changing exhibitions and teaching-focused displays that connect historical and contemporary art with big ideas. It’s an easy, rewarding stop on campus: quiet galleries, strong interpretive context, and an emphasis on discovery over spectacle—perfect for art lovers who appreciate careful curation and fresh perspectives.",
       "content_description": "Set within the University of Kentucky campus in Lexington, the **University of Kentucky Art Museum** is a compact, intellectually minded museum where the pleasure comes from **close looking** and smart context. Rather than aiming for blockbuster scale, it leans into what university museums do best: presenting art through the lens of research, teaching, and experiment. Exhibitions tend to rotate, so repeat visits are rewarded—one trip might foreground contemporary practices and *conceptual* approaches, while another spotlights historical work or thematic, cross-media stories.\n\nThe collection is best approached as a **strong sampling** rather than an encyclopedic survey: works on paper, painting, and objects that support changing installations and study. What stands out is the curatorial voice—labels and wall texts are typically clear and idea-driven, connecting visual details to broader artistic questions (process, materials, symbolism, and cultural context). For visitors, this means you’re not just “seeing art,” you’re following an argument.\n\nArchitecturally and experientially, the museum reads as a calm campus destination—more seminar-room intimacy than monumentality. Expect manageable gallery spaces, opportunities to engage with student and faculty-led perspectives, and the satisfying feeling of having truly spent time with individual works. Pair it with a stroll through campus or Lexington’s nearby neighborhoods, and you have a low-stress, high-reward visit for art enthusiasts who value **curation, interpretation, and discovery**.",
@@ -706,7 +1268,138 @@
       "primary_art_focus": "Modern/Contemporary",
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://finearts.uky.edu/art-museum",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 151,
+      "google_reviews": [
+        {
+          "author_name": "Steve Hamrin",
+          "author_url": "https://www.google.com/maps/contrib/105959581357295235272/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVefCoHs9sbhdbAaKKWuj8gDUyX08rTcAfFmmjzpvccjANALUUKQw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "7 years ago",
+          "text": "We enjoy it every time we go there. The staff are friendly, the space nice and the exhibits varied. My kids like the elevator the best usually but we're working on that.",
+          "time": 1528914950,
+          "translated": false
+        },
+        {
+          "author_name": "Dennis R Harding III",
+          "author_url": "https://www.google.com/maps/contrib/108816393958287081035/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-08xR3oZEzUwJwKvtgzrEfH07WSd6tny5dTnnM5xD7lhOfYJJ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "Great place to have a relaxing and eventful day with a friend or love One",
+          "time": 1770810027,
+          "translated": false
+        },
+        {
+          "author_name": "Clara Wilson",
+          "author_url": "https://www.google.com/maps/contrib/102425960247980386165/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJVaD3hOuf_yEfBO12tlzQhzXG173WOJs4hwZjM9FhaYmk06Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "7 months ago",
+          "text": "The space was smaller than I expected (we visited without knowing anything about it) but I did enjoy a lot of the pieces that I saw. The front desk staff were friendly, and there is a small gift shop in the lobby area.",
+          "time": 1753498406,
+          "translated": false
+        },
+        {
+          "author_name": "Robyn Seely",
+          "author_url": "https://www.google.com/maps/contrib/113621820318923938545/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV2QoLQQZ5qOuJzZFTlJ-7HiYbNBWKu7uFycnhcCFt0T3Gjsx3I=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "4 years ago",
+          "text": "Very small museum, not a ton of art. They offer free Family Days periodically (once a month?). I've attended twice with my 10yo and 7yo kids. The first time was great, an employee discussed a few peices on display and told us about color theory, after which the kids mixed their own clay colors and made their own sculptures. The second time, a guy gave us blank paper and markers and told us to color. I'll give Family Day another try, but won't be visiting just to see the small collection.",
+          "time": 1639021760,
+          "translated": false
+        },
+        {
+          "author_name": "Douglas Andersen",
+          "author_url": "https://www.google.com/maps/contrib/116369052305539627170/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_t1RpMcIQnIoeY2RZSoBxOnq2IHKst0n3y0JvydRyEs_9g6aONA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 3,
+          "relative_time_description": "8 years ago",
+          "text": "Nice small gallery.  Worth a visit.",
+          "time": 1520344233,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ky-louisville-frazier-international-history-museum",
@@ -718,14 +1411,14 @@
       "website": "http://www.fraziermuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "829 West",
+      "street_address": "829 W Main St, Louisville, KY 40202, USA",
       "address_line2": null,
       "postal_code": "40202",
-      "latitude": 38.2578961,
-      "longitude": -85.7644884,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.2577529,
+      "longitude": -85.7644972,
+      "place_id": "ChIJWXIl56ByaYgR7-Q-3-mVpAI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": "History",
       "topics": null,
@@ -756,16 +1449,17 @@
         "walker_reciprocal",
         "official_website",
         "http://www.fraziermuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=1 for Louisville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:08:09Z",
+      "updated_at": "2026-03-14T19:55:52Z",
       "notes": "CSV: IRS Museum ID 8402100257 CSV: phone from IRS 990 database CSV: museum type 'General Museum' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 1,
       "is_scoreable": false,
-      "phone": "8592594232",
+      "phone": "(502) 753-5663",
       "content_summary": "The **Frazier International History Museum** offers a captivating journey through time, showcasing the richness of global history with a focus on Kentucky's cultural heritage. Its unique blend of interactive exhibits and rare artifacts invites visitors to explore stories that shaped the world, making it a must-visit destination in Louisville.",
       "content_description": "**Frazier International History Museum** is a treasure trove of historical exploration nestled in the heart of Louisville, Kentucky. With a special emphasis on the region's cultural legacy, this museum seamlessly combines local narratives with global history. Visitors will be welcomed by a strikingly modern architectural façade, which brilliantly contrasts with the rich tales contained within its walls. Each exhibit is thoughtfully designed to engage the senses, from *immersive displays* that bring history to life to *compelling artifacts* that showcase the diverse stories of humanity across the ages. The museum’s unique focus on Kentucky’s pivotal role in shaping American history makes it a standout experience for both locals and travelers alike.  As you wander through the galleries, you’ll uncover treasures such as the iconic Francis Dominican Outpost and the impressive *Renaissance-style* military artifacts that take you on a journey back to pivotal moments in history.  The thoughtful curation encourages exploration, inviting conversations around the pressing social issues of today while drawing parallels to the past. Enjoy interactive exhibits, including live performances and hands-on activities tailored for visitors of all ages.  Whether you are a history buff or a casual visitor, the **Frazier International History Museum** promises memorable experiences that resonate long after your visit.",
       "content_highlights": [
@@ -777,7 +1471,158 @@
       ],
       "content_generated_at": "2026-01-25T02:08:09Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.fraziermuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 1767,
+      "google_reviews": [
+        {
+          "author_name": "Regina Durbin",
+          "author_url": "https://www.google.com/maps/contrib/101571792404548394965/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLVS9tHYVP7Jnq8W48eCA5SfWOvk3UeHvtVv7GDhIHGv1Uy3w=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Went today with a group of girlfriends to see the “Love and Marriage “ exhibit. Wonderful tour guide, Trish shared with us wonderful stories about beautiful wedding dresses and traditions from more than 100 years until now. She clearly LOVES her job. She shared that the museum focuses on the things that make Kentucky, Kentucky. As a sidebar we saw the “speakeasy “. Highly recommend!  Everyone was friendly and helpful. I will go back.",
+          "time": 1772056118,
+          "translated": false
+        },
+        {
+          "author_name": "Amber Morley",
+          "author_url": "https://www.google.com/maps/contrib/106283371584650540924/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJJCodzZswbxVElJ2I_j2pE7PqM74voRGIQQPXckKgnZyETeg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I recently visited Frazier History Museum, and let me tell you, it was an absolute delight! The immersive exhibits seamlessly blend history, innovation, and pop culture - making for a unique and educational experience. The Kentucky Bourbon Trail exhibit is not to be missed, especially for bourbon enthusiasts like myself.\n\nThe staff were friendly, knowledgeable, and genuinely passionate about the museum's offerings. They took the time to engage with me and answer my questions, creating an atmosphere that felt warm and inviting. The children's area was a hit with my kids, keeping them entertained while I soaked in the rich history of Kentucky.\n\nI was particularly moved by the Muhammad Ali exhibit, which showcased his extraordinary life and impact on not just sports, but society as a whole. It's clear that Frazier History Museum takes pride in sharing compelling stories about our shared past and inspiring visitors to reflect on their own histories.\n\nAll in all, my visit to Frazier History Museum was nothing short of extraordinary. Whether you're a local or a tourist, I cannot recommend this museum enough. You'll leave with newfound appreciation for Kentucky's history and culture!",
+          "time": 1769568907,
+          "translated": false
+        },
+        {
+          "author_name": "Jim C",
+          "author_url": "https://www.google.com/maps/contrib/100583390010629326571/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWj2C8s7-7PyrEwsiCKo6FSZoozmR7ykFlotPwtfUK61TVEzVU4uQ=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "This is a really cool museum about Kentucky history. You could easily get through most of the exhibits in 1 to 2 hours. They did have a film that played three times a day, that we watched. That was really interesting and informative as well. We learned quite a bit about how many different people are from Kentucky. And we learned a lot of facts about the state, that we did not know before. Definitely worth a trip if you have time.",
+          "time": 1748186440,
+          "translated": false
+        },
+        {
+          "author_name": "Ashley Hilger",
+          "author_url": "https://www.google.com/maps/contrib/109635936177345846913/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJXp89lLp-KZ7KovfA7jLKQEoMtOizzd9oC4cccYfoZPsw8Yw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "I got married here on June 14, 2025. Not only was the venue gorgeous, the staff were magnificent. Throughout the entire process, they answered all my questions and after booking they let us and our family tour it multiple times since we booked almost 2 years out. The week/day of, the staff working our event were amazing. They were attentive and helped us in every way. We could not have picked a better place with better people.",
+          "time": 1754878481,
+          "translated": false
+        },
+        {
+          "author_name": "Andrew Sands",
+          "author_url": "https://www.google.com/maps/contrib/102926894815552967002/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVeYsOxn9FavcZwknVHo3zKkU3ppMZf15v9rNoLxp3uTtzB_KuYZQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "12 months ago",
+          "text": "This museum is incredible. My wife and I visited while we were staying a month in Kentucky. Absolutely blown away by everything Kentucky has to offer and all of the history of this place. The museum did a fabulous job displaying the wonderful and varied history of the state.",
+          "time": 1742320682,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ky-paducah-yeiser-art-center",
@@ -789,14 +1634,14 @@
       "website": "http://www.theyeiser.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "200 Broadway St, Paducah, KY 42001, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 37.0872,
-      "longitude": -88.5966,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "42001",
+      "latitude": 37.087513,
+      "longitude": -88.595469,
+      "place_id": "ChIJXXVAL00QeogRreMNNJbn_n0",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -820,23 +1665,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Yeiser Art Center provides local context by interpreting or preserving local art and culture, but its impact appears limited primarily to the immediate community. Its collection is described as providing educational value rather than depth or scholarly significance.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence contains no description of the Yeiser Art Center’s permanent collection, so collection-related strengths and historical context cannot be determined. Based on its location in Paducah, Kentucky and lack of broader institutional signals, it most plausibly has a primarily local reputation.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.theyeiser.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Paducah; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:08:18Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "2704422453",
+      "phone": "(270) 442-2453",
       "is_scoreable": true,
       "content_summary": "In downtown Paducah, the Yeiser Art Center offers a smart, approachable way to experience contemporary art in a historic setting. Housed in a handsome early-20th-century building, this local museum-and-gallery hub champions regional and national artists through rotating exhibitions—so there’s almost always something new to discover. It’s an ideal stop for art lovers who enjoy seeing fresh work, community-driven programming, and the texture of a smaller art scene where you can linger, look closely, and leave inspired.",
       "content_description": "**Yeiser Art Center** is Paducah’s intimate, ever-changing gateway to contemporary art—less about a single “masterpiece” and more about the thrill of discovery. Rather than a vast permanent collection, the center’s strength lies in **rotating exhibitions** that spotlight a mix of regional talent and visiting artists, often with an emphasis on *contemporary* practices. For travelers, that means your visit feels current and place-specific: expect thoughtful shows that can range from painting and photography to experimental, process-driven work, with wall texts and programming that invite you into the artists’ ideas.\n\nThe setting adds a layer of architectural character. Located in downtown Paducah, the center occupies a **historic early-20th-century building** whose classical detailing and civic presence provide a memorable contrast to modern art on the walls. That juxtaposition—old stone and new visions—makes the galleries feel grounded in local history while staying visually fresh.\n\nFor the visitor experience, Yeiser rewards the art lover who enjoys looking closely and chatting with staff about what’s on view. Because exhibitions rotate, it’s worth checking the current lineup before you go and planning time to explore nearby downtown stops afterward. In a city known for craft and creative energy, this is a compact, satisfying museum visit: **short on scale, strong on immediacy**, and welcoming to anyone who wants to take the pulse of Paducah’s art scene.",
@@ -850,7 +1696,138 @@
       "content_generated_at": "2026-01-25T02:08:18Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "https://theyeiser.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 42,
+      "google_reviews": [
+        {
+          "author_name": "Uncle Bacon",
+          "author_url": "https://www.google.com/maps/contrib/116308231949534474048/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLkz1Mlpr2GjMQRsBAHmQSMtGfilyvCpPYsBER_QZDmz94a1A=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "a year ago",
+          "text": "There has been a lot of changes here. Not for the best. I used to think of this as a safe place for everyone. I'm afraid I no longer feel that way. I hope there are some changes for the good on the way.",
+          "time": 1730224435,
+          "translated": false
+        },
+        {
+          "author_name": "Doug Starr",
+          "author_url": "https://www.google.com/maps/contrib/105525873793653474043/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJNdVoVkTScotzOBlvbQNx5_TOrTySCCh13xxvDCQj0zdprAw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "It's great to have a local gallery displaying local artists. This year's show was exceptionally good and the turnout was a full house. The snacks were also tasty and healthy.",
+          "time": 1578120177,
+          "translated": false
+        },
+        {
+          "author_name": "Julie LaPointe",
+          "author_url": "https://www.google.com/maps/contrib/114933069597539195472/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK-VmcdFcWiqWcdSjdXcihUj9ACYmwGquNtiByWuci_jW96BQ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 1,
+          "relative_time_description": "8 years ago",
+          "text": "I was there on a Monday when everything in Paducah was closed. I saw a blown glass ball in the window which I wanted to purchase for my sister.  It meant a lot to me as I wanted to do something special for her as she is going through a difficult time. I called the store on Tuesday and asked about having it shipped. The young man told me he would call me back. After two days I called back and inquired about the ball.  The same young man answered the phone and told me unfortunately because it is glass, they couldn’t  ship it.  I simply said thank you and hung up, perplexed because why does a business turn away a customer (who was very willing to pay whatever they asked for shipping) and how on earth does glass get anywhere unless it is shipped?  Disappointing.",
+          "time": 1518745571,
+          "translated": false
+        },
+        {
+          "author_name": "Brenda Bowers",
+          "author_url": "https://www.google.com/maps/contrib/106220243400679509441/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIAnt2ttSikN4MzKBs-cdhb7sBlXYltIYAn02PKTu8NBysL2A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "It was a real good time downtown. But it was so hot needs to be a little bit later in the chairs that was set at Carson Center needed to be setting against the wall so people could said and it was too hot to sit in the Sun",
+          "time": 1566253830,
+          "translated": false
+        },
+        {
+          "author_name": "Kitty Brewer",
+          "author_url": "https://www.google.com/maps/contrib/113937209831852388633/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVEoNfsvwqbv5p-PlUtJLPQnfTPMoxRkQqgIj6sVS878kypf0c=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "I thoroughly loved this art installation. So many beautiful quilted pieces like nothing I've ever seen before. Also felted wool pieces that were over the top!",
+          "time": 1558963979,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ky-paris-hopewell-museum-historic-paris-bourbon-county",
@@ -862,14 +1839,14 @@
       "website": "http://www.hopewellmuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "800 Pleasant St",
+      "street_address": "800 Pleasant St, Paris, KY 40361, USA",
       "address_line2": null,
       "postal_code": "40361",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.2088757,
+      "longitude": -84.2513723,
+      "place_id": "ChIJM4ruH93KQ4gRSugRD7ulx78",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "History",
       "topics": null,
@@ -899,12 +1876,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.hopewellmuseum.org"
+        "http://www.hopewellmuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Paris; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:08:25Z",
+      "updated_at": "2026-03-14T19:55:54Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -919,8 +1897,130 @@
       ],
       "content_generated_at": "2026-01-25T02:08:25Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(859) 987-7274",
+      "website_google": "http://www.hopewellmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 12:00 – 5:00 PM",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.4,
+      "google_reviews_count": 36,
+      "google_reviews": [
+        {
+          "author_name": "joehammer75",
+          "author_url": "https://www.google.com/maps/contrib/111106620684172535507/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVQuXK4DSgJQSNBmqv3_2nRHwlXbLw-dLTmeAXj4XdN-s8h_0Cg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "If in in Paris worth checking out. Admission is a modest $5 per adults with discounts for seniors and children. Rotating exhibits 3 times a year so it changes from time to time.",
+          "time": 1554573627,
+          "translated": false
+        },
+        {
+          "author_name": "Alan Rains",
+          "author_url": "https://www.google.com/maps/contrib/104841237935379172844/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIdFghdfhsrrsN5Wy452kgZ0QENAGtT5xpg7KMc61JUVMn-cA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great small town museum that really reflects the dedication of the historians and volunteers.  Hannah was very helpful and extremely knowledgeable about local history of the area.  The art exhibit was a great treat too.",
+          "time": 1728755996,
+          "translated": false
+        },
+        {
+          "author_name": "S.G. Williams",
+          "author_url": "https://www.google.com/maps/contrib/102943900861164318015/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLVKv2i5zSi5IEQ7HAEQomCeSqitqE4AxO3RuVi356L5-0h6w=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Kathy, Carrie Ann, and Jenny are stellar!  We felt so welcome, they took the time to explain everything, were very patient, engaging, and just a hoot and a holler! 😜 😊 10 people (and a baby) took a painting lesson.  We're novice artists, not local, and we did not know what to expect.  They're kindness allowed us to relax & enjoy the activity.  We promised to support our local artists once we return home, and we will.  Please check them out! 🙂😍🌞😊🙂",
+          "time": 1718755330,
+          "translated": false
+        },
+        {
+          "author_name": "Steve Francia",
+          "author_url": "https://www.google.com/maps/contrib/105945629529831829153/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWRZRpa5A_0cWPuLwB6wBqEruLe8n07Rc8glwxxW79sFtheq_Urcg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "What a great place! This is one of those \"gems\" that you find in smaller towns while adventuring!\nA great static display about local culture and history, as well as interesting rotating exhibits! Soon to be showcasing a traveling Smithsonian exhibit!\nWell worth a stop-handicap accessible and you'll need about an hour. Go have fun!",
+          "time": 1619522728,
+          "translated": false
+        },
+        {
+          "author_name": "Marypatricia Barrett",
+          "author_url": "https://www.google.com/maps/contrib/110035389292704608653/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXkuert2pm0Ux5VGUBGOFImcBtFiuE3amsz9CCDfm-HVSX93XUU=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "9 years ago",
+          "text": "Staff gave us our own tour. Not very big but enough to see and the kids loved to play in the store front/school house. The gift shop is in a safe. It is so cool.",
+          "time": 1470883636,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

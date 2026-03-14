@@ -20,7 +20,7 @@
       "longitude": -75.1330734,
       "place_id": "ChIJaxvwROrIxokRtwpKGnw-rpg",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": null,
       "topics": null,
@@ -55,7 +55,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T04:06:39Z",
+      "updated_at": "2026-03-14T19:59:01Z",
       "notes": "CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(856) 966-1652",
@@ -234,14 +234,14 @@
       "website": "https://www.cchsnj.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "1900 Park Blvd, Camden, NJ 08103, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 39.93012,
-      "longitude": -75.09336,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "08103",
+      "latitude": 39.9306835,
+      "longitude": -75.0938518,
+      "place_id": "ChIJ24odwxfJxokRHtB_VtaVMfA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -270,15 +270,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Camden' from open data; MRD: computed city_tier=2 for Camden; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:46:25Z",
+      "updated_at": "2026-03-14T19:59:02Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "8569643333",
+      "phone": "(856) 964-3333",
       "is_scoreable": false,
       "content_summary": "The **Camden County Historical Society** offers visitors a unique glimpse into the rich history and cultural evolution of Camden County. With its engaging exhibits and vibrant storytelling, this museum is a treasure trove for history enthusiasts and casual visitors alike, making it an essential stop for anyone exploring the area.",
       "content_description": "**Camden County Historical Society** is not just a repository of artifacts; it is a portal into the past, inviting visitors to delve into the diverse stories that have shaped Camden County. Housed in a historic building that echoes with the whispers of history, you will find exhibits that highlight the area’s vibrant community, from its early Native American inhabitants to its industrial development in the 19th century. This *historical preservation* center utilizes immersive storytelling techniques that engage the senses and evoke a deeper understanding of local heritage. Visitors can explore rotating exhibits that showcase everything from photographs and documents to personal stories, offering a tapestry of experiences and connections to the region’s historical narrative.  As you wander through the museum, you’ll be captivated by the thoughtfully curated displays, each recounting tales that transcend time.  The **Camden County Historical Society** also organizes educational programming and events throughout the year, providing opportunities for visitors to learn through workshops, lectures, and guided tours led by enthusiastic interpreters who bring history to life.  Whether you're an avid history buff or simply looking for an enriching way to spend your day, this museum promises a memorable experience that reveals the intricacies of Camden's past, making it a worthwhile destination for all types of travelers.",
@@ -291,7 +292,118 @@
       ],
       "content_generated_at": "2026-01-25T02:46:25Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.cchsnj.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 3.8,
+      "google_reviews_count": 21,
+      "google_reviews": [
+        {
+          "author_name": "Capri Battie",
+          "author_url": "https://www.google.com/maps/contrib/115583963752099283500/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW2BUybpIilhbwtb1Ln-TiO11lFN7G0-838cj5C6uAF26sc3HrB=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "We had such an amazing time saying farewell to my daughter Air Force bound tonight.",
+          "time": 1673756060,
+          "translated": false
+        },
+        {
+          "author_name": "David Agonburg",
+          "author_url": "https://www.google.com/maps/contrib/100701894103481259395/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJshs_Wa6XWAvypsL2p02GQOJOJQgwbkHoa2MZ0Yce6I5BLOR4=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "The museum here is great for those who have an interest in local history. I especially enjoyed the exhibits and artifacts on Camden's civil rights and industrial history.",
+          "time": 1746216303,
+          "translated": false
+        },
+        {
+          "author_name": "Jim Houliston",
+          "author_url": "https://www.google.com/maps/contrib/108478343204132242221/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVSLLpWGyCWjXAmopR4VPVt4AvxD2yOOHkqoeAJYc8pSaSs55Lm9w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Awesome history! Josh was very helpful and gave me a personal tour of the place. As a Philly tour guide and employee of the Benjamin Franklin Museum, I loooove me some good history and this place has some",
+          "time": 1676417847,
+          "translated": false
+        },
+        {
+          "author_name": "Dawn Harvey Schmidt",
+          "author_url": "https://www.google.com/maps/contrib/117370936858864967252/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU8UyEd4eFFNSrSYXft7Kuz42A3kzktK1OCOAYZCGwVMIQb_Drp=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "The Camden County Historical Society has been extremely helpful in my genealogical research.  I highly recommend their research services to anyone seeking more information on their Camden County-based ancestors.",
+          "time": 1540486800,
+          "translated": false
+        },
+        {
+          "author_name": "Sheilah Greene",
+          "author_url": "https://www.google.com/maps/contrib/110281023940944413922/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUiLfeQ9CEqDtdHaPwOJvxny5uYXAhijmw7tgsuYhBIuIA8s1C3Kg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "The gift that keeps on giving!!!\nSo much history on our county, the state and nation. Pomona Hall, a temporary step back in time.\nEvery child and their parents or grand parents should visit CCHS just for the experience.",
+          "time": 1527632636,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-unknown-long-beach-island-foundation-of-the-arts-sciences",
@@ -310,7 +422,7 @@
       "longitude": -74.12371259999999,
       "place_id": "ChIJu5U-19elwYkR18VeuzfGbHU",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -344,7 +456,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T04:06:57Z",
+      "updated_at": "2026-03-14T19:59:02Z",
       "notes": null,
       "city_tier": 2,
       "phone": "(609) 494-1241",
@@ -438,14 +550,14 @@
       "website": "http://maccullochhall.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "45 MacCulloch Ave, Morristown, NJ 07960, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 40.7919,
-      "longitude": -74.4819,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "07960",
+      "latitude": 40.79210700000001,
+      "longitude": -74.481753,
+      "place_id": "ChIJgQ3dd6Smw4kR-uZth7wYCsg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -474,15 +586,16 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Morristown' from open data; MRD: computed city_tier=3 for Morristown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:46:59Z",
+      "updated_at": "2026-03-14T19:59:03Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9735382404",
+      "phone": "(973) 538-2404",
       "is_scoreable": false,
       "content_summary": "The **Macculloch Hall Historical Museum** offers a captivating journey into New Jersey's rich history, combining art and architecture with immersive experiences. Visitors will explore the stunning gardens, period rooms, and the remarkable art collection of George Macculloch, making it a must-visit for history enthusiasts and art lovers alike.",
       "content_description": "**Macculloch Hall Historical Museum** stands as a testament to Morristown’s historical significance and an embodiment of 19th-century culture. Nestled in the heart of Morris County, this charming museum was once the home of George Macculloch, a prominent figure in New Jersey’s industrial history. The museum itself is an architectural gem, featuring the elegant Federal-style design that reflects the sophisticated aesthetic of its time. As you step through the home, you’ll find period rooms lavishly restored, showcasing life during the early 1800s, complete with original furnishings and artwork that transport you back in time.  \n\nOne of the museum's standout features is its collection of American art, particularly works that highlight the Hudson River School movement, known for its lush landscapes and captivating depictions of the American wilderness. Visitors can also stroll through the beautifully landscaped gardens, designed in the early 20th century, which provide a peaceful retreat and a perfect backdrop for enjoying art-related events and seasonal programs. Guided tours are available, offering in-depth knowledge about both the historical context of the house and the significance of its collections, enhancing your visitor experience. The **Macculloch Hall Historical Museum** is not just a step into history; it's an interactive exploration of culture, art, and the past that should not be missed.",
@@ -495,7 +608,118 @@
       ],
       "content_generated_at": "2026-01-25T02:46:59Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.maccullochhall.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 12:00 – 4:00 PM",
+          "Friday: Closed",
+          "Saturday: 12:00 – 4:00 PM",
+          "Sunday: 12:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 55,
+      "google_reviews": [
+        {
+          "author_name": "Samantha Addington",
+          "author_url": "https://www.google.com/maps/contrib/109698303901961949193/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKTDdKxrbQfPJYDgZNEQtXCjWlZoFTa2PvPz5sf1tFYZccOaTFJ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Amazing historical house museum with many interesting artifacts showing the stories of the generations of people who lived there. The curator was very knowledgeable and friendly throughout the tour; no matter what questions we asked he always had an answer. The Thomas Nast collection on display was wonderful. Do be aware that they rotate the smaller drawings on display, since they do not have room to display all of the collection all the time, but it is still very interesting. There are other art pieces and artifacts in the Macculloch part of the museum that are connected to the Maccullochs themselves, including historical furniture and various decorative objects and utensils. The museum gives guided tours and has touchable artifacts and textured art for the visually impaired or for anyone who wants to touch a piece of history. The gardens are absolutely gorgeous and a very restful place to explore.",
+          "time": 1656272166,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Jon Kaplan",
+          "author_url": "https://www.google.com/maps/contrib/101599234850406680224/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUkFOpNgMT1DcBWYQrg92rhqn2LO0lPSYSTWUnWGxNYtzV-eAabqg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This is a unique museum in the heart of the old part of Morristown. You feel as though you are stepping back in time. The staff are knowledgeable and patient and they gave us a careful tour even though my wife and I were the only two people there on a chilly day. The back garden is beautiful in the late winter and free of charge to walk through.",
+          "time": 1758247729,
+          "translated": false
+        },
+        {
+          "author_name": "Mystic Goddess",
+          "author_url": "https://www.google.com/maps/contrib/111482298519328139593/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIcb6r7rGd7JhYfWXh-6CPaSXMkaNA1joxBuexpncPkQr4ngg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "The curator and guide Cynthia, gave us an excellent tour of the mansion. She was knowledgeable, thorough and very kind to us and our 3 year old. The basement kitchen is a must see. If you enjoy a tour of old mansion from 1800s this is a must see museum. And the garden was beautiful.",
+          "time": 1681013648,
+          "translated": false
+        },
+        {
+          "author_name": "Jesska Innamorato",
+          "author_url": "https://www.google.com/maps/contrib/104818980121705100329/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU-SzOWRONcjcIf6UIZWL8WrJ5mKVkGiH5RmwV9NAzYYPkh6QzkCQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Excellent way to spend a Sunday afternoon.  Rich history with changing exhibits and a knowledgeable staff. Accessibility seems to be an important goal of thiers with several options for people with different needs. Grateful to have gems like this to preserve history in Morristown.",
+          "time": 1761515573,
+          "translated": false
+        },
+        {
+          "author_name": "Victoria Sciancalepore",
+          "author_url": "https://www.google.com/maps/contrib/101313917132489173705/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW_by748lC3Ld35JsduBWkfkoMCpZ4edWvFj9tLQb2Vk7CLY2U=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "9 years ago",
+          "text": "Local and national history mixed in one beautiful 17th century home, a must for any local or visitor to the area. Their large exhibit changes every 4 months, and they always have some of their extensive collection of Thomas Nast on display. Staff is knowledgeable and kind, and their director very approachable. The 3 acre garden is beautiful all year round, and free every day of the week. Truly an underappreciated local slice of history.",
+          "time": 1480939996,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-unknown-montclair-art-museum",
@@ -507,14 +731,14 @@
       "website": "http://www.montclair-art.com/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "3 S Mountain Ave, Montclair, NJ 07042, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 40.81798,
-      "longitude": -74.22552,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "07042",
+      "latitude": 40.8187322,
+      "longitude": -74.22434799999999,
+      "place_id": "ChIJO0e0_LGqw4kRBzjsSWsOq40",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -538,23 +762,24 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Montclair Art Museum has a modest collection and provides some local context, but lacks significant holdings or national relevance. The historical context score reflects its role in interpreting local culture and history.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary appears to describe Montclair State University rather than the Montclair Art Museum, so there is no direct evidence about the museum's permanent collections or interpretive approach. Given only the museum’s identity as a standalone art museum in Montclair, NJ, I estimate a regional reputation and a moderate collection tier, but strengths in Impressionism or Modern/Contemporary cannot be determined from the evidence.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://www.montclair-art.com",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Montclair' from open data; MRD: computed city_tier=3 for Montclair; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:47:11Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9737465555",
+      "phone": "(973) 746-5555",
       "is_scoreable": true,
       "content_summary": "Set in a leafy New Jersey suburb, the Montclair Art Museum rewards art lovers with a focused, thoughtfully curated encounter rather than an overwhelming marathon. Come for standout strengths in American art and a serious commitment to Native American works—an unusually rich focus for a regional museum. The galleries are calm and approachable, making it easy to look closely, connect movements to real objects, and leave feeling you’ve actually seen art. It’s a satisfying half-day museum visit with real connoisseur appeal.",
       "content_description": "**Montclair Art Museum** is the kind of regional museum that art enthusiasts quietly love: compact, carefully edited, and confident about its identity. Rather than trying to be encyclopedic, it leans into key American stories—works that trace the evolution of American painting and sculpture across the 19th and 20th centuries, with special attention to the ways *modernism* reshaped what “American art” could look like. For travelers, that means you can move from gallery to gallery with a clear sense of narrative, and spend your time *looking* instead of navigating crowds.\n\nA major distinction is the museum’s commitment to Native American art, presented not as an add-on but as a core strength. Expect exhibitions that foreground materials, process, and cultural context—an approach that can sharpen your eye for form and symbolism no matter your collecting interests. The experience is intimate and study-friendly: good sightlines, manageable room sequences, and the feeling that each object has been selected to carry weight.\n\nArchitecturally, **Montclair Art Museum** reads as a dignified civic landmark—an inviting, human-scaled building that suits its role as a community anchor and makes for an easy, unhurried visit. Plan to linger with rotating shows, then enjoy Montclair’s walkable streets and cafés nearby; it’s an art outing that feels both restorative and intellectually satisfying.",
@@ -568,7 +793,118 @@
       "content_generated_at": "2026-01-25T02:47:11Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "https://www.montclairartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: Closed",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.3,
+      "google_reviews_count": 187,
+      "google_reviews": [
+        {
+          "author_name": "Brandon Isaacson",
+          "author_url": "https://www.google.com/maps/contrib/103478054542935378154/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVQmqG9JIBW_h9mo8gW7CthmKaHVDz_nLQZfC9O8Zm4nBWrndo_CA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "We had a fabulous experience hosting our wedding at the Montclair Art Museum. We mostly worked with Meryl, who took over running weddings at the MAM last year. She was incredibly responsive, attentive, and communicative throughout the process, providing true caring and enthusiasm for our wedding. While the MAM is a “load-in” venue, they have an excellent sound system, kitchens for catering staff to work from, and incredible lighting that makes the room stunningly romantic during the ceremony and fun during the reception. Guests LOVED being able to browse the museum as part of the cocktail hour, and Leir Hall is a truly beautiful room. For a wedding with many disabled guests including the bride and her mom, we were very impressed from day one with how accessible the venue is compared to others that we saw. While there is room for improvement, there was a lot of care and support with accessibility (including having a great, dedicated accessibility professional at the museum). Some words of advice for future married couples: one thing to be mindful of in planning your wedding here is some of the needs that relate to protecting the artwork, like only serving clear liquid in Lehman Court or requiring vendors be a certain distance from the wall to keep art safe - not a problem, just a consideration with what drinks you serve. And given the complexity of loading in various vendors, we definitely benefitted significantly from having a caterer who is used to working there (Cheryl from Church Street Catering) and a day-of coordinator to help keep everyone in sync. In conclusion, Meryl and the team really went above and beyond many times, from helping to plan out every aspect of the day to helping with many needs throughout the day. I highly recommend the MAM, it is a beautiful place that made for a truly incredible wedding.",
+          "time": 1761493963,
+          "translated": false
+        },
+        {
+          "author_name": "Kristen",
+          "author_url": "https://www.google.com/maps/contrib/116264916663487553423/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKvotWmcPmBeEV_sDoJ-_WmfMSeXb1VKHX36VQukKLrDTzBMw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Located on South Mountain Avenue in Montclair, New Jersey, the Montclair Art Museum is an absolutely beautiful space to enjoy an abundance of collections + art showcases. Per their website, \"The Montclair Art Museum collects, exhibits, preserves, and interprets American and Native American art, honoring the creative accomplishments of a diverse range of artists, past and present.\"\n\nI recently visited for the first time to attend a wedding that was being held within the museum's event space, and it was absolutely beautiful. The gallery spaces were lovely to view & enjoy during the event in themselves (particularly as these were accessible during the initial cocktail hour), but their designated event space for the reception itself was clean, well-kept, and was the perfect size to accommodate a dance floor, many tables & chairs, and a DJ booth!! I thought the staff did a great job taking care of everyone during the wedding as well. :-) Thanks for having us, MAM!",
+          "time": 1760494927,
+          "translated": false
+        },
+        {
+          "author_name": "korra dale",
+          "author_url": "https://www.google.com/maps/contrib/107220206789457351806/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI7d6UCsSV781Ne_K3EC7tEIK_3ItoRFbQJF2We2RAxXBPgvg=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "3 weeks ago",
+          "text": "Montclair Art Museum is a real gem just outside the city! Got in quickly on a weekday and had a lovely, relaxed visit. The American art collection is excellent and the Native American galleries are particularly impressive and thoughtfully presented. A beautiful museum in a beautiful town — well worth the trip out to New Jersey!",
+          "time": 1771495199,
+          "translated": false
+        },
+        {
+          "author_name": "Love M Gaillard, MSW",
+          "author_url": "https://www.google.com/maps/contrib/107468251514640069908/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWRjmfR8R-w1v4EP5ylqzMqXEAORzUGGJNsQIR85P16IASeUh7l9Q=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I had an awesome experience at the MAM!!! It was beautifully curated! Amazing experience for a small museum! Well laid out! Left me wanting more, yet satisfied! The Vanessa German exhibit is a MUST SEE!!! TEN⭐️s",
+          "time": 1731339664,
+          "translated": false
+        },
+        {
+          "author_name": "Nils Paellmann",
+          "author_url": "https://www.google.com/maps/contrib/112715394850780426965/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9d2yRtIZBk0I9w4Z5tNM9ShKKKahR9SeOly8mygdbazfG7UvR=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Small but exquisite collection. When I visited they had no less than four artworks by John Singer Sargent (1856-1925), my favorite artist, on display. Also nice artworks by Elizabeth Catlett, Nan Goldin, Larry Sultan, Troy Jones, and Dread Scott. Also great museum store. I was slightly disappointed that no art by Morgan Russell (1886-1953) was on display but I hope that changes in future rotations of the permanent collection. Morgan Russell is currently prominently featured in the \"Orphism\" exhibition at the Guggenheim Museum. The Montclair Art Museum held a retrospective on Morgan Russell in 1990 for which I was fortunate to find the monograph at a local antique store.",
+          "time": 1733095294,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-unknown-morris-county-historical-society",
@@ -580,14 +916,14 @@
       "website": "http://morriscountyhistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "68 Morris Avenue",
+      "street_address": "68 Morris Ave, Morristown, NJ 07960, USA",
       "address_line2": null,
       "postal_code": "07960",
-      "latitude": 40.79895,
-      "longitude": -74.46187,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.796878,
+      "longitude": -74.45988439999999,
+      "place_id": "ChIJtXyDn46mw4kRcyXLUax738c",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -618,15 +954,16 @@
         "walker_reciprocal",
         "official_website",
         "http://morriscountyhistory.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:47:18Z",
+      "updated_at": "2026-03-14T19:59:05Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9732673465",
+      "phone": "(973) 267-3465",
       "is_scoreable": false,
       "content_summary": "The Morris County Historical Society offers a captivating journey through time, showcasing the rich narrative of Morristown and its surrounding areas. With engaging exhibits and events, visitors can experience the history of the region and its impact on American heritage. Every corner of the museum invites exploration and discovery, making it a must-see for history buffs and casual visitors alike.",
       "content_description": "**Morris County Historical Society** is a hidden gem nestled in Morristown, New Jersey, dedicated to preserving and sharing the historical narratives that shaped the region. Housed in the *historic Acorn Hall*, a stunning Greek Revival mansion built in 1853, the museum itself is a fascinating piece of architecture that offers insight into the local historical context. Visitors are welcomed into beautifully curated spaces where the past comes alive through an array of artifacts, docents’ stories, and interactive displays that highlight the everyday lives of past residents. Each visit provides an opportunity to delve into the unique stories that give Morristown its character and charm.  <br><br> The museum's collection is particularly noteworthy, showcasing everything from 19th-century costumes and period furniture to documents and photographs that chronicle the evolution of Morris County. Special exhibitions often focus on themes such as the Revolutionary War, local industries, and cultural shifts that resonate within the community. Additionally, the Annual Morristown History & Heritage Festival is a highlight for many, celebrating the area's diverse historical influences and inviting visitors to participate in reenactments, workshops, and family-friendly activities. Whether you're a history enthusiast or just looking to enjoy an afternoon learning about local culture, **Morris County Historical Society** provides a warm and enriching experience suited for all ages.",
@@ -639,7 +976,128 @@
       ],
       "content_generated_at": "2026-01-25T02:47:18Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://morriscountyhistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: 1:00 – 4:00 PM"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.8,
+      "google_reviews_count": 101,
+      "google_reviews": [
+        {
+          "author_name": "Mike Z",
+          "author_url": "https://www.google.com/maps/contrib/109360247575469523874/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKns_0RYR_wB6vpBH7ozlC3pYjy2-RXgo75HzOPqzc5uB2w=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Well-preserved historic house with original furniture of the family or donated one from the same time period. House tour with the guide provided wealth of information about each nook and cranny of each room. Ample parking on the side of the house. Acorn Hall is one of the few mansions still standing from Gilded Age times.",
+          "time": 1748227814,
+          "translated": false
+        },
+        {
+          "author_name": "Harry Smith",
+          "author_url": "https://www.google.com/maps/contrib/117101439860224663483/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVePdSu41uxnlp3t5qGVMWjIPRHXHDj6yaA8PFr_PWD5gZSew=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "A hidden gem for history lovers! The Morris County Historical Society offers a fascinating look into local history, and the exhibits are beautifully preserved and thoughtfully curated. The historic home setting makes the experience feel immersive and authentic.",
+          "time": 1772039700,
+          "translated": false
+        },
+        {
+          "author_name": "spy woman",
+          "author_url": "https://www.google.com/maps/contrib/114584964033910893515/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWoqjLqNYotKq3Po_W4N7b8L6kku_yvMfMj0cSlmoNgnZNP_u_D=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A great historic house, full furnished, a very informative tour. Unfortunately,  was showed  only half of the house, I would like to see more. Tickets: $8 adults, $7 seniors, $5 students.",
+          "time": 1715959128,
+          "translated": false
+        },
+        {
+          "author_name": "Rekha Gandhi",
+          "author_url": "https://www.google.com/maps/contrib/112740082926374697082/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjULjrMczvGQ0dIl8unPTW_6x8wLYDbi0ZKXx3Z5qvLaDkclDUS6=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I got a personal tour of Acorn Hall. It was full of personal tidbits and offered a glimpse into a different era and lifestyle. I also bought notecards. I took a little time to explore the garden also. Delightful place to visit and explore some local history :)",
+          "time": 1692677494,
+          "translated": false
+        },
+        {
+          "author_name": "Timothy Goldsmith",
+          "author_url": "https://www.google.com/maps/contrib/105238867162677803154/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXdvrDLfIIV-rcYSmgylWNUhIKh5a2iE9ymZYcHLf0bFNQNIIla=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "12 months ago",
+          "text": "3/19/25 - I just went to the historical society and I wanted to say I loved it. Erin, Katie, and Sandy all were wonderful, knowledgeable, and very educational. The location does have a guided tour. We did not need to make a reservation for one and they took us right away. It appears that they do not have a lot of foot traffic but they certainly deserve it with their passion for and, knowledge of the site. Thank you for our wonderful trip. I would recommend.",
+          "time": 1742407952,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-unknown-new-jersey-state-museum",
@@ -658,7 +1116,7 @@
       "longitude": -74.7730924,
       "place_id": "ChIJ_QAqCtFZwYkREi2_d-BwWi8",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -695,7 +1153,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'New Jersey' from open data; MRD: computed city_tier=3 for New Jersey; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:47:25Z",
+      "updated_at": "2026-03-14T19:59:05Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
       "phone": "(609) 292-6464",
@@ -871,7 +1329,7 @@
       "longitude": -74.1747606,
       "place_id": "ChIJAQAAAPAywokRwLIfYmIJxTE",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -905,7 +1363,7 @@
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:47:34Z",
+      "updated_at": "2026-03-14T19:59:05Z",
       "notes": null,
       "city_tier": 2,
       "phone": "(732) 335-0033",
@@ -1064,14 +1522,14 @@
       "website": "http://www.newarkmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "49 WASHINGTON STREET",
+      "street_address": "49 Washington St, Newark, NJ 07102, USA",
       "address_line2": null,
-      "postal_code": "7102",
-      "latitude": 40.74321,
-      "longitude": -74.17094,
-      "place_id": null,
-      "address_source": "museums_csv",
-      "address_last_verified": "2026-01-16",
+      "postal_code": "07102",
+      "latitude": 40.7429427,
+      "longitude": -74.1714034,
+      "place_id": "ChIJ5fsDD4BUwokRxwsQqWQjEMM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Science Museum",
       "primary_domain": null,
       "topics": null,
@@ -1100,12 +1558,13 @@
       "score_last_verified": null,
       "data_sources": [
         "walker_reciprocal",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Newark' from open data; MRD: computed city_tier=2 for Newark; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:47:42Z",
+      "updated_at": "2026-03-14T19:59:06Z",
       "notes": "CSV: museum type 'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM' CSV: coordinates from IRS 990 database CSV: physical address from IRS 990",
       "city_tier": 2,
       "is_scoreable": false,
@@ -1120,7 +1579,129 @@
       ],
       "content_generated_at": "2026-01-25T02:47:42Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(973) 596-6550",
+      "website_google": "https://www.newarkmuseumart.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 12:00 – 5:00 PM",
+          "Friday: 12:00 – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 2133,
+      "google_reviews": [
+        {
+          "author_name": "Maymunah L.",
+          "author_url": "https://www.google.com/maps/contrib/102503473456936744645/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWKI3mKixI3iYFlbuUxMi8D9EFAjhJFJESt9WnSnnMtgYZS4QHl=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 3,
+          "relative_time_description": "a month ago",
+          "text": "First time visiting despite living 15mins away my whole life!\n\nI will say it’s more and also less than I was expecting. Vastly empty even on open and well into the midday. So many areas of the museum are under renovation and or closed for events. Considering the museum is small I wish it wasn’t so, but also that might just be concerning the time frame I picked. Which was a random Thursday morning. Even more surprising no school field trips and such.\n\nThe blurbs are somewhat interesting and some a little too casual than informational. The furniture throughout is very nice and aesthetically pleasing.\n\nA bit confusing at times to navigate even with the map, but nonetheless I enjoyed myself.\nThe highlight I would say is the cafe on the first floor at the entrance. Great coffee and Barista’s, yummy pastries too. The staff of the museum are also very helpful and welcoming, including within the gift shop.",
+          "time": 1768583909,
+          "translated": false
+        },
+        {
+          "author_name": "Ma. Sherein Gaviola",
+          "author_url": "https://www.google.com/maps/contrib/105444226221630742842/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU9hk2_-U3UEr2tKx4hkFkU7CPrP8Y3a48tGw0XzEuk3KKMCZxV=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "⭐️⭐️⭐️⭐️⭐️\nA Must-Visit Gem in Newark — The Newark Museum of Art! 🎨✨\n\nSo, my cousin called me on a random weekday asking if I could do her a favor — be the auntie-on-duty and chaperone my niece’s school field trip since the parents weren’t available. I checked my calendar, saw a free day, and immediately said, “Yes, I’m in!”\n\nCome Wednesday morning, I met my niece at her school, hopped on the school bus with the students, and off we went to The Newark Museum of Art around 9 a.m. Everything was impressively organized — from check-in to the tour itself. The museum staff and tour guides were friendly, knowledgeable, and passionate about art and history. They walked us through each section, explaining the cultural background, artistic value, and historical stories behind every exhibit. I genuinely learned so much and gained a deeper appreciation for both global and local art.\n\nAs someone who loves visiting art museums, I was amazed to see familiar pieces I’d once seen at the Atlanta Art Museum — right here in New Jersey! It’s like art finds a way to connect us wherever we go.\n\nThe museum is very accessible and family-friendly. Parking was convenient, ramps and facilities were well-designed for visitors with disabilities, and all directions were clearly provided. Just a tip: book your tickets in advance, especially if you’re coming as a group of 10 or more. It saves you time and ensures a smooth experience.\n\nDue to privacy and safety, I didn’t take many photos inside since I was focused on keeping the kids safe, but trust me — the visuals, the vibe, and the educational experience are unforgettable.\n\nIf you haven’t been, find time to visit The Newark Museum of Art. It’s a great opportunity to immerse yourself in art, culture, and history — and to truly understand the stories behind each masterpiece. Whether you’re a parent, educator, or just an art lover like me, this place is absolutely worth it!\n\n💡 Highly recommended for school trips, families, or anyone looking to reconnect with creativity and culture right here in Newark.",
+          "time": 1760737635,
+          "translated": false
+        },
+        {
+          "author_name": "Chris Beath",
+          "author_url": "https://www.google.com/maps/contrib/108832730848338185057/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVlhZJ4uNuJfKHNPEb4_slQtllMjPnCojyM41bT7cd0o0fbPg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Nice museum. The preservation of the Ballantine house as part of the museum is an interesting way to combine and preserve the historic house. The detailed woodwork was great to see. On the top floor of the museum there was also a piece from George Nakashima. I have seen pictures of his work before but it was the first time I saw one in person.  The planetarium was unfortunately closed when I visited. I also really liked the colorful glassware.",
+          "time": 1766513929,
+          "translated": false
+        },
+        {
+          "author_name": "Ilhan Tanir",
+          "author_url": "https://www.google.com/maps/contrib/110102785290907911823/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhOxdC4Ymaiuqw7GiULns7uUpiJxPe1fssrwh1cVhX4DudDcLzTw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "With a few hours to spare before leaving Newark, I slipped into the Museum of Contemporary Art—and it turned out to be time exceptionally well spent. I meandered from gallery to gallery, first soaking in bold American contemporary works, then unexpectedly pausing before early Mediterranean artifacts. In another space, a wall of 19th-century slave advertisements confronted me with the stark reality of people bought and sold little more than a century ago—an arresting reminder of history’s proximity. One room dazzled with explosions of color; the next offered a contemplative display of African art. In the span of a short visit, the museum delivered a remarkable breadth of art and emotion, transforming a quick stop into a far richer journey.",
+          "time": 1763767525,
+          "translated": false
+        },
+        {
+          "author_name": "Ali Kat",
+          "author_url": "https://www.google.com/maps/contrib/106088505169585812614/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUAEh8J9mt3YQOGp1G50QaByaplH8nRgJJmUORJSM29MuUpn_h3=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This is a great museum. It has three floors and a lot of different exhibits like native artists of North America innovators of the southwestern jewelry, the ballantin house,  art of global Asia, Tibetan alters, Buddhist, and many more. They do have a small eatery. I didn't try it. I instead went outside to eat and then returned to finish the museum.  The planetarium doesn't open until late November so I will be going back to check it out. I payed 10.60 with a student discount, if not it's 12 something. Overall, it's a great place to visit, catch up on history and see things from all over the world. It's also cute for kids because they have interactive activities for them.",
+          "time": 1763336675,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-unknown-princeton-university-art-museum",
@@ -1132,14 +1713,14 @@
       "website": "http://artmuseum.princeton.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "45 Elm Dr, Princeton, NJ 08544, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 40.36031,
-      "longitude": -74.6486,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "08544",
+      "latitude": 40.3472199,
+      "longitude": -74.6581707,
+      "place_id": "ChIJU_ORVMHmw4kRcIRaf6c3ZII",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1163,23 +1744,24 @@
       "historical_context_score": 4,
       "priority_score": 10,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The museum has a notable emphasis on supporting scholarly research and includes significant holdings in Western European paintings, especially from the Renaissance to the 19th century, as well as substantial contemporary art. Its historical importance and collection depth justify a high score for historical context and collection-based strength, although it lacks particularly strong impressionist holdings.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia describes an encyclopedic university museum with 117,000+ works spanning antiquity to contemporary, with strong antiquities and broad geographic coverage; this supports a strong (but not flagship) collection tier. Impressionism is not specifically highlighted beyond 19th-century Western European painting, suggesting only minor representation, while modern/contemporary is described as a growing area with especially strong photography. The wide chronological scope and academic mission im",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://artmuseum.princeton.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 4,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Princeton' from open data; MRD: computed city_tier=3 for Princeton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6092583788",
+      "phone": "(609) 258-3788",
       "is_scoreable": true,
       "content_summary": "Princeton University Art Museum is a scholar’s museum with the intimacy of a campus visit and the ambition of an encyclopedic collection. Come for high-caliber curating, strong holdings across global traditions, and the pleasure of seeing major works without big-city crowds. With a major new chapter signaled by “Find Yourself Here. 10.31.25,” it’s an ideal stop for art lovers who want depth, discovery, and thoughtful presentation in a beautiful Princeton setting.",
       "content_description": "**Princeton University Art Museum** is a destination for art enthusiasts who love museums built around *close looking* and serious ideas. Long respected for its academic rigor, the museum’s strength lies in presenting global art histories with clarity—making it feel both approachable for travelers and deeply rewarding for experienced viewers. The museum’s upcoming milestone—**“Find Yourself Here. 10.31.25”**—signals a significant new phase, making now an exciting time to keep on your itinerary (and to plan a return visit as the reopening unfolds).\n\nExpect an **encyclopedic, teaching-driven collection**: galleries that typically move confidently between European painting and sculpture, American art, and outstanding holdings in Asian traditions and antiquities, alongside photography and modern/contemporary works. What sets the experience apart is the curatorial voice—labels, installation choices, and thematic groupings tend to illuminate *technique*, *provenance*, and *context* rather than merely offering highlights. For art lovers, that means you’ll come away understanding not just what you saw, but *why it matters*.\n\nArchitecturally and experientially, this is a museum you visit like a well-planned seminar—unhurried, purposeful, and full of moments of surprise. Pair your museum time with a walk through Princeton’s collegiate Gothic campus and nearby town streets for a day that feels both cultural and restorative. If you’re the kind of traveler who seeks concentrated quality over spectacle, this is one of the most satisfying museum stops in the region.",
@@ -1199,26 +1781,177 @@
       "primary_art_focus": "Modern/Contemporary",
       "collection_based_pas": 3,
       "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "outcome_tier": "Regionally Important",
+      "website_google": "http://artmuseum.princeton.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.8,
+      "google_reviews_count": 1527,
+      "google_reviews": [
+        {
+          "author_name": "Ting H",
+          "author_url": "https://www.google.com/maps/contrib/105609113179795392408/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVCsZrfKq4qS4vG6negm9LgPFYK1_ruENQJ1VpyxjBkpIjFPHg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "The building inside is so beautiful! So comfy and grand. I love the interior design. And there are a lot of chairs and branches if you need to sit down. Restaurant on 3rd floor, didn’t try yet. A lot of interesting art collections. And it’s free admission!",
+          "time": 1771120789,
+          "translated": false
+        },
+        {
+          "author_name": "Nils Paellmann",
+          "author_url": "https://www.google.com/maps/contrib/112715394850780426965/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9d2yRtIZBk0I9w4Z5tNM9ShKKKahR9SeOly8mygdbazfG7UvR=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I came here today to see the new building by David Adjaye (born 1966). It's a lovely museum that works well. The inside reminded me strongly of Louis Kahn's Yale Center for British Art, especially in terms of the ceilings and the use of light-colored wood. Some Miesian influence can be detected as well, especially at one of the inner courtyards. The outside is fairly neutral and does not take away from the historic campus buildings around it. The collection is great, ranging from antiquity to modern art. Some of my favorite artworks include works by Max Beckmann (a late work from 1950), Lucas Cranach the Elder, Dante Gabriel Rossetti, Frank Stella, Joan Mitchell, and Gerhard Richter, to mention just a few. I also like the way artworks from different periods, regions, and styles are juxtaposed. Lovely restaurant (mosaic) on the 3rd floor. Free entrance!",
+          "time": 1769999247,
+          "translated": false
+        },
+        {
+          "author_name": "LOR D",
+          "author_url": "https://www.google.com/maps/contrib/104596788793640306822/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUtAE__KSUuLeNCjmQh2kFbdESfkuBzgCNUvd4S7Zwe83AvQVDH=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Beautiful art pieces. Two levels of unique and wonderful art in a peaceful and well appointed  setting.   Lovely  gift shop and a cafe on the third level. Impressive collections with amazing pieces. We found the entire visit and experience relaxing and so enjoyable.  We also enjoyed there was no entrance fee to experience all this beauty . Well worth a visit.",
+          "time": 1768489859,
+          "translated": false
+        },
+        {
+          "author_name": "Vinodkumar Vemareddy",
+          "author_url": "https://www.google.com/maps/contrib/114934725680922262813/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ2GfXZ99s1J7P6X9NtdAUKgt1dXXsq8FlOQ4II3LlN8JiIGw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Excellent place for art and culture lovers.\n\nThe Princeton University Art Museum offers an impressive collection of artworks spanning different cultures and time periods. The exhibits are well curated, informative, and thoughtfully displayed, making the visit both engaging and educational.\n\nThe museum has a calm and elegant atmosphere, and the layout makes it easy to explore. It’s a wonderful place to spend a few hours on the Princeton campus and a must-visit for anyone interested in art and history.",
+          "time": 1768833387,
+          "translated": false
+        },
+        {
+          "author_name": "willow grzybowski",
+          "author_url": "https://www.google.com/maps/contrib/112356408422097859863/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLZND6-MLwUKBYvcU2-_aOgKU3XCt5TbuZKfVsPWtMbhgjUUw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This cultural gem at the heart of Princeton University’s picturesque grounds charges no fee. Thanks to the generous philanthropists ( list in pics). Each gallery showcased curated pieces that spans centuries and continents. A few pieces rivals those in world renowned museums in UK, France, Italy, and Spain.\nThe 3.5 hours including a healthy brunch at the 3rd floor Mosaic restaurant was an enriching educational experience. PUAM is a must visit for novice and seasoned art enthusiasts.",
+          "time": 1764864044,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-unknown-the-montclair-history-center",
       "country": "USA",
       "state_province": "New Jersey",
-      "city": "Orange Road Montclair",
+      "city": "Montclair",
       "museum_name": "The Montclair History Center",
       "alternate_names": null,
       "website": "https://www.montclairhistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "108 Orange Rd, Montclair, NJ 07042, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 40.81161,
-      "longitude": -74.22278,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "07042",
+      "latitude": 40.81192619999999,
+      "longitude": -74.2230421,
+      "place_id": "ChIJZ5K6JbSqw4kRqHjPUcIknYQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -1249,15 +1982,16 @@
         "walker_reciprocal",
         "official_website",
         "https://www.montclairhistory.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted city 'Orange Road Montclair' from page text; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:47:58Z",
+      "updated_at": "2026-03-14T19:59:08Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "9737441796",
+      "phone": "(973) 744-1796",
       "is_scoreable": false,
       "content_summary": "Nestled in the charming town of Montclair, the Montclair History Center offers a unique glimpse into the rich tapestry of the local community's history. With engaging exhibits and historic structures, it's an unmissable destination for those seeking to understand the cultural heritage of this vibrant area.",
       "content_description": "**The Montclair History Center** is not just a museum; it is a living testament to the area's vibrant past. Located in the picturesque community of Montclair, this center is dedicated to preserving and sharing the local history that has shaped this beloved town. Visitors will find themselves immersed in a treasure trove of artifacts, photographs, and stories that collectively weave the narrative of Montclair’s evolution from its early days to the modern era. The center hosts a variety of programs and events that engage visitors of all ages, making it an ideal destination for families and history buffs alike.  \n\nArchitecture enthusiasts will appreciate the beautifully restored historic structures that house the center. These buildings not only offer glimpses into architectural styles of bygone eras but also provide a stunning backdrop for the exhibitions. Guests can stroll through the center's grounds, which reflect the region's natural beauty and provide a peaceful escape from urban life. Each corner of **The Montclair History Center** tells a story, inviting exploration and discovery. \n\nHighlights of the museum's collection include artifacts from Montclair’s founding families, insightful exhibits detailing the town's contributions to the arts and education, and the local history of the surrounding area. The engaging visitor experience is enhanced by knowledgeable staff who lead informative tours and interactive educational programs. Whether you are a history enthusiast or simply seeking a deeper understanding of this unique community, **The Montclair History Center** is a must-visit destination that ensures you will *find yourself here.*",
@@ -1270,7 +2004,128 @@
       ],
       "content_generated_at": "2026-01-25T02:47:58Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.montclairhistory.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1400"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1500"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1500"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1400"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 2:00 PM",
+          "Wednesday: 9:00 AM – 3:00 PM",
+          "Thursday: 9:00 AM – 3:00 PM",
+          "Friday: 9:00 AM – 2:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 5,
+      "google_reviews_count": 26,
+      "google_reviews": [
+        {
+          "author_name": "Vanessa Caldwell",
+          "author_url": "https://www.google.com/maps/contrib/106780113888087814377/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXywxdIKttElH-9gQINTBigpG5UDNgWOC78uDbbf0gTBJ7N1QaySQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "Such a wonderful day! I can't thank Diane enough for the lovely, informative afternoon my family and I experienced with her. I am a former teacher and used to bring my students here each year on a field trip because it is not only an educational experience but an enjoyable one for kids and adults as well. I was looking for something safe (away from people during the pandemic) to do with my children on their day off from (remote) school aside from the usual bike/scooter ride around the park or town, and this hit the spot! Thank you again Diane, for doing such a wonderful job as our guide and for planning a surprise craft to end our session! We will certainly be back! :)",
+          "time": 1604720996,
+          "translated": false
+        },
+        {
+          "author_name": "David Buhler",
+          "author_url": "https://www.google.com/maps/contrib/103967018725750448003/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL3bEt40IpcMiFDmp_PeW4S5QAL4us1EW0kjMxrS2D8fgPNoA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Very cool historical society/museum. It's run by volunteers and you can feel their passion for helping to preserve the memories of this site. Especially cool for those who want to learn about Montclair's rich historical heritage. Would highly recommend visiting here.",
+          "time": 1701059451,
+          "translated": false
+        },
+        {
+          "author_name": "Gizli Anne",
+          "author_url": "https://www.google.com/maps/contrib/107102845773777671835/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIj39SHmsxL8LOMiXljetHyt4kxx6VhbAKt0AWZF1DiQyNrUg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "We visited Montclair History Center and had a great time. Especially our guide was name is Diane wonderful woman, explains everything, every history about a place.",
+          "time": 1563982827,
+          "translated": false
+        },
+        {
+          "author_name": "Betty Holloway",
+          "author_url": "https://www.google.com/maps/contrib/110166336466453124672/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXf-CpLQjk14GQw9_9ZD4FYcwPwYblL0kusJBNu8eAN7V_x908=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 years ago",
+          "text": "Schedule your visit to the Montclair History Center this weekend to visit the Crane House. The decorations are very period specific and simply delightful.",
+          "time": 1607003795,
+          "translated": false
+        },
+        {
+          "author_name": "Bill Fallon",
+          "author_url": "https://www.google.com/maps/contrib/116897077501652085256/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIj2Q27EHOFMbibeg2YKyrzDxCTVoWlStnQQvOolWIt61-s=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Excellent local history source with regular lectures from local historians.  Check their Facebook page for upcoming programs.",
+          "time": 1525231761,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-unknown-the-trenton-city-museum-at-ellarslie",
@@ -1282,14 +2137,14 @@
       "website": "http://ellarslie.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "12 to 4 pm Sunday 1 to 4 pm Cadwalader Park 1 Theater Lane",
+      "street_address": "299 Parkside Ave., Trenton, NJ 08606, USA",
       "address_line2": null,
-      "postal_code": "08618",
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "08606",
+      "latitude": 40.2368348,
+      "longitude": -74.7899485,
+      "place_id": "ChIJ7XNnC4RXwYkR_KqaKbteetk",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1319,12 +2174,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://ellarslie.org"
+        "http://ellarslie.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Unknown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:48:10Z",
+      "updated_at": "2026-03-14T19:59:09Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -1339,7 +2195,129 @@
       ],
       "content_generated_at": "2026-01-25T02:48:10Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(609) 989-1191",
+      "website_google": "http://ellarslie.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1300"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 12:00 – 4:00 PM",
+          "Friday: 12:00 – 4:00 PM",
+          "Saturday: 12:00 – 4:00 PM",
+          "Sunday: 1:00 – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 141,
+      "google_reviews": [
+        {
+          "author_name": "Chris Etzel",
+          "author_url": "https://www.google.com/maps/contrib/109516910299151857706/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWL4mGyrD_aChgry6gkw7gOzC3GTRCU8FjD-YwGzevN53bifYHv=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Bonnie is a great representative of the Trenton City Museum! She gave my family and I a nice history lesson of the area. The museum is a must see if you are in the area!",
+          "time": 1767580012,
+          "translated": false
+        },
+        {
+          "author_name": "tom mattaliano",
+          "author_url": "https://www.google.com/maps/contrib/116056989947453612814/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIYYNRxLUZZHFliqRcxKkLb6iaNmnvwFfokm-Kulpsikp-CTA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "What an incredible find! The museum has room after room of carefully selected art revolving around a theme (currently jazz). Everyone there is very friendly and more than willing to share wonderful tidbits about Trenton history in general and the Ellarslie house in particular. During my time there recently a gentleman was playing various selections on the piano and relayed quite a few stories of his own. The pottery on the 2nd floor showcasing the Trenton pottery was very interesting as were the rooms dedicated to the Trenton Red and Black competitions from the past. I signed up for the mailing list and plan to attend several future events. I will be back. Highly recommended!",
+          "time": 1772996181,
+          "translated": false
+        },
+        {
+          "author_name": "Jonathan Gordon",
+          "author_url": "https://www.google.com/maps/contrib/108499681225027133114/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUNWZtZdWE3wLLvyE7hG2-5TfH3axdPtkIPvG8zjQ-WuVlM6irydg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Such a great spot! I highly recommend stopping bye. If you need a nice gift, their shop has something for everyone. They also have a great collection of Trenton pottery.\n\nAlso take a moment to walk around the park. If you want a good weekend trip, go-to artworks, the state museum, and here!\n\nLast I should also recommend coming here when ever the seasons change, the landscaping of this park it's amazing!",
+          "time": 1679773748,
+          "translated": false
+        },
+        {
+          "author_name": "Aziza Anderson",
+          "author_url": "https://www.google.com/maps/contrib/110434403915893709956/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyF2DZ-aQD09o0xkGoOL3iPXC3p6yA0I9YqpVqP9OY8782FmG2=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "We attended for an African Mask Making workshop. It was a fun event and staff/volunteers were extremely helpful with gluing and recommendations for structuring your art. You were able to touch other actual art mask with white gloves and there was an African mask history book being passed around. Everyone was extremely friendly and introducing themselves. There were a ton of materials, snacks and family friendly from age 2-adults/couples. We were not able to see the entire museum but the grounds looked beautiful. Parking was convenient, park security at all entrances as well. After we explored the beautiful architecture of homes in neighborhood across the street afterwards (Calwaldere Heights I believe) that reminded my of my previous neighborhood NY. I would definitely recommend for families.",
+          "time": 1676754335,
+          "translated": false
+        },
+        {
+          "author_name": "Danny Mcguiness",
+          "author_url": "https://www.google.com/maps/contrib/117875725750018598910/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-oXhDqZxi7sljbLMrJNKXU0E1FOkTs1hVyn5dzvjOjPqfW7UtJw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Fantastic museum with so much history, really a home town feel and learn about Trenton as well, walk around d the park as well, very nice.",
+          "time": 1686084944,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-clinton-hunterdon-art-museum",
@@ -1351,14 +2329,14 @@
       "website": "http://www.hunterdonartmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "11 am - 5 pm Contact 7 Lower Center Street",
+      "street_address": "7 Lower Center St, Clinton, NJ 08809, USA",
       "address_line2": null,
       "postal_code": "08809",
-      "latitude": 40.6367122,
-      "longitude": -74.9119875,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.6366778,
+      "longitude": -74.9119917,
+      "place_id": "ChIJTdOE3wSLw4kR8uW9FnrtJ64",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1379,27 +2357,28 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 1,
-      "priority_score": 20,
+      "historical_context_score": 2,
+      "priority_score": 19,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Hunterdon Art Museum has a modest collection that serves more educational purposes rather than offering significant depth or scholarly influence. Its historical context is primarily local and does not substantially frame broader narratives in art history.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The evidence describes the Hunterdon Art Museum primarily as a center for art, craft, and design with exhibitions of local and national artists, without mention of Impressionist holdings, suggesting negligible Impressionist presence. The focus implies some modern/contemporary orientation but not a collection-based strength; the historic mill setting provides limited contextual framing, and signals point to a local, small institution.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.hunterdonartmuseum.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
       "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Clinton; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9087358415",
+      "phone": "(908) 735-8415",
       "is_scoreable": true,
       "content_summary": "Set in a picturesque riverside mill town, the Hunterdon Art Museum pairs contemporary art with a memorable sense of place. Housed in a historic stone-and-timber mill complex, it’s a rewarding stop for travelers who enjoy seeing modern and regional creativity in an intimate setting. Expect rotating exhibitions, strong ties to working artists, and a visit that feels both cultural and restorative—easy to combine with strolling Clinton’s scenic bridges, shops, and cafés.",
       "content_description": "**Hunterdon Art Museum** in Clinton offers an art-lover’s kind of discovery: a **local museum with a contemporary pulse** set within one of New Jersey’s most photogenic small towns. Its strength is not vast encyclopedic holdings, but **thoughtful, well-edited exhibitions** that bring you close to the work—often spotlighting living artists, regional voices, and current conversations in *contemporary* practice. With a competent curatorial approach and frequent rotation, repeat visits are rewarded; you’re likely to encounter fresh perspectives across painting, photography, printmaking, and mixed-media approaches rather than a static “greatest hits” presentation.\n\nEqually compelling is the setting. The museum’s identity is intertwined with Clinton’s historic riverside character, where **19th-century mill architecture**—rugged masonry, industrial proportions, and the tactile presence of old materials—creates a dramatic frame for modern art. That contrast can heighten your experience: crisp contemporary surfaces against weathered stone, quiet gallery moments balanced by the sense of a working past.\n\nFor travelers planning a museum day, the experience is pleasantly unhurried and human-scaled. You can take time with individual pieces, chat with staff, and then step outside to enjoy the town’s scenic views and walkable streets—making the museum an ideal anchor for a half-day itinerary centered on art, architecture, and atmosphere.",
@@ -1419,7 +2398,138 @@
       "primary_art_focus": "Modern/Contemporary",
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "website_google": "https://hunterdonartmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 106,
+      "google_reviews": [
+        {
+          "author_name": "korra dale",
+          "author_url": "https://www.google.com/maps/contrib/107220206789457351806/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI7d6UCsSV781Ne_K3EC7tEIK_3ItoRFbQJF2We2RAxXBPgvg=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "3 weeks ago",
+          "text": "A beautiful museum in a great setting. Our weekday visit was very smooth, with a wait time of under 10 minutes to enter. The exhibits are thought-provoking and the building itself is charming. Definitely worth a 4-star visit!",
+          "time": 1771565360,
+          "translated": false
+        },
+        {
+          "author_name": "Adele",
+          "author_url": "https://www.google.com/maps/contrib/110072574212359406126/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUSkKVl4uc8dBaGkBa4KbuOh82jrAtyx4-v2d_CeaO62HoRgN9O=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "This a small art museum that changes exhibits frequently. The staff is friendly and helpful. We enjoyed the art that was featured during our visit. I hope to go back again next time I am in the area.",
+          "time": 1756048319,
+          "translated": false
+        },
+        {
+          "author_name": "Donald Hower",
+          "author_url": "https://www.google.com/maps/contrib/113189555770800744178/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKHZbVLMqccw7fyt65ymQqP1j1aqQBwqy1dSwSZMIg6___HCU=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "A worthwhile experience that is absolutely enlightening, intriguing, & astounding! I was impressed with the age of the building & how it was reconfigured into an art museum which must have been painstakingly difficult considering it was originally constructed in the 1800's! The grounds are breathtaking especially when the weather is nice! The receptionist was delightfully conversable & friendly to bat!",
+          "time": 1726951366,
+          "translated": false
+        },
+        {
+          "author_name": "David H",
+          "author_url": "https://www.google.com/maps/contrib/104341816400554495229/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWW6_hPp4Y4JBu-M5_JOGVWkplmgFESgKSB76_WFVIBLnS-z1n-qg=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "3 years ago",
+          "text": "Hunterdon Art Museum is part of Bank of America's Museum On Us program. It's a perfect stop for us on our way back to PA after a weekend in NYC. It's right off I78, less than a mile from the Clinton exit.\n\nAs soon as we drove across the single lane historical bridge, we were already engrossed by the picturesque view of the red mill, the dam, and the stone museum building all within one view on the left. The main street at the other end of the bridge has the typical small town feel, lined with many charming boutiques and shops.  Street parking were all taken and we had to resort to the second municipal parking lot on the other side of the river, but still it was a manageable 1/4 mile walk to the museum.\n\nThe museum itself is quite small, especially the ground floor where the lobby and the children's craft room take up most of the space. Cristina de Gennaro's drawings about sage roots occupied the only gallery on the ground floor. The second floor was a special exhibit from Tricia Zimic with her porcelain sculptures using monkeys to depict themes of sins and virtues.  The third floor housed some of the art works by students and faculties.\n\nThe sweet short tour in the museum, coupled with the scenic surroundings and the quaint town make this stop well worth our time.",
+          "time": 1677178329,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Quinn",
+          "author_url": "https://www.google.com/maps/contrib/101326485208520929053/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiRh5eMX_oI4o7qRIpGtMuW7lxCqhSZkDRfkYjYUEF3fY3oKxf=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We enjoyed the Día de los muertos street fair. Not big but fun to stop in.  It's such a great location. The museum has some beautiful pieces.",
+          "time": 1730503594,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-freehold-monmouth-county-historical-association",
@@ -1431,14 +2541,14 @@
       "website": "http://www.monmouthhistory.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "70 Court Street",
+      "street_address": "70 Court St, Freehold, NJ 07728, USA",
       "address_line2": null,
       "postal_code": "07728",
-      "latitude": 40.26283,
-      "longitude": -74.2785,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.2629398,
+      "longitude": -74.27834670000001,
+      "place_id": "ChIJX7c5WWjUw4kRaZgcjCfb3_c",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Historic Preservation",
       "primary_domain": "History",
       "topics": null,
@@ -1469,15 +2579,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.monmouthhistory.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Freehold; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted address from JSON-LD; Inferred primary_domain=History from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:48:28Z",
+      "updated_at": "2026-03-14T19:59:11Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORIC PRESERVATION' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "7324621466",
+      "phone": "(732) 462-1466",
       "is_scoreable": false,
       "content_summary": "The Monmouth County Historical Association in Freehold is a captivating journey through the rich tapestry of New Jersey's history. With a diverse collection of artifacts, including *revolutionary memorabilia* and *local art*, this museum offers an engaging experience for visitors of all ages. Don't miss the chance to explore this hidden gem that brings history to life!",
       "content_description": "**Monmouth County Historical Association** stands as a testament to the vibrant history of Monmouth County and beyond. Located in the charming town of Freehold, this museum invites visitors to explore the compelling narratives of local history through its extensive collections and exhibits. From *Colonial artifacts* to *19th-century works of art*, the museum showcases pieces that reflect the legacy and cultural shifts that have shaped the region. Historic buildings, including the beautifully restored **Allen House**, add an architecturally rich backdrop that merges education with aesthetic appreciation. Hurry, as the museum's unique offerings change seasonally, making each visit a chance to experience something new and exciting!  With dedicated staff and engaging programs, the museum caters not only to history buffs but to families looking to spark curiosity in young minds.  Immerse yourself in the stories of those who lived in this area through engaging displays and hands-on activities designed to captivate visitors. The museum also frequently hosts *lectures, workshops*, and *family-friendly events*, ensuring there’s always something interesting happening.  As you wander through the various exhibits, you’ll feel as though you’re stepping back in time, gaining insights into the daily lives, struggles, and triumphs of those who came before us.  A visit to the **Monmouth County Historical Association** transcends mere observation, inviting you to actively engage with history. ",
@@ -1490,26 +2601,92 @@
       ],
       "content_generated_at": "2026-01-25T02:48:28Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.monmouthhistory.org/",
+      "business_status": "OPERATIONAL",
+      "google_rating": 4.6,
+      "google_reviews_count": 64,
+      "google_reviews": [
+        {
+          "author_name": "Rebecca Collins",
+          "author_url": "https://www.google.com/maps/contrib/112797004015845935971/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXt78qYlIpmb_kpSYyVEYeUca0_vMfmWnv812wSXhK9ubpM-vU=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 2,
+          "relative_time_description": "4 years ago",
+          "text": "I attended the Springsteen: His Hometown exhibit and I was rather disappointed! There wasn’t a lot of real memorabilia and I felt it was more like a Freehold exhibit! There was more about his family than him. I understand it was “his hometown” but it seemed like they needed to add his name to it so people would come in to hear and see about Freehold! Not worth the money for it, thank goodness I’m part of NARM and it was on the list!",
+          "time": 1627971620,
+          "translated": false
+        },
+        {
+          "author_name": "Janet Winey",
+          "author_url": "https://www.google.com/maps/contrib/111422595448492111717/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJpCzTzx65FtvX2tqDz_eM0uxlbzWbrXwZA2AFmfP5QRZrsLw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "The current exhibit on Bruce Springsteen highlighted his connection to his hometown of Freehold.  His story was told with pictures of his childhood, guitars, memoribila from tours and quotes from his songs.  A short but excellent movie from the archives showed how he was influenced by growing up here and was the inspiration for many of his lyrics.  Well done but I wanted more.  $15 admission, $12 senior.",
+          "time": 1579822110,
+          "translated": false
+        },
+        {
+          "author_name": "Sharon Troia",
+          "author_url": "https://www.google.com/maps/contrib/109056722921515055744/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLGoejB2nojWXm2eeY_Oy-iixuv0iYDoYUdE2ucNUpKSqfiTA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "Loved the Springsteen exhibit! On a personal note I ran into a bit of a low sugar situation and was looking for a soda machine. A young man brought me a piece of cake to bring up my sugar...i was so grateful! Seriously how nice was he to do that? So impressed. Not too many ppl like that anymore! Thank you!!",
+          "time": 1572123493,
+          "translated": false
+        },
+        {
+          "author_name": "Tony Casciano",
+          "author_url": "https://www.google.com/maps/contrib/114161288321476274608/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIU5ZxJFktCIKpx9m6RB3OHXVRkf3IMxM8UXPXR5rLAx-igSSwu=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "6 years ago",
+          "text": "Bruce Springsteen exhibit. Lots of photos and history from his life. $15 general admission, $12 senior. Good for an afternoon visit, takes close to 2 hours if you take your time and read every plaque.",
+          "time": 1581296947,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Peluso",
+          "author_url": "https://www.google.com/maps/contrib/111723416394296481134/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLjSWH5K9hKrxtNZDkNI47F_Vvt6uB_jsGR-wVwOCRx0ZbqDyQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "This mueseum features an impressive display about the life of Bruce Springsteen. Anyone who knows about him and his music should go and see this tribute to a living legend for our time. Very enjoyable.",
+          "time": 1570574847,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-human-rights-genocide-education-chhange-center-for-holocaust",
       "country": "USA",
       "state_province": "New Jersey",
-      "city": "Human Rights & Genocide Education (Chhange)",
+      "city": "Middletown Township",
       "museum_name": "Center for Holocaust",
       "alternate_names": null,
       "website": "https://www.chhange.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "765 Newman Springs Rd, Lincroft, NJ 07738, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "07738",
+      "latitude": 40.325818,
+      "longitude": -74.133437,
+      "place_id": "ChIJe96mWOQtwokR_8x-5jwJaf8",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Mixed",
       "topics": null,
@@ -1539,12 +2716,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "https://www.chhange.org"
+        "https://www.chhange.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Human Rights & Genocide Education (Chhange); MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Mixed from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:48:34Z",
+      "updated_at": "2026-03-14T19:59:12Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -1559,26 +2737,146 @@
       ],
       "content_generated_at": "2026-01-25T02:48:34Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(732) 224-1889",
+      "website_google": "http://www.chhange.org",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 4:00 PM",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 5,
+      "google_reviews_count": 5,
+      "google_reviews": [
+        {
+          "author_name": "M. Kendrick",
+          "author_url": "https://www.google.com/maps/contrib/108057339295859090047/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWumwvhR84S4WUxEhHOkPUc6XiXy6HpC_cmCmUp8jODTyrugHaH-A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "7 years ago",
+          "text": "Located on campus at Brookdale by the library. The  current professional  show in their gallery combines several historical acts of genocde and  is in conjunction with Stand up against Hate exhibit from teenagers of local schools.",
+          "time": 1529568895,
+          "translated": false
+        },
+        {
+          "author_name": "Elizabeth Revill",
+          "author_url": "https://www.google.com/maps/contrib/107568487513786026859/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocICjxIocq0BFDy5Ou1vNLOq8eVgTWbU3-hosUvJELw_xUfJEg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "I came for a class trip and was suprised by the wealth of information. The Holocast survivor Eva is a true and remarkable woman.",
+          "time": 1749672142,
+          "translated": false
+        },
+        {
+          "author_name": "jesse needle",
+          "author_url": "https://www.google.com/maps/contrib/105065086683046734960/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLd3oO-AwTXidt8lmo2wuI8uj-yoX4rp2-Gid1yLRUxMJDahQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Nice museum about genocide. Located at Brookdale Community College next to their library.",
+          "time": 1689627346,
+          "translated": false
+        },
+        {
+          "author_name": "Joseph Truisi",
+          "author_url": "https://www.google.com/maps/contrib/111415916915862706644/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXdMQ779bh9e3MjLSP3wOH_Dsq7iJ_UNpA2sdWFrtqfYvrZo3M=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "CHHANGE offers an incredible educational experience for our school community!",
+          "time": 1687882046,
+          "translated": false
+        },
+        {
+          "author_name": "mfinn27",
+          "author_url": "https://www.google.com/maps/contrib/101631187362191982016/reviews",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLf6woYlo4cdh-EngsbiUiIp74NdxwaCA8cny0JufiGTU2phg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "",
+          "time": 1737590248,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-lincroft-monmouth-museum",
       "country": "USA",
       "state_province": "New Jersey",
-      "city": "Lincroft",
+      "city": "Middletown Township",
       "museum_name": "Monmouth Museum",
       "alternate_names": null,
       "website": "http://monmouthmuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": "765 Newman Springs Road",
+      "street_address": "Park in Lot #1 - Museum is visible from the lot, 765 Newman Springs Rd, Lincroft, NJ 07738, USA",
       "address_line2": null,
       "postal_code": "07738",
-      "latitude": 40.3263378,
-      "longitude": -74.135064,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.3260561,
+      "longitude": -74.13549909999999,
+      "place_id": "ChIJFb6OXvotwokRJORgoXa2XkQ",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1609,12 +2907,13 @@
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
-        "http://monmouthmuseum.org"
+        "http://monmouthmuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for Lincroft; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:48:41Z",
+      "updated_at": "2026-03-14T19:59:13Z",
       "notes": null,
       "city_tier": 2,
       "is_scoreable": false,
@@ -1629,7 +2928,149 @@
       ],
       "content_generated_at": "2026-01-25T02:48:41Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(732) 747-2266",
+      "website_google": "http://monmouthmuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 452,
+      "google_reviews": [
+        {
+          "author_name": "Samuel Kaplan Art com",
+          "author_url": "https://www.google.com/maps/contrib/116020771453768351594/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV069SO4iL9RiOrzwG0byyvxB0Jyw7l3ah8_MVaCyWR94k22ak=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "What a great Museum they will be showing one of my paintings in an upcoming show Sunday March 16 in the afternoon. Kids are always busy here with art play groups too. If your in Red Bank\nMake your way to the museums show!!!",
+          "time": 1772917945,
+          "translated": false
+        },
+        {
+          "author_name": "Laura Yankowski",
+          "author_url": "https://www.google.com/maps/contrib/107586840583071791683/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJFlelbo1oOsVb9KE54dExJqZOOV7IZngYJL6_OMDFLbZ7-6A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "My toddler and I went there the other day. He loved the ocean themed play room. It was very clean and they did story time as well. Its alittle expensive, at $14 per person for anyone over the age of 1. Also be sure to check their website to make sure the play areas are open. Sometimes they close them for events or private tours. Overall, we definitely will be back.",
+          "time": 1756821827,
+          "translated": false
+        },
+        {
+          "author_name": "Karen O'Hara",
+          "author_url": "https://www.google.com/maps/contrib/105973895905379400574/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVo7JX7VKj3DLCuBQNfc8HpOh5SPUAk2aWISjf9RWS_NJLQpvw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "Nice indoor space for younger children to play. It could use a little refresh, but overall its clean. Room through the play area has a few crafts available should they kids want to take a few minutes out from climbing. I've been there before when other rooms were open and different displays offered, so those changes keep it interesting. Restrooms are clean, staff could be a bit more friendly.",
+          "time": 1764980691,
+          "translated": false
+        },
+        {
+          "author_name": "John Michail",
+          "author_url": "https://www.google.com/maps/contrib/118230959327969654800/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUUL4gVlxFLM1Bve0LHMv4cOrRLe3SHd2nTWk7jSRLvEPPGVjZW7w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "8 months ago",
+          "text": "My son loved this place. He's 6 years old and was as interested in the art gallery as much, but other sections kept him engaged in learning and interactive play. He loved the space exploration area and the pirate and sea jungle gym.",
+          "time": 1752668660,
+          "translated": false
+        },
+        {
+          "author_name": "DEBRA SALVATO",
+          "author_url": "https://www.google.com/maps/contrib/109699222707991560676/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJGLfK5OJYlwhxXL2AxEjxp_Cie-GDAwMv1ozIgsJNdDZWqxQ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Hidden gem of Monmouth county.  Had taken my son over 20 years ago and just took my grandson. Had the best day.  The dinosaur exhibit was great with a hands-on dig pit. The whole museum has so much to offer.  We were there over 2 hours and enjoyed a lunch we brought right outside. Can't wait to go back! Highly recommend!",
+          "time": 1730123639,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-madison-museum-of-early-trades-crafts",
@@ -1641,14 +3082,14 @@
       "website": "http://www.rosenet.org/metc",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "9 Main St, Madison, NJ 07940, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 40.75997,
-      "longitude": -74.41675,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "07940",
+      "latitude": 40.7595844,
+      "longitude": -74.4168333,
+      "place_id": "ChIJy5lec_Klw4kRGUXRAE1CUpE",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1679,15 +3120,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.rosenet.org/metc",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Madison; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: Page not found (404) at http://www.rosenet.org/metc; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:48:48Z",
+      "updated_at": "2026-03-14T19:59:14Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9733772982",
+      "phone": "(973) 377-2982",
       "is_scoreable": false,
       "content_summary": "The **Museum of Early Trades & Crafts** in Madison invites you to explore the fascinating world of historical craftsmanship. Its rich collections and interactive exhibits bring to life the skills and trades that shaped our communities. This museum is a unique gem for anyone interested in history, craftsmanship, and the evolution of trade techniques.",
       "content_description": "**Museum of Early Trades & Crafts** offers an immersive journey into the world of historical craftsmanship and trades. Nestled in the charming town of Madison, this history museum captivates visitors with its extensive exhibits that illuminate the lives and skills of artisans from the past. From woodworkers to blacksmiths, the museum showcases the diverse trades that have shaped our communities, inviting guests to step into a bygone era and experience the narratives behind the tools and techniques of early craftsmen and women.  \n\nThe museum's architecture itself is a delight, featuring a meticulously restored historic building that adds to the experience of exploring the past. Visitors are welcomed into a space where history is not just displayed but brought to life through engaging, hands-on activities and programs. Here, you can try your hand at traditional crafts, attend workshops, or simply absorb the knowledge imparted by historical artifacts that reflect the ingenuity of early American tradespeople.  \n\nWith its commitment to education and preservation, the **Museum of Early Trades & Crafts** is not just a museum; it’s a vibrant community hub fostering appreciation for the skills that built our society. Don't miss this opportunity to connect with history in a meaningful way — whether you're a history buff, a craft enthusiast, or simply looking for an enlightening experience, this museum has something special for everyone.",
@@ -1700,7 +3142,138 @@
       ],
       "content_generated_at": "2026-01-25T02:48:48Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "https://metc.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 90,
+      "google_reviews": [
+        {
+          "author_name": "korra dale",
+          "author_url": "https://www.google.com/maps/contrib/107220206789457351806/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI7d6UCsSV781Ne_K3EC7tEIK_3ItoRFbQJF2We2RAxXBPgvg=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "3 weeks ago",
+          "text": "What a delightful little museum! Walked in within minutes and was immediately charmed by the collection. The exhibits on early American trades and craftsmanship are really well done and give you a genuine appreciation for the skill and ingenuity of everyday working life in centuries past. A wonderful and underrated gem in Madison, NJ!",
+          "time": 1771490773,
+          "translated": false
+        },
+        {
+          "author_name": "Alexis WB",
+          "author_url": "https://www.google.com/maps/contrib/112818949879151974533/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW_JK-HKbrEKF6c6_eMj9WL2es4snesNy8bZVMGP8-gRyrikNrRPw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 years ago",
+          "text": "A small but mighty museum that focuses on the people who literally built New Jersey, the skilled trades & crafts people. When you are surrounded by so many political historical sites & museums, this is a breath of fresh air to shift your thoughts to the real, everyday Americans. They also constantly ask the questions that make you think, \"Are there ways that *I* do things that make a difference to the community around me?\"\n\nThe information is presented so beautifully that one could walk through and not even notice the stunning 1899 building. This was a library?! Wow! You just need to go experience it yourself.",
+          "time": 1560075427,
+          "translated": false
+        },
+        {
+          "author_name": "David Okada",
+          "author_url": "https://www.google.com/maps/contrib/103650941705411459559/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVlE9-hAu7EmcJud1IGmu82ZzL04J1B34A1l3ShYMi9x54it6g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "It is a beautiful building which previously was a library donated by Daniel Willis James a millionaire of the Gilded Age of Madison. It was converted to a Museum focused on early trade. You learn about life of the farmer and their methods of preserving food for the winter. See bellows and tools of the blacksmith. Beautiful Cabinet making chest and various tools mounted on the wall for making a cabinet. If you are wondering how leather boots were made or how the leather  was formed around wooden model forms, this exhibit was fascinating. In general a very educational few hours to learn about how things were created in the early 18th- 19th century. You will love the interior of the museum with vaulted ceilings and iron work.",
+          "time": 1661685548,
+          "translated": false
+        },
+        {
+          "author_name": "Mark Thompson",
+          "author_url": "https://www.google.com/maps/contrib/115902757329446424792/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU6pXgsNXJYjZ8krQbHBTT-LfT_IuysJPSkjJ9xcfHtKL5QiAA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "An excellent & well-run Museum. Perfect for Young and Old. No fixed fee for admission, pay as you please.",
+          "time": 1695210745,
+          "translated": false
+        },
+        {
+          "author_name": "Ellen Vaillancourt",
+          "author_url": "https://www.google.com/maps/contrib/104134839482709890469/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVfWy7y2aOglOYau4SfYVjE_OP5lZvtN6B0vJZadkYOroxXKnMS=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Be still my heart (((((((❤️‍🔥))))))) … it’s criticaly imperative that humanity, especially the wealthy west, remembers how, and then puts use their hands to good use … useful toil … the hands of humanity…",
+          "time": 1689122320,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-millville-wheaton-arts-and-cultural-center",
@@ -1712,14 +3285,14 @@
       "website": "http://www.wheatonarts.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "1000 Village Dr, Millville, NJ 08332, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "08332",
+      "latitude": 39.4119351,
+      "longitude": -75.0218908,
+      "place_id": "ChIJn7fGPnk0x4kRgKPr5fRo5BA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": "Art",
       "topics": null,
@@ -1747,12 +3320,13 @@
       "score_notes": null,
       "score_last_verified": null,
       "data_sources": [
-        "walker_reciprocal"
+        "walker_reciprocal",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Millville; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: blocked by robots.txt; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-18T04:08:40Z",
+      "updated_at": "2026-03-14T19:59:15Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -1767,7 +3341,74 @@
       ],
       "content_generated_at": "2026-01-18T04:08:40Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(856) 825-6800",
+      "website_google": "http://www.wheatonarts.org/",
+      "business_status": "CLOSED_TEMPORARILY",
+      "google_rating": 4.7,
+      "google_reviews_count": 191,
+      "google_reviews": [
+        {
+          "author_name": "K Lizotte",
+          "author_url": "https://www.google.com/maps/contrib/104399010954061312532/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKiqvHJnaOYJJ3weXEHojp5o0-yL7IOPmsqZ5voLmytqUnGCQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "The area was once a hotbed of glassmaking (esp by German immigrants).  The institution was started by a rich guy who wanted to showcase glass and pottery making in a historical and contemporary context.  The museum is second only to the Corning Museum of Glass in NY.\nThere are live demonstrations of glass and pottery making.  The people who work there are passionate about the art and very friendly.  Plenty of items to buy too; all made on-site.\nDefinitely do any tours that are offered, esp of the museum.  Yo can also sign up to make your own glass ornaments.\nBeautiful, wooded site.  I was told that there are trails too but I didn't have time to use them.  Picnic tables and a food truck were available; they are fine with bringing your own food in.  Free parking on-site.  Truly a little known gem.",
+          "time": 1762983938,
+          "translated": false
+        },
+        {
+          "author_name": "Dimitri Reyes Poet",
+          "author_url": "https://www.google.com/maps/contrib/102509956735960600220/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRWVU7KriRZ7u9lh2aw1o39MWtWrCU6tSe2m9GBnEPxdDjSxMz=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "11 months ago",
+          "text": "This place takes longer to tour than we thought. My wife and I went here on Thursday at 1pm but didn't get to see the artists making pottery or glass. Parking is free and a bit of a walk. Then the ticket booth is right at the gate, you're given a map and sticker. The bathroom is the first building to the right of the ticket booth which is necessary after a long drive. There's one handicap stall, 3 additional stalls, a baby changing table and it is immaculate in there. We then walked the grounds and picked the first main building to tour. It was the main museum that shows glass in the order it was manufactured. This building has such fine details and was modeled after a gentlemen's club by the shore (I forgot what the nice lady that greets you when you come in said exactly). My favorite piece was the library and my wife's was a plate with birds painted on it. My wife was also smitten with the ladies restroom in this building so she showed me photos and I went into the mens and it was plain lol. We had some time to check out the artists making pottery and the 3 people in there were very nice and encourage you to ask questions about their process. It's a very unique place and we will be returning because we need more time to see everything.",
+          "time": 1744505560,
+          "translated": false
+        },
+        {
+          "author_name": "Elquis E",
+          "author_url": "https://www.google.com/maps/contrib/114807692347589813159/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLnJo5kMBqvn7w-SfEB1nV9WBGJ41uJgguT6MjiVyZG3r_1DQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 3,
+          "relative_time_description": "2 years ago",
+          "text": "Visit during winter, trees are dormant for the season, not too appealing. Entrance appears like a small town, no fee if just walking the grounds or walking the Nature trail. Parking is free. But the road needs some work.\nIf visiting The Glass, or Pottery studio or the Museum there is a fee. They are all interesting. The Glass and Pottery studios have presentation on how these are made. They like to answer questions.\nThe shops are pricey. But sell nicely made items.\nBest to enjoy in spring and summer.\nWorth exploring!",
+          "time": 1704118038,
+          "translated": false
+        },
+        {
+          "author_name": "Lauren",
+          "author_url": "https://www.google.com/maps/contrib/112938961750107465572/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW_QkHapivUvPydaP4jbQzYe5nLopmgW77ySDPlbkPxOkhVyRQdVA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "So pretty! Free parking, cheap admission which is nice and a lot to learn and have fun walking around for the day with family. Lot to learn in the glass museum, I had a ton of fun. Went there as a teen and went back a week ago and learned so much again. It was also really nice to get a breath of fresh air.",
+          "time": 1716656617,
+          "translated": false
+        },
+        {
+          "author_name": "Crystal White",
+          "author_url": "https://www.google.com/maps/contrib/115866383671042549709/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWuYo0Kb9L3GBoiSVXNOU9e0kMd0kAZ7n9nCV5ZD-GZ7MwmuREW1A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "My grandson age 3 enjoyed  glass studio very much! He was able to experience the museum because the art was visible from his height. The park and nature trail were right up his alley. He stay excited during the entirety visit! We stayed about two hours but plan on returning for another visit!",
+          "time": 1745449656,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-morris-plains-stickley-museum-at-craftsman-farms",
@@ -1779,14 +3420,14 @@
       "website": "http://www.stickleymuseum.org/",
       "status": null,
       "last_updated": "2026-01-15",
-      "street_address": null,
+      "street_address": "2352 NJ-10, Morris Plains, NJ 07950, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": null,
-      "longitude": null,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "07950",
+      "latitude": 40.8560831,
+      "longitude": -74.481828,
+      "place_id": "ChIJ44F0nlynw4kRLPkjv-f7ffM",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": null,
       "primary_domain": null,
       "topics": null,
@@ -1816,12 +3457,13 @@
       "data_sources": [
         "walker_reciprocal",
         "official_website",
-        "http://www.stickleymuseum.org"
+        "http://www.stickleymuseum.org",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Morris Plains; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:49:25Z",
+      "updated_at": "2026-03-14T19:59:16Z",
       "notes": null,
       "city_tier": 3,
       "is_scoreable": false,
@@ -1836,7 +3478,119 @@
       ],
       "content_generated_at": "2026-01-25T02:49:25Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "phone": "(973) 540-0311",
+      "website_google": "http://www.stickleymuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1500"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1500"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1500"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: Closed",
+          "Friday: 11:00 AM – 3:00 PM",
+          "Saturday: 11:00 AM – 3:00 PM",
+          "Sunday: 11:00 AM – 3:00 PM"
+        ]
+      },
+      "open_now": false,
+      "google_rating": 4.6,
+      "google_reviews_count": 128,
+      "google_reviews": [
+        {
+          "author_name": "Brittney Herrin",
+          "author_url": "https://www.google.com/maps/contrib/114335848710652403926/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJYku1yrUcmtr3QqVJfRWRQMFc8-FRxy9-PabOEt3UyPYgmdw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I recommend visiting if you are in the area. I was to visit while they have the property decorated for Christmas. The docents were all very kind & informative. They loved to shared their knowledge & ensure you are having a great visit. I even left with some unplanned additional Christmas gifts from the shop.",
+          "time": 1765052953,
+          "translated": false
+        },
+        {
+          "author_name": "Antone Piver",
+          "author_url": "https://www.google.com/maps/contrib/105932041966618662006/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVDFhZV2DD3XZdjUbsEgJK_yKRLX0EIV9x6NYFCpkbXSrchBonA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "It was amazing tour of the home, by very knowledgeable guides. Wonderful selection of his furniture from the Craftsman period. Beautiful grounds , a very nice check in staff and  a wonderful gift shop.",
+          "time": 1759090881,
+          "translated": false
+        },
+        {
+          "author_name": "Joanne Green",
+          "author_url": "https://www.google.com/maps/contrib/113029186302511622058/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-JE5r8Sjo9NokFNwJX7NtCBRcJMZVLicIPghdJaJZ9_fU7O6ddg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Really interesting! Tickets were reasonably priced and the staff were super nice ! So glad we came- the volunteer tour guide was  informative but she had some difficulty when asked relevant questions-",
+          "time": 1768064496,
+          "translated": false
+        },
+        {
+          "author_name": "Richard King",
+          "author_url": "https://www.google.com/maps/contrib/111246510512849260689/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUHhj5CVSYo0JHHGzFu5h8Zng84Vw3m2eWTpT7EzwVJu4L1i2pz=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great tour experience.   If you like the Mission Arts and crafts / Craftsman style, this is the Mecca.   Gus Stickley’s residence.   Great walkable site.  So many things to see and great examples of the movement.",
+          "time": 1741711010,
+          "translated": false
+        },
+        {
+          "author_name": "S. Chen",
+          "author_url": "https://www.google.com/maps/contrib/111715100110053315781/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIT6bvMYX6X6KzpljAEbuV4CakDOpynzXVBMgrKMdQyHIIjBXk=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Major landmark within the craftsman culture circuit. Exquisitely preserved and curated homestead and furniture pieces of Gustav Stickley. Wonderful herbal woody aroma in the main log cabin. Superbly knowledgeable docents. A wonderful visit during this reopening, fall event.",
+          "time": 1729978151,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-morristown-morris-museum",
@@ -1848,14 +3602,14 @@
       "website": "http://www.morrismuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "6 Normandy Heights Road",
+      "street_address": "6 Normandy Heights Rd, Morristown, NJ 07960, USA",
       "address_line2": null,
       "postal_code": "07960",
-      "latitude": 40.7961012,
-      "longitude": -74.4486335,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.7960409,
+      "longitude": -74.44829639999999,
+      "place_id": "ChIJ-_lhZGGmw4kRRlj-CgAQ9SA",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "General Museum",
       "primary_domain": null,
       "topics": null,
@@ -1887,15 +3641,16 @@
         "openstreetmap",
         "official_website",
         "http://www.morrismuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=3 for Morristown; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:49:32Z",
+      "updated_at": "2026-03-14T19:59:17Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'GENERAL MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9739713700",
+      "phone": "(973) 971-3700",
       "is_scoreable": false,
       "content_summary": "Nestled in the heart of Morristown, the **Morris Museum** offers a captivating blend of art, history, and science. Its diverse collections and engaging exhibitions make it a must-visit destination for anyone fascinated by the intricacies of culture and creativity. Discover a space where history comes alive and art touches the soul.",
       "content_description": "The **Morris Museum** stands as a beacon of cultural enrichment, blending various disciplines within its walls. Established in 1913, this museum has evolved to encapsulate a wide array of exhibits that speak to the heart of Morristown and beyond. Visitors can explore everything from *American art* to *natural history*, as well as collections that celebrate local heritage and innovation.\n\nOne of the museum's crown jewels is its *Schommer Collection of American Art*, featuring stunning pieces that span different artistic movements, offering an insightful look into the evolution of American creativity. The architectural splendor of the museum itself, marked by its elegant design and inviting spaces, enhances the overall visitor experience. As you wander through the galleries, you will encounter fascinating exhibits that include rare artifacts, educational displays, and interactive installations, making it a perfect outing for families and art enthusiasts alike.\n\nAdditionally, the **Morris Museum** hosts a variety of programs and events throughout the year, including lectures, family workshops, and live performances. This commitment to community engagement enriches the museum's role, allowing visitors to see art and culture as not just a display but an integral part of everyone's experience. Whether you are an art aficionado or just exploring, you’ll find something that piques your interest and inspires your imagination.",
@@ -1908,7 +3663,138 @@
       ],
       "content_generated_at": "2026-01-25T02:49:32Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.morrismuseum.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 874,
+      "google_reviews": [
+        {
+          "author_name": "Gabrielle Sales",
+          "author_url": "https://www.google.com/maps/contrib/110287587205027361428/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUqdP1j95rDKXKB2KbKOnTxk4VPRS4uWa_eRsYO5JBe98Z3nYEntw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I didn’t expect this museum to be as amazing as it was! Makes sense why it is affiliated with Smithsonian. There are so many things to see here. Loved the current exhibits with the music boxes, 1800s to early 1900s automata toys, and on books. I even randomly entered into a presentation of an artist whose gallery is up too. The paintings are amazing! I also really loved the whole train model set up that takes up a whole room. I recommend giving yourself 3 hours to see and read about it all.",
+          "time": 1770746519,
+          "translated": false
+        },
+        {
+          "author_name": "Lawrence Ambrose",
+          "author_url": "https://www.google.com/maps/contrib/102121497945459265050/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKxhNZ2IyBIy9I-KkZ8D9mWsd5-bKpyR3ahF4nptqJ5ekJ3mQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I visited the Museum recently with my grandson. The Museum is a treat for those of us who enjoy visual arts: an eclectic and varied collection, as well as superbly curated temporary exhibits. My 6 year old companion enjoyed the features for children, including an interactive train city and timed entry to a room for inventing devices. I decided to become a member. We need to support culture in our community. We will return soon to experience the large section with demonstrations of automatons and self playing musical instruments.",
+          "time": 1765989086,
+          "translated": false
+        },
+        {
+          "author_name": "FRAN TRISCHETTA",
+          "author_url": "https://www.google.com/maps/contrib/105824712587447085176/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIEdQ2aG21ujupUsRbY-0Z7wAfBjRgWIDz1r3BGrPdkcy66K-3M=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Excellent exhibits with unusual music mechanical machines and automata! Loved the literary exhibit too! So clever and unusual!",
+          "time": 1770086105,
+          "translated": false
+        },
+        {
+          "author_name": "Z",
+          "author_url": "https://www.google.com/maps/contrib/110947478548802535570/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJodiCTRf9NZCJIsfVPQeBBbu4psbNUjxhbMW3KQJHoy8mraQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "The Morris Museum is a hidden gem in the heart of New Jersey. You get amazing value for your money and they have a cool selection of things to look at. All the staff are really friendly and very excited about the exhibits. I would highly recommend this place especially for kids because they have a lot of interactive exhibits and opportunities for learning. But even for adults it’s really fascinating and I think everyone would have a good time here!",
+          "time": 1747590804,
+          "translated": false
+        },
+        {
+          "author_name": "mathew cox",
+          "author_url": "https://www.google.com/maps/contrib/101088647981442438136/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIIDmeBcMB9refw5EV7Xym4vap2upRdro6MYts1-1SZnNHSEQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Always fun to see the new exhibits, they definitely keep this place fresh and tidy. Make sure to show up at 2pm for the music boxes",
+          "time": 1767473682,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-new-brunswick-zimmerli-art-museum",
@@ -1920,14 +3806,14 @@
       "website": "http://www.zimmerlimuseum.rutgers.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "11 a.m. to 8 p.m. Zimmerli Art Museum 71 Hamilton St",
+      "street_address": "71 Hamilton St, New Brunswick, NJ 08901, USA",
       "address_line2": null,
       "postal_code": "08901",
-      "latitude": 40.500076,
-      "longitude": -74.4457915,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.4997749,
+      "longitude": -74.44582799999999,
+      "place_id": "ChIJ2bZcmlPGw4kRcDwZiEe4k1g",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -1946,29 +3832,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 3,
-      "modern_contemporary_strength": 3,
-      "primary_art": "Impressionist",
-      "historical_context_score": 2,
-      "priority_score": 10,
+      "modern_contemporary_strength": 4,
+      "primary_art": "Modern/Contemporary",
+      "historical_context_score": 4,
+      "priority_score": 6,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Zimmerli Art Museum has a strong emphasis on nineteenth-century French art and a diverse collection of over 60,000 works, which supports its scores in impressionist and modern contemporary strengths. However, its historical significance appears localized, and its prior collection tier indicates a limited depth in canonical holdings.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The museum’s stated focus on 19th-century French art suggests at least moderate Impressionist representation, though the evidence does not indicate flagship Impressionist holdings. Modern/Contemporary strength is rated strong due to the major Russian and Soviet Nonconformist art holdings (Dodge Collection) and American art extending to the present. As a large university museum with six centuries of European art and substantial works-on-paper holdings, it likely offers good chronological and inte",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.zimmerlimuseum.rutgers.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; MRD: computed city_tier=2 for New Brunswick; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "7329327237",
+      "phone": "(848) 932-7237",
       "is_scoreable": true,
       "content_summary": "Tucked into Rutgers University in New Brunswick, the Zimmerli Art Museum rewards art lovers who like to look closely and think deeply. It’s best known for collection-driven exhibitions—especially works on paper and modern-to-contemporary art—that feel scholarly without being intimidating. Expect thoughtfully curated shows, an inviting university-museum atmosphere, and the pleasure of discovering regional strengths alongside broader art-historical stories. It’s an ideal stop if you want a quieter, detail-rich museum visit away from the mega-museum crowds.",
       "content_description": "Set on the Rutgers University campus in New Brunswick, the **Zimmerli Art Museum** offers the kind of visit art enthusiasts crave: focused, idea-rich exhibitions drawn from a deep university collection and presented with a curator’s rigor. Rather than trying to be encyclopedic, the Zimmerli shines through its rotating, research-led shows—often centered on prints, drawings, photography, and other works on paper—where you can slow down and notice technique, process, and the artist’s hand.\n\nThe museum’s strengths are particularly rewarding for travelers who enjoy *modern* and *contemporary* narratives and the ways art reflects social and political change. Expect exhibitions that connect regional stories to wider currents—think the pleasures of close-looking at graphic art, the immediacy of photography, and the intellectual spark of themed installations. As a university museum, it’s also a place where you feel the museum “thinking in public,” with interpretive materials that invite comparison and context.\n\nArchitecturally, the experience is calm and purposeful: clean gallery spaces designed for viewing, with a campus setting that makes the visit easy to pair with a stroll through Rutgers or a meal in nearby New Brunswick. For art lovers planning a day trip, the Zimmerli is a satisfying destination—more intimate than big-city institutions, yet serious in ambition and curatorial care.",
@@ -1985,10 +3872,141 @@
       "overall_quality_score": 15,
       "eca_score": 2,
       "collection_based_strength": 3,
-      "primary_art_focus": "Impressionist",
-      "collection_based_pas": 3,
-      "effective_pas": 3,
-      "outcome_tier": "Regionally Important"
+      "primary_art_focus": "Modern/Contemporary",
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "High Priority",
+      "website_google": "http://zimmerli.rutgers.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 8:00 PM",
+          "Friday: 11:00 AM – 6:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 481,
+      "google_reviews": [
+        {
+          "author_name": "Salma Mukhtar",
+          "author_url": "https://www.google.com/maps/contrib/113159016145559156975/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXI3KGfljqg2fvY78p3C0rEQuw-0TxiwouQb4LlRsdVieBfMfcrNQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "Zimmerli Art Museum at Rutgers University is a true hidden gem, beautifully curated, peaceful, and impressively diverse, with collections ranging from 19th-century European art to modern and Soviet nonconformist pieces. The atmosphere is welcoming, never crowded, and the staff are knowledgeable and friendly. With free admission and regularly changing exhibitions, it’s a perfect spot for students, families, or anyone seeking an inspiring and relaxing cultural experience right on campus.",
+          "time": 1762221086,
+          "translated": false
+        },
+        {
+          "author_name": "A. Smith",
+          "author_url": "https://www.google.com/maps/contrib/113570719965244311501/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL_UDndBmaV7Bi1pItmXo85HN26InjpxvXfuHodYn8iF1XBjA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "4 weeks ago",
+          "text": "I recently attended SparkNight: Celebrating Black History Month at the Zimmerli Art Museum, and I would unequivocally recommend the experience. It had been years since I last visited the museum, likely not since childhood, so returning to that space felt both nostalgic and restorative. Although I have always appreciated museums and the reflective atmosphere they cultivate, it is often difficult for me to access such spaces given my responsibilities. Being able to move through the galleries at my own pace, fully immersing myself in the exhibitions without distraction, felt like a rare and refreshing reprieve.\nOne of the highlights of the evening was the feature on Andy Warhol, whose work continues to provoke conversation about culture, identity, and popular imagery. Beyond the visual art, the event was thoughtfully curated as a communal experience. There was live entertainment, complimentary catered food, and beverages—including wine—which contributed to an inviting and celebratory ambiance. Notably, the food was provided by a Puerto Rican food truck, which resonated with me personally as a proud Puerto Rican woman. That cultural familiarity added an additional layer of warmth to the evening.\nMost importantly, the event served as a meaningful homage to the beginning of Black History Month. It fostered a space where art, culture, and community converged in celebration and reflection. Overall, the evening was engaging, culturally enriching, and genuinely restorative. Without hesitation, I would rate it a 10/10 experience.\nPARKING IS THE ONLY DOWNSIDE.",
+          "time": 1771001505,
+          "translated": false
+        },
+        {
+          "author_name": "Rajesh varma",
+          "author_url": "https://www.google.com/maps/contrib/113854899570662068446/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKsfounZ0wNNGwsH7FgHW_pu91LCHRs9hbI_uPMmMEB_i1CFyA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Every one can visit this museum for sure and free. Guys at front information desk is so welcoming and helpful. Staff around are supportive. Coming to museum art display I personally liked majority items. Starting from kids gallery to Russian artist display. Most of the art types are first time for me to see and understand. Overall it’s good museum with all facilities in 2 floors. Photography is allowed. There is enough parking behind the building for visitors to park. We visited on Sunday and it’s not much crowded.",
+          "time": 1698614235,
+          "translated": false
+        },
+        {
+          "author_name": "Adam E",
+          "author_url": "https://www.google.com/maps/contrib/115690781779202399904/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLCGr3qSLHkapn4sZuuVKAtNGlIYrHm9bV4YSZySXj3YDwdEbU=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I took a free museum tour here, as I am a student at Rutgers, New Brunswick. The tour itself was awesome! I like museums in general and the artifacts they hold. The guide herself was a delight, she was kind, polite, and most importantly: really informative. She explained things in great detail and made it really interesting. It was fun looking at the various paintings and statues and learning about the stories behind them. It was overall a great experience and one I will never forget.",
+          "time": 1762397565,
+          "translated": false
+        },
+        {
+          "author_name": "michael allen",
+          "author_url": "https://www.google.com/maps/contrib/103551061368575820324/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVsJJtpjZbeD3Tr1SHrga5Ht_SPGImHx3tp0YK6HHYg2pOnEGDOfw=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "Very well laid out art museum on the campus of Rutgers university. I loved the Russian exhibit I'm a big fan of that style of art. I'm not sure if there's a parking lot because I ended up parking in the street and paying the media but it was ok because itself was free",
+          "time": 1686431057,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-nj-summit-visual-arts-center-of-new-jersey",
@@ -2000,14 +4018,14 @@
       "website": "http://artcenternj.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "68 Elm Street",
+      "street_address": "68 Elm St, Summit, NJ 07901, USA",
       "address_line2": null,
       "postal_code": "07901",
-      "latitude": 40.71176,
-      "longitude": -74.35883,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 40.712036,
+      "longitude": -74.35858999999999,
+      "place_id": "ChIJEeiUMEuuw4kRNl8966yRnNg",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -2031,23 +4049,24 @@
       "historical_context_score": null,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Visual Arts Center of New Jersey appears to serve primarily the local community without substantial evidence of a significant permanent art collection or curatorial authority. The reputation score reflects its known status within the local area.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided evidence does not describe the Visual Arts Center of New Jersey’s permanent collection, collection focus, or interpretive approach, so strengths in Impressionism, Modern/Contemporary art, historical context, and collection tier cannot be reliably scored. Based on its location in Summit, NJ and no evidence of broader prominence, its reputation is best inferred as primarily local.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://artcenternj.org",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 2,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Summit; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: extracted full address from page text; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:49:55Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "9082739121",
+      "phone": "(908) 273-9121",
       "is_scoreable": true,
       "content_summary": "Set in leafy Summit, the Visual Arts Center of New Jersey is a rewarding stop for art lovers who enjoy seeing fresh ideas up close. Part gallery, part community art hub, it pairs changing exhibitions with an energetic studio culture—so you’re not only looking at art, you’re surrounded by people making it. Expect an intimate, local-scale museum visit with strong contemporary and regional focus, plus the satisfaction of discovering artists before they feel “museum-famous.”",
       "content_description": "**Visual Arts Center of New Jersey** in Summit offers a museum experience with a distinctly contemporary pulse: it’s a place where exhibitions, education, and community creativity share the same roof. While the Center’s programming evolves—signaled by its forward-looking tagline, **“Find Yourself Here.”**—the most consistent strength is the feeling of immediacy. You’ll encounter rotating gallery shows that spotlight living artists and regional voices, often framed by ideas central to today’s art world: *process*, *material experimentation*, and the social life of images. For travelers who like to visit museums as cultural “barometers,” it’s a compelling snapshot of what’s being made and discussed right now in New Jersey and the greater metro area.\n\nArchitecturally, the appeal lies less in monumental grandeur and more in a welcoming, human-scale setting designed for close looking. Expect clean, well-lit gallery spaces that encourage slow viewing—ideal for appreciating nuanced surfaces, subtle color decisions, and the way contemporary works activate a room. Because the Center is also a teaching institution, the building’s rhythm often includes glimpses of studios and the creative energy that fuels the exhibitions.\n\nFor visitors, the pleasure is in the mix: come for a gallery visit, then deepen your experience through talks, classes, and events that make the art feel accessible without flattening its complexity. It’s an excellent add-on to a North Jersey art day—especially if you’re seeking discovery, conversation, and a museum atmosphere that feels personal rather than anonymous.",
@@ -2060,8 +4079,159 @@
       ],
       "content_generated_at": "2026-01-25T02:49:55Z",
       "content_model": "gpt-5.2",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://www.artcenternj.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 10:00 PM",
+          "Tuesday: 9:00 AM – 10:00 PM",
+          "Wednesday: 9:00 AM – 10:00 PM",
+          "Thursday: 9:00 AM – 10:00 PM",
+          "Friday: 8:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 34,
+      "google_reviews": [
+        {
+          "author_name": "Pritha Chakraborti",
+          "author_url": "https://www.google.com/maps/contrib/104534870241828472747/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI2wJusLaj9JEajZde7LT39kBcfR5PROAr75GDFWR8Cqn-lYuk=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Fantastic teachers, spacious studio and plethora of class options to choose from for budding artists. This is the third semester running for my child & I'm lucky to stay within a reasonable distance from the school. Doug is an exceptional teacher and I can see how a lot of postive influence on my child who's in the 9-11 age range. They sure know how to teach kids !!",
+          "time": 1709239709,
+          "translated": false
+        },
+        {
+          "author_name": "Charles Chrystol",
+          "author_url": "https://www.google.com/maps/contrib/110598784315686483589/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL0W6X5GijQ6rYeFTxMGU0Ntp0tRG3f3nShs8Z-1e9v1f90zw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Wonderful creative space. Great light. The Barbara Beeman exhibit was eye opening! A photographer with a painter's sense -- marvelous!",
+          "time": 1735648658,
+          "translated": false
+        },
+        {
+          "author_name": "Amy Lin",
+          "author_url": "https://www.google.com/maps/contrib/112102571814461022306/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJgXyNX1XHjIb0KLB9-Z_hmOE2qK6e-SMZGiTz3ZT5zok5W4w=s128-c0x00000000-cc-rp-mo",
+          "rating": 2,
+          "relative_time_description": "5 years ago",
+          "text": "The older man who works at the front desk is very rude, especially to women. Lots of women work at and attend this center so you'd think he'd know how not to be condescending. The building is also very old and in desperate need of refurbishment, and classes are too expensive for such a run-down establishment. The instructors are passionate and talented, but you should take their classes at another center instead of here. Take your business elsewhere - if you're going to pay $350+ for a class, it should be taken in a place that reflects that.",
+          "time": 1589403824,
+          "translated": false
+        },
+        {
+          "author_name": "Mary Ledwith",
+          "author_url": "https://www.google.com/maps/contrib/108548644876377976947/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKkLHrThmuJJRrf8ZR1jM2t-u2g9Za5Di9Q39i5ULiWJGp3UmdbQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 years ago",
+          "text": "A hidden gem in NJ for classes and exhibits\nwith an outstanding faculty to begin or sharpen the artistic skills of all ages and levels.   Summit and the state of NJ are so lucky to have it. Wonderfully curated galleries that encourage all ages to explore their creative side with passion. From the beginner, advance or professional artist, there is something there for people who love to create. and experience art.  Go!",
+          "time": 1492436695,
+          "translated": false
+        },
+        {
+          "author_name": "Alexis Rodgers",
+          "author_url": "https://www.google.com/maps/contrib/104738297807573070573/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXTBSYwwCeOgpP41680WPVjjhGKNgDHlcOc0drMD2cpQTpTBBI=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "I had such a great time creating a masterpiece with my honey! The teachers at Visual Arts Center of New Jersey were exceptional. We will undoubtedly return.",
+          "time": 1626604940,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }

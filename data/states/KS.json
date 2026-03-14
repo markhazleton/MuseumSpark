@@ -13,14 +13,14 @@
       "website": "http://www.independencehistoricalmuseum.org/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "123 N 8th St, Independence, KS 67301, USA",
       "address_line2": null,
-      "postal_code": null,
-      "latitude": 37.22549,
-      "longitude": -95.70669,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "postal_code": "67301",
+      "latitude": 37.2241004,
+      "longitude": -95.70838959999999,
+      "place_id": "ChIJQcIRTxUruIcRceO5oW0WJ7c",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "History Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -51,15 +51,16 @@
         "walker_reciprocal",
         "official_website",
         "http://www.independencehistoricalmuseum.org",
-        "museums_csv"
+        "museums_csv",
+        "google_places_api"
       ],
       "confidence": null,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted city 'Independence' from page text; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=3 for Independence; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:06:03Z",
+      "updated_at": "2026-03-14T19:55:42Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'HISTORY MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 3,
-      "phone": "6203313515",
+      "phone": "(620) 331-3515",
       "is_scoreable": false,
       "content_summary": "The **Independence Historical Museum and Art Center** offers a unique dive into the rich tapestry of local history and artistry. Visitors will uncover captivating exhibits that showcase the region's heritage and cultural contributions, making it an essential stop for history enthusiasts and art lovers alike. Don't miss the blend of engaging storytelling and remarkable art that defines this museum's charm.",
       "content_description": "**Independence Historical Museum and Art Center** stands as a beacon of the past in the heart of Independence. This fascinating museum invites visitors to traverse through time, showcasing a vast array of artifacts that encapsulate the local history and heritage. From early pioneer life to the transformative events that shaped the region, each exhibit tells a story waiting to be discovered. The museum's dedication to preserving and presenting these narratives allows guests to connect with the community's roots, fostering an appreciation for the area's journey through the ages.  In addition, the art center features *contemporary* exhibits, providing a platform for local artists to showcase their work and engage with the public, thereby enriching the cultural landscape of Independence.  One of the most engaging aspects of the museum is its interactive displays. Visitors are not just passive observers; they are encouraged to explore, engage, and immerse themselves in the educational journey. Whether it’s through hands-on activities or guided tours, each visit is designed to enhance understanding and appreciation of the area's history and art.  **Architecturally** speaking, the museum maintains a charming facade that reflects the traditional style of the region while housing modern exhibit spaces that highlight both historical and contemporary works. This combination creates a unique atmosphere, drawing visitors into a blend of the past and present.  Whether you're a history buff or an art aficionado, the **Independence Historical Museum and Art Center** promises a memorable experience filled with discovery, learning, and inspiration.",
@@ -72,7 +73,138 @@
       ],
       "content_generated_at": "2026-01-25T02:06:03Z",
       "content_model": "gpt-4o-mini",
-      "content_source": "openai"
+      "content_source": "openai",
+      "website_google": "http://ihmac.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.7,
+      "google_reviews_count": 70,
+      "google_reviews": [
+        {
+          "author_name": "Carol H",
+          "author_url": "https://www.google.com/maps/contrib/112089377482868959224/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK_8lvAFV-0E5MLMAA9rIlMl2VnTSLauR9RHaiGCEmshCpIJQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "10 months ago",
+          "text": "I was visiting a friend in Independence and she took me to visit the Historical Museum & Art Center.  What a delightful experience!\nThe museum is housed in the original town post office; it's a grand old building which has been lovingly preserved, and most of the architectural details are still present.  The main level is primarily an open gallery (which, on the day of our visit, was being prepared for a High Tea fundraiser the next afternoon; it was a treat to see all the lovely place settings at the tables!) with smaller galleries surrounding it (we weren't able to view most of these due to the preparations).  Upstairs are three rooms furnished in the period as, respectively, an upper-class home's dining room; a barber shop; and a shoe shine booth.  The basement is creatively partitioned into roughly twenty \"rooms\" of exhibit spaces, filled with everything from a 1869 log cabin to a general store, a blacksmith's shop, a school room, and other similar reconstructions from Independence's history.  It was fascinating to learn about some of the famous people from Independence, and some of the interesting events that happened there (like the first night game in organized baseball, back in 1930).\nMany thanks to Theresa, our volunteer guide, who was SO welcoming and hospitable and spent some time chatting with us after our tour had finished.  All of the volunteers are so dedicated, and the museum is the showpiece of their devoted work.  Thank you for such a lovely afternoon!",
+          "time": 1746066088,
+          "translated": false
+        },
+        {
+          "author_name": "Wesley Lawrence",
+          "author_url": "https://www.google.com/maps/contrib/116765948226012797993/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUOYWpPhoA6kL_Jqibzcs1y8pxNbRGe84QrY9L0Zmj5cys7CTNd=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Love this place! Came here almost yearly on school field trip, now 20 years later it's still much as I remember it! A must visit if you're in Independence",
+          "time": 1729786004,
+          "translated": false
+        },
+        {
+          "author_name": "Angel Underwood",
+          "author_url": "https://www.google.com/maps/contrib/104570990964425964220/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLwCrA8VbzENmr7thcDrNQNGyVUWtRga3YLLlRyIx092gkyww=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "When here on a whim with my grandkids. They had a blast with a scavenger hunt through the museum. Lots of need historical items. I would definitely recommend!!!",
+          "time": 1760833812,
+          "translated": false
+        },
+        {
+          "author_name": "Carleen's Creations",
+          "author_url": "https://www.google.com/maps/contrib/111442481141097429348/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWolDvR1joxNcwmI6tLGgGSP_Z8eUr3gW0cjPSnLc2UzfbXwdrw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Wonderful hidden gem. My 4 year old and I had a great time looking at everything. They have done a great job setting up a fun and education space.",
+          "time": 1736017488,
+          "translated": false
+        },
+        {
+          "author_name": "Julie Jones",
+          "author_url": "https://www.google.com/maps/contrib/104848999258110816074/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVMEEO32ePsBR-QtM5DIzwWomjpwU6P07d08GC7hlFXN-0vy-NXEQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "I only stopped briefly to purchase post cards, but the staff were friendly.  I will be back when I have time to tour the building.",
+          "time": 1710793952,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ks-unknown-marianna-kistler-beach-museum-of-art",
@@ -91,7 +223,7 @@
       "longitude": -96.5787854,
       "place_id": "ChIJx0Ur44fNvYcR_FEwNR74QNA",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -100,7 +232,7 @@
       "tickets_url": "http://www.facebook.com/salinaartcenter",
       "reservation_required": null,
       "accessibility_url": "https://www.salinaartcenter.org/become-a-member",
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 3,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -112,12 +244,12 @@
       "impressionist_strength": 1,
       "modern_contemporary_strength": 2,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 18,
+      "historical_context_score": 4,
+      "priority_score": 17,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Marianna Kistler Beach Museum of Art has a collection focused on Kansas and regional artists, providing modest contextual value. It does not demonstrate strong national significance or address major art movements, but it serves the local community with educational programming and public accessibility.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence indicates a university art museum whose permanent collection emphasizes Kansas and regional artists (e.g., Curry, Sandzén, Gordon Parks), with no stated Impressionist holdings, so Impressionism is negligible. The presence of 20th-century figures (notably Gordon Parks) supports minor-to-moderate Modern/Contemporary representation, while extensive educational programming and published collection overview suggest good interpretive context. As a regional campus museum with a focused collect",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -126,10 +258,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 4,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kansas' from open data; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Kansas; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(785) 532-7718",
@@ -282,26 +414,27 @@
       "collection_based_strength": 3,
       "collection_based_pas": 2,
       "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "outcome_tier": "Consider",
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-ks-unknown-salina-art-center",
       "country": "USA",
       "state_province": "Kansas",
-      "city": "Manhattan",
+      "city": "Salina",
       "museum_name": "Salina Art Center",
       "alternate_names": null,
       "website": "http://beach.k-state.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "701 Beach Lane",
+      "street_address": "242 S Santa Fe Ave, Salina, KS 67401, USA",
       "address_line2": null,
-      "postal_code": "66506",
-      "latitude": 38.83822,
-      "longitude": -97.60922,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "postal_code": "67401",
+      "latitude": 38.8367143,
+      "longitude": -97.6094732,
+      "place_id": "ChIJk9RaTvbFvIcRpxSlBOF7ZAc",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -325,23 +458,24 @@
       "historical_context_score": 4,
       "priority_score": 6,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Salina Art Center has limited collection presence and is primarily known within its local context, contributing minimally to broader art scholarship. As no significant art historical relevance or collections are identified, it has been assigned low scores.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary describes the Studio Museum in Harlem (not Salina Art Center) as focused on art by African Americans, the African diaspora, and artists from Africa, implying strong Modern/Contemporary emphasis and little to no Impressionist holdings. Extensive interpretive, educational programming and scholarly publications suggest good historical/contextual framing. Its long-standing prominence and NYC location support national-level reputation and a strong but not encyclopedic c",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
         "http://beach.k-state.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: no results; MRD: computed city_tier=2 for Manhattan; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Official site: no applicable fields to fill; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "7854529868",
+      "phone": "(785) 827-1431",
       "is_scoreable": true,
       "content_summary": "The Salina Art Center rewards travelers who like their art scene close-up and community-driven. Though its collection is limited, the Center’s strength is in changing exhibitions that bring contemporary ideas and regional voices into sharp focus—often with a national-level ambition. Expect a relaxed, approachable visit where you can spend real time with each show, explore interdisciplinary programming, and leave with a clearer sense of how art is made, discussed, and experienced in the heart of Kansas.",
       "content_description": "**Salina Art Center** is a compact but intellectually lively stop for art enthusiasts who prefer **fresh exhibitions over encyclopedic collections**. With a reputation that reaches beyond the region, the Center typically leans into contemporary practice—works that foreground *conceptual* thinking, material experimentation, and the kinds of timely themes you’ll recognize from larger-city institutions, scaled to a more intimate viewing experience. Because the permanent holdings are limited, the galleries feel like a series of curated conversations: you’re invited to slow down, read wall texts, and follow an exhibition’s argument from room to room rather than racing through “greatest hits.”\n\nArchitecturally, the appeal is in the experience of a dedicated art space that’s designed for rotating displays—clean sightlines, adaptable galleries, and the satisfying rhythm of moving between focused installations. The museum’s modest size becomes an advantage: you can fully absorb a show in a single visit, then revisit key works without fatigue.\n\nFor travelers, this is an ideal museum to pair with a day in town: drop in for a concentrated dose of contemporary art, catch a talk or hands-on program when available, and enjoy the sense of discovery that comes with seeing what’s on view *right now*. If you collect exhibition catalog memories—photographs, sketches, notes—this is the kind of place that sends you back out inspired rather than overwhelmed.",
@@ -359,7 +493,139 @@
       "collection_based_strength": 1,
       "collection_based_pas": 4,
       "effective_pas": 4,
-      "outcome_tier": "High Priority"
+      "outcome_tier": "High Priority",
+      "website_google": "http://salinaartcenter.org/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1400"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 2:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.6,
+      "google_reviews_count": 87,
+      "google_reviews": [
+        {
+          "author_name": "Amber Starling",
+          "author_url": "https://www.google.com/maps/contrib/106468736301991761251/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVpqGQogUn_4-nzb6r5G2iR71BxySA2frTRRVq28a_s4eFJOffD=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Beautiful gallery with very friendly staff. The main gallery wasn't open when we went-- it was between exhibits-- but the gallery of regional artists was. They have an excellent variety of media and styles, with art that is both decorative and functional.",
+          "time": 1758727465,
+          "translated": false
+        },
+        {
+          "author_name": "Norma Aveyard",
+          "author_url": "https://www.google.com/maps/contrib/101954407317684209238/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVcYC32A8HaVR6-RnkzbtXuQzf2nvfNWgazGlj6LWISjJZstDIkVA=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "See Misty on Sunday afternoon until 2:00 pm",
+          "time": 1768761809,
+          "translated": false
+        },
+        {
+          "author_name": "Cristen Frazier",
+          "author_url": "https://www.google.com/maps/contrib/112230882256178239497/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWDKqVH_EjSBwNx6oxibOdhbOiQiKXI9yMZK2h5Sv4N2Bxknd5r=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Met a friend in Salina for the weekend as it is halfway between our homes. We walked the downtown and noticed all the amazing murals and sculptures. Then, we stumbled into the Art Center. The young lady who helped us and shared info with us was super knowledgeable. She shared interesting info about the exhibits. She shared about how to vote for the art sculptures we had viethein the downtown area.\n\nThe Muse display was so interesting. Watch the YouTube about it if you get a chance.\n\nThey have local artist in the main entrance area and you can get your art on in the space with provided supplies. There is something for everyone.\n\nIf you find yourself in the area, go and enjoy.",
+          "time": 1732642865,
+          "translated": false
+        },
+        {
+          "author_name": "noor elt",
+          "author_url": "https://www.google.com/maps/contrib/106036653821237589268/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW5Ij2_BFlARFnbujUbGFGinyDd6gOEeDErcV0PJmFb3rHk6cdG=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Nice place to visit in Salina ..love this Art gallery..Charming 😍",
+          "time": 1690242952,
+          "translated": false
+        },
+        {
+          "author_name": "Joanna Kerby",
+          "author_url": "https://www.google.com/maps/contrib/100634310569767439880/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKHYz7RB_aMCx2wvnkX_kq00emH66dFdCSTFqz5fRfRaaztzQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "My kiddos were lucky enough to take art lessons with Misty. What a wonderful experience! They learned, created, and had a blast. So thankful for The Art Center!",
+          "time": 1733442550,
+          "translated": false
+        }
+      ],
+      "primary_art_focus": "Modern/Contemporary"
     },
     {
       "museum_id": "usa-ks-unknown-wichita-art-museum",
@@ -378,7 +644,7 @@
       "longitude": -97.35596869999999,
       "place_id": "ChIJu0d-QWPhuocRFulurygjhc8",
       "address_source": "google_places",
-      "address_last_verified": "2026-01-17",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -387,7 +653,7 @@
       "tickets_url": "https://wam.org/friends-of-the-wichita-art-museum-used-book-sales/",
       "reservation_required": null,
       "accessibility_url": "https://wam.org/membership/",
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": null,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -402,9 +668,9 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Wichita Art Museum provides local context by interpreting and preserving the history and culture of the Wichita people, although it lacks a significant number of high-profile collections. Its reputation is primarily regional, serving mostly the local community.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "The provided Wikipedia summary is about the Wichita people rather than the Wichita Art Museum, so there is no direct evidence about the museum’s permanent collection strengths or interpretive approach. Based only on location/institutional signals (Wichita; limited nearby museums), the museum is most plausibly a local-serving institution, but this is a low-confidence inference.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "official_website",
@@ -414,10 +680,10 @@
         "google_places_api",
         "llm_scoring"
       ],
-      "confidence": 3,
+      "confidence": 1,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: no results; City extraction: found 'Kansas' from open data; Official site: fetched homepage; Wikidata: no search results; Nominatim: matched 1 result; Official site: fetched homepage; Official site: no applicable fields to fill; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: computed city_tier=2 for Kansas; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:06:35Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
       "phone": "(316) 268-4921",
@@ -576,14 +842,14 @@
       "website": "http://www.spencerart.ku.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": "1301 Mississippi Street",
+      "street_address": "1301 Mississippi St, Lawrence, KS 66045, USA",
       "address_line2": null,
       "postal_code": "66045",
-      "latitude": 38.9596343,
-      "longitude": -95.2445686,
-      "place_id": null,
-      "address_source": "official_website",
-      "address_last_verified": "2026-01-15",
+      "latitude": 38.9596541,
+      "longitude": -95.2445845,
+      "place_id": "ChIJQSvCc0lvv4cRXrABX6UkwFI",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -607,24 +873,25 @@
       "historical_context_score": 2,
       "priority_score": null,
       "scoring_version": "phase2_v3_mrd2026",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Spencer Museum of Art has a modest collection and serves a primarily local audience, which aligns with its existing assessments. The historical context score indicates a local relevance, as it interprets or preserves cultural history primarily for the immediate community.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Evidence only establishes that Spencer Museum of Art is a university-operated art museum in Lawrence, Kansas, without details on permanent collection strengths or interpretive approach, so those scores are left null. As a university museum in a mid-sized city with no nearby museum signals, it is most plausibly local in reputation. Collection tier is estimated as moderate given the institutional profile but lacks specific collection evidence.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.spencerart.ku.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 3,
+      "confidence": 2,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: fetched homepage; Official site: extracted full address from page text; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: computed city_tier=2 for Lawrence; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: fetched homepage; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-01-25T02:06:45Z",
+      "updated_at": "2026-03-14T20:10:58Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 2,
-      "phone": "7858644710",
+      "phone": "(785) 864-4710",
       "is_scoreable": true,
       "content_summary": "Tucked into the University of Kansas in Lawrence, the Spencer Museum of Art rewards visitors who love looking closely. Its modest-size galleries make it easy to linger—moving from global traditions to modern and contemporary works without feeling overwhelmed. Expect thoughtfully curated exhibitions, strong teaching-museum energy, and frequent rotations that keep repeat visits fresh. For art travelers, it’s a calm, idea-rich stop: excellent wall texts, surprising thematic pairings, and a chance to experience how a university museum connects art to research, community, and new perspectives.",
       "content_description": "**Spencer Museum of Art** in Lawrence is a university art museum that excels at one thing serious art lovers appreciate: making a *modest* collection feel intellectually expansive. As part of the University of Kansas, it operates with a curator-and-student energy—expect shows that are tightly argued, visually rewarding, and often built around smart themes rather than blockbuster scale. Because displays rotate, you’re likely to encounter fresh selections across eras and geographies, with an emphasis on close looking, context, and the pleasures of comparison.\n\nArchitecturally, the museum experience is defined by **human-scale galleries** and an academic setting that encourages unhurried exploration. Think of it as a place to reset your eyes: smaller rooms, quieter pacing, and interpretive materials that invite you into the curatorial process. Rather than grand spectacle, the appeal is the clarity of presentation—works are given space, labels tend to be substantial, and the overall layout supports wandering and revisiting.\n\nFor visitors, the Spencer is especially satisfying if you enjoy the feeling of discovery. You can build your own mini-survey of art history in a single visit—moving between different media and approaches, from works on paper to contemporary pieces—while also catching programming that reflects current questions in art and culture. Plan time for temporary exhibitions and, if available, talks or tours; they’re often the highlight of a teaching museum at its best.",
@@ -638,7 +905,148 @@
       "content_generated_at": "2026-01-25T02:06:45Z",
       "content_model": "gpt-5.2",
       "content_source": "openai",
-      "collection_based_strength": 2
+      "collection_based_strength": 2,
+      "website_google": "https://spencerart.ku.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 319,
+      "google_reviews": [
+        {
+          "author_name": "Kimberley Kreicker",
+          "author_url": "https://www.google.com/maps/contrib/111972611000825853665/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUfRfS_ftMerIPC0Xq0dlkRVKrf6oXJ0skfkMVfIwmjtk0BiXIn=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Beautiful museum with an ever-changing series of unique exhibits. We 💕 this place! Free admission. Free parking on the lower level of the garage across the street - just tell the reception desk your license plate number!",
+          "time": 1762375279,
+          "translated": false
+        },
+        {
+          "author_name": "Wander America",
+          "author_url": "https://www.google.com/maps/contrib/111548764573165685621/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLJZa4wNOswQ6Omn8s92R7H1fPvae3OO6ZDDHxtpgT_U6fZsw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Great free museum located at the University of Kansas. The first floor was the current showcase Native Fasion, and the upper level was their main collection. I enjoyed learning about the artwork on display. The museum was very well lit, and we could really examine the pieces on display. We one ton Thursday night when they are open to 8pm and the parking lot close to the museum is free after 5pm.",
+          "time": 1729091504,
+          "translated": false
+        },
+        {
+          "author_name": "Arthur Walker",
+          "author_url": "https://www.google.com/maps/contrib/115389825226431745226/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMji9qAom5O74V3OP62tfsu6kMaHXXDVYEXJxJIlAyq3SjcaE=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The Spencer Museum of Art offers a rich and engaging cultural experience with a diverse collection of artworks spanning various periods and styles. Exhibits are thoughtfully curated, providing educational and inspiring displays for visitors of all ages. The museum is well maintained, staff are knowledgeable and welcoming, and the atmosphere encourages exploration and appreciation of art. It’s an ideal destination for students, art enthusiasts, and anyone seeking a meaningful cultural outing.",
+          "time": 1768281959,
+          "translated": false
+        },
+        {
+          "author_name": "Harvey Flowers",
+          "author_url": "https://www.google.com/maps/contrib/115199593188777909076/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXTeliekkniI6SjOVSiQHFI4PyK5cCvq_AyTlL-cCbhob2OtmhS=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "This museum has a great permanent display and if you go on Friday the curators can pull works from their archive. I have been coming here since I was a small child and it’s always nice to see what they have in exhibition. Their permanent display has changed since the last time I came and I was pleasantly surprised to see some things I haven’t seen before.",
+          "time": 1680280410,
+          "translated": false
+        },
+        {
+          "author_name": "Heather Brown",
+          "author_url": "https://www.google.com/maps/contrib/109004465834658647860/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVfGPgPWLyXkeDpylpNaMsYgjv9l8qKSQFEOCuWjnTx16crSc8J=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Very nice Art museum and a decent size for a college campus. They have some great permanent collections and the temporary ones are awesome and well thought out. Currently parking is across the street in the visitor parking, but you validate it at the museum easily.",
+          "time": 1711690237,
+          "translated": false
+        }
+      ]
     },
     {
       "museum_id": "usa-ks-wichita-ulrich-museum-of-art",
@@ -650,14 +1058,14 @@
       "website": "http://www.ulrich.wichita.edu/",
       "status": null,
       "last_updated": "2026-01-16",
-      "street_address": null,
+      "street_address": "Wichita State University, 1845 Fairmount St, Wichita, KS 67260, USA",
       "address_line2": null,
       "postal_code": "67260",
-      "latitude": 37.7170636,
-      "longitude": -97.2965924,
-      "place_id": null,
-      "address_source": null,
-      "address_last_verified": null,
+      "latitude": 37.7170582,
+      "longitude": -97.29680789999999,
+      "place_id": "ChIJzwHC9uTiuocRhkB-Ez2xhzY",
+      "address_source": "google_places",
+      "address_last_verified": "2026-03-14",
       "museum_type": "Art Museum",
       "primary_domain": "Art",
       "topics": null,
@@ -666,7 +1074,7 @@
       "tickets_url": null,
       "reservation_required": null,
       "accessibility_url": null,
-      "reputation": 2,
+      "reputation": 3,
       "collection_tier": 2,
       "time_needed": "Half day (2-4 hours)",
       "estimated_visit_minutes": null,
@@ -676,29 +1084,30 @@
       "parking_notes": null,
       "public_transit_notes": null,
       "impressionist_strength": 1,
-      "modern_contemporary_strength": 2,
+      "modern_contemporary_strength": 4,
       "primary_art": "Modern/Contemporary",
-      "historical_context_score": 2,
-      "priority_score": 16,
+      "historical_context_score": 3,
+      "priority_score": 12,
       "scoring_version": "v3.1.T",
-      "scored_by": "gpt-4o-mini",
-      "score_notes": "The Ulrich Museum of Art has a modest collection of modern and contemporary art but lacks depth and significant holdings. It serves primarily a local audience with limited prominence in broader art scholarship.",
-      "score_last_verified": "2026-01-25",
+      "scored_by": "gpt-5.2",
+      "score_notes": "Wikipedia describes the Ulrich Museum of Art as a modern and contemporary art museum, supporting a strong modern/contemporary score and implying little to no focus on Impressionism. As a university-campus museum in Wichita, it is best characterized as primarily local in reputation with a moderate-sized collection; historical context is likely present but not evidenced as a major strength.",
+      "score_last_verified": "2026-03-14",
       "data_sources": [
         "walker_reciprocal",
         "openstreetmap",
         "official_website",
         "http://www.ulrich.wichita.edu",
         "museums_csv",
-        "llm_scoring"
+        "llm_scoring",
+        "google_places_api"
       ],
-      "confidence": 4,
+      "confidence": 3,
       "row_notes_internal": "Seeded from walker-reciprocal roster; needs enrichment.; Wikidata: no search results; Nominatim: matched 1 result; Official site: DNS lookup failed for http://www.ulrich.wichita.edu; Wikidata: no search results; Nominatim: matched 1 result; Nominatim: no applicable fields to fill; MRD: computed city_tier=1 for Wichita; MRD: inferred time_needed='Half day (2-4 hours)' from museum_type; Official site: DNS lookup failed for http://www.ulrich.wichita.edu; Inferred primary_domain=Art from name/type",
       "created_at": "2026-01-15",
-      "updated_at": "2026-03-14T19:41:19Z",
+      "updated_at": "2026-03-14T20:12:07Z",
       "notes": "CSV: phone from IRS 990 database CSV: museum type 'ART MUSEUM' CSV: coordinates from IRS 990 database",
       "city_tier": 1,
-      "phone": "3169783664",
+      "phone": "(316) 978-3664",
       "is_scoreable": true,
       "content_summary": "Set on the Wichita State University campus, the Ulrich Museum of Art offers an inviting, thoughtfully scaled encounter with modern and contemporary art in the heart of Kansas. It’s especially rewarding for visitors who love discovering strong regional holdings, rotating exhibitions, and the energy of a university museum—where scholarship and experimentation meet. Expect a focused gallery experience complemented by outdoor art that turns the campus into an open-air extension of the museum, making it an easy, art-forward stop while exploring Wichita.",
       "content_description": "On the Wichita State University campus, the **Ulrich Museum of Art** delivers a compact but satisfying deep-dive into modern and contemporary art, shaped by the curiosity and rigor of an academic setting. As a regional museum with a *modest* collection, it shines through **careful curation**—pairing collection-based presentations with changing exhibitions that keep repeat visits feeling fresh. For art lovers, the pleasure is in the close looking: a museum scale that encourages you to slow down, trace ideas across media, and connect what’s on the walls to broader currents in *modernism* and *contemporary practice*.\n\nArchitecturally, the Ulrich’s appeal is its **campus-integrated design**: approachable, human-scaled galleries that feel like a calm counterpoint to the bustle of university life. The experience extends beyond the building through the museum’s celebrated outdoor component—often encountered as you walk the grounds—where **sculpture and site** interact in changing light and seasons. It’s an especially enjoyable way to experience *public art* without the pressure of a formal route.\n\nPlan your visit like a traveler who wants both depth and ease: spend time with the current exhibitions, then take a deliberate stroll to see works installed outdoors. The result is a visit that feels distinctly Wichita—grounded, welcoming, and quietly ambitious—offering a memorable blend of gallery viewing and open-air discovery for anyone chasing art beyond the usual big-city circuit.",
@@ -715,10 +1124,141 @@
       "overall_quality_score": 13,
       "collection_based_strength": 2,
       "primary_art_focus": "Modern/Contemporary",
-      "collection_based_pas": 2,
-      "effective_pas": 2,
-      "outcome_tier": "Consider"
+      "collection_based_pas": 4,
+      "effective_pas": 4,
+      "outcome_tier": "Consider",
+      "website_google": "https://ulrich.wichita.edu/",
+      "business_status": "OPERATIONAL",
+      "opening_hours_structured": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 8:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "open_now": true,
+      "google_rating": 4.5,
+      "google_reviews_count": 157,
+      "google_reviews": [
+        {
+          "author_name": "Jan Bush",
+          "author_url": "https://www.google.com/maps/contrib/106366849727590803708/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUaJPzw5DbSoMD9y4_GTw9zrH9YDH9nEC4FQZq7MD-ldh41mqeaJQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Last night I participated in Ulrich’s Art Dive. A great time was had by all. After making art together, we enjoyed gallery talks about two of their major exhibits — Abhidnya Ghuge and Justin Favela. Ghuge’s piece was a large, undulating chicken-wired form filled with paper plates that Ghuge dyed and printed with designs.   Favela filled his room with piñatas depicting his life. Afterwards, we went to Kirby’s and discussed life as art students and the art we had just experienced.\nThe next dive is October 30, 2025.\nGo see these shows. They’re incredible. The Ulrich is free and open late on Thursdays. Bring the kids.",
+          "time": 1757086749,
+          "translated": false
+        },
+        {
+          "author_name": "Kynnedy Moore",
+          "author_url": "https://www.google.com/maps/contrib/114805716813235395830/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUsADntWk7L1dhvpcq31O-cVnG6e6Bsg0fCbhSkPDXIEevDfIHAbw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Despite being an Alum from Wichita State and taking art classes in this building, I’ve only gotten to experience the museum once… 25 minutes before close and I was still blown away by the exhibits!\n\nDefinitely take your time going through to explore the artwork and talent of each artist.",
+          "time": 1714280292,
+          "translated": false
+        },
+        {
+          "author_name": "eva gartnerova",
+          "author_url": "https://www.google.com/maps/contrib/104494589466754751720/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWAFT-bB5MdrIIJY9b2kGdDw-p6GdH0uMHP6IdtdeU20uBIXwxY=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 years ago",
+          "text": "Ulrich Museum is a great place for all art lovers and those seeking inspiration. The museum offers great shows, but also diverse and rich programs. It’s free and open to public. Once you are there, make sure you have time to discover their sculpture outdoor collection which will lead you through the whole campus!",
+          "time": 1645312245,
+          "translated": false
+        },
+        {
+          "author_name": "Tracie Jennings",
+          "author_url": "https://www.google.com/maps/contrib/116491171800315206021/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIHgRXykqmRxf91Pu3R9rBVkz1NfEAO8tQDsuyymrtebO1m6w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Small venue but full of art!! Friendly staff. Located on the beautiful campus of Wichita State.\nThe building is accessible, well lit, and has elevator. The parking can be challenging or short walk. The building has varied exhibits. I will visit again.",
+          "time": 1687320091,
+          "translated": false
+        },
+        {
+          "author_name": "Bowe Wingerd",
+          "author_url": "https://www.google.com/maps/contrib/115935143420890647974/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK-jcix16BlEl3hGqnjDLIpbTQlEk35h_Gs_tRt1GoFA5eYOA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "3 years ago",
+          "text": "Not what I expected.  The Ulrich is a small museum and there's no permanent collection.  There is, however, a good outdoor sculpture collection located throughout the Wichita State University campus.  The outdoor sculpture collection is surprisingly good.  But indoors, the Ulrich is small and the art is underwhelming.",
+          "time": 1666720969,
+          "translated": false
+        }
+      ]
     }
   ],
-  "updated_at": "2026-03-14T19:41:19Z"
+  "updated_at": "2026-03-14T20:12:07Z"
 }
