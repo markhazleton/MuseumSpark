@@ -8,6 +8,10 @@ export default defineConfig({
   // For custom domain or local dev, use: base: '/'
   base: process.env.NODE_ENV === 'production' ? '/MuseumSpark/' : '/',
   plugins: [react(), tailwindcss()],
+  // Prevent dependency optimization from crawling archived HTML under public/data.
+  optimizeDeps: {
+    entries: ['index.html'],
+  },
   server: {
     host: 'localhost',
     port: 5173,
