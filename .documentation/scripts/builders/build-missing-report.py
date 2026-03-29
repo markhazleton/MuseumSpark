@@ -94,8 +94,8 @@ def has_confidence(m: dict[str, Any]) -> bool:
 
 
 def is_full_record(m: dict[str, Any]) -> bool:
-    # Phase 1 spec “FULL” definition.
-    # Intentionally ignores art-scoring fields; those can be layered later.
+    # Defines baseline full-record completeness for phase 1 data quality checks.
+    # Art-scoring fields are intentionally excluded because scoring is layered later.
     for f in PHASE1_SCHEMA_REQUIRED_FIELDS:
         if is_missing(m.get(f)):
             return False

@@ -1,0 +1,2198 @@
+{
+  "report_path": ".documentation/copilot/harvest-2026-03-29.md",
+  "scope": "full",
+  "code_comments": [
+    {
+      "file": ".documentation/scripts/builders/build-missing-report.py",
+      "type": "phase-reference",
+      "line": 97,
+      "pattern": "(?:#|//|<!--)\\s*Phase\\s+\\d+",
+      "text": "# Phase 1 spec “FULL” definition."
+    }
+  ],
+  "path_roots": {
+    "legacy_roots": [],
+    "canonical_documentation": ".documentation/"
+  },
+  "changelog_entries": [],
+  "bak_files": [],
+  "specs": [],
+  "repo_root": "C:/GitHub/MarkHazleton/MuseumSpark",
+  "archive_existing": [
+    ".archive/specify-20260329/memory/constitution.md",
+    ".archive/specify-20260329/scripts/powershell/check-prerequisites.ps1",
+    ".archive/specify-20260329/scripts/powershell/common.ps1",
+    ".archive/specify-20260329/scripts/powershell/create-new-feature.ps1",
+    ".archive/specify-20260329/scripts/powershell/get-pr-context.ps1",
+    ".archive/specify-20260329/scripts/powershell/setup-plan.ps1",
+    ".archive/specify-20260329/scripts/powershell/site-audit.ps1",
+    ".archive/specify-20260329/scripts/powershell/update-agent-context.ps1",
+    ".archive/specify-20260329/templates/agent-file-template.md",
+    ".archive/specify-20260329/templates/checklist-template.md",
+    ".archive/specify-20260329/templates/plan-template.md",
+    ".archive/specify-20260329/templates/spec-template.md",
+    ".archive/specify-20260329/templates/tasks-template.md"
+  ],
+  "summary": {
+    "specs_completed": 0,
+    "bak_files_found": 0,
+    "docs_to_archive": 0,
+    "code_comments_found": 1,
+    "specs_draft": 0,
+    "changelog_gaps": 0,
+    "specs_in_progress": 0
+  },
+  "changelog_gaps": [],
+  "docs": {
+    "all": [
+      {
+        "name": "SPECKIT_VERSION",
+        "size_bytes": 46,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "freshness": 15,
+          "authority": 24,
+          "total": 95,
+          "uniqueness": 18,
+          "operational_relevance": 38
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": "",
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "path": ".documentation/SPECKIT_VERSION"
+      },
+      {
+        "name": "constitution.md",
+        "size_bytes": 7339,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 24,
+          "total": 93,
+          "uniqueness": 18,
+          "operational_relevance": 38
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "path": ".documentation/memory/constitution.md"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 49,
+        "last_modified": "2026-01-16",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/__init__.py"
+      },
+      {
+        "name": "analyze_evidence_gaps.py",
+        "size_bytes": 5513,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/analyze_evidence_gaps.py"
+      },
+      {
+        "name": "analyze_missing.py",
+        "size_bytes": 2257,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/analyze_missing.py"
+      },
+      {
+        "name": "analyze_wikipedia_quality.py",
+        "size_bytes": 4929,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/analyze_wikipedia_quality.py"
+      },
+      {
+        "name": "check_wikipedia_coverage.py",
+        "size_bytes": 2426,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/check_wikipedia_coverage.py"
+      },
+      {
+        "name": "phase2_validation_report.py",
+        "size_bytes": 9459,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phase2_validation_report.py"
+      },
+      {
+        "name": "README.md",
+        "size_bytes": 6707,
+        "last_modified": "2026-01-20",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/README.md"
+      },
+      {
+        "name": "requirements.txt",
+        "size_bytes": 284,
+        "last_modified": "2026-01-20",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".txt",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/requirements.txt"
+      },
+      {
+        "name": "validate_cache_vs_state.py",
+        "size_bytes": 4851,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validate_cache_vs_state.py"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 41,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/__init__.py"
+      },
+      {
+        "name": "build-enriched-index.py",
+        "size_bytes": 9163,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-enriched-index.py"
+      },
+      {
+        "name": "build-index.py",
+        "size_bytes": 14600,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-index.py"
+      },
+      {
+        "name": "build-missing-report.py",
+        "size_bytes": 6805,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-missing-report.py"
+      },
+      {
+        "name": "build-progress.py",
+        "size_bytes": 6713,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-progress.py"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 48,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/__init__.py"
+      },
+      {
+        "name": "phase0_5_wikidata.py",
+        "size_bytes": 16078,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase0_5_wikidata.py"
+      },
+      {
+        "name": "phase0_7_website.py",
+        "size_bytes": 26939,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase0_7_website.py"
+      },
+      {
+        "name": "phase0_identity.py",
+        "size_bytes": 28945,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase0_identity.py"
+      },
+      {
+        "name": "phase1_5_wikipedia.py",
+        "size_bytes": 13494,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_5_wikipedia.py"
+      },
+      {
+        "name": "phase1_75_heuristic_fallback.py",
+        "size_bytes": 18051,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_75_heuristic_fallback.py"
+      },
+      {
+        "name": "phase1_8_csv_lookup.py",
+        "size_bytes": 25164,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_8_csv_lookup.py"
+      },
+      {
+        "name": "phase1_9_planner_metadata.py",
+        "size_bytes": 21235,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_9_planner_metadata.py"
+      },
+      {
+        "name": "PHASE1_9_QUICK_START.md",
+        "size_bytes": 5840,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/PHASE1_9_QUICK_START.md"
+      },
+      {
+        "name": "phase1_backbone.py",
+        "size_bytes": 26639,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_backbone.py"
+      },
+      {
+        "name": "phase2_5_content.py",
+        "size_bytes": 23120,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase2_5_content.py"
+      },
+      {
+        "name": "phase2_scoring.py",
+        "size_bytes": 38372,
+        "last_modified": "2026-03-14",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase2_scoring.py"
+      },
+      {
+        "name": "phase3_priority.py",
+        "size_bytes": 22745,
+        "last_modified": "2026-03-14",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase3_priority.py"
+      },
+      {
+        "name": "phase1_8_csv_lookup.cpython-314.pyc",
+        "size_bytes": 32311,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".pyc",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/__pycache__/phase1_8_csv_lookup.cpython-314.pyc"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 39,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/pipeline/__init__.py"
+      },
+      {
+        "name": "ingest-walker-reciprocal.py",
+        "size_bytes": 12472,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/pipeline/ingest-walker-reciprocal.py"
+      },
+      {
+        "name": "run-complete-pipeline.py",
+        "size_bytes": 16041,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/pipeline/run-complete-pipeline.py"
+      },
+      {
+        "name": "archive-context.ps1",
+        "size_bytes": 6392,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/archive-context.ps1"
+      },
+      {
+        "name": "check-prerequisites.ps1",
+        "size_bytes": 4805,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/check-prerequisites.ps1"
+      },
+      {
+        "name": "common.ps1",
+        "size_bytes": 3849,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/common.ps1"
+      },
+      {
+        "name": "create-new-feature.ps1",
+        "size_bytes": 9509,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/create-new-feature.ps1"
+      },
+      {
+        "name": "evolution-context.ps1",
+        "size_bytes": 6065,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/evolution-context.ps1"
+      },
+      {
+        "name": "get-pr-context.ps1",
+        "size_bytes": 6460,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/get-pr-context.ps1"
+      },
+      {
+        "name": "harvest.ps1",
+        "size_bytes": 26984,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 18,
+        "score_breakdown": {
+          "freshness": 0,
+          "authority": 0,
+          "total": 18,
+          "uniqueness": 8,
+          "operational_relevance": 10
+        },
+        "disposition": "rewrite",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "STALE_REFERENCE",
+        "path": ".documentation/scripts/powershell/harvest.ps1"
+      },
+      {
+        "name": "migrate-to-documentation.ps1",
+        "size_bytes": 19382,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/migrate-to-documentation.ps1"
+      },
+      {
+        "name": "quickfix-context.ps1",
+        "size_bytes": 4238,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/quickfix-context.ps1"
+      },
+      {
+        "name": "release-context.ps1",
+        "size_bytes": 7217,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/release-context.ps1"
+      },
+      {
+        "name": "repo-story-context.ps1",
+        "size_bytes": 20094,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/repo-story-context.ps1"
+      },
+      {
+        "name": "setup-plan.ps1",
+        "size_bytes": 1859,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/setup-plan.ps1"
+      },
+      {
+        "name": "site-audit.ps1",
+        "size_bytes": 18553,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/site-audit.ps1"
+      },
+      {
+        "name": "sync-upstream.ps1",
+        "size_bytes": 35153,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/sync-upstream.ps1"
+      },
+      {
+        "name": "update-agent-context.ps1",
+        "size_bytes": 20198,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/update-agent-context.ps1"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 27,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/__init__.py"
+      },
+      {
+        "name": "validate-json.ps1",
+        "size_bytes": 4145,
+        "last_modified": "2026-01-15",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/validate-json.ps1"
+      },
+      {
+        "name": "validate-json.py",
+        "size_bytes": 3884,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/validate-json.py"
+      },
+      {
+        "name": "validate-walker-reciprocal-csv.py",
+        "size_bytes": 3689,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/validate-walker-reciprocal-csv.py"
+      },
+      {
+        "name": "__init__.cpython-314.pyc",
+        "size_bytes": 209,
+        "last_modified": "2026-01-16",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".pyc",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/__pycache__/__init__.cpython-314.pyc"
+      },
+      {
+        "name": "enrich-open-data.cpython-314.pyc",
+        "size_bytes": 134982,
+        "last_modified": "2026-01-16",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".pyc",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/__pycache__/enrich-open-data.cpython-314.pyc"
+      },
+      {
+        "name": "agent-file-template.md",
+        "size_bytes": 464,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/agent-file-template.md"
+      },
+      {
+        "name": "checklist-template.md",
+        "size_bytes": 1312,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/checklist-template.md"
+      },
+      {
+        "name": "plan-template.md",
+        "size_bytes": 3671,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/plan-template.md"
+      },
+      {
+        "name": "spec-template.md",
+        "size_bytes": 3960,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/spec-template.md"
+      },
+      {
+        "name": "tasks-template.md",
+        "size_bytes": 9177,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/tasks-template.md"
+      }
+    ],
+    "impl_plans": [],
+    "disposition_counts": {
+      "keep": 58,
+      "rewrite": 1
+    },
+    "orphaned_files": [],
+    "release_docs": [],
+    "backup_files": [],
+    "completed_audits": [],
+    "quickfix_records": [],
+    "session_notes": [],
+    "taxonomy_counts": {
+      "OPERATIONS_RUNBOOK": 51,
+      "ENGINEERING_PATTERN": 5,
+      "AUTHORITATIVE_REFERENCE": 2,
+      "STALE_REFERENCE": 1
+    },
+    "completed_reviews": [],
+    "stale_drafts": [],
+    "legacy_root_docs": [],
+    "living_reference": [
+      {
+        "name": "SPECKIT_VERSION",
+        "size_bytes": 46,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "freshness": 15,
+          "authority": 24,
+          "total": 95,
+          "uniqueness": 18,
+          "operational_relevance": 38
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": "",
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "path": ".documentation/SPECKIT_VERSION"
+      },
+      {
+        "name": "constitution.md",
+        "size_bytes": 7339,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 24,
+          "total": 93,
+          "uniqueness": 18,
+          "operational_relevance": 38
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "path": ".documentation/memory/constitution.md"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 49,
+        "last_modified": "2026-01-16",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/__init__.py"
+      },
+      {
+        "name": "analyze_evidence_gaps.py",
+        "size_bytes": 5513,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/analyze_evidence_gaps.py"
+      },
+      {
+        "name": "analyze_missing.py",
+        "size_bytes": 2257,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/analyze_missing.py"
+      },
+      {
+        "name": "analyze_wikipedia_quality.py",
+        "size_bytes": 4929,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/analyze_wikipedia_quality.py"
+      },
+      {
+        "name": "check_wikipedia_coverage.py",
+        "size_bytes": 2426,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/check_wikipedia_coverage.py"
+      },
+      {
+        "name": "phase2_validation_report.py",
+        "size_bytes": 9459,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phase2_validation_report.py"
+      },
+      {
+        "name": "README.md",
+        "size_bytes": 6707,
+        "last_modified": "2026-01-20",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/README.md"
+      },
+      {
+        "name": "requirements.txt",
+        "size_bytes": 284,
+        "last_modified": "2026-01-20",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".txt",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/requirements.txt"
+      },
+      {
+        "name": "validate_cache_vs_state.py",
+        "size_bytes": 4851,
+        "last_modified": "2026-01-18",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validate_cache_vs_state.py"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 41,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/__init__.py"
+      },
+      {
+        "name": "build-enriched-index.py",
+        "size_bytes": 9163,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-enriched-index.py"
+      },
+      {
+        "name": "build-index.py",
+        "size_bytes": 14600,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-index.py"
+      },
+      {
+        "name": "build-missing-report.py",
+        "size_bytes": 6805,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-missing-report.py"
+      },
+      {
+        "name": "build-progress.py",
+        "size_bytes": 6713,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/builders/build-progress.py"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 48,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/__init__.py"
+      },
+      {
+        "name": "phase0_5_wikidata.py",
+        "size_bytes": 16078,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase0_5_wikidata.py"
+      },
+      {
+        "name": "phase0_7_website.py",
+        "size_bytes": 26939,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase0_7_website.py"
+      },
+      {
+        "name": "phase0_identity.py",
+        "size_bytes": 28945,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase0_identity.py"
+      },
+      {
+        "name": "phase1_5_wikipedia.py",
+        "size_bytes": 13494,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_5_wikipedia.py"
+      },
+      {
+        "name": "phase1_75_heuristic_fallback.py",
+        "size_bytes": 18051,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_75_heuristic_fallback.py"
+      },
+      {
+        "name": "phase1_8_csv_lookup.py",
+        "size_bytes": 25164,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_8_csv_lookup.py"
+      },
+      {
+        "name": "phase1_9_planner_metadata.py",
+        "size_bytes": 21235,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_9_planner_metadata.py"
+      },
+      {
+        "name": "PHASE1_9_QUICK_START.md",
+        "size_bytes": 5840,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/PHASE1_9_QUICK_START.md"
+      },
+      {
+        "name": "phase1_backbone.py",
+        "size_bytes": 26639,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase1_backbone.py"
+      },
+      {
+        "name": "phase2_5_content.py",
+        "size_bytes": 23120,
+        "last_modified": "2026-01-24",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase2_5_content.py"
+      },
+      {
+        "name": "phase2_scoring.py",
+        "size_bytes": 38372,
+        "last_modified": "2026-03-14",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase2_scoring.py"
+      },
+      {
+        "name": "phase3_priority.py",
+        "size_bytes": 22745,
+        "last_modified": "2026-03-14",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/phase3_priority.py"
+      },
+      {
+        "name": "phase1_8_csv_lookup.cpython-314.pyc",
+        "size_bytes": 32311,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".pyc",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/phases/__pycache__/phase1_8_csv_lookup.cpython-314.pyc"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 39,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/pipeline/__init__.py"
+      },
+      {
+        "name": "ingest-walker-reciprocal.py",
+        "size_bytes": 12472,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/pipeline/ingest-walker-reciprocal.py"
+      },
+      {
+        "name": "run-complete-pipeline.py",
+        "size_bytes": 16041,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/pipeline/run-complete-pipeline.py"
+      },
+      {
+        "name": "archive-context.ps1",
+        "size_bytes": 6392,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/archive-context.ps1"
+      },
+      {
+        "name": "check-prerequisites.ps1",
+        "size_bytes": 4805,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/check-prerequisites.ps1"
+      },
+      {
+        "name": "common.ps1",
+        "size_bytes": 3849,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/common.ps1"
+      },
+      {
+        "name": "create-new-feature.ps1",
+        "size_bytes": 9509,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/create-new-feature.ps1"
+      },
+      {
+        "name": "evolution-context.ps1",
+        "size_bytes": 6065,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/evolution-context.ps1"
+      },
+      {
+        "name": "get-pr-context.ps1",
+        "size_bytes": 6460,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/get-pr-context.ps1"
+      },
+      {
+        "name": "harvest.ps1",
+        "size_bytes": 26984,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 18,
+        "score_breakdown": {
+          "freshness": 0,
+          "authority": 0,
+          "total": 18,
+          "uniqueness": 8,
+          "operational_relevance": 10
+        },
+        "disposition": "rewrite",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "STALE_REFERENCE",
+        "path": ".documentation/scripts/powershell/harvest.ps1"
+      },
+      {
+        "name": "migrate-to-documentation.ps1",
+        "size_bytes": 19382,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/migrate-to-documentation.ps1"
+      },
+      {
+        "name": "quickfix-context.ps1",
+        "size_bytes": 4238,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/quickfix-context.ps1"
+      },
+      {
+        "name": "release-context.ps1",
+        "size_bytes": 7217,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/release-context.ps1"
+      },
+      {
+        "name": "repo-story-context.ps1",
+        "size_bytes": 20094,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/repo-story-context.ps1"
+      },
+      {
+        "name": "setup-plan.ps1",
+        "size_bytes": 1859,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/setup-plan.ps1"
+      },
+      {
+        "name": "site-audit.ps1",
+        "size_bytes": 18553,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/site-audit.ps1"
+      },
+      {
+        "name": "sync-upstream.ps1",
+        "size_bytes": 35153,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/sync-upstream.ps1"
+      },
+      {
+        "name": "update-agent-context.ps1",
+        "size_bytes": 20198,
+        "last_modified": "2026-03-29",
+        "usefulness_score": 83,
+        "score_breakdown": {
+          "freshness": 14,
+          "authority": 20,
+          "total": 83,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/powershell/update-agent-context.ps1"
+      },
+      {
+        "name": "__init__.py",
+        "size_bytes": 27,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/__init__.py"
+      },
+      {
+        "name": "validate-json.ps1",
+        "size_bytes": 4145,
+        "last_modified": "2026-01-15",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".ps1",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/validate-json.ps1"
+      },
+      {
+        "name": "validate-json.py",
+        "size_bytes": 3884,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/validate-json.py"
+      },
+      {
+        "name": "validate-walker-reciprocal-csv.py",
+        "size_bytes": 3689,
+        "last_modified": "2026-01-17",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".py",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/validation/validate-walker-reciprocal-csv.py"
+      },
+      {
+        "name": "__init__.cpython-314.pyc",
+        "size_bytes": 209,
+        "last_modified": "2026-01-16",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".pyc",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/__pycache__/__init__.cpython-314.pyc"
+      },
+      {
+        "name": "enrich-open-data.cpython-314.pyc",
+        "size_bytes": 134982,
+        "last_modified": "2026-01-16",
+        "usefulness_score": 81,
+        "score_breakdown": {
+          "freshness": 12,
+          "authority": 20,
+          "total": 81,
+          "uniqueness": 15,
+          "operational_relevance": 34
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".pyc",
+        "taxon": "OPERATIONS_RUNBOOK",
+        "path": ".documentation/scripts/__pycache__/enrich-open-data.cpython-314.pyc"
+      },
+      {
+        "name": "agent-file-template.md",
+        "size_bytes": 464,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/agent-file-template.md"
+      },
+      {
+        "name": "checklist-template.md",
+        "size_bytes": 1312,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/checklist-template.md"
+      },
+      {
+        "name": "plan-template.md",
+        "size_bytes": 3671,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/plan-template.md"
+      },
+      {
+        "name": "spec-template.md",
+        "size_bytes": 3960,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/spec-template.md"
+      },
+      {
+        "name": "tasks-template.md",
+        "size_bytes": 9177,
+        "last_modified": "2026-01-30",
+        "usefulness_score": 82,
+        "score_breakdown": {
+          "freshness": 13,
+          "authority": 22,
+          "total": 82,
+          "uniqueness": 16,
+          "operational_relevance": 31
+        },
+        "disposition": "keep",
+        "category": "living_reference",
+        "extension": ".md",
+        "taxon": "ENGINEERING_PATTERN",
+        "path": ".documentation/templates/tasks-template.md"
+      }
+    ]
+  },
+  "harvest_timestamp": "2026-03-29T15:09:47Z",
+  "harvest_date": "2026-03-29"
+}
