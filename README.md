@@ -345,6 +345,13 @@ python scripts/phase2_validation_report.py
 
 ---
 
+## Repo Story
+
+An evidence-based narrative of this repository's development history, contributor patterns, and architecture:
+[Repo Story (2026-04-12)](.documentation/repo-story/repo-story-2026-04-12.md)
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions from developers, data curators, and art enthusiasts!

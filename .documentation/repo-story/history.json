@@ -1,0 +1,733 @@
+{
+  "generated_at": "2026-04-12T23:09:11.4166845+00:00",
+  "audit_parameters": {
+    "months": 12,
+    "scope": "full",
+    "compare_baseline": "2025-04",
+    "since_date": "2025-04-12",
+    "start_month": "2025-04",
+    "end_month": "2026-04"
+  },
+  "repo": {
+    "name": "MuseumSpark",
+    "root": "C:/GitHub/MarkHazleton/MuseumSpark",
+    "remote_origin": "https://github.com/markhazleton/MuseumSpark",
+    "default_branch": "main"
+  },
+  "summary": {
+    "total_commits": 81,
+    "total_commits_in_window": 81,
+    "total_contributors": 3,
+    "total_tags": 0,
+    "history_span_days": 87
+  },
+  "timeline": {
+    "first_commit": {
+      "sha": "160349d37360f3af3bd89cb02170a2bfe5012b4a",
+      "date": "2026-01-15T07:24:02-06:00",
+      "role": "Developer B",
+      "subject": "Initial commit"
+    },
+    "latest_commit": {
+      "sha": "4a5e4b835fb21f902e86027cb75345aa50459a38",
+      "date": "2026-04-12T18:04:42-05:00",
+      "role": "Lead Architect",
+      "subject": "chore(devspark): add defaults, scripts, templates, and agent shims"
+    },
+    "commits_by_year": {
+      "2026": 81
+    },
+    "commits_by_month": {
+      "2026-04": 4,
+      "2026-01": 61,
+      "2026-02": 1,
+      "2026-03": 15
+    }
+  },
+  "contributors": {
+    "top": [
+      {
+        "role": "Lead Architect",
+        "commits": 71
+      },
+      {
+        "role": "Developer A",
+        "commits": 9
+      },
+      {
+        "role": "Developer B",
+        "commits": 1
+      }
+    ],
+    "all_count": 3,
+    "monthly_by_role": {
+      "2026-04": {
+        "Lead Architect": 1,
+        "Developer A": 3
+      },
+      "2026-01": {
+        "Lead Architect": 60,
+        "Developer B": 1
+      },
+      "2026-02": {
+        "Lead Architect": 1
+      },
+      "2026-03": {
+        "Lead Architect": 9,
+        "Developer A": 6
+      }
+    }
+  },
+  "contributor_census": {
+    "role_assignments": [
+      {
+        "role": "Lead Architect",
+        "commits": 71
+      },
+      {
+        "role": "Developer A",
+        "commits": 9
+      },
+      {
+        "role": "Developer B",
+        "commits": 1
+      }
+    ]
+  },
+  "volume_metrics": {
+    "total_commits": 81,
+    "monthly_commit_distribution": {
+      "2026-04": 4,
+      "2026-01": 61,
+      "2026-02": 1,
+      "2026-03": 15
+    },
+    "merged_pr_count": 0,
+    "file_types_top": [
+      {
+        "extension": "json",
+        "touched_files": 4601
+      },
+      {
+        "extension": "md",
+        "touched_files": 393
+      },
+      {
+        "extension": "py",
+        "touched_files": 301
+      },
+      {
+        "extension": "html",
+        "touched_files": 176
+      },
+      {
+        "extension": "ps1",
+        "touched_files": 57
+      },
+      {
+        "extension": "txt",
+        "touched_files": 38
+      },
+      {
+        "extension": "tsx",
+        "touched_files": 35
+      },
+      {
+        "extension": "ts",
+        "touched_files": 21
+      },
+      {
+        "extension": "yml",
+        "touched_files": 11
+      },
+      {
+        "extension": "gitignore",
+        "touched_files": 6
+      },
+      {
+        "extension": "pdf",
+        "touched_files": 5
+      },
+      {
+        "extension": "csv",
+        "touched_files": 4
+      },
+      {
+        "extension": "(no-ext)",
+        "touched_files": 4
+      },
+      {
+        "extension": "xlsx",
+        "touched_files": 2
+      },
+      {
+        "extension": "sqlite",
+        "touched_files": 1
+      },
+      {
+        "extension": "css",
+        "touched_files": 1
+      },
+      {
+        "extension": "js",
+        "touched_files": 1
+      },
+      {
+        "extension": "backup-before-markdown",
+        "touched_files": 1
+      },
+      {
+        "extension": "example",
+        "touched_files": 1
+      },
+      {
+        "extension": "gitkeep",
+        "touched_files": 1
+      }
+    ],
+    "largest_merges": [
+      {
+        "sha": "7d86e90f66b217c6942b45d7483e954ad52f8043",
+        "subject": "Merge branch '001-museum-trip-planner': Complete Pre-MRD Phase enrichment",
+        "files_changed": 134,
+        "additions": 161139,
+        "deletions": 690,
+        "total_lines": 161829
+      }
+    ]
+  },
+  "commit_message_metrics": {
+    "conventional_commit_count": 38,
+    "informal_commit_count": 0,
+    "spec_reference_commit_count": 0
+  },
+  "test_metrics": {
+    "test_file_count": 1879,
+    "test_related_commit_count": 18
+  },
+  "governance_maturity": {
+    "constitution_path": "C:\\GitHub\\MarkHazleton\\MuseumSpark\\.documentation\\memory\\constitution.md",
+    "constitution_exists": true,
+    "constitution_version": "(new) → 1.0.0",
+    "constitution_amendment_count": 0,
+    "active_spec_count": 0,
+    "archived_spec_directory_count": 0,
+    "governance_artifact_count": 1
+  },
+  "milestones": {
+    "tags": [],
+    "readme_evolution": {
+      "total_readme_commits": 6,
+      "commits": [
+        {
+          "sha": "6fd94ef068eccf7af5525b3fb0860e7c7a1f60f4",
+          "date": "2026-01-24T15:53:29-06:00",
+          "role": "Lead Architect",
+          "subject": "Add Phase 1.9: Museum Planner Metadata Integration"
+        },
+        {
+          "sha": "6564c80dbd80d591abbabb20b188c61a0176699b",
+          "date": "2026-01-18T01:12:19-06:00",
+          "role": "Lead Architect",
+          "subject": "Remove deprecated test scripts and add cleanup documentation"
+        },
+        {
+          "sha": "cacf5f807add34c52550ee7b17faab556cfb5782",
+          "date": "2026-01-15T17:33:28-06:00",
+          "role": "Lead Architect",
+          "subject": "feat: Complete Pre-MRD Phase enrichment for all 52 states"
+        },
+        {
+          "sha": "71ebbd7e8a47b79d94434c0d195a774df52d1422",
+          "date": "2026-01-15T13:21:35-06:00",
+          "role": "Lead Architect",
+          "subject": "Add Phase 1 documentation and deployment checklist"
+        },
+        {
+          "sha": "091fd51ee947e8ea88fb1ab3f8db097d85ded48a",
+          "date": "2026-01-15T11:23:59-06:00",
+          "role": "Lead Architect",
+          "subject": "Add scripts for ingesting and validating Walker Art Reciprocal roster"
+        },
+        {
+          "sha": "160349d37360f3af3bd89cb02170a2bfe5012b4a",
+          "date": "2026-01-15T07:24:02-06:00",
+          "role": "Developer B",
+          "subject": "Initial commit"
+        }
+      ]
+    }
+  },
+  "change_patterns": {
+    "subject_type_estimates": {
+      "fixes": 6,
+      "docs": 8,
+      "refactor": 5,
+      "tests": 6,
+      "other": 8,
+      "chore": 8,
+      "features": 34,
+      "ci_build": 6
+    },
+    "hotspots": [
+      {
+        "path": "data/states/AK.json",
+        "changes": 19
+      },
+      {
+        "path": "data/states/OK.json",
+        "changes": 16
+      },
+      {
+        "path": "data/states/AZ.json",
+        "changes": 16
+      },
+      {
+        "path": "data/states/AL.json",
+        "changes": 16
+      },
+      {
+        "path": "data/states/CO.json",
+        "changes": 15
+      },
+      {
+        "path": "data/index/all-museums.json",
+        "changes": 15
+      },
+      {
+        "path": "data/states/CA.json",
+        "changes": 14
+      },
+      {
+        "path": "site/package-lock.json",
+        "changes": 14
+      },
+      {
+        "path": "data/states/AR.json",
+        "changes": 13
+      },
+      {
+        "path": "data/states/FL.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/TX.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/KS.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/NH.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/OR.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/RI.json",
+        "changes": 12
+      },
+      {
+        "path": "scripts/enrich-open-data.py",
+        "changes": 12
+      },
+      {
+        "path": "data/states/MA.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/VT.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/OH.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/ND.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MS.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MN.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NE.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NC.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/CT.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NY.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/DE.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/VA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/KY.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/IN.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NJ.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/DC.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/PA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/IA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MT.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/WA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/IL.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/ME.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/SC.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MO.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/GA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/UT.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/WV.json",
+        "changes": 11
+      },
+      {
+        "path": "scripts/README.md",
+        "changes": 11
+      },
+      {
+        "path": "data/states/WI.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NV.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MD.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NM.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/TN.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MI.json",
+        "changes": 11
+      }
+    ]
+  },
+  "technical_signals": {
+    "language_presence": {
+      "python": true,
+      "javascript": true,
+      "typescript": true,
+      "powershell": true,
+      "shell": true,
+      "markdown": true
+    },
+    "has_pyproject_toml": false,
+    "has_package_json": false,
+    "has_dockerfile": false,
+    "has_github_actions": true
+  },
+  "recent": {
+    "commits": [
+      {
+        "sha": "4a5e4b835fb21f902e86027cb75345aa50459a38",
+        "date": "2026-04-12T18:04:42-05:00",
+        "role": "Lead Architect",
+        "subject": "chore(devspark): add defaults, scripts, templates, and agent shims"
+      },
+      {
+        "sha": "42524e1d4015edbab3f293a1422d977e4135ab4c",
+        "date": "2026-04-12T17:57:48-05:00",
+        "role": "Developer A",
+        "subject": "chore(deps): bump actions/configure-pages in the github-actions group (#9)"
+      },
+      {
+        "sha": "d3249862f098f97b15153edb8a974fa94d146d3c",
+        "date": "2026-04-12T17:57:29-05:00",
+        "role": "Developer A",
+        "subject": "chore(deps): bump the site-runtime-dependencies group (#12)"
+      },
+      {
+        "sha": "18883ab338d421c527b924bfdac8e33a340e285d",
+        "date": "2026-04-12T17:57:16-05:00",
+        "role": "Developer A",
+        "subject": "chore(deps-dev): bump the site-dev-dependencies group across 1 directory with 3 updates (#13)"
+      },
+      {
+        "sha": "56faba86f5b84b148a46c594dc9be212b162ca18",
+        "date": "2026-03-29T15:22:54-05:00",
+        "role": "Lead Architect",
+        "subject": "Add harvest report for 2026-03-29 documenting code comment cleanup and scan results"
+      },
+      {
+        "sha": "114314a6cace08f72385070a21ec40cea76d4a08",
+        "date": "2026-03-29T13:16:49-05:00",
+        "role": "Lead Architect",
+        "subject": "fix(data): normalize invalid values to satisfy schema validation"
+      },
+      {
+        "sha": "705c135595e38496e1a79edef9fc4f11614c0bb5",
+        "date": "2026-03-29T13:16:39-05:00",
+        "role": "Lead Architect",
+        "subject": "chore(spec-kit): upgrade to v1.5.1 and migrate to .documentation"
+      },
+      {
+        "sha": "ffca94969a37afbbc76a643c7a2fe43f2c1eddc9",
+        "date": "2026-03-27T09:03:20-05:00",
+        "role": "Lead Architect",
+        "subject": "fix(site): restrict Vite dep scanning to app entry"
+      },
+      {
+        "sha": "b5a875b2158ae24ac83fa00c6bf46fb6d0cf3d7a",
+        "date": "2026-03-27T08:18:10-05:00",
+        "role": "Developer A",
+        "subject": "chore(deps-dev): merge dependabot site-dev-dependencies updates"
+      },
+      {
+        "sha": "9dc473d5e9977c9ccfc2a22f288c5ae5de4518b6",
+        "date": "2026-03-27T08:17:53-05:00",
+        "role": "Developer A",
+        "subject": "chore(deps): merge dependabot github-actions updates"
+      },
+      {
+        "sha": "a63cd6f0fd2bd22603775222635bcbed5a2c7a59",
+        "date": "2026-03-27T08:14:32-05:00",
+        "role": "Lead Architect",
+        "subject": "chore: update dependencies and devDependencies in package.json"
+      },
+      {
+        "sha": "f49fe0d7ee30311e3988ed5bcc529c5b16cddfdb",
+        "date": "2026-03-27T07:26:08-05:00",
+        "role": "Lead Architect",
+        "subject": "fix: update devDependencies to compatible versions"
+      },
+      {
+        "sha": "9ad1ab9b29419fa3b24c091b3e8bd04512419b0c",
+        "date": "2026-03-26T21:47:35-05:00",
+        "role": "Developer A",
+        "subject": "Merge PR #3: bump flatted to 3.4.2"
+      },
+      {
+        "sha": "4b2c1729094cbce1237012e4486b374c80e86c6d",
+        "date": "2026-03-26T21:47:15-05:00",
+        "role": "Developer A",
+        "subject": "Merge PR #4: bump picomatch to 4.0.4"
+      },
+      {
+        "sha": "7ee1b3673d66730ba39eca5066779ec9a353a8a5",
+        "date": "2026-03-14T15:14:37-05:00",
+        "role": "Lead Architect",
+        "subject": "fix: update devDependencies to compatible versions"
+      },
+      {
+        "sha": "d8012a186c1df4c5a09958ccc8c2a6e3c38b1438",
+        "date": "2026-03-14T14:42:21-05:00",
+        "role": "Lead Architect",
+        "subject": "Refactor ScoringMethodologyPage for MRD v3.1.T: Update scoring descriptions, add Historical Art Traditions dimension, revise Priority Score formula, and enhance Outcome Tier classifications. Improve clarity and consistency in scoring criteria and definitions."
+      },
+      {
+        "sha": "d3c9d646dcddf12a6c471bd64aefa34bafcc2943",
+        "date": "2026-03-14T14:09:43-05:00",
+        "role": "Lead Architect",
+        "subject": "chore(deps): upgrade all /site npm packages including major versions"
+      },
+      {
+        "sha": "65a2fb02fa8356a94ab0aa9cd95ec2422ad02a8c",
+        "date": "2026-03-14T14:03:15-05:00",
+        "role": "Developer A",
+        "subject": "chore(deps): bump rollup from 4.55.1 to 4.59.0 in /site (#1)"
+      },
+      {
+        "sha": "cb89c37c7088579955dbbe1e699a47be03ce3332",
+        "date": "2026-03-14T14:03:06-05:00",
+        "role": "Developer A",
+        "subject": "chore(deps): bump minimatch in /site (#2)"
+      },
+      {
+        "sha": "0f405be261b9dd1ed00a9a4e3d93188c51554288",
+        "date": "2026-02-19T22:23:55-06:00",
+        "role": "Lead Architect",
+        "subject": "Add comprehensive audit report for 2026-02-19"
+      },
+      {
+        "sha": "71c8c328e8f6dcc5294bfd1a5aafc87d973c660d",
+        "date": "2026-01-30T23:26:00-06:00",
+        "role": "Lead Architect",
+        "subject": "Add new scripts and prompts for speckit agents"
+      },
+      {
+        "sha": "fa38e7b9f86fd57b2b75726414394e259219a678",
+        "date": "2026-01-30T21:27:31-06:00",
+        "role": "Lead Architect",
+        "subject": "chore: Update package dependencies to latest versions for improved stability and performance"
+      },
+      {
+        "sha": "51e2fde6ab4d52d95680a860ee309fe1e7c9f713",
+        "date": "2026-01-26T08:25:06-06:00",
+        "role": "Lead Architect",
+        "subject": "Refactor code structure for improved readability and maintainability"
+      },
+      {
+        "sha": "0c1f1ca464b734cbb6844d319ba8d51bdb19d0dd",
+        "date": "2026-01-24T23:59:50-06:00",
+        "role": "Lead Architect",
+        "subject": "feat: Update scoring metrics and descriptions to MRD v3 across DataModelPage, DataPipelinePage, HomePage, and RoadmapPage"
+      },
+      {
+        "sha": "dbc9531c093e4f4147cc5d06b2b6e6091bb19ffa",
+        "date": "2026-01-24T23:57:03-06:00",
+        "role": "Lead Architect",
+        "subject": "Refactor code structure for improved readability and maintainability"
+      },
+      {
+        "sha": "8a1b673765201a726858d8538ed445fb58cee41e",
+        "date": "2026-01-24T18:22:22-06:00",
+        "role": "Lead Architect",
+        "subject": "Refactor museum scoring system to MRD v3: Update scoring fields to 0-5 scale, replace collection_tier with collection_based_strength, and introduce eca_score. Enhance BrowsePage and MuseumDetailPage to reflect new scoring metrics and display must-see candidate status. Revise scoring methodology documentation for clarity and accuracy."
+      },
+      {
+        "sha": "b38d19c95f77a3ec2d80982350d2ff5687901712",
+        "date": "2026-01-24T17:10:32-06:00",
+        "role": "Lead Architect",
+        "subject": "feat: Enhance documentation with GitHub Copilot guidance and session structure"
+      },
+      {
+        "sha": "6fd94ef068eccf7af5525b3fb0860e7c7a1f60f4",
+        "date": "2026-01-24T15:53:29-06:00",
+        "role": "Lead Architect",
+        "subject": "Add Phase 1.9: Museum Planner Metadata Integration"
+      },
+      {
+        "sha": "853639401b039caa7ff2b8f7018f15b1d7daaedf",
+        "date": "2026-01-24T14:44:02-06:00",
+        "role": "Lead Architect",
+        "subject": "update from wikipedia"
+      },
+      {
+        "sha": "88c4a95658c8427a69dc0d5b6d21b5f990658c76",
+        "date": "2026-01-20T23:28:33-06:00",
+        "role": "Lead Architect",
+        "subject": "Add Scoring Methodology Page with detailed scoring system and rubrics"
+      },
+      {
+        "sha": "41afd7a0b09baed90f003fdadc8b9a9f2e6af32f",
+        "date": "2026-01-20T22:27:58-06:00",
+        "role": "Lead Architect",
+        "subject": "feat: Add CSV download functionality to Browse pages with comprehensive data export"
+      },
+      {
+        "sha": "db527d3004838d186dc271b186cf12372f4fb7cd",
+        "date": "2026-01-18T22:39:00-06:00",
+        "role": "Lead Architect",
+        "subject": "Remove outdated cleanup and maintenance guide"
+      },
+      {
+        "sha": "2ba4dbfba2e7836c135f7b20b94859977cd69819",
+        "date": "2026-01-18T09:13:10-06:00",
+        "role": "Lead Architect",
+        "subject": "Add documentation for location extraction libraries, master requirements, museum business data APIs, API keys setup, and GitHub Pages deployment"
+      },
+      {
+        "sha": "f408f3950675ff561001d235a2ceacfc92175176",
+        "date": "2026-01-18T09:08:18-06:00",
+        "role": "Lead Architect",
+        "subject": "Delete implementation status, plan, and feature specification documents for the Museum Trip Planner project as Phase 1 is complete and merged to main."
+      },
+      {
+        "sha": "6564c80dbd80d591abbabb20b188c61a0176699b",
+        "date": "2026-01-18T01:12:19-06:00",
+        "role": "Lead Architect",
+        "subject": "Remove deprecated test scripts and add cleanup documentation"
+      },
+      {
+        "sha": "7a97e80caeb42f5721a0f35abf4bd54c119a4d40",
+        "date": "2026-01-18T00:59:48-06:00",
+        "role": "Lead Architect",
+        "subject": "feat: Update museum data and implement analysis scripts"
+      },
+      {
+        "sha": "54ddb6fda4023a3839c0cd7d60b508d414fb1575",
+        "date": "2026-01-18T00:16:34-06:00",
+        "role": "Lead Architect",
+        "subject": "update and run phase 3"
+      },
+      {
+        "sha": "c60f1d31538de1a06d2158be38a4d5377b16f5a5",
+        "date": "2026-01-18T00:04:12-06:00",
+        "role": "Lead Architect",
+        "subject": "Full Run with backup"
+      },
+      {
+        "sha": "a97bf8fc98d354789a75f8096060a6689f207977",
+        "date": "2026-01-17T12:52:14-06:00",
+        "role": "Lead Architect",
+        "subject": "Add summary JSON files for various phases of data processing for Colorado museums"
+      },
+      {
+        "sha": "69255d173c9e2584013bfcd9bc3ed0ad95cba451",
+        "date": "2026-01-17T12:44:58-06:00",
+        "role": "Lead Architect",
+        "subject": "Add website content and Wikipedia data for various Oklahoma museums; implement content generation script for enhanced museum descriptions"
+      }
+    ]
+  }
+}
