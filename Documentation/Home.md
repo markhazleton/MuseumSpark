@@ -37,7 +37,7 @@ Technical references, API documentation, and requirements
 ### 🤖 [Copilot](copilot/)
 GitHub Copilot instructions and session documentation
 
-- **[GitHub Copilot Instructions](copilot-instructions.md)** - Comprehensive Copilot guidance integrating SpecKit constitution and repository patterns
+- **[GitHub Copilot Instructions](copilot-instructions.md)** - Comprehensive Copilot guidance integrating DevSpark constitution and repository patterns
 - **[Copilot Documentation](copilot/)** - Session notes and copilot-generated exploratory documentation
 
 ## 🚀 Quick Start Paths
@@ -60,7 +60,7 @@ GitHub Copilot instructions and session documentation
 
 ### For AI-Assisted Development
 1. Review [GitHub Copilot Instructions](copilot-instructions.md) for constitutional principles and best practices
-2. Check [SpecKit Constitution](../.specify/memory/constitution.md) for non-negotiable requirements
+2. Check [DevSpark Constitution](../.documentation/memory/constitution.md) for non-negotiable requirements
 3. See [CLAUDE.md](../CLAUDE.md) for runtime development guidance
 
 ## 🔗 Related Documentation

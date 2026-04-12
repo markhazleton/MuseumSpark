@@ -4,7 +4,7 @@
 
 ### Overview
 
-Established GitHub Copilot guidance for the MuseumSpark project, integrating SpecKit constitutional principles with GitHub Copilot best practices.
+Established GitHub Copilot guidance for the MuseumSpark project, integrating DevSpark constitutional principles with GitHub Copilot best practices.
 
 ## Files Created
 
@@ -29,14 +29,14 @@ Established GitHub Copilot guidance for the MuseumSpark project, integrating Spe
 - Language-Specific Standards (Python, TypeScript, JSON)
 - Data Quality Standards
 - Repository Structure Guidelines
-- Development Workflows (SpecKit, Data Pipeline, Schema Evolution)
+- Development Workflows (DevSpark, Data Pipeline, Schema Evolution)
 - Copilot Prompt Patterns
 - Testing Guidelines
 - Common Pitfalls to Avoid
 - Quick Decision Tree
 
 **Integration Points**:
-- ✅ References `.specify/memory/constitution.md` for constitutional principles
+- ✅ References `.documentation/memory/constitution.md` for constitutional principles
 - ✅ Follows existing `CLAUDE.md` patterns for runtime guidance
 - ✅ Links to `Documentation/architecture/DataSetDesign.md` for data model
 - ✅ Links to `Documentation/architecture/MuseumAPI.md` for API specification
@@ -100,7 +100,7 @@ Established GitHub Copilot guidance for the MuseumSpark project, integrating Spe
 
 ✅ **Data-First Architecture**: Instructions emphasize dataset as single source of truth
 ✅ **Schema Validation**: Non-negotiable validation workflow documented
-✅ **Specification-Driven**: SpecKit workflow integrated throughout
+✅ **Specification-Driven**: DevSpark workflow integrated throughout
 ✅ **Algorithmic Integrity**: Priority formula documented and protected
 ✅ **Data Provenance**: Required fields and tracking documented
 ✅ **Backward Compatibility**: Semantic versioning and migration guidance included
@@ -128,8 +128,8 @@ Established GitHub Copilot guidance for the MuseumSpark project, integrating Spe
 - Follows existing output format (`[OK]`, `[ERROR]`, `[WARNING]`)
 
 ### Workflow Integration
-- Integrates SpecKit workflow (Specify → Clarify → Plan → Tasks → Implement → Analyze)
-- References `.specify/` folder structure
+- Integrates DevSpark workflow (Specify → Clarify → Plan → Tasks → Implement → Analyze)
+- References `.documentation/` folder structure
 - Links to pipeline documentation in `scripts/README.md`
 - Follows constitution amendment process
 
@@ -156,7 +156,7 @@ Established GitHub Copilot guidance for the MuseumSpark project, integrating Spe
 ## References
 
 ### Primary Documents
-- [SpecKit Constitution](../../.specify/memory/constitution.md)
+- [DevSpark Constitution](../../.documentation/memory/constitution.md)
 - [CLAUDE.md](../../CLAUDE.md)
 - [Dataset Design](../architecture/DataSetDesign.md)
 - [Museum API](../architecture/MuseumAPI.md)

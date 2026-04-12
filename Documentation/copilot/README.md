@@ -57,7 +57,7 @@ Session folders use ISO date format: `session-YYYYMMDD`
 
 - [Parent: Documentation Home](../README.md)
 - [GitHub Copilot Instructions](../copilot-instructions.md)
-- [SpecKit Constitution](../../.specify/memory/constitution.md)
+- [DevSpark Constitution](../../.documentation/memory/constitution.md)
 - [Development Workflow](../CLAUDE.md)
 
 ---

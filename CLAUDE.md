@@ -16,24 +16,24 @@ The authoritative seed roster is stored in `data/index/walker-reciprocal.csv` (e
 
 ## Current Project Status
 
-This is an early-stage project with comprehensive design documentation but no implemented code yet. The project uses a specification-driven development approach with the Speckit workflow.
+This is an early-stage project with comprehensive design documentation but no implemented code yet. The project uses a specification-driven development approach with the DevSpark workflow.
 
 ## Development Workflow
 
-This project uses **Speckit** for specification-driven development. Speckit commands are available as skills:
+This project uses **DevSpark** for specification-driven development. DevSpark commands are available as skills:
 
-- `speckit.specify` - Create or update feature specifications
-- `speckit.clarify` - Identify underspecified areas and ask clarification questions
-- `speckit.plan` - Execute implementation planning workflow
-- `speckit.tasks` - Generate actionable, dependency-ordered tasks
-- `speckit.implement` - Execute implementation based on tasks
-- `speckit.analyze` - Cross-artifact consistency and quality analysis
-- `speckit.checklist` - Generate custom checklists for features
-- `speckit.taskstoissues` - Convert tasks to GitHub issues
+- `DevSpark.specify` - Create or update feature specifications
+- `DevSpark.clarify` - Identify underspecified areas and ask clarification questions
+- `DevSpark.plan` - Execute implementation planning workflow
+- `DevSpark.tasks` - Generate actionable, dependency-ordered tasks
+- `DevSpark.implement` - Execute implementation based on tasks
+- `DevSpark.analyze` - Cross-artifact consistency and quality analysis
+- `DevSpark.checklist` - Generate custom checklists for features
+- `DevSpark.taskstoissues` - Convert tasks to GitHub issues
 
 The typical workflow is: Specify → Clarify → Plan → Tasks → Implement → Analyze
 
-Templates for specifications, plans, tasks, and checklists are located in `.specify/templates/`.
+Templates for specifications, plans, tasks, and checklists are located in `.devspark/templates/`.
 
 ## Architecture Design
 
@@ -118,7 +118,7 @@ The technology stack has not yet been implemented. When implementing, consider:
 
 Since this is a greenfield project:
 
-1. Use Speckit workflow to create detailed specifications before coding
+1. Use DevSpark workflow to create detailed specifications before coding
 2. Reference the data model in `Documentation/DataSetDesign.md` for entity design
 3. Follow the API schema in `Documentation/MuseumAPI.md` for endpoint implementation
 4. Ensure the priority scoring algorithm is implemented exactly as specified

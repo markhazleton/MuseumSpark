@@ -13,7 +13,7 @@ MuseumSpark is a Museum Trip Planning Application designed to help **Walker Art 
 
 **Key Characteristics**:
 - **Early-stage project**: Comprehensive design documentation with evolving implementation
-- **Specification-driven**: Uses SpecKit workflow (Specify → Clarify → Plan → Tasks → Implement → Analyze)
+- **Specification-driven**: Uses DevSpark workflow (Specify → Clarify → Plan → Tasks → Implement → Analyze)
 - **Data-first architecture**: All features grounded in museum dataset as single source of truth
 - **Quality-focused**: Non-negotiable schema validation and data provenance requirements
 - **Current Phase**: Phase 1 (backbone data enrichment) — 1,269 museums, 0.08% fully enriched
@@ -28,7 +28,7 @@ MuseumSpark is a Museum Trip Planning Application designed to help **Walker Art 
 
 When making suggestions, always respect this authority chain:
 
-1. **[.specify/memory/constitution.md](../.specify/memory/constitution.md)** — Project law, supersedes all other docs
+1. **[.documentation/memory/constitution.md](../.documentation/memory/constitution.md)** — Project law, supersedes all other docs
 2. **[Documentation/architecture/MasterRequirements.md](architecture/MasterRequirements.md)** — Authoritative product requirements (Product Owner)
 3. **[Documentation/architecture/DataSetDesign.md](architecture/DataSetDesign.md)** — Dataset structure and methodology
 4. **[data/schema/museum.schema.json](../data/schema/museum.schema.json)** — Validation rules and field definitions
@@ -39,7 +39,7 @@ When making suggestions, always respect this authority chain:
 
 ## �📋 Constitutional Principles (NON-NEGOTIABLE)
 
-These principles from `.specify/memory/constitution.md` override all other guidance:
+These principles from `.documentation/memory/constitution.md` override all other guidance:
 
 ### 1. Data-First Architecture
 - Dataset structure in `data/schema/museum.schema.json` is authoritative
@@ -55,8 +55,8 @@ These principles from `.specify/memory/constitution.md` override all other guida
   ```
 
 ### 3. Specification-Driven Development
-- No code implementation without approved specification in `.specify/specs/`
-- Follow SpecKit workflow: Specify → Clarify → Plan → Tasks → Implement → Analyze
+- No code implementation without approved specification in `.documentation/specs/`
+- Follow DevSpark workflow: Specify → Clarify → Plan → Tasks → Implement → Analyze
 - Specifications MUST reference `Documentation/architecture/DataSetDesign.md` and `Documentation/architecture/MuseumAPI.md`
 
 ### 4. Algorithmic Integrity
@@ -420,38 +420,38 @@ data/                                 # Dataset and artifacts
 
 ## 🔄 Development Workflows
 
-### SpecKit Workflow
+### DevSpark Workflow
 
 **For all feature development**:
 
-1. **Specify**: Create specification in `.specify/specs/`
+1. **Specify**: Create specification in `.documentation/specs/`
    ```bash
-   # Use speckit.specify skill
+   # Use DevSpark.specify skill
    ```
 
 2. **Clarify**: Identify underspecified areas
    ```bash
-   # Use speckit.clarify skill
+   # Use DevSpark.clarify skill
    ```
 
 3. **Plan**: Execute implementation planning
    ```bash
-   # Use speckit.plan skill
+   # Use DevSpark.plan skill
    ```
 
 4. **Tasks**: Generate actionable tasks
    ```bash
-   # Use speckit.tasks skill
+   # Use DevSpark.tasks skill
    ```
 
 5. **Implement**: Execute implementation
    ```bash
-   # Use speckit.implement skill
+   # Use DevSpark.implement skill
    ```
 
 6. **Analyze**: Cross-artifact consistency check
    ```bash
-   # Use speckit.analyze skill
+   # Use DevSpark.analyze skill
    ```
 
 ### Data Pipeline Workflow
@@ -587,7 +587,7 @@ tests/
 - Use hardcoded paths or credentials
 
 ✅ **Do**:
-- Follow SpecKit workflow
+- Follow DevSpark workflow
 - Place all docs in `/Documentation` with proper structure
 - Use try-except with informative error messages
 - Use environment variables or config files for credentials
@@ -620,7 +620,7 @@ tests/
    - Request/response schemas
    - Authentication requirements
 
-3. **Constitution**: `.specify/memory/constitution.md`
+3. **Constitution**: `.documentation/memory/constitution.md`
    - Non-negotiable principles
    - Governance and compliance
    - Amendment process
@@ -630,7 +630,7 @@ tests/
    - Dependencies and ordering
    - Usage examples
 
-5. **SpecKit Templates**: `.specify/templates/`
+5. **DevSpark Templates**: `.devspark/templates/`
    - Specification template
    - Plan template
    - Tasks template
@@ -640,8 +640,8 @@ tests/
 **"Should I generate this code?"**
 
 ```
-Is there a specification in .specify/specs/?
-├─ No → Create specification first (use speckit.specify)
+Is there a specification in .documentation/specs/?
+├─ No → Create specification first (use DevSpark.specify)
 └─ Yes → Continue
 
 Does it modify the data model?
@@ -728,7 +728,7 @@ python scripts/validate_cache_vs_state.py
 
 **For runtime development guidance, consult [CLAUDE.md](../CLAUDE.md).**
 
-**For constitutional principles, consult [.specify/memory/constitution.md](../.specify/memory/constitution.md).**
+**For constitutional principles, consult [.documentation/memory/constitution.md](../.documentation/memory/constitution.md).**
 
 **For product requirements, consult [Documentation/architecture/MasterRequirements.md](architecture/MasterRequirements.md).**
 
