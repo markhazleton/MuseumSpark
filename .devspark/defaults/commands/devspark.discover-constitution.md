@@ -235,7 +235,7 @@ After questions complete (or user terminates early), generate a draft constituti
 - Constitution amendments require [user input or default: team discussion]
 - Reviews should occur [user input or default: quarterly]
 
-**Version**: 1.6.0-draft | **Generated**: YYYY-MM-DD
+**Version**: 2.0.0-draft | **Generated**: YYYY-MM-DD
 ```
 
 ### 6. Gap Analysis
@@ -379,4 +379,4 @@ If user says "done" before any questions:
 
 ## Context
 
-{ARGS}
+$ARGUMENTS

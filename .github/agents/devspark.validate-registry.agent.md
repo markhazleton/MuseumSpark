@@ -1,11 +1,23 @@
 ---
-name: devspark.validate-registry
-description: DevSpark command for validate-registry
+description: Validate the multi-app registry schema, references, cycles, path existence, and app-local manifest consistency.
 ---
-Follow the instructions in the following files if they exist (3-tier resolution):
-1. .documentation/Mark-Hazleton/commands/devspark.validate-registry.md
-2. .documentation/commands/devspark.validate-registry.md
-3. .devspark/defaults/commands/devspark.validate-registry.md
 
-User Input: {{input}}
-Pass-through instruction: Execute based on the highest-priority file found.
+## Prompt Resolution
+
+Determine the current git user by running `git config user.name`.
+Normalize to a folder-safe slug: lowercase, replace spaces with hyphens, strip non-alphanumeric/hyphen chars.
+
+Read and execute the instructions from the **first file that exists**:
+1. `.documentation/{git-user}/commands/devspark.validate-registry.md` (personalized override)
+2. `.documentation/commands/devspark.validate-registry.md` (team customization)
+3. `.devspark/defaults/commands/devspark.validate-registry.md` (stock default)
+
+Where `{git-user}` is the normalized slug from step above.
+
+## User Input
+
+```text
+$ARGUMENTS
+```
+
+Pass the user input above to the resolved prompt.

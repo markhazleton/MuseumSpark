@@ -7,9 +7,6 @@ handoffs:
   - label: Revise Plan
     agent: devspark.plan
     prompt: Revise plan to address analysis findings
-scripts:
-  sh: .devspark/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks
-  ps: .devspark/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks
 ---
 
 ## User Input
@@ -38,7 +35,9 @@ Read the YAML frontmatter in `spec.md` before analyzing. Treat `classification`,
 
 ### 1. Initialize Analysis Context
 
-Run `{SCRIPT}` once from repo root and parse JSON for FEATURE_DIR and AVAILABLE_DOCS. Derive absolute paths:
+> **Script Resolution**: Before running `.devspark/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
+
+Run `.devspark/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks` once from repo root and parse JSON for FEATURE_DIR and AVAILABLE_DOCS. Derive absolute paths:
 
 - SPEC = FEATURE_DIR/spec.md
 - PLAN = FEATURE_DIR/plan.md
@@ -212,4 +211,21 @@ After producing the report:
 
 ## Context
 
-{ARGS}
+$ARGUMENTS
+
+## Shared Review Resolution Contract Output
+
+When emitting findings (review observations, issues, recommendations), structure each entry to include the shared resolution contract fields so downstream tools (/devspark.address-pr-review, telemetry, harvest) can act on them deterministically:
+
+```yaml
+findings:
+  - finding_id: <stable-id-unique-within-this-command-output>   # e.g., analyze-001, clarify-002
+    severity: critical | high | medium | low
+    description: <1-3 sentence problem statement>
+    recommended_action: <machine-actionable next step>
+    execution_mode: auto | selective | manual
+    status: open                                                  # set to `resolved` after remediation
+    outcome: ""                                                  # populated post-resolution by address-pr-review
+```
+
+inding_id MUST be stable across re-runs when the underlying issue is unchanged. xecution_mode MUST be one of: `auto` (safe to apply automatically), `selective` (apply with reviewer approval), `manual` (requires human implementation). The `status` and `outcome` fields are written by `/devspark.address-pr-review` (FR-028).

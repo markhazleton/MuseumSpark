@@ -7,9 +7,6 @@ handoffs:
   - label: Review PRs
     agent: devspark.pr-review
     prompt: Review recent PRs to gather more data
-scripts:
-  sh: .devspark/scripts/bash/evolution-context.sh $ARGUMENTS --json
-  ps: .devspark/scripts/powershell/evolution-context.ps1 $ARGUMENTS -Json
 ---
 
 ## User Input
@@ -53,7 +50,9 @@ Parse `$ARGUMENTS` for action type:
 
 ### 1. Initialize Evolution Context
 
-Run `{SCRIPT}` to gather context and parse JSON output for:
+> **Script Resolution**: Before running `.devspark/scripts/powershell/evolution-context.ps1 $ARGUMENTS -Json`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
+
+Run `.devspark/scripts/powershell/evolution-context.ps1 $ARGUMENTS -Json` to gather context and parse JSON output for:
 
 - `CONSTITUTION_PATH`: Path to current constitution
 - `CONSTITUTION_EXISTS`: Whether constitution exists

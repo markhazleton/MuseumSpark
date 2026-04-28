@@ -1,15 +1,12 @@
 ---
-description: Archive outdated documentation to .archive/, update Guide.md and CHANGELOG.md so .documentation stays current and clean
+description: Deprecated compatibility alias for /devspark.harvest
 handoffs:
-  - label: Run a site audit after archiving
+  - label: Review Release Artifacts
+    agent: devspark.release
+    prompt: Review completed specs and release documentation before archival
+  - label: Run Documentation Audit
     agent: devspark.site-audit
-    prompt: Run a site audit to confirm the project is in good health after archiving
-  - label: Evolve the constitution
-    agent: devspark.evolve-constitution
-    prompt: Review the constitution in light of the cleaned-up documentation
-scripts:
-  sh: .devspark/scripts/bash/archive-context.sh --json
-  ps: .devspark/scripts/powershell/archive-context.ps1 -Json
+    prompt: Audit documentation quality and stale references before harvest
 ---
 
 ## User Input
@@ -18,24 +15,30 @@ scripts:
 $ARGUMENTS
 ```
 
-You **MUST** consider the user input before proceeding (if not empty). If the user names specific files or directories, prioritize those as archive candidates.
+This command is deprecated and exists only for backward compatibility.
 
-## Overview
+Treat every invocation of `/devspark.archive` as an invocation of `/devspark.harvest`, preserving all user arguments.
 
-Keep `.documentation/` current and authoritative. Move outdated, completed, or contradicting material to `.archive/` with a date-stamped folder. Before moving anything, extract important information into `CHANGELOG.md` and `.documentation/Guide.md` so no knowledge is lost.
+## Required Behavior
 
-**CRITICAL: Never read from `.archive/` during this command or any other command.** The archive folder is write-only from an operational perspective. Past decisions are preserved for audit; they do not drive current work.
+1. Follow the `/devspark.harvest` workflow exactly.
+2. Use harvest terminology in plans and summaries.
+3. If helpful, mention once that `/devspark.archive` is deprecated and that `/devspark.harvest` is the canonical command going forward.
+4. Do not present archive as a separate lifecycle workflow.
 
-## Prerequisites
+## Notes
 
-- Git repository (recommended but not required)
-- `.documentation/` directory exists
+- The compatibility alias remains so existing repos, docs, and user habits do not break immediately.
+- Any long-term documentation or examples should point to `/devspark.harvest` instead.
+- Deprecated compatibility wrappers such as `archive-context` may still exist during the migration window.
 
 ## Outline
 
 ### 1. Gather Context
 
-Run `{SCRIPT}` from the repo root. Parse the JSON output:
+> **Script Resolution**: Before running `.devspark/scripts/powershell/harvest.ps1 $ARGUMENTS -Json`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
+
+Run `.devspark/scripts/powershell/harvest.ps1 $ARGUMENTS -Json` from the repo root. Parse the JSON output:
 
 - `REPO_ROOT` — absolute path to the repository root
 - `ARCHIVE_DIR` — target folder for today's archive (e.g., `.archive/2026-03-07`)

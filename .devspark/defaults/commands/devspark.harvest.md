@@ -1,5 +1,5 @@
 ---
-description: Harvest knowledge from completed specs and stale docs into living documentation, rewrite stale spec-linked comments, then archive obsolete artifacts
+description: Canonical knowledge-preserving cleanup workflow for completed specs, stale docs, comment cleanup, and archival
 handoffs:
   - label: Review Release Artifacts
     agent: devspark.release
@@ -7,9 +7,6 @@ handoffs:
   - label: Run Documentation Audit
     agent: devspark.site-audit
     prompt: Audit documentation quality and stale references before harvest
-scripts:
-  sh: .devspark/scripts/bash/harvest.sh $ARGUMENTS --json
-  ps: .devspark/scripts/powershell/harvest.ps1 $ARGUMENTS -Json
 ---
 
 ## User Input
@@ -23,6 +20,8 @@ You **MUST** consider the user input before proceeding (if not empty).
 ## Overview
 
 Harvest valuable knowledge from completed specs, stale documentation, and in-process drafts into living project documentation, then archive obsolete source material.
+
+`/devspark.harvest` is the canonical lifecycle cleanup command. `/devspark.archive` is a deprecated compatibility alias and should be treated as an invocation of `/devspark.harvest`, not as a separate workflow.
 
 This command is a **knowledge-preserving cleanup** workflow:
 
@@ -61,7 +60,9 @@ Multiple scopes may be combined: `--scope=specs,comments`
 
 ### 1. Initialize Harvest Context
 
-Run `{SCRIPT}` and parse its JSON output.
+> **Script Resolution**: Before running `.devspark/scripts/powershell/harvest.ps1 $ARGUMENTS -Json`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
+
+Run `.devspark/scripts/powershell/harvest.ps1 $ARGUMENTS -Json` and parse its JSON output.
 
 Expected fields include:
 

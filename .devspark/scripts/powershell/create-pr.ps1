@@ -73,8 +73,9 @@ function Get-MarkdownSectionText {
     $capture = $false
     $lines = New-Object System.Collections.Generic.List[string]
     foreach ($line in $content) {
-        if ($line -match '^##\s+(.+)$') {
-            $heading = $matches[1].Trim()
+        $sectionMatch = [regex]::Match($line, '^##\s+(.+)$')
+        if ($sectionMatch.Success) {
+            $heading = $sectionMatch.Groups[1].Value.Trim()
             if ($capture -and $heading -ne $SectionName) {
                 break
             }
@@ -135,7 +136,7 @@ function Find-QuickfixRecordForBranch {
         return $null
     }
 
-    $matches = Get-ChildItem -Path $quickfixDir -Filter *.md -File -ErrorAction SilentlyContinue |
+    $quickfixFiles = Get-ChildItem -Path $quickfixDir -Filter *.md -File -ErrorAction SilentlyContinue |
         Where-Object {
             $content = Get-Content -LiteralPath $_.FullName -Encoding utf8
             $branchLine = $content | Where-Object { $_ -match '^- \*\*Branch\*\*:\s*(.+)$' } | Select-Object -First 1
@@ -143,8 +144,8 @@ function Find-QuickfixRecordForBranch {
         } |
         Sort-Object Name
 
-    if ($matches) {
-        return ($matches | Select-Object -Last 1).FullName
+    if ($quickfixFiles) {
+        return ($quickfixFiles | Select-Object -Last 1).FullName
     }
     return $null
 }
@@ -240,6 +241,45 @@ function Get-CreatePrPreflight {
     $currentBranch = Get-CurrentBranch
     $targetBranch = if ($Base) { $Base } else { Get-DefaultBaseBranch }
     $dirty = [bool](git status --porcelain 2>$null)
+    $localHead = ''
+    $remoteHead = ''
+    $originExists = $false
+    $remoteBranchExists = $false
+    $branchPushedToRemote = $false
+    $branchPushDetails = ''
+
+    try {
+        $localHead = (git rev-parse HEAD 2>$null | Select-Object -First 1).Trim()
+    } catch { }
+
+    try {
+        git remote get-url origin 2>$null | Out-Null
+        if ($LASTEXITCODE -eq 0) {
+            $originExists = $true
+        }
+    } catch { }
+
+    if ($originExists) {
+        try {
+            $remoteLine = (git ls-remote --heads origin "refs/heads/$currentBranch" 2>$null | Select-Object -First 1)
+            if ($remoteLine) {
+                $remoteHead = (($remoteLine -split "`t")[0]).Trim()
+                $remoteBranchExists = [bool]$remoteHead
+            }
+        } catch { }
+    }
+
+    if (-not $originExists) {
+        $branchPushDetails = 'Remote ''origin'' is not configured'
+    } elseif (-not $remoteBranchExists) {
+        $branchPushDetails = "Branch '$currentBranch' has not been pushed to origin"
+    } elseif ($localHead -and $remoteHead -and $localHead -eq $remoteHead) {
+        $branchPushedToRemote = $true
+        $branchPushDetails = "Branch '$currentBranch' is pushed to origin"
+    } else {
+        $branchPushDetails = "Push the latest commits from '$currentBranch' to origin before creating a PR"
+    }
+
     $cliAvailable = [bool](Get-Command gh -ErrorAction SilentlyContinue)
     $authOk = $false
     if ($cliAvailable) {
@@ -324,6 +364,19 @@ function Get-CreatePrPreflight {
         current_branch = $currentBranch
         target_branch = $targetBranch
         dirty_worktree = $dirty
+        prerequisites = [PSCustomObject]@{
+            clean_worktree = (-not $dirty)
+            branch_pushed_to_remote = $branchPushedToRemote
+        }
+        remote = [PSCustomObject]@{
+            name = 'origin'
+            exists = $originExists
+            branch_exists = $remoteBranchExists
+            branch_pushed_to_remote = $branchPushedToRemote
+            local_head = $localHead
+            remote_head = $remoteHead
+            details = $branchPushDetails
+        }
         cli_available = $cliAvailable
         auth_ok = $authOk
         creation_supported = $creationSupported
@@ -362,6 +415,12 @@ function Invoke-CreateOrUpdatePr {
     param([ValidateSet('Create','Update')][string]$Action)
 
     $preflight = Get-CreatePrPreflight
+    if (-not $preflight.prerequisites.clean_worktree) {
+        return (Get-JsonError -Message 'Working tree has unmanaged changes' -Details 'Commit, stash, or discard all changes before creating or updating a PR')
+    }
+    if (-not $preflight.prerequisites.branch_pushed_to_remote) {
+        return (Get-JsonError -Message 'Current branch is not pushed to remote' -Details $preflight.remote.details)
+    }
     if (-not $preflight.creation_supported) {
         return (Get-JsonError -Message 'Automated PR creation is only supported for GitHub in this release' -Details "Platform: $($DevSparkPlatform.Name)")
     }
@@ -389,12 +448,12 @@ function Invoke-CreateOrUpdatePr {
         foreach ($item in $Assignee) { gh pr edit $targetPr --add-assignee $item 2>$null | Out-Null }
         $view = gh pr view $targetPr --json number,url,title,state,isDraft 2>$null | ConvertFrom-Json
     } else {
-        $args = @('pr','create','--title',$Title,'--body',$bodyValue,'--base',$(if ($Base) { $Base } else { $preflight.target_branch }))
-        if ($Draft) { $args += '--draft' }
-        foreach ($item in $Reviewer) { $args += @('--reviewer',$item) }
-        foreach ($item in $Label) { $args += @('--label',$item) }
-        foreach ($item in $Assignee) { $args += @('--assignee',$item) }
-        $created = & gh @args 2>$null
+        $ghCreateCommand = @('pr','create','--title',$Title,'--body',$bodyValue,'--base',$(if ($Base) { $Base } else { $preflight.target_branch }))
+        if ($Draft) { $ghCreateCommand += '--draft' }
+        foreach ($item in $Reviewer) { $ghCreateCommand += @('--reviewer',$item) }
+        foreach ($item in $Label) { $ghCreateCommand += @('--label',$item) }
+        foreach ($item in $Assignee) { $ghCreateCommand += @('--assignee',$item) }
+        $created = & gh @ghCreateCommand 2>$null
         $url = ($created | Select-Object -Last 1)
         if (-not $url) {
             return (Get-JsonError -Message 'Failed to create pull request' -Details 'gh pr create did not return a URL')
