@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-12T23:09:11.4166845+00:00",
+  "generated_at": "2026-04-29T01:44:16.0500839+00:00",
   "audit_parameters": {
     "months": 12,
     "scope": "full",
     "compare_baseline": "2025-04",
-    "since_date": "2025-04-12",
+    "since_date": "2025-04-28",
     "start_month": "2025-04",
     "end_month": "2026-04"
   },
@@ -15,11 +15,11 @@
     "default_branch": "main"
   },
   "summary": {
-    "total_commits": 81,
-    "total_commits_in_window": 81,
+    "total_commits": 89,
+    "total_commits_in_window": 89,
     "total_contributors": 3,
     "total_tags": 0,
-    "history_span_days": 87
+    "history_span_days": 103
   },
   "timeline": {
     "first_commit": {
@@ -29,30 +29,30 @@
       "subject": "Initial commit"
     },
     "latest_commit": {
-      "sha": "4a5e4b835fb21f902e86027cb75345aa50459a38",
-      "date": "2026-04-12T18:04:42-05:00",
+      "sha": "e45de1083ffc87b00a414f9d45ed9e511e19c61f",
+      "date": "2026-04-28T20:35:25-05:00",
       "role": "Lead Architect",
-      "subject": "chore(devspark): add defaults, scripts, templates, and agent shims"
+      "subject": "docs: add v0.0.1 release artifacts"
     },
     "commits_by_year": {
-      "2026": 81
+      "2026": 89
     },
     "commits_by_month": {
-      "2026-04": 4,
-      "2026-01": 61,
+      "2026-03": 15,
       "2026-02": 1,
-      "2026-03": 15
+      "2026-04": 12,
+      "2026-01": 61
     }
   },
   "contributors": {
     "top": [
       {
         "role": "Lead Architect",
-        "commits": 71
+        "commits": 75
       },
       {
         "role": "Developer A",
-        "commits": 9
+        "commits": 13
       },
       {
         "role": "Developer B",
@@ -61,20 +61,20 @@
     ],
     "all_count": 3,
     "monthly_by_role": {
-      "2026-04": {
-        "Lead Architect": 1,
-        "Developer A": 3
-      },
-      "2026-01": {
-        "Lead Architect": 60,
-        "Developer B": 1
+      "2026-03": {
+        "Developer A": 6,
+        "Lead Architect": 9
       },
       "2026-02": {
         "Lead Architect": 1
       },
-      "2026-03": {
-        "Lead Architect": 9,
-        "Developer A": 6
+      "2026-04": {
+        "Developer A": 7,
+        "Lead Architect": 5
+      },
+      "2026-01": {
+        "Lead Architect": 60,
+        "Developer B": 1
       }
     }
   },
@@ -82,11 +82,11 @@
     "role_assignments": [
       {
         "role": "Lead Architect",
-        "commits": 71
+        "commits": 75
       },
       {
         "role": "Developer A",
-        "commits": 9
+        "commits": 13
       },
       {
         "role": "Developer B",
@@ -95,26 +95,26 @@
     ]
   },
   "volume_metrics": {
-    "total_commits": 81,
+    "total_commits": 89,
     "monthly_commit_distribution": {
-      "2026-04": 4,
-      "2026-01": 61,
+      "2026-03": 15,
       "2026-02": 1,
-      "2026-03": 15
+      "2026-04": 12,
+      "2026-01": 61
     },
     "merged_pr_count": 0,
     "file_types_top": [
       {
         "extension": "json",
-        "touched_files": 4601
+        "touched_files": 4610
       },
       {
         "extension": "md",
-        "touched_files": 393
+        "touched_files": 518
       },
       {
         "extension": "py",
-        "touched_files": 301
+        "touched_files": 305
       },
       {
         "extension": "html",
@@ -122,15 +122,15 @@
       },
       {
         "extension": "ps1",
-        "touched_files": 57
-      },
-      {
-        "extension": "txt",
-        "touched_files": 38
+        "touched_files": 68
       },
       {
         "extension": "tsx",
-        "touched_files": 35
+        "touched_files": 39
+      },
+      {
+        "extension": "txt",
+        "touched_files": 39
       },
       {
         "extension": "ts",
@@ -138,10 +138,18 @@
       },
       {
         "extension": "yml",
-        "touched_files": 11
+        "touched_files": 12
+      },
+      {
+        "extension": "yaml",
+        "touched_files": 6
       },
       {
         "extension": "gitignore",
+        "touched_files": 6
+      },
+      {
+        "extension": "gitkeep",
         "touched_files": 6
       },
       {
@@ -149,11 +157,11 @@
         "touched_files": 5
       },
       {
-        "extension": "csv",
-        "touched_files": 4
+        "extension": "(no-ext)",
+        "touched_files": 5
       },
       {
-        "extension": "(no-ext)",
+        "extension": "csv",
         "touched_files": 4
       },
       {
@@ -161,19 +169,11 @@
         "touched_files": 2
       },
       {
+        "extension": "mjs",
+        "touched_files": 1
+      },
+      {
         "extension": "sqlite",
-        "touched_files": 1
-      },
-      {
-        "extension": "css",
-        "touched_files": 1
-      },
-      {
-        "extension": "js",
-        "touched_files": 1
-      },
-      {
-        "extension": "backup-before-markdown",
         "touched_files": 1
       },
       {
@@ -181,7 +181,7 @@
         "touched_files": 1
       },
       {
-        "extension": "gitkeep",
+        "extension": "js",
         "touched_files": 1
       }
     ],
@@ -197,13 +197,13 @@
     ]
   },
   "commit_message_metrics": {
-    "conventional_commit_count": 38,
+    "conventional_commit_count": 46,
     "informal_commit_count": 0,
     "spec_reference_commit_count": 0
   },
   "test_metrics": {
     "test_file_count": 1879,
-    "test_related_commit_count": 18
+    "test_related_commit_count": 19
   },
   "governance_maturity": {
     "constitution_path": "C:\\GitHub\\MarkHazleton\\MuseumSpark\\.documentation\\memory\\constitution.md",
@@ -217,8 +217,14 @@
   "milestones": {
     "tags": [],
     "readme_evolution": {
-      "total_readme_commits": 6,
+      "total_readme_commits": 7,
       "commits": [
+        {
+          "sha": "86e64039bc924ff09c67d8bf321991a59b28b4e0",
+          "date": "2026-04-12T18:22:52-05:00",
+          "role": "Lead Architect",
+          "subject": "chore: downgrade eslint and eslint/js to compatible versions; update globals dependency feat: add repository history documentation for MuseumSpark project docs: create repository story for MuseumSpark detailing project overview, technical analysis, and governance maturity"
+        },
         {
           "sha": "6fd94ef068eccf7af5525b3fb0860e7c7a1f60f4",
           "date": "2026-01-24T15:53:29-06:00",
@@ -260,14 +266,14 @@
   },
   "change_patterns": {
     "subject_type_estimates": {
-      "fixes": 6,
-      "docs": 8,
-      "refactor": 5,
-      "tests": 6,
+      "refactor": 6,
+      "docs": 9,
       "other": 8,
-      "chore": 8,
-      "features": 34,
-      "ci_build": 6
+      "fixes": 6,
+      "chore": 10,
+      "tests": 7,
+      "ci_build": 8,
+      "features": 35
     },
     "hotspots": [
       {
@@ -275,8 +281,8 @@
         "changes": 19
       },
       {
-        "path": "data/states/OK.json",
-        "changes": 16
+        "path": "site/package-lock.json",
+        "changes": 17
       },
       {
         "path": "data/states/AZ.json",
@@ -287,11 +293,15 @@
         "changes": 16
       },
       {
-        "path": "data/states/CO.json",
-        "changes": 15
+        "path": "data/states/OK.json",
+        "changes": 16
       },
       {
         "path": "data/index/all-museums.json",
+        "changes": 15
+      },
+      {
+        "path": "data/states/CO.json",
         "changes": 15
       },
       {
@@ -299,31 +309,15 @@
         "changes": 14
       },
       {
-        "path": "site/package-lock.json",
-        "changes": 14
-      },
-      {
         "path": "data/states/AR.json",
         "changes": 13
       },
       {
-        "path": "data/states/FL.json",
-        "changes": 12
-      },
-      {
-        "path": "data/states/TX.json",
-        "changes": 12
-      },
-      {
-        "path": "data/states/KS.json",
-        "changes": 12
+        "path": "site/package.json",
+        "changes": 13
       },
       {
         "path": "data/states/NH.json",
-        "changes": 12
-      },
-      {
-        "path": "data/states/OR.json",
         "changes": 12
       },
       {
@@ -331,7 +325,19 @@
         "changes": 12
       },
       {
+        "path": "data/states/OH.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/TX.json",
+        "changes": 12
+      },
+      {
         "path": "scripts/enrich-open-data.py",
+        "changes": 12
+      },
+      {
+        "path": "data/states/OR.json",
         "changes": 12
       },
       {
@@ -339,55 +345,19 @@
         "changes": 12
       },
       {
+        "path": "data/states/FL.json",
+        "changes": 12
+      },
+      {
+        "path": "data/states/KS.json",
+        "changes": 12
+      },
+      {
         "path": "data/states/VT.json",
         "changes": 12
       },
       {
-        "path": "data/states/OH.json",
-        "changes": 12
-      },
-      {
-        "path": "data/states/ND.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/MS.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/MN.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/NE.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/NC.json",
-        "changes": 11
-      },
-      {
         "path": "data/states/CT.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/NY.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/DE.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/VA.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/KY.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/IN.json",
         "changes": 11
       },
       {
@@ -395,59 +365,7 @@
         "changes": 11
       },
       {
-        "path": "data/states/DC.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/PA.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/IA.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/MT.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/WA.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/IL.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/ME.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/SC.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/MO.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/GA.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/UT.json",
-        "changes": 11
-      },
-      {
-        "path": "data/states/WV.json",
-        "changes": 11
-      },
-      {
-        "path": "scripts/README.md",
-        "changes": 11
-      },
-      {
-        "path": "data/states/WI.json",
+        "path": "data/states/TN.json",
         "changes": 11
       },
       {
@@ -455,7 +373,23 @@
         "changes": 11
       },
       {
-        "path": "data/states/MD.json",
+        "path": "data/states/IN.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/WA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/WV.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MI.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/ME.json",
         "changes": 11
       },
       {
@@ -463,11 +397,83 @@
         "changes": 11
       },
       {
-        "path": "data/states/TN.json",
+        "path": "data/states/IA.json",
         "changes": 11
       },
       {
-        "path": "data/states/MI.json",
+        "path": "data/states/VA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/ND.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MO.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/DC.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MD.json",
+        "changes": 11
+      },
+      {
+        "path": "scripts/README.md",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MS.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/IL.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NY.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MT.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/UT.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NC.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/KY.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/GA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/SC.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/MN.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/DE.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/PA.json",
+        "changes": 11
+      },
+      {
+        "path": "data/states/NE.json",
         "changes": 11
       }
     ]
@@ -488,6 +494,54 @@
   },
   "recent": {
     "commits": [
+      {
+        "sha": "e45de1083ffc87b00a414f9d45ed9e511e19c61f",
+        "date": "2026-04-28T20:35:25-05:00",
+        "role": "Lead Architect",
+        "subject": "docs: add v0.0.1 release artifacts"
+      },
+      {
+        "sha": "809d9c5daac1bb4e62454698f5b79e2ca36de1e6",
+        "date": "2026-04-28T19:04:01-05:00",
+        "role": "Lead Architect",
+        "subject": "refactor: address site-audit findings and modularize large files"
+      },
+      {
+        "sha": "c07e1f9eec1675378f540a83a11a6bf0f51cbb5c",
+        "date": "2026-04-28T18:30:03-05:00",
+        "role": "Lead Architect",
+        "subject": "chore: upgrade to latest devspark version"
+      },
+      {
+        "sha": "50a70984ff7bedc80be40aed4d387033b7087a3d",
+        "date": "2026-04-23T19:38:36Z",
+        "role": "Developer A",
+        "subject": "chore(deps-dev): bump the site-dev-dependencies group across 1 directory with 8 updates"
+      },
+      {
+        "sha": "9eb886559a42c93193d7cdd3d9e5d68e7d5a7efc",
+        "date": "2026-04-23T19:37:31Z",
+        "role": "Developer A",
+        "subject": "chore(deps): bump the python-dependencies group"
+      },
+      {
+        "sha": "d00bd0d686aa5cada5cdf1bfd54d2cc39c4ab5c4",
+        "date": "2026-04-16T19:37:42Z",
+        "role": "Developer A",
+        "subject": "chore(deps): bump react-router-dom"
+      },
+      {
+        "sha": "e3f52da97e4acc96eed7b8ad88ba48a2567b23a8",
+        "date": "2026-04-16T19:36:49Z",
+        "role": "Developer A",
+        "subject": "chore(deps): bump actions/upload-pages-artifact"
+      },
+      {
+        "sha": "86e64039bc924ff09c67d8bf321991a59b28b4e0",
+        "date": "2026-04-12T18:22:52-05:00",
+        "role": "Lead Architect",
+        "subject": "chore: downgrade eslint and eslint/js to compatible versions; update globals dependency feat: add repository history documentation for MuseumSpark project docs: create repository story for MuseumSpark detailing project overview, technical analysis, and governance maturity"
+      },
       {
         "sha": "4a5e4b835fb21f902e86027cb75345aa50459a38",
         "date": "2026-04-12T18:04:42-05:00",
@@ -679,54 +733,6 @@
         "date": "2026-01-18T22:39:00-06:00",
         "role": "Lead Architect",
         "subject": "Remove outdated cleanup and maintenance guide"
-      },
-      {
-        "sha": "2ba4dbfba2e7836c135f7b20b94859977cd69819",
-        "date": "2026-01-18T09:13:10-06:00",
-        "role": "Lead Architect",
-        "subject": "Add documentation for location extraction libraries, master requirements, museum business data APIs, API keys setup, and GitHub Pages deployment"
-      },
-      {
-        "sha": "f408f3950675ff561001d235a2ceacfc92175176",
-        "date": "2026-01-18T09:08:18-06:00",
-        "role": "Lead Architect",
-        "subject": "Delete implementation status, plan, and feature specification documents for the Museum Trip Planner project as Phase 1 is complete and merged to main."
-      },
-      {
-        "sha": "6564c80dbd80d591abbabb20b188c61a0176699b",
-        "date": "2026-01-18T01:12:19-06:00",
-        "role": "Lead Architect",
-        "subject": "Remove deprecated test scripts and add cleanup documentation"
-      },
-      {
-        "sha": "7a97e80caeb42f5721a0f35abf4bd54c119a4d40",
-        "date": "2026-01-18T00:59:48-06:00",
-        "role": "Lead Architect",
-        "subject": "feat: Update museum data and implement analysis scripts"
-      },
-      {
-        "sha": "54ddb6fda4023a3839c0cd7d60b508d414fb1575",
-        "date": "2026-01-18T00:16:34-06:00",
-        "role": "Lead Architect",
-        "subject": "update and run phase 3"
-      },
-      {
-        "sha": "c60f1d31538de1a06d2158be38a4d5377b16f5a5",
-        "date": "2026-01-18T00:04:12-06:00",
-        "role": "Lead Architect",
-        "subject": "Full Run with backup"
-      },
-      {
-        "sha": "a97bf8fc98d354789a75f8096060a6689f207977",
-        "date": "2026-01-17T12:52:14-06:00",
-        "role": "Lead Architect",
-        "subject": "Add summary JSON files for various phases of data processing for Colorado museums"
-      },
-      {
-        "sha": "69255d173c9e2584013bfcd9bc3ed0ad95cba451",
-        "date": "2026-01-17T12:44:58-06:00",
-        "role": "Lead Architect",
-        "subject": "Add website content and Wikipedia data for various Oklahoma museums; implement content generation script for enhanced museum descriptions"
       }
     ]
   }
