@@ -461,7 +461,7 @@ def should_resolve(museum: dict, *, force: bool = False) -> bool:
     Returns True if:
     - force=True (always re-resolve)
     - city is missing or placeholder
-    - city looks like a state name (the bug we're fixing!)
+    - city looks like a state name and should be corrected
     """
     if force:
         return True
@@ -477,7 +477,7 @@ def should_resolve(museum: dict, *, force: bool = False) -> bool:
     if city.strip().lower() in placeholders:
         return True
 
-    # City looks like a state name (the bug!)
+    # City looks like a state name and needs identity re-resolution.
     state_names = {
         "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
         "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",

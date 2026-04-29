@@ -225,8 +225,8 @@ def compute_city_tier(city, state):
     if city_normalized in TIER_2_SPECIAL:
         return 2
     
-    # TODO: Add US Census population lookup for dynamic tier 2/3 classification
-    # For now, default to Tier 3 (Small town)
+    # Population-backed city tiering is implemented in dedicated enrichment phases;
+    # this index builder intentionally uses a conservative default for unknown cities.
     return 3
 
 
