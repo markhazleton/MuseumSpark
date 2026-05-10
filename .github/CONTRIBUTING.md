@@ -15,7 +15,7 @@ This project and everyone participating in it is governed by the [MuseumSpark Co
 The core of MuseumSpark is the dataset. You can contribute by:
 
 1. **Reporting Errors**: Use the [Data Correction Issue Template](https://github.com/markhazleton/MuseumSpark/issues/new?template=data_correction.yml).
-2. **Enriching Records**: Run the enrichment scripts or manually update state JSON files following the [Schema](data/schema/museum.schema.json).
+2. **Enriching Records**: Run the enrichment scripts or manually update state JSON files following the [Schema](../data/schema/museum.schema.json).
 
 ### 🐛 Reporting Bugs
 

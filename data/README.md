@@ -170,7 +170,7 @@ The index file will be created at `data/index/all-museums.json`.
 
 ## Priority Score Calculation
 
-Priority scores are calculated using the formula from `Documentation/DataSetDesign.md`:
+Priority scores are calculated using the formula from `.documentation/history/architecture/DataSetDesign.md`:
 
 ```
 Priority Score =

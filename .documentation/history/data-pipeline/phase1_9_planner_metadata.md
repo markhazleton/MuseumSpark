@@ -331,7 +331,7 @@ Potential improvements for Phase 1.9:
 
 ## See Also
 
-- [Phase 1 Backbone](phase1_backbone.py) - Deterministic enrichment
-- [Phase 1.8 CSV Lookup](phase1_8_csv_lookup.py) - IRS 990 database enrichment
-- [Phase 2 Scoring](phase2_scoring.py) - Automated LLM scoring
-- [Data Pipeline Overview](../../Documentation/data-pipeline/README.md)
+- [Phase 1 Backbone](../../../scripts/phases/phase1_backbone.py) - Deterministic enrichment
+- [Phase 1.8 CSV Lookup](../../../scripts/phases/phase1_8_csv_lookup.py) - IRS 990 database enrichment
+- [Phase 2 Scoring](../../../scripts/phases/phase2_scoring.py) - Automated LLM scoring
+- [Data Pipeline Overview](../../../scripts/README.md)

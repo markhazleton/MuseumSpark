@@ -25,6 +25,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urlparse
 
+# UTF-8 console encoding for Windows
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CSV_PATH = PROJECT_ROOT / "data" / "index" / "walker-reciprocal.csv"
 

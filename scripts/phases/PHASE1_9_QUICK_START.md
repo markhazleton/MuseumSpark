@@ -29,7 +29,7 @@ python scripts/phases/phase1_9_planner_metadata.py --state CA --force
 ## Typical Workflow
 
 1. **Update the Spreadsheet**
-   - Open `Documentation/_source/museum_planner_MASTER_*.xlsx`
+   - Open `.documentation/history/_source/museum_planner_MASTER_*.xlsx`
    - Add/update scores, notes, tier assignments
    - Save the file
 
@@ -129,7 +129,7 @@ Check for:
 - Use exact name from state JSON file
 
 ### No Spreadsheet Found?
-- Verify file is in `Documentation/_source/`
+- Verify file is in `.documentation/history/_source/`
 - Filename should start with `museum_planner_MASTER`
 - Must be `.xlsx` format
 - Or specify path: `--spreadsheet path/to/file.xlsx`
@@ -196,4 +196,4 @@ Original spreadsheet is never modified.
 
 ## Full Documentation
 
-See [Documentation/data-pipeline/phase1_9_planner_metadata.md](../Documentation/data-pipeline/phase1_9_planner_metadata.md) for complete details.
+See [.documentation/history/data-pipeline/phase1_9_planner_metadata.md](../../.documentation/history/data-pipeline/phase1_9_planner_metadata.md) for complete details.

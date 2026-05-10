@@ -28,18 +28,18 @@ MuseumSpark is a Museum Trip Planning Application designed to help **Walker Art 
 
 When making suggestions, always respect this authority chain:
 
-1. **[.specify/memory/constitution.md](../.specify/memory/constitution.md)** — Project law, supersedes all other docs
-2. **[Documentation/architecture/MasterRequirements.md](architecture/MasterRequirements.md)** — Authoritative product requirements (Product Owner)
-3. **[Documentation/architecture/DataSetDesign.md](architecture/DataSetDesign.md)** — Dataset structure and methodology
+1. **[.documentation/memory/constitution.md](../.documentation/memory/constitution.md)** — Project law, supersedes all other docs
+2. **[.documentation/history/architecture/MasterRequirements.md](../.documentation/history/architecture/MasterRequirements.md)** — Authoritative product requirements (Product Owner)
+3. **[.documentation/history/architecture/DataSetDesign.md](../.documentation/history/architecture/DataSetDesign.md)** — Dataset structure and methodology
 4. **[data/schema/museum.schema.json](../data/schema/museum.schema.json)** — Validation rules and field definitions
-5. **[Documentation/architecture/ApplicationArchitecture.md](architecture/ApplicationArchitecture.md)** — System design
-6. **[Documentation/architecture/MuseumAPI.md](architecture/MuseumAPI.md)** — API specification (Phase 4)
+5. **[.documentation/history/architecture/ApplicationArchitecture.md](../.documentation/history/architecture/ApplicationArchitecture.md)** — System design
+6. **[.documentation/history/architecture/MuseumAPI.md](../.documentation/history/architecture/MuseumAPI.md)** — API specification (Phase 4)
 
 **Never suggest changes that conflict with these documents without explicit user confirmation.**
 
 ## �📋 Constitutional Principles (NON-NEGOTIABLE)
 
-These principles from `.specify/memory/constitution.md` override all other guidance:
+These principles from `.documentation/memory/constitution.md` override all other guidance:
 
 ### 1. Data-First Architecture
 - Dataset structure in `data/schema/museum.schema.json` is authoritative
@@ -55,12 +55,12 @@ These principles from `.specify/memory/constitution.md` override all other guida
   ```
 
 ### 3. Specification-Driven Development
-- No code implementation without approved specification in `.specify/specs/`
+- No code implementation without approved specification in `.documentation/specs/`
 - Follow SpecKit workflow: Specify → Clarify → Plan → Tasks → Implement → Analyze
-- Specifications MUST reference `Documentation/architecture/DataSetDesign.md` and `Documentation/architecture/MuseumAPI.md`
+- Specifications MUST reference `.documentation/history/architecture/DataSetDesign.md` and `.documentation/history/architecture/MuseumAPI.md`
 
 ### 4. Algorithmic Integrity
-- Priority scoring algorithm in `Documentation/architecture/DataSetDesign.md` is canonical
+- Priority scoring algorithm in `.documentation/history/architecture/DataSetDesign.md` is canonical
 - MUST NOT alter without documentation update and versioning
 - All implementations MUST produce identical results given identical inputs
 - Track algorithm version in `scoring_version` field
@@ -353,35 +353,27 @@ Same scale as Impressionist Strength
 
 ### Documentation Organization
 
-**CRITICAL**: All documentation MUST be placed in `/Documentation` folder following this structure:
+**CRITICAL**: All documentation MUST be placed in `/.documentation` following this structure:
 
 ```
-Documentation/
-├── README.md                         # Documentation index
-├── Home.md                           # Full navigation guide
-├── architecture/                     # System design, API specs, data models
-│   ├── ApplicationArchitecture.md
-│   ├── DataSetDesign.md             # Canonical data model
-│   └── MuseumAPI.md                 # API specification
-├── data-pipeline/                    # Enrichment strategies, LLM integration
-│   └── DataEnrichmentStrategy.md
-├── features/                         # Feature specifications and guides
-├── reference/                        # Technical references
-├── setup-deployment/                 # Configuration and deployment
-│   └── API-Keys-Setup.md
-├── copilot/                          # Copilot-specific documentation
-│   └── session-YYYYMMDD/            # Session-specific notes
-└── _source/                          # Source materials for documentation
+.documentation/
+├── memory/                           # Constitution and governance memory
+├── commands/                         # Command overrides
+├── scripts/                          # Script overrides
+├── specs/                            # Feature specifications
+├── releases/                         # Release artifacts
+├── copilot/                          # Copilot-specific docs and session notes
+└── history/                          # Migrated user-facing architecture/reference docs
 ```
 
 **Rules**:
-1. **NEVER** create markdown documents outside `/Documentation` folder
-2. **ALL AI-generated documentation (.md files) MUST go to `/Documentation/copilot/session-{date}/`**
+1. **NEVER** create markdown documents outside `/.documentation`
+2. **ALL AI-generated documentation (.md files) MUST go to `/.documentation/copilot/session-{date}/`**
    - Session notes, analysis, summaries, work logs
    - Use format: `session-YYYYMMDD/` (e.g., `session-20260126/`)
    - **NEVER place .md files in source code folders** (`scripts/`, `site/`, `data/`, etc.)
-3. Place feature documentation in `/Documentation/features/`
-4. Update `/Documentation/README.md` when adding new sections
+3. Place feature documentation in `/.documentation/history/features/`
+4. Update `/.documentation/history/README.md` when adding new sections
 5. Link to canonical documents rather than duplicating content
 6. This file (`.github/copilot-instructions.md`) is the ONLY exception to the /Documentation rule
 
@@ -427,7 +419,7 @@ data/                                 # Dataset and artifacts
 
 **For all feature development**:
 
-1. **Specify**: Create specification in `.specify/specs/`
+1. **Specify**: Create specification in `.documentation/specs/`
    ```bash
    # Use speckit.specify skill
    ```
@@ -482,7 +474,7 @@ data/                                 # Dataset and artifacts
 **Modifying the data model**:
 
 1. Update `data/schema/museum.schema.json` with semantic version bump
-2. Update `Documentation/architecture/DataSetDesign.md`
+2. Update `.documentation/history/architecture/DataSetDesign.md`
 3. Create migration script if needed
 4. Update affected scripts and validators
 5. Test against existing dataset
@@ -533,7 +525,7 @@ data/                                 # Dataset and artifacts
 
 #### Implementing API Endpoint
 ```
-// Implement GET /museums endpoint per Documentation/architecture/MuseumAPI.md
+// Implement GET /museums endpoint per .documentation/history/architecture/MuseumAPI.md
 // Include: Query filtering, pagination, JWT auth check
 // Validate: Response matches schema, error handling for malformed queries
 // Test: Create integration test with sample queries
@@ -585,13 +577,13 @@ tests/
 
 ❌ **Don't**:
 - Implement features without specification
-- Create documentation outside `/Documentation` folder
+- Create documentation outside `/.documentation` folder
 - Skip error handling in pipeline scripts
 - Use hardcoded paths or credentials
 
 ✅ **Do**:
 - Follow SpecKit workflow
-- Place all docs in `/Documentation` with proper structure
+- Place all docs in `/.documentation` with proper structure
 - Use try-except with informative error messages
 - Use environment variables or config files for credentials
 
@@ -599,14 +591,14 @@ tests/
 
 ❌ **Don't**:
 - Create .md files in `scripts/`, `site/`, `data/`, or any source code folder
-- Save session notes or AI analysis outside `/Documentation/copilot/session-{date}/`
+- Save session notes or AI analysis outside `/.documentation/copilot/session-{date}/`
 - Create README.md files in feature branches (update existing docs instead)
 - Generate documentation summaries in working directories
 
 ✅ **Do**:
-- Always use `/Documentation/copilot/session-YYYYMMDD/` for AI-generated content
+- Always use `/.documentation/copilot/session-YYYYMMDD/` for AI-generated content
 - Update existing documentation files rather than creating new ones
-- Link to canonical docs in `/Documentation/architecture/` when referencing specs
+- Link to canonical docs in `/.documentation/history/architecture/` when referencing specs
 
 ### Architecture Violations
 
@@ -626,17 +618,17 @@ tests/
 
 **Always consult these before generating code**:
 
-1. **Data Model**: [Documentation/architecture/DataSetDesign.md](architecture/DataSetDesign.md)
+1. **Data Model**: [.documentation/history/architecture/DataSetDesign.md](../.documentation/history/architecture/DataSetDesign.md)
    - Canonical field definitions
    - Priority scoring algorithm
    - Data quality standards
 
-2. **API Specification**: [Documentation/architecture/MuseumAPI.md](architecture/MuseumAPI.md)
+2. **API Specification**: [.documentation/history/architecture/MuseumAPI.md](../.documentation/history/architecture/MuseumAPI.md)
    - Endpoint definitions
    - Request/response schemas
    - Authentication requirements
 
-3. **Constitution**: `.specify/memory/constitution.md`
+3. **Constitution**: `.documentation/memory/constitution.md`
    - Non-negotiable principles
    - Governance and compliance
    - Amendment process
@@ -646,7 +638,7 @@ tests/
    - Dependencies and ordering
    - Usage examples
 
-5. **SpecKit Templates**: `.specify/templates/`
+5. **DevSpark Templates**: `.devspark/templates/`
    - Specification template
    - Plan template
    - Tasks template
@@ -656,7 +648,7 @@ tests/
 **"Should I generate this code?"**
 
 ```
-Is there a specification in .specify/specs/?
+Is there a specification in .documentation/specs/?
 ├─ No → Create specification first (use speckit.specify)
 └─ Yes → Continue
 
@@ -670,8 +662,8 @@ Does it process museum records?
 
 Does it create documentation?
 ├─ Yes → Is it AI-generated session notes/analysis?
-│   ├─ Yes → Place in /Documentation/copilot/session-YYYYMMDD/
-│   └─ No → Place in /Documentation/features/ or /Documentation/architecture/
+│   ├─ Yes → Place in /.documentation/copilot/session-YYYYMMDD/
+│   └─ No → Place in /.documentation/history/features/ or /.documentation/history/architecture/
 └─ No → Continue
 
 Generate code following:
@@ -730,7 +722,7 @@ python scripts/validate_cache_vs_state.py
 7. **State files are canonical** — index files are derived (rebuild via build-index.py)
 8. **Never Replace Known With Null** — preserve existing data during enrichment
 9. **Python 3.11+ required** — use modern type hints
-10. **AI-generated docs ONLY in /Documentation/copilot/session-{date}/** — never in source folders
+10. **AI-generated docs ONLY in /.documentation/copilot/session-{date}/** — never in source folders
 
 ### Quick Validation Checklist
 - [ ] Does this change align with the constitution?
@@ -740,14 +732,14 @@ python scripts/validate_cache_vs_state.py
 - [ ] Have I preserved existing non-null values?
 - [ ] Have I tracked provenance with data_sources/address_source?
 - [ ] Have I followed the Python 3.11+ standards?
-- [ ] Have I placed AI-generated docs in /Documentation/copilot/session-YYYYMMDD/ (not in source folders)?
+- [ ] Have I placed AI-generated docs in /.documentation/copilot/session-YYYYMMDD/ (not in source folders)?
 
 ---
 
 **For runtime development guidance, consult [CLAUDE.md](../CLAUDE.md).**
 
-**For constitutional principles, consult [.specify/memory/constitution.md](../.specify/memory/constitution.md).**
+**For constitutional principles, consult [.documentation/memory/constitution.md](../.documentation/memory/constitution.md).**
 
-**For product requirements, consult [Documentation/architecture/MasterRequirements.md](architecture/MasterRequirements.md).**
+**For product requirements, consult [.documentation/history/architecture/MasterRequirements.md](../.documentation/history/architecture/MasterRequirements.md).**
 
-**For complete documentation index, visit [Documentation/README.md](README.md).**
+**For complete documentation index, visit [.documentation/history/README.md](../.documentation/history/README.md).**

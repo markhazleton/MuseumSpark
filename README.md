@@ -9,6 +9,8 @@
 ![Dataset](https://img.shields.io/badge/Museums-1,269_Tracked-purple)
 ![Data Quality](https://img.shields.io/badge/Enriched-0.08%25-orange)
 
+**Live Site**: [museum.makeboldspark.com](https://museum.makeboldspark.com)
+
 ---
 
 ## 🎨 About MuseumSpark
@@ -25,6 +27,9 @@ Rather than a simple directory, MuseumSpark provides:
 - **Personalized Experience**: (Coming Phase 4) Save favorites, track visits, generate custom itineraries with AI assistance
 
 Whether planning a 2-hour layover or a weekend art tour, MuseumSpark helps you discover the right museums for your interests and time constraints.
+
+> Built by [Mark Hazleton](https://markhazleton.com) — Technical Solutions Architect  
+> Part of the [MakeBoldSpark](https://makeboldspark.com) portfolio of technical demonstrations.
 
 ---
 
@@ -247,12 +252,12 @@ MuseumSpark/
 │       ├── alabama.json
 │       ├── alaska.json
 │       └── ... (58 states/provinces/territories)
-├── Documentation/        # Architecture and requirements
-│   ├── ApplicationArchitecture.md
-│   ├── MasterRequirements.md
-│   ├── DataEnrichmentStrategy.md
-│   ├── MuseumAPI.md
-│   └── ... (20+ docs)
+├── .documentation/       # Unified AI/user docs + DevSpark overrides
+│   ├── history/          # Migrated legacy product/user-facing docs
+│   ├── memory/           # Constitution and governance memory
+│   ├── commands/         # DevSpark command overrides
+│   ├── releases/         # Release artifacts
+│   └── ...
 ├── scripts/              # Python data pipeline
 │   ├── builders/         # Index building scripts
 │   ├── phases/           # Enrichment phase implementations
@@ -403,7 +408,7 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 - **Issues**: [GitHub Issues](https://github.com/markhazleton/MuseumSpark/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/markhazleton/MuseumSpark/discussions)
-- **Documentation**: [Documentation folder](Documentation/)
+- **Documentation**: [.documentation folder](.documentation/)
 - **Project Updates**: Watch this repository for releases
 
 ---
@@ -411,7 +416,7 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 ## 🧹 Maintenance
 
 For information on project cleanup, archiving old data, and maintaining a clean workspace:
-- See [CLEANUP.md](CLEANUP.md) for maintenance guidelines
+- See [.documentation/copilot/harvest-2026-04-28.md](.documentation/copilot/harvest-2026-04-28.md) for recent maintenance actions
 - Temp files and test runs are automatically gitignored
 - Archive directories preserve historical data without cluttering the workspace
 

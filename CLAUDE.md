@@ -51,7 +51,7 @@ The core entity is a **Museum** record with the following key components:
 
 **Computed Metrics**: Collection-Based PAS, Effective PAS, Priority Score (lower = higher priority), Outcome Tier (Must-See → Background)
 
-Full data model specification is in `Documentation/DataSetDesign.md`.
+Full data model specification is in `.documentation/history/architecture/DataSetDesign.md`.
 
 ### Prioritization Algorithm (MRD v3.1.T)
 
@@ -76,11 +76,11 @@ Priority Score = MAX(1,
 
 Outcome Tier is assigned deterministically (Must-See / High Priority / Regionally Important / Detour / Consider / Background).
 
-Full specification: `Documentation/architecture/MasterRequirements.md` (authoritative), `Documentation/architecture/DataSetDesign.md`.
+Full specification: `.documentation/history/architecture/MasterRequirements.md` (authoritative), `.documentation/history/architecture/DataSetDesign.md`.
 
 ### API Design
 
-RESTful API specification is defined in `Documentation/MuseumAPI.md` with:
+RESTful API specification is defined in `.documentation/history/architecture/MuseumAPI.md` with:
 
 - Base resource: `/museums`
 - Full CRUD operations (GET, POST, PUT, PATCH, DELETE)
@@ -98,11 +98,11 @@ RESTful API specification is defined in `Documentation/MuseumAPI.md` with:
 
 ## Documentation
 
-- `Documentation/DataSetDesign.md` - Complete dataset structure, scoring methodology, and field definitions
-- `Documentation/MuseumAPI.md` - Canonical REST API specification (dataset + personalization + admin)
-- `Documentation/MusuemAPI.md` - Deprecated stub kept for backwards compatibility
-- `Documentation/MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf` - Original project concept (historical source; older naming)
-- `Documentation/MuseumSpark_ Deployment and Architecture Plan.pdf` - Deployment architecture
+- `.documentation/history/architecture/DataSetDesign.md` - Complete dataset structure, scoring methodology, and field definitions
+- `.documentation/history/architecture/MuseumAPI.md` - Canonical REST API specification (dataset + personalization + admin)
+- `.documentation/history/architecture/MusuemAPI.md` - Deprecated stub kept for backwards compatibility
+- `.documentation/history/_source/MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf` - Original project concept (historical source; older naming)
+- `.documentation/history/_source/MuseumSpark_ Deployment and Architecture Plan.pdf` - Deployment architecture
 
 ## Technology Stack
 
@@ -119,7 +119,7 @@ The technology stack has not yet been implemented. When implementing, consider:
 Since this is a greenfield project:
 
 1. Use DevSpark workflow to create detailed specifications before coding
-2. Reference the data model in `Documentation/DataSetDesign.md` for entity design
-3. Follow the API schema in `Documentation/MuseumAPI.md` for endpoint implementation
+2. Reference the data model in `.documentation/history/architecture/DataSetDesign.md` for entity design
+3. Follow the API schema in `.documentation/history/architecture/MuseumAPI.md` for endpoint implementation
 4. Ensure the priority scoring algorithm is implemented exactly as specified
 5. Plan for both U.S. and international museum data from the start

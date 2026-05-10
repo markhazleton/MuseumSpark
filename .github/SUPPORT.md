@@ -14,4 +14,4 @@ If you believe you have found a bug, please create a report using our [Bug Repor
 
 ### Feature Requests
 
-Have a cool idea? Please check if it's already on our [Roadmap](site/src/pages/RoadmapPage.tsx) or in existing [Issues](https://github.com/markhazleton/MuseumSpark/issues). If not, submit a [Feature Request](https://github.com/markhazleton/MuseumSpark/issues/new?template=feature_request.yml).
+Have a cool idea? Please check if it's already on our [Roadmap](../site/src/pages/RoadmapPage.tsx) or in existing [Issues](https://github.com/markhazleton/MuseumSpark/issues). If not, submit a [Feature Request](https://github.com/markhazleton/MuseumSpark/issues/new?template=feature_request.yml).

@@ -5,7 +5,7 @@ This module enriches museums with product owner metadata from the museum_planner
 spreadsheet. This includes manually curated scores, notes, and planning metadata that
 the product owner maintains over time.
 
-Data Source: Documentation/_source/museum_planner_MASTER_*.xlsx
+Data Source: .documentation/history/_source/museum_planner_MASTER_*.xlsx
 
 Fields Provided:
     - planner_priority_score: Product owner's priority score

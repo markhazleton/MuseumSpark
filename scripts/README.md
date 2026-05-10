@@ -5,7 +5,7 @@ This directory contains scripts for validating and managing the MuseumSpark muse
 ## Scripts Overview
 
 ### build-museum-list-csv-from-narm.py
-Builds a structured CSV of every museum listed in `Documentation/_source/NARM-Winter-2025.pdf`.
+Builds a structured CSV of every museum listed in `.documentation/history/_source/NARM-Winter-2025.pdf`.
 
 **Features:**
 - Extracts museums from the NARM roster PDF
@@ -258,6 +258,6 @@ chmod +x scripts/build-index.py
 
 ## Additional Resources
 
-- **Data Model**: See `Documentation/DataSetDesign.md` for complete data model specification
-- **API Specification**: See `Documentation/MuseumAPI.md` for REST API design
+- **Data Model**: See `.documentation/history/architecture/DataSetDesign.md` for complete data model specification
+- **API Specification**: See `.documentation/history/architecture/MuseumAPI.md` for REST API design
 - **Data README**: See `data/README.md` for field definitions and data entry guidelines

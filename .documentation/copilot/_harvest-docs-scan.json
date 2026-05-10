@@ -1,0 +1,1653 @@
+{
+  "changelog_entries": [],
+  "docs": {
+    "orphaned_files": [],
+    "impl_plans": [
+      {
+        "last_modified": "2026-01-15",
+        "category": "impl_plan",
+        "disposition": "keep",
+        "size_bytes": 46607,
+        "name": "AI-LLM-Enrichment-Plan.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/AI-LLM-Enrichment-Plan.md"
+      }
+    ],
+    "stale_drafts": [],
+    "completed_reviews": [],
+    "backup_files": [],
+    "legacy_root_docs": [],
+    "disposition_counts": {
+      "consolidate": 1,
+      "keep": 39,
+      "keep_refresh": 4
+    },
+    "session_notes": [],
+    "completed_audits": [],
+    "quickfix_records": [],
+    "release_docs": [
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 526,
+        "name": "metrics.json",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".json",
+        "path": ".documentation/releases/v0.0.1/metrics.json"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 2011,
+        "name": "release-notes.md",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".md",
+        "path": ".documentation/releases/v0.0.1/release-notes.md"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 29,
+        "name": ".gitkeep",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".gitkeep",
+        "path": ".documentation/releases/v0.0.1/quickfixes/.gitkeep"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 29,
+        "name": ".gitkeep",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".gitkeep",
+        "path": ".documentation/releases/v0.0.1/specs/.gitkeep"
+      }
+    ],
+    "taxonomy_counts": {
+      "HISTORICAL_RECORD": 4,
+      "RESEARCH_OR_CONTEXT": 1,
+      "AUTHORITATIVE_REFERENCE": 39
+    },
+    "living_reference": [
+      {
+        "last_modified": "2026-03-29",
+        "category": "living_reference",
+        "disposition": "consolidate",
+        "size_bytes": 1746,
+        "name": "harvest-2026-03-29.md",
+        "usefulness_score": 46,
+        "score_breakdown": {
+          "total": 46,
+          "authority": 9,
+          "uniqueness": 12,
+          "operational_relevance": 15,
+          "freshness": 10
+        },
+        "taxon": "RESEARCH_OR_CONTEXT",
+        "extension": ".md",
+        "path": ".documentation/copilot/harvest-2026-03-29.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 27719,
+        "name": "copilot-instructions.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot-instructions.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6012,
+        "name": "Home.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/Home.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 2656,
+        "name": "README.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/README.md"
+      },
+      {
+        "last_modified": "2026-01-26",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 15031,
+        "name": "ApplicationArchitecture.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/ApplicationArchitecture.md"
+      },
+      {
+        "last_modified": "2026-03-14",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 16235,
+        "name": "DataSetDesign.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/DataSetDesign.md"
+      },
+      {
+        "last_modified": "2026-03-14",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 29149,
+        "name": "MasterRequirements.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/MasterRequirements.md"
+      },
+      {
+        "last_modified": "2026-01-26",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7539,
+        "name": "MuseumAPI.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/MuseumAPI.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 2486,
+        "name": "README.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/README.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 10548,
+        "name": "2026-01-30_results.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/audit/2026-01-30_results.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7734,
+        "name": "2026-02-19_results.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/audit/2026-02-19_results.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6290,
+        "name": "session-notes.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/session-20260124/session-notes.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 8320,
+        "name": "CACHING_ANALYSIS.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/CACHING_ANALYSIS.md"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 18589,
+        "name": "DataEnrichmentStrategy.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/DataEnrichmentStrategy.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6859,
+        "name": "DataQualityRule-NeverReplaceKnownWithNull.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/DataQualityRule-NeverReplaceKnownWithNull.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 5375,
+        "name": "DataQualityRule-QuickReference.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/DataQualityRule-QuickReference.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6872,
+        "name": "PHASE1_9_CACHING_IMPROVEMENTS.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/PHASE1_9_CACHING_IMPROVEMENTS.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7079,
+        "name": "PHASE1_9_IMPLEMENTATION_SUMMARY.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/PHASE1_9_IMPLEMENTATION_SUMMARY.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 11871,
+        "name": "phase1_9_planner_metadata.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/phase1_9_planner_metadata.md"
+      },
+      {
+        "last_modified": "2026-01-20",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 3471,
+        "name": "csv-export-changelog.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/features/csv-export-changelog.md"
+      },
+      {
+        "last_modified": "2026-01-20",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 3413,
+        "name": "csv-export-quickstart.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/features/csv-export-quickstart.md"
+      },
+      {
+        "last_modified": "2026-01-20",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 5323,
+        "name": "csv-export.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/features/csv-export.md"
+      },
+      {
+        "last_modified": "2026-01-17",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7170,
+        "name": "Google-Places-Free-Tier-Impact.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/reference/Google-Places-Free-Tier-Impact.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6038,
+        "name": "Location-Extraction-Libraries.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/reference/Location-Extraction-Libraries.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 8676,
+        "name": "Museum-Business-Data-APIs.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/reference/Museum-Business-Data-APIs.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6770,
+        "name": "API-Keys-Setup.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/setup-deployment/API-Keys-Setup.md"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 4518,
+        "name": "GitHub-Pages-Setup.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/setup-deployment/GitHub-Pages-Setup.md"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6125,
+        "name": "GitHubPagesDeployment.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/setup-deployment/GitHubPagesDeployment.md"
+      },
+      {
+        "last_modified": "2026-02-19",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 111247,
+        "name": "KY_v3.1.T_Row472_rows463_472_complete.xlsx",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".xlsx",
+        "path": ".documentation/history/_source/KY_v3.1.T_Row472_rows463_472_complete.xlsx"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 33393,
+        "name": "museum_planner_MASTER_2026-01-25_MASTER_v1.4A_CA_NEXT_TIER_PF_NOTES_APPLIED.xlsx",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".xlsx",
+        "path": ".documentation/history/_source/museum_planner_MASTER_2026-01-25_MASTER_v1.4A_CA_NEXT_TIER_PF_NOTES_APPLIED.xlsx"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 102600,
+        "name": "museum-list.csv",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".csv",
+        "path": ".documentation/history/_source/museum-list.csv"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 80091,
+        "name": "MuseumSpark_ Deployment and Architecture Plan.pdf",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".pdf",
+        "path": ".documentation/history/_source/MuseumSpark_ Deployment and Architecture Plan.pdf"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 517806,
+        "name": "MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".pdf",
+        "path": ".documentation/history/_source/MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 449335,
+        "name": "NARM-Winter-2025.pdf",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".pdf",
+        "path": ".documentation/history/_source/NARM-Winter-2025.pdf"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 135055,
+        "name": "walker-reciprocal.html",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".html",
+        "path": ".documentation/history/_source/walker-reciprocal.html"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7459,
+        "name": "constitution.md",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "total": 95,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 15
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/memory/constitution.md"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 22081,
+        "name": "history.json",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "total": 95,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 15
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".json",
+        "path": ".documentation/repo-story/history.json"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 9265,
+        "name": "repo-story-2026-04-12.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/repo-story/repo-story-2026-04-12.md"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 8812,
+        "name": "repo-story-2026-04-28.md",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "total": 95,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 15
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/repo-story/repo-story-2026-04-28.md"
+      }
+    ],
+    "all": [
+      {
+        "last_modified": "2026-03-29",
+        "category": "living_reference",
+        "disposition": "consolidate",
+        "size_bytes": 1746,
+        "name": "harvest-2026-03-29.md",
+        "usefulness_score": 46,
+        "score_breakdown": {
+          "total": 46,
+          "authority": 9,
+          "uniqueness": 12,
+          "operational_relevance": 15,
+          "freshness": 10
+        },
+        "taxon": "RESEARCH_OR_CONTEXT",
+        "extension": ".md",
+        "path": ".documentation/copilot/harvest-2026-03-29.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 27719,
+        "name": "copilot-instructions.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot-instructions.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6012,
+        "name": "Home.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/Home.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 2656,
+        "name": "README.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/README.md"
+      },
+      {
+        "last_modified": "2026-01-26",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 15031,
+        "name": "ApplicationArchitecture.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/ApplicationArchitecture.md"
+      },
+      {
+        "last_modified": "2026-03-14",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 16235,
+        "name": "DataSetDesign.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/DataSetDesign.md"
+      },
+      {
+        "last_modified": "2026-03-14",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 29149,
+        "name": "MasterRequirements.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/MasterRequirements.md"
+      },
+      {
+        "last_modified": "2026-01-26",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7539,
+        "name": "MuseumAPI.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/architecture/MuseumAPI.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 2486,
+        "name": "README.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/README.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 10548,
+        "name": "2026-01-30_results.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/audit/2026-01-30_results.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7734,
+        "name": "2026-02-19_results.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/audit/2026-02-19_results.md"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6290,
+        "name": "session-notes.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/copilot/session-20260124/session-notes.md"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "impl_plan",
+        "disposition": "keep",
+        "size_bytes": 46607,
+        "name": "AI-LLM-Enrichment-Plan.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/AI-LLM-Enrichment-Plan.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 8320,
+        "name": "CACHING_ANALYSIS.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/CACHING_ANALYSIS.md"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 18589,
+        "name": "DataEnrichmentStrategy.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/DataEnrichmentStrategy.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6859,
+        "name": "DataQualityRule-NeverReplaceKnownWithNull.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/DataQualityRule-NeverReplaceKnownWithNull.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 5375,
+        "name": "DataQualityRule-QuickReference.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/DataQualityRule-QuickReference.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6872,
+        "name": "PHASE1_9_CACHING_IMPROVEMENTS.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/PHASE1_9_CACHING_IMPROVEMENTS.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7079,
+        "name": "PHASE1_9_IMPLEMENTATION_SUMMARY.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/PHASE1_9_IMPLEMENTATION_SUMMARY.md"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 11871,
+        "name": "phase1_9_planner_metadata.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/data-pipeline/phase1_9_planner_metadata.md"
+      },
+      {
+        "last_modified": "2026-01-20",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 3471,
+        "name": "csv-export-changelog.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/features/csv-export-changelog.md"
+      },
+      {
+        "last_modified": "2026-01-20",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 3413,
+        "name": "csv-export-quickstart.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/features/csv-export-quickstart.md"
+      },
+      {
+        "last_modified": "2026-01-20",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 5323,
+        "name": "csv-export.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/features/csv-export.md"
+      },
+      {
+        "last_modified": "2026-01-17",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7170,
+        "name": "Google-Places-Free-Tier-Impact.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/reference/Google-Places-Free-Tier-Impact.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6038,
+        "name": "Location-Extraction-Libraries.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/reference/Location-Extraction-Libraries.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 8676,
+        "name": "Museum-Business-Data-APIs.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/reference/Museum-Business-Data-APIs.md"
+      },
+      {
+        "last_modified": "2026-01-16",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6770,
+        "name": "API-Keys-Setup.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/setup-deployment/API-Keys-Setup.md"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 4518,
+        "name": "GitHub-Pages-Setup.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/setup-deployment/GitHub-Pages-Setup.md"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 6125,
+        "name": "GitHubPagesDeployment.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/history/setup-deployment/GitHubPagesDeployment.md"
+      },
+      {
+        "last_modified": "2026-02-19",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 111247,
+        "name": "KY_v3.1.T_Row472_rows463_472_complete.xlsx",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".xlsx",
+        "path": ".documentation/history/_source/KY_v3.1.T_Row472_rows463_472_complete.xlsx"
+      },
+      {
+        "last_modified": "2026-01-24",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 33393,
+        "name": "museum_planner_MASTER_2026-01-25_MASTER_v1.4A_CA_NEXT_TIER_PF_NOTES_APPLIED.xlsx",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".xlsx",
+        "path": ".documentation/history/_source/museum_planner_MASTER_2026-01-25_MASTER_v1.4A_CA_NEXT_TIER_PF_NOTES_APPLIED.xlsx"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 102600,
+        "name": "museum-list.csv",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".csv",
+        "path": ".documentation/history/_source/museum-list.csv"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 80091,
+        "name": "MuseumSpark_ Deployment and Architecture Plan.pdf",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".pdf",
+        "path": ".documentation/history/_source/MuseumSpark_ Deployment and Architecture Plan.pdf"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 517806,
+        "name": "MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".pdf",
+        "path": ".documentation/history/_source/MuseumSpark_ React + ChatGPT-Powered Trip Planner on Azure.pdf"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 449335,
+        "name": "NARM-Winter-2025.pdf",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".pdf",
+        "path": ".documentation/history/_source/NARM-Winter-2025.pdf"
+      },
+      {
+        "last_modified": "2026-01-15",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 135055,
+        "name": "walker-reciprocal.html",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".html",
+        "path": ".documentation/history/_source/walker-reciprocal.html"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 7459,
+        "name": "constitution.md",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "total": 95,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 15
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/memory/constitution.md"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 526,
+        "name": "metrics.json",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".json",
+        "path": ".documentation/releases/v0.0.1/metrics.json"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 2011,
+        "name": "release-notes.md",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".md",
+        "path": ".documentation/releases/v0.0.1/release-notes.md"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 29,
+        "name": ".gitkeep",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".gitkeep",
+        "path": ".documentation/releases/v0.0.1/quickfixes/.gitkeep"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "release_doc",
+        "disposition": "keep_refresh",
+        "size_bytes": 29,
+        "name": ".gitkeep",
+        "usefulness_score": 60,
+        "score_breakdown": {
+          "total": 60,
+          "authority": 18,
+          "uniqueness": 10,
+          "operational_relevance": 20,
+          "freshness": 12
+        },
+        "taxon": "HISTORICAL_RECORD",
+        "extension": ".gitkeep",
+        "path": ".documentation/releases/v0.0.1/specs/.gitkeep"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 22081,
+        "name": "history.json",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "total": 95,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 15
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".json",
+        "path": ".documentation/repo-story/history.json"
+      },
+      {
+        "last_modified": "2026-04-12",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 9265,
+        "name": "repo-story-2026-04-12.md",
+        "usefulness_score": 93,
+        "score_breakdown": {
+          "total": 93,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 13
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/repo-story/repo-story-2026-04-12.md"
+      },
+      {
+        "last_modified": "2026-04-28",
+        "category": "living_reference",
+        "disposition": "keep",
+        "size_bytes": 8812,
+        "name": "repo-story-2026-04-28.md",
+        "usefulness_score": 95,
+        "score_breakdown": {
+          "total": 95,
+          "authority": 24,
+          "uniqueness": 18,
+          "operational_relevance": 38,
+          "freshness": 15
+        },
+        "taxon": "AUTHORITATIVE_REFERENCE",
+        "extension": ".md",
+        "path": ".documentation/repo-story/repo-story-2026-04-28.md"
+      }
+    ]
+  },
+  "archive_existing": [
+    ".archive/copilot/2026-03-29/_harvest-scan.json",
+    ".archive/specify-20260329/memory/constitution.md",
+    ".archive/specify-20260329/scripts/powershell/check-prerequisites.ps1",
+    ".archive/specify-20260329/scripts/powershell/common.ps1",
+    ".archive/specify-20260329/scripts/powershell/create-new-feature.ps1",
+    ".archive/specify-20260329/scripts/powershell/get-pr-context.ps1",
+    ".archive/specify-20260329/scripts/powershell/setup-plan.ps1",
+    ".archive/specify-20260329/scripts/powershell/site-audit.ps1",
+    ".archive/specify-20260329/scripts/powershell/update-agent-context.ps1",
+    ".archive/specify-20260329/templates/agent-file-template.md",
+    ".archive/specify-20260329/templates/checklist-template.md",
+    ".archive/specify-20260329/templates/plan-template.md",
+    ".archive/specify-20260329/templates/spec-template.md",
+    ".archive/specify-20260329/templates/tasks-template.md"
+  ],
+  "code_comments": [],
+  "report_path": ".documentation/copilot/harvest-2026-04-28.md",
+  "path_roots": {
+    "legacy_roots": [],
+    "canonical_documentation": ".documentation/"
+  },
+  "repo_root": "C:/GitHub/MarkHazleton/MuseumSpark",
+  "scope": "docs",
+  "harvest_timestamp": "2026-04-28T22:25:26Z",
+  "changelog_gaps": [],
+  "summary": {
+    "specs_in_progress": 0,
+    "changelog_gaps": 0,
+    "docs_to_archive": 5,
+    "specs_draft": 0,
+    "bak_files_found": 0,
+    "specs_completed": 0,
+    "code_comments_found": 0
+  },
+  "harvest_date": "2026-04-28",
+  "bak_files": [],
+  "specs": []
+}

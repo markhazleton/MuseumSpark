@@ -8,7 +8,7 @@
 
 **Current Phase**: Phase 1 — Static Dataset Browser (GitHub Pages)  
 **Implementation Status**: ~80% complete  
-**See**: [specs/001-museum-trip-planner/implementation-status.md](../specs/001-museum-trip-planner/implementation-status.md)
+**See**: Implementation status is tracked in active specification artifacts under `.documentation/specs/`.
 
 **What's Implemented**:
 - ✅ React + Vite static site for browsing museums

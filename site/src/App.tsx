@@ -68,6 +68,13 @@ export default function App() {
           />
         </Routes>
       </main>
+      <footer className="border-t border-slate-200 bg-white py-4 text-center text-sm text-slate-500">
+        <p>
+          <a href="https://museum.makeboldspark.com" className="hover:underline">MuseumSpark</a> —
+          built by <a href="https://markhazleton.com" className="hover:underline">Mark Hazleton</a> ·
+          <a href="https://makeboldsolutions.com" className="hover:underline">MakeBoldSolutions</a>
+        </p>
+      </footer>
     </div>
   )
 }

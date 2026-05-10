@@ -29,16 +29,16 @@ Configuration guides and deployment procedures
 ### 📖 [Reference](reference/)
 Technical references, API documentation, and requirements
 
-- **[Master Requirements](reference/MasterRequirements.md)** - Complete project requirements, scope, and specifications
+- **[Master Requirements](architecture/MasterRequirements.md)** - Complete project requirements, scope, and specifications
 - **[Google Places Free Tier Impact](reference/Google-Places-Free-Tier-Impact.md)** - Cost analysis and optimization strategies for Google Places API usage
 - **[Location Extraction Libraries](reference/Location-Extraction-Libraries.md)** - Technical reference for geocoding libraries and address parsing
 - **[Museum Business Data APIs](reference/Museum-Business-Data-APIs.md)** - Available external APIs and data sources for museum information
 
-### 🤖 [Copilot](copilot/)
+### 🤖 [Copilot](../copilot/)
 GitHub Copilot instructions and session documentation
 
 - **[GitHub Copilot Instructions](copilot-instructions.md)** - Comprehensive Copilot guidance integrating DevSpark constitution and repository patterns
-- **[Copilot Documentation](copilot/)** - Session notes and copilot-generated exploratory documentation
+- **[Copilot Documentation](../copilot/)** - Session notes and copilot-generated exploratory documentation
 
 ## 🚀 Quick Start Paths
 
@@ -46,7 +46,7 @@ GitHub Copilot instructions and session documentation
 1. Start with [Application Architecture](architecture/ApplicationArchitecture.md) to understand the system design
 2. Review [Dataset Design](architecture/DataSetDesign.md) to understand the data model
 3. Follow [API Keys Setup](setup-deployment/API-Keys-Setup.md) to configure your environment
-4. Check the [scripts/README.md](../scripts/README.md) for pipeline usage
+4. Check the [scripts/README.md](../../scripts/README.md) for pipeline usage
 
 ### For Data Contributors
 1. Read [Data Enrichment Strategy](data-pipeline/DataEnrichmentStrategy.md) to understand the enrichment approach
@@ -60,14 +60,14 @@ GitHub Copilot instructions and session documentation
 
 ### For AI-Assisted Development
 1. Review [GitHub Copilot Instructions](copilot-instructions.md) for constitutional principles and best practices
-2. Check [DevSpark Constitution](../.documentation/memory/constitution.md) for non-negotiable requirements
-3. See [CLAUDE.md](../CLAUDE.md) for runtime development guidance
+2. Check [DevSpark Constitution](../memory/constitution.md) for non-negotiable requirements
+3. See [CLAUDE.md](../../CLAUDE.md) for runtime development guidance
 
 ## 🔗 Related Documentation
 
-- **[Scripts README](../scripts/README.md)** - Data enrichment pipeline documentation
-- **[Site README](../site/README.md)** - React frontend application documentation
-- **[Project README](../README.md)** - Main project overview
+- **[Scripts README](../../scripts/README.md)** - Data enrichment pipeline documentation
+- **[Site Build Process](../../site/BUILD_PROCESS.md)** - React frontend build and deployment documentation
+- **[Project README](../../README.md)** - Main project overview
 
 ## 📋 Current System Overview
 

@@ -28,12 +28,12 @@ MuseumSpark is a Museum Trip Planning Application designed to help **Walker Art 
 
 When making suggestions, always respect this authority chain:
 
-1. **[.documentation/memory/constitution.md](../.documentation/memory/constitution.md)** — Project law, supersedes all other docs
-2. **[Documentation/architecture/MasterRequirements.md](architecture/MasterRequirements.md)** — Authoritative product requirements (Product Owner)
-3. **[Documentation/architecture/DataSetDesign.md](architecture/DataSetDesign.md)** — Dataset structure and methodology
-4. **[data/schema/museum.schema.json](../data/schema/museum.schema.json)** — Validation rules and field definitions
-5. **[Documentation/architecture/ApplicationArchitecture.md](architecture/ApplicationArchitecture.md)** — System design
-6. **[Documentation/architecture/MuseumAPI.md](architecture/MuseumAPI.md)** — API specification (Phase 4)
+1. **[.documentation/memory/constitution.md](../memory/constitution.md)** — Project law, supersedes all other docs
+2. **[.documentation/history/architecture/MasterRequirements.md](architecture/MasterRequirements.md)** — Authoritative product requirements (Product Owner)
+3. **[.documentation/history/architecture/DataSetDesign.md](architecture/DataSetDesign.md)** — Dataset structure and methodology
+4. **[data/schema/museum.schema.json](../../data/schema/museum.schema.json)** — Validation rules and field definitions
+5. **[.documentation/history/architecture/ApplicationArchitecture.md](architecture/ApplicationArchitecture.md)** — System design
+6. **[.documentation/history/architecture/MuseumAPI.md](architecture/MuseumAPI.md)** — API specification (Phase 4)
 
 **Never suggest changes that conflict with these documents without explicit user confirmation.**
 
@@ -57,10 +57,10 @@ These principles from `.documentation/memory/constitution.md` override all other
 ### 3. Specification-Driven Development
 - No code implementation without approved specification in `.documentation/specs/`
 - Follow DevSpark workflow: Specify → Clarify → Plan → Tasks → Implement → Analyze
-- Specifications MUST reference `Documentation/architecture/DataSetDesign.md` and `Documentation/architecture/MuseumAPI.md`
+- Specifications MUST reference `.documentation/history/architecture/DataSetDesign.md` and `.documentation/history/architecture/MuseumAPI.md`
 
 ### 4. Algorithmic Integrity
-- Priority scoring algorithm in `Documentation/architecture/DataSetDesign.md` is canonical
+- Priority scoring algorithm in `.documentation/history/architecture/DataSetDesign.md` is canonical
 - MUST NOT alter without documentation update and versioning
 - All implementations MUST produce identical results given identical inputs
 - Track algorithm version in `scoring_version` field
@@ -377,9 +377,9 @@ Documentation/
 
 **Rules**:
 1. **NEVER** create markdown documents outside `/Documentation` folder
-2. Place copilot session notes in `/Documentation/copilot/session-{date}/`
-3. Place feature documentation in `/Documentation/features/`
-4. Update `/Documentation/README.md` when adding new sections
+2. Place copilot session notes in `/.documentation/copilot/session-{date}/`
+3. Place feature documentation in `/.documentation/history/features/`
+4. Update `/.documentation/history/README.md` when adding new sections
 5. Link to canonical documents rather than duplicating content
 
 ### Code Organization
@@ -479,7 +479,7 @@ data/                                 # Dataset and artifacts
 **Modifying the data model**:
 
 1. Update `data/schema/museum.schema.json` with semantic version bump
-2. Update `Documentation/architecture/DataSetDesign.md`
+2. Update `.documentation/history/architecture/DataSetDesign.md`
 3. Create migration script if needed
 4. Update affected scripts and validators
 5. Test against existing dataset
@@ -530,7 +530,7 @@ data/                                 # Dataset and artifacts
 
 #### Implementing API Endpoint
 ```
-// Implement GET /museums endpoint per Documentation/architecture/MuseumAPI.md
+// Implement GET /museums endpoint per .documentation/history/architecture/MuseumAPI.md
 // Include: Query filtering, pagination, JWT auth check
 // Validate: Response matches schema, error handling for malformed queries
 // Test: Create integration test with sample queries
@@ -610,12 +610,12 @@ tests/
 
 **Always consult these before generating code**:
 
-1. **Data Model**: [Documentation/architecture/DataSetDesign.md](architecture/DataSetDesign.md)
+1. **Data Model**: [.documentation/history/architecture/DataSetDesign.md](architecture/DataSetDesign.md)
    - Canonical field definitions
    - Priority scoring algorithm
    - Data quality standards
 
-2. **API Specification**: [Documentation/architecture/MuseumAPI.md](architecture/MuseumAPI.md)
+2. **API Specification**: [.documentation/history/architecture/MuseumAPI.md](architecture/MuseumAPI.md)
    - Endpoint definitions
    - Request/response schemas
    - Authentication requirements
@@ -625,7 +625,7 @@ tests/
    - Governance and compliance
    - Amendment process
 
-4. **Pipeline Guide**: [scripts/README.md](../scripts/README.md)
+4. **Pipeline Guide**: [scripts/README.md](../../scripts/README.md)
    - Phase descriptions
    - Dependencies and ordering
    - Usage examples
@@ -712,7 +712,7 @@ python scripts/validate_cache_vs_state.py
 7. **State files are canonical** — index files are derived (rebuild via build-index.py)
 8. **Never Replace Known With Null** — preserve existing data during enrichment
 9. **Python 3.11+ required** — use modern type hints
-10. **All docs go in /Documentation** — respect the folder structure
+10. **All docs go in /.documentation** — respect the folder structure
 
 ### Quick Validation Checklist
 - [ ] Does this change align with the constitution?
@@ -722,14 +722,14 @@ python scripts/validate_cache_vs_state.py
 - [ ] Have I preserved existing non-null values?
 - [ ] Have I tracked provenance with data_sources/address_source?
 - [ ] Have I followed the Python 3.11+ standards?
-- [ ] Have I placed documentation in /Documentation?
+- [ ] Have I placed documentation in /.documentation?
 
 ---
 
-**For runtime development guidance, consult [CLAUDE.md](../CLAUDE.md).**
+**For runtime development guidance, consult [CLAUDE.md](../../CLAUDE.md).**
 
-**For constitutional principles, consult [.documentation/memory/constitution.md](../.documentation/memory/constitution.md).**
+**For constitutional principles, consult [.documentation/memory/constitution.md](../memory/constitution.md).**
 
-**For product requirements, consult [Documentation/architecture/MasterRequirements.md](architecture/MasterRequirements.md).**
+**For product requirements, consult [.documentation/history/architecture/MasterRequirements.md](architecture/MasterRequirements.md).**
 
-**For complete documentation index, visit [Documentation/README.md](README.md).**
+**For complete documentation index, visit [.documentation/history/README.md](README.md).**

@@ -11,9 +11,9 @@ Added sections:
   - Governance
 Removed sections: N/A
 Templates requiring updates:
-  ✅ .specify/templates/plan-template.md - "Constitution Check" section compatible
-  ✅ .specify/templates/spec-template.md - No changes needed
-  ✅ .specify/templates/tasks-template.md - No changes needed
+  ✅ .devspark/templates/plan-template.md - "Constitution Check" section compatible
+  ✅ .devspark/templates/spec-template.md - No changes needed
+  ✅ .devspark/templates/tasks-template.md - No changes needed
 Follow-up TODOs: None
 -->
 
@@ -55,7 +55,7 @@ The dataset structure is authoritative. All application layers conform to the ca
 - State files (`data/states/{state}.json`) are the canonical source of truth
 - Index files (`data/index/`) MUST be derived via rebuild scripts, never edited directly
 - JSON Schema (`data/schema/museum.schema.json`) is the authoritative definition of record structure
-- Schema changes require formal documentation update in `Documentation/architecture/DataSetDesign.md`
+- Schema changes require formal documentation update in `.documentation/history/architecture/DataSetDesign.md`
 - All API, frontend, and service layers MUST conform to the canonical data model
 
 ### V. Data Provenance (NON-NEGOTIABLE)
@@ -71,7 +71,7 @@ All data enrichment MUST maintain traceability and preserve existing information
 
 The priority scoring algorithm is canonical and deterministic.
 
-- Priority scoring formula defined in `Documentation/architecture/MasterRequirements.md` (Section 5) is authoritative
+- Priority scoring formula defined in `.documentation/history/architecture/MasterRequirements.md` (Section 5) is authoritative
 - Algorithm changes MUST update MRD + version bump + migration plan
 - All implementations MUST produce identical results given identical inputs
 - Algorithm version MUST be tracked in `scoring_version` field
@@ -87,24 +87,24 @@ Testing is strongly encouraged to ensure pipeline and application reliability.
 
 ### VIII. Documentation Structure (NON-NEGOTIABLE)
 
-All documentation MUST reside in the `/Documentation/` folder with defined structure.
+All documentation MUST reside in the `/.documentation/` folder with defined structure.
 
-- NEVER create markdown documents outside `/Documentation/` folder (except `.github/copilot-instructions.md` and `CLAUDE.md`)
-- AI-generated session documentation MUST go to `/Documentation/copilot/session-YYYYMMDD/`
-- Feature documentation MUST be placed in `/Documentation/features/`
-- Architecture documentation MUST be placed in `/Documentation/architecture/`
-- Update `/Documentation/README.md` when adding new sections
+- NEVER create markdown documents outside `/.documentation/` folder (except `.github/copilot-instructions.md` and `CLAUDE.md`)
+- AI-generated session documentation MUST go to `/.documentation/copilot/session-YYYYMMDD/`
+- Feature documentation MUST be placed in `/.documentation/history/features/`
+- Architecture documentation MUST be placed in `/.documentation/history/architecture/`
+- Update `/.documentation/history/README.md` when adding new sections
 
 ## Document Hierarchy
 
 When making decisions, respect this authority chain:
 
 1. **This Constitution** — Project law, supersedes all other docs
-2. **[Documentation/architecture/MasterRequirements.md](Documentation/architecture/MasterRequirements.md)** — Authoritative product requirements (Product Owner)
-3. **[Documentation/architecture/DataSetDesign.md](Documentation/architecture/DataSetDesign.md)** — Dataset structure and methodology
-4. **[data/schema/museum.schema.json](data/schema/museum.schema.json)** — Validation rules and field definitions
-5. **[Documentation/architecture/ApplicationArchitecture.md](Documentation/architecture/ApplicationArchitecture.md)** — System design
-6. **[Documentation/architecture/MuseumAPI.md](Documentation/architecture/MuseumAPI.md)** — API specification (Phase 4)
+2. **[.documentation/history/architecture/MasterRequirements.md](../history/architecture/MasterRequirements.md)** — Authoritative product requirements (Product Owner)
+3. **[.documentation/history/architecture/DataSetDesign.md](../history/architecture/DataSetDesign.md)** — Dataset structure and methodology
+4. **[data/schema/museum.schema.json](../../data/schema/museum.schema.json)** — Validation rules and field definitions
+5. **[.documentation/history/architecture/ApplicationArchitecture.md](../history/architecture/ApplicationArchitecture.md)** — System design
+6. **[.documentation/history/architecture/MuseumAPI.md](../history/architecture/MuseumAPI.md)** — API specification (Phase 4)
 
 ## Controlled Vocabularies
 
@@ -124,14 +124,14 @@ When generating museum records, use exact enum values:
 
 This project uses **SpecKit** for specification-driven development:
 
-1. **Specify**: Create specification in `.specify/specs/`
+1. **Specify**: Create specification in `.documentation/specs/`
 2. **Clarify**: Identify underspecified areas
 3. **Plan**: Execute implementation planning
 4. **Tasks**: Generate actionable, dependency-ordered tasks
 5. **Implement**: Execute implementation
 6. **Analyze**: Cross-artifact consistency check
 
-No code implementation without approved specification in `.specify/specs/` (RECOMMENDED).
+No code implementation without approved specification in `.documentation/specs/` (RECOMMENDED).
 
 ## Governance
 
@@ -144,7 +144,7 @@ No code implementation without approved specification in `.specify/specs/` (RECO
   - MAJOR: Backward-incompatible governance/principle removals or redefinitions
   - MINOR: New principle/section added or materially expanded guidance
   - PATCH: Clarifications, wording, typo fixes, non-semantic refinements
-- Use [CLAUDE.md](CLAUDE.md) for runtime development guidance
+- Use [CLAUDE.md](../../CLAUDE.md) for runtime development guidance
 - Compliance reviews SHOULD occur quarterly or after major milestones
 - All PRs/reviews SHOULD verify compliance with this constitution
 

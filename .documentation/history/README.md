@@ -12,7 +12,7 @@ Documentation is organized into four main areas:
 - **[data-pipeline/](data-pipeline/)** - Enrichment strategies, LLM integration, quality rules
 - **[setup-deployment/](setup-deployment/)** - Configuration and deployment guides  
 - **[reference/](reference/)** - Technical references and requirements
-- **[copilot/](copilot/)** - GitHub Copilot instructions and session documentation
+- **[copilot/](../copilot/)** - GitHub Copilot instructions and session documentation
 
 ## 🏠 Start Here
 
@@ -34,7 +34,7 @@ The Home.md provides:
 
 ### Getting Started
 - **Setup Guide**: [setup-deployment/API-Keys-Setup.md](setup-deployment/API-Keys-Setup.md)
-- **Pipeline Guide**: [../scripts/README.md](../scripts/README.md)
+- **Pipeline Guide**: [../../scripts/README.md](../../scripts/README.md)
 - **Enrichment Strategy**: [data-pipeline/DataEnrichmentStrategy.md](data-pipeline/DataEnrichmentStrategy.md)
 
 ## 📊 Data Pipeline Overview
@@ -51,7 +51,7 @@ The system uses a 9-phase modular pipeline:
 8. **Phase 1.75**: Heuristic fallback scoring
 9. **Phase 3**: Priority scoring for trip planning
 
-See [../scripts/README.md](../scripts/README.md) for detailed pipeline documentation.
+See [../../scripts/README.md](../../scripts/README.md) for detailed pipeline documentation.
 
 ---
 
