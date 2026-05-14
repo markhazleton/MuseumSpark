@@ -161,6 +161,10 @@ pip-delete-this-directory.txt
 # Local enrichment caches (do not commit)
 data/cache/
 
+# Per-museum scraping cache dirs (data/states/XX/m_<hash>/)
+# These are pipeline artifacts — re-generated on demand, not dataset truth.
+data/states/*/m_*/
+
 # Test runs and temporary files
 data/runs/
 data/archive/old_runs_*/
@@ -168,6 +172,9 @@ temp_*.txt
 temp_*.json
 **/temp/
 **/*_temp_*/
+
+# pytest cache
+.pytest_cache/
 
 # DevSpark - personal overrides (never commit)
 .documentation/*/commands/
