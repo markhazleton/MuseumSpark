@@ -9,7 +9,7 @@
 ![Dataset](https://img.shields.io/badge/Museums-1,269_Tracked-purple)
 ![Data Quality](https://img.shields.io/badge/Enriched-0.08%25-orange)
 
-**Live Site**: [museum.makeboldspark.com](https://museum.makeboldspark.com)
+**Live Site**: [https://museum.makeboldspark.com/](https://museum.makeboldspark.com/)
 
 ---
 
@@ -28,8 +28,8 @@ Rather than a simple directory, MuseumSpark provides:
 
 Whether planning a 2-hour layover or a weekend art tour, MuseumSpark helps you discover the right museums for your interests and time constraints.
 
-> Built by [Mark Hazleton](https://markhazleton.com) — Technical Solutions Architect  
-> Part of the [MakeBoldSpark](https://makeboldspark.com) portfolio of technical demonstrations.
+> Built by [Mark Hazleton](https://markhazleton.com) — Mark Hazleton, Solutions Architect
+> MuseumSpark is part of the [Make Bold Spark](https://makeboldspark.com) portfolio of technical demonstrations.
 
 ---
 
