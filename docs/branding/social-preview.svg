@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Decorative arc (museum dome motif) -->
+  <ellipse cx="640" cy="720" rx="500" ry="300" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.3"/>
+  <ellipse cx="640" cy="720" rx="380" ry="220" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.2"/>
+
+  <!-- Column accents left -->
+  <rect x="80" y="160" width="14" height="360" rx="7" fill="url(#accent)" opacity="0.5"/>
+  <rect x="116" y="180" width="8" height="340" rx="4" fill="#3b82f6" opacity="0.3"/>
+
+  <!-- Column accents right -->
+  <rect x="1186" y="160" width="14" height="360" rx="7" fill="url(#accent)" opacity="0.5"/>
+  <rect x="1156" y="180" width="8" height="340" rx="4" fill="#8b5cf6" opacity="0.3"/>
+
+  <!-- Museum icon (building outline) -->
+  <g transform="translate(540,120)">
+    <!-- Pediment -->
+    <polygon points="100,0 200,60 0,60" fill="none" stroke="#60a5fa" stroke-width="3" opacity="0.8"/>
+    <!-- Columns -->
+    <rect x="20" y="60" width="12" height="80" rx="4" fill="#60a5fa" opacity="0.7"/>
+    <rect x="54" y="60" width="12" height="80" rx="4" fill="#60a5fa" opacity="0.7"/>
+    <rect x="88" y="60" width="12" height="80" rx="4" fill="#60a5fa" opacity="0.7"/>
+    <rect x="122" y="60" width="12" height="80" rx="4" fill="#60a5fa" opacity="0.7"/>
+    <rect x="156" y="60" width="12" height="80" rx="4" fill="#60a5fa" opacity="0.7"/>
+    <!-- Base -->
+    <rect x="0" y="140" width="200" height="14" rx="4" fill="#60a5fa" opacity="0.6"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="640" y="360" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="96" font-weight="700" letter-spacing="-2"
+        fill="white">MuseumSpark</text>
+
+  <!-- Accent bar under title -->
+  <rect x="440" y="378" width="400" height="5" rx="3" fill="url(#accent)"/>
+
+  <!-- Tagline -->
+  <text x="640" y="440" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="32" font-weight="400" letter-spacing="1"
+        fill="#94a3b8">Strategic travel planner for art lovers</text>
+
+  <!-- Stats row -->
+  <text x="380" y="530" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="22" fill="#60a5fa" font-weight="600">1,269 Museums</text>
+  <text x="540" y="530" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="22" fill="#64748b">·</text>
+  <text x="640" y="530" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="22" fill="#60a5fa" font-weight="600">58 Jurisdictions</text>
+  <text x="740" y="530" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="22" fill="#64748b">·</text>
+  <text x="880" y="530" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="22" fill="#60a5fa" font-weight="600">Walker Reciprocal Program</text>
+
+  <!-- URL footer -->
+  <text x="640" y="600" text-anchor="middle"
+        font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="22" fill="#475569">museum.makeboldspark.com</text>
+</svg>
