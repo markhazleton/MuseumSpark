@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MuseumSpark</title>
+    <script>
+      // SPA routing for GitHub Pages: encode the path as a query param so
+      // the browser navigates to index.html, which decodes and restores it.
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.host + '/' +
+        (l.pathname.slice(1) ? '?/' + l.pathname.slice(1).replace(/&/g, '~and~') : '') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
