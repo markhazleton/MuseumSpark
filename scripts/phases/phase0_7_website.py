@@ -91,7 +91,7 @@ HTTP_CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "http"
 REQUEST_DELAY_SECONDS = 2.0
 
 # User-Agent for web requests (specific bot name to allow targeted robots.txt rules)
-USER_AGENT = "MuseumSpark-Bot/1.0 (+https://github.com/MarkHazleton/MuseumSpark; museum-research)"
+USER_AGENT = "MuseumSpark-Bot/1.0 (+https://github.com/MakeBoldSolutions/MuseumSpark; museum-research)"
 
 # Wayback Machine API endpoint
 WAYBACK_API = "https://archive.org/wayback/available"

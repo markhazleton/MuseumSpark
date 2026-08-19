@@ -168,7 +168,7 @@ Whether planning a 2-hour layover or a weekend art tour, MuseumSpark helps you d
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/markhazleton/MuseumSpark.git
+git clone https://github.com/MakeBoldSolutions/MuseumSpark.git
 cd MuseumSpark
 ```
 
@@ -406,8 +406,8 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ## 📞 Support & Contact
 
-- **Issues**: [GitHub Issues](https://github.com/markhazleton/MuseumSpark/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/markhazleton/MuseumSpark/discussions)
+- **Issues**: [GitHub Issues](https://github.com/MakeBoldSolutions/MuseumSpark/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/MakeBoldSolutions/MuseumSpark/discussions)
 - **Documentation**: [.documentation folder](.documentation/)
 - **Project Updates**: Watch this repository for releases
 

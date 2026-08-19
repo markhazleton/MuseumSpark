@@ -56,7 +56,7 @@ STATES_DIR = PROJECT_ROOT / "data" / "states"
 CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "wikidata"
 RUNS_DIR = PROJECT_ROOT / "data" / "runs"
 
-USER_AGENT = "MuseumSpark/1.0 (https://github.com/MarkHazleton/MuseumSpark)"
+USER_AGENT = "MuseumSpark/1.0 (https://github.com/MakeBoldSolutions/MuseumSpark)"
 
 # Placeholder values that should be replaced
 PLACEHOLDER_VALUES = {"", "tbd", "unknown", "n/a", "na", "not known", "not available"}

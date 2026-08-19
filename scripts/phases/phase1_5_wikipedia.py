@@ -117,7 +117,7 @@ def search_wikipedia(query: str) -> WikipediaResult:
 
     # User-Agent required by Wikipedia API policy
     headers = {
-        "User-Agent": "MuseumSpark/1.0 (https://github.com/MarkHazleton/MuseumSpark; museum-enrichment-bot)"
+        "User-Agent": "MuseumSpark/1.0 (https://github.com/MakeBoldSolutions/MuseumSpark; museum-enrichment-bot)"
     }
 
     try:
