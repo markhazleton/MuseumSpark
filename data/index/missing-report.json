@@ -1,205 +1,50 @@
 {
   "generated_from": "C:/GitHub/MakeBoldSolutions/MuseumSpark/data/index/all-museums.json",
   "total_museums": 1269,
-  "full": 7,
-  "placeholder": 1262,
-  "full_pct": 0.55,
+  "full": 58,
+  "placeholder": 1211,
+  "full_pct": 4.57,
   "missing_overall": {
-    "museum_type": 1262,
-    "status": 1262,
-    "collection_tier": 1262,
-    "notes": 1262,
-    "confidence": 1262,
-    "reputation": 1252,
-    "street_address": 814,
-    "postal_code": 639,
+    "status": 1053,
+    "collection_tier": 931,
+    "reputation": 876,
+    "confidence": 876,
     "primary_domain": 447,
-    "city": 155
+    "notes": 264,
+    "museum_type": 51,
+    "street_address": 3,
+    "postal_code": 3
   },
   "missing_by_state": {
     "ALABAMA": {
-      "museum_type": 10,
-      "status": 10,
-      "reputation": 10,
-      "collection_tier": 10,
-      "notes": 10,
-      "confidence": 10,
-      "street_address": 5,
-      "postal_code": 5,
-      "primary_domain": 4,
-      "city": 2
+      "reputation": 7,
+      "collection_tier": 7,
+      "confidence": 7,
+      "primary_domain": 4
     },
     "ALASKA": {
-      "museum_type": 5,
-      "status": 5,
       "reputation": 5,
       "collection_tier": 5,
-      "notes": 5,
       "confidence": 5,
-      "street_address": 2,
-      "postal_code": 2,
       "primary_domain": 1
     },
     "ARIZONA": {
-      "museum_type": 13,
       "status": 13,
-      "reputation": 13,
-      "collection_tier": 13,
-      "notes": 13,
-      "confidence": 13,
-      "street_address": 9,
+      "reputation": 7,
+      "collection_tier": 7,
+      "confidence": 7,
       "primary_domain": 4,
-      "postal_code": 2
+      "notes": 1
     },
     "ARKANSAS": {
-      "museum_type": 5,
       "status": 5,
-      "reputation": 5,
-      "collection_tier": 5,
-      "notes": 5,
-      "confidence": 5,
-      "street_address": 3,
       "primary_domain": 1,
-      "postal_code": 1
+      "reputation": 1,
+      "collection_tier": 1,
+      "notes": 1,
+      "confidence": 1
     },
     "BERMUDA": {
-      "museum_type": 2,
-      "street_address": 2,
-      "postal_code": 2,
-      "status": 2,
-      "reputation": 2,
-      "collection_tier": 2,
-      "notes": 2,
-      "confidence": 2
-    },
-    "BRAZIL": {
-      "museum_type": 1,
-      "street_address": 1,
-      "postal_code": 1,
-      "primary_domain": 1,
-      "status": 1,
-      "reputation": 1,
-      "collection_tier": 1,
-      "notes": 1,
-      "confidence": 1
-    },
-    "CALIFORNIA": {
-      "museum_type": 175,
-      "status": 175,
-      "collection_tier": 175,
-      "notes": 175,
-      "confidence": 175,
-      "reputation": 174,
-      "street_address": 102,
-      "postal_code": 78,
-      "primary_domain": 67,
-      "city": 17
-    },
-    "CANADA": {
-      "museum_type": 45,
-      "status": 45,
-      "reputation": 45,
-      "collection_tier": 45,
-      "notes": 45,
-      "confidence": 45,
-      "street_address": 43,
-      "postal_code": 43,
-      "primary_domain": 16,
-      "city": 1
-    },
-    "COLORADO": {
-      "museum_type": 19,
-      "status": 19,
-      "collection_tier": 19,
-      "notes": 19,
-      "confidence": 19,
-      "reputation": 18,
-      "street_address": 14,
-      "postal_code": 10,
-      "primary_domain": 6,
-      "city": 2
-    },
-    "CONNECTICUT": {
-      "museum_type": 24,
-      "status": 24,
-      "reputation": 24,
-      "collection_tier": 24,
-      "notes": 24,
-      "confidence": 24,
-      "street_address": 14,
-      "postal_code": 13,
-      "primary_domain": 10,
-      "city": 2
-    },
-    "DELAWARE": {
-      "museum_type": 8,
-      "status": 8,
-      "reputation": 8,
-      "collection_tier": 8,
-      "notes": 8,
-      "confidence": 8,
-      "street_address": 4,
-      "postal_code": 4,
-      "city": 2,
-      "primary_domain": 2
-    },
-    "DISTRICT OF COLUMBIA": {
-      "museum_type": 14,
-      "status": 14,
-      "reputation": 14,
-      "collection_tier": 14,
-      "notes": 14,
-      "confidence": 14,
-      "street_address": 10,
-      "postal_code": 9,
-      "primary_domain": 7,
-      "city": 2
-    },
-    "EL SALVADOR": {
-      "museum_type": 1,
-      "street_address": 1,
-      "primary_domain": 1,
-      "status": 1,
-      "reputation": 1,
-      "collection_tier": 1,
-      "notes": 1,
-      "confidence": 1
-    },
-    "FLORIDA": {
-      "museum_type": 88,
-      "status": 88,
-      "collection_tier": 88,
-      "notes": 88,
-      "confidence": 88,
-      "reputation": 86,
-      "street_address": 52,
-      "postal_code": 33,
-      "primary_domain": 22,
-      "city": 11
-    },
-    "GEORGIA": {
-      "museum_type": 28,
-      "status": 28,
-      "reputation": 28,
-      "collection_tier": 28,
-      "notes": 28,
-      "confidence": 28,
-      "street_address": 19,
-      "postal_code": 13,
-      "primary_domain": 7
-    },
-    "HAWAII": {
-      "museum_type": 3,
-      "status": 3,
-      "reputation": 3,
-      "collection_tier": 3,
-      "notes": 3,
-      "confidence": 3,
-      "street_address": 2,
-      "postal_code": 2,
-      "city": 1
-    },
-    "IDAHO": {
       "museum_type": 2,
       "status": 2,
       "reputation": 2,
@@ -209,116 +54,169 @@
       "street_address": 1,
       "postal_code": 1
     },
-    "ILLINOIS": {
-      "museum_type": 30,
-      "status": 30,
-      "collection_tier": 30,
-      "notes": 30,
-      "confidence": 30,
-      "reputation": 29,
-      "street_address": 20,
-      "postal_code": 13,
-      "primary_domain": 12,
-      "city": 4
+    "BRAZIL": {
+      "museum_type": 1,
+      "primary_domain": 1,
+      "status": 1,
+      "reputation": 1,
+      "collection_tier": 1,
+      "notes": 1,
+      "confidence": 1
     },
-    "INDIANA": {
-      "museum_type": 17,
-      "status": 17,
+    "CALIFORNIA": {
+      "collection_tier": 134,
+      "confidence": 129,
+      "reputation": 128,
+      "primary_domain": 67,
+      "status": 1
+    },
+    "CANADA": {
+      "museum_type": 45,
+      "status": 45,
+      "reputation": 45,
+      "collection_tier": 45,
+      "notes": 45,
+      "confidence": 45,
+      "primary_domain": 16
+    },
+    "COLORADO": {
+      "reputation": 9,
+      "collection_tier": 9,
+      "confidence": 9,
+      "primary_domain": 6
+    },
+    "CONNECTICUT": {
+      "status": 24,
+      "collection_tier": 18,
       "reputation": 17,
-      "collection_tier": 17,
-      "notes": 17,
       "confidence": 17,
-      "street_address": 7,
-      "postal_code": 7,
-      "primary_domain": 5,
-      "city": 1
+      "primary_domain": 10,
+      "notes": 2
     },
-    "IOWA": {
-      "museum_type": 16,
-      "status": 16,
-      "reputation": 16,
-      "collection_tier": 16,
-      "notes": 16,
-      "confidence": 16,
-      "street_address": 12,
-      "postal_code": 10,
-      "primary_domain": 5,
-      "city": 1
+    "DELAWARE": {
+      "status": 8,
+      "reputation": 5,
+      "collection_tier": 5,
+      "confidence": 5,
+      "primary_domain": 2,
+      "street_address": 1,
+      "postal_code": 1,
+      "notes": 1
     },
-    "KANSAS": {
-      "museum_type": 6,
-      "status": 6,
-      "reputation": 6,
-      "collection_tier": 6,
-      "notes": 6,
-      "confidence": 6,
-      "street_address": 3,
-      "postal_code": 1
-    },
-    "KENTUCKY": {
-      "museum_type": 10,
-      "status": 10,
+    "DISTRICT OF COLUMBIA": {
+      "status": 14,
       "reputation": 10,
       "collection_tier": 10,
-      "notes": 10,
       "confidence": 10,
-      "street_address": 8,
-      "postal_code": 7,
+      "primary_domain": 7
+    },
+    "EL SALVADOR": {
+      "museum_type": 1,
+      "primary_domain": 1,
+      "status": 1,
+      "reputation": 1,
+      "collection_tier": 1,
+      "notes": 1,
+      "confidence": 1
+    },
+    "FLORIDA": {
+      "status": 88,
+      "collection_tier": 63,
+      "confidence": 58,
+      "reputation": 57,
+      "primary_domain": 22,
+      "notes": 21
+    },
+    "GEORGIA": {
+      "status": 28,
+      "collection_tier": 24,
+      "reputation": 22,
+      "confidence": 21,
+      "primary_domain": 7,
+      "notes": 6
+    },
+    "HAWAII": {
+      "status": 3,
+      "reputation": 3,
+      "collection_tier": 3,
+      "confidence": 3,
+      "notes": 2
+    },
+    "IDAHO": {
+      "status": 2
+    },
+    "ILLINOIS": {
+      "status": 30,
+      "collection_tier": 22,
+      "reputation": 20,
+      "confidence": 20,
+      "primary_domain": 12,
+      "notes": 6
+    },
+    "INDIANA": {
+      "status": 17,
+      "collection_tier": 10,
+      "reputation": 9,
+      "confidence": 9,
+      "primary_domain": 5,
+      "notes": 5
+    },
+    "IOWA": {
+      "status": 16,
+      "collection_tier": 12,
+      "reputation": 10,
+      "confidence": 10,
+      "primary_domain": 5,
+      "notes": 5
+    },
+    "KANSAS": {
+      "status": 6,
+      "collection_tier": 2,
+      "reputation": 1,
+      "confidence": 1
+    },
+    "KENTUCKY": {
+      "status": 10,
+      "collection_tier": 7,
+      "reputation": 6,
+      "confidence": 6,
       "primary_domain": 4,
-      "city": 2
+      "notes": 2
     },
     "LOUISIANA": {
-      "museum_type": 23,
       "status": 23,
-      "collection_tier": 23,
-      "notes": 23,
-      "confidence": 23,
-      "reputation": 22,
-      "street_address": 14,
-      "postal_code": 12,
+      "collection_tier": 19,
+      "reputation": 18,
+      "confidence": 18,
       "primary_domain": 8,
-      "city": 3
+      "notes": 8
     },
     "MAINE": {
-      "museum_type": 13,
       "status": 13,
-      "reputation": 13,
-      "collection_tier": 13,
-      "notes": 13,
-      "confidence": 13,
-      "street_address": 10,
-      "postal_code": 9,
+      "reputation": 9,
+      "collection_tier": 9,
+      "confidence": 9,
       "primary_domain": 4,
-      "city": 2
+      "notes": 3
     },
     "MARYLAND": {
-      "museum_type": 17,
       "status": 17,
-      "reputation": 17,
-      "collection_tier": 17,
-      "notes": 17,
-      "confidence": 17,
-      "street_address": 12,
-      "postal_code": 12,
+      "reputation": 12,
+      "collection_tier": 12,
+      "confidence": 12,
       "primary_domain": 6,
-      "city": 4
+      "notes": 5
     },
     "MASSACHUSETTS": {
-      "museum_type": 63,
       "status": 63,
-      "collection_tier": 63,
-      "notes": 63,
-      "confidence": 63,
-      "reputation": 62,
-      "street_address": 37,
+      "collection_tier": 44,
+      "reputation": 43,
+      "confidence": 43,
       "primary_domain": 30,
-      "postal_code": 25,
-      "city": 5
+      "notes": 17
     },
     "MEXICO": {
       "museum_type": 1,
-      "street_address": 1,
-      "postal_code": 1,
       "primary_domain": 1,
       "status": 1,
       "reputation": 1,
@@ -327,194 +225,131 @@
       "confidence": 1
     },
     "MICHIGAN": {
-      "museum_type": 38,
       "status": 38,
-      "reputation": 38,
-      "collection_tier": 38,
-      "notes": 38,
-      "confidence": 38,
-      "street_address": 28,
-      "postal_code": 27,
+      "collection_tier": 25,
+      "reputation": 21,
+      "confidence": 21,
       "primary_domain": 10,
-      "city": 7
+      "notes": 3
     },
     "MINNESOTA": {
-      "museum_type": 11,
       "status": 11,
-      "reputation": 11,
-      "collection_tier": 11,
-      "notes": 11,
-      "confidence": 11,
-      "street_address": 4,
-      "postal_code": 3,
-      "primary_domain": 1
+      "collection_tier": 7,
+      "reputation": 6,
+      "confidence": 6,
+      "primary_domain": 1,
+      "notes": 1
     },
     "MISSISSIPPI": {
-      "museum_type": 9,
       "status": 9,
-      "reputation": 9,
-      "collection_tier": 9,
-      "notes": 9,
-      "confidence": 9,
-      "street_address": 4,
+      "collection_tier": 5,
+      "reputation": 4,
+      "confidence": 4,
       "primary_domain": 2,
-      "city": 1,
-      "postal_code": 1
+      "notes": 1
     },
     "MISSOURI": {
-      "museum_type": 16,
       "status": 16,
-      "reputation": 16,
-      "collection_tier": 16,
-      "notes": 16,
-      "confidence": 16,
-      "street_address": 14,
-      "postal_code": 8,
+      "collection_tier": 12,
+      "reputation": 11,
+      "confidence": 11,
       "primary_domain": 6,
-      "city": 2
+      "notes": 5
     },
     "MONTANA": {
-      "museum_type": 7,
       "status": 7,
-      "reputation": 7,
-      "collection_tier": 7,
-      "notes": 7,
-      "confidence": 7,
-      "street_address": 4,
-      "postal_code": 2,
-      "city": 1,
+      "reputation": 2,
+      "collection_tier": 2,
+      "confidence": 2,
       "primary_domain": 1
     },
     "NEBRASKA": {
-      "museum_type": 7,
       "status": 7,
-      "reputation": 7,
-      "collection_tier": 7,
-      "notes": 7,
-      "confidence": 7,
-      "street_address": 4,
-      "postal_code": 2,
-      "primary_domain": 2
+      "collection_tier": 4,
+      "reputation": 3,
+      "confidence": 3,
+      "primary_domain": 2,
+      "notes": 1
     },
     "NEVADA": {
-      "museum_type": 4,
       "status": 4,
-      "reputation": 4,
-      "collection_tier": 4,
-      "notes": 4,
-      "confidence": 4,
-      "street_address": 3,
+      "reputation": 3,
+      "collection_tier": 3,
+      "confidence": 3,
       "primary_domain": 2,
-      "postal_code": 1
+      "notes": 1
     },
     "NEW HAMPSHIRE": {
-      "museum_type": 8,
       "status": 8,
-      "reputation": 8,
-      "collection_tier": 8,
-      "notes": 8,
-      "confidence": 8,
+      "reputation": 7,
+      "collection_tier": 7,
+      "confidence": 7,
       "primary_domain": 4,
-      "street_address": 2,
-      "postal_code": 2
+      "notes": 3
     },
     "NEW JERSEY": {
-      "museum_type": 22,
       "status": 22,
-      "reputation": 22,
-      "collection_tier": 22,
-      "notes": 22,
-      "confidence": 22,
-      "street_address": 14,
-      "postal_code": 14,
+      "collection_tier": 18,
+      "reputation": 17,
+      "confidence": 17,
       "primary_domain": 8,
-      "city": 3
+      "notes": 7
     },
     "NEW MEXICO": {
-      "museum_type": 30,
       "status": 30,
-      "reputation": 30,
-      "collection_tier": 30,
-      "notes": 30,
-      "confidence": 30,
-      "street_address": 20,
-      "postal_code": 17,
+      "collection_tier": 24,
+      "reputation": 23,
+      "confidence": 23,
+      "notes": 13,
       "primary_domain": 8,
-      "city": 3
+      "street_address": 1,
+      "postal_code": 1
     },
     "NEW YORK": {
-      "museum_type": 91,
       "status": 91,
-      "reputation": 91,
-      "collection_tier": 91,
-      "notes": 91,
-      "confidence": 91,
-      "street_address": 61,
+      "collection_tier": 69,
+      "reputation": 67,
+      "confidence": 67,
       "primary_domain": 48,
-      "postal_code": 47,
-      "city": 7
+      "notes": 19
     },
     "NORTH CAROLINA": {
-      "museum_type": 25,
       "status": 25,
-      "reputation": 25,
-      "collection_tier": 25,
-      "notes": 25,
-      "confidence": 25,
-      "street_address": 17,
-      "postal_code": 13,
+      "collection_tier": 14,
+      "reputation": 13,
+      "confidence": 13,
       "primary_domain": 9,
-      "city": 3
+      "notes": 7
     },
     "NORTH DAKOTA": {
-      "museum_type": 1,
-      "street_address": 1,
-      "status": 1,
-      "reputation": 1,
-      "collection_tier": 1,
-      "notes": 1,
-      "confidence": 1
+      "status": 1
     },
     "OHIO": {
-      "museum_type": 39,
       "status": 39,
-      "collection_tier": 39,
-      "notes": 39,
-      "confidence": 39,
-      "reputation": 38,
-      "street_address": 27,
-      "postal_code": 21,
+      "collection_tier": 27,
+      "reputation": 23,
+      "confidence": 23,
       "primary_domain": 8,
-      "city": 7
+      "notes": 6
     },
     "OKLAHOMA": {
-      "museum_type": 18,
-      "status": 18,
-      "reputation": 18,
-      "collection_tier": 18,
-      "notes": 18,
-      "confidence": 18,
-      "street_address": 13,
-      "postal_code": 11,
-      "city": 6,
-      "primary_domain": 6
+      "status": 17,
+      "reputation": 13,
+      "collection_tier": 13,
+      "confidence": 13,
+      "primary_domain": 6,
+      "notes": 3
     },
     "OREGON": {
-      "museum_type": 18,
       "status": 18,
-      "reputation": 18,
-      "collection_tier": 18,
-      "notes": 18,
-      "confidence": 18,
-      "street_address": 13,
-      "postal_code": 12,
+      "reputation": 15,
+      "collection_tier": 15,
+      "confidence": 14,
       "primary_domain": 6,
-      "city": 4
+      "notes": 3
     },
     "PANAMA": {
       "museum_type": 1,
-      "street_address": 1,
-      "postal_code": 1,
       "primary_domain": 1,
       "status": 1,
       "reputation": 1,
@@ -523,210 +358,108 @@
       "confidence": 1
     },
     "PENNSYLVANIA": {
-      "museum_type": 59,
       "status": 59,
-      "reputation": 59,
-      "collection_tier": 59,
-      "notes": 59,
-      "confidence": 59,
-      "street_address": 37,
+      "collection_tier": 48,
+      "reputation": 46,
+      "confidence": 46,
       "primary_domain": 30,
-      "postal_code": 29,
-      "city": 6
+      "notes": 7
     },
     "RHODE ISLAND": {
-      "museum_type": 6,
       "status": 6,
-      "reputation": 6,
-      "collection_tier": 6,
-      "notes": 6,
-      "confidence": 6,
-      "street_address": 5,
-      "postal_code": 5,
-      "city": 3,
+      "collection_tier": 5,
+      "reputation": 4,
+      "confidence": 4,
       "primary_domain": 2
     },
     "SOUTH CAROLINA": {
-      "museum_type": 14,
       "status": 14,
-      "reputation": 14,
-      "collection_tier": 14,
-      "notes": 14,
-      "confidence": 14,
-      "street_address": 8,
-      "postal_code": 7,
-      "city": 3,
-      "primary_domain": 2
+      "collection_tier": 11,
+      "reputation": 10,
+      "confidence": 10,
+      "primary_domain": 2,
+      "notes": 1
     },
     "SOUTH DAKOTA": {
-      "museum_type": 6,
       "status": 6,
-      "reputation": 6,
-      "collection_tier": 6,
-      "notes": 6,
-      "confidence": 6,
-      "primary_domain": 4
+      "reputation": 5,
+      "collection_tier": 5,
+      "confidence": 5,
+      "primary_domain": 4,
+      "notes": 2
     },
     "TENNESSEE": {
-      "museum_type": 11,
       "status": 11,
-      "reputation": 11,
-      "collection_tier": 11,
-      "notes": 11,
-      "confidence": 11,
-      "street_address": 6,
+      "reputation": 7,
+      "collection_tier": 7,
+      "confidence": 7,
       "primary_domain": 5,
-      "postal_code": 4,
-      "city": 2
+      "notes": 1
     },
     "TEXAS": {
-      "museum_type": 60,
       "status": 60,
-      "collection_tier": 60,
-      "notes": 60,
-      "confidence": 60,
-      "reputation": 58,
-      "street_address": 43,
-      "postal_code": 32,
+      "collection_tier": 40,
+      "reputation": 38,
+      "confidence": 38,
       "primary_domain": 20,
-      "city": 10
+      "notes": 10
     },
     "UTAH": {
-      "museum_type": 4,
       "status": 4,
-      "reputation": 4,
-      "collection_tier": 4,
-      "notes": 4,
-      "confidence": 4,
-      "street_address": 3,
-      "postal_code": 3,
-      "city": 1
-    },
-    "VERMONT": {
-      "museum_type": 15,
-      "status": 15,
-      "reputation": 15,
-      "collection_tier": 15,
-      "notes": 15,
-      "confidence": 15,
-      "street_address": 9,
-      "postal_code": 9,
-      "primary_domain": 7,
-      "city": 2
-    },
-    "VIRGINIA": {
-      "museum_type": 28,
-      "status": 28,
-      "reputation": 28,
-      "collection_tier": 28,
-      "notes": 28,
-      "confidence": 28,
-      "street_address": 18,
-      "postal_code": 14,
-      "primary_domain": 10,
-      "city": 4
-    },
-    "WASHINGTON": {
-      "museum_type": 46,
-      "status": 46,
-      "reputation": 46,
-      "collection_tier": 46,
-      "notes": 46,
-      "confidence": 46,
-      "street_address": 26,
-      "postal_code": 19,
-      "primary_domain": 12,
-      "city": 10
-    },
-    "WEST VIRGINIA": {
-      "museum_type": 3,
-      "street_address": 3,
-      "postal_code": 3,
-      "status": 3,
       "reputation": 3,
       "collection_tier": 3,
-      "notes": 3,
       "confidence": 3,
-      "city": 2
+      "notes": 2
+    },
+    "VERMONT": {
+      "status": 15,
+      "collection_tier": 13,
+      "reputation": 12,
+      "confidence": 12,
+      "primary_domain": 7,
+      "notes": 2
+    },
+    "VIRGINIA": {
+      "status": 28,
+      "collection_tier": 23,
+      "reputation": 22,
+      "confidence": 22,
+      "notes": 12,
+      "primary_domain": 10
+    },
+    "WASHINGTON": {
+      "status": 46,
+      "collection_tier": 38,
+      "reputation": 33,
+      "confidence": 33,
+      "notes": 12,
+      "primary_domain": 12
+    },
+    "WEST VIRGINIA": {
+      "status": 3,
+      "reputation": 2,
+      "collection_tier": 2,
+      "confidence": 2,
+      "notes": 1
     },
     "WISCONSIN": {
-      "museum_type": 18,
       "status": 18,
-      "reputation": 18,
-      "collection_tier": 18,
-      "notes": 18,
-      "confidence": 18,
-      "street_address": 12,
-      "postal_code": 11,
+      "collection_tier": 11,
+      "reputation": 10,
+      "confidence": 10,
       "primary_domain": 6,
-      "city": 4
+      "notes": 3
     },
     "WYOMING": {
-      "museum_type": 8,
       "status": 8,
-      "reputation": 8,
-      "collection_tier": 8,
-      "notes": 8,
-      "confidence": 8,
-      "street_address": 6,
-      "postal_code": 5,
+      "reputation": 6,
+      "collection_tier": 6,
+      "confidence": 6,
       "primary_domain": 3,
-      "city": 2
+      "notes": 2
     }
   },
   "examples_by_field": {
-    "museum_type": [
-      {
-        "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
-        "museum_name": "Anchorage Museum at Rasmuson Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-palmer-museum-of-history-and-art",
-        "museum_name": "Palmer Museum of History and Art",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-sheldon-museum-and-cultural-center",
-        "museum_name": "Sheldon Museum and Cultural Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-the-kodiak-history-museum",
-        "museum_name": "The Kodiak History Museum",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-valdez-museum-historical-archive",
-        "museum_name": "Valdez Museum & Historical Archive",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-al-unknown-alabama-contemporary-art-center",
-        "museum_name": "Alabama Contemporary Art Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-birmingham-civil-rights-institute",
-        "museum_name": "Birmingham Civil Rights Institute",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-huntsville-museum-of-art",
-        "museum_name": "Huntsville Museum of Art",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jemison-carnegie-heritage-hall-museum-and-arts-center",
-        "museum_name": "Jemison Carnegie Heritage Hall Museum and Arts Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jule-collins-smith-museum-at-auburn-university",
-        "museum_name": "Jule Collins Smith Museum at Auburn University",
-        "state_province": "ALABAMA"
-      }
-    ],
     "primary_domain": [
       {
         "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
@@ -777,58 +510,6 @@
         "museum_id": "usa-az-phoenix-heard-museum",
         "museum_name": "Heard Museum",
         "state_province": "ARIZONA"
-      }
-    ],
-    "status": [
-      {
-        "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
-        "museum_name": "Anchorage Museum at Rasmuson Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-palmer-museum-of-history-and-art",
-        "museum_name": "Palmer Museum of History and Art",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-sheldon-museum-and-cultural-center",
-        "museum_name": "Sheldon Museum and Cultural Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-the-kodiak-history-museum",
-        "museum_name": "The Kodiak History Museum",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-valdez-museum-historical-archive",
-        "museum_name": "Valdez Museum & Historical Archive",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-al-unknown-alabama-contemporary-art-center",
-        "museum_name": "Alabama Contemporary Art Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-birmingham-civil-rights-institute",
-        "museum_name": "Birmingham Civil Rights Institute",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-huntsville-museum-of-art",
-        "museum_name": "Huntsville Museum of Art",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jemison-carnegie-heritage-hall-museum-and-arts-center",
-        "museum_name": "Jemison Carnegie Heritage Hall Museum and Arts Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jule-collins-smith-museum-at-auburn-university",
-        "museum_name": "Jule Collins Smith Museum at Auburn University",
-        "state_province": "ALABAMA"
       }
     ],
     "reputation": [
@@ -935,58 +616,6 @@
         "state_province": "ALABAMA"
       }
     ],
-    "notes": [
-      {
-        "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
-        "museum_name": "Anchorage Museum at Rasmuson Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-palmer-museum-of-history-and-art",
-        "museum_name": "Palmer Museum of History and Art",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-sheldon-museum-and-cultural-center",
-        "museum_name": "Sheldon Museum and Cultural Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-the-kodiak-history-museum",
-        "museum_name": "The Kodiak History Museum",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-ak-unknown-valdez-museum-historical-archive",
-        "museum_name": "Valdez Museum & Historical Archive",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-al-unknown-alabama-contemporary-art-center",
-        "museum_name": "Alabama Contemporary Art Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-birmingham-civil-rights-institute",
-        "museum_name": "Birmingham Civil Rights Institute",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-huntsville-museum-of-art",
-        "museum_name": "Huntsville Museum of Art",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jemison-carnegie-heritage-hall-museum-and-arts-center",
-        "museum_name": "Jemison Carnegie Heritage Hall Museum and Arts Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jule-collins-smith-museum-at-auburn-university",
-        "museum_name": "Jule Collins Smith Museum at Auburn University",
-        "state_province": "ALABAMA"
-      }
-    ],
     "confidence": [
       {
         "museum_id": "usa-ak-unknown-anchorage-museum-at-rasmuson-center",
@@ -1039,41 +668,16 @@
         "state_province": "ALABAMA"
       }
     ],
-    "street_address": [
+    "status": [
       {
-        "museum_id": "usa-ak-unknown-palmer-museum-of-history-and-art",
-        "museum_name": "Palmer Museum of History and Art",
-        "state_province": "ALASKA"
+        "museum_id": "usa-ar-unknown-fort-smith-regional-art-museum",
+        "museum_name": "Fort Smith Regional Art Museum",
+        "state_province": "ARKANSAS"
       },
       {
-        "museum_id": "usa-ak-unknown-sheldon-museum-and-cultural-center",
-        "museum_name": "Sheldon Museum and Cultural Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-al-unknown-alabama-contemporary-art-center",
-        "museum_name": "Alabama Contemporary Art Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-birmingham-civil-rights-institute",
-        "museum_name": "Birmingham Civil Rights Institute",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-huntsville-museum-of-art",
-        "museum_name": "Huntsville Museum of Art",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jule-collins-smith-museum-at-auburn-university",
-        "museum_name": "Jule Collins Smith Museum at Auburn University",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-vulcan-park-and-museum",
-        "museum_name": "Vulcan Park and Museum",
-        "state_province": "ALABAMA"
+        "museum_id": "usa-ar-unknown-the-momentary",
+        "museum_name": "The Momentary",
+        "state_province": "ARKANSAS"
       },
       {
         "museum_id": "usa-ar-bentonville-crystal-bridges-museum-of-contemporary-american-art",
@@ -1089,48 +693,11 @@
         "museum_id": "usa-ar-little-rock-arkansas-museum-of-fine-arts",
         "museum_name": "Arkansas Museum of Fine Arts",
         "state_province": "ARKANSAS"
-      }
-    ],
-    "postal_code": [
-      {
-        "museum_id": "usa-ak-unknown-palmer-museum-of-history-and-art",
-        "museum_name": "Palmer Museum of History and Art",
-        "state_province": "ALASKA"
       },
       {
-        "museum_id": "usa-ak-unknown-sheldon-museum-and-cultural-center",
-        "museum_name": "Sheldon Museum and Cultural Center",
-        "state_province": "ALASKA"
-      },
-      {
-        "museum_id": "usa-al-unknown-alabama-contemporary-art-center",
-        "museum_name": "Alabama Contemporary Art Center",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-birmingham-civil-rights-institute",
-        "museum_name": "Birmingham Civil Rights Institute",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-huntsville-museum-of-art",
-        "museum_name": "Huntsville Museum of Art",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-jule-collins-smith-museum-at-auburn-university",
-        "museum_name": "Jule Collins Smith Museum at Auburn University",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-al-unknown-vulcan-park-and-museum",
-        "museum_name": "Vulcan Park and Museum",
-        "state_province": "ALABAMA"
-      },
-      {
-        "museum_id": "usa-ar-bentonville-crystal-bridges-museum-of-contemporary-american-art",
-        "museum_name": "Crystal Bridges Museum of Contemporary American Art",
-        "state_province": "ARKANSAS"
+        "museum_id": "usa-az-unknown-flagstaff-arts-council",
+        "museum_name": "Flagstaff Arts Council",
+        "state_province": "ARIZONA"
       },
       {
         "museum_id": "usa-az-unknown-kitt-peak-national-observatory",
@@ -1138,61 +705,157 @@
         "state_province": "ARIZONA"
       },
       {
-        "museum_id": "usa-az-camp-verde-verde-valley-archaeology-center",
-        "museum_name": "Verde Valley Archaeology Center",
+        "museum_id": "usa-az-unknown-phippen-museum",
+        "museum_name": "Phippen Museum",
+        "state_province": "ARIZONA"
+      },
+      {
+        "museum_id": "usa-az-unknown-phoenix-art-museum",
+        "museum_name": "Phoenix Art Museum",
+        "state_province": "ARIZONA"
+      },
+      {
+        "museum_id": "usa-az-unknown-scottsdale-museum-of-contemporary-art",
+        "museum_name": "Scottsdale Museum of Contemporary Art",
         "state_province": "ARIZONA"
       }
     ],
-    "city": [
+    "notes": [
       {
-        "museum_id": "usa-al-unknown-alabama-contemporary-art-center",
-        "museum_name": "Alabama Contemporary Art Center",
-        "state_province": "ALABAMA"
+        "museum_id": "usa-ar-unknown-the-momentary",
+        "museum_name": "The Momentary",
+        "state_province": "ARKANSAS"
       },
       {
-        "museum_id": "usa-al-unknown-jule-collins-smith-museum-at-auburn-university",
-        "museum_name": "Jule Collins Smith Museum at Auburn University",
-        "state_province": "ALABAMA"
+        "museum_id": "usa-az-unknown-flagstaff-arts-council",
+        "museum_name": "Flagstaff Arts Council",
+        "state_province": "ARIZONA"
       },
       {
-        "museum_id": "usa-ca-unknown-arts-benicia",
-        "museum_name": "Arts Benicia",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-ct-unknown-america-s-first-law-school",
+        "museum_name": "America’s First Law School",
+        "state_province": "CONNECTICUT"
       },
       {
-        "museum_id": "usa-ca-unknown-chinese-american-historical-museum-cahm",
-        "museum_name": "Chinese American Historical Museum (CAHM)",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-ct-west-hartford-noah-webster-house-west-hartford-historical-society",
+        "museum_name": "Noah Webster House & West Hartford Historical Society",
+        "state_province": "CONNECTICUT"
       },
       {
-        "museum_id": "usa-ca-unknown-doug-adams-gallery",
-        "museum_name": "Doug Adams Gallery",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-de-unknown-winterthur-museum-country-estate",
+        "museum_name": "Winterthur Museum & Country Estate",
+        "state_province": "DELAWARE"
       },
       {
-        "museum_id": "usa-ca-unknown-fullerton-museum-center",
-        "museum_name": "Fullerton Museum Center",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-fl-unknown-everglades-wonder-gardens",
+        "museum_name": "Everglades Wonder Gardens",
+        "state_province": "FLORIDA"
       },
       {
-        "museum_id": "usa-ca-unknown-great-valley-museum",
-        "museum_name": "Great Valley Museum",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-fl-unknown-history-of-diving-museum",
+        "museum_name": "History of Diving Museum",
+        "state_province": "FLORIDA"
       },
       {
-        "museum_id": "usa-ca-unknown-international-house-davis",
-        "museum_name": "International House Davis",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-fl-unknown-house-of-refuge",
+        "museum_name": "House of Refuge",
+        "state_province": "FLORIDA"
       },
       {
-        "museum_id": "usa-ca-unknown-los-angeles-contemporary-exhibitions",
-        "museum_name": "Los Angeles Contemporary Exhibitions",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-fl-unknown-imagine-museum",
+        "museum_name": "Imagine Museum",
+        "state_province": "FLORIDA"
       },
       {
-        "museum_id": "usa-ca-unknown-mission-inn-foundation-and-museum",
-        "museum_name": "Mission Inn Foundation and Museum",
-        "state_province": "CALIFORNIA"
+        "museum_id": "usa-fl-unknown-lightner-museum",
+        "museum_name": "Lightner Museum",
+        "state_province": "FLORIDA"
+      }
+    ],
+    "street_address": [
+      {
+        "museum_id": "usa-de-unknown-winterthur-museum-country-estate",
+        "museum_name": "Winterthur Museum & Country Estate",
+        "state_province": "DELAWARE"
+      },
+      {
+        "museum_id": "usa-nm-unknown-corrales-arts-center",
+        "museum_name": "Corrales Arts Center",
+        "state_province": "NEW MEXICO"
+      },
+      {
+        "museum_id": "bermuda-zz-paget-the-masterworks-museum-of-bermuda-art",
+        "museum_name": "The Masterworks Museum of Bermuda Art",
+        "state_province": "BERMUDA"
+      }
+    ],
+    "postal_code": [
+      {
+        "museum_id": "usa-de-unknown-winterthur-museum-country-estate",
+        "museum_name": "Winterthur Museum & Country Estate",
+        "state_province": "DELAWARE"
+      },
+      {
+        "museum_id": "usa-nm-unknown-corrales-arts-center",
+        "museum_name": "Corrales Arts Center",
+        "state_province": "NEW MEXICO"
+      },
+      {
+        "museum_id": "bermuda-zz-paget-the-masterworks-museum-of-bermuda-art",
+        "museum_name": "The Masterworks Museum of Bermuda Art",
+        "state_province": "BERMUDA"
+      }
+    ],
+    "museum_type": [
+      {
+        "museum_id": "bermuda-zz-hamilton-bermuda-national-gallery",
+        "museum_name": "Bermuda National Gallery",
+        "state_province": "BERMUDA"
+      },
+      {
+        "museum_id": "bermuda-zz-paget-the-masterworks-museum-of-bermuda-art",
+        "museum_name": "The Masterworks Museum of Bermuda Art",
+        "state_province": "BERMUDA"
+      },
+      {
+        "museum_id": "brazil-zz-rio-de-janeiro-museu-de-arte-moderna",
+        "museum_name": "Museu de Arte Moderna",
+        "state_province": "BRAZIL"
+      },
+      {
+        "museum_id": "canada-zz-unknown-art-gallery-of-alberta",
+        "museum_name": "Art Gallery of Alberta",
+        "state_province": "CANADA"
+      },
+      {
+        "museum_id": "canada-zz-unknown-art-gallery-of-southwestern-manitoba",
+        "museum_name": "Art Gallery of Southwestern Manitoba",
+        "state_province": "CANADA"
+      },
+      {
+        "museum_id": "canada-zz-unknown-beaverbrook-art-gallery",
+        "museum_name": "Beaverbrook Art Gallery",
+        "state_province": "CANADA"
+      },
+      {
+        "museum_id": "canada-zz-unknown-confederation-centre-of-the-arts",
+        "museum_name": "Confederation Centre of the Arts",
+        "state_province": "CANADA"
+      },
+      {
+        "museum_id": "canada-zz-unknown-judith-norman-alix-art-gallery",
+        "museum_name": "Judith & Norman Alix Art Gallery",
+        "state_province": "CANADA"
+      },
+      {
+        "museum_id": "canada-zz-unknown-kamloops-art-gallery",
+        "museum_name": "Kamloops Art Gallery",
+        "state_province": "CANADA"
+      },
+      {
+        "museum_id": "canada-zz-unknown-mackenzie-art-gallery",
+        "museum_name": "MacKenzie Art Gallery",
+        "state_province": "CANADA"
       }
     ]
   },

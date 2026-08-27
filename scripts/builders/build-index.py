@@ -25,8 +25,11 @@ from typing import Optional
 
 from pydantic import BaseModel, ConfigDict, ValidationError, field_validator, model_validator
 
-# Set UTF-8 encoding for Windows console
-if sys.platform == 'win32':
+def configure_console_output():
+    """Use UTF-8 console streams on Windows when running as a script."""
+    if sys.platform != 'win32':
+        return
+
     import io
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
@@ -50,17 +53,21 @@ TIER_2_SPECIAL = [
 ]
 
 PRIMARY_DOMAIN_ALLOWED = {"Art", "History", "Science", "Culture", "Specialty", "Mixed"}
-TIME_NEEDED_ALLOWED = {"Quick stop (<1 hr)", "Half day", "Full day"}
+TIME_NEEDED_ALLOWED = {"Quick stop", "Half day", "Most of the Day", "All Day"}
 TIME_NEEDED_SYNONYMS = {
-    "quick stop": "Quick stop (<1 hr)",
-    "quick stop (1-2 hours)": "Quick stop (<1 hr)",
-    "1-2 hours": "Quick stop (<1 hr)",
-    "<1 hr": "Quick stop (<1 hr)",
+    "quick stop (<1 hr)": "Quick stop",
+    "quick stop (1-2 hours)": "Quick stop",
+    "1-2 hours": "Quick stop",
+    "<1 hr": "Quick stop",
     "half day (2-4 hours)": "Half day",
     "2-4 hours": "Half day",
     "half-day": "Half day",
-    "full day (4+ hours)": "Full day",
-    "4+ hours": "Full day",
+    "most of day": "Most of the Day",
+    "most of the day": "Most of the Day",
+    "full day": "All Day",
+    "full day (4+ hours)": "All Day",
+    "4+ hours": "Most of the Day",
+    "all day": "All Day",
 }
 
 def calculate_priority_score(museum):
@@ -157,7 +164,7 @@ class MuseumRecord(BaseModel):
             return v
         normalized = normalize_time_needed(v)
         if normalized is None:
-            raise ValueError("time_needed must be one of the MRD enums: Quick stop (<1 hr), Half day, Full day")
+            raise ValueError("time_needed must be one of the MRD enums: Quick stop, Half day, Most of the Day, All Day")
         return normalized
 
     @model_validator(mode="after")
@@ -410,4 +417,5 @@ def main():
     print("\n Index build complete!")
 
 if __name__ == '__main__':
+    configure_console_output()
     main()

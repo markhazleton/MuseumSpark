@@ -128,7 +128,7 @@ Whether planning a 2-hour layover or a weekend art tour, MuseumSpark helps you d
 
 ### Frontend
 - **React 19** - Modern UI library
-- **Vite 7** - Lightning-fast build tool
+- **Vite 8** - Lightning-fast build tool
 - **Tailwind CSS 4** - Utility-first styling
 - **React Router 7** - Client-side routing
 
@@ -160,7 +160,7 @@ Whether planning a 2-hour layover or a weekend art tour, MuseumSpark helps you d
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js 18+** (for the website)
+- **Node.js 20+** (for the website)
 - **Python 3.11+** (for data scripts)
 - **Git** (for version control)
 

@@ -185,7 +185,7 @@ def main():
     output_file = INDEX_DIR / 'all-museums-enriched.json'
     save_json(output_file, enriched_index)
     
-    print(f"\n✓ Enriched index saved to: {output_file}")
+    print(f"\n[OK] Enriched index saved to: {output_file}")
     print(f"  Total museums: {len(enriched_museums)}")
     print(f"  Scored museums: {scored_count}")
     print(f"  States with scores: {', '.join(sorted(states_with_scores))}")
@@ -204,7 +204,7 @@ def main():
     
     scores_file = INDEX_DIR / 'tour-planning-scores.json'
     save_json(scores_file, scores_index)
-    print(f"\n✓ Scores index saved to: {scores_file}")
+    print(f"\n[OK] Scores index saved to: {scores_file}")
     
 
 if __name__ == '__main__':
