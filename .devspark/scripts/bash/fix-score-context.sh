@@ -99,6 +99,34 @@ def read_text(path: Path, limit: int = 200_000) -> str:
         return ""
 
 
+def tracked_dependency_paths(names: list[str]) -> list[str]:
+    name_set = set(names)
+    tracked = [
+        path.replace("\\", "/")
+        for path in git_lines("ls-files")
+        if Path(path).name in name_set
+    ]
+    excluded_parts = {"node_modules", ".vite", ".venv", "venv", "dist", "build"}
+    tracked = [
+        path for path in tracked
+        if not (set(Path(path).parts) & excluded_parts)
+        and not path.startswith(("data/cache/", "data/runs/", "data/archive/"))
+    ]
+    if tracked:
+        return sorted(set(tracked))
+
+    found = []
+    for name in names:
+        for path in repo_root.rglob(name):
+            if not path.is_file():
+                continue
+            parts = set(path.relative_to(repo_root).parts)
+            if parts & (excluded_parts | {"cache", "runs", "archive"}):
+                continue
+            found.append(rel(path))
+    return sorted(set(found))
+
+
 def readme_metrics() -> dict:
     candidates = sorted(repo_root.glob("README*"))
     readme = next((p for p in candidates if p.is_file()), None)
@@ -155,22 +183,30 @@ def readme_metrics() -> dict:
 
 
 def dependency_signals() -> dict:
-    manifests = exists_any([
+    manifest_names = [
         "package.json", "pyproject.toml", "requirements.txt", "Pipfile", "poetry.lock",
         "go.mod", "Cargo.toml", "pom.xml", "build.gradle", "build.gradle.kts", "Directory.Packages.props",
-    ])
-    lockfiles = exists_any([
+    ]
+    lock_names = [
         "package-lock.json", "npm-shrinkwrap.json", "yarn.lock", "pnpm-lock.yaml", "poetry.lock",
         "Pipfile.lock", "requirements.lock", "go.sum", "Cargo.lock", "packages.lock.json",
-    ])
+    ]
+    manifests = tracked_dependency_paths(manifest_names)
+    lockfiles = tracked_dependency_paths(lock_names)
     direct_count = None
-    package_json = repo_root / "package.json"
-    if package_json.exists():
+    direct_counts = {}
+    for package_json_path in [path for path in manifests if Path(path).name == "package.json"]:
         try:
+            package_json = repo_root / package_json_path
             pkg = json.loads(read_text(package_json))
-            direct_count = sum(len(pkg.get(key, {}) or {}) for key in ("dependencies", "devDependencies", "peerDependencies", "optionalDependencies"))
+            direct_counts[package_json_path] = sum(
+                len(pkg.get(key, {}) or {})
+                for key in ("dependencies", "devDependencies", "peerDependencies", "optionalDependencies")
+            )
         except json.JSONDecodeError:
-            direct_count = None
+            direct_counts[package_json_path] = None
+    if direct_counts:
+        direct_count = sum(value for value in direct_counts.values() if value is not None)
     opportunities = []
     if manifests and not lockfiles:
         opportunities.append("Add or restore lockfiles so dependency state is reproducible before currency checks.")
@@ -180,6 +216,7 @@ def dependency_signals() -> dict:
         "manifests": manifests,
         "lockfiles": lockfiles,
         "direct_dependency_count_package_json": direct_count,
+        "direct_dependency_counts": direct_counts,
         "currency_score_note": "Dependency currency requires registry/latest-version data; this context only identifies local manifests and lockfile readiness.",
         "opportunities": opportunities,
     }
@@ -256,11 +293,15 @@ def attention_signals() -> dict:
             }
         if isinstance(issues, list):
             open_issues = {"count": len(issues)}
-        alerts = gh_json(["api", "repos/{owner}/{repo}/dependabot/alerts", "--paginate"])
+        alerts = gh_json(["api", "repos/{owner}/{repo}/dependabot/alerts?state=open", "--paginate"])
         if isinstance(alerts, list):
             by_severity = {}
             for alert in alerts:
-                severity = ((alert.get("security_vulnerability") or {}).get("severity") or "unknown").lower()
+                severity = (
+                    (alert.get("security_advisory") or {}).get("severity")
+                    or (alert.get("security_vulnerability") or {}).get("severity")
+                    or "unknown"
+                ).lower()
                 by_severity[severity] = by_severity.get(severity, 0) + 1
             security_alerts = by_severity
     return {

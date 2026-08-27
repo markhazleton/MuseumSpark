@@ -1,11 +1,21 @@
 """Validate Phase 2 cache vs state file field consistency."""
 
+import sys
 import json
 from pathlib import Path
 from collections import defaultdict
 
 STATES_DIR = Path("data/states")
 CACHE_DIR = Path("data/cache/phase2")
+
+
+def configure_console_output() -> None:
+    """Use UTF-8 console streams on Windows for status symbols."""
+    if sys.platform != "win32":
+        return
+
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 def main():
     print("=== Phase 2 Cache vs State File Validation ===\n")
@@ -121,4 +131,5 @@ def main():
         print("This suggests Phase 2 may not be writing to state files correctly.")
 
 if __name__ == "__main__":
+    configure_console_output()
     main()

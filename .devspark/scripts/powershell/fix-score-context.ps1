@@ -56,6 +56,35 @@ function Get-ExistingPaths {
     return @($found)
 }
 
+function Get-TrackedDependencyPaths {
+    param([string]$RepoRoot, [string[]]$Names)
+    $nameSet = @{}
+    foreach ($name in $Names) {
+        $nameSet[$name] = $true
+    }
+
+    $tracked = Invoke-GitLines -GitArgs @('ls-files') |
+        ForEach-Object { $_.Replace('\', '/') } |
+        Where-Object {
+            $leaf = Split-Path $_ -Leaf
+            $nameSet.ContainsKey($leaf) -and
+            $_ -notmatch '(^|/)(node_modules|\.vite|\.venv|venv|dist|build|data/cache|data/runs|data/archive)(/|$)'
+        } |
+        Sort-Object -Unique
+
+    if (@($tracked).Count -gt 0) {
+        return @($tracked)
+    }
+
+    $found = @()
+    foreach ($name in $Names) {
+        $found += Get-ChildItem -Path $RepoRoot -Recurse -File -Filter $name -ErrorAction SilentlyContinue |
+            Where-Object { $_.FullName -notmatch '[\\/](node_modules|\.vite|\.venv|venv|dist|build|cache|runs|archive)[\\/]' } |
+            ForEach-Object { Get-RelativePath -Path $_.FullName -RepoRoot $RepoRoot }
+    }
+    return @($found | Sort-Object -Unique)
+}
+
 function Get-Scope {
     param([string[]]$RawArguments)
     $scope = [ordered]@{
@@ -141,18 +170,21 @@ function Get-ReadmeMetrics {
 
 function Get-DependencySignals {
     param([string]$RepoRoot)
-    $manifests = Get-ExistingPaths -RepoRoot $RepoRoot -Names @(
+    $manifestNames = @(
         'package.json', 'pyproject.toml', 'requirements.txt', 'Pipfile', 'poetry.lock',
         'go.mod', 'Cargo.toml', 'pom.xml', 'build.gradle', 'build.gradle.kts', 'Directory.Packages.props'
     )
-    $lockfiles = Get-ExistingPaths -RepoRoot $RepoRoot -Names @(
+    $lockNames = @(
         'package-lock.json', 'npm-shrinkwrap.json', 'yarn.lock', 'pnpm-lock.yaml', 'poetry.lock',
         'Pipfile.lock', 'requirements.lock', 'go.sum', 'Cargo.lock', 'packages.lock.json'
     )
+    $manifests = Get-TrackedDependencyPaths -RepoRoot $RepoRoot -Names $manifestNames
+    $lockfiles = Get-TrackedDependencyPaths -RepoRoot $RepoRoot -Names $lockNames
 
     $directCount = $null
-    $packageJson = Join-Path $RepoRoot 'package.json'
-    if (Test-Path -LiteralPath $packageJson) {
+    $directCounts = [ordered]@{}
+    foreach ($packageJsonPath in @($manifests | Where-Object { (Split-Path $_ -Leaf) -eq 'package.json' })) {
+        $packageJson = Join-Path $RepoRoot $packageJsonPath
         try {
             $pkg = Get-Content -LiteralPath $packageJson -Raw -Encoding utf8 | ConvertFrom-Json
             $count = 0
@@ -161,10 +193,16 @@ function Get-DependencySignals {
                     $count += @($pkg.$key.PSObject.Properties).Count
                 }
             }
-            $directCount = $count
+            $directCounts[$packageJsonPath] = $count
         }
         catch {
-            $directCount = $null
+            $directCounts[$packageJsonPath] = $null
+        }
+    }
+    if ($directCounts.Count -gt 0) {
+        $directCount = 0
+        foreach ($value in $directCounts.Values) {
+            if ($null -ne $value) { $directCount += $value }
         }
     }
 
@@ -180,6 +218,7 @@ function Get-DependencySignals {
         manifests = @($manifests)
         lockfiles = @($lockfiles)
         direct_dependency_count_package_json = $directCount
+        direct_dependency_counts = $directCounts
         currency_score_note = 'Dependency currency requires registry/latest-version data; this context only identifies local manifests and lockfile readiness.'
         opportunities = @($opportunities)
     }
@@ -247,7 +286,7 @@ function Invoke-GhJson {
     try {
         $raw = gh @GhArgs 2>$null
         if ($LASTEXITCODE -ne 0 -or -not $raw) { return $null }
-        return ($raw | ConvertFrom-Json)
+        return ,(ConvertFrom-Json -InputObject $raw -NoEnumerate)
     }
     catch {
         return $null
@@ -270,7 +309,7 @@ function Get-AttentionSignals {
     if ($ghAvailable) {
         $prs = Invoke-GhJson -GhArgs @('pr', 'list', '--state', 'open', '--limit', '100', '--json', 'number,isDraft,reviewRequests,createdAt')
         $issues = Invoke-GhJson -GhArgs @('issue', 'list', '--state', 'open', '--limit', '100', '--json', 'number,createdAt')
-        if ($prs) {
+        if ($null -ne $prs) {
             $prArray = @($prs)
             $openPrs = [ordered]@{
                 count = $prArray.Count
@@ -278,15 +317,18 @@ function Get-AttentionSignals {
                 review_requested_count = @($prArray | Where-Object { $_.reviewRequests -and @($_.reviewRequests).Count -gt 0 }).Count
             }
         }
-        if ($issues) {
+        if ($null -ne $issues) {
             $openIssues = [ordered]@{ count = @($issues).Count }
         }
-        $alerts = Invoke-GhJson -GhArgs @('api', 'repos/{owner}/{repo}/dependabot/alerts', '--paginate')
-        if ($alerts) {
+        $alerts = Invoke-GhJson -GhArgs @('api', 'repos/{owner}/{repo}/dependabot/alerts?state=open', '--paginate')
+        if ($null -ne $alerts) {
             $bySeverity = @{}
             foreach ($alert in @($alerts)) {
                 $severity = 'unknown'
-                if ($alert.security_vulnerability -and $alert.security_vulnerability.severity) {
+                if ($alert.security_advisory -and $alert.security_advisory.severity) {
+                    $severity = $alert.security_advisory.severity.ToLower()
+                }
+                elseif ($alert.security_vulnerability -and $alert.security_vulnerability.severity) {
                     $severity = $alert.security_vulnerability.severity.ToLower()
                 }
                 $bySeverity[$severity] = 1 + $(if ($bySeverity.ContainsKey($severity)) { $bySeverity[$severity] } else { 0 })

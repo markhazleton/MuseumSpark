@@ -6,12 +6,12 @@ Risk assessment is performed on the current `main` branch.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| v1.0+   | :white_check_mark: |
-| < v1.0  | :x:                |
+| v0.1.x  | :white_check_mark: |
+| < v0.1  | :x:                |
 
 ## Reporting a Vulnerability
 
-Use this project for planning personal travel. It is a static site (Phase 1) and will eventually be a self-hosted API (Phase 2).
+Use this project for planning personal travel. It is currently a static site backed by generated JSON data, with a future API planned for a later phase.
 
 If you discover a security vulnerability (e.g., XSS in the browse page, or a data injection issue), please do NOT open an issue.
 
