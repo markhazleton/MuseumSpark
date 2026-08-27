@@ -4,6 +4,9 @@ handoffs:
   - label: Re-Review Updated PR
     agent: devspark.pr-review
     prompt: Run /devspark.pr-review UPDATE for this PR after fixes are committed
+scripts:
+  sh: .devspark/scripts/bash/address-pr-review.sh --pr-id $ARGUMENTS --json
+  ps: .devspark/scripts/powershell/address-pr-review.ps1 -PrId $ARGUMENTS -Json
 ---
 
 ## User Input
@@ -23,19 +26,29 @@ This command is the **author-side companion** to `/devspark.pr-review`. It helps
 
 **IMPORTANT**: The staging gates are mechanical and mandatory. Do not bypass them.
 
+## Genuine Fix Discipline
+
+Apply `templates/command-preamble-contract.md` §9 while resolving each PR review
+finding. A finding is not resolved when the proof only moves a metric and leaves
+the behavior named by `intent_cue` unchanged.
+
 ## Prerequisites
 
 - Existing PR review file at `/.documentation/specs/pr-review/pr-{PR_ID}.md`
 - Git repository with the PR source branch checked out
-- PowerShell 7+ (`pwsh`) available for the gate helper script
+- PowerShell 7+ (`pwsh`) on Windows, or Bash on macOS/Linux, for the gate helper script
+
+## Definition of Done
+
+Done when: every selected finding is fixed and committed (Phase 4), the review file is updated and committed separately (Phase 6), the two commits are verified disjoint, and the handoff message is printed (Phase 7). If validation (Phase 3) can't be made to pass, stop and report which finding is blocking — don't keep retrying silently.
 
 ## Outline
 
 ### Phase 0 — Load context
 
-> **Script Resolution**: Before running `.devspark/scripts/powershell/address-pr-review.ps1 -PrId $ARGUMENTS -Json`, apply the 2-tier override check for PowerShell only — if `.documentation/scripts/powershell/address-pr-review.ps1` exists on disk, run that file instead, preserving all arguments. Team override in `.documentation/scripts/powershell/` takes priority over `.devspark/scripts/powershell/`.
+> **Script Resolution**: Before running `{SCRIPT}`, apply the 2-tier override check — if `.documentation/scripts/powershell/address-pr-review.ps1` (PowerShell) or `.documentation/scripts/bash/address-pr-review.sh` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
 
-1. Run `.devspark/scripts/powershell/address-pr-review.ps1 -PrId $ARGUMENTS -Json` with `-PrId {PR_ID} -Json`.
+1. Run `{SCRIPT}` with the PR id and JSON output enabled (`-PrId {PR_ID} -Json` on PowerShell, `--pr-id {PR_ID} --json` on Bash).
 2. Fail fast if `/.documentation/specs/pr-review/pr-{PR_ID}.md` is missing.
 3. Parse open findings from checklist lines matching:
    - `- [ ] **C-##**`
@@ -52,7 +65,7 @@ If no open findings remain, print: `Nothing to address.` and stop.
 ### Phase 1 — Plan
 
 1. Render open findings as a checklist with severity badges.
-2. Ask which findings to address this iteration (`all` allowed).
+2. Ask which findings to address this iteration (`all` allowed). **Autonomy override**: if `--auto` (or a standing autonomy instruction) is in effect, skip the ask and select `all` open findings except any `C-NN` (Critical) finding whose fix is ambiguous enough to need a human judgment call — flag those specifically and proceed with the rest.
 3. Build an internal todo list with one item per selected finding.
 
 ### Phase 2 — Fix loop (per finding)
@@ -74,7 +87,7 @@ For each selected finding:
 
 ### Phase 4 — Commit code fixes (isolation gate #1)
 
-1. Run gate script with `-Gate code-only` before commit.
+1. Run gate script with code-only mode before commit (`-Gate code-only` on PowerShell, `--gate code-only` on Bash).
 2. If the gate fails, **abort** and print offending staged paths.
 3. Review staged diff and commit with:
 
@@ -101,7 +114,7 @@ Then update metadata:
 
 ### Phase 6 — Commit review file (isolation gate #2)
 
-1. Run gate script with `-Gate review-only` before commit.
+1. Run gate script with review-only mode before commit (`-Gate review-only` on PowerShell, `--gate review-only` on Bash).
 2. If the gate fails, **abort** and print offending staged paths.
 3. Commit with:
 
@@ -162,10 +175,11 @@ findings:
   - finding_id: <stable-id-unique-within-this-command-output>   # e.g., analyze-001, clarify-002
     severity: critical | high | medium | low
     description: <1-3 sentence problem statement>
+    intent_cue: <behavioral intent that must be repaired or preserved>
     recommended_action: <machine-actionable next step>
     execution_mode: auto | selective | manual
     status: open                                                  # set to `resolved` after remediation
     outcome: ""                                                  # populated post-resolution by address-pr-review
 ```
 
-inding_id MUST be stable across re-runs when the underlying issue is unchanged. xecution_mode MUST be one of: `auto` (safe to apply automatically), `selective` (apply with reviewer approval), `manual` (requires human implementation). The `status` and `outcome` fields are written by `/devspark.address-pr-review` (FR-028).
+`finding_id` MUST be stable across re-runs when the underlying issue is unchanged. `intent_cue` MUST name the behavior, contract, safety property, or user outcome the finding protects before metric-focused remediation. `execution_mode` MUST be one of: `auto` (safe to apply automatically), `selective` (apply with reviewer approval), `manual` (requires human implementation). The `status` and `outcome` fields are written by `/devspark.address-pr-review` (FR-028).

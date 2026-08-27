@@ -142,6 +142,7 @@ function Get-FeaturePathsEnv {
         DATA_MODEL    = Join-Path $featureDir 'data-model.md'
         QUICKSTART    = Join-Path $featureDir 'quickstart.md'
         CONTRACTS_DIR = Join-Path $featureDir 'contracts'
+        KNOWLEDGE_DIR = Join-Path $featureDir 'knowledge'
     }
 }
 
@@ -186,6 +187,56 @@ function Get-MarkdownFrontmatterValue {
     }
 
     return $null
+}
+
+function Write-OkfKnowledgeDocument {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$FeatureDir,
+        [Parameter(Mandatory = $true)]
+        [string]$DocumentId,
+        [Parameter(Mandatory = $true)]
+        [string]$DocumentType,
+        [Parameter(Mandatory = $true)]
+        [string]$Title,
+        [string]$Status = 'active',
+        [string]$SourceArtifact = 'spec.md'
+    )
+
+    if (-not $FeatureDir -or -not $DocumentId -or -not $DocumentType -or -not $Title) {
+        return
+    }
+
+    try {
+        $featureId = Split-Path $FeatureDir -Leaf
+        $knowledgeDir = Join-Path $FeatureDir 'knowledge'
+        New-Item -ItemType Directory -Path $knowledgeDir -Force | Out-Null
+        $outputFile = Join-Path $knowledgeDir "$DocumentId.md"
+        $updatedAt = Get-Date -Format 'yyyy-MM-dd'
+        $content = @"
+---
+okf_schema_version: "1.0"
+document_id: "$DocumentId"
+document_type: "$DocumentType"
+feature_id: "$featureId"
+title: "$Title"
+status: "$Status"
+requirement_ids: []
+task_ids: []
+gate_evidence_ids: []
+source_artifacts:
+  - "$SourceArtifact"
+updated_at: "$updatedAt"
+---
+
+# $Title
+
+This OKF knowledge document is emitted alongside existing DevSpark lifecycle artifacts.
+"@
+        Set-Content -LiteralPath $outputFile -Value $content -Encoding utf8
+    } catch {
+        Write-Verbose "Skipped OKF knowledge document write: $_"
+    }
 }
 
 function Test-FileExists {
@@ -575,7 +626,6 @@ function Get-FeaturePathsAppAware {
         DATA_MODEL     = Join-Path $featureDir 'data-model.md'
         QUICKSTART     = Join-Path $featureDir 'quickstart.md'
         CONTRACTS_DIR  = Join-Path $featureDir 'contracts'
+        KNOWLEDGE_DIR  = Join-Path $featureDir 'knowledge'
     }
 }
-
-

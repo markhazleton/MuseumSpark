@@ -266,6 +266,7 @@ if (Test-Path $template) {
 } else { 
     New-Item -ItemType File -Path $specFile | Out-Null 
 }
+Write-OkfKnowledgeDocument -FeatureDir $featureDir -DocumentId 'traceability-index' -DocumentType 'traceability-index' -Title 'Traceability Index' -Status 'draft' -SourceArtifact 'spec.md'
 
 # Set the DEVSPARK_FEATURE environment variable for the current session
 $env:DEVSPARK_FEATURE = $branchName
@@ -285,4 +286,3 @@ if ($Json) {
     Write-Output "HAS_GIT: $hasGit"
     Write-Output "DEVSPARK_FEATURE environment variable set to: $branchName"
 }
-

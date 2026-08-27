@@ -46,6 +46,7 @@ if (Test-Path $template) {
     # Create a basic plan file if template doesn't exist
     New-Item -ItemType File -Path $paths.IMPL_PLAN -Force | Out-Null
 }
+Write-OkfKnowledgeDocument -FeatureDir $paths.FEATURE_DIR -DocumentId 'plan-context' -DocumentType 'decision' -Title 'Plan Context' -Status 'active' -SourceArtifact 'plan.md'
 
 # Output results
 if ($Json) {

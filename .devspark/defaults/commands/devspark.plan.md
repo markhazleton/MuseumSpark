@@ -8,6 +8,12 @@ handoffs:
   - label: Create Checklist
     agent: devspark.checklist
     prompt: Create a checklist for the following domain...
+scripts:
+  sh: .devspark/scripts/bash/setup-plan.sh --json
+  ps: .devspark/scripts/powershell/setup-plan.ps1 -Json
+agent_scripts:
+  sh: .devspark/scripts/bash/update-agent-context.sh __AGENT__
+  ps: .devspark/scripts/powershell/update-agent-context.ps1 -AgentType __AGENT__
 ---
 
 ## User Input
@@ -18,16 +24,31 @@ $ARGUMENTS
 
 You **MUST** consider the user input before proceeding (if not empty).
 
+## Workflow Position
+
+**Step 3 of 4** in the authoring chain (`specify → clarify → plan → tasks`).
+
+- **Owns**: technical context (stack, libraries, project structure), Constitution Check gate, research consolidation, data model, interface contracts, per-agent context update.
+- **Does NOT own**: re-litigating WHAT/WHY (spec is authoritative); resolving open functional ambiguities (→ `/devspark.clarify`); the executable task list (→ `/devspark.tasks`); adversarial review (→ `/devspark.critic`, `/devspark.analyze`).
+- **Pre-flight**: if the loaded spec still contains `[NEEDS CLARIFICATION: …]` markers, halt and route to `/devspark.clarify`. Do not silently default open questions into planning decisions.
+
+## Definition of Done
+
+Done when: research.md has zero `NEEDS CLARIFICATION` markers, data-model.md/contracts//quickstart.md exist where applicable to the project type, the agent-context script has run, and the Constitution Check is re-evaluated post-design with no unresolved violations. This command stops after Phase 1 (step 4) — it does not generate tasks or write code. Chat output: report only the branch, IMPL_PLAN path, and generated artifact list — full design detail lives in the files.
+
+## Constitution Authority
+
+`/.documentation/memory/constitution.md` is **non-negotiable** for planning. Violations may not be carried forward as `NEEDS CLARIFICATION`; they must be resolved before exiting the Constitution Check gate. Justified deviations require an explicit `## Constitution Waivers` block in `plan.md` citing the principle, deviation, reason, and compensating control.
+
 ## Outline
 
 **Multi-app support**: If this repository uses multi-app mode (`.documentation/devspark.json` exists with `mode: "multi-app"`), check for `--app <id>` in the user input to scope this workflow to a specific application. When app context is provided, resolve artifacts from `{app.path}/.documentation/` instead of the repository root `.documentation/`. Print the resolved scope (app name, doc root) at the start of output.
 
-> **Script Resolution**: Before running `.devspark/scripts/powershell/setup-plan.ps1 -Json` or `.devspark/scripts/powershell/update-agent-context.ps1 -AgentType __AGENT__`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
+> **Script Resolution**: Before running `{SCRIPT}` or `{AGENT_SCRIPT}`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
 
-1. **Setup**: Run `.devspark/scripts/powershell/setup-plan.ps1 -Json` from repo root and parse JSON for FEATURE_SPEC, IMPL_PLAN, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
+1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for FEATURE_SPEC, IMPL_PLAN, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
 2. **Load context**: Read FEATURE_SPEC and `/.documentation/memory/constitution.md`. Load IMPL_PLAN template (already copied).
-
    - Read the YAML frontmatter in FEATURE_SPEC before planning.
    - Treat frontmatter as authoritative for `classification`, `risk_level`, `recommended_next_step`, and `required_gates`.
    - If the body text appears to conflict with the frontmatter, flag the inconsistency to the user instead of overriding the metadata.
@@ -84,13 +105,13 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Skip if project is purely internal (build scripts, one-off tools, etc.)
 
 3. **Agent context update**:
-   - Run `.devspark/scripts/powershell/update-agent-context.ps1 -AgentType __AGENT__`
+   - Run `{AGENT_SCRIPT}`
    - These scripts detect which AI agent is in use
    - Update the appropriate agent-specific context file
    - Add only new technology from current plan
    - Preserve manual additions between markers
 
-**Output**: data-model.md, /contracts/*, quickstart.md, agent-specific file
+**Output**: data-model.md, /contracts/\*, quickstart.md, agent-specific file
 
 ## Constraints
 

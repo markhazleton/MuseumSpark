@@ -4,6 +4,9 @@ handoffs:
   - label: View Review History
     agent: devspark.pr-review
     prompt: Show me previous PR reviews in .documentation/specs/pr-review/
+scripts:
+  sh: .devspark/scripts/bash/get-pr-context.sh $ARGUMENTS --json
+  ps: .devspark/scripts/powershell/get-pr-context.ps1 $ARGUMENTS -Json
 ---
 
 ## User Input
@@ -24,6 +27,12 @@ Reviews are advisory. The agent must explain constitution or lifecycle issues, r
 
 `/devspark.create-pr` is the preferred predecessor for spec-driven work because it collects task, checklist, and gate context before review. If the PR was created manually, continue with review but call out any missing lifecycle context.
 
+## Genuine Fix Discipline
+
+Apply `templates/command-preamble-contract.md` §9 when generating review
+findings. Each actionable finding must name the behavioral intent being
+protected before recommending metric movement or style cleanup.
+
 ## Prerequisites
 
 - Project constitution at `/.documentation/memory/constitution.md` (REQUIRED)
@@ -31,15 +40,19 @@ Reviews are advisory. The agent must explain constitution or lifecycle issues, r
 - GitHub CLI (`gh`) installed and authenticated (required)
 - **HARD RULE — Branch Sync**: The source (head) branch **MUST** be fully in sync with the target (base) branch. Do **NOT** proceed with review or approval if the source branch is behind the target. Instruct the user to rebase or merge the target branch into the source branch first.
 
+## Definition of Done
+
+Done when: the report is written to `/.documentation/specs/pr-review/pr-{PR_NUMBER}.md` (step 9) and the step-10 chat summary is printed. The execution limits in §1 (max 20 findings, max 25 files, "stop once evidence is sufficient") are the convergence condition for the analysis itself — don't expand scope beyond them speculatively. Chat output is the step-10 template only; the full report (all tables, all sections) lives in the file — don't re-paste it into chat.
+
 ## Outline
 
 **Multi-app support**: If this repository uses multi-app mode (`.documentation/devspark.json` exists with `mode: "multi-app"`), check for `--app <id>` in the user input to scope this workflow to a specific application. When app context is provided, resolve artifacts from `{app.path}/.documentation/` instead of the repository root `.documentation/`. Print the resolved scope (app name, doc root) at the start of output.
 
 ### 1. Initialize Review Context
 
-> **Script Resolution**: Before running `.devspark/scripts/powershell/get-pr-context.ps1 $ARGUMENTS -Json`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
+> **Script Resolution**: Before running `{SCRIPT}`, apply the 2-tier override check — if `.documentation/scripts/powershell/<filename>` (PowerShell) or `.documentation/scripts/bash/<filename>` (Bash) exists on disk, run that file instead, preserving all arguments. Team overrides in `.documentation/scripts/` always take priority over `.devspark/scripts/`.
 
-Run `.devspark/scripts/powershell/get-pr-context.ps1 $ARGUMENTS -Json` to extract PR context and parse JSON output for:
+Run `{SCRIPT}` to extract PR context and parse JSON output for:
 
 - `PR_CONTEXT`: PR metadata (number, title, branches, commit SHA, files, diff)
 - `CONSTITUTION_PATH`: Path to constitution file
@@ -92,6 +105,41 @@ If the script fails:
 
 For single quotes in args like "I'm reviewing", use escape syntax: e.g 'I'\''m reviewing' (or double-quote if possible: "I'm reviewing").
 
+### 1b. Trust-Tier Classification
+
+Detect workflow compliance for the PR's source branch before loading the constitution:
+
+1. Extract `head_branch` from PR context.
+2. Derive spec dir: `.documentation/specs/{head_branch}/`
+3. Check file existence:
+   - `spec.md` present?
+   - `plan.md` present?
+   - `tasks.md` present?
+4. Classify trust tier:
+   - All 3 present → **full-compliance** (standard review depth)
+   - `spec.md` only, or `spec.md` + `plan.md` → **partial-compliance** (note gap; moderate scrutiny)
+   - None present → **no-compliance** (elevated scrutiny; emit MEDIUM finding below)
+   - Branch name does not match `NNN-*` pattern → **no-compliance** (note naming convention gap)
+5. For **no-compliance** branches only, emit the following finding and include the reviewer alert below. Do NOT emit this finding or alert for full-compliance or partial-compliance branches.
+
+```yaml
+findings:
+  - finding_id: trust-tier-01
+    severity: medium
+    description: "Branch has no spec artifacts under .documentation/specs/{head_branch}/. Constitution §Development Workflow requires features to be spec-driven: specify first, plan second, implement third."
+    intent_cue: "Keep review behavior grounded in declared spec, plan, and task evidence before merge."
+    recommended_action: "Run /devspark.specify to create the spec, then /devspark.plan and /devspark.tasks before merging."
+    execution_mode: manual
+    status: open
+    outcome: ""
+```
+
+   > ⚠️ **No spec artifacts detected** — apply heightened attention to all findings in this
+   > report. The absence of a spec means requirements and acceptance criteria have not been
+   > formally defined; findings may undercount issues.
+
+   For **partial-compliance** branches (spec.md present but plan.md or tasks.md missing), note the gap inline in the review output without emitting a separate finding: "Partial spec compliance detected — plan.md or tasks.md missing. Standard depth review applied."
+
 ### 2. Load Constitution
 
 Read and parse `/.documentation/memory/constitution.md`:
@@ -100,6 +148,7 @@ Read and parse `/.documentation/memory/constitution.md`:
 - Identify MUST requirements (non-negotiable/mandatory)
 - Identify SHOULD requirements (recommended)
 - Note constitution version and amendment date
+- If `.documentation/memory/severity-registry.md` exists, load it and use its `§{section}.{LEVEL}` entries to validate finding codes when emitting findings
 - Build a checklist of principles to evaluate
 
 If constitution doesn't exist:
@@ -205,6 +254,7 @@ Create structured findings with **stable IDs** that persist across re-reviews. U
 - **Principle**: Name of constitution principle
 - **File:Line**: Exact location in code
 - **Issue**: Specific description of the problem, including broken code snippet for CRITICAL/HIGH
+- **Intent cue**: Behavioral intent that must be repaired or preserved
 - **Fix**: Concrete code fix for CRITICAL/HIGH findings (required); recommendation for others
 
 ### 5. Additional Review Dimensions
@@ -735,6 +785,18 @@ Use this scenario-to-severity mapping table to anchor classification. When two t
 | Style / naming / docs | LOW | Optional improvement |
 | Constitution needs updating (not code) | CON | Governance improvement |
 
+#### Severity Code Format
+
+Every finding that references a constitution principle MUST include a severity code in the
+format `§{section}.{LEVEL}` matching an entry in `.documentation/memory/severity-registry.md`.
+
+**Examples**: `§VI.HIGH` (platform parity), `§VII.MEDIUM` (review file commit discipline),
+`§VIII.HIGH` (markdownlint CI block), `§I.SHOWSTOPPER` (backward compatibility violation)
+
+For findings not mapped to any constitution section (e.g., security observations, code-quality
+issues not covered by the constitution): emit the finding without a `§` code and flag it as
+a `CON` candidate for `/devspark.evolve-constitution`.
+
 Summary tiers:
 
 - **CRITICAL**: Violates MUST principle, blocks functionality, security risk, breaks production
@@ -823,10 +885,11 @@ findings:
   - finding_id: <stable-id-unique-within-this-command-output>   # e.g., analyze-001, clarify-002
     severity: critical | high | medium | low
     description: <1-3 sentence problem statement>
+    intent_cue: <behavioral intent that must be repaired or preserved>
     recommended_action: <machine-actionable next step>
     execution_mode: auto | selective | manual
     status: open                                                  # set to `resolved` after remediation
     outcome: ""                                                  # populated post-resolution by address-pr-review
 ```
 
-inding_id MUST be stable across re-runs when the underlying issue is unchanged. xecution_mode MUST be one of: `auto` (safe to apply automatically), `selective` (apply with reviewer approval), `manual` (requires human implementation). The `status` and `outcome` fields are written by `/devspark.address-pr-review` (FR-028).
+`finding_id` MUST be stable across re-runs when the underlying issue is unchanged. `intent_cue` MUST name the behavior, contract, safety property, or user outcome the finding protects before metric-focused remediation. `execution_mode` MUST be one of: `auto` (safe to apply automatically), `selective` (apply with reviewer approval), `manual` (requires human implementation). The `status` and `outcome` fields are written by `/devspark.address-pr-review` (FR-028).

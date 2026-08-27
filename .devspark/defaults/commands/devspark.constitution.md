@@ -1,6 +1,6 @@
 ---
 description: Create or update the project constitution from interactive or provided principle inputs, ensuring all dependent templates stay in sync.
-handoffs: 
+handoffs:
   - label: Build Specification
     agent: devspark.specify
     prompt: Implement the feature specification based on the updated constitution. I want to build...
@@ -14,6 +14,34 @@ $ARGUMENTS
 
 You **MUST** consider the user input before proceeding (if not empty).
 
+## Lifecycle Position
+
+**Single writer of record** for `/.documentation/memory/constitution.md`. Two siblings feed in but never edit the constitution themselves:
+
+- `/devspark.discover-constitution` (brownfield bootstrap) → produces `constitution-draft.md`
+- `/devspark.evolve-constitution` (continuous improvement) → produces APPROVED CAPs in `proposals/`
+- Direct human edits via this command
+
+All three paths converge here → this command writes `constitution.md` and bumps the version.
+
+- **Owns**: collecting placeholder values, semver decisions, writing the constitution file, propagating impact to dependent templates, emitting the Sync Impact Report.
+- **Does NOT own**: reverse-engineering principles (→ `/devspark.discover-constitution`); generating amendment proposals (→ `/devspark.evolve-constitution`); reviewing/voting on proposals (out-of-band; this command only *applies* approved ones).
+
+## Upstream Inputs to Check
+
+Before drafting, scan for upstream artifacts produced by the sibling commands and incorporate them when present:
+
+1. **Discovery draft** — if `/.documentation/memory/constitution-draft.md` exists:
+   - Treat it as the starting point for placeholder values when no constitution exists yet.
+   - After successfully writing `constitution.md`, archive the draft to `/.documentation/memory/archive/constitution-draft-YYYY-MM-DD.md` so it isn't reapplied.
+2. **Approved amendment proposals** — if `/.documentation/memory/proposals/` contains files whose `Status: APPROVED`:
+   - List them to the user; for each, ask whether to apply now in this version bump.
+   - For every applied CAP, update its `Resolution.Applied in Version` field to the new constitution version and move the file to `proposals/applied/`.
+   - Reflect each applied CAP in the Sync Impact Report (§5) under a new "Applied Amendments" block (CAP ID → principle change).
+3. **Rejected or pending proposals**: leave untouched. Never silently roll a non-approved proposal into the constitution.
+
+If neither upstream artifact is present, proceed with user-supplied input as today.
+
 ## Outline
 
 You are updating the project constitution at `/.documentation/memory/constitution.md`. This file is a TEMPLATE containing placeholder tokens in square brackets (e.g. `[PROJECT_NAME]`, `[PRINCIPLE_1_NAME]`). Your job is to (a) collect/derive concrete values, (b) fill the template precisely, and (c) propagate any amendments across dependent artifacts.
@@ -22,7 +50,7 @@ Follow this execution flow:
 
 1. Load the existing constitution template at `/.documentation/memory/constitution.md`.
    - Identify every placeholder token of the form `[ALL_CAPS_IDENTIFIER]`.
-   **IMPORTANT**: The user might require less or more principles than the ones used in the template. If a number is specified, respect that - follow the general template. You will update the doc accordingly.
+     **IMPORTANT**: The user might require less or more principles than the ones used in the template. If a number is specified, respect that - follow the general template. You will update the doc accordingly.
 
 2. Collect/derive values for placeholders:
    - If user input (conversation) supplies a value, use it.
@@ -38,6 +66,7 @@ Follow this execution flow:
    - Replace every placeholder with concrete text (no bracketed tokens left except intentionally retained template slots that the project has chosen not to define yet—explicitly justify any left).
    - Preserve heading hierarchy and comments can be removed once replaced unless they still add clarifying guidance.
    - Ensure each Principle section: succinct name line, paragraph (or bullet list) capturing non‑negotiable rules, explicit rationale if not obvious.
+   - When adding or preserving Genuine Fix Discipline, ensure the principle requires behavioral intent before metric movement, a citation hook for constitution-backed findings, and a verification failure mode for metric-only proof with unchanged behavior.
    - Ensure Governance section lists amendment procedure, versioning policy, and compliance review expectations.
 
 4. Consistency propagation checklist (convert prior checklist into active validations):
@@ -45,6 +74,7 @@ Follow this execution flow:
    - Read `/.devspark/templates/spec-template.md` (or `templates/spec-template.md` in source repos) for scope/requirements alignment—update if constitution adds/removes mandatory sections or constraints.
    - Read `/.devspark/templates/tasks-template.md` (or `templates/tasks-template.md` in source repos) and ensure task categorization reflects new or removed principle-driven task types (e.g., observability, versioning, testing discipline).
    - Read command prompt templates from `templates/commands/*.md` when available; otherwise inspect generated command files under active agent folders (for example `.github/agents/`, `.claude/commands/`, `.cursor/commands/`, `.gemini/commands/`). Verify no outdated references (agent-specific names like CLAUDE only) remain when generic guidance is required.
+   - If the update touches Genuine Fix Discipline, check `templates/command-preamble-contract.md` §9/§9.1/§9.2, `/devspark.verify`, and review/fix commands that emit or resolve findings.
    - Read runtime guidance docs (for example `README.md`, `/.documentation/Guide.md`, and agent-specific guidance files if present). Update references to principles changed.
 
 5. Produce a Sync Impact Report (prepend as an HTML comment at top of the constitution file after update):
